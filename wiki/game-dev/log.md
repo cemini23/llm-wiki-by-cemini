@@ -1,0 +1,900 @@
+# Game Dev Wiki — Operations Log
+
+Append-only chronological log.
+
+---
+
+## [2026-10-12] ingest | 2 arXiv PDFs (all ingested) + Phase-1 H15
+
+- Inbox: 2 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-12.md + 2 source pages. **Third consecutive all-ingest batch.**
+- **Ingest:** SpireBench (long-horizon strategic play in Slay the Spire; cross-run memory), ReqClarifyBench (interactive requirement clarification for repository-level work)
+- Phase-0: no resolvable repos → both STEAL-FROM
+- **H8 strengthened to three independent sources:** Mafia (60 generations of notes scored below none) + Learn2Play (raw records beat summaries) + SpireBench (models did not improve from their own memories, which were often wrong and overly cautious)
+- Phase-1: **H15** clarify a vague intent before writing the spec — ReqClarifyBench measured ReqAlign 0.212 → 0.494 (+133.1%) and downstream game scores 0.012 → 0.273 → 0.418; but coding-agent harnesses raised *clarification* while **lowering** document quality (−15.2% / −24.0%), so the gate is the spec, not the question count
+- Eval bench ladder extended with SpireBench and ReqClarifyBench
+- Sweeps: @sweeps/2026-10-10-daily.md · @sweeps/2026-10-11-daily.md · @sweeps/2026-10-12-daily.md
+
+---
+
+## [2026-10-09] ingest | 4 arXiv PDFs (all ingested) + 2 clip-tooling briefs + Phase-1 H11–H14
+
+- Inbox: 4 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-09.md + 4 source pages. **Second consecutive all-ingest batch — 0 rejects.**
+- **Cluster:** all four are about verification and self-improvement in agent loops — Who Verifies the Verifier (grader evolution), Confidence Game (strategic miscalibration), System Switch (fast/slow gate), MEMENTO 3 (reflective rulebooks)
+- Phase-0: **no resolvable repos** in any of the four → STEAL-FROM (pattern only)
+- Phase-1 **verification doctrine**: **H11** certify a verifier with an external anchored set, never the task score; **H12** do not trust self-reported confidence when the reporter has a stake; **H13** escalate on sensitivity (AUROC), not accuracy; **H14** revisable rulebook + deterministic replay gate
+- Headline finding: a verifier can collapse to always-pass **while still training skills just as well** — downstream score cannot certify a self-evolved verifier
+- **Incoming briefs landed:** K284/K285 Basgiath clip tooling (artcraft, filmcraft, effectcraft, treg) → @sources/k284-k285-basgiath-clip-tooling-2026-10-08.md. **Two licence flags the originating eval missed** — `artcraft` and `treg` both NOASSERTION
+- Sweeps: @sweeps/2026-10-08-daily.md · @sweeps/2026-10-09-daily.md
+
+---
+
+## [2026-10-07] ingest | 6 arXiv PDFs (all ingested) + 3 incoming briefs + Phase-1 H7–H10
+
+- Inbox: 6 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-07.md + 6 source pages. **First all-ingest batch — 0 rejects.**
+- **Ingest:** MASBench (multi-agent collab under partial observability), Learn2Play (learning from experience), Mafia communication (collective inference), SpeedrunBench (strategy formation), social-deduction RFT (hidden-role fine-tuning), WorldSolver (solver generation + visual fidelity)
+- Phase-0: `BUPT-GAMMA/MASBench` **MIT** → CONDITIONAL-GO (STEAL-FROM in practice); no other repo resolves
+- Phase-1: **H7** keep the complete raw record (summaries underperform); **H8** re-validate inherited notes — 60 generations of notes scored below none (counterweight to H3); **H9** measure coordination cost; **H10** visual-fidelity check for 3D acceptance
+- Eval bench ladder extended with MASBench, Learn2Play, SpeedrunBench, WorldSolver
+- **Incoming briefs landed:** K282 level editors/tile tooling (`better-tile-editor` targets Godot 4.6+), K283 Bedrock add-on extracts (5 techniques + boundary gates), SPHERE VR scene routing (Ark 2610.02023, from image-gen)
+- Concepts touched: agent-harness, minecraft-agent-harness-shelf, minecraft-bedrock-addons-scripting, minecraft-data-driven-content-patterns, minecraft-modding-ecosystem, agentic-npc-design-guardrails, llm-npc-runtime-ai-shelf, game-ai-rl-augmentation-shelf, agentic-pcg-level-design, rts-pathfinding-approaches, godot-pathfinding-patterns
+- Entities touched: gamedevbench, vrexplorer, blockbench, castle-sim
+- Sweeps: @sweeps/2026-10-06-daily.md · @sweeps/2026-10-07-daily.md
+
+---
+
+## [2026-10-05] ingest | 3 arXiv inbox + 4 cross-wiki briefs + Basgiath port brief
+
+- Inbox: 3 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-05.md + 2 source pages
+- **Ingest:** QUEEN chess model that explains its moves (2610.03695) — silent expert encoder + LM explainer; prompt framing governs default following (2610.03253) — pre-filled defaults bias agent choices
+- **Reject:** 2610.03136 reasoning-language alignment in monolingual German RAG → @ccc-wiki
+- Phase-0: no artifact for QUEEN (Code/Website are icons; no repo URL resolves) → **STEAL-FROM**
+- Phase-1: rules **H5** (do not pre-fill a value where neutrality is wanted) + **H6** (expert decides, LM explains) → @concepts/agent-harness-castle-project.md; guardrail § 8 choice architecture; game-AI shelf expert-plus-explainer note
+- **Briefs processed:** 4 cross-wiki briefs routed 2026-08-17…09-09 and never landed → @sources/cross-wiki-routed-briefs-2026-10-05.md (VLM narration SKIP, AnyTalk WATCH, Hydra-0 SKIP, Modern C++ Context), all `wont_wire`
+- **Basgiath:** wrote `dragon-rider-map/briefs/2026-10-05_java-port-and-tooling.md` — Bedrock Script API facts, editing ergonomics (bridge./Blockbench/Snowstorm/Editor), and the Bedrock→Java port path with a per-artifact mapping table
+
+---
+
+## [2026-10-05] research | Minecraft modding ecosystem — deep dive, both editions
+
+- Operator-directed deep research. 4 parallel research agents (Java loaders/toolchain, Bedrock add-ons/Script API, AI agents, tooling/infra) + `opencli` social pass (YouTube search/transcript, X search, Reddit)
+- **Concepts:** minecraft-modding-ecosystem, minecraft-bedrock-addons-scripting, minecraft-data-driven-content-patterns, minecraft-agent-harness-shelf
+- **Entities:** blockbench (GPL-3.0, CONDITIONAL-GO art, deferred), mineflayer (MIT, STEAL-FROM, wont_wire), minecraft-agent-mcp-shelf (deferred)
+- **Sources:** minecraft-modding-deep-research-2026-10-05, minecraft-social-scan-2026-10-05
+- **Headline:** Java dropped obfuscation (announced 2025-10-31); Yarn deprecated, Intermediary gone; no mod for ≤1.21.11 works on 26.1 without recompilation — verified at fabricmc.net
+- **Headline:** data components (1.20.5+) — typed, registry-backed, default-valued — is the most reusable pattern for castle-sim; plus datagen, jigsaw worldgen, weighted loot
+- Harness: Minecraft agent literature (Mineflayer/Voyager/MCP/BASALT) mapped to rules H1–H4; new rules — version-pin before generating, human rubric for fuzzy goals
+- Social: AI-modding is now a visible community theme; 26.1 tutorials already shipping; most r/feedthebeast activity is datapacks and structures, not code
+- Note: external cheap-executor routing still sandbox-blocked; `opencli` required the user's terminal (daemon on port 19825)
+
+---
+
+## [2026-10-03] ingest | 3 arXiv inbox (2 ingests + 1 reject) + Phase-1 harness rules H3/H4
+
+- Inbox: 3 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-03.md + 2 source pages
+- **Ingest:** Cogentic multi-agent proof harness (2609.40324) — orchestrator/prover/verifier loop, verified ledger; audit rule shapes faithful factor explanations (2610.01514) — report-dependent audit creates a suppression incentive
+- **Reject:** 2609.40070 Inference Auctions — LLM serving economics → @ccc-wiki
+- Phase-0: no artifact for either ingest (Cogentic ships no repo; the audit-rule paper ships none) → **STEAL-FROM** pattern only
+- Phase-1: rules **H3** (promote only confirmed results into a durable ledger) + **H4** (audit something the executor did not nominate) wired in @concepts/agent-harness-castle-project.md
+- Brief: `briefs/research/agent-harness-transform-rules-2026-09-30.md` extended
+- Sweeps: @sweeps/2026-10-01-daily.md (empty) · @sweeps/2026-10-02-daily.md committed
+- Note: external cheap-executor routing still **blocked by session sandbox**; pages drafted by in-session Haiku subagents
+
+---
+
+## [2026-09-30] ingest | 10 arXiv inbox (8 ingests + 2 rejects) + Phase-0/1 harness rules
+
+- Inbox: 10 PDFs → @sources/inbox-arxiv-reject-batch-2026-09-30.md + 8 source pages
+- **Ingest:** BT↔FSM LLM conversion (2609.29228), PUBG Ally full paper (2609.29837), abstraction ladder / code skills (2609.31076), GlyphBench (2609.34214), SAGE strategic reasoning (2609.34342), prompted identity factionalism (2609.35928), EnterpriseBench (2609.37658), AnthroDial (2609.37853)
+- **Reject:** 2609.28673 political ad-hominem debate → CCC; 2609.34679 decentralized matching / market design → OSINT
+- Phase-0: SAGE / FSM2BT / PartoPrey-BT-RL **NO-GO clone** (no LICENSE); FirmBench **Apache-2.0**; CodeHack **MIT**
+- Phase-1: rules **H1** (name high-level ops, keep primitive fallback) + **H2** (withhold model-family identity) wired in @concepts/agent-harness-castle-project.md; eval bench ladder extended
+- Entities: firmbench, codehack
+- Concepts updated: agent-harness, llm-npc-runtime-ai-shelf, agentic-npc-design-guardrails, game-ai-rl-augmentation-shelf, stronghold-2-ai-lords, rts-siege-ai-reference, ai-assisted-game-dev-workflows
+- Brief: `briefs/research/agent-harness-transform-rules-2026-09-30.md`; SAGA shelf extended with SAGE
+- Sweep: @sweeps/2026-09-30-daily.md
+- Note: external cheap-executor routing (route-task / grok / opencode) **blocked by session sandbox**; pages drafted by in-session Haiku subagents
+
+---
+
+## [2026-09-24] ingest | 11 arXiv inbox (6 ingests + 5 rejects) + Phase-0/1 eval bench ladder
+
+- Inbox: 11 PDFs → @sources/inbox-arxiv-reject-batch-2026-09-24.md + 6 source pages; archived; inbox cleared
+- **Ingest:** GameLogicBench (tick asserts), CraftBench-UE (MIT UE), narrative reliability, PersonaWeaver, Unity Insight shelf, State-Grounded Conditioning
+- **Reject:** MIRAGE, astro-ph WFSS mis-route, robot HRI, LLM social norms, opinion games
+- Phase-0: GameLogicBench **NO-GO clone** (no LICENSE); CraftBench-UE **MIT extract-only**
+- Phase-1: eval bench ladder + GameLogicBench policy_wired in agent-harness; SGC/epistemic pacing in guardrails
+- Entities: gamelogicbench, craftbench-ue
+- Brief: `briefs/research/gamelogicbench-tick-assertions-shelf.md`
+- Config: `llm-agent-game-paper` ANDNOT astro-ph
+- Sweeps: @sweeps/2026-09-19-daily.md … @sweeps/2026-09-24-daily.md
+
+---
+
+## [2026-09-19] ingest | 4 arXiv inbox (1 NPC memory ingest + 3 rejects) + sweep backlog + Phase-1 W2 MCP
+
+- Inbox: 4 PDFs → @sources/inbox-arxiv-reject-batch-2026-09-19.md + @sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md; archived; inbox cleared
+- **Ingest:** 2609.18935 local LLM NPC incremental KV memory — shelf Tier 3+; updated guardrails + llm-npc-runtime-ai-shelf
+- **Reject:** 2609.18736 Clue deductive reasoning → CCC; 2609.19113 log(N)-Questions comms benchmark → CCC; 2609.19538 UAV LAWN networking (llm-agent false positive)
+- Config: tighten `llm-agent-game-paper` arxiv_query (ANDNOT UAV/UAS/drone/aerial/LAWN/unmanned)
+- Index: Twin + VibeWorlding CCC stubs (2026-08-17/18 cross-wiki)
+- Phase-1: W2 MCP policy table in @concepts/agent-harness-castle-project.md; hi-godot-ai `wire_status: policy_wired`
+- Brief: `briefs/research/local-llm-npc-incremental-memory-shelf.md` (Tier 3+ defer)
+- Sweeps: @sweeps/2026-08-16-daily.md … @sweeps/2026-09-18-daily.md committed (08-16…09-16 mostly empty; 09-17…18 inbox batch)
+- Egress: 4 inbox PDFs archived 2026-09-19 (retry after SSH reset); inbox cleared
+
+---
+
+## [2026-08-15] briefs | SGM MAPD + GameEngineBench backfill + index gaps
+
+- Routed brief `briefs/2026-07-17_k141-stigmergic-graph-memory-mapd-from-seo.md` was never wiki-ingested → @sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md + `briefs/research/stigmergic-graph-memory-mapd-shelf.md` (synced → castle-sim)
+- castle-sim-only `gameenginebench-harness-taxonomy-2026-07-19.md` copied into wiki `briefs/research/` + @sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md (name collision vs GameDevBench)
+- Index: Tycho stub row; lockstep source href fixed (`arxiv-1705-09704-…`)
+- Concepts: pathfinding matrix + Pattern 5 SGM note; flow-field dead-end for 2608.10309; harness steal-from contrast
+- Brief cites: ORCA + BinTrack research shelves; architecture pointer → `castle-sim/briefs/architecture.md`
+- Phase-0 / scp / prod: none
+
+---
+
+## [2026-08-15] ingest | 1 arXiv reject (UAV wind flow-field false positive) + empty 07-29…08-11
+
+- Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-08-15.md (reject); archived; inbox cleared
+- 2608.10309 wind-informed rapid flight-planning / urban wind CFD (Caltech) — UAV “flow fields” ≠ RTS integration-field pathfinding
+- Config: tighten `rts-flow-field-game` arxiv_query (ANDNOT UAV/drone/aerial/air-mobility/flight-planning)
+- Phase-0 / local adopt / briefs: none (no atto/poker/prod/castle-sim)
+- Sweeps: @sweeps/2026-07-29-daily.md … @sweeps/2026-08-15-daily.md (07-29…08-11 empty; 08-12…15 same PDF)
+
+---
+
+## [2026-07-28] ingest | 1 arXiv reject (lockstep → neuromorphic SIMD) + empty 07-23…27
+
+- Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-07-28.md (reject); archived; inbox cleared
+- 2607.22790 sparsity tax / event-driven SIMD–SIMT neuromorphic cores — hardware “lockstep SIMD” ≠ RTS lockstep
+- Config: tighten `lockstep-deterministic` arxiv_query (drop bare game/networking; require multiplayer/RTS/netcode; ANDNOT SIMD/neuromorphic/GPU)
+- Phase-0 / local adopt / briefs: none (no poker/David/prod/atto/castle-sim)
+- Sweeps: @sweeps/2026-07-23-daily.md … @sweeps/2026-07-28-daily.md (23–27 empty inbox)
+
+---
+
+## [2026-07-22] ingest | 2 arXiv rejects (flow-field false positives) + empty 07-21
+
+- Inbox: 2 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-22.md (both reject); archived; inbox cleared
+- 2607.19213 drone computing vision; 2607.19274 spinal eversion continuum robot — `continuum`/`navigation` token noise
+- Config: tighten `rts-flow-field-game` arxiv_query (require flow-field + game/RTS/pathfinding/crowd/Emerson)
+- 2026-07-21: empty inbox (3 ConFlow/CR-Solver/SKA skips); sweep committed only
+- Phase-0 / local adopt / briefs: none
+- Sweeps: @sweeps/2026-07-21-daily.md · @sweeps/2026-07-22-daily.md
+
+---
+
+## [2026-07-20] ingest | 3 arXiv rejects (lockstep-query false positives)
+
+- Inbox: 3 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-20.md (all reject); archived; inbox cleared
+- 2607.15583 UAS swarm LTL surveillance (eess.SY); 2607.15597 atom–ion CZ gate (quant-ph); 2607.15945 spot-covariance rank test (math.ST → @osint note only, no prod brief)
+- Config: tighten `lockstep-deterministic` arxiv_query (drop bare deterministic/simulation)
+- Phase-0 / local adopt / briefs: none
+- Sweep: @sweeps/2026-07-20-daily.md (arxiv-only; news disabled)
+
+---
+
+## [2026-07-19] ingest | 5 arXiv re-drops (preingest DUPLICATE; payload indexer lag)
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-19.md (all reject re-drop); archived; inbox cleared
+- Same sha256 set as 07-17/18: SKA recombination · CR-Solver · ConFlow · robot causal circuits · Hawk–Dove polymorphism
+- Preingest: 5× DUPLICATE (game-dev indexer OK); overnight still fetched via stale `~/.cemini/launchagent/osint/` payload
+- Fix: port Narrative reject-batch indexing to OSINT `wiki_source_index.py` + `sync_federation_digest_bundle.sh`
+- Phase-0 / local adopt / briefs: none
+- Sweep: @sweeps/2026-07-19-daily.md (arxiv-only; news disabled)
+
+---
+
+## [2026-07-18] ingest | 5 arXiv re-drops (identical to 07-17 reject set)
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-18.md (all reject re-drop); archived; inbox cleared
+- Same sha256 set as 07-17: SKA recombination · CR-Solver · ConFlow · robot causal circuits · Hawk–Dove polymorphism
+- Phase-0 / local adopt / briefs: none (no poker/David/prod from this inbox)
+- Note: arxiv-only digest was re-fetching reject-batch papers (Narrative IDs not indexed) — fixed in `wiki_source_index` / `preingest_check` 2026-07-18
+- Sweep: @sweeps/2026-07-18-daily.md (arxiv-only; news disabled)
+
+---
+
+## [2026-07-18] fix | catalog reject-batch arXiv IDs so digest skips re-fetch
+
+- `scripts/wiki_source_index.py` + `scripts/preingest_check.py`: index arXiv IDs from `inbox-arxiv-reject-batch-*` ## Narrative tables
+- Stops nightly re-download of already-triaged false positives (e.g. 2607.06315 / ConFlow / Hawk–Dove set)
+
+---
+
+## [2026-07-17] ingest | 5 arXiv rejects (2 re-drops + flow-matching / robot / evo-game)
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-17.md (all reject); archived; inbox cleared
+- Re-drops: 2607.06315 SKA recombination lines; 2607.11340 CR-Solver continuum robots
+- New rejects: 2607.14424 ConFlow (flow matching ≠ RTS flow fields); 2607.14826 robot causal action testing; 2607.14950 Hawk–Dove polymorphism math
+- Phase-0 / local adopt / briefs: none (no poker/David/prod from this inbox)
+- Sweep: @sweeps/2026-07-17-daily.md (arxiv-only; news disabled)
+
+---
+
+## [2026-07-16] ingest | CoFL-S flow-field shelf + 4 arXiv-API rejects
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-16.md (1 ingest + 4 reject); archived; inbox cleared
+- Ingest: @sources/arxiv-2607.02222-cofl-s-sector-flow-fields-2026-07-16.md → @concepts/flow-field-pathfinding.md (**STEAL-FROM**; no Phase-0 — no public package)
+- Rejects: SKA recombination lines (astro); CR-Solver continuum robots; PASS pinching antennas; ocean water-wave drawing
+- Brief: `briefs/research/cofl-s-sector-flow-field-shelf.md` → rsync castle-sim; no poker/David/prod from this inbox
+- Local adopt: none
+- Sweep: @sweeps/2026-07-16-daily.md (arxiv-only paper lane; news disabled)
+
+---
+
+## [2026-07-15] ingest | 5 arXiv rejects (4 re-drops + swarm MARL); Brickworks watch
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-15.md (all reject); archived; inbox cleared
+- Re-drops: 2607.07475 affordances; 2607.07820 DeepSearch-World; 2607.08547 potential-as-types; 2607.11334 twelve-tone harness
+- New reject: 2607.12861 robot-swarm MARL / Agent Response Map (IROS) — influence-map false positive
+- News: @sources/brickworks-godot-lego-framework-shelf-2026-07-15.md (**WATCH**, no public repo — no Phase-0)
+- Phase-0 / local adopt: none; briefs: none from this inbox
+- Federation: sibling morning ingest handled OSINT K167 (pm/xsp → prod), CCC K168/K169 harness (prod + David/poker), Gambling AgentTexasPoker → poker, Image-gen Contravariance reject (no tipdrop)
+- Sweep: @sweeps/2026-07-15-daily.md
+
+---
+
+## [2026-07-14] ingest | VRExplorer Phase-0 (NO-GO) + 4 arXiv rejects
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-14.md (1 ingest + 4 reject); archived; inbox cleared
+- Ingest: @sources/arxiv-2607.10174-vrexplorer-vr-testing-2026-07-14.md + Phase-0 @sources/vrexplorer-phase-0-audit-2026-07-14.md → @entities/tools/vrexplorer.md (**NO-GO adopt** / STEAL-FROM)
+- Rejects: DreamerV3 iKCE (AV); social-robotics affordances; Potential Functions as Types re-drop; twelve-tone generate–verify–repair (CCC harness note only)
+- Brief: `briefs/research/vrexplorer-model-based-playtest-shelf.md` → rsync castle-sim; no poker/xsp/pm/David/prod scp from this inbox
+- Local adopt: none (VRExplorer undeclared license + Unity VR)
+- Sweep: @sweeps/2026-07-14-daily.md
+
+---
+
+## [2026-07-13] ingest | 5 arXiv rejects (re-drop loop); grid placement + invasion design news
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-13.md (all reject); archived; inbox cleared
+- Triage: 2607.04689 RCT-AD re-drop; 2607.05179 railway MARL; 2607.06269 Structural Tension re-drop; 2607.07281 modular robots; 2607.07820 web agents
+- News: @sources/chris-tutorials-grid-placement-godot-shelf-2026-07-11.md → @concepts/godot-castle-sim-tool-gap-shelf.md; @sources/stronghold-invasion-vs-freebuild-shelf-2026-07-12.md → @concepts/stronghold-franchise-best-of-shelf.md
+- Phase-0: none; brief update only (GridPlacement EVAL row in `godot-castle-sim-tool-gap-research.md`)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 19 files)
+- Sweep: @sweeps/2026-07-13-daily.md
+
+---
+
+## [2026-07-12] ingest | 5 arXiv rejects (re-drop loop); UGenLah Unity PCG news
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-12.md (all reject); archived; inbox cleared
+- Triage: 2606.05050 catalyst CatDT; 4 re-drops (GaP ×4, RCT-AD, Structural Tension); 2607.08547 PL theory (influence-map false positive)
+- News: @sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md → @concepts/agentic-pcg-level-design.md
+- Phase-0: none; no new brief (Unity UGenLah out of Godot scope)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 19 files)
+- Sweep: @sweeps/2026-07-12-daily.md
+
+---
+
+## [2026-07-11] ingest | 3 arXiv rejects (GaP re-drop ×3); Ziva GPT-5.6 benchmark news
+
+- Inbox: 3 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-11.md (all reject); archived; inbox cleared
+- Triage: 2607.04689 AV planning; 2607.05369 GaP re-drop; 2607.06269 LLM meta-architecture theory
+- News: @sources/ziva-gpt-56-godot-benchmark-2026-07-10.md → @entities/tools/ziva-godot-agent.md; Godot 4.8 dev 1 note on @sources/godot-47-release-shelf-2026-06-25.md
+- Phase-0: none; no new brief (Ziva stays CONDITIONAL-GO operator IDE)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 19 files)
+- Sweep: @sweeps/2026-07-11-daily.md
+
+---
+
+## [2026-07-10] ingest | 3 arXiv re-drops/rejects; Godot RC + SH4 review + C&C port news
+
+- Inbox: 3 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-10.md (2 re-drops + PSP HCI reject); archived; inbox cleared
+- News: Godot 4.7.1 RC2 → @sources/godot-47-release-shelf-2026-06-25.md; SH4 review → @sources/stronghold-4-public-demo-2026-06-24.md; C&C Claude Code iOS port → @sources/claude-code-cc-ios-port-2026-07-07.md
+- Phase-0: none; no new brief (no adoption surfaced)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 19 files)
+- Sweep: @sweeps/2026-07-10-daily.md
+
+---
+
+## [2026-07-09] ingest | MIRA multiplayer world models + 4 rejects; Phaser MCP news
+
+- Inbox: 5 arXiv PDFs → @sources/arxiv-2607.05352-mira-multiplayer-world-models-2026-07-09.md (ingest); @sources/inbox-arxiv-reject-batch-2026-07-09.md (4 reject); archived; inbox cleared
+- Triage: 2511.17384 industrial VLLM nav; 2607.05369 GaP robotics harness; 2607.06500/06521 quantum; MIRA ingest for MP world-model research shelf
+- News: @sources/phaser-game-agent-mcp-update-2026-07-08.md → @sources/phaser-game-agent-shelf-2026-06-30.md
+- Brief: `briefs/research/mira-multiplayer-world-model-shelf.md`; synced → `castle-sim/briefs/research/` (19 files)
+- Phase-0: none (MIRA is research reference, not Godot tool)
+- Sweep: @sweeps/2026-07-09-daily.md
+
+---
+
+## [2026-07-08] ingest | arXiv-API fallback mis-route day 2 (5 rejects; look-ahead re-drop)
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-08.md (all reject); archived; inbox cleared
+- Triage: 2607.04958 re-drop (quant); 2607.05632 automotive RE; 2607.05667 2DGS compression (graphics); 2607.06125 Dart neural decomp; 2607.06148 food CV hashing
+- Fallback cause: `game-navmesh-dynamic` cluster used free arXiv API again (Exa 0 hits) — same mis-route class as 07-07
+- Phase-0: none; no new brief (no castle-sim adoption)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 18 files)
+- Sweep: @sweeps/2026-07-08-daily.md
+
+---
+
+## [2026-07-07] ingest | arXiv-API fallback mis-route (5 rejects); empty 07-06 sweep
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-07.md (all reject); archived; inbox cleared
+- Triage: 2607.04768 facial FEM (graphics), 2607.04770/04803/04953 autonomous-driving, 2607.04958 quant backtesting (route @osint-wiki)
+- Fallback cause: `game-navmesh-dynamic` cluster used free arXiv API (Exa 0 hits) → pulled off-topic papers
+- Wiki fill: temporal-non-interference / lockstep-replay aside on @concepts/rts-networking-deferred.md
+- Phase-0: none (no game-dev tool repos); no new brief (no adoption surfaced)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 18 files)
+- Sweeps: @sweeps/2026-07-06-daily.md (empty record), @sweeps/2026-07-07-daily.md
+
+---
+
+## [2026-07-05] ingest | SAGA CivRealm strategy agents + AV re-drop
+
+- Inbox: 2 arXiv PDFs → @sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md (ingest); @sources/inbox-arxiv-reject-batch-2026-07-05.md (2607.01382 re-drop ×3); archived; inbox cleared
+- Brief: `briefs/research/saga-civrealm-strategy-agent-shelf.md`; synced → `castle-sim/briefs/research/` (18 files parity)
+- Wiki fill: flow-field benchmark brief backlink on @concepts/flow-field-pathfinding.md
+- Phase-0: none (SAGA repo no license; CommonRoad AV out of scope)
+- Sweep: @sweeps/2026-07-05-daily.md
+
+---
+
+## [2026-07-04] ingest | Urban planning + AV rejects, AI narrative guardrails
+
+- Inbox: 2 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-04.md (2408.05140 reject; 2607.01382 re-drop); archived; inbox cleared
+- News: @sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md → @concepts/llm-npc-runtime-ai-shelf.md + @concepts/agentic-npc-design-guardrails.md
+- Phase-0: none (CommonRoad-Game out of scope; no new game-dev tool repo)
+- Briefs: no new adoption brief; rsync `briefs/research/` → `castle-sim/briefs/research/` (parity)
+- Sweep: @sweeps/2026-07-04-daily.md
+
+---
+
+## [2026-07-03] ingest | AV sim reject + Godot upstream AI policy
+
+- Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-07-03.md (2607.01382 reject); archived; inbox cleared
+- News: @sources/godot-engine-ai-contribution-policy-2026-07-01.md → @entities/engines/godot-4.md + @concepts/agent-harness-castle-project.md
+- Phase-0: none (CommonRoad-Game is AV sim; policy is governance not a tool)
+- Brief: `briefs/research/godot-upstream-pr-ai-policy-fence.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-07-03-daily.md
+
+---
+
+## [2026-07-02] ingest | VR dynamic feedback + quant reject + genre news
+
+- Inbox: 2 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-02.md (2606.29018 reject → @osint-wiki; **2606.26925 ingest**); archived; inbox cleared
+- Paper: @sources/arxiv-2606.26925-vr-dynamic-feedback-pointing-2026-07-02.md → architect UX shelf
+- News: @sources/mandate-order-city-walls-shelf-2026-06-25.md, @sources/phaser-game-agent-shelf-2026-06-30.md, @sources/ziva-godot-asset-store-listing-2026-06-27.md
+- Phase-0: none (Ziva listing note only)
+- Brief: `briefs/research/dynamic-feedback-architect-shelf.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-07-02-daily.md
+
+---
+
+## [2026-07-01] ingest | MORL re-drop + SH4 press + ProtocolBench defer
+
+- Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-07-01.md (2606.26397 re-drop); archived; inbox cleared
+- News: @sources/stronghold-4-public-demo-2026-06-24.md (AZ World hands-on + GWO wishlists)
+- News: @sources/protocolbench-llm-multiagent-protocol-shelf-2026-06-24.md → defer @ccc-wiki
+- Phase-0: none
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity)
+- Sweep: @sweeps/2026-07-01-daily.md
+
+---
+
+## [2026-06-30] ingest | StarCraft influence-map HRL + PCGODOT Phase-0
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-30.md (4 reject + **2606.30092 ingest**); archived; inbox cleared
+- Paper: @sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md → @concepts/rts-siege-ai-reference.md + @concepts/game-ai-rl-augmentation-shelf.md
+- Phase-0: @sources/pcgodot-phase-0-audit-2026-06-30.md → **CONDITIONAL-GO** @entities/tools/pcgodot.md (Tier 2+ PCG)
+- News: @sources/ramen-aura-15-commercial-shelf-2026-06-26.md; PUBG Ally beta note → @sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md
+- Briefs: `starcraft-influence-map-hrl-shelf.md`, `pcgodot-tier2-pcg-watch.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-30-daily.md
+
+---
+
+## [2026-06-29] ingest | Inbox re-drop + UE 5.8 MCP shelf + HeRoN NPC research
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-29.md (all reject; 2 new mis-routes); archived; inbox cleared
+- News: @sources/unreal-engine-58-mcp-shelf-2026-06-24.md → @concepts/ai-game-dev-tool-stack-2026.md
+- News: @sources/hero-rl-llm-npc-springer-2026-06-26.md → @concepts/llm-npc-runtime-ai-shelf.md
+- News: PEST-RTS devlog row → @sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
+- Phase-0: none (UE MCP is bundled engine feature; HeRoN is academic)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity)
+- Sweep: @sweeps/2026-06-29-daily.md
+
+---
+
+## [2026-06-28] ingest | Inbox re-drop + skeleton-implementation fence + PUBG Ally shelf
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-28.md (all reject/re-drop); archived; inbox cleared
+- News: @sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md → @concepts/ai-assisted-game-dev-workflows.md (Skeleton Implementation)
+- News: @sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md → @concepts/llm-npc-runtime-ai-shelf.md
+- Phase-0: none (re-drop batch; no new tool repos)
+- Brief: `briefs/research/agent-skeleton-implementation-fence.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-28-daily.md
+
+---
+
+## [2026-06-27] ingest | Inbox re-drop + Unity Sentis contrast shelf
+
+- Inbox: 4 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-27.md (all reject/re-drop); archived; inbox cleared
+- News: @sources/unity-sentis-practical-shelf-2026-06-23.md → @concepts/llm-npc-runtime-ai-shelf.md (small-ML ≠ LLM NPC)
+- Phase-0: none (Sentis is Unity-bundled; out of Godot scope)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity check)
+- Sweep: @sweeps/2026-06-27-daily.md
+
+---
+
+## [2026-06-26] ingest | Inbox re-drop + hera-agent-godot Phase-0
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-26.md (all reject/re-drop); archived; inbox cleared
+- Phase-0: @sources/hera-agent-godot-phase-0-audit-2026-06-26.md → **CONDITIONAL-GO** @entities/tools/hera-agent-godot.md (Godot 4.7+ pin)
+- News: @sources/notnull92-hera-agent-godot-devto-2026-06-25.md
+- Brief: `briefs/research/hera-agent-godot-w2-pilot.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-26-daily.md
+
+---
+
+## [2026-06-25] ingest | Inbox re-drop + Godot RTS transcript + AI workflow article
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-25.md (SIGMA → defer @ccc-wiki); archived; inbox cleared
+- Transcript: `9TVAnK6bRPs` **11,786 segments** → @sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md; `/tmp/godot-rts-yt-transcripts.json`
+- News: @sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md, @sources/godot-47-release-shelf-2026-06-25.md; SH4 + GamingOnLinux ref
+- Briefs: `briefs/research/` audit + sync → `castle-sim/briefs/research/` (godot-rts updated; bintrack + parity watchlist copied)
+- Sweep: @sweeps/2026-06-25-daily.md
+
+---
+
+## [2026-06-24] ingest | Inbox re-drop + Cooperative-ORCA MAPF + SH4 demo
+
+- Inbox: 10 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-24.md; **2606.22757 ingest** → @sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md; archived; inbox cleared
+- News: @sources/stronghold-4-public-demo-2026-06-24.md → @entities/games/stronghold-series.md demo row
+- Concepts: @concepts/rts-pathfinding-approaches.md MAPF/ORCA shelf; Pattern 5 in @concepts/godot-pathfinding-patterns.md
+- Brief: `briefs/research/cooperative-orca-local-avoidance-shelf.md`; synced → `castle-sim/briefs/research/`
+- YouTube: `9TVAnK6bRPs` premiere retry still blocked — @sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
+- Sweep: @sweeps/2026-06-24-daily.md
+- Path fix: castle-sim canonical path → `/Users/claudiobarone/Projects/castle-sim/`
+
+---
+
+## [2026-06-23] ingest | YouTube watchlist transcript sweep
+
+- Transcript retry: all pending watchlist IDs via `youtube_transcript_api` 1.2.4
+- SH2 parity @sources/sh2-youtube-parity-watchlist-2026-06-17.md — **7/7** (unchanged, prior session)
+- Kingmaker @sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md — **5/7**; `1NDb5LxGY1I` still private, `DBD-20osfiA` still no subs
+- Godot RTS @sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md — `9TVAnK6bRPs` **premiere ~2026-06-24**; pre-transcript metadata + reject list; retry checklist added
+- Brief/docs: `briefs/research/godot-rts-rpg-youtube-watchlist.md`; synced → `castle-sim/briefs/research/` + `docs/playtest/godot-rts-rpg-youtube-watchlist.md`
+- Archive: `/tmp/godot-rts-yt-transcripts.json`
+
+---
+
+## [2026-06-23] ingest | Inbox re-drop + GDQuest glossary + RTS YouTube shelf
+
+- Inbox: 4 arXiv re-drops → @sources/inbox-arxiv-reject-batch-2026-06-23.md; archived; inbox cleared
+- Sources: @sources/gdquest-pathfinding-glossary-2026-06-23.md, @sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
+- Brief: `briefs/research/godot-rts-rpg-youtube-watchlist.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-23-daily.md
+
+---
+
+## [2026-06-22] ingest | Inbox re-drop + vav_labs AStarGrid2D gotchas
+
+- Inbox: 5 arXiv re-drops → @sources/inbox-arxiv-reject-batch-2026-06-22.md (2606.20495 new reject); archived; inbox cleared
+- Source: @sources/vav-labs-astargrid2d-gotchas-2026-06-22.md → @concepts/godot-pathfinding-patterns.md Pattern 1 checklist
+- Brief: `briefs/research/astargrid2d-gotchas-checklist.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-22-daily.md
+
+---
+
+- **Source** — arXiv 2606.16902 (BinTrack / GangnamLoop); cross-route from @seo-wiki/sweeps/2026-06-21-daily.md
+- **New** — @sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md, @entities/tools/binarytracking.md
+- **Updated** — @concepts/godot-pathfinding-patterns.md
+- **Brief** — `briefs/research/bintrack-spatial-qa-steal-2026-06-21.md` → castle-sim pattern spike
+- **Phase-0** — CONDITIONAL-GO (GitHub no LICENSE, 0 stars)
+- **Sweep** — @sweeps/2026-06-21-daily.md (SEO inbox batch; game-dev digest had 2606.16902 capped earlier)
+
+---
+
+## [2026-06-21] ingest | Inbox re-drop + GameDevBench + Ziva Phase-0
+
+- Inbox: 5 arXiv re-drops → @sources/inbox-arxiv-reject-batch-2026-06-21.md (2606.20485 new reject); archived; inbox cleared
+- Phase-0: @sources/gamedevbench-phase-0-audit-2026-06-21.md → **STEAL-FROM** @entities/tools/gamedevbench.md (Apache-2.0, 333 Godot tasks)
+- Phase-0: @sources/ziva-godot-agent-phase-0-audit-2026-06-21.md → **CONDITIONAL-GO** @entities/tools/ziva-godot-agent.md
+- Brief: `briefs/research/gamedevbench-harness-eval.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-21-daily.md
+
+---
+
+## [2026-06-20] ingest | Inbox triage + Crusader Phase-0 + EA DRL shelf
+
+- Inbox: 5 arXiv digest PDFs → @sources/inbox-arxiv-reject-batch-2026-06-20.md; **2606.20210 ingest** → @sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md; **2606.17682 defer @ccc-wiki**; archived to egress; inbox cleared
+- Concept: @concepts/game-ai-rl-augmentation-shelf.md (Phase E+ modular RL leaves)
+- Phase-0: @sources/crusader-ai-manager-phase-0-audit-2026-06-20.md, @sources/monsterfisch-conquest-aiv-phase-0-audit-2026-06-20.md → STEAL-FROM entities
+- Briefs: `story-034-phase-c-lord-feasts-luxury.md`, `briefs/research/crusader-aiv-study-loop.md`; synced → `castle-sim/briefs/`
+- Sweep: @sweeps/2026-06-20-daily.md
+
+---
+
+- Stockpile per-section caps + armoury market prices → @sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md
+- Concept: @concepts/stronghold-2-lord-feasts-luxury-chains.md (Phase C feast/inn/Lady loops)
+- Closed gameinfo follow-up queue item; W5 → implementation phase
+
+---
+
+## [2026-06-19] research | Story-033 Kingmaker YouTube watchlist
+
+- Transcripts: 5/7 videos (1 private, 1 no captions)
+- Source: @sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
+- Checklist: `briefs/research/sh2-playsession-checklist-kingmaker.md` → master § Kingmaker
+- Deltas: fair pulls guards, estate raid callouts, fletcher arrest — @concepts/stronghold-2-kingmaker-strategy.md
+
+---
+
+## [2026-06-19] ingest | Inbox triage + Crusader AIV Phase-0 + briefs
+
+- Inbox: 5 arXiv digest PDFs → @sources/inbox-arxiv-reject-batch-2026-06-19.md; Shachi 2509.21862 **defer @ccc-wiki**; archived to egress; inbox cleared
+- Phase-0: @sources/evrey-shc-aiv-phase-0-audit-2026-06-19.md, @sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md → STEAL-FROM entities
+- Briefs: `story-033-sh2-kingmaker-youtube-watchlist.md`, `briefs/research/crusader-aiv-study-loop.md`; synced → `castle-sim/briefs/`
+- Sweep: @sweeps/2026-06-19-daily.md
+
+---
+
+- Operator: crime-only (no fear), capped emergency levy, estate picker, night scenarios, no fantasy
+- Brief: `briefs/story-032-franchise-cherry-picks.md`; `castle-sim/data/sh2/emergency_levy.json`
+- Pass-2: @sources/stronghold-franchise-research-pass2-2026-06-18.md — Matt Logan Kingmaker scrape, YouTube shelf, UCP/AIV GitHub
+- Concept: @concepts/stronghold-crusader-ai-modding-shelf.md
+
+---
+
+## [2026-06-18] ingest | Stronghold franchise best-of research
+
+- Cross-title feature harvest → @concepts/stronghold-franchise-best-of-shelf.md (SH2 baseline + steal matrix)
+- Source: @sources/stronghold-franchise-best-of-research-2026-06-18.md
+- Top grafts: Legends estate production picker, SH1 fear factor, Warlords edicts/housing tiers, Crusader AI depth
+- Updated: @concepts/operator-vision-sh2-personal-clone.md phase ladder, @concepts/stronghold-2-estates-system.md
+
+---
+
+## [2026-06-18] ingest | Phase-0 SH2 tools + inbox triage + operator briefs
+
+- Phase-0: @sources/sh2-mp-ai-enabler-phase-0-audit-2026-06-18.md (CONDITIONAL-GO), @sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md (STEAL-FROM)
+- Inbox: 5 arXiv digest PDFs → @sources/inbox-arxiv-reject-batch-2026-06-18.md; archived to egress; inbox cleared
+- Gitignored briefs: `sh2-mp-ai-enabler-install.md`, `sh2-community-lord-editor-install.md`, `sh2-visual-mod-stack.md`, `story-031-balance-graphics-presets.md`; `sh2-retail-setup.md` updated for optional visual QoL
+- Briefs synced → `castle-sim/briefs/`
+
+---
+
+## [2026-06-18] ingest | SH2 buildings + castle-sim LordProfile stub
+
+- Heaven industry/farm/civilian/cservices/military1 → @sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md, @concepts/stronghold-2-production-buildings.md
+- castle-sim: `data/sh2/lord_profiles.json`, `LordProfile`, `LordAIDirector3D`, unit tests
+
+---
+
+## [2026-06-18] ingest | SH2 second pass — PoW, structures, ranks, AI lords
+
+- PoW: 19-mission roster scraped from Heaven walkthrough index → @sources/sh2-heaven-pow-missions-2026-06-18.md
+- Castle: gatehouses/towers/walls from `cstructures1–3` → @sources/sh2-heaven-castle-structures-2026-06-18.md, @concepts/stronghold-2-castle-structures.md
+- Kingmaker: full rank unlock table (Merepatra) → @sources/sh2-heaven-kingmaker-ranks-2026-06-18.md
+- AI lords: Nation + Fandom batch → @sources/sh2-nation-fandom-ai-lords-2026-06-18.md; @concepts/stronghold-2-ai-lords.md promoted to validated
+
+---
+
+## [2026-06-17] ingest | SH2 Heaven military + campaign walkthrough follow-up
+
+- Military: units1–5 + siege1–5 → @sources/sh2-heaven-military-units-2026-06-17.md, @concepts/stronghold-2-military-units.md
+- Campaign: PoP mission list + walkthrough economy beats → @sources/sh2-heaven-campaign-walkthroughs-2026-06-17.md, @concepts/stronghold-2-campaign-economy-curriculum.md
+- AI lords: Edwin, Sir Grey, Olaf (+ forum sketches) → @concepts/stronghold-2-ai-lords.md
+- @sources/stronghold-2-heaven-gameinfo-2026-06-13.md follow-up queue updated
+
+---
+
+## [2026-06-17] ingest | SH2 deep research — Exa + Heaven + YouTube dev interviews
+
+- Exa batch: GameSpot Q&A + honor preview, GameSpy siege dev diary, Kingmaker tips, Fandom AI notes
+- YouTube transcripts: Paul Harris SH2/Legends production (Jo5pwX9RQIc), Bradbury Stronghold Sessions (m5CI9ch7b0U), Firefly MP UX (baK1Kiib7gY)
+- New concepts: @concepts/stronghold-2-kingmaker-strategy.md, @concepts/stronghold-2-siege-warfare.md, @concepts/stronghold-2-estates-system.md
+- New sources: @sources/sh2-exa-youtube-deep-research-2026-06-17.md (+ 5 child source pages)
+- @concepts/stronghold-2-systems-inventory.md — cross-links; military deferred → siege concept
+
+---
+
+## [2026-06-17] decision | SH2 retail skipped — zero spend
+
+- Operator: no CrossOver purchase; story-030 **closed** on YouTube path
+- @sources/sh2-youtube-parity-watchlist-2026-06-17.md remains primary UX reference
+- @concepts/operator-vision-sh2-personal-clone.md — Mac reference stack updated (wiki + YT, not paid bottle)
+
+---
+
+## [2026-06-17] ingest | SH2 YouTube parity watchlist (story-030)
+
+- 7 videos from `castle-sim/docs/playtest/sh2-youtube-parity-watchlist.md` — transcripts via `youtube-transcript-api`
+- New: @sources/sh2-youtube-parity-watchlist-2026-06-17.md
+- Operator brief filled: `briefs/research/sh2-playsession-checklist.md` — `[OBSERVED-YT]` tags, top-5 gap rank
+- @concepts/operator-vision-sh2-personal-clone.md — playtest gap table (YouTube path)
+
+---
+
+## [2026-06-17] research | Godot castle-sim tool gap shelf + operator brief
+
+- Code audit: monolithic `Game3DController`, CLI-only tests, Stagehand on 2D spike, CSG art, grid A*
+- New: @concepts/godot-castle-sim-tool-gap-shelf.md, @sources/godot-castle-sim-tool-gap-research-2026-06-17.md
+- Operator brief: `briefs/research/godot-castle-sim-tool-gap-research.md` — GdUnit4, Kenney steal, stagehand L1, flow-field spike queue
+- Phase-0 queue: GdUnit4, Kenney kit, VectorFieldNavigation (not run)
+
+---
+
+## [2026-06-17] ingest | Inbox re-drop + brief ladder sync + castle-sim status
+
+- Inbox: 5 arXiv PDFs re-dropped (digest mis-route) — folded into @sources/inbox-arxiv-reject-batch-2026-06-16.md; re-archived to egress
+- Brief sync: castle-sim story-012–029 → wiki `briefs/`; new `story-030-sh2-playtest-parity.md`; W2-harness-kickoff + GDD phase map updated
+- Entity: @entities/projects/castle-sim.md — Phase 7 3D done, next playtest parity gate
+- No new Phase-0 tool targets in inbox
+
+---
+
+## [2026-06-16] ingest | Phase-0 closeout + inbox triage + brief sync
+
+- Phase-0 audits: @sources/stronghold2-analyse-hub-phase-0-audit-2026-06-13.md, @sources/stronghold2-mp-ai-patch-phase-0-audit-2026-06-13.md, @sources/gamedev-resources-phase-0-audit-2026-06-13.md
+- Inbox: 7 arXiv PDFs rejected (robotics/sports/AV) → @sources/inbox-arxiv-reject-batch-2026-06-16.md; archived to egress
+- Tool Evaluation docx duplicate — skipped (already @sources/tool-evaluation-cross-wiki-routing-2026-06-13.md)
+- Briefs: `sh2-mp-ai-patch-install.md`, `sh2-analyse-hub-install.md`, `story-011-tier2-hunters-meat.md` → rsync to `castle-sim/briefs/`
+- Entity maturity bumps: stronghold2-analyse-hub → validated
+
+---
+
+## [2026-06-18] research | Visual QoL + Nevikov balance follow-up
+
+- Visual mods promoted to Tier A′ QoL (HD, ENB, Matteele, Winter, Pixel)
+- Scraped Nevikov New Balance Google Sheet (Crusader crossover — not Matteele SH2 stats)
+- New: @concepts/stronghold-2-visual-qol-presets.md, @sources/sh2-nevikov-new-balance-sheet-2026-06-18.md
+- castle-sim: `data/sh2/graphics_presets.json`, `balance_presets.json` + loaders + unit tests
+
+---
+
+
+- Scanned ModDB/Nexus/YouTube/Stronghold Nation + refreshed GitHub star list
+- Finding: **no SH2 balance patch**; QoL = MP AI enabler, Lord Editor, spear fix, debug overlay
+- New: @concepts/stronghold-2-mod-ecosystem-shelf.md, @sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
+- New entities: @entities/tools/sh2-mp-ai-enabler.md, @entities/tools/sh2-community-lord-editor.md
+- castle-sim QoL backlog: co-op vs AI, sim speed slider, fixed King/Hawk weapons, debug overlay
+
+---
+
+
+- Swept GitHub for SH2 patches, trainers, S2M tools; no Crusader-scale UCP equivalent
+- MIT adopt: MP-AI patch (Jpnock), AnalyseHub (crycodebaby); entity pages added
+- Reference-only: Eren121 SiegeExporter (.s2m), Ald0s trainer (player struct offsets)
+- New: @concepts/stronghold-2-github-ecosystem-shelf.md, @sources/github-stronghold-2-scan-2026-06-13.md
+- Cross-linked @concepts/stronghold-modding-ecosystem-shelf.md (Crusader vs SH2 split)
+
+---
+
+## [2026-06-13] ingest | SH2 targeted mechanics (parallel play session)
+
+- Scraped SH2 Heaven: popularity, resources, cservices1–3, industry1–3, civilian1–2, FAQ gameplay
+- New concepts: popularity model, crime/punishment loop, economy chains, architect controls
+- Source: @sources/stronghold-2-heaven-targeted-2026-06-13.md
+- Playtest checklist: `briefs/research/sh2-playsession-checklist.md` (gitignored)
+- Parent @concepts/stronghold-2-systems-inventory.md cross-linked; index updated
+- Deferred: military unit stat pages, castle structure 404s
+
+---
+
+## [2026-06-13] implement | story-005 M0.3D architect spike (Fork B)
+
+- Scope pivot: story-005 = Godot 3D SH2 architect camera + wall paint + peasant path
+- `scenes/game_3d/architect_test.tscn` now main scene; 2D `game.tscn` = logic lab
+- `architect_3d_test` PASS; 2D regression via explicit scene paths
+- D-024 logged; operator manual 5m @ 60fps still open
+
+---
+
+## [2026-06-13] implement | story-010 Tier 2 bread chain
+
+- Wheat farm → stockpile → mill → flour → bakery → granary bread
+- D-019 stub removed; D-023 SH1/SH2 food north star logged
+- `food_test` updated for full chain (50s); v0/lord regression PASS
+- Next: story-011 hunters + meat
+
+---
+
+## [2026-06-13] implement | story-009 Tier 2 simplified AI lord
+
+- Enemy keep east; lord builds westward walls + escalates raid waves
+- Archers siege `EnemyKeep`; HUD shows lord name / HP / walls
+- `lord_test` PASS; raid + v0 regression unchanged
+- Tier 2 core slices complete — next: food chain (D-019) or barracks roster
+
+---
+
+## [2026-06-13] implement | story-008 Tier 2 wave raids
+
+- `RaidDirector` timer waves from west; raiders path to keep; archers engage `CombatTarget`
+- HUD: wave / live raiders / kills / breaches; raids start on keep placement
+- `raid_test` PASS; Tier 1 + food + stone regression unchanged
+- Next Tier 2: food chain (wheat/mill), barracks roster, or simplified AI lord
+
+---
+
+## [2026-06-13] implement | story-007 Tier 2 stone / quarry
+
+- Stone deposits on map, quarry placement, miners → stockpile stone counter
+- `stone_test` PASS; food + Tier 1 regression unchanged
+- Deferred: wheat→mill→bread chain (D-019)
+
+---
+
+## [2026-06-13] implement | story-006 Tier 2 food + popularity
+
+- Granary, Farm (apple), Bakery (bread), farmer job loop, popularity-driven immigration
+- `food_test` headless PASS; Tier 1 regression unchanged
+- Next Tier 2: stone/quarry or wave raids (operator pick)
+
+---
+
+## [2026-06-13] implement | story-005 placeholder art
+
+- Kenney-style 32×32 PNGs in `castle-sim/assets/placeholders/` (generator: `tools/art/generate_placeholders.py`)
+- `PlaceholderArt` autoload; procedural `_draw()` wired to textures; peasant 4-frame walk
+- Wiki checklist in `art-pipeline-v0-requirements.md` marked complete
+- All headless tests PASS; isometric TileMap still W3
+
+---
+
+## [2026-06-13] implement | story-004 stagehand L0 smoke
+
+- godot-stagehand addon pinned (`9a6ce19`) in castle-sim `addons/stagehand/`
+- L0 script: `scripts/ci/stagehand_l0_smoke.sh` — TIME_FPS ≥ 55 × 30s on pathfinding spike
+- Two consecutive local runs PASS; headless CLI tests unchanged
+- Next W2 item: optional L1 UI clicks or story-005 art
+
+---
+
+## [2026-06-13] implement | story-003 Tier 1 close-out
+
+- Audit P0/P1 fixes merged in castle-sim; `labor_contention_test` added (wood cap regression)
+- Wiki: `vertical-slice-v0.md` § Tier 1 rendering — top-down accepted for Tier 1 (D-014)
+- `entities/projects/castle-sim.md` — Tier 1 close-out done; next: story-004 stagehand L0
+
+---
+
+## [2026-06-13] decision | Fork B — Godot 3D SH2 clone
+
+- Operator locked **Fork B** (3D); 2D rejected as wrong product feel
+- New: `concepts/godot-3d-sh2-architect-spike-plan.md`, `briefs/story-005-3d-architect-spike.md`
+- D4 closed; Mac SH2 reference via CrossOver Steam Edition
+- Next implementation gate: M0.3D architect camera + wall paint + one peasant
+
+---
+
+## [2026-06-13] research | Stronghold 2 personal clone — operator north star
+
+- Operator intent: personal SH2 copy (no sale/redistribution); supersedes SH1-only wiki default
+- New: `concepts/stronghold-2-systems-inventory.md` (honour, crime, kingmaker ranks, popularity)
+- New: `concepts/operator-vision-sh2-personal-clone.md` (Fork A/B/C, legal boundary)
+- Sources: SH2 Heaven gameinfo, MobyGames snapshot; linked GameSpy Bradbury Q&A
+- Brief: `briefs/GDD-sh2-personal-clone.md` — phased clone ladder aligned to Kingmaker ranks
+- Open: **D4** 2D mechanics vs Godot 3D rebuild
+
+---
+
+## [2026-06-13] phase-0 | SerpentAI + Airtest + UCP2 audits + W2 briefs
+
+- Phase-0 clones: SerpentAI (STEAL-FROM/NO-GO install), Airtest (CONDITIONAL-GO @ccc), UCP2 (STEAL-FROM study)
+- Sources: serpent-ai, airtest, unofficial-crusader-patch2 phase-0 audits
+- Briefs (local): W2-harness-kickoff, story-003 tier1-closeout, story-004 stagehand L0, systems/aiv-design-notes
+- Entity pages updated; WORKFLOW story index extended
+
+---
+
+## [2026-06-13] ingest | Tool Evaluation cross-wiki batch — 56 targets
+
+- Source: `research to be indexed/Tool Evaluation and Wiki Fit.docx` → `sources/tool-evaluation-cross-wiki-routing-2026-06-13.md`
+- Concepts: tool-evaluation-cross-wiki-batch, stronghold-modding-ecosystem-shelf, deferred-engine-candidates
+- Entities: serpent-ai, airtest (CCC primary), unofficial-crusader-patch2, gamedev-resources
+- Post-ingest gh api: OpenSHC GPL-3.0, Path-Creator MIT, AI-Aimbot GPL-3.0
+- Cross-wiki stubs queued: CCC (SerpentAI, Airtest, AITradeGame), cybersec (UCP2, AI-Aimbot), image-gen (GameDev-Resources)
+- Aggregate: 1 Adopt, 5 Steal-from, 2 Defer, 2 Reference, 37 Reject, 9 UNAVAILABLE
+
+---
+
+## [2026-06-13] implement | castle-sim M0–M1.5 + v0 playtest PROCEED
+
+- M0 pathfinding spike PROCEED; M1 vertical slice v0 operator playtest steps 1–5 passed (~10m @ 60fps)
+- story-002 labor delegation complete (Keep, hovel, JobAssigner, no P-spawn)
+- Refactor: generic peasant loop + `JobBehavior` / `WoodcutterJobBehavior` (D-012, D-013)
+- Implementation log: `castle-sim/docs/PROJECT_LOG.md` (decision register + session history)
+- Headless regression: `spike_test`, `v0_test`, `labor_test`, `archer_stress`
+- Tier 1 still open: placeholder art, isometric TileMap (or documented top-down exception)
+- Tier 2 (food, popularity, stone) explicitly deferred pending operator GO + wiki plan
+
+---
+
+- `briefs/WORKFLOW.md` — CCGS P0 skills port (local gitignored)
+- Shaggydev: tactics engine + UDD navigation sources → godot-pathfinding-patterns Pattern 7
+- papierkorp: grid tactical movement tutorial (UI/range reference)
+- GDC Total War siege AI ingested (GDC blurb + TW forum recap); rts-siege-ai-reference validated
+- godot-stagehand CI smoke plan + eval source (W2 execute in castle-sim)
+- ROADMAP W4 devlog/GDC/stagehand items closed
+
+---
+
+## [2026-06-13] ingest | Phase-0 tool audits + CI lint fix
+
+- Phase-0: hi-godot-ai, sods2-godot-mcp, godot-stagehand, godot-ai-playtest, CCGS (steal-from)
+- Fixed `@wiki/index.md` body mentions → backtick paths (wiki_lint --fail-on-dangling)
+- Entity verdicts updated; godot-mcp-landscape Phase-0 table complete
+
+---
+
+## [2026-06-13] ingest | Exa NPC + PCG + CCGS — 11 clusters, 82 URLs
+
+- Three-lane pass: runtime LLM NPCs, agentic PCG, CCGS deep extraction
+- New concepts: llm-npc-runtime-ai-shelf, agentic-npc-design-guardrails, agentic-pcg-level-design, ccgs-workflow-extraction
+- New sources: Ubisoft Teammates, NVIDIA ACE Qwen3, iXie guardrails, AgenticPCG, CCGS workflow catalog, Starlog review, LLMUnity/morganpage stubs
+- Updated: claude-code-game-studios entity, agent-harness-castle-project, scope-tiers Tier 3 cuts
+
+---
+
+## [2026-06-13] ingest | Exa AI game-dev tools — 10 clusters, 81 URLs
+
+- Broad AI gamedev research (not castle-specific) → `wiki/sweeps/2026-06-13-exa-ai-gamedev-tools-batch.json`
+- New concepts: ai-assisted-game-dev-workflows, ai-game-dev-tool-stack-2026
+- New entities: hi-godot-ai, godot-stagehand, godot-ai-playtest
+- New sources: Catvivors/Claude Code, Shin KoiKoi, Lava Leap, Void Balls, Luden GDD prototype, Exa batch meta
+- Updated: claude-code-game-studios, godot-mcp-landscape, agent-harness-castle-project
+
+---
+
+## [2026-06-13] ingest | Exa flow-fields + Firefly batch — 8 clusters, 68 URLs
+
+- Second Exa pass → `wiki/sweeps/2026-06-13-exa-flowfields-firefly-batch.json`
+- **No Firefly/Stronghold GDC postmortem found** — ingested Bradbury GameSpy SH2 Q&A + adjacent sources instead
+- New concept: `flow-field-pathfinding` (cost/integration/flow, Emerson tiles, Tier 2 gate)
+- New sources: Emerson Game AI Pro, Leif Node, Vav Labs Godot, Red Blob Games, GameSpy SH2, Firefly about-us, Legends making-of stub
+- Updated: rts-pathfinding-approaches, godot-pathfinding-patterns, indie-kingdom-builder-lessons
+
+---
+
+## [2026-06-13] ingest | Exa deep batch — 10 clusters, 71 URLs
+
+- Ran automated digest + custom Exa deep batch → `wiki/sweeps/2026-06-13-exa-deep-batch.json`
+- New concepts: rts-pathfinding-approaches, godot-pathfinding-patterns, indie-kingdom-builder-lessons, medieval-sim-fun-vs-accuracy, rts-networking-deferred, rts-siege-ai-reference
+- New sources: GDC K&C, Bradbury SH3 interview, Northgard case study, Leiden accuracy essay, Liquid Fire pathfinding, lockstep paper, Exa batch meta
+- New entity: godot-mcp-landscape (WATCH)
+- Tightened `daily_research_config.yaml` paper queries (filter UAV noise)
+
+---
+
+## [2026-06-13] ingest | Stronghold franchise + sibling scan + castle-sim scaffold
+
+- Deep research: `concepts/stronghold-systems-inventory.md` (SH1 buildings/units/economy, Crusader/SH2+ deltas)
+- Updated `entities/games/stronghold-series.md` (engines, timeline, modes)
+- Sources: `stronghold-hd-manual-2001.md`, `stronghold-series-wikipedia-2026-06-13.md`
+- Meta: `meta/sibling-wiki-inventory.md` — ccc / image-gen / cybersec / osint map
+- Concept: `art-pipeline-v0-requirements.md` → @image-gen-wiki
+- Entity: `entities/projects/castle-sim.md`
+- Vertical slice v0 tightened (spike gate, SH1 mapping, playtest script)
+- Harness: CCC ship/verify/scatter-gather + cybersec MCP links
+- Implementation: `/Users/claudiobarone/Projects/castle-sim/` (Godot 4.5 scaffold)
+- ROADMAP W1 marked complete
+
+---
+
+## [2026-06-13] ingest | Godot 4 Phase-0 audit
+
+- Deep-read: license (MIT), Mac universal editor 4.5.2 smoke test, grid-kit scan (MarkoDM GDS), pathfinding (`AStarGrid2D` vs navmesh)
+- Verdict **CONDITIONAL-GO** on `entities/engines/godot-4.md` — unblocks `castle-sim` repo
+- Source: `sources/godot-4-phase-0-audit-2026-06-13.md`
+- ROADMAP W1: Phase-0 checkbox closed
+
+---
+
+## [2026-06-13] bootstrap | K115 — game-dev-wiki federation
+
+- Created repo from Cemini federation template (Gambling-wiki / Cybersecurity-wiki pattern)
+- `CLAUDE.md` — scope: hobby castle/RTS research + agent harness; code in separate repos
+- Seed **5 concept** pages, **3 entity** pages, **1 source**, **2 meta** pages
+- Federation alias: `game-dev-wiki` (public)
+- Cross-wiki: `@osint-wiki/concepts/game-dev-wiki-federation.md` pointer hub
+- Daily digest: federated install `game-dev` wiki-id; LaunchAgent staggered
+- GitHub: `cemini23/Game-Dev-wiki`
+- CCC eval v7 — surface 9
