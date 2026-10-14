@@ -1,0 +1,780 @@
+# Wiki Log
+
+Append-only chronological operations log. Each entry: date + operation + summary + pages touched.
+
+## [2026-10-03] ingest | Pass 35 — VLA deployment + tactile simulation (2 papers)
+
+- **Inbox:** 2 PDFs (Oct 2 overnight fetch). **2 ACCEPT / 0 REJECT.**
+- **PDF text extraction:** `pypdf` workaround again (both papers 8 pages).
+
+### Accepted (2)
+
+- **arXiv:2610.01856** — Liu et al., "ChunkVLA-AM: Parallel Action Chunking for Vision-Language-Action Robot Control in Additive Manufacturing" (UT Rio Grande Valley + USF + SDSU). 7B OpenVLA-OFT + LoRA + 8-step action chunks on a FAIRINO FR3 doing post-print part retrieval. **This closes the ROADMAP Tier-2 backlog item "VLM-in-manufacturing failure-mode papers."** Key numbers: zero-shot MAE **179.60–650.12 mm** (unusable); single-step adapted 9.50 mm avg / **16.90 mm on X** (the paper's own words: *"easily causes collisions with the build plate or printed parts"*); ChunkVLA-AM **1.74 mm** open-loop; physical **39/42 = 92.9%**, with **all 3 failures at terminal placement** from poor release-height control. Illumination sweep (10 trials × 181 levels): min error at luminance 95, low-error band **85–125**, endpoints **+31.2% / +20.9%**; explicitly **not** a universal optimum (per-trial optima 36–198). Z-axis dominant error throughout. Two honest caveats captured: the 1.74 mm is **open-loop consistency on logged frames**, not task success; and the configs differ in **both** adaptation and horizon, so the paper does **not** attribute the gain to chunking alone. Phase-0 **REFERENCE** (no repo). `read_status: deep-read`.
+- **arXiv:2609.38418** — Zhong et al., "PneuTac: Tactile Manipulation with Soft Pneumatic Robots via Unified MPM-Gaussian Splatting Simulation" (Oxford Robotics Institute). MPM for both the soft body and the tactile gel, 3DGS for rendering — first paper to jointly model a compliant actuator and a compliant tactile sensor. Real-to-sim from **one** image per device; CMA-ES parameter ID; surrogates give **5×** (MLP torque) and **3000×** (UNet perception) speedups. Sim-augmented demos (10 real → 100 sim) beat real-only on egg (90.0 vs 26.7) and card (66.7 vs 33.3) but **lost to simply doubling real demos** on switch (83.3 vs Real-20 90.0). Tactile removal collapses switch (→30.0) but barely moves card → contact- vs position-dominated tasks. PPO scored **10.0%** on card where BC scored 66.7 — a weak simulator punishes RL harder than imitation learning. **Printed on a Stratasys PolyJet (Agilus30/Vero), not FDM.** Phase-0 **REFERENCE** (no repo). `read_status: deep-read`.
+
+### Created (2 pages)
+
+- `wiki/sources/2026-liu-chunkvla-am-vla-deployment.md`
+- `wiki/sources/2026-zhong-pneutac-mpm-gaussian-tactile.md`
+
+### Modified (4 content pages + index)
+
+- `wiki/concepts/vlm-in-manufacturing.md` — **major update.** Third angle → **fourth angle (deployment)**; new "Deployment — what the failure data actually says" section; "What's missing" rewritten as a status table (failure-modes gap **closed**, cost gap **partly closed**, CNN-baseline gap **still open**); confidence tags extended. **Also repaired pre-existing drift**: `## Relations` was missing 3 of the 10 `related:` entries.
+- `wiki/concepts/soft-robotics-fdm-diw.md` — Pass 35 section (PneuTac); new modality row; sim-to-real lessons.
+- `wiki/concepts/fdm-printing.md` — 2 new backlinks; `updated` bumped.
+- `wiki/concepts/print-farm-operations.md` — ChunkVLA backlink. **Also repaired pre-existing drift**: `## Relations` was missing 3 of 15 `related:` entries.
+- `wiki/index.md` — 2 source rows; updated VLM + soft-robotics concept rows.
+
+Pages touched: **8 wiki pages** (2 created + 4 modified + index + this log), plus `ROADMAP.md`, `hot.md`, and one brief.
+
+### Archive
+
+- **Done.** Both PDFs archived to `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/` (remote size verified, local copies removed). Source `Location` fields updated to the canonical paths. Ran from the user's Terminal panel — the sandboxed Bash tool cannot reach the egress host.
+
+### Phase-0 / Phase-1
+
+- **Phase-0:** neither paper ships a repo, code, or dataset. No audit triggered. Both **REFERENCE**.
+- **Phase-1:** both source pages marked `wont_wire`. `phase1-wire` lists 3D-printing as a hard-stop surface — no wire attempted, by policy.
+
+### Cross-wiki routing
+
+- **No route.** Checked both papers against @osint-wiki / @image-gen-wiki / @seo-wiki. ChunkVLA-AM is robotics-for-AM (stays). PneuTac is physics simulation, not image generation — the 3DGS angle is tangential to image-gen's ComfyUI work and the wiki already covers Gaussian splatting (`sources/2024-kwatra-splatoverflow-troubleshooting.md`). Neither warrants a stub or brief elsewhere.
+
+### Routing
+
+- **First successful routed task from this workspace.** Ran `route-task` from the user's Terminal panel (the sandboxed Bash tool cannot reach it). Lane **easy**, no forced fallback — it completed on **OpenRouter free**.
+- Task: draft a headings-and-bullets outline, **no numeric claims**, for a `process-parameter-tuning` concept page (a ROADMAP backlog item).
+- Output staged as `briefs/2026-10-03_process-parameter-tuning-outline-scaffold.md` — **scaffold only**, deliberately content-free. A page on pressure advance / flow calibration is exactly where an unsourced number does damage, so the outline stops at structure and lists the sources the real page still needs.
+- `LESSONS.md` updated: the 2026-09-30 "routing is blocked" entry is now marked superseded. The failures were real but specific to the sandboxed Bash tool.
+
+### Lint
+
+- 0 asymmetric / 0 dangling. `scripts/wiki_lint.py` exit 0.
+
+## [2026-09-30] ingest | Pass 34 — soft-robotics cluster (2 papers): MFPS actuator + Cosserat helicoid arm
+
+- **Inbox:** 2 PDFs. **2 ACCEPT / 0 REJECT.**
+- **PDF text extraction:** `pdftoppm` still missing; `pypdf` workaround used again (both papers 8 pages).
+
+### Accepted (2)
+
+- **arXiv:2609.24499** — Huang et al., "A Monolithic Force-Proprioception Soft Actuator Enabled by Single-Material 3D printing" (SUSTech + Shenzhen Tech). Conductive-TPU pneumatic actuator **and** its force sensor printed from one material in one FDM step on a Raise3D Pro2 Plus. Origami AOB chamber + FPS resistance sensor. 40° bend (total swing; abstract vs body wording reconciled), 12.5 N at 300 kPa, 26.9% resistance change over 0–45 N; winning FPS-3 geometry gave 35%. Geometry decides signal: solid block max strain 0.019 → no output; creased surface 0.079 → 35%. Weakness: **TPU hysteresis**, explicitly unfinished. Phase-0 **REFERENCE** (no repo). `read_status: deep-read`.
+- **arXiv:2609.25264** — Qin et al., "Cosserat Modeling of Trimmed Helicoid Soft Arms with a Separated-Section Constitutive Law" (NUS + KU Leuven + Khalifa). Modeling paper. Validation rig printed **TPU 95A on a Bambu Lab H2D** with PLA rigid connectors — **first H2D sighting in this wiki**. Separated-section law vs summed-section baseline: 25–92% error → 7–8% across 103 configurations; ~0.3 s/solve on one CPU core. Phase-0 **REFERENCE** (no repo). `read_status: deep-read`.
+
+### Created (3 pages)
+
+- `wiki/sources/2026-huang-mfps-monolithic-force-proprioception.md`
+- `wiki/sources/2026-qin-cosserat-trimmed-helicoid.md`
+- `wiki/entities/printers/bambu-h2d.md` — new printer page (ROADMAP backlog item, surfaced by paper 2). Dual-nozzle, 350×320×325 mm, 350 °C nozzle, **65 °C heated chamber**, optional 10/40 W laser, ~$1,549. Specs are third-party/commercial-sourced and **prices conflict across sources** → `[NEEDS VERIFICATION 2026-09-30]`.
+
+### Modified (6 content pages + index)
+
+- `wiki/concepts/soft-robotics-fdm-diw.md` — Pass 34 section; 2 new modality rows (single-material self-sensing; H2D continuum datapoint).
+- `wiki/entities/materials/tpu.md` — conductive-TPU research note; TPU 95A as structural continuum material on an H2D.
+- `wiki/concepts/fdm-printing.md` — new "Printing a structure, not just a shape" section (fan-speed/layer-height coupling; extrusion-path architecture; monolithic single-material). **Also repaired pre-existing drift**: removed 6 duplicate `related:` entries and resynced `## Relations` to `related:`.
+- `wiki/concepts/shape-changing-fdm-interfaces.md` — 8th modality row; counts updated seven → eight.
+- `wiki/concepts/filaments-baseline.md` — H2D backlink; `## Relations` resynced to `related:` (had drifted by 4 entries).
+- `wiki/entities/printers/x1c.md` — H2D backlink.
+- `wiki/index.md` — 2 source rows + H2D printer row.
+
+Pages touched: **10 wiki pages** (3 created + 6 modified + index), plus this log, `ROADMAP.md`, `hot.md`, `LESSONS.md`.
+
+### Archive
+
+- **Done.** Both PDFs archived to `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/`. The script verified the remote size, then removed the local copies. Source page `Location` fields updated to the canonical egress paths.
+- Ran from the user's terminal: the sandboxed shell denies SSH (`Operation not permitted`), so the archive could not complete in-session.
+- Also fixed: `CLAUDE.md`'s `../../OSINT WORKSPACE/...` path did not resolve. The OSINT workspace is a **sibling**, so `../OSINT WORKSPACE/...` is correct (commit `43e44bd`).
+
+### Phase-0 / Phase-1
+
+- **Phase-0:** neither paper ships a repo, dataset, or adoptable tool → **no new audit triggered**. Both **REFERENCE**.
+- **Phase-1:** both sources and the H2D page marked `wont_wire`. The `phase1-wire` skill lists **3D-printing as a hard-stop surface** — no Cursor rule, MCP, or CLAUDE.md wire attempted, by policy. Same posture as passes 30–32.
+
+### Routing
+
+- **Attempted, blocked by sandbox.** `route-task` exits 1 — it writes run logs to `~/Projects/agent-toolkit/` (FS denied). `grok -p` fails on network (`cli-chat-proxy.grok.com:443` denied) **and** FS (`~/.grok` not writable). `opencode run` fails on FS (`~/.local/share/opencode`). This session's sandbox is a strict allowlist that cannot be widened. All drafting done in-session. Recorded in `LESSONS.md`.
+
+### Lint
+
+- 0 asymmetric / 0 dangling. `scripts/wiki_lint.py` exit 0.
+
+## [2026-09-17] ingest | Pass 33 — empty inbox / digest catch-up
+
+- **Inbox:** empty (0 PDFs). **0 ACCEPT / 0 REJECT.**
+- **Digest:** ran `daily_research_digest_run.py`; Sep 12–17 sweeps committed; only hit arXiv:2609.03758 (already ingested pass 32) — skipped as dupe.
+- **Phase-0 / Phase-1:** none (no new sources).
+- **Lint:** 0 asymmetric / 0 dangling (253 pages).
+- **Routing:** tipdrop / atto / poker / cybersec / cemini-prod **skip** — nothing to route.
+
+## [2026-09-11] ingest | Pass 32 — soft robotics cluster (3 papers)
+
+- **Inbox:** 3 PDFs (Sep 2–4 overnight digest). **3 ACCEPT / 0 REJECT.**
+- **Accept:** arXiv:2609.00751 MONORIGAMI (SLA origami vacuum actuators) → `sources/2026-jang-monorigami-sla-origami-pneumatic.md`; arXiv:2609.02157 PRC fabric arm → `sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md`; arXiv:2609.03758 multi-vine → `sources/2026-kashef-multi-vine-working-channel.md`. All Phase-0 **REFERENCE** / NO-GO hobby.
+- **Updated:** soft-robotics-fdm-diw (pass-32 table), shape-changing-fdm-interfaces (MONORIGAMI SLA row), fault-detection + niche-fdm backlinks, jiang kirigami ↔ monorigami, index, ROADMAP.
+- **Briefs:** local Phase-0 cluster brief (`briefs/2026-09-11_soft-robotics-pass32-phase0.md`).
+- **Phase-1:** **wont_wire** all three.
+- **Routing:** tipdrop / atto / poker / cybersec / cemini-prod **skip**.
+- **Sweeps:** committed Sep 2–11 daily digest backlog.
+- **Archive:** 3 PDFs → egress-fi; inbox cleared.
+
+## [2026-09-01] ingest | Pass 31 — Jiang unified kirigami design (arXiv:2608.30032)
+
+- **Inbox:** 1 PDF (overnight digest). **1 ACCEPT / 0 REJECT.**
+- **Accept:** arXiv:2608.30032 Jiang & Choi unified kirigami inverse design → `sources/2026-jiang-unified-kirigami-design.md` (Phase-0 **REFERENCE**; optimizer code not shipped; PyKirigami Apache-2.0 companion).
+- **Created:** source page + entity `entities/tools/pykirigami.md`.
+- **Updated:** shape-changing-fdm-interfaces (kirigami modality row + subsection), novice-cad-workflows (week-1 skip), index, ROADMAP.
+- **Briefs:** local Phase-0 (`briefs/2026-09-01_jiang-kirigami-phase0.md`).
+- **Phase-1:** **wont_wire** — 3D-printing local harness wires off.
+- **Routing:** tipdrop / atto / poker / cybersec / cemini-prod **skip**.
+- **Sweeps:** committed Aug 16–Sep 1 daily digest files (discovery-only backlog).
+- **Archive:** PDF → egress-fi `3d-printing/`; inbox cleared.
+
+## [2026-08-15] fill | Pass 30 cluster backlinks + Phase-0 brief body
+
+- Bidirectional related: Abboodi ↔ DuoMorph, Chen hybrid gripper, novice-cad-workflows.
+- Hubs: soft-robotics modality row; shape-changing “four” → five.
+- Brief `briefs/2026-08-15_abboodi-airtight-spa-phase0.md` filled to peer Phase-0 shape (checklist + atto skip). Gitignored — local only.
+
+## [2026-08-15] ingest | Pass 30 — Abboodi airtight SPA FDM process eval (arXiv:2608.13233)
+
+- **Inbox:** 1 PDF (overnight digest). **1 ACCEPT / 0 REJECT.**
+- **Accept:** arXiv:2608.13233 Abboodi (uOttawa) manufacturing-process evaluation of complex airtight soft pneumatic actuators → `sources/2026-abboodi-airtight-spa-fdm.md` (Phase-0 **REFERENCE** / NO-GO hobby; no public repo, license, or BOM).
+- **Created:** source page with 5-route comparison table (heat-shrink / casting / powder AM / DLP / FDM TPU), Ultimaker process window with transfer caveat, wall-architecture headline finding, Table 2 bed-temp contradiction flagged.
+- **Updated:** soft-robotics-fdm-diw (new airtight-TPU subsection), shape-changing-fdm-interfaces (pneumatics row vs DuoMorph heat-seal), tpu (pneumatic TPU research note), fdm-printing (related + Relations only), novice-cad-workflows (week-1 skip one-liner), index, ROADMAP.
+- **Briefs:** local Phase-0 (`briefs/2026-08-15_abboodi-airtight-spa-phase0.md`).
+- **Routing:** tipdrop / David / atto / poker / cybersec / cemini-prod **skip** (no harness / firmware / image-gen steal).
+- **Local adopt:** none (no repo; 3D-printing Phase-1 wires untouched).
+- **Archive:** 1 PDF → egress-fi `3d-printing/`; inbox cleared.
+
+---
+
+## [2026-07-31] ingest | Pass 29 — PrintAnything G-plan (point cloud → G-code)
+
+- **Inbox:** 1 overnight PDF. **1 ACCEPT / 0 REJECT.**
+- **Accept:** arXiv:2607.27729 PrintAnything → `sources/2026-hong-printanything-gplan.md` + entity `tools/printanything.md` (Phase-0 **REFERENCE**; GitHub empty stub).
+- **Updated:** ai-design-tools (G-code red-line + PrintAnything note), novice-cad-workflows (week-1 skip), fdm-printing, bambu-studio, x1c, index, ROADMAP.
+- **Briefs:** local Phase-0; CCC/prod **K221** G-plan intermediate + deterministic compiler steal.
+- **Routing:** tipdrop/David/atto/poker/cybersec **skip**; **cemini-prod scp** K221.
+- **Local adopt:** none (empty repo; G-code NO-GO).
+- **Archive:** 1 PDF → egress-fi `3d-printing/`; inbox cleared.
+
+---
+
+## [2026-07-29] ingest | Pass 28 — OpenVCAD slicer compilation + OVC confidential bidding
+
+- **Inbox:** 2 overnight PDFs. **2 ACCEPT / 0 REJECT.**
+- **Accept:** arXiv:2607.25326 Wade/MacCurdy slicer project compilation → `sources/2026-wade-slicer-project-compilation.md` (Phase-0 **CONDITIONAL-GO research**); arXiv:2607.25517 Corn OVC blockchain bidding → `sources/2026-corn-optimistic-verifiable-claims.md` (Phase-0 **REFERENCE**).
+- **Created:** concept `slicer-project-compilation.md`; entity `tools/openvcad.md`.
+- **Updated:** orcaslicer, bambu-studio, tpu (foaming VarioShore), pla, g-code-protection (OVC), ip-theft, am-as-a-service, fdm-printing, index, ROADMAP.
+- **Briefs:** OpenVCAD Phase-0; OVC Phase-0; OVC cybersec cross-wiki; CCC/prod optimistic-claim adjudication steal.
+- **Routing:** tipdrop/David **skip**; atto **skip**; poker **skip**; **cybersec** stub + brief; **cemini-prod scp** OVC harness brief.
+- **Local adopt:** OpenVCAD shallow clone `.adopted/OpenVCAD-Public` (~5 MB). Full pip venv ~975 MB → **skipped** (over 500 MB cap). OVC Solidity package **skipped**.
+- **Archive:** 2 PDFs → egress-fi `3d-printing/`; inbox cleared.
+
+---
+
+## [2026-07-18] ingest | Pass 27 — empty inbox; reject-stub dedupe confirmed
+
+- **Inbox:** empty. Digest fetched **0** PDFs; skipped **4** wiki dups (Firewall3D, hybrid gripper, multimaterial e2e, **exogloves 07958**).
+- **Confirm:** pass-26 REJECT stub for `2607.07958` → `skipped-dup` overnight. [CONFIRMED]
+- **Created:** `sources/2026-arxiv-lane-noise-triage-jul18.md`; committed sweep `sweeps/2026-07-18-daily.md`.
+- **Updated:** digest cadence, jul17 triage + reject/source backlinks, index, ROADMAP.
+- **Phase-0 / briefs / tipdrop / poker / prod / local adopt:** none (no new material).
+- **News lane:** still off (`exa.news_enabled: false`).
+
+---
+
+## [2026-07-17] ingest | Pass 26 — hybrid soft gripper + reject-stub dedupe fix
+
+- **Inbox:** 2 PDFs. **1 ACCEPT / 1 REJECT (repeat).**
+- **Accept:** arXiv:2607.14730 hybrid rigid-soft gripper → `sources/2026-chen-hybrid-rigid-soft-gripper.md` (Phase-0 **REFERENCE**).
+- **Reject:** arXiv:2607.07958 exogloves — same as pass 25; re-fetched because reject had no wiki arXiv ID.
+- **Process fix:** REJECT stubs for `2607.07958` + `2607.06740` so overnight fetch skips them.
+- **Updated:** soft-robotics-fdm-diw, fdm-printing, pla, digest cadence, index.
+- **Briefs / routing:** tipdrop/poker/prod **skip** (no harness/image-gen steal).
+- **Local adopt:** none.
+- **Archive:** 2 PDFs → egress-fi; inbox cleared.
+
+---
+
+## [2026-07-16] ingest | Pass 25 — AgentsCAD FDM DFM + multimaterial soft-robotics background
+
+- **Inbox:** 4 overnight PDFs (`arxiv-only` mode; news lane off). **2 ACCEPT / 2 REJECT.**
+- **Accept:** arXiv:2607.02448 AgentsCAD → `sources/2026-george-agentscad-fdm-dfm.md` (Phase-0 **REFERENCE**); arXiv:2607.13174 multimaterial e2e opt → soft-robotics background source.
+- **Reject:** 2607.06740 modular soft-robot continual learning (GitHub NO-GO); 2607.07958 medical exogloves.
+- **Updated:** self-improving-cad hub, ai-design-tools, soft-robotics-fdm-diw, fdm-printing, digest cadence, index.
+- **Briefs:** local AgentsCAD Phase-0; CCC/prod harness brief (MCP tool-grounding steal).
+- **Routing:** tipdrop/David **skip**; poker **skip**; **cemini-prod scp** AgentsCAD MCP brief.
+- **Local adopt:** none (AgentsCAD no repo; soft-robot GH ~47 KB but out-of-scope).
+- **Archive:** 4 PDFs → egress-fi; inbox cleared.
+
+---
+
+## [2026-07-15] ingest | Pass 24 — Firewall3D + Orca 2.4.2 + Pop Mart IP + noise triage
+
+- **Inbox:** 5 overnight PDFs after auto-fetch re-enable. **1 ACCEPT / 4 REJECT.**
+- **Accept:** arXiv:2607.10484 Firewall3D → `sources/2026-asgar-firewall3d-firmware-hardware.md` (Phase-0 **REFERENCE / NO-GO** hobby).
+- **Reject:** 2607.06896 construction tracking; 2607.07281 modular robots; 2607.07475 HRI affordances (title false-friend); 2607.09387 DiPolES chemistry.
+- **News stubs:** OrcaSlicer **v2.4.2**; Bambu × Pop Mart MakerWorld Labubu settlement.
+- **Created:** Firewall3D source; jul15 noise triage; orcaslicer-2-4-2; popmart-makerworld-ip.
+- **Updated:** g-code-protection, side-channel-attacks, ip-theft, QuietPrint, orcaslicer entity, orcaslicer-2-4-stable, ai-design-tools, digest cadence, index.
+- **Cross-wiki:** `@cybersecurity-wiki/sources/2026-asgar-firewall3d-firmware-hardware.md` + brief `Cybersecurity wiki/briefs/2026-07-15_firewall3d-from-3d-printing-inbox.md`.
+- **Briefs (local):** `briefs/2026-07-15_firewall3d-phase0-reference.md`, `briefs/2026-07-15_firewall3d-cross-wiki-cybersec.md`.
+- **Routing skipped:** tipdrop/David (not image-gen), poker (no steal), cemini-prod scp (not harness/XSP/PM).
+- **Local adopt:** none under 500 MB (Firewall3D no repo; Orca DMG ~246 MB but not installed — friend = Orca-Flashforge).
+- **Archive:** 5 PDFs → egress-fi `3d-printing/`; inbox cleared.
+- **Backlog sweeps Jun23–Jul15:** pass-23 pages already present; no additional high-signal PDFs beyond today's batch + news stubs above.
+
+---
+
+## [2026-06-22] ingest | Pass 22 — arXiv noise via broad paper lane (5 PDFs, reject-all)
+
+- **Triage:** 5 PDFs from broad `*-paper` Exa hits (packing, PET scanner, VLA verification, continuum robots, video ADL). All rejected.
+- **Created:** `2026-arxiv-lane-noise-triage-jun22.md`.
+- **Config:** `fetch.enabled: false` globally; `fetch: false` on all four broad `*-paper` queries.
+- **Brief:** `2026-06-22_arxiv-noise-disable-auto-fetch.md` — publisher URL manual-fetch list from sweep.
+- **Archive:** 5 PDFs → egress-fi; inbox cleared.
+
+---
+
+## [2026-06-21] ingest | Pass 21 — arXiv noise triage + publisher signal (5 PDFs, reject-all)
+
+- **Triage:** 5 overnight arXiv PDFs — all rejected (VLM nav, stats, GNN/drones, remote sensing, egocentric video). On-topic AM hits in digest as publisher URLs (`skipped-no-arxiv`).
+- **Created:** `2026-arxiv-lane-noise-triage-jun21.md`.
+- **Updated:** `daily-research-digest-cadence.md`, `2026-arxiv-lane-noise-triage-jun20.md` (backlink), `index.md`, `daily_research_config.yaml` (`fetch: false` on `*-arxiv`), `daily_research_digest_run.py`, sweep frontmatter 2026-06-21, `ROADMAP.md`.
+- **Cross-route:** arXiv:2606.17119 → `@cybersecurity-wiki/briefs/2026-06-21_gnn-at-war-from-3d-printing-inbox.md`.
+- **Brief:** `2026-06-21_arxiv-lane-noise-triage.md`.
+- **Archive:** 5 PDFs → egress-fi; inbox cleared.
+
+---
+
+## [2026-06-20] ingest | Pass 20 — arXiv lane noise triage (5 PDFs, reject-all)
+
+- **Triage:** 5 overnight arXiv PDFs from Exa `site:arxiv.org` lane — all rejected (medical 3D, HCI motion, construction 3DGS, robot nav, LLM RL env). No entity/concept pages.
+- **Created:** `2026-arxiv-lane-noise-triage-jun20.md` — reject table + Phase-0 on `LARK-AI-Lab/Trainee-to-Trainer` (CONDITIONAL-GO lab ref) and `QwenLM/Qwen-RobotNav` (404).
+- **Updated:** `daily-research-digest-cadence.md`, `index.md`, `daily_research_config.yaml` (query tighten), sweep frontmatter 2026-06-17…20, `ROADMAP.md`.
+- **Brief:** `2026-06-20_arxiv-lane-noise-triage.md`.
+- **Archive:** 5 PDFs → egress-fi (`3d-printing`); inbox cleared.
+
+---
+
+## [2026-06-16] ingest | Pass 19 — AMNC side-channel + RedAct cross-route (2 arXiv)
+
+- **Ingested:** `2026-yocam-amnc-bambu-side-channel.md` (arXiv:2606.13952) — first empirical AMNC eval on Bambu P1P/A1 Mini; acoustic neutralized, vibration partial.
+- **Updated:** `side-channel-attacks.md`, `g-code-protection.md`, `ip-theft-3d-printing.md`, `a1.md`, `p1s.md`, `2026-asgar-quietprint-acoustic-defense.md`.
+- **Cross-routed:** arXiv:2606.10813 RedAct → `@cybersecurity-wiki/briefs/2026-06-16_redact-agent-skill-protection-from-3d-printing.md` (Phase-0 REFERENCE/CONDITIONAL-GO on `XuShuwenn/RedAct`).
+- **Briefs:** `2026-06-16_bambu-amnc-vibration-side-channel.md` (local); RedAct routing brief (3D printing + cybersec copies).
+- **Archive:** PDFs → egress-fi (`3d-printing` + `cybersec` wiki-ids); inbox cleared.
+
+---
+
+## [2026-06-12] ingest | STGT LPBF quality prediction (1 arXiv)
+
+- **Source** — `2026-pelaez-stgt-lpbf-quality-prediction.md` (arXiv:2606.10227; weighted k-NN graph + dual-attention STGT; R² 0.719 with cross-layer interactions on NIST AMS 100-69).
+- **Concepts updated** — `industrial-am-monitoring.md` (LPBF monitoring comparison table), `fault-detection.md` (industrial branch note).
+- **Backlink** — `2025-banerjee-neuromorphic-lpbf.md`.
+- **PDF** → `raw-sources/2026-pelaez-stgt-lpbf-quality-prediction.pdf`; inbox cleared.
+
+---
+
+## [2026-06-05] deep-read | Priority A+B (7 sources)
+
+- **A:** K95 `arxiv-2605-17448` → expanded source + `self-improving-cad-generation-agents.md` (CadQuery/CalculiX/Hephaestus-CCX; 0/400 strict first pass).
+- **A:** `2025-looey-physics-informed-extrusion-dynamical.md` — confirmed DIW-only ROM; updated `extrusion-control.md`.
+- **A:** OrcaSlicer 2.4 alpha news stub verified vs GitHub release → `orcaslicer.md`.
+- **A:** Polymaker ABS Pro vendor page → `abs.md` third-party subsection.
+- **B:** Faulkner lithographs, Tran PLA guitar (frequency table), Kota 3D Cal (ablation ~20% grid) — sources + `niche-fdm-applications.md`, `fdm-research-tools.md`.
+
+---
+
+## [2026-06-03] ingest | K95 — self-improving CAD agents (1 arXiv)
+
+- **Source** — `arxiv-2605-17448-self-improving-cad-agents.md`
+- **Concept** — `self-improving-cad-generation-agents.md`
+- **PDF** → librarian; inbox cleared
+
+## [2026-06-02] ingest | Pass 17 — daily digest follow-up (1 arXiv + 2 news stubs)
+
+- Daily digest script verified (`wiki/sweeps/2026-06-02-daily.md`); auto-fetch 0 PDFs (Exa hits non-arXiv).
+- Manual arXiv fetch: `2025-looey-physics-informed-extrusion-dynamical.md` (2512.11048).
+- News stubs: OrcaSlicer 2.4 alpha, Polymaker ABS Pro.
+- Updated: `extrusion-control.md`, `orcaslicer.md`, `abs.md`, `meta/daily-research-digest-cadence.md`.
+
+---
+
+## [2026-06-01] ingest | Passes 10–16 — final 32 inbox PDFs (inbox cleared)
+
+- **32 source pages** across volumetric AM, soft robotics/DIW, niche FDM apps, industrial monitoring, photonics background, research tools.
+- **6 concept hubs:** `volumetric-additive-manufacturing.md`, `soft-robotics-fdm-diw.md`, `niche-fdm-applications.md`, `industrial-am-monitoring.md`, `printed-photonics-background.md`, `fdm-research-tools.md`.
+- **Updated:** `fdm-printing.md`, `index.md`, `ROADMAP.md`; bidirectional links via `fix_bidirectional_gaps.py`.
+- All PDFs moved to `raw-sources/` with slug renames. **Inbox 32 → 0.** Wiki **66 → 104** pages. Lint clean.
+
+---
+
+## [2026-06-01] ingest | Cluster B — open-source legged robotics + FDM tactile (5 papers)
+
+- Ingest pass 9 — robotics cluster from inbox (37 → 32 PDFs).
+- **5 source pages:** Berkeley Humanoid Lite, MEVITA, MEVIUS, eFlesh, M3D-skin.
+- **1 concept hub:** `open-source-legged-robotics.md` — FDM vs sheet-metal durability split; tactile sensing paths; novice skip list.
+- **Updated:** `fdm-printing.md`, `novice-cad-workflows.md`, `flashforge-adventurer-5m.md`, `tpu.md`, `index.md`.
+- PDFs moved to `raw-sources/` with slug renames.
+
+---
+
+## [2026-06-01] brief-install | K93 federated daily research digest
+
+- Processed brief `2026-06-01_k93-3dprinting-digest-from-osint.md` — install federation digest from OSINT workspace.
+- **Scripts:** `daily_research_digest_run.py`, `daily_research_fetch.py`, `daily_research_config.yaml` (domain-tuned topics).
+- **Meta:** `wiki/meta/daily-research-digest-cadence.md`, `wiki/sweeps/_daily-template.md`.
+- **Cross-wiki:** backlink on `@osint-wiki/concepts/federated-daily-research-digest.md`.
+- **Updated:** `wiki/index.md`, `ROADMAP.md`, `.env.example`.
+- LaunchAgent: `com.cemini.daily-research-digest.3d-printing` @ 08:15 — operator load not verified.
+
+---
+
+## [2026-05-23] friend-handoff | Cursor Pro replaces Claude.ai / Claude Code
+
+- Rewrote `FRIEND-SETUP.md` for **Cursor Pro** ($20/mo): Open Folder, Chat + `@` wiki paths, Chat-vs-Agent guidance, minimal settings (no MCP day 1).
+- Added `AGENTS.md`, `.cursor/rules/friend-flashforge-reader.mdc`, `wiki/entities/tools/cursor.md`.
+- Updated `obsidian.md`, `novice-cad-workflows.md`, `flashforge-adventurer-5m.md`, `README.md`, friend brief superseded notice.
+- Friend stack: Obsidian (read) + Cursor Chat (ask) + Orca-Flashforge (slice).
+
+---
+
+## [2026-05-23] ingest | TinkerXR + novice CAD workflows (beginner path)
+
+- Solo ingest for friend handoff — **not** print-farm cluster.
+- **1 source:** TinkerXR (SCF '25, AR CAD vs Tinkercad; Quest 3; CC BY-NC; NOT day-1).
+- **1 concept:** `novice-cad-workflows.md` — week-1 download/calibrate, week-2 Tinkercad, explicit skip list for print-farm/shape-changing/AR.
+- **Updated:** `FRIEND-SETUP.md` (skip list + week-2 pointer), `flashforge-adventurer-5m.md` (does-not-apply print-farm + shape-changing), `ai-design-tools.md`, `fdm-printing.md`, `shape-changing-fdm-interfaces.md`, `index.md`.
+- PDF moved to `raw-sources/2025-arslan-tinkerxr-ar-cad-novices.pdf`. Inbox 38 → 37.
+
+---
+
+## [2026-05-23] ingest | Cluster A — shape-changing / 4D FDM (4 papers)
+
+- Ingest pass 7 — shape-changing interfaces cluster from inbox (42 → 38 PDFs).
+- **4 source pages:** DuoMorph (FDM+heat-seal+pneumatic, CHI '26), FluxLab (SLA+SMA, TEI '26), Iqbal et al. PvP single-material 4D (FFF SMP), NAT-LCE DIW (skimmed, background).
+- **1 concept hub:** `shape-changing-fdm-interfaces.md` — modality comparison, reader fit for Bambu/Flashforge vs SLA/DIW, Etsy angle, safety on experimental G-code.
+- **Updated:** `fdm-printing.md`, `ai-design-tools.md`, `pla.md`, `tpu.md`, `a1.md`, `flashforge-adventurer-5m.md`, `index.md`.
+- PDFs moved to `raw-sources/` with slug renames.
+- Lint: run post-commit.
+
+---
+
+## [2026-05-21] brief-triage | Process 6 staged briefs
+
+- Triaged all 6 briefs in `briefs/`. 5 already-ingested (substance already in wiki pages); 1 promoted.
+- **Promoted**: `markdown-preview-pluk` → new stub entity page `entities/tools/markdown-preview-pluk.md` (cross-wiki from OSINT wiki; tangential macOS markdown previewer for wiki authoring).
+- **Marked processed** (added `processed: 2026-05-21` frontmatter): `2026-05-06_print-farm-quickwins.md`, `2026-05-07_bambu-day1-toolchain.md`, `2026-05-07_vlm-prompt-discipline.md`, `2026-05-11_markdown-preview-pluk-cross-wiki.md`, `2026-05-13_gracia-ai-volumetric-3d-export.md`, `2026-05-20_friend-day1-ai-obsidian-setup.md`.
+- Added bidirectional `@3d-printing-wiki/` backlink to OSINT wiki's `markdown-preview-pluk.md` entity page.
+- Pages touched: `wiki/index.md` (+1 Tools row), `wiki/entities/tools/markdown-preview-pluk.md` (new), `@osint-wiki/entities/tools/markdown-preview-pluk.md` (backlink).
+
+---
+
+## [2026-05-20] cross-printer expansion | Flashforge Adventurer 5M entity + friend day-1 brief
+
+User's friend just got a Flashforge Adventurer 5M (his first 3D printer) and will set up the wiki this weekend. He has never used AI before. Two deliverables: (1) an entity page for the non-Bambu printer so the friend has a single read that says which wiki advice applies to his machine; (2) a paste-friendly brief covering AI + Obsidian setup, sourced from CCC wiki.
+
+### Created (2 pages)
+
+- `wiki/entities/printers/flashforge-adventurer-5m.md` — non-Bambu CoreXY; 220×220×220 mm, 600mm/s, 280°C, Orca-Flashforge slicer, **ships Klipper firmware** which inverts the closed-firmware-as-feature thesis; 5M (open-frame, ~$300-400) vs 5M Pro (enclosed + camera + HEPA, ~$500-600). Applies/does-not-apply table for which wiki sections transfer. Day-1 setup priorities (stock-firmware-first, do NOT install xblax Klipper mod or Bambu Studio). [CONFIRMED via Flashforge product page + retailer listing + community Klipper-mod GitHub repo, retrieved 2026-05-20].
+- `briefs/2026-05-20_friend-day1-ai-obsidian-setup.md` — friend-facing brief (paste into claude.ai OR follow standalone). Steps: (0) why AI at all; (1) install Obsidian + recommended plugins; (2) Claude.ai web account + structured-prompt template + numeric-hallucination warning + hallucinated-G-code prohibition; (3) paste-then-ask workflow with the wiki; (4) optional Claude Code CLI install (week 2+); (5) first-week wiki reading order; (6) escalation path. Sources from this wiki (Flashforge entity, Obsidian entity, vlm-in-manufacturing, ai-design-tools, filaments-baseline) + CCC wiki (claude-code, claude-desktop-vs-claude-code, token-economics, context-engineering, claude-obsidian DO-NOT-ADOPT note).
+
+### Updated (1 page)
+
+- `wiki/index.md` — Printers section gets Flashforge Adventurer 5M row beneath the Bambu A1 entry, with non-Bambu / Klipper caveat in the summary.
+
+### Notes
+
+- Brief lives in `briefs/` (gitignored) as a one-off deliverable; not indexed in `wiki/index.md`.
+- Flashforge entity page is `maturity: draft` — only one external verification pass (Brave search → vendor + retailer + community-mod GitHub); specific pricing and AMS-equivalent accessory lineup tagged [TENTATIVE 2026-05-20].
+- CCC wiki cross-references (`@ccc-wiki/...`) in the brief are bibliographic — friend may or may not have a synced copy; brief is self-contained without them.
+- No raw source moved to `raw-sources/` (no PDF/docx ingested — this was a friend-facing expansion, not a new-source ingest).
+
+---
+
+## [2026-05-07] ingest | 25-repo Bambu toolchain audit (Phase-0 source audit)
+
+Sixth ingest pass — full ingest of `GitHub Repo Audit for 3D Printing.docx` (Gemini-DR-style audit of 25 GitHub repos for laptop-only Bambu workspace). Substance preserved fully rather than trimmed to GO repos only. 6 wiki pages = within schema bound (3-15).
+
+### Created (6 pages)
+
+- `sources/2026-bambu-toolchain-audit.md` — full source page; 25-repo verdict structure (2 GO / 1 CONDITIONAL-GO / 22 NO-GO); 4 verbatim Snippets; Dead Ends section listing all 22 NO-GO repos with rejection rationales; specific [TENTATIVE 2026-05-07] flags on bug claims (1500°C preset, OrcaSlicer 2.3.1 flow calibration, hallucinated commit SHAs)
+- `entities/slicers/bambu-studio.md` — GO-tier; AGPL-3.0 PrusaSlicer fork; AMS / 3MF / lidar / MakerWorld integration; LAN-only fallback for cloud resilience
+- `entities/slicers/orcaslicer.md` — CONDITIONAL-GO; isolate to advanced material calibration only; profile schema divergence as daily driver; written-down-values workflow recommended over profile-copying
+- `entities/tools/kickstarter-autodesk-fdm-protocol.md` — GO-tier; FDM Test V4 calibration print (`ksr_fdmtest_v4.stl`); Apache-2.0; 8-year staleness doesn't matter (static `.stl` design)
+- `concepts/bambu-ecosystem-closed-loop.md` — concept hub formalizing closed-firmware-as-feature thesis; the four NO-GO patterns (firmware retrofits / scratch-build hardware repos / abandoned slicers / queue-managers requiring USB-serial); the lidar/motor-resonance/vision/AMS edge-AI features that depend on closed firmware
+- `concepts/ai-design-tools.md` — concept hub for Meshy/RodinAI/3DAIStudio → 3MF → Bambu Studio → AMS pipeline; decorative-only restriction (functional/load-bearing parts must use traditional CAD); hallucinated-G-code prohibition (physical-damage risk); manifold-geometry check before slicing
+
+### Updated (8 existing pages — backlinks)
+
+- `concepts/fdm-printing.md` — +6 edges (1 source + 3 entities + 2 concepts)
+- `concepts/print-farm-operations.md` — +2 (bambu-ecosystem-closed-loop, ai-design-tools)
+- `concepts/vlm-in-manufacturing.md` — +1 (ai-design-tools — analytical/generative pair)
+- `concepts/am-as-a-service.md` — +1 (ai-design-tools — content-pipeline tie)
+- `concepts/extrusion-control.md` — +2 (orcaslicer, kickstarter-autodesk-fdm-protocol)
+- `concepts/filaments-baseline.md` — +1 (kickstarter-autodesk-fdm-protocol — calibration companion)
+- `wiki/index.md` — populated empty Slicers section (Bambu Studio + OrcaSlicer); new Tools section (Kickstarter Autodesk FDM Test V4); AI design tools section points at concept hub (deferring per-platform entities until reader selects); +1 source row + 2 concept rows
+
+### Lint
+
+- Lint clean: 35 → **41 pages**, 228 → **274 outbound edges**
+- Zero orphans, zero bidirectional gaps, zero dangling, zero missing-page mentions
+
+### Reader impact (the why)
+
+Closes the slicer + AI-design-tools sections of the wiki that were empty before this ingest — now answers "what slicer do I install?" and "is Meshy / RodinAI / 3DAIStudio safe to use?" with primary-source-backed concept hubs. Pre-bakes the day-1 toolchain decision so reader doesn't fall into the Klipper-on-Bambu / OctoPrint-on-Bambu rabbit holes that dominate online forum recommendations.
+
+### Audit trustworthiness caveats
+
+The audit's structural recommendations are sound (don't flash Klipper, don't run OctoPrint, do use Bambu Studio + Kickstarter calibration + OrcaSlicer-for-tuning). But specific bug version-pins (Bambu Studio 1500°C preset, OrcaSlicer 2.3.1 flow calibration) and any commit SHAs are tagged [TENTATIVE 2026-05-07] — they're sourced from Reddit/forum citations, not primary verification, and should be cross-checked before becoming canonical.
+
+### Inbox / raw-sources
+
+- `research to be indexed/`: 43 → **42** (audit docx moved to raw-sources)
+- `raw-sources/`: 16 → **17** PDFs/docx
+
+---
+
+## [2026-05-06] init | workspace scaffolded
+
+Workspace scaffolded HEAVY-mode (adapted from a sibling research-librarian workspace). Empty wiki ready for first ingest pass.
+
+### Created
+
+- `CLAUDE.md` — schema (domain-rewritten for 3D printing)
+- `.gitignore` — adapted from sibling-workspace pattern
+- `.env.example` — DEEPSEEK_API_KEY / BRAVE_API_KEY / EXA_API_KEY placeholders (no real keys)
+- `.claude/settings.local.json` — minimal allowlist (Brave, Exa, Context7, Playwright, stash-librarian)
+- `ROADMAP.md`, `LESSONS.md`, `hot.md` skeletons
+- `wiki/index.md`, `wiki/log.md` skeletons
+- Empty folders: `wiki/{sources,entities,concepts}/`, `scripts/`, `briefs/`, `research to be indexed/`, `raw-sources/`
+
+### Pending
+
+- First ingest pass on the 40+ docs user dropped today (waiting on script adaptation)
+- Port + genericize lint scripts from sibling research workspace
+
+---
+
+## [2026-05-06] artifact | github-repo-eval prompt shipped
+
+`prompts/github-repo-eval.md` created. Reusable Phase-0 audit prompt template for GitHub-repo evaluation, adapted from the Phase-0 audit pattern in `CLAUDE.md`. Tool-class-specific failure-mode checks for AI design tools, slicer plugins, modeling libs, print-farm tools, marketplace tools, and firmware mods. Output format includes a draft entity-page block ready to drop into `wiki/entities/tools/<slug>.md`. Unblocks user dropping the GitHub URLs sitting in browser tabs.
+
+### Created
+
+- `prompts/github-repo-eval.md` — the prompt template + usage notes
+- `prompts/` folder (added to CLAUDE.md folder layout)
+
+### Updated
+
+- `CLAUDE.md` — folder layout now lists `prompts/`
+- `ROADMAP.md` — W1 status reflects 40+ docs dropped; `github-repo-eval` removed from backlog and added to done log
+- `hot.md` will be updated at session end
+
+---
+
+## [2026-05-06] tooling | lint + preingest scripts ported
+
+`scripts/wiki_lint.py`, `scripts/wiki_gap_detect.py`, `scripts/preingest_check.py` ported from a sibling research workspace. Lint scripts are domain-agnostic — they validate the wiki schema (frontmatter, bidirectional `related:`, `[NEEDS VERIFICATION]` freshness, narrative word count) which is identical regardless of subject domain. Only docstring tweak: dropped the source-workspace reference in `wiki_lint.py`.
+
+Preingest dedup signals (sha256 / arXiv / DOI / URL / filename / title) all apply unchanged. Earlier ROADMAP claim that 3D-printing source mix wouldn't need arXiv/DOI was wrong — the actual inbox is ~58 academic papers. Smoke test on the 62-file inbox: 59 NEW verdicts, arXiv IDs and DOIs correctly extracted from PDF first pages.
+
+Ingest workflow now unblocked.
+
+### Created
+
+- `scripts/preingest_check.py` (verbatim copy)
+- `scripts/wiki_lint.py` (one docstring line tweaked)
+- `scripts/wiki_gap_detect.py` (verbatim copy)
+
+### Removed
+
+- `scripts/.gitkeep` (no longer needed)
+
+### Updated
+
+- `ROADMAP.md` — W1 status updated (62 docs, scripts ported, ingest unblocked); done log entry added; backlog "higher priority" item removed
+
+---
+
+## [2026-05-06] ingest | 5-paper FDM control / fault-detection starter cluster
+
+First real ingest pass. Cluster theme: print-quality control on consumer-grade FDM — input shaping (vibration), extrusion control (corner / speed-transition errors), fault detection (acoustic / multimodal), high-speed regime. Picked these 5 from the 59-PDF inbox because (a) they're directly relevant to a reader buying a Bambu, (b) they collectively define the four open problems and their research trajectory, (c) they cross-reference cleanly into a connected cluster rather than a star around one hub.
+
+5 source pages + 5 concept pages = 10 pages touched. Within the 3-15 schema bound.
+
+### Created
+
+- `wiki/sources/2025-aung-adaptive-input-shaper.md` — adaptive TDF input shaper with RLS parameter estimation
+- `wiki/sources/2025-lin-camera-extrusion-optimization.md` — smartphone-photo G-code optimization for high-speed FFF
+- `wiki/sources/2023-waheed-acoustic-cnn-fault-detection.md` — CNN + acoustic spectrogram for nozzle clog / filament breakage / pulley skip
+- `wiki/sources/2025-hoteit-closed-loop-extrusion-lqr.md` — LQR over Force-Controlled Printing; 39.57% RMS reduction
+- `wiki/sources/2025-waheed-multimodal-sensor-fusion.md` — acoustic + vibration + thermal sensor-fusion fault classifier
+- `wiki/concepts/fdm-printing.md` — hub page synthesizing all 4 open problems
+- `wiki/concepts/input-shaping.md` — feedforward vibration suppression
+- `wiki/concepts/extrusion-control.md` — three mitigation classes (pressure advance / camera-based / closed-loop FCP)
+- `wiki/concepts/fault-detection.md` — acoustic → multimodal trajectory
+- `wiki/concepts/high-speed-fdm.md` — regime shift from positioning-bound to dynamic-mismatch-bound
+
+### Updated
+
+- `wiki/index.md` — populated Sources and Concepts sections (Entities still empty pending Bambu model selection)
+
+### Raw sources moved
+
+5 PDFs renamed to slug match and moved from `research to be indexed/` to `raw-sources/`. Inbox down to ~54 PDFs.
+
+### Pending
+
+- Run `python3 scripts/wiki_lint.py` to verify bidirectional cross-links
+- Update ROADMAP.md (W1 advances; ingest pass 1 of N done)
+- Continue ingesting next cluster from remaining 54 PDFs
+
+---
+
+## [2026-05-06] deep-read | 4 of 5 first-cluster papers
+
+Deep-read pass on the 5-paper print-quality control cluster ingested earlier today (originally first-2-pages skimmed). Read 4 of 5 fully via Read tool's text-extraction path. Lin paper deep-read deferred — `pdftoppm` / poppler not installed locally, blocking the `pages` parameter on a 32-page 33MB PDF.
+
+### Corrections found and applied
+
+- **Aung 2025**: abstract advertises RLS for parameter estimation, but Algorithm 1 (§III) actually uses response-feature formulas (Mp, Ts, peak time) with closed-form Weierstrass substitution (undamped) and numerical solution (damped). Discrepancy flagged [TENTATIVE]. Added GitHub link (https://github.com/NyiNyi-14/A-TDF.git), simulation parameter ranges (ζ ∈ [0,1], ωn ∈ [π, 3000π]), explicit simulation-only caveat, future-work regression-model note.
+- **Waheed 2023**: paper claims three failure modes (clog / breakage / pulley skip) but the experiment as run only contrasts with-material vs without-material — binary, not three-way. Now flagged [TENTATIVE]. Added metrics (91%/88%/85%/86.5%), hardware (Makerbot Method X, SparkFun MEMS mic, ABS), bandpass 100-1200 Hz, dataset size (256 samples 80/20).
+- **Hoteit 2025**: added research-grade hardware (5-axis gantry, ROS2 supervisor, Duet motion board, Kalman state estimator), 3rd-order N4SID model, Q/R/K_LQR weights, builds-on-Guidetti-2024-FCP. Flagged simulation 69.81% vs experiment 39.57% RMSE gap as evidence of unmodeled dynamics. Strengthened not-consumer-hardware caveat.
+- **Waheed 2025**: critical correction — the accelerometer channel "did not yield significant results" on the static-extrusion test bench, and the headline fused-accuracy 90-95% is *expected* (projected from per-modality performance) not *measured*. The "fused outperforms" claim flagged [TENTATIVE]. Added Google Teachable Machine + Raspberry Pi PCB hardware notes, two-configuration (Acoustic Baseline / Hybrid Fusion) framing.
+
+### Updated
+
+- 4 source pages: read-status `skimmed` → `deep-read`; narrative rewritten with corrections; +1 snippet on Aung and Waheed-2025
+- `wiki/concepts/fault-detection.md`: added [TENTATIVE] caveats to bullets 1 (acoustic) and 2 (multimodal fusion) reflecting experiments-vs-framing gap
+- `wiki/concepts/input-shaping.md`: strengthened [TENTATIVE] block with GitHub link and regression-model future-work note
+
+### Pending
+
+- **Lin 2025 deep-read deferred**: 32-page PDF, Read tool's `pages` parameter requires `pdftoppm` (poppler-utils) which isn't installed; revisit via `pypdf 6.10.2` text extraction on a future session. Lin source page narrative still accurate based on first-2-pages content from initial ingest.
+- Run `python3 scripts/wiki_lint.py` to verify bidirectional cross-links
+- Update ROADMAP.md done log + remove deep-read item from backlog
+- Pick next cluster from remaining 54 PDFs
+
+---
+
+## [2026-05-06] ingest | 4-paper security side-channel cluster
+
+Second ingest pass, security cluster — IP-theft / side-channel attacks on 3D printers and defenses. Picked these 4 from the remaining 54 PDFs because (a) they collectively define the attack surface (acoustic / optical / magnetic / power across FDM and PBF), (b) one of them is the first-ever published software-only defense (Asgar 2026 / SHM), (c) Tier 2 commercial-design IP theft is directly relevant if the reader ends up selling proprietary geometry on Etsy / MakerWorld. Used `pypdf` via Bash to extract first 10 pages of each PDF to `/tmp/3dp-security/*.txt` (workaround for missing poppler-utils on laptop).
+
+4 source pages + 3 concept pages = 7 pages touched. Within the 3-15 schema bound.
+
+### Created
+
+- `wiki/sources/2026-asgar-quietprint-acoustic-defense.md` — Stealth Head Movement: convex-hull G-code rewriter, Procrustes dissimilarity optimization, ~55% print-time overhead, software-only defense. First-ever published software defense against acoustic side-channels.
+- `wiki/sources/2025-chattopadhyay-one-video-optical.md` — ResNet-50 + LSTM recovers printable G-code from IP-camera video; 90.87% similarity; Oriented Bounding Polygon + Subsequence-Aligned DTW for rotation/translation invariance; functional counterfeit padlock key + gear printed from recovered G-code; Geeetech A20T → Ultimaker cross-printer transfer.
+- `wiki/sources/2025-jamarani-acoustic-magnetic-decoding.md` — smartphone (Galaxy S22+) acoustic + magnetic dual-channel attack on LULZBOT TAZ; GBDT classifier; MFCC features; 98.80% accuracy / 4.47% MTE; non-intrusive at "greater distances" than prior work.
+- `wiki/sources/2025-dolgavin-hearsay-pbf-power.md` — first side-channel attack on industrial PBF (Sintratec S2); 11-probe instrumentation (Fluke i310 current clamps + galvanometer voltage taps + NI USB-6363 DAQ at 20 kHz); Differential Voxelization (DPA-inspired) + voxel pruning + gap filling; 90.29% TP / 7.02% FP / 9.71% FN voxel volume on Gear; "encryption is futile" against MATE threat.
+- `wiki/concepts/side-channel-attacks.md` — hub page: six modalities (acoustic / optical / magnetic / power / vibration / thermal), threat-tier continuum (compromised IP-cam → smartphone → planted recorder → MATE), defense classes summary.
+- `wiki/concepts/ip-theft-3d-printing.md` — three threat tiers (Tier 1 hobbyist Etsy seller; Tier 2 commercial-designer with proprietary geometry; Tier 3 industrial outsourced AM / MATE). Bambu-specific guidance for the reader's use case.
+- `wiki/concepts/g-code-protection.md` — defense-class inventory: file-level (encryption / streaming / TPM / blockchain) vs physical-level (SHM / acoustic masking / dummy commands) plus operational controls (LAN-only mode, camera-off, isolation). Coverage matrix shows no single defense covers all attack surfaces.
+
+### Updated
+
+- `wiki/concepts/fdm-printing.md` — added 3 concept + 3 source backlinks (omitting Dolgavin which is industrial PBF, not FDM). Frontmatter `related:` and inline `## Relations` both updated.
+- `wiki/index.md` — 4 new Source rows + 3 new Concept rows.
+
+### Raw sources moved
+
+4 PDFs renamed to slug match and moved from `research to be indexed/` to `raw-sources/`. Inbox down from 54 to 50.
+
+### Methodology note — pypdf workaround
+
+Read tool's `pages` parameter requires `pdftoppm` (poppler-utils). Not installed on laptop. Bypass: `pypdf 6.10.2` is installed; ran `python3 -c "from pypdf import PdfReader; ..."` per PDF, sliced first 10 pages, wrote to `/tmp/3dp-security/<slug>.txt`, then Read those text files. Equivalent to deep-read for pages 1-10. Pages 11+ on the longer PDFs (Decoding IP 22 pages, Hearsay 18 pages, One Video 17 pages) still skim-only — should be fine, since methodology + headline metrics are all in the first 10 pages.
+
+This same workaround unblocks the still-pending Lin 2025 deep-read.
+
+### Pending
+
+- Run `python3 scripts/wiki_lint.py` to verify bidirectional cross-links + read_status frontmatter
+- Update ROADMAP.md done log + status line
+- Pick next cluster from remaining 50 PDFs (candidates: AI-design / VLM-for-manufacturing, Bambu-specific entity pages once reader chooses model)
+
+---
+
+## [2026-05-06] deep-read | Lin 2025 (one-shot camera-based extrusion optimization)
+
+Long-pending Lin 2025 deep-read — was deferred from first ingest pass on 2026-05-06 because the Read tool's `pages:` parameter requires poppler-utils / `pdftoppm`, which isn't installed on the laptop. With the `pypdf 6.10.2` workaround validated on the security cluster earlier today, ran it on Lin 2025 (32 pages → first 15 to `/tmp/3dp-lin/page-NN.txt`) and reviewed.
+
+**Findings — first 2-pages skim missed substantive errors:**
+
+1. **Author names were wrong.** First-pass page used "Yi-An Lin, Riccardo Guidetti, Luca Nagel" — actual authors per p.1 are **Yufan Lin, Xavier Guidetti, Yannick Nagel**, with Efe C. Balta and John Lygeros correct. Affiliations stand (ETH Zurich Automatic Control Lab + Inspire AG + NematX AG). Email addresses confirm: yuflin@student.ethz.ch, xaguidetti@control.ee.ethz.ch, yannick.nagel@nematx.com.
+2. **Hardware was Ender-3 V2, not Bambu/Prusa/Voron.** First-pass narrative implied broad applicability to consumer fast printers. The actual experiment is on a budget Ender-3 V2 with a 0.4 mm nozzle, light-ivory PLA from Fillamentum, layer height 0.2 mm, bed 75 °C, nozzle 200 °C [p.6]. Bambu/Prusa/Voron generality is *plausible* but **not validated** — re-tagged [TENTATIVE] with [NEEDS VERIFICATION 2026-05-06].
+3. **The framework uses TWO calibration prints, not one photo.** "One-shot" terminology refers to one identification iteration without firmware flashing, not a single photo. Print 1 = step-reference width pattern (extrusion dynamics ID, with separate τ_expand and τ_shrink time constants). Print 2 = four-corner high-speed pattern (cornering parameter ID for v_m^c and a). Then optimize G-code via QP and emit a third (production) print [p.6, p.9, p.13].
+4. **Speed range needs context.** Headline "effectively doubling production speed" maps to **3600 mm/min ≈ 60 mm/s** matched against **1600 mm/min ≈ 26.7 mm/s** baseline on the Ender-3 V2. Bambu printers cruise at 200–500 mm/s (12 000–30 000 mm/min), so Lin's framework is *technique-generalization* (free post-process speed-up on a slow printer), not a Bambu-tier speed contribution.
+5. **Snippet quote was a paraphrase, not a verbatim.** The page had: *"We propose a one-shot, camera-based extrusion optimization framework for high-speed Fused Filament Fabrication (FFF). A single smartphone image of a calibration print is sufficient..."* — this does **not** appear in the abstract or anywhere in pages 1-15. Replaced with actual verbatim from p.1 abstract and p.4 contributions list.
+
+### Updated
+
+- `wiki/sources/2025-lin-camera-extrusion-optimization.md` — full rewrite. Authors fixed; hardware corrected to Ender-3 V2; pipeline expanded to four-step description with proper citations; Bambu/Prusa/Voron generality re-tagged [TENTATIVE]; fabricated snippet replaced with two real verbatims (abstract + contributions) plus one supporting open-loop-limitations quote; `read_status` upgraded `skimmed` → `deep-read`.
+- `wiki/concepts/high-speed-fdm.md` — corrected fabricated Lin snippet to actual abstract verbatim; added qualifier that Lin's Ender-3 V2 max (60 mm/s) and Hoteit's 5-axis research-grade hardware are below Bambu cruise speed — these papers contribute *technique generalization* rather than absolute-speed records.
+- `wiki/index.md` — Lin row updated: "single-photo G-code rewrite" → "two calibration prints + phone camera → optimized G-code; 2× quality-equivalent speed on Ender-3 V2 (1600→3600 mm/min)".
+
+### Pages not extracted (pages 16-32)
+
+Pages 16-32 contain full-part validation results (specific test geometries, surface-roughness numbers, photographs of printed parts). Headline metric and methodology are fully captured in pages 1-15; further deep-read deferred unless a specific question arises.
+
+### Inbox
+
+Unchanged — Lin 2025 was already in `raw-sources/` from first ingest pass; this was a deep-read correction pass, not a new ingest.
+
+### Lint
+
+Clean: 0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing-pages / frontmatter quality clean (17 pages, 92 outbound edges).
+
+---
+
+## [2026-05-06] ingest | 4-paper print-farm / production-economics cluster
+
+Third ingest pass — print-farm operations + production economics. Cluster theme: what changes when you go from one printer to many, and the economic model around productizing a print fleet as a service. Picked these 4 from the remaining 50 PDFs because (a) they collectively define the multi-printer regime (per-machine tuning + scheduling sequential-vs-parallel + MaaS productization), (b) the MaaS architecture papers cross-link cleanly into the security cluster's threat model — Tier-2/Tier-3 attacks apply directly to cloud-distributed G-code, (c) sequential printing on a single printer is the highest-leverage scheduling technique for the reader's Etsy-batch use case (failure robustness + multi-color purge savings) before they ever own a second printer. Used `pypdf` workaround again for first 10-12 pages of each PDF.
+
+4 source pages + 3 concept pages = 7 pages touched. Within the 3-15 schema bound.
+
+### Created
+
+- `wiki/sources/2025-wang-collaborative-parameter-recommender.md` — sequential matrix completion (ALS + spectral clustering + ridge regression) on a 10-printer FDM mini-farm; references industry-scale Prusa 600 / JinQi 2500 / Slant3D 800 fleets; significantly faster convergence than independent per-machine optimization.
+- `wiki/sources/2025-ivkic-cost-benefit-maas.md` — Cloud Crafting Platform on Microsoft Azure SOA; testbed of 3 printers behind OctoPi RPis (Ultimaker 2+ CONNECT, Creality K1 MAX, Prusa MK4); per-ring cost €2.121-€2.237 vs €10-15 market price = 400-600% margin; profit share 40 (platform) / 30 (printer operator) / 20 (web shop) / 10 (designer); security gap acknowledged but no defenses implemented.
+- `wiki/sources/2025-surynek-sequential-printing-cegar.md` — SEQ-PACK+S formal problem (NP-hard reduction from rectangle packing); Z3 SMT solver + CEGAR-inspired refinement loads PolygonLines-not-Intersect constraints lazily; ships in PrusaSlicer 2.9.1 (github.com/surynek/cegar-seq); Z3 ≫ Gecode CSP, CEGAR-SEQ ≫ eager.
+- `wiki/sources/2026-hatton-parallelobox-aabb-decomposition.md` — AABB height-field decomposition with k-means++ seeds + metaheuristic outer loop over printer count + clustering configs; dominates Symmetry Slicer, comparable-or-better than Cube Skeleton Segmented Shell on complex geometry; minutes-of-compute trade against hours of saved parallel-printing time; "Brain Left" MRI test geometry.
+- `wiki/concepts/print-farm-operations.md` — hub page; three problem classes that emerge above one printer (per-machine variability + tuning, scheduling, MaaS productization+security); reader-trajectory table by fleet size.
+- `wiki/concepts/print-job-scheduling.md` — sequential-on-one-printer vs parallel-across-many comparison; multi-color purge math (10 obj × 3 colors × 100 layers: 30 sequential vs 3000 slice-by-slice changes); reader-relevance table.
+- `wiki/concepts/am-as-a-service.md` — economics deep-dive; comparison table of distribution channels (Etsy direct STL ~95% / MakerWorld hybrid TBD / MaaS 10% / industrial Shapeways/Hubs/Xometry); explicit security gap analysis showing Tier-2/Tier-3 attacks from ip-theft cluster apply directly to MaaS architecture.
+
+### Updated
+
+- `wiki/concepts/fdm-printing.md` — added 3 concept + 4 source backlinks (all 4 sources are FDM-applicable, unlike security cluster where Dolgavin was PBF-only). Frontmatter `related:` and inline `## Relations` both updated.
+- `wiki/concepts/ip-theft-3d-printing.md` — added backlink to am-as-a-service + ivkic source + print-farm-operations.
+- `wiki/concepts/g-code-protection.md` — added backlink to am-as-a-service + ivkic source.
+- `wiki/index.md` — 4 new Source rows + 3 new Concept rows.
+
+### Raw sources moved
+
+4 PDFs renamed to slug match and moved from `research to be indexed/` to `raw-sources/`. Inbox down from 50 to 46. `raw-sources/` now holds 13 PDFs (5 first-cluster + 4 security + 4 print-farm).
+
+### Cross-cluster integration
+
+`am-as-a-service.md` explicitly cross-links to `ip-theft-3d-printing.md` and `g-code-protection.md`: the Ivkic Cloud Crafting architecture distributes G-code over the public cloud to remote SME printers, which is *exactly* the Tier-2 (malicious SME operator) and Tier-3 (insider MATE) threat model from the security cluster. Ivkic acknowledges security as non-functional but implements **none** of the SHM / TPM-attestation / chunked-STL defenses cataloged in `g-code-protection.md`.
+
+### Lint
+
+Clean: 0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing-pages / frontmatter quality clean (24 pages, 146 outbound edges).
+
+### Pending
+
+- Update ROADMAP.md done log + status line (24 pages, ingest pass 3 of N done)
+- Pick next cluster from remaining 46 PDFs
+
+---
+
+## [2026-05-06] ingest | Bambu materials baseline cluster (vendor-doc, no PDF inbox)
+
+External-source ingest. Pulled Bambu Lab's two canonical filament-reference pages via Exa MCP — the comparison-table tool at `bambulab.com/en-us/filament/guide` and the wiki material-table at `wiki.bambulab.com/en/general/filament-guide-material-table`. No raw PDFs consumed from inbox; this fills the materials gap that was identified in pass 3 and is the single highest-friction gap on day 1 of reader owning a Bambu printer.
+
+### Created
+
+- `wiki/sources/2026-bambu-filament-guide.md` — vendor-doc source page; `maturity: validated` (first-party manufacturer data); flagged single-source with cross-validation deferred to Filabase / CNC Kitchen / My Tech Fun if a specific claim becomes load-bearing.
+- `wiki/concepts/filaments-baseline.md` — concept hub. 30-second decision matrix + mechanical comparison table (PLA / PETG / PETG HF / ABS / ASA / TPU 95A HF) + process comparison table + 4 cross-cutting rules (enclosure / drying / AMS-lite / hardened-nozzle) + decision tree + "what's NOT covered" (PC, PA, fiber-reinforced, specialty PLA).
+- `wiki/entities/materials/pla.md` — default filament. Covers Basic + Matte / Silk / Tough / PLA-CF / Marble / Wood / Sparkle / Glow / Aero variants. Storage and biodegradability caveats.
+- `wiki/entities/materials/petg.md` — functional default. PETG vs PETG HF comparison (HDT 69 vs 87°C; HF requires drying; HF has worse Z layer adhesion). PETG-CF caveats. Bed-adhesion glue requirement.
+- `wiki/entities/materials/abs.md` — engineering filament. **Enclosure-required hardware constraint** (X1/X1C/P1S only — A1/A1 mini double-disqualified by enclosure + AMS-lite). Acetone-smoothing. Annealing.
+- `wiki/entities/materials/asa.md` — UV-stable variant of ABS. ASA-vs-ABS choice table (ASA wins almost every dimension except marginal impact-XY). Better AMS-lite story than ABS.
+- `wiki/entities/materials/tpu.md` — flexible elastomer. Shore-hardness ladder (95A / 90A / 85A). TPU 95A HF only AMS-compatible (dedicated port; not on AMS lite). Drying required (1.08% water absorption — highest of baseline).
+
+### Updated
+
+- `wiki/concepts/fdm-printing.md` — added backlinks to filaments-baseline + 5 material entities + bambu-filament-guide source. Hub now points at the materials cluster.
+- `wiki/index.md` — 1 new Source row + 1 new Concept row + 5 new Materials entity rows (under Entities > Materials, replacing the "no pages yet" placeholder).
+
+### Raw sources moved
+
+None (vendor-doc pages, captured via Exa crawl directly into source page snippets). `raw-sources/` unchanged at 13 PDFs.
+
+### Cross-cluster integration
+
+Materials cluster is upstream of every functional-print decision the reader will make on day 1. Decision matrix in `filaments-baseline.md` covers the printer-vs-material question (A1 / A1 mini are open-frame so ABS / ASA out of reach; PETG covers most of what hobbyists historically used ABS for). Cross-link to `concepts/fdm-printing.md` hub completes the entity-vs-process-vs-source triangle for materials.
+
+### Lint
+
+Clean: 0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing-pages / frontmatter quality clean. **31 pages, 202 outbound edges** (up from 24 / 146 before this ingest).
+
+### Pending
+
+- Update ROADMAP.md done log + status line (31 pages, ingest pass 4 done)
+- Update hot.md
+- Future: Bambu printer entity pages (X1C / P1S / A1 / A1 mini) — would tie the printer-vs-material compatibility into a single hop
+
+## [2026-05-07] ingest | 3-paper VLM-in-manufacturing cluster (sensing / manipulation / control)
+
+User selected option 1 from next-options list — AI-design / VLM-for-manufacturing cluster. Three arXiv-tier papers in inbox covering orthogonal angles of foundation-model application to manufacturing, ingested as a unified cluster.
+
+### New source pages
+
+- `wiki/sources/2026-mahjourian-vlm-iris.md` — VLM-IRIS (Mahjourian + Nguyen, Michigan Tech, ASME 2026). CLIP ViT-B/32 + magma colormap preprocessing + centroid prompt ensembling for zero-shot object presence on Prusa MK3S build plate via FLIR Boson thermal IR. Best 100% accuracy (room temp + magma + centroid), 92% (hot bed). PETG parts. **No model retraining.**
+- `wiki/sources/2025-chen-tau-schema-vlm.md` — τ schema (Chen + Guo, HKUST GZ, arXiv 2512.11275v1). 8-field τ tuple ⟨obj, iface, pre, contact, prim, traj, tol, dyn⟩ as knowledge primitive injected into VLM prompts. Case study: 3D-printer empty-spool removal by Airbot MMK2 dual-arm robot. Plan-quality only (no hardware execution). Headline: contact/tolerance specificity 35→89% with τ-anchoring (GPT-4o, N=10).
+- `wiki/sources/2025-margadji-cipher.md` — CIPHER (Margadji + Pattinson, Cambridge, arXiv 2506.08462v1). Vision-Language-Action (VLA) framework: Llama-3.2 + ResNet-152 process expert + LoRA + RAG. Endoscope-on-printhead. 5× MAE reduction (82.92→17.62) on flow rate regression vs naive VLM fine-tune. 35 pages — first 12 deep-read; methods + extended figures deferred.
+
+### New concept hub
+
+- `wiki/concepts/vlm-in-manufacturing.md` — synthesizes the three papers around three orthogonal angles: **Sensing** (VLM-IRIS), **Manipulation** (τ-schema), **Control** (CIPHER). Establishes that bare-prompt VLMs are insufficient for engineering applications — each angle requires a load-bearing technique (modality bridging / schema anchoring / process expert hybrid). Practical translation for the reader: structured prompts beat freeform; never trust VLM-generated numeric parameters.
+
+### Updated
+
+- `wiki/concepts/fdm-printing.md` — added 4 backlinks (3 sources + new concept hub).
+- `wiki/concepts/fault-detection.md` — added 3 backlinks (VLM-IRIS + CIPHER + concept hub). Both papers extend the fault-detection conversation toward language-model-grounded reasoning.
+- `wiki/concepts/extrusion-control.md` — added 2 backlinks (CIPHER + concept hub). CIPHER's flow-rate regression is the same regression problem extrusion-control's force-feedback approaches solve from the control side.
+- `wiki/entities/materials/petg.md` — added VLM-IRIS source backlink (the paper used PETG parts as test artifacts).
+- `wiki/index.md` — 3 new Source rows + 1 new Concept row.
+
+### Raw sources moved
+
+- `research to be indexed/VISION–LANGUAGE MODELS FOR INFRARED INDUSTRIAL SENSING IN ADDITIVE MANUFACTURING SCENE DESCRIPTION.pdf` → `raw-sources/2026-mahjourian-vlm-iris.pdf`
+- `research to be indexed/Towards Logic-Aware Manipulation- A Knowledge Primitive for VLM-Based Assistants in Smart Manufacturing.pdf` → `raw-sources/2025-chen-tau-schema-vlm.pdf`
+- `research to be indexed/Hybrid Reasoning for Perception, Explanation, and Autonomous Action in Manufacturing.pdf` → `raw-sources/2025-margadji-cipher.pdf`
+
+`raw-sources/` now at 16 PDFs.
+
+### Cross-cluster integration
+
+Anchors a new vertical: foundation-model AI applied to FDM. Adjacent to the existing fault-detection cluster (CIPHER's process expert is what fault-detection's classifiers will look like in 3-5 years) and the extrusion-control cluster (CIPHER directly addresses flow-rate regression). The reader's Etsy-print-farm context maps onto VLM-IRIS most directly — automation-grade build-plate monitoring for unloading is the cleanest practical application. τ-schema and CIPHER are research-trajectory rather than productizable today.
+
+### Lint
+
+Clean: 0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing-pages / frontmatter quality clean / 0 stale NEEDS VERIFICATION. **35 pages, 228 outbound edges** (up from 31 / 202 before this ingest).
+
+### Brief staged
+
+- `briefs/2026-05-07_vlm-prompt-discipline.md` — 2 actionable rules for the reader's day-1 chat-VLM workflow: (1) structured prompt template (printer / filament / symptom / what's-been-tried / ambient / photo) beats freeform with τ-schema empirical backing (35→89% specificity); (2) never trust VLM-generated numeric parameters with CIPHER process-expert backing (5× MAE reduction). Includes copy-pasteable prompt template + the "when chat VLMs are genuinely useful" guidance + a forward-looking note about VLM-IRIS as the most translatable paper for Etsy-print-farm automation.
+
+### Future / deferred
+
+- Deep-read CIPHER pages 13+ to validate out-of-distribution + autonomous-fabrication claims
+- Tier-2 sweep for VLM-failure-mode papers (called out as missing from cluster)
+
+## [2026-05-15] cross-wiki route | gracia.ai — Gaussian Splatting volumetric video (3D-export angle)
+
+Cross-wiki stub routed from `@osint-wiki/sources/eval-github-repos-2026-05-13.md`.
+- Created wiki/concepts/2026-05-13_gracia-ai-volumetric-3d-export.md (stub)
+
+## [2026-05-16] cross-wiki ingest | reBot-DevArm — open-source 6-DOF robotic arm (hybrid CNC + 3D-print)
+
+Cross-routed from OSINT-workspace tool-eval ingest `@osint-wiki/sources/tool-eval-wiki-fit-v3-iteration-2026-05-16.md` — scored STEAL-FROM tier with primary fit in this wiki. Value to the 3D-printing workspace is the project's documented hybrid CNC+print manufacturing methodology, not the robot itself.
+
+### Created (1 page)
+
+- `wiki/entities/tools/rebot-devarm.md` — entity tool page. 6-DOF arm (1.5 kg payload, <0.2 mm precision); bisected architecture (CNC-machined Aluminum 5052 ±0.02 mm for load-bearing parts / 3D-printed Bambu ABS + TPU 95+ for the rest, TPU on Soft Fingers). Captures concrete BOM detail: 30–45% infill for ABS Black joint bases, documented component substitutions, hardware STEP files. License split: hardware CERN-OHL-W-2.0 (copyleft triggers only on hardware-design redistribution — internal print-farm use is clean), software Apache-2.0 (Motorbridge SDK + rebotarm_ros2 Jazzy workspace). One `[NEEDS VERIFICATION 2026-05-16]` flag on long-term durability/deflection of printed MGN9 slider brackets under continuous payload.
+
+### Modified (4 pages)
+
+- `wiki/entities/materials/abs.md` — added `rebot-devarm.md` backlink + Relations; bumped `updated`.
+- `wiki/entities/materials/tpu.md` — added `rebot-devarm.md` backlink + Relations; bumped `updated`.
+- `wiki/concepts/print-farm-operations.md` — added `rebot-devarm.md` backlink + Relations; bumped `updated`.
+- `wiki/index.md` — added reBot-DevArm row under Tools.
+
+Pages touched: 5 (1 created + 4 modified) — within schema bound. Not committed; left staged.
