@@ -81,25 +81,21 @@ Every wiki page is a markdown file with YAML frontmatter + structured sections.
 ---
 title: Human-readable page title
 type: source | entity | concept | brief
-tags: [coarse, category, labels]
-keywords: [fine, grained, search, terms]
 related:
   - entities/companies/example-co.md
   - concepts/example-concept.md
-maturity: draft | validated | core
-created: 2026-04-23
 updated: 2026-04-23
 ---
 ```
 
 - `type` determines section template
-- `maturity`: `draft` → `validated` (cross-referenced + checked) → `core` (battle-tested source of truth). Move up (occasionally down) as evidence warrants
+- `related[]` is the **single canonical link store**. Do not repeat it in the body — the old `## Relations` duplicate is retired.
 - `related[]` is **bidirectional**: if A lists B, B must list A
-- `created` / `updated`: ISO dates; bump `updated` on meaningful body changes
+- `updated`: ISO date; bump on meaningful body changes
+- **Optional — add only when they earn their cost:** `tags`, `keywords`, `maturity`, `created`. Nothing reads `tags` or `keywords`; `maturity` sits at `draft` on nearly every page and is not used for filtering; `created` is already in git history. Existing pages do not need to be backfilled.
 
 ### Body sections (in order, include only what's relevant)
 
-- `## Relations` — inline list of `@path/to/page.md` annotations matching `related:` frontmatter
 - `## Raw Concept` — provenance. For source pages: title/author/retrieval-date/filename/URL. For entity/concept pages: what prompted this page, which sources synthesized into it
 - `## Narrative` — the body. Prose, tables, structured data, diagrams. Concept pages: synthesized understanding, neutral, well-sourced — opinion belongs in briefs, not concept pages
 - `## Snippets` — verbatim quotes / code / formulas / data with citations
@@ -426,7 +422,7 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 
 - Use `@wiki-alias/path/to/page.md` for cross-wiki references (e.g., `@seo-wiki/concepts/geo-aeo.md`)
 - Bidirectional: if OSINT page A references Image Gen page B, add a matching `@osint-wiki/...` backlink on page B
-- When creating a stub in another wiki, note the cross-wiki dependency in `## Relations`
+- When creating a stub in another wiki, note the cross-wiki dependency in the `related:` frontmatter
 
 ### Querying wikis (laptop-only; librarian decommissioned 2026-06-14)
 

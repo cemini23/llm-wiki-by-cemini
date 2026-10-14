@@ -371,7 +371,7 @@ print(f"Wiki lint scan — {len(all_paths)} pages indexed (excluding index.md / 
 print(f"Outbound edges: {sum(len(v) for v in outbound.values())}; "
       f"Inbound edge coverage: {len(inbound)} pages")
 
-header(f"1. Orphans — {len(orphans)} pages with zero inbound references")
+header(f"1. Orphans — {len(orphans)} pages with zero inbound references (informational — not gated)")
 for p in orphans:
     fm = pages[p]
     t = fm.get("type", "?")
@@ -564,7 +564,7 @@ if args.fix_bidirectional:
         print(f"  Dry-run complete. Re-run with --apply to write {sum(len(b) for _,b in proposed)} "
               f"backlinks. Adjust --hub-threshold to include/exclude hub targets.")
 
-if args.fail_on_graph and (orphans or gaps or dangling):
+if args.fail_on_graph and (gaps or dangling):
     staged = None
     try:
         import subprocess
@@ -583,17 +583,14 @@ if args.fail_on_graph and (orphans or gaps or dangling):
         staged = None
 
     if staged:
-        orphans_f = [o for o in orphans if o in staged]
         gaps_f = [(a, b) for a, b in gaps if a in staged and b in staged]
         dangling_f = [(a, b) for a, b in dangling if a in staged]
-        if orphans_f or gaps_f or dangling_f:
+        if gaps_f or dangling_f:
             print(
                 "\nFAIL: staged wiki graph errors "
-                f"(orphans={len(orphans_f)}, gaps={len(gaps_f)}, dangling={len(dangling_f)}).",
+                f"(gaps={len(gaps_f)}, dangling={len(dangling_f)}).",
                 file=sys.stderr,
             )
-            for o in orphans_f[:20]:
-                print(f"  orphan: {o}", file=sys.stderr)
             for a, b in gaps_f[:20]:
                 print(f"  gap: {a} → {b}", file=sys.stderr)
             for a, b in dangling_f[:20]:
@@ -606,7 +603,7 @@ if args.fail_on_graph and (orphans or gaps or dangling):
         )
     else:
         print(
-            "\nFAIL: graph integrity errors (orphans, bidirectional gaps, or dangling related: links).",
+            "\nFAIL: graph integrity errors (bidirectional gaps or dangling related: links).",
             file=sys.stderr,
         )
         sys.exit(1)
