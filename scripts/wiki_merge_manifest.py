@@ -111,10 +111,56 @@ def cmd_snapshot(args):
         "files": files,
         "edges": edges,
     }
+
+    # A pre-merge snapshot keys pages from its own wiki root ("concepts/foo.md").
+    # The merged snapshot keys them with the domain ("osint/concepts/foo.md").
+    # Without this rewrite every pre-merge file would read as both missing and
+    # added, and every edge as retargeted, which measures nothing.
+    if args.as_domain:
+        dom = args.as_domain.strip("/")
+        for f in payload["files"]:
+            f["key"] = f"{dom}/{f['key']}"
+        for e in payload["edges"]:
+            e["src"] = f"{dom}/{e['src']}"
+            if e["result"] == "local":
+                e["target"] = f"{dom}/{e['target']}"
+        payload["label"] = f"{payload['label']} (as {dom})"
+
     text = json.dumps(payload, indent=1, sort_keys=True)
     if args.out:
         Path(args.out).write_text(text + "\n", encoding="utf-8")
         print(f"snapshot: {len(files)} files, {len(edges)} edges -> {args.out}")
+    else:
+        print(text)
+    return 0
+
+
+def cmd_concat(args):
+    """Union several pre-merge snapshots into the set the merged tree must match."""
+    files, edges = {}, {}
+    labels, domains, wikis = [], set(), []
+    for path in args.inputs:
+        snap = json.loads(Path(path).read_text(encoding="utf-8"))
+        labels.append(snap["label"])
+        domains.update(snap.get("domains", []))
+        wikis.append(snap["wiki"])
+        for f in snap["files"]:
+            if f["key"] in files:
+                print(f"WARNING: duplicate key across inputs: {f['key']}", file=sys.stderr)
+            files[f["key"]] = f
+        for e in snap["edges"]:
+            edges[(e["src"], e["kind"], e["raw"])] = e
+    payload = {
+        "label": " + ".join(labels),
+        "wiki": wikis,
+        "domains": sorted(domains),
+        "files": sorted(files.values(), key=lambda f: f["key"]),
+        "edges": sorted(edges.values(), key=lambda e: (e["src"], e["kind"], e["raw"])),
+    }
+    text = json.dumps(payload, indent=1, sort_keys=True)
+    if args.out:
+        Path(args.out).write_text(text + "\n", encoding="utf-8")
+        print(f"concat: {len(files)} files, {len(edges)} edges -> {args.out}")
     else:
         print(text)
     return 0
@@ -233,8 +279,16 @@ def main():
     s = sub.add_parser("snapshot", help="manifest + resolved edges for one wiki root")
     s.add_argument("--wiki", required=True)
     s.add_argument("--label", default=None)
+    s.add_argument("--as-domain", default=None,
+                   help="Prefix every key with this domain, to make a pre-merge "
+                        "snapshot comparable with a merged one.")
     s.add_argument("--out", default=None)
     s.set_defaults(fn=cmd_snapshot)
+
+    cc = sub.add_parser("concat", help="union several snapshots into one")
+    cc.add_argument("--out", default=None)
+    cc.add_argument("inputs", nargs="+")
+    cc.set_defaults(fn=cmd_concat)
 
     c = sub.add_parser("compare", help="compare two snapshots")
     c.add_argument("--before", required=True)
