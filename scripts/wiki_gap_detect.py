@@ -73,6 +73,14 @@ REPO = Path(__file__).resolve().parent.parent
 WIKI = Path(args.wiki) if args.wiki else REPO / "wiki"
 TODAY = date.today()
 
+# Section tests must tolerate a domain prefix, or they match nothing after the
+# federation merge: `rel.startswith("concepts/")` is false for `osint/concepts/x.md`.
+# Type A and Type E both went to zero that way while this script still exited 0.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from wiki_resolver import WikiResolver, load_federation_table  # noqa: E402
+
+RESOLVER = WikiResolver(WIKI, load_federation_table(WIKI.parent / "CLAUDE.md"))
+
 # --- regexes / parsing helpers ----------------------------------------------
 
 FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
@@ -109,13 +117,6 @@ def parse_frontmatter(text: str):
     return out
 
 
-def normalize_path(p: str) -> str:
-    p = p.strip().lstrip("/")
-    if p.startswith("wiki/"):
-        p = p[len("wiki/") :]
-    return p
-
-
 def word_count(s: str) -> int:
     if not s:
         return 0
@@ -140,13 +141,16 @@ for p in WIKI.rglob("*.md"):
     pages[rel] = fm
     all_paths.add(rel)
 
-# Build inbound-edge map (mirror of wiki_lint.py logic)
+# Build inbound-edge map through the shared resolver, matching wiki_lint.py. A bare
+# `sources/x.md` must bind to the source page's own domain: testing normalize_path()
+# against the key set recorded no edges at all after the merge, which took Type A to
+# zero while the script still exited 0 (2026-10-14).
 inbound = defaultdict(set)
 for src, fm in pages.items():
     for raw in fm.get("related", []):
-        tgt = normalize_path(raw)
-        if tgt in all_paths:
-            inbound[tgt].add(src)
+        kind, val = RESOLVER.resolve(src, raw, all_paths)
+        if kind == "local":
+            inbound[val].add(src)
 
 
 # --- helpers for "propose Exa query" ----------------------------------------
@@ -192,7 +196,7 @@ def extract_claim_sentence(body: str, line_num: int) -> str:
 
 type_a = []
 for rel, fm in pages.items():
-    if not rel.startswith("sources/"):
+    if not RESOLVER.in_section(rel, "sources"):
         continue
     rs = (fm.get("read_status") or "").lower()
     if rs not in ("unread-stub", "unread", ""):
@@ -225,7 +229,7 @@ type_d.sort(key=lambda x: -x[0])
 
 type_e = []
 for rel, fm in pages.items():
-    if not rel.startswith("concepts/"):
+    if not RESOLVER.in_section(rel, "concepts"):
         continue
     body = fm.get("_body", "")
     nm = NARRATIVE_RE.search(body)

@@ -248,14 +248,19 @@ def cmd_dryrun(args):
         return 2
 
     subprocess.run(["git", "clone", "-q", str(repo), str(scratch)], check=True)
-    r = subprocess.run(
-        [
-            "git", "-C", str(scratch), "filter-repo", "--force",
-            "--path", "wiki/",
-            "--path-rename", f"wiki/:wiki/{args.domain}/",
-        ],
-        capture_output=True, text=True,
-    )
+    # Importing a SOURCE wiki: keep only its wiki/ tree.
+    #
+    # The TARGET repository must NOT be imported this way. --path wiki/ keeps only
+    # wiki/ and drops scripts/, CLAUDE.md and everything else from history; the
+    # target needs --path-rename ALONE, which moves wiki/ to wiki/<domain>/ and
+    # leaves the rest of the repository in place.
+    cmd = [
+        "git", "-C", str(scratch), "filter-repo", "--force",
+        "--path-rename", f"wiki/:wiki/{args.domain}/",
+    ]
+    if not args.target:
+        cmd[4:4] = ["--path", "wiki/"]
+    r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode != 0:
         print(f"ERROR: filter-repo failed:\n{r.stderr.strip()}", file=sys.stderr)
         return 2
@@ -299,6 +304,9 @@ def main():
     d.add_argument("--repo", required=True)
     d.add_argument("--domain", required=True)
     d.add_argument("--scratch", required=True)
+    d.add_argument("--target", action="store_true",
+                   help="This is the TARGET repository, not a source. Keeps "
+                        "everything outside wiki/ instead of discarding it.")
     d.set_defaults(fn=cmd_dryrun)
 
     args = ap.parse_args()

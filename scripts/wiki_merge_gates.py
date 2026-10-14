@@ -123,8 +123,13 @@ def gate4(repos, scratch):
     if r.returncode:
         print(f"  ERROR clone: {r.stderr.strip()}")
         return 1
+    # The TARGET keeps everything. --path-rename ALONE moves wiki/ to wiki/osint/
+    # and leaves scripts/, CLAUDE.md, ROADMAP.md and briefs/ in place, with their
+    # history. Adding --path wiki/ here — which this script did until 2026-10-14 —
+    # keeps only wiki/ and drops the rest of the repository from history. The
+    # rehearsal caught it: the merged scratch repo contained nothing but wiki/.
     r = sh("git", "-C", str(target), "filter-repo", "--force",
-           "--path", "wiki/", "--path-rename", "wiki/:wiki/osint/")
+           "--path-rename", "wiki/:wiki/osint/")
     if r.returncode:
         print(f"  ERROR filter-repo osint: {r.stderr.strip()}")
         return 1
@@ -172,6 +177,16 @@ def gate4(repos, scratch):
         print(f"    {dom:<12} {best:>4} commit(s)   {best_rel}")
     total = sh("git", "-C", str(target), "rev-list", "--count", "HEAD").stdout.strip()
     print(f"\n  merged repository commits: {total}")
+
+    # The target's own non-wiki content must survive. --path wiki/ on the target
+    # silently deleted all of it once; assert it is still there.
+    keep = ["scripts", "CLAUDE.md"]
+    lost = [k for k in keep if not (target / k).exists()]
+    if lost:
+        ok = False
+        print(f"  TARGET CONTENT LOST: {', '.join(lost)}")
+    else:
+        print(f"  target content intact: {', '.join(keep)}")
     print(f"  GATE 4: {'PASS' if ok else 'FAIL'}")
     return 0 if ok else 1
 

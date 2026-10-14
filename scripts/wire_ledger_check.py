@@ -12,19 +12,50 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-CCC_WIKI = Path("/Users/claudiobarone/Projects/Cemini claude code CCC/wiki")
 KINDS = frozenset({"rule", "script", "skill", "hook", "mcp"})
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]+$")
 ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from wiki_resolver import load_federation_table  # noqa: E402
+
+# Alias -> base directory, from the CLAUDE.md table. Pre-merge the bases are sibling
+# checkouts; post-merge they are `wiki/<domain>/` inside this repository. Reading the
+# table rather than hardcoding a sibling path is what makes both layouts work.
+TABLE = load_federation_table(ROOT / "CLAUDE.md")
+
+
+def find_ledger(root: Path) -> Path:
+    """The WIRE ledger, pre-merge or in the merged per-domain layout."""
+    direct = root / "wiki/meta/wire-ledger.yaml"
+    if direct.is_file():
+        return direct
+    wiki = root / "wiki"
+    if wiki.is_dir():
+        for candidate in sorted(wiki.glob("*/meta/wire-ledger.yaml")):
+            return candidate
+    return direct
+
+
+# The ledger lives in ONE domain, so it is the scope for both bare `entities/x.md` rows
+# and the coverage scan. Pre-merge that domain is the whole wiki; after the merge it is a
+# subdirectory. Reading it as `wiki/entities/x.md` raises FileNotFoundError on the merged
+# tree, and globbing all of `wiki/**` would newly report seven foreign domains' pages as
+# uncovered — a behaviour change the merge must not introduce (2026-10-14).
+LEDGER = find_ledger(ROOT)
+WIKI = LEDGER.parent.parent
+LEDGER_DOMAIN = "" if WIKI == ROOT / "wiki" else WIKI.name
+
 
 def resolve_wiki_page(page: str) -> Path | None:
-    if page.startswith("@osint-wiki/"):
-        p = ROOT / "wiki" / page.replace("@osint-wiki/", "", 1)
-    elif page.startswith("@ccc-wiki/"):
-        p = CCC_WIKI / page.replace("@ccc-wiki/", "", 1)
-    elif page.startswith(("entities/", "concepts/", "sources/", "meta/")):
-        p = ROOT / "wiki" / page
+    if page.startswith("@"):
+        alias, _, rel = page[1:].partition("/")
+        base = TABLE.get(alias)
+        if base is not None:
+            p = Path(base) / rel
+            return p if p.is_file() else None
+    if page.startswith(("entities/", "concepts/", "sources/", "meta/")):
+        p = WIKI / page
     else:
         p = ROOT / page
     return p if p.is_file() else None
@@ -78,15 +109,18 @@ def check_ledger(data: dict, root: Path, *, check_coverage: bool = True) -> list
             errs.append(f"wires[{i}]: bad since {since!r}")
 
     if check_coverage:
-        for md in root.glob("wiki/**/*.md"):
+        for md in WIKI.glob("**/*.md"):
             text = md.read_text(encoding="utf-8", errors="replace")
             if "harness_verb: WIRE" not in text and "wire_status: runtime_wired" not in text and "wire_status: integrate" not in text:
                 continue
             rel = str(md.relative_to(root / "wiki"))
-            rel_at = f"@osint-wiki/{rel}"
-            if rel not in covered_pages and rel_at not in covered_pages:
+            # Ledger rows are relative to the ledger's own domain, so compare both
+            # the domain-prefixed path and the bare one.
+            bare = rel[len(LEDGER_DOMAIN) + 1:] if LEDGER_DOMAIN and rel.startswith(LEDGER_DOMAIN + "/") else rel
+            rel_at = f"@osint-wiki/{bare}"
+            if bare not in covered_pages and rel not in covered_pages and rel_at not in covered_pages:
                 found = any(
-                    rel in (w.get("wiki_page") or "") for w in wires if isinstance(w, dict)
+                    bare in (w.get("wiki_page") or "") for w in wires if isinstance(w, dict)
                 )
                 if not found:
                     errs.append(f"coverage: runtime_wired page missing from ledger: {rel}")
@@ -129,7 +163,7 @@ def run_verify(data: dict, *, quiet: bool) -> list[str]:
 def selftest() -> int:
     good = {
         "version": 1,
-        "repos": {"osint": str(ROOT), "ccc": str(CCC_WIKI.parent)},
+        "repos": {"osint": str(ROOT), "ccc": str(TABLE.get("ccc-wiki", ROOT).parent)},
         "wires": [
             {
                 "id": "test-wire",
@@ -162,7 +196,7 @@ def selftest() -> int:
 
 def main() -> int:
     p = argparse.ArgumentParser()
-    p.add_argument("--ledger", type=Path, default=ROOT / "wiki/meta/wire-ledger.yaml")
+    p.add_argument("--ledger", type=Path, default=LEDGER)
     p.add_argument("--selftest", action="store_true")
     p.add_argument("--run-verify", action="store_true")
     p.add_argument("--quiet", action="store_true")

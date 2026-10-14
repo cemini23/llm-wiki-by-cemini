@@ -78,14 +78,21 @@ args = parser.parse_args()
 REPO = Path(__file__).resolve().parent.parent
 INBOX = Path(args.inbox) if args.inbox else REPO / "research to be indexed"
 WIKI = Path(args.wiki) if args.wiki else REPO / "wiki"
-SOURCES = WIKI / "sources"
+# One sources tree before the federation merge, one per domain after. The index is
+# the same either way, so collect every candidate rather than assuming one location.
+SOURCES_DIRS = sorted({p for p in [WIKI / "sources", *WIKI.glob("*/sources")] if p.is_dir()})
 
 if not INBOX.is_dir():
     print(f"ERROR: inbox directory not found: {INBOX}", file=sys.stderr)
     sys.exit(1)
-if not SOURCES.is_dir():
-    print(f"ERROR: wiki/sources directory not found: {SOURCES}", file=sys.stderr)
+if not SOURCES_DIRS:
+    print(f"ERROR: no sources directory found under {WIKI}", file=sys.stderr)
     sys.exit(1)
+
+
+def iter_source_pages():
+    for d in SOURCES_DIRS:
+        yield from d.rglob("*.md")
 
 # --- regexes ---------------------------------------------------------------
 
@@ -228,7 +235,7 @@ def build_wiki_index():
         "title_norm": defaultdict(list),
         "all_titles": [],                 # list of (norm_title, token_set, path, raw_title)
     }
-    for md in SOURCES.rglob("*.md"):
+    for md in iter_source_pages():
         text = md.read_text(errors="replace")
         rel = str(md.relative_to(WIKI))
         # frontmatter title (from full text — only in frontmatter)
@@ -438,7 +445,7 @@ def main():
     print(
         f"{sum(len(v) for v in idx['arxiv'].values())} arXiv refs, "
         f"{sum(len(v) for v in idx['doi'].values())} DOIs, "
-        f"{len(idx['all_titles'])} titles cataloged from {len(list(SOURCES.rglob('*.md')))} pages"
+        f"{len(idx['all_titles'])} titles cataloged from {len(list(iter_source_pages()))} pages"
     )
     print()
 

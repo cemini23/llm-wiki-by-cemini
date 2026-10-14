@@ -158,6 +158,19 @@ class WikiResolver:
         head = rel_path.split("/", 1)[0]
         return head if head in self.domains else ""
 
+    def in_section(self, rel_path, name):
+        """True when *rel_path* sits in a `name/` directory.
+
+        Works with or without a domain prefix, so a filter written for
+        `sources/foo.md` still matches `osint/sources/foo.md` after a merge. Filters
+        that assume no domain prefix fail SILENTLY — they match nothing, the script
+        exits 0, and the report looks like good news. wiki_gap_detect lost 246 of its
+        246 Type E results that way on 2026-10-14.
+        """
+        dom = self.domain_of(rel_path)
+        stripped = rel_path[len(dom) + 1:] if dom else rel_path
+        return stripped.startswith(name + "/")
+
     def key_if_inside(self, path):
         """The page key for *path* when it is a markdown file inside the wiki root."""
         try:
