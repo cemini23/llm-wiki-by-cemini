@@ -93,3 +93,9 @@ skills-lock.json
 # only wiki/ trees, so these are never merged and never published. Ignored 2026-10-14.
 reports/
 agents/
+
+# Pre-merge rollback: the git directory and wiki tree from before the federation
+# merge. Kept until the cutover is confirmed good, then deleted by hand.
+.git.premerge-local/
+wiki.premerge-local/
+.cemini/
