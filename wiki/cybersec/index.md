@@ -1,0 +1,1029 @@
+# Cybersecurity Wiki — Index
+
+> Content-oriented catalog of every page in this wiki. Keep this curated by hand — it's the human-readable map.
+
+---
+
+## How to use this index
+
+- **Concepts** are the *answers* (synthesized understanding of a topic). Start here when you ask "what is X?"
+- **Entities** are the *nouns* (tools, certs, threat actors, people, vendors, programming languages, frameworks, platforms). Start here when you ask "tell me about X"
+- **Sources** are the *raw inputs* (one page per PDF/article/repo). Mostly anchored from corresponding entity/concept pages — only browse them directly when you need provenance
+
+---
+
+## Concepts
+
+### Doctrine + methodology
+
+| Page | Maturity | Topic |
+|------|----------|-------|
+| @concepts/red-team-operations.md | validated | Red Team vs Pentest distinction; engagement model |
+| @concepts/adversary-emulation.md | validated | APT-emulation plan + AutoSUT environment gap + LLM persona convergence |
+| @concepts/threat-intelligence.md | validated | CTI 3-tier model + STIX SUT limits + LLM CVE→STIX gates |
+| @concepts/purple-team-operations.md | draft | Red + blue collaborative engagements |
+| @concepts/soc-operations.md | validated | Security Operations Center tooling + tiers + 5 pillars |
+| @concepts/incident-response.md | validated | NIST / SANS IR lifecycle |
+| @concepts/ransomware.md | validated | Ransomware defensive ops + investigation runbook (T1486) |
+| @concepts/threat-hunting.md | validated | Hypothesis-driven proactive detection |
+| @concepts/phishing-investigation.md | validated | SOC-analyst phishing triage (Yahia 5-step workflow + SPF/DKIM/DMARC) |
+| @concepts/responsible-disclosure.md | draft | Coordinated Vulnerability Disclosure + CVE process |
+| @concepts/bug-bounty.md | draft | Public bounty programs + career path + beefy-box ROI |
+| @concepts/operator-lab-playbook.md | draft | Start-here hub: local AI → owned lab → product pentest → bounty |
+| @concepts/local-abliterated-llm-pentest-stack.md | draft | Local abliterated/low-refusal text LLM stack (Linux+NVIDIA + Apple Silicon) |
+| @concepts/owned-target-whitehat-lab.md | draft | Authorization + isolation for whitehat on owned servers/VMs |
+| @concepts/pre-release-product-pentest.md | draft | Pre-launch product security loop (ASVS 5.0-informed → fix → retest) |
+| @concepts/ai-pentest-harness-landscape.md | draft | CyberStrike vs Strix vs MIT peers — license/containment decision matrix |
+| @concepts/cybersecurity-careers.md | validated | Career map + certification ladder |
+| @concepts/agent-execution-provenance.md | draft | Evidence tracing + execution provenance — CFD artifact gap (2606.09084) |
+| @concepts/agent-vm-sandboxing.md | validated | LLM-driven agent-VM sandboxing; pairs with Docker allowlist proxy (K102) |
+| @concepts/docker-agent-sandbox-allowlist-proxy.md | draft | Docker/gVisor agent sandbox + vp-internal egress allowlist (K102) |
+
+### Offensive technique categories
+
+| Page | Maturity | Topic |
+|------|----------|-------|
+| @concepts/web-pentest-methodology.md | validated | Web-app pentest checklist (Joas) |
+| @concepts/windows-pentest.md | draft | Windows + Active Directory + O365 |
+| @concepts/cloud-pentest.md | draft | AWS / Azure / GCP / O365 pentest |
+| @concepts/mobile-pentest.md | draft | Android + iOS app pentest |
+| @concepts/network-security.md | draft | Network / firewall / wireless / IoT / OT / prEN 50742 safety-security |
+| @concepts/industrial-safety-security-convergence.md | draft | prEN 50742 / IO-Link Wireless crypto capacity collapse (2607.15840) |
+| @concepts/solver-grounded-agentic-ot.md | draft | Smart-grid/OT agents: solver + verify before setpoints (2607.18147) |
+| @concepts/6g-cps-closed-loop-security.md | draft | 6G CPS edge-to-network AI-native security loop (2606.08173) |
+| @concepts/exploit-development.md | draft | Buffer overflow → ROP → kernel exploits |
+| @concepts/buffer-overflow.md | validated | Stack/heap overflow fundamentals + shellcode |
+| @concepts/av-edr-bypass.md | validated | AV/EDR evasion tradecraft |
+| @concepts/privilege-escalation.md | validated | Linux + Windows privesc |
+| @concepts/credential-access.md | draft | Credential dumping + password cracking (TA0006) |
+| @concepts/pivoting.md | draft | Lateral movement + tunneling + port forwarding |
+| @concepts/social-engineering.md | draft | Phishing + vishing + pretexting |
+| @concepts/phishing.md | draft | Spear phishing + MFA bypass + infrastructure |
+| @concepts/osint-for-cybersecurity.md | validated | Pre-engagement + threat-intel OSINT |
+| @concepts/linux-pentest.md | draft | Linux enumeration + privesc (GTFOBins, SUID, capabilities) |
+| @sources/arxiv-2607-20280-drone-fl-chained-attacks.md | draft | Drone FL deauth→impersonation chain (2607.20280; K215) |
+| @sources/arxiv-2607-20852-code-monitor-red-teaming.md | draft | CodeMonitorBench public-test residual bugs (2607.20852; K216) |
+| @sources/arxiv-2607-21419-pats-agentic-rl.md | draft | PATS policy-aware agent RL scaffold (2607.21419; K217) |
+| @sources/arxiv-2607-21468-thinkink.md | draft | Thinkink ink-native LLM canvas HCI (2607.21468; K218) |
+| @sources/arxiv-2607-21564-rf-fingerprint-probe.md | draft | RFFI probe-point open-set benchmark (2607.21564; K219) |
+| @concepts/drone-fl-chained-deauth-impersonation.md | draft | Wi-Fi deauth enables FL client impersonation |
+| @concepts/code-monitor-red-teaming-public-tests.md | draft | Weak monitors miss hidden bugs after public tests |
+| @concepts/pats-policy-aware-agent-rl-scaffold.md | draft | Fade training scaffolds for agentic RL |
+| @concepts/thinkink-ink-native-llm-canvas.md | draft | Ink-native multimodal LLM canvas (HCI light) |
+| @concepts/rf-fingerprint-probe-point-benchmark.md | draft | RFFI performance depends on RX probe point |
+| @sources/arxiv-2607-21735-ai-redteam-evidential-ceiling.md | draft | Evidential ceiling for AI red-team evals (2607.21735; K220) |
+| @sources/arxiv-2607-23496-concept2scenario-vulnerable-scenarios.md | draft | Concept2Scenario refusal-suppression priors (2607.23496; K221) |
+| @sources/arxiv-2607-25379-cyber-capable-agent-containment.md | draft | Cyber-capable agent eval containment (2607.25379; K222) |
+| @sources/arxiv-2607-25987-ih-benchmark-instruction-hierarchy.md | draft | IH-Benchmark S≻U vs U≻T (2607.25987; K223) |
+| @sources/arxiv-2607-25995-kutie-topology-k8s-patches.md | draft | KuTIE topology-aware K8s patches (2607.25995; K224) |
+| @concepts/ai-redteam-evidential-ceiling.md | draft | What fixed-budget red-team evals can prove |
+| @concepts/concept2scenario-refusal-suppression.md | draft | SAE→scenario jailbreak priors |
+| @concepts/cyber-capable-agent-evaluation-containment.md | draft | Contain capability eval environments |
+| @concepts/instruction-hierarchy-conflict-benchmark.md | draft | S≻U ≠ U≻T hierarchy robustness |
+| @concepts/topology-aware-k8s-llm-remediation.md | draft | Call-graph context for KSPM LLM patches |
+| @sources/arxiv-2607-25070-rffi-device-temperature.md | draft | RFFI temperature drift (2607.25070; K225) |
+| @sources/arxiv-2607-26115-gpt-red-self-play.md | draft | GPT-Red self-play red teaming (2607.26115; K226) |
+| @sources/arxiv-2607-27090-inferscale-kv-injection.md | draft | InferScale KV injection serving (2607.27090; K227) |
+| @sources/arxiv-2607-27136-kamr-multihop-retrieval.md | draft | KAMR multi-hop KG retrieval (2607.27136; K228) |
+| @sources/arxiv-2607-27145-bydeway-v2-spatial.md | draft | ByDeWay-V2 explainable spatial MLLM (2607.27145; K229) |
+| @concepts/rf-fingerprint-temperature-drift.md | draft | Temperature shifts RF fingerprints |
+| @concepts/gpt-red-self-play-red-teaming.md | draft | Self-play automated prompt-injection discovery |
+| @concepts/inferscale-kv-injection-personalized-serving.md | draft | Privileged KV injection for persona memory |
+| @concepts/kamr-knowledge-aligned-multihop-retrieval.md | draft | Anchor-then-expand multi-hop GRAG |
+| @concepts/bydeway-v2-explainable-spatial-reasoning.md | draft | Auditable spatial predicates for MLLMs |
+| @sources/arxiv-2607-28498-tca-sir-scientific-inspiration.md | draft | TCA-SIR remote-analogy SIR (2607.28498; K230) |
+| @sources/arxiv-2607-28529-cogate-secure-code-codecoding.md | draft | CoGate confidence-gated secure codegen (2607.28529; K231) |
+| @sources/arxiv-2607-28617-aispa-system-prompt-auditing.md | draft | AISPA system-prompt auditing (2607.28617; K232) |
+| @sources/arxiv-2607-29604-cweep-rtl-cwe-static-analysis.md | draft | CWEEP RTL CWE static analysis (2607.29604; K233) |
+| @sources/arxiv-2607-29658-stair-hierarchical-repair-trajectories.md | draft | STAIR hierarchical repair trajectories (2607.29658; K234) |
+| @sources/arxiv-2607-29678-toktier-stateful-tokenization.md | draft | TokTier exact stateful tokenization (2607.29678; K235) |
+| @concepts/cweep-rtl-cwe-early-prevention.md | draft | Early RTL CWE lint without full security specs |
+| @concepts/stair-hierarchical-repair-plans.md | draft | Hierarchical repair plans from agent trajectories |
+| @concepts/toktier-exact-stateful-tokenization.md | draft | Exact stateful tokenization for agent serving TTFT |
+| @sources/arxiv-2608-00143-symbolic-art-attack-chain-pddl.md | draft | ART→PDDL attack-chain granularity (2608.00143; K236) |
+| @sources/arxiv-2608-00677-openart-agent-redteam-evolution.md | draft | OpenART environment-evolution red team (2608.00677; K237) |
+| @sources/arxiv-2608-01637-salami-collusive-memory-poisoning.md | draft | Salami collusive memory poisoning (2608.01637; K238) |
+| @sources/arxiv-2608-02520-medpress-patient-pressure-sycophancy.md | draft | MedPRESS multi-turn medical sycophancy (2608.02520; K239) |
+| @sources/arxiv-2608-02585-gradcuit-test-time-latent-reasoning.md | draft | GradCuit test-time latent reasoning (2608.02585; K240) |
+| @concepts/symbolic-art-attack-chain-granularity.md | draft | Predicate granularity for ART symbolic chains |
+| @concepts/openart-environment-evolution-agent-redteam.md | draft | Stateful environment evolution for agent RT |
+| @concepts/salami-collusive-memory-poisoning.md | draft | Collusive benign-looking memory coalitions |
+| @concepts/multi-turn-pressure-sycophancy.md | draft | Pressure ladders induce unsafe agreement |
+| @concepts/gradcuit-test-time-latent-reasoning.md | draft | Credit-assigned test-time latents |
+| @sources/arxiv-2608-02341-wifi-broadcast-rate-edge-moe.md | draft | Wi-Fi 54 Mbps broadcast cap / edge MoE (2608.02341; K241) |
+| @sources/arxiv-2608-03151-airkey-wifi-acoustic-pin-inference.md | draft | AirKey CSI+acoustic PIN side channel (2608.03151; K242) |
+| @sources/arxiv-2608-03961-adaptive-fuzzy-test-time-sampling.md | draft | Adaptive fuzzy TTS sampling (2608.03961; K243) |
+| @concepts/wifi-broadcast-rate-edge-moe.md | draft | 802.11 broadcast rate cap vs edge MoE |
+| @concepts/airkey-wifi-acoustic-pin-sidechannel.md | draft | Unassociated ACK-CSI + audio PIN inference |
+| @concepts/adaptive-fuzzy-test-time-sampling.md | draft | Inspectable per-query TTS sample budgets |
+| @sources/arxiv-2608-04317-trident-agentic-drl-redteam.md | draft | Trident agentic DRL-defense red team (2608.04317; K244) |
+| @sources/arxiv-2608-04881-horffi-high-openness-rffi.md | draft | HoRFFI high-openness RFFI (2608.04881; K245) |
+| @sources/arxiv-2608-05045-gradient-immunity-malicious-finetune.md | draft | Gradient Immunity malicious FT gate (2608.05045; K246) |
+| @sources/arxiv-2608-05063-chiplet-llm-hardware-security.md | draft | Chiplet + LLM-EDA hardware security (2608.05063; K247) |
+| @sources/arxiv-2608-05108-piminer-prompt-injection-redteam.md | draft | PIMiner prompt-injection red team (2608.05108; K248) |
+| @concepts/trident-agentic-drl-defense-redteam.md | draft | Adaptive red vs DRL cyber defenses |
+| @concepts/horffi-high-openness-rffi.md | draft | Few-shot open-set RF fingerprinting |
+| @concepts/gradient-immunity-malicious-finetune.md | draft | Null-space resistance to malicious FT |
+| @concepts/chiplet-llm-hardware-security.md | draft | Chiplet + LLM-EDA attack surfaces |
+| @concepts/piminer-agentic-prompt-injection-redteam.md | draft | Transferable PI strategy-library RT |
+| @sources/arxiv-2608-05659-aria-instruction-backdoor-redteam.md | draft | ARIA instruction-backdoor RT (2608.05659; K249) |
+| @sources/arxiv-2608-06246-post-training-adaptation-taxonomy.md | draft | Post-training adaptation taxonomy (2608.06246; K250) |
+| @sources/arxiv-2608-06287-nl-to-ltl-requirements.md | draft | NL-to-LTL via LLMs (2608.06287; K251) |
+| @sources/arxiv-2608-06301-harnessopt-bench.md | draft | HarnessOpt-Bench (2608.06301; K252) |
+| @concepts/aria-instruction-backdoor-redteam.md | draft | Covert instruction backdoors on customized coding LLMs |
+| @concepts/post-training-adaptation-taxonomy.md | draft | Six-axis post-training change vocabulary |
+| @concepts/nl-to-ltl-requirements-llm.md | draft | LLM front-end for NL→LTL (HITL) |
+| @concepts/harnessopt-bench.md | draft | Budgeted harness-optimization eval protocol |
+| @sources/arxiv-ood-qnlp-discocat-financial-2608.07439.md | draft | OOD QNLP DisCoCat financial rewrite (2608.07439) |
+| @sources/arxiv-2608-07440-blast-radius.md | draft | Blast Radius reversible context eviction (2608.07440; K265) |
+| @sources/arxiv-2608-07446-shieldai-oss-ai-risk-tools.md | draft | ShieldAI OSS AI risk tool taxonomy map (2608.07446; K266) |
+| @concepts/blast-radius-reversible-context-eviction.md | draft | Reversible, gate-licensed context eviction for coding agents |
+| @concepts/taxonomy-driven-oss-ai-risk-mitigation.md | draft | Map OSS eval/guardrail tools to MIT risk taxonomy |
+| @sources/arxiv-2608-09158-ill-inaudible-low-frequency-lalms.md | draft | ILL inaudible LF audio vs LALMs (2608.09158; K267) |
+| @concepts/inaudible-low-frequency-audio-attacks.md | draft | Perception-boundary mismatch audio red team + DRG requery |
+| @entities/tools/ill-inaudible-low-frequency-lockout.md | draft | ILL method (REFERENCE; K267) |
+| @sources/arxiv-2608-15578-arena-audio-lalm-redteam.md | draft | ARENA audio-grounded LALM RT (2608.15578; K282) |
+| @concepts/audio-grounded-lalm-redteaming.md | draft | Text-safe + audio-harmful LALM red team; split judges |
+| @entities/tools/arena-audio-redteam.md | draft | ARENA controller (REFERENCE; K282) |
+| @sources/arxiv-2608-09885-she-safety-harness-evolution.md | draft | SHE trajectory-driven harness evolution (2608.09885; K268) |
+| @concepts/safety-harness-evolution.md | draft | Four-artifact harness evolution + validity + safety-utility selection |
+| @entities/tools/she-safety-harness-evolution.md | draft | SHE harness-evolution (GO clone Apache-2.0; K268) |
+| @sources/arxiv-2608-09900-taboo-decoding-level-diagnostic.md | draft | Taboo decoding-time logit-space diagnostic (2608.09900; K269) |
+| @concepts/decoding-level-taboo-diagnostic.md | draft | Word-boundary logit masking off-path robustness stress test |
+| @sources/arxiv-2608-06866-ood-dodtrack-wifi-doppler-tracking.md | draft | OOD DoDTrack Wi-Fi Doppler tracking (2608.06866) |
+| @sources/arxiv-2608-09930-ood-beyond-naturalness-tts-eval.md | draft | OOD Beyond-Naturalness TTS eval (2608.09930) |
+| @sources/arxiv-2608-10171-gflownets-llm-attacks-turkcell.md | draft | GFlowNet automated LLM attack generation (2608.10171; K270) |
+| @concepts/gflownet-automated-redteam-attack-generation.md | draft | GFlowNet attacker-victim-evaluator attack-gen concept |
+| @sources/arxiv-2608-10669-redagentbench-faithful-agent-asr.md | draft | REDAgentBench executable RT + faithful ASR (2608.10669; K271) |
+| @concepts/faithful-agent-asr-measurement.md | draft | Exposure/execution/observation/adjudication ASR decomposition |
+| @entities/tools/redagentbench.md | draft | REDAgentBench benchmark (REFERENCE; K271) |
+| @sources/arxiv-2608-11146-illusion-cross-lingual-safety-lrl.md | draft | Cross-lingual safety transfer illusion LRLs (2608.11146; K272) |
+| @concepts/cross-lingual-safety-transfer-lrl.md | draft | English-only safety ≠ LRL safety; localized prompts |
+| @sources/arxiv-2608-11044-ood-teammix-htc.md | draft | OOD TEAMMix hierarchical text classification (2608.11044) |
+| @sources/arxiv-2608-11121-ood-genai-statistical-research.md | draft | OOD GenAI in statistical research (2608.11121) |
+| @concepts/hardware-id-masking-opsec.md | draft | HWID layers + MAC rand ≠ unlinkability (OPSEC) |
+| @concepts/metadata-traffic-analysis-anonymity.md | draft | Metadata/traffic confirmation: AS/global observer beats path encryption |
+| @concepts/censorship-circumvention-pluggable-transports.md | draft | Bridges + PTs (obfs4/meek/Snowflake/WebTunnel); DPI vs traffic-confirmation |
+| @concepts/commercial-spyware-stalkerware-defense.md | draft | Mercenary spyware + stalkerware as endpoint compromise; Lockdown Mode / MVT |
+| @concepts/account-recovery-deanonymization.md | draft | Anonymity dies at recovery: SIM swap, SSO, recovery identity |
+| @concepts/hardware-bound-identity-anticheat-licensing.md | draft | AC/licensing HWID map (architecture; no spoof kits) |
+| @concepts/software-license-binding.md | draft | License design: bind ≥2 layers; repair paths; no keygens |
+| @concepts/anti-tamper-protection-classes.md | draft | Protection classes (integrity/pack/virtualize/heartbeat); classes not kits |
+| @concepts/mobile-app-attestation.md | draft | Play Integrity + App Attest; server verifies, client relays |
+| @concepts/secure-boot-vs-device-ownership.md | draft | Secure Boot/attestation trust stack vs device ownership (policy; no bypass) |
+| @concepts/hardened-alternative-operating-systems.md | draft | GrapheneOS / Qubes / Whonix / Kicksecure / Tails — pick by threat, not brand |
+| @concepts/endpoint-encryption-deniable-storage.md | draft | FDE ≠ anonymity; deniable-storage class (existence + limits, no how-to) |
+| @concepts/product-build-integrity-slsa-sigstore.md | draft | SLSA / Sigstore / reproducible-build release-integrity layer |
+| @sources/microsoft-hvci-memory-integrity.md | draft | HVCI / memory integrity (VBS kernel CI) |
+| @sources/microsoft-elam.md | draft | Early Launch Anti-Malware boot classification |
+| @sources/microsoft-secure-boot.md | draft | UEFI Secure Boot signature chain (PK/KEK/db/dbx) |
+| @sources/microsoft-bitlocker-overview.md | draft | BitLocker FDE overview (lost-disk threat model) |
+| @sources/apple-filevault.md | draft | FileVault macOS FDE (login-gated at-rest) |
+| @sources/veracrypt-hidden-volumes.md | draft | Hidden-volume architecture (deniable-storage class) |
+| @sources/slsa-supply-chain-levels.md | draft | SLSA v1.0 build track L0–L3 provenance |
+| @sources/sigstore-overview.md | draft | Keyless signing (Fulcio/Rekor/Cosign) |
+| @sources/reproducible-builds.md | draft | Deterministic build + independent verification |
+| @sources/microsoft-kernel-dma-protection.md | draft | IOMMU fencing of hot-plug PCIe (DMA) |
+| @sources/microsoft-wdac-appcontrol-overview.md | draft | App Control for Business / WDAC allow-list |
+| @sources/microsoft-volume-activation-clients.md | draft | KMS/ADBA/MAK lease activation |
+| @sources/flexera-flexnet-licensing.md | draft | FlexNet commercial entitlement stack |
+| @sources/irdeto-denuvo-anti-cheat-anti-tamper.md | draft | Denuvo kernel AC + anti-piracy vendor pages |
+| @sources/collberg-thomborson-software-protection-tools.md | draft | 2002 protection-taxonomy anchor (skimmed) |
+| @sources/google-play-integrity-api.md | draft | Play Integrity verdicts + server verification |
+| @sources/apple-app-attest.md | draft | App Attest Secure Enclave keys + DeviceCheck |
+| @sources/vanhoef-asiaccs2016-mac-randomization-not-enough.md | draft | AsiaCCS 2016 — random MAC not enough |
+| @sources/arxiv-1703-02874-mac-randomization-when-it-fails.md | draft | PETS 2017 MAC randomization failures (1703.02874) |
+| @sources/kohno-2005-remote-physical-device-fingerprinting.md | draft | Clock-skew physical device fingerprinting |
+| @sources/arxiv-1905-01051-browser-fingerprinting-survey.md | draft | Laperdrix TWEB browser-fingerprint survey |
+| @sources/arxiv-2201-09956-drawn-apart-gpu-fingerprinting.md | draft | DrawnApart GPU EU fingerprint (NDSS 2022) |
+| @sources/arxiv-2507-02478-statefi-wifi-fsm-fingerprinting.md | draft | StateFi FSM de-randomization (2507.02478) |
+| @sources/arxiv-2606-25788-ml-mac-randomization.md | draft | ML clustering vs MAC randomization (2606.25788) |
+| @sources/microsoft-systemidentification-getsystemidforpublisher.md | draft | Windows TPM/UEFI system ID persists reimage |
+| @sources/microsoft-oa3-hardware-hash.md | draft | OEM Activation 3.0 hardware hash / association |
+| @sources/microsoft-autopilot-motherboard-replacement.md | draft | Official Autopilot 4K HH recapture after board swap |
+| @sources/arxiv-2408-00500-kernel-anticheat-rootkit-taxonomy.md | draft | ARES 2024 kernel AC vs rootkit taxonomy |
+| @sources/s4dbrd-kernel-anti-cheats.md | draft | Kernel AC architecture + identifier list (blog) |
+| @sources/secret-club-battleye-architecture-2019.md | draft | BattlEye four-entity architecture (2019) |
+| @sources/oofhours-autopilot-hardware-hash.md | draft | OA3Tool 4K HH field inventory (encoded, not a digest) |
+| @sources/checkpoint-evasions-firmware-tables.md | draft | NtQuerySystemInformation class 76 / RSMB / FIRM |
+| @sources/microsoft-getruntimeattestationreport.md | draft | Signed loaded-driver attestation (HVCI; AC consumer) |
+| @sources/riot-vanguard-on-demand-2026.md | draft | Riot first-party On-Demand + TPM EK as HWID |
+| @sources/epic-games-v-araujo-hwid-spoofer-judgment.md | draft | Epic default judgment: HWID spoof as DMCA circumvention |
+| @sources/faceit-enhanced-verification.md | draft | FACEIT multi-account checks include hardware identifiers |
+| @sources/tails-mac-address-anonymization.md | draft | Tails default MAC anonymization (LAN only) |
+| @sources/android-aosp-wifi-mac-randomization.md | draft | Android 10+ per-SSID randomized MAC |
+| @concepts/tca-sir-target-conditioned-inspiration-retrieval.md | draft | Target-conditioned transferable inspiration rank |
+| @concepts/cogate-confidence-gated-secure-code.md | draft | Gate security co-decoding on expert confidence |
+| @concepts/aispa-system-prompt-assurance-audit.md | draft | Eight-dimension protective vs problematic prompt audit |
+| @concepts/wireless-pentest.md | draft | WiFi / WPS / Bluetooth / RFID attacks |
+| @concepts/container-security.md | draft | Docker + Kubernetes attack/defense |
+| @concepts/dns-server-discovery-vs-subdomain-enumeration.md | draft | DNS recon distinction (server discovery vs subdomain enum) |
+
+### Defensive + analytical
+
+| Page | Maturity | Topic |
+|------|----------|-------|
+| @concepts/malware-analysis.md | draft | Static + dynamic malware RE |
+| @concepts/defense-in-depth.md | draft | Layered security architecture |
+| @concepts/system-hardening.md | draft | OS + network + application hardening |
+| @concepts/linux-security.md | draft | RHEL security, SELinux, auditd, SSH hardening |
+| @concepts/siem.md | draft | SIEM platform layer — log collection, correlation, alerting; BAS→Sigma detection-as-code (2606.05252) |
+| @concepts/endpoint-detection-response.md | draft | EDR/XDR — endpoint telemetry, detection + response |
+
+### Emerging / cross-domain
+
+| Page | Maturity | Topic |
+|------|----------|-------|
+| @concepts/ai-for-cybersecurity.md | draft | LLM use in red + blue workflows |
+| @concepts/llm-cve-to-stix-generation.md | draft | Open-weight CVE→STIX (CAV-STIXGen); gate on SRO/ATT&CK |
+| @concepts/rubric-capability-tree-diagnosis.md | draft | CRAFT — rubric-criterion capability trees for targeted SFT |
+| @concepts/llm-research-competency-model.md | draft | Eight competencies for LLM-literate researchers (2607.16083) |
+| @concepts/coding-agent-context-pruning.md | draft | SWE-Pruner Pro internal-rep tool-output prune (2607.18213) |
+| @concepts/evidence-aware-long-context-grounding.md | draft | GEAR — evidence reward vs distractor copy (2607.19345) |
+| @concepts/off-context-privileged-rlvr.md | draft | OC-GRPO privileged guidance for hard RLVR (2607.19313) |
+| @concepts/quantum-vqe-adversarial-robustness.md | draft | Cloud VQE red-team SoK / VQE-AdvBench (2607.19318) |
+| @concepts/llm-belief-expression-robustness.md | draft | EoBench — belief framing vs prior knowledge (2607.18232) |
+| @concepts/llm-vulnerability-discovery.md | draft | LLM-driven vuln-discovery pipeline (Detect→Attack); defending-code ASAN verify |
+| @concepts/llm-adversarial-fuzzing.md | draft | Adversarial LLM testing methodology (FuzzyAI umbrella) |
+| @concepts/defender-centric-jailbreak-utility.md | draft | A-MESS/AttackSHAP — rank jailbreaks by safety-train utility (2607.17152) |
+| @concepts/llm-biosecurity-red-teaming.md | draft | Dual-use bio early-warning posture (Intern-BioBreaker 2607.18056) |
+| @concepts/biosecbench-surveillance-verifiable-agent-eval.md | draft | BioSecBench surveillance agent eval (2607.19262; CCC K203) |
+| @concepts/pair-prompt-pattern.md | draft | PAIR — single-turn LLM jailbreak (arXiv 2310.08419) |
+| @concepts/crescendo-multi-turn-jailbreak.md | draft | Multi-turn LLM escalation attack (arXiv 2404.01833) |
+| @concepts/amt-x-phase-structured-multi-turn-red-teaming.md | draft | AMT-X dual overall/full ASR + phase state machine (2607.11151) |
+| @concepts/vulnerability-concept-graph-production-agent-red-teaming.md | draft | AHA VCG — enabling-condition red-team knowledge (2607.11698) |
+| @concepts/skillsec-lifecycle-agent-skill-security.md | draft | SkillSec lifecycle beyond execution (2607.13987) |
+| @concepts/gflowrl-distribution-matching-attacker-rl.md | draft | GFlowRL attacker-diversity RL slice; repo NO-GO (2607.13394) |
+| @concepts/datashield-risky-finetune-data-filtering.md | draft | DataShield — consensus subspace filter for risky FT data (2607.15081) |
+| @concepts/physical-vs-content-danger-embodied-agents.md | draft | PRISM — CD vs PD for embodied/tool agents (2607.15218) |
+| @concepts/agentic-hard-example-synthesis-content-safety.md | draft | Agentic multimodal hard-example synthesis (2607.14256) |
+| @concepts/llm-statistical-self-consistency-macro-fallacy.md | draft | Partition–prompt–aggregate macro fallacy (2607.15277) |
+| @concepts/coding-agent-supply-chain-install-gap.md | draft | Coding-agent install gap + pre-install gate (2607.15143 / K179) |
+| @concepts/armor-plusplus-agentic-deepfake-detector-attacks.md | draft | ARMOR++ agentic deepfake-detector transfer attacks (2607.15246 / K188) |
+| @concepts/mcp-security-evidence-grounded-detection.md | draft | FlowGuard — evidence-grounded MCP detection (2607.14754 / K189 route) |
+| @sources/arxiv-2607-19837-know-your-agent-recon.md | draft | KYA recon-driven IPI pentest (2607.19837; K210) |
+| @sources/arxiv-ethics-autonomous-offensive-ai-2607.20255.md | draft | Ethics of autonomous offensive AI agents (2607.20255; K211) |
+| @sources/arxiv-2607-20270-schwartz-value-recognition.md | draft | Schwartz value recognition confusions (2607.20270; K212) |
+| @sources/arxiv-2607-20286-probabilistic-llm-safety-bounds.md | draft | Sound PAC safety bounds for LLMs (2607.20286; K213) |
+| @sources/arxiv-2607-20372-notes-to-self-experiential.md | draft | Experiential abstractions Notes-to-self (2607.20372; K214) |
+| @concepts/agent-reconnaissance-ipi-pentesting.md | draft | Agent recon loop for IPI pentesting (KYA) |
+| @concepts/llm-schwartz-value-recognition.md | draft | Schwartz Acc@1/directed confusions |
+| @concepts/llm-probabilistic-safety-bounds.md | draft | Clopper-Pearson PAC harm lower bounds |
+| @concepts/experiential-abstraction-memory.md | draft | Score-gated experiential abstraction memory |
+| @concepts/ethics-autonomous-offensive-ai-agents.md | draft | Three indeterminacies — autonomous offensive agents |
+| @entities/tools/know-your-agent.md | draft | KYA framework (CONDITIONAL-GO wait for release) |
+| @entities/tools/notes-to-self.md | draft | Notes-to-self clone ~16MB Apache/verl (CONDITIONAL-GO) |
+| @concepts/llm-pentest-automation.md | draft | Tier 1/2 LLM pentest automation + scope-enforcement model |
+| @concepts/agent-runtime-guardrails.md | draft | Agent side-effect attacks + runtime guards; GT-MCP trajectory layer (2606.10322) |
+| @concepts/llm-code-review-agent-security.md | draft | SEVRA merge-gate robustness — reversed CVE PR + framing attacks (2606.13757) |
+| @concepts/authority-framing-agentic-cicd.md | draft | Authority laundering in multi-agent CI/CD (2607.19267) |
+| @concepts/trajectory-context-control.md | draft | GT-MCP — multi-agent memory-commit gate + drift rollback (2606.10322) |
+| @concepts/internet-of-agentic-ai-ioai.md | draft | IoAI vision — federated agent ecosystems + Table 4 threat taxonomy (2606.12835) |
+| @concepts/exceptional-access-risk-quantification.md | draft | EA architecture risk framework — T-EA vs OTT-EA, deep uncertainty (2606.19106) |
+| @concepts/agent-least-privilege-tool-selection.md | draft | Over-privileged tool selection — OPUR/PED, TOOLPRIVBENCH (2606.20023) |
+| @concepts/agent-probabilistic-datalog-verification.md | draft | DRO probabilistic Datalog runtime verification — noisy classifiers (2606.20510) |
+| @concepts/system-prompt-leakage.md | draft | System prompt exfiltration — attention drift, LeakBench, AREA (2606.18673) |
+| @concepts/prompt-injection-detector-calibration.md | draft | Guard-model severity S under shift — confident FN on indirect hijack (2606.22659) |
+| @concepts/self-evolving-agent-security.md | draft | MLAS matrix — self-evolving agents, attack persistence (2606.23075) |
+| @sources/arxiv-2608-12851-skill-misevolution.md | draft | Skill misevolution / SKILLMISEVO (2608.12851; OSINT K237) |
+| @concepts/skill-misevolution.md | draft | Practice can make a skill library unsafe — author/retrieve/execute gates |
+| @sources/arxiv-2608-16465-jailbreakskill.md | draft | JailbreakSkill evolving attack skills (2608.16465; K283) |
+| @concepts/evolving-attack-skill-libraries.md | draft | Offense-side evolving skill library — lab eval only |
+| @entities/tools/jailbreakskill.md | draft | JailbreakSkill (NO-GO clone; null SPDX) |
+| @sources/arxiv-2608-16806-esti-state-semantic-injection.md | draft | ESTI planner-state injection (2608.16806; K288) |
+| @concepts/planner-state-integrity-embodied-agents.md | draft | Schema-valid env-state ≠ true; P-ASR ≠ E-ASR |
+| @concepts/esti-state-semantic-injection-stub.md | draft | Pointer to Cybersec ESTI primary (CCC dual-home) |
+| @entities/tools/esti-bench.md | draft | ESTI-Bench (REFERENCE; K288) |
+| @sources/arxiv-2608-16747-chive-counterfactual-explanations.md | draft | CHIVE counterfactual explanations (2608.16747; K290) |
+| @concepts/counterfactual-simulatability-llm-explanations.md | draft | Explanations need counterfactual tests |
+| @entities/tools/chive.md | draft | CHIVE (GO REFERENCE clone; wont_wire) |
+| @sources/arxiv-2608-17202-fools-gold-defensive-deception.md | draft | Fool's Gold decoy hardening (2608.17202; K295) |
+| @concepts/decoy-hardening-open-weight-abliteration.md | draft | Abliterated-state decoys; denial of trust — no attack recipe |
+| @sources/arxiv-2608-17361-trusted-workflow-relays.md | draft | Trusted workflow relays (2608.17361; K296) |
+| @concepts/trusted-workflow-relay-email-abuse.md | draft | Service-authentic send ≠ send-authorization |
+| @sources/arxiv-2608-19011-ti-to-detection-rule-grounding.md | draft | AUTOSIGMA CTI→Sigma (2608.19011; K297) |
+| @concepts/knowledge-driven-detection-rule-grounding.md | draft | Enrich + template-ground + judge; no raw LLM-to-rule |
+| @sources/arxiv-2608-19857-inadvertent-context-leakage.md | draft | Inadvertent context leakage (2608.19857; K298) — benign-output covert channel |
+| @concepts/inadvertent-context-leakage.md | draft | Refusal ≠ no leak; secret_grant + Cursor deny — values never return to planner |
+| @sources/newsletter-rss-tldrsec-2026-08-20-tldr-sec-342.md | draft | tl;dr sec #342 — ADR telemetry, SPIFFE act=agent, Cloudflare task-scoped access |
+| @sources/substack-rss-secpro-2026-08-21-ai-ready-soc.md | draft | SecPro #248 — AI-ready SOC foundations (asset-ID map, gather-not-decide) |
+| @concepts/agent-runtime-identity-adr.md | draft | Agent identity + ADR telemetry — sub=human / act=agent, SVIDs, Trust Ratchet |
+| @concepts/agent-safety-executable-evaluation.md | draft | Benign-output predicate tests in executable eval — not only jailbreaks |
+| @sources/arxiv-2608-20097-trustrag-committee-rag.md | draft | TrustRAG committee RAG (2608.20097; K299) — ZK + MPC + hash commitments |
+| @concepts/committee-certified-rag-provenance.md | draft | RAG ranking/provenance = integrity boundary; schema-valid ≠ authenticated |
+| @sources/arxiv-2608-20167-breakguard-dependency-breaking-tests.md | draft | BreakGuard LLM dependency tests (2608.20167; K300) — 30.3% of BUMP BCs |
+| @concepts/llm-generated-dependency-breaking-tests.md | draft | LLM dependency tests are candidates, not a merge gate; crash-type > behavioral |
+| @sources/arxiv-2608-16088-ood-rainfall-csi-sensing.md | draft | OOD rainfall CSI sensing (2608.16088) — CSI-as-environmental-sensor steal |
+| @sources/arxiv-2608-20320-ood-travel-behavior-agents.md | draft | OOD travel-behavior agentic survey (2608.20320) — workflow-governance steal |
+| @sources/arxiv-2608-21278-clear-latent-adapter-routing.md | draft | CLEAR latent adapter routing (2608.21278; K301) — conditional safety |
+| @concepts/conditional-safety-adapter-routing.md | draft | Selective safety intervention vs the alignment tax; global LoRA ≠ safety proof |
+| @sources/arxiv-2608-23028-psychjail.md | draft | PsychJail psychological jailbreaks (2608.23028; K302) — lab only |
+| @concepts/psychological-multiturn-jailbreaks.md | draft | Multi-turn persuasion surface; refusal not turn-stable; no persuasion recipes |
+| @sources/arxiv-2608-23550-claude-md-vs-builtin-deny.md | draft | CLAUDE.md security rules vs built-in deny (2608.23550; K303) |
+| @concepts/nl-security-rules-vs-builtin-deny.md | draft | NL rule prose ≠ enforcement; `.cursor/hooks.json` fail-closed deny |
+| @concepts/step-level-agent-guardrails.md | draft | Pre-execution step guards for tool/MCP agents (K307 StepGuard) |
+| @concepts/chain-of-thought-decorative-reasoning-audit.md | draft | CoT perturbation audit; cdr metric — rationale ≠ evidence (K308) |
+| @concepts/llm-codegen-prompt-security-redistribution.md | draft | Security prompts redistribute CWE/severity, not prevalence (K309) |
+| @sources/arxiv-2608-23497-safety-direction-penalty.md | draft | Reasoning-induced misalignment / SDP (2608.23497; K304) |
+| @concepts/reasoning-induced-misalignment.md | draft | Harmless reasoning FT can weaken safety; reasoning FT is a safety event |
+| @sources/arxiv-2608-22754-bluetooth-nft-soft-pairing.md | draft | BT access control via NFT soft pairing (2608.22754; K305) |
+| @concepts/bluetooth-nft-soft-pairing.md | draft | Pairing ≠ authorization; revocable verifiable service auth; lab only |
+| @sources/arxiv-2608-21317-llm-regulatory-compliance-artifacts.md | draft | LLM compliance artifacts (2608.21317; K306 Watch) — DPIA/DPP |
+| @concepts/llm-generated-compliance-artifacts.md | draft | LLM compliance artifacts are candidates, not deliverables; HITL |
+| @sources/arxiv-2608-24777-stepguard.md | draft | StepGuard step-level guardrails (2608.24777; K307) |
+| @sources/arxiv-2608-24790-decorative-reasoning-medical-cot.md | draft | Decorative medical CoT audit (2608.24790; K308) |
+| @sources/arxiv-2608-24857-prompt-structure-security-redistribution.md | draft | Prompt structure + codegen security (2608.24857; K309) |
+| @sources/arxiv-2608-26049-rtlguard.md | draft | RTLGuard teacher-student RTL-poison defense (2608.26049; K310) — no public repo |
+| @concepts/rtl-codegen-poison-defense.md | draft | Sanitize-before-trust for poisoned RTL/codegen models; teacher-student + feature alignment |
+| @sources/arxiv-2608-26237-ctf-abacus.md | draft | CTF-ABACUS trace-verified CTF agent eval (2608.26237; K311) — flag ≠ exploit |
+| @concepts/trace-verified-ctf-agent-eval.md | draft | Trace-verified solve profiles; 62–87% of recovered flags are trace-verified |
+| @sources/arxiv-2608-27141-safety-does-not-compose.md | draft | Safety Does Not Compose / LoopHarness (2608.27141; K312) — non-decaying loop state |
+| @concepts/non-decaying-loop-safety-state.md | draft | Trajectory-scoped monitors do not compose; K312 runtime hook + grant CLI |
+| @sources/arxiv-2608-27439-redevoagent.md | draft | RedEvoAgent experience-driven red-team skill evolution (2608.27439; K313) — lab only |
+| @concepts/experience-driven-redteam-skill-evolution.md | draft | Distill trajectories into attack skills + validation ratchet; lab eval only |
+| @sources/arxiv-2608-28502-recognition-without-enforcement.md | draft | Recognition–enforcement gap / instruction arbitration (2608.28502; K314) — external monitor |
+| @concepts/recognition-enforcement-gap-instruction-arbitration.md | draft | Model arbitration ≠ security boundary; verbalized detection ≠ tool execution |
+| @sources/arxiv-2608-28490-llm-security-agents-survey.md | draft | LLM security agents SLR 100 papers (2608.28490; K315) — bounded authority |
+| @concepts/security-agent-authority-auditability-slr.md | draft | Security agents act but authority unbounded / behavior unauditable |
+| @sources/arxiv-2608-28481-ood-nl2agbench.md | draft | OOD NL2AGBench geometry auto-formalization (2608.28481) — execution verify steal |
+| @sources/arxiv-2608-30207-sir-cua-self-improving-redteam.md | draft | SIR self-improving CUA IPI red-team (2608.30207; K316) — deterministic VM oracle |
+| @concepts/failure-driven-cua-ipi-red-teaming.md | draft | Adaptive IPI on computer-use agents; joint success + state oracle scoring |
+| @sources/arxiv-2608-30429-evoskill-injection.md | draft | EvoSkill Injection / SARGE (2608.30429; K317) — skill pipeline attack surface |
+| @concepts/evoskill-injection-self-evolving-agents.md | draft | Persistent malicious skills from autonomous skill evolution; lab only |
+| @sources/arxiv-2608-31084-j-lens-multi-token-readout.md | draft | J-lens multi-token concept verbalization (2608.31084; K318) — interpretability audit |
+| @concepts/multi-token-concept-readout-audit.md | draft | First-token clue for multi-token SAE labels; not an enforcement boundary |
+| @sources/arxiv-2608-31105-bloom-wilt-logit-tilting-audit.md | draft | BLOOM-WILT logit tilting behaviour audit (2608.31105; K319) — multi-turn elicitation |
+| @concepts/logit-tilting-rare-behaviour-audit.md | draft | Rare-behaviour elicitation for automated LLM auditing; repo HOLD |
+| @sources/arxiv-2609-00487-evoflint-multi-turn-redteam.md | draft | EvoFlint multi-turn evolutionary red-team (2609.00487; K320) — atlas search |
+| @concepts/evoflint-multi-turn-redteam-atlas.md | draft | Phased conversation plans + MAP-Elites archive; ASR and severity |
+| @sources/arxiv-2609-01519-guardrail-construct-validity.md | draft | Guardrail construct validity failures (2609.01519; K321) — protocol isolation |
+| @concepts/guardrail-construct-validity-agent-eval.md | draft | Invalid/Inconclusive before guardrail policy claims |
+| @sources/arxiv-2608-29737-reactive-peripheral-firmware-rehosting.md | draft | Reactive peripheral firmware rehosting (2608.29737; K322) — embedded lab |
+| @concepts/firmware-rehosting-peripheral-fidelity.md | draft | Peripheral fidelity for off-chip firmware dynamic analysis |
+| @sources/arxiv-2609-02774-codepoisonrag-knowledge-poisoning.md | draft | CodePoisonRAG RACG poisoning (2609.02774; K323) — lab only |
+| @concepts/codepoisonrag-racg-knowledge-poisoning.md | draft | Upstream retrieval trust boundary for code generation |
+| @sources/arxiv-2609-02786-safeevolve-harness-policy-co-evolution.md | draft | SafeEvolve harness-policy co-evolution (2609.02786; K324) |
+| @concepts/safeevolve-harness-policy-co-evolution.md | draft | Bounded reversible harness + policy co-evolution; HITL |
+| @sources/arxiv-2609-02852-linguistic-illegibility-llm-security.md | draft | Linguistic illegibility for LLM security (2609.02852; K325) |
+| @concepts/linguistic-illegibility-llm-security.md | draft | NL self-report is not a complete security boundary |
+| @sources/arxiv-2609-02007-c2t-openmax-wifi-rf-fingerprinting.md | draft | C²T-OpenMax WiFi RF fingerprinting (2609.02007; K326) |
+| @concepts/wifi-rf-fingerprinting-open-set.md | draft | Open-set WiFi CSI device auth under environment shift |
+| @sources/arxiv-2609-09647-black-box-agentic-redteam-taxonomy.md | draft | Black-box agentic red-team taxonomy (2609.09647; K327) |
+| @concepts/black-box-agentic-redteam-taxonomy.md | draft | Seven-domain multi-step agent risk discovery |
+| @sources/arxiv-2609-11758-rag-safety-bench.md | draft | RAG-Safety-Bench (2609.11758; K328) |
+| @concepts/rag-safety-bench-evaluation.md | draft | Retrieval-conditioned LLM safety measurement |
+| @sources/arxiv-2609-11799-specguard-backdoor-detection.md | draft | SpecGuard inference-time backdoor detection (2609.11799; K329) |
+| @concepts/specguard-inference-time-backdoor-detection.md | draft | Runtime backdoor checks on third-party weights |
+| @sources/arxiv-2609-11852-bluestar-tiered-cyber-defense.md | draft | BlueSTAR tiered agentic cyber defense (2609.11852; K330) |
+| @concepts/bluestar-tiered-agentic-cyber-defense.md | draft | Tiered defensive agents over SOC telemetry |
+| @sources/arxiv-2609-09087-privescalate-llm-linux-privesc.md | draft | PrivEscalate LLM Linux priv-esc (2609.09087; K331) |
+| @concepts/privescalate-llm-linux-privilege-escalation.md | draft | Executable-verified LLM priv-esc benchmark |
+| @sources/arxiv-2609-05165-conformal-prediction-offensive-security.md | draft | Conformal prediction for offensive security (2609.05165; K332) |
+| @concepts/conformal-prediction-offensive-security.md | draft | CP intervals for offensive eval reporting |
+| @sources/arxiv-2609-05370-llm-decompiler-fidelity.md | draft | LLM decompiler fidelity (2609.05370; K335) |
+| @concepts/llm-decompiler-recompilability-fidelity.md | draft | Recompilability vs semantic preservation |
+| @sources/arxiv-2609-04159-sentinel-rl-soc-topology.md | draft | SENTINEL-RL SOC topology offload (2609.04159; K336) |
+| @concepts/sentinel-rl-soc-topological-reasoning.md | draft | Graph-consistent containment outside LLM context |
+| @sources/arxiv-2609-05385-llm-explanation-necessary-sufficient.md | draft | LLM explanation necessity/sufficiency (2609.05385; K337) |
+| @concepts/llm-explanation-necessary-sufficient-audit.md | draft | Behavioural counterfactuals on named-factor explanations |
+| @sources/arxiv-2609-06271-side-sensor-impersonation-edge.md | draft | SIDE sensor impersonation at edge (2609.06271; K338) |
+| @concepts/side-sensor-impersonation-edge-detection.md | draft | Sequence-prediction IoT impersonation detection |
+| @sources/arxiv-2609-05741-zero-trust-robotic-fleets.md | draft | Zero-trust mission-critical robotic fleets (2609.05741; K339) |
+| @concepts/zero-trust-mission-critical-robotic-fleets.md | draft | ROS 2 attestation + timing watermark zero-trust |
+| @sources/arxiv-2609-04058-post-quantum-crypto-accelerator.md | draft | OOD post-quantum crypto accelerator silicon |
+| @sources/arxiv-2609-04172-on-policy-distillation-one-shot.md | draft | OOD one-shot on-policy distillation |
+| @sources/arxiv-2609-05381-molecular-deja-vu-digit-retrieval.md | draft | OOD molecular benchmark verbatim retrieval |
+| @sources/arxiv-2609-09059-playtrain-js-game-rl.md | draft | OOD PlayTrain LLM JS game RL |
+| @sources/arxiv-2609-09076-actreview-peer-review.md | draft | OOD ActReview peer review generation |
+| @sources/arxiv-2609-10036-belief-state-engine-planning.md | draft | OOD Belief-State Engine partial observability planning |
+| @sources/arxiv-2609-16541-cyber-range-incident-response-agents.md | draft | Cyber-range autonomous IR agents (2609.16541; K340) |
+| @concepts/cyber-range-autonomous-incident-response-agents.md | draft | Network IR agent eval with availability tradeoffs |
+| @sources/arxiv-2609-16694-secure-ai-pentest-agents.md | draft | Secure AI-powered pentest agents (2609.16694; K341) |
+| @concepts/secure-ai-powered-pentest-agents.md | draft | Pentest agent threats, guardrails, architecture |
+| @sources/arxiv-2609-16777-multi-conversation-persuasion-robustness.md | draft | Multi-conversation persuasion robustness (2609.16777; K342) |
+| @concepts/multi-conversation-persuasion-factual-robustness.md | draft | Refusal-inertia-aware persuasion eval |
+| @sources/arxiv-2609-17516-chain-of-self-questioning-abstention.md | draft | Chain-of-self-questioning abstention (2609.17516; K343) |
+| @concepts/chain-of-self-questioning-selective-abstention.md | draft | CoSQ selective risk control |
+| @sources/arxiv-2609-17398-medical-plain-language-adaptation.md | draft | OOD medical plain-language adaptation |
+| @sources/arxiv-2609-12443-through-wall-detection-sdr-pca.md | draft | Through-wall detection SDR/PCA (2609.12443; K344) |
+| @concepts/through-wall-detection-sdr-pca.md | draft | Ambient WiFi CSI through-wall motion sensing |
+| @sources/arxiv-2609-18173-indirect-third-party-sensor-tracking.md | draft | Indirect third-party sensor tracking (2609.18173; K345) |
+| @concepts/indirect-third-party-sensor-vehicle-tracking.md | draft | Vehicle tracking via indirect sensor observations |
+| @sources/arxiv-2609-18862-cashews-malicious-package-detection.md | draft | CASHEWS npm malicious package preprocessor (2609.18862; K346) |
+| @concepts/cashews-llm-malicious-package-detection.md | draft | LLM package detection obfuscation evasion defense |
+| @sources/arxiv-2609-18864-asleval-privacy-exposure-displacement.md | draft | ASLEval privacy exposure displacement (2609.18864; K347) |
+| @concepts/asleval-privacy-exposure-displacement.md | draft | Session-level agent privacy eval vs local proxies |
+| @sources/arxiv-2609-19587-auto-mode-blocking-classifier-redteam.md | draft | Auto Mode blocking classifier red-team (2609.19587; K348) |
+| @concepts/auto-mode-blocking-classifier-redteam.md | draft | Malign coding agent monitor eval; multi-context axis |
+| @sources/arxiv-2609-20722-deep-noir-steering-discovery-chronometry.md | draft | Deep Noir steering discovery (2609.20722; K349) |
+| @concepts/deep-noir-steering-discovery-chronometry.md | draft | Automated activation steering audit pattern |
+| @sources/arxiv-2609-20752-llm-falsifier-cyber-physical-systems.md | draft | LLM-Falsifier for CPS (2609.20752; K350) |
+| @concepts/llm-falsifier-cyber-physical-systems.md | draft | STL falsification with LLM semantic feedback |
+| @sources/arxiv-2609-20909-tpm-attest-hardware-rooted-integrity-attestation.md | draft | TPM-Attest Linux integrity attestation (2609.20909; K351) |
+| @concepts/tpm-attest-linux-integrity-attestation.md | draft | TPM 2.0 + IMA remote attestation anti-cheat pattern |
+| @sources/arxiv-2609-21996-lie-detector-probe-internal-recognition.md | draft | PIR lie detector for LLMs (2609.21996; K352) |
+| @concepts/probe-internal-recognition-sandbagging-audit.md | draft | Sandbagging / unlearning internal-state audit |
+| @sources/arxiv-2609-22048-available-guardrails-selective-prediction.md | draft | Available Guardrails selective prediction (2609.22048; K354) |
+| @concepts/certified-selective-prediction-guardrails.md | draft | Certified availability per reporting unit |
+| @sources/arxiv-2609-25294-controller-only-false-confirmation-rf-uav.md | draft | RF UAV controller-only false confirmation (2609.25294; K364) |
+| @concepts/passive-rf-uav-controller-only-false-confirmation.md | draft | Passive RF counter-UAV eval cells |
+| @sources/arxiv-2609-26079-ble-mac-randomization-reidentification.md | draft | BLE re-id under MAC randomization (2609.26079; K365) |
+| @concepts/ble-mac-randomization-reidentification-lab.md | draft | BLE RPA linkability lab pattern |
+| @sources/arxiv-2609-28322-learning-cost-reliable-inference.md | draft | Cost of reliable inference (2609.28322; K366) |
+| @concepts/reliable-inference-procurement-routing.md | draft | Quality-tier model procurement routing |
+| @sources/arxiv-2609-28372-agentic-ai-surrogate-consumer-ood.md | draft | OOD surrogate consumer shopping (2609.28372) |
+| @sources/arxiv-2609-28395-translation-finetune-forgetting-mt-instruction.md | draft | MT fine-tune forgetting (2609.28395; K368) |
+| @sources/arxiv-2609-28940-calibrated-decision-models-pentest-harness-jev.md | draft | Calibrated pentest harness decisions + JEV (2609.28940; K369) |
+| @concepts/calibrated-decision-models-pentest-harness-jev.md | draft | System One classifiers for pentest adjudication |
+| @sources/arxiv-2609-29213-ble-backscatter-polarization-shift-identification.md | draft | BLE SWIPT backscatter device ID (2609.29213; K370) |
+| @concepts/ble-backscatter-polarization-shift-identification-lab.md | draft | Polarization-shift backscatter auth (owned devices) |
+| @sources/arxiv-2609-30217-instrumental-monitor-evasion-evaluation.md | draft | Instrumental monitor evasion (2609.30217; K371) |
+| @concepts/instrumental-monitor-evasion-evaluation.md | draft | EvasionBench runtime monitor bypass eval |
+| @sources/arxiv-2609-30233-coding-agents-generalized-tamp-ood.md | draft | OOD generalized TAMP coding agents (2609.30233) |
+| @sources/arxiv-2609-30266-llm-agents-trace-tampering.md | draft | LLM agent self-trace tampering (2609.30266; K373) |
+| @sources/arxiv-2609-30383-skill-cascading-attacks-skill-based-agents.md | draft | Skill cascading (2609.30383; K374) |
+| @concepts/skill-cascading-attacks-skill-based-agents.md | draft | Cross-skill agent attack surface |
+| @sources/arxiv-2609-31318-agentxploit-repository-runtime-red-teaming.md | draft | AgentXploit (2609.31318; K375) |
+| @concepts/agentxploit-repository-runtime-red-teaming.md | draft | Repo-to-runtime agent audit |
+| @sources/arxiv-2609-31552-fragtoken-inference-cost-amplification.md | draft | FragToken (2609.31552; K376) |
+| @concepts/fragtoken-inference-cost-amplification-lab.md | draft | Token-level cost abuse lab |
+| @sources/arxiv-2609-31575-configuration-not-conscience-system-prompts.md | draft | System prompt corpus (2609.31575; K377) |
+| @concepts/llm-system-prompt-corpus-audit.md | draft | Leaked prompt composition audit |
+| @sources/arxiv-2609-32400-skilldre-dual-stage-skill-red-team-evolution.md | draft | SkillDRE dual-stage skill evolution (2609.32400; K378) |
+| @concepts/skilldre-dual-stage-malicious-skill-evolution-lab.md | draft | Pre-scan vs runtime defense feedback loop |
+| @sources/arxiv-2609-33628-climbing-hill-curriculum-prompt-injection-redteam.md | draft | Curriculum RL prompt-injection red-team (2609.33628; K379) |
+| @concepts/curriculum-prompt-injection-redteam-frontier-models.md | draft | Cold-start curriculum for frontier PI red-team |
+| @sources/arxiv-2609-34920-rise-t2i-redteam-ood.md | draft | OOD RISE T2I iterative strategy red-team (2609.34920) |
+| @sources/arxiv-2609-35663-late-attention-entity-token-copying.md | draft | Late-layer entity token copying (2609.35663; K380) |
+| @concepts/late-attention-entity-token-copying-interpretability.md | draft | Entity copy vs context dependence (audit) |
+| @sources/arxiv-2609-35699-distillation-defenses-break-after-reinforcement-learning.md | draft | Distillation defenses vs post-distill RL (2609.35699; K381) |
+| @concepts/distillation-defense-reinforcement-learning-threat-model.md | draft | Re-eval defenses after attacker RL continuation |
+| @sources/arxiv-2609-36474-finrt-amortized-redteam-generator.md | draft | FinRT amortized adversarial-generator red-team (2609.36474; K382) |
+| @concepts/finrt-amortized-redteam-generator.md | draft | Amortize red-team search into a reusable generator |
+| @sources/arxiv-2609-36570-countersteer-activation-steering-ipi-defense.md | draft | CounterSteer inference-time IPI steering (2609.36570; K383) |
+| @concepts/countersteer-activation-steering-ipi-defense.md | draft | Always-on tool-span steering vs indirect prompt injection |
+| @sources/arxiv-2609-36739-frontier-autolab-temporal-leakage.md | draft | Frontier Autolab org-memory temporal leakage (2609.36739; K384) |
+| @concepts/frontier-autolab-organizational-memory-leakage.md | draft | Leakage measures for historically scored agent evals |
+| @sources/arxiv-2609-38021-auditable-long-term-memory-retrieval-chain.md | draft | Auditable long-term memory retrieval chain (2609.38021; K385) |
+| @concepts/auditable-long-term-memory-retrieval-chain.md | draft | Deterministic retrieval chain for agent memory audit |
+| @sources/arxiv-2609-38099-rice-in-context-dense-retrieval.md | draft | RICE in-context dense retrieval (2609.38099; K386) |
+| @concepts/rice-in-context-dense-retrieval.md | draft | Dense retrieval trained from in-context examples only |
+| @sources/arxiv-2610-00590-hierarchical-llm-cyber-defense.md | draft | Hierarchical LLM cyber defense planner/executor (2610.00590; K387) |
+| @concepts/hierarchical-llm-cyber-defense-planner-executor.md | draft | Frozen LLM planner vs executor across network scale |
+| @sources/arxiv-2610-00960-video-index-benchmark-shortcut-attack-pyramid.md | draft | Video-Index benchmark shortcut attack pyramid (2610.00960; K388) |
+| @concepts/benchmark-shortcut-attack-pyramid-audit.md | draft | Report a breaking level beside a capability certificate |
+| @sources/arxiv-2610-01058-momat-quantized-llm-jailbreak-defense.md | draft | MOMAT quantized-LLM jailbreak defense (2610.01058; K389) |
+| @concepts/quantized-llm-jailbreak-defense-atlas.md | draft | Quantization degrades alignment; atlas retrieval guard |
+| @sources/arxiv-2610-02204-rpg-embodied-agent-self-improvement-ood.md | draft | RPG embodied self-improvement OOD (2610.02204; K390) |
+| @concepts/cross-task-no-regression-skill-promotion-gate.md | draft | Promote a skill/prompt write only if no task regresses |
+| @sources/arxiv-2610-02206-kalibench-nl-to-cli-cybersecurity-tool-use.md | draft | KaliBench NL-to-CLI cybersecurity tool use (2610.02206; K391) |
+| @concepts/kalibench-nl-to-cli-tool-use-eval.md | draft | Split tool selection from argument construction |
+| @sources/arxiv-2609-31519-wpa3-sae-asymmetric-pe-tickets.md | draft | WPA3 SAE cost asymmetry / ticket fast-path (2609.31519; K392) |
+| @concepts/wpa3-sae-dos-cost-asymmetry.md | draft | Put the expensive SAE work on the side that can afford it |
+| @sources/arxiv-2610-01580-pld-eap-teap-wifi-authentication.md | draft | PLD second factor in EAP-TEAP Wi-Fi auth (2610.01580; K393) |
+| @concepts/physical-layer-deception-enterprise-wifi-auth.md | draft | Channel-derived second factor via deception, not measurement |
+| @sources/arxiv-2610-03531-authorship-attribution-zero-shot-representations.md | draft | Zero-shot authorship attribution representations (2610.03531; K395) |
+| @concepts/authorship-attribution-author-representation.md | draft | Attribution needs an author representation, not just labels |
+| @sources/arxiv-2610-03585-threat-preserving-representation-sensitivity.md | draft | Threat-preserving representation sensitivity / TPRS (2610.03585; K396) |
+| @concepts/threat-preserving-representation-sensitivity.md | draft | An ASR is a property of agent + representation |
+| @sources/arxiv-2610-03675-frugalevo-cost-aware-program-evolution.md | draft | FrugalEvo cost-aware program evolution / BA-AUC (2610.03675; K397) |
+| @concepts/budget-aware-agentic-search-cost.md | draft | Budget the loop, not the iteration count |
+| @concepts/bedrock-addon-distribution-integrity.md | draft | Bedrock add-on supply chain + script review (Basgiath) |
+
+| @sources/arxiv-2610-04693-penumbra-regulatory-obligation-adversarial-search.md | draft | Penumbra regulatory-obligation adversarial search (2610.04693; K398) |
+| @concepts/compliance-boundary-adjacent-pair-search.md | draft | Test an obligation boundary with adjacent pairs |
+| @sources/arxiv-2610-05282-red-ttt-test-time-training-jailbreak.md | draft | Red-TTT test-time-training jailbreak attacker (2610.05282; K399) |
+| @concepts/test-time-training-redteam-attacker.md | draft | Frozen attacker weights are a ceiling |
+| @sources/arxiv-2610-05346-mosaic-attacks-sequential-fragment-defense.md | draft | Sequential mosaic attacks + watchman defense (2610.05346; K400) |
+| @concepts/mosaic-attack-bounded-window-insufficiency.md | draft | No bounded window of recent turns is sufficient |
+| @sources/arxiv-2610-06844-contextual-reader-diffusion-transformers-ood.md | draft | Contextual Reader in diffusion transformers (2610.06844; K401) — OOD, image-gen primary |
+| @sources/arxiv-2610-06848-transcope-hardware-membership-inference.md | draft | TransScope hardware membership inference (2610.06848; K402) |
+| @concepts/hardware-membership-inference-microarchitecture.md | draft | Constant-time software, non-constant hardware footprint |
+
+| @sources/arxiv-2610-07323-atlas-al-adversarial-region-active-learning.md | draft | ATLAS-AL adversarial region via active learning (2610.07323; K403) |
+| @concepts/adversarial-region-estimation-vs-single-example.md | draft | Estimate the failure region, not one example |
+| @sources/arxiv-2610-07870-post-quantum-ble-pairing-nfc-oob-implant.md | draft | Post-quantum BLE pairing via NFC OOB for implants (2610.07870; K404) |
+| @concepts/post-quantum-oob-pairing-medical-implants.md | draft | Run the PQ KEM on the OOB channel itself |
+| @sources/arxiv-2610-08678-secure-speculative-decoding.md | draft | Secure speculative decoding / safety asymmetry (2610.08678; K405) |
+| @concepts/speculative-decoding-safety-asymmetry.md | draft | An inference optimisation that silently weakens safety |
+| @sources/arxiv-2610-08739-bare-ai-bit-flip-resilience.md | draft | BARE-AI bit-flip detection via performance monitors (2610.08739; K406) |
+| @concepts/dnn-bit-flip-detection-runtime-monitors.md | draft | Activation statistics as a weight-corruption tripwire |
+| @sources/arxiv-2610-08781-ideaanchor-research-ideation-ood.md | draft | IdeaAnchor research ideation (2610.08781; K407) — OOD |
+
+| @sources/arxiv-2610-02861-kubernetes-agent-containment.md | draft | K8s agent containment: model is not a boundary (2610.02861; incoming K421) |
+| @concepts/model-is-not-a-security-boundary-kubernetes-agents.md | draft | Lethal trifecta + seven-layer Kubernetes containment |
+| @sources/wublock-2026-10-06-memtensor-agent-memory-supply-chain.md | draft | MemTensor/MemoryOS memory-package compromise (incoming K283-b) |
+| @concepts/agent-memory-supply-chain-compromise.md | draft | A poisoned memory layer leaks the whole context |
+| @sources/arxiv-2610-03153-evoriskbench-runtime.md | draft | EvoRiskBench model x harness runtime risk (2610.03153; incoming K282-b) |
+| @concepts/harness-vs-model-risk-share.md | draft | Model spread 54.37 pp vs harness spread 5.41 pp |
+| @sources/arxiv-2610-06339-babelfake-multilingual-av-deepfake.md | draft | BabelFake multilingual AV deepfake benchmark (2610.06339; from image-gen) |
+| @concepts/inbound-security-wave-2026-10-07.md | draft | Inbound brief digest: agent verification, refusal bias, jailbreak bench |
+| @entities/tools/strata.md | draft | Strata — local 125B-MoE inference on consumer hardware (K284) |
+| @sources/arxiv-2610-10276-patchbench-local-suppression-vs-repair.md | draft | PatchBench: local suppression vs repair (inbound K285-a) |
+| @sources/arxiv-2610-10345-sldr-signed-layer-safety-repair.md | draft | SLDR signed-layer safety repair (inbound K285-a) |
+| @concepts/local-suppression-vs-repair.md | draft | A global metric can hide a large local regression |
+| @entities/tools/rea.md | draft | rea — agent-first RE toolkit + Hopper MCP (K285-b) |
+| @entities/tools/background-agents.md | draft | background-agents — sandboxed spawn-child delegation (K285-c) |
+| @sources/arxiv-2610-08331-stca-av-vlm-adversarial-attack.md | draft | STCA AV-VLM adversarial attack (from image-gen) |
+| @concepts/vlm-perception-adversarial-robustness.md | draft | Domain-tuned VLM resisted what general VLMs did not |
+| @sources/arxiv-2610-08417-lipda-lipsync-forgery-attribution.md | draft | LipDA lipsync forgery detection + attribution (from image-gen) |
+| @concepts/lipsync-forgery-detection-attribution.md | draft | Lip-pose coupling as a lipsync detector |
+| @sources/arxiv-2610-09240-adversarial-images-hijack-web-agents.md | draft | Adversarial images hijack web agents (2610.09240; K408) |
+| @concepts/adversarial-images-hijack-web-agents.md | draft | A page image is untrusted input once the agent reads pixels and acts |
+| @sources/arxiv-2610-09892-defensive-sufficiency-stackelberg.md | draft | Defensive sufficiency in a Stackelberg model (2610.09892; K409) |
+| @concepts/defensive-sufficiency-feedback-loop.md | draft | When test-repair is actually a control; repair regions not singletons |
+| @sources/arxiv-2610-09906-constrained-action-ai-remediation-siem.md | draft | Constrained-action SOC remediation via guardrails proxy (2610.09906; K410) |
+| @concepts/constrained-action-soc-remediation.md | draft | Tier-0 deterministic gate first, LLM rail second, human approval on actions |
+| @sources/arxiv-2610-10455-phrbench-post-hallucination-reasoning.md | draft | PHRBench post-hallucination reasoning (2610.10455; K411) |
+| @concepts/post-hallucination-reasoning-behavior.md | draft | Does the model correct or commit after a hallucinated premise |
+| @sources/arxiv-2610-10533-engramedit-conditional-memory-knowledge-updates.md | draft | EngramEdit conditional-memory knowledge updates (2610.10533; K412) |
+| @concepts/conditional-memory-knowledge-editing.md | draft | The disable test: prove an edit lives in memory, not a prompt |
+| @sources/arxiv-2610-11112-false-claims-credible-images.md | draft | EpiReal-Bench image-generator misinformation red-team (2610.11112; K413) |
+| @concepts/verification-generation-gap.md | draft | Knowing a claim is false is not refusing to render it |
+| @sources/arxiv-2610-12233-resi-recursive-safety-improvement.md | draft | ReSI recursive safety improvement under a Pareto gate (2610.12233; K414) |
+| @concepts/recursive-safety-improvement-pareto.md | draft | Gate every safety round on a benign cost budget |
+| @sources/arxiv-2610-12313-verdict-without-the-rule-compliance-invariance.md | draft | Verdict without the rule: compliance invariance (2610.12313; K415) |
+| @sources/arxiv-2610-12361-cited-but-not-consulted-authority-swap-audit.md | draft | Cited but not consulted: authority-swap audit (2610.12361; K416) |
+| @concepts/compliance-verdict-rule-invariance.md | draft | A verdict is not evidence the rule was read |
+| @concepts/citation-is-not-consultation.md | draft | A stated ground is not the operative ground |
+| @sources/arxiv-2610-12415-orcagen-context-aware-malware-deception.md | draft | ORCAGen context-aware malware deception (2610.12415; K417) |
+| @concepts/context-aware-malware-deception-playbooks.md | draft | Deception preserves the observation an eviction destroys |
+| @sources/arxiv-2610-05007-aerial-5g-gnb-arm-testbed.md | draft | Aerial 5G gNB ARM testbed + PWS over F1 (2610.05007; K418) |
+| @concepts/aerial-ran-testbed-pws-broadcast.md | draft | A PWS emergency broadcast is a high-integrity target |
+| @sources/arxiv-2610-05979-holistic-rffi-vector-quantization.md | draft | Holistic RFFI via learning-aided quantization (2610.05979; K419) |
+| @concepts/holistic-rffi-open-world-discovery.md | draft | Keep the open-set score; it is the discovery signal |
+| @sources/arxiv-2610-13307-sustainable-cloud-fog-edge-smart-buildings.md | draft | Sustainable cloud-fog-edge smart buildings (2610.13307; K420) — OOD |
+| @sources/arxiv-2610-13367-secrets-in-preamble-phy-wifi.md | draft | Secrets in preamble: PHY info hiding for Wi-Fi (2610.13367; K421) |
+| @concepts/phy-layer-covert-channel-wifi-preamble.md | draft | A covert channel and a watermark are the same mechanism |
+| @sources/arxiv-2610-13811-qtestbench-llm-quantum-code-tests.md | draft | QTestBench LLM-generated quantum code tests (2610.13811; K422) |
+| @concepts/llm-generated-test-discrimination.md | draft | A passing generated test is not a discriminating test |
+| @sources/arxiv-2610-13886-x-agentred-cross-service-redteam.md | draft | X-AgentRed cross-service agent red-team (2610.13886; K423) |
+| @concepts/cross-service-agent-compositional-harm.md | draft | Harm emerges from the composition of benign tool calls |
+| @sources/arxiv-2610-13895-task-context-component-roles.md | draft | Task context shapes component roles (2610.13895; K424) |
+| @concepts/task-dependent-component-roles.md | draft | A component's role is a function of task context |
+| @sources/arxiv-2610-11030-nomos-compiled-policy-tool-gate.md | draft | NOMOS compiled policy tool-call gate (2610.11030; K288 inbound) |
+| @concepts/nomos-compiled-policy-enforcement.md | draft | Compile the policy once; enforce it in code |
+
+| @sources/arxiv-2610-02045-form-and-void-agent-ood.md | draft | Form and Void composition agent (2610.02045; K394) — OOD, image-gen primary |
+
+| @concepts/k277-security-wave.md | draft | k277 wave — code-domain safety lag + confirm-then-report |
+| @concepts/k278-security-wave.md | draft | k278 wave — KaliBench NL-to-CLI |
+| @sources/arxiv-2609.39902-codemimicry-2026-10-01.md | unread-stub | CodeMimicry code-domain safety lag (stub) |
+| @sources/newsletter-rss-tldrsec-2026-10-01-tldr-sec-348---googles-pagebreak-scanner-perplex.md | unread-stub | TLDR Sec 348 — PageBreak + Numbat (stub) |
+
+
+
+
+| @sources/arxiv-2609-31506-haitian-creole-cultural-awareness-ood.md | draft | OOD Haitian Creole eval (2609.31506) |
+
+| @concepts/agent-execution-trace-tampering-audit.md | draft | Independent trace logging audit pattern |
+
+| @concepts/translation-finetune-forgetting-mt-instruction-audit.md | draft | MT-IF audit after domain fine-tune |
+| @sources/arxiv-2609-23894-agentic-ai-cross-dimensional-taxonomy.md | draft | Cross-dimensional agentic AI security taxonomy (2609.23894; K355) |
+| @concepts/cross-dimensional-agentic-ai-security-taxonomy.md | draft | T=⟨S,B,P,A⟩ threat/eval maturity map |
+| @sources/arxiv-2609-24173-graw-wifi-har-privacy-perturbation.md | draft | GRAW Wi-Fi HAR privacy perturbation (2609.24173; K356) |
+| @concepts/wifi-har-privacy-perturbation-graw.md | draft | CSI HAR privacy defender (authorized RF lab) |
+| @sources/arxiv-2609-24934-culturally-responsive-llm-benchmark-audit.md | draft | Culturally responsive LLM benchmark audit (2609.24934; K357) |
+| @concepts/culturally-responsive-llm-benchmark-audit.md | draft | Whose facts count — benchmark audit |
+| @sources/arxiv-2609-24972-rrsi-regularized-harness-self-improvement.md | draft | RRSI harness self-improvement (2609.24972; K358) |
+| @concepts/rrsi-regularized-harness-self-improvement.md | draft | Regularized recursive harness RSI |
+| @sources/arxiv-2609-24994-feedback-coding-covert-agentic-communication.md | draft | Covert agentic communication (2609.24994; K359) |
+| @concepts/inference-time-covert-agentic-communication.md | draft | Inference-time benign-output covert channels |
+| @sources/arxiv-2609-25364-quantum-rop-chain-selection.md | draft | Quantum ROP gadget selection (2609.25364; K360) |
+| @concepts/quantum-rop-combinatorial-selection.md | draft | QUBO/QAOA ROP selection (REFERENCE) |
+| @sources/arxiv-2609-26555-rouxii-deception-aware-ai-pentesters.md | draft | Rouxii deception-aware pentesters (2609.26555; K361) |
+| @concepts/deception-aware-honeypot-ai-pentesters-rouxii.md | draft | Honeypot eval with deception-aware agents |
+| @sources/arxiv-2609-26682-genai-access-control-policy-enforcement.md | draft | GenAI access-control policy (2609.26682; K362) |
+| @concepts/genai-access-control-policy-enforcement.md | draft | Alignment vs access-control enforcement |
+| @sources/arxiv-2609-26725-figma-ai-product-design-ood.md | draft | OOD Figma AI product design RCT (2609.26725) |
+| @sources/arxiv-2609-26749-llm-vulnerability-repair-metrics-failure.md | draft | LLM vuln repair metrics failure (2609.26749; K363) |
+| @concepts/llm-vuln-repair-metrics-audit.md | draft | Compile rate ≠ semantic vuln repair |
+| @sources/arxiv-2609-22024-pv-care-ood.md | draft | OOD PV-Care EEG elder care (2609.22024) |
+| @sources/arxiv-2609-20816-paint-anything-ood.md | draft | OOD Paint-Anything image generation (2609.20816) |
+| @sources/arxiv-2609-18842-infinite-parameter-llms-live-data.md | draft | OOD infinite-parameter LLMs from live data |
+| @sources/arxiv-2609-01548-ood-sdare-bench.md | draft | OOD SDARE-Bench stigma dialogue (2609.01548) — social safety |
+| @sources/arxiv-2609-01564-ood-confusion-aware-rag.md | draft | OOD confusion-aware RAG for classification (2609.01564) — not cyber-primary |
+| @sources/arxiv-2608-31118-ontolearn-llm-size-ood.md | draft | OOD OntoLearner LLM size for ontology learning (2608.31118) — not cyber-primary |
+| @sources/arxiv-2608-25612-ood-wifi-respiratory-csi.md | draft | OOD Wi-Fi CSI respiratory monitoring (2608.25612) — commodity-CSI sensor steal |
+| @sources/arxiv-2608-26086-ood-traceml.md | draft | OOD TraceML human-agent ML-dev planning (2608.26086) — outcome benches hide process |
+| @sources/arxiv-2608-26103-ood-zero-wam.md | draft | OOD Zero-WAM robot in-context world-action (2608.26103) — no cyber adopt |
+| @sources/arxiv-2608-27417-ood-vlm-retrieval-heads.md | draft | OOD VLM visual retrieval heads (2608.27417) — visual evidence can be unfaithful |
+| @sources/arxiv-2608-27420-ood-weak-model-rlvr.md | draft | OOD weak-model guidance RLVR (2608.27420) — no trainer wire |
+| @sources/arxiv-2608-21289-ood-rebite-food-journaling.md | draft | OOD Rebite food journaling (2608.21289) — goal-at-view-time steal |
+| @sources/arxiv-2608-23566-ood-critic-bpco.md | draft | OOD BPCO critic RL (2608.23566) — golden_critic REFERENCE; no trainer wiring |
+| @sources/arxiv-2608-17067-ood-disco-t2i-defense.md | draft | OOD DiSCO T2I defense → image-gen |
+| @sources/arxiv-2608-19025-ood-self-prompting-literature-extraction.md | draft | OOD literature extraction — consensus ≠ ground truth |
+| @sources/arxiv-2608-16852-rule-blindness-compliance-detectors.md | draft | Rule blindness in compliance detectors (2608.16852; Watch) |
+| @concepts/compliance-detector-rule-blindness.md | draft | Crossed-rule audit; detector verdict ≠ stated rule |
+| @sources/arxiv-2608-18351-excess-authority-least-privilege.md | draft | Excess-authority least-privilege learning (CCC K290 ≠ CHIVE) |
+| @concepts/task-conditioned-excess-authority.md | draft | Trajectory authority envelope; complements gates |
+| @sources/arxiv-2608-14392-tripwire-safety-neuron-clamp.md | draft | Tripwire safety-neuron clamp (2608.14392; K240 Watch) |
+| @concepts/tripwire-safety-neuron-clamp.md | draft | Do not clamp abliterated lab models without HITL |
+| @sources/arxiv-2608-14529-deterministic-gapsvp-hardness.md | draft | Deterministic GapSVP NP-hardness (2608.14529; watch) |
+| @concepts/lattice-pqc-hardness-watch.md | draft | Lattice PQC hardness story — not an attack |
+| @sources/arxiv-2608-16795-ood-historical-backtesting-astronomy.md | draft | OOD astronomy backtesting — LLM-judge κ steal |
+| @sources/arxiv-2608-14391-ood-ra-bench-crisis-video.md | draft | OOD RA-Bench crisis video → image-gen |
+| @concepts/differential-fault-injection-llm-code-stub.md | draft | CCC K284 DFI stub — off-nominal paired validation |
+| @sources/arxiv-2608-12977-self-evolving-security.md | draft | HARD self-evolving runtime defense (2608.12977; OSINT K237) |
+| @concepts/self-evolving-runtime-defense.md | draft | Evolve gates vs policy from held-out failures (HARD) |
+| @concepts/ai-loss-of-control-osint-monitoring.md | draft | OSINT vectors for AI loss-of-control detection (2606.20610) |
+| @concepts/cross-tool-description-poisoning.md | draft | Cross-tool MCP metadata steering + Tool-Guard isolated planning (2606.20922) |
+| @concepts/local-agent-runtime-audit.md | draft | CLAWAUDIT static runtime audit — OpenClaw source (2606.21071) |
+| @concepts/autonomous-defense-agent-transferability.md | draft | ARENA — SOC agent transferability gap (2606.21377) |
+| @concepts/lingering-authority-revocable-capabilities.md | draft | PORTICO revocable planner capabilities (2606.22504) |
+| @concepts/intent-governed-tool-authorization.md | draft | IGAC — session intent narrowing (2606.22916) |
+| @concepts/agentic-offensive-security-kill-chain.md | draft | Agentic pentest agent kill chain + agent-phishing (2606.24496) |
+| @concepts/multi-tool-threshold-mcp-poisoning.md | draft | ShareLock Shamir multi-tool MCP poisoning (2606.27027) |
+| @concepts/tool-environment-unreliability-eval.md | draft | ToolBench-X recoverable tool hazards + diagnosis gap (2606.25819) |
+| @concepts/confidence-aware-tool-orchestration.md | draft | Robust-TO Blind Trust + (result, confidence) tool routing (2606.26904) |
+| @concepts/cognitive-heuristics-llm-vuln-detection.md | draft | Halo/framing/anchoring bias in LLM vuln scanners (2606.30587) |
+| @concepts/mcp-execution-control-invariants.md | draft | HCP eight invariants — execution control beyond MCP connection (2606.29073) |
+| @concepts/substrate-constraints-coding-agent-oversight.md | draft | Steerability via constraints — substrate + docs CLI for coding-agent oversight (2607.02389) |
+| @concepts/agent-data-injection-attacks.md | draft | ADI — trusted/untrusted data isolation in agent context (2607.05120) |
+| @concepts/mcp-taint-style-vulnerabilities.md | draft | MCP server taint-style vulns + SpellSmith description defense (2607.07461) |
+| @concepts/cage-1-enterprise-agent-governance-eval.md | draft | CAGE-1 Prebind Assurance + 12-dimension enterprise agent eval (2607.03510) |
+| @concepts/multilingual-long-horizon-agent-evaluation.md | draft | PolyWorkBench hybrid multilingual long-horizon agent eval (2607.06008) |
+| @concepts/security-tool-orchestration-determinants.md | draft | Client is first-order (2.1× gap); reasoning-bound residuals — HexStrike study (2607.02873) |
+| @concepts/crypter-as-a-service.md | draft | CraaS underground market — exploit.in longitudinal study (2606.24226) |
+| @concepts/seclaw-agent-security-evaluation.md | draft | Trajectory-aware agent security eval — SeClaw methodology (Reference until code ships) |
+| @concepts/agent-skill-injection.md | draft | K95 — skill injection + MalSkillBench/POISE + SPI + P3 memory gap (K114) |
+| @concepts/context-fractured-decomposition-attacks.md | draft | CFD — artifact provenance gap jailbreaks across sessions/instances (2606.09084) |
+| @concepts/mcp-security-posture.md | validated | K100 — MCP admission, DCI, SPI, WebMCP MSTI, VATS, GT-MCP trajectory (2606.10322) |
+| @sources/arxiv-2608-12880-labels-not-endpoints.md | draft | Labels ≠ endpoints in MCP security eval (2608.12880; CCC K277) |
+| @concepts/measurement-integrity-mcp-security-eval.md | draft | Bind treatment/behavior/authorization/outcome/unit before ASR claims |
+| @sources/arxiv-2608-13030-intersage.md | draft | InterSAGE trust-native IoA protocol (2608.13030; CCC K278) |
+| @concepts/intersage-trust-native-ioa-protocol.md | draft | Agent Identity Card + monotonic capability attenuation |
+| @concepts/agentic-containment-principles.md | draft | K114 — P1–P6 containment matrix; LangChain/AutoGPT/OpenAI SDK audit |
+| @concepts/neuro-symbolic-auditable-reasoning.md | validated | K100 — NeuroLog-style Datalog+SMT auditable vuln chains |
+| @concepts/blockchain-security.md | draft | Smart-contract + DeFi security |
+| @concepts/metaverse-security.md | draft | VR / AR / immersive platform risk |
+| @concepts/game-hacking.md | draft | Anti-cheat RE practice; HWID map on hardware-bound-identity |
+| @concepts/zero-trust.md | draft | Identity-centric defense architecture |
+| @concepts/cyberwarfare.md | draft | Nation-state cyber operations |
+| @concepts/anonymity-networks.md | draft | Tor + I2P; hardware IDs are a separate plane |
+| @sources/arxiv-2608-06581-whitenet-spectral-whitening.md | draft | WhiteNet channel-robust overlapping 802.11 protocol ID (2608.06581; K274) |
+| @concepts/spectral-whitening-wireless-protocol-id.md | draft | Spectral whitening removes the channel envelope for RF protocol classification |
+| @sources/arxiv-2608-11337-association-privacy-wireless-formal.md | draft | Association inference / allowlist side-channel privacy (2608.11337; K275) |
+| @concepts/association-inference-attack-wireless.md | draft | Allowlist + replay/relay tracking; Tamarin-verified mitigation |
+| @sources/arxiv-2608-12292-tutor-withhold-refusal-contract.md | draft | Tutor withhold supervisor + evidence-driven Socratic tuning (2608.12292; K276) |
+| @concepts/refusal-under-knowledge-withhold-contract.md | draft | Per-turn machine-checkable withhold contracts for LLM agents |
+| @sources/arxiv-2608-12311-rsm-role-specialization.md | draft | RSM multi-tool role coordination in agentic SE (2608.12311; K277) |
+| @concepts/role-specialization-multi-tool-coordination.md | draft | Explicit tool responsibility domains + role-drift detection |
+| @sources/arxiv-2608-12996-atobench-deceptive-observations.md | draft | ATOBench deceptive-observation verification eval (2608.12996; K278) |
+| @concepts/atobench-verification-chain-deception.md | draft | Verification-chain evaluation under deceptive target observations |
+| @sources/arxiv-2608-13476-marc-v1-clinical-multi-agent.md | draft | MARC v1 clinical multi-agent orchestration (2608.13476; K279) |
+| @concepts/deterministic-multi-agent-orchestration-failure-attribution.md | draft | Deterministic staged orchestration + failure attribution (MARC) |
+| @sources/arxiv-2608-13496-yavin-secure-edge-pim-tee.md | draft | YAVIN unified TEE + PIM secure edge (2608.13496; K280) |
+| @concepts/pim-tee-untrusted-memory-bus.md | draft | TEE trust boundary vs processing-in-memory (untrusted bus) |
+| @entities/tools/ente.md | draft | ente E2EE cloud (photos/auth/locker) — Atto steal (K281) |
+| @concepts/e2ee-consumer-cloud-threat-model.md | draft | E2EE consumer-cloud threat model: recovery/share/metadata |
+| @sources/arxiv-2608-13463-ood-mllm-routed-ensembles.md | draft | OOD MLLM-routed ensembles (2608.13463) → image-gen |
+| @sources/arxiv-2608-12290-ood-i2v-agentic-optimization.md | draft | OOD I2V agentic optimization (2608.12290) → image-gen |
+| @sources/arxiv-2608-13069-ood-behavioral-reprogramming.md | draft | OOD behavioral reprogramming (2608.13069) → image-gen |
+
+### Education + ethics
+
+| Page | Maturity | Topic |
+|------|----------|-------|
+| @concepts/cyber-for-kids.md | draft | Parent + teacher + LE-facing kid-safety material |
+
+---
+- [chekusu/mails — AI email parsing, dual-use phishing-domain enumeration](concepts/2026-05-13_chekusu-mails-dual-use.md) — cross-wiki stub routed from ingest — `cross-wiki`
+
+## Entities
+
+### Frameworks
+
+| Page | Maturity |
+|------|----------|
+| @entities/frameworks/mitre-attack.md | validated |
+| @entities/frameworks/cyber-kill-chain.md | validated |
+
+### Certifications
+
+| Page | Maturity | Vendor |
+|------|----------|--------|
+| @entities/certifications/oscp.md | draft | Offensive Security |
+| @entities/certifications/oswa.md | draft | Offensive Security |
+| @entities/certifications/oswe.md | draft | Offensive Security |
+| @entities/certifications/crto.md | draft | Zero-Point Security |
+| @entities/certifications/ceh.md | draft | EC-Council |
+| @entities/certifications/comptia-security-plus.md | draft | CompTIA |
+| @entities/certifications/comptia-pentest-plus.md | draft | CompTIA |
+| @entities/certifications/ecppt.md | draft | eLearnSecurity / INE |
+| @entities/certifications/ecptx.md | draft | eLearnSecurity / INE |
+| @entities/certifications/ewpt.md | draft | eLearnSecurity / INE |
+
+### Tools
+
+| Page | Maturity | Role |
+|------|----------|------|
+| @entities/tools/cobalt-strike.md | draft | Commercial C2 |
+| @entities/tools/metasploit.md | draft | FOSS exploitation framework |
+| @entities/tools/burp-suite.md | draft | Web-app testing proxy |
+| @entities/tools/caldera.md | draft | Adversary emulation automation |
+| @entities/tools/maltego.md | draft | OSINT graph analysis |
+| @entities/tools/wazuh.md | draft | FOSS SIEM / host-IDS |
+| @entities/tools/nmap.md | draft | Network scanner |
+| @entities/tools/rustscan.md | draft | Fast port-scan front-end to nmap (OSINT K237; owned-lab only) |
+| @entities/tools/cyberscraper-2077.md | draft | LLM-assisted scraper — OSINT clone; cyber awareness, no second tree |
+| @entities/tools/bloodhound.md | draft | AD attack-path graph |
+| @entities/tools/bloodbash.md | draft | Offline SharpHound/AzureHound JSON (K242 Extract; OSINT shelf) |
+| @entities/tools/bbot.md | draft | Recursive recon scanner (K241 AGPL Extract; no Atto vendor) |
+| @entities/tools/battleye.md | draft | Third-party kernel AC (BEDaisy/BEService/BEClient) — REFERENCE |
+| @entities/tools/easy-anti-cheat.md | draft | Epic kernel AC (demand-start) — REFERENCE |
+| @entities/tools/riot-vanguard.md | draft | Riot AC; boot-start or On-Demand (TPM EK + attestation) — not DFIR `vanguard` |
+| @entities/tools/denuvo.md | draft | Irdeto anti-tamper / kernel AC — REFERENCE |
+| @entities/tools/kali-linux.md | draft | Pentest Linux distribution (OffSec, 600+ tools) |
+| @entities/tools/atobench.md | draft | ATOBench deceptive-observation eval (REFERENCE; K278) |
+| @entities/tools/marc-v1.md | draft | MARC v1 clinical multi-agent framework (GO clone; K279) |
+| @entities/tools/grapheneos.md | draft | Hardened AOSP on Pixels (relock verified boot; not Play Integrity STRONG) |
+| @entities/tools/qubes-os.md | draft | Xen compartmentalization desktop (contain compromise; not a phone) |
+| @entities/tools/multi-cloud-red-team.md | draft | Multi-cloud red team operations (AWS/Azure/GCP) |
+| @entities/tools/cua.md | validated | Agent-VM sandbox (Apple Virtualization + Lume) |
+| @entities/tools/fuzzyai.md | validated | LLM adversarial fuzz framework (CyberArk, Apache-2.0) |
+| @entities/tools/blast-radius-necrophoresis.md | draft | Blast Radius / NECROPHORESIS (REFERENCE; no public code) |
+| @entities/tools/shieldai-risk-taxonomy-mapping.md | draft | ShieldAI tool×taxonomy matrices (Apache-2.0 ~896KB) |
+| @entities/tools/aha-auto-research-red-teaming.md | draft | AHA autoresearch prod-agent red-team + VCG (MIT; CONDITIONAL-GO lab) |
+| @entities/tools/datashield.md | draft | DataShield risky FT filter (MIT; CONDITIONAL-GO ~3MB) |
+| @entities/tools/ifixai.md | draft | Agent deception/manipulation diagnostic harness — Adopt (K142) |
+| @entities/tools/pentest-ai-agents.md | validated | LLM-driven red-team automation (MIT) |
+| @entities/tools/cyberstrike.md | draft | AI offensive harness — AGPL, CONDITIONAL-GO lab/VM only (Phase-0 2026-08-02) |
+| @entities/tools/strix.md | draft | Autonomous AI pentest agents — Apache-2.0, Docker sandbox (CONDITIONAL-GO Phase-0) |
+| @entities/tools/strix-omlx.md | draft | Strix → OMLX/Ollama/SGLang wrapper — Apache-2.0 CONDITIONAL-GO clone |
+| @entities/tools/hexstrike-ai.md | draft | HexStrike MCP 150+ tools — MIT REFERENCE (desk Phase-0) |
+| @entities/tools/cai-framework.md | draft | Alias CAI multi-agent — dual-license REFERENCE (no clone) |
+| @entities/tools/pentestgpt.md | draft | PentestGPT USENIX agent — MIT REFERENCE |
+| @entities/tools/ollama.md | draft | Local LLM runtime — simple pull/run + API (Linux + Apple Silicon) |
+| @entities/tools/vllm.md | draft | High-throughput OpenAI-compatible LLM serving (NVIDIA) |
+| @entities/tools/pydns-scanner.md | validated | DNS server discovery (ethical-use addendum) |
+| @entities/tools/jadx-mcp-server.md | draft | Android RE + live debugging via MCP (JADX decompiler) |
+| @entities/tools/osmedeus.md | draft | Orchestration engine for security scanning (recon/scan YAML workflows) |
+| @entities/tools/splunk.md | validated | Commercial SIEM / SPL — 110-query detection catalog + SPL command reference + 24 SOC-2 use cases |
+| @entities/tools/qradar.md | validated | IBM commercial SIEM — architecture/components/databases/EPS+FPM licensing/coalescing/CRE/superflows (Kothekar 2023 Ch 1-4 deep-read; Ch 5-12 deferred) |
+| @entities/tools/sysmon.md | draft | Microsoft Sysinternals — high-fidelity Windows event log (process/network/registry/WMI) |
+| @entities/tools/gau.md | draft | Multi-provider known-URL discovery — OTX / Wayback / Common Crawl (MIT, Go; Adopt) |
+| @entities/tools/katana.md | draft | Scriptable web crawler with headless-browser mode (MIT, Go; ProjectDiscovery; Adopt) |
+| @entities/tools/gopacket.md | draft | Go packet-decoding library for network analysis (Apache-2.0, Mandiant; Steal-from) |
+| @entities/tools/openvpn-install.md | draft | Bash OpenVPN deployment automation — NAT / IPv6-routing logic (Unlicense; Steal-from) |
+| @entities/tools/vpn-self-hosted.md | draft | VPN hub page — WireGuard, OpenVPN, wg-easy, PiVPN, Tailscale catalog + decision matrix |
+| @entities/tools/defenseclaw.md | draft | Enterprise AI security governance — MCP/skill scanners + Codex sidecar observe (Apache-2.0; ADOPTED laptop) |
+| @entities/tools/deepzero.md | draft | Windows kernel-driver vuln research pipeline — PE→Ghidra→Semgrep→LLM (MIT) |
+| @entities/tools/grex.md | draft | Regex generation from test cases — SOC/IR log parsing (Apache-2.0) |
+| @entities/tools/vanguard.md | draft | Single-binary DFIR toolkit — Velociraptor+Volatility+KAPE+YARA, 28 MITRE-mapped (MIT) |
+| @entities/tools/raptor.md | draft | Claude Code offensive/defensive agent — Semgrep+CodeQL (Steal-from, no license) |
+| @entities/tools/src-hunter-skill.md | draft | Claude Code bug-bounty/pentest skill — 305 payloads, 19 playbooks, 263 WAF bypasses (MIT) |
+| @entities/tools/bluehood.md | draft | Bluetooth telemetry monitoring — BLE MAC correlation (MIT, Steal-from) |
+| @entities/tools/super-spr.md | draft | Zero-trust networking — per-device DNS, VLAN segregation in Go (BSD-3-Clause) |
+| @entities/tools/reconftw.md | draft | Apex recon automation — subdomain+web+vulns+osint+Axiom fleet distribution (MIT, 7.5k stars) |
+| @entities/tools/evilsocket-audit.md | draft | 8-stage vuln-discovery agent — Glasswing pattern, reachability gating (MIT) |
+| @entities/tools/offensive-claude.md | draft | Offensive-security Claude Code workstation — 25 skill modules, 8 classifications |
+| @entities/tools/reverse-skill.md | draft | MIT skill router pack for authorized pentest methodology routing (K129) |
+| @entities/tools/cf-hero.md | draft | Cloudflare origin-IP discovery via DNS + Shodan hashing (Go, ~2.4k stars) — Defer pending LICENSE audit |
+| @entities/tools/cloakquest3r.md | draft | Origin-IP behind Cloudflare-like proxies (MIT; K220; peer CF-Hero) |
+| @entities/tools/damn-vulnerable-drone.md | draft | Intentional ArduPilot/MAVLink drone hacking lab (MIT; K220) |
+| @entities/tools/hacktools.md | draft | Offensive browser-extension cheatsheet (license NOT FOUND; K220) |
+| @entities/tools/raccoon.md | draft | Offensive recon / vuln scanner (MIT; K220) |
+| @entities/tools/black-cat.md | draft | Hypothesis-ledger Claude Code red-team skill — Steal-from, no clone (null SPDX; K220) |
+| @entities/tools/bypassav.md | draft | AV/EDR bypass technique mindmap → av-edr-bypass (null SPDX; K220) |
+| @entities/tools/torbot.md | draft | Dark-web OSINT crawler — GPL-3 Reference-only (K220) |
+| @entities/tools/pentest-ai.md | draft | MCP offensive-security server — 205 tools, 17 agents, MIT (`ptai` CLI; distinct from pentest-ai-agents) |
+| @entities/tools/nidhogg.md | draft | Windows kernel rootkit reference — DKOM/ActiveProcessLinks tradecraft (GPL-3.0; Steal-from, no deploy) |
+| @entities/tools/iron-proxy.md | draft | Egress firewall for untrusted workloads (Apache-2.0; Adopt-eligible Phase-0) |
+| @entities/tools/cryptex-oss.md | draft | LLM red-teaming transforms/mutators toolkit — 162 transforms (MIT; Adopt-eligible Phase-0) |
+| @entities/tools/cve-mcp-server.md | draft | Security-intel MCP server — CVE/EPSS/KEV/ATT&CK enrichment (Apache-2.0; CONDITIONAL-GO) |
+| @entities/tools/autosut.md | draft | STIX environment-semantics gap measurement for adversary emulation (Reference) |
+| @entities/tools/cav-stixgen.md | draft | CAV CVE→STIX benchmark (figshare REFERENCE; no local clone) |
+| @entities/tools/swe-pruner-pro.md | draft | SWE-Pruner Pro (Apache-2.0 pyproject; CONDITIONAL-GO ~8.7MB) |
+| @entities/tools/senthex-research.md | draft | Senthex RELAY/ATLAS harness (MIT; GO ~672KB) |
+| @entities/tools/oc-grpo.md | draft | OC-GRPO (Apache-2.0; GO ~24MB) |
+| @entities/tools/ai-redteam-evidential-limits.md | draft | Evidential-ceiling math (MIT; GO ~528KB) |
+| @entities/tools/vulncare.md | draft | VulnCare K8s remediation lab (Apache-2.0; GO ~2.6MB) |
+| @entities/tools/kutie-artifacts.md | draft | KuTIE artifacts (Dynatrace lab CONDITIONAL ~2.9MB) |
+| @entities/tools/inferscale.md | draft | InferScale KV injection (BSD-3; GO ~1.4MB) |
+| @entities/tools/system-prompt-index.md | draft | SystemPromptIndex AISPA corpus (REFERENCE; NO LICENSE) |
+| @entities/tools/cweep.md | draft | CWEEP RTL CWE lint (Apache-2.0; CONDITIONAL-GO ~15MB) |
+| @entities/tools/openart.md | draft | OpenART agent RT arena (AGPL-3.0; CONDITIONAL-GO ~19MB) |
+| @entities/tools/piminer.md | draft | PIMiner PI red team (MIT; CONDITIONAL-GO ~28MB) |
+| @entities/tools/llms-agents-smartgrids-code.md | draft | Smart-grid agents code (NO LICENSE — REFERENCE) |
+| @entities/tools/malskillbench.md | draft | Runtime-verified malicious agent skills benchmark — CI/PI detector eval (Reference) |
+| @entities/tools/sevra-bench.md | draft | Malicious PR benchmark for LLM review agents — inspect_ai + Gitea (Reference) |
+| @entities/tools/nvidia-skillspector.md | draft | Agent/MCP skill supply-chain scanner — prompt injection + tool poisoning (Apache-2.0; Adopt) |
+| @entities/tools/netviz.md | draft | Browser network-architecture graph visualizer — D3.js + Socket.IO (MIT; Adopt, K93) |
+| @entities/tools/airguard.md | draft | Runtime authority control for tool/MCP agents (MIT; CONDITIONAL-GO) |
+| @entities/tools/stepguard.md | draft | Step-level agent guard model — pre-execution tool check (CONDITIONAL-GO; K307) |
+| @entities/tools/chaincaps.md | draft | MCP proxy — composition-safe tool chains via monotonic capability budgets (Reference) |
+| @entities/tools/handle-capability-protocol.md | draft | HCP reference runtime — MCP execution-control invariants + 10-case benchmark (MIT; CONDITIONAL-GO) |
+| @entities/tools/spellsmith.md | draft | MCP taint mitigation via security-aware tool descriptions + reflection (Reference; 2607.07461) |
+| @entities/tools/agentredguard.md | draft | Integration-aware guard for SaaS LLM agents — AgentRedBench paper (Reference) |
+| @entities/tools/seclaw-eval.md | draft | Trajectory-aware agent security benchmark — SeClaw Docker testbed (Reference, K98) |
+| @entities/tools/ai-research-skills.md | draft | Orchestra ML skills library — cybersec cherry-pick subset (K113 CONDITIONAL-GO) |
+| @sources/brief-k113-cybersec-ai-research-skills-2026-06-12.md | deep-read | K113 cross-wiki brief ingest |
+| @entities/tools/llm-defense-lattice.md | draft | OWASP LLM Top 10 defense attribution — BAS lattice + 17-probe corpus (Reference) |
+| @entities/tools/defending-code-reference-harness.md | draft | Anthropic Docker/gVisor vuln-discovery reference harness — K102 CONDITIONAL-GO |
+
+### Vendors
+
+| Page | Maturity |
+|------|----------|
+| @entities/vendors/offensive-security.md | draft |
+| @entities/vendors/elearnsecurity.md | draft |
+| @entities/vendors/comptia.md | draft |
+| @entities/vendors/ec-council.md | draft |
+| @entities/vendors/zeropoint-security.md | draft |
+
+### Platforms (labs / CTF)
+
+| Page | Maturity |
+|------|----------|
+| @entities/platforms/hackthebox.md | draft |
+| @entities/platforms/polyworkbench.md | draft | Multilingual long-horizon workplace agent benchmark (Reference; 2607.06008) |
+
+### Programming languages
+
+| Page | Maturity | Role |
+|------|----------|------|
+| @entities/programming-languages/python.md | draft | Scripting + automation |
+| @entities/programming-languages/c.md | draft | Exploit dev + AV/EDR bypass |
+| @entities/programming-languages/javascript.md | draft | Web exploitation + Node.js |
+| @entities/programming-languages/powershell.md | draft | Windows post-exploitation |
+
+### Threat actors
+
+| Page | Maturity | Region |
+|------|----------|--------|
+| @entities/threat-actors/apt28.md | draft | Russia-attributed (GRU) |
+| @entities/threat-actors/apt29.md | draft | Russia-attributed (SVR) |
+| @entities/threat-actors/lazarus.md | draft | DPRK-attributed (RGB) |
+| @entities/threat-actors/lockbit.md | draft | Criminal RaaS (Russian-language) |
+
+### People
+
+| Page | Maturity | Role |
+|------|----------|------|
+| @entities/people/joas-a-santos.md | validated | Corpus author |
+| @entities/people/mostafa-yahia.md | draft | SOC analyst author (Yahia Packt 2023) |
+| @entities/people/rajneesh-gupta.md | draft | SIEM / SOC 2 use-case author (@rajneeshcyber) |
+| @entities/people/ashish-m-kothekar.md | draft | IBM SWAT/SME — author of *Building a Next-Gen SOC with IBM QRadar* (Packt 2023) |
+
+---
+- [xullexer/PYDNS-Scanner — async DNS recon (Slipstream + SlipNet)](entities/pydns-scanner-xullexer.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [0xSteph/pentest-ai-agents — shell-only Claude Code subagents for pentest workflows](entities/pentest-ai-agents-0xsteph.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [apktool-mcp-server — Android Reverse Engineering via MCP](entities/apktool-mcp-server.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [T-Pot — Multi-Honeypot Deception Framework](entities/tpotce.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [Decepticon — Autonomous Red-Team Multi-Agent Framework](entities/decepticon.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [Claude-Red — Offensive Security Skills Library for Claude Code](entities/claude-red-offensive-skills.md) — cross-wiki stub routed from ingest — `cross-wiki`
+
+### Cross-wiki routed tool evaluations (index-only, no entity pages)
+
+These tools surfaced from OSINT-wiki K-batch evaluations. Verdicts below reflect the eval tier at routing time. Re-verify license + maturity before adopting.
+
+| Tool | License | Tier | Brief | Note |
+|------|---------|------|-------|------|
+| YellowKey | MIT | Steal-from | K42 | Exploit PoC harness — methodology reference |
+| GreenPlasma | MIT | Steal-from | K42 | Exploit PoC harness — methodology reference |
+| witr | — | Steal-from | K42 | Webhook + telemetry replay harness |
+| autoharness | — | Steal-from | K42 | Fuzz-harness auto-generation pattern reference |
+| cypht | — | Steal-from | K42 | Secure webmail — IR inbox isolation reference |
+| awesome-codex-subagents | — | Reference | K42 | Curated subagent prompt list |
+| claude-code-telegram | — | Steal-from | K42 | Sandbox-hardening pattern for chatops |
+| frona | BSL-1.1 | Reject (until 2029) | K42 | Policy-driven syscall filtering — methodology reference only |
+| Threat-Intel SaaS cluster (9) | closed-source | Reject | K42 | Shodan/FullHunt/ONYPHE/SOCRadar/Pulsedive/IntelX/Hunter.io/PublicWWW/Coalitioninc — batch-rejected |
+| Claude Code Agent Farm | MIT | Steal-from | K15 | Parallel tmux orchestration — lock-based concurrency + heartbeat for network enumeration |
+| MyIP DNS Leak Detection | MIT | Steal-from | K15 | WebRTC STUN leak detection, DNS exit endpoint identification — VPN/tunnel validation |
+| fingerprint-suite | Apache-2.0 | Cross-ref | K15 | Browser fingerprint generation/injection — primary fit osint-wiki. Red-team browser evasion reference |
+| netviz | MIT | Adopt | K53, K93 | @entities/tools/netviz.md — browser network graph visualizer (upgraded from Steal-from) |
+| iOS-pentest-list | — | Reference | K53 | Curated Markdown list of iOS pentest tools |
+| opendrop | TBD | Defer | K51 | Reverse-engineered Apple AirDrop (Python, 9.6k stars, SEEMOO lab) — license audit pending |
+| Shells-X | TBD | Defer | K51 | Modular single-file PHP web-shell framework — license audit pending |
+| AgentGym-RL | TBD | Defer | K51 | RL framework for LLM agent training — academic, license unverified |
+| Grafana-Final-Scanner | TBD | Defer | K51 | Multi-source Grafana version fingerprinting + CVE checking — license unverified |
+| fd | MIT+Apache-2.0 | Adopt-eligible | K51 | Rust `find` replacement, 43k stars — eval wrongly rejected; license verified clean |
+| TruffleHog | AGPL-3.0 | Reject (copyleft) | K54 | Credential scanner, 26k stars — reference-only due to AGPL poison pill |
+| gitGraber | GPL-3.0 | Reject (copyleft) | K54 | Real-time GitHub credential-leak monitor — reference-only |
+| H4X-Tools | GPL-3.0 | Reject (copyleft) | K54/K55 | OSINT/recon/scraping toolkit — reference-only |
+| VulnWeb directory | — | Reference | K54 | Directory of OWASP initiatives (GenAI Security, AI Exchange, CycloneDX) |
+| Hackers-Arise MCP log | — | Reference | K54 | Educational blueprint for AI-assisted blue-team / MCP server boundary patterns |
+| Windows-Use | MIT | Reference | K54 | GUI-level Windows automation agent — lateral-movement logic reference (primary fit: CCC wiki) |
+| tugarecon | GPL-3.0 | Steal-from | K55 | Subdomain recon + Temporal Intelligence & Asset Memory module — impact-scoring algorithm extractable |
+| hackingtool-plugin | NO LICENSE | Defer | K55 | 183 pentest+OSINT utilities integrated into Claude Code via C#/Docker — license+maturity recheck |
+| osint_stuff_tool_collection | NO LICENSE | Reference | K55 | 7,875-star markdown index of OSINT tools — threat-actor-profiling subset |
+| jhalon/reverse-engineering-protocols | — | Reference | K56 | Instructional curriculum on dissecting undocumented network protocols |
+| LLM4Pentest catalog | — | Defer | K56, K55-2 | `simon-p-j-r/LLM4Pentest` — academic LLM-pentest survey; gh api NO LICENSE (2026-05-22) |
+| Awesome-Hacking | CC0-1.0 | Reference | K55-2 | Aggregate awesome-list — gh-api cleared NO LICENSE false negative |
+| open-source-web-scanners | Apache-2.0 | Reference | K55-2 | ZAP-lead-dev curated web-scanner index (also K57 reject as aggregate — license verified) |
+| CF-Hero | — | Defer | K55-2 | @entities/tools/cf-hero.md — Cloudflare origin-IP unmasking |
+| jadx-ai-mcp | Apache-2.0 | Cross-ref | K55-2 | Sibling to @entities/tools/jadx-mcp-server.md (`zinja-coder`, same MCP family) |
+| Galaxy-Bugbounty-Checklist | — | Reject | K57 | NO LICENSE FOUND — methodology reference only |
+| BugBounty-Recon-Methodology | — | Reject | K57 | Verify license before any adoption |
+| sqlmap | NOASSERTION | Reject | K57 | Confirm AGPL/GPL before use — already cited in methodology pages, no entity |
+| NoSQLMap | GPL-3.0 | Reject (copyleft) | K57 | Reference-only — same copyleft posture as gitGraber/H4X-Tools |
+| KaliGPT | Custom NC | Reject (commercial) | K60 | Ollama terminal harness — **do not install on prod**; eval overturned Adopt |
+| h4cker | MIT | Reference | K60 | Omar Santos mega-repo — OSINT tradecraft in `osint/` subtree (~26k stars) |
+| pentest-ai | MIT | CONDITIONAL-GO | K60 | @entities/tools/pentest-ai.md — MCP + 17 agents; compare vs pentest-ai-agents |
+| cyber-security-llm-agents | — | Defer | K60 | NVISO catalog — gh api NO LICENSE; reference until SPDX filed |
+| Nidhogg | GPL-3.0 | Steal-from | K63 | @entities/tools/nidhogg.md — DKOM/process-hiding tradecraft for MITRE mapping; **no binary import** |
+| facex | Apache-2.0 | Steal-from | K68 | WASM in-browser face stack + anti-spoof — extract ideas only, no full import |
+| iron-proxy | Apache-2.0 | Adopt-eligible | K68 | @entities/tools/iron-proxy.md — egress firewall for untrusted workloads |
+| centaur | NOASSERTION | Steal-from | K68 | Paradigm secure multi-agent host — read LICENSE text before any code use |
+| cryptex-oss | MIT | Adopt-eligible | K68 | @entities/tools/cryptex-oss.md — LLM red-team transform/mutator catalog |
+| ZishanAdThandar/pentest | GPL-3.0 | Reject | K68 | Pentest/bounty notes cheatsheets — keep out of IP-sale surfaces |
+| bbot | AGPL-3.0 | Extract-only (copyleft) | K71, K73, K241 | `blacklanternsecurity/bbot` — AGPL isolate; OSINT shelf; **never vendor Atto/prod**; no mass internet scan |
+| Hackers-Arise AI enumeration | — | Reference | K71 | AI-assisted enumeration article (no code); complements K54 Hackers-Arise MCP log row |
+| cve-mcp-server | Apache-2.0 | CONDITIONAL-GO | K73 | @entities/tools/cve-mcp-server.md — workstation CVE/KEV/EPSS intel enrichment MCP |
+| nvidia-skillspector | Apache-2.0 | Adopt | K88 | @entities/tools/nvidia-skillspector.md — agent/MCP skill supply-chain scanner |
+| defenseclaw | Apache-2.0 | ADOPTED (observe) | K42, CCC | @entities/tools/defenseclaw.md — CLI scanners + Codex sidecar observe 2026-05-31; action/LLM judge optional |
+| train-llm-from-scratch | MIT | Reference | K88 | LLM training reference only — not a security tool |
+| linux-basics-for-hackers-notes | — | Reject | K88 | NO LICENSE FOUND — do not adopt |
+| Graph-R1 | CC-BY-NC-SA (eval) | Reject | K88 | K88 eval reject; gh api reports MIT 2026-05-31 — verify LICENSE before override |
+| seclaw-eval | — | Reference | K98 | @entities/tools/seclaw-eval.md — trajectory-aware agent security benchmark; **no LICENSE on GitHub API 2026-06-04** |
+| sevra-bench | — | Reference | digest | @entities/tools/sevra-bench.md — LLM PR merge-gate eval; **no LICENSE on GitHub API 2026-06-16** |
+| toolprivbench | — | Reference | digest | @entities/tools/toolprivbench.md — OPUR/PED least-privilege tool eval; **no LICENSE on GitHub API 2026-06-19** |
+| leakbench-area | — | Reference | digest | @entities/tools/leakbench-area.md — LeakBench + AREA soft-prompt defense; **no LICENSE on GitHub API 2026-06-22** |
+| clawaudit | — | CONDITIONAL-GO | digest | @entities/tools/clawaudit.md — OpenClaw runtime Semgrep/CodeQL audit; **no LICENSE on GitHub API 2026-06-24** |
+| tool-guard | MIT | CONDITIONAL-GO | digest | @entities/tools/tool-guard.md — isolated planning vs cross-tool description poisoning (ICML 2026) |
+| aohp | Apache-2.0 | CONDITIONAL-GO | digest | @entities/tools/aohp.md — AOSP agent-native OS harness (2606.23449) |
+| toolbench-x | — | Reference | digest | @entities/tools/toolbench-x.md — tool-environment unreliability benchmark; **no LICENSE 2026-06-27** |
+| defengraph | — | Reference | digest | @entities/tools/defengraph.md — KG+RAG blue-team assistant; no public repo 2026-06-23 |
+| picalib-research | — | Reference | digest | @entities/tools/picalib-research.md — PI guard severity metric artifacts; **no LICENSE 2026-06-23** |
+| ecc | MIT | Steal-from / CONDITIONAL-GO | digest | @entities/tools/ecc.md — cross-harness operator system; **ecc-agentshield** npm for config audit |
+| skillgate | closed-source SaaS | Reference | digest | @entities/tools/skillgate.md — Mitiga free skill/hook/MCP config scanner |
+| llm-defense-lattice | NOASSERTION | Reference | digest | @entities/tools/llm-defense-lattice.md — OWASP LLM Top 10 per-defense BAS lattice; license audit pending |
+| defending-code-reference-harness | Apache-2.0 | Reference | K102 | @entities/tools/defending-code-reference-harness.md — Docker/gVisor agent vuln pipeline; laptop lab only |
+| ai-infra-guard | Apache-2.0 + NOTICE §4(d) | CONDITIONAL-GO | digest | @entities/tools/ai-infra-guard.md — multi-layer agent red team (2606.31227); **external Docker only** |
+| aha-auto-research-red-teaming | MIT | CONDITIONAL-GO | K176 | @entities/tools/aha-auto-research-red-teaming.md — VCG autoresearch for Claude Code/Codex (2607.11698); **lab sandbox only**; local clone ~169MB |
+| datashield | MIT | CONDITIONAL-GO | K184 | @entities/tools/datashield.md — risky fine-tune filter (2607.15081); local clone ~3MB |
+| cav-stixgen | — | Reference | K196 | @entities/tools/cav-stixgen.md — CAV CVE→STIX; figshare share unverified license |
+| llm-research-competencies-zenodo | CC-BY-4.0 | Reference/ADOPT-ARTIFACT | digest | Zenodo 21313656 pack ~396KB at `raw-sources/repos/llm-research-competencies-zenodo` |
+| swe-pruner-pro | Apache-2.0 (pyproject) | CONDITIONAL-GO | K200 | @entities/tools/swe-pruner-pro.md — ~8.7MB shallow; no LICENSE file |
+| senthex-research | MIT | GO | K202 | @entities/tools/senthex-research.md — RELAY/ATLAS ~672KB |
+| oc-grpo | Apache-2.0 | GO | K204 | @entities/tools/oc-grpo.md — ~24MB |
+| ai-redteam-evidential-limits | MIT | GO | K220 | @entities/tools/ai-redteam-evidential-limits.md — ~528KB |
+| vulncare | Apache-2.0 | GO | K224 | @entities/tools/vulncare.md — ~2.6MB |
+| kutie-artifacts | Dynatrace proprietary | CONDITIONAL-GO | K224 | @entities/tools/kutie-artifacts.md — lab-view only ~2.9MB |
+| InferScale | BSD-3-Clause | GO | K227 | @entities/tools/inferscale.md — ~1.4MB |
+| SystemPromptIndex | — | REFERENCE | K232 | @entities/tools/system-prompt-index.md — NO LICENSE ~11MB |
+| cweep | Apache-2.0 | CONDITIONAL-GO | K233 | @entities/tools/cweep.md — Verible RTL CWE lint ~15MB |
+| OpenART | AGPL-3.0 | CONDITIONAL-GO | K237 | @entities/tools/openart.md — agent RT arena ~19MB lab only |
+| PIMiner | MIT | CONDITIONAL-GO | K248 | @entities/tools/piminer.md — PI strategy-library RT ~28MB lab only |
+| llms-agents-smartgrids-code | — | Reference | K199 | NO LICENSE — pattern only |
+| handle-capability-protocol | MIT | CONDITIONAL-GO | digest | @entities/tools/handle-capability-protocol.md — HCP execution-control invariants + benchmark (2606.29073); 0★ reference runtime |
+
+## Meta
+
+| Page | Maturity | Role |
+|------|----------|------|
+| @meta/daily-research-digest-cadence.md | draft | Federated daily research digest — K93 install; outputs to `wiki/sweeps/` |
+
+## Sources
+
+282 source pages live in `sources/`:
+
+- **226** from the Joas A Santos seed corpus (shared Drive folder `ebooks Joas`)
+- **22** from the Redteam Kit shared Drive folder (English-language security books + field manuals)
+- **26** from the BlueTeam Kit shared Drive folder (SOC / blue-team PDFs — SIEM, threat hunting, IR, EDR)
+- **2** video courses (Kali Linux 2023 50-chapter set; Python Ethical Hacking MASTERCLASS 19-section set) — `.mp4` only, each catalogued as a single page
+
+Source pages are not individually catalogued here; each entity and concept page lists the sources that synthesize into it under `related:`. Browse `sources/` directly for provenance lookups.
+
+The corpus inventory (file ID + title for every PDF) lives at `.scratch/drive_inventory.tsv` (gitignored — see `ROADMAP.md` for the storage decision).
+
+**Catalog status (decided 2026-05-16):** the `sources/` layer is a deliberate *reference catalog* of the two shared Drive folders. Every source page carries `read_status: unread-stub` because the PDFs live in external Drive folders not synced to this workspace — `unread-stub` is the expected steady state here, not a defect. A page graduates to `deep-read` only when the underlying PDF is obtained and read. Tooling that scores wiki health (e.g. `wiki_scan_all.py`) should treat this wiki's cited-unread-stub count as informational, not as a backlog to burn down.
+
+---
+- [tl;dr sec — [tl;dr sec] #335 - Prompt Injection as Role Confusion, PHP Ecosystem Security, New MCP Spec](sources/newsletter-rss-tldrsec-2026-07-02-tldr-sec-335---prompt-injection-as-role-confusio.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [Packt SecPro — Identity Became the New Perimeter](sources/substack-rss-secpro-2026-07-03-identity-became-the-new-perimeter.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [The Engineering Club — Security Edition — How I’d Respond in the First Hour After a Package I Use Got Hacked](sources/substack-rss-seceng-weekly-2026-07-06-how-id-respond-in-the-first-hour-after-a-package.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [Firewall3D: Hardware Firewall for Defending 3D Printers Against Firmware Attacks](sources/2026-asgar-firewall3d-firmware-hardware.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [Optimistic Verifiable Claims — confidential G-code bidding (arXiv:2607.25517)](sources/2026-corn-optimistic-verifiable-claims.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [GitHub — CyberStrikeus/CyberStrike (AI offensive harness)](sources/github-cyberstrike.md) — Phase-0 2026-08-02 · AGPL · CONDITIONAL-GO lab/VM
+- [OWASP ASVS 5.0.0](sources/owasp-asvs-5.md) — product verification standard (2025-05-30)
+- [Penligent — Bug Bounty Hunter Software in 2026](sources/penligent-bug-bounty-hunter-software-2026.md)
+- [Rizvi — Automating Bug Bounty Recon in 2026](sources/rizvi-automating-bug-bounty-recon-2026.md)
+- [GitHub — usestrix/strix](sources/github-strix.md) — Apache-2.0 AI pentest agents · Phase-0 CONDITIONAL-GO 2026-08-02
+- [GitHub — sw30labs/strix-omlx](sources/github-strix-omlx.md) — Strix → OMLX/Ollama · Phase-0 CONDITIONAL-GO clone 2026-08-02
+- [GitHub — 0x4m4/hexstrike-ai](sources/github-hexstrike-ai.md) — HexStrike MCP · desk REFERENCE 2026-08-02
+- [GitHub — aliasrobotics/cai](sources/github-cai-framework.md) — CAI dual-license · REFERENCE no-clone
+- [GitHub — GreyDGL/PentestGPT](sources/github-pentestgpt.md) — MIT research agent · REFERENCE
+- [OSINT K220 cyber/agent-harness eval](sources/osint-k220-cyber-agent-harness-eval-2026-08-03.md) — cross-wiki tool register (CloakQuest3r / Black-cat / Raccoon / DVD / …)
+- [GitHub — tcpiplab/AblitaFuzzer](sources/github-ablitafuzzer.md) — abliterated local attacker LLM pattern
+- [DEV — Red Team AI Benchmark](sources/devto-red-team-ai-benchmark.md) — refusal-free ≠ accurate quiz methodology
+- [SLM ensemble malware orchestration](concepts/slm-ensemble-malware-analysis-orchestration.md) — CCC cross-wiki
+- [ChainWatch MCP kill-chain detection](concepts/chainwatch-mcp-kill-chain-detection.md) — CCC cross-wiki
+- [arXiv ChainWatch MCP sequential detection](sources/arxiv-chainwatch-mcp-sequential-detection-2607.19432.md) — CCC cross-wiki stub
+- [GrapheneOS features](sources/grapheneos-features.md) — first-party hardening beyond AOSP 16
+- [GrapheneOS FAQ](sources/grapheneos-faq.md) — Pixel-only production; relock required
+- [Qubes OS intro](sources/qubes-os-intro.md) — Xen qubes; assume software will be exploited
+- [Whonix About](sources/whonix-about.md) — Gateway + Workstation, all traffic via Tor
+- [Whonix vs Kicksecure](sources/kicksecure-vs-whonix.md) — hardening vs forced-Tor anonymity
+
+## Cross-wiki anchors
+
+When this wiki references a sibling wiki's page, the citation uses `@<alias>/path/to/page.md`. Aliases:
+
+- `osint-wiki` — financial / quant / prediction-market research
+- `image-gen-wiki` — uncensored image generation, ComfyUI, LoRA
+- `seo-wiki` — local SEO, GBP, GEO/AEO, web design
+- `3d-printing-wiki` — FDM/FFF, Bambu, slicers, print farms
+
+Bidirectional invariant: if this wiki cites `@osint-wiki/...`, the matching page in the OSINT wiki should cite `@cybersecurity-wiki/...` back. Run `python3 scripts/wiki_lint.py` to check.

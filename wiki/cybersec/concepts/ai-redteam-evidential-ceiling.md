@@ -1,0 +1,67 @@
+---
+title: AI red-team evidential ceiling
+type: concept
+tags: [concept, llm-safety, evaluation, red-teaming]
+keywords: [evidential ceiling, null result, harm rate, certification claim, 2607.21735]
+related:
+  - concepts/llm-adversarial-fuzzing.md
+  - concepts/benchmark-shortcut-attack-pyramid-audit.md
+  - sources/arxiv-2610-00960-video-index-benchmark-shortcut-attack-pyramid.md
+  - concepts/finrt-amortized-redteam-generator.md
+  - sources/arxiv-2609-36474-finrt-amortized-redteam-generator.md
+  - concepts/agent-safety-executable-evaluation.md
+  - sources/arxiv-2607-21735-ai-redteam-evidential-ceiling.md
+  - entities/tools/ai-redteam-evidential-limits.md
+  - sources/arxiv-2608-10669-redagentbench-faithful-agent-asr.md
+  - concepts/faithful-agent-asr-measurement.md
+  - concepts/ai-for-cybersecurity.md
+  - concepts/logit-tilting-rare-behaviour-audit.md
+  - concepts/probe-internal-recognition-sandbagging-audit.md
+  - concepts/evoflint-multi-turn-redteam-atlas.md
+  - concepts/guardrail-construct-validity-agent-eval.md
+  - concepts/failure-driven-cua-ipi-red-teaming.md
+  - sources/arxiv-2608-12996-atobench-deceptive-observations.md
+  - concepts/atobench-verification-chain-deception.md
+  - sources/arxiv-2608-15578-arena-audio-lalm-redteam.md
+  - concepts/audio-grounded-lalm-redteaming.md
+  - sources/arxiv-2608-16747-chive-counterfactual-explanations.md
+  - concepts/counterfactual-simulatability-llm-explanations.md
+  - entities/tools/chive.md
+  - sources/arxiv-2608-16795-ood-historical-backtesting-astronomy.md
+  - sources/arxiv-2608-17202-fools-gold-defensive-deception.md
+  - concepts/decoy-hardening-open-weight-abliteration.md
+  - sources/arxiv-2608-19025-ood-self-prompting-literature-extraction.md
+  - sources/arxiv-2608-16852-rule-blindness-compliance-detectors.md
+  - concepts/compliance-detector-rule-blindness.md
+  - concepts/psychological-multiturn-jailbreaks.md
+  - concepts/trace-verified-ctf-agent-eval.md
+  - concepts/pair-prompt-pattern.md
+  - concepts/security-agent-authority-auditability-slr.md
+  - concepts/conformal-prediction-offensive-security.md
+  - concepts/multi-conversation-persuasion-factual-robustness.md
+maturity: draft
+created: 2026-07-29
+updated: 2026-10-09
+---
+
+## Relations
+
+- @concepts/llm-adversarial-fuzzing.md — K408-K417 ingest / 2026-10-09
+- @concepts/benchmark-shortcut-attack-pyramid-audit.md — K387-K391 cross-link
+- @sources/arxiv-2610-00960-video-index-benchmark-shortcut-attack-pyramid.md — K387-K391 ingest source page
+- @concepts/finrt-amortized-redteam-generator.md — K382 amortized red-team generator: score coverage/severity/diversity jointly
+- @sources/arxiv-2609-36474-finrt-amortized-redteam-generator.md — K382–K386 ingest source page
+- @sources/arxiv-2607-21735-ai-redteam-evidential-ceiling.md
+- @entities/tools/ai-redteam-evidential-limits.md
+- @sources/arxiv-2608-10669-redagentbench-faithful-agent-asr.md — faithful ASR as a measurement-condition tuple (K271)
+- @concepts/faithful-agent-asr-measurement.md — exposure/execution/observation/adjudication decomposition (K271)
+- @concepts/ai-for-cybersecurity.md
+- @concepts/pair-prompt-pattern.md
+
+## Raw Concept
+
+What can a fixed-budget red-team eval actually prove — and when is a clean sheet stronger than one failure?
+
+## Narrative
+
+Evidential ceiling = max belief-update under fixed n. Crossing harm rate falls as 1/n. High-frequency harms: existing suites can certify. Rare/catastrophic: orders of magnitude short; below the rate, null results do not license safety claims. Discrimination between H0/H1 beats raw attack-success rate. [CONFIRMED abstract + companion MIT repo]

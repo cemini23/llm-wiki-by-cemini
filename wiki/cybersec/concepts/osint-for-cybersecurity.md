@@ -1,0 +1,126 @@
+---
+title: OSINT for Cybersecurity
+type: concept
+tags: [osint, recon, reconnaissance, intelligence]
+keywords: [osint, open source intelligence, recon, investigation, shodan, maltego]
+related:
+  - sources/arxiv-2610-03531-authorship-attribution-zero-shot-representations.md
+  - concepts/authorship-attribution-author-representation.md
+  - entities/tools/maltego.md
+  - concepts/red-team-operations.md
+  - concepts/social-engineering.md
+  - concepts/threat-hunting.md
+  - sources/osint-overview-pt-1.md
+  - sources/apostila-a-arte-do-osint-para-pentesters.md
+  - sources/fundamentos-de-osint.md
+  - sources/investigation-using-osint-with-a-focus-on-intelligence-operations-and-dark-web-o.md
+  - sources/using-osint-techniques-to-investigate-human-trafficking-and-missing-persons-pt-1.md
+  - sources/using-osint-to-investigate-human-trafficking-and-missing-persons.md
+  - sources/using-osint-to-investigate-school-shooters.md
+  - sources/ransomware-investigation-osint-and-hunting-overview-pt1.md
+  - entities/people/joas-a-santos.md
+  - concepts/anonymity-networks.md
+  - entities/programming-languages/python.md
+  - entities/tools/pydns-scanner.md
+  - concepts/dns-server-discovery-vs-subdomain-enumeration.md
+  - concepts/2026-05-13_chekusu-mails-dual-use.md
+  - entities/tools/taranis-ai.md
+  - entities/tools/website-downloader.md
+  - "@osint-wiki/entities/tools/socid-extractor.md"
+  - sources/50-free-online-tools-soc-analysts.md
+  - concepts/threat-intelligence.md
+  - entities/tools/gau.md
+  - sources/python-ethical-hacking-masterclass.md
+  - entities/tools/reconftw.md
+  - entities/tools/cf-hero.md
+  - entities/tools/cve-mcp-server.md
+  - entities/tools/netviz.md
+  - sources/arxiv-2606-20610-osint-ai-loss-of-control-detection.md
+  - concepts/ai-loss-of-control-osint-monitoring.md
+  - sources/arxiv-2606-24226-crypter-as-a-service-exploit-in.md
+  - concepts/crypter-as-a-service.md
+  - sources/osint-k220-cyber-agent-harness-eval-2026-08-03.md
+  - entities/tools/cloakquest3r.md
+  - entities/tools/raccoon.md
+  - entities/tools/torbot.md
+  - concepts/hardware-id-masking-opsec.md
+  - concepts/metadata-traffic-analysis-anonymity.md
+  - concepts/account-recovery-deanonymization.md
+  - entities/tools/cyberscraper-2077.md
+  - entities/tools/rustscan.md
+  - entities/tools/bbot.md
+  - concepts/indirect-third-party-sensor-vehicle-tracking.md
+maturity: validated
+created: 2026-05-12
+updated: 2026-10-06
+---
+
+## Relations
+
+- @sources/arxiv-2610-03531-authorship-attribution-zero-shot-representations.md — K395-K397 ingest source page
+- @concepts/authorship-attribution-author-representation.md — K395 authorship attribution needs an author representation
+- @sources/osint-k220-cyber-agent-harness-eval-2026-08-03.md — K220 cyber tool register from OSINT eval
+- @entities/tools/cloakquest3r.md — MIT origin-IP / reverse-proxy recon
+- @entities/tools/raccoon.md — MIT recon/vuln scanner
+- @entities/tools/torbot.md — Tor crawler Reference-only (GPL-3)
+- @concepts/hardware-id-masking-opsec.md — host HWID / MAC OPSEC for collection anonymity (not browser fingerprint-suite)
+- @concepts/metadata-traffic-analysis-anonymity.md — collection OPSEC: recon metadata is itself a leak surface
+- @concepts/account-recovery-deanonymization.md — recovery surfaces (phone/email/SSO) are what OSINT enumerates about a persona
+
+
+- @entities/tools/maltego.md
+- @concepts/red-team-operations.md
+- @concepts/social-engineering.md
+- @concepts/threat-hunting.md
+- @sources/osint-overview-pt-1.md
+- @sources/apostila-a-arte-do-osint-para-pentesters.md
+- @sources/fundamentos-de-osint.md
+- @sources/investigation-using-osint-with-a-focus-on-intelligence-operations-and-dark-web-o.md
+- @sources/using-osint-techniques-to-investigate-human-trafficking-and-missing-persons-pt-1.md
+- @sources/using-osint-to-investigate-human-trafficking-and-missing-persons.md
+- @sources/using-osint-to-investigate-school-shooters.md
+- @sources/ransomware-investigation-osint-and-hunting-overview-pt1.md
+- @entities/people/joas-a-santos.md
+- @osint-wiki/concepts/typed-relation-dependencies.md
+- @concepts/anonymity-networks.md
+- @entities/programming-languages/python.md
+- @entities/tools/pydns-scanner.md
+- @concepts/dns-server-discovery-vs-subdomain-enumeration.md
+- @concepts/2026-05-13_chekusu-mails-dual-use.md — AI email-parsing for sender-domain / header extraction (threat-intel OSINT)
+- @entities/tools/taranis-ai.md — OSINT threat-intelligence platform with MISP integration
+- @entities/tools/website-downloader.md — site archival for offline recon / target-site analysis
+- @osint-wiki/entities/tools/socid-extractor.md — cross-wiki: cross-platform social-account identifier-extraction tool used in threat-actor correlation
+- @sources/50-free-online-tools-soc-analysts.md
+- @concepts/threat-intelligence.md
+- @entities/tools/gau.md — multi-provider known-URL harvester (OTX / Wayback / Common Crawl); open-data attack-surface OSINT
+- @sources/python-ethical-hacking-masterclass.md — video course; section 15 covers information-gathering tools
+- @entities/tools/cve-mcp-server.md — CVE/EPSS/KEV/ATT&CK MCP enrichment for rapid intel context
+- @entities/tools/netviz.md — self-hosted network/relationship graph visualizer for recon briefings (K93 Adopt)
+
+## Raw Concept
+
+7+ corpus PDFs explicitly scope to OSINT — pentest-side (APOSTILA A ARTE DO OSINT PARA PENTESTERS, OSINT Overview, FUNDAMENTOS DE OSINT) + investigative-side (human trafficking, missing persons, school shooters, ransomware investigation).
+
+## Narrative
+
+OSINT (Open-Source Intelligence) is the discipline of collecting + analyzing publicly available information to support an investigation or operation. In cybersecurity it appears in three distinct roles: [CONFIRMED]
+
+**1. Pentest / Red Team recon.** Pre-engagement OSINT establishes the target's external footprint without sending a single packet to their infrastructure: subdomain enumeration via crt.sh, dnsdumpster, Censys; corporate identity mapping via LinkedIn / GitHub / Twitter; leaked credentials via HaveIBeenPwned / Dehashed / IntelX; technology fingerprinting via Wappalyzer / BuiltWith; certificate-transparency mining for shadow domains. The corpus's *APOSTILA A ARTE DO OSINT PARA PENTESTERS.pdf* anchors the pentest-side methodology.
+
+**2. Defensive / threat intelligence.** Threat-intel teams use OSINT to track threat actors — OPSEC mistakes in social media, infrastructure reuse across campaigns, public TTP write-ups, leaked builder kits on criminal forums. The corpus's *Ransomware Investigation (osint and hunting).pdf* anchors this use case.
+
+**3. Investigation (human-impact context).** Law enforcement + nonprofits use OSINT for human trafficking investigations, missing-persons searches, child-safety case work, threat assessments for school violence. Four corpus PDFs cover this niche specifically: human-trafficking (EN + PT-BR), missing persons, and school shooters. **This use case requires extra ethical care** — victim privacy + chain-of-custody for evidence + jurisdictional rules around what's admissible.
+
+### Tool families
+
+- **Domain + IP**: whois / dig / crt.sh / SecurityTrails / Shodan / Censys / DNSDumpster / DNS history sites
+- **People + accounts**: Sherlock, WhatsMyName, Maigret (cross-platform username lookups); Holehe, Epieos (email enumeration); LinkedIn / Twitter / Facebook / Instagram with proper OPSEC. For deeper account-correlation work, @osint-wiki/entities/tools/socid-extractor.md extracts stable internal IDs (e.g. Google GAIA IDs) across 130+ platforms — these survive username changes and platform redesigns, so they anchor threat-actor correlation that username-only tools miss (MIT, https://github.com/soxoj/socid-extractor).
+- **Leaked credentials**: HaveIBeenPwned, Dehashed, IntelX, ScyllaDB credential dumps
+- **Graph + linkage**: @entities/tools/maltego.md (commercial + community), SpiderFoot, Recon-ng (frameworks that orchestrate the smaller tools)
+- **Code search**: GitHub Dorking (`extension:env DB_PASSWORD`), GitLeaks, TruffleHog for repo secret discovery
+- **Image + geolocation**: reverse image search (TinEye, Yandex), EXIF tools, GeoSpy AI for image-derived geolocation
+- **Dark web** (caveat: needs Tor + OPSEC): Ahmia, OnionLand, Dread, exposed-credentials dumps on criminal forums. Use VMs + read-only browsing; never paste anything identifying.
+
+### Cross-wiki anchor
+
+The sibling **OSINT wiki** (@osint-wiki/) covers OSINT primarily through the financial-research lens (ticker due-diligence, congressional-trade tracking, prediction-market sentiment), with deeper coverage of source-evaluation methodology + exploration-graph dead-ends. When this wiki needs a methodology reference, prefer linking there rather than duplicating. Example: see @osint-wiki/concepts/typed-relation-dependencies.md for that methodology.
