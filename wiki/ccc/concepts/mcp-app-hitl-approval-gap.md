@@ -1,0 +1,53 @@
+---
+title: MCP app HITL approval gap (empirical)
+type: concept
+tags: [concept, mcp, hitl, empirical, k223]
+keywords: [MCPAppTax, blocking approval, 37.2%, 1723]
+related:
+  - sources/arxiv-empirical-mcp-applications-hitl-2607.25635.md
+  - concepts/production-agent-deployment-checklist.md
+  - concepts/enterprise-mcp-adoption-practice.md
+  - concepts/acp-mcp-three-layer-human-agent-execution.md
+  - entities/patterns/tier1-tier2-agent-model.md
+  - concepts/cage-1-enterprise-agent-governance-eval.md
+  - sources/brief-k221-k229-mcp-harness-security-ingest-2026-07-30.md
+  - concepts/local-first-mcp-multi-agent-workbench.md
+  - sources/arxiv-cyberneuro-privacy-agentic-neuroimaging-2607.28841.md
+  - concepts/execution-fidelity-irreversible-agent-invariants.md
+  - sources/arxiv-safety-invariants-irreversible-transitions-2608.00783.md
+  - entities/tools/datumpont-execution-fidelity.md
+  - concepts/shared-workspace-injection-task-completion-not-safety.md
+  - sources/arxiv-apex-harm-shared-workspace-agent-safety-2610.13623.md
+maturity: draft
+created: 2026-07-30
+updated: 2026-10-12
+---
+
+## Relations
+
+- `@sources/arxiv-empirical-mcp-applications-hitl-2607.25635.md`
+- `@concepts/production-agent-deployment-checklist.md`
+- `@entities/patterns/tier1-tier2-agent-model.md`
+- `@concepts/local-first-mcp-multi-agent-workbench.md` — K234 HITL verification panel
+- `@concepts/execution-fidelity-irreversible-agent-invariants.md` — K239 I1 confirm gate
+- `@entities/tools/datumpont-execution-fidelity.md` — K239 entity (wont_wire)
+
+## Raw Concept
+
+How often do real MCP-consuming apps gate tool execution behind a blocking human approval step?
+
+## Narrative
+
+Across **1,723** GitHub MCPApps: file config 85.2%, official SDK 81.1%, logging 90.8%, enable/disable 77.2%, but **blocking approval only 37.2%**. Most apps let any enabled tool run unconditionally.
+
+**Cemini steal:** Logging ≠ control. Prefer Cursor/Claude Code approval modes + Tier-2 gates for write/network/secret-touching tools. Treat "enable/disable server" as insufficient alone.
+
+**Verdict:** **ADOPT** default blocking gate for consequential tools. Study only — **NO-GO** install.
+
+### K234 CyberNeuro HITL panel (2026-08-03)
+
+CyberNeuro adds domain-specific **HITL verification panels** for biomedical QC atop MCP multi-agent flows — concrete instance of blocking human review beyond the 37.2% MCPApp baseline. See `@concepts/local-first-mcp-multi-agent-workbench.md`.
+
+### K239 confirm gate (2026-08-04)
+
+K239 **I1 Confirm gate** extends blocking approval: preview the irreversible transition before key derive — execution fidelity, not just tool enablement. See `@concepts/execution-fidelity-irreversible-agent-invariants.md`.

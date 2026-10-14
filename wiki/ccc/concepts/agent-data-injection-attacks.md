@@ -1,0 +1,36 @@
+---
+title: Agent data injection attacks (ADI) — CCC stub
+type: concept
+tags: [concept, harness, adi, cross-wiki]
+keywords: [2607.05120, adi, trusted untrusted]
+related:
+  - "@cybersecurity-wiki/concepts/agent-data-injection-attacks.md"
+  - "@cybersecurity-wiki/sources/arxiv-2607-05120-agent-data-injection-attacks.md"
+  - concepts/agent-completion-verification-gates.md
+  - briefs/2026-07-09_ccc-handoff-adi-spellsmith-ingest.md
+  - meta/ccc-cross-wiki-handoff-briefs.md
+  - concepts/trustx-agent-risk-classification.md
+  - concepts/memory-poisoning-write-execute-forget-lifecycle.md
+  - sources/arxiv-memsecbench-memory-poisoning-lifecycle-2607.27080.md
+  - concepts/cross-service-compositional-harm-graph.md
+  - concepts/shared-workspace-injection-task-completion-not-safety.md
+  - sources/arxiv-apex-harm-shared-workspace-agent-safety-2610.13623.md
+  - sources/arxiv-x-agentred-cross-service-red-teaming-2610.13886.md
+maturity: draft
+created: 2026-07-09
+updated: 2026-10-12
+cross-wiki-primary: "@cybersecurity-wiki/concepts/agent-data-injection-attacks.md"
+---
+
+## Relations
+
+- `@cybersecurity-wiki/concepts/agent-data-injection-attacks.md` — primary synthesis (2607.05120)
+- `@briefs/2026-07-09_ccc-handoff-adi-spellsmith-ingest.md` — harness handoff
+
+## Raw Concept
+
+CCC stub from cybersec ingest 2026-07-09. ADI forges trusted agent-data fields — bypasses instruction-injection guardrails on Claude Code / lazy-tool paths.
+
+## Narrative
+
+Pair with `@concepts/agent-completion-verification-gates.md` and prod-mcp trusted/untrusted checklist. David adoption: `@tipdrop-workspace-kit/briefs/2026-07-09_k139-agent-data-injection-harness-adopt.md`.

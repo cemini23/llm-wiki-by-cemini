@@ -1,0 +1,60 @@
+---
+title: Verifiable deterministic agent benchmarking
+type: concept
+tags: [concept, evaluation, verifiable, harness, benchmark, k203]
+keywords: [2607.19262, BioSecBench, deterministic grading, model-harness pairs]
+related:
+  - sources/arxiv-biosecbench-surveillance-2607.19262.md
+  - concepts/harness-evolution-vs-test-time-scaling-baseline.md
+  - concepts/bounded-self-refinement-vs-rsi-taxonomy.md
+  - concepts/businesscasebench-rubric-from-expert-solutions.md
+  - concepts/gatekeeper-layered-agent-evaluation.md
+  - sources/brief-k202-k205-agents-langgraph-biosec-2026-07-22.md
+  - "@cybersecurity-wiki/concepts/biosecbench-surveillance-verifiable-agent-eval.md"
+  - concepts/agent-completion-verification-gates.md
+  - concepts/traceable-scholarship-citation-first-generation.md
+  - concepts/standing-policy-instruction-following-benchmark.md
+  - sources/arxiv-handbook-md-long-context-agentic-policy-2607.25398.md
+  - concepts/multi-hop-api-retrieval-eval-tool-policies.md
+  - entities/tools/vakra.md
+  - sources/arxiv-vakra-multi-hop-api-retrieval-2608.12282.md
+  - concepts/measurement-integrity-mcp-security-eval.md
+  - concepts/repo-level-verified-code-proof-eval.md
+  - entities/tools/vero.md
+  - sources/arxiv-vero-repo-verified-code-proof-2608.13522.md
+  - concepts/marc-clinical-multi-agent-coordination.md
+  - concepts/meta-harness-optimization-hitl-eval-contract.md
+  - entities/patterns/treatment-blind-endpoint-integrity.md
+  - entities/tools/marc-v1.md
+  - sources/arxiv-labels-not-endpoints-treatment-leakage-2608.12880.md
+  - sources/arxiv-marc-v1-clinical-multi-agent-2608.13476.md
+  - concepts/headless-claude-code-controlled-eval-lane.md
+  - concepts/schema-free-cli-tool-eval.md
+maturity: draft
+created: 2026-07-22
+updated: 2026-08-14
+
+---
+
+## Relations
+
+- `@sources/arxiv-biosecbench-surveillance-2607.19262.md` — provenance
+- Cybersec domain: `@cybersecurity-wiki/concepts/biosecbench-surveillance-verifiable-agent-eval.md`
+- `@concepts/harness-evolution-vs-test-time-scaling-baseline.md` — eval discipline
+- `@concepts/businesscasebench-rubric-from-expert-solutions.md` — subjective rubric peer (K193)
+- `@concepts/headless-claude-code-controlled-eval-lane.md` — headless Claude Code controlled eval lane (K407/K410)
+
+## Raw Concept
+
+K203 BioSecBench methodology (biosec domain routed out): give agents the same inputs a human gets; grade **structured answers deterministically**; report **model×harness** jointly. Best frontier configs still ~50% on hard surveillance tasks.
+
+## Narrative
+
+### Steal (ADOPT)
+
+1. Prefer deterministic graders over LLM-as-judge when answers can be structured.
+2. Always log harness alongside model — PI vs Codex gaps matter.
+3. Score surrounding choices (thresholds, refs, filters) separately from "picked the right workflow."
+4. Local `biosecbench-surveillance` Apache REFERENCE (~208KB) for eval packaging shape — **not** a CCC biosec ops install.
+
+| Verdict | **ADOPT** verifiable-eval checklist; biosec content → cybersec |

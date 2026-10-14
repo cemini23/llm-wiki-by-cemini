@@ -1,0 +1,89 @@
+---
+title: "stash — persistent memory MCP server (Go, Apache-2.0, Wave 5A Adopt-but-fork)"
+type: entity
+tags: [mcp-server, ai-memory, episodic-memory, postgres-pgvector, go, apache-2-0, claude-code, cross-wiki-stub]
+keywords: [stash, alash3al-stash, persistent-memory-mcp, episodic-memory, fact-extraction, 8-stage-consolidation, claude-desktop, cursor, windsurf, single-binary]
+related:
+  - entities/tools/claude-mem.md
+  - entities/mcp-servers/librarian-kb-server.md
+  - entities/mcp-servers/anthropic-skills.md
+  - entities/patterns/cpr-context-compression.md
+  - entities/mcp-servers/llm-wiki-compiler.md
+  - entities/tools/everos.md
+  - concepts/code-as-agent-harness.md
+  - concepts/self-healing-agent-sessions.md
+  - concepts/cursor-ide-workspace.md
+  - concepts/local-llm-mechanics-primer.md
+  - entities/tools/anything-llm.md
+  - concepts/obsidian-agent-maintenance-workflow.md
+  - concepts/obsidian-trading-journal-workflow.md
+  - concepts/agent-memory-stack-comparison.md
+  - concepts/worldmemarena-multimodal-agent-memory-eval.md
+  - sources/arxiv-worldmemarena-agent-memory-2605.29341.md
+  - concepts/time-series-native-agent-harness.md
+  - sources/arxiv-timeclaw-contextualized-time-series-2606.05404.md
+maturity: draft
+created: 2026-05-17
+updated: 2026-07-14
+cross-wiki-source: "@osint-wiki/sources/alash3al-stash.md"
+---
+
+## Relations
+
+- @entities/tools/claude-mem.md — Cemini's adopted laptop-side memory layer; stash is the deployed server-side complement (semantic injection vs persistent multi-session episodes)
+- @entities/mcp-servers/librarian-kb-server.md — same Hetzner deployment surface; stash sits on the librarian alongside the kb-server retrieval layer
+- @entities/mcp-servers/anthropic-skills.md — stash is an MCP server, surfaces via the SKILL.md / MCP protocol the marketplace catalogues
+- @entities/patterns/cpr-context-compression.md — stash's 8-stage consolidation is a reference implementation of the CPR "compress" leg at the durable-storage layer
+- @entities/mcp-servers/llm-wiki-compiler.md — sibling MCP server on the same Karpathy-pattern compiler / durable-store lineage; both candidates for the librarian-adjacent surface
+- @concepts/code-as-agent-harness.md — episodic memory in harness mechanisms layer
+- @concepts/self-healing-agent-sessions.md — execution traces + outcomes for integrated monitoring
+- @osint-wiki/sources/alash3al-stash.md — cross-wiki primary source page; full Phase-0 audit, 8-stage consolidation detail, and Hetzner deployment notes live there
+
+## Raw Concept
+
+CCC-side stub for the stash MCP server. **Redeployed 2026-07-14** on `cemini-prod` (`/opt/stash`, v0.2.11) after librarian deletion. Laptop tunnel: `localhost:8088` → prod `127.0.0.1:18080`. Full audit: `@osint-wiki/sources/alash3al-stash.md`.
+
+## Narrative
+
+### What it does (CCC-relevant slice)
+
+- **MCP-protocol-compatible** with Claude Desktop, Cursor, Windsurf, Cline, Continue, plus OpenRouter / Ollama backends. Claude Code is the primary CCC consumer.
+- **Episodic memory** — durable storage of "what happened in this session" across runs, accessible to the agent via MCP tool calls.
+- **Fact extraction + 8-stage consolidation** — turns raw conversation into stable facts that survive recall noise.
+- **Self-hosted** — Go binary in Docker on cemini-prod; laptop talks over SSH-tunneled MCP SSE.
+
+### Current deployment (2026-07-14)
+
+| Item | Value |
+|------|-------|
+| Host | `cemini-prod:/opt/stash` |
+| Version | v0.2.11 |
+| MCP | `127.0.0.1:18080/sse` (tunneled to laptop `:8088`) |
+| DB | dedicated `pgvector/pgvector:pg16` container |
+| LLM | OpenRouter embeddings + gpt-4o-mini reasoner |
+| Namespace | `/cemini` |
+
+Brief: `briefs/2026-07-14_stash-mcp-redeploy-prod.md`.
+
+### How it relates to Cemini's existing memory stack
+
+| Layer | Tool | Scope |
+|-------|------|-------|
+| Working-memory cache | `hot.md` | This session's open decisions / position; rewritten at session end |
+| Session-bridge memory | @entities/tools/claude-mem.md | Cross-session observation index; semantic injection on SessionStart |
+| Persistent episodic memory | **stash** (this page) | Long-horizon facts / episodes; survives many sessions |
+| Retrieval-from-corpus | @entities/mcp-servers/librarian-kb-server.md | Wiki content over HTTP; not session memory |
+
+The four layers are complementary, not competing. claude-obsidian was rejected partly because it tried to do all four with overlapping hooks (see @entities/tools/claude-obsidian.md).
+
+### Phase-0 caveats (from OSINT)
+
+- **License**: Apache-2.0 root verified.
+- **Bus factor**: 1 contributor, 6 days old at OSINT evaluation. Adoption means **fork-and-pin** — pin a SHA, host the fork, accept upstream lag.
+- **Transitive Go deps** require a sweep before commit (`jackc/pgx`, `mark3labs/mcp-go` flagged clean-by-reputation but not formally audited).
+- **Operational fit**: Go binary ~50-100 MB + dedicated Postgres ~150-200 MB fits comfortably on the CPX21 (4 GB RAM / 80 GB NVMe).
+
+## Snippets
+
+> Persistent memory layer for AI agents. Episodes, facts, and working context stored in Postgres. MCP server included. Self-hosted, single binary, no cloud required.
+[Source: @osint-wiki/sources/alash3al-stash.md]

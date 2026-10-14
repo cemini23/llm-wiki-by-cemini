@@ -1,0 +1,29 @@
+---
+title: mattpocock/skills — composable agent skill library (CCC stub)
+type: entity
+tags: [tool, agent-skills, cross-wiki-route, k126]
+keywords: [mattpocock-skills, to-issues, grill-me, skill-md]
+related:
+  - "@osint-wiki/entities/tools/mattpocock-skills.md"
+  - concepts/claude-code-skills-md-institutional-memory.md
+  - entities/skills/to-issues.md
+  - entities/skills/grill-with-docs.md
+  - sources/eval-github-repos-plan-multi-wiki-2026-06-29.md
+  - entities/tools/codebase-memory-mcp.md
+  - sources/brief-k126-nvidia-mattpocock-skills-adopt-2026-06-22.md
+maturity: draft
+created: 2026-06-22
+updated: 2026-07-31
+cross-wiki-source: "@osint-wiki/entities/tools/mattpocock-skills.md"
+wire_status: runtime_wired
+wire_target: ".cursor/skills/to-issues/ + .cursor/skills/grill-with-docs/"
+---
+
+## Relations
+
+- `@osint-wiki/entities/tools/mattpocock-skills.md` — canonical K126 Adopt eval (MIT confirmed)
+- `@sources/eval-github-repos-plan-multi-wiki-2026-06-29.md` — K134 reaffirmed
+
+## Narrative
+
+CCC routing stub. **Adopted 2026-06-22** — `to-issues` + `grill-with-docs` (brief **grill-me**) in `.cursor/skills/`; catalog `@entities/skills/to-issues.md`, `@entities/skills/grill-with-docs.md`. Phase-0: `scripts/adopt_k126_phase0.sh`.

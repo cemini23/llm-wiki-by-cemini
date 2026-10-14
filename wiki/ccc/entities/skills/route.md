@@ -1,0 +1,86 @@
+---
+title: /route skill — easy mid hard money outsource
+type: entity
+tags: [skill, route, federation]
+keywords: [route-task, always-approve, SIP, verify-gate, SHE, failover]
+related:
+  - entities/tools/agent-toolkit.md
+  - concepts/llm-routing-deepseek-openrouter-failover.md
+  - entities/skills/phase1-wire.md
+  - entities/tools/opencode.md
+  - entities/tools/reasonix.md
+  - entities/tools/deepseek-harness.md
+  - concepts/skill-misevolution.md
+  - sources/brief-k237-meta-harness-vero-misevolution-2026-08-14.md
+  - concepts/persona-hat-claude-code-sdlc.md
+  - sources/arxiv-skill-misevolution-2608.12851.md
+  - sources/brief-k238-persona-hat-claude-gcp-2026-08-15.md
+  - concepts/progress-guided-step-routing.md
+  - entities/skills/scout-tool-search.md
+  - sources/arxiv-progrouter-progress-orchestration-2608.25992.md
+maturity: validated
+created: 2026-07-01
+updated: 2026-09-11
+---
+
+## Relations
+
+- @entities/tools/agent-toolkit.md
+- @concepts/llm-routing-deepseek-openrouter-failover.md
+- @entities/tools/opencode.md — Phase-0 NO-GO mid **swap**; v2.4 opt-in Zen-free **sidecar**
+- @entities/tools/reasonix.md — Phase-0 NO-GO mid swap
+- @entities/tools/deepseek-harness.md — official `dsh` is the `/route` worker behind `claude-ds` (v2.3.2; operator GO 2026-08-14)
+- @concepts/skill-misevolution.md — board K237; v2.3.3 rule 10
+- @concepts/persona-hat-claude-code-sdlc.md — OSINT K238 GCP hats (dual-ID vs TokTier K238)
+
+## Raw Concept
+
+Federation skill `.cursor/skills/route/SKILL.md` (v2.4.3). Scripts live in private agent-toolkit.
+
+## Narrative
+
+Lanes: easy (OpenRouter free → OpenCode Zen free → claude-ds **Flash**), mid (Grok plan → OpenCode then Flash execute), hard/money (Cursor premium plan → Grok implement). **Grok CLI usage out:** Flash family plans (mid, never Pro) / Flash then OpenCode (hard + Plan). Wire id `deepseek-flash` (DeepSeek V4.1 Flash, native vision). V4 Pro is **off rotation**. Always-approve default. One harness; `-Model` aliases map to Flash. Always-apply Cursor rule: `~/.cursor/rules/cemini-route-outsource.mdc`. Say **route as recommended** / `/route` / `route this` in any federation workspace.
+
+v2.1 adds SIP handoff contract (SDR exit 3), post-implement verify gate, mid→hard confidence escalate, `_route_runs/` claim-safe logs. Canon host `@entities/tools/agent-toolkit.md`.
+
+v2.3 (2026-08-12): DeepSeek V4 Pro GA → **Grok CLI stand-in**. `Get-ClaudeDsModel` + `Invoke-ClaudeDsExecute -Model/-Mode`. Flash = easy/mid execute; Pro = mid plan when Grok usage is out, hard implement when Grok usage is out + Plan. Grok **auth** still `grok login`. Keep claude-ds adapter. Overrides: `ROUTE_CLAUDE_DS_FLASH_MODEL` / `ROUTE_CLAUDE_DS_PRO_MODEL`.
+
+v2.3.1 (2026-08-14 morning): policy clarification — dsh is a developer-preview RC, keep-wrapper. **Superseded same day.**
+
+v2.3.2 (2026-08-14): operator GO — official `dsh` is the `/route` worker behind PATH name `claude-ds` (`install-dsh.ps1` pin, `DSH_PERMISSION_MODE=danger-full-access`, `-Model` → `--patch`). Claude Code at `~/.deepseek-claude` is fallback (`CLAUDE_DS_FORCE_LEGACY=1`). Prod uses a Node 24 sidecar; system Node stays v20.
+
+v2.3.3 (2026-08-14): skill misevolution HITL (arXiv 2608.12851) — operating rule 10: no unattended auto-evolve; on verify fail reconsider the Plan, not only retry (Vero lesson); external eval contract — do not rewrite `## Verify` mid-run.
+
+v2.4.3 (2026-09-11): DeepSeek **V4.1 Flash** wire id `deepseek-flash` (native vision). Stronger than V4 Pro — **Pro off rotation**. Hard Grok-out = Flash then OpenCode. Legacy `deepseek-v4-flash` / `deepseek-v4-pro` aliases map to Flash.
+
+v2.4.1 (2026-08-21): steal public cursor-route `--worker opencode` as a **sidecar** (not a `claude-ds` swap). Easy/mid execute: OpenRouter free → OpenCode Zen free (**live catalog pick**, Ox Alpha while listed; not a locked id; not Big Pickle by default) → Flash family (`deepseek-v4-flash` / `deepseek-v4-flash-vision-exp`). Mid Grok-out plan = Flash (never Pro). Hard Grok-out = Flash then Pro then OpenCode. Pro is audits + hard backup only. `ROUTE_SKIP_OPENCODE=1` disables the sidecar. Missing `opencode` skips to Flash. Pin: `ROUTE_OPENCODE_MODEL`.
+
+v2.2: **Grok-out** (`-SkipGrokPlan` / `ROUTE_GROK_OUT=1`) + usable `## Plan` skips Grok → claude-ds on mid/hard; **claude-ds hang watchdog** (stall/max env) prints parent Cursor takeover; `-HandoffPath` resume. Helpers: `scripts/lib/Test-RoutePlanPresent.ps1`.
+
+### Research → skill improvement backlog (standing)
+
+OSINT daily digest steals for this skill via cluster `cursor-route-harness` (`daily_research_config.yaml`). On match → CCC brief + bump this backlog (HITL before skill/toolkit PR).
+
+| ID | Steal | Status |
+|----|-------|--------|
+| K232 ops | Grok-out + filled `## Plan` → skip Grok plan, claude-ds execute | **wired** 2026-08-11 — agent-toolkit + skill v2.2 |
+| K232 ops | claude-ds hang watchdog → parent Cursor takeover + verify | **wired** 2026-08-11 — `Invoke-PwshScriptNamedArgs -EnableHangWatch` |
+| K232 SHE | Trajectory→System Prompt / Rule Bank / Safety Memory / Tool Policy; evolve from `_route_runs/` **HITL only** | open — pattern; `.local/adopts/SHE` REFERENCE (OSINT) |
+| K231 smart-ralph | Force research→design→tasks in SIP Plan before mid/hard execute | open — SIP checklist |
+| K232 DiffCoop / verify papers | Pressure-test failover paths; accept/reformulate/escalate on verify fail | open — eval habit |
+| K233 | SKILLER skill-authoring / SkillLens / MISA-T / opencodex candidate | open — pattern + `/phase1` only for opencodex |
+| K234 | Charity Majors: harness > model; verification bottleneck; pets→cattle code | open — reinforce Verify gate; brief `2026-08-12_k234-charity-majors-harness-verify.md` |
+| ops 2026-08-12 | OpenCode / Reasonix as DeepSeek coding harness vs claude-ds | **closed** — keep `claude-ds` PATH; both NO-GO as mid **swap**. v2.4.1 (2026-08-21) adds OpenCode as Zen-free **sidecar** only (live catalog pick) |
+| ops 2026-08-12 | Flash vs Pro in one harness; Pro = Grok CLI usage-out stand-in | **superseded** 2026-09-11 — V4.1 Flash; Pro off rotation |
+| ops 2026-09-11 | V4.1 Flash wire id `deepseek-flash`; Pro off rotation; hard Grok-out = Flash then OpenCode; always-apply rule matches skill | **wired** — skill v2.4.3 + `cemini-route-outsource.mdc` + agent-toolkit |
+| ops 2026-08-14 | Official DeepSeek Harness `dsh` as `/route` worker | **wired** v2.3.2 — pin `~/.dsh-cemini`; PATH stays `claude-ds`; Claude Code fallback (`@entities/tools/deepseek-harness.md`) |
+| board K237 AutoDesign (2608.13560) | Meta-harness optimization bibliography → `/route` harness-evolution canon (AutoDesign / Meta-Harness / HarnessX / Self-Harness / Recursive / Continual / Agentic Harness Engineering). Wire id in policy file: CCC **K281**. | **open** — bibliography; `.local/adopts/AutoDesign` GO REFERENCE |
+| board K237 misevolution (2608.12851) | Skill misevolution SHE gate — skills worsen with practice; terminal success-rate ≠ safe library; govern authoring/retrieval/execution; delete-only repair + reuse-time attribution; no unattended auto-evolve of `.cursor/skills/*` | **wired** 2026-08-14 — policy §SHE + skill v2.3.3 rule 10 |
+| board K237 Vero (2608.13522) | Reconsider-definition habit — on verify fail, reconsider the Plan/definition, not only retry (collapse 16 failed lemma attempts into one edit). Wire id in policy file: CCC **K280**. | **wired** 2026-08-14 — skill rule 10; `.local/adopts/vero` GO REFERENCE |
+| OSINT K241 (2026-08-18) | Outlier Weekly + public MIT [`cemini23/cursor-route`](https://github.com/cemini23/cursor-route) (npm 0.1.9): lane-aware tmux workers; **health proves mid is DeepSeek** (`lane:mid` / `lanes.mid`; Anthropic hatch is not proof); **do not replace `/route`**; always-approve ≠ LIVE Discord/trading. Also: ClawGym II (2608.16798) optimize the *model through* the harness (do not fork it); HarnessEval-W (2608.16859) evidence-tree eval (`status --json` spawn/execute/verify, claim stays unverified); strategic tech debt (2608.16112) — unattended skill evolve / silent `~/.cursor/skills` = toxic; `--worker deepseek` stays cheap-to-abandon. Dual-ID: **OSINT K241** ≠ CCC K241. | **wired** 2026-08-18 on public cursor-route 0.1.9 (health proof + evidence tree). `/route` worker unchanged — HITL before toolkit PR. Brief `briefs/2026-08-18_k241-cursor-route-clawgym-harnesseval.md` |
+| OSINT K242 (2026-08-19) | Glean enterprise task→model routing (cost; skip LLM for calculator tasks). **Do not swap `/route` worker.** easy-agent MIT = Extract permission/checkpoint pattern only. Grok clone stall (0% CPU, `.local/adopts` mtime) tripped 600s watchdog → Pro hang → Cursor parent takeover. Dual-ID: **OSINT K242** ≠ Trajectory Sentinel K242. | **open** — backlog; `/route` worker unchanged. Brief `briefs/2026-08-19_k242-glean-routing-dram-easy-agent.md` |
+| OSINT K243 (2026-08-20) | GLM-5.3 post-training (RL-on-environments + DSH harness plugin Cordis): **the harness layer is the cost/diff surface** — TrueForge (MIT) quantifies harness cost; route pricing must count harness, not just tokens. Osmani cognitive surrender + mutual amplification reinforce the verify gate (worker ≠ verifier). **Do not swap `/route` worker or PATH `claude-ds`.** Eureka (K293) / Harness-CL (K292) / SemaPLC OOD — policy only. Dual-ID: **OSINT K243** ≠ CCC K243 (ACEM). | **open** — backlog; `/route` worker unchanged. Brief `briefs/2026-08-20_k243-ccc.md` |
+| OSINT super-audit (2026-09-02) | Public MIT [`cemini23/cursor-route`](https://github.com/cemini23/cursor-route) npm **0.1.14**: easy-lane OpenRouter live pick **tier-ranks** Qwen/GLM/Kimi above Nemotron 550B (ctx bonus capped at 131072). **Do not replace `/route`.** Mid stays `claude-ds`. | **wired** on public cursor-route 0.1.14 only. `/route` worker unchanged. |
+| ops 2026-09-11 public | Public MIT [`cemini23/cursor-route`](https://github.com/cemini23/cursor-route) npm **0.1.15**: mid launch id `deepseek-flash` (V4.1 Flash, native vision). `--model pro` / `--model vision` are legacy aliases. Pro off rotation. **Do not replace `/route`.** Mid stays `claude-ds`. | **wired** on public cursor-route 0.1.15 only. `/route` worker unchanged. |
+
+Briefs: `docs/briefs/2026-09-11_route-v243-flash-not-pro.md` · `briefs/2026-08-11_route-skill-k231-k232-steals.md` · `briefs/2026-08-12_k234-charity-majors-harness-verify.md` · `briefs/2026-08-18_k241-cursor-route-clawgym-harnesseval.md` · `briefs/2026-08-19_k242-glean-routing-dram-easy-agent.md` · `briefs/2026-08-20_k243-ccc.md` · public product working brief: `~/Projects/cursor-route/docs/briefs/WORKING.md`.
