@@ -170,11 +170,21 @@ def _is_nav_exempt(rel_path):
     return os.path.basename(rel_path) in _NAV_EXEMPT
 
 
+def _is_sweeps(rel_path):
+    """True for an append-only sweeps/ report, with or without a domain prefix.
+
+    A bare `startswith("sweeps/")` stops matching once the federation merge puts the
+    reports at `wiki/<domain>/sweeps/`. The orphan check below already tolerates both
+    forms; the frontmatter check did not, and reported 900 append-only reports as
+    missing frontmatter the moment the merge landed (2026-10-14).
+    """
+    return rel_path.startswith("sweeps/") or "/sweeps/" in rel_path
+
+
 orphans = sorted(
     p for p in all_paths
     if p not in inbound
-    and not p.startswith("sweeps/")
-    and "/sweeps/" not in p
+    and not _is_sweeps(p)
     and not _is_nav_exempt(p)
 )
 
@@ -289,7 +299,7 @@ cited_unread.sort(key=lambda x: -x[1])
 # sweeps/ files are append-only Tier-2 reports (log-like) — no frontmatter
 # expected, same rationale as the orphan exemption above.
 no_frontmatter = sorted(p for p, fm in pages.items()
-                        if fm.get("_no_frontmatter") and not p.startswith("sweeps/"))
+                        if fm.get("_no_frontmatter") and not _is_sweeps(p))
 no_type = sorted(p for p, fm in pages.items()
                  if not fm.get("_no_frontmatter") and not fm.get("type"))
 no_maturity = sorted(p for p, fm in pages.items()

@@ -418,14 +418,14 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 
 | Alias | Path | Visibility | Description |
 |-------|------|------------|-------------|
-| `osint-wiki` | `wiki/` | **Private** | Financial research, quant finance, prediction markets, CeminiSuite, RL for trading |
-| `image-gen-wiki` | `../Image gen/wiki/` | Public | Uncensored image generation, model cataloging, ComfyUI, LoRA, persona/character ops |
-| `seo-wiki` | `../SEO:GEO B&M Business/wiki/` | Public | Local SEO, GBP optimization, GEO/AEO, web design, social media, creator marketing |
-| `3d-printing-wiki` | `../3d printing/wiki/` | Public | FDM/FFF printing, Bambu, materials, slicers, print farms, store ops |
-| `cybersecurity-wiki` | `../Cybersecurity wiki/wiki/` | Public | Cybersecurity research — offensive security (pentest / red team / bug bounty / exploit dev), defensive operations (SOC / IR / threat hunting), certifications + careers, threat actors. Shared territory: OSINT tradecraft + investigative methodology |
-| `gambling-wiki` | `../Gambling wiki/wiki/` | **Public** | Sports betting, casino, poker, DFS, best ball, prediction-market wagering (retail/strategy). Shared territory: Kelly, FLB, Kalshi/Polymarket cross-venue — osint-wiki owns bots/CeminiSuite |
-| `game-dev-wiki` | `../Game Dev wiki/wiki/` | **Public** | Hobby game dev — castle/RTS research, engine evals, agent-assisted slice workflow. Shared territory: subagent harness — ccc-wiki owns primitives |
-| `ccc-wiki` | `../Cemini claude code CCC/wiki/` | **Public** | Cursor + Claude Code meta-wiki — workflow, subagents, MCP/conductor, hooks, skills, slash commands, /goal · Ralph · OpenSpec. Shared territory: agent orchestration, conductor/librarian architecture, skill audits |
+| `osint-wiki` | `wiki/osint/` | **Private** | Financial research, quant finance, prediction markets, CeminiSuite, RL for trading |
+| `image-gen-wiki` | `wiki/image-gen/` | Public | Uncensored image generation, model cataloging, ComfyUI, LoRA, persona/character ops |
+| `seo-wiki` | `wiki/seo/` | Public | Local SEO, GBP optimization, GEO/AEO, web design, social media, creator marketing |
+| `3d-printing-wiki` | `wiki/3d-printing/` | Public | FDM/FFF printing, Bambu, materials, slicers, print farms, store ops |
+| `cybersecurity-wiki` | `wiki/cybersec/` | Public | Cybersecurity research — offensive security (pentest / red team / bug bounty / exploit dev), defensive operations (SOC / IR / threat hunting), certifications + careers, threat actors. Shared territory: OSINT tradecraft + investigative methodology |
+| `gambling-wiki` | `wiki/gambling/` | **Public** | Sports betting, casino, poker, DFS, best ball, prediction-market wagering (retail/strategy). Shared territory: Kelly, FLB, Kalshi/Polymarket cross-venue — osint-wiki owns bots/CeminiSuite |
+| `game-dev-wiki` | `wiki/game-dev/` | **Public** | Hobby game dev — castle/RTS research, engine evals, agent-assisted slice workflow. Shared territory: subagent harness — ccc-wiki owns primitives |
+| `ccc-wiki` | `wiki/ccc/` | **Public** | Cursor + Claude Code meta-wiki — workflow, subagents, MCP/conductor, hooks, skills, slash commands, /goal · Ralph · OpenSpec. Shared territory: agent orchestration, conductor/librarian architecture, skill audits |
 | `federation-hub` | `../cemini-federation-hub/hub/` | **Private** | Operator control plane — morning federation summary, wiki path catalog, Obsidian triage (`@meta/federation-operator-hub-stub.md`) |
 
 **Private (not public federation deliverables):** `osint-wiki`, **Cemini Financial Suite** (`../CeminiSuite`). **Public on GitHub:** `ccc-wiki` and the six domain wikis (including `gambling-wiki`, `game-dev-wiki`). See root `README.md` for repo URLs.
