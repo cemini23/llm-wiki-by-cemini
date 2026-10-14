@@ -396,6 +396,18 @@ If exit code **0** (no report for today): prompt to run `bash scripts/run_daily_
 
 If `wiki/.obsidian/` missing: `bash scripts/setup_obsidian_vault.sh`. Graph review ritual: `.cursor/skills/cemini-wiki-graph/SKILL.md`.
 
+### 13. Wiki linter sync (every session — instant)
+
+```bash
+./scripts/check_wiki_linter_sync_due.sh
+```
+
+If exit code **0** (the eight federation `wiki_lint.py` copies have diverged), prompt:
+
+> "The eight federation linter copies have diverged. Want me to re-sync them? (`python3 scripts/wiki_linter_sync.py sync`)"
+
+The eight copies drifted for about five months before anyone noticed, during which the seven siblings ran a linter predating the ambiguity check and the gating of checks 4 and 8. This asks the question cheaply on every session start. Do **not** auto-run the sync — it writes to seven sibling repositories. See `briefs/2026-10-14_federation-wiki-merge-plan.md` §5.4; after the merge this check becomes redundant.
+
 Keep each check under 60 seconds. Rituals that grow into multi-minute operations should become opt-in commands instead.
 
 ## Related Wikis
