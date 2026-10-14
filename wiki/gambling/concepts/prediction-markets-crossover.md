@@ -1,0 +1,292 @@
+---
+title: Prediction markets crossover (Kalshi, Polymarket)
+type: concept
+tags: [concept, prediction-markets, kalshi, polymarket, crossover]
+keywords: [prediction-markets, event-contracts, kalshi, polymarket, fees, crossover]
+related:
+  - concepts/gambling-wiki-scope.md
+  - concepts/favorite-longshot-bias.md
+  - concepts/kelly-criterion-betting.md
+  - concepts/sharp-vs-soft-books.md
+  - concepts/best-ball-strategy.md
+  - entities/platforms/kalshi.md
+  - entities/platforms/polymarket.md
+  - entities/tools/momentum-odds.md
+  - entities/tools/odds-jam.md
+  - concepts/sportsbook-pm-line-divergence.md
+  - concepts/pm-copy-trading-retail-risks.md
+  - concepts/pm-commitment-grounded-language.md
+  - concepts/pm-perspective-mismatch-trading.md
+  - sources/youtube-wsj-kalshi-polymarket-valuations-2026-06-01.md
+  - sources/polygnosis-2-polymarket-osint-2026-06-01.md
+  - entities/sports/world-cup-2026-betting.md
+  - concepts/world-cup-prediction-market-types.md
+  - sources/youtube-sports-pm-retail-batch-2026-05-29.md
+  - sources/gemini-github-sports-betting-landscape-2026-05-30.md
+  - sources/osint-cross-wiki-wc2026-retail-synthesis-2026-05-31.md
+  - concepts/polymarket-weather-wagering-retail.md
+  - entities/people/rufus-peabody.md
+  - sources/youtube-operator-batch-sports-betting-research-2026-05-31.md
+  - concepts/gambling-bot-architecture.md
+  - concepts/polymarket-v1-research-database.md
+  - sources/arxiv-polymarket-v1-database-2606.04217-2026-06-05.md
+  - concepts/pm-live-belief-updating.md
+  - sources/arxiv-kalshi-live-belief-updating-2606.07811-2026-06-09.md
+  - concepts/world-cup-pm-retail-hygiene.md
+  - sources/brief-k108-gambling-wc-retail-hygiene-2026-06-09.md
+  - sources/arxiv-2606-13038-nous-prediction-market-cognitive-injection-2026-06-13.md
+  - sources/openreview-prophets-profit-pm-LYSTj2Cnuu-2026-06-17.md
+  - sources/openreview-llm-coherence-projection-Tqos7VqQhH-2026-06-17.md
+  - concepts/pm-proper-scoring-clob-profitability.md
+  - concepts/pm-structural-volatility.md
+  - concepts/pm-llm-coherence-projection.md
+  - concepts/pm-agent-cognitive-monoculture.md
+  - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
+  - sources/arxiv-2606.30040-kalshi-macro-belief-distributions-2026-07-01.md
+  - sources/brief-k135-pm-settlement-macro-beliefs-steals-2026-07-01.md
+  - concepts/kalshi-spotify-oracle-manipulation-2026-07.md
+  - concepts/kalshi-michigan-sports-injunction-2026-06.md
+  - concepts/pm-whale-conviction-bias-2026-07.md
+  - sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
+  - sources/substack-rss-klement-2026-07-02-a-fundamental-flaw-of-prediction-markets.md
+  - sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md
+  - sources/daily-digest-rss-industry-2026-08-14.md
+  - sources/substack-rss-event-horizon-2026-08-13-novig-responsible-trading.md
+  - sources/brief-k222-k231-pm-retail-awareness-2026-08.md
+  - sources/brief-k239-kalshi-sports-mention-2026-08-15.md
+  - sources/brief-k240-kalshi-nv-geofence-2026-08-17.md
+  - sources/brief-k242-eh-pm-ban-onshore-2026-08-19.md
+  - sources/brief-k243-eh-pm-republican-comms-2026-08-20.md
+  - @seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md
+  - @seo-wiki/concepts/generative-engine-optimization.md
+  - sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md
+  - sources/daily-digest-rss-nfl-week0-2026-08-31.md
+  - sources/daily-digest-rss-week1-pm-nfl-2026-09-11.md
+  - sources/brief-k170-week1-papers-rss-2026-09-11.md
+  - sources/daily-digest-rss-pm-regulatory-2026-09-17.md
+  - sources/daily-digest-rss-pm-regulatory-2026-09-23.md
+  - sources/daily-digest-batch-k175-2026-09-23.md
+  - sources/daily-digest-rss-pm-regulatory-2026-09-29.md
+  - sources/daily-digest-batch-k178-2026-09-29.md
+  - sources/brief-k171-pm-fp-regulatory-2026-09-17.md
+  - sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md
+  - sources/rss-lsr-ncpg-functionally-gambling-2026-09-23.md
+  - sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md
+  - sources/rss-sbc-summit-lisbon-2026-09-29.md
+  - sources/daily-digest-batch-k179-2026-09-30.md
+  - sources/rss-eh-kalshi-curry-geofence-2026-09-25.md
+  - sources/rss-lsr-pm-industry-2026-09-29-30.md
+  - sources/daily-digest-batch-k180-2026-10-02.md
+  - sources/rss-sbc-pm-europe-2026-10-01-05.md
+  - sources/daily-digest-batch-k181-2026-10-06.md
+  - sources/rss-lsb-cftc-rules-ohio-cd-2026-10-06.md
+  - sources/daily-digest-batch-k182-2026-10-07.md
+  - sources/rss-pm-legal-2026-10-07-09.md
+  - sources/daily-digest-batch-k183-2026-10-09.md
+maturity: validated
+created: 2026-05-31
+updated: 2026-10-09
+---
+
+## Relations
+
+- @sources/youtube-wsj-kalshi-polymarket-valuations-2026-06-01.md — R3 regulatory explainer
+
+- @concepts/gambling-wiki-scope.md — scope split
+- @entities/platforms/kalshi.md — regulated event contracts
+- @entities/platforms/polymarket.md — crypto CLOB PM
+- @osint-wiki/entities/platforms/kalshi.md — Cemini execution context
+- @osint-wiki/entities/platforms/polymarket.md — bot/LP context
+- @osint-wiki/concepts/cross-venue-arbitrage-pattern.md — automated arb
+- @osint-wiki/concepts/sports-prediction-consensus-agent.md — sports PM entry signals
+- @seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md — public PM/OSS education funnel (Outlier Weekly)
+- @seo-wiki/concepts/generative-engine-optimization.md — citability for public PM explainers
+- @sources/daily-digest-rss-industry-2026-08-14.md — DKeX COMBOS + CFTC/NY emergency
+- @sources/substack-rss-event-horizon-2026-08-13-novig-responsible-trading.md — Novig responsible-trading + incentive advisory
+- @sources/brief-k222-k231-pm-retail-awareness-2026-08.md — 15-min velocity, FanDuel→Crypto.com, Utah/NY tax/FlightAware
+- @sources/brief-k239-kalshi-sports-mention-2026-08-15.md — mentions-gone + WA geofence
+- @sources/brief-k240-kalshi-nv-geofence-2026-08-17.md — NV $120k/day + optional-update geofence
+- @sources/brief-k242-eh-pm-ban-onshore-2026-08-19.md — WA geofence day; ban ≠ offshore
+- @sources/brief-k243-eh-pm-republican-comms-2026-08-20.md — GOP-underdog comms tail risk
+- @sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md — Kalshi sports short-horizon calibration vs compressed futures
+- @sources/daily-digest-rss-nfl-week0-2026-08-31.md — injury markets, 9th Circuit, Polymarket participation pull
+
+## Raw Concept
+
+How Kalshi and Polymarket fit the **wagering** knowledge base vs the **trading stack** in osint-wiki.
+
+## Narrative
+
+### Same activity, two lenses
+
+| Lens | gambling-wiki | osint-wiki |
+|------|---------------|------------|
+| Question | "Is this contract +EV for my bankroll?" | "How does the bot quote/farm/arbitrage it?" |
+| Fees | Retail fee math, withdrawal costs | Fee APIs in orchestrator |
+| Sports | Consensus agents, MomentumOdds signals | Executor bots, WC LP |
+| Regulation | Consumer rules, state gaming vs DCM; WSJ R3 state-fight timeline | CFTC, compliance briefs, `@osint-wiki/entities/tools/polygnosis.md` |
+
+### Retail checklist before betting PM sports
+
+1. Read **settlement rules** (void conditions, data sources)
+2. Model **fees** + spread — effective hold in `@concepts/vig-and-hold.md`
+3. Compare price vs **sportsbook line** (CLV analog)
+4. Size with **fractional Kelly** — `@concepts/kelly-criterion-betting.md` + `@osint-wiki/concepts/kelly-sizing-quarter.md`
+5. Know **jurisdiction** — geoblocks, KYC; state **gambling-license** fights may restrict sports contracts (`@sources/youtube-wsj-kalshi-polymarket-valuations-2026-06-01.md`)
+6. **Horizon + cash-settlement** (K135 / K225) — **5-min** asset binaries stay NO-GO (settlement-push). Kalshi **15-min BTC** is now the crypto volume engine (~$1.1B of ~$1.5B crypto / 7d, Aug 2026) — clears the worst K135 signature but is still high-churn casino-velocity, not a political-market substitute (`@sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md`, `@sources/brief-k222-k231-pm-retail-awareness-2026-08.md`)
+7. **Third-party chart oracles** — culture markets (Spotify charts) where the data provider **audits after** PM settlement (`@concepts/kalshi-spotify-oracle-manipulation-2026-07.md`)
+8. **State legalization quality** (K149) — light-touch budget inserts (e.g. NC 2026) may mean **low tax + minimal consumer protection** — read venue rules; don't confuse legislative approval with market quality (`@sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md`)
+8. **Whale-weighted prices** — large OI holders may be **negative** signal on forecast quality (`@concepts/pm-whale-conviction-bias-2026-07.md`)
+9. **Macro ladders** — on Kalshi CPI thresholds, read **tail distribution** not point mean alone (`@sources/arxiv-2606.30040-kalshi-macro-belief-distributions-2026-07-01.md`)
+10. **Mention/attendance/interaction contracts (K179)** — the CFTC now treats these as **presumptively manipulable**. The outcome sits with one person, so a single actor can move settlement. Avoid holding them; expect new listings to stop (`@sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md`)
+
+### Two framings no longer line up (K179, 2026-09)
+
+The Sep 2026 record shows the **legal** and **functional** framings diverging:
+
+- **Legal:** Kalshi and Polymarket still argue they are not sports betting. The CFTC regulates them as DCMs under the CEA.
+- **Functional:** the **NCPG** declared event contracts "functionally gambling" and lost Ohio, Michigan, Nevada, and the Evergreen council over its Kalshi partnership (a **$2M** donation). A Harris Poll it commissioned found **85%** of Americans see addiction risk and **84%** want gambling-style consumer protections.
+
+For retail sizing this changes nothing. For **jurisdiction** screening it matters: state regulators who call the product illegal gambling are the same bodies whose members left the NCPG. See `@sources/rss-lsr-ncpg-functionally-gambling-2026-09-23.md` and `@sources/rss-sbc-summit-lisbon-2026-09-29.md`.
+
+**Pricing note (K179):** Kalshi's pre-fee implied-vig edge on moneyline and totals **reverses on parlays** — 26.4% on favourite+Over combos versus 23.9% at DraftKings. Combos are now **53%** of Kalshi notional volume. Net the fee before claiming any cross-venue edge (`@sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md`).
+
+### The land-based casinos refused to play (K180, 2026-09-30)
+
+At **G2E Las Vegas**, **MGM** and **Caesars** both said they will not enter prediction markets. The reason is licensing, not conviction.
+
+> "Nevada regulators have absolutely said to us, 'If you stretch out and do this, it's going to impact your licensing.'" — Bill Hornbuckle, MGM CEO
+
+The **Nevada Gaming Control Board** warned licensees that offering sports event contracts **in other states** could affect their suitability in Nevada. MGM considered entering in early 2025 and backed away; Caesars is prepared to enter **only** if it can do so without risking licenses.
+
+**The clearest structural read of the whole PM debate came from Caesars CEO Tom Reeg:**
+
+> "But there was nowhere in their rules that said I couldn't place a bet." — on a Kalshi contract covering whether Caesars would be sold in 2026, where he held inside knowledge
+
+> "These are not swaps. They're not miraculously finding the other side of a 5-team parlay at the same time one side comes in."
+
+Separately, West Virginia Delegate **Shawn Fluharty** (Play'n Go) framed the split at the same conference — licensed sports betting as "a fine bottle of wine," prediction markets as West Virginia **"moonshine."**
+
+**Why this matters to the wiki:** it is the first time the **land-based operators**, not regulators or problem-gambling groups, articulate the conflict-of-interest case from the inside. Two things follow for retail:
+
+1. **Licensing risk is real and asymmetric.** A book with a casino licence faces a cost a pure PM exchange does not. Expect the casino-backed books to stay out or to enter only under an explicit regulatory safe harbour.
+2. **Reeg's insider point is about market integrity, not legality.** A contract on a corporate event, listed without insider restrictions, is a manipulation surface. Treat such markets as you would a mention market (`@sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md`).
+
+Details: `@sources/rss-lsr-pm-industry-2026-09-29-30.md`.
+
+### The Atlantic split hardened (K181, 2026-10)
+
+By early October the US and Europe had settled into opposite classifications, and Europe's was the one that mattered for access.
+
+**Europe treats them as gambling.** The **Czech Ministry of Finance** added Kalshi to its unauthorised-operator register on 2026-09-30, with ISP blocking effective **2026-10-15** — following Polymarket in July. Belgium, France, Romania, Spain, and Germany take the same view; Spain sued both platforms in May. Polymarket is in **The Hague** appealing a **€420,000** Dutch penalty.
+
+**The argument that decides it** came from **European Lotteries**, and it is the cleanest statement of the European position:
+
+> "Qualification as a financial instrument does not, in itself, create an exemption from otherwise applicable national gambling legislation."
+
+That aligns with **ESMA**, which recognised in 2026 that event contracts may also constitute betting under national gambling law. Under **MiFID II**, a product that fails the financial-instrument test falls to the relevant national gambling framework — and EL's ask is that regulators judge **substance and risk, not label or technology**.
+
+**The classification trap for the platforms:** to escape gambling law they must be financial instruments. But the closest European analogue to an event contract is **binary options**, which are **already banned for retail sale** across most of the EU. Winning the classification argument would not obviously improve retail access.
+
+**The one European opening** is Gibraltar, which built a separate framework. At SBC Summit's Global Prediction Markets Forum, Malta's Gaming Authority CEO said operators "are applying" and there is "huge interest," and Kalshi's Chief Risk Officer said it is "talking to regulators across the pond like ESMA."
+
+**What follows for retail:** a US-regulated contract is **unlicensed gambling in much of Europe**. Any cross-venue or bot plan must be **jurisdiction-scoped**, and EU access can close on a two-week ISP notice. Details: `@sources/rss-sbc-pm-europe-2026-10-01-05.md`.
+
+### The federal and state tracks are both live (K182, 2026-10-06)
+
+Two actions on the same day showed the question is still open on both sides.
+
+**The federal claim.** The CFTC sent two rules to the White House. **RIN 3038-AF82** would add event contracts to the **"swap" definition** — asserting that prediction-market contracts are federally regulated derivatives. **RIN 3038-AF81**, an **Interim Final Rule**, would block **casino-style games** (slots, blackjack, craps). Neither is in force.
+
+The pairing is deliberate: **the CFTC gives up the casino category and claims the sports category.** That matches the industry's own framing — sports contracts are said to carry informational value, casino games plainly do not. The mechanism is post-Santos/post-Perez housekeeping.
+
+**The state claim.** The **Ohio Casino Control Commission** ordered **ten** operators to stop sports event contracts by **2026-10-16** — Underdog, Gemini Titan, Coinbase, Prophet X, Novig, Robinhood, Polymarket, Plus500, Moomoo, Webull. **Kalshi is absent** only because it is already in a different case, following the **Sixth Circuit's rejection** of its federal-only argument. The letters state the conduct is a **felony**.
+
+**What to hold in mind for jurisdiction screening:**
+
+1. **"CFTC-regulated" is not a defence in state court.** It did not stop Ohio, and it does not travel to Europe either (`@sources/rss-sbc-pm-europe-2026-10-01-05.md`).
+2. **If states prevail, the product shrinks to a sportsbook shape** — a 21+ minimum and no college player props are the named consequences.
+3. **Neither track has resolved.** Do not model either as settled.
+
+Details: `@sources/rss-lsb-cftc-rules-ohio-cd-2026-10-06.md`.
+
+### The leagues split (K183, 2026-10-08)
+
+The sports leagues are no longer aligned, and the split maps onto their commercial interests.
+
+| League | Position |
+|--------|----------|
+| **NFL** | **Against prediction markets.** Filed an amicus brief backing New Jersey, arguing states should regulate. Partners with DraftKings, FanDuel, Fanatics |
+| **NHL** | Partners with **both Kalshi and Polymarket** |
+| **MLB** | Partners with **Polymarket** |
+| **UFC, MLS** | Polymarket ties |
+
+Kalshi's spokeswoman noted the contrast directly: "All but the NFL have been willing to share data and collaborate to protect game integrity."
+
+**The NFL's three substantive points, which are worth separating from its commercial position:**
+
+1. **Single-actor markets are a real integrity surface.** "A player can alter his performance, a coach can change his team's lineup or an official can make (or not make) certain calls." That is the same concern the CFTC raised in Letter 26-27 on mention markets (`@sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md`) — arriving from a different direction.
+2. **Age.** Kalshi allows **18**; the NFL wants **21**, matching state sportsbook rules.
+3. **Regulatory capacity.** The CFTC has **543 employees** nationally against "close to 400" in Nevada alone.
+
+**The same week, the NFL licensed Midnite** as its official UK and Ireland betting partner — the league is not opposed to sportsbook money, only to the federal-derivatives route to it (`@sources/rss-sbc-nfl-midnite-everton-2026-10-08-09.md`).
+
+**Where this leaves the wiki's position:** the federal-vs-state question is now before the Supreme Court in substance, with **39 states + DC** and **Gary Gensler** and **Chris Dodd** on the states' side, the **CFTC** and the exchanges on the other, and the **NFL** breaking from the other leagues. Kalshi responds by **2026-11-09**; cert is unlikely before December.
+
+### Tools spanning both wikis
+
+- **MomentumOdds** — sportsbook signal feed; tutorials target Kalshi execution (`@entities/tools/momentum-odds.md`, `@osint-wiki/entities/tools/momentum-odds.md`)
+- **Odds Jam / Prediction Insiders** — Polymarket copy alerts (`@entities/tools/odds-jam.md`)
+
+### Sports prediction markets (Novig and peers)
+
+Wharton interview with `@entities/people/rufus-peabody.md` frames **sports-focused prediction markets** (Novig cited) as an alternative when **DK/FD limit sharp winners**. Tradeoffs vs books:
+
+| Factor | Traditional book | Sports PM venue |
+|--------|------------------|-----------------|
+| Limits | Low for winners at soft US books | Liquidity caps `[TENTATIVE]` |
+| Pricing | Embedded vig (-110) | Bid-ask + fees |
+| Reference | Pinnacle close | Often still benchmark vs Pinnacle |
+
+Retail: same checklist as Kalshi/PM — fees, settlement, bankroll. **Bot execution** — requirements on `@concepts/gambling-bot-architecture.md`; prod code on `@osint-wiki`.
+
+**Aug 2026:** Novig published a responsible-trading framework (21+, incentive limits) while CFTC DMO flagged **Reg 40.5/40.6 incentive programs** — treat PM bonuses as compliance-risk. DraftKings **DKeX** listed football binaries + COMBOS (product of component YES). Kalshi vs NY AG: CFTC emergency “keep operating” vs $36B restitution claim. Same month: Kalshi **15-min BTC** dominates crypto volume; FanDuel Predicts sports → **Crypto.com**; Utah SJ (no CEA preemption); FlightAware sues over flight-cancellation oracles; NY **$10B/5y** PM-tax headline fails a population-share sanity check. Hubs: `@sources/substack-rss-event-horizon-2026-08-13-novig-responsible-trading.md`, `@sources/daily-digest-rss-industry-2026-08-14.md`, `@sources/brief-k222-k231-pm-retail-awareness-2026-08.md`, `@osint-wiki/concepts/prediction-market-regulation-2026.md`.
+
+Also Aug: **Nevada GCB** moved to fine Kalshi **$120k/day** for missing its Aug 12 NV deadline; the full geofence works only after an **optional** app update (NV + MI) — treat as residency-spoof fragile, not hard venue-down. Hubs: `@sources/brief-k240-kalshi-nv-geofence-2026-08-17.md`, `@sources/brief-k239-kalshi-sports-mention-2026-08-15.md`. **2026-08-19** is the WA IP+residency geofence day; a US ban/limit is not assumed to move all volume offshore (`@sources/brief-k242-eh-pm-ban-onshore-2026-08-19.md`).
+
+**K243 (2026-08-20):** a comms tail risk — if Republicans go into the midterms as underdogs, party-aligned comms could turn on prediction markets (and Polymarket's GOP skew) as an attack surface. Awareness only, no pm scp (`@sources/brief-k243-eh-pm-republican-comms-2026-08-20.md`).
+
+**K168 (2026-08-31):** Ninth Circuit says Kalshi sports contracts are likely not CEA swaps (NV/CA access risk). Polymarket pulled NFL will-play filings. Kalshi **game-week** sports prices are near-calibrated; **month-plus** futures are not. Hubs: `@sources/daily-digest-rss-nfl-week0-2026-08-31.md`, `@sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md`.
+
+**K170 (2026-09-11):** Kalshi federal losses in UT/IA (K258); sports = core volume not niche slice (K259); DGA session with Kalshi + AGA. **Injury void asymmetry:** NFL injury news may void sportsbook player props but **not** PM contracts the same way — cross-venue shoppers must read settlement rules. DraftKings ran anti-Kalshi review ads (LSR). Hub: `@sources/daily-digest-rss-week1-pm-nfl-2026-09-11.md`. **No pm scp.**
+
+**K171 (2026-09-17):** CT **C&D** to predictions operators + suppliers; **NFL** wants tighter regulation of “potential” PM partners (CNBC/LSR); leagues/players push **state bettor bans for harassment**; Ohio left **NCPG** over Kalshi (MA may follow). Hub: `@sources/daily-digest-rss-pm-regulatory-2026-09-17.md`. **No pm scp.**
+
+**K175 (2026-09-17–18):** **NFL approves all ads** sportsbook partners may run during games (books expand inventory) while PM partners stay under tighter league scrutiny (K171). **Genius/Legend** launches B2B **predictions comparison** platform — shop/display tooling, not a retail wager lane. **Missouri AG** stop order + **second 9th Circuit** tribal appeal vs Kalshi — state/tribal enforcement stack. Hub: `@sources/daily-digest-rss-pm-regulatory-2026-09-23.md`. **No pm scp.**
+
+### When to stay in traditional books
+
+Better liquidity on mainstream spreads; PM shines on **niche events**, **political/macroeconomic** contracts, and **cross-venue** mispricings (advanced).
+
+### World Cup 2026
+
+Expanded tournament + host nations (USA/Mexico/Canada) create **books vs PM/Kalshi divergence** on advance and futures — `@entities/sports/world-cup-2026-betting.md`, `@concepts/world-cup-books-vs-pm-divergence.md`. Contract-type cheat sheet: `@concepts/world-cup-prediction-market-types.md`. **Retail hygiene checklist (K108):** `@concepts/world-cup-pm-retail-hygiene.md`.
+
+### Signal products
+
+- **MomentumOdds** — `@entities/tools/momentum-odds.md` + `@concepts/sportsbook-pm-line-divergence.md`
+- **Odds Jam / Prediction Insiders** — `@entities/tools/odds-jam.md` + `@concepts/pm-copy-trading-retail-risks.md`
+
+### Offline research (K100)
+
+**Polymarket-v1 dataset** (1.2B trades, Nov 2022 – Apr 2026) supports backtests of FLB, fee-reform impact, and category spread baselines without live API keys. See `@concepts/polymarket-v1-research-database.md`. Key retail lesson: **inferred buy/sell from public tape ≈ coin-flip** — copy products need on-chain aggressor side, not tick-rule proxies `[CONFIRMED — arXiv 2606.04217]`.
+
+### Live in-play updating (Kalshi NBA)
+
+Academic live study (arXiv **2606.07811**): Kalshi NBA mids are **directionally responsive** to play-by-play but **underreact on impact** (~**0.64×** public-info benchmark move). Gap predicts short-horizon drift; **spread absorbs executable edge**. See `@concepts/pm-live-belief-updating.md` — complements static **books vs PM** divergence above.
+
+## Snippets
+
+> Rufus Peabody on prediction markets vs books: sharp limits at major US sportsbooks push flow to Pinnacle or PM venues with different liquidity/fee profiles. [Source: M1T0OlG3XEU via @sources/youtube-operator-batch-sports-betting-research-2026-05-31.md]
+
+*(cross-wiki — deep bot snippets live in @osint-wiki)*

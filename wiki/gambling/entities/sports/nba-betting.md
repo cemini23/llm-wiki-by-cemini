@@ -1,0 +1,75 @@
+---
+title: NBA betting
+type: entity
+tags: [entity, sport, nba, basketball, sports-betting]
+keywords: [nba, basketball, spreads, props, totals, load-management]
+related:
+  - concepts/sports-betting-fundamentals.md
+  - concepts/dfs-strategy-overview.md
+  - concepts/line-shopping-and-clv.md
+  - concepts/sportsbook-pm-line-divergence.md
+  - entities/sports/nfl-betting.md
+  - entities/sports/wnba-betting.md
+  - entities/platforms/draftkings.md
+  - entities/platforms/fanduel.md
+  - entities/tools/momentum-odds.md
+  - sources/gemini-github-sports-betting-landscape-2026-05-30.md
+  - sources/youtube-sports-pm-retail-batch-2026-05-29.md
+  - entities/tools/pydfs-lineup-optimizer.md
+  - entities/platforms/kalshi.md
+  - concepts/pm-live-belief-updating.md
+  - sources/arxiv-kalshi-live-belief-updating-2606.07811-2026-06-09.md
+  - sources/research-wnba-cold-streak-live-unders-2026-08-13.md
+  - entities/sports/nhl-betting.md
+  - entities/sports/cfb-betting.md
+maturity: draft
+created: 2026-05-31
+updated: 2026-09-30
+---
+
+## Relations
+
+- @concepts/dfs-strategy-overview.md — NBA DFS slates
+- @entities/tools/momentum-odds.md — tutorial mapped signals to Kalshi **NBA/playoff** contracts
+- @concepts/sportsbook-pm-line-divergence.md — totals/ML vs PM
+- @entities/sports/wnba-betting.md — sibling league; cold-streak / last-2:00 under research (no 5-miss edge)
+
+## Raw Concept
+
+NBA-specific betting — pace, rest, load management, prop volume.
+
+## Narrative
+
+### Structural traits
+
+- **High game frequency** — 82-game season + playoffs; larger sample for CLV
+- **Rest / B2B** — lines move on late scratch news; injury report timing matters
+- **Pace and totals** — faster pace → total correlation across same-game parlays
+- **Player props** — minutes-sensitive; starters sit in blowouts
+
+### PM / Kalshi overlap
+
+MomentumOdds YouTube demo explicitly routes **NBA playoff**-style Kalshi contracts from sportsbook correlation signals — see `@entities/tools/momentum-odds.md`. Always verify contract spec (regulation vs OT).
+
+### Kalshi live microstructure (2026 research) [CONFIRMED]
+
+arXiv **2606.07811** (1,421 NBA games, 1-min Kalshi + play-by-play):
+
+- Live mids **move correctly** after scoring, 3pt, lead changes, runs.
+- **Underreact ~36%** vs public-info win-prob benchmark on 1-min horizon (β ≈ 0.64).
+- **Illiquid** games + **salient** events (lead changes) → largest gaps; **clutch** states β ≈ 0.51.
+- Midpoint drift over 5–15 min is predictable but **not +EV** after bid–ask.
+
+Hub: `@concepts/pm-live-belief-updating.md`. Relevant during **playoffs/Finals** when Kalshi NBA volume spikes (`@entities/platforms/kalshi.md`).
+
+### DFS overlap
+
+NBA DFS (DraftKings/FanDuel) shares projection work with spread/total betting but different rake structure — `@concepts/dfs-strategy-overview.md`.
+
+### Data / OSS
+
+Gemini landscape: `bttmly/nba` schema-driven client, NBA ML betting repos — reference for model builds, not turnkey edge [Source: @sources/gemini-github-sports-betting-landscape-2026-05-30.md].
+
+## Snippets
+
+*(expand from operator YouTube ingests)*

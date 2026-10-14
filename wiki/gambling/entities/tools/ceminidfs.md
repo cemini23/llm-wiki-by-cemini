@@ -1,0 +1,69 @@
+---
+title: CeminiDFS
+type: entity
+tags: [tool, dfs, nfl, open-source, cemini23, w9, k125]
+keywords: [ceminidfs, nflverse, pydfs, fanduel, projection-pipeline, ownership, backtest]
+related:
+  - concepts/pickem-stat-type-mapping.md
+  - concepts/pickem-pipeline-integration-spec.md
+  - concepts/diy-nfl-dfs-model-architecture.md
+  - concepts/dfs-strategy-overview.md
+  - concepts/dfs-backtesting-framework.md
+  - concepts/dfs-ownership-projection.md
+  - concepts/nfl-dfs-data-sources.md
+  - entities/tools/pydfs-lineup-optimizer.md
+  - entities/tools/stokastic-dfs.md
+  - entities/tools/fantasylabs-dfs.md
+  - entities/platforms/fanduel.md
+  - sources/research-diy-dfs-model-master-plan-2026-06-20.md
+  - sources/brief-k128-bbm7-draft-copilot-hub-2026-06-24.md
+  - sources/research-nfl-dfs-id-mapping-2026-06-20.md
+  - sources/research-nfl-historical-odds-2026-06-20.md
+  - meta/research-input-pipeline.md
+  - "@osint-wiki/concepts/active-project-research-routing.md"
+maturity: validated
+created: 2026-06-20
+updated: 2026-10-10
+---
+
+## Relations
+
+- @concepts/pickem-stat-type-mapping.md — projection → pick'em stat bridge (no pick'em code here)
+- @concepts/pickem-pipeline-integration-spec.md — future K147 repo CLI boundary
+- @concepts/diy-nfl-dfs-model-architecture.md — K125 architecture hub
+- @entities/tools/pydfs-lineup-optimizer.md — downstream lineup generation
+- @osint-wiki/concepts/active-project-research-routing.md — morning digest + brief routing
+
+## Raw Concept
+
+Implementation repo for K125 DIY NFL DFS projection pipeline. Phases 0–5 complete 2026-06-20.
+
+## Narrative
+
+| Field | Value |
+|-------|-------|
+| **Repo** | [github.com/cemini23/CeminiDFS](https://github.com/cemini23/CeminiDFS) |
+| **Local path** | `~/Desktop/projects/CeminiDFS` |
+| **Brief home** | `../CeminiDFS/briefs/` |
+| **License** | MIT |
+| **Primary site** | FanDuel |
+| **Benchmarks** | Stokastic / FantasyLabs (accuracy only, not lineup source) |
+
+### Morning digest steal-from
+
+- nflverse fetch/cache patterns, PBP-derived usage models
+- Projection calibration, walk-forward backtest, Spearman vs realized
+- Ownership sim + copula rerank for MME pools
+- Late-swap pydfs integration after team lock
+- FanDuel slate GPP strategy (stacking, correlation, leverage)
+
+### Flags that stay off (2026-10-10)
+
+- `--premium-mode` is on `project` and `run` (CeminiDFS `bf30495`). Choices are `off`, `baseline`, and `market`. The default is `off`. `off` returns the same projection rows. `market` stays off until a later slate measures the coverage report.
+- `--keep-team-dart` stays off. The coverage report is `python -m ceminidfs.pipeline.fade_coverage`.
+
+### Cross-wiki boundary
+
+- **Primary wiki:** gambling-wiki (methodology + retail DFS)
+- **OSINT:** brief routing + cross-wiki ingest when source touches PM/bot stacks
+- **Pick'em / props:** **not in this repo** — research hub @concepts/diy-nfl-pickem-props-tool-architecture.md (K147); future standalone tool may borrow projection distributions only

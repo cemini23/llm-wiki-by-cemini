@@ -1,0 +1,109 @@
+---
+title: Sportsbook vs prediction-market line divergence
+type: concept
+tags: [concept, line-shopping, kalshi, polymarket, sportsbooks]
+keywords: [line-divergence, consensus, totals, moneyline, cross-venue-shopping]
+related:
+  - concepts/gambling-bot-architecture.md
+  - concepts/line-shopping-and-clv.md
+  - concepts/pm-copy-trading-retail-risks.md
+  - concepts/prediction-markets-crossover.md
+  - concepts/pm-commitment-grounded-language.md
+  - concepts/sharp-vs-soft-books.md
+  - concepts/sports-betting-fundamentals.md
+  - concepts/world-cup-books-vs-pm-divergence.md
+  - entities/platforms/draftkings.md
+  - entities/platforms/fanduel.md
+  - entities/platforms/kalshi.md
+  - entities/platforms/polymarket.md
+  - entities/sports/nba-betting.md
+  - entities/tools/momentum-odds.md
+  - sources/gemini-github-sports-betting-landscape-2026-05-30.md
+  - sources/youtube-sports-pm-retail-batch-2026-05-29.md
+  - sources/daily-digest-news-r1-r12-2026-06-01.md
+  - sources/daily-digest-news-r1-r12-2026-06-02.md
+  - concepts/pm-perspective-mismatch-trading.md
+  - sources/youtube-wsj-kalshi-polymarket-valuations-2026-06-01.md
+  - concepts/pm-live-belief-updating.md
+  - sources/arxiv-kalshi-live-belief-updating-2606.07811-2026-06-09.md
+  - sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md
+  - sources/daily-digest-batch-k179-2026-09-30.md
+maturity: validated
+created: 2026-05-31
+updated: 2026-09-30
+---
+
+## Relations
+
+- @concepts/gambling-bot-architecture.md — divergence bot lane
+- @concepts/line-shopping-and-clv.md — CLV on books; divergence is cross-venue CLV analog
+- @entities/tools/momentum-odds.md — commercial multi-book + PM routing feed
+- @concepts/world-cup-books-vs-pm-divergence.md — WC-specific nation-level gaps
+- @sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md — K179 measured vig: Kalshi wins on ML/totals, loses on parlays
+
+## Raw Concept
+
+When **FanDuel/DK/Pinnacle implied probability** differs materially from **Kalshi/Polymarket** on the same sporting outcome — and how retail bettors evaluate (not automate) the gap.
+
+## Narrative
+
+### Core idea (multi-source K80)
+
+YouTube batch (Beast Sports, MomentumOdds/Odds channel): edge framed as **sportsbook consensus vs PM line** on totals and moneylines — not sub-second in-play scraping for most retail.
+
+**Live caveat (Kalshi NBA, 2606.07811):** even when a static book-vs-PM gap exists, **live Kalshi mids lag** public-information fair value by ~36% on impact and drift over minutes — but spread/fees kill naive "chase the lag" execution. See `@concepts/pm-live-belief-updating.md`.
+
+```
+Sportsbook consensus (60+ books via MomentumOdds, or sharp close via Pinnacle)
+        ↓ compare implied %
+Kalshi / Polymarket contract mid
+        ↓ if gap > fees + model uncertainty
+Consider bet on cheaper venue (or pass)
+```
+
+### Measured hold by market type (K179, 2026-09-24) [TENTATIVE]
+
+Citizens, on a Week 2 NFL sample, measured Kalshi implied vig **below** both major books on moneyline and totals — but **above** them on parlays:
+
+| Market | Kalshi | FanDuel | DraftKings |
+|--------|--------|---------|------------|
+| Moneyline / totals (30 obs, 2026-09-18) | **4.22%** | 4.43% | 4.50% |
+| Favourite + Over combos (15 obs) | **26.4%** | — | 23.9% |
+
+Two rules follow:
+
+1. **Net the fee first.** Kalshi's quoted vig **excludes transaction fees**. A pre-fee edge is not an edge.
+2. **The venue is not uniformly cheap.** Kalshi's structural advantage is on the plain two-sided market. On combos it is the **expensive** venue. Combos are **53%** of its notional volume.
+
+Source: `@sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md`.
+
+### Structural vig gap (R2, 2026-06-01)
+
+Even when **prices align**, books embed **~4.5% hold** in -110/-110 markets vs **sub-2% fee blends** on Kalshi for comparable event contracts [TENTATIVE — Tech-Insider]. Divergence shopping must subtract **fee + tax + limit risk** on each side.
+
+### Workflow
+
+1. Convert all prices to **implied probability**
+2. Subtract **fees/hold** on each venue (`@concepts/vig-and-hold.md`, PM taker fees)
+3. Confirm **same resolution** (regulation vs OT, push rules)
+4. Size with fractional Kelly — `@concepts/kelly-criterion-betting.md`
+5. Log result vs **closing** for skill tracking
+
+### Fiat sharp/soft analog
+
+Gemini landscape: Pinnacle moves first; soft books lag → short-window arb. PM×Kalshi behaves similarly — regulated vs crypto CLOB efficiency gradient `@concepts/sharp-vs-soft-books.md`.
+
+### Failure modes
+
+- **False equivalence** — PM "Team wins" vs book spread are not the same bet
+- **Latency** — gap closes before manual execution
+- **Marketing signals** — MomentumOdds/Odds Jam promos overstate hit rate; verify 3+ months
+- **Geoblock / KYC** — cannot always execute on both legs
+
+### World Cup extension
+
+Nation-level book vs PM gaps (USA, Switzerland, etc.) — `@concepts/world-cup-books-vs-pm-divergence.md`.
+
+## Snippets
+
+> Edge as sportsbook consensus vs prediction-market line (totals, moneylines). [Source: @sources/youtube-sports-pm-retail-batch-2026-05-29.md — Beast Sports + MomentumOdds synthesis]

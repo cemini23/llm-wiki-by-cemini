@@ -1,0 +1,327 @@
+---
+title: Kalshi
+type: entity
+tags: [entity, platform, prediction-markets, regulated, sports]
+keywords: [kalshi, event-contracts, cftc, dcm, sports-markets]
+related:
+  - concepts/favorite-longshot-bias.md
+  - concepts/gambling-bot-architecture.md
+  - concepts/gambling-wiki-scope.md
+  - concepts/prediction-markets-crossover.md
+  - concepts/pm-commitment-grounded-language.md
+  - concepts/sharp-vs-soft-books.md
+  - concepts/sportsbook-pm-line-divergence.md
+  - concepts/world-cup-books-vs-pm-divergence.md
+  - concepts/world-cup-prediction-market-types.md
+  - entities/platforms/polymarket.md
+  - entities/sports/world-cup-2026-betting.md
+  - entities/tools/momentum-odds.md
+  - sources/osint-cross-wiki-wc2026-retail-synthesis-2026-05-31.md
+  - sources/youtube-sports-pm-retail-batch-2026-05-29.md
+  - sources/daily-digest-news-r1-r12-2026-06-01.md
+  - sources/daily-digest-news-r1-r12-2026-06-02.md
+  - sources/daily-digest-arxiv-batch-2026-06-02.md
+  - sources/youtube-wsj-kalshi-polymarket-valuations-2026-06-01.md
+  - sources/arxiv-kalshi-live-belief-updating-2606.07811-2026-06-09.md
+  - concepts/pm-live-belief-updating.md
+  - entities/sports/nba-betting.md
+  - entities/sports/wnba-betting.md
+  - concepts/world-cup-pm-retail-hygiene.md
+  - sources/brief-k108-gambling-wc-retail-hygiene-2026-06-09.md
+  - concepts/pm-proper-scoring-clob-profitability.md
+  - sources/openreview-prophets-profit-pm-LYSTj2Cnuu-2026-06-17.md
+  - sources/arxiv-2606.30040-kalshi-macro-belief-distributions-2026-07-01.md
+  - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
+  - concepts/kalshi-spotify-oracle-manipulation-2026-07.md
+  - concepts/kalshi-michigan-sports-injunction-2026-06.md
+  - concepts/pm-whale-conviction-bias-2026-07.md
+  - sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
+  - sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md
+  - sources/arxiv-2607.08199-pm-structural-volatility-kalshi-2026-07-10.md
+  - concepts/pm-structural-volatility.md
+  - sources/research-wnba-cold-streak-live-unders-2026-08-13.md
+  - sources/daily-digest-rss-industry-2026-08-14.md
+  - sources/substack-rss-event-horizon-2026-08-13-novig-responsible-trading.md
+  - sources/brief-k222-k231-pm-retail-awareness-2026-08.md
+  - sources/brief-k239-kalshi-sports-mention-2026-08-15.md
+  - sources/brief-k240-kalshi-nv-geofence-2026-08-17.md
+  - sources/brief-k242-eh-pm-ban-onshore-2026-08-19.md
+  - sources/brief-k243-eh-pm-republican-comms-2026-08-20.md
+  - sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md
+  - sources/daily-digest-rss-nfl-week0-2026-08-31.md
+  - sources/daily-digest-rss-week1-pm-nfl-2026-09-11.md
+  - sources/brief-k170-week1-papers-rss-2026-09-11.md
+  - sources/daily-digest-rss-pm-regulatory-2026-09-17.md
+  - sources/brief-k171-pm-fp-regulatory-2026-09-17.md
+  - sources/daily-digest-rss-w02-nfl-pm-2026-09-18.md
+  - sources/brief-k172-w02-env-rss-2026-09-18.md
+  - sources/daily-digest-rss-pm-eh-ep33-2026-09-21.md
+  - sources/daily-digest-batch-k174-2026-09-21.md
+  - sources/daily-digest-rss-pm-regulatory-2026-09-23.md
+  - sources/daily-digest-batch-k175-2026-09-23.md
+  - sources/daily-digest-rss-pm-regulatory-2026-09-29.md
+  - sources/daily-digest-batch-k178-2026-09-29.md
+  - sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md
+  - sources/rss-lsr-ncpg-functionally-gambling-2026-09-23.md
+  - sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md
+  - sources/daily-digest-batch-k179-2026-09-30.md
+  - sources/rss-eh-kalshi-curry-geofence-2026-09-25.md
+  - sources/rss-lsr-pm-industry-2026-09-29-30.md
+  - sources/daily-digest-batch-k180-2026-10-02.md
+  - sources/rss-sbc-pm-europe-2026-10-01-05.md
+  - sources/daily-digest-batch-k181-2026-10-06.md
+  - sources/rss-lsb-cftc-rules-ohio-cd-2026-10-06.md
+  - sources/daily-digest-batch-k182-2026-10-07.md
+  - sources/rss-pm-legal-2026-10-07-09.md
+  - sources/daily-digest-batch-k183-2026-10-09.md
+maturity: draft
+created: 2026-05-31
+updated: 2026-10-09
+---
+
+## Relations
+
+- @concepts/kalshi-spotify-oracle-manipulation-2026-07.md — culture-chart oracle risk
+- @concepts/kalshi-michigan-sports-injunction-2026-06.md — Michigan TRO
+- @concepts/pm-whale-conviction-bias-2026-07.md — size-weighting bias
+- @concepts/prediction-markets-crossover.md — retail vs bot lens
+- @entities/sports/wnba-betting.md — WNBA series inventory (no last-2:00 contract)
+- @osint-wiki/entities/platforms/kalshi.md — Cemini trading stack, regulation, bots
+- @sources/daily-digest-rss-industry-2026-08-14.md — CFTC emergency vs NY AG (Aug 2026)
+- @sources/substack-rss-event-horizon-2026-08-13-novig-responsible-trading.md — incentive-program advisory (cross-wiki)
+- @sources/brief-k222-k231-pm-retail-awareness-2026-08.md — 15-min volume, Utah SJ, FlightAware, NY tax sanity-check
+- @osint-wiki/sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md — K239 sports mention markets sidelined + WA geofence
+- @sources/brief-k239-kalshi-sports-mention-2026-08-15.md — K239 wiki stub
+- @sources/brief-k240-kalshi-nv-geofence-2026-08-17.md — K240 NV $120k/day + optional-update geofence
+- @osint-wiki/sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md — K240 source of record
+- @sources/brief-k242-eh-pm-ban-onshore-2026-08-19.md — K242 WA geofence day; ban ≠ offshore
+- @sources/brief-k243-eh-pm-republican-comms-2026-08-20.md — K243 GOP-underdog comms tail risk
+- @osint-wiki/sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md — K242 source of record
+- @sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md — sports short-horizon calibration (K168)
+- @sources/daily-digest-rss-nfl-week0-2026-08-31.md — football volume, injury markets, 9th Circuit
+- @sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md — CFTC Letter 26-27; mention markets presumptively manipulable (K179)
+- @sources/rss-lsr-ncpg-functionally-gambling-2026-09-23.md — NCPG "functionally gambling" + member exits over the Kalshi donation (K179)
+- @sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md — 47.5% of Week 2 NFL downloads; pre-fee vig edge reverses on parlays (K179)
+
+## Raw Concept
+
+CFTC-regulated prediction market (DCM). **Consumer/strategy** entity here; execution infrastructure in @osint-wiki.
+
+## Narrative
+
+Kalshi lists **event contracts** (sports, economics, weather, politics). Retail considerations: fee schedule, contract specs, FLB on sports lines, geoblocking.
+
+### World Cup 2026
+
+**Group qualifiers** (advance), **group winner**, **match games**, and **outright** series — cross-walk to Polymarket in `@concepts/world-cup-prediction-market-types.md`. Kalshi resolves many sports via **ESPN/Fox/WSJ/Reuters** consensus — may differ from FIFA-only PM paths on edge cases [TENTATIVE]. Hub: `@entities/sports/world-cup-2026-betting.md`.
+
+For bot architecture, LP, logit pricing, regulatory preemption: `@osint-wiki/entities/platforms/kalshi.md`.
+
+### Regulation and sports volume (R3 WSJ, 2026-06-01) [TENTATIVE]
+
+- **CFTC DCM** — US event contracts regulated as **swaps** (CFTC, same agency as commodity futures per WSJ explainer).
+- **Sports dominance** — WSJ cites **>70%** of Kalshi volume in sports; legal fight with **states** after sports expansion.
+- **State gaming conflict** — Nevada and others push PMs toward **state gambling licenses**; research firm: **~69%** of volume from **19 states** without legal online sports betting.
+- **“Not the house”** marketing vs **Kalshi Trading LLC** internal market maker — retail should assume **liquidity comes from designated MMs**, not peer-only pool.
+- **Sharp migration** — pro bettor segment (WSJ: Frank Santolo) cites **higher limits** vs books that limit winners — aligns with `@concepts/sharp-vs-soft-books.md` PM column.
+
+Hub source: `@sources/youtube-wsj-kalshi-polymarket-valuations-2026-06-01.md`.
+
+### Fees vs sportsbooks (R2, 2026-06-01) [TENTATIVE]
+
+Tech-Insider comparison: flagship Kalshi sports contracts **~0.5–1.5%** implied vig vs **~4.5%** standard -110/-110 book hold. Example: Chiefs ML priced **1.1¢** better effective on Kalshi vs DraftKings in May 2026 test. High-volume bettors: fee gap compounds ($50k/yr ≈ $2.25k vig at books vs $500–1k fees on Kalshi per article math). **Tax:** Kalshi gains may qualify for **Section 1256** 60/40 treatment vs ordinary gambling income on books [NEEDS VERIFICATION 2026-06-01].
+
+### US volume share & NBA Finals stress test (R2, 2026-06-02) [TENTATIVE]
+
+DeFi Rate week ending **2026-05-24** (Fair Stake / digest R2):
+
+| Metric | Kalshi | Polymarket |
+|--------|--------|------------|
+| Weekly notional | **$3.99B** (+3% WoW) | **$1.65B** (-15% WoW) |
+| Combined US share | **70.8%** (record per article) | ~29.2% |
+| Sports notional | **$1.599B** (40% of Kalshi) | **$675.5M** |
+
+Structural drivers cited: **USD bank on-ramp** vs PM USDC friction, **order-book** liquidity from traditional derivatives desks, **parlay self-certification** (early 2026). **Politics** still PM-heavy; **sports** now Kalshi-led in US.
+
+**June 2026 watch:** NBA Finals from **2026-06-03** — game-level Kalshi prices reportedly tracked **Pinnacle** within **1–2¢** implied on NBA game contracts [TENTATIVE]. Thesis breaks if PM US sports product closes gap, sportsbook handle flat, or adverse **CFTC / state** rulings.
+
+Hub: `@sources/daily-digest-news-r1-r12-2026-06-02.md`.
+
+### Volume incentive program terminated early (K180, 2026-09-30) [CONFIRMED]
+
+Kalshi filed a **2026-09-28** CFTC self-certification to end its **Volume Incentive Program**, effective **no earlier than 2026-10-13** — nearly a year before its 2026-10-01-2027 scheduled end. No reason given.
+
+How it worked: a fixed reward per eligible market over up to 31 days, split among traders by share of volume. Only CLOT trades priced **$0.03–$0.97** counted (perps exempt); event-contract rewards capped at **$0.005 per contract**.
+
+**Context the filing avoids:** the CFTC's **2026-08-12** advisory warned that volume-threshold incentives raise wash-trading and prearranged-trade risk, and the *WSJ* reported **~1 million near-identical trades worth >$5B** through Kalshi's **ether perpetual** market since August.
+
+**Replacement:** a **Deposit and Trading Reward Incentive Program** (received 2026-09-25). Time-limited promotions, **3–90 days**, targeted by account age, funding, activity, inactivity, geography, and contract category. Up to **$2,500 per participant** per promotion; **$5,000** total per person over the program's two-year life. Transactions under inquiry for self-matching, wash trading, or prearranged trading are excluded.
+
+**The separate Liquidity Incentive Program is unaffected** — it pays for qualifying resting orders, which need not become completed trades.
+
+**Retail read:** the volume subsidy was never an edge to the trader, and its removal does not change contract pricing. But the CFTC is reviewing incentive programs **across** platforms, and Chairman Selig may act. Treat promotional credit as temporary, never as part of a bankroll plan. Hub: `@sources/rss-lsr-pm-industry-2026-09-29-30.md`.
+
+### The NFL files against it; 39 states join (K183, 2026-10-08) [CONFIRMED]
+
+The **NFL filed an amicus brief** backing New Jersey against Kalshi, arguing **states are better positioned** to regulate sports contracts. **39 states plus DC** — bipartisan, led by Ohio AG Andy Wilson — separately urged SCOTUS to take the case.
+
+**The league's three complaints about CFTC oversight:** markets manipulable by a single player, coach, or official; a **18** age floor where the NFL wants **21**; and staffing — "state regulatory bodies have hundreds of employees… Nevada and Pennsylvania, for instance, have close to **400 employees each**. The Commission, meanwhile, has only **543 employees** covering the entire country."
+
+**The volume figure:** on the season's first Sunday, **$1.8B of $3.3B** in total prediction-market trading was NFL-related.
+
+**Kalshi is isolated among leagues.** It partners with the **NHL and MLB**; the NFL is the only major league on the other side.
+
+**Also filing for the states:** former CFTC chair **Gary Gensler** and former Senator **Chris Dodd**, sponsor of the act the CFTC relies on. Dodd: his bill "did not set out to authorize nationwide sports betting through derivatives markets or displace decades of state and tribal primacy."
+
+**The CFTC's reply:** it offered the NFL a **memorandum of understanding**, which the league declined.
+
+**Timeline:** Kalshi's response is due **2026-11-09**; a cert decision is not expected before **December**.
+
+### States keep pulling back (K183, 2026-10-07/08) [CONFIRMED]
+
+| State | Development |
+|-------|-------------|
+| **Michigan** | **Coinbase** to stop new sports event contracts by **2026-10-10** and close positions. Michigan has now halted **Coinbase, Robinhood, and Kalshi** |
+| **Connecticut** | Of nine operators served, **Webull, Gemini, ProphetX** exited; **Polymarket, Coinbase, Crypto.com, Robinhood, Novig, Underdog** remain. ~30 subpoenas issued to payment processors, app stores, media |
+| **Missouri** | **PrizePicks** suspended sports prediction markets |
+
+**The map (2026-10-07):** courts have **blocked** prediction markets in **Nevada, Michigan, Washington**. A court has **cleared enforcement** in **Connecticut, Iowa, Maryland, New York, Ohio, Tennessee, Utah**. In **ten more**, a suit, order, or threat is pending. **44 state AGs** told the CFTC in July it has no authority over sports prediction markets.
+
+Hub: `@sources/rss-pm-legal-2026-10-07-09.md`.
+
+### Two federal rules sent to the White House (K182, 2026-10-06) [CONFIRMED]
+
+The CFTC sent **two rules to the White House** that would settle what prediction markets may offer nationwide. Both further define **"swap."**
+
+| RIN | Type | Effect |
+|-----|------|--------|
+| **3038-AF82** | Proposed | **Adds event contracts to the "swap" definition** — the lead proposal, and the one that would confirm CFTC oversight of Kalshi's sports contracts |
+| **3038-AF81** | **Interim Final Rule** | Blocks **casino-style games** (slots, blackjack, craps) on prediction markets. Takes effect **immediately** on approval, with **no comment period** |
+
+**Neither is in force.** AF82 needs finalisation; AF81 needs White House approval. If AF82 stalls, states are expected to keep enforcing.
+
+**Note the second rule's design:** it concedes the casino category to prohibition while (via AF82) claiming the sports category as swaps. That is the industry's own preferred line — sports contracts have an information case; slots do not.
+
+### Ohio orders ten operators to stop (K182, 2026-10-06)
+
+The **Ohio Casino Control Commission** sent cease-and-desist letters to **ten** operators — **Underdog, Gemini Titan, Coinbase, Prophet X, Novig, Robinhood, Polymarket, Plus500, Moomoo, Webull** — requiring them to stop sports event contracts in Ohio by **2026-10-16**, with written notice of compliance within 14 days.
+
+**Kalshi is absent from the list** because it received an earlier 2025 letter and is in **separate litigation**. The batch follows the **Sixth Circuit rejecting Kalshi's** argument that its contracts fall only under CFTC regulation.
+
+The letters state unlicensed sports betting in Ohio is a **felony**, and the OCCC says it may impose a civil penalty equal to the value unlawfully obtained. **No operator has responded.**
+
+**Retail read:** the federal and state tracks are still unresolved. The CFTC is claiming the product; Ohio is enforcing regardless. If states prevail, the expected shape is a **21+ minimum** and a **college player-prop ban**. Hub: `@sources/rss-lsb-cftc-rules-ohio-cd-2026-10-06.md`.
+
+### Europe closes its doors — Czech block effective 2026-10-15 (K181) [CONFIRMED]
+
+The **Czech Ministry of Finance** added Kalshi to its register of unauthorised gambling operators on **2026-09-30**. ISPs must block within **15 days**, so conventional access ends **2026-10-15**. It follows the July 2026 order against **Polymarket**.
+
+The Czech position — brought to authorities by the **IPRH**, which represents >90% of the regulated domestic sector — is that prediction markets are **betting marketed as investment**. Belgium, France, Romania, Spain, and Germany take the same line; Spain sued both platforms in May 2026.
+
+**Gibraltar is the European exception**, running a separate framework, with its Gambling Commissioner arguing it is "much better to regulate" than to block.
+
+**Retail read:** the CFTC's DCM status **does not travel**. A US-regulated contract is unlicensed gambling in much of Europe. Any cross-venue plan must be jurisdiction-scoped. Hub: `@sources/rss-sbc-pm-europe-2026-10-01-05.md`.
+
+### Mention markets under CFTC presumption (K179, 2026-09) [CONFIRMED]
+
+CFTC Staff Letter No. 26-27 (2026-09-22) tells DCMs that **mention markets** are "presumptively readily susceptible to manipulation" under Core Principle 3. Kalshi had **paused sports-broadcast mention markets** in August 2026 during the federal review. Four factors a DCM must address: independent obligations, external pressure, verifiability/public scrutiny, and surveillance safeguards.
+
+This is **staff guidance, not a ban and not an enforcement action**. It creates no new binding rule and no no-action position. Treat it as a deterrent to new listings, not a delisting trigger. Details: `@sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md`.
+
+### Retail share and parlay pricing (K179, 2026-09-24)
+
+Sensor Tower data quoted by Citizens: Kalshi and Polymarket took **1.33M of 2.8M** NFL app downloads in Week 2 (**~47.5%**). Kalshi alone: 706k in Week 2, 1.31M over two weeks.
+
+Pricing caveat that matters for shopping: Kalshi's implied vig beat DraftKings and FanDuel on **moneyline and totals** (~**4.22%** vs 4.43% / 4.50%, pre-fee), but **lost on parlays** — **26.4%** implied vig on favourite+Over combos vs **23.9%** at DraftKings. Kalshi combos were **$26B** of notional volume over 30 days, **53%** of its total. See `@sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md`.
+
+### Live NBA belief updating (arXiv 2606.07811, 2026-06-09) [CONFIRMED]
+
+Angelini & De Angelis merge **1-min Kalshi NBA game-contract quotes** with **play-by-play**:
+
+| Finding | Detail |
+|---------|--------|
+| Pre-game | Calibrated; Brier improves 0.204 → 0.199 in final 24h |
+| Directional live | Prices react quickly to scoring, 3pt, lead changes, runs |
+| Efficient live | **β ≈ 0.64** — 10pp public-info move → ~6.4pp mid move on impact |
+| Drift | Updating gap predicts **5–15 min** further mid move; **not** executable after spread |
+| Salience × liquidity | Visible events in **thin** markets underreact most |
+
+Retail: live mids **track the game** but **lag full fair-value move** — size down in illiquid states; don't market-chase the lag. Bot: liquidity gate + drift-aware limits. Hub: `@concepts/pm-live-belief-updating.md`, `@sources/arxiv-kalshi-live-belief-updating-2606.07811-2026-06-09.md`.
+
+### WNBA sports series (public catalog, 2026-08-13) [CONFIRMED]
+
+Operator catalog pass (no auth): **88** WNBA / Women’s Pro Basketball series. Liquid objects: `KXWNBAGAME`, `KXWNBATOTAL`, `KXWNBASPREAD`, half/quarter totals (`KXWNBA1–4QTOTAL`, `1H`/`2HTOTAL`), `KXWNBATEAMTOTAL`. **No** last-2-minute / each-team-under-5 time-window series (Sports-wide search empty). Live 4Q ladders can be **too wide to fill** even in blowouts; game totals carry most OI. Hub: `@entities/sports/wnba-betting.md`, `@sources/research-wnba-cold-streak-live-unders-2026-08-13.md`.
+
+### Short-horizon crypto + FlightAware (K225 / K231, Aug 2026) [CONFIRMED]
+
+Trailing-7d (Event Horizon / Ticker Tracker): **~$1.5B** Kalshi crypto notional, **~$1.1B** on **BTC 15-min**; gold/silver 15-min added. Treat as casino-velocity products, not long-dated political markets. **FlightAware v. Kalshi** (SDNY): flight-cancellation series named FlightAware as primary settlement source after a free AeroAPI signup; DOT BTS is an alternate — series can delist or change oracle. Hub: `@sources/brief-k222-k231-pm-retail-awareness-2026-08.md`.
+
+### Sports mention markets gone (K239, 2026-08-14) [CONFIRMED]
+
+Kalshi **sidelined sports mention markets** ahead of football (Discord: temporarily; Event Horizon: short-term at least). NPR: federal review of mention markets (announcer/word-choice contracts). NFL/MLB already asked venues not to list easily manipulated events. Mention volume since Kalshi launched sports: **$1.2B**. Polymarket international still lists some. **Do not plan a mention-market bot.** If the category returns, treat as high-manipulation / league-hostile — not an LP lane.
+
+King County **final order** geofences most of Kalshi's mix in Washington (sports, elections, politics, entertainment, culture, tech/science, **mentions**) — Aug 19 IP+residency, Sep 2 multi-source. Hub: `@osint-wiki/sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md`, brief `../briefs/2026-08-15_k239-gambling-kalshi-sports-mention-gone.md`.
+
+### WA geofence day + ban ≠ offshore (K242, 2026-08-19) [TENTATIVE]
+
+**2026-08-19** is the King County IP+residency geofence date. Event Horizon argues a US ban/limit would **not** relocate all volume offshore (sports-betting legalization created new activity; CFTC already hit US-serving offshore venues). Mentions remain a tiny share under federal review. **No pm-bot scp.** Dual-ID: OSINT K242 ≠ Trajectory Sentinel K242. Hub: `@osint-wiki/sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md`, `@sources/brief-k242-eh-pm-ban-onshore-2026-08-19.md`.
+
+### Nevada $120k/day + optional-update geofence (K240, 2026-08-17) [CONFIRMED]
+
+Nevada GCB late-Friday filing: Kalshi missed the Aug 12 deadline to stop sports/election/entertainment contracts in NV and should face **$120,000/day** fines; investigators bought banned-category contracts from NV phones. Kalshi says the geofence was up Aug 12 and investigators spoofed residence. InGame: the full geofence works after an **optional** app update (also Michigan). Treat the geofence as **optional-update / residency-spoof fragile**, not a hard venue-down — same **$120k/day geolocation-fine class** as the Michigan TRO. Hub: `@osint-wiki/sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md`, brief `../briefs/2026-08-17_k240-eh-kalshi-nv-geofence.md`.
+
+### CFTC emergency authority vs NY AG (Aug 2026) [CONFIRMED]
+
+CFTC used **emergency powers twice in ~30 days** — LSB: first uses since **1980**, and only **six times** in agency history — instructing KalshiEX to **keep operating** under CEA Core Principles in **Michigan** then **New York**. NY AG suit frames sports event contracts as illegal gambling and seeks up to **$36B** restitution; AG says CFTC cannot manufacture exclusive-jurisdiction conflict. Retail: NY/MI sports-PM access can flip on court papers overnight — do not size Kalshi sports as if state geofence is stable. Hub: `@sources/daily-digest-rss-industry-2026-08-14.md`, `@concepts/kalshi-michigan-sports-injunction-2026-06.md`, `@osint-wiki/concepts/prediction-market-regulation-2026.md`.
+
+### Macro CPI belief distributions (K135) [TENTATIVE 2026-07-01]
+
+@sources/arxiv-2606.30040-kalshi-macro-belief-distributions-2026-07-01.md (Angelini) recovers **full implied distributions** from adjacent **CPI / core CPI threshold** contracts — tail probabilities often carry signal beyond Reuters point consensus. Pairs live NBA updating paper above.
+
+### Crypto event-contract volume (K135 context) [TENTATIVE]
+
+@sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md cites Kalshi crypto binaries passing **$1B/month** (Mar 2026) as horizons shrink — same **cash-settlement manipulation** structural risk applies when contracts settle on manipulable spot prices.
+
+### Spotify culture-market oracle incident (2026-07) [TENTATIVE]
+
+Event Horizon / trader Caleb Davies: alleged **stream-botting** resolved a low-probability **Malcolm Todd** chart bracket before Spotify audit removed fake plays; Kalshi paid out on pre-audit data. Hub: `@concepts/kalshi-spotify-oracle-manipulation-2026-07.md`, `@sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md`.
+
+### Michigan sports-contract TRO (2026-06-29) [TENTATIVE]
+
+14-day injunction: no Michigan sports event contracts without sports-betting license; **$120k/day** geolocation fine. Hub: `@concepts/kalshi-michigan-sports-injunction-2026-06.md`.
+
+### NFL 2026 kickoff — volume, injury markets, 9th Circuit (K168) [CONFIRMED via OSINT EH]
+
+TickerTracker: weekday notional **>$1B** (was ~$25M Aug 2025). Football preseason 30× YoY but still a small share of incremental growth vs parlays/crypto. Kalshi listed Week-1 **will-play** markets; CFTC/NFL remain hostile to injury-adjacent contracts. Ninth Circuit 3-0: sports event contracts **likely not CEA swaps** — NV/CA access can flip; Hard Rock stays the W8 book. Sports PM **game** prices inside a week are near-calibrated; month-plus futures are compressed toward 50%. Hub: `@sources/daily-digest-rss-nfl-week0-2026-08-31.md`, `@sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md`. **No pm scp.**
+
+### Whale size-weighting bias (2026-07) [TENTATIVE]
+
+Daleep et al. via Klement: large bettors show **lower edge** than small — PM prices may mis-weight conviction. Hub: `@concepts/pm-whale-conviction-bias-2026-07.md`.
+
+### Sep 2026 court + volume wave (K258/K259) [TENTATIVE — EH]
+
+**2026-09-09:** Kalshi lost **Utah** emergency injunction (Tenth Circuit) and **Iowa** preliminary injunction — four adverse circuits ≈ 22 states / >40% US population. **2026-09-10:** Event Horizon — sports are the main volume slice ($160B since Apr; record >$2B CFB Saturday); Robinhood SCOTUS cert petition. **2026-09-11:** DGA private session with Kalshi + AGA; 14/24 Dem-governor states in enforcement/litigation. **Injury hygiene:** PM NFL injury contracts may **not void** like sportsbook props. Canon: `@osint-wiki/concepts/k258-gambling-pm-wave.md`, `@osint-wiki/concepts/k259-gambling-pm-wave.md`, `@sources/daily-digest-rss-week1-pm-nfl-2026-09-11.md`. **No pm scp.**
+
+### K171 regulatory follow-on (2026-09-11–15) [TENTATIVE — LSR titles]
+
+- **Connecticut** sent cease-and-desist letters to predictions operators and **suppliers** — enforcement broadens beyond the Kalshi suit thread.
+- **Ohio** quietly left **NCPG** over Kalshi; **Massachusetts** may exit next — state responsible-gambling council friction, not a geofence event by itself.
+- Hub: `@sources/daily-digest-rss-pm-regulatory-2026-09-17.md`. **No pm scp.**
+
+### K172 parlay volume (2026-09-14+) [TENTATIVE — EH via OSINT K261]
+
+Event Horizon: Kalshi **$2.42B** notional Sat 12 Sep (record); **parlays 60.9%** of volume; sports **29.8%**. Ep 32 DeNault enforcement interview. Cross-wiki: `@osint-wiki/concepts/k261-gambling-pm-wave.md`. Hub: `@sources/daily-digest-rss-w02-nfl-pm-2026-09-18.md`. **No pm scp.**
+
+### K175 regulatory follow-on (2026-09-17–18) [TENTATIVE — LSR titles]
+
+- **Second Ninth Circuit loss (CA tribes win appeal)** — stacks tribal/state pressure on western sports-contract access (pairs Aug 2026 9th Circuit swap ruling).
+- **Missouri AG** ordered prediction markets to stop operating — Midwest AG lane distinct from CFTC federal thread.
+- Hub: `@sources/daily-digest-rss-pm-regulatory-2026-09-23.md`. **No pm scp.**
+
+## Snippets
+
+> "Kalshi priced KC YES at $0.585… DraftKings -135… Kalshi paid the better effective price by 1.1 cents." [Source: @sources/daily-digest-news-r1-r12-2026-06-01.md, R2]
+
+> "Kalshi took $3.99 billion of weekly notional volume… lifting… share… to 70.8% — its highest reading on record." [Source: @sources/daily-digest-news-r1-r12-2026-06-02.md, R2]
+
+> "A one-minute change in benchmark win probability is associated with only about a 0.64-for-one contemporaneous change in market prices." [Source: arxiv-2606.07811 via @sources/arxiv-kalshi-live-belief-updating-2606.07811-2026-06-09.md]

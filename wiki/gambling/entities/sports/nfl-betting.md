@@ -1,0 +1,279 @@
+---
+title: NFL betting
+type: entity
+tags: [entity, sport, nfl, football, sports-betting]
+keywords: [nfl, football, spreads, props, totals, key-numbers, clv, injury-report]
+related:
+  - concepts/sports-betting-fundamentals.md
+  - concepts/best-ball-strategy.md
+  - entities/tournaments/best-ball-mania-vii.md
+  - concepts/dfs-strategy-overview.md
+  - concepts/line-shopping-and-clv.md
+  - concepts/nfl-weekly-slate-hub-workflow.md
+  - concepts/sharp-vs-soft-books.md
+  - concepts/parlay-and-correlated-bets.md
+  - concepts/bankroll-management.md
+  - entities/sports/nba-betting.md
+  - entities/sports/world-cup-2026-betting.md
+  - entities/platforms/draftkings.md
+  - entities/platforms/fanduel.md
+  - entities/platforms/hard-rock-bet.md
+  - sources/gemini-github-sports-betting-landscape-2026-05-30.md
+  - sources/web-tech-insider-nfl-betting-strategy-2026-06-20.md
+  - sources/web-sportsbookreview-hard-rock-bet-2026-06-20.md
+  - entities/tools/pydfs-lineup-optimizer.md
+  - entities/platforms/underdog-fantasy.md
+  - entities/platforms/underdog-pickem.md
+  - entities/platforms/prizepicks.md
+  - concepts/diy-nfl-pickem-props-tool-architecture.md
+  - sources/youtube-operator-batch-wc-bbm-2026-05-31.md
+  - concepts/diy-nfl-dfs-model-architecture.md
+  - meta/nfl-slate-prefetch-cadence.md
+  - concepts/nfl-offseason-research-cadence.md
+  - meta/nfl-offseason-weekly-cadence.md
+  - sources/cross-wiki-k125-diy-dfs-sweep-2026-06-20.md
+  - sweeps/2026-06-20-tier2-w8-nfl.md
+  - sources/arxiv-2607.00164-verifiable-rewards-calibrated-forecasting-2026-07-03.md
+  - sources/brief-k137-swe-interact-rlvr-nfl-steals-2026-07-03.md
+  - sources/sharp-nfl-rb-prop-unders-2026-08-13.md
+  - sources/rotoviz-preseason-paywall-2026-08-14.md
+  - sources/daily-digest-rss-industry-2026-08-14.md
+  - concepts/free-slate-context.md
+  - sources/arxiv-2604.17194-odds-conversion-emh-2026-08-31.md
+  - sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md
+  - sources/arxiv-2604.27865-kellybench-2026-08-31.md
+  - sources/daily-digest-rss-nfl-week0-2026-08-31.md
+  - sources/brief-k168-nfl-season-paper-rss-2026-08-31.md
+  - sources/brief-k169-nfl-week1-ready-2026-08-31.md
+  - sources/nfl-betting-dfs-intelligence-week1-2026-09-11.md
+  - sources/daily-digest-rss-week1-pm-nfl-2026-09-11.md
+  - sources/arxiv-2609.06739-profit-bias-identity-sports-betting-2026-09-11.md
+  - sources/brief-k170-week1-papers-rss-2026-09-11.md
+  - sources/nfl-week2-slate-env-analysis-2026-09-18.md
+  - sources/daily-digest-rss-w02-nfl-pm-2026-09-18.md
+  - sources/brief-k172-w02-env-rss-2026-09-18.md
+  - sources/nfl-week2-saturday-deltas-2026-09-19.md
+  - sources/brief-k173-w02-sat-lock-2026-09-20.md
+  - sources/daily-digest-batch-k174-2026-09-21.md
+  - sources/daily-digest-rss-w03-injury-2026-09-21.md
+  - sources/daily-digest-rss-pm-eh-ep33-2026-09-21.md
+  - sources/daily-digest-batch-k175-2026-09-23.md
+  - sources/daily-digest-rss-nfl-w03-lines-2026-09-23.md
+  - meta/nfl-gemini-weekday-prompt-addendum.md
+  - sources/daily-digest-batch-k176-2026-09-24.md
+  - sources/nfl-week3-injury-research-2026-09-23.md
+  - sources/nfl-week3-practice-reports-2026-09-24.md
+  - sources/nfl-week3-scheme-breakdown-2026-09-23.md
+  - sources/nfl-week3-saturday-deltas-2026-09-26.md
+  - sources/nfl-week3-dfs-research-2026-09-26.md
+  - sources/daily-digest-batch-k177-2026-09-28.md
+  - sources/daily-digest-rss-nfl-w03-lock-2026-09-28.md
+  - sources/eagles-bears-parlay-research-2026-09-28.md
+  - sources/daily-digest-batch-k178-2026-09-29.md
+  - entities/sports/nhl-betting.md
+  - entities/sports/cfb-betting.md
+  - sources/nfl-week4-research-plan-2026-10-01.md
+  - sources/nfl-week4-practice-reports-2026-10-01.md
+  - sources/nfl-week4-slate-env-2026-10-02.md
+  - sources/steelers-browns-tnf-metaplan-2026-10-01.md
+  - sources/daily-digest-batch-k180-2026-10-02.md
+  - sources/nfl-week4-saturday-lock-2026-10-03.md
+  - sources/nfl-week4-tnf-result-postmortem-2026-10-02.md
+  - sources/nfl-week4-result-postmortem-2026-10-09.md
+  - sources/rss-lsb-week4-game-cards-2026-10-02.md
+  - sources/rss-sharp-football-week4-2026-10-03-04.md
+  - sources/rss-rotoballer-w5-rb-waiver-2026-10-05.md
+  - sources/daily-digest-batch-k181-2026-10-06.md
+  - meta/research-input-pipeline.md
+maturity: validated
+created: 2026-05-31
+updated: 2026-10-09
+---
+
+## Relations
+
+- @entities/platforms/hard-rock-bet.md — operator primary NFL book (W8)
+- @concepts/line-shopping-and-clv.md — CLV workflow
+- @concepts/best-ball-strategy.md — shared player research stack
+- @concepts/dfs-strategy-overview.md — FanDuel/Underdog DFS overlap
+- @sources/web-tech-insider-nfl-betting-strategy-2026-06-20.md — K124 process primer
+- @sources/sharp-nfl-rb-prop-unders-2026-08-13.md — 2026 season-long RB rushing unders (volume thesis)
+- @sources/rotoviz-preseason-paywall-2026-08-14.md — OL/target-share/ADP titles (paywalled)
+- @sources/daily-digest-rss-industry-2026-08-14.md — DKeX football contracts + Colorado deposit cap
+- @concepts/free-slate-context.md — Open-Meteo wind/precip for outdoor totals
+- @sources/arxiv-2604.17194-odds-conversion-emh-2026-08-31.md — keep multiplicative de-vig on the Hard Rock card
+- @sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md — Kalshi sports prices near-calibrated inside a week; futures compressed
+- @sources/arxiv-2604.27865-kellybench-2026-08-31.md — LLM betting agents lose (EPL); no Week-1 chatbot tickets
+- @sources/daily-digest-rss-nfl-week0-2026-08-31.md — injury/participation PM + 9th Circuit + NFL book partners
+- @sources/brief-k168-nfl-season-paper-rss-2026-08-31.md — Week-0 operator rules
+- @sources/brief-k169-nfl-week1-ready-2026-08-31.md — Week-1 roster snapshot + RSS wire
+
+## Raw Concept
+
+NFL-specific betting and fantasy context — key numbers, season structure, market types, operator W8 workflow.
+
+## Narrative
+
+### W8 operator stack (2026 season)
+
+| Lane | Platform | Wiki home |
+|------|----------|-----------|
+| Sportsbook + casino | Hard Rock Bet | @entities/platforms/hard-rock-bet.md |
+| Daily fantasy GPP | FanDuel | @entities/platforms/fanduel.md |
+| Best ball | Underdog BBM7 | @entities/tournaments/best-ball-mania-vii.md |
+| DFS pick'em / props lounges | PrizePicks, Underdog Pick'em | @entities/platforms/prizepicks.md, @entities/platforms/underdog-pickem.md, @concepts/diy-nfl-pickem-props-tool-architecture.md (K147 — **no tool yet**) |
+
+Same injury and game-environment research feeds all four; **betting** is vs the line, **DFS/best ball** vs the field, **pick'em** is binary O/U on posted stat lines.
+
+**In-season weekly cadence:** research once in gambling-wiki → hub brief → launch each tool session separately. See @concepts/nfl-weekly-slate-hub-workflow.md.
+
+**Offseason (Jul–Aug):** weekly camp/depth research only — no pick'em entries until tool ships. See @concepts/nfl-offseason-research-cadence.md.
+
+### Key numbers (spread) [CONFIRMED]
+
+3 and 7 dominate NFL margins (FG + TD). Order of frequency: **3 > 7 > 10 > 6 > 14**. Half-points around 3 and 7 are the highest-ROI shop targets; 1/4/5 are rare margins.
+
+| Line move | EV note |
+|-----------|---------|
+| -3 → -2.5 (fav) | Often worth worse price |
+| +3 → +3.5 (dog) | Often worth worse price |
+| +6.5 → +7 | Valuable on dogs |
+
+See @sources/web-tech-insider-nfl-betting-strategy-2026-06-20.md for situational angles (weather, rest, division, backup QB).
+
+### Market menu
+
+| Market | Notes | CLV tracking |
+|--------|-------|--------------|
+| Spread / ML / total | Highest liquidity | **Primary** — log open vs close |
+| Player props | Higher hold (~30¢ vig on soft books) | Secondary; more FLB on longshots |
+| Season-long player props | Volume × game-script bets (e.g. rush yards) | Log close vs projection, not W-L |
+| SGP | Correlation priced — see @concepts/parlay-and-correlated-bets.md | Usually -EV unless correlated edge |
+| Futures | Division, SB — capital locked months | Low frequency |
+| Live | Fast moves on drives | Supplement pre-game; pre-set rules |
+
+### Prop bars — three ruled checks (K180, 2026-10-02) [CONFIRMED]
+
+Recorded after both Week 4 TNF tickets lost. See @sources/nfl-week4-tnf-result-postmortem-2026-10-02.md.
+
+1. **An anytime-touchdown leg needs a cited goal-line carry rate.** A backfield vacancy is **not** goal-line work. When a lead back is ruled out, the goal-line carries may go to a fullback, a third receiver, or a back not on the depth chart. Require the rate, or pass the leg.
+2. **A line that opens at 40+ is the market's bar, not an error.** Buying a tight-end receiving total down from the 40s to the mid-30s moves the price, not the distribution. One strong week does not justify relocating a number.
+3. **Two totals on one player in one game are two bets.** A receiver can clear 14.5 and miss 19.5 in the same game. Do not treat the pair as redundant, and do not size them as one position.
+
+**Corollary:** bar `pass_yds` on a quarterback behind a line missing both starting interior linemen, in wind above 8–11 mph at an open-air venue. The same game's rushing legs remain structurally insulated below 12 mph.
+
+### Status source hierarchy (K181, 2026-10-06) [CONFIRMED]
+
+Week 4 exposed a repeatable failure: **Nico Collins was carried as OUT all week on a third-party aggregator cite (DraftEdge)**, then cleared the club's own game-status report on Saturday and played. The wiki had already recorded the same class of error on Baker Mayfield (aggregator "Questionable" vs a club headline saying 3+ weeks).
+
+**The rule:**
+
+1. **A club filing beats an aggregator.** Rotowire, DraftEdge, and similar are downstream. If the club page and the aggregator disagree, the club page wins.
+2. **"Not on the report" is a status.** Collins was cleared by *omission* from the Texans' report, not by a positive "active" line. Read the absence.
+3. **Record the citation strength on the page.** A status sourced only to an aggregator is `[TENTATIVE]`; one from a club page is `[CONFIRMED]`.
+
+This is the failure mode that retired the Gemini prose layer — see @meta/research-input-pipeline.md.
+
+### Week 4 Sunday rules (2026-10-09) [CONFIRMED]
+
+Recorded after FanDuel cash **−$6.95** and Hard Rock cash **−$40.09** (Thursday included). Week cash **−$47.04**. See @sources/nfl-week4-result-postmortem-2026-10-09.md.
+
+1. **An open quarterback cell cannot be rostered.** The Saturday lock left Chicago unassigned between Bagent and Keenum. A lineup rostered Keenum. He scored 0.00.
+2. **A receiving total at 50 or higher is a bar.** This extends rule 2 above from the 40s to any receiving total at 50+. Kincaid 50.5 finished at 7. Moore 50.5 finished at 11. The same two names were on two FanDuel lineups.
+3. **The same tight end and the same defense go on one lineup.** Kincaid and the Raiders scored 2.20 on both lineups that used them.
+4. **A first-touchdown leg stays off a game the scheme card marked "none."**
+
+### Process (season-long) [CONFIRMED]
+
+1. **Line shop** across Hard Rock + FanDuel + others for best number
+2. **Flat 1–2% units** — @concepts/bankroll-management.md
+3. **Track CLV** — positive close beat = edge signal stronger than W-L
+4. **Avoid parlay-core strategy** — hold compounds per leg
+
+### Season rhythm
+
+| Phase | Betting notes |
+|-------|---------------|
+| **Jun–Aug** | BBM7 drafts; futures move on camp news |
+| **Preseason** | Unreliable lines, low limits — mostly ignore for +EV |
+| **Regular season** | Sun/Mon/Thu slates; injury report **Wed/Fri** moves |
+| **Playoffs** | Tighter lines; public on favorites |
+
+### Injury / news cadence
+
+- **Wed** — initial practice report
+- **Fri** — final injury designations (major line moves)
+- **Inactive lists** — 90 min pre-kick (props, totals)
+
+Cross-link DFS: same OUT tags move FanDuel ownership and Underdog ADP.
+
+### 2026 season-long RB unders (preseason) [TENTATIVE]
+
+Sharp (Hirsch, 2026-08-13): **Taylor Under 1224.5 rush yards (-105)** and **Hubbard Under 700 (-114)** — both **carry-share / committee / trailing-script** theses, not talent fades. Use as a template for K147 season-long O/U; do not import as weekly pick'em. Hub: `@sources/sharp-nfl-rb-prop-unders-2026-08-13.md`.
+
+### Live betting hygiene
+
+- Markets overreact to early TDs; slow starts can improve live unders
+- Do not size live bets larger than pre-game unit — set rules before kickoff
+- **In-game win probability models** (K137 — @sources/arxiv-2607.00164-verifiable-rewards-calibrated-forecasting-2026-07-03.md): public-state WP can match market **calibration** (ECE ~0.027–0.029) without implying +EV — residual market edge is **live information** beyond shared feeds. Benchmark vs closing in-game line; keep **CLV** separate from Brier/ECE checks
+
+### Week-0 2026 (K168) [CONFIRMED papers; TENTATIVE LSR titles]
+
+- **Do not** use an LLM to pick NFL sides. KellyBench agents lost money across an EPL season; same pattern as K160 WC agents. Hub: `@sources/arxiv-2604.27865-kellybench-2026-08-31.md`.
+- Kalshi **game** contracts inside a week are near-calibrated (slopes 0.90–1.10). **Season-long** PM futures are not (slope 1.74 past one month). Hub: `@sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md`.
+- Polymarket pulled NFL **player-participation** filings after CFTC/NFL pressure. Skip will-play markets as a props substitute. Hub: `@sources/daily-digest-rss-nfl-week0-2026-08-31.md`.
+
+### Week 1 2026 (K169) [CONFIRMED 2026-08-31]
+
+Kickoff **Wed 2026-09-09** SEA vs NE. Do not price **Jacobs** (Commissioner’s Exempt), **Charbonnet** (PUP), **Tyson** (IR-R), or **Parsons** (PUP, miss first 4) as Week-1 starters. **Nacua** and **Donald** are Melbourne TNF questions — wait NFL.com inactives. Hub: `@sources/brief-k169-nfl-week1-ready-2026-08-31.md`.
+
+### Week 1 Sunday slate (K170) [TENTATIVE — verify live 2026-09-11]
+
+Post-kickoff roster/injury updates and Sunday **13-game** dossier. Sharp signals [TENTATIVE]: **BUF @ HOU** RLM (BUF -1.5 → HOU -1.5 vs 76% BUF tickets); **CHI @ CAR** Over handle 92% vs 43% tickets (total 47.5). Shootout candidates: TB@CIN, NO@DET, CHI@CAR. GPP salary lag: Etienne ($5,900 DK), Lloyd ($4,800), Vele ($3,500).
+
+Injury watch: **A.J. Brown** high-ankle (~4 wk); **Sam Darnold** hip; **Tua** oblique (Cooper Rush may start); **Jake Tonges** MCL. Profit–bias paper (K170): keep **hold-first** edge math — do not assume Levitt-style favorite shading on NFL. Hub: `@sources/nfl-betting-dfs-intelligence-week1-2026-09-11.md`, `@sources/brief-k170-week1-papers-rss-2026-09-11.md`, gitignored `briefs/2026-09-11_nfl-week1-slate-hub.md`.
+
+### Week 2 2026 Sunday main (K173 lock) [TENTATIVE — T-90 Sunday]
+
+**13-game** main slate. **Keep** WAS@DAL · **Jefferson solo**. **Fade:** CIN@HOU · MIA@SF stacks · PIT@NE · ATL pass. **Sat adds:** Pittman **OUT** · Porter **OUT** (PIT@NE fade hardens). **NWS Sat:** GB@NYJ rain · CHI 12–14 mph · NE ~100% rain · TEN heat advisory 105–107°F. Roofs HOU/ATL/ARI/DAL uncalled. Hub: `briefs/2026-w02-slate-hub-sun.md` · source `@sources/nfl-week2-saturday-deltas-2026-09-19.md`.
+
+### Week 3 2026 early (K174) [TENTATIVE — verify Wed practice]
+
+Post–Week 2 QB injuries drive early lines:
+
+| Player | Team | Injury | Week 3 note |
+|--------|------|--------|-------------|
+| **Caleb Williams** | CHI | Hamstring — carted off W2 | PHI road fav vs CHI in early odds; wait Wed/Fri |
+| **Jayden Daniels** | WAS | Left elbow dislocation W2 | X-rays reportedly no fracture; downgrade WAS stacks until Fri |
+| **Alec Pierce** | IND | Heel — OUT SNF | Prop void / refund hygiene (books vs PM — K259) |
+
+Hub chain: `@sources/daily-digest-rss-w03-injury-2026-09-21.md` (K174) → `@sources/nfl-week3-injury-research-2026-09-23.md` (K176) → `@sources/nfl-week3-practice-reports-2026-09-24.md` (Thu) → `@sources/nfl-week3-scheme-breakdown-2026-09-23.md` (scheme card). Gitignored hub: `briefs/2026-w03-slate-hub-sun.md`.
+
+**TNF ATL@GB (K175):** Penix starter [TENTATIVE]; not on Sunday main card.
+
+**Week 3 Sun main (K177 Sat lock) [TENTATIVE — T-90 Sunday]:**
+
+Hub chain through `@sources/nfl-week3-saturday-deltas-2026-09-26.md` (Sat weather/roof) + `@sources/nfl-week3-dfs-research-2026-09-26.md` (Fri ITT/stacks).
+
+| Lane | Note |
+|------|------|
+| **Scratch / IR** | Pierce · Brooks · Dart · Daniels · Onwenu · **Collins** · **Dowdle** · **Jenkins** |
+| **Sat weather** | **TEN@NYG** wind gusts ~47 mph + rain — rush lean; bar deep pass / first-TD props |
+| **Roof** | **HOU@IND** Lucas Oil **OPEN**; **BAL@DAL** uncalled |
+| **T-90** | Pittman · Coleman · Spears · Campbell · Bowers · Flowers |
+| **Six themes** | Keep BAL@DAL · BUF+LAC · LV@NO (no Bowers) · fade WAS pass · TEN@NYG · PIT pass |
+| **Discipline** | 13-game main only · CeminiDFS before Parlays · ≤2 parlay legs/market · no Week 2 retune |
+
+Salary export archived as `week 3.csv` (batch K177). Scratch CSV still operator.
+
+**Week 3 MNF PHI@CHI (K178) [TENTATIVE]:** separate from Sun main — Keenum starts (Williams OUT); prop bars in `@sources/eagles-bears-parlay-research-2026-09-28.md`. Rush/ATD lanes only per dossier.
+
+### Open-source ML note
+
+Gemini landscape cites NBA ML repos as analog class — **NFL models need separate validation**; see @sources/gemini-github-sports-betting-landscape-2026-05-30.md.
+
+## Snippets
+
+> "If you consistently beat [the closing line] … you are very likely betting with a real edge." [Source: @sources/web-tech-insider-nfl-betting-strategy-2026-06-20.md]
+
+> "Hard Rock's quality of NFL odds – 20-cent vig on standard markets and 30-cent vig on secondary opportunities." [Source: @sources/web-sportsbookreview-hard-rock-bet-2026-06-20.md]

@@ -1,0 +1,102 @@
+---
+title: Hard Rock Bet
+type: entity
+tags: [entity, platform, sportsbook, casino, us-legal, nfl]
+keywords: [hard-rock-bet, hard-rock-sportsbook, nfl, sportsbook, casino, florida, betvision]
+related:
+  - concepts/sports-betting-fundamentals.md
+  - concepts/line-shopping-and-clv.md
+  - concepts/sharp-vs-soft-books.md
+  - concepts/casino-game-house-edge.md
+  - concepts/parlay-and-correlated-bets.md
+  - concepts/bankroll-management.md
+  - entities/sports/nfl-betting.md
+  - entities/platforms/fanduel.md
+  - entities/platforms/draftkings.md
+  - entities/platforms/underdog-fantasy.md
+  - sources/web-sportsbookreview-hard-rock-bet-2026-06-20.md
+  - sources/web-tech-insider-nfl-betting-strategy-2026-06-20.md
+  - sweeps/2026-06-20-tier2-w8-nfl.md
+  - concepts/daily-edge-card.md
+  - entities/tools/the-odds-api.md
+  - sources/brief-k169-nfl-week1-ready-2026-08-31.md
+  - meta/nfl-gemini-weekday-prompt-addendum.md
+  - entities/sports/nhl-betting.md
+  - entities/sports/cfb-betting.md
+maturity: validated
+created: 2026-06-20
+updated: 2026-09-30
+---
+
+## Relations
+
+- @entities/sports/nfl-betting.md — primary NFL sportsbook lane (W8)
+- @sources/web-sportsbookreview-hard-rock-bet-2026-06-20.md — Phase-0 deep-read (K124)
+- @concepts/line-shopping-and-clv.md — log open/close on primary handle
+- @entities/tools/the-odds-api.md — live `hardrockbet_fl` / `hardrockbet` prices (not a scraper)
+- @sources/brief-k169-nfl-week1-ready-2026-08-31.md — Week-1: Donald snaps TBD; no LLM tickets
+- @meta/nfl-gemini-weekday-prompt-addendum.md — Saturday block: two legs of one market; no same-game first_td; SNF off afternoon ticket; displayed American is grade; boost is note
+
+## Raw Concept
+
+Operator **primary US sportsbook** for NFL 2026 — spreads, props, totals, SGPs, live betting, plus in-app casino. Seminole/Hard Rock digital product; OpenSports tech stack.
+
+## Narrative
+
+### Operator role (W8)
+
+| Lane | Use |
+|------|-----|
+| **NFL sportsbook** | Main handle — spreads, props, SGP Max (up to 20 legs), live |
+| **Casino** | Parallel entertainment — **separate bankroll** from +EV sports |
+| **Cross-shop** | Benchmark vs FanDuel/DraftKings; Pinnacle/Unabated for sharp close |
+
+### Phase-0 verdict [CONFIRMED — SBR review 2026-06-20]
+
+**CONDITIONAL-GO** as operator primary book. Retail soft book — competitive major-league pricing, not sharp reference.
+
+| Check | Status |
+|-------|--------|
+| States (10) | AZ, CO, FL, IL, IN, MI, NJ, OH, TN, VA — verify at signup |
+| NFL standard vig | ~20¢ (review) |
+| NFL secondary vig | ~30¢ props/alts (review) |
+| Welcome promo | Bet $5+ (-500 min) → $150 bonus bets **if win**; 6×$25; 7-day expiry [verify live] |
+| Streaming | BetVision (Genius Sports) for in-app NFL watch+bet |
+| SGP / Flex | SGP Max + Flex Parlay — compare price vs DK/FD before sizing |
+| Casino | NJ iGaming — slots/tables/live dealer |
+
+### Promo discipline
+
+Bonus bets are **not withdrawable** — effective -EV unless deployed at +CLV lines. Check Boosts/Rewards tabs daily (Happy Hour Fri 4–7pm ET, Battle of the Bets).
+
+### Weaknesses to monitor
+
+- Thinner futures menu off-season vs DK/FD
+- Some SGP builds priced worse than competitors
+- Not a replacement for line-shopping — always check FanDuel/DK close
+
+### Classification
+
+Retail **soft book** — @concepts/sharp-vs-soft-books.md same class as DraftKings/FanDuel.
+
+### Week 1 2026 (K169)
+
+Keep **multiplicative de-vig**. No chatbot tickets. **Aaron Donald** snaps for Melbourne TNF (Thu 9/10 vs SF) are unknown — two-game roster exemption expires **2026-09-11**. Hub: `@sources/brief-k169-nfl-week1-ready-2026-08-31.md`.
+
+### Week 2 lesson (2026-09-22)
+
+Cap any recommended ticket at two legs of one market. No same-game `first_td` legs. SNF legs stay off the afternoon parlay ticket. Grade uses the displayed American. A profit-boost percent is a note only. See @meta/nfl-gemini-weekday-prompt-addendum.md Saturday block. Do not change Kelly math.
+
+### Injury bonus (operator, 2026-09-30) [CONFIRMED]
+
+If the only missed leg is a player who is hurt before halftime, Hard Rock pays a bonus bet equal to the original stake. It is not cash. Week 3: Justin Jefferson's $5 ticket was the only miss, he left with an ankle injury, and that $5 bonus was used Monday. Jalen McMillan left on the third play, but other legs on that ticket also missed, so that ticket does not fit this rule. No public rule page was fetched. Do not build a void or a cashout.
+
+### Week 4 lotto
+
+The $3 and $2 tickets are 2-leg anytime-touchdown parlays. They are not 3-leg first-touchdown parlays. The two touchdowns are in different games.
+
+## Snippets
+
+> "Hard Rock's quality of NFL odds – 20-cent vig on standard markets and 30-cent vig on secondary opportunities – are in line with industry standards." [Source: @sources/web-sportsbookreview-hard-rock-bet-2026-06-20.md]
+
+> "Bonus Bets cannot be cashed out, withdrawn, or transferred, and expire after seven days." [Source: same]

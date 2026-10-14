@@ -1,0 +1,171 @@
+---
+title: Polymarket
+type: entity
+tags: [entity, platform, prediction-markets, crypto, sports]
+keywords: [polymarket, clob, usdc, sports-markets]
+related:
+  - concepts/favorite-longshot-bias.md
+  - concepts/gambling-bot-architecture.md
+  - concepts/gambling-wiki-scope.md
+  - concepts/polymarket-weather-wagering-retail.md
+  - concepts/prediction-markets-crossover.md
+  - concepts/pm-commitment-grounded-language.md
+  - concepts/pm-perspective-mismatch-trading.md
+  - concepts/sportsbook-pm-line-divergence.md
+  - concepts/world-cup-books-vs-pm-divergence.md
+  - concepts/world-cup-prediction-market-types.md
+  - entities/platforms/kalshi.md
+  - entities/sports/world-cup-2026-betting.md
+  - entities/tools/momentum-odds.md
+  - entities/tools/odds-jam.md
+  - sources/osint-cross-wiki-wc2026-retail-synthesis-2026-05-31.md
+  - sources/youtube-sports-pm-retail-batch-2026-05-29.md
+  - sources/daily-digest-arxiv-batch-2026-06-01.md
+  - sources/daily-digest-news-r1-r12-2026-06-01.md
+  - sources/daily-digest-news-r1-r12-2026-06-02.md
+  - sources/daily-digest-arxiv-batch-2026-06-02.md
+  - sources/youtube-wsj-kalshi-polymarket-valuations-2026-06-01.md
+  - sources/polygnosis-2-polymarket-osint-2026-06-01.md
+  - sources/arxiv-polymarket-v1-database-2606.04217-2026-06-05.md
+  - concepts/polymarket-v1-research-database.md
+  - concepts/pm-live-belief-updating.md
+  - sources/arxiv-kalshi-live-belief-updating-2606.07811-2026-06-09.md
+  - concepts/world-cup-pm-retail-hygiene.md
+  - concepts/pm-agent-cognitive-monoculture.md
+  - concepts/pm-proper-scoring-clob-profitability.md
+  - concepts/pm-llm-coherence-projection.md
+  - sources/arxiv-2606-13038-nous-prediction-market-cognitive-injection-2026-06-13.md
+  - sources/openreview-prophets-profit-pm-LYSTj2Cnuu-2026-06-17.md
+  - sources/openreview-llm-coherence-projection-Tqos7VqQhH-2026-06-17.md
+  - sources/brief-k108-gambling-wc-retail-hygiene-2026-06-09.md
+  - sources/arxiv-2606.21013-agentic-time-machine-forecasting-2026-06-23.md
+  - sources/brief-k126-garip-selfplay-pm-forecast-steals-2026-06-23.md
+  - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
+  - sources/arxiv-2607.02467-human-capital-pm-hybrid-forecasting-2026-07-06.md
+  - sources/brief-k148-agent-framework-pm-betting-steals-2026-07-06.md
+  - sources/arxiv-2607.03015-belief-to-trade-pm-agents-predict-raven-2026-07-10.md
+  - sources/arxiv-2607.08199-pm-structural-volatility-kalshi-2026-07-10.md
+  - entities/bots/predict-raven.md
+  - concepts/pm-structural-volatility.md
+  - sources/brief-k222-k231-pm-retail-awareness-2026-08.md
+  - sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md
+  - sources/daily-digest-rss-nfl-week0-2026-08-31.md
+  - sources/daily-digest-rss-pm-regulatory-2026-09-23.md
+  - sources/daily-digest-rss-pm-regulatory-2026-09-29.md
+  - sources/daily-digest-batch-k178-2026-09-29.md
+  - sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md
+  - sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md
+  - sources/daily-digest-batch-k179-2026-09-30.md
+  - sources/rss-eh-kalshi-curry-geofence-2026-09-25.md
+  - sources/rss-sbc-pm-europe-2026-10-01-05.md
+  - sources/daily-digest-batch-k181-2026-10-06.md
+  - sources/rss-lsb-cftc-rules-ohio-cd-2026-10-06.md
+  - sources/daily-digest-batch-k182-2026-10-07.md
+maturity: draft
+created: 2026-05-31
+updated: 2026-10-07
+---
+
+## Relations
+
+- @concepts/pm-commitment-grounded-language.md — StakeBench commitment vs sentiment
+
+- @entities/platforms/kalshi.md — cross-venue comparison
+- @osint-wiki/entities/platforms/polymarket.md — bots, LP rewards, CeminiSuite
+- @sources/brief-k222-k231-pm-retail-awareness-2026-08.md — Yankees / ATP distribution; 5-min crypto still listed Intl
+- @sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md — sports slope ~1.06 on comparable bins
+- @sources/daily-digest-rss-nfl-week0-2026-08-31.md — NFL participation filings pulled 2026-08-26
+
+## Raw Concept
+
+Crypto-based prediction market (CLOB). Consumer angle here; automation in @osint-wiki.
+
+## Narrative
+
+Polymarket uses **USDC on-chain** settlement with off-chain order book. Sports, politics, crypto, and macro markets. Retail: wallet setup, fees, withdrawal friction, FLB vs Kalshi.
+
+### Sports fees (R1, Mar 2026) [TENTATIVE]
+
+Probability-based **taker fee** on sports (per SI.com ingest): peak **~0.75%** effective at 50¢, tapering toward price extremes; **no taker fee on sells**; **maker fees** on filled limits. Category peaks differ (e.g. crypto up to ~1.8% per secondary summaries). US residents: **geo-blocked** post-CFTC settlement — legal US alternative often cited as Kalshi (`@entities/platforms/kalshi.md`).
+
+### NFL player-participation filings pulled (K168, 2026-08-26) [CONFIRMED]
+
+Polymarket US self-certified Week-1 **will-play** contracts (incl. Mahomes “at least one play”), then withdrew them the next day after CFTC asked operators to drop that class. NFL same week named DK/FanDuel/Fanatics as betting partners and listed injury-adjacent wagers as objectionable. **Do not** treat remaining start-QB templates as a props lane. Hub: `@sources/daily-digest-rss-nfl-week0-2026-08-31.md`.
+
+### Fee reform timeline (K100, on-chain) [CONFIRMED]
+
+Staggered **2026** taker-fee activation on CTF Exchange v1 (arXiv 2606.04217, on-chain fee-revenue panel):
+
+| Category | Activation |
+|----------|------------|
+| Crypto | 2026-01 |
+| Sports (selected leagues) | 2026-02 |
+| Politics, News, Entertainment, others | 2026-03 |
+
+Fee revenue was **zero before Jan 2026**. Post-activation descriptive pattern: lower wash-trading share, wider effective spreads, remaining taker flow more informed (noise-trader flight) `[TENTATIVE — DiD pre-trend caveats on some liquidity metrics]`. Source: `@sources/arxiv-polymarket-v1-database-2606.04217-2026-06-05.md`.
+
+### Research dataset (K100)
+
+**Polymarket-v1** public archive — 1.2B trades, Nov 2022 – Apr 2026, ground-truth aggressor side. Use for offline FLB/calibration backtests; live wagering still uses Gamma/CLOB. See `@concepts/polymarket-v1-research-database.md` and [HuggingFace dataset](https://huggingface.co/datasets/TimeSeventeen/Polymarket-v1).
+
+**Empirical FLB on v1 panel:** longshots (≤30¢) **overpriced**, favorites (≥40¢) **underpriced** — paper terms this **favorite-longshot reversal** (opposite sign from classic racetrack FLB). `@concepts/favorite-longshot-bias.md`.
+
+### Short-horizon crypto — settlement manipulation (K135) [CONFIRMED 2026-07-01]
+
+@sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md: **5-minute BTC** binaries show settlement-time spot pushes, post-close reversals, and **~93%** retail loss share in manipulated cycles. **15-minute** horizon largely clears the signature. **Retail:** NO-GO or minimal size on sub-15-minute asset-price binaries. Polymarket Intl still listed **5-min crypto** as of Aug 2026; Kalshi’s volume engine is **15-min BTC**. Brand notes (not edges): **NY Yankees** stadium partnership; **ATP** exclusive streaming + Sportradar for US users. `@sources/brief-k222-k231-pm-retail-awareness-2026-08.md`.
+
+### Research signals
+
+- **StakeBench** — comment commitment vs sentiment (`@concepts/pm-commitment-grounded-language.md`)
+- **PolyGnosis 2.0** — PM vs GDELT **perspective mismatch** (`@concepts/pm-perspective-mismatch-trading.md`)
+
+### World Cup 2026
+
+Sports menu includes **advance to knockout**, **group winner**, **match fixtures**, and **outright winner** — see `@concepts/world-cup-prediction-market-types.md` and `@entities/sports/world-cup-2026-betting.md`. Taker fees on sports scale with price; read settlement sources (FIFA + credible reporting) before sizing.
+
+For copy-trading, LP farming, agent frameworks: `@osint-wiki/entities/platforms/polymarket.md`.
+
+### Regulation and positioning (R3 WSJ, 2026-06-01) [TENTATIVE]
+
+- **Offshore main platform** vs **CFTC-compliant US** rollout (2026, per WSJ).
+- **Insider trading** — platform rule updates (stolen info, illegal tips, outcome influence); high-profile enforcement examples cited in video.
+- **“Information market”** — company-reported **>90%** of audience engages without trading; median loss **<$10** for traders [TENTATIVE — company via WSJ].
+- **Political/regulatory** — Don Jr. adviser role to Kalshi and Polymarket noted; CFTC asserts DCM authority vs state gambling framing.
+
+Hub source: `@sources/youtube-wsj-kalshi-polymarket-valuations-2026-06-01.md`. Prod harness: `@osint-wiki/entities/tools/polygnosis.md`.
+
+### US volume vs Kalshi (R2, 2026-06-02) [TENTATIVE]
+
+Week ending **2026-05-24**: **~29%** of combined US PM notional on Polymarket (**$1.65B** vs Kalshi **$3.99B**); sports **$675.5M** vs Kalshi sports **$1.599B**. Politics category still PM-heavy; US sports onboarding (fiat, parlay parity) cited as gap vs Kalshi. `@sources/daily-digest-news-r1-r12-2026-06-02.md`.
+
+### Human–AI hybrid forecasting (K148) [TENTATIVE]
+
+@sources/arxiv-2607.02467-human-capital-pm-hybrid-forecasting-2026-07-06.md: Polymarket-resolved pilot — hybrid outcomes are **trimodal** (defer to model, rubber-stamp worse than model, complementary match/beat market). **Collaborative traits** predict complementary mode more than frontier model choice. Retail: avoid rubber-stamping LLM-suggested prices without adding information.
+
+### European lobbying (K175, 2026-09-22) [TENTATIVE — SBC title]
+
+Polymarket public push for **European acceptance** of prediction markets (SBC News RSS stub). US retail still geo-blocked on main CLOB; treat as international regulatory awareness only. Hub: `@sources/daily-digest-rss-pm-regulatory-2026-09-23.md`.
+
+### Ohio cease-and-desist (K182, 2026-10-06) [CONFIRMED]
+
+Polymarket is one of **ten** operators the **Ohio Casino Control Commission** ordered to stop offering sports event contracts in Ohio by **2026-10-16**. The letters cite unlicensed sports betting and bookmaking, demand written compliance within 14 days, and state the conduct is a **felony** in Ohio. Kalshi was absent — it is in separate litigation. No operator has responded.
+
+Polymarket is simultaneously appealing a **€420,000** Dutch penalty **and** facing the Ohio order — the US state track and the EU track are running against it in parallel. Hub: `@sources/rss-lsb-cftc-rules-ohio-cd-2026-10-06.md`.
+
+### Dutch appeal — €420,000 penalty to The Hague (K181, 2026-10-05) [CONFIRMED]
+
+Polymarket is challenging the Dutch regulator **Kansspelautoriteit (KSA)** in **The Hague** over a **€420,000** penalty.
+
+Timeline: the KSA blacklisted Polymarket in January 2026 and ordered access blocked by **2026-02-17**. Polymarket complied on **2026-02-18** — **one day late** — which the KSA ruled sufficient to trigger the full penalty (expressed as €420,000/week, capped at €840,000). An earlier appeal was rejected in June: the KSA held that **blockchain and crypto payments do not change the legal nature of the activity**.
+
+**Polymarket's argument:** its contracts are **financial derivatives**, which would move oversight to the Dutch Authority for Financial Markets.
+
+**The critique to record:** if Polymarket wants financial-instrument status, the closest European analogue is **binary options — already banned for retail sale in most of Europe**. The same tension runs through the CFTC's own framing (`@sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md`).
+
+Dutch users reportedly wagered **>$30M** on Polymarket around the November 2025 parliamentary election. A motion to create a separate Dutch prediction-market framework was rejected by the State Secretary. Hub: `@sources/rss-sbc-pm-europe-2026-10-01-05.md`.
+
+## Snippets
+
+> Fee activation: Crypto Jan 2026, Sports Feb 2026, Politics/News/Entertainment Mar 2026 — confirmed from on-chain fee revenue (zero pre-2026). [Source: arxiv-2606.04217 Table 7 via @sources/arxiv-polymarket-v1-database-2606.04217-2026-06-05.md]
+
+> Sports category median Gibbs spread 0.016 vs Crypto 0.007 on Standard Binary v1 panel — sports wider. [Source: same, Table 4]
