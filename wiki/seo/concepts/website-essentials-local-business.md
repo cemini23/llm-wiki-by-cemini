@@ -1,0 +1,176 @@
+---
+type: concept
+related:
+  - concepts/local-seo-foundations.md
+  - concepts/schema-markup-local.md
+  - concepts/on-page-seo-local.md
+  - concepts/content-strategy-local.md
+  - concepts/barbershop-marketing-fundamentals.md
+  - entities/tools/google-analytics-4.md
+  - entities/tools/goaccess.md
+  - entities/tools/google-search-console.md
+  - entities/tools/yoast-seo.md
+  - concepts/first-90-days-playbook.md
+  - concepts/local-pack-rankings.md
+  - entities/tools/html-anything.md
+  - entities/tools/itshover.md
+  - entities/tools/weather-icons.md
+  - entities/tools/taste-skill.md
+  - concepts/claude-ecommerce-workflows.md
+  - entities/tools/garden-skills.md
+  - entities/tools/pm-claude-skills.md
+  - entities/tools/reactive-resume.md
+  - concepts/google-business-profile.md
+  - sources/trading-posts-compilation-20-2026-05-27.md
+  - sources/vishwakarma-2026-competitive-geo-sigir.md
+  - concepts/competitive-geo-citation-factors.md
+  - sources/davidson-2026-factual-gv-gap.md
+  - concepts/llm-reputation-signals-geo.md
+  - concepts/canonical-business-facts-geo.md
+  - sources/arxiv-crespin-2026-karla-knowledge-base-augmented-retrieval-2606.26807-2026-06-28.md
+  - concepts/agent-ready-website-local-bm.md
+  - sources/arxiv-elnaffar-2026-agent-ready-websites-2607.12056-2026-07-18.md
+  - concepts/e-geo-universal-rewrite-playbook.md
+  - entities/tools/wondelai-skills.md
+  - sources/google-search-central-2026-ai-optimization-guide.md
+  - sources/hubspot-2026-ai-search-optimization-aeo-primer-2026-06-29.md
+  - sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md
+
+maturity: draft
+created: 2026-05-07
+updated: 2026-10-01
+---
+
+## Relations
+
+- @concepts/local-seo-foundations.md
+- @concepts/schema-markup-local.md
+- @concepts/on-page-seo-local.md
+- @concepts/content-strategy-local.md
+- @concepts/barbershop-marketing-fundamentals.md
+- @entities/tools/google-analytics-4.md
+- @entities/tools/google-search-console.md
+- @entities/tools/yoast-seo.md
+- @concepts/first-90-days-playbook.md
+- @concepts/local-pack-rankings.md
+- @entities/tools/html-anything.md — agentic HTML editor for generating local-business client sites
+- @entities/tools/itshover.md — motion-first React icon components for local-business site UI
+- @entities/tools/weather-icons.md — CSS weather icon font for forecast widgets (steal-from; license unverified)
+- @entities/tools/taste-skill.md — design-taste prompt patterns for client-site builds
+- @concepts/google-business-profile.md — GBP may exist without an owned site; NAP must match
+- @sources/trading-posts-compilation-20-2026-05-27.md — K69 Post 7 Maps-gap outreach pattern
+- @sources/vishwakarma-2026-competitive-geo-sigir.md — explicit pricing gatekeeper for AI citations
+- @concepts/competitive-geo-citation-factors.md
+- @concepts/llm-reputation-signals-geo.md — price transparency for LLM selection stage
+- @concepts/agent-ready-website-local-bm.md — K142 agent interpretability / executability / decision reliability
+- @sources/arxiv-elnaffar-2026-agent-ready-websites-2607.12056-2026-07-18.md — K142 agent-ready paper
+- @concepts/e-geo-universal-rewrite-playbook.md — K142 scannable service-page rewrite pattern
+- @entities/tools/wondelai-skills.md — adopted CRO / improve-website skills
+
+## Raw Concept
+
+Concept hub for what the website of a brick-and-mortar barbershop must contain and how it should be structured. Operator's explicit use case: "update website." Sources will be ingested progressively. Until then, the page frames must-have pages, mobile UX requirements, schema attachment points, and conversion mechanics.
+
+## Narrative
+
+A local barbershop website is not a portfolio site, not a blog-first site, and not a marketing-funnel site. It is a **conversion micro-site**: 80% of visitors arrive via mobile, 90%+ already intend to book a haircut, and the website's job is to remove friction between "I clicked the link" and "I made an appointment / called the shop / got the directions."
+
+### Must-have pages (minimum viable site)
+
+1. **Homepage** — clear NAP visible above the fold; primary CTA "Book Now" or "Call" prominent; service highlights; recent work / Instagram embed; reviews snippet; map embed.
+2. **Per-location page** (one per shop) — for the operator's two-shop case: dedicated `Locations/<shop-name>` URL per shop with that shop's NAP, hours, photos of *that* interior, that shop's GBP review embed, that shop's booking link, that shop's directions/parking notes. Each location page is the GBP "website" link target. **Do not** point both GBPs at the homepage — see @concepts/local-seo-foundations.md.
+3. **Services / pricing** — list of services with prices. Pricing transparency increases conversion in the barbershop industry `[NEEDS VERIFICATION 2026-05-07]` for conversion studies; **explicit prices are a competitive-GEO gatekeeper** for AI citation when pages compete head-to-head `@sources/vishwakarma-2026-competitive-geo-sigir.md`. Avoid "contact us for pricing" on comparison-intent service pages.
+4. **Booking** — either an embedded booking widget (Square, Booksy, Vagaro, Squire) or a direct deep-link out. Same booking destination as GBP.
+5. **About / Team** — bios + photos of barbers. Builds trust. Also a substrate for schema (`Person` markup if helpful).
+6. **Contact** — phone, address, contact form, hours, embedded map (per location).
+
+### Optional but high-leverage
+
+- **Gallery** — before/after work + IG-style stream; visual industry, this matters.
+- **Blog / FAQ** — for content marketing, voice search, and GEO/AEO citation eligibility. See @concepts/content-strategy-local.md.
+- **Reviews / testimonials** page — aggregated reviews from GBP/Yelp/Facebook, with `Review` schema (real reviews only).
+
+### Mobile UX requirements
+
+Mobile is the dominant traffic source. The site must:
+
+- Load in under 2-3 seconds on mid-tier 4G `[NEEDS VERIFICATION 2026-05-07]` for current Core Web Vitals targets
+- Pass current **Core Web Vitals**: LCP < 2.5s, INP < 200ms (INP replaced FID in 2024), CLS < 0.1
+- Have tap-targets ≥ 48px
+- Have a **tap-to-call** phone number on every page
+- Avoid intrusive interstitials (Google penalizes them)
+- Have a sticky bottom CTA on long pages (Book / Call)
+
+Page-builder choice often determines whether these are achievable cheaply:
+- **WordPress + lightweight theme + caching plugin**: high ceiling, low floor (a misconfigured WP can be slow)
+- **Squarespace / Wix**: lower ceiling, higher floor (consistent baseline)
+- **Webflow**: high ceiling, requires designer time
+- **Shopify**: appropriate if selling product (beard oil, merch); overkill for service-only
+- **Custom static site** (Astro, Next, Hugo): fastest possible, requires engineer
+
+The operator's current platform determines which `entities/tools/<platform>.md` page is high-priority. See ROADMAP for the open decision.
+
+### Conversion diagnostic (from adopted wondelai cro-methodology)
+
+Before redesigning, score the booking funnel. Big-5 objections to mine from reviews / GBP / chat: **Trust, Price, Fit, Timing, Effort**. Prefer customer language in headlines over polished marketing copy.
+
+Quick gates (fail any → fix before new GEO content):
+
+1. One primary action (Book / Call) — not competing CTAs
+2. Value prop legible in ~5 seconds on mobile
+3. Price band visible on service pages
+4. Hours + walk-in vs appointment policy in text
+5. Proof near friction (reviews near Book CTA)
+6. Forms labeled; tap-to-call works
+7. Funnel mapped (land → service → book) with no dead ends
+
+Full method: `raw-sources/tools/wondelai-skills/cro-methodology/SKILL.md`. Journey orchestrator: `…/improve-website/SKILL.md`. Agent skill wrapper: `.cursor/skills/adopted-geo-tools/SKILL.md`.
+
+### Schema markup attachment points
+
+The website is where the rich structured data lives — see @concepts/schema-markup-local.md. Key markup:
+
+- `LocalBusiness` (subtype: `BarberShop`) on the homepage and each per-location page
+- `Service` for each haircut/beard-trim/etc on the services page
+- `Review` / `aggregateRating` if displaying reviews on-page (must reflect real reviews)
+- `FAQPage` on FAQ
+- `BreadcrumbList` site-wide
+
+Schema validators: Google Rich Results Test, Schema.org validator. Both used during any update pass.
+
+### CTA hierarchy
+
+The conversion ladder:
+
+1. **Book online** — most direct; converts the highest-intent visitor
+2. **Tap-to-call** — high-intent but operator-bandwidth-bound
+3. **Get directions** — pre-arrival; high follow-through
+4. **Add to contacts / save**
+
+Every page should expose at least one of these above the fold on mobile.
+
+### Common failures
+
+- **Carousel hero with no clear CTA** — looks "designed," buries the booking action
+- **No per-location pages on a multi-shop site** — both GBPs point to the homepage; rankings split
+- **NAP inconsistency** — phone with hyphens on the site, without on GBP, parens on Yelp; Google's entity-resolution gets confused
+- **No mobile-first design** — desktop-first sites with squished mobile breakpoints
+- **Slow page-builder bloat** — page builders with 30+ JS bundles tank Core Web Vitals
+- **Stock photos** — generic barbershop stock photos vs real photos of the shop. Real wins on every metric: trust, GBP-website-photo-consistency, ranking, and conversion.
+
+### Maps-gap outreach (prospecting workflow) [TENTATIVE]
+
+Many local service businesses have a **Google Business Profile but no owned website** — or a dead social-only link. K69 Post 7 (@0xDepressionn, via @osint-wiki/sources/trading-posts-compilation-20-2026-05-27.md) describes an agent workflow that finds Maps listings missing web presence and drafts single-page landing sites in bulk. Agency pricing anchors of **$500–2k/page** were cited in the post [TENTATIVE — not verified in this market].
+
+**Operator / agency playbook:**
+
+1. **Prospect** — Maps search by category + city for listings with reviews/hours but no website URL (barbershop, dental, salon, gym, HVAC, etc.).
+2. **Deliverable** — one-page site per location: NAP, hours, services, booking CTA, embedded map, real photos where available, `LocalBusiness` JSON-LD matching GBP NAP exactly.
+3. **Local SEO tie-in** — the site becomes the GBP "website" link target (see @concepts/google-business-profile.md). Update citations if NAP changes; never publish schema with fabricated reviews or unverified claims.
+4. **Guardrails** — human review before publish; operator owns GBP access; no mass-identical templates across unrelated brands (duplicate-content risk).
+
+Reference-only on the tooling side: Kimi Agent Swarm (Moonshot UI) is documented at `@osint-wiki/entities/tools/kimi-agent-swarm.md` — not adopted into this wiki's operator stack.
+
+## Snippets
+
+(none yet — populate via ingest of Core Web Vitals docs + barbershop-website case studies + page-builder benchmarks)

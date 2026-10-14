@@ -1,0 +1,400 @@
+---
+title: GEO visibility measurement — uncertainty and sample design
+type: concept
+tags: [geo-aeo, measurement, statistics, playbook]
+keywords: [citation share, citation prevalence, bootstrap CI, AI visibility measurement, repeated sampling, SearchGPT, Perplexity, Gemini]
+related:
+  - sources/arxiv-2609-28372-agentic-surrogate-shopper-2026-09-24.md
+  - concepts/generative-engine-optimization.md
+  - sources/arxiv-sielinski-2026-ai-visibility-uncertainty-2603.08924-2026-06-10.md
+  - sources/aggarwal-2024-geo-paper.md
+  - concepts/competitive-geo-citation-factors.md
+  - entities/tools/local-falcon.md
+  - entities/tools/google-search-console.md
+  - concepts/citation-verification-aeo.md
+  - concepts/federated-daily-research-digest.md
+  - sweeps/2026-06-10-daily.md
+  - sources/arxiv-baig-2026-hotel-llm-reputation-audit-2606.16344-2026-06-16.md
+  - concepts/llm-reputation-signals-geo.md
+  - sources/arxiv-chu-2026-incumbent-brand-bias-llm-geo-2606.17443-2026-06-18.md
+  - concepts/llm-brand-bias-geo-competition.md
+  - sweeps/2026-06-18-daily.md
+  - sources/arxiv-kumar-2026-ranqo-geo-brand-visibility-scale-2606.20065-2026-06-19.md
+  - entities/tools/ranqo.md
+  - sweeps/2026-06-19-daily.md
+  - sources/arxiv-varga-2026-per-entity-bias-mapping-ai-visibility-2606.21595-2026-06-23.md
+  - concepts/per-entity-bias-mapping-geo.md
+  - sources/arxiv-zatuchin-2026-language-blind-spot-multilingual-geo-2606.23165-2026-06-24.md
+  - concepts/multilingual-geo-audit.md
+  - sweeps/2026-06-24-daily.md
+  - sources/arxiv-zatuchin-2026-llm-brand-reputation-sourcing-2606.25787-2026-06-26.md
+  - concepts/ai-citation-sourcing-geo.md
+  - sweeps/2026-06-26-daily.md
+  - sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md
+  - sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md
+  - entities/tools/geo-optimizer-skill.md
+  - sweeps/2026-06-30-daily.md
+  - sources/hubspot-2026-ai-search-optimization-aeo-primer-2026-06-29.md
+  - sweeps/2026-07-01-daily.md
+  - sources/arxiv-ye-2026-ecogeo-trajectory-aware-evidence-ecosystems-2605.12887-2026-07-04.md
+  - concepts/evidence-ecosystem-geo.md
+  - sweeps/2026-07-04-daily.md
+  - sources/arxiv-geng-2026-deepsearch-world-self-distillation-2607.07820-2026-07-15.md
+  - concepts/process-verified-agentic-search-geo.md
+  - sweeps/2026-07-15-daily.md
+  - sources/arxiv-martinez-2026-critical-survey-geo-2607.14035-2026-07-16.md
+  - concepts/geo-visibility-vector-protocol.md
+  - sweeps/2026-07-16-daily.md
+  - sources/arxiv-sourty-2026-denseon-lateon-open-retrieval-2607.27178-2026-07-30.md
+  - entities/tools/denseon-lateon.md
+  - sweeps/2026-07-30-daily.md
+  - sources/arxiv-wang-2026-vlm-relevance-web-scale-search-2608.02446-2026-08-04.md
+  - sweeps/2026-08-04-daily.md
+  - sources/arxiv-malmir-2026-impression-share-prediction-2608.16872-2026-08-18.md
+  - sweeps/2026-08-18-daily.md
+  - sources/arxiv-iannelli-2026-event-time-confounding-burstcheck-2608.21294-2026-08-25.md
+  - sweeps/2026-08-25-daily.md
+  - sources/arxiv-martinez-2026-geo-visibility-prompt-corpora-2609.06811-2026-09-17.md
+  - sources/arxiv-bajemon-2026-scoring-without-engine-2609.07559-2026-09-17.md
+  - sources/arxiv-uberti-2026-consumerq-ai-product-audit-2609.18729-2026-09-17.md
+  - sweeps/2026-09-17-daily.md
+  - sources/arxiv-tannenbaum-2026-scoring-with-engine-2609.22655-2026-09-23.md
+  - sources/arxiv-li-2026-baidu-google-ai-exposure-2609.24407-2026-09-23.md
+  - sweeps/2026-09-23-daily.md
+  - sources/arxiv-finder-2026-ax-is-the-new-aeo-2609.34951-2026-09-30.md
+  - sources/arxiv-yu-2026-conversational-capture-geo-2609.40069-2026-10-01.md
+  - sources/arxiv-lee-2026-filter-bubble-generative-search-2609.38946-2026-10-01.md
+  - concepts/conversational-capture-geo.md
+  - concepts/agent-ready-website-local-bm.md
+  - sweeps/2026-09-30-daily.md
+  - sweeps/2026-10-01-daily.md
+  - entities/tools/rankfor-ai.md
+  - sources/newsletter-rss-latent-space-2026-09-07-aeo-tracker-2026-09-08.md
+  - sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md
+  - sweeps/2026-10-07-daily.md
+maturity: validated
+created: 2026-06-10
+updated: 2026-10-07
+---
+
+## Relations
+
+- @concepts/conversational-capture-geo.md — K284 operator playbook for trajectory measurement
+- @sources/arxiv-yu-2026-conversational-capture-geo-2609.40069-2026-10-01.md — K284 trajectory gain, feedback term, misranking diagnostic
+- @sources/arxiv-lee-2026-filter-bubble-generative-search-2609.38946-2026-10-01.md — K284 randomized field experiment; consumption as an outcome
+- @sweeps/2026-10-01-daily.md — K284 overnight fetch
+- @sweeps/2026-08-25-daily.md — K163 event-time confounding (thin GEO steal)
+- @sources/arxiv-iannelli-2026-event-time-confounding-burstcheck-2608.21294-2026-08-25.md — episode-selection / endogenous time zero guardrail: post-event volume ≠ causal effect
+- @sweeps/2026-08-18-daily.md — K160 Meta impression-share (thin steal)
+- @sources/arxiv-malmir-2026-impression-share-prediction-2608.16872-2026-08-18.md — citation-share win ≠ downstream utility if citations shift to off-intent buckets
+- @sweeps/2026-08-04-daily.md — K151 Pinterest VLM relevance (thin steal)
+- @sources/arxiv-wang-2026-vlm-relevance-web-scale-search-2608.02446-2026-08-04.md — engagement ≠ semantic relevance guardrail
+- @sweeps/2026-07-30-daily.md — K148 DenseOn/LateOn open retrieval
+- @sources/arxiv-sourty-2026-denseon-lateon-open-retrieval-2607.27178-2026-07-30.md — K148 open retrieval as probe, not ranking factor
+- @entities/tools/denseon-lateon.md — K148 Phase-0 (weights Watch; pylate Adopt)
+- @sweeps/2026-07-16-daily.md — K140 Martinez GEO survey
+- @concepts/geo-visibility-vector-protocol.md — K140 Martinez GEO survey
+- @sources/arxiv-martinez-2026-critical-survey-geo-2607.14035-2026-07-16.md — K140 Martinez GEO survey
+- @concepts/generative-engine-optimization.md — parent GEO/AEO hub; step 7 citation tests
+- @sources/arxiv-sielinski-2026-ai-visibility-uncertainty-2603.08924-2026-06-10.md — empirical foundation (IQRush / arXiv 2603.08924)
+- @sources/aggarwal-2024-geo-paper.md — GEO-BENCH intervention lifts need CI validation per Sielinski critique
+- @concepts/competitive-geo-citation-factors.md — head-to-head citation wins; noise on close comparisons
+- @entities/tools/local-falcon.md — SAIV / AI visibility tracking limitations
+- @entities/tools/google-search-console.md — GSC AI visibility reports as point estimates
+- @concepts/citation-verification-aeo.md — accuracy after citation; orthogonal to share measurement noise
+- @concepts/federated-daily-research-digest.md — K103 digest ingest routing
+- @sweeps/2026-06-10-daily.md — overnight fetch + ingest
+- @sources/arxiv-baig-2026-hotel-llm-reputation-audit-2606.16344-2026-06-16.md — pre-registered conjoint audit methodology
+- @concepts/llm-reputation-signals-geo.md — reputation signal playbook
+- @sources/arxiv-chu-2026-incumbent-brand-bias-llm-geo-2606.17443-2026-06-18.md — IAI / BSV audit methodology
+- @concepts/llm-brand-bias-geo-competition.md — Conditional Monopoly tests
+- @sweeps/2026-06-16-daily.md — K120 ingest
+- @sweeps/2026-06-18-daily.md — K122 ingest
+- @sources/arxiv-kumar-2026-ranqo-geo-brand-visibility-scale-2606.20065-2026-06-19.md — production baseline (Ranqo 100K+ responses)
+- @entities/tools/ranqo.md — vendor REFERENCE
+- @sweeps/2026-06-19-daily.md — K123 ingest
+- @sources/arxiv-varga-2026-per-entity-bias-mapping-ai-visibility-2606.21595-2026-06-23.md — verified mention rate overlay (K127)
+- @concepts/per-entity-bias-mapping-geo.md — entity error-profile calibration
+- @sources/arxiv-zatuchin-2026-language-blind-spot-multilingual-geo-2606.23165-2026-06-24.md — query-language matrix (K128)
+- @concepts/multilingual-geo-audit.md — English-only blind spot for local champions
+- @sweeps/2026-06-24-daily.md — K128 ingest
+- @sources/arxiv-zatuchin-2026-llm-brand-reputation-sourcing-2606.25787-2026-06-26.md — citation URL layer; 85.7% third-party (K130)
+- @concepts/ai-citation-sourcing-geo.md — earned-media source audit before share wins
+- @sweeps/2026-06-26-daily.md — K130 ingest
+- @sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md — zero-click KPI shift; track citation not clicks (K134)
+- @sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md — K237: owned site still the permanent home as clicks fall
+- @sources/hubspot-2026-ai-search-optimization-aeo-primer-2026-06-29.md — answer-surface form taxonomy (K135)
+- @entities/tools/geo-optimizer-skill.md — third-party audit CLI; directional only
+- @sweeps/2026-06-30-daily.md — K134 ingest
+- @sources/arxiv-ye-2026-ecogeo-trajectory-aware-evidence-ecosystems-2605.12887-2026-07-04.md — agent trajectory metrics (K138)
+- @concepts/evidence-ecosystem-geo.md — evidence path audit
+- @concepts/process-verified-agentic-search-geo.md — entity-hit / first-miss recovery proxies (K139)
+- @sources/arxiv-geng-2026-deepsearch-world-self-distillation-2607.07820-2026-07-15.md
+- @sources/arxiv-martinez-2026-geo-visibility-prompt-corpora-2609.06811-2026-09-17.md — K172 answer-market / prompt-corpus framework (Olivier Martinez follow-on)
+- @sources/arxiv-bajemon-2026-scoring-without-engine-2609.07559-2026-09-17.md — K172 deterministic proxy validation; query-agnostic scores ≠ citation predictors
+- @sources/arxiv-uberti-2026-consumerq-ai-product-audit-2609.18729-2026-09-17.md — K172 UI vs API + repeated-query audit discipline
+- @sweeps/2026-09-17-daily.md — K172 overnight fetch
+- @sources/arxiv-tannenbaum-2026-scoring-with-engine-2609.22655-2026-09-23.md — K273 exposure vs selection; cross-engine Jaccard ~0
+- @sources/arxiv-li-2026-baidu-google-ai-exposure-2609.24407-2026-09-23.md — K273 overview source exposure vs answer similarity
+- @sweeps/2026-09-23-daily.md — K273 overnight fetch
+
+## Raw Concept
+
+Operator playbook for measuring **AI citation visibility** without false precision. Synthesized from @sources/arxiv-sielinski-2026-ai-visibility-uncertainty-2603.08924-2026-06-10.md (Ronald Sielinski, IQRush, arXiv 2603.08924).
+
+## Narrative
+
+### Three metrics (industry standard)
+
+| Metric | Definition | Use |
+|--------|------------|-----|
+| **Citation count** | Total times domain cited in sample N responses | Scales with N and per-response citation volume — poor cross-platform compare |
+| **Citation share** | Domain citations ÷ total citations in sample | Normalized; primary compare metric (Spearman ρ 0.994–0.997 vs count within platform) |
+| **Citation prevalence** | Fraction of responses with ≥1 citation to domain | Breadth across queries vs depth within one response |
+
+All three are **random variables** — report as estimates with uncertainty, not ground truth.
+
+### Event-time / episode-selection guardrail `[STEAL from Iannelli & Ai 2026]` `[TENTATIVE]`
+
+@sources/arxiv-iannelli-2026-event-time-confounding-burstcheck-2608.21294-2026-08-25.md (Iannelli & Ai, Scrunch AI, arXiv 2608.21294) — behavioral-log event studies that anchor on **user-chosen moments** (opening an AI assistant, clicking a recommendation, visiting a page) and read post-event activity as an effect are confounded by **endogenous time zero**: the event sits inside an ongoing task episode, so the aligned curve traces **episode continuation**, not a response. In same-user cross-surface logs, activity peaks **before** the event; **known-null timestamps** reproduce most of the "effect" at active moments (3.42× vs 4.32× post-event search activity for placebo vs real events among the strict pre-event-activity + washout subset), and user fixed effects + coarse activity matching fail because the confound is **within-user and time-varying**. **GEO read:** a rise in AI citations, prompt volume, or post-prompt traffic after publishing content or getting cited does **not** identify a GEO causal effect. Compare **similar episodes with vs without the event** (same query set, same engine, same time-of-day/week), not pre/post around the event. Mirrors the existing sample-design discipline: fixed-n, repeated sampling, bootstrap CIs — an event-window comparison inherits all the episode-selection caveats. `burstcheck` (named in the paper) has **no public GitHub** → Watch / 0 MB.
+
+### Engagement vs semantic relevance (guardrail) `[TENTATIVE]`
+
+Industrial search A/B practice (Pinterest RecSys ’26 / arXiv 2608.02446) separates **engagement** (clicks/saves) from **semantic relevance** of top slots: personalization can lift engagement while injecting irrelevant results. When measuring AI Overviews / answer-engine citation, treat citation-share wins that come with off-intent answers as a failed guardrail — scale LLM/VLM-as-judge only after human-label alignment. See @sources/arxiv-wang-2026-vlm-relevance-web-scale-search-2608.02446-2026-08-04.md.
+
+### Citation-share wins vs downstream utility (guardrail) `[TENTATIVE]`
+
+Meta's RecSys '26 impression-share task (@sources/arxiv-malmir-2026-impression-share-prediction-2608.16872-2026-08-18.md) generalizes the Wang 2608.02446 guardrail from *relevance* to *bucket distribution*: offline metrics (for ranking, predictive accuracy; for GEO, raw citation share/count) can improve while impressions — or citations — redistribute across objective buckets toward off-intent surfaces, degrading downstream utility. Treat a citation-share win as real only if the citations land on on-intent answers, not just anywhere.
+
+### Why single-run tests mislead `[CONFIRMED in consumer-product study]`
+
+Generative engines are **non-deterministic** at generation time. Sielinski's empirical study (Perplexity, SearchGPT, Gemini; three consumer topics; nine daily samples of ~200 queries) found:
+
+- Overlapping 95% bootstrap CIs are **normal** when citation share differs by **<5–7 percentage points**.
+- SearchGPT CI spans often **3–6 pp** for frequently-cited domains.
+- Rank order instability extends across the **full frequently-cited set**, not only top-2 domains.
+- Citation variability persists when cited page content is **stable** (checksum validation) — noise is engine behavior, not your page edits.
+
+Local-service queries untested `[NEEDS VERIFICATION 2026-06-10]` — apply the same discipline until validated.
+
+### Reading a ranking study — two cautions from the K278/K279 waves
+
+Both notes come from the daily digest and are **method warnings, not ranking findings**. They apply whenever the wiki cites an SEO/GEO study, and when the operator reads one.
+
+**1. A significance level chosen after the fact is not evidence (K278).** The K278 wave flagged a study that was **significant only at the 10% level**, whose **structural break was dated from the same data** used to test it, and which reached 5% only **after three controls were added**. Any one of those is a reasonable thing to do in isolation; together they describe a result tuned into existence. **Operator rule:** when a post claims a local-ranking effect, ask whether the threshold, the date, or the controls were fixed *before* the data was seen. If the answer is unclear, treat the claim as `[TENTATIVE]` no matter how confident the post is. This is the same discipline already applied to single-source claims in CLAUDE.md.
+
+**2. A bigger context window is not more usable context (K279).** A roundup reported a **62.8% long-context accuracy drop** when one vendor's context window scaled from **4K to 128K tokens**. **Operator rule:** do not assume that pasting a whole site, a year of reviews, or a long landing page into one prompt gives a reliable read. Chunk the input and verify the extracted facts against the source, per @concepts/citation-verification-aeo.md. This governs the wiki's own working method too — long sources are read in sections, not swallowed whole.
+
+Both are `[TENTATIVE]` on their specific numbers — the wiki holds the second-hand digest summary, not the underlying study. `[NEEDS VERIFICATION 2026-10-07]`. The cautions hold regardless of the exact figures.
+
+### Minimum sample sizes (empirical, consumer topics) `[TENTATIVE]`
+
+Target: 95% CI width ≤ **0.05** on citation share (Sielinski's practical benchmark).
+
+| Platform | Approx. queries to target width | Notes |
+|----------|-----------------------------------|-------|
+| **Gemini** | n ≈ 30–50 | Smooth convergence; tracks 1/√n |
+| **Perplexity** | n ≈ 90–100 | Intermediate; bumps from distribution shifts |
+| **SearchGPT** | >200 in some topics | Non-monotonic; bird feeders share **did not converge** at 200; within-sample non-stationarity |
+
+**Do not** stop sampling when a running CI looks narrow — width can temporarily shrink then widen. **Commit to fixed n** before collecting.
+
+For **citation prevalence**, target CI width **0.15** (higher because prevalence values sit nearer 0.5).
+
+### Prompt corpus = answer market (K172) `[CONFIRMED framework]`
+
+@sources/arxiv-martinez-2026-geo-visibility-prompt-corpora-2609.06811-2026-09-17.md (Olivier Martinez; follow-on to K140 @sources/arxiv-martinez-2026-critical-survey-geo-2607.14035-2026-07-16.md): GEO visibility scores aggregate appearances, citations, or mentions, but the **prompt corpus + weights** define an evaluative **answer market** that may not match real user demand. Prompt wording shifts retrieval, competitors, and answers; LLM scoring instructions can change scores on unchanged answers.
+
+**Operator rules:**
+- Publish or archive the **exact prompt set + weighting** used for any visibility report.
+- When weights are unknown, report **ranges of admissible scores** (partial identification), not a single headline number.
+- Separate **documentary leave-one-out** comparisons from claims about full-engine intervention with live competitors.
+
+### Deterministic content scores ≠ citation oracle (K172) `[CONFIRMED on released benchmark]`
+
+@sources/arxiv-bajemon-2026-scoring-without-engine-2609.07559-2026-09-17.md: validates cheap deterministic GEO content scores with adversarial gates (negative control, dose response, bounded amplification, duplication penalty, length neutrality). **Aggarwal 2023 causal anchors fail on ten modern engine families** — those levers move citation on none; recalibration strips lever-responsive score components.
+
+**Operator rules:**
+- Treat @entities/tools/geo-optimizer-skill.md and similar **query-agnostic content scores as quality filters**, not citation predictors (within-query Spearman **0.11** in their benchmark).
+- Adversarial amplification of score levers capped at **~6 points** on 500-source edits — still layer human review for spam/out-of-distribution attacks.
+- Re-measure external anchors on **current** engines; do not assume 2023 GEO-BENCH lifts transfer.
+
+### UI vs API + repeated probes (K172) `[CONFIRMED in product-audit study; TENTATIVE local]`
+
+@sources/arxiv-uberti-2026-consumerq-ai-product-audit-2609.18729-2026-09-17.md (ConsumerQ, 2,528 commercial queries): ChatGPT UI vs Gemini UI share **5.4%** of cited domains on average; **76.7%** of pairwise comparisons share **no** domain. APIs diverge from their chatbot UIs (~12–15% overlap). Recommendations **change across repeated requests**; ChatGPT expresses first-person product preference far more often than Gemini or AI Overviews.
+
+**Local GEO read:** audit **consumer-facing chatbot UI** (not API-only), run **repeated samples** per query, and log **source-domain overlap** across engines before claiming a citation win.
+
+### Exposure vs selection + cross-engine divergence (K273) `[CONFIRMED observational audit]`
+
+@sources/arxiv-tannenbaum-2026-scoring-with-engine-2609.22655-2026-09-23.md (companion to K172 Bajemon 2609.07559): separates **retrieval exposure** from **citation conditional on exposure**. Fifteen commercial prompts × four engines (ChatGPT, Copilot, Google, Perplexity) on 6 June 2026: mean pairwise cited-URL Jaccard **0.0079**; **84.9%** of engine pairs shared **no** URL; **96.4%** of URLs cited by only one engine; same-engine next-day URL-set turnover **67%**.
+
+**Operator rules:**
+- Report **page fit**, **observed exposure**, **conditional selection**, and **final visibility** separately — do not collapse into one headline score.
+- A win on Google AI does **not** imply Perplexity/ChatGPT overlap; plan **per-engine** sample budgets (@concepts/generative-engine-optimization.md).
+- Pair with K172: engine-free scores estimate quality/fit; **live visibility** still needs engine-specific probes.
+
+### Source exposure ≠ answer similarity (K273) `[CONFIRMED cross-platform audit; TENTATIVE US local]`
+
+@sources/arxiv-li-2026-baidu-google-ai-exposure-2609.24407-2026-09-23.md: Baidu vs Google AI overviews on English MS MARCO queries + Chinese translations. Overview trigger rates and **visible host-domain exposure** differ by platform–language; aggregate domain inventories have **low cross-setting overlap** while matched-query answer embeddings stay moderately similar (median cosine **0.701–0.813**).
+
+**Operator rules:**
+- Log **which domains receive visible links** in the overview UI, not only whether the brand is named in answer text.
+- Bilingual / diaspora markets: audit **each language × platform** (@concepts/multilingual-geo-audit.md); English Google results do not proxy Chinese or Baidu exposure.
+
+### Harness variance as a measurement hazard (K283) `[CONFIRMED — controlled field experiment]`
+
+@sources/arxiv-finder-2026-ax-is-the-new-aeo-2609.34951-2026-09-30.md ran the **same 1,056 businesses** through four independent agent harnesses. Clear-recommendation rates varied **sevenfold** — claude-code 5%, claude-agent-sdk 14%, openclaw 25%, eve 36% — and search reliance ranged from **0.1** (claude-code) to **6.9** (openclaw) searches per run. The *direction* of every effect replicated in all four; the *levels* belonged to the harness.
+
+**Operator rule:** a single-harness AI-visibility benchmark reports its harness as much as its subject. This is the same conclusion as the K273 exposure-vs-selection work arriving from a different design — and it is stronger evidence, because the harness is the only thing that changed. Never compare two businesses measured on different harnesses, and never compare your own score to a vendor's without confirming the stack.
+
+**Self-preference compounds the hazard (K257).** @sources/newsletter-rss-latent-space-2026-09-07-aeo-tracker-2026-09-08.md ran seven frontier models across 161 categories and found self-preference to be **the clearest signal in the whole tracker**: Opus and Fable pick Claude Code; Sol and Astra pick Codex; Muse picks Muse Code; SWE-1.7 picks Devin. Only Grok, which ships no coding agent of its own, picks an unaffiliated tool. **An "AI visibility" number therefore partly reports which model you asked** — a vendor-run audit that tests only the vendor's own models will flatter the vendor. Ask which models a score covers before comparing it to anything.
+
+### First-party evidence share and grounded-answer rate (K283) `[CONFIRMED — controlled field experiment]`
+
+Two outcome measures worth adding to the operator loop, both from the same study:
+
+- **First-party evidence share** — the fraction of retrieved content (fetched pages + search snippets) that came from the business's own site. **0.776** agent-ready vs **0.549** not (1.41×).
+- **Grounded-answer rate** — the share of journeys that read the site and used no outside source. **0.778** vs **0.555** (1.40×).
+
+Both are computable from an agent trace without a grading panel, which makes them cheaper to track than recommendation rate. The study also supplies a **dose–response** check: mean web searches per journey rise monotonically from **1.8 to 4.5** as the accessibility score falls (Spearman ρ = −0.52, n = 1,056), so *searches-per-journey* is a usable proxy for a readability defect without needing the vendor's score at all.
+
+**Guardrail:** the study's accessibility ranker is the authors' own instrument, and the cohort is SaaS/commerce English-first with business-fact intents. No local-service or near-me queries `[NEEDS VERIFICATION 2026-09-30]`.
+
+### Trajectory beats single-turn — the misranking diagnostic (K284) `[CONFIRMED at theory level; TENTATIVE as measurement]`
+
+@sources/arxiv-yu-2026-conversational-capture-geo-2609.40069-2026-10-01.md (Yu et al., HAI '26, arXiv 2609.40069) argues the **single answer is the wrong unit of analysis**. Human-agent information seeking is a closed loop: the answer changes the user's beliefs, which changes the next question. A source cited early keeps being cited — **conversational capture** — and the persistence can be decoupled from current relevance.
+
+**The measurement consequence is blunt.** Decompose the trajectory gain L_T into a **direct term** (what single-turn evaluation correctly extrapolates) and a **feedback term** (what it omits entirely):
+
+- The feedback term is **identically zero under single-turn evaluation**. Every one of the sampling rules above — repeated queries, bootstrap CIs, multi-engine panels — samples *independent turns*. None of them can see it.
+- In the paper's worked model the **feedback term (1.48) exceeds the direct term (1.20)**; the compounding ratio ρ = 2.23, rising toward a ceiling of 1/(2L₁).
+- **Method selection breaks.** Ranking GEO methods by single-turn gain disagreed with the trajectory ranking (Kendall's τ = 0.4). Across 5×10⁴ random method sets the single-turn winner was wrong in **48%** of draws — **91%** when salience and capture trade off. Single-turn evaluation can pick the wrong method.
+
+**Operator rule:** keep the existing repeated-sampling discipline for *non-determinism*, and add a separate **trajectory probe** for capture. A trajectory probe runs one 3–5 turn buyer conversation end to end without resetting the thread, and records carryover, decay after the topic moves on, and whether a corrective challenge dislodges the citation. Procedure: `briefs/2026-10-01_k284-conversational-capture-probe-hands-on.md`; playbook: @concepts/conversational-capture-geo.md.
+
+**Guardrail:** every number is derived from the model, not a deployed engine — the authors say so repeatedly. The direction is `[CONFIRMED]` at the theory level; the magnitudes are `[NEEDS VERIFICATION 2026-10-01]`. No local or near-me queries in the paper.
+
+### Consumption as an outcome, not just citation share (K284) `[CONFIRMED — randomized field experiment]`
+
+@sources/arxiv-lee-2026-filter-bubble-generative-search-2609.38946-2026-10-01.md (Lee et al., arXiv 2609.38946): **38-day randomized field experiment, 37,561 Washington Post readers**, AI answers with article citations shown above conventional results. This is the controlled version of the practitioner zero-click claims already in the wiki.
+
+- **Cited-source clicks rise 14 pp** while **conventional-result clicks fall 21 pp** and browsing falls 5 pp.
+- **98.0%** of the increase in shared-information consumption comes from the **AI answer**, not from opened articles. The answer delivers information that used to require a click.
+- Total consumption per reader rises **82%** (29% more searches, 41% more per search); consumption per minute rises 62%.
+
+**Operator rule:** citation share is an intermediate metric. The outcomes that move are **clicks to cited sources** and **information delivered inside the answer**. Track both. A page that is cited but whose facts never reach the answer text is a citation-share win with no consumption behind it — the guardrail already stated above ("citation-share wins vs downstream utility"), now with a field-experiment counterpart.
+
+**Caveats:** working paper, one newsroom archive, a specific answer-above-results UI, and no local or near-me queries. `[NEEDS VERIFICATION 2026-10-01]`
+
+### Operator measurement loop
+
+1. **Define query set** — 20–50 realistic customer queries (service + geo + brand); avoid only LLM-generated queries if possible (Sielinski used ChatGPT-generated sets — ecological caveat). Document prompts + weights per Martinez K172 answer-market rule.
+2. **Repeat** — same queries on **≥3 separate days** (or ≥90–100 runs per platform if budget allows).
+3. **Record** — cited domains/URLs per response; compute share and prevalence per sample.
+4. **Bootstrap** — response-level resampling (1,000 replicates) for 95% CI on share/prevalence; free tools: Python `scipy`/`numpy` or R; or spreadsheet approximation with repeated subsamples.
+5. **Compare domains** — only claim outperformance if CIs **do not overlap** (or use formal difference test).
+6. **GEO interventions** — pre/post content changes need baseline + post **both** measured with adequate n; Aggarwal-style +3 pp lift on SearchGPT is **inside noise floor** without repeated sampling (@sources/aggarwal-2024-geo-paper.md + Sielinski §7.2).
+7. Pair with **claim verification** when cited (@concepts/citation-verification-aeo.md).
+
+### Commercial tools
+
+- @entities/tools/local-falcon.md **AI Visibility Tracking (SAIV)** — directional heatmaps; ask vendor for sample size and CI methodology before treating deltas as definitive.
+- @entities/tools/google-search-console.md **AI visibility reports** — useful trend signal; not a substitute for repeated-query citation testing on ChatGPT/Perplexity.
+- @entities/tools/ranqo.md **Ranqo** — multi-engine brand mention + citation source-class tracking (vendor REFERENCE); pair point estimates with bootstrap CIs from Sielinski discipline.
+
+### Production baseline — brand-stature ladder [CONFIRMED in B2B/SaaS panel; TENTATIVE local]
+
+@sources/arxiv-kumar-2026-ranqo-geo-brand-visibility-scale-2606.20065-2026-06-19.md (Kumar / Ranqo, arXiv 2606.20065): **100K+** AI-engine responses, **100+** brands, Mar–May 2026.
+
+| Tier | Day-1 unbranded mention rate | Operator read |
+|------|------------------------------|---------------|
+| Tier 1 (global) | ~**73%** | Share-of-voice vs peers; saturation |
+| Tier 2 (mid-market) | ~**44%** | Largest headroom; needs intervention — does not climb alone |
+| Tier 3 (niche/small) | ~**11%** | Brand-mass first (press, Wikipedia, YouTube) before micro-GEO |
+
+Local single-location shops likely analogize to Tier 3 `[NEEDS VERIFICATION 2026-06-19]`.
+
+**Mention vs sentiment noise:** mention flipping **6.8%**; sentiment flipping **45.5%** (**6.7×** noisier). Track **mention rate and citation presence** before sentiment-weighted scores; require ≥10 prompts per engine before trusting sentiment aggregates.
+
+**Per-engine markets:** same brand/prompts — Perplexity 37%→62% over 5 weeks; ChatGPT 45%→20%; Claude flat ~24%. Report visibility **per engine**, not blended.
+
+**Re-audit cadence:** 14–30 days after content/citation changes (vendor methodology; causal lift awaits Ranqo P3 RCT).
+
+### Visibility vector (Martinez 2026) [TENTATIVE operator framing]
+
+@sources/arxiv-martinez-2026-critical-survey-geo-2607.14035-2026-07-16.md separates discoverability (Ds), citation (Cs), absorption, fidelity, and behavior (Bs). Pair Sielinski CIs with an explicit estimand: conditional rewrite ≠ live retrieval ≠ traffic. Protocol: @concepts/geo-visibility-vector-protocol.md.
+
+### What this does not solve
+
+- Infrequently cited domains (zero-inflated counts) — open methodology gap in Sielinski §10.
+- B2B, navigational, local "near me" queries — not in study scope.
+- Nine-day window only — seasonal/platform updates not captured.
+
+### Pre-registered conjoint audits [STEAL from Baig 2026]
+
+@sources/arxiv-baig-2026-hotel-llm-reputation-audit-2606.16344-2026-06-16.md: gold-standard **algorithm audit** design for operator competitive tests:
+
+1. **Pre-specify** hypotheses + analysis plan before data collection (paper used cryptographic hash).
+2. **Randomize** attribute levels independently (rating, price, volume, position, …) across card sets.
+3. **Estimate AMCEs** on recommendation probability — causal, not correlational SERP scraping.
+4. **Robustness** — repeat across prompt templates and model panel; report heterogeneity.
+
+Operator mini-version: 3–5 anonymized competitor cards, 3 personas, 3 prompt templates, 3 engines × 3 days — still noisy at small n but better than one-shot "ask ChatGPT who is best." Templates: `briefs/2026-06-16_k120-geo-reputation-signal-audit-hands-on.md` (reputation AMCEs); `briefs/2026-06-18_k122-incumbent-brand-bias-geo-audit-hands-on.md` (IAI / tie-breaker when specs match).
+
+### IAI / BSV audits [STEAL from Chu 2026]
+
+@sources/arxiv-chu-2026-incumbent-brand-bias-llm-geo-2606.17443-2026-06-18.md:
+
+1. **Matched-spec test** — equalize rating/price/reviews across 3–5 local names; measure Incumbent Advantage Index (share / random baseline).
+2. **Threshold test** — add +0.1★ or +10 reviews to operator shop only; measure flip rate (Chu L1 ≈ +0.075★).
+3. **Differentiation test** — replace matched specs with unique verifiable facts; compare to Test 1.
+
+See @concepts/llm-brand-bias-geo-competition.md.
+
+Hands-on Ranqo-style tier baseline: `briefs/2026-06-19_k123-ranqo-geo-visibility-baseline-hands-on.md`.
+
+**Zero-click KPI:** @sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md — pair GSC AI impressions with citation prevalence; declining clicks ≠ declining AI visibility. Hands-on: `briefs/2026-06-30_k134-ai-citation-vs-click-audit-hands-on.md` `[NEEDS VERIFICATION 2026-06-30]`. SparkToro (2026-08-14) same direction: keep the owned site as the citable home (@sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md).
+
+### Answer-surface forms [STEAL from HubSpot 2026]
+
+@sources/hubspot-2026-ai-search-optimization-aeo-primer-2026-06-29.md — log which form each probe returns (not only "mentioned Y/N"):
+
+| Form | What to record |
+|------|----------------|
+| **Inline citation** | Linked chip after a specific claim about your shop |
+| **Unlinked mention** | Brand name in answer text, no URL |
+| **Comparison table** | Row in AI-generated competitor matrix |
+| **Source list** | URL in sidebar/rail without inline tie |
+| **Rich product** | Shopping-style card (rare for barbershops) |
+
+Unlinked mentions produce **zero referral traffic** but still shape buyer decisions — count them in weekly probes.
+
+### Trajectory proxies [STEAL from EcoGEO 2026]
+
+DeepSearch-World (@sources/arxiv-geng-2026-deepsearch-world-self-distillation-2607.07820-2026-07-15.md) adds **entity-hit** and first-miss recovery as process metrics inside a verifiable sandbox — use answer-text entity coverage as the public proxy (@concepts/process-verified-agentic-search-geo.md).
+
+@sources/arxiv-ye-2026-ecogeo-trajectory-aware-evidence-ecosystems-2605.12887-2026-07-04.md measured hidden agent actions in a controlled environment: initial target-result crawls, target-specific second searches, follow-up crawls, and internal-link crawls. Public engines usually do not expose these actions, so use visible proxies:
+
+| Proxy | Record |
+|-------|--------|
+| **Entry citation** | Did the engine cite the intended hub/location/service page? |
+| **Support citation** | Did it also cite review, GBP, Yelp, local press, or service proof? |
+| **Name refinement** | Did the answer search/mention the exact shop after a broad query? |
+| **Internal path** | Did cited pages link to each other in a human-useful way? |
+
+Do not claim causal lift from one probe. Use this as an audit layer on top of the existing mention/citation CI discipline.
+
+### Verified mention overlay [STEAL from Varga 2026 PEBM]
+
+@sources/arxiv-varga-2026-per-entity-bias-mapping-ai-visibility-2606.21595-2026-06-23.md: track **verified mention rate** alongside raw mention — equal mention rates can mean accurate visibility vs high false-attribution exposure. High-salience entities show **higher fabricated citation rates** (52.7% vs 37.9% in B2B panel). See @concepts/per-entity-bias-mapping-geo.md; hands-on: `briefs/2026-06-23_k127-pebm-verified-mention-audit-hands-on.md`.
+
+### Multilingual query matrix [STEAL from Žatuchin 2026]
+
+@sources/arxiv-zatuchin-2026-language-blind-spot-multilingual-geo-2606.23165-2026-06-24.md: English-only probes **understate recommendation share** for local champions (home-language shift **+0.80** vs **+0.15** for global brands). Fix **engine set** before comparing languages — stability η²_model=0.32 vs η²_language=0.01. Full playbook: @concepts/multilingual-geo-audit.md; hands-on: `briefs/2026-06-24_k128-multilingual-geo-query-audit-hands-on.md`.
+
+## Snippets
+
+> "The appropriate inferential unit is not the point estimate but the confidence interval." [Source: @sources/arxiv-sielinski-2026-ai-visibility-uncertainty-2603.08924-2026-06-10.md §7.1]
+
+> "A measurement protocol designed for Gemini (where n = 40-50 might be sufficient) is inadequate for SearchGPT." [Source: @sources/arxiv-sielinski-2026-ai-visibility-uncertainty-2603.08924-2026-06-10.md §7.3]

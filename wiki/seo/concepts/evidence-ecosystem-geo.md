@@ -1,0 +1,117 @@
+---
+title: Evidence ecosystem GEO for agentic search
+type: concept
+tags: [geo-aeo, agentic-search, internal-linking, playbook, k138]
+keywords: [EcoGEO, TRACE, evidence ecosystem, agent browsing trajectory, internal links, support pages]
+related:
+  - sources/arxiv-ye-2026-ecogeo-trajectory-aware-evidence-ecosystems-2605.12887-2026-07-04.md
+  - concepts/generative-engine-optimization.md
+  - concepts/adaptive-rag-internal-linking-geo.md
+  - concepts/ai-citation-sourcing-geo.md
+  - concepts/geo-visibility-measurement.md
+  - concepts/content-strategy-local.md
+  - concepts/citation-building.md
+  - concepts/process-verified-agentic-search-geo.md
+  - sources/arxiv-geng-2026-deepsearch-world-self-distillation-2607.07820-2026-07-15.md
+  - sources/google-search-central-2026-ai-optimization-guide.md
+  - sources/arxiv-webknograph-internal-linking-2606.06106-2026-06-05.md
+  - concepts/federated-daily-research-digest.md
+  - sweeps/2026-07-04-daily.md
+  - sweeps/2026-07-15-daily.md
+  - concepts/geo-visibility-vector-protocol.md
+  - sources/arxiv-martinez-2026-critical-survey-geo-2607.14035-2026-07-16.md
+  - sources/arxiv-sourty-2026-denseon-lateon-open-retrieval-2607.27178-2026-07-30.md
+  - entities/tools/denseon-lateon.md
+  - sweeps/2026-07-30-daily.md
+  - concepts/conversational-capture-geo.md
+  - sources/arxiv-finder-2026-ax-is-the-new-aeo-2609.34951-2026-09-30.md
+  - sources/arxiv-lee-2026-filter-bubble-generative-search-2609.38946-2026-10-01.md
+  - sources/arxiv-yu-2026-conversational-capture-geo-2609.40069-2026-10-01.md
+maturity: draft
+created: 2026-07-04
+updated: 2026-10-01
+---
+
+## Relations
+
+- @sweeps/2026-07-30-daily.md — K148 DenseOn/LateOn open retrieval
+- @sources/arxiv-sourty-2026-denseon-lateon-open-retrieval-2607.27178-2026-07-30.md — K148 passage-retrieval probe layer
+- @entities/tools/denseon-lateon.md — K148 Phase-0 (weights Watch; pylate Adopt)
+- @sources/arxiv-martinez-2026-critical-survey-geo-2607.14035-2026-07-16.md — K140 Martinez GEO survey
+- @concepts/geo-visibility-vector-protocol.md — K140 Martinez GEO survey
+- @sources/arxiv-ye-2026-ecogeo-trajectory-aware-evidence-ecosystems-2605.12887-2026-07-04.md - EcoGEO / TRACE primary source
+- @concepts/generative-engine-optimization.md - parent GEO/AEO hub
+- @concepts/adaptive-rag-internal-linking-geo.md - internal-link graph and RAG-routing analog
+- @concepts/ai-citation-sourcing-geo.md - source layer feeding AI answers
+- @concepts/geo-visibility-measurement.md - measurement layer
+- @concepts/content-strategy-local.md - service/location hub content
+- @concepts/citation-building.md - off-site real evidence
+- @concepts/process-verified-agentic-search-geo.md - DeepSearch entity-hit / failure-recovery lens (K139)
+- @sources/arxiv-geng-2026-deepsearch-world-self-distillation-2607.07820-2026-07-15.md - DeepSearch-World source
+- @sources/google-search-central-2026-ai-optimization-guide.md - Google Search fan-out and spam-policy constraints
+- @sources/arxiv-webknograph-internal-linking-2606.06106-2026-06-05.md - internal-link graph evaluation
+- @concepts/federated-daily-research-digest.md - K138 / K139 ingest
+- @sweeps/2026-07-04-daily.md - overnight fetch
+- @sweeps/2026-07-15-daily.md - DeepSearch-World inbox
+
+## Raw Concept
+
+K138 synthesis from @sources/arxiv-ye-2026-ecogeo-trajectory-aware-evidence-ecosystems-2605.12887-2026-07-04.md. The paper's controlled product-recommendation setting does **not** directly validate public-web local SEO tactics; it gives a useful mental model for how web-enabled agents gather evidence across multiple browsing steps.
+
+## Narrative
+
+### Core Idea
+
+In agentic search, the answer is built from a **path**, not just a ranked URL. The agent may:
+
+1. Read a search result snippet.
+2. Crawl an entry page.
+3. Follow internal links.
+4. Search the brand/product/service name again.
+5. Synthesize official, review, expert, forum, and social evidence.
+
+For local operators, GEO work should therefore be evaluated as an **evidence ecosystem**: do the real pages and profiles reinforce the same facts, use consistent vocabulary, and give agents a clean path from broad query to proof?
+
+### Safe Local-Business Translation
+
+| TRACE component | Local-business analog | Rule |
+|-----------------|-----------------------|------|
+| Navigation entry page | Main local/service hub | Explain who the shop is and route to proof |
+| Official page | GBP + owned site | Canonical NAP, hours, services, pricing |
+| Review page | GBP/Yelp review corpus | Real customer language; no gating/fakes |
+| Expert/news page | Local press, chamber, awards, guides | Earned, truthful third-party evidence |
+| Forum/social page | Reddit/YouTube/Instagram/X mentions | Real public discussion, not planted spam |
+| Cross-page links | Internal links + citations between pages | Help humans and agents traverse evidence |
+| Attribute consistency | Same name/category/services everywhere | Prevent entity drift |
+
+### Operator Checklist
+
+Use `briefs/2026-07-04_k138-evidence-ecosystem-geo-audit-hands-on.md`.
+
+Minimum viable evidence ecosystem for a two-shop barbershop:
+
+- A city/service hub page that links to location pages, top services, booking, gallery, reviews, and FAQ.
+- Per-location pages with unique NAP, hours, parking/walk-in details, and staff/service proof.
+- Service pages that link back to relevant reviews or gallery examples.
+- GBP services/categories matching the site language.
+- Yelp/Apple/Bing/chamber/listicle entries with the same NAP and service vocabulary.
+- No synthetic support pages, fake reviews, or planted forum/social posts.
+
+### What Not To Do
+
+EcoGEO's TRACE setup used synthetic product pages in a controlled environment. On the public web, fabricating "review", "expert", "news", "forum", or "social" pages would be spam and reputational risk. The useful operator lesson is **coordination of real evidence**, not synthetic evidence manufacturing.
+
+### Measurement
+
+Add two fields to GEO probe logs:
+
+| Field | Why |
+|-------|-----|
+| **Entry page first crawled/cited?** | Did the agent find the hub? |
+| **Followed support evidence?** | Did it cite/mention linked service, review, or third-party pages? |
+
+This pairs with @concepts/geo-visibility-measurement.md. The metric is noisy because public engines do not expose full browsing trajectories; use visible citations and answer text as a proxy.
+
+## Snippets
+
+> "GEO becomes a trajectory-level problem: the effect of a page depends on when it is encountered, what links and topics it exposes, how it interacts with surrounding evidence, and how it changes the agent's subsequent evidence-acquisition process." [Source: @sources/arxiv-ye-2026-ecogeo-trajectory-aware-evidence-ecosystems-2605.12887-2026-07-04.md]
