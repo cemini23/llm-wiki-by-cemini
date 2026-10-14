@@ -18,6 +18,13 @@ import os
 import re
 import sys
 from datetime import date, datetime
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from wiki_resolver import (  # noqa: E402
+    WikiResolver,
+    load_federation_table,
+    normalize_path,
+)
 from pathlib import Path
 from collections import defaultdict
 
@@ -48,36 +55,13 @@ TODAY = date.today()
 # with WIKI_DIR env-var override for non-standard layouts (e.g. CI checkout paths).
 WIKI = Path(os.environ.get("WIKI_DIR", Path(__file__).resolve().parent.parent / "wiki")).resolve()
 
-# -- cross-wiki alias mapping ----------------------------------------
+# -- cross-wiki resolution -------------------------------------------
+# The resolver lives in wiki_resolver.py so the migration harness can call the same
+# logic. Two implementations could disagree about whether a link resolves, which is
+# exactly what a verification gate exists to prevent.
 
-def load_wiki_aliases():
-    """Parse CLAUDE.md 'Related Wikis' section for alias→path mapping."""
-    claude_md = WIKI.parent / "CLAUDE.md"
-    aliases = {}  # alias -> abs_path
-    if not claude_md.exists():
-        return aliases
-    text = claude_md.read_text(errors="replace")
-    # Match the Related Wikis table: | `alias` | /path/to/wiki/ | ... |
-    table_re = re.compile(
-        r"^\|\s*`([a-z0-9_-]+)`\s*\|\s*`?([^`\n\|]+)`?\s*\|",
-        re.MULTILINE
-    )
-    for m in table_re.finditer(text):
-        alias = m.group(1).strip()
-        path_str = m.group(2).strip().rstrip("/")
-        # Paths in the Related Wikis table are relative to *that CLAUDE.md's*
-        # directory, not the lint's CWD — resolve against claude_md.parent so
-        # cross-wiki resolution is correct no matter which wiki is being linted.
-        # Path from CLAUDE.md already includes wiki/ — don't append again.
-        wiki_path = (claude_md.parent / path_str).resolve()
-        if wiki_path.is_dir():
-            aliases[alias] = wiki_path
-        elif (wiki_path / "wiki").is_dir():
-            aliases[alias] = wiki_path / "wiki"
-    return aliases
-
-
-WIKI_ALIASES = load_wiki_aliases()
+WIKI_ALIASES = load_federation_table(WIKI.parent / "CLAUDE.md")
+RESOLVER = WikiResolver(WIKI, WIKI_ALIASES)
 
 # -- frontmatter parsing (no PyYAML dep) ----------------------------------
 
@@ -124,118 +108,7 @@ def parse_frontmatter(text):
             out[key] = m2.group(1).strip()
     return out
 
-_ARA_RE = re.compile(r"^@?[IBM]\s+(?=\S)")
-
-
-def normalize_path(p):
-    """Strip an ARA typed prefix, a leading slash, and a stray wiki/ segment."""
-    p = p.strip()
-    p = _ARA_RE.sub("", p)
-    p = p.lstrip("/")
-    if p.startswith("wiki/"):
-        p = p[len("wiki/"):]
-    return p
-
-
-# -- canonical resolution --------------------------------------------------
-# Every reference resolves to a canonical page key: the path relative to the wiki
-# root. Before the merge that is "concepts/foo.md"; after, "osint/concepts/foo.md".
-# Both layouts share one code path because the alias table declares the domains —
-# an alias whose path sits inside the wiki root names a local domain.
-#
-# Deliberately NOT supported: running this per domain with WIKI_DIR=wiki/<domain>.
-# That breaks alias loading, the briefs/ check, and the pre-commit staged slice all
-# at once. Use --domain as a filter instead.
-
-
-def _local_domains():
-    doms = set()
-    for _alias, base in WIKI_ALIASES.items():
-        try:
-            rel = base.relative_to(WIKI)
-        except ValueError:
-            continue  # a sibling repository, not an in-tree domain
-        if rel.parts:
-            doms.add(rel.parts[0])
-    return doms
-
-
-LOCAL_DOMAINS = _local_domains()
-
-
-def domain_of(rel_path):
-    """The domain prefix of a page key, or '' when the wiki holds one domain."""
-    head = rel_path.split("/", 1)[0]
-    return head if head in LOCAL_DOMAINS else ""
-
-
-def _key_if_inside(path):
-    """The page key for *path* when it is a markdown file inside the wiki root."""
-    try:
-        rel = path.resolve().relative_to(WIKI.resolve())
-    except (ValueError, OSError):
-        return None
-    return str(rel) if rel.suffix == ".md" else None
-
-
-def resolve_ref(src_rel, raw):
-    """Resolve one @path reference to a canonical target.
-
-    Returns (kind, value):
-      'local'     value is a page key present in all_paths
-      'out'       value is a Path that exists outside the wiki tree (repo-root
-                  briefs/, prompts/, scripts/)
-      'ambiguous' value is a list of page keys that all match
-      'missing'   value is the Path that was looked for
-    """
-    p = normalize_path(raw)
-    src_dom = domain_of(src_rel)
-
-    # 1. Alias form. The alias table decides whether the target is in-tree, so the
-    #    same call works before the merge (sibling repo) and after (wiki/<domain>/).
-    for alias, base in WIKI_ALIASES.items():
-        prefix = f"@{alias}/"
-        if not p.startswith(prefix):
-            continue
-        rel = p[len(prefix):]
-        for cand in (base / rel, base.parent / rel):
-            key = _key_if_inside(cand)
-            if key is not None and key in all_paths:
-                return ("local", key)
-            if key is None and cand.exists():
-                return ("out", cand)
-        return ("missing", base / rel)
-
-    # 2. Bare path, relative to the source page's own domain. The leading @ is
-    #    stripped here: normalize_path keeps it so the alias loop above can match.
-    rel = p.lstrip("@")
-    if rel.startswith("wiki/"):
-        rel = rel[len("wiki/"):]
-    cand = (WIKI / src_dom / rel) if src_dom else (WIKI / rel)
-    key = _key_if_inside(cand)
-    if key is not None and key in all_paths:
-        return ("local", key)
-
-    # 3. The same path in another domain. Report rather than pick when more than one
-    #    matches: the duplicated pages are not byte-identical, so a silent choice
-    #    would bind the link to the wrong file with no warning.
-    hits = []
-    for dom in sorted(LOCAL_DOMAINS):
-        if dom == src_dom:
-            continue
-        k = _key_if_inside(WIKI / dom / rel)
-        if k is not None and k in all_paths:
-            hits.append(k)
-    if len(hits) == 1:
-        return ("local", hits[0])
-    if len(hits) > 1:
-        return ("ambiguous", hits)
-
-    # 4. Repo-root trees beside wiki/ (briefs/, prompts/, scripts/).
-    out = WIKI.parent / rel
-    if out.exists():
-        return ("out", out)
-    return ("missing", cand)
+# Resolution is delegated to wiki_resolver.py (see the import at the top).
 
 # -- walk ----------------------------------------------------------------
 
@@ -270,7 +143,7 @@ ambiguous_refs = []   # (source, raw, [candidate keys]) — never silently resol
 
 for src, fm in pages.items():
     for tgt_raw in fm.get("related", []):
-        kind, value = resolve_ref(src, tgt_raw)
+        kind, value = RESOLVER.resolve(src, tgt_raw, all_paths)
         if kind == "local":
             inbound[value].add(src)
             outbound[src].add(value)
@@ -358,7 +231,7 @@ for src, fm in pages.items():
             continue
         if _is_nav_exempt(mentioned):
             continue
-        kind, _value = resolve_ref(src, raw)
+        kind, _value = RESOLVER.resolve(src, raw, all_paths)
         if kind == "missing":
             missing_mentions[mentioned].add(src)
 
@@ -390,7 +263,7 @@ if WIKI_ALIASES:
             if is_inside_backticks(body, m.start(), m.end()):
                 continue
             rel_path = m.group(2).lstrip("/")
-            kind, value = resolve_ref(src, "@" + alias + "/" + rel_path)
+            kind, value = RESOLVER.resolve(src, "@" + alias + "/" + rel_path, all_paths)
             if kind in ("local", "out"):
                 cross_wiki_ok += 1
             else:
