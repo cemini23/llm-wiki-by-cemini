@@ -30,6 +30,17 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-14 — federation wiki merge)
+
+- **Federation merge shipped.** Eight wikis merged into one repository under `wiki/<domain>/`. 2,046 commits and 9,820 pages. `git filter-repo` preserved history in both directions.
+- **Five verification gates passed before cutover.** File manifest 1:1 (0 missing, 0 added, 0 changed). Resolved edges 0 lost and 0 silent retargets over 101,542 edges. History intact through the osint rename. **One real ingest cycle ran end to end** — the load-bearing step.
+- **Three consumers failed silently and are now fixed.** `wiki_gap_detect.py` reported zero gaps and exited 0, which reads as an excellent wiki. Also fixed `preingest_check.py`, `wire_ledger_check.py`, and a linter regression that flagged 900 append-only sweeps as missing frontmatter. **Lesson: a consumer that finds nothing on a non-empty corpus is a failure, not a pass.**
+- **Twelve daily fetchers** re-pointed at the merged repo. The inbox is namespaced by domain.
+- **Seven absorbed repos archived, not deleted.** Inboxes were migrated into the merged wiki first. Every repo is clean and fully pushed to its own GitHub remote. They sit in `~/.Trash` (2.5 GB); `.git.premerge-local/` (153 MB) holds the pre-merge git directory. **All three are the rollback.**
+- **The repo is public.** `llm-wiki-by-cemini` went public 2026-10-14, so previously private osint content is now published. One repository, no mirror.
+- **Open (not started):** reconcile the duplicated pages (the merge makes the duplication visible; it does not create it); next gap-detect due 2026-10-16.
+- **Boundary:** no install, no scrape, no xsp/pm scp, no `/route` swap.
+
 ## Current state (2026-10-13 — K290 ingest)
 
 - **K290 ingest** — 9 inbox files → 8 source pages + 3 hubs + 9 entity/concept pages + 6 briefs. One file was a **byte-identical duplicate** (`2609.20804`); not re-ingested. **0 Integrate GO. No install. No scrape. No xsp/pm scp. No GW auto-arm.**

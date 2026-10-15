@@ -20,7 +20,7 @@ Distribution is a deliberate step, not a default. Stage candidates in `briefs/` 
    - **Drop pattern**: `research to be indexed/` → ingest → `bash scripts/archive_raw_to_egress.sh --wiki-id osint "<file>"` (scp + rm local)
    - **Read pattern**: `ssh cemini-egress-fi cat /opt/cemini-bulk/research/osint/<filename>` or laptop Preview while file is still in inbox
 
-2. **The wiki** — LLM-written, human-read. **Canonical location: laptop `wiki/`** (git). All eight federation wikis live in this one repository under `wiki/<domain>/` — merged **2026-10-14**, see `briefs/2026-10-14_federation-wiki-merge-plan.md`. The seven absorbed repositories are **archived, not deleted**: they are the rollback, and each still holds its own un-ingested inbox. No 24/7 kb-server sync — see `@meta/librarian-decommission-2026-06-14.md`.
+2. **The wiki** — LLM-written, human-read. **Canonical location: laptop `wiki/`** (git). All eight federation wikis live in this one repository under `wiki/<domain>/` — merged **2026-10-14**, see `briefs/2026-10-14_federation-wiki-merge-plan.md`. The seven absorbed repositories are **archived, not deleted**: they are the rollback. Their inboxes were migrated into the merged wiki before decommission. No 24/7 kb-server sync — see `@meta/librarian-decommission-2026-06-14.md`.
 
 3. **The schema** — this file.
 
