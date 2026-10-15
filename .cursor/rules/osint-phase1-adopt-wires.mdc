@@ -383,6 +383,29 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K291 — 2026-10-14
+Dual-ID: **OSINT K291**. FILE and HITL only. **0 Integrate GO.** **Phase-0 ran 2026-10-15** on the 20-URL eval docx — `gh api` verified 17 GitHub repos, **5 disagreements**. No clones, no install. Eight items skipped as out of scope.
+
+- **Wave:** 65 inbox files across eight domains → 26 source pages + 7 wave hubs + 7 concept backlinks. Nine days of accumulation since K290.
+- **Tool eval (20 URLs, docx).** `@osint-wiki/sources/eval-url-multi-wiki-link-2026-10-14.md`. Tiers: **Extract 3 · Context 7 · Pass 7 · UNAVAILABLE 1. 0 Integrate.**
+  - **Docx licence claims wrong or incomplete on 5 of 17** (`richiemcilroy/Tov`, `MakazhanAlpamys/Soup`, `noonghunna/club-3090`, `jorgemanrubia/omacharts`, `SabhyaC26/crop-map`) — **fourth consecutive wave**.
+  - `noonghunna/club-3090` — docx says **AGPL-3.0**, `gh api` says **Apache-2.0**. **K290's Phase-0 found the same, and this docx repeats the wrong claim.** Do not carry a copyleft caution against it.
+  - Star counts unusable: `scientific-agent-skills` docx **32,991** vs actual **49,980**.
+  - **Never tier on the docx licence column. Run `gh api` first.**
+- **The GEO finding (seo).** Two independent studies. **Retrieval explains 32% of within-website citation variance; page properties explain 2.8%.** FAQ blocks, structured data, summary boxes, author boxes and page speed show **no within-site effect** — the across-site effect is confounded by site popularity. **Every page ChatGPT cites is one its own search retrieved.** Google Search + Responses API together recover **only ~25%** of cited URLs. → `@seo-wiki/concepts/retrieval-vs-citation-visibility-geo.md`. **This contradicts standing GEO advice; qualify any earlier wiki guidance before quoting it.**
+- **GROMM (osint).** Arbitrage-free European option market model in the stochastic-local-volatility family where **the option surface is the state variable, not an output of a price process**. **>95%** of S&P index option quotes inside bid/ask (Jan 2022 – Aug 2025); trained under P and Q; new BHW no-arbitrage tests. **Desk context only, no trade.**
+- **GS positioning (osint).** **CTAs long $43.5bn, down from $125bn a month ago** and $67bn last week. Fundamental L/S gross **+3.3 pts** while net **−0.2 pts**. Info Tech flipped from four weeks of most-net-bought to **most net sold**. **Positioning context, not a signal.**
+- **EmbodiedEvo (osint).** Skills and Lessons from a single scene reach **comparable task performance at 53% lower execution cost** than raw interaction history. A stronger model's lessons lifted weaker executors **+8.86 / +5.50 pts**. → **cost result, not capability.**
+- **AutoAgent0 (osint).** Propose → deterministic verify → recover, wrapped around an existing expert. **Same shape as the tool-call gate, applied to trajectories.** No install.
+- **ChunkAct (ccc).** Compile the routine into a chunk instead of re-reasoning each primitive: **2.9× fewer LLM calls, 4.4× fewer input tokens, 2.3× fewer output tokens**, +5.0 pts on LIBERO-Pro. → **directly applicable to repeated agent workflows here.**
+- **Davinci-Tool (ccc).** 30B tool-use model; τ2-bench 52.4 → **88.2**, MCP-Atlas 16.9 → **56.2**, beating a 480B model at **1/16 the parameters**. Lesson: **scale environment coverage and verification together** — a verifier that does not know the environment's success criteria certifies the wrong outcome.
+- **ATTCK-R (cybersec, the compliance item).** One prompt-based safety protection cuts multi-turn ASR **0.896 → 0.608 (32.1% relative)**. → **Never cite a jailbreak ASR without naming the protection layer; unprotected evaluations overestimate real-world vulnerability.** No PoC.
+- **SpecCloak (cybersec).** Removing risk keywords only partially reduces refusal; **restating the request as an engineering specification lowers refusal even with keywords kept**. 28.91% execution-verified ASR. → **keyword filtering measures phrasing, not intent.** No PoC.
+- **CT0 (cybersec).** ~4B specialist on two-phase on-policy distillation; **80 files/sec** IoC screening; catches its own refusals at **96.5% in 47 ms** where self-judging reaches 76.5% in 254 ms. Reusable idea: the **confidence gate**. Reference only.
+- **Skipped as out of scope:** PC7 soft robot (3d-printing), macroscopic fluctuation theory + lattice field theory (image-gen), back-translation MT (cybersec), Fleming–Viot (osint), three robotics VLA papers (image-gen). **Raws archived; no pages. Do not re-open without a reason.**
+- **Fetch note:** Exa MCP is **not exposed** in this session and Cloudflare refused WebFetch and curl on the gambling feeds. Five bodies came from a headless browser; 16 items are headline-level. **Budget a browser for that domain.**
+- **Verify:** `bash scripts/adopt-waves/adopt_k291_phase1.sh`. **0 Integrate GO. No install. No scrape. No ticket submit. No xsp/pm scp. No `/route` swap. No harness auto-arm.**
+
 ## OSINT K290 — 2026-10-13
 Dual-ID: **OSINT K290**. FILE and HITL only. **Phase-0 ran 2026-10-13** — `gh api` verified all licences and 9 clones landed at `.local/adopts/k290/` (411 MB). **0 Integrate GO; the clones are REFERENCE only.**
 - **One eval docx (20 URLs) + 3 arXiv + 5 feeds.** One inbox file was a **byte-identical duplicate** (`2609.20804`, ingested 2026-09-18) — **not re-ingested**.

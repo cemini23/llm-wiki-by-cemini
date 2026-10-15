@@ -13,6 +13,7 @@ related:
   - sources/arxiv-plaat-learning-to-play-rl-and-games-2610.17391-2026-10-14.md
   - sources/gs-positioning-2026-10-12-week-41.md
   - sources/k291-osint-feeds-2026-10-14.md
+  - sources/eval-url-multi-wiki-link-2026-10-14.md
 maturity: draft
 created: 2026-10-14
 updated: 2026-10-14
@@ -29,6 +30,7 @@ updated: 2026-10-14
 - @sources/arxiv-plaat-learning-to-play-rl-and-games-2610.17391-2026-10-14.md — book stub, no content
 - @sources/gs-positioning-2026-10-12-week-41.md — CTA long $43.5bn, down from $125bn a month ago
 - @sources/k291-osint-feeds-2026-10-14.md — Substack and newsletter batch
+- @sources/eval-url-multi-wiki-link-2026-10-14.md — 20-URL tool eval; docx licence wrong or incomplete on 5 of 17
 
 ## Raw Concept
 

@@ -4,6 +4,7 @@ type: concept
 tags: [methodology, tool-evaluation, architecture, licensing, cemini-stack]
 keywords: [tool evaluation, three-surface, Cemini prod, Wiki server, Workflow, license audit, RAM footprint, integration vector]
 related:
+  - sources/eval-url-multi-wiki-link-2026-10-14.md
   - sources/project-link-evaluation-brief.md
   - sources/evaluating-links-trading-wiki-stacks.md
   - sources/project-link-evaluation-brief-5_10.md

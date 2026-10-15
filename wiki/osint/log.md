@@ -1,3 +1,14 @@
+## [2026-10-15] phase0 | K291 tool eval — docx licence wrong on 5 of 17
+
+- **Ran `bash scripts/adopt-waves/adopt_k291_phase0.sh`** in the Terminal panel (the Bash sandbox denies `api.github.com`).
+- **The eval docx was missed in the first pass.** `Multi-Wiki Link Revenue Evaluation.docx` (Gemini DR v10.9, 20 URLs) arrived in the K291 inbox and was archived unreviewed. Recovered from egress-fi on 2026-10-15 and processed. → @sources/eval-url-multi-wiki-link-2026-10-14.md
+- **Tiers: Extract 3 · Context 7 · Pass 7 · UNAVAILABLE 1. 0 Integrate GO.** No clones, no install.
+- **Docx licence claims wrong or incomplete on 5 of 17** — `richiemcilroy/Tov` (NOT FOUND → **MIT**), `MakazhanAlpamys/Soup` (NOT FOUND → **Apache-2.0**), **`noonghunna/club-3090` (AGPL-3.0 → Apache-2.0)**, `jorgemanrubia/omacharts` (NOT FOUND → **MIT**), `SabhyaC26/crop-map` (NOT FOUND → **MIT**). **Fourth consecutive wave of this defect.**
+- **The club-3090 row has now repeated.** K290's docx said AGPL-3.0 and tiered it Extract on copyleft grounds; K290's Phase-0 found Apache-2.0. This docx repeats the AGPL claim. The repo is Apache-2.0.
+- **Star counts unusable** — `scientific-agent-skills` docx **32,991** vs actual **49,980**.
+- **Rule:** never tier on the docx licence column. `gh api` first.
+- **Boundary** — no clone, no install, no PoC, no xsp/pm scp.
+
 ## [2026-10-14] ingest | K291 — osint wave (8 arXiv + 2 desk notes + 11 feeds)
 
 - **Sources** — 10 source pages + @concepts/k291-osint-wave.md hub. Two GS desk notes folded into @sources/gs-positioning-2026-10-12-week-41.md; 11 Substack/newsletter items folded into @sources/k291-osint-feeds-2026-10-14.md.

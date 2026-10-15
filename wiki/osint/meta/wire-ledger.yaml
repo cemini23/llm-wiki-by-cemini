@@ -4,6 +4,8 @@ version: 1
 updated: 2026-10-09
 repos:
   osint: /Users/claudiobarone/Projects/OSINT WORKSPACE
+  # Archived 2026-10-14 in the federation merge; the merge carried each repo's wiki/
+  # tree only, so any wire pointing at a ccc non-wiki path is retired, not repointed.
   ccc: /Users/claudiobarone/Projects/Cemini claude code CCC
   home: /Users/claudiobarone
 wires:
@@ -15,6 +17,8 @@ wires:
     wiki_page: "@ccc-wiki/concepts/phase1-adopt-wire.md"
     since: 2026-09-02
     verify: "test -f .cursor/rules/cemini-invariants.mdc"
+    retired: 2026-10-14
+    retired_note: "Lived in the ccc repository, archived 2026-10-14 in the federation merge. The merge carried wiki/ only, so the rule did not come across. Recoverable from cemini23/cemini-claude-code-CCC."
   - id: federation-rules-global-only
     verb: WIRE
     kind: script
@@ -23,6 +27,8 @@ wires:
     wiki_page: "@osint-wiki/concepts/file-keep-wire-harness.md"
     since: 2026-09-02
     verify: "bash scripts/sync_federation_cursor_skills.sh"
+    retired: 2026-10-14
+    retired_note: "Lived in the ccc repository, archived 2026-10-14 in the federation merge. Recoverable from cemini23/cemini-claude-code-CCC."
   - id: chrome-devtools-mcp
     verb: WIRE
     kind: mcp

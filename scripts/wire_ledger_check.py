@@ -95,7 +95,14 @@ def check_ledger(data: dict, root: Path, *, check_coverage: bool = True) -> list
             continue
         repo_root = Path(repos[repo_key])
         path = row.get("path", "")
-        if path != "wiki-only" and not (repo_root / path).exists():
+        retired = row.get("retired")
+        if retired:
+            # The harness file lived in a repository that has since been archived, so it
+            # cannot be verified locally. Keep the row — the ledger records what was once
+            # wired — and say so, rather than deleting the history or failing forever.
+            if not ISO_DATE.match(str(retired)):
+                errs.append(f"wires[{i}]: retired must be an ISO date, got {retired!r}")
+        elif path != "wiki-only" and not (repo_root / path).exists():
             errs.append(f"wires[{i}]: missing path {repo_root / path}")
         wp = row.get("wiki_page", "")
         if not resolve_wiki_page(wp):
