@@ -4,6 +4,7 @@ type: concept
 tags: [concept, agent-skills, rl, k233, ccc]
 keywords: [skill-extraction, rl-via-natural-language, skill-compilation, small-lm, skilling]
 related:
+  - sources/arxiv-embodiedevo-self-improving-coding-agents-2610.18867-2026-10-14.md
   - sources/arxiv-2608.10538-skiller-2026-08-12.md
   - sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md
   - entities/tools/skiller.md

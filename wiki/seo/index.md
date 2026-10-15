@@ -21,6 +21,8 @@ If you're new to this wiki:
 
 ### Research papers
 
+- [chen-2026-what-drives-ai-citations](sources/chen-2026-what-drives-ai-citations.md) — K291: 158,099 answers / 468,037 citations; retrieval explains 32% vs 2.8% for page properties
+- [jiang-2026-chatgpt-citations-retrieval-to-citation](sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md) — K291: SSE traces, ChatGPT 5.2→5.5; proxies recover ~25% of cited URLs
 - [aggarwal-2024-geo-paper](sources/aggarwal-2024-geo-paper.md) — KDD '24 Aggarwal et al., GEO empirical study; 9 GEO methods measured (+41% Quotation, +33% Statistics, -8% Keyword Stuffing)
 - [vishwakarma-2026-competitive-geo-sigir](sources/vishwakarma-2026-competitive-geo-sigir.md) — SIGIR '26 competitive GEO: 252k trials, gatekeeper citation factors (price, recency, position)
 - [davidson-2026-factual-gv-gap](sources/davidson-2026-factual-gv-gap.md) — factual generation-verification gap; multi-verse state after updates
@@ -247,6 +249,7 @@ If you're new to this wiki:
 - [generative-engine-optimization](concepts/generative-engine-optimization.md) — GEO/AEO: getting cited in ChatGPT/Claude/Perplexity/Google AI Overviews
 - [adaptive-rag-internal-linking-geo](concepts/adaptive-rag-internal-linking-geo.md) — K100: adaptive RAG routing + WebKnoGraph internal-link pre-deploy evaluation
 - [citation-verification-aeo](concepts/citation-verification-aeo.md) — claim–source verification loop; Med-V1 hallucination evidence
+- [retrieval-vs-citation-visibility-geo](concepts/retrieval-vs-citation-visibility-geo.md) — retrieval visibility vs citation visibility; why the standard GEO checklist underperforms
 - [competitive-geo-citation-factors](concepts/competitive-geo-citation-factors.md) — SIGIR '26 gatekeeper/differentiator checklist for winning first AI citation
 - [geo-visibility-measurement](concepts/geo-visibility-measurement.md) — repeated sampling + bootstrap CI for AI citation share/prevalence (Sielinski 2026)
 - [per-entity-bias-mapping-geo](concepts/per-entity-bias-mapping-geo.md) — PEBM verified-mention audits; Brand Hallucination Paradox (Varga 2026)

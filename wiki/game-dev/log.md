@@ -1,3 +1,11 @@
+## [2026-10-14] ingest | K291 — game-dev wave (3 papers, none in domain)
+
+- **Hub** — @concepts/k291-game-dev-wave.md. **Honest characterisation: none of these is game-development research.** They are agent, game-theory, and benchmark papers that arrived in this domain's inbox. Recorded for completeness, not routed as tooling or engine findings.
+- **Receiver Decides** — @sources/arxiv-receiver-decides-agent-negotiations-2610.18424-2026-10-14.md. 1,049 negotiations: **the holder explains 47% of transferred-amount variance, the asker 2%**. Turn-1 refusal rate ranks holders by losses (ρ = −0.73). Evaluation lesson: test resource-holding agents **in the holder role**.
+- **Choosing LLMs for Strategic Agent Interactions** — @sources/arxiv-choosing-llms-strategic-agent-interactions-2610.18354-2026-10-14.md. Strategic competence is **game- and opponent-specific**; embedding and self-reflection selectors fail; a stationary bandit beats them.
+- **Game2Real-Bench** — @sources/arxiv-game2real-bench-toy-games-transfer-2610.18834-2026-10-14.md. Toy games correlate with real-world visual reasoning at **0.935**, but transfer is capability-dependent — constraint reasoning improves, fine-grained perception declines.
+- **Boundary** — no install, no wire.
+
 # Game Dev Wiki — Operations Log
 
 Append-only chronological log.

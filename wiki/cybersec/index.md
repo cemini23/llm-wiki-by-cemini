@@ -1027,3 +1027,13 @@ When this wiki references a sibling wiki's page, the citation uses `@<alias>/pat
 - `3d-printing-wiki` — FDM/FFF, Bambu, slicers, print farms
 
 Bidirectional invariant: if this wiki cites `@osint-wiki/...`, the matching page in the OSINT wiki should cite `@cybersecurity-wiki/...` back. Run `python3 scripts/wiki_lint.py` to check.
+
+## K291 ingest (2026-10-14)
+
+Red-team and evaluation findings, plus one specialist-model result.
+
+- [k291-cybersec-wave](concepts/k291-cybersec-wave.md) — wave hub
+- [attck-r](sources/arxiv-attck-r-long-horizon-jailbreaking-2610.16305-2026-10-14.md) — prompt-based protection cuts ASR 0.896 → 0.608
+- [ct0](sources/arxiv-ct0-cybersecurity-transformer-2610.16550-2026-10-14.md) — 4B specialist; 80 files/sec IoC; confidence-gated generation
+- [speccloak](sources/arxiv-speccloak-harmful-code-specifications-2610.17907-2026-10-14.md) — specification framing lowers refusal; 28.91% verified ASR
+- [sp2ec](sources/arxiv-sp2ec-self-speculative-decoding-vlm-2610.18735-2026-10-14.md) — VLM decoding speed; no security content

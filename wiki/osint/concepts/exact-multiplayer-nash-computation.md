@@ -4,6 +4,7 @@ type: concept
 tags: [concept, game-theory, poker, nash, optimization, k143]
 keywords: [multiplayer imperfect-information games, nonlinear complementarity, sequence form, quadratic programming, Kuhn poker, variable bound tightening]
 related:
+  - sources/arxiv-diffnash-diffusion-equilibrium-2610.15932-2026-10-14.md
   - sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md
   - sources/arxiv-variable-bound-tightening-nash-2606.25997-2026-07-04.md
   - concepts/projected-exploitability-descent.md

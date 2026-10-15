@@ -4,6 +4,7 @@ type: concept
 tags: [concept, skills, ccc, k240]
 keywords: [procedural-anchoring, SKILL.md, retrieval-precision, library-cap, misevolution]
 related:
+  - sources/arxiv-embodiedevo-self-improving-coding-agents-2610.18867-2026-10-14.md
   - sources/arxiv-2608.14036-demystifying-agent-skills-2026-08-17.md
   - concepts/skill-misevolution.md
   - sources/arxiv-2608.12851-skill-misevolution-2026-08-14.md

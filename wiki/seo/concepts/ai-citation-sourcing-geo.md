@@ -4,6 +4,9 @@ type: concept
 tags: [geo-aeo, citation, earned-media, playbook, k130]
 keywords: [citation sourcing, owned vs third-party, Wikipedia, earned media, source audit]
 related:
+  - concepts/retrieval-vs-citation-visibility-geo.md
+  - sources/chen-2026-what-drives-ai-citations.md
+  - sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md
   - sources/arxiv-zatuchin-2026-llm-brand-reputation-sourcing-2606.25787-2026-06-26.md
   - sources/arxiv-zatuchin-2026-language-blind-spot-multilingual-geo-2606.23165-2026-06-24.md
   - concepts/multilingual-geo-audit.md
@@ -38,6 +41,9 @@ updated: 2026-10-01
 
 ## Relations
 
+- @concepts/retrieval-vs-citation-visibility-geo.md — retrieval reach gates whether earned media is ever seen; brand recall is a separate channel
+- @sources/chen-2026-what-drives-ai-citations.md — brand names reorder rankings of products with identical facts; a channel independent of any page
+- @sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md — entity-level presence predicts better than exact-URL presence
 - @concepts/geo-visibility-vector-protocol.md — K140 Martinez GEO survey
 - @sources/arxiv-martinez-2026-critical-survey-geo-2607.14035-2026-07-16.md — K140 Martinez GEO survey
 - @sources/arxiv-geng-2026-deepsearch-world-self-distillation-2607.07820-2026-07-15.md — K139 DeepSearch / process-verified GEO

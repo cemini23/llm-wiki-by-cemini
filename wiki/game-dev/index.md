@@ -334,3 +334,12 @@ Catalog of all wiki pages. Updated on each ingest.
 | [arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12](sources/arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12.md) | read |
 | [arxiv-2610.13022-reqclarifybench-clarification-2026-10-12](sources/arxiv-2610.13022-reqclarifybench-clarification-2026-10-12.md) | read |
 | [inbox-arxiv-reject-batch-2026-10-12](sources/inbox-arxiv-reject-batch-2026-10-12.md) | read |
+
+## K291 ingest (2026-10-14)
+
+**None of these is game-development research.** They are agent, game-theory, and benchmark papers filed in this domain's inbox. Recorded for completeness.
+
+- [k291-game-dev-wave](concepts/k291-game-dev-wave.md) — wave hub
+- [receiver-decides](sources/arxiv-receiver-decides-agent-negotiations-2610.18424-2026-10-14.md) — the holder explains 47% of outcome variance, the asker 2%
+- [choosing-llms](sources/arxiv-choosing-llms-strategic-agent-interactions-2610.18354-2026-10-14.md) — strategic model choice is game-specific
+- [game2real-bench](sources/arxiv-game2real-bench-toy-games-transfer-2610.18834-2026-10-14.md) — games and real-world visual reasoning correlate 0.935

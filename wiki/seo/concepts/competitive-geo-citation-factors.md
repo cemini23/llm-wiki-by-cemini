@@ -4,6 +4,9 @@ type: concept
 tags: [geo-aeo, citation, content-quality, answer-engines]
 keywords: [competitive GEO, gatekeeper factors, price transparency, recency, list position, SIGIR 2026]
 related:
+  - concepts/retrieval-vs-citation-visibility-geo.md
+  - sources/chen-2026-what-drives-ai-citations.md
+  - sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md
   - concepts/generative-engine-optimization.md
   - sources/vishwakarma-2026-competitive-geo-sigir.md
   - sources/aggarwal-2024-geo-paper.md
@@ -44,6 +47,9 @@ updated: 2026-10-01
 
 ## Relations
 
+- @concepts/retrieval-vs-citation-visibility-geo.md — these gatekeepers only operate inside the retrieved set; retrieval explains 32% against 2.8%
+- @sources/chen-2026-what-drives-ai-citations.md — within-website design; the gatekeepers that matter are reached only after retrieval
+- @sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md — retrieval frequency predicts citation across ChatGPT settings
 - @concepts/geo-visibility-vector-protocol.md — K140 Martinez GEO survey
 - @sources/arxiv-martinez-2026-critical-survey-geo-2607.14035-2026-07-16.md — K140 Martinez GEO survey
 - @sources/arxiv-bagga-2026-e-geo-ecommerce-testbed-2511.20867-2026-07-18.md — K142 anti-manipulation / factual rewrite boundary

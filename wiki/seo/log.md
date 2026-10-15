@@ -1,3 +1,13 @@
+## [2026-10-14] ingest | K291 — GEO citation attribution (2 papers)
+
+- **Sources** — @sources/chen-2026-what-drives-ai-citations.md (158,099 answers / 468,037 citations; within-website design + API replay), @sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md (SSE traces across ChatGPT 5.2→5.5).
+- **New concept** — @concepts/retrieval-vs-citation-visibility-geo.md. Retrieval explains **32%** of within-website citation variance; page properties explain **2.8%**. Every page ChatGPT cites is one its own search retrieved.
+- **Contradiction filed against standing GEO advice** — FAQ blocks, structured data, summary boxes, author boxes and page speed show **no within-site effect**. Their apparent effect across sites is confounded by site popularity. This wiki's earlier GEO guidance should be read with that correction.
+- **Proxy weakness** — Google Search and the OpenAI Responses API together recover only about **a quarter** of ChatGPT-cited URLs. Agreement is far better at hostname and entity level than at URL level.
+- **Bumps** — @concepts/competitive-geo-citation-factors.md, @concepts/ai-citation-sourcing-geo.md, @concepts/geo-visibility-measurement.md (reciprocal links).
+- **Index** — `index.md` research-papers and tier-1 hubs rows added.
+- **Raw archived** — egress-fi `seo/`.
+
 ## [2026-10-13] publish | SWMR Outlier letter live + owned hub /swarmer/
 
 - **Letter LIVE** — [How a $205 Million Drone Stock Makes Its Revenue](https://outlierweekly.substack.com/p/how-a-205-million-drone-stock-makes) (12 Oct 2026). Outlier only; X deferred. Slug is title-derived (`how-a-205-million-drone-stock-makes`), not the brief's `swarmer-swmr-drone-revenue-outlier`.

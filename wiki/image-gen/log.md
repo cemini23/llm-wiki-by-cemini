@@ -1,3 +1,14 @@
+## [2026-10-14] ingest | K291 — image-gen wave (5 papers in scope)
+
+- **Hub** — @concepts/k291-image-gen-wave.md.
+- **InstantFusion** — @sources/arxiv-instantfusion-shared-latent-interface-2610.13944-2026-10-14.md. Independently trained generators share latent spatial organisation; a shared latent interface lets denoising **transition across frozen generators** with no per-model-pair mapping.
+- **GAD** — @sources/arxiv-gad-geometry-attention-distillation-2610.18779-2026-10-14.md. Video attention cannot find cross-frame correspondences; distilling a frozen geometry model's attention gives **≥ +30%** matching accuracy on Wan2.2 5B with no inference modules added.
+- **Physics-aware deepfake detection** — @sources/arxiv-physics-aware-deepfake-detection-2610.18485-2026-10-14.md. Speech energy tracks speaker-to-camera distance; generation breaks the coupling. Complements lip-sync detectors.
+- **Finite-sample conditional diffusion** — @sources/arxiv-finite-sample-conditional-diffusion-2610.13851-2026-10-14.md. Statistical and discretisation error bounded **together**; KL $	ilde O_p(n^{-2β/(d_x+d_y+2β)})$.
+- **One-shot TTS personalization** — @sources/arxiv-on-policy-one-shot-tts-personalization-2610.17838-2026-10-14.md. Fixed off-policy targets are the cause of blank outputs; gains come from **on-policy supervision, not target diversity**.
+- **Skipped as out of scope** — WAVE-0 (`2610.18568`), GreenWAM (`2610.18774`), GTP (`2610.18677`). Robotics VLA and world models, filed here but not generative-media work.
+- **Boundary** — no install, no wire, no image or print local wire.
+
 ## [2026-10-12] ingest | SFG · KVeil · Emo-BPO · E3-System (+ 6 SKIP) + incoming K288 gesture brief
 
 Full inbox ingest of **10 NEW** arXiv PDFs (2026-10-10 → 10-12 sweeps). **1 WATCH-full**, **3 WATCH-thin**, **6 SKIP**. Also closed **one incoming cross-wiki brief** from OSINT (K288, co-speech gesture benchmark) and consolidated a recurring theme into a new concept page.

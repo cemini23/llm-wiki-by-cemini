@@ -4,6 +4,7 @@ type: concept
 tags: [concept, agents, tool-use, verification, k233]
 keywords: [tool-use-verification, mcts, reflective-principles, evidence-check, agent-reasoning]
 related:
+  - sources/arxiv-autoagent0-agentic-runtime-closed-loop-2610.18866-2026-10-14.md
   - sources/arxiv-2608.10827-mira-2026-08-12.md
   - sources/arxiv-2610.06829-clift-web-agent-verification-2026-10-06.md
   - sources/arxiv-2610.06650-wikidata-search-traces-2026-10-06.md

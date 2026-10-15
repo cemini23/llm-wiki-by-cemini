@@ -1,3 +1,16 @@
+## [2026-10-14] ingest | K291 — osint wave (8 arXiv + 2 desk notes + 11 feeds)
+
+- **Sources** — 10 source pages + @concepts/k291-osint-wave.md hub. Two GS desk notes folded into @sources/gs-positioning-2026-10-12-week-41.md; 11 Substack/newsletter items folded into @sources/k291-osint-feeds-2026-10-14.md.
+- **Headline desk item** — @sources/arxiv-gromm-risk-neutral-option-market-2610.16732-2026-10-14.md. Arbitrage-free European option market model in the stochastic-local-volatility family, where the **option surface is the state variable, not an output of a price process**. Fits **>95%** of S&P index option quotes inside bid/ask (Jan 2022 – Aug 2025), trained under both P and Q, with new BHW no-arbitrage tests.
+- **Agent-harness item** — @sources/arxiv-embodiedevo-self-improving-coding-agents-2610.18867-2026-10-14.md. Skills and Lessons distilled from one scene match raw interaction history at **53% lower execution cost**; a stronger model's lessons lifted weaker executors by +8.86 and +5.50 points.
+- **Architecture match** — @sources/arxiv-autoagent0-agentic-runtime-closed-loop-2610.18866-2026-10-14.md. Propose → deterministic verify → recover, wrapped around an existing expert. Same shape as the tool-call gate, applied to trajectories.
+- **Technique** — @sources/arxiv-diffnash-diffusion-equilibrium-2610.15932-2026-10-14.md. Diffusion policies trained without samplable targets; Nash gap −35.6% (forest protection) and −24.7% (Colonel Blotto).
+- **Positioning** — @sources/gs-positioning-2026-10-12-week-41.md. **CTAs long $43.5bn, down from $125bn a month ago** and $67bn last week. Fundamental L/S gross up 3.3 pts but net down — the desk's "no offense being played" pattern. Info Tech flipped from four weeks of buying to the most net-sold sector.
+- **Feeds** — @sources/k291-osint-feeds-2026-10-14.md. Crypto derivatives $3.84tn (+9.4% MoM) with the **futures/spot ratio falling 19.8% to 5.51×**; CFTC staff told to retract an oil-trade insider referral; OpenAI's Joseph Kim on the "threshold of usefulness" and agency controls as product design.
+- **Backlinks** — @concepts/fomc-iv-surface-dynamics.md, @concepts/exact-multiplayer-nash-computation.md, @concepts/agent-skill-rl-extraction.md, @concepts/agent-skills-procedural-anchoring.md, @concepts/agent-harness-verification-bottleneck.md, @concepts/agent-tool-use-verification.md.
+- **Skipped** — `2610.18802` (Brownian Fleming–Viot) — pure probability theory, no Cemini application. Not filed.
+- **Boundary** — no install, no trade, no scrape, no xsp/pm scp, no `/route` swap.
+
 ## [2026-10-13] cleanup | inbox duplicate deleted
 
 - **Deleted `research to be indexed/2609.20804v1.pdf`** on operator instruction. **sha256 `a39a9e03aaaa877b294a4b702ff07ae09110dcb1a2b0c0196a72ea46e0ec390e` re-confirmed byte-identical** to the raw already ingested on 2026-09-18, and already at `cemini-egress-fi` under a different filename. Nothing was lost. **Inbox is now empty.**

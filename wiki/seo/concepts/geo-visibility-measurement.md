@@ -4,6 +4,9 @@ type: concept
 tags: [geo-aeo, measurement, statistics, playbook]
 keywords: [citation share, citation prevalence, bootstrap CI, AI visibility measurement, repeated sampling, SearchGPT, Perplexity, Gemini]
 related:
+  - concepts/retrieval-vs-citation-visibility-geo.md
+  - sources/chen-2026-what-drives-ai-citations.md
+  - sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md
   - sources/arxiv-2609-28372-agentic-surrogate-shopper-2026-09-24.md
   - concepts/generative-engine-optimization.md
   - sources/arxiv-sielinski-2026-ai-visibility-uncertainty-2603.08924-2026-06-10.md
@@ -79,6 +82,9 @@ updated: 2026-10-07
 
 ## Relations
 
+- @concepts/retrieval-vs-citation-visibility-geo.md — measure retrieval and citation as two separate numbers
+- @sources/chen-2026-what-drives-ai-citations.md — 2.8% vs 32% variance split; citation counts are highly repeatable
+- @sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md — proxy agreement is far better at hostname and entity level than URL level
 - @concepts/conversational-capture-geo.md — K284 operator playbook for trajectory measurement
 - @sources/arxiv-yu-2026-conversational-capture-geo-2609.40069-2026-10-01.md — K284 trajectory gain, feedback term, misranking diagnostic
 - @sources/arxiv-lee-2026-filter-bubble-generative-search-2609.38946-2026-10-01.md — K284 randomized field experiment; consumption as an outcome

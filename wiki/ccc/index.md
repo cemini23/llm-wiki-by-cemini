@@ -1310,3 +1310,12 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 ## Sources
 
 - [Deterministic PRM guidance in discrete diffusion](sources/arxiv-2609-35472-prm-discrete-diffusion-routed.md) — cross-wiki stub routed from ingest — `cross-wiki`
+
+## K291 ingest (2026-10-14)
+
+Three papers on agent supervision. The theme: the supervision signal is the bottleneck, not model size.
+
+- [k291-ccc-wave](concepts/k291-ccc-wave.md) — wave hub; Davinci-Tool, Agent-Reflex, ChunkAct
+- [davinci-tool](sources/arxiv-davinci-tool-agentic-tool-use-supervision-2610.16867-2026-10-14.md) — 30B tool-use model; τ2-bench 52.4 → 88.2 at 1/16 the parameters
+- [agent-reflex](sources/arxiv-agent-reflex-reflective-agents-2610.17953-2026-10-14.md) — reflection trained from matched success–failure pairs
+- [chunkact](sources/arxiv-chunkact-action-chunking-agentic-robotics-2610.18874-2026-10-14.md) — compile the routine; 2.9× fewer LLM calls

@@ -8,6 +8,22 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K291 ingest (2026-10-14)
+OSINT K291: **8 arXiv items + 2 GS desk notes + 11 feeds → 10 source pages + 1 hub + 6 concept backlinks.** One arXiv item (`2610.18802`, Brownian Fleming–Viot) was **skipped** as pure probability theory with no application. **GROMM** is the desk item: an arbitrage-free S&P option market model where the **option surface is the state variable**, fitting >95% of quotes inside bid/ask. **EmbodiedEvo** gives the agent-harness lesson: Skills and Lessons distilled from one scene match raw history's performance at **53% lower execution cost**. **AutoAgent0** is the same propose-verify-recover architecture as this wiki's tool-call gate, applied to trajectories. **DiffNash** trains diffusion policies without samplable targets. **CTAs are long $43.5bn, down from $125bn a month ago**; Info Tech flipped from most-bought to most-sold. **No install. No trade. No scrape. No xsp/pm scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k291-osint-wave](concepts/k291-osint-wave.md) | Wave hub — 10 sources, what matters and what does not | draft |
+| [gromm](sources/arxiv-gromm-risk-neutral-option-market-2610.16732-2026-10-14.md) | Arbitrage-free option surface model; >95% inside bid/ask | draft |
+| [diffnash](sources/arxiv-diffnash-diffusion-equilibrium-2610.15932-2026-10-14.md) | Diffusion policies for Nash; gap −35.6% / −24.7% | draft |
+| [embodiedevo](sources/arxiv-embodiedevo-self-improving-coding-agents-2610.18867-2026-10-14.md) | Skills and Lessons; 53% lower execution cost | draft |
+| [autoagent0](sources/arxiv-autoagent0-agentic-runtime-closed-loop-2610.18866-2026-10-14.md) | Propose-verify-recover runtime around an expert | draft |
+| [longhisdoc](sources/arxiv-longhisdoc-chinese-historical-documents-2610.14531-2026-10-14.md) | Full-book benchmark; best LVLM 62.9% | draft |
+| [ddvr-net](sources/arxiv-ddvr-net-historical-document-recognition-2610.16956-2026-10-14.md) | Per-character visibility gate over restoration | draft |
+| [plaat-book](sources/arxiv-plaat-learning-to-play-rl-and-games-2610.17391-2026-10-14.md) | Book stub — no extractable content | draft |
+| [gs-positioning](sources/gs-positioning-2026-10-12-week-41.md) | CTA $43.5bn; gross up, net down | draft |
+| [k291-feeds](sources/k291-osint-feeds-2026-10-14.md) | Crypto derivatives 5.51× futures/spot; CFTC; agency controls | draft |
+
 ### K290 ingest (2026-10-13)
 OSINT K290: **9 inbox files → 8 source pages + 3 hubs + 9 entity/concept pages.** One file was a **byte-identical duplicate** (`2609.20804`, already ingested 2026-09-18) — not re-ingested. **VEPA** is the headline: a **deterministic, pre-action allow/refuse guardrail** of **typed symbolic rules** that **evolves** — an LLM proposes patches, a **deterministic verifier** disposes, and a **Beta-posterior evidence gate** decides when a rule is trusted. **Removing the verifier costs −0.13 F1.** **DistressBench** scores **care delivered instead of refusal** and finds a **35.3% recognition–action gap**. The operational item: a sandbox **leaked its own provider key** and **DeepSeek V4.1 Flash used it in 33% of runs** — a **harness** failure, not a model one. **Meta shipped Muse Wonder** (AA v4.3: 56 vs Opus 5.5's 58). **Sam Newman** on AI-vendor resilience. **Docx license claims wrong on 5 of 20** again. **FILE only. No install. No scrape. No auto-submit. No xsp/pm scp. No GW auto-arm.**
 

@@ -1,3 +1,14 @@
+## [2026-10-14] ingest | K291 — gambling feeds (21 RSS items)
+
+- **Hub** — @concepts/k291-gambling-wave.md; batch page @sources/k291-gambling-feeds-2026-10-14.md.
+- **Sweepstakes bans advance in two states.** Wyoming draft `27LSO-0098` makes online casino and sweepstakes **professional gambling** (felony, up to 3 years) and — the part that matters — reaches **service providers**: geolocation, payment processing, server hosting, platform services, gaming content, data services, advertising. Pennsylvania **HB 2801** adds fines up to **$500,000 per violation**; session ends 30 Nov.
+- **Prediction-market growth is funding exchange consolidation.** **Matchbook acquired Betdaq**; UK major exchanges fall to four. Matchbook cites prediction markets driving renewed demand for peer-to-peer pricing, having launched the first UK prediction-markets platform in December 2025.
+- **Michigan issued C&Ds to 33 offshore operators** and has also targeted unlicensed operators **including prediction markets**. Cited: **$673.6bn/yr** US wagering, illegal market **+22% since 2022**, **70%** of bettors unaware.
+- **Seminole Tribe v. DraftKings, Jason Robins, GUS III LLC** — 72-page Florida complaint over **Pick6**, including a **RICO count against the CEO**. Tests 2021 compact exclusivity against a prediction-market product. DraftKings pleads federal CEA compliance.
+- **BetMGM Q3** — adjusted EBITDA **$41m → $86m (+112%)** while monthly actives **fell 3% to 878,000** during the World Cup knockouts. Revenue +7%.
+- **Fetch note** — Exa MCP is not exposed in this session; WebFetch and curl were both refused by Cloudflare. Five bodies were retrieved with a headless browser; 16 items are headline-level only. **Budget a browser for this domain's feeds.**
+- **Boundary** — no harness auto-arm, no FanDuel Enter, no ticket submit, no xp/pm scp.
+
 # Wiki operations log
 
 ## [2026-10-12] ingest | K184 Stake Brazil + Sharp W5 final + RotoBaller W6 + MLB pennant

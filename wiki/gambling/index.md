@@ -518,3 +518,10 @@ Catalog of all wiki pages. Updated on each ingest.
 | [cross-wiki-routing](meta/cross-wiki-routing.md) | Ingest routing vs osint-wiki |
 | [gambling-bot-ingest-rubric](meta/gambling-bot-ingest-rubric.md) | Bot-related source ingest |
 | [daily-research-digest-cadence](meta/daily-research-digest-cadence.md) | K93 federated morning digest |
+
+## K291 ingest (2026-10-14)
+
+21 RSS items, largely regulatory. Two carry durable findings.
+
+- [k291-gambling-wave](concepts/k291-gambling-wave.md) — wave hub
+- [k291-gambling-feeds](sources/k291-gambling-feeds-2026-10-14.md) — Michigan C&D ×33; Matchbook/Betdaq; PA + WY sweepstakes bans; Seminole v. DraftKings; BetMGM

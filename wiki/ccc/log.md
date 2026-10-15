@@ -1,3 +1,11 @@
+## [2026-10-14] ingest | K291 — ccc wave (3 arXiv papers)
+
+- **Hub** — @concepts/k291-ccc-wave.md. Theme: the supervision signal is the bottleneck, not model size.
+- **Davinci-Tool** — @sources/arxiv-davinci-tool-agentic-tool-use-supervision-2610.16867-2026-10-14.md. 30B tool-use model on 30,395 execution-verified trajectories across 2,260 tool names. τ2-bench 52.4 → 88.2, BFCL v4 multi-turn 30.4 → 62.8, MCP-Atlas 16.9 → 56.2 — beating a 480B model at **1/16 the parameters**. Lesson: **scale environment coverage and verification together**; a verifier that does not know the environment's success criteria certifies the wrong outcome.
+- **Agent-Reflex** — @sources/arxiv-agent-reflex-reflective-agents-2610.17953-2026-10-14.md. Reflection learned from **matched success–failure pairs** (RSD → ReSFT → ORPO). 58.6 across five long-horizon tool-use benchmarks on Qwen3-8B; 29.1 on AgentNoiseBench.
+- **ChunkAct** — @sources/arxiv-chunkact-action-chunking-agentic-robotics-2610.18874-2026-10-14.md. **Compile memory into chunks** instead of re-reasoning each primitive. +5.0 pts on LIBERO-Pro with **2.9× fewer LLM calls, 4.4× fewer input tokens, 2.3× fewer output tokens**.
+- **Boundary** — no install, no wire, no `/route` swap.
+
 ## [2026-10-12] ingest | K445–K448 wave (Oct 12 sweep) + K286/K288 inbound
 
 - **Sources:** 2610.13623 APEX-Harm (shared-workspace injection), 2610.13651 ToFu (orchestrator–tool trust boundary), 2610.13862 BT-Agent (behavior trees + multi-fidelity eval), 2610.13886 X-AgentRed (cross-service compositional harm).

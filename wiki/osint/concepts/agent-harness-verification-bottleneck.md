@@ -4,6 +4,7 @@ type: concept
 tags: [concept, harness, verification, route, k234]
 keywords: [harness, verification, evals, code-review, cattle, charity-majors, route]
 related:
+  - sources/arxiv-autoagent0-agentic-runtime-closed-loop-2610.18866-2026-10-14.md
   - sources/newsletter-pragmatic-engineer-charity-majors-ai-2026-08-12.md
   - concepts/agent-toolkit-routing-research-backlog.md
   - concepts/agentic-legacy-code-modernization.md

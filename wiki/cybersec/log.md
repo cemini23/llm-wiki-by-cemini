@@ -1,3 +1,12 @@
+## [2026-10-14] ingest | K291 — cybersecurity wave (4 arXiv papers)
+
+- **Hub** — @concepts/k291-cybersec-wave.md.
+- **ATTCK-R is the transferable finding** — @sources/arxiv-attck-r-long-horizon-jailbreaking-2610.16305-2026-10-14.md. Adding **one prompt-based safety protection** drops a strong multi-turn baseline's ASR from **0.896 to 0.608 (32.1% relative)**. **Unprotected evaluations substantially overestimate real-world vulnerability.** Never cite a jailbreak ASR without naming the protection layer.
+- **CT0** — @sources/arxiv-ct0-cybersecurity-transformer-2610.16550-2026-10-14.md. ~4B specialist, two-phase on-policy distillation. cybench-subtask 21.1% vs 7.6% base; **80 files/sec** IoC screening; catches its own refusals at **96.5% in 47 ms** where a self-judging model reaches 76.5% in 254 ms. Reusable idea: the **confidence gate**.
+- **SpecCloak** — @sources/arxiv-speccloak-harmful-code-specifications-2610.17907-2026-10-14.md. Removing risk keywords only partially reduces refusal, but **restating the request as an engineering specification lowers refusal even with keywords retained**. 28.91% execution-verified ASR; SpecReveal defence at 96.88% detection.
+- **SP2EC** — @sources/arxiv-sp2ec-self-speculative-decoding-vlm-2610.18735-2026-10-14.md. VLM self-speculative decoding, up to 11% faster. Filed for completeness; **no security content** — misfiled in this inbox.
+- **Boundary** — no install, no PoC, no live Discord, no MCP wire.
+
 ## [2026-10-12] ingest | K418-K424 batch (7 PDFs) + K288 NOMOS inbound brief
 
 Full ingest of the 7 NEW inbox arXiv PDFs, plus pages for the K288 NOMOS inbound brief. **No clone. No attack payloads in wiki.**

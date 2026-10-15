@@ -1179,3 +1179,14 @@ Practical, printable guides for getting started — tracked in git (unlike `brie
 ### Meta (wiki operations)
 
 - [Daily research digest cadence (image-gen)](meta/daily-research-digest-cadence.md) — 08:15 LaunchAgent, `wiki/sweeps/YYYY-MM-DD-daily.md`, pairs with gap-detect weekly — `meta, automation, discovery, k93`
+
+## K291 ingest (2026-10-14)
+
+Five generative-media papers. Three robotics/world-model papers filed here were skipped as out of scope.
+
+- [k291-image-gen-wave](concepts/k291-image-gen-wave.md) — wave hub
+- [instantfusion](sources/arxiv-instantfusion-shared-latent-interface-2610.13944-2026-10-14.md) — one latent interface across frozen generators
+- [gad](sources/arxiv-gad-geometry-attention-distillation-2610.18779-2026-10-14.md) — cross-frame correspondence; +30% matching accuracy
+- [deepfake-physics](sources/arxiv-physics-aware-deepfake-detection-2610.18485-2026-10-14.md) — distance–speech consistency as a physical cue
+- [diffusion-bounds](sources/arxiv-finite-sample-conditional-diffusion-2610.13851-2026-10-14.md) — learning and discretisation error bounded together
+- [tts-on-policy](sources/arxiv-on-policy-one-shot-tts-personalization-2610.17838-2026-10-14.md) — on-policy supervision, not target diversity

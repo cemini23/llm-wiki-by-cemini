@@ -4,6 +4,7 @@ type: concept
 tags: [concept, options, vol-surface, fomc, xsp, k233]
 keywords: [fomc, implied-volatility, pre-announcement-effect, short-dated-otm, convlstm, high-vol-regime]
 related:
+  - sources/arxiv-gromm-risk-neutral-option-market-2610.16732-2026-10-14.md
   - sources/arxiv-2608.10693-fed-speaks-vol-surface-2026-08-12.md
   - concepts/xsp-lane-trading-framework.md
   - concepts/xsp-vol-regime-gates.md
