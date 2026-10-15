@@ -128,12 +128,15 @@ updated: 2026-04-23
 - Multiple: `[Sources: filename.pdf p.5, filename2.pdf p.12]`
 
 **Brief homes** — after the 2026-10-14 merge, one repository holds all eight domains, so there are
-no sibling repositories to copy into. Every domain keeps its briefs at `briefs/<domain>/` — all
-eight, osint included. The whole `briefs/` tree is gitignored, so briefs are local-only by design.
+no sibling repositories to copy into. The seven absorbed domains keep theirs at `briefs/<domain>/`.
+**Osint briefs stay flat in `briefs/`** — 351 files across the repo reference that path, including
+the adopt-wave scripts, so namespacing them would break a large body of working references for no
+gain. The whole `briefs/` tree is gitignored, so briefs are local-only by design.
 
-- `wiki_resolver.py` resolves a brief reference from either form. `@<alias>/briefs/x.md` and a
-  bare `@briefs/x.md` both mean `briefs/<domain>/x.md`; the cited domain is tried first, then a
-  unique match in a peer domain, because briefs are cross-filed in practice.
+- `wiki_resolver.py` resolves a brief reference from either form. `@<alias>/briefs/x.md` and a bare
+  `@briefs/x.md` both try `briefs/<domain>/x.md` first, then a flat `briefs/x.md`, then a unique
+  match in a peer domain — briefs are cross-filed in practice, so the cited domain is often not the
+  holding domain.
 - A brief that cites another domain must use the alias form: `[Source: @cybersec-wiki/concepts/...]`.
   A bare `wiki/...` path resolves against the domain that owns the brief, not the one you meant.
 - The 2026-10-03 audit found **152 dead references across 327 briefs** — every one pointed at a
