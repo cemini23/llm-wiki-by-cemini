@@ -128,10 +128,12 @@ updated: 2026-04-23
 - Multiple: `[Sources: filename.pdf p.5, filename2.pdf p.12]`
 
 **Brief homes** — after the 2026-10-14 merge, one repository holds all eight domains, so there are
-no sibling repositories to copy into. Each domain keeps its briefs at `briefs/<domain>/`
-(`cybersec`, `ccc`, `seo`, `image-gen`, `gambling`, `game-dev`, `3d-printing`); osint briefs stay
-flat in `briefs/`. The whole `briefs/` tree is gitignored, so briefs are local-only by design.
+no sibling repositories to copy into. Every domain keeps its briefs at `briefs/<domain>/` — all
+eight, osint included. The whole `briefs/` tree is gitignored, so briefs are local-only by design.
 
+- `wiki_resolver.py` resolves a brief reference from either form. `@<alias>/briefs/x.md` and a
+  bare `@briefs/x.md` both mean `briefs/<domain>/x.md`; the cited domain is tried first, then a
+  unique match in a peer domain, because briefs are cross-filed in practice.
 - A brief that cites another domain must use the alias form: `[Source: @cybersec-wiki/concepts/...]`.
   A bare `wiki/...` path resolves against the domain that owns the brief, not the one you meant.
 - The 2026-10-03 audit found **152 dead references across 327 briefs** — every one pointed at a
@@ -422,7 +424,7 @@ Every domain is now in-tree. The `Path` column is relative to this file, and `@<
 
 | Alias | Path | Visibility | Description |
 |-------|------|------------|-------------|
-| `osint-wiki` | `wiki/osint/` | **Private** | Financial research, quant finance, prediction markets, CeminiSuite, RL for trading |
+| `osint-wiki` | `wiki/osint/` | Public | Financial research, quant finance, prediction markets, CeminiSuite, RL for trading |
 | `image-gen-wiki` | `wiki/image-gen/` | Public | Uncensored image generation, model cataloging, ComfyUI, LoRA, persona/character ops |
 | `seo-wiki` | `wiki/seo/` | Public | Local SEO, GBP optimization, GEO/AEO, web design, social media, creator marketing |
 | `3d-printing-wiki` | `wiki/3d-printing/` | Public | FDM/FFF printing, Bambu, materials, slicers, print farms, store ops |
@@ -432,7 +434,7 @@ Every domain is now in-tree. The `Path` column is relative to this file, and `@<
 | `ccc-wiki` | `wiki/ccc/` | **Public** | Cursor + Claude Code meta-wiki — workflow, subagents, MCP/conductor, hooks, skills, slash commands, /goal · Ralph · OpenSpec. Shared territory: agent orchestration, conductor/librarian architecture, skill audits |
 | `federation-hub` | `../cemini-federation-hub/hub/` | **Private** | Operator control plane — morning federation summary, wiki path catalog, Obsidian triage (`@meta/federation-operator-hub-stub.md`) |
 
-**One repository serves all eight domains.** `llm-wiki-by-cemini` became **public on 2026-10-14**, the same day the domains merged into it — so `osint-wiki` content, previously private, is now published. The seven absorbed repositories are archived locally and on GitHub as the rollback. **Cemini Financial Suite** (`../CeminiSuite`) stays private and separate.
+**One repository serves all eight domains, and it is public.** `llm-wiki-by-cemini` became **public on 2026-10-14**, the same day the domains merged into it. Every domain is therefore published, `osint-wiki` included — the operator confirmed this on 2026-10-14 after an audit flagged the mismatch with the old Private label. **Treat every page in `wiki/` as world-readable.** The seven absorbed repositories stay on GitHub as the rollback; their local working copies were removed. **Cemini Financial Suite** (`../CeminiSuite`) stays private and separate.
 
 ### Cross-wiki link syntax
 

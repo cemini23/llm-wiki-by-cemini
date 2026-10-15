@@ -114,6 +114,7 @@ def parse_frontmatter(text):
 
 pages = {}                  # rel_path -> frontmatter dict
 all_paths = set()
+nav_files = 0               # index.md / log.md / dashboard.md, skipped by design
 
 for p in WIKI.rglob("*.md"):
     rel = str(p.relative_to(WIKI))
@@ -121,6 +122,7 @@ for p in WIKI.rglob("*.md"):
     # moment a page sits at wiki/osint/index.md, which would then be scanned as an
     # ordinary page and reported as an orphan with no frontmatter.
     if os.path.basename(rel) in ("index.md", "log.md", "dashboard.md"):
+        nav_files += 1
         continue
     text = p.read_text(errors="replace")
     fm = parse_frontmatter(text)
@@ -188,18 +190,32 @@ orphans = sorted(
     and not _is_nav_exempt(p)
 )
 
-# bidirectional gaps: src→tgt without tgt→src
+# bidirectional gaps: src→tgt without tgt→src.
 # Hub pages (frontmatter `hub: true`) are exempt: many spokes legitimately
 # tag the hub without the hub having to enumerate every spoke (would explode
 # to 100+ entry related: lists).
+#
+# Symmetry is required only INSIDE one domain. After the 2026-10-14 merge all eight
+# domains share a tree, so the old check turned every cross-domain citation into a
+# gap: 2,542 errors, most of them structural noise, which made --fail-on-graph
+# useless as a gate. A cross-domain edge is a pointer, not a peer relation; forcing
+# osint to backfill a gambling page couples two independent taxonomies. Cross-domain
+# targets are still checked for existence by checks 3, 4 and 8.
 def _is_hub(page_path):
     fm = pages.get(page_path) or {}
     return str(fm.get("hub", "")).lower() == "true"
+
+
+def _cross_domain(a, b):
+    return RESOLVER.domain_of(a) != RESOLVER.domain_of(b)
+
 
 gaps = []
 for src, tgts in outbound.items():
     for tgt in tgts:
         if _is_hub(tgt):
+            continue
+        if _cross_domain(src, tgt):
             continue
         if src not in outbound.get(tgt, set()):
             gaps.append((src, tgt))
@@ -588,6 +604,17 @@ hard_errors = {
     "cross-wiki dangling":       len(cross_wiki_dangling),
     "pages without frontmatter": len(no_frontmatter),
 }
+
+# -- file accounting -----------------------------------------------------
+# A silent exemption is how this repo lost 900 sweeps to one allowlist and 917
+# files to another during the 2026-10-14 merge. State the totals, so a file that
+# stops being read cannot hide behind a category name.
+_total_md = len(list(WIKI.rglob("*.md")))
+_n_sweeps = sum(1 for p in pages if _is_sweeps(p))
+_n_nav = sum(1 for p in pages if _is_nav_exempt(p))
+_unaccounted = _total_md - len(pages) - nav_files
+hard_errors["markdown files never parsed"] = _unaccounted
+
 total_hard = sum(hard_errors.values())
 
 header(f"Summary — {total_hard} hard error(s)")
@@ -598,6 +625,20 @@ if total_hard:
     print()
     print("Hard errors found. Fix the issues above, or bypass locally with "
           "`git commit --no-verify`.")
+
+print()
+header("File accounting")
+for _label, _n in (
+    ("markdown files on disk", _total_md),
+    ("  index.md / log.md / dashboard.md", nav_files),
+    ("  parsed as pages", len(pages)),
+    ("    of which sweeps/ (append-only)", _n_sweeps),
+    ("    of which log.md / index.md", _n_nav),
+    ("    carry frontmatter", len(pages) - _n_sweeps - _n_nav - len(no_frontmatter)),
+    ("    without frontmatter", len(no_frontmatter)),
+    ("never parsed", _unaccounted),
+):
+    print(f"  {_label:36} {_n}")
 
 # Every dangling class, as (source, target) pairs. Check 4 (body @path mentions)
 # and Check 8 (cross-wiki links) were reported but never gated: --fail-on-graph

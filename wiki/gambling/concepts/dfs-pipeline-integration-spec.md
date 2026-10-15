@@ -15,7 +15,7 @@ updated: 2026-06-20
 ## Relations
 
 - @entities/tools/pydfs-lineup-optimizer.md — downstream optimizer
-- @scripts/normalize_dfs_projection_csv.py — current adapter (FanDuel-only)
+- `scripts/normalize_dfs_projection_csv.py` — current adapter (FanDuel-only). The script lived in the Gambling wiki repository and the 2026-10-14 merge did not carry it over.
 
 ## Raw Concept
 

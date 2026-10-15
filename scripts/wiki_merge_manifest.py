@@ -183,10 +183,17 @@ def cmd_compare(args):
 
     be, ae = _edge_map(before), _edge_map(after)
     flipped = []    # resolved before, missing after
-    retargeted = []  # resolved before, resolves to a DIFFERENT key after
+    retargeted = []  # resolved before, resolves to a DIFFERENT target after
     lost_certainty = []  # resolved before, ambiguous after
+    relocated = []  # resolved outside the wiki before, inside it after
+    moved = []  # resolved outside the wiki before AND after, at a different path
     for key, e in be.items():
-        if e["result"] != "local":
+        # "local" and "out" are both resolutions. The gate originally tested only for
+        # "local", so every edge that resolved into a peer repo checkout - the 160
+        # brief citations in the 2026-10-14 merge - was never compared. The merge
+        # dropped all 160 and the gate still printed PASS. Never narrow this filter
+        # to the in-tree case again.
+        if e["result"] not in ("local", "out"):
             continue
         new = ae.get(key)
         if new is None:
@@ -195,8 +202,19 @@ def cmd_compare(args):
             flipped.append((key, e["target"]))
         elif new["result"] == "ambiguous":
             lost_certainty.append((key, e["target"], new["target"]))
-        elif new["result"] == "local" and new["target"] != e["target"]:
-            retargeted.append((key, e["target"], new["target"]))
+        elif e["result"] == "local" and new["result"] == "local":
+            # An in-tree key that changes means the link now reaches a DIFFERENT PAGE.
+            # That is the hazard this check exists for.
+            if new["target"] != e["target"]:
+                retargeted.append((key, e["target"], new["target"]))
+        elif e["result"] == "out" and new["result"] == "local":
+            relocated.append((key, e["target"], new["target"]))
+        elif e["result"] == "out" and new["result"] == "out":
+            # Both resolve beside the wiki, at different paths. The merge moves whole
+            # trees (briefs/ into per-domain directories), so a path change here is
+            # expected churn, not a broken link. Report it; do not fail on it.
+            if new["target"] != e["target"]:
+                moved.append((key, e["target"], new["target"]))
 
     print("=" * 70)
     print("federation merge — verification comparison")
@@ -228,6 +246,16 @@ def cmd_compare(args):
         "CERTAINTY LOST — resolved before, ambiguous after (hard failure)",
         lost_certainty,
         lambda r: f"{r[0][0]}  [{r[0][1]}] {r[0][2]}  was {r[1]}, now {r[2]}",
+    )
+    block(
+        "RELOCATED — resolved beside the wiki before, inside it after (informational)",
+        relocated,
+        lambda r: f"{r[0][0]}  [{r[0][1]}] {r[0][2]}  {r[1]} -> {r[2]}",
+    )
+    block(
+        "MOVED — still outside the wiki, at a different path (informational)",
+        moved,
+        lambda r: f"{r[0][0]}  [{r[0][1]}] {r[0][2]}  {r[1]} -> {r[2]}",
     )
 
     failed = bool(missing or flipped or retargeted or lost_certainty)

@@ -186,8 +186,14 @@ def create_page(target_wiki_path, category, slug, title, source_alias,
 
 def create_brief(target_wiki_path, slug, title, source_alias, backlink_page,
                  body_content, category="concepts", force=False):
-    """Create a brief: {target}/briefs/{YYYY-MM-DD}_{slug}.md"""
-    briefs_dir = target_wiki_path.parent / "briefs"
+    """Create a brief at <repo>/briefs/<domain>/{YYYY-MM-DD}_{slug}.md.
+
+    Briefs live beside wiki/, not inside it. target_wiki_path is <repo>/wiki/<domain>/,
+    so the repo root is two levels up and the domain is its last component.
+    """
+    repo_root = target_wiki_path.parent.parent
+    domain = target_wiki_path.name
+    briefs_dir = repo_root / "briefs" / domain
     briefs_dir.mkdir(parents=True, exist_ok=True)
 
     brief_path = briefs_dir / f"{TODAY}_{slug}.md"
@@ -200,7 +206,7 @@ def create_brief(target_wiki_path, slug, title, source_alias, backlink_page,
         date=TODAY,
         source_alias=source_alias,
         backlink_page=backlink_page,
-        target_wiki=os.path.basename(target_wiki_path.parent),
+        target_wiki=domain,
         category=category,
         body=body_content.strip() or "_Fill in on review._"
     )

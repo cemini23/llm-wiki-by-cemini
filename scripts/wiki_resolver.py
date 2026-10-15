@@ -179,6 +179,48 @@ class WikiResolver:
             return None
         return str(rel) if rel.suffix == ".md" else None
 
+    def alias_domain(self, alias, base):
+        """The domain directory an alias names: ccc-wiki -> ccc.
+
+        The alias and the directory disagree for one row (cybersecurity-wiki is
+        cybersec/), so read the directory and never derive the name from the alias.
+        """
+        try:
+            rel = Path(base).resolve().relative_to(self.wiki)
+            if rel.parts:
+                return rel.parts[0]
+        except (ValueError, OSError):
+            pass
+        return alias[:-5] if alias.endswith("-wiki") else alias
+
+    def briefs_candidate(self, rel, domain):
+        """Resolve a briefs/ reference to a file beside the wiki.
+
+        Briefs sit beside the wiki, not inside it: `briefs/` is gitignored and the
+        merged layout namespaces it per domain. Prefer the cited domain, fall back to
+        the flat pre-move layout, then accept a unique match in a peer domain.
+
+        The last step is not a convenience. Briefs are cross-filed in practice - a
+        brief raised for cybersec is often copied into the ccc directory it was
+        routed from - so the cited domain is not always the holding domain. Report
+        rather than pick when more than one domain holds the name.
+        """
+        if not rel.startswith("briefs/") or not domain:
+            return None
+        rest = rel[len("briefs/"):]
+        if not rest:
+            return None
+        base = self.wiki.parent / "briefs"
+        for cand in (base / domain / rest, base / rest):
+            if cand.exists():
+                return ("out", cand)
+        hits = sorted(p for p in base.glob(f"*/{rest}") if p.is_file())
+        if len(hits) == 1:
+            return ("out", hits[0])
+        if len(hits) > 1:
+            return ("ambiguous", hits)
+        return None
+
     def resolve(self, src_rel, raw, known_keys):
         """Resolve one @path reference.
 
@@ -205,6 +247,10 @@ class WikiResolver:
                     return ("local", key)
                 if key is None and cand.exists():
                     return ("out", cand)
+            # Before giving up: this may name a brief, which lives outside wiki/.
+            brief = self.briefs_candidate(rel, self.alias_domain(alias, base))
+            if brief is not None:
+                return brief
             return ("missing", base / rel)
 
         # 2. Bare path, relative to the source page's own domain. The leading @ is
@@ -216,6 +262,14 @@ class WikiResolver:
         key = self.key_if_inside(cand)
         if key is not None and key in known_keys:
             return ("local", key)
+
+        # 2b. A bare briefs/ reference from a page in wiki/<domain>/ names
+        #     briefs/<domain>/. Resolve it before the cross-domain search in step 3,
+        #     which would otherwise bind a bare @briefs/x.md onto any same-named
+        #     file under wiki/<other-domain>/briefs/.
+        brief = self.briefs_candidate(rel, src_dom)
+        if brief is not None:
+            return brief
 
         # 3. The same path in another domain. Report rather than pick when more than
         #    one matches: duplicated pages are not byte-identical, so a silent choice

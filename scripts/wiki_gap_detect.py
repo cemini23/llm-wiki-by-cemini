@@ -128,14 +128,21 @@ def word_count(s: str) -> int:
 
 pages = {}
 all_paths = set()
+nav_files = 0
+no_frontmatter = []
 
 for p in WIKI.rglob("*.md"):
     rel = str(p.relative_to(WIKI))
-    if rel in ("index.md", "log.md", "dashboard.md"):
+    # Match on BASENAME, not exact path. Every domain now carries its own index.md
+    # and log.md at wiki/<domain>/, so an exact-path test let them through to
+    # parse_frontmatter, which returned None and dropped them without a word.
+    if os.path.basename(rel) in ("index.md", "log.md", "dashboard.md"):
+        nav_files += 1
         continue
     text = p.read_text(errors="replace")
     fm = parse_frontmatter(text)
     if fm is None:
+        no_frontmatter.append(rel)
         continue
     fm["_body"] = text
     pages[rel] = fm
@@ -253,6 +260,32 @@ print(
     f"thresholds: A inbound≥{args.type_a_min_inbound}, "
     f"D age≥{args.type_d_min_age_days}d, E narrative<{args.type_e_min_words} words"
 )
+
+# File accounting. A page that stops being scanned reports as no gap, and no gap
+# reads as a healthy wiki — the failure that hid this script's own blindness on
+# 2026-10-14. State the totals so the arithmetic can be checked.
+_total_md = len(list(WIKI.rglob("*.md")))
+_unparsed = _total_md - nav_files - len(pages) - len(no_frontmatter)
+_sweeps_nf = [r for r in no_frontmatter if RESOLVER.in_section(r, "sweeps")]
+_other_nf = [r for r in no_frontmatter if r not in set(_sweeps_nf)]
+print(
+    f"  file accounting: {_total_md} markdown on disk · {nav_files} nav "
+    f"(index/log/dashboard) · {len(pages)} pages scanned · "
+    f"{len(_sweeps_nf)} sweeps/ without frontmatter · "
+    f"{len(_other_nf)} other without frontmatter · {_unparsed} never read"
+)
+if _unparsed:
+    print(
+        f"  ERROR: {_unparsed} markdown file(s) were neither scanned nor accounted "
+        f"for as nav or frontmatter-less. Treat every zero-result below as suspect.",
+        file=sys.stderr,
+    )
+if _other_nf:
+    print(
+        f"  ERROR: {len(_other_nf)} file(s) outside sweeps/ carry no frontmatter, so "
+        f"the graph is missing them: {', '.join(_other_nf[:10])}",
+        file=sys.stderr,
+    )
 
 header(
     f"Type A — Cited-unread stubs ready for deep-read ({len(type_a)} found, top {args.type_a_max_shown} shown)"

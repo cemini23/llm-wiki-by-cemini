@@ -123,7 +123,7 @@ last_easy_review_ingest: 2026-05-08
 - **Indexed (6)** — all sitemap URLs: `/`, `/about/`, `/methodology/`, `/atto/`, `/guruwatcher/`, `/spcx-anthropic/`. Matches `site:outlierweekly.com` (2026-09-17).
 - **Not indexed (6)** — all **Page with redirect**: HTTP/www variants, retired hubs (`/agent-harness/`, `/prediction-market-lp-bot/`), `/cxw-geo/` → `/spcx-anthropic/`. Expected; no fix needed.
 - **Performance (28d)** — 17 impressions / 0 clicks; avg position 5.3; top query `spcx anthropic` (1 impression). Up from 0/0 on first digest (2026-09-03).
-- **Updated** — @sites/outlierweekly/OPERATOR-LEFTOVERS.md (digest action 3 checked off).
+- **Updated** — `sites/outlierweekly/OPERATOR-LEFTOVERS.md` (digest action 3 checked off). The `sites/` tree stayed in the SEO repository and was not carried over by the 2026-10-14 merge.
 
 ## [2026-09-17] ingest | K172 — 3/3 IN-SCOPE GEO measurement papers (not false positives)
 
@@ -150,7 +150,7 @@ last_easy_review_ingest: 2026-05-08
 - **Slug delta** — shipped `the-greenland-license-is-real-the` (title-derived, truncated). Planned `critical-metals-tanbreez-greenland-option` was not set.
 - **Issue number** still unset. Do not invent. X deferred.
 - **Updated** — @concepts/crml-tanbreez-outlier-notes.md, @concepts/x-account-voice-and-format.md, @wiki/index.md
-- **Cross-wiki** — @osint-wiki/wiki/log.md 2026-09-16 LIVE entry + 2026-09-01 CRML query line updated with permalink
+- **Cross-wiki** — @osint-wiki/log.md 2026-09-16 LIVE entry + 2026-09-01 CRML query line updated with permalink
 - **Skipped** — no owned hub (markets letter stays on Substack); GSC URL-inspect optional
 
 ## [2026-09-16] ingest | K171 — 3/3 arXiv API false positives → overflow + thin GEO steal + CCC
