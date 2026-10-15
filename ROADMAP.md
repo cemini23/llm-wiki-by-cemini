@@ -38,6 +38,8 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Twelve daily fetchers** re-pointed at the merged repo. The inbox is namespaced by domain.
 - **Seven absorbed repos archived, not deleted.** Inboxes were migrated into the merged wiki first. Every repo is clean and fully pushed to its own GitHub remote. They sit in `~/.Trash` (2.5 GB); `.git.premerge-local/` (153 MB) holds the pre-merge git directory. **All three are the rollback.**
 - **The repo is public.** `llm-wiki-by-cemini` went public 2026-10-14, so previously private osint content is now published. One repository, no mirror.
+- **Brief rescue.** 1,684 brief files sat in the archived repos, and only 54 were tracked in git — `briefs/` is gitignored, so about 1,630 briefs existed **only in Trash** and were not on GitHub. All 1,684 were rescued into `briefs/<domain>/`. **The merge plan §9 deliberately did not merge top-level `briefs/`**, which is why nothing caught them. Any future archiving must check for gitignored local-only trees first.
+- **App cleanup.** Archived 14 Claude desktop sessions whose `cwd` was a deleted folder. Removed 39 stale Cursor workspace entries (57 → 25) and 7 dead multi-root files (8 → 1). Deleted three pre-merge leftover dirs (`Image`, `Image\ gen`, `SEO`); every file in them already existed in-tree in a newer form. Backups in `.local/cursor-cleanup-2026-10-14/`.
 - **Open (not started):** reconcile the duplicated pages (the merge makes the duplication visible; it does not create it); next gap-detect due 2026-10-16.
 - **Boundary:** no install, no scrape, no xsp/pm scp, no `/route` swap.
 
