@@ -30,6 +30,17 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-14 — K291 ingest)
+
+- **K291 ingested** — 65 inbox files across eight domains → **25 source pages + 7 wave hubs + 6 concept backlinks**, plus per-domain index and log entries. Nine days of accumulation since K290. **Lint unchanged at 2,290 errors — the wave adds none.**
+- **The SEO finding is the wave's headline.** Two independent GEO studies: **retrieval explains 32% of within-website citation variance; page properties explain 2.8%.** FAQ blocks, structured data, summary boxes, author boxes and page speed show **no within-site effect** — their apparent cross-site effect is confounded by site popularity. Every page ChatGPT cites is one **its own search retrieved**. Google Search and the Responses API together recover **only ~25%** of cited URLs. New concept: `@seo-wiki/concepts/retrieval-vs-citation-visibility-geo.md`.
+- **Desk items.** **GROMM** — arbitrage-free S&P option market model where the surface is the state, >95% of quotes inside bid/ask. **GS positioning** — CTAs long **$43.5bn, down from $125bn a month ago**; fundamental funds gross up but net down; Info Tech flipped to the most net-sold sector.
+- **Agent lane.** **EmbodiedEvo** — Skills and Lessons reach comparable task performance at **53% lower execution cost**. **AutoAgent0** — propose/verify/recover runtime, the tool-call-gate shape applied to trajectories. **ChunkAct** — compile the routine; 2.9× fewer LLM calls.
+- **Cybersec.** **ATTCK-R** — one prompt-based protection cuts attack success from **0.896 to 0.608**. **Unprotected evaluations overestimate vulnerability**; never cite a jailbreak ASR without naming the protection layer.
+- **Skipped as out of scope** — PC7 soft robot (3d-printing), macroscopic fluctuation theory and lattice field theory (image-gen), back-translation MT (cybersec), Fleming–Viot (osint), three robotics VLA papers (image-gen). Raws archived; no pages written.
+- **Fetch note** — Exa MCP is not exposed in this session, and Cloudflare refused WebFetch and curl on the gambling feeds. Five bodies were retrieved with a headless browser; the rest are headline-level. **Budget a browser for that domain.**
+- **Boundary:** no install, no scrape, no ticket submit, no xsp/pm scp, no `/route` swap.
+
 ## Current state (2026-10-14 — federation wiki merge)
 
 - **Federation merge shipped.** Eight wikis merged into one repository under `wiki/<domain>/`. 2,046 commits and 9,820 pages. `git filter-repo` preserved history in both directions.
