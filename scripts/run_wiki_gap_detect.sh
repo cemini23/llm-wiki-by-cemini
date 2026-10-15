@@ -10,7 +10,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 TODAY=$(date +%Y-%m-%d)
 REPORT_DIR="$ROOT/.local/reports"
 REPORT="$REPORT_DIR/wiki-gap-detect-${TODAY}.txt"
-META="$ROOT/wiki/meta/wiki-gap-detect-cadence.md"
+META="$ROOT/wiki/osint/meta/wiki-gap-detect-cadence.md"
 LOG="$HOME/Library/Logs/cemini-wiki-gap-detect.log"
 
 mkdir -p "$REPORT_DIR"

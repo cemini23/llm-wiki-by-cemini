@@ -14,7 +14,7 @@ fi
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 TODAY=$(date +%Y-%m-%d)
-REPORT="$ROOT/wiki/sweeps/${TODAY}-daily.md"
+REPORT="$ROOT/wiki/${CEMINI_WIKI_ID:-osint}/sweeps/${TODAY}-daily.md"
 LOG="$HOME/Library/Logs/cemini-daily-digest.log"
 
 mkdir -p "$(dirname "$LOG")"

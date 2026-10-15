@@ -399,7 +399,10 @@ def main() -> int:
     from_date = (today - timedelta(days=window)).isoformat()
 
     out_tpl = (cfg.get("output") or {}).get("path_template", "wiki/sweeps/{date}-daily.md")
-    report = repo / out_tpl.format(date=today.isoformat())
+    # The merged wiki holds all eight domains in one repo, so the template must
+    # carry the domain. CEMINI_WIKI_ID is exported by the ~/bin wrappers.
+    domain = os.environ.get("CEMINI_WIKI_ID") or "osint"
+    report = repo / out_tpl.format(date=today.isoformat(), domain=domain)
     report.parent.mkdir(parents=True, exist_ok=True)
 
     paper_mode = str(exa_cfg.get("paper_mode") or "arxiv-only").lower()

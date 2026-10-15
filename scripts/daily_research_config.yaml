@@ -215,4 +215,4 @@ agent_reach_social:
       platform: reddit
       command: ["opencli", "reddit", "search", "Polymarket Kalshi prediction markets", "-f", "yaml"]
 output:
-  path_template: "wiki/sweeps/{date}-daily.md"
+  path_template: "wiki/{domain}/sweeps/{date}-daily.md"
