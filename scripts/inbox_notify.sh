@@ -20,7 +20,7 @@ fi
 INBOX="$ROOT/research to be indexed"
 LOGFILE="$HOME/Library/Logs/cemini-inbox-watch.log"
 TODAY=$(date +%Y-%m-%d)
-SWEEP="$ROOT/wiki/sweeps/${TODAY}-daily.md"
+SWEEP="$ROOT/wiki/osint/sweeps/${TODAY}-daily.md"
 
 mkdir -p "$(dirname "$LOGFILE")"
 
@@ -41,7 +41,7 @@ if [[ ! -d "$INBOX" ]]; then
   exit 1
 fi
 
-count=$(find "$INBOX" -maxdepth 1 -type f ! -name '.*' 2>/dev/null | wc -l | tr -d ' ')
+count=$(find "$INBOX" -maxdepth 2 -not -path '*/.*' -type f ! -name '.*' 2>/dev/null | wc -l | tr -d ' ')
 if [[ "$count" -eq 0 ]]; then
   log "inbox empty — nothing to triage"
   exit 0
@@ -49,7 +49,7 @@ fi
 
 # Macro Charts is trusted → GuruWatcher FIRST (no wiki human-approve).
 # Successful extracts are archived out of this triage inbox by the sync script.
-mc_count=$(find "$INBOX" -maxdepth 1 -type f \( -name 'macro-charts-paid-forward-*' -o -name 'macro-charts-rss-*' \) 2>/dev/null | wc -l | tr -d ' ')
+mc_count=$(find "$INBOX" -maxdepth 2 -not -path '*/.*' -type f \( -name 'macro-charts-paid-forward-*' -o -name 'macro-charts-rss-*' \) 2>/dev/null | wc -l | tr -d ' ')
 if [[ "$mc_count" -gt 0 ]]; then
   log "Macro Charts drop(s)=$mc_count — trusted auto → guru_watcher_inbox_hook.sh (skip wiki approve)"
   bash "$ROOT/scripts/guru_watcher_inbox_hook.sh" >> "$LOGFILE" 2>&1 || log "WARN: guru_watcher hook failed"
@@ -57,7 +57,7 @@ if [[ "$mc_count" -gt 0 ]]; then
 fi
 
 # Remaining files (non-MC) still go through wiki preingest triage.
-other_count=$(find "$INBOX" -maxdepth 1 -type f ! -name '.*' ! -name 'macro-charts-paid-forward-*' ! -name 'macro-charts-rss-*' 2>/dev/null | wc -l | tr -d ' ')
+other_count=$(find "$INBOX" -maxdepth 2 -not -path '*/.*' -type f ! -name '.*' ! -name 'macro-charts-paid-forward-*' ! -name 'macro-charts-rss-*' 2>/dev/null | wc -l | tr -d ' ')
 report=""
 if [[ "$other_count" -gt 0 ]]; then
   log "inbox has $other_count non-MC file(s) — running preingest_check (wiki triage)"
@@ -80,7 +80,7 @@ if [[ "$other_count" -gt 0 ]]; then
       bash "$ROOT/scripts/post_tool_eval_license.sh" "$f" >> "$LOGFILE" 2>&1 || true
       notify_macos "Cemini inbox" "Tool eval dropped — license spot-check saved to .local/reports/"
     fi
-  done < <(find "$INBOX" -maxdepth 1 -type f ! -name '.*' ! -name 'macro-charts-paid-forward-*' ! -name 'macro-charts-rss-*')
+  done < <(find "$INBOX" -maxdepth 2 -not -path '*/.*' -type f ! -name '.*' ! -name 'macro-charts-paid-forward-*' ! -name 'macro-charts-rss-*')
 
   notify_macos "Cemini inbox" "${other_count} file(s) awaiting wiki triage — see ${SWEEP##*/}"
 elif [[ "$mc_count" -eq 0 ]]; then

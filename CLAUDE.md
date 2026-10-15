@@ -20,7 +20,7 @@ Distribution is a deliberate step, not a default. Stage candidates in `briefs/` 
    - **Drop pattern**: `research to be indexed/` → ingest → `bash scripts/archive_raw_to_egress.sh --wiki-id osint "<file>"` (scp + rm local)
    - **Read pattern**: `ssh cemini-egress-fi cat /opt/cemini-bulk/research/osint/<filename>` or laptop Preview while file is still in inbox
 
-2. **The wiki** — LLM-written, human-read. **Canonical location: laptop `wiki/`** (git). Sibling federation wikis live in their own repos under `~/Desktop/projects/`. No 24/7 kb-server sync — see `@meta/librarian-decommission-2026-06-14.md`.
+2. **The wiki** — LLM-written, human-read. **Canonical location: laptop `wiki/`** (git). All eight federation wikis live in this one repository under `wiki/<domain>/` — merged **2026-10-14**, see `briefs/2026-10-14_federation-wiki-merge-plan.md`. The seven absorbed repositories are **archived, not deleted**: they are the rollback, and each still holds its own un-ingested inbox. No 24/7 kb-server sync — see `@meta/librarian-decommission-2026-06-14.md`.
 
 3. **The schema** — this file.
 
@@ -45,20 +45,26 @@ Rule: do not assume kb-server, stash, or librarian SSH paths exist. Query wikis 
 ## Folder layout
 
 ```
-LAPTOP (~/Projects/OSINT WORKSPACE/):
+LAPTOP (~/Projects/OSINT WORKSPACE/):   # the merged federation wiki — one repo, eight domains
   CLAUDE.md                    # this file — the schema
   LESSONS.md                   # meta-lessons (how we work, not what we did)
   ROADMAP.md                   # active workstream / decisions / done log
   hot.md                       # session-state cache (gitignored)
-  research to be indexed/      # transient drop zone (gitignored)
+  research to be indexed/      # drop zone, namespaced per domain (gitignored)
+    osint/ ccc/ cybersec/ seo/ image-gen/ gambling/ game-dev/ 3d-printing/
   briefs/                      # staging for outputs → claude.ai or CeminiSuite (gitignored)
-  wiki/                        # canonical wiki (laptop git only)
-    index.md                   # content-oriented catalog of all wiki pages
-    log.md                     # append-only chronological operations log
-    sources/                   # one page per ingested source
-    entities/                  # tickers, companies, people, facilities, organizations, tools, infrastructure
-    concepts/                  # topics, theses, methodologies, strategies
-  scripts/                     # wiki_lint.py, skill_audit.py, preingest_check.py, wiki_gap_detect.py, cross_doc_dedup.py, sync_wiki_to_librarian.sh, etc.
+  wiki/                        # canonical wiki — every domain under one tree
+    <domain>/                  # osint, ccc, cybersec, seo, image-gen, gambling, game-dev, 3d-printing
+      index.md                 # content-oriented catalog for that domain
+      log.md                   # append-only chronological operations log
+      sources/                 # one page per ingested source
+      entities/                # tickers, companies, people, facilities, organizations, tools, infrastructure
+      concepts/                # topics, theses, methodologies, strategies
+      sweeps/                  # daily and Tier-2 sweep reports (append-only)
+      meta/                    # cadence pages and wiki meta
+    index.md                   # catalog index across all eight domains
+    log.md                     # merged operations log
+  scripts/                     # wiki_lint.py, skill_audit.py, preingest_check.py, wiki_gap_detect.py, cross_doc_dedup.py, etc.
   ui/                          # local dev tooling (e.g. Cemini AI chat front-end + proxy to cemini-egress-fi gateway)
   .local/                      # gitignored, local-only (server connection details, etc.)
 
@@ -144,7 +150,7 @@ every one pointing at a page that already exists here, so none needed recreating
 
 ### Ingest (adding a new source)
 
-1. New source dropped into `research to be indexed/` (transient drop zone)
+1. New source dropped into `research to be indexed/<domain>/` (the domain namespaces the inbox after the federation merge)
 2. **Run `python3 scripts/preingest_check.py`** — detects duplicates by sha256 / arXiv ID / DOI / URL / filename / title. Verdicts: `DUPLICATE` (do not ingest without deciding to supersede / fold / re-download), `LIKELY` (human review), `NEW` (proceed)
 3. Read the source (or relevant pages for long PDFs)
 4. **Discuss key takeaways with the user before writing**
@@ -158,20 +164,20 @@ every one pointing at a page that already exists here, so none needed recreating
    - Append Article beats to `@seo-wiki/concepts/x-article-3-notes.md` or create `@seo-wiki/concepts/x-article-N-notes.md` when a long-form maps to the operator's X lane (local wiki, agent tooling, Obsidian/Claude workflows, prediction markets)
    - Append one line to `@seo-wiki/wiki/log.md`: `style-pass | Posts.docx K## | …`
    - **Does not replace** 4b — OSINT keeps topic routing and synthesis; SEO keeps operator voice + Article queue only. Ingest stays in OSINT; no need to drop `Posts.docx` in the SEO repo.
-5. Create `wiki/sources/<slug>.md` — frontmatter + Raw Concept + short Narrative. Cite the eventual canonical location: `[Source: <filename>.pdf p.5]`
+5. Create `wiki/<domain>/sources/<slug>.md` — frontmatter + Raw Concept + short Narrative. Cite the eventual canonical location: `[Source: <filename>.pdf p.5]`
 6. Identify entities + concepts the source touches. For each:
    - If page exists: update it, add `related:` backlink, bump `updated:`
    - If no page: create a stub (frontmatter + one-line Narrative + Relations). Real content accumulates over subsequent ingests
-7. Update `wiki/index.md` — add rows for new pages
-8. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed
-9. **Archive raw source to egress-fi**: `bash scripts/archive_raw_to_egress.sh --wiki-id osint "research to be indexed/<filename>"` — update source page `Location` to `cemini-egress-fi:/opt/cemini-bulk/research/osint/<filename>`. Sibling wikis use their federation id (see `federation_paths.yaml`). Script removes local copy on success; pass `--keep-local` to retain inbox/raw-sources copy.
+7. Update `wiki/<domain>/index.md` — add rows for new pages
+8. Append to `wiki/<domain>/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed
+9. **Archive raw source to egress-fi**: `bash scripts/archive_raw_to_egress.sh --wiki-id <domain> "research to be indexed/<domain>/<filename>"` — update source page `Location` to `cemini-egress-fi:/opt/cemini-bulk/research/<domain>/<filename>`. **`<domain>` is the wiki-id, not always osint.** The old form hardcoded `--wiki-id osint`, which after the federation merge would archive a ccc or gambling source into the osint cold-store folder. Script removes the local copy on success; pass `--keep-local` to retain it.
 10. Run lint + **`python3 scripts/ingest_session_gate.py`** + commit + push (wiki only)
 11. **Update ROADMAP.md + stage briefs in `briefs/` per `post_ingest_workflow` memory rule.** This is the immediately-next step after commit-and-push. Without it, ingest research dies in the wiki.
 12. A single ingest must touch 3-15 pages. If it touches 0 new pages, ask whether the source is worth ingesting
 
 ### Query (answering a question)
 
-1. Read `wiki/index.md` first to locate relevant pages
+1. Read `wiki/index.md` (the cross-domain catalog) first, then the relevant `wiki/<domain>/index.md`
 2. Read those pages; follow `@relations` where useful
 3. Synthesize the answer with inline citations to source pages and raw sources
 4. **OOD signal**: if the wiki doesn't contain a real answer, say so explicitly. Don't fabricate from tangential matches. Offer to ingest sources that would fill the gap
@@ -294,10 +300,11 @@ At session end, rewrite `hot.md` with updated position, open decisions, pending 
 ### 1. Tier-2 sweep cadence
 
 ```bash
-ls -1t wiki/sweeps/*.md 2>/dev/null | head -1
+ls -1t wiki/*/sweeps/*.md 2>/dev/null | head -1
 ```
 
-If most recent sweep file is **>7 days old** OR `wiki/sweeps/` is empty, prompt:
+Sweeps are per domain after the federation merge, so the newest is across all eight.
+If the most recent sweep file is **>7 days old** OR no domain has a sweep, prompt:
 
 > "It's been N days since the last Tier-2 arXiv sweep. Want me to run one now?"
 
@@ -306,10 +313,12 @@ Tier 2 is user-gated-commit; do NOT silently auto-run.
 ### 2. Inbox check
 
 ```bash
-ls -1 "research to be indexed/" 2>/dev/null | grep -v '^\.'
+find "research to be indexed" -mindepth 2 -maxdepth 2 -type f -not -path '*/.*' 2>/dev/null
 ```
 
-If items exist that the user hasn't asked you to address, mention briefly: "Btw, you have N items in `research to be indexed/`. Want me to triage them?"
+The inbox is namespaced by domain (`research to be indexed/<domain>/`) after the federation
+merge. If items exist that the user hasn't asked you to address, mention briefly: "Btw, you
+have N items in `research to be indexed/<domain>/`. Want me to triage them?"
 
 ### 3. HL funding Dune backtest cadence (quarterly)
 
@@ -319,7 +328,7 @@ If items exist that the user hasn't asked you to address, mention briefly: "Btw,
 
 If exit code **0** (due), prompt:
 
-> "Quarterly HL funding Dune backtest is due (see `wiki/meta/hl-funding-backtest-cadence.md`). Want me to run it now? (~10–15 min laptop + Dune credits)"
+> "Quarterly HL funding Dune backtest is due (see `wiki/osint/meta/hl-funding-backtest-cadence.md`). Want me to run it now? (~10–15 min laptop + Dune credits)"
 
 Do **not** auto-run; user-gated like Tier-2 sweep. On completion, bump `last_run` / `next_due` (+90 days) on the cadence page and note in `wiki/log.md` if posture changes.
 
@@ -331,7 +340,7 @@ Do **not** auto-run; user-gated like Tier-2 sweep. On completion, bump `last_run
 
 If exit code **0** (due), prompt:
 
-> "Quarterly PM LP spread backtest is due (see `wiki/meta/pm-lp-backtest-cadence.md`). Want me to run it now? (`bash scripts/run_pm_lp_backtest.sh` — public Gamma + CLOB, ~1 min)"
+> "Quarterly PM LP spread backtest is due (see `wiki/osint/meta/pm-lp-backtest-cadence.md`). Want me to run it now? (`bash scripts/run_pm_lp_backtest.sh` — public Gamma + CLOB, ~1 min)"
 
 Do **not** auto-run. On completion, bump cadence meta and note in `wiki/log.md` if spread tiers change. Reports: `.local/reports/pm-lp-backtest-YYYY-MM-DD.html`.
 
@@ -343,7 +352,7 @@ Do **not** auto-run. On completion, bump cadence meta and note in `wiki/log.md` 
 
 If exit code **0** (due), prompt:
 
-> "Quarterly Kalshi LP spread backtest is due (see `wiki/meta/kalshi-lp-backtest-cadence.md`). Want me to run it? (`bash scripts/run_kalshi_lp_backtest.sh` — public trade-api, ~1–2 min)"
+> "Quarterly Kalshi LP spread backtest is due (see `wiki/osint/meta/kalshi-lp-backtest-cadence.md`). Want me to run it? (`bash scripts/run_kalshi_lp_backtest.sh` — public trade-api, ~1–2 min)"
 
 Do **not** auto-run. Reports: `.local/reports/kalshi-lp-backtest-YYYY-MM-DD.html`.
 
@@ -353,7 +362,7 @@ Do **not** auto-run. Reports: `.local/reports/kalshi-lp-backtest-YYYY-MM-DD.html
 ./scripts/check_equity_signal_backtest_due.sh
 ```
 
-If due: prompt to run `bash scripts/run_equity_signal_backtest.sh` (needs `ssh cemini-librarian` + ArcticDB). See `wiki/meta/equity-signal-backtest-cadence.md`.
+If due: prompt to run `bash scripts/run_equity_signal_backtest.sh` (needs `ssh cemini-librarian` + ArcticDB). See `wiki/osint/meta/equity-signal-backtest-cadence.md`.
 
 ### 7. Cross-venue PM×Kalshi backtest cadence (quarterly)
 
@@ -361,11 +370,11 @@ If due: prompt to run `bash scripts/run_equity_signal_backtest.sh` (needs `ssh c
 ./scripts/check_cross_venue_backtest_due.sh
 ```
 
-If due: prompt to run `bash scripts/run_cross_venue_backtest.sh`. See `wiki/meta/cross-venue-backtest-cadence.md`.
+If due: prompt to run `bash scripts/run_cross_venue_backtest.sh`. See `wiki/osint/meta/cross-venue-backtest-cadence.md`.
 
 ### 8. WC LP safety DR cadence — **RETIRED 2026-07-28**
 
-World Cup window over; world-cup-bot dropped. `check_wc_lp_safety_due.sh` always exits 1. Do **not** prompt. See `wiki/meta/wc-lp-safety-cadence.md`.
+World Cup window over; world-cup-bot dropped. `check_wc_lp_safety_due.sh` always exits 1. Do **not** prompt. See `wiki/osint/meta/wc-lp-safety-cadence.md`.
 
 ### 9. Wiki gap detect Tier 1 cadence (weekly)
 
@@ -373,7 +382,7 @@ World Cup window over; world-cup-bot dropped. `check_wc_lp_safety_due.sh` always
 ./scripts/check_wiki_gap_detect_due.sh
 ```
 
-If due: prompt to run `bash scripts/run_wiki_gap_detect.sh` (~1 min). Report lands in `.local/reports/`. See `wiki/meta/wiki-gap-detect-cadence.md`. Tier 2 Exa remains user-gated.
+If due: prompt to run `bash scripts/run_wiki_gap_detect.sh` (~1 min). Report lands in `.local/reports/`. See `wiki/osint/meta/wiki-gap-detect-cadence.md`. Tier 2 Exa remains user-gated.
 
 ### 10. Federation morning summary (operator hub)
 
@@ -390,23 +399,18 @@ Report: `cemini-federation-hub/hub/sweeps/YYYY-MM-DD-federation.md`. Install onc
 ./scripts/check_daily_research_digest_due.sh
 ```
 
-If exit code **0** (no report for today): prompt to run `bash scripts/run_daily_research_digest.sh` (~30s + Exa). Report: `wiki/sweeps/YYYY-MM-DD-daily.md`. See `wiki/meta/daily-research-digest-cadence.md` and `@concepts/cemini-wiki-ingest-workflow.md`.
+If exit code **0** (no report for today): prompt to run `bash scripts/run_daily_research_digest.sh` (~30s + Exa). Report: `wiki/<domain>/sweeps/YYYY-MM-DD-daily.md`. See `wiki/osint/meta/daily-research-digest-cadence.md` and `@concepts/cemini-wiki-ingest-workflow.md`.
 
 ### 12. Obsidian vault (operator setup)
 
 If `wiki/.obsidian/` missing: `bash scripts/setup_obsidian_vault.sh`. Graph review ritual: `.cursor/skills/cemini-wiki-graph/SKILL.md`.
 
-### 13. Wiki linter sync (every session — instant)
+### 13. Wiki linter sync — **RETIRED 2026-10-14**
 
-```bash
-./scripts/check_wiki_linter_sync_due.sh
-```
-
-If exit code **0** (the eight federation `wiki_lint.py` copies have diverged), prompt:
-
-> "The eight federation linter copies have diverged. Want me to re-sync them? (`python3 scripts/wiki_linter_sync.py sync`)"
-
-The eight copies drifted for about five months before anyone noticed, during which the seven siblings ran a linter predating the ambiguity check and the gating of checks 4 and 8. This asks the question cheaply on every session start. Do **not** auto-run the sync — it writes to seven sibling repositories. See `briefs/2026-10-14_federation-wiki-merge-plan.md` §5.4; after the merge this check becomes redundant.
+The eight federation `wiki_lint.py` copies were reconciled, then shipped byte-identical to every
+sibling. The merge then left one repository holding one linter, so
+`check_wiki_linter_sync_due.sh` and `wiki_linter_sync.py` have nothing left to compare. Do
+**not** prompt. See `briefs/2026-10-14_federation-wiki-merge-plan.md` §5.4.
 
 Keep each check under 60 seconds. Rituals that grow into multi-minute operations should become opt-in commands instead.
 
@@ -414,7 +418,7 @@ Keep each check under 60 seconds. Rituals that grow into multi-minute operations
 
 When a query needs data from another wiki, reference it using the `@wiki-alias/path/to/page.md` syntax. The LLM resolves these by reading the other wiki's files directly.
 
-Paths below are relative to this CLAUDE.md file's directory. Resolve `../` against this file's location to get the absolute path.
+Every domain is now in-tree. The `Path` column is relative to this file, and `@<alias>/…` resolves to `wiki/<domain>/…`. **`wiki_resolver.py` reads this table** to decide which domain a bare `concepts/x.md` belongs to, so a stale row silently rebinds links — keep it correct.
 
 | Alias | Path | Visibility | Description |
 |-------|------|------------|-------------|
@@ -428,7 +432,7 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 | `ccc-wiki` | `wiki/ccc/` | **Public** | Cursor + Claude Code meta-wiki — workflow, subagents, MCP/conductor, hooks, skills, slash commands, /goal · Ralph · OpenSpec. Shared territory: agent orchestration, conductor/librarian architecture, skill audits |
 | `federation-hub` | `../cemini-federation-hub/hub/` | **Private** | Operator control plane — morning federation summary, wiki path catalog, Obsidian triage (`@meta/federation-operator-hub-stub.md`) |
 
-**Private (not public federation deliverables):** `osint-wiki`, **Cemini Financial Suite** (`../CeminiSuite`). **Public on GitHub:** `ccc-wiki` and the six domain wikis (including `gambling-wiki`, `game-dev-wiki`). See root `README.md` for repo URLs.
+**One repository serves all eight domains.** `llm-wiki-by-cemini` became **public on 2026-10-14**, the same day the domains merged into it — so `osint-wiki` content, previously private, is now published. The seven absorbed repositories are archived locally and on GitHub as the rollback. **Cemini Financial Suite** (`../CeminiSuite`) stays private and separate.
 
 ### Cross-wiki link syntax
 
@@ -440,7 +444,7 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 
 kb-server and 24/7 conductor→librarian routing are **offline**. To answer questions:
 
-1. Read `wiki/index.md` and grep across `wiki/` and sibling wiki repos (`@wiki-alias/...`)
+1. Read `wiki/index.md`, then the relevant `wiki/<domain>/index.md`, and grep across `wiki/` (all eight domains are in-tree — there are no sibling repos to read any more)
 2. Use **lazy-tool** only for **prod-mcp** health/tools — `kb_search` / `conductor_query` will fail unless librarian is restored
 3. **exa** / **fetch** for external gaps
 

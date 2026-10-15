@@ -121,7 +121,9 @@ def title_from_result(r: dict) -> str:
 
 
 def inbox_files(repo: Path) -> list[Path]:
-    inbox = repo / "research to be indexed"
+    """This domain's pending drops. See daily_research_fetch.inbox_dir."""
+    domain = os.environ.get("CEMINI_WIKI_ID") or "osint"
+    inbox = repo / "research to be indexed" / domain
     if not inbox.is_dir():
         return []
     return sorted(

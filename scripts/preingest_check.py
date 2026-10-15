@@ -436,7 +436,13 @@ def main():
     print(f"  wiki:   {WIKI}")
     print()
 
-    inbox_files = sorted(p for p in INBOX.iterdir() if p.is_file() and not p.name.startswith("."))
+    # The merged workspace namespaces the inbox by domain, so a drop sits one level
+    # down at `research to be indexed/<domain>/`. Recurse and skip dot-paths.
+    inbox_files = sorted(
+        p for p in INBOX.rglob("*")
+        if p.is_file()
+        and not any(part.startswith(".") for part in p.relative_to(INBOX).parts)
+    )
     if not inbox_files:
         print("(inbox is empty — nothing to check)")
         return 0

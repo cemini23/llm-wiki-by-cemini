@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import os
 import re
 import sys
 import urllib.error
@@ -38,6 +39,17 @@ def safe_slug(title: str, max_len: int = 48) -> str:
     return (slug[:max_len] or "paper").strip("-")
 
 
+def inbox_dir(repo: Path) -> Path:
+    """This domain's drop zone.
+
+    Post-merge all eight domains share one repository, so the domain namespaces the
+    inbox. Without it eight scheduled runs drop into one directory and the domain is
+    no longer implicit from the file's location.
+    """
+    domain = os.environ.get("CEMINI_WIKI_ID") or "osint"
+    return repo / "research to be indexed" / domain
+
+
 def inbox_dest(inbox: Path, arxiv_id: str, title: str) -> Path:
     return inbox / f"arxiv-{arxiv_id}-{safe_slug(title)}.pdf"
 
@@ -62,7 +74,7 @@ def fetch_papers(
     max_downloads: int,
     fetch_likely: bool = False,
 ) -> list[FetchOutcome]:
-    inbox = repo / "research to be indexed"
+    inbox = inbox_dir(repo)
     inbox.mkdir(parents=True, exist_ok=True)
     sources = repo / "wiki" / "sources"
     idx = build_wiki_index(sources)
