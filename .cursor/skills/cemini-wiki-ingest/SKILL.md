@@ -102,9 +102,9 @@ Read `scripts/active_project_brief_targets.yaml` + `@concepts/active-project-res
 | **Basgiath (#2)** | `../dragon-rider-map/briefs/` | No — free fan project; never Marketplace |
 | **CeminiDFS (#3)** | `../projects/CeminiDFS/briefs/` + `@gambling-wiki` | No |
 | **CeminiParlays (#4)** | `../CeminiParlays/briefs/` + `@gambling-wiki` | No — operator types the ticket |
-| XSP killer | `briefs/xsp-*` | Yes → cemini-prod |
+| XSP killer | `briefs/xsp-*` | No — no host (Ashburn deleted 2026-09-18) |
 | Family-tree dogfood | `~/Desktop/family/research/` | No — private |
-| Local abliterated AI lab | `../Cybersecurity wiki/briefs/` | No — authorized assist only |
+| Local abliterated AI lab | `briefs/cybersec/` | No — authorized assist only |
 | wc-ticket-monitor | `../projects/wc-ticket-monitor/briefs/` | No (secondary) |
 | PM / Kalshi | `briefs/pm-*` | Yes when bot-touching (secondary) |
 

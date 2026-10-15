@@ -21,7 +21,7 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 | **#2** | **GuruWatcher** | `../GuruWatcher/briefs/` | No |
 | behind | Poker Arena | `agents/devfun-poker-arena/briefs/` | sandbox |
 | behind | XSP / PM | `briefs/xsp-*` / `briefs/pm-*` | no host (Ashburn deleted) |
-| behind | Local abliterated AI lab | `../Cybersecurity wiki/briefs/` | No |
+| behind | Local abliterated AI lab | `briefs/cybersec/` | No |
 | retired | TipDrop / David kit | — | Do not route |
 
 ### Poker — before next free tournament entry (2026-08-12)

@@ -127,18 +127,18 @@ updated: 2026-04-23
 - External URL: `[Source: https://... (retrieved YYYY-MM-DD)]`
 - Multiple: `[Sources: filename.pdf p.5, filename2.pdf p.12]`
 
-**Briefs copied to sibling wikis** — a brief staged here is often copied **verbatim** into a
-sibling's `briefs/` (the daily cyber-lab brief goes to `../Cybersecurity wiki/briefs/`). Those
-siblings have their own `wiki/`, so a bare `wiki/...` citation resolves here and dangles there.
-An audit on 2026-10-03 found **152 dead references across 327 briefs** in the Cybersecurity wiki —
-every one pointing at a page that already exists here, so none needed recreating, only qualifying.
+**Brief homes** — after the 2026-10-14 merge, one repository holds all eight domains, so there are
+no sibling repositories to copy into. Each domain keeps its briefs at `briefs/<domain>/`
+(`cybersec`, `ccc`, `seo`, `image-gen`, `gambling`, `game-dev`, `3d-printing`); osint briefs stay
+flat in `briefs/`. The whole `briefs/` tree is gitignored, so briefs are local-only by design.
 
-- When copying a brief to a sibling, rewrite its `## Sources` block for **that copy** to the
-  cross-wiki form: `[Source: @osint-wiki/concepts/...]`. Keep the sibling's own paths unqualified.
-- Prefer building the body with a per-sibling sources parameter over a single shared string — a
-  shared body cannot be correct in two wikis at once.
-- A sibling may keep the brief and qualify the citation; it should **not** create a local page to
-  satisfy a copied brief. That splits the source of truth.
+- A brief that cites another domain must use the alias form: `[Source: @cybersec-wiki/concepts/...]`.
+  A bare `wiki/...` path resolves against the domain that owns the brief, not the one you meant.
+- The 2026-10-03 audit found **152 dead references across 327 briefs** — every one pointed at a
+  page that already existed, so none needed recreating, only qualifying. The lesson holds under the
+  merged layout: qualify, do not recreate.
+- Do not create a local page to satisfy a brief that cites another domain. That splits the source
+  of truth.
 
 **Claim confidence tags**:
 - `[CONFIRMED]` — ≥2 independent sources

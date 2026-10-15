@@ -15,7 +15,7 @@ Newest entries on top.
 - Ongoing work goes out as a **brief** in the project's own `briefs/` directory — the same way Atto, GuruWatcher, CCC, the Cybersecurity wiki, Game Dev, and the Gambling wiki are served. Basgiath is a project like the rest, not an exception.
 - When a prompt does need a revision **before** it runs (still unspent), edit it. Once it is spent, write a brief.
 
-**Apply.** For Basgiath: drop a dated brief into `Projects/dragon-rider-map/briefs/` and mirror it into `../Game Dev wiki/briefs/` (and OSINT `briefs/` staging). Do not reopen `NEXT-ACTIONS-PROMPT*.md` or `JAVA-PORT-PROMPT.md`.
+**Apply.** For Basgiath: drop a dated brief into `Projects/dragon-rider-map/briefs/` and mirror it into `briefs/game-dev/` (and OSINT `briefs/` staging). Do not reopen `NEXT-ACTIONS-PROMPT*.md` or `JAVA-PORT-PROMPT.md`.
 
 ---
 
