@@ -288,7 +288,10 @@ if WIKI_ALIASES:
             # was resolved against disk.
             if is_inside_backticks(body, m.start(), m.end()):
                 continue
-            rel_path = m.group(2).lstrip("/")
+            # Trailing sentence punctuation is not part of the path. Without this,
+            # a reference ending a sentence — "@seo-wiki/briefs/x.md." — is looked up
+            # with the period attached and reported dangling.
+            rel_path = m.group(2).lstrip("/").rstrip(".,;:!?")
             kind, value = RESOLVER.resolve(src, "@" + alias + "/" + rel_path, all_paths)
             if kind in ("local", "out"):
                 cross_wiki_ok += 1

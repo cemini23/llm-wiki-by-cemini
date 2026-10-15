@@ -30,12 +30,16 @@ _TABLE_RE = re.compile(
 
 
 def normalize_path(p):
-    """Strip an ARA typed prefix, a leading slash, and a stray wiki/ segment."""
+    """Strip an ARA typed prefix, a leading slash, a stray wiki/ segment, and
+    trailing sentence punctuation."""
     p = p.strip()
     p = _ARA_RE.sub("", p)
     p = p.lstrip("/")
     if p.startswith("wiki/"):
         p = p[len("wiki/"):]
+    # A reference that ends a sentence carries the sentence's period. No real path
+    # ends in ".md" plus punctuation, so strip here rather than at each call site.
+    p = p.rstrip(".,;:!?")
     return p
 
 
@@ -102,6 +106,10 @@ def iter_refs(text):
             if inside_backticks(text, m.start(), m.end()):
                 continue
             raw = m.group(1) if pattern is AT_PATH_RE else f"@{m.group(1)}/{m.group(2)}"
+            # Trailing sentence punctuation is not part of the path. AT_PATH_RE anchors
+            # on .md and cannot pick it up; CROSS_WIKI_RE swallows it, so the same
+            # reference yielded both a good edge and a dangling one.
+            raw = raw.rstrip(".,;:!?")
             key = ("body", raw)
             if key not in seen:
                 seen.add(key)
@@ -245,7 +253,11 @@ class WikiResolver:
                 key = self.key_if_inside(cand)
                 if key is not None and key in known_keys:
                     return ("local", key)
-                if key is None and cand.exists():
+                # An existing file inside the wiki that is not a known page is a
+                # navigational file (index.md, log.md, dashboard.md). The linter keeps
+                # those out of known_keys, so the old `key is None` test reported every
+                # @<alias>/log.md link as missing while the file sat right there.
+                if cand.exists():
                     return ("out", cand)
             # Before giving up: this may name a brief, which lives outside wiki/.
             brief = self.briefs_candidate(rel, self.alias_domain(alias, base))
