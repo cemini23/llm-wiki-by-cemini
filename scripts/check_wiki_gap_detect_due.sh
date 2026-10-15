@@ -2,7 +2,7 @@
 # Exit 0 if wiki gap detect Tier 1 report is due (≥7 days since last run).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-META="$ROOT/wiki/meta/wiki-gap-detect-cadence.md"
+META="$ROOT/wiki/osint/meta/wiki-gap-detect-cadence.md"
 DAYS="${WIKI_GAP_DETECT_CADENCE_DAYS:-7}"
 
 if [[ ! -f "$META" ]]; then

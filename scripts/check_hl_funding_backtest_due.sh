@@ -2,7 +2,7 @@
 # Exit 0 if HL funding Dune backtest is due (today >= next_due). For session-start ritual.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-META="$ROOT/wiki/meta/hl-funding-backtest-cadence.md"
+META="$ROOT/wiki/osint/meta/hl-funding-backtest-cadence.md"
 if [[ ! -f "$META" ]]; then
   echo "hl-funding-backtest: no cadence file"
   exit 1

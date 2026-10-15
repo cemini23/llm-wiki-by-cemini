@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-META="$ROOT/wiki/meta/kalshi-lp-backtest-cadence.md"
+META="$ROOT/wiki/osint/meta/kalshi-lp-backtest-cadence.md"
 DAYS="${KALSHI_LP_BACKTEST_CADENCE_DAYS:-90}"
 
 if [[ ! -f "$META" ]]; then

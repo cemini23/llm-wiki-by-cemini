@@ -116,7 +116,7 @@ scoring:
 
 # Output format for wiki/sweeps/YYYY-MM-DD.md
 output:
-  path_template: "wiki/sweeps/{date}.md"
+  path_template: "wiki/{domain}/sweeps/{date}.md"
   sections:
     - summary          # top-line: queries fired, hits scored, candidates promoted
     - candidate_table  # sorted by score descending: title, cluster, score, verdict

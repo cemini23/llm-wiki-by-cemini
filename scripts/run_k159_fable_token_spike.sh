@@ -5,7 +5,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 REPORT="${REPORT:-$ROOT/.local/reports/k159-fable-advisor-token-spike.md}"
 PROMPT="${PROMPT:-$ROOT/.local/k159-spike-prompt.md}"
-DELIVERABLE="$ROOT/wiki/meta/fable-advisor-prod-touch-gate.md"
+DELIVERABLE="$ROOT/wiki/osint/meta/fable-advisor-prod-touch-gate.md"
 mkdir -p "$(dirname "$REPORT")"
 
 echo "K159 fable-advisor token spike"
@@ -43,7 +43,7 @@ fi
   echo "- **Date (UTC):** $(date -u +%Y-%m-%dT%H:%M:%SZ)"
   echo "- **Lane:** grok-implementer (Grok 4.5 headless)"
   echo "- **Claude Code:** $(claude --version 2>/dev/null | awk '{print $1}' || echo missing)"
-  echo "- **Deliverable:** \`wiki/meta/fable-advisor-prod-touch-gate.md\`"
+  echo "- **Deliverable:** \`wiki/osint/meta/fable-advisor-prod-touch-gate.md\`"
   echo "- **Wall time (implementer):** ${ELAPSED}s"
   echo "- **Output:** ${LINES} lines, ${BYTES} bytes"
   echo ""

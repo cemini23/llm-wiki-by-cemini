@@ -4,10 +4,10 @@
 #   bash scripts/adopt.sh --list
 #   bash scripts/adopt.sh k254              # phase0 then phase1 if present
 #   bash scripts/adopt.sh k254 phase0
-#   bash scripts/adopt.sh --manifest        # refresh wiki/meta/adopt-manifest.yaml
+#   bash scripts/adopt.sh --manifest        # refresh wiki/osint/meta/adopt-manifest.yaml
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-MANIFEST="$ROOT/wiki/meta/adopt-manifest.yaml"
+MANIFEST="$ROOT/wiki/osint/meta/adopt-manifest.yaml"
 
 list_waves() {
   find "$ROOT/scripts" -maxdepth 1 -name 'adopt_k*_phase0.sh' -o -name 'adopt_k*_phase1.sh' | \

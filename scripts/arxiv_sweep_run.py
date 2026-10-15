@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run Tier-2 arXiv sweep (Exa API) and write wiki/sweeps/YYYY-MM-DD.md."""
+"""Run Tier-2 arXiv sweep (Exa API) and write wiki/<domain>/sweeps/YYYY-MM-DD.md."""
 
 from __future__ import annotations
 
@@ -74,7 +74,7 @@ def main() -> int:
     repo = Path(__file__).resolve().parent.parent
     today = date.today()
     from_date = (today - timedelta(days=14)).isoformat()
-    sweeps_dir = repo / "wiki" / "sweeps"
+    sweeps_dir = repo / "wiki" / (os.environ.get("CEMINI_WIKI_ID") or "osint") / "sweeps"
     sweeps_dir.mkdir(parents=True, exist_ok=True)
     report = sweeps_dir / f"{today.isoformat()}.md"
 
@@ -145,7 +145,7 @@ def main() -> int:
             "",
             f"### Discard",
             "",
-            f"`rm wiki/sweeps/{today.isoformat()}.md` if nothing worth acting on.",
+            f"`rm wiki/<domain>/sweeps/{today.isoformat()}.md` if nothing worth acting on.",
             "",
         ]
     )

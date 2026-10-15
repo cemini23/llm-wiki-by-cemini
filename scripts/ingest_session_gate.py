@@ -36,6 +36,28 @@ def git_lines(*args: str) -> list[str]:
     return [ln for ln in proc.stdout.splitlines() if ln.strip()]
 
 
+DOMAINS = frozenset({
+    "osint", "ccc", "cybersec", "seo", "image-gen", "gambling", "game-dev", "3d-printing",
+})
+
+
+def domain_of(repo: Path, path: Path) -> str:
+    """The domain a wiki page belongs to; osint when it cannot be determined.
+
+    The federation merge put eight domains under one wiki root, so `wiki/log.md` and
+    `wiki/index.md` no longer exist — each domain keeps its own.
+    """
+    try:
+        head = path.relative_to(repo / "wiki").parts[0]
+    except (ValueError, IndexError):
+        return "osint"
+    return head if head in DOMAINS else "osint"
+
+
+def domains_touched(repo: Path, wiki_files: list[Path]) -> list[str]:
+    return sorted({domain_of(repo, f) for f in wiki_files}) or ["osint"]
+
+
 def changed_files() -> list[Path]:
     repo = repo_root()
     paths: set[str] = set()
@@ -71,21 +93,20 @@ def main() -> int:
 
     new_sources = [f for f in wiki_files if "/sources/" in str(f) and f.suffix == ".md"]
     new_tools = [f for f in wiki_files if "/entities/tools/" in str(f) and f.suffix == ".md"]
-    log_path = repo / "wiki" / "log.md"
-    index_path = repo / "wiki" / "index.md"
-    log_text = read(log_path)
-    index_text = read(index_path)
 
-    if wiki_files:
+    for dom in domains_touched(repo, wiki_files):
+        log_text = read(repo / "wiki" / dom / "log.md")
         if f"## [{today}]" not in log_text and f"## {today}" not in log_text:
-            warns.append(f"wiki/log.md: no entry dated {today} — append ingest log before commit")
+            warns.append(f"wiki/{dom}/log.md: no entry dated {today} — append ingest log before commit")
         else:
-            infos.append(f"wiki/log.md: dated entry found for {today}")
+            infos.append(f"wiki/{dom}/log.md: dated entry found for {today}")
 
     for src in new_sources:
         slug = src.stem
+        dom = domain_of(repo, src)
+        index_text = read(repo / "wiki" / dom / "index.md")
         if slug not in index_text:
-            warns.append(f"wiki/index.md: missing row for new source `{slug}`")
+            warns.append(f"wiki/{dom}/index.md: missing row for new source `{slug}`")
 
     for tool in new_tools:
         body = read(tool)

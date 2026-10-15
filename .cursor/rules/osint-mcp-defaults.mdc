@@ -7,7 +7,7 @@ alwaysApply: true
 
 ## Librarian status (2026-06-14)
 
-**`cemini-librarian` is deleted.** `kb_search`, `kb_context`, and `conductor_query` via lazy-tool will **fail**. Query wikis with Read/grep locally. **stash** MCP is red unless tunnel restored — do not block sessions on it. See `wiki/meta/librarian-decommission-2026-06-14.md`.
+**`cemini-librarian` is deleted.** `kb_search`, `kb_context`, and `conductor_query` via lazy-tool will **fail**. Query wikis with Read/grep locally. **stash** MCP is red unless tunnel restored — do not block sessions on it. See `wiki/osint/meta/librarian-decommission-2026-06-14.md`.
 
 ## Which MCP servers exist here
 

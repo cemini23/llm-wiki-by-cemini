@@ -14,7 +14,25 @@ import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
-WIKI_SOURCES = Path("wiki/sources")
+WIKI = Path(__file__).resolve().parent.parent / "wiki"
+
+
+def wiki_sources_dirs() -> list[Path]:
+    """Every domain's sources/ directory.
+
+    The federation merge put eight domains under one wiki root, so a single
+    `wiki/sources` glob matches nothing. Returning the list also keeps the basename
+    collisions the merge introduced from being folded together as the same file.
+    """
+    return sorted(p for p in [WIKI / "sources", *WIKI.glob("*/sources")] if p.is_dir())
+
+
+def label(path: Path) -> str:
+    """Path relative to the wiki root — `osint/sources/foo.md`, not just `foo.md`."""
+    try:
+        return str(path.relative_to(WIKI))
+    except ValueError:
+        return str(path)
 LINK_PATTERNS = [
     "*link*.md", "*-re-*.md", "*-links*.md",
     "gemini-dr-wave*.md",       # Gemini Deep Research wave summaries
@@ -204,7 +222,8 @@ def extract_content_h3s(body: str) -> list[tuple[str, str]]:
 def main():
     files = set()
     for pattern in LINK_PATTERNS:
-        files.update(WIKI_SOURCES.glob(pattern))
+        for src in wiki_sources_dirs():
+            files.update(src.glob(pattern))
     files = sorted(files)
 
     print(f"Cross-doc duplicate detection — {len(files)} link-aggregate pages\n")
@@ -214,7 +233,7 @@ def main():
     for fp in files:
         _, body = split_frontmatter_body(fp)
         for repo in extract_repos(body):
-            repo_index[repo].append(fp.name)
+            repo_index[repo].append(fp)
 
     # Separate true duplicates from cross-references
     repo_dupes = {}
@@ -225,7 +244,7 @@ def main():
         # If all but one reference are cross-links (not evaluations), flag differently
         full_evals = 0
         for fn in fnames:
-            _, body = split_frontmatter_body(WIKI_SOURCES / fn)
+            _, body = split_frontmatter_body(fn)
             # Count how many times the repo appears as its own heading or table entry
             mentions = body.count(repo)
             if mentions >= 2:  # appears multiple times = likely full evaluation
@@ -242,7 +261,7 @@ def main():
         for repo, fnames in sorted(repo_dupes.items()):
             print(f"\n  {repo}")
             for fn in sorted(fnames):
-                print(f"    → {fn}")
+                print(f"    → {label(fn)}")
 
     if repo_xrefs:
         print(f"\n{'=' * 70}")
@@ -251,16 +270,16 @@ def main():
         for repo, fnames in sorted(repo_xrefs.items()):
             print(f"\n  {repo}")
             for fn in sorted(fnames):
-                print(f"    → {fn}")
+                print(f"    → {label(fn)}")
 
     # --- Pass 2: arXiv/OpenReview IDs ---
     arxiv_index = defaultdict(list)
     for fp in files:
         _, body = split_frontmatter_body(fp)
         for aid in extract_arxiv_ids(body):
-            arxiv_index[aid].append(fp.name)
+            arxiv_index[aid].append(fp)
         for oid in extract_openreview_ids(body):
-            arxiv_index[oid].append(fp.name)
+            arxiv_index[oid].append(fp)
 
     arxiv_dupes = {a: fs for a, fs in arxiv_index.items() if len(fs) > 1}
     if arxiv_dupes:
@@ -270,7 +289,7 @@ def main():
         for aid, fnames in sorted(arxiv_dupes.items()):
             print(f"\n  {aid}")
             for fn in sorted(fnames):
-                print(f"    → {fn}")
+                print(f"    → {label(fn)}")
     else:
         print(f"\n  No arXiv/OpenReview ID duplicates found.")
 

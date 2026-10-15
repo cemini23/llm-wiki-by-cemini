@@ -3,7 +3,7 @@
 # RETIRED 2026-07-28 — World Cup over; always "not due" (exit 1).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-META="$ROOT/wiki/meta/wc-lp-safety-cadence.md"
+META="$ROOT/wiki/osint/meta/wc-lp-safety-cadence.md"
 
 if grep -q 'RETIRED' "$META" 2>/dev/null; then
   echo "wc-lp-safety RETIRED (2026-07-28) — world-cup-bot dropped; not due"

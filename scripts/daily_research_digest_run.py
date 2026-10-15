@@ -400,7 +400,7 @@ def main() -> int:
     today = date.today()
     from_date = (today - timedelta(days=window)).isoformat()
 
-    out_tpl = (cfg.get("output") or {}).get("path_template", "wiki/sweeps/{date}-daily.md")
+    out_tpl = (cfg.get("output") or {}).get("path_template", "wiki/{domain}/sweeps/{date}-daily.md")
     # The merged wiki holds all eight domains in one repo, so the template must
     # carry the domain. CEMINI_WIKI_ID is exported by the ~/bin wrappers.
     domain = os.environ.get("CEMINI_WIKI_ID") or "osint"
@@ -672,7 +672,7 @@ def main() -> int:
             "",
             "### Discard",
             "",
-            f"`rm wiki/sweeps/{today.isoformat()}-daily.md` if nothing worth acting on.",
+            f"`rm wiki/{domain}/sweeps/{today.isoformat()}-daily.md` if nothing worth acting on.",
             "",
         ]
     )

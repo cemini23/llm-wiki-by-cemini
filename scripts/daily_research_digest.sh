@@ -27,7 +27,7 @@ set -uo pipefail
 REPO=$(cd "$(dirname "$0")/.." && pwd)
 LOG_FILE="$HOME/Library/Logs/cemini-daily-digest.log"
 TODAY=$(date +%Y-%m-%d)
-REPORT="$REPO/wiki/sweeps/${TODAY}-daily.md"
+REPORT="$REPO/wiki/${CEMINI_WIKI_ID:-osint}/sweeps/${TODAY}-daily.md"
 
 mkdir -p "$(dirname "$LOG_FILE")"
 

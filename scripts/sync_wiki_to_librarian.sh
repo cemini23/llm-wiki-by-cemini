@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # sync_wiki_to_librarian.sh — DEPRECATED 2026-06-14 (cemini-librarian deleted)
 #
-# Do not run. Wiki canon is laptop git only. See wiki/meta/librarian-decommission-2026-06-14.md
+# Do not run. Wiki canon is laptop git only. See wiki/osint/meta/librarian-decommission-2026-06-14.md
 #
 # LSA Phase 5: hourly wiki sync from laptop → cemini-librarian + post-rsync
 # kb-server reindex. Designed to be safe to run frequently (rsync is idempotent;
@@ -18,7 +18,7 @@
 #   3 — workspace dir missing
 
 set -euo pipefail
-echo "DEPRECATED: cemini-librarian deleted 2026-06-14. See wiki/meta/librarian-decommission-2026-06-14.md" >&2
+echo "DEPRECATED: cemini-librarian deleted 2026-06-14. See wiki/osint/meta/librarian-decommission-2026-06-14.md" >&2
 exit 3
 
 set -uo pipefail

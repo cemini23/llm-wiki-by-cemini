@@ -71,7 +71,10 @@ from typing import Literal
 # -------------------------------------------------------------------- paths --
 
 ROOT = Path(__file__).resolve().parent.parent
-WIKI = Path(os.environ.get("WIKI_DIR", ROOT / "wiki"))
+# Audited briefs are OSINT briefs, so a bare `concepts/x.md` means the osint domain. Before
+# the federation merge `ROOT/wiki` was the whole osint wiki; it is now `ROOT/wiki/osint`.
+# Cross-wiki `@<alias>/…` references resolve through WIKI_ALIASES, which loads in-tree.
+WIKI = Path(os.environ.get("WIKI_DIR", ROOT / "wiki" / "osint"))
 TODAY = date.today()
 
 

@@ -2,11 +2,12 @@
 """Append inbox triage snapshot to today's daily sweep file (Phase 2).
 
 Called by inbox_notify.sh when files land in `research to be indexed/`.
-Creates wiki/sweeps/YYYY-MM-DD-daily.md stub if the morning digest has not run yet.
+Creates wiki/<domain>/sweeps/YYYY-MM-DD-daily.md stub if the morning digest has not run yet.
 """
 
 from __future__ import annotations
 
+import os
 import subprocess
 import sys
 from datetime import date, datetime
@@ -121,7 +122,7 @@ def main() -> int:
     repo = repo_root()
     today = date.today()
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    report = repo / "wiki" / "sweeps" / f"{today.isoformat()}-daily.md"
+    report = repo / "wiki" / (os.environ.get("CEMINI_WIKI_ID") or "osint") / "sweeps" / f"{today.isoformat()}-daily.md"
     report.parent.mkdir(parents=True, exist_ok=True)
 
     files = inbox_files(repo)

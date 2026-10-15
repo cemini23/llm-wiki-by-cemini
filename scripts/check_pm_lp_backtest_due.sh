@@ -2,7 +2,7 @@
 # Exit 0 if PM LP backtest cadence is due (≥90 days since last run in wiki meta).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-META="$ROOT/wiki/meta/pm-lp-backtest-cadence.md"
+META="$ROOT/wiki/osint/meta/pm-lp-backtest-cadence.md"
 DAYS="${PM_LP_BACKTEST_CADENCE_DAYS:-90}"
 
 if [[ ! -f "$META" ]]; then
@@ -10,9 +10,12 @@ if [[ ! -f "$META" ]]; then
   exit 0
 fi
 
-LAST=$(grep -E '^\| \*\*Last run\*\*' "$META" | sed -E 's/.*\| ([0-9]{4}-[0-9]{2}-[0-9]{2}) .*/\1/' | head -1)
+# The label may carry a suffix (`**Last run (v1 proxy)**`), so match the prefix only.
+# `|| true` keeps pipefail from turning a no-match grep into a silent exit 1.
+LAST=$( { grep -E '^\| \*\*Last run' "$META" || true; } | sed -E 's/.*\| ([0-9]{4}-[0-9]{2}-[0-9]{2}) .*/\1/' | head -1)
 if [[ -z "$LAST" ]]; then
-  exit 0
+  echo "pm-lp-backtest: no 'Last run' row in $(basename "$META")"
+  exit 1
 fi
 
 LAST_EPOCH=$(date -j -f "%Y-%m-%d" "$LAST" "+%s" 2>/dev/null || date -d "$LAST" "+%s")

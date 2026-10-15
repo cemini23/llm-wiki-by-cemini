@@ -12,8 +12,11 @@ from pathlib import Path
 
 SCRIPTS = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPTS.parent
-INBOX = REPO_ROOT / "research to be indexed"
-OSINT_WIKI = REPO_ROOT / "wiki"
+# Both are namespaced by domain after the federation merge. This script routes OSINT
+# newsletter drops, so it works in the osint inbox and the osint wiki tree; the
+# cross-wiki targets come from load_wiki_aliases(), which resolves in-tree.
+INBOX = REPO_ROOT / "research to be indexed" / "osint"
+OSINT_WIKI = REPO_ROOT / "wiki" / "osint"
 
 sys.path.insert(0, str(SCRIPTS))
 

@@ -3,7 +3,7 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 TODAY=$(date +%Y-%m-%d)
-REPORT="$ROOT/wiki/sweeps/${TODAY}-daily.md"
+REPORT="$ROOT/wiki/${CEMINI_WIKI_ID:-osint}/sweeps/${TODAY}-daily.md"
 
 if [[ ! -f "$REPORT" ]]; then
   echo "daily-research-digest DUE (no report for ${TODAY})"
