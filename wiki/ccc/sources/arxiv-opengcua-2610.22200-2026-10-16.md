@@ -6,7 +6,7 @@ keywords: [OpenGCUA, computer use, OSWorld, code execution per step, observe act
 related:
   - concepts/computer-use-agent-harness.md
   - concepts/k292-ccc-wave.md
-  - concepts/agentic-context-management.md
+  - "@osint-wiki/concepts/agentic-context-management.md"
 maturity: draft
 read_status: read
 created: 2026-10-16
@@ -17,7 +17,7 @@ updated: 2026-10-16
 
 - @concepts/computer-use-agent-harness.md — the pattern this paper establishes
 - @concepts/k292-ccc-wave.md — K292 ccc wave hub
-- @concepts/agentic-context-management.md
+- @osint-wiki/concepts/agentic-context-management.md
 
 ## Raw Concept
 

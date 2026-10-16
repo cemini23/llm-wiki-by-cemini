@@ -6,7 +6,7 @@ keywords: [observe act organize, code execution per step, guarded program, on-de
 related:
   - sources/arxiv-opengcua-2610.22200-2026-10-16.md
   - concepts/k292-ccc-wave.md
-  - concepts/agentic-context-management.md
+  - "@osint-wiki/concepts/agentic-context-management.md"
 maturity: draft
 read_status: read
 created: 2026-10-16
@@ -17,7 +17,7 @@ updated: 2026-10-16
 
 - @sources/arxiv-opengcua-2610.22200-2026-10-16.md — the paper
 - @concepts/k292-ccc-wave.md
-- @concepts/agentic-context-management.md
+- @osint-wiki/concepts/agentic-context-management.md
 
 ## Raw Concept
 

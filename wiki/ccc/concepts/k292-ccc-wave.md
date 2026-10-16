@@ -8,7 +8,7 @@ related:
   - sources/arxiv-mlexpert-2610.22344-2026-10-16.md
   - concepts/computer-use-agent-harness.md
   - concepts/execution-window-rl.md
-  - sources/k292-osint-feeds-2026-10-16.md
+  - "@osint-wiki/sources/k292-osint-feeds-2026-10-16.md"
 maturity: draft
 read_status: read
 created: 2026-10-16
@@ -22,7 +22,7 @@ wire_status: policy_wired
 - @sources/arxiv-mlexpert-2610.22344-2026-10-16.md
 - @concepts/computer-use-agent-harness.md
 - @concepts/execution-window-rl.md
-- @sources/k292-osint-feeds-2026-10-16.md
+- @osint-wiki/sources/k292-osint-feeds-2026-10-16.md
 
 ## Raw Concept
 

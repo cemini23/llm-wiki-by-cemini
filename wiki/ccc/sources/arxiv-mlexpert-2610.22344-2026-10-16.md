@@ -6,7 +6,7 @@ keywords: [MLExpert, WIRL, execution window, MLE-Bench, outcome-guided SFT, expe
 related:
   - concepts/execution-window-rl.md
   - concepts/k292-ccc-wave.md
-  - concepts/agent-harness-verification-bottleneck.md
+  - "@osint-wiki/concepts/agent-harness-verification-bottleneck.md"
 maturity: draft
 read_status: read
 created: 2026-10-16
@@ -17,7 +17,7 @@ updated: 2026-10-16
 
 - @concepts/execution-window-rl.md — the transferable training recipe
 - @concepts/k292-ccc-wave.md — K292 ccc wave hub
-- @concepts/agent-harness-verification-bottleneck.md
+- @osint-wiki/concepts/agent-harness-verification-bottleneck.md
 
 ## Raw Concept
 
