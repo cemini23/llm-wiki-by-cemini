@@ -20,6 +20,13 @@ OSINT K292: **142 inbox files but only 22 distinct new sources.** The same **16 
 | [theophyseval](sources/arxiv-theophyseval-2610.16733-2026-10-16.md) | Two-track harness; memorisation signal | draft |
 | [librarian-agents](sources/arxiv-librarian-agents-2610.22273-2026-10-16.md) | Build the workspace before the question | draft |
 | [anticipatory-curation](concepts/anticipatory-workspace-curation.md) | Break-even ~20 queries; build, don't retrieve | draft |
+| [leantoken](entities/tools/leantoken.md) | Token-bounded code intelligence MCP; Apache-2.0 | draft |
+| [flameox](entities/tools/flameox.md) | Runtime profiler / GPU-trace MCP; MIT | draft |
+| [jacobian](entities/tools/jacobian.md) | Symbolic-math MCP over SymPy/Z3/FLINT; MIT | draft |
+| [smokinggun](entities/tools/smokinggun.md) | Static complexity scanner + agent skill; MIT | draft |
+| [xerj](entities/tools/xerj.md) | Local ES-compatible passage indexer; Apache-2.0 | draft |
+| [parallel-cc](entities/tools/parallel-cc.md) | Git-worktree isolation for concurrent sessions; MIT | draft |
+| [cap](entities/tools/cap-screen-recorder.md) | Screen recorder, local captions; AGPL-3.0 | draft |
 
 ### K291 ingest (2026-10-14)
 OSINT K291: **8 arXiv items + 2 GS desk notes + 11 feeds → 10 source pages + 1 hub + 6 concept backlinks.** One arXiv item (`2610.18802`, Brownian Fleming–Viot) was **skipped** as pure probability theory with no application. **GROMM** is the desk item: an arbitrage-free S&P option market model where the **option surface is the state variable**, fitting >95% of quotes inside bid/ask. **EmbodiedEvo** gives the agent-harness lesson: Skills and Lessons distilled from one scene match raw history's performance at **53% lower execution cost**. **AutoAgent0** is the same propose-verify-recover architecture as this wiki's tool-call gate, applied to trajectories. **DiffNash** trains diffusion policies without samplable targets. **CTAs are long $43.5bn, down from $125bn a month ago**; Info Tech flipped from most-bought to most-sold. **No install. No trade. No scrape. No xsp/pm scp.**

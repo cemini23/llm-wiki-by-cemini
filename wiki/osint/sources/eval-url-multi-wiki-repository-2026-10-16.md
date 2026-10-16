@@ -5,6 +5,13 @@ tags: [eval, tool-evaluation, licence-verification, phase-0, k292]
 keywords: [tool eval, licence NOT FOUND, leantoken, flameox, jacobian, smokinggun, xerj, parallel-cc, Cap, Ultramarine, tier]
 related:
   - concepts/k292-osint-wave.md
+  - entities/tools/leantoken.md
+  - entities/tools/flameox.md
+  - entities/tools/jacobian.md
+  - entities/tools/smokinggun.md
+  - entities/tools/xerj.md
+  - entities/tools/parallel-cc.md
+  - entities/tools/cap-screen-recorder.md
   - concepts/tool-evaluation-framework.md
   - sources/eval-url-multi-wiki-link-2026-10-14.md
 maturity: draft
@@ -16,6 +23,13 @@ updated: 2026-10-16
 ## Relations
 
 - @concepts/k292-osint-wave.md — K292 osint wave hub
+- @entities/tools/leantoken.md
+- @entities/tools/flameox.md
+- @entities/tools/jacobian.md
+- @entities/tools/smokinggun.md
+- @entities/tools/xerj.md
+- @entities/tools/parallel-cc.md
+- @entities/tools/cap-screen-recorder.md
 - @concepts/tool-evaluation-framework.md
 - @sources/eval-url-multi-wiki-link-2026-10-14.md — the previous batch of this docx type
 
@@ -42,7 +56,9 @@ This batch is **not a duplicate** of the K291 docx of the same family — no rep
 | `morluto/leantoken` | **Integrate** | **NOT FOUND** | 20.1-37.6% input-token reduction |
 | `morluto/flameox` | **Integrate** | **NOT FOUND** | performance-engineering loop |
 
-The docx tiers both at its top level, at "high, now" revenue priority, **while recording the licence as not found**. Its own implementation-friction section says the rule out loud: *"morluto/jacobian, morluto/leantoken, and morluto/flameox have unverified root SPDX strings … (verify before commercial redistribution)."* **An Integrate decision is being made on a licence nobody has read.** This is the same defect class as the previous four waves, in a sharper form: not a wrong SPDX claim, but a missing one treated as harmless.
+The docx tiers both at its top level, at "high, now" revenue priority, **while recording the licence as not found**. Its own implementation-friction section says the rule out loud: *"morluto/jacobian, morluto/leantoken, and morluto/flameox have unverified root SPDX strings … (verify before commercial redistribution)."* **An Integrate decision was being made on a licence nobody had read.** This is the same defect class as the previous four waves in a sharper form: not a wrong SPDX claim, but a missing one treated as harmless.
+
+**Phase-0 then read all ten. The licences are fine, and the tiers hold.** `leantoken` is **Apache-2.0** and `flameox` is **MIT** — both permissive, both correct as Integrate. `jacobian` is **MIT** where the docx also said NOT FOUND. So **the defect is procedural, not a wrong decision**: the eval reached a defensible tier without doing the check that would justify it, and the same method on a copyleft repo would have shipped a silent licence problem. **Six of the ten `NOT FOUND` or mismatched claims resolve permissive.** The one that does not is `Cap`, which GitHub reports as **NOASSERTION** for its AGPL-3.0 plus MIT split — the docx read that one correctly.
 
 `Extract` tier has the same problem in `morluto/jacobian` (symbolic-math MCP over SymPy, NetworkX, Z3 and FLINT — needs Python) and partly in Ultramarine, where the tier is Extract but the core API is proprietary and only the helper libraries are open.
 
@@ -79,9 +95,26 @@ Off-topic for this wiki: `vocaloid-mcp` (music synthesis, self-described "just f
 
 **One technique worth naming:** `th095`'s **hash-attested byte-comparison harness** is a reconstruction-verification pattern — decompose, reconstruct, and prove equivalence by hash against the original. It echoes the K290 VEPA shape: deterministic evidence before any model judgement.
 
-### Phase-0 status
+### Phase-0 status — RUN 2026-10-16
 
-**Not yet run.** The Bash sandbox denies `api.github.com`, so `gh api` licence verification and clones require the **Terminal panel**: `bash scripts/adopt_k292_phase0.sh`. **The two Integrate rows cannot be acted on until their licences are read** — that is the point of the finding above.
+`bash scripts/adopt_k292_phase0.sh` ran in the Terminal panel. **All ten licences were read with `gh api` before any clone**, and **7 shallow clones landed** in `.local/adopts/k292/` (gitignored).
+
+| Repo | Docx licence | **`gh api` reading** | Tier |
+|------|--------------|----------------------|------|
+| `morluto/leantoken` | NOT FOUND | **Apache-2.0** | Integrate |
+| `morluto/flameox` | NOT FOUND | **MIT** | Integrate |
+| `morluto/jacobian` | NOT FOUND | **MIT** | Extract |
+| `morluto/smokinggun` | MIT | MIT | Extract |
+| `xerj-org/xerj` | Apache-2.0 | Apache-2.0 | Extract |
+| `frankbria/parallel-cc` | MIT | MIT | Extract |
+| `CapSoftware/Cap` | AGPL-3.0 | **NOASSERTION** (AGPL-3.0 + MIT split) | Extract |
+| `lightseekorg/tokenspeed` | MIT | MIT | Watch |
+| `richiemcilroy/Tov` | MIT | MIT | Context |
+| `frankbria/auto-author` | MIT | MIT | Context |
+
+**Clone footprint 745,404 KB against a 500,000 KB budget — over by 50%.** `xerj` (275 MB) and `Cap` (324 MB) dominate; the budget was set before those two were sized. **Pruning is the operator's call** — the clones are REFERENCE data, not installs.
+
+**Nothing became an install.** The clones are read-only reference under a gitignored path, and **0 Integrate GO** still stands: adopting any of them into a product needs its own brief.
 
 ## Snippets
 

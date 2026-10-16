@@ -74,11 +74,14 @@ done
 
 echo
 echo "=== TOTAL CLONE FOOTPRINT: ${TOTAL}KB (budget ${BUDGET_KB}KB) ==="
-if [ "$TOTAL" -gt "$BUDGET_KB" ]; then echo "WARNING: over budget — prune before adopting."; fi
+if [ "$TOTAL" -gt "$BUDGET_KB" ]; then
+  echo "WARNING: over budget — prune before adopting."
+  echo "  Measured 2026-10-16: 745404KB. xerj (275112KB) and Cap (324280KB) dominate."
+  echo "  The 500000KB budget was set before those two were sized."
+fi
 
 echo
 echo "=== NOT CLONED, and why ==="
-echo "morluto/jacobian, morluto/flameox  — large or GPU-trace deps; clone by hand if needed"
 echo "paperinstruments.com (Ultramarine) — a website, not a repo; API is proprietary"
 echo "richiemcilroy/Tov, frankbria/auto-author, frankbria/codeframe      — Context tier"
 echo "richiemcilroy/chippytea, frankbria/auto-modeler-evolve, sprintforge — Pass tier"
