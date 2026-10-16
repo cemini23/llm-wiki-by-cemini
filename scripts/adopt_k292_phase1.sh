@@ -53,9 +53,13 @@ for id in 2610.18802 2610.20896; do
 done
 echo "   confirmed: no source page for 2610.18802 or 2610.20896"
 
-echo "5. the eval Integrate rows are not treated as adopted"
-grep -q "NOT FOUND" wiki/osint/sources/eval-url-multi-wiki-repository-2026-10-16.md
-echo "   eval page records the unread-licence finding"
+echo "5. the Integrate rows carry their verified licence, and are still not adopted"
+EV=wiki/osint/sources/eval-url-multi-wiki-repository-2026-10-16.md
+grep -q "leantoken.*Apache-2.0" "$EV" || { echo "   MISSING: leantoken licence reading"; exit 1; }
+grep -q "flameox.*MIT" "$EV" || { echo "   MISSING: flameox licence reading"; exit 1; }
+grep -q "0 Integrate GO" "$EV" || { echo "   MISSING: the no-GO statement"; exit 1; }
+grep -q "Phase-0 status — RUN 2026-10-16" "$EV" || { echo "   MISSING: the Phase-0 result"; exit 1; }
+echo "   eval page carries the verified readings and still says 0 Integrate GO"
 
 echo "OK — K292 Phase-1 clean."
 echo "0 Integrate GO. No install. No clone committed. No scrape."
