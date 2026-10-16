@@ -19,6 +19,12 @@
 
 set -euo pipefail
 
+# This script takes all input from arguments and reads nothing from stdin.
+# ssh and scp DO read stdin, so a caller looping over a heredoc would have its
+# file list drained by the first call and the loop would end after one iteration.
+# That is how the K292 wave lost 9 of 10 papers before egress.
+exec < /dev/null
+
 EGRESS_HOST="${CEMINI_EGRESS_HOST:-cemini-egress-fi}"
 REMOTE_BASE="${CEMINI_EGRESS_BULK:-/opt/cemini-bulk/research}"
 KEEP_LOCAL=0

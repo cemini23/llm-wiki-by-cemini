@@ -67,6 +67,24 @@ def download_arxiv_pdf(arxiv_id: str, dest: Path) -> None:
     dest.write_bytes(data)
 
 
+def pending_inbox_arxiv_ids(repo: Path, inbox: Path) -> set[str]:
+    """Every arXiv id sitting in ANY domain inbox, not just this one.
+
+    Eight per-domain LaunchAgents run the same global paper queries, so without
+    this each domain downloads the same PDFs into its own namespace and the
+    federation ingests the same paper eight times. Treating a peer inbox's id as
+    already pending lets the first domain to run claim the paper and the rest skip
+    it.
+    """
+    ids = inbox_arxiv_ids(inbox)
+    root = repo / "research to be indexed"
+    if root.is_dir():
+        for d in sorted(p for p in root.iterdir() if p.is_dir()):
+            if d != inbox:
+                ids |= inbox_arxiv_ids(d)
+    return ids
+
+
 def fetch_papers(
     repo: Path,
     paper_sections: list[tuple[str, str, str | None, list[dict]]],
@@ -78,7 +96,7 @@ def fetch_papers(
     inbox.mkdir(parents=True, exist_ok=True)
     sources = repo / "wiki" / "sources"
     idx = build_wiki_index(sources)
-    pending_inbox = inbox_arxiv_ids(inbox)
+    pending_inbox = pending_inbox_arxiv_ids(repo, inbox)
 
     outcomes: list[FetchOutcome] = []
     downloaded = 0
