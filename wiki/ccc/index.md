@@ -1319,3 +1319,14 @@ Three papers on agent supervision. The theme: the supervision signal is the bott
 - [davinci-tool](sources/arxiv-davinci-tool-agentic-tool-use-supervision-2610.16867-2026-10-14.md) — 30B tool-use model; τ2-bench 52.4 → 88.2 at 1/16 the parameters
 - [agent-reflex](sources/arxiv-agent-reflex-reflective-agents-2610.17953-2026-10-14.md) — reflection trained from matched success–failure pairs
 - [chunkact](sources/arxiv-chunkact-action-chunking-agentic-robotics-2610.18874-2026-10-14.md) — compile the routine; 2.9× fewer LLM calls
+
+## K292 ingest (2026-10-16)
+
+Two harness papers, plus the model and safety items from the shared feeds batch. The theme: **move a decision out of the harness or assign credit at the checkpoint** — and the finding that **reward hacks spread between agents**.
+
+- [k292-ccc-wave](concepts/k292-ccc-wave.md) — wave hub; harness patterns, safety cluster, model landscape
+- [opengcua](sources/arxiv-opengcua-2610.22200-2026-10-16.md) — code execution per step; OSWorld +19.6, steps −53%
+- [mlexpert](sources/arxiv-mlexpert-2610.22344-2026-10-16.md) — WIRL; medal rate 37.9% → 72.7%
+- [computer-use-agent-harness](concepts/computer-use-agent-harness.md) — observe / act / organise; do not micro-compact
+- [execution-window-rl](concepts/execution-window-rl.md) — credit at the boundary where the world answers back
+

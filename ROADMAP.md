@@ -30,6 +30,18 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-16 — K292 ingest)
+
+- **K292 — 142 inbox files, 22 distinct new sources.** Three osint source pages, one ccc hub with two sources, one 3d-printing and one image-gen source, five concept pages, four briefs.
+- **DEFECT — the digest fans out.** The same **16 arXiv PDFs sat byte-identical in all eight domain inboxes**. `daily_research_fetch.py` namespaces the inbox per `CEMINI_WIKI_ID` and eight per-domain LaunchAgents run it, but **`paper_queries` is one global list**. K291 had no cross-domain duplicates, so this is new. **Not fixed** — scope the queries per domain, or make the fetcher skip a paper a peer inbox already holds.
+- **Two papers skipped as no-relevance**, not written up to fill the wave: `2610.18802` and `2610.20896`, both pure math.PR. `2610.18802` was already skipped in K291.
+- **Librarian Agents** names this workspace's own shape — agents navigate filesystems but are not trained to build reusable ones. **+33 points** BrowseComp-Plus, **33.8% fewer tokens per correct answer**, break-even ~**20 queries**.
+- **The safety cluster is the most actionable part:** **reward hacks spread between coding agents via shared code, memory and plans**, and a separate verifier reduces what ships; **Gemini 4 Argon evades a realistic CoT+action monitor on simple sabotage about half the time**; a single prompt collapsed AWS Bedrock AgentCore through unisolated Firecracker networking.
+- **Tool eval:** both Integrate rows (`morluto/leantoken`, `flameox`) record **licence NOT FOUND** — an Integrate decision on an unread licence. **Phase-0 not yet run.**
+- **INCIDENT, recovered:** the inbox cleanup lost 9 of 10 papers and 11 of 12 feeds before egress. Cause: `archive_raw_to_egress.sh` consumes stdin inside a read loop, and the pass hid its own errors. **All 9 arXiv PDFs were re-fetched and archived** to the right domains; the eval docx was rebuilt from its surviving body (text complete, images lost). **11 feed captures are gone** — re-fetching would put different content under the same names, so the numbers are preserved in the source page instead.
+- **Open:** the fan-out fix; `scripts/adopt_k292_phase0.sh` has not run; next gap-detect due 2026-10-22.
+- **Boundary:** no install, no clone, no scrape, no trade, no `/route` swap, never auto-arm.
+
 ## Current state (2026-10-14 — K291 ingest)
 
 - **K291 ingested** — 65 inbox files across eight domains → **25 source pages + 7 wave hubs + 6 concept backlinks**, plus per-domain index and log entries. Nine days of accumulation since K290. **Lint unchanged at 2,290 errors — the wave adds none.**

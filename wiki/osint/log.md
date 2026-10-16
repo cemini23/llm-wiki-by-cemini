@@ -1,3 +1,23 @@
+## [2026-10-16] incident | K292 raw archive failed, recovered
+
+- **The K292 inbox cleanup lost most raws before they reached egress.** The pass archived each distinct source and then cleared the inbox. Only 2 of 10 papers and 1 of 12 feeds landed on egress; the following step deleted every local copy regardless.
+- **Root cause:** `archive_raw_to_egress.sh` **consumes stdin**. Called inside a `while read` heredoc loop, it ate the rest of the file list and the loop exited after one iteration. **Fix: pass `< /dev/null`.** Contributing cause: the pass redirected the archive output to `/dev/null`, so failures were invisible.
+- **Recovered:** all **9 arXiv PDFs** re-fetched from arXiv and archived to the correct domain cold store — verified present in `osint` (5), `ccc` (2), `3d-printing` (1), `image-gen` (1). The **eval docx was rebuilt** from its surviving `word/document.xml`; text complete, embedded images lost. On egress under the original name.
+- **Not recovered:** 11 feed RSS captures. A re-fetch would put different content under the same names. The numbers are preserved in @sources/k292-osint-feeds-2026-10-16.md, which now carries the full account under `## Dead Ends`.
+- **Inbox is empty and consistent with egress again.**
+
+## [2026-10-16] ingest | K292 — osint feeds, tool eval, and the inbox fan-out defect
+
+- **142 inbox files, 22 distinct new sources.** The same **16 arXiv PDFs sat byte-identical in all eight domain inboxes** (`osint`, `ccc`, `cybersec`, `seo`, `image-gen`, `gambling`, `game-dev`, `3d-printing`); 8 were already ingested. Cause: `daily_research_fetch.py` namespaces the inbox per `CEMINI_WIKI_ID`, and eight per-domain LaunchAgents run it, but **`paper_queries` in `daily_research_config.yaml` is one global list**. K291 had no cross-domain duplicates, so this is new. Deduped by hand; **no data lost. Not fixed.**
+- **Two papers skipped as no-relevance, not ingested:** `2610.18802` (branching explosion of Brownian Fleming-Viot systems) and `2610.20896` (Q-process for mother-dependent branching). Both pure math.PR with no method, number, model or caveat usable in any lane. `2610.18802` was already skipped once, in K291, for the same reason.
+- **Feeds →** @sources/k292-osint-feeds-2026-10-16.md. 12 items. Kalshi **78%** trailing seven-day share, and **$6.8bn outside parlays — more than every other venue combined, parlays included**. Google barred prediction-market ads in five states. Goolsbee: sentiment has stopped predicting spending; the **price level is ~30% above January 2020** while CPI is 3.7%. 1990s bubble cohorts earned **7-8% less** than comparable peers fifteen years on. **Joy of Destruction: 1 in 3 destroy another's value for no gain.**
+- **Tool eval →** @sources/eval-url-multi-wiki-repository-2026-10-16.md. 20 URLs. **Integrate 2 · Extract 6 · Watch 1 · Context 5 · Pass 6.** **Both Integrate rows (`morluto/leantoken`, `morluto/flameox`) record licence NOT FOUND**, and the docx's own friction note says to verify the morluto SPDX before redistribution. **An Integrate decision on an unread licence.** `CapSoftware/Cap` is AGPL-3.0 — isolate. **Phase-0 not yet run.**
+- **BeTINN →** @sources/arxiv-betinn-2610.19254-2026-10-16.md. An accurate Heston price does not imply accurate greeks; validate surrogates on Δ/Γ. Read and cite — no code released.
+- **TheoPhysEval →** @sources/arxiv-theophyseval-2610.16733-2026-10-16.md. Two harness tracks, realistic and isolated; accuracy barely moves without retrieval, which the authors read as memorisation. The benchmark's authors later confirmed several reference solutions were wrong.
+- **Librarian Agents →** @sources/arxiv-librarian-agents-2610.22273-2026-10-16.md and @concepts/anticipatory-workspace-curation.md. Names this workspace's own shape. **+33 points** BrowseComp-Plus, **+31** zero-shot BRIGHT, **33.8% fewer tokens per correct answer**, break-even ~**20 queries**.
+- **Pages:** 3 sources + 1 hub + 1 concept in osint. Cross-domain: ccc (3), 3d-printing (2), image-gen (2).
+- **Boundary:** no install, no clone, no scrape, no trade, **no xsp/pm scp**, never auto-arm.
+
 ## [2026-10-15] phase0 | K291 tool eval — docx licence wrong on 5 of 17
 
 - **Ran `bash scripts/adopt-waves/adopt_k291_phase0.sh`** in the Terminal panel (the Bash sandbox denies `api.github.com`).

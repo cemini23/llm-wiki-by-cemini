@@ -1,3 +1,9 @@
+## [2026-10-16] ingest | K292 — 3DCodeVerse
+
+- **Hub —** @concepts/k292-3d-printing-wave.md.
+- **Source —** @sources/arxiv-3dcodeverse-2610.22341-2026-10-16.md. 269,597 unique executable 3D programs across Blender `bpy`, CadQuery, OpenSCAD, Three.js, URDF and GLSL — but **92% is two sources** (DeepCAD→CadQuery, Shadertoy GLSL). LoRA lifts Qwen3.5-9B execution rate **0.0 → 84.9**.
+- **Concept —** @concepts/executable-3d-verification-harness.md. **Execute, then measure geometry numerically, then let a VLM judge** — deterministic checks before model judgement. 90% pairwise human-preference win over Claude Design with both sides on Claude Opus 5.5, but the paper states no limitations and runs one seed.
+
 # Wiki Log
 
 Append-only chronological operations log. Each entry: date + operation + summary + pages touched.

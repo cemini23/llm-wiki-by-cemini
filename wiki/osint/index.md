@@ -8,6 +8,19 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K292 ingest (2026-10-16)
+OSINT K292: **142 inbox files but only 22 distinct new sources.** The same **16 arXiv PDFs sat byte-identical in all eight domain inboxes** — the digest's `paper_queries` are global while the inbox is per-domain. 8 of the 16 were already ingested. Deduped by hand; **no data lost**. **Two papers skipped as no-relevance** (`2610.18802`, `2610.20896`, both pure math.PR) rather than written up to fill the wave. **Librarian Agents** names this workspace's own shape — **+33 points** BrowseComp-Plus, **33.8% fewer tokens per correct answer**. **BeTINN**: an accurate Heston price does not imply accurate greeks. **TheoPhysEval**: run evals with and without retrieval; the delta estimates memorisation. **Kalshi holds 78% of prediction-market volume**, and still leads with parlays stripped. **Both tool-eval Integrate rows record licence NOT FOUND.** **No install. No trade. No scrape. No xsp/pm scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k292-osint-wave](concepts/k292-osint-wave.md) | Wave hub — feeds, eval, and the fan-out defect | draft |
+| [k292-osint-feeds](sources/k292-osint-feeds-2026-10-16.md) | Kalshi 78%; Google ads; Goolsbee; destruction games | draft |
+| [eval-multi-wiki-repo](sources/eval-url-multi-wiki-repository-2026-10-16.md) | 20 URLs; both Integrate rows licence NOT FOUND | draft |
+| [betinn](sources/arxiv-betinn-2610.19254-2026-10-16.md) | Accurate price ≠ accurate greeks | draft |
+| [theophyseval](sources/arxiv-theophyseval-2610.16733-2026-10-16.md) | Two-track harness; memorisation signal | draft |
+| [librarian-agents](sources/arxiv-librarian-agents-2610.22273-2026-10-16.md) | Build the workspace before the question | draft |
+| [anticipatory-curation](concepts/anticipatory-workspace-curation.md) | Break-even ~20 queries; build, don't retrieve | draft |
+
 ### K291 ingest (2026-10-14)
 OSINT K291: **8 arXiv items + 2 GS desk notes + 11 feeds → 10 source pages + 1 hub + 6 concept backlinks.** One arXiv item (`2610.18802`, Brownian Fleming–Viot) was **skipped** as pure probability theory with no application. **GROMM** is the desk item: an arbitrage-free S&P option market model where the **option surface is the state variable**, fitting >95% of quotes inside bid/ask. **EmbodiedEvo** gives the agent-harness lesson: Skills and Lessons distilled from one scene match raw history's performance at **53% lower execution cost**. **AutoAgent0** is the same propose-verify-recover architecture as this wiki's tool-call gate, applied to trajectories. **DiffNash** trains diffusion policies without samplable targets. **CTAs are long $43.5bn, down from $125bn a month ago**; Info Tech flipped from most-bought to most-sold. **No install. No trade. No scrape. No xsp/pm scp.**
 

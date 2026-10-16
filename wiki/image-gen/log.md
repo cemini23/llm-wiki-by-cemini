@@ -1,3 +1,9 @@
+## [2026-10-16] ingest | K292 — OmniVerifier-C1
+
+- **Hub —** @concepts/k292-image-gen-wave.md.
+- **Source —** @sources/arxiv-omniverifier-c1-2610.22355-2026-10-16.md. **Decompose a prompt into K sub-questions; score = fraction satisfied.** GenEval SD3.5-medium 0.66 → **0.77**. **Pairwise beats pointwise when a reference exists** (Maze 67.8 → 85.3, Sudoku 77.7 → 90.0).
+- **Concept —** @concepts/decomposed-graded-verifier.md. Graded beats binary; **excessive decomposition is a failure mode.** Code only, no weights.
+
 ## [2026-10-14] ingest | K291 — image-gen wave (5 papers in scope)
 
 - **Hub** — @concepts/k291-image-gen-wave.md.

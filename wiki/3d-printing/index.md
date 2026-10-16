@@ -189,3 +189,9 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 
 - [Daily research digest cadence (3d-printing)](meta/daily-research-digest-cadence.md) — federated Exa/inbox discovery loop (K93); sweep reports in `wiki/sweeps/` — `meta, automation, federation, k93`
 - [Daily research sweep template](sweeps/_daily-template.md) — copy scaffold for `wiki/sweeps/YYYY-MM-DD-daily.md` — `meta, template, sweep`
+
+## K292 ingest (2026-10-16)
+
+- [3dcodeverse](sources/arxiv-3dcodeverse-2610.22341-2026-10-16.md) — 269,597 executable 3D programs; 90% human-preference win over Claude Design on the same backbone — `paper, 3d, code-generation, harness, k292`
+- [executable-3d-verification](concepts/executable-3d-verification-harness.md) — execute, then measure geometry numerically, then let a VLM judge — `concept, verification, harness, k292`
+

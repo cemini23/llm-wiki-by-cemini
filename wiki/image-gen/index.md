@@ -1190,3 +1190,9 @@ Five generative-media papers. Three robotics/world-model papers filed here were 
 - [deepfake-physics](sources/arxiv-physics-aware-deepfake-detection-2610.18485-2026-10-14.md) — distance–speech consistency as a physical cue
 - [diffusion-bounds](sources/arxiv-finite-sample-conditional-diffusion-2610.13851-2026-10-14.md) — learning and discretisation error bounded together
 - [tts-on-policy](sources/arxiv-on-policy-one-shot-tts-personalization-2610.17838-2026-10-14.md) — on-policy supervision, not target diversity
+
+## K292 ingest (2026-10-16)
+
+- [omniverifier-c1](sources/arxiv-omniverifier-c1-2610.22355-2026-10-16.md) — decompose a prompt into K sub-questions; score = fraction satisfied — `paper, verification, reward-models, k292`
+- [decomposed-graded-verifier](concepts/decomposed-graded-verifier.md) — graded beats binary; pairwise beats pointwise when a reference exists — `concept, verification, reward-models, k292`
+

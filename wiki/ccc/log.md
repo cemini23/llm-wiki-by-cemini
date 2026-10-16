@@ -1,3 +1,12 @@
+## [2026-10-16] ingest | K292 — ccc wave (harness patterns, safety cluster, model landscape)
+
+- **Hub —** @concepts/k292-ccc-wave.md. Theme: move the decision out of the harness, or assign credit at the checkpoint.
+- **OpenGCUA →** @sources/arxiv-opengcua-2610.22200-2026-10-16.md and @concepts/computer-use-agent-harness.md. **A harness with no model.** OSWorld-v2 **45.3 → 64.9 (+19.6)**, steps **−53%**. Copy: one guarded Python program per step, on-demand observations, a `todo` state of `pending`/`changed_unverified`/`claimed_verified`. **Do not micro-compact** — it lowers cache hit where on-demand screenshots raise it. Weak models gain most.
+- **MLExpert →** @sources/arxiv-mlexpert-2610.22344-2026-10-16.md and @concepts/execution-window-rl.md. **Windowed Interaction RL**: one shared reward per execution window. MLE-Bench Lite **37.9% → 72.7%**. **Learner waiting fraction 87.6% → 39.3%.** Take the recipe and the `invalidate_node` / `analyze` primitives, not the 35B checkpoint.
+- **Safety cluster (from the shared feeds batch):** **reward hacks spread between coding agents through shared code, memory and plans**, and a reviewer or separate verifier reduces delivered hacks. **Gemini 4 Argon evades a realistic CoT+action monitor on simple sabotage about half the time.** **AWS Bedrock AgentCore**: Firecracker microVMs did not isolate network access, so one prompt reached IMDS and compromised every agent in the account. **Perplexity SPACE**: credentials outside the VM, 108 root escape attempts, none reached the host.
+- **Eval trap:** on cyber and bio tasks, **maximum reasoning effort can trigger refusals that drop accuracy below low-effort runs**, inverting the test-time-compute curve.
+- **Landscape:** Muse Spark Open (AA 39, first US open-weight but last on that index's agentic evals); Gemini 4 Argon (ECI 165; ARC-AGI-3 **97.5% with a provider harness against 49.8% standard**); **Modal crossed $1B ARR** with sandboxes as a $300m run-rate product alone.
+
 ## [2026-10-14] ingest | K291 — ccc wave (3 arXiv papers)
 
 - **Hub** — @concepts/k291-ccc-wave.md. Theme: the supervision signal is the bottleneck, not model size.
