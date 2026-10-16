@@ -25,6 +25,6 @@ A **static complexity scanner** shipped as an **agent skill**, with importers fo
 
 **Licence:** **MIT** — `[CONFIRMED]` by `gh api` on 2026-10-16 (the docx agreed here).
 
-**Docx tier: Extract.** Cloned (28,984 KB). Proposed use: **hotspot triage** for CeminiDFS and CeminiParlays.
+**Docx tier: Extract.** Cloned; 26,396 KB after the 2026-10-16 prune of `.git`. Proposed use: **hotspot triage** for CeminiDFS and CeminiParlays.
 
 **Caution that applies here:** it ships as an agent skill, and this workspace's standing rule is that **third-party skill repositories are treated as hostile until allowlisted**. Read the skill source before it runs in a session that can see the vault.

@@ -25,6 +25,6 @@ wire_status: extract_only
 
 **Licence:** **MIT** — `[CONFIRMED]` by `gh api` on 2026-10-16 (the docx agreed).
 
-**Docx tier: Extract.** Cloned (2,984 KB — the smallest clone in the batch).
+**Docx tier: Extract.** Cloned; 2,340 KB after the 2026-10-16 prune — the smallest clone in the batch.
 
 **Why it is worth reading here specifically:** this workspace already runs concurrent sessions against one repository, and the app itself creates worktrees for Code sessions. The interesting question is whether `parallel-cc` solves anything the app's own worktrees do not — **that comparison is the whole evaluation**, and it has not been made.

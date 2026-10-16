@@ -25,6 +25,6 @@ A **symbolic-mathematics MCP server** over **SymPy, NetworkX, Z3 and FLINT**, ex
 
 **Licence:** **MIT** — `[CONFIRMED]` by `gh api` on 2026-10-16. The docx also recorded NOT FOUND here.
 
-**Docx tier: Extract.** Cloned (84,032 KB). The eval's proposed uses are kinship reasoning, copula work and **SMT verification**.
+**Docx tier: Extract.** Cloned; 70,132 KB after the 2026-10-16 prune of `.git`. The eval's proposed uses are kinship reasoning, copula work and **SMT verification**.
 
 **The extraction risk, stated by the docx itself:** it warns to confirm terms before bundling any of Jacobian's Python. That warning is now discharged — the repo is MIT — but the *dependency* question (SymPy, Z3, FLINT in a product path) is separate and unanswered.

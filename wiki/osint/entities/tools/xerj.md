@@ -25,6 +25,6 @@ A **Rust local passage indexer** that speaks the **Elasticsearch-compatible** AP
 
 **Licence:** **Apache-2.0** — `[CONFIRMED]` by `gh api` on 2026-10-16 (the docx agreed).
 
-**Docx tier: Extract.** Cloned (275,112 KB — the second-largest clone and half the budget overrun).
+**Docx tier: Extract.** Cloned; 209,008 KB after the 2026-10-16 prune of `.git` — the largest clone kept.
 
 **Why it is the most directly useful Extract of the batch:** it addresses retrieval over exactly this workspace's material — PDFs and logs — and the local-indexing shape matches the K292 Librarian Agents finding that **anticipatory retrieval beats fetching whole documents**. The Elasticsearch compatibility also means an existing client works against it.

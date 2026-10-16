@@ -68,7 +68,11 @@ clone() {
 # Integrate tier first, then the Extract tier that is on-topic. Each clone is a
 # READ unless a product brief says otherwise.
 for r in morluto/leantoken morluto/flameox; do clone "$r"; done
-for r in xerj-org/xerj CapSoftware/Cap frankbria/parallel-cc morluto/jacobian morluto/smokinggun; do
+# Cap is deliberately NOT cloned: it is the largest clone (324MB) and the most
+# licence-encumbered (AGPL-3.0 plus a separate commercial licence) for a use that is
+# promotional media, not engineering. Dropped in the 2026-10-16 prune. Clone by hand
+# if that changes.
+for r in xerj-org/xerj frankbria/parallel-cc morluto/jacobian morluto/smokinggun; do
   clone "$r"
 done
 
@@ -76,8 +80,9 @@ echo
 echo "=== TOTAL CLONE FOOTPRINT: ${TOTAL}KB (budget ${BUDGET_KB}KB) ==="
 if [ "$TOTAL" -gt "$BUDGET_KB" ]; then
   echo "WARNING: over budget — prune before adopting."
-  echo "  Measured 2026-10-16: 745404KB. xerj (275112KB) and Cap (324280KB) dominate."
-  echo "  The 500000KB budget was set before those two were sized."
+  echo "  Measured 2026-10-16 before pruning: 745404KB."
+  echo "  Pruned the same day: .git dropped from every clone, and the Cap clone dropped."
+  echo "  Now 330612KB. See .local/adopts/k292/CLONE-PROVENANCE.txt for the pinned SHAs."
 fi
 
 echo

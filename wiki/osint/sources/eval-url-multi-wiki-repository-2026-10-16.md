@@ -112,7 +112,24 @@ Off-topic for this wiki: `vocaloid-mcp` (music synthesis, self-described "just f
 | `richiemcilroy/Tov` | MIT | MIT | Context |
 | `frankbria/auto-author` | MIT | MIT | Context |
 
-**Clone footprint 745,404 KB against a 500,000 KB budget — over by 50%.** `xerj` (275 MB) and `Cap` (324 MB) dominate; the budget was set before those two were sized. **Pruning is the operator's call** — the clones are REFERENCE data, not installs.
+**Clone footprint was 745,404 KB against a 500,000 KB budget — over by 50%.** `xerj` (275 MB) and `Cap` (324 MB) dominated; the budget predated those two being sized.
+
+**Pruned to 330,612 KB on 2026-10-16, inside the budget.** Two steps, in this order:
+
+1. **`.git` dropped from every clone** (222,448 KB freed) — pure history, no content lost. Each clone's pinned commit and remote were written to `.local/adopts/k292/CLONE-PROVENANCE.txt` first, so provenance survives and a re-clone can restore the exact revision.
+2. **The `Cap` clone dropped** (324 MB) — it was still 22,956 KB over after step 1, and Cap is the one to lose: the largest single clone, the most licence-encumbered (AGPL-3.0 plus a separate commercial desktop licence), and the one whose proposed use is promotional media rather than engineering.
+
+| Kept | KB |
+|------|-----|
+| `xerj` | 209,008 |
+| `jacobian` | 70,132 |
+| `smokinggun` | 26,396 |
+| `leantoken` | 17,556 |
+| `flameox` | 5,176 |
+| `parallel-cc` | 2,340 |
+| **total** | **330,612** |
+
+`scripts/adopt_k292_phase0.sh` no longer clones Cap by default, so a re-run stays inside the budget. **The clones are REFERENCE data, not installs — nothing was vendored and nothing was deleted from a product path.**
 
 **Nothing became an install.** The clones are read-only reference under a gitignored path, and **0 Integrate GO** still stands: adopting any of them into a product needs its own brief.
 

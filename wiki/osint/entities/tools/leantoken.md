@@ -25,6 +25,6 @@ A **token-bounded code-intelligence MCP** that dedupes with **hash receipts**. T
 
 **Licence:** **Apache-2.0** — `[CONFIRMED]` by `gh api` on 2026-10-16. **The docx recorded this as NOT FOUND** and still tiered it **Integrate**, at "high, now" revenue priority. The licence reading confirms the tier is defensible; the defect was procedural.
 
-**Docx tier: Integrate.** Cloned (21,928 KB). **No product GO** — adoption needs its own brief.
+**Docx tier: Integrate.** Cloned; 17,556 KB after the 2026-10-16 prune of `.git`. **No product GO** — adoption needs its own brief.
 
 **Why it is the stronger of the two Integrate rows:** the payoff is a measured token reduction on an input path every agent here already pays for, and the mechanism (do not resend what the caller already has) is the same shape as the K290 harness finding that **rule-based elision before summarisation is the strongest efficiency path**.

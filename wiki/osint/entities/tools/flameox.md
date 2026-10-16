@@ -25,6 +25,6 @@ A **runtime profiler** and **GPU-trace MCP server** — the eval frames it as a 
 
 **Licence:** **MIT** — `[CONFIRMED]` by `gh api` on 2026-10-16. **The docx recorded NOT FOUND** and tiered it **Integrate**.
 
-**Docx tier: Integrate.** Cloned (8,084 KB). **No product GO.**
+**Docx tier: Integrate.** Cloned; 5,176 KB after the 2026-10-16 prune of `.git`. **No product GO.**
 
 **Pairing the eval proposes:** `flameox` with `leantoken` and `smokinggun` as one loop — tightens tokens, finds the hotspot, measures the fix. Read that as a suggestion, not a decision.
