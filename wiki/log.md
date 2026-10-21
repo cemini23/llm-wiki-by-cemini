@@ -4,13 +4,24 @@ type: concept
 related:
   - index.md
   - osint/log.md
-updated: 2026-10-14
+updated: 2026-10-20
 ---
 
 # Operations log
 
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
+
+## [2026-10-20] ingest | K293 — full inbox
+
+- **83 files. 37 distinct PDFs. 18 newsletters.** Most PDFs were copies. The digest still writes one global arXiv query into every domain inbox.
+- **Osint.** Options agents need a loss limit outside the model: **13 of 26** can reach unbounded loss, **6 of 8** broker interfaces included, **0 of 26** authenticate text sources. ADDMART rebuilds an IV surface by construction. ABF-Bench: cite the record you retrieved. Kalshi trailing seven-day volume **$21.5bn** on 18 Oct. **No trade. No `/route` swap.**
+- **Cybersec.** A low ASR is mostly an ignore, not a refusal. Prompt-only InjecAgent ASR **0.2% → 43%**. Keyword jailbreak ASR **96.0%** vs a StrongREJECT judge at **2.7%**.
+- **CCC.** Naming the authoritative tool file recovers GPT accuracy that retrieval drops. CDSE **+7.6**. Jarvis coordination **29 → 192 / 278**.
+- **Archive.** 40 new raws landed on egress-fi (osint, cybersec, ccc, image-gen, 3d-printing). Already-filed copies were deleted locally and were not archived again.
+- **Image-gen.** OpenVLHarness **+9.7–12.6**. **3d-printing.** FunCAD, 46 mechanism families, simulation before the picture.
+- **Skipped.** `2610.18802`, `2610.20896`, `2610.23419`.
+- **Boundary.** No install, no clone, no scrape, no scp.
 
 ## [2026-10-14] merge | eight federation wikis merged into one repository
 

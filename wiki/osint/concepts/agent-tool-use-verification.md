@@ -20,7 +20,7 @@ related:
   - entities/tools/claude-show-your-work.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-07
+updated: 2026-10-20
 ---
 
 ## Relations
@@ -55,3 +55,7 @@ Pattern across all three: **verification is cheaper and more reliable when it is
 **VeriFine (@sources/arxiv-2610.08761-verifine-2026-10-07.md).** A reference-free **rubric judge** `Jϕt` diagnoses failures; an adaptive curriculum selects what to train on; GRPO optimises `R(θ) = E[sᵢ − β·D_KL(πθ‖πref)]`. The new part is the **Judge Improvement Loop** — on a plateau (detected by `G_t = |ΔRjudge_t − ΔP_t|`) it **coactively calibrates the judge on informative failures**. Results: driving reasoning **60.56→71.61**, and **judge–human Pearson 0.53→0.82**.
 
 The contrast with CLIFT is instructive: CLIFT makes the verifier **judge-free and certified**; VeriFine makes the judge **better with scale**. Both agree that the verifier is a **first-class object**, not a fixed oracle.
+
+## K293 — name the file that may answer (2026-10-20)
+
+@ccc-wiki/sources/arxiv-2610-26836-evidence-substitution.md. A deterministic simulator stays fixed. GPT-5.1 and GPT-5.2 still lose **11.3** and **7.9** points when the report is retrieved through a section index, because they answer from a different file. Claude shows no detectable cost. Naming the authoritative output recovers **6.3–7.9** points for the GPT models. Retrieval is not neutral compression.

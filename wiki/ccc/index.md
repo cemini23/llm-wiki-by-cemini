@@ -1320,6 +1320,20 @@ Three papers on agent supervision. The theme: the supervision signal is the bott
 - [agent-reflex](sources/arxiv-agent-reflex-reflective-agents-2610.17953-2026-10-14.md) — reflection trained from matched success–failure pairs
 - [chunkact](sources/arxiv-chunkact-action-chunking-agentic-robotics-2610.18874-2026-10-14.md) — compile the routine; 2.9× fewer LLM calls
 
+## K293 ingest (2026-10-20)
+
+Seven harness papers. The theme: **name the file that may answer, split a skill by job, and give coordination its own model.**
+
+- [k293-ccc-wave](concepts/k293-ccc-wave.md) — wave hub
+- [evidence-substitution](concepts/evidence-substitution-retrieved-tool-output.md) — GPT loses points on the wrong file; Claude does not
+- [evidence-substitution-source](sources/arxiv-2610-26836-evidence-substitution.md) — PHREEQC held fixed; GPT-5.2 still −9.4
+- [cdse](sources/arxiv-2610-23599-cdse-skill-differentiation.md) — four-part skills; +7.6 over the base agent
+- [jarvis](sources/arxiv-2610-23804-jarvis-coordination.md) — voice tasks 29 → 192 of 278
+- [catch](sources/arxiv-2610-22292-catch-honesty.md) — honesty training that keeps utility
+- [legal-overrefusal](sources/arxiv-2610-26211-legal-overrefusal-small-llms.md) — "I am a lawyer" raises refusal 2–20×
+- [drugharness](sources/arxiv-2610-23791-drugharness.md) — skill review by a second agent; no chemistry recorded
+- [discoveryrsi](sources/arxiv-2610-23839-discoveryrsi.md) — hypothesis credit and harness replay; no protocols recorded
+
 ## K292 ingest (2026-10-16)
 
 Two harness papers, plus the model and safety items from the shared feeds batch. The theme: **move a decision out of the harness or assign credit at the checkpoint** — and the finding that **reward hacks spread between agents**.

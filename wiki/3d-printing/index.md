@@ -8,6 +8,11 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K293 ingest (2026-10-20)
+
+- [k293-3d-printing-wave](concepts/k293-3d-printing-wave.md) — functional CAD hub — `k293, cad`
+- [FunCAD (arXiv:2610.26861)](sources/arxiv-funcad-2610.26861-2026-10-20.md) — 46 mechanism families; test in simulation before the picture counts — `paper, cad, simulation, k293`
+
 Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube transcripts). One page per canonical source.
 
 - [Adaptive Input Shaper Design for Unknown Second-Order Systems](sources/2025-aung-adaptive-input-shaper.md) — feedforward TDF input shaper with real-time RLS parameter estimation; simulation only — `paper, control, input-shaping, vibration`

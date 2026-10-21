@@ -975,6 +975,22 @@ These tools surfaced from OSINT-wiki K-batch evaluations. Verdicts below reflect
 |------|----------|------|
 | @meta/daily-research-digest-cadence.md | draft | Federated daily research digest — K93 install; outputs to `wiki/sweeps/` |
 
+## K293 ingest (2026-10-20)
+
+A low attack-success rate is not a refusal. Slugs: `k293-cybersec-wave`, `low-asr-is-not-refusal`, `arxiv-2610-23254-ignored-not-refused`, `arxiv-2610-23071-tool-admission-before-retrieval`, `arxiv-2610-23093-slip-interlingual-tool-safety`, `arxiv-2610-26595-jailbreak-asr-evaluator-sensitivity`, `arxiv-2610-22068-safe-pro-cross-modal`, `arxiv-2610-26474-afriguard`, `arxiv-2610-22333-eval-awareness-indic`.
+
+| Page | Summary |
+|------|---------|
+| [k293-cybersec-wave](concepts/k293-cybersec-wave.md) | Wave hub |
+| [low-asr-is-not-refusal](concepts/low-asr-is-not-refusal.md) | Report ignore, refuse, judge, sample count, and test cue |
+| [ignored-not-refused](sources/arxiv-2610-23254-ignored-not-refused.md) | 76–80% ignored; prompt moves ASR 0.2% → 43% |
+| [tool-admission](sources/arxiv-2610-23071-tool-admission-before-retrieval.md) | 74.5% harm after admission; text refusal is not the call |
+| [slip](sources/arxiv-2610-23093-slip-interlingual-tool-safety.md) | Non-English requests raise admission 46.9% → 67.4% |
+| [jailbreak-asr](sources/arxiv-2610-26595-jailbreak-asr-evaluator-sensitivity.md) | 96.0% keywords vs 2.7% StrongREJECT |
+| [safe-pro](sources/arxiv-2610-22068-safe-pro-cross-modal.md) | Cross-modal ask-or-optimise; no headline accuracy in the skim |
+| [afriguard](sources/arxiv-2610-26474-afriguard.md) | Inadequate text counted as non-assistance, not refusal |
+| [eval-awareness-indic](sources/arxiv-2610-22333-eval-awareness-indic.md) | Test cue +14.4 pp harmful refusal; benign refusal rises too |
+
 ## Sources
 
 282 source pages live in `sources/`:

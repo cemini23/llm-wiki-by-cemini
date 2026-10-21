@@ -1,3 +1,12 @@
+## [2026-10-20] ingest | K293 — low ASR is not a refusal
+
+- **Hub** — @concepts/k293-cybersec-wave.md. Seven papers routed from osint, seo, and game-dev inboxes.
+- **Rule** — @concepts/low-asr-is-not-refusal.md. Failed injections are **ignored 76–80%**, refused **17–18%**. The same weights move InjecAgent ASR from **0.2% to 43%** when only the system prompt changes. Keyword jailbreak ASR **96.0%** vs StrongREJECT **2.7%**. A test cue raises Indic harmful refusal by **14.4** points and benign refusal from **6.9% to 11.3%**.
+- **Tool admission** — @sources/arxiv-2610-23071-tool-admission-before-retrieval.md. Harm after an admitted harmful request averages **74.5%**. A written refusal still accompanies **33.6%** of those calls. Non-English requests raise admission from **46.9% to 67.4%** (@sources/arxiv-2610-23093-slip-interlingual-tool-safety.md).
+- **AfriGuard** — below **60% F1**, and many failures are unusable text, not a refusal.
+- **SAFE-PRO** — cross-modal ask-or-optimise method. Skim did not take a headline accuracy.
+- **Boundary** — no install, no PoC, no payloads in the wiki.
+
 ## [2026-10-14] ingest | K291 — cybersecurity wave (4 arXiv papers)
 
 - **Hub** — @concepts/k291-cybersec-wave.md.

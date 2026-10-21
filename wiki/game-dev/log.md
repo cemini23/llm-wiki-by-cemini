@@ -1,3 +1,8 @@
+## [2026-10-20] ingest | K293 — inbox routed out
+
+- **No game-dev page.** The new PDFs in this inbox are safety and honesty papers. They are filed in cybersec (`2610.22068`, `2610.22333`) and ccc (`2610.22292`). `2610.22341` (3DCodeVerse) was already ingested in K292. The other copies are byte-identical papers already filed elsewhere.
+- **Boundary** — no install.
+
 ## [2026-10-14] ingest | K291 — game-dev wave (3 papers, none in domain)
 
 - **Hub** — @concepts/k291-game-dev-wave.md. **Honest characterisation: none of these is game-development research.** They are agent, game-theory, and benchmark papers that arrived in this domain's inbox. Recorded for completeness, not routed as tooling or engine findings.

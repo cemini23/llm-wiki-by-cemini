@@ -1,3 +1,8 @@
+## [2026-10-20] ingest | K293 — FunCAD
+
+- **Hub** — @concepts/k293-3d-printing-wave.md.
+- **Source** — @sources/arxiv-funcad-2610.26861-2026-10-20.md. **46** mechanism families. The harness derives a test from the request and revises from simulation feedback. A plausible CAD picture is not a working mechanism. Skim did not take a headline success rate. **REFERENCE. No clone. No print.**
+
 ## [2026-10-16] ingest | K292 — 3DCodeVerse
 
 - **Hub —** @concepts/k292-3d-printing-wave.md.

@@ -17,9 +17,11 @@ related:
   - sources/substack-rss-event-horizon-2026-08-20-pm-republican-comms.md
   - sources/substack-rss-event-horizon-2026-10-13-gambling-redefinition.md
   - concepts/k290-feeds-wave.md
+  - sources/k293-osint-feeds-2026-10-20.md
+  - concepts/k293-osint-wave.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-20
+updated: 2026-10-20
 ---
 
 ## Relations
@@ -44,5 +46,7 @@ What this page answers: operating context for Kalshi retail LP/directional strat
 Kalshi volume Aug 10: $956M (sports+parlays 70%, crypto 27%); $4B annualized revenue, seeking $40B valuation. **Regulatory tail risk**: NY AG seeks a nationwide TRO on all Kalshi event contracts + >$36B damages; CFTC emergency-authority response orders KalshiEX to keep operating. Any Kalshi LP/directional bot (pm-kalshi lane) carries NY-state-gaming-law legal exposure — monitor the litigation before expanding the lane.
 
 [Source: Event Horizon 2026-08-12]
+
+**K293 (2026-10-20).** Event Horizon, Sunday 18 Oct: Kalshi **$4.11bn**, parlays **70.7%**. Trailing seven days: Kalshi **$21.5bn**, about **77%** of the eight venues listed in that issue. A Kalshi post amplified an illiquid **87%** print that later sat near **7%** on under **$13,000** traded. Do not treat a thin print as a consensus. **No trade. No pm scp.** [TENTATIVE] one newsletter. @sources/k293-osint-feeds-2026-10-20.md
 
 **K239:** Kalshi pulled **sports mention markets** (CFTC review per NPR). Mention category had done $1.2B since sports launch. King County order: geofence WA by Aug 19 / Sep 2 and drop mentions among other categories. **No new retail-bot steal** — category is gone. [Source: Event Horizon 2026-08-14]

@@ -8,6 +8,11 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K293 ingest (2026-10-20)
+
+- [k293-image-gen-wave](concepts/k293-image-gen-wave.md) — OpenVLHarness hub — `k293, harness`
+- [OpenVLHarness (arXiv:2610.26860)](sources/arxiv-openvlharness-2610.26860-2026-10-20.md) — tools plus multimodal memory, +9.7–12.6 over no-tool baselines; REFERENCE — `paper, tools, memory, k293`
+
 Sources are ingested research material (PDFs, docx, GitHub READMEs, model cards, deep-research outputs). One page per canonical source.
 
 - [UniReasoner: LLMs are Universal Reasoners for Visual Generation](sources/unireasoner.md) — Apple+JHU paper formalizing the understanding-generation gap and proposing Draft-Evaluate-Diffuse; 0.79→0.88 GenEval on identical SANA backbone — `paper, llm, diffusion, t2i, compositional-alignment`

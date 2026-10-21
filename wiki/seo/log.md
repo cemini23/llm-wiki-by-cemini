@@ -1,3 +1,8 @@
+## [2026-10-20] ingest | K293 — inbox routed out
+
+- **No SEO page.** The new PDFs in this inbox are safety papers. Tool admission (`2610.23071`), jailbreak ASR scoring (`2610.26595`), and AfriGuard (`2610.26474`) are in cybersec. Legal-role overrefusal (`2610.26211`) is in ccc. The other copies match papers already filed.
+- **Boundary** — no install.
+
 ## [2026-10-14] ingest | K291 — GEO citation attribution (2 papers)
 
 - **Sources** — @sources/chen-2026-what-drives-ai-citations.md (158,099 answers / 468,037 citations; within-website design + API replay), @sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md (SSE traces across ChatGPT 5.2→5.5).

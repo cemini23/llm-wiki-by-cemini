@@ -8,6 +8,19 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K293 ingest (2026-10-20)
+OSINT K293: **83 inbox files, 37 distinct PDFs, 18 newsletters.** Most PDFs were copies of papers already filed. The digest fan-out is still open. **Options agents:** 13 of 26 can reach unbounded loss, including 6 of 8 broker interfaces, and none authenticate their text. **ADDMART** rebuilds a sparse IV surface with static no-arbitrage by construction. **ABF-Bench:** cite the ledger row you retrieved (75% edge recall vs 10% for Claude Code). Kalshi trailing seven-day volume on 18 Oct is **$21.5bn**. **No trade. No `/route` swap. No scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k293-osint-wave](concepts/k293-osint-wave.md) | Wave hub — loss limits, IV surface, fan-out | draft |
+| [options-agent-order-boundary](concepts/options-agent-order-boundary.md) | Loss limit and leg check sit outside the model | draft |
+| [options-agent-safeguards](sources/arxiv-options-agent-safeguards-2610.24289-2026-10-20.md) | 13 of 26 agents can reach unbounded loss | draft |
+| [addmart](sources/arxiv-addmart-iv-surface-2610.25671-2026-10-20.md) | IV surface from an additive martingale | draft |
+| [abf-bench](sources/arxiv-abf-bench-2610.23656-2026-10-20.md) | Cite the ledger record you retrieved | draft |
+| [k293-osint-feeds](sources/k293-osint-feeds-2026-10-20.md) | Kalshi $21.5bn; Muse Spark Open; FortiBleed | draft |
+| [k293-skipped](sources/arxiv-k293-skipped-no-lane-2026-10-20.md) | Pure math and mmWave handwriting, not filed as topics | draft |
+
 ### K292 ingest (2026-10-16)
 OSINT K292: **142 inbox files but only 22 distinct new sources.** The same **16 arXiv PDFs sat byte-identical in all eight domain inboxes** — the digest's `paper_queries` are global while the inbox is per-domain. 8 of the 16 were already ingested. Deduped by hand; **no data lost**. **Two papers skipped as no-relevance** (`2610.18802`, `2610.20896`, both pure math.PR) rather than written up to fill the wave. **Librarian Agents** names this workspace's own shape — **+33 points** BrowseComp-Plus, **33.8% fewer tokens per correct answer**. **BeTINN**: an accurate Heston price does not imply accurate greeks. **TheoPhysEval**: run evals with and without retrieval; the delta estimates memorisation. **Kalshi holds 78% of prediction-market volume**, and still leads with parlays stripped. **Both tool-eval Integrate rows record licence NOT FOUND.** **No install. No trade. No scrape. No xsp/pm scp.**
 

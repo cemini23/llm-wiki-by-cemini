@@ -6,16 +6,18 @@ keywords: [execution check, 3D IoU, collision, contact, bounding box, VLM judge,
 related:
   - sources/arxiv-3dcodeverse-2610.22341-2026-10-16.md
   - concepts/k292-3d-printing-wave.md
+  - concepts/k293-3d-printing-wave.md
 maturity: draft
 read_status: read
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-20
 ---
 
 ## Relations
 
 - @sources/arxiv-3dcodeverse-2610.22341-2026-10-16.md — the paper
 - @concepts/k292-3d-printing-wave.md
+- @concepts/k293-3d-printing-wave.md — FunCAD: test the mechanism, then trust the picture
 
 ## Raw Concept
 

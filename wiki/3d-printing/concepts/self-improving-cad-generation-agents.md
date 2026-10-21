@@ -4,6 +4,8 @@ type: concept
 tags: [concept, cad, agents, k95, FEA, reference]
 keywords: [2605.17448, Hephaestus-CCX, CadQuery, CalculiX, engineering CAD agents]
 related:
+  - sources/arxiv-funcad-2610.26861-2026-10-20.md
+  - concepts/k293-3d-printing-wave.md
   - sources/arxiv-2605-17448-self-improving-cad-agents.md
   - sources/2026-george-agentscad-fdm-dfm.md
   - concepts/fdm-printing.md
@@ -12,7 +14,7 @@ related:
   - sources/2026-hong-printanything-gplan.md
 maturity: draft
 created: 2026-06-03
-updated: 2026-07-31
+updated: 2026-10-20
 ---
 
 ## Relations
@@ -52,6 +54,10 @@ Deep-read of @sources/arxiv-2605-17448-self-improving-cad-agents.md (2026-06-05)
 ### Related — AgentsCAD FDM DFM (2026-07)
 
 @sources/2026-george-agentscad-fdm-dfm.md is a **complementary** agent CAD lane: multi-agent **printability DFM** on STEP (overhangs → reorient / teardrop) with **MCP geometry tools**, not FEA. Same REFERENCE / no-local-repo stance; stronger signal for harness design (tool-grounded spatial reasoning vs confident hallucination).
+
+### K293 — FunCAD (2026-10-20)
+
+@sources/arxiv-funcad-2610.26861-2026-10-20.md tests the mechanism in simulation before the picture counts. FunCAD-Bench has 46 families. The skim did not take a headline success rate. Same REFERENCE stance. No clone.
 
 ## Snippets
 

@@ -1,3 +1,7 @@
+## [2026-10-20] ingest | K293 — inbox was copies
+
+- **No new gambling page.** Every PDF in this inbox is a byte-identical copy of a paper already filed, or one of the two pure-math skips (`2610.18802`, `2610.20896`). Kalshi volume from this drop is on the osint feeds page: @osint-wiki/sources/k293-osint-feeds-2026-10-20.md. Sunday 18 Oct Kalshi **$4.11bn**, parlays **70.7%**. **No ticket. No scp.**
+
 ## [2026-10-14] ingest | K291 — gambling feeds (21 RSS items)
 
 - **Hub** — @concepts/k291-gambling-wave.md; batch page @sources/k291-gambling-feeds-2026-10-14.md.

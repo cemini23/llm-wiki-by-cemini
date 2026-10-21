@@ -30,6 +30,18 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-20 — K293 ingest)
+
+- **Full inbox pass.** 83 files, 37 distinct PDFs, 18 newsletters. Most PDFs were byte-identical copies of papers already filed. The digest fan-out from K292 is **still open**: `paper_queries` is one global list, and eight LaunchAgents write it into eight inboxes.
+- **Do not let a model send an options order.** Of 26 shipped options agents, **13 can reach unbounded loss** (6 of 8 broker interfaces). None authenticate their text sources. The check is a loss limit and a leg check **outside the model**. **No trade. No auto-arm.**
+- **Low ASR is not a refusal.** Failed prompt injections on small tool agents are ignored **76–80%** of the time. The same weights move ASR from **0.2% to 43%** when only the system prompt changes.
+- **Name the tool file that is allowed to answer.** GPT models lose accuracy when a long report is retrieved from the wrong file. Claude does not, in this paper.
+- **Feeds.** Kalshi trailing seven-day volume on 18 Oct is **$21.5bn**, parlays **70.7%** of that Sunday. Muse Spark Open leads a US-open index and ranks last of the top nine on agentic evals. **No `/route` swap.**
+- **Skipped again:** `2610.18802` and `2610.20896` (pure math), plus `2610.23419` (mmWave handwriting).
+- **Cadences still due, not run:** quarterly PM LP spread backtest; wiki gap-detect (due 2026-10-22, the check script already exits 0). Obsidian vault is not set up (`wiki/.obsidian/` missing).
+- **Archive.** 40 new raws are on egress-fi. Location fields point there. 43 leftover local copies were already-filed papers or extra skip copies. Those were deleted. They were not archived again.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no `/route` swap.
+
 ## Current state (2026-10-16 — K292 ingest)
 
 - **K292 — 142 inbox files, 22 distinct new sources.** Three osint source pages, one ccc hub with two sources, one 3d-printing and one image-gen source, five concept pages, four briefs.

@@ -1,3 +1,8 @@
+## [2026-10-20] ingest | K293 — OpenVLHarness
+
+- **Hub** — @concepts/k293-image-gen-wave.md.
+- **Source** — @sources/arxiv-openvlharness-2610.26860-2026-10-20.md. Tools plus a memory of images, tables, and links. **+9.7–12.6** points over matched no-tool baselines on 22 benchmarks. More inference on the base model, with no tools, is only a modest gain. **REFERENCE. No clone.**
+
 ## [2026-10-16] ingest | K292 — OmniVerifier-C1
 
 - **Hub —** @concepts/k292-image-gen-wave.md.

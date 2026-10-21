@@ -1,3 +1,12 @@
+## [2026-10-20] ingest | K293 — name the file, split the skill, separate the coordinator
+
+- **Hub** — @concepts/k293-ccc-wave.md. Seven papers routed from other inboxes.
+- **Evidence substitution** — @concepts/evidence-substitution-retrieved-tool-output.md. GPT-5.1 **−11.3**, GPT-5.2 **−7.9** when a long simulator report is retrieved instead of inlined. Claude shows no detectable cost. Naming the authoritative file recovers **6.3–7.9** points.
+- **CDSE** — four skill parts. First in **36/36** settings. **+7.6** over the base agent.
+- **Jarvis** — coordination model. Voice-task success **29 → 192 of 278** with the front model and the back end held fixed. **No `/route` swap.**
+- **CATCH, legal overrefusal, DrugHarness, DiscoveryRSI** — method notes. DrugHarness and DiscoveryRSI record the review loop only. No chemistry and no lab protocol.
+- **Boundary** — no install, no clone.
+
 ## [2026-10-16] ingest | K292 — ccc wave (harness patterns, safety cluster, model landscape)
 
 - **Hub —** @concepts/k292-ccc-wave.md. Theme: move the decision out of the harness, or assign credit at the checkpoint.

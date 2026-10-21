@@ -1,3 +1,15 @@
+## [2026-10-20] ingest | K293 — options-agent loss limits, IV surface, feeds
+
+- **83 inbox files. 37 distinct PDFs. 18 newsletters.** The same arXiv bytes are still fanned out across domain inboxes. The `paper_queries` defect from K292 is **not fixed**.
+- **Options agents** — @sources/arxiv-options-agent-safeguards-2610.24289-2026-10-20.md and @concepts/options-agent-order-boundary.md. Of 26 shipped systems, **13 can reach unbounded loss**, including **6 of 8 broker interfaces**. **None** authenticate text sources or cross-check market data. **17** can send an order with no human step. A dropped protective leg keeps the direction and changes the loss. **No trade. No auto-arm.**
+- **ADDMART** — @sources/arxiv-addmart-iv-surface-2610.25671-2026-10-20.md. Sparse quotes go to an additive martingale. Static no-arbitrage holds by construction. 2,500 audited surfaces, no material butterfly or calendar violations. **No trade.**
+- **ABF-Bench** — @sources/arxiv-abf-bench-2610.23656-2026-10-20.md. **75%** edge recall vs **47%** Codex and **10%** Claude Code. Claude Code cites records it did not retrieve.
+- **Feeds** — @sources/k293-osint-feeds-2026-10-20.md. Kalshi Sunday 18 Oct **$4.11bn**, parlays **70.7%**. Trailing seven days **$21.5bn**, about **77%** of the eight listed venues. A Kalshi post amplified an illiquid **87%** print. Muse Spark Open: AA index **39**, last of the top nine open models on agentic evals. DeepSeek V4.1 Flash 1017: **552B/16B**, MIT, **$0.30/$1.20**. **No `/route` swap.**
+- **Skipped** — `2610.18802` and `2610.20896` (pure math, again) and `2610.23419` (mmWave handwriting). Ids are in @sources/arxiv-k293-skipped-no-lane-2026-10-20.md so the next preingest marks them duplicate.
+- **Routed** — safety papers to cybersec, harness papers to ccc, OpenVLHarness to image-gen, FunCAD to 3d-printing.
+- **Archive** — 40 new raws on egress-fi. Location fields point there. Extra copies of papers already filed were deleted and were not sent again.
+- **Boundary** — no install, no clone, no scrape, no trade, no xsp/pm scp, no `/route` swap.
+
 ## [2026-10-16] incident | K292 raw archive failed, recovered
 
 - **The K292 inbox cleanup lost most raws before they reached egress.** The pass archived each distinct source and then cleared the inbox. Only 2 of 10 papers and 1 of 12 feeds landed on egress; the following step deleted every local copy regardless.
