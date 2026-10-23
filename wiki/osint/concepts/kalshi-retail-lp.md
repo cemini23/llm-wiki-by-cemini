@@ -18,10 +18,12 @@ related:
   - sources/substack-rss-event-horizon-2026-10-13-gambling-redefinition.md
   - concepts/k290-feeds-wave.md
   - sources/k293-osint-feeds-2026-10-20.md
+  - sources/k294-osint-feeds-2026-10-23.md
   - concepts/k293-osint-wave.md
+  - concepts/k294-osint-wave.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-20
+updated: 2026-10-23
 ---
 
 ## Relations

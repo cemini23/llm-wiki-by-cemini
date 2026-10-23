@@ -3,9 +3,12 @@ title: Options-agent order boundary — loss limits outside the model
 type: concept
 related:
   - sources/arxiv-options-agent-safeguards-2610.24289-2026-10-20.md
+  - sources/arxiv-certified-execution-harness-2610.31376-2026-10-23.md
+  - sources/arxiv-amv-guard-2610.31446-2026-10-23.md
   - concepts/k293-osint-wave.md
+  - concepts/k294-osint-wave.md
 maturity: draft
-updated: 2026-10-20
+updated: 2026-10-23
 ---
 
 ## Raw Concept
@@ -29,3 +32,5 @@ The measurement of 26 systems, including every broker-native agent interface in 
 The rule for this workspace: do not let a model send an options order. Put a loss limit, a leg-count check, and a human step on the order path, outside the model. Indirect text that the agent reads is an untrusted input. **No trade. No auto-arm. No pm scp.**
 
 [TENTATIVE] single paper, arXiv 2610.24289, read 2026-10-20. The counts are the authors' screen of public repos and broker docs, not a Cemini audit.
+
+**K294 (2026-10-23).** A tool call needs the same kind of outside check. The certified harness refuses the call when a capability, approval, or budget mark is missing. AMV-GUARD re-checks a memory only when the check can change the action. @sources/arxiv-certified-execution-harness-2610.31376-2026-10-23.md @sources/arxiv-amv-guard-2610.31446-2026-10-23.md

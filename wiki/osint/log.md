@@ -1,3 +1,12 @@
+## [2026-10-23] ingest | K294 — Quant-Arena, tool marks, feeds
+
+- **62 inbox files. 34 PDFs and 28 newsletters. 8 duplicate ids:** `2610.11669`, `2610.09244`, `2610.15932`, `2610.17391`, `2610.23419`, `2610.24289`, `2610.25671`, `2610.20896`. No page is written for these. Quant-Arena ran nine frontier models. GPT-6 Astra scores highest. No model beats equal-weight A-shares on the sealed year 2024. **No trade.**
+- **Tool marks sit outside the model.** The certified harness refuses a tool call when a capability, approval, or budget mark is missing. AMV-GUARD re-checks a memory only when the check can change the action. **No install.**
+- **Feeds.** Kalshi trailing seven-day volume on 19 Oct is **$21.7bn**. Monday 19 Oct was **$2.50bn**, parlays **65.2%**. Ohio told its gaming licensees to stop servicing unlicensed sports-event contracts. **No trade. No pm scp.**
+- **Skipped.** The ids are in @sources/arxiv-k294-skipped-no-lane-2026-10-23.md so the next preingest marks them duplicate. That list now includes `2610.31158` (video-centered reports; best score 63.3 of 100).
+- **Archive** — 54 new raws on egress-fi. Location fields point there. Eight already-filed PDFs were deleted locally and were not sent again.
+- **Boundary** — no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap.
+
 ## [2026-10-20] ingest | K293 — options-agent loss limits, IV surface, feeds
 
 - **83 inbox files. 37 distinct PDFs. 18 newsletters.** The same arXiv bytes are still fanned out across domain inboxes. The `paper_queries` defect from K292 is **not fixed**.

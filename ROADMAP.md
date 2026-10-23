@@ -30,6 +30,16 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-23 — K294 ingest)
+
+- Full inbox pass. 62 files. 34 PDFs and 28 newsletters. 8 PDFs were already filed. The digest fan-out is still open. Video-report benchmark `2610.31158` is on the skip page.
+- Do not trust a research loop that only saw 2022-2023. Quant-Arena froze one A-share strategy for 2024. GPT-6 Astra scored highest of nine models. None beat equal-weight. No trade.
+- A tool call needs a mark outside the model. Capability, approval, and budget. A memory re-check is worth its cost only when it can change the next action. On ToolSandbox that cut verification cost 33.9% with safe-proceed recall still at 100%. No install. No auto-arm.
+- Feeds. Kalshi trailing seven-day volume on 19 Oct is $21.7bn. Monday was $2.50bn, parlays 65.2%. September hedging-labelled volume was about 2% of Kalshi. Ohio told gaming licensees to stop servicing unlicensed sports-event contracts. A 23 Oct teaser says a 20 Oct memo tells Defense personnel not to use nonpublic information on Polymarket or Kalshi. No pm scp. No route swap.
+- Abliteration is not debiasing. On the Bolt pair, script moved the Taiwan score from +0.58 to +0.05. Abliteration moved it by at most 0.06.
+- Archive. 54 new raws are on egress-fi. Location fields point there. Eight already-filed PDFs were deleted locally. They were not sent again.
+- Boundary: no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap.
+
 ## Current state (2026-10-20 — K293 ingest)
 
 - **Full inbox pass.** 83 files, 37 distinct PDFs, 18 newsletters. Most PDFs were byte-identical copies of papers already filed. The digest fan-out from K292 is **still open**: `paper_queries` is one global list, and eight LaunchAgents write it into eight inboxes.

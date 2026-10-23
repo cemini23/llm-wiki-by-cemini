@@ -4,13 +4,22 @@ type: concept
 related:
   - index.md
   - osint/log.md
-updated: 2026-10-20
+updated: 2026-10-23
 ---
 
 # Operations log
 
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
+
+## [2026-10-23] ingest | K294 — full inbox
+
+- **62 files. 8 duplicates. 34 PDFs and 28 newsletters.** The digest fan-out is still open. `2610.31158` is on the osint skip page.
+- **Osint.** Quant-Arena: nine frontier models, GPT-6 Astra highest, no model beats equal-weight A-shares on the sealed year 2024. Tool marks sit outside the model: a call is refused when a capability, approval, or budget mark is missing. AMV-GUARD re-checks a memory only when the check can change the action. Kalshi trailing seven-day volume on 19 Oct is **$21.7bn**. **No trade.**
+- **CCC.** Agent S4 reaches **21.3%** on OSWorld V2 by evolving interfaces, **3.8 times** the same model with fixed interfaces. OO-Harness gains up to **15.79 points**. **No route swap.**
+- **Cybersec.** English safety does not transfer: mean translation bypass **21.9%** to **44.4%**. Abliteration did not close a script gap about Taiwan.
+- **Archive.** 54 new raws on egress-fi (osint, ccc, cybersec). Eight already-filed PDFs were deleted locally and were not sent again.
+- **Boundary.** No install, no clone, no scrape, no trade, no xsp/pm scp, no route swap.
 
 ## [2026-10-20] ingest | K293 — full inbox
 

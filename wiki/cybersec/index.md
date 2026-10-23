@@ -975,6 +975,15 @@ These tools surfaced from OSINT-wiki K-batch evaluations. Verdicts below reflect
 |------|----------|------|
 | @meta/daily-research-digest-cadence.md | draft | Federated daily research digest — K93 install; outputs to `wiki/sweeps/` |
 
+## K294 ingest (2026-10-23)
+
+English safety does not transfer, and abliteration is not debiasing. Slugs: `k294-cybersec-wave`, `arxiv-k294-safety-batch-2026-10-23`.
+
+| Page | Summary |
+|------|---------|
+| [k294-cybersec-wave](concepts/k294-cybersec-wave.md) | Wave hub — translation bypass and abliteration |
+| [k294-safety-batch](sources/arxiv-k294-safety-batch-2026-10-23.md) | Safety batch; bypass 21.9% to 44.4% |
+
 ## K293 ingest (2026-10-20)
 
 A low attack-success rate is not a refusal. Slugs: `k293-cybersec-wave`, `low-asr-is-not-refusal`, `arxiv-2610-23254-ignored-not-refused`, `arxiv-2610-23071-tool-admission-before-retrieval`, `arxiv-2610-23093-slip-interlingual-tool-safety`, `arxiv-2610-26595-jailbreak-asr-evaluator-sensitivity`, `arxiv-2610-22068-safe-pro-cross-modal`, `arxiv-2610-26474-afriguard`, `arxiv-2610-22333-eval-awareness-indic`.

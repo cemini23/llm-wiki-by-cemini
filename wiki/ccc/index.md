@@ -1320,6 +1320,16 @@ Three papers on agent supervision. The theme: the supervision signal is the bott
 - [agent-reflex](sources/arxiv-agent-reflex-reflective-agents-2610.17953-2026-10-14.md) — reflection trained from matched success–failure pairs
 - [chunkact](sources/arxiv-chunkact-action-chunking-agentic-robotics-2610.18874-2026-10-14.md) — compile the routine; 2.9× fewer LLM calls
 
+## K294 ingest (2026-10-23)
+
+Harness papers. The theme: **evolve the interface or the harness family, not the route.**
+
+- [k294-ccc-wave](concepts/k294-ccc-wave.md) — wave hub
+- [agent-s4](sources/arxiv-agent-s4-evolving-interfaces-2610.28601-2026-10-23.md) — 21.3% on OSWorld V2, 3.8 times fixed interfaces
+- [oo-harness](sources/arxiv-oo-harness-2610.28380-2026-10-23.md) — harness classes; up to 15.79 points
+- [hgm-dual](sources/arxiv-hgm-dual-2610.30042-2026-10-23.md) — lineage; 14.45% relative, 2x-4x fewer evals
+- [budget-aware-rewards](sources/arxiv-budget-aware-agent-rewards-2610.28409-2026-10-23.md) — no single winning percent
+
 ## K293 ingest (2026-10-20)
 
 Seven harness papers. The theme: **name the file that may answer, split a skill by job, and give coordination its own model.**

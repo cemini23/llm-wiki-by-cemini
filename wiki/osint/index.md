@@ -8,6 +8,20 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K294 ingest (2026-10-23)
+OSINT K294: **61 inbox files, 8 duplicates.** Quant-Arena did not beat equal-weight on the sealed year 2024, tool marks sit outside the model, and Kalshi trailing seven-day volume on 19 Oct is **$21.7bn**.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k294-osint-wave](concepts/k294-osint-wave.md) | Wave hub — Quant-Arena, tool marks, feeds | draft |
+| [quant-arena](sources/arxiv-quant-arena-2610.30113-2026-10-23.md) | No model beats equal-weight 2024 | draft |
+| [dsinc-beyond-heston](sources/arxiv-dsinc-beyond-heston-2610.28847-2026-10-23.md) | American options, non-affine volatility | draft |
+| [arithmetic-commodity-futures](sources/arxiv-arithmetic-commodity-futures-2610.28071-2026-10-23.md) | Three volatility factors; calendar spreads needed | draft |
+| [certified-execution-harness](sources/arxiv-certified-execution-harness-2610.31376-2026-10-23.md) | Tool call fires only on present marks | draft |
+| [amv-guard](sources/arxiv-amv-guard-2610.31446-2026-10-23.md) | Re-check only when it can change the action | draft |
+| [k294-osint-feeds](sources/k294-osint-feeds-2026-10-23.md) | Kalshi $21.7bn; Ohio; DeepInfer | draft |
+| [k294-skipped](sources/arxiv-k294-skipped-no-lane-2026-10-23.md) | Inbox PDFs with no lane | draft |
+
 ### K293 ingest (2026-10-20)
 OSINT K293: **83 inbox files, 37 distinct PDFs, 18 newsletters.** Most PDFs were copies of papers already filed. The digest fan-out is still open. **Options agents:** 13 of 26 can reach unbounded loss, including 6 of 8 broker interfaces, and none authenticate their text. **ADDMART** rebuilds a sparse IV surface with static no-arbitrage by construction. **ABF-Bench:** cite the ledger row you retrieved (75% edge recall vs 10% for Claude Code). Kalshi trailing seven-day volume on 18 Oct is **$21.5bn**. **No trade. No `/route` swap. No scp.**
 

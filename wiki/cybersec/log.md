@@ -1,3 +1,11 @@
+## [2026-10-23] ingest | K294 — translation bypass and abliteration
+
+- **Hub** — @concepts/k294-cybersec-wave.md. Safety papers routed from the ccc, seo, and osint inboxes.
+- **Translation bypass** — conditioned on a safe English answer, mean bypass runs from **21.9%** to **44.4%**. Nine of ten models change rank when the conditioning scheme changes and the answers do not.
+- **Abliteration does not close the script gap** — script moved the Taiwan score from **+0.58** to **+0.05** on the Bolt pair. Abliteration moved it by at most **0.06**. The abliterated Qwen still affirms the PRC claim in all three scripts.
+- **Disclosure** — a binary allow-or-refuse gate is the wrong shape. Graduated disclosure sets the level of detail to the user authorisation.
+- **Boundary** — no install, no clone, no PoC, no payloads in the wiki.
+
 ## [2026-10-20] ingest | K293 — low ASR is not a refusal
 
 - **Hub** — @concepts/k293-cybersec-wave.md. Seven papers routed from osint, seo, and game-dev inboxes.

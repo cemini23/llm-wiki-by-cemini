@@ -1,3 +1,12 @@
+## [2026-10-23] ingest | K294 — evolve the interface
+
+- **Hub** — @concepts/k294-ccc-wave.md. Harness papers routed from other inboxes.
+- **Agent S4** — Qwen3.8-27B with an evolved interface repository reaches **21.3%** on OSWorld V2, **3.8 times** the same model with fixed interfaces. ScienceBoard goes from **41.4%** to **58.6%**. **No route swap. No clone.**
+- **OO-Harness** — up to **15.79 points** over the base harness.
+- **HGM-Dual** — up to **14.45%** relative case accuracy, with **2x-4x** fewer evaluations.
+- **Budget rewards** — no single winning percent in the abstract.
+- **Boundary** — no install, no clone, no route swap.
+
 ## [2026-10-20] ingest | K293 — name the file, split the skill, separate the coordinator
 
 - **Hub** — @concepts/k293-ccc-wave.md. Seven papers routed from other inboxes.
