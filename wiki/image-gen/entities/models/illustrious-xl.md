@@ -4,6 +4,7 @@ type: entity
 tags: [model, sdxl, illustrious, danbooru, anime, lora-base, completely-uncensored, artist-style]
 keywords: [Illustrious XL, OnomaAI Research, Danbooru 2023, 16000 artist styles, anime, character traits, Japan]
 related:
+  - runbooks/mac-local-image-director.md
   - sources/uncensored-image-generation-survey.md
   - concepts/prompt-engineering-uncensored.md
   - concepts/censorship-tier-taxonomy.md

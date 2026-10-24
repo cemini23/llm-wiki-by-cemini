@@ -7,6 +7,7 @@ maturity: validated
 created: 2026-05-06
 updated: 2026-09-19
 related:
+  - runbooks/mac-local-image-director.md
   - sources/uncensored-image-generation-survey.md
   - concepts/censorship-tier-taxonomy.md
   - concepts/lora-taxonomy.md

@@ -4,6 +4,7 @@ type: entity
 tags: [hardware, gpu, vram, quantization, apple-silicon, nvidia, inference, optimization]
 keywords: [hardware, GPU, VRAM, quantization, FP8, GGUF, Nunchaku, Apple Silicon, MPS, RTX, consumer, cloud fallback]
 related:
+  - runbooks/mac-local-image-director.md
   - entities/models/flux-1-dev.md
   - concepts/prompt-engineering-uncensored.md
   - concepts/two-pass-generation-workflow.md

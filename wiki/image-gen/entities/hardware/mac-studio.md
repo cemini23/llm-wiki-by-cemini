@@ -4,6 +4,7 @@ type: entity
 tags: [hardware, apple-silicon, Mac-Studio, M-series, unified-memory, UMA, local-generation]
 keywords: [Mac Studio, Apple Silicon, M4, M3, unified memory architecture, MLX, Draw Things, local inference]
 related:
+  - runbooks/mac-local-image-director.md
   - sources/ai-creator-operations-blueprint.md
   - concepts/persona-ops-workflow.md
   - entities/uis/comfyui.md

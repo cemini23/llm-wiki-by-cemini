@@ -4,6 +4,7 @@ type: concept
 tags: [model-selection, workflow, hardware-matching, goal-alignment, decision-tree, quickstart]
 keywords: [which model, what hardware, workflow recommendation, model comparison, decision guide, beginner workflow]
 related:
+  - runbooks/mac-local-image-director.md
   - concepts/censorship-tier-taxonomy.md
   - concepts/persona-consistency-methods.md
   - concepts/reference-plus-lora-stacking.md

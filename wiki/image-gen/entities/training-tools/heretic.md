@@ -4,6 +4,7 @@ type: entity
 tags: [training-tool, abliteration, de-censoring, llm, alignment-removal]
 keywords: [heretic, p-e-w, abliteration, refusal vector, uncensored LLM, AGPL]
 related:
+  - runbooks/mac-local-image-director.md
   - concepts/de-censoring-techniques.md
   - concepts/censorship-tier-taxonomy.md
   - entities/models/wan-2-2.md

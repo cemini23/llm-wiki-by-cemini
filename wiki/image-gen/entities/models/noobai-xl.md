@@ -4,6 +4,7 @@ type: entity
 tags: [model, sdxl, illustrious-derivative, v-prediction, danbooru, anime, completely-uncensored]
 keywords: [NoobAI-XL, Laxhar Lab, V-Prediction, EPS-Prediction, Chenkin Noob v.03, NoobAI-XL-XIN, anime]
 related:
+  - runbooks/mac-local-image-director.md
   - sources/uncensored-image-generation-survey.md
   - concepts/prompt-engineering-uncensored.md
   - concepts/censorship-tier-taxonomy.md

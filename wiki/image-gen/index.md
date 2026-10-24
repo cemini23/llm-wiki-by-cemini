@@ -984,6 +984,7 @@ Practical, printable guides for getting started — tracked in git (unlike `brie
 - [Z-Image Turbo GGUF — End-to-End Persona Operation Runbook](runbooks/zimage-setup-runbook.md) — local image gen, compliance (KYC/2257/LLC), platform matrix, 4-phase launch, GEO, OpenRouter chat automation, monetization — `z-image, gguf, comfyui, macos, setup-runbook, compliance, persona-ops, geo, openrouter`
 - [RunPod ComfyUI Setup — Custom Nodes + Models Quickstart](runbooks/runpod-comfyui-setup.md) — RunPod-specific ComfyUI custom node install checklist, model download, restart gotchas, and verification — `runpod, comfyui, setup, custom-nodes, 4090, cloud-gpu, quickstart`
 - [RunPod unified gen stack — deploy anytime](runbooks/runpod-unified-gen-stack.md) — Quick start checklist, volume layout, GPU tiers, profiles A/B/C, ComfyUI + audio sidecars — `runpod, deployment, persona, video, audio, quickstart`
+- [Local Mac image + uncensored director — M4 Air 16 GB profile](runbooks/mac-local-image-director.md) — zero-host-ToS local path: Draw Things + one SDXL checkpoint + Ollama abliterated Qwen3-8B; storage budget, 16 GB settings, director contract, what video cannot do — `mac, apple-silicon, draw-things, ollama, abliterated, sdxl, pony, local, storage`
 
 ---
 

@@ -4,6 +4,7 @@ type: runbook
 tags: [runpod, comfyui, deployment, persona, nsfw, video, audio, cloud-gpu]
 keywords: [RunPod, network volume, ComfyUI, Wan, FLUX, Pony, LatentSync, Fish-Speech, NSFW, content creation, video editing]
 related:
+  - runbooks/mac-local-image-director.md
   - runbooks/runpod-comfyui-setup.md
   - concepts/model-selection-workflow.md
   - concepts/persona-audio-stack.md

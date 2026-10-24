@@ -4,6 +4,7 @@ type: concept
 tags: [censorship, taxonomy, alignment, nsfw, model-classification, de-censoring]
 keywords: [Unbound, WTF, Completely Uncensored, Minimal, Partial, Architectural, Strict, alignment, refusal, latent-space-scrubbing, abliteration]
 related:
+  - runbooks/mac-local-image-director.md
   - sources/uncensored-image-generation-survey.md
   - concepts/prompt-engineering-uncensored.md
   - entities/models/flux.md

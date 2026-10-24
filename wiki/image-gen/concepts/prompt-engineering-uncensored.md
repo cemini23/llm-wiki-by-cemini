@@ -4,6 +4,7 @@ type: concept
 tags: [prompting, uncensored, prompt-engineering, sd-xl, flux, z-image, pony, danbooru, t5-encoder, clipl]
 keywords: [prompt engineering, uncensored generation, Danbooru tags, T5 encoder, CLIP-L, dual encoder, negative prompts, CFG scale, two-pass workflow]
 related:
+  - runbooks/mac-local-image-director.md
   - sources/uncensored-image-generation-survey.md
   - sources/synthetic-character-consistency-survey.md
   - concepts/censorship-tier-taxonomy.md
