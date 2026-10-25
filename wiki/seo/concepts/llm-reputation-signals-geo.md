@@ -48,7 +48,7 @@ updated: 2026-10-01
 
 ## Raw Concept
 
-Operator playbook for **reputation signals** that move LLM **selection** among a fixed candidate set (assistant already retrieved N options). Synthesized from @sources/arxiv-baig-2026-hotel-llm-reputation-audit-2606.16344-2026-06-16.md (Baig et al., arXiv 2606.16344). Study domain: hotels; local-service generalization marked `[TENTATIVE]` / `[NEEDS VERIFICATION 2026-06-16]`.
+Operator playbook for **reputation signals** that move LLM **selection** among a fixed candidate set (assistant already retrieved N options). Synthesized from @sources/arxiv-baig-2026-hotel-llm-reputation-audit-2606.16344-2026-06-16.md (Baig et al., arXiv 2606.16344). Study domain: hotels; local-service generalization marked `[TENTATIVE]` / `[OPEN QUESTION 2026-06-16]`.
 
 ## Narrative
 
@@ -68,7 +68,7 @@ Ranked by absolute AMCE on recommendation probability:
 1. **Star rating / valence** — +31.6 pp (4.7★ vs 3.9★). Highest ROI: protect rating quality, resolve legitimate negatives, avoid review-gating that skews sample.
 2. **Price level** — −30.0 pp ($249 vs $129). Publish **explicit service prices** on website + GBP; "call for pricing" hurts selection when assistants compare cards.
 3. **Review volume** — +8.3 pp (2,100 vs 45 reviews). Steady ethical acquisition (@concepts/reviews-reputation-management.md); volume matters after rating floor.
-4. **Eco / sustainability badge** — +11.6 pp in hotels; **highly model-heterogeneous** (+0.2 to +29.9 pp per model). Do not build barbershop strategy around green badges unless verified on target engines `[NEEDS VERIFICATION 2026-06-16]`.
+4. **Eco / sustainability badge** — +11.6 pp in hotels; **highly model-heterogeneous** (+0.2 to +29.9 pp per model). Do not build barbershop strategy around green badges unless verified on target engines `[OPEN QUESTION 2026-06-16]`.
 5. **Review recency** — +1.6 pp (recent review vs stale). Modest; still worth organic review flow.
 6. **Chain vs independent** — −1.8 pp (chain penalty in hotel study). May not transfer to barbershop franchises `[TENTATIVE]`.
 7. **Management response visible on card** — **+0.1 pp (null)**. Industry GEO advice often promotes response rate; **no causal selection lift** in this audit. Continue responding for humans + GBP engagement; do not expect LLM citation wins from response volume alone.

@@ -56,7 +56,7 @@ Recommended SKUs (matched to Cemini's measured workload):
 | Role | Hetzner SKU | vCPU | RAM | Disk | Approx monthly cost (2026-05-03) |
 | --- | --- | --- | --- | --- | --- |
 | Librarian | **CPX21** | 3 | 4 GB | 80 GB NVMe | [NEEDS VERIFICATION 2026-05-03 — check current pricing at hetzner.com/cloud] |
-| Production | **CPX31** | 2 | 8 GB | 80 GB NVMe + add 25 GB volume | [NEEDS VERIFICATION 2026-05-03] |
+| Production | **CPX31** | 2 | 8 GB | 80 GB NVMe + add 25 GB volume | [OPEN QUESTION 2026-05-03] |
 
 **Why these SKUs**:
 - CPX21 (librarian): 3 vCPU is *enough* for embedding generation + kb-server + stash without contention; 4 GB RAM matches the Node + Postgres + Ollama working set without swap.

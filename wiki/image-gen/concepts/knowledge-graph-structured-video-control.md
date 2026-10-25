@@ -35,7 +35,7 @@ When natural-language video prompts bundle identity, relations, attributes, and 
 | **SSIM** | Inject structured signals into selected DiT layers (training-free) |
 | **TASC** | Stage-aware semantic scheduling across denoising timesteps |
 
-**Build-track posture:** research reference until code + Wan/Hunyuan node lands `[NEEDS VERIFICATION 2026-06-04]`. For persona ops, use when V2V pages (@concepts/visual-to-visual-generation.md) are insufficient and text refinement loops are costly.
+**Build-track posture:** research reference until code + Wan/Hunyuan node lands `[OPEN QUESTION 2026-06-04]`. For persona ops, use when V2V pages (@concepts/visual-to-visual-generation.md) are insufficient and text refinement loops are costly.
 
 **vs albedo editing:** KGEdit controls **semantic structure** from text graphs; @concepts/albedo-guided-instance-video-editing.md controls **instance appearance** via intrinsic maps — complementary post-production axes, not interchangeable.
 

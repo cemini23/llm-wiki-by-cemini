@@ -110,7 +110,7 @@ Track: date, sport/market, line, odds, stake, result, closing line (for CLV). Wi
 
 ### Federal loss-deduction cap (K171) [TENTATIVE — LSR title]
 
-2026-09-16: a bill to **repeal the 90% cap** on gambling-loss tax deductions moved to committee [TENTATIVE]. This is **tax planning**, not wager sizing — keep session bankroll rules separate from IRS deductibility. Hub: `@sources/daily-digest-rss-pm-regulatory-2026-09-17.md`. **[NEEDS VERIFICATION 2026-09-30]** bill text and status.
+2026-09-16: a bill to **repeal the 90% cap** on gambling-loss tax deductions moved to committee [TENTATIVE]. This is **tax planning**, not wager sizing — keep session bankroll rules separate from IRS deductibility. Hub: `@sources/daily-digest-rss-pm-regulatory-2026-09-17.md`. **[OPEN QUESTION 2026-09-30]** bill text and status.
 
 ## Snippets
 

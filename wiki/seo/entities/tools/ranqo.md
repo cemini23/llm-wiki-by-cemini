@@ -56,7 +56,7 @@ Phase-0 audit of **Ranqo** (Ranqo AI) from Kumar 2026 arXiv 2606.20065 — comme
 
 **Steal-from:** tier ladder framing, source-class taxonomy, listicle citation share, sentiment vs mention noise ratio, per-engine divergence monitoring, 14–30 day re-audit cadence.
 
-**Do not adopt** as canonical measurement without independent replication on local-service queries `[NEEDS VERIFICATION 2026-06-19]`.
+**Do not adopt** as canonical measurement without independent replication on local-service queries `[OPEN QUESTION 2026-06-19]`.
 
 ## Snippets
 

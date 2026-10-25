@@ -70,7 +70,7 @@ Caveat: SQLite indices must be `.gitignore`d to prevent binary blobs polluting v
 
 - Bus factor: single-contributor project
 - FSEvents memory leaks during massive refactor / dependency-tree changes (e.g. modifying `site-packages`)
-- Specific RAM/disk metrics not yet verified — [NEEDS VERIFICATION 2026-05-04]
+- Specific RAM/disk metrics not yet verified — [OPEN QUESTION 2026-05-04]
 
 ## Snippets
 

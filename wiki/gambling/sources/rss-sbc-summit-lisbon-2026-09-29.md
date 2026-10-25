@@ -81,6 +81,6 @@ The summit was billed as record-breaking. **Delegates reported as 40,000 by SBC'
 ## Dead Ends
 
 - **No US workflow impact.** This is a global industry conference. It does not change Hard Rock, FanDuel, or Underdog lanes.
-- **Attendance figures conflict** (35,000 vs 40,000). Cite neither. [NEEDS VERIFICATION 2026-09-30]
+- **Attendance figures conflict** (35,000 vs 40,000). Cite neither. [OPEN QUESTION 2026-09-30]
 - The **Brazil ban** is a pledge, not an enacted rule. Do not route it to operator geofence logic. Track it on `@osint-wiki` if the operator holds a Brazil skin.
 - Cross-link only — this page does not justify a new entity.

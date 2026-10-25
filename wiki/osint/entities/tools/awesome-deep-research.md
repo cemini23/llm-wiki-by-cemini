@@ -26,6 +26,6 @@ updated: 2026-05-13
 
 Curated list of multi-agent harnesses + neuro-symbolic vulnerability discovery frameworks. Methodology reference for cybersec defensive ops; no codebase integration.
 
-[NEEDS VERIFICATION 2026-05-13]
+[OPEN QUESTION 2026-05-13]
 
 [Source: Multi-Wiki Link Evaluation Prompt.docx URL 3 (retrieved 2026-05-13)]

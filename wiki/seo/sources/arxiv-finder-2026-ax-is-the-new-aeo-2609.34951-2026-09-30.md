@@ -107,7 +107,7 @@ Thirteen of fourteen headline comparisons separate the groups at *p* < 0.0001.
 - **The ranker is the authors' own instrument.** The paper reports its accessibility score as the study's instrument rather than as an independent measure.
 - The **fifth** conclusion's cost premium is paid by the agent operator, not by the business whose site produced it. The business pays in the lost recommendation.
 
-Local-service generalization: `[NEEDS VERIFICATION 2026-09-30]` — no barbershop or near-me queries in the cohort.
+Local-service generalization: `[OPEN QUESTION 2026-09-30]` — no barbershop or near-me queries in the cohort.
 
 ## Snippets
 

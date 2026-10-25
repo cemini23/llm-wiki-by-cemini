@@ -84,14 +84,14 @@ Google Business Profile (GBP, formerly Google My Business / GMB) is the single h
 
 **Entity-model inputs:** Google patent narrative (@sources/searchengineland-2026-google-llm-patent-entity-characterization-480625.md) and June 2026 first-party guidance (@sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md) both treat **maps/listing business data** as core inputs to how Google understands a local entity — not optional sidebar metadata. Keep GBP hours, services, categories, photos, and review depth aligned with the website.
 
-**Zero-click citation layer:** @sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md — incomplete GBP suppresses AI citations even when classic rankings hold; measure mention/citation not clicks alone `[NEEDS VERIFICATION 2026-06-30]`.
+**Zero-click citation layer:** @sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md — incomplete GBP suppresses AI citations even when classic rankings hold; measure mention/citation not clicks alone `[OPEN QUESTION 2026-06-30]`.
 
 **Review incident response:** @sources/seroundtable-2026-gbp-review-loss-restrictions-2026-07-03.md — July 2026 reports separate possible Google-side missing-review bugs from policy restrictions for suspicious/incentivized reviews. Weekly review-count screenshots and response workflow: `briefs/2026-07-03_k137-gbp-review-loss-restriction-response-hands-on.md`.
 
 **Listing setup checklist** (the load-bearing decisions):
 
 1. **Verification** — must be claimed and verified (postcard, phone, email, or video, depending on category). Unverified listings rank poorly and Google can replace operator-edited content with user-suggested edits.
-2. **Primary category** — `Barber Shop` (specifically — *not* `Hair Salon`, `Beauty Salon`, `Men's Hair Stylist`). The primary category is the strongest single ranking signal in the GBP itself and determines which "near me" queries trigger the listing. `[NEEDS VERIFICATION 2026-05-07]`: full list of currently-allowed barbershop-adjacent categories — this changes occasionally.
+2. **Primary category** — `Barber Shop` (specifically — *not* `Hair Salon`, `Beauty Salon`, `Men's Hair Stylist`). The primary category is the strongest single ranking signal in the GBP itself and determines which "near me" queries trigger the listing. `[OPEN QUESTION 2026-05-07]`: full list of currently-allowed barbershop-adjacent categories — this changes occasionally.
 3. **Secondary categories** — supplemental categories like `Hair Salon` if cuts include women, or `Beauty Salon` if there's a broader service mix. Don't overstuff; secondary categories that don't reflect actual services trigger suspension reviews.
 4. **Service list** — every service offered (haircut, beard trim, hot towel shave, kids' cut, etc.) with price and duration. Service items can be tied to schema markup on the website.
 5. **Hours** — exact, including special hours for holidays. Closed-hour confusion drops conversion sharply.
@@ -111,7 +111,7 @@ Google Business Profile (GBP, formerly Google My Business / GMB) is the single h
 - **Performance review** — monthly check of GBP Insights / Performance: search queries the listing shows for, calls, direction-requests, website clicks, photo views.
 - **Photo refreshing** — Google rotates uploaded photos in the carousel; recency matters for which photos get shown.
 
-**Feature drift watchlist (2026-06-22 digest news lane)** `[NEEDS VERIFICATION 2026-06-22]`:
+**Feature drift watchlist (2026-06-22 digest news lane)** `[OPEN QUESTION 2026-06-22]`:
 
 - **Collected Info section** — Search Engine Roundtable reports a new GBP "Collected Info" surface aggregating third-party-derived business facts. Operator action: audit listing for auto-populated fields that contradict verified NAP/hours/services; dispute inaccuracies via GBP support. [Source: https://www.seroundtable.com/google-business-profiles-collected-info-41535.html (retrieved 2026-06-22)]
 - **GBP ↔ GA4 + Gemini management** — BrightLocal reports GBP can connect to GA4 and be managed via Gemini in-dashboard. Operator action: if available on your account, link GA4 to close the loop between GBP Performance and site conversions. [Source: https://www.brightlocal.com/blog/google-business-profile-connect-ga4-gemini/ (retrieved 2026-06-22)]
@@ -125,7 +125,7 @@ Google Business Profile (GBP, formerly Google My Business / GMB) is the single h
 - **Default to the homepage.** It carries the most authority, backlinks, and relevance. The niche-page tactic applies to operators with **multiple listings** who want to avoid cannibalization — the two-shop operator in this wiki is exactly that case.
 - **Mind the Diversity Update.** The article's 2025 update advises against pointing a listing at the page **already ranking organically** for that term, because it can hurt the organic ranking. Choose a relevant page that is *not* already ranking.
 
-**Confidence:** `[TENTATIVE]` — a two-listing practitioner case with no raw positions and no control. Test on one shop before applying to both. `[NEEDS VERIFICATION 2026-10-01]`
+**Confidence:** `[TENTATIVE]` — a two-listing practitioner case with no raw positions and no control. Test on one shop before applying to both. `[OPEN QUESTION 2026-10-01]`
 
 **Two-shop operators** (relevant to this wiki's primary user):
 

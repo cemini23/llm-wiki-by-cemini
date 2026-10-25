@@ -40,4 +40,4 @@ K263 cluster hub. Dual-ID **OSINT K263**.
 
 ## Narrative
 
-Donny MSTR 120 / UEC 9-9.50 are claim-ledger HITL, not auto-arm. Klement Malacca has no named tradable levels; Maurer et al 2026 is URL-only `[NEEDS VERIFICATION 2026-09-17]`. Moontower var/cov is wiki FILE. LS and PE harness items also sit on the CCC hub. Never rewrite watches.json. No LIVE Discord. No xsp or pm scp.
+Donny MSTR 120 / UEC 9-9.50 are claim-ledger HITL, not auto-arm. Klement Malacca has no named tradable levels; Maurer et al 2026 is URL-only `[OPEN QUESTION 2026-09-17]`. Moontower var/cov is wiki FILE. LS and PE harness items also sit on the CCC hub. Never rewrite watches.json. No LIVE Discord. No xsp or pm scp.

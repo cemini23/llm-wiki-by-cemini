@@ -93,7 +93,7 @@ Differentiating features:
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - ~~Apple Silicon (MPS) status — OneTrainer historically Windows-Linux first~~ — **resolved [CONFIRMED 2026-05-07]**: OneTrainer's docs claim **out-of-box Apple Silicon support** but community M3 Max users report `RuntimeError: Torch not compiled with CUDA enabled` errors during training (Reddit threads 2025-12 → 2026-04). The first-time-install path is fragile; not recommended as the Apple-Silicon trainer of choice. For 8 GB on Apple Silicon, the more reliable path is cloud rental + dataset prep locally — OneTrainer's 8 GB story holds on Linux/Windows but not on MPS.
 - FLUX.2 / Z-Image Turbo support timeline.

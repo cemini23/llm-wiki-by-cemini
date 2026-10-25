@@ -33,7 +33,7 @@ read_status: read
 | retrieved | 2026-08-11 |
 | read_status | read |
 
-Operator-market note: Fed decision week, META earnings, REA rare-earth thesis. [NEEDS VERIFICATION 2026-08-11] — numbers are the author's own (not independently verified).
+Operator-market note: Fed decision week, META earnings, REA rare-earth thesis. [OPEN QUESTION 2026-08-11] — numbers are the author's own (not independently verified).
 
 ## Narrative
 

@@ -52,7 +52,7 @@ Unified **instance-level video editing** framework on a Wan 2.1 T2V-14B DiT back
 
 ### Workspace relevance
 
-Potential **post-production** tool for persona video — swap outfits/props in albedo space without re-running full I2V. Heavy VRAM (Wan 14B + 2×N+2 latent concat). Not identity-LoRA path; complements @concepts/two-pass-generation-workflow.md inpainting passes `[NEEDS VERIFICATION 2026-06-06]`.
+Potential **post-production** tool for persona video — swap outfits/props in albedo space without re-running full I2V. Heavy VRAM (Wan 14B + 2×N+2 latent concat). Not identity-LoRA path; complements @concepts/two-pass-generation-workflow.md inpainting passes `[OPEN QUESTION 2026-06-06]`.
 
 ## Snippets
 

@@ -26,7 +26,7 @@ K141 eval of [nationaldesignstudio/rampart](https://huggingface.co/nationaldesig
 | **HF** | `nationaldesignstudio/rampart` |
 | **License** | **CC-BY-4.0** (docx); gh **NOASSERTION** — verify HF model card |
 | **Verdict** | **CONDITIONAL-GO** — TipDrop M2 pre-LLM redaction layer |
-| **Caveat** | Low recall on non-Latin scripts per eval `[NEEDS VERIFICATION 2026-07-03]` |
+| **Caveat** | Low recall on non-Latin scripts per eval `[OPEN QUESTION 2026-07-03]` |
 
 Brief: `../projects/tipdrop-workspace-kit/briefs/2026-07-03_k141-rampart-pii-redaction-adopt.md`
 

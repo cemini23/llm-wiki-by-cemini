@@ -49,7 +49,7 @@ Spot maker cannot distinguish manipulator from informed flow → **less informat
 
 ### Design remedy
 
-**Lengthen horizon** — longer window aggregates ordinary spot information; fixed push less often pivotal. Complements (does not replace) oracle diversification and TWAP/volume-weighted settlement designs `[NEEDS VERIFICATION 2026-07-01]` for prod implementation.
+**Lengthen horizon** — longer window aggregates ordinary spot information; fixed push less often pivotal. Complements (does not replace) oracle diversification and TWAP/volume-weighted settlement designs `[OPEN QUESTION 2026-07-01]` for prod implementation.
 
 ### Cemini posture
 

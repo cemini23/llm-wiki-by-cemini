@@ -63,7 +63,7 @@ Stub originally created during the BlueTeam Kit 26-PDF ingest (2026-05-16). Prom
 
 Splunk sits alongside @entities/tools/qradar.md (IBM) and @entities/tools/wazuh.md (FOSS) as the standard SIEM choices in the corpus. See @concepts/siem.md for the broader platform category.
 
-### Active exploitation watch — CVE-2026-20253 `[NEEDS VERIFICATION 2026-06-21]`
+### Active exploitation watch — CVE-2026-20253 `[OPEN QUESTION 2026-06-21]`
 
 2026-06-21 digest (R1–R3): **CVE-2026-20253** — Splunk Enterprise RCE reportedly added to CISA KEV with in-the-wild exploitation days after disclosure. Patch Splunk Enterprise before hunting; IR engagements may encounter compromised SIEM collectors as pivot points. Details not independently verified in this wiki — confirm vendor advisory + KEV entry before client comms.
 

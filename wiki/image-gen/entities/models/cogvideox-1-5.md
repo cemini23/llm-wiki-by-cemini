@@ -63,7 +63,7 @@ Early 2026 release. Adds:
 - Native 1080p generation
 - **CogSound audio model** integration for synchronized acoustic environments
 
-CogVideoX 2.0 is deployed via the Qingying 2.0 platform; survey doesn't pin whether the architecture has been open-sourced or remains platform-only. [NEEDS VERIFICATION 2026-05-07]
+CogVideoX 2.0 is deployed via the Qingying 2.0 platform; survey doesn't pin whether the architecture has been open-sourced or remains platform-only. [OPEN QUESTION 2026-05-07]
 
 ### Licensing — Apache 2.0
 

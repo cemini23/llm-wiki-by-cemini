@@ -26,4 +26,4 @@ Cross-wiki brief routed from `@osint-wiki/sources/multi-wiki-link-eval-prompt-20
 
 `n8n-workflows` is a 4,343-script workflow library (MIT) with Trusera AI-BOM scanner. OSINT verdict: Adopt (Workflow primary). SEO-wiki action: stub — the 4,343-script corpus likely contains SEO-applicable automation nodes (sitemap submission, schema markup generation, Lighthouse-style scans, citation monitoring). A spot-audit for SEO-automation node coverage is the logical next step, but full ingest is not a priority until the operator's workflow demands it.
 
-[NEEDS VERIFICATION 2026-05-21] repo URL, specific SEO-automation node coverage.
+[OPEN QUESTION 2026-05-21] repo URL, specific SEO-automation node coverage.

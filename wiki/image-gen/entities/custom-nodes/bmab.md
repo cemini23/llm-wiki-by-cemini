@@ -24,7 +24,7 @@ updated: 2026-05-11
 
 Page prompted by 2026-05-11 migration of `notes/frameworks-tools.md` into the wiki layer. BMAB was already referenced in @entities/uis/comfyui.md's custom-nodes table and @entities/hardware/gpu-guide.md's "heavy post-processing" line, but lacked a dedicated entity page. This page consolidates its role as the Grounding-DINO-based surgical hand/limb-repair sibling to @entities/custom-nodes/impact-pack.md.
 
-Repo: `github.com/port090401/comfyui_bmab` (verify owner alias — earlier references in `notes/frameworks-tools.md` used `portu-sim/comfyui_bmab` which may be a prior fork or rename) [NEEDS VERIFICATION 2026-05-11].
+Repo: `github.com/port090401/comfyui_bmab` (verify owner alias — earlier references in `notes/frameworks-tools.md` used `portu-sim/comfyui_bmab` which may be a prior fork or rename) [OPEN QUESTION 2026-05-11].
 
 ## Narrative
 
@@ -73,7 +73,7 @@ Pulls in `groundingdino`, `segment-anything`, and downloads ~3 GB of Grounding-D
 
 ### Apple Silicon (MPS)
 
-Grounding-DINO runs on MPS but with stability caveats; SAM runs but is slow. For Mac persona workflows, prefer @entities/custom-nodes/impact-pack.md for the face pass and only invoke BMAB for full-body hand-repair when YOLO-based hand detection is insufficient. [NEEDS VERIFICATION 2026-05-11]
+Grounding-DINO runs on MPS but with stability caveats; SAM runs but is slow. For Mac persona workflows, prefer @entities/custom-nodes/impact-pack.md for the face pass and only invoke BMAB for full-body hand-repair when YOLO-based hand detection is insufficient. [OPEN QUESTION 2026-05-11]
 
 ## Snippets
 

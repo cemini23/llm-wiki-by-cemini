@@ -20,6 +20,6 @@ updated: 2026-05-13
 
 Stub from Doc 1 K42 eval. Defer-tier — insufficient information to assess; re-evaluate in next sweep.
 
-[NEEDS VERIFICATION 2026-05-13]
+[OPEN QUESTION 2026-05-13]
 
 [Source: Evaluating URLs for Cemini Project.docx (retrieved 2026-05-13)]

@@ -71,7 +71,7 @@ LongLive-RAG is **plug-in RAG** on existing AR backbones (Causal-Forcing, Self-F
 | Integration | Requires **LongLive upstream install**; no Wan/ComfyUI wrapper yet |
 | Persona fit | Reduces identity drift on minute-scale AR persona clips vs seam-stitching alone |
 
-**Verdict: CONDITIONAL-GO** — watch for ComfyUI node; test on LongLive+Wan when integration lands `[NEEDS VERIFICATION 2026-06-05]`.
+**Verdict: CONDITIONAL-GO** — watch for ComfyUI node; test on LongLive+Wan when integration lands `[OPEN QUESTION 2026-06-05]`.
 
 ## Snippets
 

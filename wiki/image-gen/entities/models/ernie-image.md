@@ -53,7 +53,7 @@ The prompt-enhancer-as-text-encoder design is architecturally similar to @entiti
 [TENTATIVE]:
 
 - **Less mature ecosystem than FLUX.1 Dev or Z-Image Turbo** — released in 2026; community LoRAs / fine-tunes / adapter ports still accumulating.
-- **Persona-consistency adapter availability** — ERNIE-Image port status of PuLID / InfiniteYou / Redux / Kontext is `[NEEDS VERIFICATION 2026-05-06]`.
+- **Persona-consistency adapter availability** — ERNIE-Image port status of PuLID / InfiniteYou / Redux / Kontext is `[OPEN QUESTION 2026-05-06]`.
 - **Prompt-enhancer can be a footgun** — auto-expansion adds creative liberties to user prompts that may not be desired for tightly-scoped persona work or commercial brand-consistency tasks. May need to be disabled / bypassed for some workflows.
 - **Less documented internationally** — Baidu releases historically have stronger Mandarin community presence; English-language tutorials and workflows are slower to appear.
 
@@ -91,8 +91,8 @@ Survey explicitly notes "extremely fast generation speeds in its Turbo variant" 
 
 - ~~ERNIE-Image Hugging Face / Baidu release; current version revision; Turbo variant release status~~ — **resolved [CONFIRMED 2026-05-06]**: canonical at `baidu/ERNIE-Image` ([huggingface.co/baidu/ERNIE-Image](https://huggingface.co/baidu/ERNIE-Image)) and `baidu/ERNIE-Image-Turbo` ([huggingface.co/baidu/ERNIE-Image-Turbo](https://huggingface.co/baidu/ERNIE-Image-Turbo)). **Released 2026-04-15**. The Prompt Enhancer ships as a separate safetensors file in the same repository. Reference code at `github.com/baidu/ernie-image`. **ComfyUI added Day-0 support** in April 2026. Reference architecture: single-stream Diffusion Transformer (DiT) with lightweight Prompt Enhancer as text encoder. **Practical deployment: 24 GB VRAM consumer GPU** per official model card. Turbo variant uses 8 inference steps with strong quality retention vs full ERNIE-Image. Strong on dense text rendering, posters, comics, infographics, multi-panel layouts, bilingual EN/CN signage.
 - ~~Apache 2.0 license terms~~ — **resolved [CONFIRMED 2026-05-06]**: Apache 2.0 confirmed via official Baidu HF model card and the ernie-image.org / ernie-image.net documentation portals. ERNIE 4.5 (the broader Baidu LLM lineage) is also Apache 2.0 — Baidu's open-source posture is consistent across the ERNIE family.
-- **`[NEEDS VERIFICATION 2026-05-06]`**: persona-consistency adapter port status (PuLID / InfiniteYou / Redux for ERNIE-Image). Sub-sweep C target.
-- **`[NEEDS VERIFICATION 2026-05-06]`**: how to disable / bypass the Ministral3 prompt enhancer for tightly-scoped prompts. Note: Prompt Enhancer ships as a separate safetensors — should be unloadable / swappable.
+- **`[OPEN QUESTION 2026-05-06]`**: persona-consistency adapter port status (PuLID / InfiniteYou / Redux for ERNIE-Image). Sub-sweep C target.
+- **`[OPEN QUESTION 2026-05-06]`**: how to disable / bypass the Ministral3 prompt enhancer for tightly-scoped prompts. Note: Prompt Enhancer ships as a separate safetensors — should be unloadable / swappable.
 - Compare ERNIE-Image vs FLUX.1 Schnell vs Z-Image Turbo head-to-head on a fixed prompt set; the Apache 2.0 + DiT-quality combination is the differentiator to validate.
 - Compare structured-layout output (comics, multi-panel) ERNIE vs Qwen-Image-2512 — does the 8B vs 20B+ gap show in this specific task?
 

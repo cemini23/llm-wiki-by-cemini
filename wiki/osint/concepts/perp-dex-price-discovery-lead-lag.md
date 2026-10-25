@@ -52,7 +52,7 @@ Transitivity check: predicted Binance→HL lag ≈ (Binance→Lighter) + (Lighte
 ### Cemini posture
 
 - Treat HL as **liquidity/OI leader**, not **discovery leader**, for cross-venue arb or oracle-fusion designs until independent replication.
-- Any strategy assuming HL leads Binance on major perps should re-benchmark [NEEDS VERIFICATION 2026-06-09].
+- Any strategy assuming HL leads Binance on major perps should re-benchmark [OPEN QUESTION 2026-06-09].
 - Funding-carry and agent-trading concepts unchanged; this adds **latency ceiling** for signal paths that read HL first.
 
 ## Snippets

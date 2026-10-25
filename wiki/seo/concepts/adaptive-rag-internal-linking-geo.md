@@ -178,7 +178,7 @@ Extends @concepts/on-page-seo-local.md **Internal linking — the site graph** s
 | **50–500 pages** | @entities/tools/semrush.md or @entities/tools/ahrefs.md internal-link suggestions + manual coherence review |
 | **500+ pages / agency** | WebKnoGraph open-source framework (https://github.com/martech-engine/WebKnoGraph); WordLift Internal Links integration planned |
 
-`[NEEDS VERIFICATION 2026-06-05]` — WebKnoGraph Phase-0 on local 15-page WP sites not run; framework validated on Kalicube.com (1,841 pages) only.
+`[OPEN QUESTION 2026-06-05]` — WebKnoGraph Phase-0 on local 15-page WP sites not run; framework validated on Kalicube.com (1,841 pages) only.
 
 ---
 

@@ -104,7 +104,7 @@ US ~55–60% of oncology value → favors VIR **50/50 US** vs ex-US royalties.
 
 | Claim | Dossier | Our lock / check | Action |
 |-------|---------|------------------|--------|
-| Pluvicto WAC | ~**$42.5k**/dose (~$255k/6) | Prior brief ~**$51k** | `[NEEDS VERIFICATION 2026-07-21]` — use Novartis primary |
+| Pluvicto WAC | ~**$42.5k**/dose (~$255k/6) | Prior brief ~**$51k** | `[OPEN QUESTION 2026-07-21]` — use Novartis primary |
 | EV ~**$500M** / “near-zero” for VIR-5500 | Cash ~$1.1B → EV slim | Cash math order-OK; **“priced at zero”** is narrative | Keep Speculative |
 | Pasritamig PSA50 **64.7%** + docetaxel | Combo figure | Prior RP2D mono ~**42%** | Do not mix mono/combo |
 | Launch ~**2031** | Implied | Ph3 2027 company guide | Possible but not IR-dated |

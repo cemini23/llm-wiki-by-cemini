@@ -111,7 +111,7 @@ IDCA angle: missing screenshots ≠ dead case — government-held Prenot@Mi-rela
 | Cass. **13818/2026** interest-to-sue principle | **[CONFIRMED]** primary ordinanza PDF |
 | Law **74/2025** / art. 3-bis in force | **[CONFIRMED]** GU + Cost. 63 quote |
 | Cost. **63/2026** (Torino) | **[CONFIRMED]** non fondatezza / inammissibilità; reform stands |
-| Cost. post–**9 Jun 2026** Mantova/Campobasso merits | **[NEEDS VERIFICATION 2026-07-22]** hearing held; sentenza not deposited |
+| Cost. post–**9 Jun 2026** Mantova/Campobasso merits | **[OPEN QUESTION 2026-07-22]** hearing held; sentenza not deposited |
 | Sezioni Unite written (post–14 Apr 2026) | **[NEEDS VERIFICATION 2026-07-22]** pending |
 | MAECI central adult JS from **2029** | **[CONFIRMED]** L. 11/2026 + consular MAECI pages |
 | Interno circolari full text | **[CONFIRMED]** Circ. 26185 · DAIT 59 · 36356 · 19951 — @sources/interno-circolari-law74-2026-07-22.md |

@@ -38,7 +38,7 @@ Rust duplicate finder (Rayon, xxHash/BLAKE3). Prefix/suffix hash before full-fil
 
 - One-shot vault hygiene: `fclones group` then reflink (`cp -c`) — not a destructive `rm` default.
 - Guard delete flags. Do not run unsupervised `--delete` on `~/Desktop/family` or AttoVault.
-- Confirm reflink survival when copying a vault to an external backup volume `[NEEDS VERIFICATION 2026-08-15]`.
+- Confirm reflink survival when copying a vault to an external backup volume `[OPEN QUESTION 2026-08-15]`.
 
 **Do not** put private Barone paths or living-person filenames into git examples.
 

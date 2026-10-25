@@ -113,7 +113,7 @@ The pattern: Conductor + reviewer-agent + claude-mem cover all five named failur
 
 3. **claude-mem injection-priming risk** (Mode 1). Audit whether any K39+ session shows evidence of injected context priming a wrong early commitment. Sample 5 recent SessionStart-injected sessions, look for instances where injected obs contradicted the correct interpretation. If found ≥1, raise injection threshold or add a "discount injected context" prompt prefix.
 
-4. **Deep-read pass** on @sources/llms-get-lost-multi-turn-laban-2025.md to confirm the answer-bloat + lost-middle mechanisms as published. Currently `read_status: skimmed`; the [NEEDS VERIFICATION 2026-05-13] tags above resolve on the deep-read. Promote source maturity from `validated` to `core` if the firsthand pass confirms.
+4. **Deep-read pass** on @sources/llms-get-lost-multi-turn-laban-2025.md to confirm the answer-bloat + lost-middle mechanisms as published. Currently `read_status: skimmed`; the [OPEN QUESTION 2026-05-13] tags above resolve on the deep-read. Promote source maturity from `validated` to `core` if the firsthand pass confirms.
 
 5. **No brief required** — this audit closes locally. The conclusions are wiki-internal architectural validation, not Cemini-deliverable. If a future workstream activates the architectural path for lost-middle, that one would warrant a brief.
 

@@ -98,7 +98,7 @@ When advance markets trade at **≥90¢**, bilateral quoting is mandatory and ec
 | **reduce** | Confirmed squad risk but still quotable (Brazil K84) | Min size, max spread, tight cancel |
 | **human_review** | Unknown depth / conflicting medical wires (Morocco K84) | Gate automation until operator OK |
 
-All such verdicts are **`[NEEDS VERIFICATION 2026-06-06]`** pre-tournament — re-run safety DR weekly through Cup window.
+All such verdicts are **`[OPEN QUESTION 2026-06-06]`** pre-tournament — re-run safety DR weekly through Cup window.
 
 ### Economics reminder
 

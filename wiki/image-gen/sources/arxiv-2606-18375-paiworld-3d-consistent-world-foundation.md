@@ -59,7 +59,7 @@ updated: 2026-06-24
 
 - Extends world-model axis beyond persona T2V into **embodied multi-camera sim** — pattern relevant for multi-angle persona scene consistency research
 - Complements **Prisma-World / MetaWorld** joint-denoising line (@concepts/multi-agent-cross-view-video-world-models.md) with explicit 3D REPA + Geo-RoPE
-- **No public repo** at ingest `[NEEDS VERIFICATION 2026-06-22]`
+- **No public repo** at ingest `[OPEN QUESTION 2026-06-22]`
 
 ## Snippets
 

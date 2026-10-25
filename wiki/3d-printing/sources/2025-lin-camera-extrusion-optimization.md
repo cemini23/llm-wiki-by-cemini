@@ -36,7 +36,7 @@ A camera-based offline pipeline that snaps phone-camera photos of **two calibrat
 
 **Hardware.** Ender-3 V2 with 0.4 mm nozzle. Light-ivory PLA from Fillamentum (1.75 mm) on a dark print bed for measurement contrast. Layer height 0.2 mm fixed; bed 75 °C; nozzle 200 °C. Smartphone equipped with a 108-megapixel Samsung **S5KHMX** sensor (this is the back-camera sensor used in flagship phones such as the Galaxy S20 Ultra) [Source: 2025-lin-camera-extrusion-optimization.pdf p.6].
 
-[TENTATIVE] The current source page previously claimed broad applicability to Bambu / Prusa / Voron — Lin only validated on Ender-3 V2. The framework should generalize to any FFF printer with G-code-level extrusion control, but per-printer calibration prints + identification are required, and the speed range Lin actually swept (1600–3600 mm/min ≈ 27–60 mm/s) is **slower than Bambu cruise speeds** (200–500 mm/s). [NEEDS VERIFICATION 2026-05-06]
+[TENTATIVE] The current source page previously claimed broad applicability to Bambu / Prusa / Voron — Lin only validated on Ender-3 V2. The framework should generalize to any FFF printer with G-code-level extrusion control, but per-printer calibration prints + identification are required, and the speed range Lin actually swept (1600–3600 mm/min ≈ 27–60 mm/s) is **slower than Bambu cruise speeds** (200–500 mm/s). [OPEN QUESTION 2026-05-06]
 
 **Pipeline (offline, two-pass):**
 

@@ -60,4 +60,4 @@ Post-process upscaler for Wan/LTX persona clips in @concepts/two-pass-generation
 
 ## Dead Ends
 
-REDS-scale training (266 clips) — generalization to heavy diffusion-generated persona video unverified. Base DiT checkpoint not specified in skim — Wan vs CogVideoX adapter compatibility `[NEEDS VERIFICATION 2026-06-11]`.
+REDS-scale training (266 clips) — generalization to heavy diffusion-generated persona video unverified. Base DiT checkpoint not specified in skim — Wan vs CogVideoX adapter compatibility `[OPEN QUESTION 2026-06-11]`.

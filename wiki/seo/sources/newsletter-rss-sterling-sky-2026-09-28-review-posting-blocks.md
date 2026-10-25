@@ -55,7 +55,7 @@ Each is not necessarily a problem alone. The article's reading is that the **rep
 
 **SEO remit:** this is the strongest caution in the wiki against **in-store QR review drives**, a tactic that is otherwise attractive to a barbershop. The wiki's hands-on rules already forbid review gating (@concepts/ai-assistance-guardrails.md). This adds a second, distinct risk: **a legitimate drive can still trip an enforcement block** if the pattern (in-store + QR + burst) repeats. See @concepts/reviews-reputation-management.md for the updated acquisition guidance.
 
-**Confidence:** `[TENTATIVE]` on the specific mechanism — the author is explicit that the in-store/QR reading is **their own assumption**, based on five affected businesses, not a Google statement. The **30-day block length** and the **selective removal** behaviour are the most portable observations. `[NEEDS VERIFICATION 2026-10-01]` for current block behaviour.
+**Confidence:** `[TENTATIVE]` on the specific mechanism — the author is explicit that the in-store/QR reading is **their own assumption**, based on five affected businesses, not a Google statement. The **30-day block length** and the **selective removal** behaviour are the most portable observations. `[OPEN QUESTION 2026-10-01]` for current block behaviour.
 
 ## Snippets
 

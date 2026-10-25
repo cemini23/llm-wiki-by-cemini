@@ -38,7 +38,7 @@ Pandas TA Classic extends Pandas DataFrames with technical indicator calculation
 
 ### Open questions
 
-- Exact latency penalty and memory allocation spikes from continuous Polars↔Pandas casting in sustained 24/7 ingestion loop `[NEEDS VERIFICATION 2026-05-10]`
-- Current GitHub star count and primary contributor velocity `[NEEDS VERIFICATION 2026-05-10]`
+- Exact latency penalty and memory allocation spikes from continuous Polars↔Pandas casting in sustained 24/7 ingestion loop `[OPEN QUESTION 2026-05-10]`
+- Current GitHub star count and primary contributor velocity `[OPEN QUESTION 2026-05-10]`
 
 [Source: Evaluating Links for Trading and Wiki Stacks.docx, URL 2]

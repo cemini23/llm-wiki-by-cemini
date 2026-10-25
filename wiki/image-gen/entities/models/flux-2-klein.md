@@ -127,7 +127,7 @@ This page covers the Klein distills. Klein 9B has its own role as the **face-swa
   - **InfiniteYou** — [CONFIRMED 2026-05-06] **FLUX.2 port NOT yet released** as of May 2026. Existing `ComfyUI_InfiniteYou` (ByteDance) is FLUX.1-only. ByteDance has not announced a FLUX.2 timeline.
   - **Redux / Kontext** — FLUX.2 ports are reportedly available (see @entities/adapters/flux-redux.md, @entities/adapters/flux-kontext.md).
   - **Implication for the stack:** PuLID II works on Klein 4B/9B/Dev today; InfiniteYou users must stay on FLUX.1 Dev or wait. For a Klein-only persona pipeline, PuLID II + Klein 9B native multi-reference is the production-ready path.
-- **LoRA tooling support varies.** @entities/training-tools/ai-toolkit.md leads on FLUX.2 LoRA training (FLUX-first lab); other trainers tracking. **`[NEEDS VERIFICATION 2026-05-06]`**.
+- **LoRA tooling support varies.** @entities/training-tools/ai-toolkit.md leads on FLUX.2 LoRA training (FLUX-first lab); other trainers tracking. **`[OPEN QUESTION 2026-05-06]`**.
 - **Quality vs FLUX.1 Dev for explicit anatomy: not yet validated**. Smaller distilled model may need more aggressive de-censoring LoRAs.
 
 ### Censorship and the de-censoring path
@@ -157,8 +157,8 @@ Same as @entities/models/flux-1-dev.md: natural-language prose with logical stru
 
 - ~~PuLID II FLUX.2 port status~~ — **resolved [CONFIRMED 2026-05-06]**: shipped via `iFayens/ComfyUI-PuLID-Flux2`; supports Klein 4B/9B + Dev with auto-detection.
 - ~~InfiniteYou FLUX.2 port status~~ — **resolved [CONFIRMED 2026-05-06]**: NOT yet ported as of May 2026; remains FLUX.1-only. Reassess at next persona-consistency-touch (~Q3 2026).
-- **`[NEEDS VERIFICATION 2026-05-06]`**: ai-toolkit FLUX.2 LoRA training path — is it production-ready, or still experimental?
-- **`[NEEDS VERIFICATION 2026-05-06]`**: confirm Klein 4B 8 GB VRAM claim — what quantization (FP8? GGUF Q4? native FP16?) is needed, and what speed?
+- **`[OPEN QUESTION 2026-05-06]`**: ai-toolkit FLUX.2 LoRA training path — is it production-ready, or still experimental?
+- **`[OPEN QUESTION 2026-05-06]`**: confirm Klein 4B 8 GB VRAM claim — what quantization (FP8? GGUF Q4? native FP16?) is needed, and what speed?
 - Compare Klein 9B vs Klein 4B head-to-head on a fixed prompt set; document the quality drop the 4B path costs.
 - Confirm community "FLUX.2 uncensored merge" releases — are there equivalents of FLUX-UNCENSORED-Merged for Klein yet?
 

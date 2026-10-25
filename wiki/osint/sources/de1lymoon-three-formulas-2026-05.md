@@ -126,7 +126,7 @@ The post cites a striking statistic:
 - **5¢ contracts win 4.18%** of the time (mispriced — market underpricing rare positive outcomes)
 - **1¢ contracts win 0.43%** of the time (overpriced — market is being scammed by lottery-ticket buyers)
 
-[NEEDS VERIFICATION 2026-05-13] Provenance of these specific percentages is unclear from the post. Worth cross-checking against Polymarket historical CSV / on-chain settlement data before treating as a confirmed regime stat.
+[OPEN QUESTION 2026-05-13] Provenance of these specific percentages is unclear from the post. Worth cross-checking against Polymarket historical CSV / on-chain settlement data before treating as a confirmed regime stat.
 
 ### Synthesis — `complete_rare_event_system`
 

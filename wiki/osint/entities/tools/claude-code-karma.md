@@ -28,4 +28,4 @@ A specialized dashboard for continuous monitoring of active Claude Code sessions
 
 **Why Adopt**: Token economics and context-window tracking are critical for multi-agent orchestration. This provides the observability layer the CCC wiki's conductor/librarian architecture needs.
 
-**Open question** [NEEDS VERIFICATION 2026-05-16]: Scalability testing needed when monitoring hook is deployed across concurrent high-density multi-agent swarms.
+**Open question** [OPEN QUESTION 2026-05-16]: Scalability testing needed when monitoring hook is deployed across concurrent high-density multi-agent swarms.

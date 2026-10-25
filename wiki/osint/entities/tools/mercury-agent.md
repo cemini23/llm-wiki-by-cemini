@@ -48,6 +48,6 @@ Mercury is an autonomous AI agent running as a background daemon (systemd / Laun
 
 - **License verification**: confirm MIT before importing any extracted code
 - **Shell-exec layer**: verify exact sanitization approach handles ANSI escape pollution + ensures no prompt-injection vector remains
-- **Resident RAM**: source brief notes profiling gap during heavy Telegram polling + concurrent SQLite writes [NEEDS VERIFICATION 2026-05-10]
+- **Resident RAM**: source brief notes profiling gap during heavy Telegram polling + concurrent SQLite writes [OPEN QUESTION 2026-05-10]
 
 [Source: Evaluating Code for Trading Stacks.docx, URL 3]

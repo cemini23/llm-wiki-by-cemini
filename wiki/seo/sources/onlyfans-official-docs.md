@@ -23,7 +23,7 @@ Searched OnlyFans Help Center (support.onlyfans.com), Terms of Service (onlyfans
 
 ### Account Setup and Verification
 
-OnlyFans requires ID verification before creators can withdraw earnings. The verification process includes government-issued photo ID + selfie matching. Verification status unlocks: payment eligibility, chat functionality, promo tools, subscriber analytics, and referral program access (5% of referee earnings). Top verification status reportedly provides 100% payout rates according to some agency sources, though this contradicts the standard 80/20 split and requires verification `[NEEDS VERIFICATION 2026-05-08]`.
+OnlyFans requires ID verification before creators can withdraw earnings. The verification process includes government-issued photo ID + selfie matching. Verification status unlocks: payment eligibility, chat functionality, promo tools, subscriber analytics, and referral program access (5% of referee earnings). Top verification status reportedly provides 100% payout rates according to some agency sources, though this contradicts the standard 80/20 split and requires verification `[OPEN QUESTION 2026-05-08]`.
 
 Verification delays can occur for new creators. Support can clarify missing documents and reset verification if needed.
 
@@ -101,7 +101,7 @@ The platform underwent major policy overhauls in 2026, emphasizing safety, trans
 - **Users**: 377.5 million accounts worldwide
 - **Revenue (2024)**: $7.22 billion in fan spending; $5.78 billion paid to creators
 - **Growth**: 1,222% creator growth between 2019-2025
-- **Ownership**: Founder Leonid Radvinsky died March 2026; Architect Capital Partners in talks to acquire platform at $3.5-5.5 billion valuation `[NEEDS VERIFICATION 2026-05-08]`
+- **Ownership**: Founder Leonid Radvinsky died March 2026; Architect Capital Partners in talks to acquire platform at $3.5-5.5 billion valuation `[OPEN QUESTION 2026-05-08]`
 
 ## Snippets
 

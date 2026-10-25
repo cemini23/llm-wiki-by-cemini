@@ -38,7 +38,7 @@ Ingest 2026-06-27 from arXiv:2606.26795 (ICML 2026) — INS-inspired offline-cal
 
 ### Persona ops mapping
 
-Long Reel batches on Wan 2.2 — plug-and-play speedup without offline calibration datasets. Complements step-budget methods (@concepts/budget-aware-diffusion-caching.md) and **sparse attention** (@concepts/input-stable-sparse-attention-video.md) — stack feasibility `[NEEDS VERIFICATION 2026-07-01]`.
+Long Reel batches on Wan 2.2 — plug-and-play speedup without offline calibration datasets. Complements step-budget methods (@concepts/budget-aware-diffusion-caching.md) and **sparse attention** (@concepts/input-stable-sparse-attention-video.md) — stack feasibility `[OPEN QUESTION 2026-07-01]`.
 
 ### Build-track
 

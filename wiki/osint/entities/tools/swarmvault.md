@@ -59,7 +59,7 @@ The Gemini DR eval describes SwarmVault as:
 
 ### Critical open questions before adoption
 
-[NEEDS VERIFICATION 2026-05-04] — these are the load-bearing unknowns:
+[OPEN QUESTION 2026-05-04] — these are the load-bearing unknowns:
 
 1. **Does SwarmVault assume flat directory layout?** llm-wiki-compiler v0.4.0's blocker was hardcoded `CONCEPTS_DIR = "wiki/concepts"`. The Gemini DR eval mentions "three-layer architecture" but doesn't confirm whether the wiki layer accepts arbitrary nested directories (`concepts/`, `entities/`, `sources/` + their sub-trees).
 2. **Frontmatter compatibility?** This wiki's frontmatter has explicit fields (`type`, `tags`, `keywords`, `related[]`, `maturity`, `created`, `updated`) that follow `@CLAUDE.md`'s schema. SwarmVault may have its own opinionated schema that conflicts.
@@ -72,8 +72,8 @@ The Gemini DR eval describes SwarmVault as:
 ### Resource envelope (claimed)
 
 - **Resident RAM**: "easily fit within the strict ~300-500 MB Node RAM allowance, successfully preserving the 1.4-2.6 GB resident memory headroom mandated for the CPX21 server configuration" [Source: 5_4 links.docx URL 18]
-- **Disk**: SQLite hybrid-search engine for ~380 markdown pages — actual size [NEEDS VERIFICATION 2026-05-04]
-- **CPU**: lightweight Node.js daemon — exact tree-sitter parsing overhead under load [NEEDS VERIFICATION 2026-05-04]
+- **Disk**: SQLite hybrid-search engine for ~380 markdown pages — actual size [OPEN QUESTION 2026-05-04]
+- **CPU**: lightweight Node.js daemon — exact tree-sitter parsing overhead under load [OPEN QUESTION 2026-05-04]
 
 These are the same envelope claims llm-wiki-compiler made. Per K8 server-probe, the CPX21 has 4 GB RAM with ~2.6 GB headroom after Ollama + nomic-embed-text. SwarmVault should fit, but verification on actual node process RSS is required before commit.
 

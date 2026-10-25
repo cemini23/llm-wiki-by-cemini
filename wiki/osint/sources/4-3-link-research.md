@@ -129,8 +129,8 @@ Promotion rate: 3/18 = 17% (K8 was 3/13 = 23%; K12 was ~20%).
 
 ### Open questions & follow-ups
 
-- **5K BTC-USD + 2.3K SPY data rows** [NEEDS VERIFICATION 2026-05-01]: training data volume claim repeated across all three sibling docs. Verify actual row counts in the MAPPO training datasets.
-- **MkDocs-Material IP documentation site** [NEEDS VERIFICATION 2026-05-01]: the "42+ page" claim is prescribed-not-built per K5/K6 pattern. Verify whether any pages have been created since.
+- **5K BTC-USD + 2.3K SPY data rows** [OPEN QUESTION 2026-05-01]: training data volume claim repeated across all three sibling docs. Verify actual row counts in the MAPPO training datasets.
+- **MkDocs-Material IP documentation site** [OPEN QUESTION 2026-05-01]: the "42+ page" claim is prescribed-not-built per K5/K6 pattern. Verify whether any pages have been created since.
 - **April 14-17 retrain window**: this planned-not-executed window is now cited across 4 K-series docs (K8, K9, K12, K13). Consider a cross-source stale-claim audit page documenting what was planned vs what actually shipped in that window.
 
 ## Snippets

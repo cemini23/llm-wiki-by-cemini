@@ -72,7 +72,7 @@ reBot-DevArm uses a **split license**, and the split is favorable for this works
 
 ### Open question — printed-part durability under continuous load
 
-The bisected architecture deliberately keeps load-bearing geometry on the CNC/aluminum side, but the BOM still routes some motion-system mounting through printed parts. [NEEDS VERIFICATION 2026-05-16] Long-term durability and deflection of **3D-printed MGN9 linear-slider brackets under continuous 1.5 kg payload stress** is not characterized in the repo documentation — ABS creep under sustained load is a real failure mode, and a printed slider bracket holding a moving payload is a candidate weak point. Anyone reproducing the build for production duty should bench-test these brackets or substitute machined equivalents.
+The bisected architecture deliberately keeps load-bearing geometry on the CNC/aluminum side, but the BOM still routes some motion-system mounting through printed parts. [OPEN QUESTION 2026-05-16] Long-term durability and deflection of **3D-printed MGN9 linear-slider brackets under continuous 1.5 kg payload stress** is not characterized in the repo documentation — ABS creep under sustained load is a real failure mode, and a printed slider bracket holding a moving payload is a candidate weak point. Anyone reproducing the build for production duty should bench-test these brackets or substitute machined equivalents.
 
 ## Snippets
 

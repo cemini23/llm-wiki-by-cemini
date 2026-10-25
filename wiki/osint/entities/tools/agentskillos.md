@@ -38,6 +38,6 @@ AgentSkillOS addresses a problem Cemini already faces: with ~130 FastMCP tools, 
 
 ### Open questions
 
-- Exact embedding model size and vector architecture used by AgentSkillOS for matching queries to tool descriptions; verify replicability inside Cemini Postgres constraints `[NEEDS VERIFICATION 2026-05-10]`
+- Exact embedding model size and vector architecture used by AgentSkillOS for matching queries to tool descriptions; verify replicability inside Cemini Postgres constraints `[OPEN QUESTION 2026-05-10]`
 
 [Source: Evaluating Links for Trading and Wiki Stacks.docx, URL 15]

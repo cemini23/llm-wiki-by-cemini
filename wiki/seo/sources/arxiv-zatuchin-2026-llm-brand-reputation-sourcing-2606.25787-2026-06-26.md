@@ -87,7 +87,7 @@ Merged Rankfor.AI datasets: **128 brands**, **13 languages**, **12 markets**, **
 
 GEO visibility is **earned-media weighted**: chamber sites, local news, Yelp/listicles, YouTube (market-dependent) outweigh owned-site copy tweaks alone (@concepts/citation-building.md). Pair answer-text audits (@concepts/multilingual-geo-audit.md) with **cited-domain inventory**.
 
-**Phase-0:** REFERENCE — Rankfor.AI author/vendor; Zenodo deposit + open.rankfor.ai index. No independent SaaS audit `[NEEDS VERIFICATION 2026-06-26]`.
+**Phase-0:** REFERENCE — Rankfor.AI author/vendor; Zenodo deposit + open.rankfor.ai index. No independent SaaS audit `[OPEN QUESTION 2026-06-26]`.
 
 ## Snippets
 

@@ -39,4 +39,4 @@ Gupta's contribution sits at the audit-translation layer — taking SOC SPL dete
 ### External
 
 - Social handle: @rajneeshcyber [NEEDS VERIFICATION 2026-05-17 — platform not specified in PDF]
-- LinkedIn / website: [NEEDS VERIFICATION 2026-05-17]
+- LinkedIn / website: [OPEN QUESTION 2026-05-17]

@@ -37,7 +37,7 @@ K138 eval of [api-evangelist/sportsbook-api](https://github.com/api-evangelist/s
 | **Verdict** | **Steal-from** — OSINT endpoint map only |
 | **Steal** | Kalshi, Polymarket, FD, DK base URLs + auth parameter notes for discovery scripts |
 
-**Not executable scraper** — intelligence chart for endpoint drift monitoring. Freshness vs live gateways unverified `[NEEDS VERIFICATION 2026-07-01]`.
+**Not executable scraper** — intelligence chart for endpoint drift monitoring. Freshness vs live gateways unverified `[OPEN QUESTION 2026-07-01]`.
 
 ## Snippets
 

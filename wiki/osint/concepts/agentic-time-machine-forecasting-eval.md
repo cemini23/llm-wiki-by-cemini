@@ -39,7 +39,7 @@ Prompted by arXiv **2606.21013** (K127). Forecasting agents need **dynamic web a
 
 **Planner-solver-aggregator:** question → diverse analytical angles → parallel evidence → aggregate forecast. Steal for PM bot **offline signal validation** before live CLOB deployment.
 
-**Cemini use:** build laptop-side replay harness on resolved PM markets; correlate offline Brier/log score with paper's live-proxy claim before trusting multi-agent decomposition in prod briefs `[NEEDS VERIFICATION 2026-06-23]`.
+**Cemini use:** build laptop-side replay harness on resolved PM markets; correlate offline Brier/log score with paper's live-proxy claim before trusting multi-agent decomposition in prod briefs `[OPEN QUESTION 2026-06-23]`.
 
 ## Snippets
 

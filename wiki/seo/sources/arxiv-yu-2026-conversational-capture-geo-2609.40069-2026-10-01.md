@@ -127,7 +127,7 @@ The paper also argues GEO audits, answer-engine benchmarks, and platform abuse d
 - **LLM-as-judge visibility scoring is imperfect**; an empirical study must report judge agreement and inter-judge reliability.
 - **Open-source RAG ≠ a commercial closed engine**; replication across several open models is required.
 - No real human trust or perception is measured.
-- **Local-service generalization:** `[NEEDS VERIFICATION 2026-10-01]` — no local, geographic, or near-me queries anywhere in the paper.
+- **Local-service generalization:** `[OPEN QUESTION 2026-10-01]` — no local, geographic, or near-me queries anywhere in the paper.
 
 ## Snippets
 

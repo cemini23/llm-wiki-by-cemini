@@ -49,7 +49,7 @@ updated: 2026-10-01
 
 ## Raw Concept
 
-Operator playbook for **brand-name bias** and **multi-competitor GEO dynamics** in LLM recommendations. Synthesized from @sources/arxiv-chu-2026-incumbent-brand-bias-llm-geo-2606.17443-2026-06-18.md (Chu & Hou, arXiv 2606.17443). Study domain: skincare CPG; local-service generalization `[TENTATIVE]` / `[NEEDS VERIFICATION 2026-06-18]`.
+Operator playbook for **brand-name bias** and **multi-competitor GEO dynamics** in LLM recommendations. Synthesized from @sources/arxiv-chu-2026-incumbent-brand-bias-llm-geo-2606.17443-2026-06-18.md (Chu & Hou, arXiv 2606.17443). Study domain: skincare CPG; local-service generalization `[TENTATIVE]` / `[OPEN QUESTION 2026-06-18]`.
 
 ## Narrative
 

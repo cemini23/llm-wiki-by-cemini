@@ -44,7 +44,7 @@ NVIDIA **Faster IndexTTS-2** (arXiv:2607.21042) — TensorRT/Triton streaming de
 ### Key facts (May 2026)
 
 - **License**: **Bilibili Model Use License** (custom; [CONFIRMED] via `LICENSE` @ index-tts/index-tts — MAU/revenue caps; no improving other AI models)
-- **Repo**: `github.com/index-tts/index-tts` [NEEDS VERIFICATION 2026-05-13]
+- **Repo**: `github.com/index-tts/index-tts` [OPEN QUESTION 2026-05-13]
 - **Architecture**: autoregressive transformer + neural audio codec (GPT-style next-token prediction over codec tokens)
 - **Size**: ~1.7B parameters [NEEDS VERIFICATION 2026-05-13]
 - **Languages**: Chinese, English [VERIFY breadth]

@@ -24,7 +24,7 @@ cross-wiki-source: "briefs/2026-06-26_k130-rlcard-offline-baseline-adopt.md"
 
 - @entities/tools/rlcard.md — primary entity (K92 + K130 refresh)
 - @entities/bots/poker-bot-tooling.md — poker RL baseline cluster
-- @osint-wiki/sources/eval-poker-github-repos-2026-06-26.md — OSINT eval lane [NEEDS VERIFICATION 2026-06-26]
+- @osint-wiki/sources/eval-poker-github-repos-2026-06-26.md — OSINT eval lane [OPEN QUESTION 2026-06-26]
 
 ## Raw Concept
 

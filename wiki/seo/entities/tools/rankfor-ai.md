@@ -38,7 +38,7 @@ Vendor stub from K128 ingest — Dmitrij Žatuchin (arXiv 2606.23165) lists Rank
 |-------|-------|
 | **Vendor** | Rankfor.AI |
 | **Category** | AI brand visibility / GEO monitoring (inferred) |
-| **Phase-0 verdict** | **REFERENCE** — methodology in peer paper; product not independently audited `[NEEDS VERIFICATION 2026-06-24]` |
+| **Phase-0 verdict** | **REFERENCE** — methodology in peer paper; product not independently audited `[OPEN QUESTION 2026-06-24]` |
 | **Steal** | Multilingual query-matrix design; recommendation share vs sentiment decomposition; citation URL anatomy (owned vs third-party) |
 | **Open data** | Zenodo `10.5281/zenodo.20829524`; `open.rankfor.ai/index-2026` cited in K130 paper |
 | **Compare** | @entities/tools/ranqo.md — production mention-rate baselines |

@@ -46,7 +46,7 @@ K165 Gemini DR wave: first dedicated OSINT page for **trader vault-follow** econ
 ### Verdicts across DRs (do not flatten)
 
 - All three: **skip live DIY** fill-mirroring.
-- Conflict: HLP vs User Vaults as preferred passive — `[NEEDS VERIFICATION 2026-07-14]` until operator ADR.
+- Conflict: HLP vs User Vaults as preferred passive — `[OPEN QUESTION 2026-07-14]` until operator ADR.
 
 ### DIY failure modes (CONFIRMED as structural risks; EV unproven)
 

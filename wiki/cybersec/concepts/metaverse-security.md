@@ -28,4 +28,4 @@ Two corpus PDFs anchor.
 
 ## Narrative
 
-Speculative-but-real attack surface as immersive platforms (Meta Horizon, VRChat, Roblox-as-platform, Decentraland) gain users. Risks: identity / avatar impersonation, voice-deepfake harassment, virtual-property theft (often via NFT bridges), child-safety incidents in unmoderated rooms (overlaps with @concepts/cyber-for-kids.md), novel payment/payment-fraud paths (overlapping with @concepts/blockchain-security.md). [NEEDS VERIFICATION 2026-05-12]
+Speculative-but-real attack surface as immersive platforms (Meta Horizon, VRChat, Roblox-as-platform, Decentraland) gain users. Risks: identity / avatar impersonation, voice-deepfake harassment, virtual-property theft (often via NFT bridges), child-safety incidents in unmoderated rooms (overlaps with @concepts/cyber-for-kids.md), novel payment/payment-fraud paths (overlapping with @concepts/blockchain-security.md). [OPEN QUESTION 2026-05-12]

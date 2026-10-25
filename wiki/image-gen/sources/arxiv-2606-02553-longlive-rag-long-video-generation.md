@@ -51,7 +51,7 @@ Evaluated on Causal-Forcing, Self-Forcing, LongLive backbones at 30s / 60s / 120
 
 ### Workspace relevance
 
-Complements **DecMem** (@sources/arxiv-2605-31336-decmem-world-generation.md) memory architectures and post-hoc **seam stitching** (@concepts/seam-stitching-strategies.md) for persona long-form clips. First open RAG-over-own-history pattern for AR video — watch for ComfyUI node / Wan integration `[NEEDS VERIFICATION 2026-06-04]`.
+Complements **DecMem** (@sources/arxiv-2605-31336-decmem-world-generation.md) memory architectures and post-hoc **seam stitching** (@concepts/seam-stitching-strategies.md) for persona long-form clips. First open RAG-over-own-history pattern for AR video — watch for ComfyUI node / Wan integration `[OPEN QUESTION 2026-06-04]`.
 
 ## Snippets
 

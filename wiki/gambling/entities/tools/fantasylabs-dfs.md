@@ -37,7 +37,7 @@ updated: 2026-10-25
 |-------|-------|
 | **URL** | https://www.fantasylabs.com/ |
 | **NFL via ETR bundle** | ~**$49.95/mo** NFL optimizer add-on (ETR subscribers only) [CONFIRMED — ETR promo page] |
-| **All-sports** | ~$69.95/mo (ETR page; verify on fantasylabs.com) [NEEDS VERIFICATION 2026-06-20] |
+| **All-sports** | ~$69.95/mo (ETR page; verify on fantasylabs.com) [OPEN QUESTION 2026-06-20] |
 | **Export** | **CSV projection export** from models [CONFIRMED — Labs article] |
 | **Lineup export** | FanDuel CSV upload from Labs builder [CONFIRMED] |
 | **API / MCP** | **None public** |

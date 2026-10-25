@@ -197,7 +197,7 @@ Geo availability: pick'em restricted in **14+ US states** per secondary review [
 - [x] ToS sections ix/x — same scraping bar as BBM [CONFIRMED]
 - [x] Manual line workflow feasibility — feasible; no licensed export [CONFIRMED]
 - [ ] Operator state geo verification in-app [TENTATIVE]
-- [ ] In-season line refresh / liquidity spot-check (NFL Sunday slate) [NEEDS VERIFICATION 2026-09-01]
+- [ ] In-season line refresh / liquidity spot-check (NFL Sunday slate) [OPEN QUESTION 2026-09-01]
 
 ### Verdict
 

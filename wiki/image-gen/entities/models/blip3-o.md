@@ -45,12 +45,12 @@ BLIP-3o is a **fully open** family of unified multimodal models — open archite
 ### Workspace relevance
 
 - The "fully open" framing matters for any future workspace-level reproduction or fine-tuning. Open dataset + open training code is a different proposition from "open weights only" releases like BAGEL / Janus-Pro.
-- Not yet in `notes/models-catalog.md`. [NEEDS VERIFICATION 2026-05-06] on local runtime, VRAM, censorship profile, and presence of community fine-tunes.
+- Not yet in `notes/models-catalog.md`. [OPEN QUESTION 2026-05-06] on local runtime, VRAM, censorship profile, and presence of community fine-tunes.
 - Strong attribute-binding score (0.67 in unified-model field, second only to UniReasoner-on-SANA 0.72) makes BLIP-3o interesting for multi-subject persona scenes if locally runnable.
 
 ### Open questions
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - Hugging Face availability and license details
 - Local-hardware tier (parameter count, quantization)

@@ -52,7 +52,7 @@ updated: 2026-06-23
 
 - Maps to **persona DM automation** (@entities/persona-ops/sillytavern.md, @entities/persona-ops/n8n.md) — agents acting on behalf of synthetic creators must not leak operator PII or fan context inappropriately
 - Complements **anti-personalization** (@concepts/anti-personalization-privacy.md) on the defensive image axis
-- **No public repo** at ingest `[NEEDS VERIFICATION 2026-06-23]`
+- **No public repo** at ingest `[OPEN QUESTION 2026-06-23]`
 
 ## Snippets
 

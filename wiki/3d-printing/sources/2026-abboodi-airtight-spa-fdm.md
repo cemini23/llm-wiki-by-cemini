@@ -60,11 +60,11 @@ Manufacturing-focused evaluation of **five fabrication routes** for a geometrica
 | Parameter | Value | | Parameter | Value |
 |-----------|-------|-|-----------|-------|
 | Nozzle diameter | 0.4 mm (0.25 clogged; 0.8 too coarse) | | Print temp | 235 °C (first layer 257 °C) |
-| Layer height | 0.1 mm (initial 0.27 mm) | | Bed temp | **40 °C (table) vs 50 °C (prose)** [NEEDS VERIFICATION 2026-08-15] |
+| Layer height | 0.1 mm (initial 0.27 mm) | | Bed temp | **40 °C (table) vs 50 °C (prose)** [OPEN QUESTION 2026-08-15] |
 | Line width | 0.32 mm | | Flow | 110% (infill 125%) |
 | Wall line count | **3** | | Speed | 15 mm/s (initial 11; top/bottom 12) |
 | Infill | 100% zigzag | | Fan | 30% (30–40% window) |
-| Retraction / supports | disabled | | Adhesion | brim (table lists both 9 and 10 mm [NEEDS VERIFICATION 2026-08-15]) |
+| Retraction / supports | disabled | | Adhesion | brim (table lists both 9 and 10 mm [OPEN QUESTION 2026-08-15]) |
 | Line overlap | 20–25% | | — | — |
 
 The paper stresses these are a **coupled process window, not independent optimal values** — transferring one or two settings to another printer/TPU will not reproduce the outcome [Source: arXiv:2608.13233 §3.4.3.7, §4].

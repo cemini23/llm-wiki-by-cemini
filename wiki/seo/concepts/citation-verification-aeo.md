@@ -120,7 +120,7 @@ Per @concepts/adaptive-rag-internal-linking-geo.md Part A routing:
 | High — before publishing AI-drafted FAQ/schema/copy | Full claim–source audit before publish |
 | High — responding to public AI misinformation about the shop | Manual verify + GBP correction + website update |
 
-### Tools landscape `[NEEDS VERIFICATION 2026-06-06]`
+### Tools landscape `[OPEN QUESTION 2026-06-06]`
 
 | Tool class | Example | Fit for local operator |
 |------------|---------|------------------------|
@@ -138,7 +138,7 @@ Med-V1 Phase-0 for local web pages: **NO-GO** — biomedical training data; no w
 - **"Cite Sources" for GEO visibility ≠ verified accuracy** — Aggarwal's +27% lift measures citation prominence in generated answers, not whether your page's claims match reality when cited.
 - **More AI citations in answers may mean more errors** — GPT-5's higher claim volume did not proportionally increase supported claims.
 - **Adversarial single-source collapse** — @osint-wiki/sources/arxiv-metaresearcher-deep-research-2606.19893-2026-06-20.md cites Synthetic Web: one high-plausibility misinformation article can collapse frontier-model accuracy. Local operators should verify AI-claimed ratings/hours/prices against GBP + owned site, not assume citation presence implies correctness `[NEEDS VERIFICATION 2026-06-20]`.
-- **Brand Hallucination Paradox** — @sources/arxiv-varga-2026-per-entity-bias-mapping-ai-visibility-2606.21595-2026-06-23.md: high-salience entities exhibit **higher fabricated citation rates** than low-salience ones despite equal or higher mention rates. Verification is mandatory for familiar local brands, not only unknown shops `[NEEDS VERIFICATION 2026-06-23]`.
+- **Brand Hallucination Paradox** — @sources/arxiv-varga-2026-per-entity-bias-mapping-ai-visibility-2606.21595-2026-06-23.md: high-salience entities exhibit **higher fabricated citation rates** than low-salience ones despite equal or higher mention rates. Verification is mandatory for familiar local brands, not only unknown shops `[OPEN QUESTION 2026-06-23]`.
 - **Retrieval integrity (K170 thin steal)** — @sources/arxiv-avramov-2026-atlas-verifiable-semantic-search-2609.11841-2026-09-11.md: semantic search providers control index + execution; truncated or biased indexes can omit canonical NAP pages even when on-page GEO tactics are strong. Treat "was our owned URL in the candidate set?" as part of verification, not only post-hoc claim–source alignment `[TENTATIVE]`.
 
 ## Snippets

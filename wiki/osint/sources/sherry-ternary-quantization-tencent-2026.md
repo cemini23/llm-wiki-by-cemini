@@ -180,6 +180,6 @@ Per-group quantization (group=128) is the recommended default but the per-tensor
 
 - `[CONFIRMED 2026-08-20]` — Tencent/AngelSlim `LICENSE` is Apache-2.0 except listed third-party components. GitHub SPDX metadata is `NOASSERTION`; file text is authoritative.
 - `[CONFIRMED 2026-08-20]` — repo is a compression **toolkit** (code + QAD configs, e.g. Qwen3 Sherry QAD yaml). No drop-in pre-quantized SherryLLM weights for LLaMA-3.2 1B / 3B found; LLaMA-3.2 paths appear as vLLM-patch comments. Adoption cost is train/QAT, not download-and-serve.
-- `[NEEDS VERIFICATION 2026-04-30]` — does BitNet.cpp run on the AMD x86_64 (CPX21) target? Benchmarks are on Intel i7; AMD compatibility likely but not verified.
-- `[NEEDS VERIFICATION 2026-04-30]` — does any DeepSeek-distilled small model (e.g. `deepseek-r1-distill-qwen-1.5b`) come with a working Sherry-style training recipe, or would Cemini need a custom QAT pipeline?
+- `[OPEN QUESTION 2026-04-30]` — does BitNet.cpp run on the AMD x86_64 (CPX21) target? Benchmarks are on Intel i7; AMD compatibility likely but not verified.
+- `[OPEN QUESTION 2026-04-30]` — does any DeepSeek-distilled small model (e.g. `deepseek-r1-distill-qwen-1.5b`) come with a working Sherry-style training recipe, or would Cemini need a custom QAT pipeline?
 - Open extension: is there an MoE-friendly variant of Sherry? Cemini's brain is MoE (`deepseek-v4-flash`); ternary quantization on MoE-experts vs shared-router has open empirical questions.

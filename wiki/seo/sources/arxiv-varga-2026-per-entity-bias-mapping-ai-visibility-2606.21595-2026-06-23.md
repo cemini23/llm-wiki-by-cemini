@@ -78,7 +78,7 @@ Retrieval inclusion, mention probability, **verified mention rate**, false attri
 
 **Canonical presence** minimum: Wikidata QID (or equivalent KG anchor), consistent naming across authorities, schema.org on owned properties.
 
-**Phase-0:** REFERENCE — Zenodo preprint + open instruments; no production SaaS adoption path. Local barbershop generalization `[NEEDS VERIFICATION 2026-06-23]`.
+**Phase-0:** REFERENCE — Zenodo preprint + open instruments; no production SaaS adoption path. Local barbershop generalization `[OPEN QUESTION 2026-06-23]`.
 
 ## Snippets
 

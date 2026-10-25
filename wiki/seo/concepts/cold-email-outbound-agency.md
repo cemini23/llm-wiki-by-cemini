@@ -46,7 +46,7 @@ Pairs with @concepts/high-ticket-smb-lead-generation.md **zip-code outbound GTM*
 1. Pick one geography (aligns with @concepts/citation-building.md concentration)
 2. Build a list of SMBs with GBP gaps (weak website, review count, or response discipline)
 3. Use Claude-assisted personalization — reference specific listing gaps, not generic "we do SEO"
-4. Human approves every send; respect CAN-SPAM / GDPR / local solicitation rules `[NEEDS VERIFICATION 2026-06-03]`
+4. Human approves every send; respect CAN-SPAM / GDPR / local solicitation rules `[OPEN QUESTION 2026-06-03]`
 
 ### CCC overlap
 

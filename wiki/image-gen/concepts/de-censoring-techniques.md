@@ -230,7 +230,7 @@ The architectural hard wall is the *real* dividing line — not "is X censored,"
 
 ### Autoregressive erasure inverse (2026-07-02)
 
-Unified **autoregressive** T2I hosts (@entities/models/hunyuanimage-3-0.md) can be **post-hoc concept-erased** via Obliviate-style KL trajectory updates (@concepts/autoregressive-concept-erasure-obliviate.md) — the mirror operation to de-censoring. De-censor path for AR visual-token models remains `[NEEDS VERIFICATION 2026-07-02]`.
+Unified **autoregressive** T2I hosts (@entities/models/hunyuanimage-3-0.md) can be **post-hoc concept-erased** via Obliviate-style KL trajectory updates (@concepts/autoregressive-concept-erasure-obliviate.md) — the mirror operation to de-censoring. De-censor path for AR visual-token models remains `[OPEN QUESTION 2026-07-02]`.
 
 ## Dead Ends
 

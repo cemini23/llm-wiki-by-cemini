@@ -66,7 +66,7 @@ updated: 2026-06-23
 ### Workspace relevance
 
 - **Ops track:** Relevant if operator ever hosts **multi-user streaming Wan** sessions (not laptop-only persona batch today)
-- **Repo status:** GitHub exists but **placeholder README** at Phase-0 — watch for code drop `[NEEDS VERIFICATION 2026-06-20]`
+- **Repo status:** GitHub exists but **placeholder README** at Phase-0 — watch for code drop `[OPEN QUESTION 2026-06-20]`
 
 ## Snippets
 

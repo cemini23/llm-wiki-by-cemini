@@ -105,4 +105,4 @@ Both are reference templates; pick by task shape.
 
 ## NEEDS VERIFICATION
 
-- `[NEEDS VERIFICATION 2026-05-12]` Original author — appears to be a generic template circulated on X; could verify upstream source.
+- `[OPEN QUESTION 2026-05-12]` Original author — appears to be a generic template circulated on X; could verify upstream source.

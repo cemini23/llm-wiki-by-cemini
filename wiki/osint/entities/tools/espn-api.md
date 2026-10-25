@@ -36,7 +36,7 @@ K138 Phase-0 on [cwendt94/espn-api](https://github.com/cwendt94/espn-api) — MI
 
 **Gap filled:** normalized ESPN roster/projection ingress in Python for CeminiDFS pipeline vs brittle R scrapers (K138 Reject: FantasyFootballAnalyticsR).
 
-**Risk:** ESPN endpoint stability undocumented `[NEEDS VERIFICATION 2026-07-01]`.
+**Risk:** ESPN endpoint stability undocumented `[OPEN QUESTION 2026-07-01]`.
 
 Brief: `../projects/CeminiDFS/briefs/2026-07-01_k138-espn-api-fetch-adopt.md`
 

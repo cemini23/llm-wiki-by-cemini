@@ -59,7 +59,7 @@ First end-to-end optical-side-channel attack that recovers a *printable* G-code 
 **Limitations**:
 - 3D printing is slow → dataset is small in object diversity (16 objects) [TENTATIVE: generalization to truly novel geometries unclear]
 - Slicer-based rotation/translation also rotates infill pattern incoherently, so paper builds its own G-code manipulator.
-- Defenses: noise injection on the optical channel (degrade video quality) — the paper claims this doesn't work because their model + post-processor is robust [NEEDS VERIFICATION 2026-05-06].
+- Defenses: noise injection on the optical channel (degrade video quality) — the paper claims this doesn't work because their model + post-processor is robust [OPEN QUESTION 2026-05-06].
 
 **Practical bearing for a Bambu user**: Bambu X1C ships an internal camera. If the camera stream is exposed (default Bambu Studio cloud, or a misconfigured LAN-mode setup), this attack class is directly applicable. **Defense candidates**: (1) keep the camera in LAN-only mode, (2) disable AI-failure-detection's image upload, (3) software-only G-code obfuscation (QuietPrint's SHM is acoustic-specific; an optical analog is open research). Strong industrial precedent for IP risk: this paper demonstrated functional padlock-key counterfeits from one video.
 

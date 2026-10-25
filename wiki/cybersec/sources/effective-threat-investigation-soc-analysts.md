@@ -35,7 +35,7 @@ updated: 2026-05-17
 
 Packt 2023 SOC textbook by Mostafa Yahia, structured in 4 parts: **email investigation** (Ch 1-2), **Windows event-log investigation** (Ch 3-7), **firewall + proxy log investigation** (Ch 8-11), **other threats + external sources** (Ch 12-15). Yahia's signature is concrete per-log-source field/event-ID reference tables paired with investigation walkthroughs.
 
-**[NEEDS VERIFICATION 2026-05-17]** — only Chapters 1-3 + first paragraph of Ch 4 were extractable in the current ingest pass. Ch 4-15 body text was truncated in the file-read stream (the highest-value content — Windows Security Event ID tables, NTLM Event IDs p.71, Kerberos Event IDs p.72, firewall + proxy field tables — is not yet readable). Re-extraction via `pdftotext` against a downloaded copy required before this source can be promoted to `read`.
+**[OPEN QUESTION 2026-05-17]** — only Chapters 1-3 + first paragraph of Ch 4 were extractable in the current ingest pass. Ch 4-15 body text was truncated in the file-read stream (the highest-value content — Windows Security Event ID tables, NTLM Event IDs p.71, Kerberos Event IDs p.72, firewall + proxy field tables — is not yet readable). Re-extraction via `pdftotext` against a downloaded copy required before this source can be promoted to `read`.
 
 ### What was extracted (Ch 1-3)
 

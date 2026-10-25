@@ -110,7 +110,7 @@ Free actions on a claimed listing:
 - Respond to reviews (publicly or via direct message — public is preferred for most cases)
 - Add a long business description and a "from the business" specialty section
 
-Paid Yelp Ads exist (CPC ad slots above and inside search results, plus profile-page slots that suppress competitor ads on the operator's own profile). Yelp Ads are typically a poor ROI for single-location service businesses unless the operator is in a category Yelp dominates (restaurants, bars, salons in Yelp-heavy metros). [NEEDS VERIFICATION 2026-05-08]: ROI claims for specific verticals.
+Paid Yelp Ads exist (CPC ad slots above and inside search results, plus profile-page slots that suppress competitor ads on the operator's own profile). Yelp Ads are typically a poor ROI for single-location service businesses unless the operator is in a category Yelp dominates (restaurants, bars, salons in Yelp-heavy metros). [OPEN QUESTION 2026-05-08]: ROI claims for specific verticals.
 
 ### Cross-platform interaction with GBP review-response workflow
 

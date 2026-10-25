@@ -34,7 +34,7 @@ K137 Phase-0 on [deepseek-ai/DeepSpec](https://github.com/deepseek-ai/DeepSpec) 
 | **Verdict** | **Adopt** (prod brief — xsp-killer / analyst inference latency) |
 | **Steal** | Markov-head draft verification; suffix-decay mitigation vs parallel draft tokens |
 
-**Regime:** docx claims 60–85% latency reduction on long-context serving — validate on cemini-prod GPU/NVMe budget before prod GO `[NEEDS VERIFICATION 2026-06-30]`.
+**Regime:** docx claims 60–85% latency reduction on long-context serving — validate on cemini-prod GPU/NVMe budget before prod GO `[OPEN QUESTION 2026-06-30]`.
 
 **Not OpenClaw-specific** — batched in OpenClaw ecosystem eval for operator convenience.
 

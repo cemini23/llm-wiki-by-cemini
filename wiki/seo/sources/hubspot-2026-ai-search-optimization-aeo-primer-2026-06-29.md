@@ -52,12 +52,12 @@ updated: 2026-07-01
 HubSpot's June 2026 **AEO primer** — useful taxonomy even where stats are vendor-sourced:
 
 - **Terminology:** AI search optimization = GEO = AI SEO = LLMO; HubSpot prefers **AEO** (answer engine optimization). Complements SEO; does not replace it `[TENTATIVE]` — aligns with @sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md for Google surfaces.
-- **Traffic quality:** Microsoft Clarity study cited — AI-referred visitors on 1,200+ publisher sites signed up at **~11×** rate vs search visitors `[NEEDS VERIFICATION 2026-07-01]` on local SMB sites.
+- **Traffic quality:** Microsoft Clarity study cited — AI-referred visitors on 1,200+ publisher sites signed up at **~11×** rate vs search visitors `[OPEN QUESTION 2026-07-01]` on local SMB sites.
 - **Volume vs impact:** Semrush — AI traffic **+66%** in 2025 but **0.14%** of visits; Ahrefs May 2026 — still **<1%** share. Pairs with zero-click framing in @sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md — influence without clicks matters.
 - **Three retrieval modes:** (1) parametric training data — not directly optimizable; (2) **live web search / RAG** — primary AEO lever; (3) indexed/cached crawler content (emerging, e.g. ChatGPT index).
 - **AEO vs SEO deltas:** JS blocking stricter on some answer-engine crawlers; passage/chunk retrieval vs URL ranking; multi-engine game; **unlinked brand mentions** as authority signals; **visibility > click** as success metric.
 - **Visibility forms to measure:** inline citations, unlinked named mentions, comparison tables, source lists, rich product results — see @concepts/geo-visibility-measurement.md.
-- **Content tactics:** answer-first semantic triples; prompt research (manual probes or SaaS); schema may help per HubSpot State of AEO 2026; off-site signals — Fan Out research cited: **51%** of Google AI Overview citations from off-site; Reddit + YouTube dominate off-site mix `[NEEDS VERIFICATION 2026-07-01]` for barbershop queries.
+- **Content tactics:** answer-first semantic triples; prompt research (manual probes or SaaS); schema may help per HubSpot State of AEO 2026; off-site signals — Fan Out research cited: **51%** of Google AI Overview citations from off-site; Reddit + YouTube dominate off-site mix `[OPEN QUESTION 2026-07-01]` for barbershop queries.
 - **Skip:** treat HubSpot AEO SaaS as **CONDITIONAL-GO** only after Phase-0 — product CTAs dominate article; local operators default to GSC + manual probes per @concepts/geo-visibility-measurement.md.
 
 ## Snippets

@@ -45,7 +45,7 @@ Targets failures where 3D-aware generators look plausible but motion is unsafe, 
 
 ### Workspace relevance
 
-Complements **Proprio** (post-hoc physics scoring/refinement) and **YoCausal** (causality evaluation): OptiWorld is **proactive planning before generation** on the world-model axis → @concepts/world-models-video-generation.md. Persona track: research reference for controllable object/camera motion in explorable scenes; not a drop-in Wan LoRA until code + base-model pairing is verified `[NEEDS VERIFICATION 2026-06-02]`.
+Complements **Proprio** (post-hoc physics scoring/refinement) and **YoCausal** (causality evaluation): OptiWorld is **proactive planning before generation** on the world-model axis → @concepts/world-models-video-generation.md. Persona track: research reference for controllable object/camera motion in explorable scenes; not a drop-in Wan LoRA until code + base-model pairing is verified `[OPEN QUESTION 2026-06-02]`.
 
 ## Snippets
 

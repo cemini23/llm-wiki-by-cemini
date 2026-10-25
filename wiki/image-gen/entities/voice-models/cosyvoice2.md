@@ -98,7 +98,7 @@ CosyVoice 2 (and now CosyVoice 3) is Alibaba Tongyi MAI's streaming text-to-spee
 
 ### Operator notes
 
-- 0.5B fits comfortably on 8 GB VRAM; Apple Silicon viability not yet verified [NEEDS VERIFICATION 2026-05-13]
+- 0.5B fits comfortably on 8 GB VRAM; Apple Silicon viability not yet verified [OPEN QUESTION 2026-05-13]
 - `ttsfrd` Chinese text-normalization resource is a separate download
 - For NSFW persona-ops use: operator-controlled (Apache 2.0 means no platform NSFW filter at weights level), but reference-audio rights still apply per @concepts/persona-legal-landscape.md
 

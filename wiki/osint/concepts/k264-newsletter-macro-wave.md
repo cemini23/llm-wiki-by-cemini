@@ -40,4 +40,4 @@ K264 cluster hub. Dual-ID **OSINT K264**.
 
 ## Narrative
 
-WuBlock Fed +25bp to 3.75-4.00% FILE briefs-only. Capital Flows policy-error FILE. Klement Stromberg cite-only; `[NEEDS VERIFICATION 2026-09-18]`; no named GW levels. EH Eagles FILE. LS Projects FILE on CCC hub. Never rewrite watches.json. **No LIVE Discord. No xsp or pm scp.**
+WuBlock Fed +25bp to 3.75-4.00% FILE briefs-only. Capital Flows policy-error FILE. Klement Stromberg cite-only; `[OPEN QUESTION 2026-09-18]`; no named GW levels. EH Eagles FILE. LS Projects FILE on CCC hub. Never rewrite watches.json. **No LIVE Discord. No xsp or pm scp.**

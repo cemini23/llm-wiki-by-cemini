@@ -106,7 +106,7 @@ For 8 GB VRAM, the community uses **Adafactor + LoRA+** in Kohya — slow but fe
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - ~~Apple Silicon training viability on M-series with current Kohya~~ — **resolved [CONFIRMED 2026-05-07]**: Kohya sd-scripts runs on M1/M2/M3/M4 with **manual `cuda` → `mps` patches** in `train_util.py` — community-documented but not first-class. Expected throughput 5-10× slower than NVIDIA at SDXL scale; OOM risk at FLUX.1 Dev scale on 16 GB unified memory unless aggressive offload. **Bitsandbytes 8-bit optimisers do not work on MPS** — substitute Adafactor or AdamW-fp32. For this workspace, cloud rental remains the recommended training path; sd-scripts on Mac is exploratory only.
 - FLUX.2 Klein 9B compatibility — community reports a working recipe on a 4060 Ti 16 GB ([r/StableDiffusion thread](https://www.reddit.com/r/StableDiffusion/comments/1rcc1cy/lora_klein_9b_fantastic_likeness_4060_16gb/)). Verify on this workspace's hardware.

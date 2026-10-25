@@ -69,7 +69,7 @@ X (Twitter), LinkedIn, Pinterest: low priority for barbershops in most markets `
 ### Posting cadence
 
 - **Instagram**: 3-5 posts/week, with at least 2 Reels. **Reels-vs-static reach gap** `[CONFIRMED]`: Reels still dominate organic reach in 2026 — the algorithm pushes Reels to non-followers in Explore/Reels tab/feed recommendations while static posts mostly reach existing followers. Engagement-rate gap is narrower (Reels ~0.52% vs static images ~0.37% in 2025-2026 data) but **reach gap is much larger**. Carousels can edge Reels on engagement rate for educational/tutorial content; static images still appropriate for brand photography + announcements, capped at ~20-30% of calendar. [Sources: https://socialbotify.com/guides/instagram-algorithm-2026 (retrieved 2026-05-17); https://vidico.com/news/instagram-reels-statistics/ (retrieved 2026-05-17)]
-- **TikTok**: 1 video/day if pursuing aggressive growth; 3-4/week minimum for algorithmic relevance. `[NEEDS VERIFICATION 2026-05-07]`.
+- **TikTok**: 1 video/day if pursuing aggressive growth; 3-4/week minimum for algorithmic relevance. `[OPEN QUESTION 2026-05-07]`.
 - **Facebook**: 2-3/week. Cross-post from Instagram is fine.
 - **GBP Posts**: 1-2/week.
 

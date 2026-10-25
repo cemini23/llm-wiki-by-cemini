@@ -49,7 +49,7 @@ Ingest 2026-07-01 from Luo et al. (arXiv:2603.18636, ICML 2026) — training-fre
 | Trajectory-aware cache | Feature momentum + drift | NaviCache |
 | **Attention sparsity** | **Prune dense 3D self-attention blocks** | **SVOO**, SparseVideoGen |
 
-SVOO is **orthogonal** to caching — can theoretically stack with NaviCache/BudCache on Wan 2.2 persona batches `[NEEDS VERIFICATION 2026-07-01]`.
+SVOO is **orthogonal** to caching — can theoretically stack with NaviCache/BudCache on Wan 2.2 persona batches `[OPEN QUESTION 2026-07-01]`.
 
 ### Why "input-stable" matters
 

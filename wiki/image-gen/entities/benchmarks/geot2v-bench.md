@@ -36,7 +36,7 @@ Entity for **GeoT2V-Bench** (arXiv:2606.24829) — University of Bern reconstruc
 | **Models tested** | 12 open-weight configs (Wan, CogVideoX, HunyuanVideo, LTX-2, MAGI-1, Open-Sora, SkyReels, …) |
 | **Scale** | 3,840 completed reconstructions (4 seeds) |
 | **Backend** | VGGT-style poses → DeformableGS → MedianGS static proxy |
-| **Code** | Promised; not public at ingest `[NEEDS VERIFICATION 2026-06-24]` |
+| **Code** | Promised; not public at ingest `[OPEN QUESTION 2026-06-24]` |
 | **Phase-0** | **Skipped** — benchmark release pending |
 
 ### Complementary benchmarks

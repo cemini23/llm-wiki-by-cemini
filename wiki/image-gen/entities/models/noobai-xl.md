@@ -88,8 +88,8 @@ Most recent variants:
 
 ### Workspace TODO
 
-- **`[NEEDS VERIFICATION 2026-05-06]`**: confirm the canonical Chenkin Noob v.03 version hash on CivitAI; the model has had silent updates.
-- **`[NEEDS VERIFICATION 2026-05-06]`**: confirm V-Prediction sampler config snippets for the major UIs (ComfyUI, Forge Neo, SwarmUI) — needed for the `notes/frameworks-tools.md` migration that lands at Path A step 5.
+- **`[OPEN QUESTION 2026-05-06]`**: confirm the canonical Chenkin Noob v.03 version hash on CivitAI; the model has had silent updates.
+- **`[OPEN QUESTION 2026-05-06]`**: confirm V-Prediction sampler config snippets for the major UIs (ComfyUI, Forge Neo, SwarmUI) — needed for the `notes/frameworks-tools.md` migration that lands at Path A step 5.
 - Confirm whether NoobAI's training objective (V-Prediction) is reachable from base SDXL via `prediction_type: v_prediction` in Diffusers without retraining.
 - Confirm the relationship between Chenkin Noob v.03 and NoobAI-XL-XIN — are they Laxhar Lab's twin tracks, or community offshoots?
 

@@ -37,7 +37,7 @@ Relevant to **base model vendors** (BFL, Stability lineage) and hosts of commerc
 
 Community **merge / abliterate / de-censor** workflows may strip watermark responses intentionally — MOV is orthogonal to @concepts/anti-personalization-privacy.md (protecting *photos* from LoRA) but shares the "generative IP arms race" theme.
 
-Research-layer only until Cert-LAS code + integration path verified `[NEEDS VERIFICATION 2026-06-03]`.
+Research-layer only until Cert-LAS code + integration path verified `[OPEN QUESTION 2026-06-03]`.
 
 ## Snippets
 

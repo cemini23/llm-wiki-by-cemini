@@ -37,7 +37,7 @@ Analytics include volume-based **whale tracking**, an internal **Arbitrage Scann
 
 **Cemini fit**: strategy-backtesting and real-time risk-assessment reference for the `/opt/cemini` stack; the Arbitrage Scanner and forecasting logic are reusable. The TUI/ASCII-chart patterns are a UI template for laptop-side Claude Code tools (cross-routed to CCC). MIT clears the IP sale. Deployment belongs on **cemini-prod** — staged via adoption brief.
 
-- `[NEEDS VERIFICATION 2026-05-16]` WebSocket stability + SQLite write-lock thresholds under extreme-volume events (resolution spikes). (Not testable in a Phase-0 inspect-only audit — requires runtime load testing.)
+- `[OPEN QUESTION 2026-05-16]` WebSocket stability + SQLite write-lock thresholds under extreme-volume events (resolution spikes). (Not testable in a Phase-0 inspect-only audit — requires runtime load testing.)
 - `[CONFIRMED 2026-05-16]` Phase-0 clone audit complete — see `## Phase-0 Audit` below. MIT LICENSE present; all dependencies permissive; **zero-custody claim verified in source**.
 
 ## Phase-0 Audit (2026-05-16)

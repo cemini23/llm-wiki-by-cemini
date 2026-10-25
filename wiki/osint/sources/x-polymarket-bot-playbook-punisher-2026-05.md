@@ -94,6 +94,6 @@ See `@concepts/polymarket-bot-architecture.md` for the full distilled architectu
 
 ## NEEDS VERIFICATION
 
-- `[NEEDS VERIFICATION 2026-05-12]` `polymarket.com/@pbot-6` $100K PnL claim — on-chain verifiable; trace before any external citation.
-- `[NEEDS VERIFICATION 2026-05-12]` Latency targets (0.5ms / 6-8ms) — benchmark against Cemini's current Polymarket adapter measurements.
-- `[NEEDS VERIFICATION 2026-05-12]` "1000+ bots audited" claim — unverifiable but operationally consistent with the content depth.
+- `[OPEN QUESTION 2026-05-12]` `polymarket.com/@pbot-6` $100K PnL claim — on-chain verifiable; trace before any external citation.
+- `[OPEN QUESTION 2026-05-12]` Latency targets (0.5ms / 6-8ms) — benchmark against Cemini's current Polymarket adapter measurements.
+- `[OPEN QUESTION 2026-05-12]` "1000+ bots audited" claim — unverifiable but operationally consistent with the content depth.

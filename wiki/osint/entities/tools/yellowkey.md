@@ -28,6 +28,6 @@ updated: 2026-05-13
 
 Bitlocker bypass on Windows 11 / Server 2022/2025 via FsTx/ folder injection + WinRE boot exploitation. Spawns unrestricted shell with full volume access. **Cross-route to `@cybersecurity-wiki/`** for exploit dev / red team operational guides.
 
-[NEEDS VERIFICATION 2026-05-13]
+[OPEN QUESTION 2026-05-13]
 
 [Source: Multi-Wiki Link Evaluation Prompt.docx URL 16 (retrieved 2026-05-13)]

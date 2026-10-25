@@ -36,7 +36,7 @@ Non-state criminal threat-actor entry. The corpus does not have a dedicated Lock
 
 ## Narrative
 
-**LockBit** is a Russian-language-using **ransomware-as-a-service (RaaS)** operation that dominated the criminal ransomware ecosystem from 2020 through Q1 2024. Tracked as **LockBit 1.0 → 2.0 (Red) → 3.0 (Black) → Green** across affiliate generations. [NEEDS VERIFICATION 2026-05-12]
+**LockBit** is a Russian-language-using **ransomware-as-a-service (RaaS)** operation that dominated the criminal ransomware ecosystem from 2020 through Q1 2024. Tracked as **LockBit 1.0 → 2.0 (Red) → 3.0 (Black) → Green** across affiliate generations. [OPEN QUESTION 2026-05-12]
 
 ### RaaS model
 

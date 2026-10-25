@@ -89,7 +89,7 @@ For **batch high-throughput Reels/TikTok content**: pre-generate audio + face tr
 
 - **Pre-processing required**: face detection (offline) before real-time chat — generate face frames + audio offline, then run online lipsync
 - **MuseV companion repo** is the upstream "talking-head video from photo" generator that MuseTalk lipsyncs
-- **MPS / Apple Silicon viability**: not officially supported [NEEDS VERIFICATION 2026-05-13]
+- **MPS / Apple Silicon viability**: not officially supported [OPEN QUESTION 2026-05-13]
 - **Resolution ceiling at 256×256** is the main quality limit vs LatentSync 1.6 — for final-pass Fanvue/IG output, post-upscale or switch to LatentSync
 
 ## Snippets

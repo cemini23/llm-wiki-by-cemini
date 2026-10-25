@@ -76,7 +76,7 @@ The "Character Turnaround Sheet LoRA" by reverentelusarca ([RunComfy workflow](h
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - ~~VRAM cost on FLUX.1-Dev FP8 + Kontext on a 12 GB GPU — community claim ~10 GB peak; confirm.~~ — **resolved [CONFIRMED 2026-05-07]**: 12 GB confirmed sufficient for FLUX.1-Dev FP8 + Kontext (community reports: "It runs fine in 12 GB"); peak ~10-11 GB with standard ComfyUI Kontext workflows.
 - ~~Whether the Character Turnaround Sheet LoRA covers all the angle classes documented in the Mickmumpitz 3.8 96-angle pipeline (it covers 5; Mickmumpitz covers 96).~~ — **resolved [CONFIRMED 2026-05-07]**: no — the Character Turnaround Sheet LoRA is a 5-angle composition (front, ¾ left, profile-left, ¾ right, profile-right); Mickmumpitz's 96-angle pipeline is a different workflow (Wan-2.2 I2V frame extraction across continuous orbit). The two are complementary, not equivalent: Kontext-LoRA for fast 5-angle dataset prep, Wan I2V for dense angle coverage.

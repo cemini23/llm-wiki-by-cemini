@@ -83,7 +83,7 @@ The atlas-gic pattern is the closest published template. The Gemini paper §2.6 
 
 ### Practical adoption path for Conductor
 
-[NEEDS VERIFICATION 2026-05-04] — the path is conceptual until prototyped:
+[OPEN QUESTION 2026-05-04] — the path is conceptual until prototyped:
 
 1. **Phase 0 — Define objective function rigorously**: Conductor's existing cost+judge metric is fine; codify it as a single scalar fitness function
 2. **Phase 1 — Implement proposal generator**: LLM proposes new routing rule (e.g., "shift macro_analysis from reasoner-only to cascade") given recent decision logs

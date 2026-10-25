@@ -28,4 +28,4 @@ Hetty is a comprehensive HTTP toolkit for security research and penetration test
 
 **Primary wiki**: Cybersec wiki — reference architecture for offensive security operations and bug bounty auditing methodology.
 
-**Open question** [NEEDS VERIFICATION 2026-05-16]: Go proxy performance stability under high-throughput real-time REST API stream interception needs stress testing.
+**Open question** [OPEN QUESTION 2026-05-16]: Go proxy performance stability under high-throughput real-time REST API stream interception needs stress testing.

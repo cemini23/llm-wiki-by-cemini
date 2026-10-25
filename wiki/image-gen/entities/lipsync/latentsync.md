@@ -123,7 +123,7 @@ See @concepts/persona-audio-stack.md for the full audio pipeline diagram.
 
 ### Operator notes
 
-- **MPS / Apple Silicon viability**: not officially supported [NEEDS VERIFICATION 2026-05-13]; cloud burst (RunPod 4090) is the standard pattern
+- **MPS / Apple Silicon viability**: not officially supported [OPEN QUESTION 2026-05-13]; cloud burst (RunPod 4090) is the standard pattern
 - **Frame jitter** that plagued pre-diffusion lipsync is reported solved
 - **Photorealistic portrait images** in the LatentSync paper are from licensed models — the technique itself is identity-agnostic
 - **Benchmark leakage warning** ([Source: @sources/arxiv-2609-38019-rgor-beyond-lip-sync.md, 2026-09-30]): the **released** LatentSync inference code references the frame being edited, which inflates its paired metrics. Corrected numbers are LPIPS 0.334 → 0.262 and DISTS 0.234 → 0.189. Do not compare local lipsync models on published paired scores alone.

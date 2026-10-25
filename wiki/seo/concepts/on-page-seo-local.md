@@ -254,7 +254,7 @@ See @concepts/website-essentials-local-business.md for the full Core Web Vitals 
 > "Are you producing content primarily to attract visits from search engines? Are you mainly summarizing what others have to say without adding much value?"  
 > [Source: developers.google.com/search/docs/essentials/creating-helpful-content (retrieved 2026-05-07)]
 
-`[NEEDS VERIFICATION 2026-05-07]` — the specific 2026-current wording of Google's Helpful Content guidance has shifted across multiple iterations; verify the exact phrasing before quoting in operator-facing material.
+`[OPEN QUESTION 2026-05-07]` — the specific 2026-current wording of Google's Helpful Content guidance has shifted across multiple iterations; verify the exact phrasing before quoting in operator-facing material.
 
 ### From Google's doorway-page guidance
 

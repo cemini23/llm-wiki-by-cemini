@@ -477,7 +477,7 @@ Four-PDF series anchors this.
 
 ## Narrative
 
-LLMs (ChatGPT, Claude, Gemini, local Llama / Mistral) have become daily tools across both offensive + defensive workflows: payload obfuscation drafts, regex generation for SIEM rules, IR write-up first-drafts, vulnerability triage assistance, code review of newly-disclosed PoCs, OSINT pivot suggestion. Caveats: prompt-injection risk in agentic workflows (especially if the LLM is reading attacker-controlled content), hallucination in technical references (always verify CVE IDs / GitHub URLs), and confidentiality (don't paste customer data into hosted LLMs without contractual cover). [NEEDS VERIFICATION 2026-05-12]
+LLMs (ChatGPT, Claude, Gemini, local Llama / Mistral) have become daily tools across both offensive + defensive workflows: payload obfuscation drafts, regex generation for SIEM rules, IR write-up first-drafts, vulnerability triage assistance, code review of newly-disclosed PoCs, OSINT pivot suggestion. Caveats: prompt-injection risk in agentic workflows (especially if the LLM is reading attacker-controlled content), hallucination in technical references (always verify CVE IDs / GitHub URLs), and confidentiality (don't paste customer data into hosted LLMs without contractual cover). [OPEN QUESTION 2026-05-12]
 
 ### Agent security lifecycle framing (2606.10749 survey)
 

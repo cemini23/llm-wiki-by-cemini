@@ -125,7 +125,7 @@ When deploying LLMs as evaluators (whether in reviewer-agent, skill_audit.py, or
 ### Risks & open questions
 
 1. **Source maturity is draft** — Al-Zawahreh paper is self-published, polemical, no empirical study. The structural primitives port cleanly; the asserted "structural inevitability" framing does not. Treat the checklist as audit primitives, not as proven theory.
-2. **Pangram Labs 21% figure** [NEEDS VERIFICATION 2026-05-11] — the load-bearing empirical anchor for the weaponization-loop claim. Independent audit of Pangram methodology required before treating as settled.
+2. **Pangram Labs 21% figure** [OPEN QUESTION 2026-05-11] — the load-bearing empirical anchor for the weaponization-loop claim. Independent audit of Pangram methodology required before treating as settled.
 3. **The mirror failure mode (eval-brief endorsement direction)** is asserted here as a structural analogue but is not directly evidenced by the paper. Cemini's K28/K30/K38 mischaracterization pattern is **consistent with** the asymmetric-penalty argument but does not prove it. Treat as hypothesis-under-test.
 4. **Empirical reproducibility table (Al-Zawahreh Table 3)** is *predicted*, not measured. Anyone wiring the 5-tell scorecard into production should run the empirical test on the specific models in their deployment path (DeepSeek-V4 family for Cemini's reviewer-agent; GPT-4 / Claude / Gemini for any eval-brief consumers).
 

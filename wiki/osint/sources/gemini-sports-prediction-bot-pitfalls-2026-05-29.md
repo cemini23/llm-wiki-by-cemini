@@ -59,7 +59,7 @@ Exhaustive failure-mode catalog for automated bots on **Polymarket × Kalshi** s
 3. **Partial-fill orphans** — non-atomic legs; **sub-5s hedge timeout** then emergency flatten.
 4. **Gas/fee compression** — micro-arbs negative after Polygon gas.
 
-### Regulatory fragmentation [NEEDS VERIFICATION 2026-05-29]
+### Regulatory fragmentation [OPEN QUESTION 2026-05-29]
 
 - Third Circuit Kalshi preemption vs Ninth/Sixth skepticism; Arizona criminal charges Mar 2026 [TENTATIVE — verify before prod reliance].
 - Bot must tolerate **geoblock + sudden liquidity evaporation**.

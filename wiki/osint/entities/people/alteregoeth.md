@@ -49,4 +49,4 @@ What prompted this page: K41 ingest of X.docx Section 1 — @AlterEgo_eth's tech
 ### Cemini posture
 
 - Technical content from this handle is **specifically actionable** — the Gamma API claims are independently verifiable (public endpoints, no auth)
-- Author identity / track record beyond this single content artifact is **unknown to Cemini**; flag `[NEEDS VERIFICATION 2026-05-13]` before relying on any non-API-mechanic claim
+- Author identity / track record beyond this single content artifact is **unknown to Cemini**; flag `[OPEN QUESTION 2026-05-13]` before relying on any non-API-mechanic claim

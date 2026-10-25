@@ -63,7 +63,7 @@ Entity page for the Google Business Profile platform itself — what it is as a 
 - **In-search/in-Maps editing**: from 2022, much listing management can be done directly via Google Search results when logged in as the business owner
 - **Mobile apps**: iOS/Android apps for managing the listing on the go (review notifications, post creation, photo upload)
 
-`[NEEDS VERIFICATION 2026-05-07]`: 2026-current management surface — Google has moved features around in 2023-2025; some features have come and gone.
+`[OPEN QUESTION 2026-05-07]`: 2026-current management surface — Google has moved features around in 2023-2025; some features have come and gone.
 
 ### Data fields
 

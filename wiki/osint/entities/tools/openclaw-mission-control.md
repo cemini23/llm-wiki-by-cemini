@@ -32,7 +32,7 @@ K137 Phase-0 on [abhi1693/openclaw-mission-control](https://github.com/abhi1693/
 | **Verdict** | **Steal-from** — RBAC + activity timeline modules |
 | **Prod brief** | Fleet audit patterns for xsp-killer / PM bots (not full dashboard Adopt) |
 
-SQLite default mode vs cemini Postgres scale `[NEEDS VERIFICATION 2026-06-30]`.
+SQLite default mode vs cemini Postgres scale `[OPEN QUESTION 2026-06-30]`.
 
 Brief: `briefs/2026-06-30_k137-mission-control-fleet-audit-steal.md`
 

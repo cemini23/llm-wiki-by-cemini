@@ -31,7 +31,7 @@ harness_verb: KEEP
 
 ## Narrative
 
-Orchestrates multi-agent **authorized** pentest workflows. Route to **local-abliterated-lab** (TipDrop retired). Alpha stability `[NEEDS VERIFICATION 2026-08-06]` — eval flagged instability; Phase-0 smoke in isolated lab before Integrate upgrade.
+Orchestrates multi-agent **authorized** pentest workflows. Route to **local-abliterated-lab** (TipDrop retired). Alpha stability `[OPEN QUESTION 2026-08-06]` — eval flagged instability; Phase-0 smoke in isolated lab before Integrate upgrade.
 
 ## Snippets
 

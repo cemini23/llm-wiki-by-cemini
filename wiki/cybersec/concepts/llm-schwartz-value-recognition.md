@@ -26,4 +26,4 @@ Can models **recognize** which Schwartz basic value a situation expresses before
 
 Pooled Acc@1 ~0.68; Acc@3 ~0.89. Errors cluster on **adjacent** values; several directed confusions are asymmetric (e.g. Security→Power). For agent policy / routing that uses value labels, treat recognition error as a first-class risk. [CONFIRMED abstract]
 
-Russian-language eval set — cross-lingual transfer [NEEDS VERIFICATION 2026-07-23].
+Russian-language eval set — cross-lingual transfer [OPEN QUESTION 2026-07-23].

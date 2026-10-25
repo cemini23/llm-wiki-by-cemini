@@ -39,7 +39,7 @@ Python regex + NER rule engine for redacting PII in prompts, eval traces, and fi
 ### Steal-for-Atto
 
 - Fail-closed strip before any outbound model call or public fixture.
-- Do **not** over-redact historical commune/province names (false-positive risk on Italian archives) `[NEEDS VERIFICATION 2026-08-15]`.
+- Do **not** over-redact historical commune/province names (false-positive risk on Italian archives) `[OPEN QUESTION 2026-08-15]`.
 - Synthetic Rossi / 900-series SSN fixtures only. **Never** living-person vitals in git or Atto kit fixtures.
 
 Tier: `[TENTATIVE]`.

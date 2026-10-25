@@ -60,7 +60,7 @@ Do **not** use K55/K56 “$50→$18 in 48h” as Cemini evidence.
 3. **OpenClaw / Telegram key bots → AVOID** for any live path.
 4. **DIY HL fill-mirror → skip** (Binance lead-lag + min notional + funding asymmetry).
 
-### Open conflicts `[NEEDS VERIFICATION 2026-07-14]`
+### Open conflicts `[OPEN QUESTION 2026-07-14]`
 
 | Conflict | Report A (LP vs copy) | Report B (strategies) | Report C (PM+HL) |
 |----------|----------------------|----------------------|------------------|

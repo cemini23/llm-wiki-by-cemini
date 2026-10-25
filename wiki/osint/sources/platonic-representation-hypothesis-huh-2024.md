@@ -119,7 +119,7 @@ This is consistent with NCE-based contrastive methods (SimCLR, SimCSE, CLIP, mas
 
 - **Bijective-projection assumption is restrictive.** Cemini's actual data are emphatically lossy + stochastic (financial market series, OSINT-derived sentiment, satellite imagery with weather noise). PRH's strict mathematical version doesn't directly apply.
 - **0.16 alignment ceiling unexplained.** The paper's headline empirical result has a substantial gap from theoretical maximum. Operational implication for Cemini: don't *over-rely* on the convergence claim — embedding-space portability is a tendency, not a guarantee.
-- **Older paper (May 2024 arXiv).** Two years post-publication, the field has both validated and stress-tested the hypothesis. Specific empirical findings (e.g., CLIP fine-tune *reduces* alignment) may or may not hold for current frontier models. `[NEEDS VERIFICATION 2026-04-30]` for "does PRH hold on `deepseek-v4-flash` + DeepSeek-ViT specifically?"
+- **Older paper (May 2024 arXiv).** Two years post-publication, the field has both validated and stress-tested the hypothesis. Specific empirical findings (e.g., CLIP fine-tune *reduces* alignment) may or may not hold for current frontier models. `[OPEN QUESTION 2026-04-30]` for "does PRH hold on `deepseek-v4-flash` + DeepSeek-ViT specifically?"
 - **Theoretical scaffolding only.** Cemini doesn't get a tool, a model, a benchmark, or a reproducible artifact from this paper directly. The value is **interpretive**: a frame for reasoning about model-swap risk, multimodal extension cost, and embedding-space stability.
 
 ## Snippets
@@ -146,7 +146,7 @@ This is consistent with NCE-based contrastive methods (SimCLR, SimCSE, CLIP, mas
 
 ## Open questions / NEEDS VERIFICATION
 
-- `[NEEDS VERIFICATION 2026-04-30]` — does PRH's vision-language alignment trend hold for `deepseek-v4-flash` + DeepSeek-ViT specifically (the foundation of `@sources/thinking-with-visual-primitives-deepseek-2026.md`)?
-- `[NEEDS VERIFICATION 2026-04-30]` — does the 0.16 ceiling extend to 2026 frontier models, or has it shifted? Two years of follow-up empirical work likely have resolved this — worth a brief Exa sweep at next opportunity.
-- `[NEEDS VERIFICATION 2026-04-30]` — for Cemini-scale vector embeddings (768d / 1024d typical), how much actual semantic-search degradation occurs on a model-swap? PRH gives theoretical cover, not numeric guarantees.
+- `[OPEN QUESTION 2026-04-30]` — does PRH's vision-language alignment trend hold for `deepseek-v4-flash` + DeepSeek-ViT specifically (the foundation of `@sources/thinking-with-visual-primitives-deepseek-2026.md`)?
+- `[OPEN QUESTION 2026-04-30]` — does the 0.16 ceiling extend to 2026 frontier models, or has it shifted? Two years of follow-up empirical work likely have resolved this — worth a brief Exa sweep at next opportunity.
+- `[OPEN QUESTION 2026-04-30]` — for Cemini-scale vector embeddings (768d / 1024d typical), how much actual semantic-search degradation occurs on a model-swap? PRH gives theoretical cover, not numeric guarantees.
 - Cross-paper question: PRH says representations align; **DELEGATE-52 / @sources/llms-corrupt-documents-laban-2026.md** says delegated-LLM corruption is structural (25%+ ceiling). Is that ceiling consistent with "models converge to platonic"? Probably yes (corruption is a *behavior* under specific elicitation, not a *representation* property), but worth thinking through if Cemini's analyst-orchestrator hits a corruption-vs-alignment tradeoff.

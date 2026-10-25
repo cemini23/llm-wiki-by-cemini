@@ -59,7 +59,7 @@ Entity stub from back-fill of @sources/synthetic-character-consistency-survey.md
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - VRAM cost on a 12 GB SDXL setup with stacked references — community reports.
 - ~~Apple Silicon (MPS) viability~~ — **resolved [CONFIRMED 2026-05-07]**: PhotoMaker V2 runs on macOS via [`shiimizu/ComfyUI-PhotoMaker-Plus`](https://github.com/shiimizu/ComfyUI-PhotoMaker-Plus) (the canonical 2025-2026 port). Apple Silicon path additionally supports the **CoreML provider** for the InsightFace face-feature step (`onnxruntime-silicon` exposes `CoreMLExecutionProvider`) — measurably faster than CPU fallback. Standard MPS caveats apply for the diffusion backbone (fp32 fallback for LayerNorm).

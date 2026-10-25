@@ -63,7 +63,7 @@ The architectural break from SDXL is intentional: V7 was built to skip Stability
 
 [TENTATIVE]:
 
-- **Existing Pony V6 LoRAs do NOT carry to V7** — different base architecture (SDXL → AuraFlow). The community's vast V6 LoRA library is effectively orphaned. A LoRA-conversion tool may or may not ship; **`[NEEDS VERIFICATION 2026-05-06]`**.
+- **Existing Pony V6 LoRAs do NOT carry to V7** — different base architecture (SDXL → AuraFlow). The community's vast V6 LoRA library is effectively orphaned. A LoRA-conversion tool may or may not ship; **`[OPEN QUESTION 2026-05-06]`**.
 - **Adapter ecosystem is sparse** — IP-Adapter / InstantID / PhotoMaker are SDXL-tied. PuLID is FLUX-tied. There is no AuraFlow adapter ecosystem yet of comparable depth; persona-consistency workflows on V7 will rely on LoRA training rather than adapter injection until the gap is filled.
 - **Score-tag system carries forward but its semantics may have shifted** under the T5 encoder. Untested.
 

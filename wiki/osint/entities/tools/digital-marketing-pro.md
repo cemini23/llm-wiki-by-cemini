@@ -48,7 +48,7 @@ Massive Claude-plugin ecosystem (115 commands, 67 MCP servers, 5-layer memory ar
 
 ### Risks (if mining code)
 
-- **14 HTTP-only MCP connectors [NEEDS VERIFICATION 2026-05-10]**: cryptographic-auth + session-state differences vs Cemini's stdio MCP standard
+- **14 HTTP-only MCP connectors [OPEN QUESTION 2026-05-10]**: cryptographic-auth + session-state differences vs Cemini's stdio MCP standard
 - **License verification**: confirm MIT before extracting
 - **Decoupling cost**: ensure no SaaS API calls (Salesforce, HubSpot) remain in extracted scripts
 

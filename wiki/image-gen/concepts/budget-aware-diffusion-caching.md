@@ -100,7 +100,7 @@ Concept from 2026-06-07 ingest — arXiv:2606.06060 ReCache.
 |---|---------|----------|
 | Search cost | Train RL policy once | Minutes offline per (model, B) |
 | Latency guarantee | Budget-conditioned | Exact B NFE |
-| ComfyUI | `[NEEDS VERIFICATION 2026-06-07]` | `[NEEDS VERIFICATION 2026-06-15]` |
+| ComfyUI | `[OPEN QUESTION 2026-06-07]` | `[OPEN QUESTION 2026-06-15]` |
 
 **vs other speed axes:**
 

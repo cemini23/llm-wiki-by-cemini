@@ -98,7 +98,7 @@ Practically, this puts Qwen-Image-2512 in a different role than the FLUX / Z-Ima
 - **Aggressive GGUF quantization is mandatory** for consumer use — survey claims 14-16 GB consumer cards run quantized variants efficiently, but quality degradation at the GGUF Q4 / Q3 tier is non-trivial for fine-detail prompts.
 - **Slower inference than 6-12B models** at comparable quality — Qwen-Image's strengths lie in text/layout, not in raw photorealism speed.
 - **Minimal-tier explicit anatomy gap** — needs a de-censoring LoRA for extreme NSFW (see @concepts/de-censoring-techniques.md). Z-Image Turbo is the better photoreal-NSFW pick when text rendering isn't required.
-- **Persona-consistency adapter ecosystem** — Qwen-Image port status of PuLID / InfiniteYou / Redux is `[NEEDS VERIFICATION 2026-05-06]`.
+- **Persona-consistency adapter ecosystem** — Qwen-Image port status of PuLID / InfiniteYou / Redux is `[OPEN QUESTION 2026-05-06]`.
 
 ### Censorship tier
 
@@ -149,7 +149,7 @@ Standard FLUX-class LoRA recipes (AdamW8bit, 5e-5, rank 16-32) apply but Qwen-Im
 
 - **`[NEEDS VERIFICATION 2026-05-06]`**: confirm Qwen-Image-2512 Hugging Face release; canonical model hash; current version revision. Sub-sweep B follow-on.
 - **`[NEEDS VERIFICATION 2026-05-06]`**: confirm Qwen-Image license terms — Apache 2.0 inferred from Qwen's LLM precedent but not stated explicitly in the survey. Sub-sweep B follow-on.
-- **`[NEEDS VERIFICATION 2026-05-06]`**: persona-consistency adapter availability (PuLID II / InfiniteYou / Redux Qwen-Image port status). Sub-sweep C target.
+- **`[OPEN QUESTION 2026-05-06]`**: persona-consistency adapter availability (PuLID II / InfiniteYou / Redux Qwen-Image port status). Sub-sweep C target.
 - ~~ai-toolkit / Musubi Tuner / Kohya FLUX-train support for Qwen-Image LoRA training~~ — **resolved [CONFIRMED 2026-05-06]**: **Musubi Tuner is the production-ready path**, with Qwen-Image-2512 trainable identically to Qwen-Image base. SECourses Gradio wrapper + ComfyUI Realtime LoRA Trainer provide higher-level access. See "LoRA training" section above.
 - Compare Qwen-Image-2512 GGUF Q4 vs FLUX.1 Dev FP8 head-to-head on a fixed text-rendering and complex-composition prompt set.
 - Document the GGUF Q4 / Q5 / Q6 quality cliff for Qwen-Image — at what bit-rate does typography start to break?

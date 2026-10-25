@@ -51,7 +51,7 @@ Ingest 2026-06-12 from HYDRA-X (arXiv:2606.13289) — single ViT tokenizer spann
 
 ### Link to understanding-generation gap
 
-BAGEL/Janus can **verify** prompt failures but still **generate** them (@concepts/understanding-generation-gap.md). Holistic tokenizers aim to reduce encoder-side mismatch; UniReasoner instead adds Draft-Evaluate-Diffuse post-hoc correction (@sources/unireasoner.md). Open whether HYDRA-X closes gap without external critic `[NEEDS VERIFICATION 2026-06-12]`.
+BAGEL/Janus can **verify** prompt failures but still **generate** them (@concepts/understanding-generation-gap.md). Holistic tokenizers aim to reduce encoder-side mismatch; UniReasoner instead adds Draft-Evaluate-Diffuse post-hoc correction (@sources/unireasoner.md). Open whether HYDRA-X closes gap without external critic `[OPEN QUESTION 2026-06-12]`.
 
 ## Snippets
 
@@ -65,4 +65,4 @@ Holistic tokenizer training is heavy — not a ComfyUI node. Wan 2.2 + LoRA rema
 
 **MentisOculi (2602.02465)** tests whether UMMs can use **interleaved generated images** as visual chain-of-thought. On five procedural multi-step tasks, **explicit visual thoughts do not beat text-only MLLMs**; Gemini 3-I / 2.5-I often lag their MLLM counterparts. Failures split into **generation errors** (compounding visual mistakes) and **interpretation errors** (oracle ground-truth visuals still insufficient on Hinge Folding / Paper Fold).
 
-Holistic tokenizers (HYDRA-XTOK) address **encoder-side** image+video representation — MentisOculi suggests the remaining gap may be **reasoning–generation coupling**, not tokenizer architecture alone. HYDRA-X MentisOculi scores `[NEEDS VERIFICATION 2026-06-13]`. See @concepts/machine-mental-imagery.md and @entities/benchmarks/mentisoculi.md.
+Holistic tokenizers (HYDRA-XTOK) address **encoder-side** image+video representation — MentisOculi suggests the remaining gap may be **reasoning–generation coupling**, not tokenizer architecture alone. HYDRA-X MentisOculi scores `[OPEN QUESTION 2026-06-13]`. See @concepts/machine-mental-imagery.md and @entities/benchmarks/mentisoculi.md.

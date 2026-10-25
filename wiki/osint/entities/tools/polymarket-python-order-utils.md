@@ -54,7 +54,7 @@ Polymarket exchange
 - Signing keys must NEVER appear in the wiki, briefs/, or any repo — same security posture as DeepSeek API key
 - Error handling: signing failures must surface clearly (vs. silently dropping orders)
 
-### Open questions [NEEDS VERIFICATION 2026-05-05]
+### Open questions [OPEN QUESTION 2026-05-05]
 
 - Exact stable version + Python compatibility (3.10+? 3.11+?)
 - Test coverage (cryptographic libs need rigorous tests)

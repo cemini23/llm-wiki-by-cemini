@@ -70,7 +70,7 @@ Entity stub from back-fill of @sources/synthetic-character-consistency-survey.md
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - ~~Current FLUX.2 / FLUX.2 Klein 9B / Z-Image support status as of 2026-05.~~ — **resolved [CONFIRMED 2026-05-07]**: bmaltais/kohya_ss does NOT yet support FLUX.2 / Klein 9B / Z-Image as of 2026-05; the GUI tracks bmaltais-wrapped sd-scripts which has not added these architectures. The canonical training path for FLUX.2 / Klein 9B / Z-Image is @entities/training-tools/musubi-tuner.md (its README confirms full architecture coverage; Klein 9B-specific issues #859 / #860 land there).
 - ~~Whether bmaltais has merged the optional Musubi Tuner UI bridge that some forks have started shipping.~~ — **resolved [CONFIRMED 2026-05-07]**: no — bmaltais/kohya_ss has not merged a Musubi Tuner UI bridge. Musubi Tuner ships its own optional Gradio UI ([README](https://github.com/kohya-ss/musubi-tuner/blob/main/src/musubi_tuner/gui/gui.md)); kohya_ss GUI and Musubi Tuner remain separate frontends despite the shared kohya-ss / bmaltais lineage. For unified frontends, run them side-by-side rather than expecting cross-bridging.

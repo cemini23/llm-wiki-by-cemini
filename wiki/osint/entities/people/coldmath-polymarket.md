@@ -25,7 +25,7 @@ updated: 2026-05-25
 - @entities/platforms/polymarket.md — public profile + on-chain proxy wallet
 - @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — K61 @AlterEgo_eth forensics (>1,200 trades via Parity)
 - @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — K55 @polysuccubus Top-7 #1 (+$124,896, 81.7% WR)
-- @entities/tools/clawdbot.md — attributed automation framework [NEEDS VERIFICATION 2026-05-20]
+- @entities/tools/clawdbot.md — attributed automation framework [OPEN QUESTION 2026-05-20]
 - @entities/tools/parity-polymarket-analytics.md — trade-history aggregation surface
 - @concepts/polymarket-weather-trading-strategy.md — operational patterns (narrow bins, micro-scaling)
 - @entities/people/alteregoeth.md — K61 analyst (not the operator)

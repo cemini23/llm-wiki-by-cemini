@@ -41,7 +41,7 @@ Cross-platform lightweight "AI Development Environment" (ADE) and terminal emula
 ### Risks / caveats
 
 - **Maturity signal**: no code-signing certificate (Windows SmartScreen flagged) → early-stage
-- **Resident memory under load [NEEDS VERIFICATION 2026-05-10]**: Tauri WebView GC behavior on long Claude Code sessions with large diffs unknown
+- **Resident memory under load [OPEN QUESTION 2026-05-10]**: Tauri WebView GC behavior on long Claude Code sessions with large diffs unknown
 - **License verification**: confirm Apache-2.0 before any code reference
 
 [Source: Evaluating Code for Trading Stacks.docx, URL 2]

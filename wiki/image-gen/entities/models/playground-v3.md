@@ -65,7 +65,7 @@ De-censoring path (per @concepts/de-censoring-techniques.md):
 1. **LoRA injection alone often fails** at this tier — the latent space lacks foundational structures the LoRA tries to reach. Modal pattern from FLUX.1 Dev does not transfer cleanly.
 2. **Abliteration** — removes the refusal vectors but doesn't supply missing latent knowledge. Partial fix.
 3. **Weight merging** with an uncensored donor (SLERP / TIES / DARE) is the modal community fix for Partial-tier models. The aesthetic strengths of Playground v3 (16-channel VAE quality) merge with the explicit-anatomy knowledge of an uncensored donor.
-4. **Specific community fine-tunes** that have attempted to undo the safety training — the survey notes these exist but doesn't name canonical examples (in contrast to FLUX-UNCENSORED-Merged / Chroma1-HD / SNOFS for FLUX.1). `[NEEDS VERIFICATION 2026-05-06]`.
+4. **Specific community fine-tunes** that have attempted to undo the safety training — the survey notes these exist but doesn't name canonical examples (in contrast to FLUX-UNCENSORED-Merged / Chroma1-HD / SNOFS for FLUX.1). `[OPEN QUESTION 2026-05-06]`.
 
 ### Hardware profile
 
@@ -86,7 +86,7 @@ De-censoring path (per @concepts/de-censoring-techniques.md):
 ### Workspace TODO
 
 - **`[NEEDS VERIFICATION 2026-05-06]`**: confirm Playground v3 parameter count, license terms, current revision.
-- **`[NEEDS VERIFICATION 2026-05-06]`**: identify canonical de-censoring fine-tunes / merges for Playground v3 (the survey notes these exist but doesn't name them).
+- **`[OPEN QUESTION 2026-05-06]`**: identify canonical de-censoring fine-tunes / merges for Playground v3 (the survey notes these exist but doesn't name them).
 - **`[NEEDS VERIFICATION 2026-05-06]`**: confirm whether Playground v3 weights are publicly downloadable or API-only (Playground AI has historically had a hosted-API focus).
 - Compare Playground v3 16-channel VAE detail vs FLUX.1 Dev / Z-Image on the same fine-detail prompt set (small faces, typography). Validate the VAE win claim.
 - Document the exact deep-fusion LLM encoder pattern from the arXiv paper — useful general knowledge for the @concepts/llm-as-image-conditioning.md taxonomy.

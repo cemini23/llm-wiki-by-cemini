@@ -141,8 +141,8 @@ Per @concepts/character-dna-templates.md, persona-consistency workflows for Pony
 ### Workspace TODO
 
 - Confirm the latest Pony V6 hash on CivitAI (version 6.x.x) — the model has had silent point updates. **`[NEEDS VERIFICATION 2026-05-06]`**
-- Confirm whether Pony V6 LoRAs cleanly carry to Illustrious XL / NoobAI-XL — community claim is "yes, mostly" but the score-tag system collides with Illustrious's artist-style tagging. **`[NEEDS VERIFICATION 2026-05-06]`**
-- Note Pony V6 → Pony V7 migration story: V7's AuraFlow base means existing V6 LoRAs do NOT carry. Confirm whether the V7 dev team has shipped a LoRA-conversion tool. **`[NEEDS VERIFICATION 2026-05-06]`**
+- Confirm whether Pony V6 LoRAs cleanly carry to Illustrious XL / NoobAI-XL — community claim is "yes, mostly" but the score-tag system collides with Illustrious's artist-style tagging. **`[OPEN QUESTION 2026-05-06]`**
+- Note Pony V6 → Pony V7 migration story: V7's AuraFlow base means existing V6 LoRAs do NOT carry. Confirm whether the V7 dev team has shipped a LoRA-conversion tool. **`[OPEN QUESTION 2026-05-06]`**
 
 ## Snippets
 

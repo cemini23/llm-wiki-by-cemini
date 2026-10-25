@@ -44,7 +44,7 @@ Script-driven framework using tmux to facilitate 24/7 autonomous AI agent execut
 
 ### Risks (if extracting scripts)
 
-- **ANSI escape sequence pollution [NEEDS VERIFICATION 2026-05-10]**: `tmux_utils.py` must handle unescaped chars without corrupting shell injections
+- **ANSI escape sequence pollution [OPEN QUESTION 2026-05-10]**: `tmux_utils.py` must handle unescaped chars without corrupting shell injections
 - **License verification**: confirm MIT before extracting
 - **Low maturity**: upstream may go stale — fork and own the extracted scripts
 

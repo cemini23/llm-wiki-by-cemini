@@ -252,5 +252,5 @@ This v2 prompt is ~30% longer than v1 due to 7-surface evaluation. Per-URL outpu
 
 ## NEEDS VERIFICATION
 
-- `[NEEDS VERIFICATION 2026-05-12]` v2 prompt cost increase estimate (~50-70%) — measured against Doc 3 once next batch runs. Tighten based on real numbers.
-- `[NEEDS VERIFICATION 2026-05-12]` 3D-printing low-signal observation — confirm with at least one more 25+ URL batch before considering removal from surface list.
+- `[OPEN QUESTION 2026-05-12]` v2 prompt cost increase estimate (~50-70%) — measured against Doc 3 once next batch runs. Tighten based on real numbers.
+- `[OPEN QUESTION 2026-05-12]` 3D-printing low-signal observation — confirm with at least one more 25+ URL batch before considering removal from surface list.

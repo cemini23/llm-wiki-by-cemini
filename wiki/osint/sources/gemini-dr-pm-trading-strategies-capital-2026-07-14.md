@@ -51,4 +51,4 @@ Security wave: Unit 42 OpenClaw supply chain, npm postinstall key steal IoCs, CV
 
 ## Snippets
 
-> Small-capital PM LP ($500/$2k) framed as failing $1/day floor + midpoint-pin math in post–July 2026 regime — conflicts with earlier MatiasScalbi $50 anecdotes; tag `[NEEDS VERIFICATION 2026-07-14]`.
+> Small-capital PM LP ($500/$2k) framed as failing $1/day floor + midpoint-pin math in post–July 2026 regime — conflicts with earlier MatiasScalbi $50 anecdotes; tag `[OPEN QUESTION 2026-07-14]`.

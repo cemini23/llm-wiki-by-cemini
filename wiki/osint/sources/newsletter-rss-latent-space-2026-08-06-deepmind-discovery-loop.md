@@ -35,7 +35,7 @@ _RSS includes substantial teaser; full post may be paywalled._
 
 **GDM shuffle:** **Demis Hassabis** → Chair + Chief Scientist Alphabet; **Koray Kavukcuoglu** → SVP DeepMind (operational Gemini/product).
 
-**Also noted:** Meta **Muse Spark 1.2 / Muse Code** (5.6T-class + resumable event log); **Prime Agent** (Prime Intellect) claims 95.5% ARC-AGI-3 `[NEEDS VERIFICATION 2026-08-06]`.
+**Also noted:** Meta **Muse Spark 1.2 / Muse Code** (5.6T-class + resumable event log); **Prime Agent** (Prime Intellect) claims 95.5% ARC-AGI-3 `[OPEN QUESTION 2026-08-06]`.
 
 **Cemini:** CCC wiki context for harness/autoresearch trends — no prod wire. Pairs DeepCode/KiroCrew eval extracts.
 

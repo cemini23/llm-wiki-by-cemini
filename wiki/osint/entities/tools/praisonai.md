@@ -53,6 +53,6 @@ LangGraph already wires Conductor's 4-stage pipeline. Replacing or supplementing
 
 Item: **PraisonAI Phase-0 audit** — gates Adopt-tier acceptance.
 
-[NEEDS VERIFICATION 2026-05-13]
+[OPEN QUESTION 2026-05-13]
 
 [Source: Tool Evaluation and Wiki Fit.docx URL 9 (retrieved 2026-05-13)]

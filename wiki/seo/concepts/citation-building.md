@@ -91,7 +91,7 @@ The era of "submit to 200 directories" is over. Modern citation strategy is barb
 
 Adding the operator's NAP to a spam directory is **worse than not adding it**. Google's spam classifiers will associate the operator with the spammy network. The Phase-0 audit lens (per the wiki's CLAUDE.md): treat any unknown directory like an unknown tool — sniff for spam signals (broken links, irrelevant industries, no real traffic, suspicious TLDs) before submitting.
 
-`[NEEDS VERIFICATION 2026-05-07]` on the exact 2026 ratio of core-vs-long-tail value, but the directional point holds across all the 2023-2025 Whitespark and Moz citation studies.
+`[OPEN QUESTION 2026-05-07]` on the exact 2026 ratio of core-vs-long-tail value, but the directional point holds across all the 2023-2025 Whitespark and Moz citation studies.
 
 ### The core directory list (operator priority order)
 

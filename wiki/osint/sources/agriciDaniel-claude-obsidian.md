@@ -275,7 +275,7 @@ Token cost: hot.md ~500 tokens, index ~1,000 tokens, individual pages 100-300 ea
 1. **Bus-factor: 1 contributor** — same fork-and-maintain caveat as other Wave 5 projects. Mitigation: extract patterns into Cemini-bespoke implementations.
 2. **Obsidian-plugin lock-in**: "Bases" + "Local REST API" plugins are community-maintained. Risk acceptable for workflow-tier extraction.
 3. **Project age**: 23 days old at evaluation. 3.6k stars in ~3 weeks is strong signal, but the project could pivot or be abandoned. Re-evaluate at next wave touch.
-4. **`/autoresearch` token cost** [NEEDS VERIFICATION 2026-04-30] — measure exact token-consumption rate of the multi-round loop on a representative Cemini session.
+4. **`/autoresearch` token cost** [OPEN QUESTION 2026-04-30] — measure exact token-consumption rate of the multi-round loop on a representative Cemini session.
 
 ### Cemini-side adoption assessment
 

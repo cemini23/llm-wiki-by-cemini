@@ -30,7 +30,7 @@ Automated short-form video generation template (common "faceless content" / "mon
 
 **Adoption posture:** **Defer** — no Phase-0 audit scheduled. Revisit only if operator explicitly wants automated short-form video at scale; watch for platform ToS risk (mass-produced content, AI disclosure requirements on TikTok/IG/YouTube).
 
-[NEEDS VERIFICATION 2026-05-26] exact capabilities, maintenance status, platform-policy compliance.
+[OPEN QUESTION 2026-05-26] exact capabilities, maintenance status, platform-policy compliance.
 
 ## Snippets
 

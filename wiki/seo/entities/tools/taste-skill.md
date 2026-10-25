@@ -32,7 +32,7 @@ Claude Code skill pack focused on **design taste** — prompt patterns that stee
 
 **Adoption posture:** Adopt-eligible pending Phase-0 audit (README + skill invocation + last commit).
 
-[NEEDS VERIFICATION 2026-05-26] star count, install path, overlap with garden-skills web-design-engineer templates.
+[OPEN QUESTION 2026-05-26] star count, install path, overlap with garden-skills web-design-engineer templates.
 
 ## Snippets
 

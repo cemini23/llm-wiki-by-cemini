@@ -90,8 +90,8 @@ The current measurement loop in @concepts/geo-visibility-measurement.md samples 
 ### What NOT to do
 
 - **Do not try to engineer capture.** The paper treats multi-turn GEO as a manipulation surface and proposes platform defenses against it (per-turn re-grounding, enforced source diversity, provenance transparency). Deliberately seeding a conversation to lock in a citation is the adversarial path described in @sources/arxiv-hu-2025-adversarial-attacks-llm-search-2501.00745-2026-06-10.md and is against the hands-on rules in CLAUDE.md. The legitimate version of capture is **being the best, most checkable answer first**.
-- **Do not read the model numbers as measurements.** Every figure is derived from the model, not from a deployed engine. The paper says so repeatedly. Treat the direction as `[CONFIRMED]` at the theory level and the magnitudes as `[NEEDS VERIFICATION 2026-10-01]`.
-- **Do not generalize to near-me queries yet.** The paper contains no local, geographic, or near-me query. Local-service generalization is `[NEEDS VERIFICATION 2026-10-01]`.
+- **Do not read the model numbers as measurements.** Every figure is derived from the model, not from a deployed engine. The paper says so repeatedly. Treat the direction as `[CONFIRMED]` at the theory level and the magnitudes as `[OPEN QUESTION 2026-10-01]`.
+- **Do not generalize to near-me queries yet.** The paper contains no local, geographic, or near-me query. Local-service generalization is `[OPEN QUESTION 2026-10-01]`.
 
 ## Snippets
 

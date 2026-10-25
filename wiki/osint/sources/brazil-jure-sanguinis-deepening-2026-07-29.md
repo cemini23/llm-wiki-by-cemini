@@ -44,7 +44,7 @@ read_status: deep-read
 
 Practice overlays: São Paulo / Belo Horizonte still reject electronic docs / e-Apostilles — physical apostille chain dominates. CNN via `deest.mj.gov.br/ecertidao/` with **all name variants**. Certidão national fields tightened under CNJ Prov. **63/2017 → 149/2023** (CPF, DNV, gender-neutral *filiação*, Lei **13.484/2017** *naturalidade*).
 
-Law weather: Corte Cost. **Ordinanza 147/2026** (23 Jul 2026) refers L.74 Art. **3-bis** to **CJEU**. **L. 11/2026**: adult JS → postal originals; MAECI centralization by **1 Jan 2029** (seat uptake `[NEEDS VERIFICATION 2026-07-29]`). Judicial venue: Cartabia / D.Lgs. **149/2022** Art. **19-bis** → Sezioni Specializzate at **26** Corti d’Appello (ancestor’s comune), not Rome-only.
+Law weather: Corte Cost. **Ordinanza 147/2026** (23 Jul 2026) refers L.74 Art. **3-bis** to **CJEU**. **L. 11/2026**: adult JS → postal originals; MAECI centralization by **1 Jan 2029** (seat uptake `[OPEN QUESTION 2026-07-29]`). Judicial venue: Cartabia / D.Lgs. **149/2022** Art. **19-bis** → Sezioni Specializzate at **26** Corti d’Appello (ancestor’s comune), not Rome-only.
 
 Grande Naturalização + Certidão Negativa de Naturalização remain first-class DOC types (Cass. **25317/2022**).
 

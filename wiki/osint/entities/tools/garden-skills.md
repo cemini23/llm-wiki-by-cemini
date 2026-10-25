@@ -30,4 +30,4 @@ Centralized skill repository for AI coding agents (Claude Code, Cursor). Deploym
 - **Image-gen wiki**: gpt-image-2 persona-ops tooling for character image generation workflows
 - **SEO wiki**: web-design-engineer template skills for standardized visual output in GEO/AEO campaigns
 
-**Open question** [NEEDS VERIFICATION 2026-05-16]: Localized code review of grep and pandas source-aware formatting workflows to ensure compatibility with existing Cemini data extraction scripts.
+**Open question** [OPEN QUESTION 2026-05-16]: Localized code review of grep and pandas source-aware formatting workflows to ensure compatibility with existing Cemini data extraction scripts.

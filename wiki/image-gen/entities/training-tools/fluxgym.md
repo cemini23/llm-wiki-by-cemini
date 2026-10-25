@@ -80,7 +80,7 @@ Distinguishing features:
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - ~~Apple Silicon (MPS) actual training time for a FLUX.1 character LoRA on M3 / M4 Pro / M4 Max~~ — **resolved [CONFIRMED 2026-05-07]**: **effectively no Apple Silicon support** for production-grade FLUX training. Cocktailpeanut (FluxGym author) tweeted *"Me in the corner waiting for the impossible to eventually happen: FLUX finetuning on Apple Silicon Mac"* — confirming the upstream status. The Pinokio install completes on macOS but training on a M3/M4 Pro/Max is impractically slow (community reports 8+ hours for ranks where Linux/Windows hits 1-2 hours, with frequent OOM at >16 GB unified memory). For Apple Silicon users, the recommended path is **dataset prep on Mac → cloud H100 rental via ai-toolkit's Modal/Replicate bridge**.
 - ~~LyCORIS variant support status as of 2026-05 (LoKr factor=4 in particular — the @concepts/lora-taxonomy.md 2026 default for character isolation).~~ — **resolved [CONFIRMED 2026-05-07]**: thin. FluxGym exposes only standard LoRA training as a first-class option; LyCORIS variants (LoKr / LoHa / LoCon / DoRA) are accessible only via the underlying sd-scripts Advanced tab and require manual config. For LoKr factor=4 character isolation as the 2026 default, use @entities/training-tools/ai-toolkit.md (YAML config makes LoKr factor=4 a one-line change) or @entities/training-tools/onetrainer.md (explicit LyCORIS UI). FluxGym remains a first-LoRA-on-FLUX.1 tool, not a LyCORIS-experimentation surface.

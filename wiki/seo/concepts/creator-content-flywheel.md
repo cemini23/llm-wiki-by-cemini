@@ -141,7 +141,7 @@ Based on the launch strategy in @briefs/2026-05-08_onlyfans-launch-strategy.md:
 | Content engagement rate | Content quality (is the content good enough?) | Per post |
 | DM response time | Retention engine (are you keeping subscribers?) | Daily |
 
-`[NEEDS VERIFICATION 2026-05-08]`: Flywheel model adapted from general SaaS/content marketing frameworks applied to the creator economy context. Specific benchmarks are aspirational targets based on aggregated creator economy data, not guaranteed outcomes.
+`[OPEN QUESTION 2026-05-08]`: Flywheel model adapted from general SaaS/content marketing frameworks applied to the creator economy context. Specific benchmarks are aspirational targets based on aggregated creator economy data, not guaranteed outcomes.
 
 ## Snippets
 

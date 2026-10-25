@@ -126,7 +126,7 @@ The bounding-by-memory work is identical to the Wave 2 `playwright-mcp` adoption
 ### Open questions
 
 - **[VERIFIED 2026-05-11: maintained + high-signal]**: `gh api repos/vercel-labs/agent-browser` → Apache-2.0, pushed 2026-05-07, **32.7k stars**. Active maintenance (5 days since last push at verification time), large community, not an abandoned Vercel Labs incubation. Health gate cleared.
-- **[NEEDS VERIFICATION 2026-04-29]**: Direct token-cost comparison agent-browser vs `playwright-mcp` accessibility tree on a known monolithic page (SEC 10-K). The K9 promotion claim rests on this difference being substantial; quantify it.
+- **[OPEN QUESTION 2026-04-29]**: Direct token-cost comparison agent-browser vs `playwright-mcp` accessibility tree on a known monolithic page (SEC 10-K). The K9 promotion claim rests on this difference being substantial; quantify it.
 - **[VERIFIED 2026-05-11: Apache-2.0]**: `gh api` confirms Apache-2.0 license matches K9 footnote 36 claim. Clean for adoption.
 
 ## Snippets

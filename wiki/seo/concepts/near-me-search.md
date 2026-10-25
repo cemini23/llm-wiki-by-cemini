@@ -55,7 +55,7 @@ Concept hub for the search-behavior pattern of "near me" / implicit-location que
 - Maps-app native: queries entered directly into Google Maps or Apple Maps
 - AI-engine native: "what's the best barbershop near my current location" (assistant resolves location, runs local lookup)
 
-For a barbershop, **the majority of high-intent customer-acquisition traffic comes through these implicit-location channels**, not through cold queries with the city name typed. `[NEEDS VERIFICATION 2026-05-07]` for the current share — historically reported in 70-90% range for service-based local businesses.
+For a barbershop, **the majority of high-intent customer-acquisition traffic comes through these implicit-location channels**, not through cold queries with the city name typed. `[OPEN QUESTION 2026-05-07]` for the current share — historically reported in 70-90% range for service-based local businesses.
 
 ### Why this matters
 
@@ -66,7 +66,7 @@ Two implications:
 
 ### The three Google ranking signals for local
 
-Google has documented (in the GBP help center) three high-level local-pack ranking signals: **Relevance**, **Distance**, **Prominence**. `[NEEDS VERIFICATION 2026-05-07]` for current GBP help-center wording.
+Google has documented (in the GBP help center) three high-level local-pack ranking signals: **Relevance**, **Distance**, **Prominence**. `[OPEN QUESTION 2026-05-07]` for current GBP help-center wording.
 
 - **Relevance** — how well the listing matches the search intent (primary category, services, business name, on-page content the listing references). Operator controls via GBP completeness + website on-page work. See @concepts/google-business-profile.md, @concepts/on-page-seo-local.md.
 - **Distance** — how far the business is from the user (or the user-specified location). Operator controls only by physically existing in the right geographic area; for a multi-shop operator, the geographic distribution of shops is itself a strategic variable.
@@ -107,7 +107,7 @@ For the website side, "near me" intent is captured by **service-area / location-
 
 ### Route-context queries (emerging AI surface) `[TENTATIVE]`
 
-Robotics spatial-QA work (@game-dev-wiki/sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md) targets prompts like *"dry cleaner on the way back home"* — ordered route + landmark anchors, not a single lat/lng radius. AI assistants may eventually answer local-service questions along **commute corridors** rather than only "near me" bubbles. Operator prep: accurate service-area + landmark-rich copy; audit route-context mention separately from static near-me baselines (@briefs/2026-06-21_k125-route-aware-local-queries-hands-on.md) `[NEEDS VERIFICATION 2026-06-21]`.
+Robotics spatial-QA work (@game-dev-wiki/sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md) targets prompts like *"dry cleaner on the way back home"* — ordered route + landmark anchors, not a single lat/lng radius. AI assistants may eventually answer local-service questions along **commute corridors** rather than only "near me" bubbles. Operator prep: accurate service-area + landmark-rich copy; audit route-context mention separately from static near-me baselines (@briefs/2026-06-21_k125-route-aware-local-queries-hands-on.md) `[OPEN QUESTION 2026-06-21]`.
 
 ## Snippets
 

@@ -62,4 +62,4 @@ Mechanistic **safety steering** reference (suppression axis). Pairs with OptiWor
 
 ## Dead Ends
 
-Open-source implementation + Wan/Hunyuan layer hooks not verified `[NEEDS VERIFICATION 2026-06-05]`. Paper contains offensive model outputs in safety eval figures — handle as research artifact only.
+Open-source implementation + Wan/Hunyuan layer hooks not verified `[OPEN QUESTION 2026-06-05]`. Paper contains offensive model outputs in safety eval figures — handle as research artifact only.

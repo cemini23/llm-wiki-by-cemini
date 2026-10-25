@@ -35,7 +35,7 @@ updated: 2026-05-17
 
 Wiley 2025 academic-style textbook by Basta et al. on building an open-source SOC. The book is structured around five pillars (people, processes, technology, governance, **data**) and chapters covering: SOC pillars, threat intelligence, log analysis, network-traffic analysis, endpoint analysis, SIEM, security analytics + ML, insider-threat detection, IR, and emerging trends.
 
-**[NEEDS VERIFICATION 2026-05-17]** — only Chapters 1-2 + partial Chapter 3 were extractable in the current ingest pass. Chapters 4-15 are present in the TOC but the body text was not surfaced in the file-read response. A re-extraction (or direct manual read of the PDF) is required before this source can be promoted to `read`. Material below is sourced strictly from Ch 1-2.
+**[OPEN QUESTION 2026-05-17]** — only Chapters 1-2 + partial Chapter 3 were extractable in the current ingest pass. Chapters 4-15 are present in the TOC but the body text was not surfaced in the file-read response. A re-extraction (or direct manual read of the PDF) is required before this source can be promoted to `read`. Material below is sourced strictly from Ch 1-2.
 
 ### What was extracted (Ch 1-2)
 

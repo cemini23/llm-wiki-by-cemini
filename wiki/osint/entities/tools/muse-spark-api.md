@@ -31,7 +31,7 @@ updated: 2026-10-25
 | **Endpoint** | [vals.ai/models/meta_muse-spark-1.1](https://www.vals.ai/models/meta_muse-spark-1.1) |
 | **License** | Commercial/consumer ToS (not OSS) |
 | **Verdict** | **Integrate (eval)** — multi-agent orchestration API for xsp research harness |
-| **Friction** | Token cost + rate limits; [NEEDS VERIFICATION 2026-07-10] latency under XSP signal frequency |
+| **Friction** | Token cost + rate limits; [OPEN QUESTION 2026-07-10] latency under XSP signal frequency |
 
 Frontier model positioned for parallel subagent delegation and long-context compaction. K157 routes **operator spike** via xsp prod brief — not a CeminiSuite code dependency until latency/cost gate passes.
 

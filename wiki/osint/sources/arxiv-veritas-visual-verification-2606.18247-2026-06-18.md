@@ -33,7 +33,7 @@ clusters: [llm-agents]
 | **Authors** | Mingtong Zhang, Dhruv Shah |
 | **arXiv** | 2606.18247 (16 Jun 2026) |
 | **sha256** | `1174fb20f0f7fe9982b8adf30da6c78e062d46c6e23ee3ae68b1b6ca0e17c4c3` |
-| **Project** | https://veritas-improvement.github.io/ [NEEDS VERIFICATION 2026-06-18] |
+| **Project** | https://veritas-improvement.github.io/ [OPEN QUESTION 2026-06-18] |
 | **Repo** | none public at ingest time |
 | **Location** | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2606.18247-2606-18247v1-visual-verification-enables-inferen.pdf` |
 | **Retrieved** | 2026-06-18 (daily digest 2026-06-19 inbox) |

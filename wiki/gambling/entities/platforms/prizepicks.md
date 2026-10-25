@@ -86,7 +86,7 @@ Rates below are **base** multipliers before demon/goblin or correlation adjustme
 
 **Revert rules:** each DNP, Reboot, or tie drops slip one tier (e.g. 4-pick Flex → 3-pick Flex; 3-pick Flex → 2-pick Power). [Source: https://www.prizepicks.com/help-center/payouts (retrieved 2026-07-05)]
 
-**Note:** Marketing pages sometimes cite 6-pick Power at 25x vs help-center 37.5x — **trust in-app disclosure at submit time**. [NEEDS VERIFICATION 2026-07-05]
+**Note:** Marketing pages sometimes cite 6-pick Power at 25x vs help-center 37.5x — **trust in-app disclosure at submit time**. [OPEN QUESTION 2026-07-05]
 
 ### Demon / Goblin impact on breakeven
 

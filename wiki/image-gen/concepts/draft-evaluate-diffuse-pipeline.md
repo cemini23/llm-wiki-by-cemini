@@ -78,7 +78,7 @@ Same LLM `\phi` performs Draft and Evaluate. Diffusion model `\theta` performs t
 
 ### What the pipeline costs
 
-[NEEDS VERIFICATION 2026-05-06] (paper does not explicitly publish wallclock or tokens/sec numbers; below is inferred)
+[OPEN QUESTION 2026-05-06] (paper does not explicitly publish wallclock or tokens/sec numbers; below is inferred)
 
 - One LLM forward to draft (≈ N vision tokens, where N is the SigLIP grid size — likely 256–1024)
 - One LLM forward to evaluate (short text output, plus the prompt + draft prefix)

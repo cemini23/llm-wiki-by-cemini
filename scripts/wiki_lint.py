@@ -348,6 +348,7 @@ source_no_read_status = sorted(
 # Match [NEEDS VERIFICATION YYYY-MM-DD] with optional date. Date is required for staleness check;
 # tags without a date are flagged separately as "undated" (can't compute age).
 NEEDS_VERIFY_DATED_RE = re.compile(r"\[NEEDS VERIFICATION\s+(\d{4}-\d{2}-\d{2})\]")
+OPEN_QUESTION_RE = re.compile(r"\[OPEN QUESTION\s+\d{4}-\d{2}-\d{2}\]")
 NEEDS_VERIFY_BARE_RE = re.compile(r"(?<!`)\[NEEDS VERIFICATION\](?!`)(?!\s+\d{4})")
 
 stale_verifications = []  # (page, date_str, age_days, line_num, line_text)
@@ -489,6 +490,14 @@ for page, date_str, age, line_num, line_text in stale_verifications[:30]:
     print(f"      {snippet}")
 if len(stale_verifications) > 30:
     print(f"  ... and {len(stale_verifications)-30} more (showing top 30 by age)")
+
+# [OPEN QUESTION DATE] records unresolved work, not an unchecked fact. Age cannot
+# resolve it, so it is reported for visibility and never counted as stale.
+open_questions = 0
+for src, fm in pages.items():
+    open_questions += len(OPEN_QUESTION_RE.findall(fm.get("_body", "") or ""))
+print(f"\n  Open questions (informational, no expiry): {open_questions} "
+      f"[OPEN QUESTION DATE] tag(s) across the wiki")
 
 if undated_verifications:
     print(f"\n  Also: {len(undated_verifications)} undated [NEEDS VERIFICATION] tag(s) "

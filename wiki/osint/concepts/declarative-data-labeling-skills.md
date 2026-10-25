@@ -93,7 +93,7 @@ The Agent Skills spec (from finance-skills) provides the cross-tool format compa
 
 ### Open questions
 
-- Does Adala's `OpenAIChatRuntime` cleanly intercept the base URL for DeepSeek routing? [NEEDS VERIFICATION 2026-05-10]
+- Does Adala's `OpenAIChatRuntime` cleanly intercept the base URL for DeepSeek routing? [OPEN QUESTION 2026-05-10]
 - What's the right ground-truth set size for Cemini sentiment skills — 50 hand-labeled examples? 500?
 - Should Cemini's existing FastMCP `@mcp.tool` decorators be promoted to full Agent-Skills-spec skills for portability?
 

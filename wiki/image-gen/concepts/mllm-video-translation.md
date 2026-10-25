@@ -51,4 +51,4 @@ Unified open MLLM dubbing remains research — @concepts/sync-audio-video-custom
 
 ## Dead Ends
 
-No single open model covers all three roles end-to-end for NSFW persona content `[NEEDS VERIFICATION 2026-06-03]`.
+No single open model covers all three roles end-to-end for NSFW persona content `[OPEN QUESTION 2026-06-03]`.

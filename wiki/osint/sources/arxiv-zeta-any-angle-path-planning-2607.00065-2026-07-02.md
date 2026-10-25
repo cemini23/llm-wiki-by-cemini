@@ -45,7 +45,7 @@ Extends grid any-angle planning (Theta*, Anya) with **optimal** shortest paths o
 
 **Limitation:** Anya/Polyanya hard to extend to 3D or dynamic envs; Zeta* family targets unified static+dynamic optimality on grids.
 
-**Cemini relevance:** castle-sim Godot siege routing — optimal any-angle paths on navigation grids with moving defenders (dynamic obstacles). REFERENCE only — no public code repo at ingest `[NEEDS VERIFICATION 2026-07-02]`.
+**Cemini relevance:** castle-sim Godot siege routing — optimal any-angle paths on navigation grids with moving defenders (dynamic obstacles). REFERENCE only — no public code repo at ingest `[OPEN QUESTION 2026-07-02]`.
 
 ## Snippets
 

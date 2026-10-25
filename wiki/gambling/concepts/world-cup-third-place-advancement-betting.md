@@ -47,7 +47,7 @@ Betting the **third-place advancement** path in the 48-team World Cup — points
 
 **Defensive / low-event profiles** that protect GD: Sweden, Ivory Coast, Paraguay, Scotland — research "safe third" bucket [TENTATIVE].
 
-### Example mispricings (May 2026 PM mids vs research) [NEEDS VERIFICATION 2026-06-01]
+### Example mispricings (May 2026 PM mids vs research) [OPEN QUESTION 2026-06-01]
 
 | Team | PM advance mid | Research P(advance) | Retail read |
 |------|----------------|---------------------|-------------|

@@ -45,7 +45,7 @@ Educational reference architecture for LLMOps pipelines (data processing, securi
 
 ### Risks (if mining code)
 
-- **Hamilton dataflow Python decorator conflict [NEEDS VERIFICATION 2026-05-10]**: heavy decorator usage may intercept FastMCP `@mcp.tool` decoration sequence. Avoid bringing Hamilton itself; reimplement patterns natively.
+- **Hamilton dataflow Python decorator conflict [OPEN QUESTION 2026-05-10]**: heavy decorator usage may intercept FastMCP `@mcp.tool` decoration sequence. Avoid bringing Hamilton itself; reimplement patterns natively.
 - **License verification**: confirm MIT before extracting
 - **Production-readiness gap**: any extracted code needs explicit error-handling additions
 

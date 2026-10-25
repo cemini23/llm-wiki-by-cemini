@@ -31,7 +31,7 @@ K147 Phase-0 on [HoppouAI/OctoBrowser](https://github.com/HoppouAI/OctoBrowser).
 | **Verdict** | **Steal-from** — OSINT stealth browser patterns only |
 | **Pattern** | Chromium kernel parameter spoofing + isolated profiles + Copilot SDK agent binding |
 
-No TipDrop/David brief — OSINT wiki literacy for scaled telemetry harvest without bot triggers. `[NEEDS VERIFICATION 2026-07-06]` WebGL spoofing claims need manual code review per docx.
+No TipDrop/David brief — OSINT wiki literacy for scaled telemetry harvest without bot triggers. `[OPEN QUESTION 2026-07-06]` WebGL spoofing claims need manual code review per docx.
 
 ## Snippets
 

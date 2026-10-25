@@ -64,7 +64,7 @@ Castle-sim Godot vertical slice needs siege AI that picks **diverse, resilient a
 | **Zeta*** | Static siege maps | Elliptical expansion + FoV visibility — Anya-comparable optimality |
 | **Zeta*-SIPP** | Moving defenders / dynamic obstacles | >20× vs TO-AA-SIPP; preferred when units block lanes mid-route |
 
-Godot sketch: navigation grid + dynamic obstacle layer → evaluate Zeta*-SIPP pattern before falling back to A* + post-hoc smooth. No code repo at ingest `[NEEDS VERIFICATION 2026-07-02]`.
+Godot sketch: navigation grid + dynamic obstacle layer → evaluate Zeta*-SIPP pattern before falling back to A* + post-hoc smooth. No code repo at ingest `[OPEN QUESTION 2026-07-02]`.
 
 Brief: `../projects/Game Dev wiki/briefs/2026-07-02_k140-zeta-any-angle-path-planning-steal.md`
 

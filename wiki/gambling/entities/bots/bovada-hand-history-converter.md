@@ -32,7 +32,7 @@ K92 **Steal-from** for **hand-history ingest** — analytics / CLV journal bot, 
 - Pairs with `@concepts/line-shopping-and-clv.md` discipline
 - **Human-in-the-loop** default — no auto-submit
 
-### Phase-0 [NEEDS VERIFICATION 2026-06-01]
+### Phase-0 [OPEN QUESTION 2026-06-01]
 
 1. `gh api` license
 2. Bovada **ToS** on automated history export

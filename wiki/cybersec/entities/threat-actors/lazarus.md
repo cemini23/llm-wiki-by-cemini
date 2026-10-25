@@ -33,7 +33,7 @@ The most active financially-motivated state-sponsored APT family — unique amon
 
 ## Narrative
 
-**Lazarus Group** is an umbrella label for North Korean (DPRK) state-sponsored cyber operations attributed to the **Reconnaissance General Bureau (RGB)**. Western threat-intel typically clusters DPRK activity into three overlapping groups: [NEEDS VERIFICATION 2026-05-12]
+**Lazarus Group** is an umbrella label for North Korean (DPRK) state-sponsored cyber operations attributed to the **Reconnaissance General Bureau (RGB)**. Western threat-intel typically clusters DPRK activity into three overlapping groups: [OPEN QUESTION 2026-05-12]
 
 - **Lazarus** (broad espionage + destructive ops) — aliases Hidden Cobra, Whois Team, Guardians of Peace, ZINC (Microsoft, retired naming), Diamond Sleet (Microsoft current)
 - **APT38 / BlueNoroff** — financially-motivated subdivision; SWIFT-network bank heists, cryptocurrency exchange theft. Microsoft naming: Sapphire Sleet.

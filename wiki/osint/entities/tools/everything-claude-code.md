@@ -32,4 +32,4 @@ The definitive agent harness for Claude Code — over 300 pre-configured agents,
 
 **License**: MIT — pristine legal pathway for full corporate incorporation.
 
-**Open question** [NEEDS VERIFICATION 2026-05-16]: Continuous validation required to ensure imported skill matrices stay compatible with rapid Claude Code CLI update cycles.
+**Open question** [OPEN QUESTION 2026-05-16]: Continuous validation required to ensure imported skill matrices stay compatible with rapid Claude Code CLI update cycles.

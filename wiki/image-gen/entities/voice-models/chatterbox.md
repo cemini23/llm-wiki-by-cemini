@@ -42,7 +42,7 @@ Page prompted by the W4 Tier 2 voice/audio backfill (2026-05-13). Named in @conc
 - **License**: **MIT** (code + weights) [NEEDS VERIFICATION 2026-05-13 — confirm current weight license]
 - **Repo**: `github.com/resemble-ai/chatterbox`
 - **Size**: ~500M parameters [NEEDS VERIFICATION 2026-05-13]
-- **Architecture**: LLaMA-class transformer backbone + neural codec audio tokens [NEEDS VERIFICATION 2026-05-13]
+- **Architecture**: LLaMA-class transformer backbone + neural codec audio tokens [OPEN QUESTION 2026-05-13]
 - **Watermarking**: PerTH inaudible perceptual watermark on every output — provenance trail by design
 - **Speed**: real-time capable on consumer GPU
 - **VRAM**: ~8 GB (fits on the same tier as CosyVoice2-0.5B)

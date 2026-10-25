@@ -57,7 +57,7 @@ Agent outputs + multi-view RGB are **co-tokenized** on a shared positional schem
 ### Workspace relevance
 
 - Extends **multi-agent cross-view world models** (@concepts/multi-agent-cross-view-video-world-models.md) with **LLM-orchestrated symbolic–geometry–pixel alignment** at token level
-- Driving-specific — low direct persona use; pattern may transfer to multi-camera persona scene synthesis `[NEEDS VERIFICATION 2026-06-21]`
+- Driving-specific — low direct persona use; pattern may transfer to multi-camera persona scene synthesis `[OPEN QUESTION 2026-06-21]`
 - **No public code** for this 2026 paper at ingest — do not conflate with NVlabs repo
 
 ## Snippets

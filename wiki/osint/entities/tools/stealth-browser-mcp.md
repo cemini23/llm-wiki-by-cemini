@@ -29,4 +29,4 @@ MCP server claiming anti-bot bypass via network hook injection. MIT; 807★; las
 
 ## Snippets
 
-> "The only browser automation that bypasses anti-bot systems." [Source: gh description — [NEEDS VERIFICATION 2026-06-29] un reproduced in Phase-0]
+> "The only browser automation that bypasses anti-bot systems." [Source: gh description — [OPEN QUESTION 2026-06-29] un reproduced in Phase-0]

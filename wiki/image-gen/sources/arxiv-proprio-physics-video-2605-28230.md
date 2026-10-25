@@ -58,4 +58,4 @@ Post-generation **quality gate** for Wan I2V persona clips — pick/refine takes
 
 ## Dead Ends
 
-None — implementation on local Wan checkpoint `[NEEDS VERIFICATION 2026-06-01]`.
+None — implementation on local Wan checkpoint `[OPEN QUESTION 2026-06-01]`.

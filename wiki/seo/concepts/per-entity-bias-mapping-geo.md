@@ -71,7 +71,7 @@ Famous chains / long-established shops may get **more AI mentions** but also **m
 
 ### Parametric–retrieval lag
 
-After rebrand, hours change, or new location: re-audit **both** retrieval-heavy engines (Perplexity) and parametric-dominant surfaces — stale parametric image may persist 12–24 months `[NEEDS VERIFICATION 2026-06-23]` on local queries.
+After rebrand, hours change, or new location: re-audit **both** retrieval-heavy engines (Perplexity) and parametric-dominant surfaces — stale parametric image may persist 12–24 months `[OPEN QUESTION 2026-06-23]` on local queries.
 
 ### Minimal operator audit (5 dimensions)
 

@@ -102,7 +102,7 @@ Two of the three original gaps are now partly closed by [@sources/2026-liu-chunk
 | **Cost / latency at consumer-printer scale** | **Partly covered** — ChunkVLA-AM gives 0.06–0.08 s model-side inference on an RTX 6000 Ada, excluding capture/network/execution. Confirms server-class inference. Still no consumer-scale (sub-$1k) cost analysis. |
 | **Comparison to the dedicated-CNN baseline** | **Still open.** CIPHER's 17.62 MAE on flow rate would plausibly be matched by a supervised CNN; the value-add is the language interface, not the perception number. No ingested paper isolates this. |
 
-[NEEDS VERIFICATION 2026-05-07] Original flag: *adding 1-2 papers on consumer-printer VLM failure modes or cost analyses would round out the cluster.* One deployment paper now ingested (2026-10-03). A second independent deployment study, or a CNN-baseline comparison, would close this fully.
+[OPEN QUESTION 2026-05-07] Original flag: *adding 1-2 papers on consumer-printer VLM failure modes or cost analyses would round out the cluster.* One deployment paper now ingested (2026-10-03). A second independent deployment study, or a CNN-baseline comparison, would close this fully.
 
 **Also still absent:** the deployment paper's task is coloured-block A-to-B transfer, not a real AM operation. The authors name the gap themselves — warped-part inspection and failed-print removal are listed as future work. So the wiki still has no VLA paper doing a genuinely AM-specific inspection or repair task.
 

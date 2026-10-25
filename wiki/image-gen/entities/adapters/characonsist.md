@@ -65,7 +65,7 @@ Mechanism (paraphrased from the paper): given a "seed" image whose attention pat
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - ~~ComfyUI node maturity as of 2026-05; whether CharaConsist has a stable RunComfy or ComfyUI Manager-installable workflow.~~ — **resolved [CONFIRMED 2026-05-07]**: no native ComfyUI Manager-installable CharaConsist workflow exists. Reference implementation remains [github.com/Murray-Wang/CharaConsist](https://github.com/Murray-Wang/CharaConsist) (diffusers scripts, not ComfyUI nodes); the canonical 2026 ComfyUI character-consistency stack instead combines IP-Adapter FaceID + character LoRA + ControlNet.
 - ~~VRAM cost on FLUX.1-Dev FP8 + CharaConsist; community reports.~~ — **resolved [CONFIRMED 2026-05-07]**: training-free attention-only modification adds negligible overhead on top of FLUX.1-Dev FP8; peak VRAM clusters at 11-13 GB (parity with FLUX.1-Dev FP8 base inference).

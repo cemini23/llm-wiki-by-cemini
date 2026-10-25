@@ -45,7 +45,7 @@ Contrasts with **fingerprinting** (signals outside backbone; weaker under sophis
 
 Research-layer IP protection for **base model publishers** (FLUX, Pony lineage) — not a persona-operator build tool. Relevant when evaluating whether community **LoRA merges / fine-tunes** of watermarked bases could trigger ownership disputes or when hosting custom checkpoints commercially. Pairs defensively with @concepts/anti-personalization-privacy.md (publisher-side image defense) on the generative-security axis.
 
-Code promised on paper page `[NEEDS VERIFICATION 2026-06-03]`.
+Code promised on paper page `[OPEN QUESTION 2026-06-03]`.
 
 ## Snippets
 

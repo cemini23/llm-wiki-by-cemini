@@ -94,8 +94,8 @@ If a user has an existing SD3.5-based workflow and it's not generating policy-fl
 
 ### Workspace TODO
 
-- **`[NEEDS VERIFICATION 2026-05-06]`**: confirm exact text of Stability AI's late-2025 Acceptable Use Policy and the CivitAI compliance mechanism. The survey paraphrases; primary sources are needed for any commercial-decision documentation.
-- **`[NEEDS VERIFICATION 2026-05-06]`**: are there any SD3.5 community fine-tunes that shipped in 2026 that are *not* deprecated? The survey makes a sweeping claim; spot-check via CivitAI search.
+- **`[OPEN QUESTION 2026-05-06]`**: confirm exact text of Stability AI's late-2025 Acceptable Use Policy and the CivitAI compliance mechanism. The survey paraphrases; primary sources are needed for any commercial-decision documentation.
+- **`[OPEN QUESTION 2026-05-06]`**: are there any SD3.5 community fine-tunes that shipped in 2026 that are *not* deprecated? The survey makes a sweeping claim; spot-check via CivitAI search.
 - Document the architectural-censorship symptoms specifically — what does an SD3 "broken anatomy" output look like? Useful for explaining the latent-space-scrubbing failure mode in @concepts/de-censoring-techniques.md.
 - Track Stability AI's roadmap — any signs of an SD4 / direction shift on alignment posture? Affects whether to write off the entire Stability lineage or only this specific generation.
 

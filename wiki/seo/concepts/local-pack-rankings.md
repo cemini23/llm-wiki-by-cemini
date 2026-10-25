@@ -56,7 +56,7 @@ Google's documented high-level ranking signals (per the GBP help center):
 2. **Distance** — how far the listing is from the user (or user-specified location). Operator controls only by physical location.
 3. **Prominence** — overall reputation: review volume, review rating, links + mentions, web-wide brand recognition, organic SEO of the website.
 
-The third-party studies (Whitespark Local Search Ranking Factors, Moz Local Search Ranking Factors, BrightLocal annual reports) consistently identify the following as load-bearing factor clusters, in approximate order of impact `[NEEDS VERIFICATION 2026-05-07]`:
+The third-party studies (Whitespark Local Search Ranking Factors, Moz Local Search Ranking Factors, BrightLocal annual reports) consistently identify the following as load-bearing factor clusters, in approximate order of impact `[OPEN QUESTION 2026-05-07]`:
 
 - **GBP signals** (largest single cluster): primary category, listing completeness, posts, photos, attributes, services
 - **Review signals**: count, rating, recency, response rate, review text keyword presence, diversity of platforms

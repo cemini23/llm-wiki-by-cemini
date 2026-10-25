@@ -29,7 +29,7 @@ K100 ingest reroute (2026-06-05) — arXiv:2606.00357 is **LLM post-training**, 
 
 ### Image-gen relevance (indirect)
 
-Existing merge stack uses SLERP / TIES / DARE (@concepts/de-censoring-techniques.md) for **checkpoint-level** fusion. PDA/GAM is a **2026 research pattern** for composing multiple preference-derived LoRAs without catastrophic forgetting — may apply if stacking multiple persona/style LoRAs from weak ranking data `[NEEDS VERIFICATION 2026-06-05]`. Not tested on FLUX/Wan in this paper.
+Existing merge stack uses SLERP / TIES / DARE (@concepts/de-censoring-techniques.md) for **checkpoint-level** fusion. PDA/GAM is a **2026 research pattern** for composing multiple preference-derived LoRAs without catastrophic forgetting — may apply if stacking multiple persona/style LoRAs from weak ranking data `[OPEN QUESTION 2026-06-05]`. Not tested on FLUX/Wan in this paper.
 
 ### Phase-0 — upstream repo [CONFIRMED 2026-06-05]
 

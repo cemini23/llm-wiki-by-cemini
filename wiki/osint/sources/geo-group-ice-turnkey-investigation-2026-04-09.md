@@ -37,7 +37,7 @@ updated: 2026-06-13
 Open-source synthesis alleging GEO Group (NYSE: GEO) and ICE are staging a **$300M–$400M multi-facility turnkey asset sale** under the Detention Reengineering Initiative (DRI, ~$38.3B federal framing in brief). Core operational claims:
 
 - **McFarland / California cluster** — annex consolidation tactic to bypass AB 1801 public-notice requirements; activation-pattern hiring (detention officers, LPNs, psychologists) cited as evidence of binding revenue **`[TENTATIVE]`**.
-- **Bridge contract binary** — $619K ICE bridge for Rivers Correctional (NC) expiring 2026-04-10 with no extension listed; interpreted as precursor to permanent deal **`[NEEDS VERIFICATION 2026-06-13]`**.
+- **Bridge contract binary** — $619K ICE bridge for Rivers Correctional (NC) expiring 2026-04-10 with no extension listed; interpreted as precursor to permanent deal **`[OPEN QUESTION 2026-06-13]`**.
 - **Financial pressure** — $100M revolver draw (Jan 2026) with ~$25–35M/mo burn → mid-April liquidity cliff **`[TENTATIVE]`**.
 - **Aviation OPSEC** — corporate jet **N5000P** (Geo Leasing LLC; callsign **EJM55** via Executive Jet Management): DC deployment then BARR-shielded westbound flight (Albuquerque cited as ICE Air logistics hub) **`[CONFIRMED]`** — tail resolved 2026-06-29; Jun 2026 DC×2 weekends operator-reported **`[TENTATIVE routing]`**.
 - **Disclosure window math** — if deal signed 2026-04-10, SEC 4-business-day rule → 8-K by 2026-04-16; thesis tied to Apr-17 options expiry **`[TENTATIVE]`** — event window now historical; retain as methodology record.

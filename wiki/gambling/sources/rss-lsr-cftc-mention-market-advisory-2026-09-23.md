@@ -115,5 +115,5 @@ Footnote 15 is the practical checklist: restricted participant lists, third-part
 
 ## Dead Ends
 
-- **Penalty figures conflict across outlets.** Perez is reported as both "more than $100,000 profit" and a "$172,539" order; Santos as both $35,000 and $17,500. Do not cite a single number without the outlet. [NEEDS VERIFICATION 2026-09-30]
+- **Penalty figures conflict across outlets.** Perez is reported as both "more than $100,000 profit" and a "$172,539" order; Santos as both $35,000 and $17,500. Do not cite a single number without the outlet. [OPEN QUESTION 2026-09-30]
 - The advisory is **staff guidance, not enforcement**. It reads as a deterrent, not a ban. Do not model it as a hard delisting event.

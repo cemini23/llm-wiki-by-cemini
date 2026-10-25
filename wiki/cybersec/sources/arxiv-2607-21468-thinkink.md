@@ -35,7 +35,7 @@ wire_target: "REFERENCE / steal-from — paper or methodology only"
 
 ## Narrative
 
-HCI: handwritten prompts/sketches ↔ LLM ink responses on shared 2D canvas. Formative N=12, diagnostic N=6, final N=10. **Low cyber primary** — ingest for completeness (digest inbox). Possible future: adversarial ink/sketch injection into multimodal agents [NEEDS VERIFICATION 2026-07-24].
+HCI: handwritten prompts/sketches ↔ LLM ink responses on shared 2D canvas. Formative N=12, diagnostic N=6, final N=10. **Low cyber primary** — ingest for completeness (digest inbox). Possible future: adversarial ink/sketch injection into multimodal agents [OPEN QUESTION 2026-07-24].
 
 ### Steal
 

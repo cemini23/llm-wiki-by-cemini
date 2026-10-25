@@ -111,7 +111,7 @@ FaceCheck and AI Face Search are usable free for basic sweeps but throttle aggre
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - ~~2026 PimEyes pricing tiers — subscription costs may have shifted; confirm before budgeting.~~ — **resolved [CONFIRMED 2026-05-07]**: PimEyes 2026 tiers — **Open Plus** $29.99-$35.99/month (single-tier rebrand), **Advanced** $299.99/month, with a hard 25-searches/day cap on all paid tiers. Free public lookup remains rate-limited and watermark-bait only. Budget ~$30-$300/month for the persona-verification protocol depending on volume.
 - ~~Whether [Spotsaas alternatives list](https://www.spotsaas.com/blog/pimeyes-alternatives) has surfaced a 2026 entrant (e.g., a face-search SaaS launched late 2025) that should be folded into the protocol.~~ — **resolved [CONFIRMED 2026-05-07]**: 2026 face-search landscape — **PimEyes** (primary, 2.1B-face index), **FaceCheck.id** (secondary, mature), **Lenso.ai** (2025 entrant, AI-tagged face index), **eyematch.ai** (2025 entrant), **Copyseeker** (2025 entrant, image+face), **ProFaceFinder**, plus general-purpose **Yandex Images** and **Google Lens**. Recommend folding Lenso.ai + FaceCheck.id into the multi-engine verification protocol alongside PimEyes for cross-validation.

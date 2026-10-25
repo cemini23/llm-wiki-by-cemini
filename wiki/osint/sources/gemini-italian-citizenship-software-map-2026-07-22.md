@@ -55,7 +55,7 @@ Software-architecture companion to K183 pipelines: Law 74/2025 (generational / g
 
 **Soft-flags (never hard-code):** post-1992 bipolidi Minor Issue; definition of pre-27 Mar 2025 “clear intent”; consulate-variable name discrepancy / OATS.
 
-**Citation quality:** heavy citizenship-law-firm blogs + secondary summaries. All Law 74 / Circular / Cassazione outcomes remain **[NEEDS VERIFICATION 2026-07-22]** against Gazzetta Ufficiale / MAECI / Interior primary texts before UI eligibility language.
+**Citation quality:** heavy citizenship-law-firm blogs + secondary summaries. All Law 74 / Circular / Cassazione outcomes remain **[OPEN QUESTION 2026-07-22]** against Gazzetta Ufficiale / MAECI / Interior primary texts before UI eligibility language.
 
 **Wiki scope:** triage engine + copy constraints. Not legal advice; no Barone pedigree.
 

@@ -166,7 +166,7 @@ Gemini v2 source: @sources/gemini-vir-5500-commercial-strategy-dossier-2026-07-2
 
 **Very profitable?** *Franchise* yes if mid/early-line + community label ($2–4B base / $4–7B bull WW hyp.; v2 arithmetic base ~**$2.52B** WW → ~**$357M**/yr VIR peak CF after 50/50 + ~15% ex-US royalty + ~20% Sanofi drag — **Speculative**). *VIR* always **shared**. Model owned cash flows.
 
-**Pluvicto WAC:** v2 cites ~$42.5k/dose vs prior ~$51k — `[NEEDS VERIFICATION 2026-07-21]` vs Novartis primary.
+**Pluvicto WAC:** v2 cites ~$42.5k/dose vs prior ~$51k — `[OPEN QUESTION 2026-07-21]` vs Novartis primary.
 
 ### Catalyst calendar confidence
 

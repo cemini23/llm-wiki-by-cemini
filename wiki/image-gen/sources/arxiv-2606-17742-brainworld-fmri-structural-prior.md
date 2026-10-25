@@ -43,7 +43,7 @@ updated: 2026-06-23
 ### Workspace relevance
 
 - **Peripheral** to persona T2I/T2V — useful as **analog** for structural-prior world models (anatomy → dynamics ≈ scene layout → video rollout)
-- Code link in paper abstract; **no indexed GitHub** at Phase-0 `[NEEDS VERIFICATION 2026-06-23]`
+- Code link in paper abstract; **no indexed GitHub** at Phase-0 `[OPEN QUESTION 2026-06-23]`
 
 ## Snippets
 

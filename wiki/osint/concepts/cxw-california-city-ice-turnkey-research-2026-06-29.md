@@ -151,7 +151,7 @@ Zoley (GEO) and Swindle (CoreCivic) confirmed active sale discussions on Q1 2026
 - **Appellant:** Jehan Laner / **Dignity Not Detention Coalition** — appeal letter on **both** business license and site plan (Feb 2026 staff approvals) `[CONFIRMED]` [KGET Jul 7 hearings article].
 - **Prior:** June 16 PC meeting **canceled — lack of quorum**; next regular PC = Jul 7 6 p.m. `[CONFIRMED]` (city PDF).
 - **Interpretation:** BL track is **administratively sharper** (Grayson solo, no public comment, **earlier same day**); PC track is **political/noise amplifier** (de novo, public testimony). Federal fee-simple purchase **before Jul 7** would moot both local tracks via regime switch — creates a **conditional pre-hearing window (Jul 2–3 / Mon–Tue premarket)** distinct from portfolio-wide 8-K timing.
-- Official city agenda PDF still ideal for final packet confirmation `[NEEDS VERIFICATION 2026-07-04]`.
+- Official city agenda PDF still ideal for final packet confirmation `[OPEN QUESTION 2026-07-04]`.
 - **Mayor Hawkins:** AG comments are recommendations; city **cannot halt federal detention**; lacks resources for litigation; will follow appeals process `[CONFIRMED]`. Council **quorum gaps** (2026) stalled formal action `[CONFIRMED]`.
 - **Inadvertent.news (May 12, 2026):** CoreCivic Aug 2025 SB 29 **indemnification** letter; mayor says city paying defense on "city's dime" `[CONFIRMED]`.
 

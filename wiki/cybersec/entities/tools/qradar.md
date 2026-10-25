@@ -45,7 +45,7 @@ Stub created during the BlueTeam Kit 26-PDF ingest (2026-05-16). Promoted to val
 coverage on this entity ≈ 36% — Chapters 1-4 (architecture, components, deployment,
 ingestion) are fully synthesized; Chapters 5-12 (rule-writing patterns, AQL syntax, apps:
 UBA / Watson Advisor / Use Case Manager / NTA, WinCollect, troubleshooting) are TOC-summary
-only.** Gaps are tagged `[NEEDS VERIFICATION 2026-05-17]` in the relevant sections.
+only.** Gaps are tagged `[OPEN QUESTION 2026-05-17]` in the relevant sections.
 
 Cross-corpus: also the detection platform in the corpus's SOC drill notes
 (@sources/soc-red-blue-team-drills.md) and contrasts with the FOSS path

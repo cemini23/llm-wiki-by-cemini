@@ -73,7 +73,7 @@ Three independent surfaces:
 - **Adopt-candidate** for any future Cemini Polymarket workstream on tradeable-asset markets (BTC > X, ETH > Y, etc.) where the bot needs a venue-independent price feed.
 - **Cost + latency**: pull-based + signed → has per-request cost (gas if on-chain, possibly API metering off-chain). Phase-0 audit needs to compare actual latency + cost against simpler alternatives (e.g., direct Binance WebSocket BTC ticker as price truth).
 
-### Open questions [NEEDS VERIFICATION 2026-05-20]
+### Open questions [OPEN QUESTION 2026-05-20]
 
 1. **Cost model**: per-request gas / off-chain subscription pricing.
 2. **Latency**: actual end-to-end fetch + verify time.

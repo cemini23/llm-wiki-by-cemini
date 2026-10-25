@@ -82,7 +82,7 @@ At 100 rings/month: ~€776–788 monthly profit, distributed per the share tabl
 | Channel | What's distributed | Designer's cut | Friction |
 |---|---|---|---|
 | **Etsy / MakerWorld direct STL sale** | Just the file | ~95% (after Etsy fees) | Customer must own a printer + materials |
-| **MakerWorld with Bambu's print-on-demand partners** | File + matching to print provider | ? (not yet researched) [NEEDS VERIFICATION 2026-05-06] | Lower than Etsy direct |
+| **MakerWorld with Bambu's print-on-demand partners** | File + matching to print provider | ? (not yet researched) [OPEN QUESTION 2026-05-06] | Lower than Etsy direct |
 | **Cloud Crafting / Ivkic-style MaaS** | File + production + delivery | **10%** | Customer gets finished product |
 | **Shapeways / Hubs / Xometry** | Industrial MaaS | Variable | Higher quality / industrial materials available |
 

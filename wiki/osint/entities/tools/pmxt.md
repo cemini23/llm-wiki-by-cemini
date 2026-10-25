@@ -45,7 +45,7 @@ Its key value for the Cemini financial suite: it natively resolves exchange-spec
 
 **Cemini fit**: candidate execution-abstraction layer for the `/opt/cemini` trading stack, replacing custom per-venue adapters. The MIT license clears it for the IP sale. Deployment belongs on **cemini-prod**, not the laptop/librarian — staged via adoption brief, not installed from this workspace.
 
-- `[NEEDS VERIFICATION 2026-06-07]` Compatibility of the `dome-to-pmxt` automated migration tool with Cemini's customized Redis Streams data structures. (`tools/dome-to-pmxt/` confirmed present in repo — `index.js` + `package.json` + `README.md`; functional compatibility still untested.)
+- `[OPEN QUESTION 2026-06-07]` Compatibility of the `dome-to-pmxt` automated migration tool with Cemini's customized Redis Streams data structures. (`tools/dome-to-pmxt/` confirmed present in repo — `index.js` + `package.json` + `README.md`; functional compatibility still untested.)
 - `[CONFIRMED 2026-05-16]` Phase-0 clone audit complete — see `## Phase-0 Audit` below. MIT LICENSE present; one weak-copyleft transitive dep (`rpc-websockets` LGPL-3.0-only) isolated to the non-target `baozi` adapter.
 
 ## Phase-0 Audit (2026-05-16)

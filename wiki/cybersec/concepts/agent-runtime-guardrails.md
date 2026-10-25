@@ -355,8 +355,8 @@ Defense layering (recommended order for authorized lab):
 1. **Layered** skill/MCP scan (static + VT/reputation + SkillSpector-class semantic) — not one gate [Source: arXiv:2606.01494]
 2. Egress policy (iron-proxy / VM sandbox)
 3. Runtime authority or composition proxy (AIRGuard / ChainCaps-class)
-4. Integration/tool-response guard for multi-SaaS copilots (AgentRedGuard-class) `[NEEDS VERIFICATION 2026-06-02]`
-5. Formal constraint layer where policy is machine-expressible (ePCA-class) `[NEEDS VERIFICATION 2026-06-01]`
+4. Integration/tool-response guard for multi-SaaS copilots (AgentRedGuard-class) `[OPEN QUESTION 2026-06-02]`
+5. Formal constraint layer where policy is machine-expressible (ePCA-class) `[OPEN QUESTION 2026-06-01]`
 
 ## Dead Ends
 

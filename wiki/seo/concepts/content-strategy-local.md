@@ -83,7 +83,7 @@ Content categories that work for barbershops:
 2. **Adjacent prose** — one sentence below or beside the image weaving the same detail into the paragraph (e.g., "Our east-side station includes a dedicated kid-height chair and wheelchair-accessible wash basin — visible in the photo above.").
 3. **Do not duplicate keyword-stuffed alt + body** — one natural injection point per image; avoid repeating the same phrase three times.
 
-Highest expected value on pages where competitors show generic stock interiors but the shop has distinctive visuals. Re-validate with engine citation tests `[NEEDS VERIFICATION 2026-06-08]`.
+Highest expected value on pages where competitors show generic stock interiors but the shop has distinctive visuals. Re-validate with engine citation tests `[OPEN QUESTION 2026-06-08]`.
 
 ### Authority claims and GEO ethics `[CONFIRMED risk in audit; operator policy]`
 

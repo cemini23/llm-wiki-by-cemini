@@ -95,7 +95,7 @@ For non-face style references — outfits, mood boards, compositional anchors �
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - VRAM tier per variant (FaceID-Plus-V2 should be similar to base; verify on a 12 GB SDXL setup).
 - ~~InsightFace dependency conflicts with ComfyUI Manager on Apple Silicon~~ — **resolved [CONFIRMED 2026-05-07]**: InsightFace installs cleanly on macOS via `pip install insightface onnxruntime` and ComfyUI Manager picks it up correctly. The remaining caveat is upstream maintenance posture: **`cubiq/ComfyUI_IPAdapter_plus`** entered "maintenance only" mode 2025-04-14 — bug fixes only, no new IP-Adapter variant adoption. The repo is functional on MPS but its long-term-support story is capped.

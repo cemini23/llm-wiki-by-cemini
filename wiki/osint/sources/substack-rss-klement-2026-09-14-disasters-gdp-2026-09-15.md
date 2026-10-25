@@ -26,7 +26,7 @@ read_status: read
 
 ## Narrative
 
-IMF Nguyen et al (2026), 196 countries 1970–2023. Cite Klement; do not invent an IMF/SSRN source page. IMF paper `[NEEDS VERIFICATION 2026-09-15]`.
+IMF Nguyen et al (2026), 196 countries 1970–2023. Cite Klement; do not invent an IMF/SSRN source page. IMF paper `[OPEN QUESTION 2026-09-15]`.
 
 Median: floods / heat / cold no lasting GDP hit; storms + droughts 0.1–0.2pp lasting. Tail 1%: windstorms −0.5% GDP at 2y; floods −3.2% at 2y. Poorer countries less resilient. Wiki-only.
 
@@ -34,4 +34,4 @@ Median: floods / heat / cold no lasting GDP hit; storms + droughts 0.1–0.2pp l
 
 > "Floods, heatwaves and cold snaps don’t seem to have a lasting impact on GDP on average. But storms (hurricanes and typhoons), as well as droughts, leave a lasting impact in the order of 0.1 to 0.2 percentage points." [Source: https://klementoninvesting.substack.com/p/the-growth-effects-of-natural-disasters (retrieved 2026-09-15)]
 
-> Source: Nguyen et al. (2026) via Klement. IMF paper URL not fetched. `[NEEDS VERIFICATION 2026-09-15]`
+> Source: Nguyen et al. (2026) via Klement. IMF paper URL not fetched. `[OPEN QUESTION 2026-09-15]`

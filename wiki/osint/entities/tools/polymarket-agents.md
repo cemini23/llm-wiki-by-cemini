@@ -78,7 +78,7 @@ DeepSeek brain (decides "open Polymarket position on contract X")
 
 Strip default agent logic; run **four-check** Claude loop (base rate, news, whale presence, crowd bias) + quarter-Kelly sizing before consensus execution layer. See @concepts/polymarket-wallet-alpha-pipeline.md.
 
-### Open questions [NEEDS VERIFICATION 2026-05-05]
+### Open questions [OPEN QUESTION 2026-05-05]
 
 - Maturity signals (commits, latest version, release cadence) beyond star count
 - Whether it's actively maintained (eval claims "comprehensive utility suite" but doesn't quote commit-dates)

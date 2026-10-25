@@ -96,7 +96,7 @@ Sibling source — also a meta-prompt template, but single-shot (one big invocat
 
 ### Verification needed
 
-- `[NEEDS VERIFICATION 2026-05-12]` `awesome-ralph` commit velocity + top-contributor list (Gemini eval flagged: "could not be programmatically extracted from the retrieved primary sources").
+- `[OPEN QUESTION 2026-05-12]` `awesome-ralph` commit velocity + top-contributor list (Gemini eval flagged: "could not be programmatically extracted from the retrieved primary sources").
 
 ## Snippets
 

@@ -61,7 +61,7 @@ updated: 2026-06-20
 - **Suppression axis:** documents how open Wan/CogVideoX-class stacks *could* be safety-steered at inference — relevant attack-surface knowledge for uncensored persona ops (inverse of de-censoring)
 - **Steering cluster:** Complements LA-LQR (@concepts/activation-steering-video-generation.md) and cross-model LLM→T2V transfer (@concepts/cross-model-safety-steering.md); REINS is **native VDM hidden-state** SPCA, no source LLM
 - **De-censoring mirror (speculative):** linear safety direction + norm-preserving add suggests **subtracting** δ might be explored adversarially — not validated here; paper includes appendix on defenses against REINS
-- **No public repo** at ingest — research-only until code drops `[NEEDS VERIFICATION 2026-06-20]`
+- **No public repo** at ingest — research-only until code drops `[OPEN QUESTION 2026-06-20]`
 
 ## Snippets
 

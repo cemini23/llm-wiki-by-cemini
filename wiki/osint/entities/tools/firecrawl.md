@@ -66,7 +66,7 @@ for article in response.results:
   - News-feed scraping for any future Cemini sentiment / event-detection workstream.
   - Phase-0 source audits (already done manually with `git clone` + grep; Firecrawl could scrape repo READMEs + LICENSE pages programmatically).
 
-### Open questions [NEEDS VERIFICATION 2026-05-20]
+### Open questions [OPEN QUESTION 2026-05-20]
 
 1. **License + pricing**: paid SaaS; what are the tiers? Is there a usable free tier?
 2. **Self-host alternative?** Is there an open-source self-hostable version, or is it cloud-only?

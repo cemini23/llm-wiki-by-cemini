@@ -84,13 +84,13 @@ No de-censoring techniques apply (see @concepts/de-censoring-techniques.md decis
 [CONFIRMED]:
 
 - **8 GB anime-aesthetic DiT slot** — when the user wants modern DiT quality but is on 8 GB hardware and wants anime aesthetic specifically. Pony V6 / Illustrious / NoobAI cover the SDXL anime tier; Anima covers the DiT anime tier at the same VRAM cost.
-- **Persona-consistency potential**: Anima with a character LoRA trained on its DiT base could be a strong choice for anime persona work that wants modern prompting (natural language). LoRA training tooling status `[NEEDS VERIFICATION 2026-05-06]`.
+- **Persona-consistency potential**: Anima with a character LoRA trained on its DiT base could be a strong choice for anime persona work that wants modern prompting (natural language). LoRA training tooling status `[OPEN QUESTION 2026-05-06]`.
 - **Stylistic NSFW work** where the "Unbound" tier is the *feature* — explicit anime content generates without coercion.
 
 ### Workspace TODO
 
 - ~~Anima Hugging Face / Comfy Org release page~~ — **resolved [CONFIRMED 2026-05-06]**: canonical at `circlestone-labs/Anima` ([huggingface.co/circlestone-labs/Anima](https://huggingface.co/circlestone-labs/Anima)). Status: **Preview** (`anima-preview.safetensors`, 3.89 GB, sha256 `41fa7b78...`). Created 2026-02-02; updated 2026-02-15. Multiple CivitAI mirrors: [civitai.com/models/2458426/anima-official](https://civitai.com/models/2458426/anima-official) (Anima Official preview3-base) and [civitai.com/models/2359125/anima](https://civitai.com/models/2359125/anima). Community fine-tune **AnimaYume** at [civitai.com/models/2385278/animayume](https://civitai.com/models/2385278/animayume). Anima preview workflow at [civitai.com/models/2426853/anima-preview-workflow](https://civitai.com/models/2426853/anima-preview-workflow). FP16 patch (`ModelComputeDtype` node) at [civitai.com/models/2356447](https://civitai.com/models/2356447) — speeds RTX 2080 Super from 4 minutes to 38s at 832×1216. Status: **Preview, not full release** — full trained version still pending as of May 2026.
-- **`[NEEDS VERIFICATION 2026-05-06]`**: ai-toolkit / OneTrainer / Kohya support for Anima LoRA training. Sub-sweep C target.
+- **`[OPEN QUESTION 2026-05-06]`**: ai-toolkit / OneTrainer / Kohya support for Anima LoRA training. Sub-sweep C target.
 - **`[NEEDS VERIFICATION 2026-05-06]`**: Cosmos-Predict licensing chain — does NVIDIA's Cosmos license flow downstream to Anima derivatives?
 - Compare Anima vs Pony V6 head-to-head on a fixed anime-prompt set; document the DiT-vs-U-Net quality gap at the 8 GB tier.
 - Document negative-prompt patterns for Anima — the community workflow for reining in over-explicit defaults.

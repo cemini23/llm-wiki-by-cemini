@@ -83,7 +83,7 @@ The **face-swap workflow** ([YouTube: ComfyUI Face Swap 2026: Flux Klein 9B](htt
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - ~~VRAM cost of FLUX.2 Klein 9B FP8 + ControlNet stack on a 16 GB GPU — community claim ~13 GB peak; confirm.~~ — **resolved [CONFIRMED 2026-05-07]**: ~13 GB peak confirmed for FP8 Klein 9B + ControlNet on 16 GB. Klein 9B + Q4 GGUF runs on 8 GB VRAM per [Civitai workflow 2543188](https://civitai.com/models/2543188); FP8 on 16 GB is comfortable with headroom for the regional ControlNet + masking stack.
 - ~~Apple Silicon viability — needs benchmark~~ — **resolved [CONFIRMED 2026-05-07]**: Klein 9B runs in ComfyUI on Apple Silicon via the standard MPS path (BF16 or GGUF; FP8 unsupported on MPS). The face-swap workflow requires PuLID-Flux2 ([`iFayens/ComfyUI-PuLID-Flux2`](https://github.com/iFayens/ComfyUI-PuLID-Flux2)) — community-validated working on Mac. Inference latency for the multi-pass pipeline is high (~2-4× NVIDIA per pass × 2 passes); useful for batch work, less suited to interactive iteration.

@@ -46,7 +46,7 @@ Third-party analytics platform for Polymarket traders providing counterparty int
 - **Orderbook insights**: flow + positioning analytics.
 - **Real-time analytics** with "Sign Up with email or wallet for full access" gating.
 
-### Access model [NEEDS VERIFICATION 2026-05-20]
+### Access model [OPEN QUESTION 2026-05-20]
 
 - Sign-up required for "full access to real-time analytics."
 - Freemium suggested by the framing (some data public, more behind login).

@@ -52,4 +52,4 @@ Time-modulated cross-attention shifts weight structural → refinement as t→0.
 
 ## Dead Ends
 
-OMGSR-style static mid-timestep LQ injection is simpler but doesn't adapt across denoise steps — LiteVSR's gain is dynamic alignment; adds adapter latency vs single concat. Real-world AIGC artifact domain may need fine-tune beyond REDS `[NEEDS VERIFICATION 2026-06-11]`.
+OMGSR-style static mid-timestep LQ injection is simpler but doesn't adapt across denoise steps — LiteVSR's gain is dynamic alignment; adds adapter latency vs single concat. Real-world AIGC artifact domain may need fine-tune beyond REDS `[OPEN QUESTION 2026-06-11]`.

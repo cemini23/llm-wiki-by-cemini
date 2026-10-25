@@ -54,7 +54,7 @@ Applies via standard JAX/XLA path — no model / kernel / routing changes.
 
 - Complements **TurboServe** (@concepts/streaming-video-generation-serving.md) on the **serving** axis — AoiZora is datacenter TPU placement, not laptop ComfyUI
 - Informs why Wan-class video DiT needs **sequence + tensor + FSDP** hybrids at scale
-- **No public repo** at ingest `[NEEDS VERIFICATION 2026-06-23]`
+- **No public repo** at ingest `[OPEN QUESTION 2026-06-23]`
 
 ## Snippets
 

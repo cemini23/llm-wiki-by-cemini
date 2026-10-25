@@ -65,7 +65,7 @@ Prior benchmarks mostly test **reasoning about** visuals (VQA-style), not **reas
 | Claim | MentisOculi verdict |
 |-------|---------------------|
 | "UMM native gen closes understanding gap" | `[TENTATIVE]` weakened — gen + text competence coexist without integration |
-| "Holistic tokenizer enables visual CoT" | Open — HYDRA-X untested on MentisOculi `[NEEDS VERIFICATION 2026-06-13]` |
+| "Holistic tokenizer enables visual CoT" | Open — HYDRA-X untested on MentisOculi `[OPEN QUESTION 2026-06-13]` |
 | "External critic (UniReasoner DED) still needed" | Consistent with interpretation-error ceiling |
 
 **Production persona ops:** Wan 2.2 + ComfyUI + LoRA remains the practical path; MentisOculi informs **research UMM eval**, not near-term workflow replacement.

@@ -4779,4 +4779,7 @@ Rows missing since their source pages were committed. Found by
 | sources/devfun-researcher-track-hu-format-2026-06-08.md | source |
 | sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md | source |
 | sources/substack-rss-outlier-weekly-2026-07-03-the-11b-warehouse-failure-behind-the-cxwgeo-trad.md | source |
-
+| sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md | source |
+| sources/de1lymoon-three-formulas-2026-05.md | source |
+| sources/massif-capital-4q2025-letter.md | source |
+| sources/ww-issue-178-2026-05-13.md | source |

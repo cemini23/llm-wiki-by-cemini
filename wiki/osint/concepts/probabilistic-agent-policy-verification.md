@@ -66,5 +66,5 @@ K125 ingest of arXiv **2606.20510**. Formalizes **probabilistic reference monito
 
 ## Dead Ends
 
-- Full Datalog monitor on Arena action clock — complexity vs latency [NEEDS VERIFICATION 2026-06-21].
+- Full Datalog monitor on Arena action clock — complexity vs latency [OPEN QUESTION 2026-06-21].
 - Treating independent MC sims as exact marginals — paper requires explicit ℓ/u bounds per predicate.

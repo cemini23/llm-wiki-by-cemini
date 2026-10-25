@@ -114,7 +114,7 @@ Optional legacy symbol-list override via `BRAIN_SLEEVE_USE_SYMBOL_LISTS` (off by
 ### Operational cautions
 
 1. **FMP_API_KEY required** — without it, only LLM/cache/wiki paths run; notes include `FMP_API_KEY_missing`.
-2. **Data freshness** — no automatic stale-FMP circuit breaker yet [NEEDS VERIFICATION 2026-05-28].
+2. **Data freshness** — no automatic stale-FMP circuit breaker yet [OPEN QUESTION 2026-05-28].
 3. **Version discipline** — threshold or weight changes → bump `brain_playbook_v2` successor in @concepts/pnl-attribution-versioning.md.
 4. **Not PM fair value** — do not apply gap math to Kalshi/Polymarket contracts without domain-specific models.
 

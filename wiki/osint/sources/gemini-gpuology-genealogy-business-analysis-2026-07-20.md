@@ -66,7 +66,7 @@ Gemini returns **CONDITIONAL-GO [HIGH]** for a hybrid **BYO-auth agent kit + pri
 |-------|-----|
 | Wedge = Italian *jure sanguinis* document staging (not Ancestry-index competition) | [HIGH] |
 | Full-service citizenship firms ~$12k–$25k; kit/concierge can sit under that | [CONFIRMED] via BrightTax / Bersani Law cites in source |
-| Ancestry May 2026 ToS bans AI training on their content + scraping | [CONFIRMED] per Genealogy Bargains cite — **re-verify live ToS before ship** [NEEDS VERIFICATION 2026-07-20] |
+| Ancestry May 2026 ToS bans AI training on their content + scraping | [CONFIRMED] per Genealogy Bargains cite — **re-verify live ToS before ship** [OPEN QUESTION 2026-07-20] |
 | FamilySearch API requires compatibility review; no “copy out without enrich” | [CONFIRMED] FS developer docs cites |
 | Incumbent AI (Stories, Full-Text Search, Scribe, GAIA tease) does **not** own offline comune / apostille PM job | [HIGH] |
 | Brand **GPUOLOGY** is a positioning risk (GPU ≠ genealogy demographic; AI fear) — alt names: Civile Sprints, ArchivalAgent, DiasporaDesk | [HIGH] |

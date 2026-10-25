@@ -83,7 +83,7 @@ Schema.org is the shared vocabulary for structured data on the web — a way to 
 
 ### The full BarberShop JSON-LD template
 
-Drop this in the `<head>` of each per-location page (homepage if single location). Replace ALL-CAPS placeholders with real values. This template is `[NEEDS VERIFICATION 2026-05-07]` against the current schema.org `BarberShop` spec but reflects the 2024-2025 stable shape.
+Drop this in the `<head>` of each per-location page (homepage if single location). Replace ALL-CAPS placeholders with real values. This template is `[OPEN QUESTION 2026-05-07]` against the current schema.org `BarberShop` spec but reflects the 2024-2025 stable shape.
 
 ```html
 <script type="application/ld+json">
@@ -322,7 +322,7 @@ After live: re-test 24-48 hours later in **Search Console → Enhancements** for
 WordPress + **Yoast SEO** (see @entities/tools/yoast-seo.md) auto-generates `LocalBusiness` schema from the Local SEO addon (paid) or basic `Organization` schema (free). The free version does NOT generate `BarberShop` (the more specific subtype) — operator must either pay for Yoast Local SEO or hand-write the schema in a custom HTML block.
 
 Other platforms:
-- **Wix** — has built-in structured data for business listings; `BarberShop` subtype availability `[NEEDS VERIFICATION 2026-05-07]`
+- **Wix** — has built-in structured data for business listings; `BarberShop` subtype availability `[OPEN QUESTION 2026-05-07]`
 - **Squarespace** — limited built-in schema; usually requires custom code injection
 - **Webflow** — full control via the visual editor's `<head>` injection
 - **Shopify** — barbershop-as-Shopify is unusual but possible; product-schema patterns dominate
@@ -344,4 +344,4 @@ For all platforms: **the geo-seo-claude Claude Code skill** (see @entities/tools
 > "FAQ-format content received +27% to +41% citation visibility uplift in generative engines depending on the optimization strategy applied."  
 > [Source: aggarwal-2024-geo-paper.md p.7] — see @sources/aggarwal-2024-geo-paper.md
 
-`[NEEDS VERIFICATION 2026-05-07]` — the BarberShop and FAQPage spec details above need re-validation against schema.org as of the operator's actual launch date; spec details occasionally shift in minor revisions.
+`[OPEN QUESTION 2026-05-07]` — the BarberShop and FAQPage spec details above need re-validation against schema.org as of the operator's actual launch date; spec details occasionally shift in minor revisions.

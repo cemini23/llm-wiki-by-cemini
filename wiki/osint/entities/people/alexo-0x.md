@@ -34,7 +34,7 @@ The Alexo_0x framework slots between:
 - @entities/people/phosphenq.md (Phosphenq — pre-deployment strategy-validation discipline; complements rather than overlaps)
 - @entities/people/matias-scalbi.md (MatiasScalbi — the LP-farming author; Alexo's framework specifies what *not* to apply to directional Polymarket trading, which is a structural reason LP-farming is operationally simpler)
 
-`[NEEDS VERIFICATION 2026-05-21]` Real identity / affiliation. Anonymous-handle quants writing on prediction markets are common; the post itself does not disclose more than the handle.
+`[OPEN QUESTION 2026-05-21]` Real identity / affiliation. Anonymous-handle quants writing on prediction markets are common; the post itself does not disclose more than the handle.
 
 ## Dead Ends
 

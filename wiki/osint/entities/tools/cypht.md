@@ -20,6 +20,6 @@ updated: 2026-05-13
 
 Stub from Doc 1 K42 eval. Steal-from: SRI + HTTP request header fingerprinting implementation patterns for legacy PHP services. Cross-routed to Cybersec-wiki.
 
-[NEEDS VERIFICATION 2026-05-13]
+[NEEDS VERIFICATION 2026-05-13] — license not verified; the eval excerpt does not state one, and this stub carries an adoption verdict
 
 [Source: Evaluating URLs for Cemini Project.docx (retrieved 2026-05-13)]

@@ -49,7 +49,7 @@ A tradeable **government single-buyer asset re-rating** needs all four:
 | **A — direct analog** | Modular / gov housing | **Target Hospitality (TH)** | ICE / HHS / DHS | Family-residential + workforce housing contracts; land + modular assets | Closest operational cousin to CXW/GEO (Dilley/Pecos lineage) `[TENTATIVE]` |
 | **A** | Private detention (2nd leg) | **GEO Group (GEO)** | ICE / USMS / BOP | Turnkey facility sale ~$300k/bed; electronic monitoring (BI Inc / ISAP) | Already the pending second leg — @entities/companies/geo-group.md |
 | **B — strong cross-sector** | Rare earths / critical minerals | **MP Materials (MP)**, **USA Rare Earth (USAR)**, **Perpetua (PPTA)**, **Lithium Americas (LAC)** | DoD / DOE | Price floor + offtake + **equity stake**; DPA Title III; DOE loan | Govt-as-backstop revalues single-asset miners `[NEEDS VERIFICATION 2026-07-07]` |
-| **B** | Nuclear fuel / uranium | **Centrus (LEU)**, **Cameco (CCJ)** | DOE | HALEU/LEU enrichment offtake; strategic reserve buys | Single-buyer enrichment contracts `[NEEDS VERIFICATION 2026-07-07]` |
+| **B** | Nuclear fuel / uranium | **Centrus (LEU)**, **Cameco (CCJ)** | DOE | HALEU/LEU enrichment offtake; strategic reserve buys | Single-buyer enrichment contracts `[OPEN QUESTION 2026-07-07]` |
 | **B** | Defense / border-surveillance data | **Palantir (PLTR)**, **Leidos (LDOS)**, **V2X (VVX)** | DHS/CBP/DoD | ImmigrationOS / surveillance / logistics awards | Software multiple, not hard-asset — @entities/tickers/pltr.md |
 | **C — watch / counter-case** | Government-tenant REITs | **Easterly Gov Properties (DEA)**, **Postal Realty (PSTL)** | GSA / USPS | Gov buys leased buildings → asset re-rate | **Counter-risk:** DOGE lease terminations cut the other way `[TENTATIVE]` |
 
@@ -77,7 +77,7 @@ The lesson from the CXW miss (below): **recorder deed monitors are confirmers, n
 - EDGAR: `python3 scripts/gov_asset_edgar_monitor.py --thesis gov-asset-rerate --notify` (config `edgar-fulltext.yaml`)
 - Procurement: `python3 scripts/gov_asset_procurement_monitor.py --thesis gov-asset-rerate --notify` (config `usaspending.yaml`)
 
-**Live procurement finding (2026-07-07):** the first sweep already returned **First American Title Insurance Company** contracts awarded by **U.S. Immigration and Customs Enforcement** — a title/escrow vendor + ICE combination that is a leading (weeks–months) indicator of facility-acquisition diligence, consistent with the J&A precedent. Worth a standing watch; escalate on **new** ICE-side title/escrow/appraisal awards tied to named GEO/CXW/TH sites. `[NEEDS VERIFICATION 2026-07-07]` tie specific awards to specific facilities.
+**Live procurement finding (2026-07-07):** the first sweep already returned **First American Title Insurance Company** contracts awarded by **U.S. Immigration and Customs Enforcement** — a title/escrow vendor + ICE combination that is a leading (weeks–months) indicator of facility-acquisition diligence, consistent with the J&A precedent. Worth a standing watch; escalate on **new** ICE-side title/escrow/appraisal awards tied to named GEO/CXW/TH sites. `[OPEN QUESTION 2026-07-07]` tie specific awards to specific facilities.
 
 ### Why the CXW recorder monitor didn't fire `[CONFIRMED 2026-07-07]`
 
@@ -91,9 +91,9 @@ Three independent failure modes — a case study in why deed monitors are weak a
 
 ### Open questions to resolve via Exa
 
-- Does **Target Hospitality** own (vs lease) the land under its ICE/HHS sites? (determines whether a turnkey-sale re-rate is even possible) `[NEEDS VERIFICATION 2026-07-07]`
+- Does **Target Hospitality** own (vs lease) the land under its ICE/HHS sites? (determines whether a turnkey-sale re-rate is even possible) `[OPEN QUESTION 2026-07-07]`
 - Real, dated instances of **DoD/DOE equity stakes or price floors** revaluing MP/USAR/PPTA/LEU in 2025–2026, and the announcement-day reaction (sell-the-news or sustained?) `[NEEDS VERIFICATION 2026-07-07]`
-- Whether **DEA/PSTL** gov-tenant REITs have any precedent of the government *buying* leased buildings (vs terminating leases). `[NEEDS VERIFICATION 2026-07-07]`
+- Whether **DEA/PSTL** gov-tenant REITs have any precedent of the government *buying* leased buildings (vs terminating leases). `[OPEN QUESTION 2026-07-07]`
 
 ## Dead Ends
 

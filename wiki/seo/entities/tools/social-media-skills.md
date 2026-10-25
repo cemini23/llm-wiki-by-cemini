@@ -37,7 +37,7 @@ Pairs with @entities/tools/marketingskills.md for copy frameworks (PAS, AIDA) an
 
 **Adoption posture:** Adopt-eligible pending Phase-0 audit.
 
-[NEEDS VERIFICATION 2026-05-26] platform coverage (IG/TikTok/X/Reddit?), skill count, install path.
+[OPEN QUESTION 2026-05-26] platform coverage (IG/TikTok/X/Reddit?), skill count, install path.
 
 ## Snippets
 

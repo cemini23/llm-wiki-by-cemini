@@ -64,4 +64,4 @@ Not a generative-media model — no ComfyUI application. Training-time defense, 
 
 ## Dead Ends
 
-Paper cites GitHub for reproduction pipeline — public repo URL not verified in PDF extract `[NEEDS VERIFICATION 2026-06-15]`. Trained on hosted-API-generated data (Claude Sonnet 4) — local uncensored persona LLMs need separate hierarchy datasets. Not routed to cybersecurity wiki (training methodology; AdvGRPO remains the red-team routed stub).
+Paper cites GitHub for reproduction pipeline — public repo URL not verified in PDF extract `[OPEN QUESTION 2026-06-15]`. Trained on hosted-API-generated data (Claude Sonnet 4) — local uncensored persona LLMs need separate hierarchy datasets. Not routed to cybersecurity wiki (training methodology; AdvGRPO remains the red-team routed stub).

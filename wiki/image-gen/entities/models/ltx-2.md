@@ -102,7 +102,7 @@ This is a hybrid model — more permissive than the FLUX.1 Dev non-commercial cl
 
 ### Censorship tier — TBD
 
-Survey didn't classify LTX-2 explicitly within the censorship taxonomy. The model's optimization for cinematic single-pass output and audio synthesis suggests Western-style alignment posture but not the strict architectural scrubbing seen on Wan 2.2 / HunyuanVideo. [NEEDS VERIFICATION 2026-05-07]
+Survey didn't classify LTX-2 explicitly within the censorship taxonomy. The model's optimization for cinematic single-pass output and audio synthesis suggests Western-style alignment posture but not the strict architectural scrubbing seen on Wan 2.2 / HunyuanVideo. [OPEN QUESTION 2026-05-07]
 
 ### Audio failure modes
 
@@ -119,7 +119,7 @@ LTX-2's audio stream **occasionally struggles with extended, complex conversatio
 
 ### Training tool support
 
-LTX-2.3 is **not** in Musubi Tuner's architecture coverage list (per training-tool sub-sweep E, 2026-05-07). LTX fine-tuning path remains an open question — the survey doesn't flag a canonical community trainer. [NEEDS VERIFICATION 2026-05-07]
+LTX-2.3 is **not** in Musubi Tuner's architecture coverage list (per training-tool sub-sweep E, 2026-05-07). LTX fine-tuning path remains an open question — the survey doesn't flag a canonical community trainer. [OPEN QUESTION 2026-05-07]
 
 ## Snippets
 

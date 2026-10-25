@@ -80,7 +80,7 @@ Directly cites Aggarwal et al. GEO-BENCH: visibility improvements from content i
 - Manual citation tests (step 7 in @concepts/generative-engine-optimization.md) should run **multiple queries across multiple days** before declaring win/loss vs a competitor directory or local blog.
 - Treat vendor **AI visibility scores** (@entities/tools/local-falcon.md SAIV, agency dashboards) as directional unless they publish sample size + uncertainty bands.
 - GEO content experiments (fluency, statistics, quotations) need **larger effect sizes or longer retest windows** than classical A/B landing-page tests — noise floor may be 5–7 pp on share metrics for some engines.
-- Local queries ("best barber in [city]") untested in this study — generalize cautiously `[NEEDS VERIFICATION 2026-06-10]`.
+- Local queries ("best barber in [city]") untested in this study — generalize cautiously `[OPEN QUESTION 2026-06-10]`.
 
 ## Snippets
 

@@ -61,7 +61,7 @@ The practical effect — claimed in the paper, partially corroborated by communi
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - Production-tier viability on a 12-16 GB consumer GPU; community VRAM reports.
 - Whether ConsistentID has been integrated into popular ComfyUI workflow templates as of 2026-05 or remains a custom-research node.

@@ -29,7 +29,7 @@ read_status: skimmed
 - Location: `raw-sources/2025-yoshimura-m3d-skin-tactile-fdm.pdf`
 - Retrieved: 2026-06-01
 - Read-status: skimmed (abstract + Fig. 1)
-- Open source: not verified in skim [NEEDS VERIFICATION 2026-06-01]
+- Open source: not verified in skim [OPEN QUESTION 2026-06-01]
 
 ## Narrative
 

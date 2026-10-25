@@ -60,7 +60,7 @@ Pre-UniReasoner ranking on GenEval (Table 1): GPT-4o 0.84 > BLIP-3o 0.83 > Janus
 
 ### Open questions
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - Open-weights availability on Hugging Face, license terms (DeepSeek typically permissive)
 - Parameter count and quantization paths (GGUF / SVDQ)

@@ -181,7 +181,7 @@ Generative engines are **non-deterministic** at generation time. Sielinski's emp
 - Rank order instability extends across the **full frequently-cited set**, not only top-2 domains.
 - Citation variability persists when cited page content is **stable** (checksum validation) — noise is engine behavior, not your page edits.
 
-Local-service queries untested `[NEEDS VERIFICATION 2026-06-10]` — apply the same discipline until validated.
+Local-service queries untested `[OPEN QUESTION 2026-06-10]` — apply the same discipline until validated.
 
 ### Reading a ranking study — two cautions from the K278/K279 waves
 
@@ -191,7 +191,7 @@ Both notes come from the daily digest and are **method warnings, not ranking fin
 
 **2. A bigger context window is not more usable context (K279).** A roundup reported a **62.8% long-context accuracy drop** when one vendor's context window scaled from **4K to 128K tokens**. **Operator rule:** do not assume that pasting a whole site, a year of reviews, or a long landing page into one prompt gives a reliable read. Chunk the input and verify the extracted facts against the source, per @concepts/citation-verification-aeo.md. This governs the wiki's own working method too — long sources are read in sections, not swallowed whole.
 
-Both are `[TENTATIVE]` on their specific numbers — the wiki holds the second-hand digest summary, not the underlying study. `[NEEDS VERIFICATION 2026-10-07]`. The cautions hold regardless of the exact figures.
+Both are `[TENTATIVE]` on their specific numbers — the wiki holds the second-hand digest summary, not the underlying study. `[OPEN QUESTION 2026-10-07]`. The cautions hold regardless of the exact figures.
 
 ### Minimum sample sizes (empirical, consumer topics) `[TENTATIVE]`
 
@@ -265,7 +265,7 @@ Two outcome measures worth adding to the operator loop, both from the same study
 
 Both are computable from an agent trace without a grading panel, which makes them cheaper to track than recommendation rate. The study also supplies a **dose–response** check: mean web searches per journey rise monotonically from **1.8 to 4.5** as the accessibility score falls (Spearman ρ = −0.52, n = 1,056), so *searches-per-journey* is a usable proxy for a readability defect without needing the vendor's score at all.
 
-**Guardrail:** the study's accessibility ranker is the authors' own instrument, and the cohort is SaaS/commerce English-first with business-fact intents. No local-service or near-me queries `[NEEDS VERIFICATION 2026-09-30]`.
+**Guardrail:** the study's accessibility ranker is the authors' own instrument, and the cohort is SaaS/commerce English-first with business-fact intents. No local-service or near-me queries `[OPEN QUESTION 2026-09-30]`.
 
 ### Trajectory beats single-turn — the misranking diagnostic (K284) `[CONFIRMED at theory level; TENTATIVE as measurement]`
 
@@ -279,7 +279,7 @@ Both are computable from an agent trace without a grading panel, which makes the
 
 **Operator rule:** keep the existing repeated-sampling discipline for *non-determinism*, and add a separate **trajectory probe** for capture. A trajectory probe runs one 3–5 turn buyer conversation end to end without resetting the thread, and records carryover, decay after the topic moves on, and whether a corrective challenge dislodges the citation. Procedure: `briefs/2026-10-01_k284-conversational-capture-probe-hands-on.md`; playbook: @concepts/conversational-capture-geo.md.
 
-**Guardrail:** every number is derived from the model, not a deployed engine — the authors say so repeatedly. The direction is `[CONFIRMED]` at the theory level; the magnitudes are `[NEEDS VERIFICATION 2026-10-01]`. No local or near-me queries in the paper.
+**Guardrail:** every number is derived from the model, not a deployed engine — the authors say so repeatedly. The direction is `[CONFIRMED]` at the theory level; the magnitudes are `[OPEN QUESTION 2026-10-01]`. No local or near-me queries in the paper.
 
 ### Consumption as an outcome, not just citation share (K284) `[CONFIRMED — randomized field experiment]`
 
@@ -291,7 +291,7 @@ Both are computable from an agent trace without a grading panel, which makes the
 
 **Operator rule:** citation share is an intermediate metric. The outcomes that move are **clicks to cited sources** and **information delivered inside the answer**. Track both. A page that is cited but whose facts never reach the answer text is a citation-share win with no consumption behind it — the guardrail already stated above ("citation-share wins vs downstream utility"), now with a field-experiment counterpart.
 
-**Caveats:** working paper, one newsroom archive, a specific answer-above-results UI, and no local or near-me queries. `[NEEDS VERIFICATION 2026-10-01]`
+**Caveats:** working paper, one newsroom archive, a specific answer-above-results UI, and no local or near-me queries. `[OPEN QUESTION 2026-10-01]`
 
 ### Operator measurement loop
 
@@ -319,7 +319,7 @@ Both are computable from an agent trace without a grading panel, which makes the
 | Tier 2 (mid-market) | ~**44%** | Largest headroom; needs intervention — does not climb alone |
 | Tier 3 (niche/small) | ~**11%** | Brand-mass first (press, Wikipedia, YouTube) before micro-GEO |
 
-Local single-location shops likely analogize to Tier 3 `[NEEDS VERIFICATION 2026-06-19]`.
+Local single-location shops likely analogize to Tier 3 `[OPEN QUESTION 2026-06-19]`.
 
 **Mention vs sentiment noise:** mention flipping **6.8%**; sentiment flipping **45.5%** (**6.7×** noisier). Track **mention rate and citation presence** before sentiment-weighted scores; require ≥10 prompts per engine before trusting sentiment aggregates.
 
@@ -360,7 +360,7 @@ See @concepts/llm-brand-bias-geo-competition.md.
 
 Hands-on Ranqo-style tier baseline: `briefs/2026-06-19_k123-ranqo-geo-visibility-baseline-hands-on.md`.
 
-**Zero-click KPI:** @sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md — pair GSC AI impressions with citation prevalence; declining clicks ≠ declining AI visibility. Hands-on: `briefs/2026-06-30_k134-ai-citation-vs-click-audit-hands-on.md` `[NEEDS VERIFICATION 2026-06-30]`. SparkToro (2026-08-14) same direction: keep the owned site as the citable home (@sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md).
+**Zero-click KPI:** @sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md — pair GSC AI impressions with citation prevalence; declining clicks ≠ declining AI visibility. Hands-on: `briefs/2026-06-30_k134-ai-citation-vs-click-audit-hands-on.md` `[OPEN QUESTION 2026-06-30]`. SparkToro (2026-08-14) same direction: keep the owned site as the citable home (@sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md).
 
 ### Answer-surface forms [STEAL from HubSpot 2026]
 

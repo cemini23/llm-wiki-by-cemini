@@ -27,7 +27,7 @@ Canonical **crypto price + flow** feed referenced in PM latency-arbitrage operat
 
 ## Narrative
 
-Public APIs: spot WebSocket (`stream.binance.com`), USD-M futures REST/WS for quant backtests. Cemini PM stack may consume spot ticks for BTC/ETH up/down fusion — wire per prod brief `2026-06-04_k98-pm-latency-fusion-queue-telemetry-cemini-prod.md` [NEEDS VERIFICATION 2026-06-04] for which endpoints are already in `/opt/cemini`.
+Public APIs: spot WebSocket (`stream.binance.com`), USD-M futures REST/WS for quant backtests. Cemini PM stack may consume spot ticks for BTC/ETH up/down fusion — wire per prod brief `2026-06-04_k98-pm-latency-fusion-queue-telemetry-cemini-prod.md` [OPEN QUESTION 2026-06-04] for which endpoints are already in `/opt/cemini`.
 
 ## Snippets
 

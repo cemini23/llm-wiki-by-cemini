@@ -37,7 +37,7 @@ Standard FDM prints all objects on a plate slice-by-slice in lockstep — every 
 
 **Implementation** [@sources/2025-surynek-sequential-printing-cegar.md]: Surynek + Prusa Research (2025) formalize the problem as **SEQ-PACK+S** — find positions `(Xᵢ, Yᵢ)` and times `Tᵢ` for objects `O₁..Oₖ` such that all fit on plate `P_P` and the extruder body never collides with previously-completed objects. NP-hard by reduction from rectangle packing. Encoded as a linear-arithmetic formula, solved by **Z3 (SMT) with CEGAR-inspired refinement** that loads the expensive collision constraints lazily. Z3 dominates Gecode (CSP) in head-to-head comparison; CEGAR-SEQ ≫ eager constraint loading. Shipping in **PrusaSlicer 2.9.1**; code at <https://github.com/surynek/cegar-seq>.
 
-**Bambu picture.** Bambu Studio (and OrcaSlicer, the Bambu fork of PrusaSlicer) inherits PrusaSlicer's sequential-printing UX. [TENTATIVE] Whether the OrcaSlicer fork pulls the CEGAR-SEQ code or uses an older sequential-printing implementation needs verification [NEEDS VERIFICATION 2026-05-06].
+**Bambu picture.** Bambu Studio (and OrcaSlicer, the Bambu fork of PrusaSlicer) inherits PrusaSlicer's sequential-printing UX. [TENTATIVE] Whether the OrcaSlicer fork pulls the CEGAR-SEQ code or uses an older sequential-printing implementation needs verification [OPEN QUESTION 2026-05-06].
 
 ### Parallel printing (multiple printers, one model)
 

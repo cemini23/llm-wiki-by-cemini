@@ -94,7 +94,7 @@ A local barbershop website is not a portfolio site, not a blog-first site, and n
 
 Mobile is the dominant traffic source. The site must:
 
-- Load in under 2-3 seconds on mid-tier 4G `[NEEDS VERIFICATION 2026-05-07]` for current Core Web Vitals targets
+- Load in under 2-3 seconds on mid-tier 4G `[OPEN QUESTION 2026-05-07]` for current Core Web Vitals targets
 - Pass current **Core Web Vitals**: LCP < 2.5s, INP < 200ms (INP replaced FID in 2024), CLS < 0.1
 - Have tap-targets ≥ 48px
 - Have a **tap-to-call** phone number on every page

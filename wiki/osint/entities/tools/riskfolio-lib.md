@@ -57,7 +57,7 @@ Cemini targets Kalshi + Polymarket which span sports, healthcare/biotech, politi
 
 The library is venue-agnostic — same math works for equities, crypto, and prediction-market binary contracts.
 
-### Open questions [NEEDS VERIFICATION 2026-05-04]
+### Open questions [OPEN QUESTION 2026-05-04]
 
 - `LICENSE-XL.txt` contents — does it override or supplement BSD-3-Clause?
 - HRP matrix-inversion RAM spike on 7 GB EPYC host under live load

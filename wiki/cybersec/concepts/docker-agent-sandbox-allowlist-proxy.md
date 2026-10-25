@@ -77,4 +77,4 @@ Pattern name from Anthropic reference: **`vp-internal`** network + **strict allo
 ## Dead Ends
 
 - **Allowlist proxy without skill vetting** — agent can still exfil via allowed domains if policy is too broad.
-- **gVisor on Apple Silicon** — setup path is Docker Desktop–dependent; verify before engagement lab build [NEEDS VERIFICATION 2026-06-06].
+- **gVisor on Apple Silicon** — setup path is Docker Desktop–dependent; verify before engagement lab build [OPEN QUESTION 2026-06-06].

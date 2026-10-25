@@ -38,7 +38,7 @@ Comprehensive **paid advertising audit** skill for Claude Code: parallel agents,
 
 **Overlap with NotFair:** both connect to Google/Meta ad accounts and diagnose spend waste. Until claude-ads security posture is clean, default recommendation for new installs is @entities/tools/notfair-toprank.md (K71 Adopt) for combined GSC + paid + SEO diagnostics.
 
-[NEEDS VERIFICATION 2026-05-27] whether any production operator already installed claude-ads before deferral; if yes, restrict to read-only audit flags until patched.
+[OPEN QUESTION 2026-05-27] whether any production operator already installed claude-ads before deferral; if yes, restrict to read-only audit flags until patched.
 
 ## Snippets
 

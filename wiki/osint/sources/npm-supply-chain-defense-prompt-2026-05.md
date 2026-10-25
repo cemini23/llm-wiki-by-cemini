@@ -85,4 +85,4 @@ This belongs in `@cybersecurity-wiki/concepts/` as a defensive-ops pattern. Cros
 
 ## NEEDS VERIFICATION
 
-- `[NEEDS VERIFICATION 2026-05-12]` TanStack compromise details — author references "LIKE TANSTACK TODAY" without specifying which package or attack vector. Useful to verify against TanStack security advisory + npm registry takedown logs for full attack reconstruction.
+- `[OPEN QUESTION 2026-05-12]` TanStack compromise details — author references "LIKE TANSTACK TODAY" without specifying which package or attack vector. Useful to verify against TanStack security advisory + npm registry takedown logs for full attack reconstruction.

@@ -66,7 +66,7 @@ Firm-channel YouTube is the loudest US retail surface for Law 74/2025 / Minor Is
 **Highest Atto leverage from this pass:**
 
 1. **Appointment-failure evidence ontology** (screenshots over weeks/months · Prenot@Mi account email · consulate email/fax/formal notice · waiting-list proof) — vault doc types, not eligibility verdicts.
-2. **Cassazione 13818/2026** framing: when admin makes filing *practically impossible*, claimants need not complete a formal consular filing before court — still **[NEEDS VERIFICATION 2026-07-22]** against the judgment text.
+2. **Cassazione 13818/2026** framing: when admin makes filing *practically impossible*, claimants need not complete a formal consular filing before court — still **[OPEN QUESTION 2026-07-22]** against the judgment text.
 3. **Centralized Rome mail office** for abroad applicants “in the coming years” — product should soft-flag venue shift; consulate remains current path.
 4. **Document matrix unchanged** by Tajani for those who meet new rules (ICA claim) — checklist stages stay; eligibility triage changes.
 5. **Minor Issue** still unsettled at *Sezioni Unite* (hearing Apr 14 2026; decision pending in episode) — keep soft-flag; pre-1975 minority = under 21.

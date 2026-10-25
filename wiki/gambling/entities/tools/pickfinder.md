@@ -39,7 +39,7 @@ updated: 2026-09-30
 | **Pro** | **$299.99**/year. Adds the **Arbitrage finder**, **Middles board**, and **EV+ board** |
 | **Refund** | Refund request accepted **within 3 days** of first purchase. **No free trial** for Premium; Premium members get a one-time 3-day Pro trial |
 | **Coverage** | 14 sports + esports · 25+ books and DFS apps — includes **PrizePicks, Underdog, Sleeper**, DraftKings, FanDuel |
-| **Odds latency** | Vendor claims "within seconds"; unverified against book feeds [NEEDS VERIFICATION 2026-09-30] |
+| **Odds latency** | Vendor claims "within seconds"; unverified against book feeds [OPEN QUESTION 2026-09-30] |
 | **+EV proof** | The **EV+ board** is priced against a **de-vigged fair line**. That is a method, not a track record. No independent CLV audit found [TENTATIVE] |
 | **Boards overlap** | EV+/arb/middles boards overlap `@entities/tools/odds-jam.md`. PickFinder competes on **price**, not depth |
 

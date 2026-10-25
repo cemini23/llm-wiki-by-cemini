@@ -84,7 +84,7 @@ Uses `uv` packaging instead of pip (faster install, deterministic dependency res
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - ~~Wan 2.7 R2V training support timeline — community claim "in development"; status as of 2026-05.~~ — **resolved [CONFIRMED 2026-05-07]**: not yet integrated — the [Musubi Tuner README](https://github.com/kohya-ss/musubi-tuner) lists architecture coverage as HunyuanVideo, HunyuanVideo 1.5, Wan2.1/2.2, FramePack, FLUX.1 Kontext, FLUX.2 dev/klein, Qwen-Image, Z-Image. Wan 2.7 R2V is NOT mentioned as of 2026-05 (no public PR / branch / issue tracking it). For Wan 2.7 R2V training when it lands, watch the kohya-ss/musubi-tuner Issues / Pull Requests pages.
 - ~~Apple Silicon (MPS) native viability~~ — **resolved [CONFIRMED 2026-05-07]**: Musubi Tuner runs on Mac with caveats — Issue [#790](https://github.com/kohya-ss/musubi-tuner/issues/790) confirms bf16-mixed-precision issues on MPS (substitute fp32 or fp16); Issue [#746](https://github.com/kohya-ss/musubi-tuner/issues/746) is an open Mac mini M4 question (no resolution yet). Wan 2.2 dual-expert training on Apple Silicon is technically functional but VRAM/RAM-headroom on 24-32 GB unified memory is a hard wall — cloud rental is the recommended path. The **[`shootthesound/comfyUI-Realtime-Lora`](https://github.com/shootthesound/comfyUI-Realtime-Lora)** ComfyUI bridge provides an interactive Mac-friendly training loop for short-clip Wan 2.2 LoRAs.

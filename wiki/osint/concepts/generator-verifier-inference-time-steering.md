@@ -83,4 +83,4 @@ Distinct from **Raeth nine-axis** (post-hoc eval) — verifier runs **before** a
 ## Dead Ends
 
 - Pixel visual verifier does not transfer to NLHE — need symbolic/state verifier design.
-- Best-of-N at Arena latency may blow action timeout budget [NEEDS VERIFICATION 2026-06-26] — profile on `--dry-run` first.
+- Best-of-N at Arena latency may blow action timeout budget [OPEN QUESTION 2026-06-26] — profile on `--dry-run` first.

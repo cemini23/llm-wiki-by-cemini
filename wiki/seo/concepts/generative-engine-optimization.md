@@ -242,7 +242,7 @@ updated: 2026-10-01
 - **Platform-specific n**: Gemini ~30–50 queries for ~0.05 CI width on share; Perplexity ~90–100; SearchGPT often **>200** and non-convergent for some topics — do not copy Gemini sample sizes to ChatGPT browsing.
 - Commercial AI visibility scores (@entities/tools/local-falcon.md SAIV, agency dashboards) are directional unless vendor publishes uncertainty methodology.
 
-Local "near me" queries not in study `[NEEDS VERIFICATION 2026-06-10]`.
+Local "near me" queries not in study `[OPEN QUESTION 2026-06-10]`.
 
 ### Adversarial dynamics — ranking manipulation game theory [TENTATIVE for operators]
 
@@ -264,7 +264,7 @@ Local "near me" queries not in study `[NEEDS VERIFICATION 2026-06-10]`.
 - Pair every service-page image with **descriptive alt text** *and* a nearby prose sentence that states what the photo shows (interior, equipment, finished cut, team member at work). Do not rely on images alone — engines that use multimodal RAG still weight injectable text heavily.
 - Apply on the **owned website**; GBP photos have no adjacent body copy to inject into — keep website visuals aligned with GBP gallery.
 - **Do not drop Aggarwal top-3 text methods** — in unimodal (text-only) simulation, fluency still won; caption injection is an **add-on** for image-rich pages, not a replacement for fluency + statistics + quotations.
-- Absolute lifts are small (~1%); treat as experimental until citation tests on real engines confirm `[NEEDS VERIFICATION 2026-06-08]`.
+- Absolute lifts are small (~1%); treat as experimental until citation tests on real engines confirm `[OPEN QUESTION 2026-06-08]`.
 
 See also @concepts/on-page-seo-local.md (image SEO) and @concepts/content-strategy-local.md (before/after gallery pattern).
 
@@ -277,7 +277,7 @@ See also @concepts/on-page-seo-local.md (image SEO) and @concepts/content-strate
 - **Management response ~0 pp** — deprioritize as GEO tactic; keep for human/GBP reasons (@concepts/reviews-reputation-management.md).
 - **List position** causal without content (−2.1 to −3.7 pp per slot) — retrieval rank still matters.
 
-Operator playbook: @concepts/llm-reputation-signals-geo.md; hands-on `briefs/2026-06-16_k120-geo-reputation-signal-audit-hands-on.md`. Barbershop queries untested `[NEEDS VERIFICATION 2026-06-16]`.
+Operator playbook: @concepts/llm-reputation-signals-geo.md; hands-on `briefs/2026-06-16_k120-geo-reputation-signal-audit-hands-on.md`. Barbershop queries untested `[OPEN QUESTION 2026-06-16]`.
 
 ### Brand bias and GEO arms race — Conditional Monopoly [CONFIRMED in CPG audit; TENTATIVE local]
 
@@ -285,7 +285,7 @@ Operator playbook: @concepts/llm-reputation-signals-geo.md; hands-on `briefs/202
 
 **Operator policy:** break ties with **real** rating, price, volume, verifiable credentials — not fabricated clinical claims. Differentiate copy; do not copy-paste authority boilerplate competitors also use.
 
-Playbook: @concepts/llm-brand-bias-geo-competition.md; hands-on `briefs/2026-06-18_k122-incumbent-brand-bias-geo-audit-hands-on.md`. Local queries untested `[NEEDS VERIFICATION 2026-06-18]`.
+Playbook: @concepts/llm-brand-bias-geo-competition.md; hands-on `briefs/2026-06-18_k122-incumbent-brand-bias-geo-audit-hands-on.md`. Local queries untested `[OPEN QUESTION 2026-06-18]`.
 
 ### Production visibility baseline — Ranqo at scale [CONFIRMED in vendor panel; TENTATIVE local]
 
@@ -299,13 +299,13 @@ Playbook: @concepts/llm-brand-bias-geo-competition.md; hands-on `briefs/2026-06-
 - **Entity-first, not schema-first** — state facts early; P4 tests schema as hygiene not lever.
 - **14–30 day re-audit** loop; causal lifts await v1.1 RCT (Protocol P3).
 
-Playbook: @concepts/geo-visibility-measurement.md; hands-on `briefs/2026-06-19_k123-ranqo-geo-visibility-baseline-hands-on.md`. Local barbershop queries untested `[NEEDS VERIFICATION 2026-06-19]`.
+Playbook: @concepts/geo-visibility-measurement.md; hands-on `briefs/2026-06-19_k123-ranqo-geo-visibility-baseline-hands-on.md`. Local barbershop queries untested `[OPEN QUESTION 2026-06-19]`.
 
 **Pair with PEBM:** @sources/arxiv-varga-2026-per-entity-bias-mapping-ai-visibility-2606.21595-2026-06-23.md — raw mention rate from Ranqo-style tracking is insufficient; add **verified mention rate** and citation fidelity (@concepts/per-entity-bias-mapping-geo.md). High-salience tiers may show **more fabricated citations**, not fewer.
 
 **Multilingual blind spot:** @sources/arxiv-zatuchin-2026-language-blind-spot-multilingual-geo-2606.23165-2026-06-24.md — English-only GEO audits understate **local champion** recommendation share; run home-language query matrix (@concepts/multilingual-geo-audit.md).
 
-**Citation sourcing layer:** @sources/arxiv-zatuchin-2026-llm-brand-reputation-sourcing-2606.25787-2026-06-26.md — before optimizing answer text, audit **which URLs** engines cite: **85.7%** third-party vs **14.3%** owned across 12 languages; Wikipedia #1 in 11/12; owned site is minority even for best self-cited brands. Playbook: @concepts/ai-citation-sourcing-geo.md; hands-on `briefs/2026-06-26_k130-earned-media-citation-audit-hands-on.md`. Local barbershop queries untested `[NEEDS VERIFICATION 2026-06-26]`.
+**Citation sourcing layer:** @sources/arxiv-zatuchin-2026-llm-brand-reputation-sourcing-2606.25787-2026-06-26.md — before optimizing answer text, audit **which URLs** engines cite: **85.7%** third-party vs **14.3%** owned across 12 languages; Wikipedia #1 in 11/12; owned site is minority even for best self-cited brands. Playbook: @concepts/ai-citation-sourcing-geo.md; hands-on `briefs/2026-06-26_k130-earned-media-citation-audit-hands-on.md`. Local barbershop queries untested `[OPEN QUESTION 2026-06-26]`.
 
 ### Evidence ecosystem GEO - agent trajectories [TENTATIVE - controlled benchmark]
 
@@ -329,7 +329,7 @@ Safe local analog: coordinate **real** evidence - GBP, owned service/location pa
 
 **Corrective follow-ups reverse it.** The sign of the feedback term is an empirical assumption, not a tautology. Confirmatory reinforcement predicts L_feedback ≥ 0; **corrective** follow-ups ("is this independently confirmed?") make the human channel negative. A shop with a checkable third-party footprint survives the challenge; one captured on a thin first answer does not. Playbook: @concepts/conversational-capture-geo.md; measurement change: @concepts/geo-visibility-measurement.md. Hands-on: `briefs/2026-10-01_k284-conversational-capture-probe-hands-on.md`.
 
-**Guardrail:** all figures are model-derived. Direction `[CONFIRMED]` at theory level; magnitudes `[NEEDS VERIFICATION 2026-10-01]`. No local or near-me queries.
+**Guardrail:** all figures are model-derived. Direction `[CONFIRMED]` at theory level; magnitudes `[OPEN QUESTION 2026-10-01]`. No local or near-me queries.
 
 ### Zero-click, causally measured [CONFIRMED — randomized field experiment]
 
@@ -342,7 +342,7 @@ Safe local analog: coordinate **real** evidence - GBP, owned service/location pa
 
 **Operator reading:** the answer carries the facts. A business whose hours, prices, and services exist only behind a click reaches fewer people than one whose facts are stated plainly enough to be quoted in the answer — which is the same conclusion K283 reached from the readability side, now with a causal design behind it.
 
-**Caveats:** working paper, one newsroom archive, a specific answer-above-results UI, and **no local or near-me queries** `[NEEDS VERIFICATION 2026-10-01]`.
+**Caveats:** working paper, one newsroom archive, a specific answer-above-results UI, and **no local or near-me queries** `[OPEN QUESTION 2026-10-01]`.
 
 ### AX is the new AEO — the drill-down step [CONFIRMED — controlled field experiment]
 
@@ -365,7 +365,7 @@ Safe local analog: coordinate **real** evidence - GBP, owned service/location pa
 
 **Harness spread is a measurement hazard.** Clear-recommendation rates vary **sevenfold** across stacks (claude-code 5% → eve 36%), and search reliance ranges from 0.1 (claude-code) to 6.9 (openclaw) searches per run. The *direction* replicates in all four; the *levels* belong to the harness. Any single-harness AI-visibility benchmark is reporting its harness as much as its subject — a concrete argument for the multi-engine sampling rules in @concepts/geo-visibility-measurement.md.
 
-**Operator translation:** @concepts/agent-ready-website-local-bm.md. Hands-on: `briefs/2026-09-30_k283-shop-ax-readability-audit-hands-on.md`. Cohort is SaaS/commerce English-first with business-fact intents — **no local-service or near-me queries** `[NEEDS VERIFICATION 2026-09-30]`.
+**Operator translation:** @concepts/agent-ready-website-local-bm.md. Hands-on: `briefs/2026-09-30_k283-shop-ax-readability-audit-hands-on.md`. Cohort is SaaS/commerce English-first with business-fact intents — **no local-service or near-me queries** `[OPEN QUESTION 2026-09-30]`.
 
 ### E-GEO universal rewrite + agent-ready sites [TENTATIVE — e-commerce / lab POC]
 
@@ -397,17 +397,17 @@ Journalism summary: @sources/techwyse-2026-google-good-seo-is-good-geo-kraham-20
 
 - Webpages function as **evidence** (services, team, case studies) for entity models.
 - Third-party maps/listing/review data explicitly cited as augmenting inputs — pairs with @concepts/ai-citation-sourcing-geo.md earned-media layer.
-- Patents are **not** confirmed live ranking implementations `[NEEDS VERIFICATION 2026-06-27]`.
+- Patents are **not** confirmed live ranking implementations `[OPEN QUESTION 2026-06-27]`.
 
 ### Canonical fact KB — externalize facts from model memory [TENTATIVE — academic analog]
 
 @sources/arxiv-crespin-2026-karla-knowledge-base-augmented-retrieval-2606.26807-2026-06-28.md (KARLA, arXiv 2606.26807): LLMs can query a structured KB during generation with **traceable provenance**; KB edits update outputs without retraining (**96.1%** on counterfactual updates vs slow parametric fine-tuning). Classic 1-hop RAG can still ignore retrieved facts on popular entities.
 
-**Operator analog:** GBP + schema + website = the shop's canonical fact KB (@concepts/canonical-business-facts-geo.md). Update listings before rewriting marketing copy. Hands-on: `briefs/2026-06-28_k132-canonical-fact-sync-audit-hands-on.md`. Local barbershop AI queries untested `[NEEDS VERIFICATION 2026-06-28]`.
+**Operator analog:** GBP + schema + website = the shop's canonical fact KB (@concepts/canonical-business-facts-geo.md). Update listings before rewriting marketing copy. Hands-on: `briefs/2026-06-28_k132-canonical-fact-sync-audit-hands-on.md`. Local barbershop AI queries untested `[OPEN QUESTION 2026-06-28]`.
 
 ### Zero-click discovery — citation beats click [TENTATIVE — practitioner journalism]
 
-@sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md (HousingWire, 2026-06-29): **~68%** of Google searches ended without a click (early 2026); **83%** with AI Overviews; **93%** in AI Mode. AEO optimizes for **being cited in answers**, not only SERP clicks. GBP treated as **tier-one data feed** to Gemini/AI Overviews; cross-platform NAP consistency drives citation confidence. Hands-on: `briefs/2026-06-30_k134-ai-citation-vs-click-audit-hands-on.md`. Stats via SparkToro/Similarweb in article `[NEEDS VERIFICATION 2026-06-30]` on barbershop queries.
+@sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md (HousingWire, 2026-06-29): **~68%** of Google searches ended without a click (early 2026); **83%** with AI Overviews; **93%** in AI Mode. AEO optimizes for **being cited in answers**, not only SERP clicks. GBP treated as **tier-one data feed** to Gemini/AI Overviews; cross-platform NAP consistency drives citation confidence. Hands-on: `briefs/2026-06-30_k134-ai-citation-vs-click-audit-hands-on.md`. Stats via SparkToro/Similarweb in article `[OPEN QUESTION 2026-06-30]` on barbershop queries.
 
 SparkToro whiteboard (2026-08-14): fewer visits do not retire the website — it remains the **permanent home** for content that search and AI tools cite (@sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md). Brief: `briefs/2026-08-14_k237-sparktoro-zero-click.md`. `[TENTATIVE]`
 
@@ -415,7 +415,7 @@ SparkToro whiteboard (2026-08-14): fewer visits do not retire the website — it
 
 ### AEO taxonomy — visibility forms + SEO complement [TENTATIVE — vendor primer]
 
-@sources/hubspot-2026-ai-search-optimization-aeo-primer-2026-06-29.md (HubSpot, 2026-06-29): consolidates **AEO = GEO = AI SEO = LLMO** vocabulary; AEO **complements** SEO (passage retrieval, multi-engine crawlers, unlinked mentions, visibility-over-click KPI). Track five answer-surface forms: **inline citations**, **unlinked named mentions**, **comparison tables**, **source lists**, **rich product results** — see @concepts/geo-visibility-measurement.md. **JS gap:** some answer-engine crawlers skip JS-rendered content Googlebot still indexes `[NEEDS VERIFICATION 2026-07-01]` on operator CMS. HubSpot AEO SaaS = CONDITIONAL-GO; default to GSC + manual probes.
+@sources/hubspot-2026-ai-search-optimization-aeo-primer-2026-06-29.md (HubSpot, 2026-06-29): consolidates **AEO = GEO = AI SEO = LLMO** vocabulary; AEO **complements** SEO (passage retrieval, multi-engine crawlers, unlinked mentions, visibility-over-click KPI). Track five answer-surface forms: **inline citations**, **unlinked named mentions**, **comparison tables**, **source lists**, **rich product results** — see @concepts/geo-visibility-measurement.md. **JS gap:** some answer-engine crawlers skip JS-rendered content Googlebot still indexes `[OPEN QUESTION 2026-07-01]` on operator CMS. HubSpot AEO SaaS = CONDITIONAL-GO; default to GSC + manual probes.
 
 ### Citation verification — claims vs sources [TENTATIVE]
 

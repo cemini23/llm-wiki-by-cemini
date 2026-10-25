@@ -53,7 +53,7 @@ Deep-read from K100 ingest (2026-06-05) — arXiv:2606.04775 LA-LQR (Georgia Tec
 
 - **Safety axis (not de-censoring):** Mechanistic **suppression** of undesired concepts at inference — opposite direction from uncensored persona ops, but relevant for understanding what closed APIs enforce and what local Wan runs lack by default
 - **Control cluster:** Shares optimal-control framing with **OptiWorld** (@sources/arxiv-optiworld-optimal-control-video-world-2606-00499.md) — OptiWorld plans trajectories before render; LA-LQR steers activations during denoising
-- **Build track:** Research-only until open code + ComfyUI hook for Wan/Hunyuan DiT blocks `[NEEDS VERIFICATION 2026-06-05]`
+- **Build track:** Research-only until open code + ComfyUI hook for Wan/Hunyuan DiT blocks `[OPEN QUESTION 2026-06-05]`
 
 ## Snippets
 

@@ -37,7 +37,7 @@ updated: 2026-05-31
 | **Location** | `cemini-librarian:/opt/cemini-bulk/research/` — `FIFA World Cup LP Safety Assessment.docx` (Spain), `FIFA World Cup LP Safety Assessment copy.docx` (Morocco), `Brazil World Cup Market Safety Assessment.docx` |
 | **Retrieved** | 2026-05-30 |
 | **Read status** | deep-read |
-| **Volatility** | **[NEEDS VERIFICATION 2026-06-06]** — squad injuries, friendlies (Jun 4–8), and order books will move materially before Group C/H open (~Jun 13). Treat all microstructure numbers as **snapshots**, not config constants. |
+| **Volatility** | **[OPEN QUESTION 2026-06-06]** — squad injuries, friendlies (Jun 4–8), and order books will move materially before Group C/H open (~Jun 13). Treat all microstructure numbers as **snapshots**, not config constants. |
 
 ## Narrative
 

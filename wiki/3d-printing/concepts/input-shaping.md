@@ -80,7 +80,7 @@ The catch with fixed-parameter shaping is that the resonant frequency drifts mid
 
 The research direction is **adaptive input shaping** — estimate the resonance parameters in real time and re-tune the shaper continuously [Source: 2025-aung-adaptive-input-shaper.pdf]. Aung 2025 proposes a Time Delay Filter for second-order systems with unknown natural frequency and damping ratio, validated **in simulation only** (no hardware test). Future-work section flags replacing the hand-derived closed-form parameter estimator with a learned regression model. Reference implementation: https://github.com/NyiNyi-14/A-TDF.git.
 
-[CONFIRMED] Input shaping is implemented in mainstream consumer-printer firmware (Klipper, Marlin, Bambu's "Active Tuning"). [TENTATIVE 2026-05-08] Adaptive shaping is research-grade only as of late 2025 — the published validation is simulation-only. [NEEDS VERIFICATION 2026-05-08] Whether Bambu firmware does any in-flight re-calibration vs once-per-print-start is not publicly documented.
+[CONFIRMED] Input shaping is implemented in mainstream consumer-printer firmware (Klipper, Marlin, Bambu's "Active Tuning"). [TENTATIVE 2026-05-08] Adaptive shaping is research-grade only as of late 2025 — the published validation is simulation-only. [OPEN QUESTION 2026-05-08] Whether Bambu firmware does any in-flight re-calibration vs once-per-print-start is not publicly documented.
 
 ### Reading-order cross-links
 

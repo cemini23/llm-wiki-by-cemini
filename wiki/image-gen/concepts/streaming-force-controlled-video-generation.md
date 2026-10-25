@@ -56,4 +56,4 @@ Shares AR distillation lineage with AAD-1 / CausVid (@concepts/one-step-autoregr
 
 ## Dead Ends
 
-Blender-only training — transfer to real human video unverified. Closed/open weight status `[NEEDS VERIFICATION 2026-06-10]`.
+Blender-only training — transfer to real human video unverified. Closed/open weight status `[OPEN QUESTION 2026-06-10]`.

@@ -77,7 +77,7 @@ Stated reasons track revealed weights imperfectly (models rationalize post-hoc).
 
 - **Prioritize star rating + review count + price clarity** on GBP and website before management-response volume plays.
 - **List position** in injected candidate sets still matters — classical SEO that earns higher retrieval rank buys selection-stage advantage even without content change.
-- Do not over-invest in **management response rate** as an LLM-visibility tactic alone; keep responding for human trust + GBP policy, not GEO `[NEEDS VERIFICATION 2026-06-16]` on barbershop queries.
+- Do not over-invest in **management response rate** as an LLM-visibility tactic alone; keep responding for human trust + GBP policy, not GEO `[OPEN QUESTION 2026-06-16]` on barbershop queries.
 - Pair with @concepts/geo-visibility-measurement.md repeated sampling — single-run assistant tests are noisy.
 
 ## Snippets

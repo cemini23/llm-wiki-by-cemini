@@ -70,7 +70,7 @@ A generative engine answers in two stages, and they are **separately optimisable
 
 Neither paper settles **how to raise retrieval visibility deliberately.** Both establish that it dominates. Chen & Koudas show content-relevance to the rewritten query is the mechanism; whether that is achievable by page edits, or is mostly a function of domain authority and brand recall, is not resolved here.
 
-[NEEDS VERIFICATION 2026-10-14] — whether the 32%/2.8% split holds for non-commercial query classes. Both collections are commercial-question markets.
+[OPEN QUESTION 2026-10-14] — whether the 32%/2.8% split holds for non-commercial query classes. Both collections are commercial-question markets.
 
 ## Snippets
 

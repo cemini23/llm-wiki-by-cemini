@@ -30,7 +30,7 @@ What prompted this page: `list-active` surfaced **[Poker] Heads-Up PvP S3** as t
 | Field | Value |
 |-------|-------|
 | **Name** | [Poker] Heads-Up PvP S3 |
-| **competitionId** | `cmqnvili2002gwb82l1qba0gm` [NEEDS VERIFICATION 2026-06-22] |
+| **competitionId** | `cmqnvili2002gwb82l1qba0gm` [OPEN QUESTION 2026-06-22] |
 | **Format** | Heads-up PvP sandbox |
 | **skillFile** | `eval-pvp.md` (server-hosted PvP sandbox) |
 | **Scoring** | TrueSkill (HU pairwise) per Researcher track email |

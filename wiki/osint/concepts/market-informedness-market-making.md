@@ -51,7 +51,7 @@ This contradicts a simplistic "informed flow always hurts LPs" rule. Cemini spre
 
 1. **Pre-event / poorly informed windows** — widen, shrink size (WC LP safety DR alignment)
 2. **Mature / high-discovery markets** — do not auto-widen solely on informed-minority signals
-3. **Backtest** — next `@meta/pm-lp-backtest-cadence.md` run should test informedness proxies vs PnL `[NEEDS VERIFICATION 2026-06-05]`
+3. **Backtest** — next `@meta/pm-lp-backtest-cadence.md` run should test informedness proxies vs PnL `[OPEN QUESTION 2026-06-05]`
 
 ### Posture
 

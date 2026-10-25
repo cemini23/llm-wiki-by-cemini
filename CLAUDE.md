@@ -148,8 +148,11 @@ gain. The whole `briefs/` tree is gitignored, so briefs are local-only by design
 **Claim confidence tags**:
 - `[CONFIRMED]` — ≥2 independent sources
 - `[TENTATIVE]` — single source or circumstantial
-- `[NEEDS VERIFICATION YYYY-MM-DD]` — plausible but untested. **Always include the date** so `wiki_gap_detect.py` can flag staleness
+- `[NEEDS VERIFICATION YYYY-MM-DD]` — **a checkable fact nobody has checked.** Plausible but untested against a source that exists. **Always include the date** so `wiki_gap_detect.py` can flag staleness. Use it only when doing the check is possible: a licence, a release, a price, a version, a capability, a published number
+- `[OPEN QUESTION YYYY-MM-DD]` — **unresolved work, not an unchecked fact.** A test not yet run, a measurement not taken, an artefact that does not exist yet, a question the source leaves open. **No expiry** — the lint does not flag these, because age cannot resolve them. The date records when it was raised. Never move one to `[CONFIRMED]` without doing the work
 - `[RETRACTED]` — previously believed, now disproven. Keep in place with a note; don't delete
+
+**Choosing between the middle two:** if a web search could settle it, it is `[NEEDS VERIFICATION]`. If only you can settle it — by running a test, taking a measurement, or building the thing — it is `[OPEN QUESTION]`. Re-tagging the second as the first produces a growing pile of warnings that can never be cleared, which is how a gate stops being read.
 
 ## Operations
 

@@ -52,4 +52,4 @@ Persona I2V/T2V long rolls (Wan Causal-Forcing line) — reduces segment-boundar
 
 ## Dead Ends
 
-None — Wan/Causal-Forcing weight drop not verified locally `[NEEDS VERIFICATION 2026-06-04]`.
+None — Wan/Causal-Forcing weight drop not verified locally `[OPEN QUESTION 2026-06-04]`.

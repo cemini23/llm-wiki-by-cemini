@@ -67,7 +67,7 @@ Railbird Exchange LLC d/b/a **DKeX** (DraftKings-owned DCM since Jun 2025; DK an
 
 **COMBOS** (filed 2026-08-07, cert by Aug 11): “Will all [outcomes] occur?” Joint settlement of **two or more separately certified** constituents. YES value = **product of component YES settlements**. No nested COMBOS; duplicate constituent banned; any $0 component → COMBOS YES = $0 (accelerated settle under Rule 7.2). This is the PM analog of an SGP **without** a new underlying — retail still pays the joint-implied price, not sportsbook SGP hold, but correlation is **not** a free lunch (product of binaries). [Source: https://www.legalsportsbetting.com/news/dkex-self-certifies-nine-football-contracts-with-cftc-08-12-2026/ (retrieved 2026-08-14)]
 
-**S9 LSR** (“DraftKings Eyes In-House Combos As Predictions Volume Surges”) — **403** this session. Title is consistent with the COMBOS filing; do not cite LSR volume numbers until a fetch succeeds. [NEEDS VERIFICATION 2026-08-14]
+**S9 LSR** (“DraftKings Eyes In-House Combos As Predictions Volume Surges”) — **403** this session. Title is consistent with the COMBOS filing; do not cite LSR volume numbers until a fetch succeeds. [OPEN QUESTION 2026-08-14]
 
 ### S12 / S10 — CFTC emergency powers vs NY AG [CONFIRMED via LSB; LSR 403]
 

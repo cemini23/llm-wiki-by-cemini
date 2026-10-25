@@ -62,7 +62,7 @@ See @sources/rss-lsb-nhl-opening-night-props-2026-09-29.md for the full arithmet
 
 ### Data
 
-No free data source is wired for this wiki yet. Candidate inputs: NHL public API (schedule, box score, shot events) and naturalstattrick-style rate exports. Both are unvetted for ToS. [NEEDS VERIFICATION 2026-09-30]
+No free data source is wired for this wiki yet. Candidate inputs: NHL public API (schedule, box score, shot events) and naturalstattrick-style rate exports. Both are unvetted for ToS. [OPEN QUESTION 2026-09-30]
 
 ## Snippets
 

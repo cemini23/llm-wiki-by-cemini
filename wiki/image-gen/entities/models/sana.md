@@ -57,7 +57,7 @@ SANA is an efficient high-resolution text-to-image diffusion model built on a **
 
 ### Open questions
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - Local runtime feasibility on Apple Silicon and consumer NVIDIA cards. Linear attention is theoretically faster but ComfyUI / Forge support unknown.
 - Censorship / NSFW profile of base SANA — not in scope of UniReasoner paper; needs separate model-card lookup on Hugging Face.

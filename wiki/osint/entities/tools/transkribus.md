@@ -79,7 +79,7 @@ READ-COOP platform for Handwritten Text Recognition on historical scripts (commu
 | Field | Value |
 |-------|-------|
 | **When** | Unindexed parish/notarial images where Tesseract-style OCR fails |
-| **Alt** | Multimodal LLMs (Gemini roadmap claims ~5–7% CER on some 18–19c hands — **vendor claim / secondary**; verify on your script) [NEEDS VERIFICATION 2026-07-09] |
+| **Alt** | Multimodal LLMs (Gemini roadmap claims ~5–7% CER on some 18–19c hands — **vendor claim / secondary**; verify on your script) [OPEN QUESTION 2026-07-09] |
 | **Verdict** | **Watch** — not a CeminiSuite trading dependency; optional for personal archival projects after civil acts are exhausted |
 | **Phase-0** | Required before paid API spend or local model ops |
 

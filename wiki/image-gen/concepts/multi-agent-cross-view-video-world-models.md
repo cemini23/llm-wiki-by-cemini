@@ -60,4 +60,4 @@ Relevant if synthetic persona content moves from isolated clips to **multi-camer
 
 ## Dead Ends
 
-Multi-agent UE5 models don't solve **identity consistency** across agents (different people) — that's still IP-Adapter / LoRA territory per clip. MetaWorld vs Prisma-World benchmark overlap not yet reconciled in wiki `[NEEDS VERIFICATION 2026-06-11]`.
+Multi-agent UE5 models don't solve **identity consistency** across agents (different people) — that's still IP-Adapter / LoRA territory per clip. MetaWorld vs Prisma-World benchmark overlap not yet reconciled in wiki `[OPEN QUESTION 2026-06-11]`.

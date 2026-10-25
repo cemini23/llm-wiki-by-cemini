@@ -58,7 +58,7 @@ Student research on **polarity bias** — systematic accuracy gaps between posit
 
 - Aggregator **sentiment dashboards** (BrightLocal, Birdeye, etc.) may mis-rank French-negative or Japanese-indirect reviews — triage flagged negatives manually before escalation (@concepts/reviews-reputation-management.md).
 - AI engines summarizing multilingual review corpora for GEO may inherit polarity skew — overlaps Žatuchin language effects (@sources/arxiv-zatuchin-2026-language-blind-spot-multilingual-geo-2606.23165-2026-06-24.md).
-- Product reviews ≠ service reviews; barbershop generalization `[NEEDS VERIFICATION 2026-06-24]`.
+- Product reviews ≠ service reviews; barbershop generalization `[OPEN QUESTION 2026-06-24]`.
 
 **Phase-0:** REFERENCE — no tooling to adopt; methodology for audit design.
 

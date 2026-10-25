@@ -64,7 +64,7 @@ The mechanism is an ID-aware projection layer that decomposes the input identity
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - Production-tier VRAM cost on FLUX.1-Dev FP8 + InfiniteYou — community reports.
 - ~~Apple Silicon (MPS) status~~ — **resolved [CONFIRMED 2026-05-07]**: **active MPS blocker**. Issue [#11 in `bytedance/InfiniteYou`](https://github.com/bytedance/InfiniteYou/issues/11) confirms `IDEmbeddingModelLoader` fails during arcface initialisation on Apple Silicon (MPS-incompatible NumPy / arcface kernel paths). Workarounds: cloud rental (recommended), or run InfiniteYou on CPU (very slow, exploratory only). For Apple-Silicon-friendly persona work, use @entities/adapters/pulid.md as the substitute until upstream patches.

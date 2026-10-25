@@ -1071,3 +1071,13 @@ Red-team and evaluation findings, plus one specialist-model result.
 | sources/substack-rss-secpro-2026-10-23-257-from-sso-bypass-to-stolen-credentials.md | source | RSS stub |
 | sources/substack-rss-secpro-2026-10-24-secpro-ciso-update-episode-2.md | source | RSS stub |
 
+## K295 index backfill (2026-10-25)
+
+Rows missing since their source pages were committed. Found by `ingest_session_gate.py`.
+
+| Page | Type |
+|------|------|
+| sources/arxiv-2606-06387-webmcp-tool-surface-poisoning.md | source |
+| sources/effective-threat-investigation-soc-analysts.md | source |
+| sources/next-gen-soc-ibm-qradar.md | source |
+| sources/open-source-soc-guide.md | source |

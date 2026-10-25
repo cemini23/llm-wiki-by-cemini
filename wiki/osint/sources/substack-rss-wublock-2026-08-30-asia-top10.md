@@ -38,7 +38,7 @@ Items (all `[TENTATIVE]` — newsletter claims):
 1. Japan FSA: overseas single-stock leveraged ETFs sold into Japan are contrary to public interest (Q&A revised 27 Aug). Japan still has no listed single-stock leveraged ETFs.
 2. Vietnam: five firms passed first-round crypto-exchange assessment; no licenses yet. Level-4 IS + ~$383M capital next. Penalties start 1 Sep; domestic investors must use licensed venues only six months after the first license.
 3. Shanghai police: underground-banking ring using virtual currency for ~¥20B cross-border FX; 19 arrested.
-4. **ComeCome** (Dubai Chinese-language food-delivery app) v2.9.3 embedded **DKStatistics**; sandbox-escape + wallet/notes/WhatsApp directory reads. On-chain: >50k USDT stolen from 22 Aug; ~1.3M USDT aggregated in four days, swapped to ETH, Tornado Cash by 25 Aug. Kaspersky named ComeCome in SparkCat (Feb 2025). v2.9.5 (27 Aug) — full removal `[NEEDS VERIFICATION 2026-08-30]`.
+4. **ComeCome** (Dubai Chinese-language food-delivery app) v2.9.3 embedded **DKStatistics**; sandbox-escape + wallet/notes/WhatsApp directory reads. On-chain: >50k USDT stolen from 22 Aug; ~1.3M USDT aggregated in four days, swapped to ETH, Tornado Cash by 25 Aug. Kaspersky named ComeCome in SparkCat (Feb 2025). v2.9.5 (27 Aug) — full removal `[OPEN QUESTION 2026-08-30]`.
 5. Pakistan PVARA: operating VASPs must file NOC by **5 Sep 2026** or cease. Binance/HTX already hold Dec 2025 NOCs.
 6. South Korea crypto-tax still planned **1 Jan 2027** (22% above 2.5M won). Petition for delay; 50k signatures by 20 Sep would force committee review.
 7. Karakalpakstan, Uzbekistan: three mining hubs + three data centers, claimed $5.11B; Besqala Mining Valley; mining legal-entities only, preferably renewable; grid power at double tariff.

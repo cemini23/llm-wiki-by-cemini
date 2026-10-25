@@ -57,7 +57,7 @@ Both libraries are by JerBouma, both MIT, both pure-Python:
 
 Together: brain says "tell me about NVDA" → FinanceDatabase returns sector/industry metadata → FinanceToolkit calculates Extended DuPont + GARCH volatility → brain has a complete fundamental picture.
 
-### Open questions [NEEDS VERIFICATION 2026-05-05]
+### Open questions [OPEN QUESTION 2026-05-05]
 
 - Disk footprint of the offline catalog (likely small — text data only)
 - Update cadence (how often does the upstream package refresh?)

@@ -112,9 +112,9 @@ Three lineage stages:
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
-- Whether PuLID II ships a FLUX.2 backbone variant or whether the 2025-2026 model is FLUX.1 Dev only. ([NEEDS VERIFICATION 2026-05-06])
+- Whether PuLID II ships a FLUX.2 backbone variant or whether the 2025-2026 model is FLUX.1 Dev only. ([OPEN QUESTION 2026-05-06])
 - ~~Apple Silicon (MPS) compatibility — InsightFace dependency issues on macOS in late 2025~~ — **resolved [CONFIRMED 2026-05-07]**: PuLID FLUX runs on Apple Silicon ComfyUI with standard MPS caveats (force fp32 over fp16 for the LayerNormKernelImpl-fp16 issue; set `PYTORCH_ENABLE_MPS_FALLBACK=1` for any unsupported ops). InsightFace installs via `pip install insightface onnxruntime` (the late-2025 dependency issues were resolved upstream; the `onnxruntime-silicon` package ships universal2 wheels). Throughput on M3/M4 Pro/Max is 2-5× slower than equivalent NVIDIA but fully functional for single-shot persona generation.
 - VRAM cost on a 12 GB GPU with FLUX.1-Dev FP8 + PuLID II — community claim ~10-11 GB peak.
 - Whether the FLUX.2 Klein 9B base supports PuLID II directly or requires a different adapter (current path is FLUX.2 Klein face-swap, not PuLID).

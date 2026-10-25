@@ -54,7 +54,7 @@ Passive memory pipelines tuned for chat-QA **underperform on agentic work** beca
 | Question | Posture |
 |----------|---------|
 | **stash + conductor** — passive or agent-controlled? | **Hybrid passive store + agent-triggered recall.** Stash `remember`/`recall` is agent-initiated; conductor fan-out is **passive RAG routing** unless the agent explicitly selects tools. On agentic-trajectory tasks, risk of **retrieval failure** (evidence in wiki/stash but not surfaced) matches paper diagnostic `[TENTATIVE]`. |
-| **InKH vs AutoMEM** | InKH is **domain temporal graph + governance** (K99), not a general cross-scenario harness. Closer to structured representation than AutoMEM flat tool-managed files; still needs five-scenario audit before prod temporal-graph writes `[NEEDS VERIFICATION 2026-06-05]`. |
+| **InKH vs AutoMEM** | InKH is **domain temporal graph + governance** (K99), not a general cross-scenario harness. Closer to structured representation than AutoMEM flat tool-managed files; still needs five-scenario audit before prod temporal-graph writes `[OPEN QUESTION 2026-06-05]`. |
 | **Prod episodic memory scored without new infra?** | **CONDITIONAL-GO** — reuse `@concepts/agent-memory-pipeline-eval-rubric.md` stages + this five-scenario checklist on existing stash/kb/conductor; no AutoMEM install. Token/latency already tracked via token-economics pages. |
 
 ### Steal-from (no AutoMEM install)

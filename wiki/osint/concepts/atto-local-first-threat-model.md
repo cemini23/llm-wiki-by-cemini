@@ -97,4 +97,4 @@ Defensive checklist for Atto as a **local-first genealogy app**: what breaks whe
 - Family site fail-closed + allowlist — not public by default  
 - AI suggest-only; Approve required for tree writes  
 
-Align implementations with `../atto/SECURITY.md`. CVE / worm / Cloudflare-default claims in the DR need primary-doc check before HARD requirements. [NEEDS VERIFICATION 2026-07-22]
+Align implementations with `../atto/SECURITY.md`. CVE / worm / Cloudflare-default claims in the DR need primary-doc check before HARD requirements. [OPEN QUESTION 2026-07-22]

@@ -57,7 +57,7 @@ clusters: [13f, smart-money]
 | Fairfax Financial | Prem Watsa | `watsa holdings.jpeg` |
 | Baupost Group | Seth Klarman | `loeb holdings.jpeg` (see note) |
 
-- **`loeb holdings.jpeg` is mislabeled** — it shows the **Baupost Group (Klarman)** portfolio, identical to `klarman holdings.jpeg` (which is a cropped copy with the Recent Activity column missing). There is **no Third Point / Daniel Loeb data** in this upload. [NEEDS VERIFICATION 2026-05-15] — a real Third Point 13F was not supplied.
+- **`loeb holdings.jpeg` is mislabeled** — it shows the **Baupost Group (Klarman)** portfolio, identical to `klarman holdings.jpeg` (which is a cropped copy with the Recent Activity column missing). There is **no Third Point / Daniel Loeb data** in this upload. [OPEN QUESTION 2026-05-15] — a real Third Point 13F was not supplied.
 - **`tepper 2.jpeg` not ingested** — a distinct portfolio (AMZN 19%, TDS 13%, CRH, Carpenter Technology, MasTec, APi Group; near-universal position reductions; SPAC warrants) that does **not** match Appaloosa's book. Manager unidentified; left in the inbox pending confirmation (user decision 2026-05-15).
 
 ## Narrative

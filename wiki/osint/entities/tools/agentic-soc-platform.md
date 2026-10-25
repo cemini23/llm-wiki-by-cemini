@@ -55,7 +55,7 @@ Read the source statically for architectural patterns; do **not** attempt to dep
 ### Caveats
 
 - Redis Stream memory consumption requires "highly disciplined memory management to prevent out-of-memory kernel panics on the 7 GB RAM primary trading server" [Source: links 2 5_4.docx URL 5]
-- Performance metrics during peak load not yet verified [NEEDS VERIFICATION 2026-05-04]
+- Performance metrics during peak load not yet verified [OPEN QUESTION 2026-05-04]
 
 ## Snippets
 

@@ -89,7 +89,7 @@ Attacker compromises **third-party script** on victim page (not necessarily page
 - Traceable logs of tool registration + invocation
 - Stronger isolation for third-party tool contributors
 
-**Limitations [NEEDS VERIFICATION 2026-06-06]**: experiments used `@mcp-b/global` polyfill + Node.js ProxyClient, not native Chrome WebMCP; defense eval partial (2/4 design categories in Table 8).
+**Limitations [OPEN QUESTION 2026-06-06]**: experiments used `@mcp-b/global` polyfill + Node.js ProxyClient, not native Chrome WebMCP; defense eval partial (2/4 design categories in Table 8).
 
 ### K100 / lazy-tool relevance
 

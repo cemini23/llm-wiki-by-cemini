@@ -44,7 +44,7 @@ Long forensic audit of Western tungsten (and PGM/gold side notes). Use it to **c
 
 **Reject / do not merge:**
 
-- "Upsized US1.2 billion" convert sentence is broken in the docx. Super-audit 20 Aug locked **US$800M closed 9 Jun** (6-K `000149315226028532`). Keep that number. `[NEEDS VERIFICATION 2026-09-04]` on any 1.2B figure from this file.
+- "Upsized US1.2 billion" convert sentence is broken in the docx. Super-audit 20 Aug locked **US$800M closed 9 Jun** (6-K `000149315226028532`). Keep that number. `[OPEN QUESTION 2026-09-04]` on any 1.2B figure from this file.
 - GTP "US490 million" baseline is truncated. Use the 20 Aug desk wording (APT-beta, 21yr, 4.41M MTU).
 - TSX: the 20 Aug entity page says TSX delisted **31 Jul 2026**. This audit still writes TSX:AII. Do not revive the TSX ticker without a new filing.
 

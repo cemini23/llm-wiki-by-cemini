@@ -52,8 +52,8 @@ Apache-2.0 — clean for IP-sale-readiness posture. Permissive; commercial modif
 
 ### Open questions
 
-- **Local ASR backend hardware load**: hardware processing and latency implications of executing heavy local ASR models alongside active Electron instances — `[NEEDS VERIFICATION 2026-05-21]`
-- **Which of the 12 ASR backends are local vs cloud?** Need to audit before deciding which to use in persona-ops where local-only is preferred — `[NEEDS VERIFICATION 2026-05-21]`
+- **Local ASR backend hardware load**: hardware processing and latency implications of executing heavy local ASR models alongside active Electron instances — `[OPEN QUESTION 2026-05-21]`
+- **Which of the 12 ASR backends are local vs cloud?** Need to audit before deciding which to use in persona-ops where local-only is preferred — `[OPEN QUESTION 2026-05-21]`
 
 ## Dead Ends
 

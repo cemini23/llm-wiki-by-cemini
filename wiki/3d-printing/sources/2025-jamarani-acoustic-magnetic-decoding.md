@@ -57,7 +57,7 @@ A **two-channel** side-channel attack (acoustic + magnetic) on a desktop FDM pri
 **Background context** the paper provides on AM lifecycle and threat surface (Section 3 and 4): STL → CAM/slicer → G-code → motors. Authors cite blockchain-based G-code storage [27], encryption-at-rest [28], and physical-hash quality-control [7] as defenses. Also discusses "weaponizing" angle [36] — minor IP modifications producing dangerous parts.
 
 **Limitations** [TENTATIVE]:
-- Recording distance and noise tolerance: paper claims "greater distances" but the deep-read pages don't give the exact distance. This is a likely critical real-world limit; [NEEDS VERIFICATION 2026-05-06] from later pages.
+- Recording distance and noise tolerance: paper claims "greater distances" but the deep-read pages don't give the exact distance. This is a likely critical real-world limit; [OPEN QUESTION 2026-05-06] from later pages.
 - LULZBOT TAZ is open-frame; enclosed printers (Bambu X1C, Prusa XL with enclosure) attenuate acoustic emission — generalization to enclosed printers not tested.
 - "Plain G-code design" — the test object isn't characterized in the abstract; complexity bound unclear from pages 1-10.
 - Magnetic side-channel works only at close range (magnetic field falls off as 1/r³); real-world covert deployment likely needs the phone within ~30 cm.

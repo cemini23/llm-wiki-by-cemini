@@ -59,7 +59,7 @@ Wiki ingestion (deployed):
 - kb-server picks up the new page on next sync cycle (hourly cron per `scripts/sync_wiki_to_librarian.sh`)
 - Refresh cadence documented inline in the synthesis page (manual / on-trigger / future-monthly-cron)
 
-Open question [NEEDS VERIFICATION 2026-05-05]:
+Open question [OPEN QUESTION 2026-05-05]:
 - Whether Kalshi version-stamps the file (no version header observed in 2026-05-05 snapshot — refreshes will be by-content-hash, not by-version)
 
 ## Snippets

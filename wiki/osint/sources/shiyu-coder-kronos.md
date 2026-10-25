@@ -113,7 +113,7 @@ This is a textbook **status-upgrade-on-deeper-evaluation pattern**, mirroring (i
 
 ### Risks & open questions
 
-1. **Kronos-small CPU inference latency** [NEEDS VERIFICATION 2026-04-30] — measure P99 inference latency of 24.7M-param model on standard AMD EPYC vCPU with PyTorch CPU optimizations. Determines if the model can meet trading execution speed limits if used as auxiliary signal source.
+1. **Kronos-small CPU inference latency** [OPEN QUESTION 2026-04-30] — measure P99 inference latency of 24.7M-param model on standard AMD EPYC vCPU with PyTorch CPU optimizations. Determines if the model can meet trading execution speed limits if used as auxiliary signal source.
 
 2. **pyqlib license** `[CONFIRMED 2026-08-20]` — `microsoft/qlib` SPDX **MIT** via GitHub API (same as `@sources/microsoft-qlib.md`, LICENSE file check 2026-04-29). A full `pip-licenses` freeze of a Kronos install was **not** run this session; root is clean, do not assume every transitive is MIT.
 

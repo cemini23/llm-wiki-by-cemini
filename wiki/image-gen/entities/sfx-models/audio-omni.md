@@ -40,7 +40,7 @@ The differentiator is the **single-model integration**: prior approaches require
 
 ### Key facts (May 2026)
 
-- **Venue**: SIGGRAPH 2026 (presented / pending — confirm date) [NEEDS VERIFICATION 2026-05-13]
+- **Venue**: SIGGRAPH 2026 (presented / pending — confirm date) [OPEN QUESTION 2026-05-13]
 - **Code / weights status**: **research-future** — paper-stage as of writing; code/weights release timing unknown
 - **Architecture**: unified transformer or DiT over discrete audio tokens [VERIFY 2026-05-13]
 - **License** [NEEDS VERIFICATION 2026-05-13] — undetermined; depends on authors' release policy

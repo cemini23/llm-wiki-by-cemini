@@ -95,7 +95,7 @@ Some brands show **0%** owned citations — AI never reads their website. Diagno
 
 - **Long tail:** 80% of citations from ~18% of domains — a few earned placements move the needle.
 - **Wikipedia:** #1 in 11/12 languages in study; local news can edge it (Lithuanian **vz.lt**).
-- **Poland pattern:** YouTube + HR/careers portals can outrank Wikipedia — video and employer-review surfaces matter in some markets `[NEEDS VERIFICATION 2026-06-26]` on US barbershop queries.
+- **Poland pattern:** YouTube + HR/careers portals can outrank Wikipedia — video and employer-review surfaces matter in some markets `[OPEN QUESTION 2026-06-26]` on US barbershop queries.
 
 ### Engine differences
 

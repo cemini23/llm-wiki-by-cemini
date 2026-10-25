@@ -53,7 +53,7 @@ Salon-industry practitioner column generalizing to **any local service business*
 
 - **Review gating defined:** pre-screening clients by sentiment before sending a public review link (positive → Google; negative → private form). Common in reputation-management SaaS; now **actively enforced** by Google and cited as illegal under FTC Consumer Review Rule framing in article.
 - **Enforcement scale (article claims):** Google review deletion rates **+600%** Jan–Jul 2025; **292M** policy-violating reviews blocked/removed in 2025; April 2026 Gemini-powered enforcement + explicit bans on kiosks, staff quotas, directing review text.
-- **FTC layer:** Consumer Review Rule civil penalties up to **$53,088 per violation** for fake/paid/suppressed reviews; warning letters issuing `[NEEDS VERIFICATION 2026-07-01]` on exact barbershop enforcement cases.
+- **FTC layer:** Consumer Review Rule civil penalties up to **$53,088 per violation** for fake/paid/suppressed reviews; warning letters issuing `[OPEN QUESTION 2026-07-01]` on exact barbershop enforcement cases.
 - **Penalty ladder:** shadow-filtering → new-review pause → public warning banner on GBP → full profile suspension.
 - **Compliant two-step (Dodson):** (1) NPS question to **every** client; Promoters get review invite, detractors get human follow-up — **not** silent private routing; (2) **separate** universal review invitation to **all** clients regardless of NPS score (key distinction from gating).
 - **GEO angle:** compiled multi-platform review presence on owned site feeds AI recommendation signals when users ask assistants for local providers.

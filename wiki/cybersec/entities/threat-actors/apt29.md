@@ -33,7 +33,7 @@ Companion threat-actor page to @entities/threat-actors/apt28.md. APT29 is the se
 
 ## Narrative
 
-APT29 — aliases **Cozy Bear**, **Nobelium**, **Midnight Blizzard** (Microsoft current naming), **The Dukes**, **YTTRIUM**, **Iron Hemlock** — is a Russian state-sponsored cyberespionage group attributed by Western intelligence agencies to the **SVR** (Russian Foreign Intelligence Service). [NEEDS VERIFICATION 2026-05-12]
+APT29 — aliases **Cozy Bear**, **Nobelium**, **Midnight Blizzard** (Microsoft current naming), **The Dukes**, **YTTRIUM**, **Iron Hemlock** — is a Russian state-sponsored cyberespionage group attributed by Western intelligence agencies to the **SVR** (Russian Foreign Intelligence Service). [OPEN QUESTION 2026-05-12]
 
 ### Contrast with APT28
 

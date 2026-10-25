@@ -64,7 +64,7 @@ Per polygon-doctrine (user-memory):
 
 FinanceToolkit defaults to Yahoo Finance as data backend. **In Cemini production, force-route data sources to Alpaca / FMP for primary, with yfinance as fallback only.** The library's calculation logic is sound; the data-source defaults are not.
 
-### Open questions [NEEDS VERIFICATION 2026-05-04]
+### Open questions [OPEN QUESTION 2026-05-04]
 
 - Memory allocation for full 150-ratio pipeline on 10-year daily history (memory spikes during recursive GARCH)
 - Whether the toolkit's data-fetching layer is decoupled enough to swap Yahoo for Alpaca cleanly

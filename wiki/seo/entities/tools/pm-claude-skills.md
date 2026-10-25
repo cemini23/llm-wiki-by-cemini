@@ -34,4 +34,4 @@ A Claude Code skill collection containing 106 SKILL.md files. Two workflow categ
 
 MIT license clears adoption. The Figma-template-generation path is the most immediately actionable: feed web-design briefs → generate layout templates → hand to operator for implementation on their website platform.
 
-[NEEDS VERIFICATION 2026-05-21] repo URL, full capability breakdown, Phase-0 audit status.
+[OPEN QUESTION 2026-05-21] repo URL, full capability breakdown, Phase-0 audit status.

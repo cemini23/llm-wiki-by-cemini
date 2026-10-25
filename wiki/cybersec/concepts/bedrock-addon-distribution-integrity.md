@@ -45,7 +45,7 @@ third-party, and keep them minimal when publishing:
 | `modules[].type` | `script` means code executes on the player's device. `data` and `resource` are inert content. |
 | `modules[].entry` | The script path. Read the file. A pack whose script is not readable is not reviewable. |
 | `dependencies[]` | Pins the `@minecraft/server` version. An unpinned or mismatched API version changes behaviour across engine updates. |
-| `capabilities` | Bedrock allows a pack to declare elevated capabilities. Treat any request beyond what the pack needs as a red flag. `[NEEDS VERIFICATION 2026-10-06]` — confirm the exact accepted values against current Bedrock docs before relying on this. |
+| `capabilities` | Bedrock allows a pack to declare elevated capabilities. Treat any request beyond what the pack needs as a red flag. `[OPEN QUESTION 2026-10-06]` — confirm the exact accepted values against current Bedrock docs before relying on this. |
 | `uuid` / `header.version` | Fixed UUIDs colliding with another installed pack cause undefined behaviour. Version is the pack's own, not a signature. |
 
 ### The distribution gap
@@ -54,7 +54,7 @@ Free community hosting gives **no signature and no provenance**. A repost — th
 on MCPEDL and CurseForge — is byte-indistinguishable from the original to the end user. The download
 page is the only trust anchor. This is exactly the gap @concepts/product-build-integrity-slsa-sigstore.md
 describes for software releases, minus the tooling: Bedrock has no SLSA-equivalent attestation for
-third-party add-ons. `[NEEDS VERIFICATION 2026-10-06]` — re-check whether the Marketplace's curated
+third-party add-ons. `[OPEN QUESTION 2026-10-06]` — re-check whether the Marketplace's curated
 channel carries any verification that free channels do not.
 
 ### Install review (defender)

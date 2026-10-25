@@ -102,7 +102,7 @@ Quality tags differ from Pony's score-tag system. Illustrious uses `masterpiece`
 
 ### Workspace TODO
 
-- **`[NEEDS VERIFICATION 2026-05-06]`**: confirm latest Illustrious XL hash and version on CivitAI / Hugging Face. The model has had multiple revisions.
+- **`[OPEN QUESTION 2026-05-06]`**: confirm latest Illustrious XL hash and version on CivitAI / Hugging Face. The model has had multiple revisions.
 - Confirm OnomaAI Research's release cadence — are V2/V3 in flight?
 - Confirm artist-tag list — are there community tools to enumerate the 16k tags and their per-artist quality? (Civitai's Style Explorer is one such tool; verify its coverage.)
 - Compare directly against NoobAI-XL on a fixed reference set; validate the V-Prediction / EPS-Prediction tradeoff claim from §1.1.

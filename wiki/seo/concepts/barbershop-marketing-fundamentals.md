@@ -44,7 +44,7 @@ Barbershops have a few industry-specific characteristics that shape every market
 
 ### High-frequency, high-LTV, taste-bound
 
-- **Visit frequency**: typical men's haircut cadence is **2-6 weeks** (fades faster, longer styles slower). `[NEEDS VERIFICATION 2026-05-07]` for current local-market average — varies by region and demographic.
+- **Visit frequency**: typical men's haircut cadence is **2-6 weeks** (fades faster, longer styles slower). `[OPEN QUESTION 2026-05-07]` for current local-market average — varies by region and demographic.
 - **Customer LTV**: a customer who visits every 4 weeks at $35/cut for 2 years = $910 lifetime. Acquisition cost of even $50-100 pays back fast.
 - **Taste-bound**: customers don't switch barbers casually — once a customer finds someone who cuts their hair the way they want, switching costs are high (verbal description + risk of bad cut). Both protective for the operator (low churn) and a barrier (acquisition is harder; customers loyal to a competitor are sticky).
 

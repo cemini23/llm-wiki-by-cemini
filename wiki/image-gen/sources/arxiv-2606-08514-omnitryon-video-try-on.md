@@ -44,7 +44,7 @@ Beats single-garment VVT baselines and general video editors on TryAny-Bench `[T
 
 ### Workspace relevance
 
-Direct **persona wardrobe refresh** on existing motion clips — change outfit + accessories while keeping dance/walk performance (@concepts/persona-consistency-methods.md). Mask-free = simpler Comfy graph vs MagicTryOn-style aux pipelines `[NEEDS VERIFICATION 2026-06-10]`.
+Direct **persona wardrobe refresh** on existing motion clips — change outfit + accessories while keeping dance/walk performance (@concepts/persona-consistency-methods.md). Mask-free = simpler Comfy graph vs MagicTryOn-style aux pipelines `[OPEN QUESTION 2026-06-10]`.
 
 ## Snippets
 

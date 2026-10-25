@@ -26,7 +26,7 @@ Author of "Applications of Time Series Analysis in Quantitative Finance" (SSRN a
 
 The bibliography anchors on four canonical references: Merton (1973, option pricing), Hamilton (1994, *Time Series Analysis*), Engle (1982, ARCH), Breiman (2001, Random Forests).
 
-`[NEEDS VERIFICATION 2026-05-21]` Institutional affiliation. The SSRN PDF as extracted shows only the author's name on page 1 with no affiliation block. Could be a student preprint, an industry working paper, or an academic submission — the survey style and reference set are consistent with a graduate-level review essay or junior-faculty preprint.
+`[OPEN QUESTION 2026-05-21]` Institutional affiliation. The SSRN PDF as extracted shows only the author's name on page 1 with no affiliation block. Could be a student preprint, an industry working paper, or an academic submission — the survey style and reference set are consistent with a graduate-level review essay or junior-faculty preprint.
 
 ## Dead Ends
 

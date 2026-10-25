@@ -72,7 +72,7 @@ GSC does **not** report:
 - Bing or other engines (Bing has @entities/platforms/bing-places.md plus Bing Webmaster Tools as the analog)
 - Phone calls, conversions, or revenue (use @entities/tools/google-analytics-4.md for on-site events)
 - AI-engine citations on **non-Google** engines (ChatGPT / Claude / Perplexity) — use repeated citation tests (@concepts/geo-visibility-measurement.md)
-- **Google Search generative AI performance** — rolling out in GSC (June 2026); impressions from AI features on Google Search when property has access `[NEEDS VERIFICATION 2026-06-27]` — see @sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md; pair with business outcomes, not vanity impressions alone
+- **Google Search generative AI performance** — rolling out in GSC (June 2026); impressions from AI features on Google Search when property has access `[OPEN QUESTION 2026-06-27]` — see @sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md; pair with business outcomes, not vanity impressions alone
 
 ### Verification (one-time setup)
 

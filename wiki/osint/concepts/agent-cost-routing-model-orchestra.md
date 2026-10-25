@@ -149,7 +149,7 @@ Cemini already runs **DeepSeek hosted Chat Completions API** (`deepseek-chat` or
 
 - **`[CONFIRMED 2026-05-29]`** "Hermes" = `NousResearch/hermes-agent` (Nous Research MIT agent platform). See @entities/tools/hermes-agent.md.
 - **`[TENTATIVE 2026-05-29]`** Kimi K2.6 cache pricing — cache-hit **~$0.10–0.16/M input** (Moonshot pricing mirrors, May 2026); author's **$0.15/M** plausible on hits; **miss-rate K2.6 ~$0.95/M input**.
-- `[NEEDS VERIFICATION 2026-05-12]` Specific SWE-Bench Pro scores (58.6 / 57.7 / 53.4) — cross-check against Artificial Analysis or BigCodeBench leaderboards before quoting in any external brief.
+- `[OPEN QUESTION 2026-05-12]` Specific SWE-Bench Pro scores (58.6 / 57.7 / 53.4) — cross-check against Artificial Analysis or BigCodeBench leaderboards before quoting in any external brief.
 
 ## Snippets
 

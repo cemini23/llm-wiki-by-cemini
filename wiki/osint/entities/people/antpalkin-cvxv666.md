@@ -23,4 +23,4 @@ Public X creator writing on autonomous / multi-agent trading loops, Grok Bot arc
 
 ## Narrative
 
-Ant Palkin (@antpalkin, handle cvxv666 on X) publishes on **loop-engineered trading systems**: multi-agent desks, trade autopsy → code rewrite loops, and adversarial maker/checker flows on prediction markets. Treat live PnL and wallet claims as `[NEEDS VERIFICATION 2026-08-25]` until independently audited — wiki captures **patterns**, not endorsement.
+Ant Palkin (@antpalkin, handle cvxv666 on X) publishes on **loop-engineered trading systems**: multi-agent desks, trade autopsy → code rewrite loops, and adversarial maker/checker flows on prediction markets. Treat live PnL and wallet claims as `[OPEN QUESTION 2026-08-25]` until independently audited — wiki captures **patterns**, not endorsement.

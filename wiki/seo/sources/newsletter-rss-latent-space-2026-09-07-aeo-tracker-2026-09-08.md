@@ -39,7 +39,7 @@ updated: 2026-10-01
 | **Inbound** | OSINT K257 → SEO K257 brief (`briefs/2026-09-08_k257-seo-aeo.md`) |
 | **Read status** | read (paraphrased) |
 
-**Provenance note.** The OSINT wave page `@osint-wiki/concepts/k257-ccc-aeo-wave.md` references an OSINT source page that does not exist on disk. This page is filed from the wave summary plus the public tracker coverage, so it records the steal with a weaker provenance chain than a normal ingest. `[NEEDS VERIFICATION 2026-10-01]` on any figure not restated in the tracker's own post.
+**Provenance note.** The OSINT wave page `@osint-wiki/concepts/k257-ccc-aeo-wave.md` references an OSINT source page that does not exist on disk. This page is filed from the wave summary plus the public tracker coverage, so it records the steal with a weaker provenance chain than a normal ingest. `[OPEN QUESTION 2026-10-01]` on any figure not restated in the tracker's own post.
 
 ## Narrative
 

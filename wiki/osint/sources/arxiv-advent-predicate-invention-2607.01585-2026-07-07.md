@@ -25,7 +25,7 @@ clusters: [agent-harness]
 
 ## Narrative
 
-LLM proposes new predicates for inductive logic programming pipelines. Wiki-only reference — no prod brief unless CCC wants symbolic rule extraction for harness audits. `[NEEDS VERIFICATION 2026-07-07]` — read PDF before concept promotion.
+LLM proposes new predicates for inductive logic programming pipelines. Wiki-only reference — no prod brief unless CCC wants symbolic rule extraction for harness audits. `[OPEN QUESTION 2026-07-07]` — read PDF before concept promotion.
 
 ## Snippets
 

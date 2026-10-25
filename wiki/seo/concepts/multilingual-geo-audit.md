@@ -96,7 +96,7 @@ Pair with **verified mention** checks (@concepts/per-entity-bias-mapping-geo.md)
 ### Content / GBP implications `[TENTATIVE]`
 
 - Bilingual **GBP posts**, service descriptions, and website `hreflang` may help home-language retrieval — not tested in Žatuchin; aligns with canonical presence discipline.
-- Review responses in customer's language (@concepts/review-response-templates.md) — human trust layer; indirect GEO effect `[NEEDS VERIFICATION 2026-06-24]`.
+- Review responses in customer's language (@concepts/review-response-templates.md) — human trust layer; indirect GEO effect `[OPEN QUESTION 2026-06-24]`.
 
 ### Native vs translated benchmarks (K171 thin steal) `[TENTATIVE]`
 

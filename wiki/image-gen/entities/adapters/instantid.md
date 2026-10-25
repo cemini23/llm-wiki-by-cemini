@@ -70,7 +70,7 @@ This dual mechanism — embedding + landmark — is why InstantID has different 
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - Whether the InstantX team has shipped a FLUX-native port. If yes, this changes the FLUX adapter landscape (currently a near-monoculture of PuLID II).
 - ~~Apple Silicon viability — same InsightFace caveat as PuLID; needs testing on M-series~~ — **resolved [CONFIRMED 2026-05-07]**: InstantID (cubiq port) runs on M-series via the same MPS path as PuLID, but **fp32 only** — fp16 hits the PyTorch MPS LayerNormKernelImpl-fp16 issue documented in @entities/adapters/pulid.md. Set `PYTORCH_ENABLE_MPS_FALLBACK=1` and use the fp32 base; expect 3-5× NVIDIA latency. InsightFace dependency installs cleanly via `pip install insightface onnxruntime` (same path as the PuLID resolution).

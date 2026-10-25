@@ -79,7 +79,7 @@ updated: 2026-10-01
 - **Treatment is a specific UI**: AI answers *with article citations* displayed **above** conventional results. A different placement or answer format could move differently.
 - **Topic model dependence.** Results are checked under an alternative topic model and with politics excluded (differences shrink but hold). Concentration differences *within* individual readers are small and not significant when only articles are counted.
 - **Consumption ≠ belief.** The paper measures what was displayed and opened, not what readers learned or believed.
-- Local-service generalization: `[NEEDS VERIFICATION 2026-10-01]`.
+- Local-service generalization: `[OPEN QUESTION 2026-10-01]`.
 
 ## Snippets
 

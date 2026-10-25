@@ -48,7 +48,7 @@ Static analysis exposed as MCP tools: `get_class_source` (extract decompiled Jav
 
 The intended use is **defensive automation**: rapidly surfacing insecure network API calls, hardcoded secrets, and weak crypto inside an APK during a mobile-app security review, and accelerating Android malware triage. It pairs with `@concepts/malware-analysis.md` (automated decompilation for sample triage) and `@concepts/mobile-pentest.md` (manifest/permission/component review). The FastMCP↔Javalin pattern is also a reusable template for exposing other stateful desktop RE tools to an LLM.
 
-- `[NEEDS VERIFICATION 2026-05-16]` Reliability of `get_smali_of_class` against heavily obfuscated or commercially packed APK structures. (Not resolvable by a Phase-0 metadata audit — requires hands-on testing.)
+- `[OPEN QUESTION 2026-05-16]` Reliability of `get_smali_of_class` against heavily obfuscated or commercially packed APK structures. (Not resolvable by a Phase-0 metadata audit — requires hands-on testing.)
 
 ## Phase-0 Audit (2026-05-16)
 

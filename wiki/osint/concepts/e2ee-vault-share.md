@@ -43,4 +43,4 @@ Atto's recurring-revenue engine is the **Access Share subscription ($8–$20/mo 
 
 Combo with **rachoon** (Gotenberg branded invoice/PDF engine) gives the full concierge loop: E2EE vault delivery + auto-invoicing. Combo with **Domus** (2608.12566) gives house-history/archival-image content that makes the vault a richer deliverable (III-worthy overlay registry, temporal address/occupancy records).
 
-`[NEEDS VERIFICATION 2026-08-14]` ente's cryptographic envelope in headless Node/Python workers (WebAssembly compatibility) — if Atto needs to open the vault headlessly.
+`[OPEN QUESTION 2026-08-14]` ente's cryptographic envelope in headless Node/Python workers (WebAssembly compatibility) — if Atto needs to open the vault headlessly.

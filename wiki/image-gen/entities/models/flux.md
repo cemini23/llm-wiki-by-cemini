@@ -127,8 +127,8 @@ The **non-commercial license** on Dev variants creates a downstream legal questi
 
 | Adapter | FLUX.1 status | FLUX.2 status |
 |---|---|---|
-| @entities/adapters/pulid.md (PuLID II) | Production | Port in development [NEEDS VERIFICATION 2026-05-06] |
-| @entities/adapters/infinite-you.md | Production | Port unconfirmed [NEEDS VERIFICATION 2026-05-06] |
+| @entities/adapters/pulid.md (PuLID II) | Production | Port in development [OPEN QUESTION 2026-05-06] |
+| @entities/adapters/infinite-you.md | Production | Port unconfirmed [OPEN QUESTION 2026-05-06] |
 | @entities/adapters/flux-redux.md | Production | Production (FLUX.2 port shipped) |
 | @entities/adapters/flux-kontext.md | Production | Production (FLUX.2 port shipped) |
 | @entities/adapters/flux2-klein-9b-faceswap.md | n/a (FLUX.2-only role) | Production (uses Klein 9B as engine) |

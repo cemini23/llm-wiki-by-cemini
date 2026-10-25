@@ -39,8 +39,8 @@ Page prompted by the W4 Tier 3 voice/audio backfill (2026-05-13). Named in @conc
 
 - **License**: **Apache 2.0** [NEEDS VERIFICATION 2026-05-13] — verify against repo
 - **Size**: ~1.6B parameters [NEEDS VERIFICATION 2026-05-13]
-- **Repo**: `github.com/nari-labs/dia` [NEEDS VERIFICATION 2026-05-13]
-- **Hugging Face**: `nari-labs/Dia-1.6B` (or similar) [NEEDS VERIFICATION 2026-05-13]
+- **Repo**: `github.com/nari-labs/dia` [OPEN QUESTION 2026-05-13]
+- **Hugging Face**: `nari-labs/Dia-1.6B` (or similar) [OPEN QUESTION 2026-05-13]
 - **Architecture**: GPT-style decoder over discrete audio tokens, multi-speaker conditioning [VERIFY]
 - **Distinguishing feature**: **inline two-speaker tagging** (`[S1] Hi there. [S2] Hey, how are you?`) generates natural multi-turn dialogue in a single pass — not stitched mono-speaker clips
 - **Nonverbal control**: inline tags for laughter, sighs, throat-clear, etc. (e.g. `(laughs)`, `(sighs)`)
@@ -76,7 +76,7 @@ For **single-voice DM voice notes / single-character voiceover**, Fish-Speech S2
 - **Verification pending**: as of 2026-05-13 I haven't directly retrieved the Dia repo README / model card; license + parameter count + clone-clip length are NEEDS VERIFICATION. Pull on next ingest cycle (W5) and update.
 - **Build-track viability** depends on Apache 2.0 confirmation. If confirmed, Dia is **commercial-license-clean** for monetized persona dialogue content. If a more restrictive license surfaces, defer until alternate (CosyVoice2 dialogue prompting + clip stitching) is benchmarked.
 - **Korean origin**: Nari Labs is small-team / academic-lineage — assume slower update cadence than Alibaba (CosyVoice) or Fish Audio (Fish-Speech). Active development as of mid-2025; status May 2026 [VERIFY]
-- **Apple Silicon (MPS)** viability [NEEDS VERIFICATION 2026-05-13]
+- **Apple Silicon (MPS)** viability [OPEN QUESTION 2026-05-13]
 
 ## Snippets
 

@@ -35,6 +35,6 @@ AI-powered web scraper (Python 3.10+, Streamlit GUI) using OpenAI / Gemini / Oll
 **GO Integrate (cyber lab, authorized research only)** — MIT, tiny footprint. Constraints:
 - Authorized-target-only (local lab evaluations, whitehat perimeter audits, newsletter/substack polling the operator already has rights to).
 - **Headless fallback required** for unattended runs (README documents active-session requirement for stealth mode).
-- Playwright memory-leak watch during multi-hour polling loops (`[NEEDS VERIFICATION 2026-08-14]`).
+- Playwright memory-leak watch during multi-hour polling loops (`[OPEN QUESTION 2026-08-14]`).
 
 Phase-1 wire appended (cyber-lab scraping guardrails). **No GuruWatcher prod brief** this batch (no price-watch content).

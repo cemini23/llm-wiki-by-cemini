@@ -48,7 +48,7 @@ updated: 2026-05-15
 - **Retrieved**: 2026-04-28 (user-authorized ingest as follow-up to Sakana Fugu cataloguing 2026-04-27)
 - **Pages / length**: arXiv preprint listed as 10,638 KB (v2); poster is the read artifact at the moment, ~1 page dense ICLR poster format
 - **Read status**: `read` — full poster captured verbatim including the four numerical results tables (sep-CMA-ES vs alternatives / in-distribution / OOD zero-shot transfer / ablations) + the abstract from arXiv. Full 22-page paper deferred — poster + abstract are sufficient for the librarian-side cataloguing pass; the academic depth a deep-read would add (the formal block-epsilon-separability theorem + the multi-turn dynamics analysis) is not the load-bearing axis for the Cemini-relevance read on this page.
-- **Why it's in the corpus**: Surfaced via the 2026-04-24 Sakana Fugu announcement (`sakana.ai/fugu-beta/`) as the second of two ICLR 2026 papers the Fugu commercial API productizes. User-authorized ingest 2026-04-28 to close the productization-narrative coverage gap left open in the Conductor source page + the Sakana Fugu entity page (where Trinity was flagged as `[NEEDS VERIFICATION 2026-04-27]` in three places).
+- **Why it's in the corpus**: Surfaced via the 2026-04-24 Sakana Fugu announcement (`sakana.ai/fugu-beta/`) as the second of two ICLR 2026 papers the Fugu commercial API productizes. User-authorized ingest 2026-04-28 to close the productization-narrative coverage gap left open in the Conductor source page + the Sakana Fugu entity page (where Trinity was flagged as `[OPEN QUESTION 2026-04-27]` in three places).
 
 ## Narrative
 
@@ -104,7 +104,7 @@ Trinity's role in the Sakana Fugu commercial API (`@entities/infrastructure/saka
 
 - **[RESOLVED 2026-05-10]** Trinity v2 full paper (arXiv 2512.04695v2) confirms 7-model pool: three closed-source (GPT-5, Gemini-2.5-pro, Claude-4-Sonnet) + four open-source (Gemma-3-27B-It, DeepSeek-R1-Distill-Qwen-32B, Qwen-3-32B direct, Qwen-3-32B reasoning). Coordinator: Qwen3-0.6B + single linear layer of 10K params. Essentially same pool as Conductor plus Qwen-3-32B reasoning variant.
 - **[PARTIALLY RESOLVED 2026-05-10]** Trinity paper states "we provide comprehensive resources in the supplementary material, including source code and trained model weights" (arXiv v2). However, no official Sakana AI GitHub repo exists for Trinity (sakanaai org: 46 repos, none for Trinity or Conductor). A third-party Elixir reimplementation exists: nshkrdotcom/trinity_coordinator (MIT, 3 stars, last push 2026-04-30) — imports Sakana router vector + SVD/SVF components, does NOT claim to reproduce paper scores, focuses on parity-checked coordinator path. Official release status remains unconfirmed; supplementary material may exist but is not in a public repo.
-- **[NEEDS VERIFICATION 2026-05-10]** Whether Trinity's structured-role schema maps cleanly onto Pydantic-typed structured-output workers. Exa cross-check 2026-05-10: no new information. The paper discusses natural-language LLM workers; integration with function-calling / structured-output endpoints is not addressed.
+- **[OPEN QUESTION 2026-05-10]** Whether Trinity's structured-role schema maps cleanly onto Pydantic-typed structured-output workers. Exa cross-check 2026-05-10: no new information. The paper discusses natural-language LLM workers; integration with function-calling / structured-output endpoints is not addressed.
 
 ## Snippets
 

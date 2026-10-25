@@ -34,7 +34,7 @@ K103 Posts.docx: @smaaaliy catalogs 10 vibe-code SaaS ideas anchored on **Pyth P
 | Pre-market gap tracker | Pre-open vs prior close heatmap | Equity signal research |
 | Anomaly watch bot | Statistical move detection → social posts | SEO/sentiment, not Cemini |
 
-**Guardrails:** Posts assume $500/mo Pyth Pro post-trial [NEEDS VERIFICATION 2026-06-07]. PM auto-execution requires Polygon wallet + signing — monitor-only for Cemini boundary.
+**Guardrails:** Posts assume $500/mo Pyth Pro post-trial [OPEN QUESTION 2026-06-07]. PM auto-execution requires Polygon wallet + signing — monitor-only for Cemini boundary.
 
 ## Snippets
 

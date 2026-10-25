@@ -71,8 +71,8 @@ The 65 °C actively heated chamber is the feature that most changes the **materi
 
 ### Caveats for a purchase decision
 
-- **Prices in this page conflict** and were taken from reseller and aggregator pages, not a verified Bambu invoice. Confirm on the Bambu store before deciding. [NEEDS VERIFICATION 2026-09-30]
-- **Model-line churn.** Third-party 2026 comparison pages reference sibling models (H2S, H2D Pro, H2C, X2D) with different prices and feature splits. These came from **single commercial sources** and are **not verified** here — the Bambu lineup moved several times through 2025–2026. [NEEDS VERIFICATION 2026-09-30]
+- **Prices in this page conflict** and were taken from reseller and aggregator pages, not a verified Bambu invoice. Confirm on the Bambu store before deciding. [OPEN QUESTION 2026-09-30]
+- **Model-line churn.** Third-party 2026 comparison pages reference sibling models (H2S, H2D Pro, H2C, X2D) with different prices and feature splits. These came from **single commercial sources** and are **not verified** here — the Bambu lineup moved several times through 2025–2026. [OPEN QUESTION 2026-09-30]
 - **Laser modules are a different risk class.** A 40 W laser in a consumer enclosure is a fire and fume-management concern, not a printing feature. The wiki has no coverage of laser safety; do not treat the "all-in-one" framing as risk-free.
 - **Same closed-firmware constraints as every Bambu** [@concepts/bambu-ecosystem-closed-loop.md] — the Klipper / OctoPrint retrofit path does not exist here either.
 

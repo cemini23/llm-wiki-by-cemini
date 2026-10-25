@@ -99,7 +99,7 @@ The **bio link** is the linchpin. All external promotion funnels to one place: t
 | **Established (3–12 months)** | 20:1 to 50:1 |
 | **Top creators (12+ months)** | 10:1 to 20:1 |
 
-`[NEEDS VERIFICATION 2026-05-08]`: 2026 benchmarks for image-based creators.
+`[OPEN QUESTION 2026-05-08]`: 2026 benchmarks for image-based creators.
 
 ### Content types that drive subscriptions
 

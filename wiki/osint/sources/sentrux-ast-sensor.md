@@ -59,7 +59,7 @@ Direct match for the Cemini development workflow's biggest implicit risk: autono
 
 1. **Wiki / librarian server fit: ❌** — AST analysis offers no value for a Markdown-based knowledge compiler. Don't deploy on the librarian server.
 2. **Cemini production stack fit: ⚠️** — runs at CI/dev-time, not at runtime. Useful as a pre-commit hook protecting the Python orchestration codebase, not as a deployed runtime container on the Hetzner production server.
-3. **Headless rendering caveat** — sentrux's interactive treemap visualizations rely on Vulkan/OpenGL backends. In headless environments (CI, server), sentrux must correctly identify the lack of display server and gracefully degrade to its CLI-only fallback. **[NEEDS VERIFICATION 2026-04-29]**: confirm CLI-only mode works on the laptop and CI environments before adopting as a hard gate.
+3. **Headless rendering caveat** — sentrux's interactive treemap visualizations rely on Vulkan/OpenGL backends. In headless environments (CI, server), sentrux must correctly identify the lack of display server and gracefully degrade to its CLI-only fallback. **[OPEN QUESTION 2026-04-29]**: confirm CLI-only mode works on the laptop and CI environments before adopting as a hard gate.
 4. **Dynamic-language probabilistic accuracy** — deep architectural analysis in Python is inherently more probabilistic than statically-typed languages. False positives during FastMCP dependency checks possible. **[NEEDS VERIFICATION 2026-04-29]**: empirical false-positive rate on Cemini's existing codebase before declaring it a hard gate.
 
 ### Integration vector
@@ -76,7 +76,7 @@ Direct match for the Cemini development workflow's biggest implicit risk: autono
 
 ### Risks & open questions
 
-1. **Memory footprint when parsing complex LangGraph graphs** [NEEDS VERIFICATION 2026-04-29] — what is the resident memory of sentrux when parsing a state machine with hundreds of nodes? Per Gemini's evaluation, this requires verification before relying on it as a hard CI gate.
+1. **Memory footprint when parsing complex LangGraph graphs** [OPEN QUESTION 2026-04-29] — what is the resident memory of sentrux when parsing a state machine with hundreds of nodes? Per Gemini's evaluation, this requires verification before relying on it as a hard CI gate.
 2. **Sustainability** — only 3 contributors (v1b3coder, sentrux, trevorsilence). High release velocity (37 releases in 8 days March 11–19) but sole-author projects sometimes go dormant. Track upstream activity quarterly.
 3. **Accuracy on Python vs statically-typed languages** [NEEDS VERIFICATION 2026-04-29] — file false-positive issues upstream if encountered; consider configurable suppression rules in `.sentrux/rules.toml`.
 

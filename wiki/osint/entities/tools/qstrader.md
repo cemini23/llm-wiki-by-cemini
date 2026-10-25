@@ -28,4 +28,4 @@ QSTrader is an object-oriented, event-driven backtesting engine written in Pytho
 
 **Integration path**: Drop-in acceleration for `/opt/cemini` algorithmic trading stack. PortfolioHandler can ingest Polymarket/Kalshi event data streams; PositionSizer adapts to event-contract position sizing.
 
-**Open question** [NEEDS VERIFICATION 2026-05-16]: Latency benchmarking required when scaling ExecutionHandler to process live Polymarket and Kalshi event data at production throughput.
+**Open question** [OPEN QUESTION 2026-05-16]: Latency benchmarking required when scaling ExecutionHandler to process live Polymarket and Kalshi event data at production throughput.

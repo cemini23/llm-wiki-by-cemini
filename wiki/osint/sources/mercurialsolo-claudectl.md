@@ -78,7 +78,7 @@ Either reading argues for **fork-and-pin pattern at adoption time** (clone repo,
 ### Risks & open questions
 
 1. **Solo-author bus-factor** — already covered above. Mitigated by fork-and-pin.
-2. **Local LLM resource contention** [NEEDS VERIFICATION 2026-04-30] — the laptop runs Ollama for nomic-embed-text + potentially other models. Adding another local-LLM consumer may stress unified memory. Pre-deployment test: run claudectl + 3 concurrent Claude Code sessions + nomic-embed-text simultaneously; observe thermal throttling.
+2. **Local LLM resource contention** [OPEN QUESTION 2026-04-30] — the laptop runs Ollama for nomic-embed-text + potentially other models. Adding another local-LLM consumer may stress unified memory. Pre-deployment test: run claudectl + 3 concurrent Claude Code sessions + nomic-embed-text simultaneously; observe thermal throttling.
 3. **TUI thermal throttling under heavy load** (per Gemini brief) — sustained TUI rendering + multi-session monitoring + local LLM inference can heat the laptop into throttle territory.
 4. **Trade-off vs simpler workflows** — for genuinely linear workflows (one Claude Code session at a time), claudectl adds overhead without benefit. The value comes specifically from 3+ parallel sessions.
 5. **Crates.io vs GitHub version drift** — crates.io shows v0.32.0; GitHub aggregator shows v0.18.2. Verify before adoption which is the canonical "latest" — likely crates.io is fresher.

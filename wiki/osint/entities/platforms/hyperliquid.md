@@ -110,7 +110,7 @@ Arrakis Finance cross-venue study (Hayashi–Yoshida on trade tapes, 29 major pe
 
 **Agent Wallet** (above) = signing custody. **HLP / User Vaults** = capital products. **DIY fill-mirror** = bot that chases leader fills.
 
-K165 Gemini DRs: skip live DIY (min notional + funding asymmetry + lead-lag). HLP vs User Vault preference **conflicts across reports** — see `@concepts/hyperliquid-hlp-vs-user-vaults.md` `[NEEDS VERIFICATION 2026-07-14]`. Prefer official SDK vault transfer APIs over unlicensed copy bots.
+K165 Gemini DRs: skip live DIY (min notional + funding asymmetry + lead-lag). HLP vs User Vault preference **conflicts across reports** — see `@concepts/hyperliquid-hlp-vs-user-vaults.md` `[OPEN QUESTION 2026-07-14]`. Prefer official SDK vault transfer APIs over unlicensed copy bots.
 
 ### What the previous narrative got wrong (and why)
 The pre-K4 page collapsed prescription into description on four claims:

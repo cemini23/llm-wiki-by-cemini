@@ -82,4 +82,4 @@ A **Harris Poll** commissioned by the NCPG found:
 
 - The NCPG statement is a **position paper, not a ruling**. It changes no operator's legal status. Do not treat it as a delisting or geofence trigger.
 - The "85% / 84%" figures come from a **self-commissioned** poll. Record the sponsor with the number. [TENTATIVE]
-- Maurer's departure date is reported as 2027-01-07 start by one aggregator; treat the exact start date as unverified. [NEEDS VERIFICATION 2026-09-30]
+- Maurer's departure date is reported as 2027-01-07 start by one aggregator; treat the exact start date as unverified. [OPEN QUESTION 2026-09-30]

@@ -38,7 +38,7 @@ updated: 2026-06-05
 
 ### Image-gen tangential relevance
 
-Merge geometry may inform **multi-LoRA stacking** beyond SLERP/TIES/DARE (@concepts/de-censoring-techniques.md) when combining preference-tuned persona adapters — **untested on diffusion** in this work `[NEEDS VERIFICATION 2026-06-05]`.
+Merge geometry may inform **multi-LoRA stacking** beyond SLERP/TIES/DARE (@concepts/de-censoring-techniques.md) when combining preference-tuned persona adapters — **untested on diffusion** in this work `[OPEN QUESTION 2026-06-05]`.
 
 ## Snippets
 

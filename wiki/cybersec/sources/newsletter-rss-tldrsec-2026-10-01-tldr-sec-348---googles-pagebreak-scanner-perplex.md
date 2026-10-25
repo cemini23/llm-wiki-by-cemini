@@ -45,5 +45,5 @@ the inbox and re-ingest.
 
 ## Snippets
 
-> [NEEDS VERIFICATION 2026-10-02] Two items above come from the daily-digest brief, not a first-hand
+> [OPEN QUESTION 2026-10-02] Two items above come from the daily-digest brief, not a first-hand
 > read of TLDR Sec #348.

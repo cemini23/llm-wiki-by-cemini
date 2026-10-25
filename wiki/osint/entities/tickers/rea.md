@@ -25,7 +25,7 @@ updated: 2026-08-11
 
 WW Issue #178 reports REA **opened +38% on IPO** to $27.60 from $19 priced. WW target price **$35** — matches Donny's target from the May 9 thoughts note. Multi-source confirmation (Donny + WW) on the same target hardens the thesis, but per CLAUDE.md cross-source signal rules, Donny + WW track each other on critical-minerals names — treat as **same-source confirmation**, not independent.
 
-Shiloh resource framing [NEEDS VERIFICATION 2026-05-13] — boulder assays vs SK-1300-compliant figures need disambiguation on next deep-read.
+Shiloh resource framing [OPEN QUESTION 2026-05-13] — boulder assays vs SK-1300-compliant figures need disambiguation on next deep-read.
 
 ## Raw Concept
 

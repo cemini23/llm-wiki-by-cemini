@@ -30,7 +30,7 @@ read_status: deep-read
 
 Records audio of an FDM machine printing, converts it to spectrograms, and trains a CNN classifier. Hardware: Makerbot Method X with ABS material, SparkFun MEMS microphone, bandpass filter 100-1200 Hz. Dataset: 256 audio samples, 80/20 train/test split.
 
-[TENTATIVE — important caveat] The paper introduces the system as targeting three failure modes (nozzle clog, filament breakage, stepper-pulley skipping), but the experiment as actually run only contrasts **with-material** (printing) vs **without-material** (filament not feeding) audio. The "three failure modes" is the paper's framing of the problem space, not what the published metrics measure. The CNN is trained as a binary classifier in the experiment as run [NEEDS VERIFICATION 2026-05-06].
+[TENTATIVE — important caveat] The paper introduces the system as targeting three failure modes (nozzle clog, filament breakage, stepper-pulley skipping), but the experiment as actually run only contrasts **with-material** (printing) vs **without-material** (filament not feeding) audio. The "three failure modes" is the paper's framing of the problem space, not what the published metrics measure. The CNN is trained as a binary classifier in the experiment as run [OPEN QUESTION 2026-05-06].
 
 Reported results on the held-out test set: 91% accuracy, 88% precision, 85% recall, 86.5% F1 — for the binary task.
 

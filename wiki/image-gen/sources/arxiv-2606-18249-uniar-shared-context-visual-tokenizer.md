@@ -56,7 +56,7 @@ updated: 2026-06-21
 ### Workspace relevance
 
 - Direct competitor axis to **HYDRA-X**, **BAGEL**, **Janus-Pro** — strongest claim is **true shared context** via single tokenizer
-- **24 GB VRAM** inference floor per README — laptop-viable on 24 GB class GPU `[NEEDS VERIFICATION 2026-06-21]`
+- **24 GB VRAM** inference floor per README — laptop-viable on 24 GB class GPU `[OPEN QUESTION 2026-06-21]`
 - Qwen-team lineage — watch NSFW posture on public weights vs Eastern Vanguard T2I bases
 
 ## Snippets

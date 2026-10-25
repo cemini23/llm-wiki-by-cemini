@@ -38,7 +38,7 @@ The tradingview-mcp server consumes natural language prompts from AI clients and
 
 ### Open questions
 
-- Do the underlying scrapers require paid TradingView session cookies for reliable 1m/5m tick data? `[NEEDS VERIFICATION 2026-05-10]`
+- Do the underlying scrapers require paid TradingView session cookies for reliable 1m/5m tick data? `[OPEN QUESTION 2026-05-10]`
 
 ### Cemini significance
 

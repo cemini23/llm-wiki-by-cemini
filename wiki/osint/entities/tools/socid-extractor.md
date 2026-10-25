@@ -37,7 +37,7 @@ Its core innovation is extraction of **stable internal identifiers** — Google 
 
 **Adoption (2026-05-16)**: installed via `pip` on the laptop (`~/tools/`) and on cemini-librarian — a workspace/curation-side OSINT tool, consistent with the deployment boundary (curation tooling on laptop+librarian; financial tooling on cemini-prod).
 
-- `[NEEDS VERIFICATION 2026-05-16]` Parser resilience against emerging anti-scraping defenses (e.g. Cloudflare Turnstile on TikTok). (Partially addressed below — active upstream maintenance is the mitigation, but per-platform resilience is still untested without execution.)
+- `[OPEN QUESTION 2026-05-16]` Parser resilience against emerging anti-scraping defenses (e.g. Cloudflare Turnstile on TikTok). (Partially addressed below — active upstream maintenance is the mitigation, but per-platform resilience is still untested without execution.)
 
 ## Phase-0 Audit (2026-05-16)
 

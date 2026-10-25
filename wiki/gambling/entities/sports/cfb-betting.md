@@ -60,7 +60,7 @@ A college card in the 2026-10-07 batch priced a **first-half team total as its o
 
 ### Data
 
-No free data source is wired for this wiki yet. Candidate inputs: CFBD (CollegeFootballData) API and public play-by-play feeds. Both are unvetted for ToS. [NEEDS VERIFICATION 2026-10-02]
+No free data source is wired for this wiki yet. Candidate inputs: CFBD (CollegeFootballData) API and public play-by-play feeds. Both are unvetted for ToS. [OPEN QUESTION 2026-10-02]
 
 ## Snippets
 

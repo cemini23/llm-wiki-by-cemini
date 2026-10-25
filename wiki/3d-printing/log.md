@@ -789,3 +789,8 @@ Cross-routed from OSINT-workspace tool-eval ingest `@osint-wiki/sources/tool-eva
 - `wiki/index.md` — added reBot-DevArm row under Tools.
 
 Pages touched: 5 (1 created + 4 modified) — within schema bound. Not committed; left staged.
+
+## [2026-10-25] tooling | verification-tag split reached this domain
+
+- `[NEEDS VERIFICATION]` tags that recorded unresolved work rather than an unchecked fact were migrated to the new `[OPEN QUESTION DATE]` tag, which carries no expiry. Nothing here needed a fact re-check; this entry records the schema change touching pages in this wiki.
+

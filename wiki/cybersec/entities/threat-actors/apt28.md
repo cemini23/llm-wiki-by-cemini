@@ -34,7 +34,7 @@ Sole named APT group in the corpus (APT28 — Understanding a group specialized 
 
 ## Narrative
 
-APT28 — aliases Fancy Bear, Sofacy, Strontium, Pawn Storm, Sednit — is a Russian state-sponsored advanced persistent threat group widely attributed to the GRU (Russian military intelligence, Unit 26165) by Western government agencies and threat-intel vendors (CrowdStrike, Mandiant, Microsoft Threat Intelligence, US-CERT). [NEEDS VERIFICATION 2026-05-12]
+APT28 — aliases Fancy Bear, Sofacy, Strontium, Pawn Storm, Sednit — is a Russian state-sponsored advanced persistent threat group widely attributed to the GRU (Russian military intelligence, Unit 26165) by Western government agencies and threat-intel vendors (CrowdStrike, Mandiant, Microsoft Threat Intelligence, US-CERT). [OPEN QUESTION 2026-05-12]
 
 **Notable operations** (public attribution):
 - DNC + DCCC intrusions, 2016 US election interference

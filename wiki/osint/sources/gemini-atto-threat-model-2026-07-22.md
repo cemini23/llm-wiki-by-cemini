@@ -46,7 +46,7 @@ STRIDE-style threat model for Atto’s local-first posture (`~/AttoVault/`), opt
 
 **Out of scope for 2-person indie:** full GDPR program (household exemption framing); immutable crypto audit of every click (attacker owns disk).
 
-**Citation quality:** mixes NIST/Cloudflare docs with 2025–2026 worm narratives and CVE references — verify CVE IDs and Cloudflare default-policy claims before SECURITY.md hard requirements. [NEEDS VERIFICATION 2026-07-22]
+**Citation quality:** mixes NIST/Cloudflare docs with 2025–2026 worm narratives and CVE references — verify CVE IDs and Cloudflare default-policy claims before SECURITY.md hard requirements. [OPEN QUESTION 2026-07-22]
 
 **Wiki scope:** product security checklist. Align with `atto/SECURITY.md`; no Barone vault contents.
 

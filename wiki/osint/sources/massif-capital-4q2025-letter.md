@@ -104,4 +104,4 @@ Used to argue that modern macro/financial systems increasingly exhibit wicked ch
 ## Dead Ends
 
 - Did NOT cross-check the Morgan Stanley *Oil Manual: Outlook 2026 — Letting the Curve Do the Work* citation; this is a third-party reference inside Massif's letter and pulling MS source would require separate ingest. Flag if MS oil outlook becomes a recurring reference.
-- Did NOT verify the Goldman Sachs bullish-sentiment survey cited on p.1; flagged as `[NEEDS VERIFICATION 2026-05-13]` for any future use of the "1/5 defensively positioned" number outside this letter.
+- Did NOT verify the Goldman Sachs bullish-sentiment survey cited on p.1; flagged as `[OPEN QUESTION 2026-05-13]` for any future use of the "1/5 defensively positioned" number outside this letter.

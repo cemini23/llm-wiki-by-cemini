@@ -204,7 +204,7 @@ OnlyFans has limited native discovery compared to social platforms `[CONFIRMED -
 
 **Net calculation**: After OnlyFans' 20% fee + payment processing (2.9% + $0.30), creators net approximately 75-78% of gross payments `[Source: onlysonar.com, B9 Agency]`.
 
-`[NEEDS VERIFICATION 2026-05-08]`: Reserve percentage for new creators; payout methods available in specific countries.
+`[OPEN QUESTION 2026-05-08]`: Reserve percentage for new creators; payout methods available in specific countries.
 
 ## Snippets
 

@@ -48,7 +48,7 @@ Concept stub from K95 ingest — arXiv:2606.00369 quantifying geo-cultural salie
 
 Refusal behavior is **not universal morality** — it encodes training-culture priors. Operators choose models via @concepts/censorship-tier-taxonomy.md partly because alignment geography differs. De-censoring (@concepts/prompt-engineering-uncensored.md) removes one culture's guardrails, not "harm" objectively.
 
-Text-modality evidence — extrapolation to T2I refusal patterns is plausible but `[NEEDS VERIFICATION 2026-06-03]`.
+Text-modality evidence — extrapolation to T2I refusal patterns is plausible but `[OPEN QUESTION 2026-06-03]`.
 
 ## Snippets
 

@@ -53,7 +53,7 @@ updated: 2026-06-27
 
 ### Workspace relevance
 
-Direct **inference acceleration** path for local FLUX persona T2I and Wan I2V — pairs with quantization tiers in @entities/hardware/gpu-guide.md. Watch ComfyUI node integration `[NEEDS VERIFICATION 2026-06-07]`. Does not change uncensoring posture — speed-only axis.
+Direct **inference acceleration** path for local FLUX persona T2I and Wan I2V — pairs with quantization tiers in @entities/hardware/gpu-guide.md. Watch ComfyUI node integration `[OPEN QUESTION 2026-06-07]`. Does not change uncensoring posture — speed-only axis.
 
 ## Snippets
 

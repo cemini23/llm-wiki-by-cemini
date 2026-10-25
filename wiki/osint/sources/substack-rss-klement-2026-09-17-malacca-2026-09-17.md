@@ -30,8 +30,8 @@ read_status: read
 
 ## Narrative
 
-Maurer et al (2026) GDP effects: Panama / Suez / Malacca close; Thai Canal / Northwest Passage open. Cite Klement. IMF/paper `[NEEDS VERIFICATION 2026-09-17]`. No named tradable levels. Wiki-only. Do not invent a Maurer source page. Never auto-arm.
+Maurer et al (2026) GDP effects: Panama / Suez / Malacca close; Thai Canal / Northwest Passage open. Cite Klement. IMF/paper `[OPEN QUESTION 2026-09-17]`. No named tradable levels. Wiki-only. Do not invent a Maurer source page. Never auto-arm.
 
 ## Snippets
 
-> Maurer et al. (2026) provide GDP-effect charts for Panama Canal close, Suez close, Malacca close, Thai Canal open, and Northwest Passage open. [Source: https://klementoninvesting.substack.com/p/what-if-the-strait-of-malacca-is (retrieved 2026-09-17)] Paper/IMF URL-only `[NEEDS VERIFICATION 2026-09-17]`.
+> Maurer et al. (2026) provide GDP-effect charts for Panama Canal close, Suez close, Malacca close, Thai Canal open, and Northwest Passage open. [Source: https://klementoninvesting.substack.com/p/what-if-the-strait-of-malacca-is (retrieved 2026-09-17)] Paper/IMF URL-only `[OPEN QUESTION 2026-09-17]`.

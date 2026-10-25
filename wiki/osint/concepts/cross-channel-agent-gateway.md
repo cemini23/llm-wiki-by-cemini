@@ -85,7 +85,7 @@ This pattern operationalizes the long-standing requirement to surface trading al
 
 ### Open questions
 
-- How does picobot handle WhatsApp's session-state churn (whatsmeow + pure-Go SQLite) under multi-channel concurrent writes? [NEEDS VERIFICATION 2026-05-10]
+- How does picobot handle WhatsApp's session-state churn (whatsmeow + pure-Go SQLite) under multi-channel concurrent writes? [OPEN QUESTION 2026-05-10]
 - What's the right authentication/authorization model when admin overrides arrive via Telegram — Telegram user ID allowlist + per-tool capability check?
 
 [Sources: Evaluating Code for Trading Stacks.docx URL 3 (mercury-agent), URL 4 (picobot)]

@@ -47,7 +47,7 @@ Presenter Jack: ex-**blackjack** card counter → sports bettor [Source: EQt2sq0
 | **Premium** | **$199/mo** or **$132–$167/mo** billed annually. Adds the Unabated Line (vig-free fair odds), live bets, futures simulators [TENTATIVE] |
 | **Add-ons** | NBA $199/mo · Edge Rusher **$250/week** · WNBA $199/mo · College Football $149/mo · CFL $99/mo · Tennisform $55/mo · Concierge $799/mo (requires Premium) |
 | **API / enterprise** | **$3,000/mo** — WebSocket, sales call required, no free tier |
-| **Refund** | Trial-gated; no published money-back guarantee found [NEEDS VERIFICATION 2026-09-30] |
+| **Refund** | Trial-gated; no published money-back guarantee found [OPEN QUESTION 2026-09-30] |
 | **Jurisdiction** | US sharp-bettor market. **No prediction-market coverage** — sportsbook fair-odds only |
 | **CLV track record** | The "**Unabated Line**" is a vig-free consensus built from books that reach the closing line fastest. It is a fair-odds benchmark, **not** a published bet-by-bet CLV ledger [TENTATIVE] |
 | **Overlap vs OddsJam** | Same price band (~$199/mo premium) but a different philosophy: Unabated does **fair-odds modelling**, OddsJam does **+EV/promo alerts**. Neither scans prediction markets |

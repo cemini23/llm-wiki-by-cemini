@@ -38,4 +38,4 @@ MIT-licensed Claude Code skill collection with 4,900 stars. The web-design-engin
 
 Full integration safe under MIT. The web-design-engineer templates complement `pm-claude-skills`' Figma-template-generation (pm-claude-skills generates the design; garden-skills engineers the implementation).
 
-[NEEDS VERIFICATION 2026-05-21] exact skill names and invocation patterns — verify via `npx skills add` dry-run.
+[OPEN QUESTION 2026-05-21] exact skill names and invocation patterns — verify via `npx skills add` dry-run.

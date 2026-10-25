@@ -31,7 +31,7 @@ Cross-platform desktop app (200+ models, Image/Cinema Studio, sd.cpp + Wan2GP C+
 
 **Verdict: STEAL-FROM** — extract C++ inference parameters + Generative-Media-Skills CLI patterns into ComfyUI/headless workflows. **Do not adopt** full Electron/React client (conflicts with terminal-native + ComfyUI-first stack).
 
-Wan2GP local video memory on 32 GB M-series `[NEEDS VERIFICATION 2026-06-05]`.
+Wan2GP local video memory on 32 GB M-series `[OPEN QUESTION 2026-06-05]`.
 
 ## Dead Ends
 

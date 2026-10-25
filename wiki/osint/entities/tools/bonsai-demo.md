@@ -19,6 +19,6 @@ updated: 2026-07-15
 | **Repo** | [PrismML-Eng/Bonsai-demo](https://github.com/PrismML-Eng/Bonsai-demo) |
 | **License** | Apache-2.0 (~1.3k★; ~2MB git size) |
 | **Verdict** | **Extract patterns** — local low-bit inference hedge for XSP/CCC brief eval; not prod trading critical path |
-| **NV** | Metal/CUDA footprint + parallel request limits for 256k context [NEEDS VERIFICATION 2026-07-15] |
+| **NV** | Metal/CUDA footprint + parallel request limits for 256k context [OPEN QUESTION 2026-07-15] |
 
 Steal quantization / Metal-CUDA alignment notes. Do not drop-in replace cloud models without hardware budget.

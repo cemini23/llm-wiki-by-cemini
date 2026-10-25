@@ -68,7 +68,7 @@ Cooperative MARL normally assumes cheap frequent access to global information; t
 3. If inter-agent synchronization is ever throttled, apply **base policy prediction** to keep MAPPO stable.
 4. For the conductor, prefer **RL-based context-conditioned model weighting** over static routing rules.
 
-`[NEEDS VERIFICATION 2026-05-16]` All four findings are external-paper-derived; none has been tested against Cemini's own instruments or stack. Server-side validation owned by server-Claude — see the cemini-prod brief.
+`[OPEN QUESTION 2026-05-16]` All four findings are external-paper-derived; none has been tested against Cemini's own instruments or stack. Server-side validation owned by server-Claude — see the cemini-prod brief.
 
 ## Snippets
 

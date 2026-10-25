@@ -53,7 +53,7 @@ Simulation study of **heterogeneous market makers** in a LOB with endogenous pri
 | Poorly informed markets + informed bursts | Tightest spread tiers are highest adverse-selection risk |
 | Hawkes clustering | Align with `@concepts/polymarket-microstructure-findings.md` burst/FLB work — inventory caps near event clusters |
 
-Pair with quarterly `@meta/pm-lp-backtest-cadence.md` — proxy informedness from PM flow features still `[NEEDS VERIFICATION 2026-06-05]` on live CLOB.
+Pair with quarterly `@meta/pm-lp-backtest-cadence.md` — proxy informedness from PM flow features still `[OPEN QUESTION 2026-06-05]` on live CLOB.
 
 ## Snippets
 

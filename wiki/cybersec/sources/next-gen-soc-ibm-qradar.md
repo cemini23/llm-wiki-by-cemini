@@ -69,11 +69,11 @@ Ch 5-12. Adopted into the wiki:
 | ✅ Full | EPS/FPM licensing model + 7.4 transition + sizing math | yes |
 | ✅ Full | Upgrade pitfalls + operator foot-guns | yes |
 | ✅ Full | One CRE detection example (SSH brute force) | yes |
-| ⚠️ TOC | AQL syntax + canonical idioms | `[NEEDS VERIFICATION 2026-05-17]` |
-| ⚠️ TOC | Rule wizard UI walkthrough | `[NEEDS VERIFICATION 2026-05-17]` |
-| ⚠️ TOC | UBA / Watson Advisor / Use Case Manager / NTA | `[NEEDS VERIFICATION 2026-05-17]` |
-| ⚠️ TOC | WinCollect deep-dive | `[NEEDS VERIFICATION 2026-05-17]` |
-| ⚠️ TOC | Troubleshooting + tuning playbook | `[NEEDS VERIFICATION 2026-05-17]` |
+| ⚠️ TOC | AQL syntax + canonical idioms | `[OPEN QUESTION 2026-05-17]` |
+| ⚠️ TOC | Rule wizard UI walkthrough | `[OPEN QUESTION 2026-05-17]` |
+| ⚠️ TOC | UBA / Watson Advisor / Use Case Manager / NTA | `[OPEN QUESTION 2026-05-17]` |
+| ⚠️ TOC | WinCollect deep-dive | `[OPEN QUESTION 2026-05-17]` |
+| ⚠️ TOC | Troubleshooting + tuning playbook | `[OPEN QUESTION 2026-05-17]` |
 
 **Next-extraction priority** (highest value): WinCollect (Ch 12) — Windows event
 ingestion is the dominant blue-team use case. Second: rule-wizard + AQL idioms

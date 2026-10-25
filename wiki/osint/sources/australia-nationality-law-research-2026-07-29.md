@@ -44,7 +44,7 @@ Apostille: **DFAT only** (federal), paper original only, **no e-apostille** (e-R
 
 Historical naturalizations: NAA series A1 / A435 / A446. Pre-1949 naturalization = British subject — still voluntary foreign nationality under Italian Law 555/1912.
 
-Melbourne consulate publishes L74/2025 posture; Law 11/2026 seat notices still `[NEEDS VERIFICATION 2026-07-29]`.
+Melbourne consulate publishes L74/2025 posture; Law 11/2026 seat notices still `[OPEN QUESTION 2026-07-29]`.
 
 ## Snippets
 

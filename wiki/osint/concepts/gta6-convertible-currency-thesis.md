@@ -74,7 +74,7 @@ Skinport sellers do not get PayPal. They cash out via bank transfer through Adye
 | --- | --- | --- |
 | 2021-06-03 | Tom Henderson: missions pay "bitcoin instead of cash"; stock market plus a crypto broker | `[CONFIRMED]` he said it; product `[TENTATIVE]` then |
 | 2021–22 | Walked back to fictional in-game crypto (Inverse, Jul 2022) | `[CONFIRMED]` walk-back |
-| 2022-09 | 90-video leak; currency UI in dumped footage unresolved | `[NEEDS VERIFICATION 2026-08-20]` |
+| 2022-09 | 90-video leak; currency UI in dumped footage unresolved | `[OPEN QUESTION 2026-08-20]` |
 | 2022-11 | Rockstar bans crypto/NFTs on fan GTA V RP servers | `[CONFIRMED]` anti-P2E posture on V |
 | ~2024–25 | Henderson later said the feature was scrapped, never a real-money rail | `[TENTATIVE]` secondary recap |
 | 2026-01 | Official Cfx Marketplace opens (Tebex merchant of record) | `[TENTATIVE]` — https://marketplace.cfx.re/ |

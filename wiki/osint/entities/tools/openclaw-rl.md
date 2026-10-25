@@ -33,7 +33,7 @@ K137 Phase-0 on [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL
 | **Verdict** | **Adopt** (wiki + optional laptop spike; **not** cemini-prod trading path without review) |
 | **Steal** | Interaction-trace → policy gradient loop without manual annotation |
 
-**Posture:** reference Adopt for PM bot **offline** tuning research — do not wire to cemini-prod Lane A without separate security review. SGLang/Ray topology compatibility `[NEEDS VERIFICATION 2026-06-30]`.
+**Posture:** reference Adopt for PM bot **offline** tuning research — do not wire to cemini-prod Lane A without separate security review. SGLang/Ray topology compatibility `[OPEN QUESTION 2026-06-30]`.
 
 ## Snippets
 

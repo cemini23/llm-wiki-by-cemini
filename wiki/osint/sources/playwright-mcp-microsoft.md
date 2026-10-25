@@ -99,7 +99,7 @@ Two-tier recommendation reflecting the dual hardware envelope:
 ### Risks & open questions
 
 1. **Accessibility-tree truncation on long pages** [CONFIRMED 2026-05-17 — but the failure mode is the opposite of truncation] — Verified via the playwright-mcp GitHub issue tracker (issues #395, #1147, #1216, #1329). playwright-mcp does **not** dynamically truncate the accessibility snapshot; it emits the **full** tree, which on long pages (Swagger docs, large SPAs, monolithic SEC 10-Ks) routinely produces snapshots of 28k–72k+ tokens. The actual failure mode is the reverse of Gemini's hypothesis: no context *loss* from silent truncation, but context *flooding* — Claude Code aborts with "MCP tool response (N tokens) exceeds maximum allowed tokens (25000)". Maintainers explicitly declined to add pagination ("tokens will get cheaper faster than we can elaborate a meaningful pagination solution"); the practical mitigation is `--snapshot-mode=none` + agent-side write-snapshot-to-file. **Implication for Cemini**: the SEC-10-K concern is real but is a token-budget problem, not a data-integrity problem — handle via snapshot-to-file + grep, not by fearing silent element loss.
-2. **Memory leak resistance under 14-day soak** [NEEDS VERIFICATION 2026-04-29] — gating verification for production promotion.
+2. **Memory leak resistance under 14-day soak** [OPEN QUESTION 2026-04-29] — gating verification for production promotion.
 3. **No SBOM for transitive dependencies** — Apache-2.0 at top level verified; transitive npm dependencies must be `npm audit` + `license-checker`'d before production.
 
 ## Snippets

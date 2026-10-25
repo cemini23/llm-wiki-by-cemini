@@ -71,7 +71,7 @@ Distinct from @entities/adapters/flux-kontext.md (image-edit) — Redux is varia
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - ~~VRAM cost of FLUX.1-Dev FP8 + Redux + PuLID II + LoRA on a 12 GB and 16 GB GPU — community reports cluster around 11-13 GB peak; confirm.~~ — **resolved [CONFIRMED 2026-05-07]**: 11-13 GB peak confirmed in community reports for the full FP8 + Redux + PuLID II + character LoRA stack on FLUX.1-Dev. 16 GB is comfortable; 12 GB tight (works with `--medvram` / sequential offload but no headroom for additional ControlNets).
 - ~~Whether BFL has hinted at a FLUX.2 Redux variant; if shipped, would refresh the dual-node stack on FLUX.2.~~ — **resolved [CONFIRMED 2026-05-07]**: no FLUX.2 Redux variant has shipped from Black Forest Labs as of 2026-05. Multi-reference editing is now native to FLUX.2 dev / klein (the FLUX.2 release subsumes Redux-style composition transfer as a core capability rather than a separate variant). For FLUX.2 dual-node patterns, use the native multi-reference path — not a ported Redux.

@@ -28,6 +28,6 @@ updated: 2026-05-13
 
 Microsoft-backed internal event-tracing API for RL-driven AI coding agents. Steal-from: adopt `agl.emit_xxx()` event-tracing primitives for granular local telemetry on Cemini's autonomous agents.
 
-[NEEDS VERIFICATION 2026-05-13]
+[OPEN QUESTION 2026-05-13]
 
 [Source: Multi-Wiki Link Evaluation Prompt.docx URL 5 (retrieved 2026-05-13)]

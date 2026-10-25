@@ -114,7 +114,7 @@ Entity stub from back-fill of @sources/synthetic-character-consistency-survey.md
 
 ### Workspace TODO
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - Modal/Replicate cost tracking: typical FLUX.1 LoRA cost on Modal at 2026 prices.
 - Whether the Wan 2.2 dual-expert recipe transfers to Wan 2.7 R2V (multi-reference) — not yet documented.

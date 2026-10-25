@@ -42,7 +42,7 @@ Chile: constitutional *ius soli* with **extranjeros transeúntes** exception (hi
 
 Digitization: registrocivil.cl free extracts need **RUN**; copia íntegra gated by **ClaveÚnica** — diaspora abroad often blocked → consular proxy (~25–30 days unverified SLA). Hague e-Apostille embedded in eligible PDFs (PAdES-LTV); verify at `consulta.apostilla.gob.cl`. Subset of 74 doc types online-apostillable.
 
-Santiago Embassy / VFS: L74 exclusive-citizenship / 2-year residency exceptions; Law 11/2026 noted as 36-month adult processing window. e-PDF “original” acceptance still `[NEEDS VERIFICATION 2026-07-29]`.
+Santiago Embassy / VFS: L74 exclusive-citizenship / 2-year residency exceptions; Law 11/2026 noted as 36-month adult processing window. e-PDF “original” acceptance still `[OPEN QUESTION 2026-07-29]`.
 
 ## Snippets
 

@@ -46,7 +46,7 @@ updated: 2026-06-28
 | **Location** | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2606.26807-2606-26807v1-karla-knowledge-base-augmented-retr.pdf` |
 | **Retrieved** | 2026-06-28 |
 | **Read status** | read (abstract, §3–4, counterfactual KB-update experiments) |
-| **Code** | promised public in supplementary material `[NEEDS VERIFICATION 2026-06-28]` |
+| **Code** | promised public in supplementary material `[OPEN QUESTION 2026-06-28]` |
 
 ## Narrative
 

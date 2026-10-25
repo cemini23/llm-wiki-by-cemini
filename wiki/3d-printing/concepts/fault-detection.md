@@ -89,7 +89,7 @@ From single-modality (audio-only, CNN-only) → multimodal fusion → VLM zero-s
 
 **Industrial LPBF branch** (background — see @concepts/industrial-am-monitoring.md): factory metal AM adds graph-transformer quality regression from melt-pool images with explicit 3D neighborhood modeling [@sources/2026-pelaez-stgt-lpbf-quality-prediction.md] and neuromorphic photodiode anomaly detection [@sources/2025-banerjee-neuromorphic-lpbf.md]. These target spatially resolved ex-situ quality / process anomalies, not consumer spaghetti detection.
 
-[CONFIRMED] Bambu X1C / X1 ship lidar + AI camera + accelerometer — multi-sensor not single-CNN. [TENTATIVE 2026-05-08] False-negative-favoring tuning is community-reported. [NEEDS VERIFICATION 2026-05-08] Whether the AI camera's classifier is updated post-purchase or fixed at time of manufacture.
+[CONFIRMED] Bambu X1C / X1 ship lidar + AI camera + accelerometer — multi-sensor not single-CNN. [TENTATIVE 2026-05-08] False-negative-favoring tuning is community-reported. [OPEN QUESTION 2026-05-08] Whether the AI camera's classifier is updated post-purchase or fixed at time of manufacture.
 
 ### Reading-order cross-links
 

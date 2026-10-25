@@ -71,7 +71,7 @@ Sysmon kept surfacing as a load-bearing log source across the BlueTeam Kit corpu
 
 ### Configuration
 
-Default Sysmon config is minimal and produces enormous noise. The de-facto community baseline is the **SwiftOnSecurity** template — [github.com/SwiftOnSecurity/sysmon-config](https://github.com/SwiftOnSecurity/sysmon-config) — and its more aggressive sibling **Olaf Hartong's sysmon-modular** ([github.com/olafhartong/sysmon-modular](https://github.com/olafhartong/sysmon-modular)) which decomposes the config into MITRE ATT&CK-aligned modules. [NEEDS VERIFICATION 2026-05-17] — last-validated repo state is on the canonical-tool deep-read backlog.
+Default Sysmon config is minimal and produces enormous noise. The de-facto community baseline is the **SwiftOnSecurity** template — [github.com/SwiftOnSecurity/sysmon-config](https://github.com/SwiftOnSecurity/sysmon-config) — and its more aggressive sibling **Olaf Hartong's sysmon-modular** ([github.com/olafhartong/sysmon-modular](https://github.com/olafhartong/sysmon-modular)) which decomposes the config into MITRE ATT&CK-aligned modules. [OPEN QUESTION 2026-05-17] — last-validated repo state is on the canonical-tool deep-read backlog.
 
 Install + bootstrap:
 

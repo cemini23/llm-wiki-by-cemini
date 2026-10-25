@@ -31,7 +31,7 @@ updated: 2026-07-16
 | **Verdict** | **Integrate** — architect/implementer split for Claude Code (Fable judges; Grok/GPT-5.6 implement) |
 | **Routing** | xsp-killer prod brief (**scp**); CCC orchestration doctrine; CeminiDFS pipeline cost pattern |
 
-Requires Claude Code ≥2.1.170. Five-part spec contract + cross-vendor review loop. **Friction:** Grok lane needs xAI CLI headless; subagent routing tied to Anthropic CLI changes. [NEEDS VERIFICATION 2026-07-11] empirical token savings on XSP generation run.
+Requires Claude Code ≥2.1.170. Five-part spec contract + cross-vendor review loop. **Friction:** Grok lane needs xAI CLI headless; subagent routing tied to Anthropic CLI changes. [OPEN QUESTION 2026-07-11] empirical token savings on XSP generation run.
 
 ### Local adopt (2026-07-11)
 

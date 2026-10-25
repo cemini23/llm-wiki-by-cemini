@@ -85,7 +85,7 @@ Three single-GPU variants ship: a **bidirectional generator** (offline, highest 
 
 ### Open questions
 
-[NEEDS VERIFICATION 2026-05-16]
+[OPEN QUESTION 2026-05-16]
 
 - Weights / code release status and license (paper claims "open-source" — confirm on Hugging Face / GitHub).
 - Local runtime feasibility outside the RTX 5090 NVFP4 path — Apple Silicon, lower-VRAM NVIDIA cards.

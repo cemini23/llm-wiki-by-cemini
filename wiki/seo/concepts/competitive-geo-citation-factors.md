@@ -116,7 +116,7 @@ All six LLMs in the study treated these as near-binary eliminators:
 | Management response | +0.1 pp (null) | **Not a gatekeeper** for LLM selection |
 | List position | −2.1 to −3.7 pp/slot | Presentation order without content change |
 
-Full operator playbook: @concepts/llm-reputation-signals-geo.md. Local barbershop transfer `[NEEDS VERIFICATION 2026-06-16]`.
+Full operator playbook: @concepts/llm-reputation-signals-geo.md. Local barbershop transfer `[OPEN QUESTION 2026-06-16]`.
 
 ### Differentiators (after gatekeepers pass)
 

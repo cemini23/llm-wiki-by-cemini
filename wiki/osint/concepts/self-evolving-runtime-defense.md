@@ -44,7 +44,7 @@ HARD = **Harness-based Autonomous Runtime Defense Evolution**. Model the agent a
 
 ### Key findings
 
-- HARD-Both: DPI 12.1%, IPI 1.3%, MC 13.9%, SP 7.4% ASR, BU 91.0–97.0%; beats handcrafted (13–66% ASR, attack-specific). *(Table vs main-text numbers differ — `[NEEDS VERIFICATION 2026-08-29]`. K249 did not re-measure.)*
+- HARD-Both: DPI 12.1%, IPI 1.3%, MC 13.9%, SP 7.4% ASR, BU 91.0–97.0%; beats handcrafted (13–66% ASR, attack-specific). *(Table vs main-text numbers differ — `[OPEN QUESTION 2026-08-29]`. K249 did not re-measure.)*
 - Under multi-turn adaptive attacks **policy-only can beat joint** — the two artifacts are not uniformly additive.
 - **Gate rules memorize attacks, generalize poorly** (0→97 rules, test split 28.9→26.5). Literal patterns rot — push for anti-obfuscation/cumulative-intent abstractions.
 - Over-restriction is a failure mode: GPT-5.5 backbone "succeeded" at correction while wrecking utility (UA 7.2).

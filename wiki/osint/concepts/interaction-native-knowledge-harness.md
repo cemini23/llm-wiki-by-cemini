@@ -73,7 +73,7 @@ Paper argues **passive injection** beats agent-driven wiki-walk when planning ov
 1. **Spec invalidation** — which stash fact types expire on position close, regime flip, or market resolution
 2. **Shadow passive context** — inject kb+stash bundle at conductor pre-read; measure latency vs tool-walk baseline
 3. **Governance matrix** — wiki `maturity` × EMS action class (read / propose / execute)
-4. **Prod** — only after `@concepts/ems-execution-security-gaps.md` P0s closed and SeClaw-style eval for memory tools `[NEEDS VERIFICATION 2026-06-04]`
+4. **Prod** — only after `@concepts/ems-execution-security-gaps.md` P0s closed and SeClaw-style eval for memory tools `[OPEN QUESTION 2026-06-04]`
 
 ## Snippets
 

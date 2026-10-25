@@ -115,6 +115,6 @@ Cemini already runs DeepSeek (price-competitive with Kimi); main-model savings a
 
 - **`[CONFIRMED 2026-05-29]`** Hermes platform = `NousResearch/hermes-agent` (MIT, Nous Research).
 - **`[TENTATIVE 2026-05-29]`** Kimi K2.6 cache pricing — third-party mirrors of Moonshot pricing (May 2026) show **cache-hit ~$0.10–0.16/M input**; author's **$0.15/M** figure is plausible for cache hits. **Cache-miss K2.6 input ~$0.95/M** (not K2.5's $0.60/M) — restate cost math when citing K2.6 specifically.
-- **`[NEEDS VERIFICATION 2026-05-12]`** SWE-Bench Pro scores (58.6 / 57.7 / 53.4) — cross-check against Artificial Analysis or BigCodeBench leaderboards.
-- **`[NEEDS VERIFICATION 2026-05-12]`** Kilo Code "KiloClaw" published numbers — find CEO's public statement.
+- **`[OPEN QUESTION 2026-05-12]`** SWE-Bench Pro scores (58.6 / 57.7 / 53.4) — cross-check against Artificial Analysis or BigCodeBench leaderboards.
+- **`[OPEN QUESTION 2026-05-12]`** Kilo Code "KiloClaw" published numbers — find CEO's public statement.
 - **`[NEEDS VERIFICATION 2026-05-12]`** `@nrehiew_` Zig inference engine tweet (Apr 20) — verify content matches author's restatement.

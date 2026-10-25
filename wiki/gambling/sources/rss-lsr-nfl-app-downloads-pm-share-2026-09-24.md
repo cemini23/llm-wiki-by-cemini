@@ -97,4 +97,4 @@ Through two weeks: favorites **23-9** straight up and **17-15** against the spre
 - **Downloads are not handle.** An app install says nothing about volume, hold, or CLV. Do not use download share as a sizing or edge signal.
 - **Notional combo volume is not handle.** See above; the 53%-of-total figure is a mix signal only.
 - Kalshi's implied-vig advantage is measured **before transaction fees**. Any cross-venue shop must net the fee before it can claim an edge. See @concepts/sportsbook-pm-line-divergence.md.
-- The 4.22% / 4.43% / 4.50% triple comes from ReadWrite, a secondary source. Prefer the Citizens original if it becomes available. [NEEDS VERIFICATION 2026-09-30]
+- The 4.22% / 4.43% / 4.50% triple comes from ReadWrite, a secondary source. Prefer the Citizens original if it becomes available. [OPEN QUESTION 2026-09-30]

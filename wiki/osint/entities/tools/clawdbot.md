@@ -48,7 +48,7 @@ K55 ingest surfaces Clawdbot as "a Claude-powered AI agent framework" used by Co
 |---|---|---|---|
 | ColdMath | Clawdbot | Real-time weather data → pilot aviation reports → market-price comparison → small-entry-large-payout trades | +$124,896 PnL, 81.7% WR, 6,575 predictions, biggest single win $12,400 |
 
-### Open questions [NEEDS VERIFICATION 2026-05-20]
+### Open questions [OPEN QUESTION 2026-05-20]
 
 1. **Same artifact as OpenClaw?** The public **OpenClaw** gateway (formerly Clawdbot/Moltbot, MIT, @entities/tools/openclaw.md) may be what ColdMath's post meant — confirm via ColdMath primary source before merging pages.
 2. **License?** If OpenClaw: **MIT** confirmed (2026-06-29). If separate proprietary fork: reference-only.

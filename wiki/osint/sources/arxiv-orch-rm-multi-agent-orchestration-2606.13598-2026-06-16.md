@@ -31,7 +31,7 @@ clusters: [llm-agents, rl-marl, ml-methods]
 | **Authors** | Tsang, Zhao, Venkataramani, Shi, Ke, Yavuz, Joty, Wang (Rutgers + Salesforce AI Research) |
 | **arXiv** | 2606.13598 |
 | **sha256** | `18b7455f2d190967187c8c5034c54f9f6fe07ceb3cbf79b9caea1660515936ad` |
-| **Repo (claimed)** | https://github.com/Wang-ML-Lab/OrchRM — **404 as of 2026-06-16** [NEEDS VERIFICATION 2026-06-16] |
+| **Repo (claimed)** | https://github.com/Wang-ML-Lab/OrchRM — **404 as of 2026-06-16** [OPEN QUESTION 2026-06-16] |
 | **Location** | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2606.13598-2606-13598v1-reward-modeling-for-multi-agent-orc.pdf` |
 | **Retrieved** | 2026-06-16 |
 | **Read status** | read (abstract + §1–3 methodology overview) |

@@ -148,11 +148,11 @@ This generalizes the lab findings to a real production engine.
 
 ### What the paper does NOT cover (gaps for our wiki to track)
 
-- Local-business-specific queries — the GEO-bench benchmark is general-domain; effectiveness on geo-bounded local queries (`barbershop davie fl`) is **not directly tested** `[NEEDS VERIFICATION 2026-05-07]`
+- Local-business-specific queries — the GEO-bench benchmark is general-domain; effectiveness on geo-bounded local queries (`barbershop davie fl`) is **not directly tested** `[OPEN QUESTION 2026-05-07]`
 - Schema markup (JSON-LD) — the paper focuses on prose-level content edits; how `LocalBusiness` / `BarberShop` schema interacts with the measured methods is not in scope. See @concepts/schema-markup-local.md.
 - Engine-by-engine differences — only GPT-3.5-turbo (in-house GE) and Perplexity tested. Behavior on Google AI Overviews, Claude, Gemini may differ
 - Decay over time — whether visibility lifts persist across engine retraining is not measured
-- **Uncertainty quantification** — GEO-BENCH reports point-estimate visibility lifts without confidence intervals. @sources/arxiv-sielinski-2026-ai-visibility-uncertainty-2603.08924-2026-06-10.md demonstrates that single-run citation-share noise (often 3–7 pp on SearchGPT) can exceed reported intervention deltas; pre/post GEO tests need bootstrap CIs on both baseline and post measurements (`[NEEDS VERIFICATION 2026-06-10]` on local queries)
+- **Uncertainty quantification** — GEO-BENCH reports point-estimate visibility lifts without confidence intervals. @sources/arxiv-sielinski-2026-ai-visibility-uncertainty-2603.08924-2026-06-10.md demonstrates that single-run citation-share noise (often 3–7 pp on SearchGPT) can exceed reported intervention deltas; pre/post GEO tests need bootstrap CIs on both baseline and post measurements (`[OPEN QUESTION 2026-06-10]` on local queries)
 
 ## Snippets
 

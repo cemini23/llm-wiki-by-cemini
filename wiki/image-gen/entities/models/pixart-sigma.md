@@ -75,7 +75,7 @@ De-censoring path:
 
 - 4K direct generation at FP16 likely needs ~16-20 GB VRAM (the resolution itself dominates the cost more than the parameter count for this model).
 - 1024×1024 generation at FP16 should fit 8-10 GB VRAM.
-- GGUF / FP8 quantization paths likely workable; specifics `[NEEDS VERIFICATION 2026-05-06]`.
+- GGUF / FP8 quantization paths likely workable; specifics `[OPEN QUESTION 2026-05-06]`.
 
 ### Role in 2026 production stack
 
@@ -88,8 +88,8 @@ De-censoring path:
 ### Workspace TODO
 
 - **`[NEEDS VERIFICATION 2026-05-06]`**: confirm PixArt-Σ parameter count, current version revision, Hugging Face hash.
-- **`[NEEDS VERIFICATION 2026-05-06]`**: identify canonical NSFW LoRAs for PixArt-Σ on CivitAI.
-- **`[NEEDS VERIFICATION 2026-05-06]`**: confirm Apple Silicon (MPS) support — academic DiTs sometimes have cleaner cross-platform paths than commercial alternatives.
+- **`[OPEN QUESTION 2026-05-06]`**: identify canonical NSFW LoRAs for PixArt-Σ on CivitAI.
+- **`[OPEN QUESTION 2026-05-06]`**: confirm Apple Silicon (MPS) support — academic DiTs sometimes have cleaner cross-platform paths than commercial alternatives.
 - Compare PixArt-Σ direct 4K vs FLUX.1 Dev + 4K upscaling chain on a fixed prompt set; validate when the direct-4K capability is genuinely worth the quality tradeoff.
 
 ## Snippets

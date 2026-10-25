@@ -70,7 +70,7 @@ The asymmetry — competent verifier, unreliable generator — is what UniReason
 
 ### Open questions
 
-[NEEDS VERIFICATION 2026-05-06]
+[OPEN QUESTION 2026-05-06]
 
 - Open-weights status (Hugging Face availability, license)
 - Local-hardware viability (parameter count, VRAM tier)

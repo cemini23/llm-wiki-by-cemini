@@ -95,7 +95,7 @@ Paper does not test local-business pages, GBP, or schema. Directional translatio
 2. **Before/after photos, interior shots, team photos** on service pages should have descriptive alt text *and* a nearby prose sentence stating what the image shows (object, action, scene).
 3. **GBP photos** lack injectable on-page text — the owned website is where caption injection applies; keep website images + copy aligned with GBP visual story.
 4. **Fluency still wins in text-only engines** — don't replace Aggarwal fluency + statistics work; add multimodal caption weaving as an additional layer when pages are image-rich.
-5. **Uniqueness** aligns with @concepts/competitive-geo-citation-factors.md differentiators — visual detail competitors omit (e.g., kid chair, hot-towel station, parking) may help citation differentiation `[NEEDS VERIFICATION 2026-06-08]`.
+5. **Uniqueness** aligns with @concepts/competitive-geo-citation-factors.md differentiators — visual detail competitors omit (e.g., kid chair, hot-towel station, parking) may help citation differentiation `[OPEN QUESTION 2026-06-08]`.
 
 ### Limitations (authors)
 

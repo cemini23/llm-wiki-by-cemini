@@ -72,7 +72,7 @@ updated: 2026-06-26
 
 Independent barbershop / single-location operator analog = **local champion** tier: home-language queries ("barbería cerca de…", "friseur [stadt]") may surface the shop when English queries omit it. Bilingual markets (@entities/markets/local-market-template.md) need **language matrix** audits, not English-only Ranqo baselines.
 
-**Phase-0:** REFERENCE — academic measurement framework; Rankfor.AI author sells GEO monitoring. Steal methodology; verify vendor claims independently `[NEEDS VERIFICATION 2026-06-24]`.
+**Phase-0:** REFERENCE — academic measurement framework; Rankfor.AI author sells GEO monitoring. Steal methodology; verify vendor claims independently `[OPEN QUESTION 2026-06-24]`.
 
 ## Snippets
 

@@ -34,7 +34,7 @@ UW 20 Aug ~17:29Z: **262,776,228** shares, avg30 **~7.0M**, beta **2.87**, next 
 
 Q2 (CAD, ended 30 Jun, PR 11 Aug / BusinessWire 20260811112579): rev **C$43.0M** (+498%); Adj. EBITDA **C$17.6M**; NI **C$181.8M** of which **C$173.1M** non-cash MTM; H1 operating cash flow **C$31.6M**; cash **C$1.23B**. Convert: priced **US$700M** 4 Jun + **US$100M** option; **US$800M closed 9 Jun** (6-K `000149315226028532`). GTP offtake amended 14 Jul (21yr, 4.41M MTU, min 210k, APT-beta). Buyback authorized 17 Aug: up to **14.4M sh / US$300M**, starts 24 Aug, not an obligation.
 
-Dark pool largest day since last desk: **17 Aug $80.5M**, UW SELL-lean, possible duplicate 2.06M @ $15.09 block. Options thin; 19 Aug Sep $15P $159k **multileg**. **NO_EVIDENCE** of an ALM-named DOE/DPA award; DOE $162M (18 Aug) is Sc/Cu/Sb/REE (selection, not a funded award). Sep tungsten forensic repeats **no Gentung DPA Title III**. Keep convert at **US$800M closed 9 Jun**; the forensic's "US1.2 billion" line is garbled. `[NEEDS VERIFICATION 2026-09-04]` if a later 6-K shows a different closed size.
+Dark pool largest day since last desk: **17 Aug $80.5M**, UW SELL-lean, possible duplicate 2.06M @ $15.09 block. Options thin; 19 Aug Sep $15P $159k **multileg**. **NO_EVIDENCE** of an ALM-named DOE/DPA award; DOE $162M (18 Aug) is Sc/Cu/Sb/REE (selection, not a funded award). Sep tungsten forensic repeats **no Gentung DPA Title III**. Keep convert at **US$800M closed 9 Jun**; the forensic's "US1.2 billion" line is garbled. `[OPEN QUESTION 2026-09-04]` if a later 6-K shows a different closed size.
 
 ## Snippets
 

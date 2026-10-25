@@ -41,6 +41,6 @@ GrowthBook exposes an MCP server for feature flag management, theoretically allo
 
 ### Open questions
 
-- Can the GrowthBook MCP server component be decoupled from the main application and run statelessly against a local JSON file, bypassing MongoDB? `[NEEDS VERIFICATION 2026-05-10]`
+- Can the GrowthBook MCP server component be decoupled from the main application and run statelessly against a local JSON file, bypassing MongoDB? `[OPEN QUESTION 2026-05-10]`
 
 [Source: Project Link Evaluation Brief 5_10.docx, URL 9]

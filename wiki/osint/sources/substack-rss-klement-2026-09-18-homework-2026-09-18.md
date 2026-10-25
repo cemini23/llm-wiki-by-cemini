@@ -30,7 +30,7 @@ read_status: read
 
 ## Narrative
 
-Cite Klement. Stromberg et al (2026) 26,811 Chinese students grades 7–12: generative AI cut homework time and raised homework scores ~20%, then exam scores dropped ~20% without the tool. `[NEEDS VERIFICATION 2026-09-18]` on the paper itself. Wiki FILE. **No named GW levels. Never auto-arm. No xsp scp.**
+Cite Klement. Stromberg et al (2026) 26,811 Chinese students grades 7–12: generative AI cut homework time and raised homework scores ~20%, then exam scores dropped ~20% without the tool. `[OPEN QUESTION 2026-09-18]` on the paper itself. Wiki FILE. **No named GW levels. Never auto-arm. No xsp scp.**
 
 ## Snippets
 

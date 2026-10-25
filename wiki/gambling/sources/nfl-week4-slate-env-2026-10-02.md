@@ -123,4 +123,4 @@ NRG roof directive (DAL @ HOU); Raymond James wind persistence; MetLife wind ver
 - **Citation grades are not uniform.** Collins (OUT) and the Mariota naming are DraftEdge reads, not club pages. The Sam Cosmi "did not travel" note traces to a Daniels practice report. Treat all three as strong-but-secondary.
 - **The Tampa Bay and Chicago starting quarterbacks are never named here on purpose.** Backup names circulating elsewhere are not confirmed. Do not ticket those cells.
 - **The goal-line rule in this document is post-hoc.** It cites the PIT @ CLE outcome; see @sources/nfl-week4-tnf-result-postmortem-2026-10-02.md.
-- **ITT values for DAL@HOU and LAC@SEA are odd** (25.2 / 22.2 and 25.2 / 18.2). They do not split evenly from the total. Treat as source artifacts, not true implieds. [NEEDS VERIFICATION 2026-10-02]
+- **ITT values for DAL@HOU and LAC@SEA are odd** (25.2 / 22.2 and 25.2 / 18.2). They do not split evenly from the total. Treat as source artifacts, not true implieds. [OPEN QUESTION 2026-10-02]

@@ -43,7 +43,7 @@ Claims SOTA on multiple VBench metrics for editing precision and temporal stabil
 
 ### Workspace relevance
 
-Persona track: reduces prompt-iteration churn for multi-attribute video edits (identity + motion + wardrobe) without fine-tuning — complements @concepts/prompt-engineering-uncensored.md and @concepts/visual-to-visual-generation.md when text alone is ambiguous. Local stack fit on Wan/Hunyuan DiT backbones `[NEEDS VERIFICATION 2026-06-04]`.
+Persona track: reduces prompt-iteration churn for multi-attribute video edits (identity + motion + wardrobe) without fine-tuning — complements @concepts/prompt-engineering-uncensored.md and @concepts/visual-to-visual-generation.md when text alone is ambiguous. Local stack fit on Wan/Hunyuan DiT backbones `[OPEN QUESTION 2026-06-04]`.
 
 ## Snippets
 

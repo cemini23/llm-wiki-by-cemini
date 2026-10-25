@@ -31,7 +31,7 @@ updated: 2026-05-31
 
 ## Raw Concept
 
-Synthesis of **DeadBall TV** (11 group previews), **B Wade Picks**, batch-1 pundit videos, and **Gemini DR** reports (K82 + **K83 May 29 batch** + **K84 May 30 LP safety**). All picks **[TENTATIVE]** except K83 Group B / live gap rows marked validated — bot loads team list from config; **prices from Gamma at runtime**. **LP safety verdicts `[NEEDS VERIFICATION 2026-06-06]`** — re-run before Group C/H kickoff (~Jun 13).
+Synthesis of **DeadBall TV** (11 group previews), **B Wade Picks**, batch-1 pundit videos, and **Gemini DR** reports (K82 + **K83 May 29 batch** + **K84 May 30 LP safety**). All picks **[TENTATIVE]** except K83 Group B / live gap rows marked validated — bot loads team list from config; **prices from Gamma at runtime**. **LP safety verdicts `[OPEN QUESTION 2026-06-06]`** — re-run before Group C/H kickoff (~Jun 13).
 
 ## Narrative
 

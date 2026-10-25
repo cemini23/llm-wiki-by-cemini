@@ -87,7 +87,7 @@ See @concepts/social-media-for-barbershops.md for the recommendation framework.
 
 ### Booking integration
 
-Instagram supports booking action buttons (via partners — Resy, OpenTable historically, plus barbershop-specific Squire, Booksy integrations). `[NEEDS VERIFICATION 2026-05-07]`: current list of booking-system integrations available natively.
+Instagram supports booking action buttons (via partners — Resy, OpenTable historically, plus barbershop-specific Squire, Booksy integrations). `[OPEN QUESTION 2026-05-07]`: current list of booking-system integrations available natively.
 
 ### Instagram Subscriptions (2026)
 

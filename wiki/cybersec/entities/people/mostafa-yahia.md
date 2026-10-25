@@ -26,7 +26,7 @@ updated: 2026-05-17
 
 ## Raw Concept
 
-Author-entity page for Mostafa Yahia, author of @sources/effective-threat-investigation-soc-analysts.md (Packt 2023). Mirrors the pattern of @entities/people/joas-a-santos.md — a named educator who anchors a body of corpus material in the wiki. Currently the second named-author entity in the wiki. [NEEDS VERIFICATION 2026-05-17] for credential / employer details — inferred from author bio in the Packt book front matter; LinkedIn / employer verification pending.
+Author-entity page for Mostafa Yahia, author of @sources/effective-threat-investigation-soc-analysts.md (Packt 2023). Mirrors the pattern of @entities/people/joas-a-santos.md — a named educator who anchors a body of corpus material in the wiki. Currently the second named-author entity in the wiki. [OPEN QUESTION 2026-05-17] for credential / employer details — inferred from author bio in the Packt book front matter; LinkedIn / employer verification pending.
 
 ## Narrative
 
@@ -44,4 +44,4 @@ Yahia's writing style is the SOC-analyst counterpart to Joas A. Santos's pentest
 
 - Book on Packt: [Effective Threat Investigation for SOC Analysts](https://www.packtpub.com/product/effective-threat-investigation-for-soc-analysts/9781837634781) [NEEDS VERIFICATION 2026-05-17 — URL inferred, not validated]
 - YouTube channel: search "Mostafa Yahia SOC" on YouTube
-- LinkedIn / X handle: [NEEDS VERIFICATION 2026-05-17]
+- LinkedIn / X handle: [OPEN QUESTION 2026-05-17]

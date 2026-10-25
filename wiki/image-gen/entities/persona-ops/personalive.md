@@ -46,7 +46,7 @@ Phase-0 audit 2026-06-05 on `GVCLab/PersonaLive` ([Source: github.com/GVCLab/Per
 | Code license | **Apache-2.0** |
 | Weights | HF `huaichang/PersonaLive` + ModelScope; SD-image-variations derivative chain |
 | Stars / activity | 3.3k★; training code released 2026-05-15; CVPR 2026 |
-| VRAM | **12 GB** streaming strategy for offline long video `[CONFIRMED README]`; live WebUI FPS on 4090 `[NEEDS VERIFICATION 2026-06-05]` |
+| VRAM | **12 GB** streaming strategy for offline long video `[CONFIRMED README]`; live WebUI FPS on 4090 `[OPEN QUESTION 2026-06-05]` |
 | ComfyUI | **ComfyUI-PersonaLive** by okdalto — community node exists |
 | NSFW / ToS | README **academic research only** + user liability disclaimer; platform live-stream ToS still operator risk |
 | MPS | CUDA/PyCUDA/TensorRT path; **not Apple-Silicon-first** |

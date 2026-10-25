@@ -48,7 +48,7 @@ NotFair is a **Claude Code plugin** (and companion web app at [notfair.co](https
 
 **Policy note:** any skill that can **publish** site changes must stay human-in-the-loop — same boundary as @concepts/google-business-profile.md hands-on rules.
 
-[NEEDS VERIFICATION 2026-05-27] exact marketplace install slug, default write permissions, and whether GSC OAuth is shared with Google's official Search Console API ToS only.
+[OPEN QUESTION 2026-05-27] exact marketplace install slug, default write permissions, and whether GSC OAuth is shared with Google's official Search Console API ToS only.
 
 ## Snippets
 

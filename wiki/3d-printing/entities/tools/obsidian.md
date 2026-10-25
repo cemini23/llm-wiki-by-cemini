@@ -69,7 +69,7 @@ Obsidian's "Community Plugins" let users extend the app. For this wiki, the read
 - **Dataview** — query frontmatter as a database (e.g. "show me every page with `maturity: draft`"). Powerful but optional.
 - **Folder Note** — make a folder click open a same-named `.md` (so clicking `concepts/` opens `concepts/index.md` if it exists). Optional.
 
-These are not required. Default Obsidian works fine for read-only navigation. [NEEDS VERIFICATION 2026-05-07] Specific plugin names and current availability should be re-checked at install time — the Obsidian plugin ecosystem changes.
+These are not required. Default Obsidian works fine for read-only navigation. [OPEN QUESTION 2026-05-07] Specific plugin names and current availability should be re-checked at install time — the Obsidian plugin ecosystem changes.
 
 ### When NOT to use Obsidian
 

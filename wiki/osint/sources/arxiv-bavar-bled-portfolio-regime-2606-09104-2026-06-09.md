@@ -45,7 +45,7 @@ clusters: [quant-finance, rl-marl, portfolio-strategy]
 
 DJIA 29 constituents, decade backtest: Sharpe **1.72**, Sortino **2.70**, total return **57.26%** vs SOTA baselines (paper claim — not independently replicated here).
 
-**Cemini posture:** **REFERENCE** for equity sleeve stress/regime framing — not prod deploy without ArcticDB replication + regime disclosure per @concepts/regime-conditioned-evaluation.md [NEEDS VERIFICATION 2026-06-09].
+**Cemini posture:** **REFERENCE** for equity sleeve stress/regime framing — not prod deploy without ArcticDB replication + regime disclosure per @concepts/regime-conditioned-evaluation.md [OPEN QUESTION 2026-06-09].
 
 ## Snippets
 

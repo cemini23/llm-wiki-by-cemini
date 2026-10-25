@@ -80,7 +80,7 @@ The classical foundations are:
 
 4. **On-page SEO with location signals** — title tags, headers, body content, schema markup (`LocalBusiness` / `BarberShop` JSON-LD with address, geo, hours, services). See @concepts/on-page-seo-local.md and @concepts/schema-markup-local.md.
 
-5. **Local pack ranking factors** — Google's documented and undocumented signals for the 3-pack. The big public studies (Whitespark Local Search Ranking Factors, Moz Local Search Ranking Factors) historically identify GBP signals as the single largest cluster, followed by review signals, on-page signals, link signals, citation signals, and behavioral signals. `[NEEDS VERIFICATION 2026-05-07]`: 2026-current relative weighting. See @concepts/local-pack-rankings.md.
+5. **Local pack ranking factors** — Google's documented and undocumented signals for the 3-pack. The big public studies (Whitespark Local Search Ranking Factors, Moz Local Search Ranking Factors) historically identify GBP signals as the single largest cluster, followed by review signals, on-page signals, link signals, citation signals, and behavioral signals. `[OPEN QUESTION 2026-05-07]`: 2026-current relative weighting. See @concepts/local-pack-rankings.md.
 
 6. **Behavioral / engagement signals** — clicks, calls, direction-requests, photo views, website visits, "Book" button taps. GBP exposes this in the Performance dashboard. Whether Google uses these as ranking signals (vs only as success metrics) is debated; what's not debated is they're the bottom of the funnel that converts impressions to chair-bookings. See @entities/platforms/google-business-profile.md.
 

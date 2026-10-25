@@ -56,4 +56,4 @@ Complements **static** try-on (IDM-VTON image) and **generative** customization 
 
 ## Dead Ends
 
-E-commerce pose prior — NSFW motion/clothing edge cases untested. GitHub typo `OminTryOn` in paper URL `[NEEDS VERIFICATION 2026-06-10]`.
+E-commerce pose prior — NSFW motion/clothing edge cases untested. GitHub typo `OminTryOn` in paper URL `[OPEN QUESTION 2026-06-10]`.

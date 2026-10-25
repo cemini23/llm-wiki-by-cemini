@@ -81,7 +81,7 @@ This wiki uses **two** cross-link styles:
 
 **Why use the `@`-prefixed path style instead of `[[wikilinks]]` then?** The wiki was designed to be portable across tools (Obsidian, GitHub, VS Code, plain text editors). `[[wikilinks]]` are Obsidian-specific and don't render on GitHub or in most other tools. The `@`-prefixed style is plain text everywhere, and the trailing `.md` means a path-aware tool *can* link it if configured. The trade-off is: it's not auto-clickable in default Obsidian.
 
-[NEEDS VERIFICATION 2026-05-07] Some Obsidian community plugins claim to parse `@path` references and turn them into clickable links. Reader may want to look for one ("Markdown Auto-link" or similar) — but this hasn't been audited.
+[OPEN QUESTION 2026-05-07] Some Obsidian community plugins claim to parse `@path` references and turn them into clickable links. Reader may want to look for one ("Markdown Auto-link" or similar) — but this hasn't been audited.
 
 ### Confidence tags inside body text
 
@@ -91,7 +91,7 @@ When a claim in body text has a confidence qualifier, look for these inline tags
 |---|---|
 | `[CONFIRMED]` | ≥2 independent sources back this claim |
 | `[TENTATIVE 2026-05-07]` | Single source or community-reported; treat as "probably true" not "verified" |
-| `[NEEDS VERIFICATION 2026-05-07]` | Plausible but not yet checked. The date tells you when the claim was added — older = more suspicious |
+| `[OPEN QUESTION 2026-05-07]` | Plausible but not yet checked. The date tells you when the claim was added — older = more suspicious |
 | `[RETRACTED]` | Was believed; now disproven. Kept in place with a note so context survives |
 
 **Reader's mental rule:** if a page recommends an action with a `[TENTATIVE]` or `[NEEDS VERIFICATION]` tag, cross-check before acting. The audit's specific bug claims (e.g. "Bambu Studio 1500°C preset bug") are tagged this way *for a reason*.

@@ -40,7 +40,7 @@ updated: 2026-06-05
 2. **Downstream metrics break** — inferred VPIN diverges from true VPIN; OFI biased → TCA conclusions unreliable.
 3. **True microstructure predicts calibration** — true VPIN ↑ Brier scores; Gibbs spread ↓ Brier (niche high-spread markets attract informed specialists). Classified proxies **attenuate** both relationships.
 
-**Cemini:** use dataset for **offline** microstructure research / backtests; prod bots must not assume tick-rule labels on live CLOB. Arctic/librarian ingest of HF dataset is **out of scope** until storage brief `[NEEDS VERIFICATION 2026-06-05]`.
+**Cemini:** use dataset for **offline** microstructure research / backtests; prod bots must not assume tick-rule labels on live CLOB. Arctic/librarian ingest of HF dataset is **out of scope** until storage brief `[OPEN QUESTION 2026-06-05]`.
 
 ## Snippets
 

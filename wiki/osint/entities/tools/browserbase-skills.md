@@ -38,6 +38,6 @@ Browserbase Skills enables Claude Code agents to execute deterministic web inter
 
 ### Open questions
 
-- Hidden payload limitations or buffer truncation risks when routing megabyte-heavy PDF structures through Claude Code CLI following successful fetch `[NEEDS VERIFICATION 2026-05-10]`
+- Hidden payload limitations or buffer truncation risks when routing megabyte-heavy PDF structures through Claude Code CLI following successful fetch `[OPEN QUESTION 2026-05-10]`
 
 [Source: Evaluating Links for Trading and Wiki Stacks.docx, URL 10]

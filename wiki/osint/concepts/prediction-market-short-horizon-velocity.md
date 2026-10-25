@@ -33,7 +33,7 @@ Event Horizon Aug 2026 — Kalshi **15-minute** crypto/gold/silver contracts dri
 - MM revenue opportunity (FanDuel ~$50M 2026 target) — institutional players (Citadel ↔ Crypto.com) entering exchange stack.
 - **Not** a strategy thesis — `@gambling-wiki/` owns retail angle; OSINT tracks infra/regulatory/venue tech.
 
-**Open:** Equities 15-min (Barron's cite) — `[NEEDS VERIFICATION 2026-08-06]` for US regulatory path.
+**Open:** Equities 15-min (Barron's cite) — `[OPEN QUESTION 2026-08-06]` for US regulatory path.
 
 ## Snippets
 

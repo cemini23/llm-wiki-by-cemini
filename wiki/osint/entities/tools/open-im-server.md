@@ -30,7 +30,7 @@ K137 eval surfaces [openimsdk/open-im-server](https://github.com/openimsdk/open-
 | **Verdict** | **Steal-from** — event-push + connection management patterns for bot transport layers |
 | **Steal** | Webhook callback design, scalable connection mgmt — reference for PM/Kalshi alert fan-out (not Adopt wholesale) |
 
-**Posture:** wiki-only steal; cluster RPC mapping to cemini containers `[NEEDS VERIFICATION 2026-06-30]`.
+**Posture:** wiki-only steal; cluster RPC mapping to cemini containers `[OPEN QUESTION 2026-06-30]`.
 
 ## Snippets
 

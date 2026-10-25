@@ -46,5 +46,5 @@ narrative.
 
 ## Snippets
 
-> [NEEDS VERIFICATION 2026-10-02] All figures above are from the daily-digest brief, not a first-hand
+> [OPEN QUESTION 2026-10-02] All figures above are from the daily-digest brief, not a first-hand
 > read of arXiv 2609.39902.

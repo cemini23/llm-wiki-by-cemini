@@ -374,7 +374,7 @@ A *third* operator (@adiix_official, K52 `posts.docx` Post 6) published "Why you
 | Binance CVD/OBI vs PM UP/DOWN lag | @concepts/polymarket-binance-oracle-latency-fusion.md | Type-1 cross-feed; corroborates Binance WS rows above |
 | Pre-open queue sniping | @concepts/polymarket-preopen-queue-priority.md | **New** — time-in-queue before window open, not post-open reaction |
 | Anti-hype / fake AI bot threads | @concepts/polymarket-retail-trading-discipline.md | Posts 7–8 — discipline only |
-| MiroFish + Claude simulation | — | REFERENCE [NEEDS VERIFICATION 2026-06-04] — no architecture detail |
+| MiroFish + Claude simulation | — | REFERENCE [OPEN QUESTION 2026-06-04] — no architecture detail |
 
 PnL marketing ($46k/mo, $16k, 67–76% concentration) stays `[TENTATIVE]` single-source.
 

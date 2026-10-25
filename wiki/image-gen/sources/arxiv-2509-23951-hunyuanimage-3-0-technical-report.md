@@ -50,7 +50,7 @@ updated: 2026-07-02
 
 ### Workspace relevance
 
-Eastern Vanguard T2I anchor alongside @entities/models/qwen-image-2512.md and @entities/models/z-image-turbo.md. Persona consistency via LoRA when community fine-tunes land (cf. PhotonAISG finetune repo). NSFW posture `[NEEDS VERIFICATION 2026-07-02]` — evaluate vs HunyuanVideo de-censor patterns.
+Eastern Vanguard T2I anchor alongside @entities/models/qwen-image-2512.md and @entities/models/z-image-turbo.md. Persona consistency via LoRA when community fine-tunes land (cf. PhotonAISG finetune repo). NSFW posture `[OPEN QUESTION 2026-07-02]` — evaluate vs HunyuanVideo de-censor patterns.
 
 Phase-0: **GO (catalog / cloud eval)** — `Tencent-Hunyuan/HunyuanImage-3.0` 3.1k★; custom Tencent license (not Apache).
 
