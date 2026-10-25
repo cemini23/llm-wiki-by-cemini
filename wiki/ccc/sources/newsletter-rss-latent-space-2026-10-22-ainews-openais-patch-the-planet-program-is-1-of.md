@@ -20,7 +20,7 @@ Auto-dropped RSS newsletter stub from `research to be indexed/newsletter-rss-lat
 | Feed | latent-space |
 | Retrieved | 2026-10-22 |
 | Inbox | `newsletter-rss-latent-space-2026-10-22-ainews-openais-patch-the-planet-program-is-1-of.md` |
-| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-latent-space-2026-10-22-ainews-openais-patch-the-planet-program-is-1-of.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-10-22-ainews-openais-patch-the-planet-program-is-1-of.md` |
 
 ## Narrative
 

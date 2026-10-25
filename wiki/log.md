@@ -12,6 +12,14 @@ updated: 2026-10-23
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
 
+## [2026-10-25] tooling | digest fan-out and archive split fixed
+
+- **Digest fan-out.** `scripts/daily_research_config.yaml` now gives every `paper_queries` and `queries` cluster a `wikis:` list. `filter_for_wiki()` in `daily_research_digest_run.py` keeps only the entries naming the running domain. Default for an entry with no `wikis` key is **osint only**, so a new query cannot fan out by omission.
+- **Effect.** 22 clusters × 8 wikis = **176 executions** before; **26** after (85% fewer). Per domain: osint 2 paper + 4 news, ccc 2 + 0, cybersec 1 + 0, seo 1 + 0, image-gen 1 + 0, gambling 4 + 8, game-dev 1 + 1, 3d-printing 1 + 0.
+- **New queries** so no domain loses its paper lane: `seo-geo-retrieval-paper`, `image-gen-diffusion-paper`, `3d-printing-additive-paper`.
+- **Archive split.** Five Latent Space raws moved `egress/osint/` → `egress/ccc/`; pages repointed. `archive_raw_to_egress.sh` gained a guard: for `newsletter-rss-*` and `substack-rss-*` it derives the owning wiki from the source page and exits 2 on a mismatch unless `--allow-cross-wiki` is passed.
+- **Left open.** Six older Latent Space raws in `egress/osint/` have no source page in any wiki, so there is no owner to move them to.
+
 ## [2026-10-25] ingest | K295 — full inbox, eval v10.9, 8 Phase-0 audits
 
 - **79 files. 61 duplicates. 13 PDFs, 13 newsletters, 1 eval docx pair, 1 CSV.** All 13 arXiv PDFs were already filed — 7 as source pages, 6 on the K293/K294 skip pages. The digest fan-out bug still writes one global query into eight inboxes.

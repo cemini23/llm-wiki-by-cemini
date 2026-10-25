@@ -74,103 +74,149 @@ brief_routing_note: |
 # Use `arxiv_query` (Atom syntax) for reliable free discovery; `query` stays human-readable.
 paper_queries:
   - cluster: poker-agent-paper
+    wikis: [gambling]
     query: "research paper poker reinforcement learning opponent modeling imperfect information game"
     arxiv_query: '(all:poker OR all:holdem OR all:"texas hold") AND (all:reinforcement OR all:CFR OR all:"opponent modeling" OR all:"imperfect information")'
     category: research paper
 
   - cluster: poker-mafp-fictitious-play-paper
+    wikis: [gambling]
     query: "research paper multi-agent fictitious play poker game theory equilibrium learning"
     arxiv_query: '(all:"fictitious play" OR all:MAFP) AND (all:poker OR all:game OR all:equilibrium OR all:"multi-agent")'
     category: research paper
 
   - cluster: options-index-paper
+    wikis: [osint]
     query: "research paper index options LEAPS volatility surface mini-SPX XSP hedging"
     arxiv_query: '(all:option OR all:options) AND (all:volatility OR all:hedging OR all:LEAPS OR all:"implied volatility")'
     category: research paper
 
   - cluster: genealogy-archive-paper
+    wikis: [osint]
     query: "research paper genealogy archival handwriting recognition IIIF GEDCOM entity resolution historical records"
     arxiv_query: 'all:genealogy OR all:GEDCOM OR all:IIIF OR all:"handwriting recognition" OR all:"historical document" OR all:HTR'
     category: research paper
 
   - cluster: agent-harness-paper
+    wikis: [ccc, game-dev]
     query: "research paper LLM agent harness playtesting verification game development OR poker"
     arxiv_query: '(all:agent AND (all:harness OR all:playtest OR all:verification)) OR (all:LLM AND all:agent AND (all:game OR all:poker))'
     category: research paper
 
   # Standing steal for federation /route + agent-toolkit (K232 SHE / failover ops)
   - cluster: cursor-route-harness
+    wikis: [ccc]
     query: "research paper LLM agent task router harness failover SIP verification trajectory safety tool policy"
     arxiv_query: '(all:agent AND (all:harness OR all:router OR all:failover OR all:"tool policy" OR all:"safety memory")) AND (all:LLM OR all:"language model" OR all:trajectory)'
     category: research paper
 
   - cluster: local-abliterated-llm-paper
+    wikis: [cybersec]
     query: "research paper local LLM inference abliteration refusal reduction pentest assist open-weight agent"
     arxiv_query: '(all:abliteration OR all:"refusal" OR all:"uncensored") AND (all:LLM OR all:"language model") OR (all:local AND all:LLM AND (all:pentest OR all:vLLM OR all:Ollama))'
     category: research paper
 
   - cluster: nfl-dfs-projection-paper
+    wikis: [gambling]
     query: "research paper NFL daily fantasy sports player projection ownership simulation FanDuel DraftKings"
     # Never bare "DFS" — matches depth-first search on arXiv.
     arxiv_query: '(all:"daily fantasy" OR all:DraftKings OR all:FanDuel OR all:"fantasy football") AND (all:NFL OR all:projection OR all:ownership OR all:lineup)'
     category: research paper
 
   - cluster: nfl-parlay-sgp-paper
+    wikis: [gambling]
     query: "research paper NFL same-game parlay correlation copula sportsbook vig pick'em"
     arxiv_query: '(all:parlay OR all:SGP OR all:"same-game") AND (all:NFL OR all:sportsbook OR all:correlation OR all:copula)'
     category: research paper
 
 # Web/news — digest only; gated by exa.news_enabled (default false = zero Exa news spend)
+
+  # --- K295 2026-10-25: domains that had no paper lane of their own ---
+  # Before the per-domain filter, seo/image-gen/3d-printing received whatever
+  # the global list produced (mostly poker and NFL). These give each domain a
+  # lane that matches its subject.
+
+  - cluster: seo-geo-retrieval-paper
+    wikis: [seo]
+    query: "research paper search ranking generative engine optimization AI overview citation retrieval augmented answer"
+    # "GEO" alone matches geospatial on arXiv, so the query spells it out.
+    arxiv_query: '(all:"search engine" AND (all:ranking OR all:retrieval OR all:citation)) OR all:"generative engine optimization" OR (all:"large language model" AND all:"search")'
+    category: research paper
+
+  - cluster: image-gen-diffusion-paper
+    wikis: [image-gen]
+    query: "research paper diffusion model text-to-image LoRA adapter personalization image synthesis control"
+    arxiv_query: '(all:diffusion OR all:"text-to-image" OR all:LoRA) AND (all:image OR all:generation OR all:personalization OR all:adapter)'
+    category: research paper
+
+  - cluster: 3d-printing-additive-paper
+    wikis: [3d-printing]
+    query: "research paper additive manufacturing 3D printing slicer fused deposition material extrusion quality"
+    arxiv_query: 'all:"additive manufacturing" OR all:"3D printing" OR all:slicer OR all:"fused deposition" OR all:"material extrusion"'
+    category: research paper
 queries:
   - cluster: guruwatcher-newsletter-alerts
+    wikis: [osint]
     query: 'newsletter price level watch Discord alert Macro Charts VIX DXY Unusual Whales parameter watch 2026'
     category: news
 
   - cluster: poker-arena
+    wikis: [gambling]
     query: '"dev.fun" OR "arena pokerkit" OR poker agent challenge researcher track heads-up sandbox 2026'
     category: news
 
   - cluster: poker-hu-exploit
+    wikis: [gambling]
     query: 'poker heads-up NLHE opponent modeling exploit LLM agent sandbox benchmark MAFP fictitious play 2026'
     category: news
 
   - cluster: poker-verifier-eval
+    wikis: [gambling]
     query: 'poker AI verifier generator steering multi-axis evaluation imperfect information agent 2026'
     category: news
 
   - cluster: pm-kalshi-retail-bot
+    wikis: [osint]
     query: '"Polymarket" OR "Kalshi" retail bot OR CLOB OR market making OR API trading tutorial'
     category: news
 
   - cluster: xsp-options
+    wikis: [osint]
     query: 'XSP OR "Mini SPX" options LEAPS OR index call hedge Robinhood OR Cboe mini options'
     category: news
 
   - cluster: family-tree-genealogy
+    wikis: [osint]
     query: 'Italian genealogy stato civile parish Antenati IIIF GEDCOM FamilySearch HTR transcription archival research'
     category: news
 
   - cluster: agent-game-poker
+    wikis: [game-dev]
     query: '"Claude Code" OR Cursor agent game development OR poker analysis LLM workflow'
     category: news
 
   - cluster: ceminidfs-nflverse
+    wikis: [gambling]
     query: 'nflverse play-by-play NFL DFS projection OR FanDuel salary slate modeling python 2026'
     category: news
 
   - cluster: ceminidfs-ownership-calibration
+    wikis: [gambling]
     query: 'DFS ownership projection calibration Stokastic OR FantasyLabs OR pydfs lineup optimizer MME'
     category: news
 
   - cluster: wc-ticket-resale
+    wikis: [gambling]
     query: '"World Cup 2026" knockout ticket resale OR StubHub OR Viagogo OR FIFA official resale price'
     category: news
 
   - cluster: wc-ticket-monitor-sources
+    wikis: [gambling]
     query: 'TicketWave OR "The Great Reviewer" FIFA World Cup ticket tracker secondary market API'
     category: news
 
   - cluster: wc-fifa-ticket-policy
+    wikis: [gambling]
     query: 'FIFA World Cup 2026 ticket resale policy official exchange knockout round pricing'
     category: news
 

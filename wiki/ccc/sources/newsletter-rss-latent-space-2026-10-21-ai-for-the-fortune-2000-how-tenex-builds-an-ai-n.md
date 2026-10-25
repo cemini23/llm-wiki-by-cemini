@@ -20,7 +20,7 @@ Auto-dropped RSS newsletter stub from `research to be indexed/newsletter-rss-lat
 | Feed | latent-space |
 | Retrieved | 2026-10-21 |
 | Inbox | `newsletter-rss-latent-space-2026-10-21-ai-for-the-fortune-2000-how-tenex-builds-an-ai-n.md` |
-| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-latent-space-2026-10-21-ai-for-the-fortune-2000-how-tenex-builds-an-ai-n.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-10-21-ai-for-the-fortune-2000-how-tenex-builds-an-ai-n.md` |
 
 ## Narrative
 

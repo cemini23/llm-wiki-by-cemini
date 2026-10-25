@@ -120,6 +120,29 @@ def title_from_result(r: dict) -> str:
     return "(no title)"
 
 
+def filter_for_wiki(defs: list[dict], wiki_id: str) -> list[dict]:
+    """Keep only the queries this domain owns.
+
+    Every domain wrapper runs this same script against the same config, so an
+    unfiltered entry fetches into all eight inboxes. Before this filter, one
+    global paper list produced 61 duplicate PDFs across 13 papers in one wave.
+
+    An entry with no `wikis` key runs in osint only. That default is deliberate:
+    a new query must opt in to other domains rather than default into all of
+    them.
+    """
+    out: list[dict] = []
+    for q in defs:
+        wikis = q.get("wikis")
+        if wikis is None:
+            wikis = ["osint"]
+        elif isinstance(wikis, str):
+            wikis = [wikis]
+        if wiki_id in wikis:
+            out.append(q)
+    return out
+
+
 def inbox_files(repo: Path) -> list[Path]:
     """This domain's pending drops. See daily_research_fetch.inbox_dir."""
     domain = os.environ.get("CEMINI_WIKI_ID") or "osint"
@@ -417,9 +440,11 @@ def main() -> int:
             "WARNING: no Exa API key — paper lane uses arXiv where allowed; news lane skipped",
             file=sys.stderr,
         )
-    paper_defs = cfg.get("paper_queries") or []
-    news_defs = (cfg.get("queries") or []) if news_enabled else []
-    news_defs_configured = len(cfg.get("queries") or [])
+    wiki_id = os.environ.get("CEMINI_WIKI_ID") or "osint"
+    news_defs_all = filter_for_wiki(cfg.get("queries") or [], wiki_id)
+    paper_defs = filter_for_wiki(cfg.get("paper_queries") or [], wiki_id)
+    news_defs = news_defs_all if news_enabled else []
+    news_defs_configured = len(news_defs_all)
     arxiv_cfg = cfg.get("arxiv_fallback") or {}
     active_topics = cfg.get("active_topics") or []
     brief_note = (cfg.get("brief_routing_note") or "").strip()

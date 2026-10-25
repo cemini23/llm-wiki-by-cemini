@@ -20,7 +20,7 @@ Auto-dropped RSS newsletter stub from `research to be indexed/newsletter-rss-lat
 | Feed | latent-space |
 | Retrieved | 2026-10-22 |
 | Inbox | `newsletter-rss-latent-space-2026-10-22-you-are-the-team-anekha-sokhal-moshi.md` |
-| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-latent-space-2026-10-22-you-are-the-team-anekha-sokhal-moshi.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-10-22-you-are-the-team-anekha-sokhal-moshi.md` |
 
 ## Narrative
 

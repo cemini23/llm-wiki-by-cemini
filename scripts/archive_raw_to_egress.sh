@@ -28,6 +28,7 @@ exec < /dev/null
 EGRESS_HOST="${CEMINI_EGRESS_HOST:-cemini-egress-fi}"
 REMOTE_BASE="${CEMINI_EGRESS_BULK:-/opt/cemini-bulk/research}"
 KEEP_LOCAL=0
+ALLOW_CROSS=0
 WIKI_ID=""
 
 # Tailnet keepalive (added 2026-10-08). The egress host is reached over
@@ -44,6 +45,9 @@ Usage: archive_raw_to_egress.sh --wiki-id <id> <local-file> [--keep-local]
   --wiki-id   Federation wiki id (osint, ccc, seo, image-gen, gambling,
               game-dev, cybersec, 3d-printing)
   --keep-local  Do not delete the local file after successful scp
+  --allow-cross-wiki
+                Skip the newsletter/substack domain check. Needed only when a
+                raw and its source page deliberately live in different wikis.
 
 Environment:
   CEMINI_EGRESS_HOST  SSH alias (default: cemini-egress-fi)
@@ -59,6 +63,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --keep-local)
       KEEP_LOCAL=1
+      shift
+      ;;
+    --allow-cross-wiki)
+      ALLOW_CROSS=1
       shift
       ;;
     -h|--help)
@@ -102,6 +110,34 @@ if [[ ! -f "$LOCAL_FILE" ]]; then
 fi
 
 BASENAME="$(basename "$LOCAL_FILE")"
+
+# --- newsletter/substack domain guard (added 2026-10-25) ----------------
+# Callers hardcoded --wiki-id osint for feeds whose source pages live in other
+# domains, so one feed family ended up split across egress/osint/ and
+# egress/<domain>/. Derive the owning wiki from the source page and refuse a
+# mismatch. Pass --allow-cross-wiki only for a deliberate exception.
+if [[ "$ALLOW_CROSS" -eq 0 && ( "$BASENAME" == newsletter-rss-* || "$BASENAME" == substack-rss-* ) ]]; then
+  SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+  WIKI_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)/wiki"
+  OWNER=""
+  for cand in "$WIKI_ROOT"/*/sources/"$BASENAME"; do
+    [[ -f "$cand" ]] || continue
+    OWNER="$(basename "$(dirname "$(dirname "$cand")")")"
+    break
+  done
+  if [[ -n "$OWNER" && "$OWNER" != "$WIKI_ID" ]]; then
+    cat >&2 <<ERR
+archive_raw_to_egress: wiki-id mismatch for a newsletter raw.
+  file         $BASENAME
+  source page  wiki/$OWNER/sources/$BASENAME
+  --wiki-id    $WIKI_ID
+  expected     $OWNER
+Re-run with --wiki-id $OWNER, or --allow-cross-wiki to override.
+ERR
+    exit 2
+  fi
+fi
+
 REMOTE_DIR="${REMOTE_BASE}/${WIKI_ID}"
 REMOTE_PATH="${REMOTE_DIR}/${BASENAME}"
 

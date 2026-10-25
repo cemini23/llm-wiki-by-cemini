@@ -1952,7 +1952,8 @@ Inbox wave complete: 79 files, 61 duplicates, 1 eval doc, 8 Phase-0 audits. Log:
 
 ### Ingest debt (pre-existing, not from this wave)
 
-- **Digest fan-out bug still open.** One global `paper_queries` list writes the same arXiv PDFs into eight domain inboxes. This wave was 61 duplicates of 13 papers.
-- **Newsletter archive is split.** Five Latent Space stubs sit in `egress/osint/`; two new ones went to `egress/ccc/`. Same feed, two folders.
+- ~~**Digest fan-out bug.**~~ **FIXED 2026-10-25.** Every cluster in `scripts/daily_research_config.yaml` now carries a `wikis:` field, and `filter_for_wiki()` in `daily_research_digest_run.py` drops any entry that does not name the running domain. An entry with no `wikis` key runs in **osint only**, so a new query must opt in to other domains. Query executions across all eight wikis drop from **176 to 26** (85%). Added three domain queries (`seo-geo-retrieval-paper`, `image-gen-diffusion-paper`, `3d-printing-additive-paper`) so those wikis are not left with an empty paper lane.
+- ~~**Newsletter archive is split.**~~ **FIXED 2026-10-25.** Five Latent Space raws moved from `egress/osint/` to `egress/ccc/`; their source pages repointed. `archive_raw_to_egress.sh` now derives the owning wiki from the source page for `newsletter-rss-*` and `substack-rss-*` raws and refuses a mismatched `--wiki-id` unless `--allow-cross-wiki` is passed.
+- **Six un-paged Latent Space raws remain in `egress/osint/`** (2026-10-20 ×2, 10-22 ×3, 10-23). They have no source page in any wiki, so there is no owner to move them to. Either write the pages or leave them as cold storage.
 - **Wiki lint debt ~2,318** (2,188 bidirectional gaps, 65 dangling `related:`, 35 missing `@path`, 30 cross-wiki dangling). Pre-existing.
 - **Daily sweeps 2026-10-21 to 2026-10-25 untracked.**
