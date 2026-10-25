@@ -7,9 +7,10 @@ related:
   - sources/eval-github-repo-mcp-plan-2026-07-05.md
   - concepts/coding-agent-substrate-steerability.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/ripgrep.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

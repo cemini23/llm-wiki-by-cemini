@@ -11,10 +11,13 @@ related:
   - sources/cemini-tool-evaluation-plan-62url-2026-06-23.md
   - sources/github-nfl-repo-eval-cemini-2026-06-21.md
   - concepts/polymarket-bot-architecture.md
+  - entities/tools/draftfast.md
+  - sources/eval-github-repo-plan-dfs-marl-poker-osint-2026-07-01.md
+  - sources/eval-url-cemini-research-2026-06-25.md
 maturity: draft
 read_status: deep-read
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-10-25
 ---
 
 ## Relations

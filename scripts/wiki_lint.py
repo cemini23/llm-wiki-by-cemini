@@ -498,6 +498,26 @@ RELATED_BLOCK_RE = re.compile(
 UPDATED_LINE_RE = re.compile(r"^updated:\s*\d{4}-\d{2}-\d{2}\s*$", re.MULTILINE)
 
 
+def _related_ref(page_key: str, backlink_key: str) -> str:
+    """Render a page key as a `related:` entry that resolves from *page_key*.
+
+    Gap keys are wiki-relative (`<domain>/<path>`). The resolver reads a bare
+    path relative to the citing page's own domain, so writing a key verbatim
+    produces `wiki/<domain>/<domain>/<path>` — which dangles. That is what made
+    --apply raise dangling links from 65 to 974 on 2026-10-25.
+
+    Same domain -> bare domain-relative path. Other domain -> @alias/path.
+    """
+    src_dom = RESOLVER.domain_of(backlink_key)
+    rel = backlink_key.split("/", 1)[1] if src_dom else backlink_key
+    if src_dom == RESOLVER.domain_of(page_key):
+        return rel
+    alias = RESOLVER.alias_for_domain(src_dom)
+    if alias:
+        return f"@{alias}/{rel}"
+    return backlink_key
+
+
 def _rewrite_target_page(target_path: Path, new_backlinks: list[str]) -> tuple[bool, str]:
     """Append *new_backlinks* to target page's `related:` block + bump `updated:` to today.
 
@@ -545,12 +565,19 @@ if args.fix_bidirectional:
     header(f"FIX-BIDIRECTIONAL — proposed backlink writes (hub-threshold={args.hub_threshold})")
     proposed = []  # (target, [backlinks])
     skipped_hubs = []  # (target, count)
+    skipped_no_fm = []  # (target, count) — no frontmatter, so no related: to extend
     for tgt in sorted(gaps_by_target.keys()):
         srcs = gaps_by_target[tgt]
         if len(srcs) > args.hub_threshold:
             skipped_hubs.append((tgt, len(srcs)))
             continue
-        proposed.append((tgt, sorted(srcs)))
+        # sweeps/ and other frontmatter-less pages cannot hold a related: block.
+        # Proposing them every run would never converge and would rewrite nothing.
+        tgt_file = WIKI / tgt
+        if not tgt_file.exists() or not FRONTMATTER_RE.match(tgt_file.read_text(errors="replace")):
+            skipped_no_fm.append((tgt, len(srcs)))
+            continue
+        proposed.append((tgt, sorted(_related_ref(tgt, s) for s in srcs)))
 
     mode = "APPLY" if args.apply else "DRY-RUN"
     print(f"  Mode: {mode}")
@@ -561,6 +588,12 @@ if args.fix_bidirectional:
         print()
         print("  Hubs skipped:")
         for tgt, n in skipped_hubs:
+            print(f"    {n:3d}  {tgt}")
+    if skipped_no_fm:
+        print()
+        print(f"  Skipping {len(skipped_no_fm)} frontmatter-less target(s) "
+              f"(no related: block to extend — sweeps/, digests):")
+        for tgt, n in skipped_no_fm:
             print(f"    {n:3d}  {tgt}")
     print()
     applied = 0

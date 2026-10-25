@@ -21,9 +21,13 @@ related:
   - sources/k294-osint-feeds-2026-10-23.md
   - concepts/k293-osint-wave.md
   - concepts/k294-osint-wave.md
+  - sources/k292-osint-feeds-2026-10-16.md
+  - sources/substack-rss-event-horizon-2026-08-21-johnson-prediction-markets.md
+  - sources/substack-rss-event-horizon-2026-10-06-religion-prediction-markets.md
+  - sources/substack-rss-event-horizon-2026-10-07-kalshi-election-push.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-23
+updated: 2026-10-25
 ---
 
 ## Relations

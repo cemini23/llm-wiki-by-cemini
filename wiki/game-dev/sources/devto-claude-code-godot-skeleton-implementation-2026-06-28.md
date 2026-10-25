@@ -12,12 +12,15 @@ related:
   - entities/projects/castle-sim.md
   - sources/inbox-arxiv-reject-batch-2026-06-28.md
   - meta/cross-wiki-routing.md
+  - sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md
+  - sources/claude-code-cc-ios-port-2026-07-07.md
+  - sources/godot-engine-ai-contribution-policy-2026-07-01.md
 read_status: read
 source_type: web-article
 source_url: https://dev.to/xu_xu_b2179aa8fc958d531d1/claude-code-is-writing-your-godot-games-heres-the-hidden-cost-nobody-talks-about-4a7n
 maturity: validated
 created: 2026-06-28
-updated: 2026-06-28
+updated: 2026-10-25
 ---
 
 ## Raw Concept

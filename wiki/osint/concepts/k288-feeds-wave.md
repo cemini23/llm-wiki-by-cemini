@@ -13,9 +13,11 @@ related:
   - sources/newsletter-rss-latent-space-2026-10-10-standard-bots-reliable-execution.md
   - sources/newsletter-rss-latent-space-2026-10-10-alphafold-bitter-lesson.md
   - sources/substack-rss-wublock-2026-10-10-weekly-project-updates.md
+  - concepts/k289-feeds-wave.md
+  - sources/newsletter-rss-latent-space-2026-10-12-anthropic-dynamic-workflows.md
 maturity: draft
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-25
 harness_verb: FILE
 wire_status: policy_wired
 ---

@@ -9,11 +9,12 @@ related:
   - concepts/flow-field-pathfinding.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-08-15.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-22
-updated: 2026-07-28
+updated: 2026-10-25
 ---
 
 ## Raw Concept

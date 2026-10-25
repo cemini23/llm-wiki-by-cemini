@@ -6,9 +6,10 @@ keywords: [typed-relations, imports, bounds, baseline, cross-links, dependency-g
 related:
   - sources/agent-native-research-artifacts-2604.24658.md
   - concepts/agent-native-research-artifacts.md
+  - sources/arxiv-2608.20317-browsecomp-plus-climbmix.md
 maturity: validated
 created: 2026-05-02
-updated: 2026-05-12
+updated: 2026-10-25
 ---
 
 ## Relations

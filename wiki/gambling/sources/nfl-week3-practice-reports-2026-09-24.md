@@ -8,10 +8,11 @@ related:
   - sources/nfl-week3-injury-research-2026-09-23.md
   - sources/daily-digest-batch-k176-2026-09-24.md
   - meta/nfl-gemini-weekday-prompt-addendum.md
+  - concepts/dfs-injury-and-news-workflow.md
 maturity: draft
 read_status: skimmed
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/NFL Week 3 Practice Reports.docx
 phase_0_verdict: REFERENCE — Thu flip table only; Fri designation still required
 wire_status: policy_wired

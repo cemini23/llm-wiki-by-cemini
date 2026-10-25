@@ -17,9 +17,10 @@ related:
   - sources/arxiv-2610.06782-t-search-agentic-retriever-2026-10-06.md
   - sources/arxiv-2610.06790-bttf-eda-agentic-2026-10-06.md
   - sources/arxiv-2610.06829-clift-web-agent-verification-2026-10-06.md
+  - concepts/k284-arxiv-wave.md
 maturity: draft
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-25
 harness_verb: FILE
 wire_status: policy_wired
 ---

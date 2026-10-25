@@ -8,9 +8,10 @@ related:
   - entities/tools/grok-build-plugin-cc.md
   - sources/eval-revenue-opportunity-url-analysis-2026-07-16.md
   - concepts/wiki-tooling-evaluation.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-16-grok-cli-upload-incident.md
 maturity: draft
 created: 2026-07-16
-updated: 2026-07-17
+updated: 2026-10-25
 ---
 
 ## Narrative

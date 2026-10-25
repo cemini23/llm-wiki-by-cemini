@@ -13,10 +13,12 @@ related:
   - sources/brief-k126-garip-selfplay-pm-forecast-steals-2026-06-23.md
   - sources/daily-digest-reject-cluster-k127-2026-06-24.md
   - sweeps/2026-06-24-daily.md
+  - entities/bots/poker-bot-tooling.md
+  - sources/arxiv-2607.07078-forgetting-factor-regret-zero-sum-2026-07-11.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.23995-pdf-emagnet-parameter-space-ema-regularization-f.pdf
 phase_0_verdict: REFERENCE 2026-06-24 — Riot Games internal; no public repo; offline selfplay research only
 ---

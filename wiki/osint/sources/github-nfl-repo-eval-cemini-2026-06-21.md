@@ -12,7 +12,8 @@ related:
   - sources/cemini-tool-evaluation-plan-62url-2026-06-23.md
   - entities/tools/sportsdataverse-py.md
   - sources/tool-eval-metaplan-81url-2026-06-24.md
-updated: 2026-06-24
+  - entities/tools/espn-api.md
+updated: 2026-10-25
 clusters: [cemini-internal]
 ---
 

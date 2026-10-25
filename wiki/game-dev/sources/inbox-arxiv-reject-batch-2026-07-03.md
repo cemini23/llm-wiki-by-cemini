@@ -9,11 +9,14 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-07-01.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/godot-engine-ai-contribution-policy-2026-07-01.md
+  - sources/inbox-arxiv-reject-batch-2026-07-05.md
+  - sources/inbox-arxiv-reject-batch-2026-07-07.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-03
-updated: 2026-07-03
+updated: 2026-10-25
 ---
 
 ## Raw Concept

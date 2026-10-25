@@ -9,11 +9,12 @@ related:
   - sources/arxiv-2610.13022-reqclarifybench-clarification-2026-10-12.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - concepts/agent-harness-castle-project.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-10-12
-updated: 2026-10-12
+updated: 2026-10-25
 ---
 
 ## Raw Concept

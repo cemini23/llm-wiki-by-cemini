@@ -9,10 +9,11 @@ related:
   - sources/daily-digest-batch-k135-2026-07-01.md
   - sources/arxiv-2606.26027-tool-rl-collapse-supervisory-signals-2026-07-02.md
   - sources/brief-k136-tool-rl-collapse-steals-2026-07-02.md
+  - sources/daily-digest-batch-k137-2026-07-03.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-10-25
 ---
 
 ## Relations

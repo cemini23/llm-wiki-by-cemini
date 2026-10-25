@@ -17,10 +17,11 @@ related:
   - "@ccc-wiki/entities/tools/claude-trading-skills.md"
   - entities/tools/memory-os.md
   - "@ccc-wiki/entities/tools/slot-casino-game-developer-skills.md"
+  - entities/tools/rlcard.md
 maturity: draft
 read_status: read
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-10-25
 ---
 
 ## Relations

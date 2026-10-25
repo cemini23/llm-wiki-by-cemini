@@ -10,10 +10,12 @@ related:
   - concepts/llm-agent-systems.md
   - entities/tools/aohp-os.md
   - sources/arxiv-agentic-time-machine-2606.21013-2026-06-23.md
+  - sources/arxiv-fara-1-5-computer-use-2606.20785-2026-06-25.md
+  - sources/arxiv-selfcompact-lm-agents-2606.23525-2026-06-25.md
 maturity: draft
 read_status: read
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-10-25
 clusters: [llm-agents, audit-security]
 ---
 

@@ -9,10 +9,11 @@ related:
   - concepts/devfun-researcher-track-readiness-2026-06.md
   - concepts/devfun-researcher-pre-submit-recon.md
   - entities/platforms/devfun-arena.md
+  - sources/devfun-researcher-sandbox-researcher-guide-2026-06-08.md
 maturity: validated
 read_status: read
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-10-25
 clusters: [prediction-markets, llm-agents]
 ---
 

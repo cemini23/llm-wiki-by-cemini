@@ -5,9 +5,10 @@ tags: [arxiv, k246, agents]
 keywords: [arxiv, 2608.21107, k246]
 related:
   - concepts/k246-agent-harness-wave.md
+  - sources/arxiv-2608.24857-prompt-structure-security-redistribution-2026-08-26.md
 maturity: draft
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-10-25
 read_status: skimmed
 ---
 

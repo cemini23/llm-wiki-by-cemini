@@ -7,10 +7,11 @@ related:
   - entities/tools/twelve-factor-agents.md
   - sources/newsletter-rss-pragmatic-engineer-2026-07-14-what-is-loop-engineering.md
   - concepts/coding-agent-substrate-steerability.md
+  - sources/newsletter-rss-latent-space-2026-07-14-5-trends-ai-engineer-worlds-fair.md
 maturity: draft
 read_status: read
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-10-25
 clusters: [k167-ingest]
 ---
 

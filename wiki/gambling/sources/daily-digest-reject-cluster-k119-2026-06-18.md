@@ -10,10 +10,11 @@ related:
   - sources/daily-digest-reject-cluster-k116-2026-06-17.md
   - sweeps/2026-06-18-daily.md
   - sources/daily-digest-arxiv-batch-2026-06-04.md
+  - sources/daily-digest-reject-cluster-k123-2026-06-20.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-18
-updated: 2026-06-19
+updated: 2026-10-25
 ---
 
 ## Relations

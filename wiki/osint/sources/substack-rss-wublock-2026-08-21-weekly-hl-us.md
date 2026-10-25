@@ -5,9 +5,10 @@ tags: [source, substack, rss, crypto, hyperliquid, k245]
 keywords: [Hyperliquid, Citi, CFTC, Selig, Clarity-Act, USD1, Uniswap]
 related:
   - entities/platforms/hyperliquid.md
+  - sources/substack-rss-wublock-2026-08-26-three-exchanges-imploded.md
 maturity: draft
 created: 2026-08-22
-updated: 2026-08-22
+updated: 2026-10-25
 read_status: skimmed
 ---
 

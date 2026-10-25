@@ -12,10 +12,11 @@ related:
   - sources/daily-digest-reject-cluster-k123-2026-06-20.md
   - sweeps/2026-06-20-daily.md
   - sources/arxiv-2608.09256-distributed-team-orchestration-supervisor-2026-08-12.md
+  - sources/arxiv-2606.20960-equilibrium-internal-transfers-2026-06-24.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-20
-updated: 2026-08-12
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.16139-2606.16139v1-the-computational-complexity-of-tea.pdf
 ---
 

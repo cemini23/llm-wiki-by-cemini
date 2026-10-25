@@ -10,10 +10,11 @@ related:
   - concepts/prediction-markets-crossover.md
   - concepts/kalshi-michigan-sports-injunction-2026-06.md
   - sources/daily-digest-rss-industry-2026-08-14.md
+  - sources/brief-k239-kalshi-sports-mention-2026-08-15.md
 maturity: validated
 read_status: read
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Relations

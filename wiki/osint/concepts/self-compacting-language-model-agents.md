@@ -9,9 +9,10 @@ related:
   - concepts/context-compression-resume-pattern.md
   - concepts/aohp-os-level-agent-harness.md
   - concepts/mcp-context-optimization.md
+  - entities/tools/headroom.md
 maturity: draft
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 ---
 
 ## Relations

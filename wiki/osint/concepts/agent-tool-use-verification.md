@@ -18,9 +18,13 @@ related:
   - sources/arxiv-2610.12813-vepa-verified-evolving-guardrails-2026-10-13.md
   - concepts/k290-arxiv-wave.md
   - entities/tools/claude-show-your-work.md
+  - concepts/k285-arxiv-wave.md
+  - concepts/typed-judgement-desk-pattern.md
+  - sources/arxiv-2610.10332-task-progress-distillation-2026-10-08.md
+  - sources/arxiv-2610.13651-tofu-orchestrator-fuzzing-2026-10-12.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-20
+updated: 2026-10-25
 ---
 
 ## Relations

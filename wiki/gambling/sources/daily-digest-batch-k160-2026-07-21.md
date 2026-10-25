@@ -11,10 +11,11 @@ related:
   - sources/daily-digest-reject-cluster-k160-2026-07-21.md
   - entities/tools/wc2026-agents.md
   - sources/brief-k160-wc2026-agents-market-baseline-steals-2026-07-21.md
+  - sources/daily-digest-batch-k161-2026-07-26.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-10-25
 ---
 
 ## Relations

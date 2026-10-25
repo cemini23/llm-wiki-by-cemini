@@ -8,10 +8,11 @@ related:
   - entities/tools/agentbeats.md
   - concepts/llm-agent-systems.md
   - concepts/code-as-agent-harness.md
+  - sources/arxiv-metanym-game-llm-benchmark-2606.21008-2026-06-25.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-10-25
 ---
 
 ## Relations

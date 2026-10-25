@@ -11,9 +11,11 @@ related:
   - entities/games/poker.md
   - sources/youtube-operator-batch-casino-2026-05-31.md
   - entities/bots/stake-engine-client.md
+  - entities/platforms/hard-rock-bet.md
+  - sources/web-sportsbookreview-hard-rock-bet-2026-06-20.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-10-25
 ---
 
 ## Relations

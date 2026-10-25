@@ -14,10 +14,11 @@ related:
   - entities/tools/snyk-studio-mcp.md
   - entities/tools/hf-mcp-server.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/firecrawl.md
 maturity: draft
 read_status: read
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 clusters: [wiki-tooling, agent-harness]
 ---
 

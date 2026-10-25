@@ -27,9 +27,10 @@ related:
   - sources/unofficial-crusader-patch2-phase-0-audit-2026-06-13.md
   - sources/stronghold-franchise-best-of-research-2026-06-18.md
   - sources/stronghold-4-public-demo-2026-06-24.md
+  - sources/stronghold-invasion-vs-freebuild-shelf-2026-07-12.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-24
+updated: 2026-10-25
 ---
 
 ## Relations

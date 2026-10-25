@@ -9,10 +9,11 @@ related:
   - sources/daily-digest-batch-k180-2026-10-02.md
   - concepts/parlay-and-correlated-bets.md
   - concepts/free-slate-context.md
+  - sources/nfl-week4-tnf-result-postmortem-2026-10-02.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/Steelers Browns Research Metaplan.docx
 phase_0_verdict: REFERENCE — single-game prop card; no auto-enter
 wire_status: policy_wired

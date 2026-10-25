@@ -525,3 +525,14 @@ Catalog of all wiki pages. Updated on each ingest.
 
 - [k291-gambling-wave](concepts/k291-gambling-wave.md) — wave hub
 - [k291-gambling-feeds](sources/k291-gambling-feeds-2026-10-14.md) — Michigan C&D ×33; Matchbook/Betdaq; PA + WY sweepstakes bans; Seminole v. DraftKings; BetMGM
+
+## K295 index backfill (2026-10-25)
+
+Rows missing since their source pages were committed. Found by
+`ingest_session_gate.py`.
+
+| Page | Type |
+|------|------|
+| sources/daily-digest-reject-cluster-k123-2026-06-20.md | source |
+| sources/daily-digest-reject-cluster-k124-2026-06-21.md | source |
+

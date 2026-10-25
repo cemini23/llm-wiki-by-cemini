@@ -14,12 +14,14 @@ related:
   - meta/cross-wiki-routing.md
   - sources/inbox-arxiv-reject-batch-2026-06-21.md
   - meta/cross-wiki-routing.md
+  - sources/ziva-godot-asset-store-listing-2026-06-27.md
+  - sources/ziva-gpt-56-godot-benchmark-2026-07-10.md
 read_status: read
 source_type: operator-audit
 source_url: https://ziva.sh/blogs/ziva-3-release
 maturity: validated
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-10-25
 ---
 
 ## Raw Concept

@@ -18,9 +18,11 @@ related:
   - sources/ca-doj-immigration-detention-2026-ab103.md
   - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
   - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
+  - meta/ice-detention-stats-cadence.md
+  - sources/ice-ja-26-0143-first-american-escrow-2026.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-06
+updated: 2026-10-25
 ---
 
 ## Relations

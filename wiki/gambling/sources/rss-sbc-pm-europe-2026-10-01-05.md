@@ -9,10 +9,11 @@ related:
   - concepts/prediction-markets-crossover.md
   - sources/rss-lsr-pm-industry-2026-09-29-30.md
   - sources/daily-digest-batch-k181-2026-10-06.md
+  - sources/rss-sbc-cee-merkur-2026-10-07.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/
 phase_0_verdict: REFERENCE — European regulatory awareness; no operator action
 wire_status: policy_wired

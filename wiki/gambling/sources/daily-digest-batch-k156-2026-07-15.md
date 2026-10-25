@@ -10,10 +10,11 @@ related:
   - sources/arxiv-2607.10251-risk-sensitive-llm-poker-2026-07-15.md
   - entities/tools/agent-texas-poker.md
   - sources/brief-k156-risk-sensitive-llm-poker-steals-2026-07-15.md
+  - sources/daily-digest-batch-k157-2026-07-16.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-10-25
 ---
 
 ## Relations

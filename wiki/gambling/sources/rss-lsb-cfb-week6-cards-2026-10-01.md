@@ -8,10 +8,11 @@ related:
   - concepts/sports-betting-fundamentals.md
   - concepts/vig-and-hold.md
   - sources/daily-digest-batch-k180-2026-10-02.md
+  - sources/rss-lsb-cfb-texas-oklahoma-2026-10-07.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/
 phase_0_verdict: GO (research) — seed for the new CFB vertical; mechanisms only, no auto-enter
 wire_status: policy_wired

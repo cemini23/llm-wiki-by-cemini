@@ -10,9 +10,12 @@ related:
   - sources/arxiv-2607.00190-latent-maps-performance-2026-07-03.md
   - concepts/active-project-research-routing.md
   - concepts/rl-marl-research.md
+  - concepts/ai-native-games-taxonomy.md
+  - sources/arxiv-ai-native-games-survey-2607.00527-2026-07-02.md
+  - sources/arxiv-zeta-any-angle-path-planning-2607.00065-2026-07-02.md
 maturity: draft
 created: 2026-06-30
-updated: 2026-07-03
+updated: 2026-10-25
 ---
 
 ## Relations

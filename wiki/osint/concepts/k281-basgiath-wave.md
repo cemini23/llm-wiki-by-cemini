@@ -12,9 +12,11 @@ related:
   - sources/eval-minecraft-bedrock-protocol-2026-10-04.md
   - sources/eval-project-stack-revenue-2026-10-05.md
   - sources/universal-modder-2026-10-04.md
+  - concepts/k283-eval-wave.md
+  - sources/eval-bedrock-ecosystem-2026-10-06.md
 maturity: draft
 created: 2026-10-04
-updated: 2026-10-04
+updated: 2026-10-25
 harness_verb: FILE
 wire_status: policy_wired
 ---

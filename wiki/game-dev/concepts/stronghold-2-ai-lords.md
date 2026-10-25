@@ -29,9 +29,11 @@ related:
   - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
   - sources/arxiv-2609.29228-bt-fsm-llm-conversion-2026-09-30.md
   - sources/arxiv-2609.34342-sage-strategic-reasoning-2026-09-30.md
+  - sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md
+  - sources/arxiv-2610.03695-queen-chess-explains-moves-2026-10-05.md
 maturity: validated
 created: 2026-06-17
-updated: 2026-06-21
+updated: 2026-10-25
 ---
 
 ## Relations

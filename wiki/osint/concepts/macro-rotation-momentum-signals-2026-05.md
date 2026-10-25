@@ -9,9 +9,10 @@ related:
   - concepts/equity-fair-value-evaluation.md
   - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
   - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
+  - concepts/macro-charts-gold-reversal-thesis-2026-06.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

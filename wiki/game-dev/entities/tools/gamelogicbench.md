@@ -9,9 +9,10 @@ related:
   - concepts/agent-harness-castle-project.md
   - entities/tools/godot-stagehand.md
   - entities/projects/castle-sim.md
+  - concepts/ai-game-dev-tool-stack-2026.md
 maturity: validated
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-25
 wire_status: policy_wired
 wire_target: concepts/agent-harness-castle-project.md
 ---

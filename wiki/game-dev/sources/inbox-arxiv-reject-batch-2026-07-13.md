@@ -8,11 +8,15 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-07-11.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/chris-tutorials-grid-placement-godot-shelf-2026-07-11.md
+  - sources/inbox-arxiv-reject-batch-2026-07-14.md
+  - sources/inbox-arxiv-reject-batch-2026-07-15.md
+  - sources/stronghold-invasion-vs-freebuild-shelf-2026-07-12.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-10-25
 ---
 
 ## Raw Concept

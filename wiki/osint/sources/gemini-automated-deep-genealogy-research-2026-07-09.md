@@ -12,10 +12,11 @@ related:
   - entities/tools/gcerretani-antenati.md
   - entities/tools/transkribus.md
   - entities/tools/familysearch-platform-api.md
+  - concepts/active-project-research-routing.md
 maturity: draft
 read_status: read
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Relations

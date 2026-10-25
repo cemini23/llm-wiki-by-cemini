@@ -20,9 +20,10 @@ related:
   - sources/substack-rss-moontower-2026-08-19-socrates-highlights.md
   - sources/substack-rss-moontower-2026-08-19-why-should-i-learn-this.md
   - sources/source-grok-loop-engineering-note-2026-08-29.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-08-25-ramp-inspect-agent.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-09-03
+updated: 2026-10-25
 ---
 
 ## Relations

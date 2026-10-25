@@ -10,10 +10,11 @@ related:
   - sources/arxiv-2606.29169-ganzfried-ped-nash-imperfect-info-2026-06-30.md
   - sources/arxiv-2606.29457-takeover-auction-diligence-games-2026-06-30.md
   - sources/brief-k134-ganzfried-ped-deal-games-steals-2026-06-30.md
+  - sources/daily-digest-batch-k135-2026-07-01.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-10-25
 ---
 
 ## Relations

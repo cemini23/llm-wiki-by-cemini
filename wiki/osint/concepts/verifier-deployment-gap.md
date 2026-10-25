@@ -10,9 +10,10 @@ related:
   - concepts/code-as-agent-harness.md
   - concepts/swap-regret-attention-fictitious-play.md
   - entities/tools/agent-governance-toolkit.md
+  - concepts/document-processing-pipeline-scale-patterns.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-10-25
 ---
 
 ## Relations

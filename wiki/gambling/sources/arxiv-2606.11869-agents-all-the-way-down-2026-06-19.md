@@ -14,10 +14,12 @@ related:
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - sweeps/2026-06-19-daily.md
   - @osint-wiki/concepts/cemini-knowledge-application-architecture.md
+  - sources/arxiv-2606.17682-trainee-to-trainer-llm-env-engineer-2026-06-20.md
+  - sources/arxiv-2606.26807-karla-kb-augmented-retrieval-2026-07-06.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-10-25
 ---
 
 ## Relations

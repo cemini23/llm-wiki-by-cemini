@@ -16,9 +16,10 @@ related:
   - concepts/godot-castle-sim-tool-gap-shelf.md
   - entities/tools/blockbench.md
   - concepts/minecraft-modding-ecosystem.md
+  - sources/cross-wiki-routed-briefs-2026-10-05.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-17
+updated: 2026-10-25
 ---
 
 ## Relations

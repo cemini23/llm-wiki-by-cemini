@@ -12,10 +12,12 @@ related:
   - concepts/vig-and-hold.md
   - sources/daily-digest-rss-pm-regulatory-2026-09-29.md
   - sources/daily-digest-batch-k179-2026-09-30.md
+  - concepts/parlay-and-correlated-bets.md
+  - concepts/prediction-markets-crossover.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — retail share + pricing data; no operator action
 wire_status: policy_wired
 ---

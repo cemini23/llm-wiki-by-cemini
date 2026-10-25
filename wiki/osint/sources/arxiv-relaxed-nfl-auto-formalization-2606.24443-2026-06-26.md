@@ -10,10 +10,11 @@ related:
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - sources/arxiv-forex-lean4-fallacy-detection-2606.21867-2026-06-25.md
   - sources/arxiv-rlvf-formally-verified-law-2606.23913-2026-06-26.md
+  - concepts/llm-agent-systems.md
 maturity: draft
 read_status: read
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 clusters: [llm-agents, verifier, poker]
 ---
 

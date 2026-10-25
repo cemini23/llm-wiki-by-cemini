@@ -14,10 +14,11 @@ related:
   - sources/brief-k168-nfl-season-paper-rss-2026-08-31.md
   - meta/daily-research-digest-cadence.md
   - sweeps/2026-08-31-daily.md
+  - sources/arxiv-2609.31473-game-arena-strategic-llm-evaluation-2026-09-28.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-31
-updated: 2026-08-31
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2604.27865.pdf
 phase_0_verdict: REFERENCE 2026-08-31 — EPL agent bench; pairs K160; no NFL tip bot
 wire_status: wont_wire

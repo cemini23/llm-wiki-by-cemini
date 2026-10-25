@@ -12,9 +12,13 @@ related:
   - concepts/nfl-weekly-slate-hub-workflow.md
   - meta/research-input-pipeline.md
   - concepts/nfl-dfs-field-edge-priors.md
+  - sources/nfl-week2-saturday-deltas-2026-09-19.md
+  - sources/nfl-week2-slate-env-analysis-2026-09-18.md
+  - sources/nfl-week3-saturday-deltas-2026-09-26.md
+  - sources/nfl-week4-slate-env-2026-10-02.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-10-04
+updated: 2026-10-25
 ---
 
 ## Relations

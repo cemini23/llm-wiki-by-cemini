@@ -8,9 +8,10 @@ related:
   - entities/tools/mcp-searxng.md
   - concepts/xsp-lane-trading-framework.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/firecrawl-mcp-server.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

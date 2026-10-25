@@ -13,11 +13,12 @@ related:
   - concepts/game-ai-rl-augmentation-shelf.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-10-25
 ---
 
 ## Raw Concept

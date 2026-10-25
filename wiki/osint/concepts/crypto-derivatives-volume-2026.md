@@ -15,9 +15,11 @@ related:
   - sources/substack-rss-wublock-2026-10-13-september-spot-volume.md
   - concepts/crypto-exchange-spot-volume.md
   - concepts/k290-feeds-wave.md
+  - sources/substack-rss-wublock-2026-10-07-september-mining.md
+  - sources/substack-rss-wublock-2026-10-10-weekly-project-updates.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-06
+updated: 2026-10-25
 ---
 
 ## Relations

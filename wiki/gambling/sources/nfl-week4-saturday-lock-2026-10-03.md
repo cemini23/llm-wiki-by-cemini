@@ -11,10 +11,11 @@ related:
   - meta/research-input-pipeline.md
   - sources/daily-digest-batch-k181-2026-10-06.md
   - sources/nfl-week4-result-postmortem-2026-10-09.md
+  - sources/rss-lsb-week4-game-cards-2026-10-02.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-06
-updated: 2026-10-09
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/NFL Saturday Lock-Day Deltas Research.docx
 phase_0_verdict: REFERENCE — final Gemini Deep Research artifact before the 2026-10-04 retirement
 wire_status: policy_wired

@@ -20,9 +20,13 @@ related:
   - entities/platforms/devfun-arena.md
   - entities/platforms/devfun-heads-up-pvp-s3.md
   - sources/arxiv-2608.15258-self-fictitious-play-2026-08-18.md
+  - concepts/ai-native-games-taxonomy.md
+  - concepts/swe-interact-user-driven-coding-eval.md
+  - sources/arxiv-ai-native-games-survey-2607.00527-2026-07-02.md
+  - sources/arxiv-footsiesgym-2607.06514-2026-07-09.md
 maturity: validated
 created: 2026-06-19
-updated: 2026-06-22
+updated: 2026-10-25
 cross-wiki:
   - "@gambling-wiki/entities/platforms/devfun-poker-arena.md"
   - "@gambling-wiki/concepts/poker-hl-analyst-loop.md"

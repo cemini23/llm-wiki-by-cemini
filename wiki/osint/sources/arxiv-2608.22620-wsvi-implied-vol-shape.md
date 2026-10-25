@@ -5,9 +5,11 @@ tags: [arxiv, k246]
 keywords: [arxiv, 2608.22620, k246]
 related:
   - concepts/k246-vol-options-wave.md
+  - concepts/k247-vol-options-wave.md
+  - sources/arxiv-2608.24786-vrp-learning-to-rank-spxw-2026-08-26.md
 maturity: draft
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-10-25
 read_status: skimmed
 ---
 

@@ -14,9 +14,11 @@ related:
   - sources/arxiv-2606.19308-mafp-multi-agent-fictitious-play-2026-06-21.md
   - sources/arxiv-2606.14571-streammembench-agent-memory-2026-06-21.md
   - sources/brief-k122-poker-researcher-track-plan-2026-06-19.md
+  - sources/arxiv-2606.22688-garip-last-iterate-selfplay-2026-06-23.md
+  - sources/brief-k123-researcher-jun21-checklist-2026-06-20.md
 maturity: draft
 created: 2026-06-19
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

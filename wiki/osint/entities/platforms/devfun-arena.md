@@ -19,9 +19,10 @@ related:
   - entities/platforms/devfun-heads-up-pvp-s3.md
   - entities/tools/pokerkit.md
   - sources/eval-poker-github-repos-2026-06-26.md
+  - sources/devfun-researcher-sandbox-researcher-guide-2026-06-08.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

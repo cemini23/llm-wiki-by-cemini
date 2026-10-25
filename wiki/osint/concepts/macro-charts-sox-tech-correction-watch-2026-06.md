@@ -14,9 +14,12 @@ related:
   - concepts/macro-rotation-momentum-signals-2026-05.md
   - concepts/macro-weather-regime.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/macro-charts-paid-forward-2026-07-14-sox-oil-yen-bounce.md
+  - sources/macro-charts-paid-forward-2026-07-15-sox-cpi-oil-metals.md
+  - sources/macro-charts-paid-forwards-vincent-2026-05-28-07-07.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-08-05
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -13,10 +13,11 @@ related:
   - sources/links-6-22-tool-eval.md
   - concepts/active-project-research-routing.md
   - concepts/openclaw-security-taxonomy.md
+  - sources/eval-huggingface-models-v2-2026-07-03.md
 maturity: draft
 read_status: deep-read
 created: 2026-06-23
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

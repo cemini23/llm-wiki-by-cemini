@@ -6,10 +6,11 @@ keywords: [2606.22488, SCOPE, SESim, SASMem, VLM, open-ended environments]
 related:
   - concepts/active-project-research-routing.md
   - sources/arxiv-qwen-robotnav-2606.18112-2026-06-20.md
+  - concepts/scope-symbolic-world-planning.md
 maturity: draft
 read_status: read
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 clusters: [llm-agents]
 ---
 

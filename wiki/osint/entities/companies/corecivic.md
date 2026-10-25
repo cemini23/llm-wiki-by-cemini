@@ -23,9 +23,10 @@ related:
   - sources/abc10news-cxw-otay-sale-2026-07-06.md
   - sources/corecivic-investor-deck-proforma-2026-07.md
   - sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md
+  - concepts/ice-turnkey-research-backlog-2026-06-30.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-07-07
+updated: 2026-10-25
 ---
 
 ## Relations

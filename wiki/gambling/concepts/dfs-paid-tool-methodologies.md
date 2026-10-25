@@ -10,9 +10,10 @@ related:
   - entities/tools/fantasylabs-dfs.md
   - entities/tools/pydfs-lineup-optimizer.md
   - sources/research-diy-dfs-model-master-plan-2026-06-20.md
+  - sources/fantasylabs-picklabs-launch-2026-07-05.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

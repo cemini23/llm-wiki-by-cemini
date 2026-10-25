@@ -6,10 +6,11 @@ keywords: [loop-engineering, ralph-wiggum, cherney, steinberger, addy-osmani, to
 related:
   - concepts/cemini-wiki-ingest-workflow.md
   - sources/newsletter-rss-pragmatic-engineer-2026-08-19-osmani-ai-engineering.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-15-context-engineering-dex-horthy.md
 maturity: validated
 read_status: deep-read
 created: 2026-07-14
-updated: 2026-08-20
+updated: 2026-10-25
 clusters: [agent-orchestration]
 ---
 

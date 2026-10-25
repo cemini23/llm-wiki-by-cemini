@@ -7,9 +7,12 @@ related:
   - entities/tools/pydfs-lineup-optimizer.md
   - concepts/diy-nfl-dfs-model-architecture.md
   - concepts/dfs-model-orchestration.md
+  - concepts/dfs-injury-and-news-workflow.md
+  - entities/tools/stokastic-dfs.md
+  - sources/research-nfl-dfs-id-mapping-2026-06-20.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -7,9 +7,10 @@ related:
   - concepts/k248-agent-harness-wave.md
   - sources/arxiv-2608.24804-starharness-2026-08-26.md
   - entities/tools/starharness.md
+  - sources/arxiv-2608.25593-jit-agent-2026-08-29.md
 maturity: draft
 created: 2026-08-28
-updated: 2026-08-28
+updated: 2026-10-25
 read_status: read
 ---
 

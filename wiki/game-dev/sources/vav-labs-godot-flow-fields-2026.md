@@ -12,12 +12,13 @@ related:
   - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
   - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
   - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
+  - sources/arxiv-2607.02222-cofl-s-sector-flow-fields-2026-07-16.md
 read_status: read
 source_type: blog
 source_url: https://vav-labs.com/blog/godot-flow-fields-shared-goal/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-22
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -7,9 +7,13 @@ related:
   - sources/arxiv-pm-settlement-discounting-2605-31431-2026-06-02.md
   - entities/platforms/polymarket.md
   - concepts/polymarket-microstructure-findings.md
+  - concepts/kalshi-implied-macro-belief-distributions.md
+  - concepts/settlement-manipulation-prediction-markets.md
+  - sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md
+  - sources/arxiv-settlement-manipulation-pm-2606.31675-2026-07-01.md
 maturity: draft
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-25
 ---
 
 ## Relations

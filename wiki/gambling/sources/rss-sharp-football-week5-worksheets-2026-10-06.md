@@ -8,10 +8,11 @@ related:
   - entities/sports/nfl-betting.md
   - sources/rss-sharp-football-week4-2026-10-03-04.md
   - sources/daily-digest-batch-k182-2026-10-07.md
+  - sources/rss-sharp-football-week5-worksheets-2026-10-07.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/
 phase_0_verdict: PARTIAL — QB sections free, RB/WR/TE paywalled; method and framing only
 wire_status: policy_wired

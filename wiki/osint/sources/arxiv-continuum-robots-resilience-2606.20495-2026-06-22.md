@@ -7,10 +7,12 @@ related:
   - concepts/castle-sim-pathfinding-steals.md
   - sources/links-6-22-tool-eval.md
   - concepts/active-project-research-routing.md
+  - sources/arxiv-cooperative-orca-mapf-2606.22757-2026-06-25.md
+  - sources/arxiv-zeta-any-angle-path-planning-2607.00065-2026-07-02.md
 maturity: draft
 read_status: deep-read
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-10-25
 ---
 
 ## Relations

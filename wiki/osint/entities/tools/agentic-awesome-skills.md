@@ -8,9 +8,10 @@ related:
   - entities/tools/davila7-claude-code-templates.md
   - entities/tools/agent-skills-for-context-engineering.md
   - entities/tools/agentskills.md
+  - sources/newsletter-rss-latent-space-2026-07-11-ainews-not-much-happened-today.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Relations

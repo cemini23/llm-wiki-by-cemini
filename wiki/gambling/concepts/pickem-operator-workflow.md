@@ -12,9 +12,12 @@ related:
   - concepts/bankroll-management.md
   - entities/platforms/prizepicks.md
   - entities/platforms/underdog-pickem.md
+  - concepts/nfl-weekly-slate-hub-workflow.md
+  - concepts/pickem-legal-and-tos-posture.md
+  - sources/research-diy-pickem-props-master-plan-2026-07-05.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -10,11 +10,12 @@ related:
   - concepts/llm-npc-runtime-ai-shelf.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - concepts/agent-harness-castle-project.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-25
 ---
 
 ## Raw Concept

@@ -10,11 +10,12 @@ related:
   - sources/cross-wiki-routed-briefs-2026-10-05.md
   - meta/cross-wiki-routing.md
   - sources/k284-k285-basgiath-clip-tooling-2026-10-08.md
+  - sources/minecraft-modding-deep-research-2026-10-05.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-10-06
-updated: 2026-10-07
+updated: 2026-10-25
 ---
 
 ## Raw Concept

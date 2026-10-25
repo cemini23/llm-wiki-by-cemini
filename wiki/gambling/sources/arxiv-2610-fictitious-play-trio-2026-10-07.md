@@ -11,10 +11,11 @@ related:
   - entities/tools/adversarial-coevolution.md
   - entities/platforms/devfun-poker-arena.md
   - sources/daily-digest-batch-k182-2026-10-07.md
+  - sources/arxiv-2610.09244-risk-averse-multi-population-mfg-2026-10-09.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/
 phase_0_verdict: REFERENCE — two theory bounds + one adoptable simulator; no bot wire this batch
 wire_status: wont_wire

@@ -39,9 +39,12 @@ related:
   - sources/arxiv-2608.17915-computational-prosopography-2026-08-20.md
   - entities/tools/markitdown.md
   - concepts/k257-eval-github-wave.md
+  - entities/tools/centralino-ai-studio-medico.md
+  - entities/tools/walgit.md
+  - sources/eval-multi-wiki-resource-plan-k247-2026-08-26.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-09-08
+updated: 2026-10-25
 ---
 
 ## Relations

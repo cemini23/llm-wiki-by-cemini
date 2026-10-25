@@ -9,10 +9,11 @@ related:
   - sources/daily-digest-batch-k176-2026-09-24.md
   - concepts/dfs-correlation-stacking.md
   - concepts/free-slate-context.md
+  - sources/nfl-week3-dfs-research-2026-09-26.md
 maturity: draft
 read_status: skimmed
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/NFL Week 3 Scheme Breakdown.docx
 phase_0_verdict: REFERENCE — scheme leans; not auto-bets
 wire_status: policy_wired

@@ -11,10 +11,11 @@ related:
   - sources/brief-k153-mppo-style-pm-evidence-steals-2026-07-12.md
   - sources/daily-digest-batch-k153-2026-07-12.md
   - sweeps/2026-07-12-daily.md
+  - sources/arxiv-2607.07820-deepsearch-world-self-distillation-2026-07-13.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-12
-updated: 2026-07-12
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2607.07760-2607-07760v1-adversarial-social-epistemology-for.pdf
 phase_0_verdict: REFERENCE 2026-07-12 — paper-only; audit scaffolded testimony/inference chains (PM agent evidence hygiene)
 ---

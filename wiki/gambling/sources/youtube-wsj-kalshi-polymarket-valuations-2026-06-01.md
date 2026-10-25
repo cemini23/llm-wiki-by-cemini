@@ -11,10 +11,11 @@ related:
   - concepts/sharp-vs-soft-books.md
   - concepts/sportsbook-pm-line-divergence.md
   - sources/polygnosis-2-polymarket-osint-2026-06-01.md
+  - concepts/kalshi-michigan-sports-injunction-2026-06.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-10-25
 ---
 
 ## Relations

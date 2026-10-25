@@ -15,9 +15,10 @@ related:
   - entities/bots/predict-raven.md
   - entities/tools/rlcard.md
   - sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md
+  - entities/tools/adversarial-coevolution.md
 maturity: core
 created: 2026-05-31
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Relations

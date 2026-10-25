@@ -12,9 +12,12 @@ related:
   - entities/platforms/polymarket.md
   - sources/openreview-llm-coherence-projection-Tqos7VqQhH-2026-06-17.md
   - sources/arxiv-2606-13038-nous-prediction-market-cognitive-injection-2026-06-13.md
+  - sources/arxiv-2607.02467-human-capital-pm-hybrid-forecasting-2026-07-06.md
+  - sources/arxiv-2607.07760-adversarial-social-epistemology-llm-2026-07-12.md
+  - sweeps/2026-06-17-daily.md
 maturity: validated
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-10-25
 ---
 
 ## Relations

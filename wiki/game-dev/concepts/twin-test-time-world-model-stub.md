@@ -6,9 +6,10 @@ keywords: [Twin, ARC-AGI-3, validate-before-act, replay-validation, test-time wo
 related:
   - concepts/tycho-arc-agi-active-abstraction-stub.md
   - concepts/agent-harness-castle-project.md
+  - concepts/vibeworlding-3d-agent-stub.md
 maturity: draft
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-10-25
 ---
 
 ## Relations

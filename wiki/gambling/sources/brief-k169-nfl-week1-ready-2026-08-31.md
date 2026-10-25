@@ -15,10 +15,11 @@ related:
   - entities/platforms/underdog-fantasy.md
   - entities/tools/stokastic-dfs.md
   - sources/web-dfs-hero-nfl-gpp-strategy-2026-06-20.md
+  - sources/nfl-betting-dfs-intelligence-week1-2026-09-11.md
 maturity: validated
 read_status: deep-read
 created: 2026-08-31
-updated: 2026-08-31
+updated: 2026-10-25
 wire_status: policy_wired
 cross-wiki-source: "briefs/2026-08-31_k169-nfl-week1-ready.md"
 ---

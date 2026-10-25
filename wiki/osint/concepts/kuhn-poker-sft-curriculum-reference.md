@@ -18,9 +18,11 @@ related:
   - concepts/exact-multiplayer-nash-computation.md
   - sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md
   - sources/arxiv-variable-bound-tightening-nash-2606.25997-2026-07-04.md
+  - concepts/projected-exploitability-descent.md
+  - sources/eval-huggingface-models-k146-refresh-2026-07-05.md
 maturity: validated
 created: 2026-06-22
-updated: 2026-07-04
+updated: 2026-10-25
 ---
 
 ## Relations

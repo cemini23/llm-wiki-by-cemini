@@ -11,9 +11,10 @@ related:
   - sources/arxiv-2608.18565-semaplc-2026-08-20.md
   - sources/arxiv-2608.19047-eureka-2026-08-20.md
   - sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md
+  - sources/arxiv-2608.24804-starharness-2026-08-26.md
 maturity: draft
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-10-25
 read_status: read
 ---
 

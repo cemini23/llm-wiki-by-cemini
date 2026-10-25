@@ -12,9 +12,13 @@ related:
   - entities/tools/openforgerl.md
   - sources/arxiv-2607.21557-openforgerl.md
   - entities/tools/context-mode.md
+  - concepts/anticipatory-workspace-curation.md
+  - sources/arxiv-2610.08722-compaction-harm-prediction-2026-10-07.md
+  - sources/arxiv-2610.13494-humanize-mle-agents-2026-10-12.md
+  - sources/arxiv-librarian-agents-2610.22273-2026-10-16.md
 maturity: draft
 created: 2026-07-24
-updated: 2026-07-25
+updated: 2026-10-25
 ---
 
 ## Relations

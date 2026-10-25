@@ -16,9 +16,12 @@ related:
   - entities/bots/cemini-devfun-poker-agent.md
   - entities/people/tom-dwan.md
   - sources/youtube-pokergo-dwan-hsp-mega-compilation-2026-06-03.md
+  - entities/games/indian-rummy.md
+  - sources/arxiv-2606.25997-ganzfried-vbt-nash-imperfect-info-2026-06-26.md
+  - sources/arxiv-2606.29169-ganzfried-ped-nash-imperfect-info-2026-06-30.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-06-03
+updated: 2026-10-25
 ---
 
 ## Relations

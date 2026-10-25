@@ -10,9 +10,10 @@ related:
   - concepts/godot-3d-sh2-architect-spike-plan.md
   - entities/projects/castle-sim.md
   - sources/k283-bedrock-addon-extracts-2026-10-06.md
+  - sources/minecraft-modding-deep-research-2026-10-05.md
 maturity: validated
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-25
 wire_status: deferred
 wire_target: concepts/art-pipeline-v0-requirements.md
 ---

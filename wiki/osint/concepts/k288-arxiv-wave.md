@@ -9,9 +9,10 @@ related:
   - concepts/agent-authorization-stack.md
   - sources/arxiv-2610.11030-nomos-2026-10-10.md
   - sources/arxiv-2610.11669-co-speech-gesture-benchmark-2026-10-10.md
+  - concepts/k289-arxiv-wave.md
 maturity: draft
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-25
 harness_verb: FILE
 wire_status: policy_wired
 ---

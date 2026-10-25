@@ -11,9 +11,12 @@ related:
   - concepts/diy-nfl-dfs-model-architecture.md
   - concepts/pickem-fair-probability.md
   - sources/rotoviz-preseason-paywall-2026-08-14.md
+  - concepts/diy-nfl-pickem-props-tool-architecture.md
+  - concepts/pickem-stat-type-mapping.md
+  - sources/research-diy-pickem-props-master-plan-2026-07-05.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-08-14
+updated: 2026-10-25
 ---
 
 ## Relations

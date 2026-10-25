@@ -10,9 +10,11 @@ related:
   - concepts/parlay-and-correlated-bets.md
   - entities/tools/ceminidfs.md
   - meta/nfl-gemini-weekday-prompt-addendum.md
+  - entities/sports/nfl-betting.md
+  - sources/nfl-week4-saturday-lock-2026-10-03.md
 maturity: draft
 created: 2026-10-04
-updated: 2026-10-10
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -10,9 +10,10 @@ related:
   - concepts/dfs-paid-tool-methodologies.md
   - entities/platforms/prizepicks.md
   - entities/platforms/underdog-pickem.md
+  - sources/research-diy-pickem-props-master-plan-2026-07-05.md
 maturity: validated
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 read_status: deep-read
 source_url: https://www.fantasylabs.com/articles/picklabs-fantasylabs-new-tool-for-player-props-and-dfs-pickem-edges/
 ingest_id: R20

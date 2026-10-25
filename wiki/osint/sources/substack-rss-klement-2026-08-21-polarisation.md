@@ -5,9 +5,10 @@ tags: [source, substack, rss, klement, wiki-only, k245]
 keywords: [polarisation, Tinbergen, climate, social-circle]
 related:
   - concepts/guruwatcher-macro-watches.md
+  - sources/substack-rss-klement-2026-08-26-higher-deficits-inflation.md
 maturity: draft
 created: 2026-08-22
-updated: 2026-08-22
+updated: 2026-10-25
 read_status: skimmed
 ---
 

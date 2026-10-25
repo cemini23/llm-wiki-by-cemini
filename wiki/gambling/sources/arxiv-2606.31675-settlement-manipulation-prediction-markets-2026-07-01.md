@@ -15,10 +15,12 @@ related:
   - sources/brief-k135-pm-settlement-macro-beliefs-steals-2026-07-01.md
   - sources/daily-digest-batch-k135-2026-07-01.md
   - sweeps/2026-07-01-daily.md
+  - concepts/kalshi-spotify-oracle-manipulation-2026-07.md
+  - sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.31675-settlement-manipulation-in-prediction-markets.pdf
 phase_0_verdict: REFERENCE 2026-07-01 — empirical + theory; no FOSS repo; retail hygiene for short-horizon asset-price PM contracts
 ---

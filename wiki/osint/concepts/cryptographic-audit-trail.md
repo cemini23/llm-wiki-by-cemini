@@ -37,9 +37,10 @@ related:
   - concepts/agent-authorization-stack.md
   - concepts/agent-trajectory-triage-signals.md
   - sources/signals-trajectory-triage.md
+  - sources/substack-rss-wublock-2026-07-09-quantum-crypto-q-day.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-11
+updated: 2026-10-25
 audit_date: 2026-04-24
 ---
 

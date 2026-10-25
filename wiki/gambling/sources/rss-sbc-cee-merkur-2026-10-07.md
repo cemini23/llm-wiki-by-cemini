@@ -8,10 +8,11 @@ related:
   - entities/platforms/draftkings.md
   - sources/rss-sbc-pm-europe-2026-10-01-05.md
   - sources/daily-digest-batch-k182-2026-10-07.md
+  - sources/rss-sbc-brazil-stake-2026-10-09-12.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/
 phase_0_verdict: OOD — European market structure; no operator action
 wire_status: wont_wire

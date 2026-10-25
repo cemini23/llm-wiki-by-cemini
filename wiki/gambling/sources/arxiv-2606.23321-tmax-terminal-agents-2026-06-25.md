@@ -9,10 +9,11 @@ related:
   - sources/brief-k129-celeus-tmax-eval-steals-2026-06-25.md
   - sources/daily-digest-reject-cluster-k129-2026-06-25.md
   - sweeps/2026-06-25-daily.md
+  - sources/arxiv-2606.20785-fara-computer-use-agents-2026-06-27.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.23321-2606-23321v1-tmax-a-simple-recipe-for-terminal-a.pdf
 phase_0_verdict: CONDITIONAL-GO 2026-06-25 — Apache-2.0 github.com/hamishivi/tmax; strip-mine eval data gen only, not wagering
 ---

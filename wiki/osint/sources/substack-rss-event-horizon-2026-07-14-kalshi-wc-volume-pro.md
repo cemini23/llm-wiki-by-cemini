@@ -7,10 +7,11 @@ related:
   - entities/platforms/kalshi.md
   - concepts/dcm-state-preemption.md
   - sources/substack-rss-event-horizon-2026-07-13-kalshi-app-downloads.md
+  - sources/substack-rss-event-horizon-2026-07-15-kalshi-flights-compute-cftc.md
 maturity: validated
 read_status: deep-read
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-25
 clusters: [k163-ingest, pm-kalshi]
 ---
 

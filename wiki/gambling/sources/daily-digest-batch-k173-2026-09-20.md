@@ -9,10 +9,11 @@ related:
   - sources/brief-k173-w02-sat-lock-2026-09-20.md
   - sweeps/2026-09-20-daily.md
   - meta/daily-research-digest-cadence.md
+  - sources/daily-digest-batch-k174-2026-09-21.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — operator slate lock; no new arXiv
 wire_status: policy_wired
 ---

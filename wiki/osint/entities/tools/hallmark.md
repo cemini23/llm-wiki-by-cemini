@@ -6,9 +6,10 @@ keywords: [hallmark, slop-test, Cursor skill, Claude Code skill]
 related:
   - sources/eval-github-repo-revenue-evaluation-2026-07-14.md
   - concepts/wiki-tooling-evaluation.md
+  - sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
 maturity: draft
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-25
 ---
 
 ## Relations

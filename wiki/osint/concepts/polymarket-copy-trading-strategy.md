@@ -43,9 +43,10 @@ related:
   - entities/tools/momentum-odds.md
   - sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md
   - concepts/cemini-pm-lp-vs-copy-capital-decision.md
+  - sources/gemini-dr-pm-hl-strategies-2026-07-14.md
 maturity: validated
 created: 2026-05-21
-updated: 2026-07-14
+updated: 2026-10-25
 clusters: [polymarket, copy-trading]
 ---
 

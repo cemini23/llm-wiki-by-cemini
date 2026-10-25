@@ -7,9 +7,11 @@ related:
   - sources/substack-rss-capital-flows-2026-07-05-start-here-capital-flows-a-daily-macro-map-to-ta.md
   - concepts/macro-charts-regime-signals.md
   - concepts/macro-weather-regime.md
+  - concepts/capital-flows-sofr-conviction-framework.md
+  - sources/substack-rss-capital-flows-2026-07-07-the-ai-compute-playbook.md
 maturity: draft
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-10-25
 read_status: skimmed
 ---
 

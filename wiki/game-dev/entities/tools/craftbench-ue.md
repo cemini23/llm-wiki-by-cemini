@@ -8,9 +8,10 @@ related:
   - sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
   - entities/tools/gamedevbench.md
   - concepts/agent-harness-castle-project.md
+  - concepts/ai-game-dev-tool-stack-2026.md
 maturity: validated
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-25
 wire_status: wont_wire
 wire_target: concepts/agent-harness-castle-project.md
 ---

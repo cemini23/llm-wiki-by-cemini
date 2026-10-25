@@ -9,10 +9,12 @@ related:
   - sources/daily-digest-reject-cluster-k132-2026-06-27.md
   - sources/arxiv-2606.26294-red-queen-godel-machine-2026-06-29.md
   - sources/brief-k133-rqgm-evaluator-steals-2026-06-29.md
+  - sources/daily-digest-batch-k134-2026-06-30.md
+  - sources/daily-digest-reject-cluster-k137-2026-07-03.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-10-25
 ---
 
 ## Relations

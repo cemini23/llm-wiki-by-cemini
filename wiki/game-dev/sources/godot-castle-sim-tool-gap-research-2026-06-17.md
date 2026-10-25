@@ -9,11 +9,12 @@ related:
   - entities/tools/godot-stagehand.md
   - concepts/flow-field-pathfinding.md
   - sources/vav-labs-godot-flow-fields-2026.md
+  - sources/chris-tutorials-grid-placement-godot-shelf-2026-07-11.md
 read_status: read
 source_type: operator-research
 maturity: validated
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-10-25
 ---
 
 ## Raw Concept

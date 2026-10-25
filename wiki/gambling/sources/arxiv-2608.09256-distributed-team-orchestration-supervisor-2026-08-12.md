@@ -12,10 +12,11 @@ related:
   - sources/arxiv-2606.16139-team-zero-sum-games-complexity-2026-06-20.md
   - sources/daily-digest-batch-k166-2026-08-12.md
   - sources/brief-k166-regret-learning-games-shelf-2026-08-12.md
+  - entities/bots/poker-bot-tooling.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2608.09256-distributed-team-orchestration-via-supervisor-ne.pdf
 phase_0_verdict: REFERENCE 2026-08-12 — team-FP / MAS shelf adjacent to MAFP; FOSS NO-GO (claimed repo HTTP 404, user public_repos=0); decide() NO-GO
 wire_status: wont_wire

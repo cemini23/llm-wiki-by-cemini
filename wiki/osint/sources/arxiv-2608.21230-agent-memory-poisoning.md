@@ -5,9 +5,11 @@ tags: [arxiv, k246, agents]
 keywords: [arxiv, 2608.21230, k246]
 related:
   - concepts/agent-memory-poisoning-bounded-occupancy.md
+  - entities/tools/recuris.md
+  - sources/arxiv-2608.24876-recuris-em-wm-memory-2026-08-26.md
 maturity: draft
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-10-25
 read_status: skimmed
 ---
 

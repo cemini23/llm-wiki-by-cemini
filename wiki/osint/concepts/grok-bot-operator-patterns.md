@@ -10,9 +10,10 @@ related:
   - sources/x-post-irabukht-grok-bot-marketing-2026-09-02.md
   - concepts/practical-loop-engineering.md
   - sources/newsletter-rss-latent-space-2026-09-05-grok-bot-openclaw-2026-09-07.md
+  - concepts/typed-judgement-desk-pattern.md
 maturity: draft
 created: 2026-09-02
-updated: 2026-09-14
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -10,9 +10,10 @@ related:
   - sources/newsletter-rss-latent-space-2026-07-29-rsi-hf-agent-attack.md
   - sources/arxiv-2607.27080-memsecbench-agent-memory-poisoning-2026-07-30.md
   - sources/newsletter-rss-tldrsec-2026-07-30-339-hf-agentbaiting.md
+  - entities/tools/rea.md
 maturity: draft
 created: 2026-07-29
-updated: 2026-07-31
+updated: 2026-10-25
 ---
 
 ## Relations

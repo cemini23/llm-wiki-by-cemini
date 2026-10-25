@@ -11,9 +11,11 @@ related:
   - concepts/castle-sim-rts-micromanagement-steals.md
   - concepts/active-project-research-routing.md
   - entities/tools/mattpocock-skills.md
+  - concepts/latent-maps-performance-counterfactual-feedback.md
+  - sources/arxiv-hrl-influence-map-starcraft-2606.30092-2026-06-30.md
 maturity: draft
 created: 2026-06-22
-updated: 2026-07-02
+updated: 2026-10-25
 ---
 
 ## Relations

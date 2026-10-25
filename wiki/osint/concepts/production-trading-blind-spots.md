@@ -26,9 +26,10 @@ related:
   - concepts/cemini-knowledge-application-architecture.md
   - concepts/ems-execution-security-gaps.md
   - sources/cemini-external-code-audit-errors-2026-06-03.md
+  - concepts/reviewer-passive-injection-corpus.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-06-03
+updated: 2026-10-25
 ---
 
 ## Relations

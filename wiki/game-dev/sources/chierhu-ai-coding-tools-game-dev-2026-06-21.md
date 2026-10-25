@@ -12,12 +12,15 @@ related:
   - entities/tools/godot-mcp-landscape.md
   - sources/inbox-arxiv-reject-batch-2026-06-25.md
   - meta/cross-wiki-routing.md
+  - sources/claude-code-cc-ios-port-2026-07-07.md
+  - sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md
+  - sources/notnull92-hera-agent-godot-devto-2026-06-25.md
 read_status: read
 source_type: web-article
 source_url: https://chierhu.medium.com/ai-coding-tools-for-video-game-development-a-first-principles-analysis-of-what-actually-works-90dfa10edd13
 maturity: validated
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 ---
 
 ## Raw Concept

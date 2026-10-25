@@ -16,10 +16,11 @@ related:
   - entities/tools/prediction-market-analysis.md
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - concepts/polymarket-sports-microstructure-bot-taxonomy.md
+  - sources/arxiv-settlement-manipulation-pm-2606.31675-2026-07-01.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-18
-updated: 2026-05-27
+updated: 2026-10-25
 clusters: [quant-finance]
 ---
 

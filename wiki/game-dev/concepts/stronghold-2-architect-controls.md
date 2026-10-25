@@ -12,9 +12,10 @@ related:
   - sources/sh2-youtube-parity-watchlist-2026-06-17.md
   - concepts/stronghold-2-systems-inventory.md
   - entities/tools/stronghold2-analyse-hub.md
+  - sources/arxiv-2606.26925-vr-dynamic-feedback-pointing-2026-07-02.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-17
+updated: 2026-10-25
 ---
 
 ## Relations

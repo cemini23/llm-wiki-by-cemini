@@ -9,9 +9,11 @@ related:
   - entities/tools/pydfs-lineup-optimizer.md
   - sources/web-nfl-dfs-correlation-stacking-2026-06-20.md
   - concepts/pickem-slip-ev-and-correlation.md
+  - concepts/dfs-distribution-layer.md
+  - sources/nfl-week3-scheme-breakdown-2026-09-23.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -9,9 +9,10 @@ related:
   - entities/platforms/hyperliquid.md
   - sources/vibe-trading-hkuds.md
   - sources/eval-repository-revenue-integration-2026-07-07.md
+  - entities/tools/hyperliquid-python-sdk.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-07
+updated: 2026-10-25
 ---
 
 ## Relations

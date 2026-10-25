@@ -15,9 +15,12 @@ related:
   - sources/brief-k239-kalshi-sports-mention-2026-08-15.md
   - sources/brief-k240-kalshi-nv-geofence-2026-08-17.md
   - sources/daily-digest-rss-nfl-week0-2026-08-31.md
+  - sources/rss-eh-kalshi-curry-geofence-2026-09-25.md
+  - sources/rss-lsb-cftc-rules-ohio-cd-2026-10-06.md
+  - sources/rss-pm-legal-2026-10-07-09.md
 maturity: validated
 created: 2026-07-05
-updated: 2026-08-31
+updated: 2026-10-25
 ---
 
 ## Relations

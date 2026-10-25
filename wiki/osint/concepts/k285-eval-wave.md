@@ -12,9 +12,10 @@ related:
   - entities/tools/rapid-mlx.md
   - entities/tools/rea.md
   - entities/tools/syntaqlite.md
+  - concepts/k288-eval-wave.md
 maturity: draft
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-25
 harness_verb: FILE
 wire_status: policy_wired
 ---

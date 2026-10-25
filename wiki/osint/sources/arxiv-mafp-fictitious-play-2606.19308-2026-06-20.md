@@ -11,10 +11,13 @@ related:
   - concepts/garip-running-average-self-play.md
   - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
   - sources/arxiv-2608.15258-self-fictitious-play-2026-08-18.md
+  - sources/arxiv-emagnet-parameter-space-ema-2606.23995-2026-06-25.md
+  - sources/arxiv-equilibrium-internal-transfers-seate-2606.20960-2026-06-25.md
+  - sources/arxiv-moral-geometry-nash-kantian-2606.21967-2026-06-25.md
 maturity: draft
 read_status: read
 created: 2026-06-20
-updated: 2026-06-23
+updated: 2026-10-25
 clusters: [llm-agents, rl-marl]
 ---
 

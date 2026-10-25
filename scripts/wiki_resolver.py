@@ -201,6 +201,19 @@ class WikiResolver:
             pass
         return alias[:-5] if alias.endswith("-wiki") else alias
 
+    def alias_for_domain(self, domain):
+        """The @alias that names *domain*, or None when no table row points there.
+
+        Inverse of alias_domain. Derived from the table rather than assumed, so
+        cybersec resolves back to cybersecurity-wiki and not to cybersec-wiki.
+        """
+        if not domain:
+            return None
+        for alias, base in self.table.items():
+            if self.alias_domain(alias, base) == domain:
+                return alias
+        return None
+
     def briefs_candidate(self, rel, domain):
         """Resolve a briefs/ reference to a file beside the wiki.
 

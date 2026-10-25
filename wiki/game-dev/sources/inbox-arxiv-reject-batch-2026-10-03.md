@@ -9,11 +9,13 @@ related:
   - sources/arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - concepts/agent-harness-castle-project.md
+  - sources/inbox-arxiv-reject-batch-2026-10-05.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-25
 ---
 
 ## Raw Concept

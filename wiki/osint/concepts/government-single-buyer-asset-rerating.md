@@ -10,9 +10,10 @@ related:
   - entities/tickers/pltr.md
   - meta/ice-facility-jobs-cadence.md
   - meta/ice-detention-stats-cadence.md
+  - sources/substack-rss-outlier-weekly-2026-07-08-cxw-geo-th-postmortem.md
 maturity: draft
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-10-25
 ---
 
 ## Relations

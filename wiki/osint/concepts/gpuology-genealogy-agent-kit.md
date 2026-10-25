@@ -172,9 +172,12 @@ related:
   - entities/tools/rclone.md
   - sources/eval-github-ocr-repositories-2026-08-01.md
   - sources/eval-github-repo-revenue-analysis-htr-2026-08-01.md
+  - concepts/arabic-htr-evidence-review.md
+  - sources/arxiv-2608.19385-phoenix-athar-arabic-htr.md
+  - sources/arxiv-2608.22316-arabic-handwriting-warmup-ocr.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-08-10
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -10,10 +10,11 @@ related:
   - sources/daily-digest-batch-k164-2026-07-30.md
   - sources/arxiv-2607.23333-swap-regret-attention-2026-07-29.md
   - sources/brief-k163-swap-regret-attention-shelf-2026-07-29.md
+  - sources/daily-digest-batch-k166-2026-08-12.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-29
-updated: 2026-07-30
+updated: 2026-10-25
 ---
 
 ## Relations

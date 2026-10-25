@@ -20,11 +20,13 @@ related:
   - sources/arxiv-2608.18565-semaplc-2026-08-20.md
   - sources/arxiv-2608.19013-harness-continual-learning-2026-08-20.md
   - sources/arxiv-2608.19047-eureka-2026-08-20.md
+  - concepts/rlvf-verifier-feedback-training.md
+  - sources/arxiv-red-queen-godel-machine-2606.26294-2026-06-29.md
 cross-wiki:
   - @ccc-wiki/concepts/continual-harness-online-self-improvement.md
 maturity: validated
 created: 2026-05-27
-updated: 2026-08-20
+updated: 2026-10-25
 ---
 
 ## Relations

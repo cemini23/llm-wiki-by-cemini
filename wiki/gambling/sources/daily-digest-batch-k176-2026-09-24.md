@@ -10,10 +10,12 @@ related:
   - sources/daily-digest-rss-industry-2026-09-24.md
   - sweeps/2026-09-24-daily.md
   - meta/nfl-gemini-weekday-prompt-addendum.md
+  - concepts/dfs-injury-and-news-workflow.md
+  - entities/sports/nfl-betting.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — Week 3 hub material; operator Enter
 wire_status: policy_wired
 ---

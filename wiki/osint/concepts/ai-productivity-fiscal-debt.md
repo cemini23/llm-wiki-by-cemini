@@ -8,9 +8,10 @@ related:
   - concepts/macro-weather-regime.md
   - concepts/guruwatcher-macro-watches.md
   - concepts/valuation-hypersensitivity-macro-liquidity.md
+  - sources/k292-osint-feeds-2026-10-16.md
 maturity: draft
 created: 2026-10-13
-updated: 2026-10-13
+updated: 2026-10-25
 ---
 
 ## Relations

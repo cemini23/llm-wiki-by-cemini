@@ -8,10 +8,11 @@ related:
   - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
   - sources/arxiv-poker-arena-multi-axis-2606.13815-2026-06-18.md
   - concepts/multi-agent-fictitious-play-llm.md
+  - concepts/irumai-indian-rummy-rl.md
 maturity: draft
 read_status: read
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 clusters: [rl-marl, llm-agents]
 ---
 

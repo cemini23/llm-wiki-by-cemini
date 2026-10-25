@@ -24,9 +24,12 @@ related:
   - concepts/mitre-atlas-taxonomy.md
   - sources/xskill-2603-12056.md
   - concepts/sovereign-agent-mesh-biscuit.md
+  - concepts/k288-arxiv-wave.md
+  - concepts/k289-arxiv-wave.md
+  - sources/arxiv-2610.11030-nomos-2026-10-10.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-05-11
+updated: 2026-10-25
 ---
 
 ## Relations

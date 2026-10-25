@@ -12,9 +12,10 @@ related:
   - sources/arxiv-2608.02287-skt-skill-use-training.md
   - sources/arxiv-2608.02505-abduction-loop-representational-grounding.md
   - concepts/gpuology-genealogy-agent-kit.md
+  - concepts/verification-gated-persist-pivot-runtime.md
 maturity: draft
 created: 2026-08-04
-updated: 2026-08-05
+updated: 2026-10-25
 ---
 
 ## Relations

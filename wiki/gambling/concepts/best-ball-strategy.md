@@ -23,9 +23,11 @@ related:
   - sources/fantasy-guru-bbm-tactics-2026-06-08.md
   - sources/daily-digest-news-r1-r12-2026-06-01.md
   - sources/daily-digest-news-r1-r12-2026-06-02.md
+  - concepts/season-long-fantasy-waiver-wire.md
+  - sources/web-dfs-hero-nfl-gpp-strategy-2026-06-20.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-06-18
+updated: 2026-10-25
 ---
 
 ## Relations

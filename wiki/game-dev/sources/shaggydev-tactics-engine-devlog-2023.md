@@ -8,12 +8,13 @@ related:
   - concepts/rts-pathfinding-approaches.md
   - sources/shaggydev-udd-navigation-2025.md
   - sources/liquid-fire-godot-tactics-pathfinding-2024.md
+  - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
 read_status: read
 source_type: devlog
 source_url: https://shaggydev.com/2023/07/04/tactics-engine-devlog/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-10-25
 ---
 
 ## Relations

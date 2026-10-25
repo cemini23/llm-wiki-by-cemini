@@ -10,10 +10,13 @@ related:
   - concepts/poker-hl-analyst-loop.md
   - sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
+  - entities/bots/cemini-devfun-poker-agent.md
+  - sources/arxiv-2607.01498-policy-representation-ssl-poker-2026-07-07.md
+  - sources/brief-k149-policy-ssl-advent-poker-steals-2026-07-07.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 cross-wiki-source: "briefs/2026-06-26_k130-rlcard-offline-baseline-adopt.md"
 ---
 

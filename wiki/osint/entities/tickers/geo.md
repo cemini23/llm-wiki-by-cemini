@@ -9,9 +9,10 @@ related:
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - sources/geo-group-ice-turnkey-investigation-2026-04-09.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
+  - concepts/ice-turnkey-research-backlog-2026-06-30.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-29
+updated: 2026-10-25
 ---
 
 ## Relations

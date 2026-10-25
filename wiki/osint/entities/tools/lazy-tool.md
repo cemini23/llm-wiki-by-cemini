@@ -19,9 +19,10 @@ related:
   - entities/tools/adk-arena.md
   - meta/librarian-decommission-2026-06-14.md
   - concepts/mcp-tool-calling-eval-scaffold.md
+  - entities/tools/unusualwhales-mcp.md
 maturity: validated
 created: 2026-05-09
-updated: 2026-06-14
+updated: 2026-10-25
 adopted: 2026-05-09
 version: 1.0.2
 repo: https://github.com/rpgeeganage/lazy-tool

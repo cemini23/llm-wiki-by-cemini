@@ -14,9 +14,10 @@ related:
   - entities/platforms/prizepicks.md
   - entities/platforms/underdog-pickem.md
   - entities/sports/nfl-betting.md
+  - concepts/pickem-backtesting-framework.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -11,10 +11,13 @@ related:
   - entities/frameworks/fastmcp.md
   - sources/agent-browser-vercel-labs.md
   - concepts/mcp-tool-marketplace.md
+  - concepts/fara-computer-use-agent-training.md
+  - entities/tools/openclaw-zero-token.md
+  - sources/arxiv-fara-1-5-computer-use-2606.20785-2026-06-25.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-28
-updated: 2026-05-17
+updated: 2026-10-25
 clusters: [llm-agents, ingest-tooling]
 ---
 

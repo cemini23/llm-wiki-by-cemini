@@ -22,9 +22,10 @@ related:
   - concepts/hierarchical-bounded-agent-memory.md
   - sources/arxiv-hierarchical-memory-ensemble-qsp-2607.07666-2026-07-13.md
   - sources/arxiv-cross-scenario-agentic-generality-2606.04315-2026-06-05.md
+  - sources/arxiv-2610.08630-in-parameter-memory-survey-2026-10-07.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-07-13
+updated: 2026-10-25
 ---
 
 ## Relations

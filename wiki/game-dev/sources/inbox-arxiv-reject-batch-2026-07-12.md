@@ -9,11 +9,14 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-07-13.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-07-14.md
+  - sources/inbox-arxiv-reject-batch-2026-07-15.md
+  - sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-12
-updated: 2026-07-12
+updated: 2026-10-25
 ---
 
 ## Raw Concept

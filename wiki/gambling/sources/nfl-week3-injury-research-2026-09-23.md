@@ -9,10 +9,12 @@ related:
   - sources/daily-digest-batch-k176-2026-09-24.md
   - concepts/dfs-injury-and-news-workflow.md
   - meta/nfl-gemini-weekday-prompt-addendum.md
+  - sources/nfl-week3-practice-reports-2026-09-24.md
+  - sources/nfl-week3-scheme-breakdown-2026-09-23.md
 maturity: draft
 read_status: skimmed
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/NFL Week 3 Injury Research.docx
 phase_0_verdict: REFERENCE — Gemini Deep Research; verify Fri designations
 wire_status: policy_wired

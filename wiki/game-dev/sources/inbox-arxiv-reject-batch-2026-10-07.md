@@ -15,11 +15,12 @@ related:
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
   - sources/inbox-arxiv-reject-batch-2026-10-09.md
+  - concepts/agent-harness-castle-project.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-25
 ---
 
 ## Raw Concept

@@ -16,9 +16,11 @@ related:
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/llm-agent-systems.md
   - concepts/kuhn-poker-sft-curriculum-reference.md
+  - concepts/coding-agent-substrate-steerability.md
+  - sources/arxiv-steerability-constraints-2607.02389-2026-07-05.md
 maturity: draft
 created: 2026-06-21
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

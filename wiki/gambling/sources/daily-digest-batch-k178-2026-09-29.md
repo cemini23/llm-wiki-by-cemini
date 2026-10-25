@@ -8,10 +8,14 @@ related:
   - sources/arxiv-2609.33669-rsd-poker-shift-robust-2026-09-29.md
   - sources/daily-digest-rss-pm-regulatory-2026-09-29.md
   - sweeps/2026-09-29-daily.md
+  - concepts/prediction-markets-crossover.md
+  - entities/platforms/kalshi.md
+  - entities/platforms/polymarket.md
+  - entities/sports/nfl-betting.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — awareness + MNF parlay card
 wire_status: policy_wired
 ---

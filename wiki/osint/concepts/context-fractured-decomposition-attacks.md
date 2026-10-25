@@ -10,9 +10,10 @@ related:
   - concepts/conductor-orchestrator.md
   - concepts/librarian-server-architecture.md
   - concepts/llm-agent-systems.md
+  - concepts/reviewer-passive-injection-corpus.md
 maturity: draft
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-10-25
 ---
 
 ## Relations

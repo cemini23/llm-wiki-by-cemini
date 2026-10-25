@@ -6,10 +6,11 @@ keywords: [Codex, Claude Code, verifiers v1, message DAG, harness-is-the-app, co
 related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/coding-agent-substrate-steerability.md
+  - sources/newsletter-rss-latent-space-2026-07-14-ainews-codex-harness-observability.md
 maturity: draft
 read_status: read
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-25
 clusters: [k163-ingest]
 ---
 

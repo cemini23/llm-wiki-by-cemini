@@ -8,10 +8,11 @@ related:
   - sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md
   - sources/arxiv-aohp-os-agent-harness-2606.23449-2026-06-23.md
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/self-compacting-language-model-agents.md
 maturity: draft
 read_status: read
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 clusters: [llm-agents]
 ---
 

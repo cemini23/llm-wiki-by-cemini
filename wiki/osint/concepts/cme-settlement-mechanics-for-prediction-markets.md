@@ -10,9 +10,11 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-weather-trading-strategy.md
   - concepts/prediction-market-statistical-arbitrage.md
+  - concepts/settlement-manipulation-prediction-markets.md
+  - sources/substack-rss-event-horizon-2026-10-06-religion-prediction-markets.md
 maturity: validated
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-10-25
 ---
 
 ## Relations

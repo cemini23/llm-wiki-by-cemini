@@ -8,9 +8,12 @@ related:
   - concepts/gambling-wiki-scope.md
   - entities/bots/README.md
   - meta/cross-wiki-routing.md
+  - concepts/custom-agent-methodology.md
+  - sources/arxiv-2606.11869-agents-all-the-way-down-2026-06-19.md
+  - sources/arxiv-2607.02453-oss-agent-framework-ecosystem-health-2026-07-06.md
 maturity: core
 created: 2026-05-31
-updated: 2026-06-07
+updated: 2026-10-25
 ---
 
 ## Relations

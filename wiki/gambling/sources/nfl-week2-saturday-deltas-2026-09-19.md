@@ -12,10 +12,12 @@ related:
   - sources/daily-digest-batch-k173-2026-09-20.md
   - sources/brief-k173-w02-sat-lock-2026-09-20.md
   - meta/daily-research-digest-cadence.md
+  - sources/daily-digest-rss-w02-sat-injury-2026-09-20.md
+  - sources/daily-digest-rss-w03-injury-2026-09-21.md
 maturity: draft
 read_status: skimmed
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/NFL Week 2 Saturday Deltas.docx
 phase_0_verdict: REFERENCE 2026-09-19 — Saturday-only deltas; verify T-90 inactives Sunday
 wire_status: policy_wired

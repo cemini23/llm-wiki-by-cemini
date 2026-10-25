@@ -28,9 +28,10 @@ related:
   - sources/youtube-kalshi-bots-batch-2026-05-29.md
   - concepts/polymarket-binance-oracle-latency-fusion.md
   - sources/trading-posts-compilation-18-2026-06-04.md
+  - concepts/settlement-manipulation-prediction-markets.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-06-04
+updated: 2026-10-25
 ---
 
 ## Relations

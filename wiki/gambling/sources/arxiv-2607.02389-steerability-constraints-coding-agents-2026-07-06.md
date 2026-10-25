@@ -11,10 +11,12 @@ related:
   - sources/brief-k148-agent-framework-pm-betting-steals-2026-07-06.md
   - sources/daily-digest-batch-k148-2026-07-06.md
   - sweeps/2026-07-06-daily.md
+  - sources/arxiv-2607.02599-agentltl-trace-verification-agents-2026-07-10.md
+  - sources/arxiv-2607.03510-cage-1-enterprise-agent-governance-2026-07-10.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2607.02389-2607-02389v1-steerability-via-constraints-a-subs.pdf
 phase_0_verdict: REFERENCE 2026-07-06 — paper-only; constrained substrate beats unconstrained agent + small reviewer
 ---

@@ -9,10 +9,13 @@ related:
   - concepts/prediction-markets-crossover.md
   - sources/daily-digest-rss-pm-regulatory-2026-09-23.md
   - sources/daily-digest-batch-k178-2026-09-29.md
+  - sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md
+  - sources/rss-lsr-ncpg-functionally-gambling-2026-09-23.md
+  - sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md
 maturity: draft
 read_status: stub
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — LSR title stubs; no pm scp
 wire_status: policy_wired
 ---

@@ -9,10 +9,11 @@ related:
   - concepts/prediction-markets-crossover.md
   - sources/daily-digest-rss-pm-regulatory-2026-09-17.md
   - sources/daily-digest-batch-k175-2026-09-23.md
+  - sources/daily-digest-rss-pm-regulatory-2026-09-29.md
 maturity: draft
 read_status: skimmed
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — title-only LSR; no pm scp
 wire_status: policy_wired
 ---

@@ -9,9 +9,11 @@ related:
   - concepts/favorite-longshot-bias.md
   - concepts/sharp-vs-soft-books.md
   - sources/daily-digest-arxiv-batch-2026-06-01.md
+  - entities/sports/tennis-betting.md
+  - sources/arxiv-2609.07617-live-tennis-forecasting-2026-09-11.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-10-25
 ---
 
 ## Relations

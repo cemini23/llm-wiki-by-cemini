@@ -7,10 +7,11 @@ related:
   - concepts/extensive-form-games-stochastic-action-sets.md
   - concepts/strategic-resource-acquisition-game-theory.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
+  - sources/arxiv-equilibrium-internal-transfers-seate-2606.20960-2026-06-25.md
 maturity: draft
 read_status: read
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-10-25
 clusters: [quant-finance, llm-agents]
 ---
 

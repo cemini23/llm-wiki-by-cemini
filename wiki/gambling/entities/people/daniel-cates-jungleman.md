@@ -11,9 +11,11 @@ related:
   - concepts/poker-strategy-overview.md
   - sources/devfun-poker-researcher-track-email-2026-06-19.md
   - sources/web-pro-villain-profiles-dwan-cates-2026-06-19.md
+  - concepts/heads-up-arena-strategy.md
+  - sources/youtube-pokergo-dwan-hsp-mega-compilation-2026-06-03.md
 maturity: validated
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-10-25
 ---
 
 ## Relations

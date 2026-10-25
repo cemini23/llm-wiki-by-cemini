@@ -9,9 +9,12 @@ related:
   - entities/facilities/otay-mesa-detention-center.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
+  - concepts/ice-turnkey-research-backlog-2026-06-30.md
+  - entities/facilities/florence-az-detention-cluster.md
+  - entities/tickers/geo.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-07-06
+updated: 2026-10-25
 ---
 
 ## Relations

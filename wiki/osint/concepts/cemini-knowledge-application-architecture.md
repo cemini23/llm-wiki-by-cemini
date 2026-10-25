@@ -20,9 +20,10 @@ related:
   - sources/cemini-external-code-audit-errors-2026-06-03.md
   - concepts/interaction-native-knowledge-harness.md
   - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
+  - concepts/reviewer-passive-injection-corpus.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-06-04
+updated: 2026-10-25
 ---
 
 ## Relations

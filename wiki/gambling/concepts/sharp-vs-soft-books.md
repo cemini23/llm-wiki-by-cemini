@@ -23,9 +23,13 @@ related:
   - entities/tools/unabated.md
   - sources/youtube-wsj-kalshi-polymarket-valuations-2026-06-01.md
   - concepts/pm-live-belief-updating.md
+  - concepts/kalshi-michigan-sports-injunction-2026-06.md
+  - sources/arxiv-2609.06739-profit-bias-identity-sports-betting-2026-09-11.md
+  - sources/web-sportsbookreview-hard-rock-bet-2026-06-20.md
+  - sources/web-tech-insider-nfl-betting-strategy-2026-06-20.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-06-09
+updated: 2026-10-25
 ---
 
 ## Relations

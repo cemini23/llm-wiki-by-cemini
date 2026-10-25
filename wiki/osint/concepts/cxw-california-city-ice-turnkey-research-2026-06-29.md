@@ -18,9 +18,10 @@ related:
   - entities/facilities/otay-mesa-detention-center.md
   - sources/san-diego-county-otay-oversight-2026.md
   - sources/abc10news-cxw-otay-sale-2026-07-06.md
+  - entities/tickers/geo.md
 maturity: validated
 created: 2026-06-29
-updated: 2026-07-06
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -10,9 +10,10 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - entities/models/muse-wonder.md
   - sources/newsletter-rss-latent-space-2026-10-13-ainews-meta-muse-wonder.md
+  - entities/tools/fable-advisor.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Relations

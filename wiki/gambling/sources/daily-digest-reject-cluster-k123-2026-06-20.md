@@ -9,10 +9,11 @@ related:
   - sources/daily-digest-reject-cluster-k119-2026-06-18.md
   - sources/arxiv-2606.16139-team-zero-sum-games-complexity-2026-06-20.md
   - sources/arxiv-2606.17682-trainee-to-trainer-llm-env-engineer-2026-06-20.md
+  - sources/daily-digest-reject-cluster-k124-2026-06-21.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

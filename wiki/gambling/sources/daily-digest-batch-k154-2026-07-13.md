@@ -12,10 +12,11 @@ related:
   - sources/arxiv-2607.07666-ensemble-qsp-hierarchical-memory-2026-07-13.md
   - sources/arxiv-2607.07820-deepsearch-world-self-distillation-2026-07-13.md
   - sources/brief-k154-metagame-memory-search-steals-2026-07-13.md
+  - sources/daily-digest-batch-k155-2026-07-14.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-10-25
 ---
 
 ## Relations

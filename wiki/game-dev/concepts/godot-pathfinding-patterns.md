@@ -23,9 +23,11 @@ related:
   - entities/tools/binarytracking.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
   - sources/k282-level-editors-tile-tooling-2026-10-05.md
+  - concepts/godot-3d-sh2-architect-spike-plan.md
+  - sources/arxiv-2607.02222-cofl-s-sector-flow-fields-2026-07-16.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Relations

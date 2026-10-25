@@ -6,9 +6,12 @@ keywords: [LHX, MRCY, MP, AVAV, KTOS, RCAT, ONDS, UMAC, interceptors, Patriot, T
 related:
   - sources/rearmament-war-profit-desk-2026-10-08.md
   - concepts/k287-feeds-wave.md
+  - sources/substack-rss-outlier-weekly-2026-10-12-swarmer-revenue.md
+  - sources/x-post-rubio-trade-framing-2026-10-08.md
+  - sources/x-post-russia-escalation-2026-10-08.md
 maturity: draft
 created: 2026-10-08
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 ## Relations

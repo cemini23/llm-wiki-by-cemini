@@ -10,11 +10,12 @@ related:
   - sources/unity-sentis-practical-shelf-2026-06-23.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-06-29.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-06-27
-updated: 2026-06-27
+updated: 2026-10-25
 ---
 
 ## Raw Concept

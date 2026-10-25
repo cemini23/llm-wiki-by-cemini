@@ -8,9 +8,11 @@ related:
   - entities/tools/gamedevbench.md
   - sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
   - sources/arxiv-2610.11794-memento-3-reflective-rulebooks-2026-10-09.md
+  - concepts/twin-test-time-world-model-stub.md
+  - concepts/vibeworlding-3d-agent-stub.md
 maturity: draft
 created: 2026-07-31
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Relations

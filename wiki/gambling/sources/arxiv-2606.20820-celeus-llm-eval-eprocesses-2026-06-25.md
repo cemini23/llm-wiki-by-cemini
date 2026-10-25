@@ -12,10 +12,13 @@ related:
   - concepts/custom-agent-methodology.md
   - sources/daily-digest-reject-cluster-k129-2026-06-25.md
   - sweeps/2026-06-25-daily.md
+  - sources/arxiv-2604.21851-betting-on-bets-stochastic-dominance-2026-07-06.md
+  - sources/arxiv-2606.26294-red-queen-godel-machine-2026-06-29.md
+  - sources/brief-k133-rqgm-evaluator-steals-2026-06-29.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.20820-2606-20820v1-celeus-certifiable-and-efficient-ll.pdf
 phase_0_verdict: REFERENCE 2026-06-25 — academic eval framework; no prod repo required
 ---

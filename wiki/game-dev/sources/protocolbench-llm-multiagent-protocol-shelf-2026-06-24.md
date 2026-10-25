@@ -8,12 +8,13 @@ related:
   - concepts/ccgs-workflow-extraction.md
   - sources/inbox-arxiv-reject-batch-2026-07-01.md
   - meta/cross-wiki-routing.md
+  - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
 read_status: read
 source_type: research-paper
 source_url: https://openreview.net/forum?id=GZRiXE2zBe
 maturity: draft
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-10-25
 ---
 
 ## Raw Concept

@@ -6,11 +6,12 @@ category: mega_cap
 ticker: GOOGL
 related:
   - entities/ticker-watchlist.md
+  - sources/macro-charts-paid-forward-2026-08-06.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-23
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-10-25
 ---
 
 ## Relations

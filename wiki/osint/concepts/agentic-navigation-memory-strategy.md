@@ -9,9 +9,10 @@ related:
   - sources/arxiv-rng-bench-non-markov-mllm-2606.19338-2026-06-21.md
   - concepts/non-markov-belief-state-benchmarks.md
   - concepts/llm-agent-systems.md
+  - concepts/fara-computer-use-agent-training.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-21
+updated: 2026-10-25
 ---
 
 ## Relations

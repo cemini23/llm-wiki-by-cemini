@@ -18,10 +18,12 @@ related:
   - sweeps/2026-06-13-daily.md
   - @osint-wiki/concepts/market-informedness-market-making.md
   - @osint-wiki/concepts/polymarket-retail-trading-discipline.md
+  - concepts/pm-llm-coherence-projection.md
+  - sources/openreview-llm-coherence-projection-Tqos7VqQhH-2026-06-17.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-10-25
 ---
 
 ## Relations

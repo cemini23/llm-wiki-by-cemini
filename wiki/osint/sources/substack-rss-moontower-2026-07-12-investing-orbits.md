@@ -6,10 +6,11 @@ keywords: [endowment CIO, Peter Lynch, amateur vs pro, small-caps]
 clusters: [k162-ingest]
 related:
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-moontower-2026-07-12-present-tense.md
 maturity: draft
 read_status: skim
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-10-25
 ---
 
 ## Raw Concept

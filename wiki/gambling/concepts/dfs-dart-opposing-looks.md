@@ -6,9 +6,10 @@ keywords: [dart, ceiling, cheap-player, salary-cut, opposing-coverage, box-count
 related:
   - concepts/nfl-weekly-slate-hub-workflow.md
   - meta/research-input-pipeline.md
+  - sources/nfl-week4-research-plan-2026-10-01.md
 maturity: draft
 created: 2026-09-22
-updated: 2026-09-22
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -15,9 +15,11 @@ related:
   - sources/chris-tutorials-grid-placement-godot-shelf-2026-07-11.md
   - sources/brickworks-godot-lego-framework-shelf-2026-07-15.md
   - entities/tools/pcgodot.md
+  - sources/godot-47-release-shelf-2026-06-25.md
+  - sources/pcgodot-phase-0-audit-2026-06-30.md
 maturity: validated
 created: 2026-06-17
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Relations

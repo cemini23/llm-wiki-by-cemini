@@ -11,12 +11,13 @@ related:
   - entities/tools/godot-stagehand.md
   - sources/inbox-arxiv-reject-batch-2026-09-24.md
   - sources/gamedevbench-phase-0-audit-2026-06-21.md
+  - concepts/ai-game-dev-tool-stack-2026.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2609.21562
 maturity: validated
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-25
 ---
 
 ## Raw Concept

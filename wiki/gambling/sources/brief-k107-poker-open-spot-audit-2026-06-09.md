@@ -10,10 +10,11 @@ related:
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - sources/devfun-poker-arena-phase0-2026-06-01.md
   - @osint-wiki/sources/trading-posts-compilation-7-2026-06-09.md
+  - entities/bots/poker-bot-tooling.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-09
-updated: 2026-06-19
+updated: 2026-10-25
 cross-wiki-source: "@osint-wiki/sources/trading-posts-compilation-7-2026-06-09.md"
 ---
 

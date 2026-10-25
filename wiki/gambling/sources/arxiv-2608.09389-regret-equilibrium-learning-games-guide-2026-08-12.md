@@ -15,10 +15,12 @@ related:
   - sources/daily-digest-batch-k166-2026-08-12.md
   - sources/brief-k166-regret-learning-games-shelf-2026-08-12.md
   - sources/arxiv-2608.15258-self-fictitious-play-mfg-2026-08-18.md
+  - entities/bots/poker-bot-tooling.md
+  - sources/arxiv-2609.18848-fp-tie-breaking-first-price-auctions-2026-09-17.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-12
-updated: 2026-08-18
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2608.09389-regret-equilibrium-and-learning-in-games-a-guide.pdf
 phase_0_verdict: REFERENCE 2026-08-12 — FTRL/Hedge/FP literacy shelf (Mertikopoulos survey chapter); no FOSS; decide() NO-GO
 wire_status: wont_wire

@@ -9,10 +9,11 @@ related:
   - concepts/probabilistic-agent-policy-verification.md
   - sources/arxiv-forex-lean4-fallacy-detection-2606.21867-2026-06-25.md
   - sources/arxiv-relaxed-nfl-auto-formalization-2606.24443-2026-06-26.md
+  - concepts/llm-agent-systems.md
 maturity: draft
 read_status: read
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 clusters: [llm-agents, verifier]
 ---
 

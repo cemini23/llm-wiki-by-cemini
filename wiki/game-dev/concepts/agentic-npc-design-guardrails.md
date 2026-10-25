@@ -19,9 +19,11 @@ related:
   - sources/arxiv-2610.03253-default-following-collective-action-2026-10-05.md
   - concepts/minecraft-agent-harness-shelf.md
   - sources/arxiv-2610.04261-social-deduction-rft-2026-10-07.md
+  - sources/hero-rl-llm-npc-springer-2026-06-26.md
+  - sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-09-24
+updated: 2026-10-25
 wire_status: policy_wired
 wire_target: concepts/agentic-npc-design-guardrails.md
 ---

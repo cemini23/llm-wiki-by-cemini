@@ -11,10 +11,11 @@ related:
   - sources/arxiv-2606.30573-swe-interact-user-driven-coding-agents-2026-07-03.md
   - sources/arxiv-2607.00164-verifiable-rewards-calibrated-forecasting-2026-07-03.md
   - sources/brief-k137-swe-interact-rlvr-nfl-steals-2026-07-03.md
+  - sources/daily-digest-batch-k148-2026-07-06.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-03
-updated: 2026-07-03
+updated: 2026-10-25
 ---
 
 ## Relations

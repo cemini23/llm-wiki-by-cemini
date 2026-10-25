@@ -18,9 +18,11 @@ related:
   - entities/tools/monsterfisch-strongholds-of-conquest.md
   - sources/crusader-ai-manager-phase-0-audit-2026-06-20.md
   - sources/monsterfisch-conquest-aiv-phase-0-audit-2026-06-20.md
+  - sources/evrey-shc-aiv-phase-0-audit-2026-06-19.md
+  - sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-19
+updated: 2026-10-25
 ---
 
 ## Relations

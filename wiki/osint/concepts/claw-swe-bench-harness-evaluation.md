@@ -12,9 +12,10 @@ related:
   - concepts/openclaw-security-taxonomy.md
   - concepts/llm-agent-systems.md
   - sources/arxiv-2608.16798-clawgym-ii-2026-08-18.md
+  - sources/arxiv-toolbench-x-tool-unreliability-2606.25819-2026-06-26.md
 maturity: draft
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-10-25
 ---
 
 ## Relations

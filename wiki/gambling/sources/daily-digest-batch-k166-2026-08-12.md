@@ -14,10 +14,14 @@ related:
   - sources/brief-k166-regret-learning-games-shelf-2026-08-12.md
   - sources/arxiv-2608.15258-self-fictitious-play-mfg-2026-08-18.md
   - sources/daily-digest-batch-k167-2026-08-18.md
+  - concepts/opponent-modeling-imperfect-info.md
+  - concepts/poker-hl-analyst-loop.md
+  - sources/arxiv-2606.19308-mafp-multi-agent-fictitious-play-2026-06-21.md
+  - sources/brief-k163-swap-regret-attention-shelf-2026-07-29.md
 maturity: validated
 read_status: skimmed
 created: 2026-08-12
-updated: 2026-08-18
+updated: 2026-10-25
 ---
 
 ## Relations

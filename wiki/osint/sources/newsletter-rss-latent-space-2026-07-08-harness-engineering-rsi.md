@@ -8,10 +8,14 @@ related:
   - concepts/sia-unified-harness-weight-self-improvement.md
   - entities/tools/agent-skills-for-context-engineering.md
   - sources/eval-url-revenue-plan-20url-2026-07-08.md
+  - sources/arxiv-reasoning-effort-agentic-code-2607.02436-2026-07-09.md
+  - sources/newsletter-rss-latent-space-2026-07-08-modal-agent-infrastructure.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-08-the-pragmatic-engineer-ama.md
+  - sources/substack-rss-addy-osmani-2026-07-09-own-the-outer-loop.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-08
-updated: 2026-07-08
+updated: 2026-10-25
 ---
 
 ## Relations

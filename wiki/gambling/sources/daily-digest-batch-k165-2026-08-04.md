@@ -9,10 +9,11 @@ related:
   - sources/daily-digest-batch-k164-2026-07-30.md
   - sources/daily-digest-reject-cluster-k165-2026-08-04.md
   - sources/brief-k165-bits-per-spike-false-positive-shelf-2026-08-04.md
+  - sources/daily-digest-batch-k166-2026-08-12.md
 maturity: validated
 read_status: skimmed
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-10-25
 ---
 
 ## Relations

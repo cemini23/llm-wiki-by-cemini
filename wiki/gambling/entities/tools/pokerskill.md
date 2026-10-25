@@ -15,9 +15,10 @@ related:
   - entities/bots/cemini-devfun-poker-agent.md
   - sources/devfun-poker-arena-phase0-2026-06-01.md
   - concepts/opponent-modeling-imperfect-info.md
+  - entities/tools/devfun-poker-arena-starter-kit.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-09-30
+updated: 2026-10-25
 ---
 
 ## Relations

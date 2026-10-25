@@ -12,9 +12,11 @@ related:
   - concepts/pickem-stat-type-mapping.md
   - entities/tools/ceminidfs.md
   - entities/platforms/underdog-fantasy.md
+  - concepts/pickem-legal-and-tos-posture.md
+  - sources/research-diy-pickem-props-master-plan-2026-07-05.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -8,10 +8,11 @@ related:
   - entities/sports/nfl-betting.md
   - concepts/player-usage-models.md
   - sources/daily-digest-batch-k181-2026-10-06.md
+  - sources/rss-rotoballer-week5-6-2026-10-11-12.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/rss-rotoballer-2026-10-05-running-back-fantasy-football-waiver-wire-pickups-for-week-5.md
 phase_0_verdict: REFERENCE — free column; method and tier structure, not selections
 wire_status: policy_wired

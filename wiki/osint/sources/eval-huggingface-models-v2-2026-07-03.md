@@ -9,10 +9,11 @@ related:
   - entities/tools/rampart.md
   - entities/tools/agents-a1.md
   - sources/huggingface-model-evals-74url-2026-06-23.md
+  - entities/tools/agent-skills-eval.md
 maturity: draft
 read_status: read
 created: 2026-07-03
-updated: 2026-07-03
+updated: 2026-10-25
 clusters: [wiki-tooling, tipdrop]
 ---
 

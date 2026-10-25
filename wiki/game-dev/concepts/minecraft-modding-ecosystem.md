@@ -13,9 +13,12 @@ related:
   - entities/projects/castle-sim.md
   - concepts/scope-tiers.md
   - sources/k283-bedrock-addon-extracts-2026-10-06.md
+  - concepts/art-pipeline-v0-requirements.md
+  - entities/tools/minecraft-agent-mcp-shelf.md
+  - entities/tools/mineflayer.md
 maturity: validated
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-25
 ---
 
 ## Relations

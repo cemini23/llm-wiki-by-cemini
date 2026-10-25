@@ -6,9 +6,10 @@ keywords: [rss, newsletter, addy-osmani]
 related:
   - sources/substack-rss-addy-osmani-2026-08-31-agentic-skill-decay.md
   - concepts/k253-harness-self-improvement-wave.md
+  - sources/substack-rss-addy-osmani-2026-07-09-own-the-outer-loop.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-09-01
+updated: 2026-10-25
 read_status: skimmed
 ---
 

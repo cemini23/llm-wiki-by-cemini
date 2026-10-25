@@ -13,9 +13,12 @@ related:
   - concepts/kelly-criterion-betting.md
   - entities/tools/momentum-odds.md
   - entities/tools/odds-jam.md
+  - concepts/bankroll-management.md
+  - entities/sports/nfl-betting.md
+  - entities/tools/stokastic-dfs.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -12,10 +12,11 @@ related:
   - sources/brief-k170-week1-papers-rss-2026-09-11.md
   - meta/daily-research-digest-cadence.md
   - sweeps/2026-09-11-daily.md
+  - entities/sports/tennis-betting.md
 maturity: validated
 read_status: deep-read
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-10-25
 ---
 
 ## Relations

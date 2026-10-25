@@ -8,9 +8,10 @@ related:
   - concepts/k262-ccc-harness-wave.md
   - concepts/k262-cybersec-wave.md
   - sources/eval-repository-revenue-2026-09-16.md
+  - sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
 maturity: draft
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-10-25
 phase_0_verdict: GO — Integrate (operator ruling 2026-10-25)
 harness_verb: INTEGRATE
 wire_status: integrate

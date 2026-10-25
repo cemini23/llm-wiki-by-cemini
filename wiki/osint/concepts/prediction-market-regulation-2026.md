@@ -30,9 +30,12 @@ related:
   - concepts/k289-feeds-wave.md
   - sources/substack-rss-event-horizon-2026-10-13-gambling-redefinition.md
   - concepts/k290-feeds-wave.md
+  - concepts/k288-feeds-wave.md
+  - sources/k292-osint-feeds-2026-10-16.md
+  - sources/substack-rss-wublock-2026-10-10-weekly-project-updates.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-07
+updated: 2026-10-25
 ---
 
 ## Relations

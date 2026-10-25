@@ -6,10 +6,11 @@ keywords: [tool eval, licence drift, gh api, SPDX, tier, club-3090, star counts]
 related:
   - concepts/k291-osint-wave.md
   - concepts/tool-evaluation-framework.md
+  - sources/eval-url-multi-wiki-repository-2026-10-16.md
 maturity: draft
 read_status: read
 created: 2026-10-14
-updated: 2026-10-15
+updated: 2026-10-25
 ---
 
 ## Relations

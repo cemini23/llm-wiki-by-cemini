@@ -9,10 +9,11 @@ related:
   - entities/platforms/kalshi.md
   - sources/daily-digest-batch-k149-2026-07-07.md
   - @osint-wiki/sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
+  - sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-06
-updated: 2026-07-07
+updated: 2026-10-25
 cross-wiki-source: @osint-wiki/sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
 ---
 

@@ -16,9 +16,12 @@ related:
   - sources/web-dfs-hero-nfl-gpp-strategy-2026-06-20.md
   - sources/brief-k169-nfl-week1-ready-2026-08-31.md
   - sweeps/2026-06-20-tier2-w8-nfl.md
+  - concepts/dfs-ownership-projection.md
+  - entities/tools/ceminidfs.md
+  - sources/research-diy-dfs-model-master-plan-2026-06-20.md
 maturity: validated
 created: 2026-06-20
-updated: 2026-08-31
+updated: 2026-10-25
 ---
 
 ## Relations

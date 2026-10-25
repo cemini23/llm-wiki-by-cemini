@@ -9,12 +9,14 @@ related:
   - concepts/tycho-arc-agi-active-abstraction-stub.md
   - entities/projects/castle-sim.md
   - sources/gamedevbench-phase-0-audit-2026-06-21.md
+  - entities/tools/craftbench-ue.md
+  - sources/arxiv-2609.23142-craftbench-ue-deterministic-eval-2026-09-24.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2607.03525
 maturity: validated
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Relations

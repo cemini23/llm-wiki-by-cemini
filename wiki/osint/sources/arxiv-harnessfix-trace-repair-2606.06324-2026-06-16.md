@@ -10,10 +10,11 @@ related:
   - concepts/agent-memory-cross-scenario-generality.md
   - concepts/mcp-tool-calling-eval-scaffold.md
   - concepts/llm-agent-systems.md
+  - sources/arxiv-false-summit-silent-drift-2606.21841-2026-06-25.md
 maturity: draft
 read_status: read
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-10-25
 clusters: [llm-agents, agent-harness]
 cross-wiki-source: "@ccc-wiki/sources/arxiv-failed-trajectory-harness-repair-2606.06324-2026-06-05.md"
 ---

@@ -13,10 +13,11 @@ related:
   - sources/daily-digest-batch-k134-2026-06-30.md
   - sweeps/2026-06-30-daily.md
   - sources/arxiv-2607.27035-ccs-mccfr-2026-07-30.md
+  - concepts/poker-hl-analyst-loop.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-30
-updated: 2026-07-30
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.29457-pdf-how-much-due-diligence-before-you-bid-learni.pdf
 phase_0_verdict: CONDITIONAL-GO 2026-06-30 — MIT github.com/zainnab-sparq/imperfect-information-deal-games (0★); OpenSpiel M&A games + exploitability ladder
 ---

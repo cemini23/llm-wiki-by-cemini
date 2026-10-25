@@ -14,9 +14,10 @@ related:
   - sources/web-offseason-hub-w28-synthesis-2026-07-19.md
   - sources/web-offseason-hub-w29-synthesis-2026-07-19.md
   - entities/tools/ceminidfs.md
+  - entities/sports/nfl-betting.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-19
+updated: 2026-10-25
 ---
 
 ## Relations

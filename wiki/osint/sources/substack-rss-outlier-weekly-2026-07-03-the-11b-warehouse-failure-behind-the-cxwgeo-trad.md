@@ -3,10 +3,11 @@ title: Outlier Weekly — The $1.1B Warehouse Failure Behind the CXW/GEO Trade
 type: source
 tags: [source, newsletter-rss, inbox-auto, outlier-weekly]
 keywords: [rss, newsletter, outlier-weekly]
-related: []
+related:
+  - sources/substack-rss-outlier-weekly-2026-07-08-cxw-geo-th-postmortem.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 read_status: skimmed
 ---
 

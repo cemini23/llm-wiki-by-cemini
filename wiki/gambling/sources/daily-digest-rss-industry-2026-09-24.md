@@ -6,10 +6,11 @@ keywords: [sbc, bet365-brazil, mgm-bid, slotbets]
 related:
   - sources/daily-digest-batch-k176-2026-09-24.md
   - concepts/gambling-wiki-scope.md
+  - sources/daily-digest-rss-industry-2026-09-28.md
 maturity: draft
 read_status: stub
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-25
 phase_0_verdict: OOD — UK/EU retail industry; no W8 ticket
 wire_status: wont_wire
 ---

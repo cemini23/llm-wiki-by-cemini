@@ -9,9 +9,10 @@ related:
   - concepts/devfun-researcher-track-readiness-2026-06.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - sources/arxiv-2608.09574-hierarchical-game-llm-2026-08-11.md
+  - concepts/latent-maps-performance-counterfactual-feedback.md
 maturity: draft
 created: 2026-07-02
-updated: 2026-08-11
+updated: 2026-10-25
 ---
 
 ## Relations

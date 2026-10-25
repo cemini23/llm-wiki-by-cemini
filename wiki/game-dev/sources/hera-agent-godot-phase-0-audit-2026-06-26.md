@@ -15,12 +15,13 @@ related:
   - entities/projects/castle-sim.md
   - sources/inbox-arxiv-reject-batch-2026-06-26.md
   - meta/cross-wiki-routing.md
+  - entities/engines/godot-4.md
 read_status: read
 source_type: operator-audit
 source_url: https://github.com/NotNull92/hera-agent-godot
 maturity: validated
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Raw Concept

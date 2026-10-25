@@ -9,10 +9,11 @@ related:
   - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
   - concepts/xsp-lane-trading-framework.md
   - sources/macro-charts-paid-forward-2026-07-12-sentiment-capitulation.md
+  - sources/macro-charts-paid-forward-2026-07-15-sox-cpi-oil-metals.md
 maturity: validated
 read_status: deep-read
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-25
 ---
 
 ## Raw Concept

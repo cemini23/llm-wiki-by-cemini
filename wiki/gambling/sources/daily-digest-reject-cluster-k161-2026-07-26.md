@@ -7,10 +7,11 @@ related:
   - meta/daily-research-digest-cadence.md
   - sweeps/2026-07-26-daily.md
   - sources/daily-digest-batch-k161-2026-07-26.md
+  - sources/brief-k161-ev-charging-false-positive-shelf-2026-07-26.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-10-25
 ---
 
 ## Relations

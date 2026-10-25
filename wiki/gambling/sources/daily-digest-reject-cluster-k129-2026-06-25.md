@@ -10,10 +10,11 @@ related:
   - sources/arxiv-2606.20820-celeus-llm-eval-eprocesses-2026-06-25.md
   - sources/arxiv-2606.23321-tmax-terminal-agents-2026-06-25.md
   - sources/brief-k129-celeus-tmax-eval-steals-2026-06-25.md
+  - sources/daily-digest-reject-cluster-k131-2026-06-26.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 ---
 
 ## Relations

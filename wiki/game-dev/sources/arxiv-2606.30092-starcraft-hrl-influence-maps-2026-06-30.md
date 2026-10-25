@@ -12,12 +12,13 @@ related:
   - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
   - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
   - meta/cross-wiki-routing.md
+  - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
 read_status: read
 source_type: research-paper
 source_url: https://arxiv.org/abs/2606.30092
 maturity: validated
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-10-25
 ---
 
 ## Raw Concept

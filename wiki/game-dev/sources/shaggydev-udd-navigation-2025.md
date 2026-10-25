@@ -10,11 +10,12 @@ related:
   - entities/projects/castle-sim.md
   - sources/papierkorp-godot-4-tactical-movement-2023.md
   - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
+  - sources/gdquest-pathfinding-glossary-2026-06-23.md
 source_type: devlog
 source_url: https://shaggydev.com/2025/05/19/udd-navigation/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-10-25
 ---
 
 ## Relations

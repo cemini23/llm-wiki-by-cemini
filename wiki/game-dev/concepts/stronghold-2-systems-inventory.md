@@ -52,9 +52,10 @@ related:
   - sources/sh2-youtube-parity-watchlist-2026-06-17.md
   - entities/tools/stronghold2-mp-ai-patch.md
   - concepts/stronghold-franchise-best-of-shelf.md
+  - concepts/minecraft-data-driven-content-patterns.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-18
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -14,9 +14,11 @@ related:
   - concepts/interaction-native-knowledge-harness.md
   - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
   - concepts/agent-memory-cross-scenario-generality.md
+  - entities/tools/graphiti.md
+  - sources/eval-tool-routing-hermes-plan-2026-06-27.md
 maturity: validated
 created: 2026-05-10
-updated: 2026-09-18
+updated: 2026-10-25
 laptop_install: VERIFIED 2026-09-18 — worker 13.24.20. OpenRouter observer: `mistralai/mistral-nemo` primary, `inclusionai/ling-3.0-flash` fallback. Do not use `:free` slugs (429).
 ---
 

@@ -58,9 +58,10 @@ related:
   - concepts/llm-routing-deepseek-openrouter-failover.md
   - entities/tools/opencode.md
   - entities/tools/reasonix.md
+  - entities/tools/deepspec.md
 maturity: validated
 created: 2026-04-24
-updated: 2026-08-12
+updated: 2026-10-25
 ---
 
 ## Relations

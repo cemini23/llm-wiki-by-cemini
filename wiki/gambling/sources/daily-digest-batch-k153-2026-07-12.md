@@ -12,10 +12,11 @@ related:
   - sources/arxiv-2607.07760-adversarial-social-epistemology-llm-2026-07-12.md
   - sources/brief-k153-mppo-style-pm-evidence-steals-2026-07-12.md
   - entities/tools/mppo.md
+  - sources/daily-digest-batch-k154-2026-07-13.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-12
-updated: 2026-07-12
+updated: 2026-10-25
 ---
 
 ## Relations

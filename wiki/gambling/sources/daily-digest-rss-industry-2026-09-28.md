@@ -6,10 +6,11 @@ keywords: [uk-powerball, brazil-ban, flutter-cash4clubs]
 related:
   - sources/daily-digest-rss-industry-2026-09-24.md
   - sources/daily-digest-batch-k177-2026-09-28.md
+  - sources/rss-sbc-summit-lisbon-2026-09-29.md
 maturity: draft
 read_status: stub
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-10-25
 phase_0_verdict: OOD — retail jurisdiction; no US operator action
 wire_status: wont_wire
 ---

@@ -11,10 +11,11 @@ related:
   - concepts/relaxed-nfl-auto-formalization.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/rlvf-verifier-feedback-training.md
 maturity: draft
 read_status: read
 created: 2026-06-25
-updated: 2026-06-26
+updated: 2026-10-25
 clusters: [llm-agents]
 ---
 

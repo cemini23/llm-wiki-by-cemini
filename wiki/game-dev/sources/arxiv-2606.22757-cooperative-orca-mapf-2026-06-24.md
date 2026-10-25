@@ -12,12 +12,13 @@ related:
   - sources/vav-labs-godot-flow-fields-2026.md
   - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
   - sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md
+  - sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2606.22757
 maturity: validated
 created: 2026-06-24
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Raw Concept

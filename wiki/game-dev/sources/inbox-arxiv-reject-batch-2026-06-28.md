@@ -10,11 +10,12 @@ related:
   - sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-06-28
-updated: 2026-06-28
+updated: 2026-10-25
 ---
 
 ## Raw Concept

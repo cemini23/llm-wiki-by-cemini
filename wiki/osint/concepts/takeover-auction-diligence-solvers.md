@@ -9,9 +9,10 @@ related:
   - concepts/projected-exploitability-descent.md
   - concepts/multi-agent-fictitious-play-llm.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
+  - entities/tools/ai-pokergame.md
 maturity: draft
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-10-25
 ---
 
 ## Relations

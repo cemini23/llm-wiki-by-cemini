@@ -13,12 +13,14 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-07-01.md
   - sources/inbox-arxiv-reject-batch-2026-07-10.md
   - meta/cross-wiki-routing.md
+  - sources/stronghold-invasion-vs-freebuild-shelf-2026-07-12.md
+  - sources/stronghold-series-wikipedia-2026-06-13.md
 read_status: read
 source_type: news-digest
 source_url: https://store.steampowered.com/news/app/2153760/view/696516113724347211
 maturity: validated
 created: 2026-06-24
-updated: 2026-07-14
+updated: 2026-10-25
 ---
 
 ## Raw Concept

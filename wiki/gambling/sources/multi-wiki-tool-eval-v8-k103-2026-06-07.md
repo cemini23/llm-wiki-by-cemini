@@ -10,10 +10,11 @@ related:
   - sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md
   - @osint-wiki/sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
   - @osint-wiki/entities/tools/poker-query-language.md
+  - sources/arxiv-2607.02453-oss-agent-framework-ecosystem-health-2026-07-06.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-10-25
 cross-wiki-source: "@osint-wiki/sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md"
 ---
 

@@ -8,10 +8,11 @@ related:
   - sources/newsletter-rss-pragmatic-engineer-2026-07-09-bun-rust-fable-pulse.md
   - sources/newsletter-rss-latent-space-2026-07-08-modal-agent-infrastructure.md
   - sources/newsletter-rss-latent-space-2026-08-13-grok-46.md
+  - sources/newsletter-rss-latent-space-2026-07-11-ainews-not-much-happened-today.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-09
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Relations

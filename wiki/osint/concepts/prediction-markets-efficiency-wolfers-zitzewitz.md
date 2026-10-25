@@ -13,9 +13,13 @@ related:
   - concepts/prediction-market-statistical-arbitrage.md
   - concepts/instrumental-probability-learnable-alpha.md
   - sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md
+  - concepts/kalshi-implied-macro-belief-distributions.md
+  - sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md
+  - sources/arxiv-prophets-profit-prediction-markets-2607.06166-2026-07-09.md
+  - sources/substack-rss-klement-2026-07-10-iran-news-bias.md
 maturity: core
 created: 2026-05-27
-updated: 2026-06-10
+updated: 2026-10-25
 ---
 
 ## Relations

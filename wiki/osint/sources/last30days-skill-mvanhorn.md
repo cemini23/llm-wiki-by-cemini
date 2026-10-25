@@ -15,10 +15,13 @@ related:
   - concepts/ip-sale-readiness.md
   - concepts/high-signal-paper-patterns.md
   - concepts/mcp-tool-marketplace.md
+  - concepts/k254-eval-github-wave.md
+  - entities/tools/repo-bootcamp.md
+  - sources/eval-github-repo-multi-wiki-copilot-2026-07-06.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-30
-updated: 2026-08-02
+updated: 2026-10-25
 ---
 
 ## Relations

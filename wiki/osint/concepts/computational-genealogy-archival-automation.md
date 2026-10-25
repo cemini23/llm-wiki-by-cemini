@@ -82,9 +82,11 @@ related:
   - sources/arxiv-2608.12566-domus-2026-08-14.md
   - entities/tools/lore.md
   - sources/arxiv-2608.17915-computational-prosopography-2026-08-20.md
+  - concepts/arabic-htr-evidence-review.md
+  - sources/arxiv-2608.19385-phoenix-athar-arabic-htr.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-08-20
+updated: 2026-10-25
 ---
 
 ## Relations

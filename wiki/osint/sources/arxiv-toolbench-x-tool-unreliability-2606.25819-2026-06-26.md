@@ -9,10 +9,13 @@ related:
   - concepts/claw-swe-bench-harness-evaluation.md
   - entities/tools/toolbench-x.md
   - concepts/wiki-tooling-evaluation.md
+  - concepts/llm-agent-systems.md
+  - concepts/swe-interact-user-driven-coding-eval.md
+  - sources/arxiv-2606.30573-swe-interact-2026-07-03.md
 maturity: draft
 read_status: read
 created: 2026-06-26
-updated: 2026-07-28
+updated: 2026-10-25
 clusters: [llm-agents, agent-harness]
 ---
 

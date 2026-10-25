@@ -11,10 +11,12 @@ related:
   - concepts/dfs-weather-adjustments.md
   - concepts/implied-team-totals-dfs.md
   - concepts/free-slate-context.md
+  - sources/nfl-week4-saturday-lock-2026-10-03.md
+  - sources/nfl-week4-tnf-result-postmortem-2026-10-02.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/NFL Week 4 Slate Research.docx
 phase_0_verdict: REFERENCE — Friday env card; re-check at lock
 wire_status: policy_wired

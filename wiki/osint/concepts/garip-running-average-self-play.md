@@ -12,9 +12,12 @@ related:
   - meta/sandbox-season-harvest-cadence.md
   - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
   - concepts/active-project-research-routing.md
+  - concepts/self-enforcing-transfer-equilibrium.md
+  - sources/arxiv-emagnet-parameter-space-ema-2606.23995-2026-06-25.md
+  - sources/arxiv-equilibrium-internal-transfers-seate-2606.20960-2026-06-25.md
 maturity: draft
 created: 2026-06-23
-updated: 2026-06-25
+updated: 2026-10-25
 ---
 
 ## Relations

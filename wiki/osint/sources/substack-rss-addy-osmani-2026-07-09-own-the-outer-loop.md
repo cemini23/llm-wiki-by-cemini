@@ -8,10 +8,11 @@ related:
   - sources/newsletter-rss-pragmatic-engineer-2026-07-09-bun-rust-fable-pulse.md
   - sources/newsletter-rss-latent-space-2026-07-08-harness-engineering-rsi.md
   - sources/arxiv-reasoning-effort-agentic-code-2607.02436-2026-07-09.md
+  - sources/arxiv-cage1-enterprise-governance-2607.03510-2026-07-10.md
 maturity: validated
 read_status: read
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Relations

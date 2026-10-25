@@ -12,9 +12,13 @@ related:
   - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
   - concepts/macro-rotation-momentum-signals-2026-05.md
   - meta/macro-charts-email-ingest-cadence.md
+  - concepts/macro-weather-regime.md
+  - sources/macro-charts-paid-forwards-vincent-2026-05-28-07-07.md
+  - sources/trading-posts-compilation-16-2026-05-31.md
+  - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-13
+updated: 2026-10-25
 ---
 
 ## Relations

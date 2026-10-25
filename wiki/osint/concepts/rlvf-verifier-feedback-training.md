@@ -9,9 +9,11 @@ related:
   - concepts/probabilistic-agent-policy-verification.md
   - concepts/continual-harness-online-self-improvement.md
   - sources/arxiv-forex-lean4-fallacy-detection-2606.21867-2026-06-25.md
+  - concepts/llm-agent-systems.md
+  - concepts/relaxed-nfl-auto-formalization.md
 maturity: draft
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

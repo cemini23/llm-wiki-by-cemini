@@ -9,9 +9,13 @@ related:
   - concepts/k282-feeds-wave.md
   - concepts/active-project-research-routing.md
   - sources/eval-project-stack-revenue-2026-10-05.md
+  - concepts/k283-eval-wave.md
+  - entities/tools/bedrock-ui-animations.md
+  - entities/tools/mc-mod-migrator.md
+  - sources/eval-bedrock-ecosystem-2026-10-06.md
 maturity: draft
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-25
 harness_verb: FILE
 wire_status: policy_wired
 ---

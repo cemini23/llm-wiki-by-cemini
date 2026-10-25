@@ -7,9 +7,10 @@ related:
   - sources/eval-multi-wiki-github-mcp-2026-07-05.md
   - entities/tools/marketingskills.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/lightweight-charts.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

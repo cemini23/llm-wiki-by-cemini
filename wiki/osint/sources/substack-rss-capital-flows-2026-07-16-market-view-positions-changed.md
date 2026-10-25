@@ -8,10 +8,11 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-capital-flows-2026-07-16-market-shift-and-risks.md
   - sources/substack-rss-capital-flows-2026-07-17-momentum-unwind.md
+  - sources/macro-charts-paid-forward-2026-07-17-ai-selloff-taiex-tsm.md
 maturity: draft
 read_status: read
 created: 2026-07-17
-updated: 2026-07-18
+updated: 2026-10-25
 clusters: [k172-ingest]
 ---
 

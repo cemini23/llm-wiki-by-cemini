@@ -23,9 +23,10 @@ related:
   - sources/shaggydev-tactics-engine-devlog-2023.md
   - sources/shaggydev-udd-navigation-2025.md
   - sources/k282-level-editors-tile-tooling-2026-10-05.md
+  - sources/arxiv-2607.02222-cofl-s-sector-flow-fields-2026-07-16.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Relations

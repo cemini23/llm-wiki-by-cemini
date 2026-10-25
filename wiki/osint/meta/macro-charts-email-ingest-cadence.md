@@ -8,9 +8,10 @@ related:
   - concepts/macro-charts-regime-signals.md
   - concepts/cemini-wiki-ingest-workflow.md
   - meta/substack-rss-ingest-cadence.md
+  - sources/macro-charts-paid-forwards-vincent-2026-05-28-07-07.md
 maturity: validated
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

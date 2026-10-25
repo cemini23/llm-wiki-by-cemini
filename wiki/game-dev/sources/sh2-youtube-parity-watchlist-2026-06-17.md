@@ -14,11 +14,12 @@ related:
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
   - sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
+  - sources/stronghold-invasion-vs-freebuild-shelf-2026-07-12.md
 read_status: read
 source_type: youtube-transcript
 maturity: validated
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-10-25
 ---
 
 ## Raw Concept

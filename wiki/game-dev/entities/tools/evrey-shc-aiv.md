@@ -14,9 +14,10 @@ related:
   - sources/monsterfisch-conquest-aiv-phase-0-audit-2026-06-20.md
   - concepts/stronghold-2-ai-lords.md
   - entities/projects/castle-sim.md
+  - sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md
 maturity: validated
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -10,9 +10,11 @@ related:
   - concepts/code-as-agent-harness.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/active-project-research-routing.md
+  - concepts/asd-ste100-writing-style.md
+  - sources/x-article-antpalkin-self-improving-ai-trading-machine-2026-08-06.md
 maturity: draft
 created: 2026-06-25
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -19,9 +19,11 @@ related:
   - concepts/clob-rate-limit-mitigation-strategies.md
   - concepts/shadow-trading-telemetry-accumulation.md
   - sources/trading-posts-compilation-38-2026-05-28.md
+  - concepts/proper-betting-clob-prediction-markets.md
+  - sources/arxiv-prophets-profit-prediction-markets-2607.06166-2026-07-09.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-29
+updated: 2026-10-25
 ---
 
 ## Relations

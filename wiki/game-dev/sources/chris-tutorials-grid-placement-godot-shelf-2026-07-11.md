@@ -9,12 +9,13 @@ related:
   - entities/projects/castle-sim.md
   - concepts/stronghold-deconstruction.md
   - sources/inbox-arxiv-reject-batch-2026-07-13.md
+  - sources/brickworks-godot-lego-framework-shelf-2026-07-15.md
 read_status: read
 source_type: news-digest
 source_url: https://chris-tutorials.itch.io/grid-placement-godot
 maturity: validated
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-10-25
 ---
 
 ## Raw Concept

@@ -11,10 +11,11 @@ related:
   - sources/arxiv-2606.23995-emagnet-selfplay-regularization-2026-06-24.md
   - sources/arxiv-2606.20960-equilibrium-internal-transfers-2026-06-24.md
   - sources/brief-k127-emagnet-irumai-selfplay-steals-2026-06-24.md
+  - sources/daily-digest-reject-cluster-k129-2026-06-25.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -14,9 +14,11 @@ related:
   - sources/daily-digest-batch-k181-2026-10-06.md
   - sources/rss-sharp-football-week5-worksheets-2026-10-07.md
   - sources/daily-digest-batch-k183-2026-10-09.md
+  - sources/rss-sharp-football-week5-final-2026-10-09-11.md
+  - sources/rss-sharp-football-week5-worksheets-2026-10-06.md
 maturity: draft
 created: 2026-10-06
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 ## Relations

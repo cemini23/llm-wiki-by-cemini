@@ -14,9 +14,11 @@ related:
   - sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md
   - sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md
   - sources/arxiv-2610.02023-sphere-vr-scene-routing-2026-10-06.md
+  - sources/pcgodot-phase-0-audit-2026-06-30.md
+  - sources/phaser-game-agent-shelf-2026-06-30.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-09-24
+updated: 2026-10-25
 ---
 
 ## Relations

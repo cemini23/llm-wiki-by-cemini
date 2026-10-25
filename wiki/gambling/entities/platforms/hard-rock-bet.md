@@ -23,9 +23,11 @@ related:
   - meta/nfl-gemini-weekday-prompt-addendum.md
   - entities/sports/nhl-betting.md
   - entities/sports/cfb-betting.md
+  - concepts/nfl-weekly-slate-hub-workflow.md
+  - sources/nfl-betting-dfs-intelligence-week1-2026-09-11.md
 maturity: validated
 created: 2026-06-20
-updated: 2026-09-30
+updated: 2026-10-25
 ---
 
 ## Relations

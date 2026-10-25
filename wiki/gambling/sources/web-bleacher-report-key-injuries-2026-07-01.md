@@ -9,10 +9,13 @@ related:
   - concepts/bbm7-adp-delta-tracker.md
   - entities/sports/nfl-betting.md
   - sources/web-offseason-hub-w27-synthesis-2026-07-05.md
+  - meta/nfl-offseason-weekly-cadence.md
+  - sources/web-offseason-hub-w28-synthesis-2026-07-19.md
+  - sources/web-offseason-hub-w29-synthesis-2026-07-19.md
 maturity: validated
 read_status: deep-read
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 source_url: https://bleacherreport.com/articles/25448525-10-key-injuries-monitor-ahead-2026-nfl-season
 ingest_id: R40
 sweep: sweeps/2026-07-05-daily.md

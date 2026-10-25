@@ -7,12 +7,13 @@ related:
   - concepts/flow-field-pathfinding.md
   - sources/leifnode-flow-field-pathfinding-2013.md
   - sources/exa-flowfields-firefly-batch-2026-06-13.md
+  - sources/arxiv-2607.02222-cofl-s-sector-flow-fields-2026-07-16.md
 read_status: read
 source_type: book-chapter
 source_url: https://www.gameaipro.com/GameAIPro/GameAIPro_Chapter23_Crowd_Pathfinding_and_Steering_Using_Flow_Field_Tiles.pdf
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-10-25
 ---
 
 ## Relations

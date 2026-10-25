@@ -9,10 +9,11 @@ related:
   - sources/daily-digest-batch-k156-2026-07-15.md
   - sources/arxiv-2607.08861-fictitious-play-coupled-fbsde-2026-07-16.md
   - sources/brief-k157-fbsde-fictitious-play-shelf-2026-07-16.md
+  - sources/daily-digest-batch-k158-2026-07-17.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-16
-updated: 2026-07-16
+updated: 2026-10-25
 ---
 
 ## Relations

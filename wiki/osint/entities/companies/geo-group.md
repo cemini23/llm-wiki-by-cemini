@@ -16,9 +16,10 @@ related:
   - concepts/geo-ice-turnkey-acquisition-thesis.md
   - concepts/government-single-buyer-asset-rerating.md
   - meta/ice-facility-jobs-cadence.md
+  - concepts/ice-turnkey-research-backlog-2026-06-30.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-08
+updated: 2026-10-25
 ---
 
 ## Relations

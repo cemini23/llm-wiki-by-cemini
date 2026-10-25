@@ -10,9 +10,12 @@ related:
   - concepts/pickem-fair-probability.md
   - concepts/pickem-payout-and-breakeven.md
   - concepts/diy-nfl-pickem-props-tool-architecture.md
+  - concepts/pickem-backtesting-framework.md
+  - concepts/pickem-operator-workflow.md
+  - concepts/pickem-pipeline-integration-spec.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

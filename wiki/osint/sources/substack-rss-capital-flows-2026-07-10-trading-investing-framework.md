@@ -8,10 +8,11 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - concepts/capital-flows-sofr-conviction-framework.md
   - sources/substack-rss-capital-flows-2026-07-09-purr-hyperliquid-update.md
+  - sources/substack-rss-capital-flows-2026-07-11-sofr-interest-rate-volatility-and-macro-endgame.md
 maturity: draft
 read_status: read
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Raw Concept

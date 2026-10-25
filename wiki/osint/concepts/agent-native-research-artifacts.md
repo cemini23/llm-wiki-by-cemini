@@ -13,9 +13,11 @@ related:
   - concepts/typed-relation-dependencies.md
   - concepts/conductor-orchestrator.md
   - concepts/declarative-data-labeling-skills.md
+  - sources/arxiv-2610.06790-bttf-eda-agentic-2026-10-06.md
+  - sources/arxiv-2610.08621-recursive-game-creator-2026-10-07.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-05-11
+updated: 2026-10-25
 ---
 
 ## Raw Concept

@@ -17,10 +17,11 @@ related:
   - concepts/poker-hl-analyst-loop.md
   - concepts/bankroll-management.md
   - entities/platforms/polymarket.md
+  - concepts/opponent-modeling-imperfect-info.md
 maturity: validated
 read_status: deep-read
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-10-25
 cross-wiki-source: "briefs/2026-07-06_k148-pm-hybrid-sd-journal-steals.md"
 ---
 

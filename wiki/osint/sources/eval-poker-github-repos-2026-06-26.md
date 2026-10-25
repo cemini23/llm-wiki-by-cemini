@@ -12,10 +12,12 @@ related:
   - entities/tools/pokerkit.md
   - entities/platforms/devfun-arena.md
   - sources/eval-url-cemini-research-2026-06-25.md
+  - entities/tools/ai-pokergame.md
+  - sources/eval-github-repo-plan-dfs-marl-poker-osint-2026-07-01.md
 maturity: draft
 read_status: read
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 clusters: [poker, eval, agent-harness]
 ---
 

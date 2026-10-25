@@ -11,10 +11,11 @@ related:
   - concepts/pm-live-belief-updating.md
   - concepts/parlay-and-correlated-bets.md
   - concepts/favorite-longshot-bias.md
+  - concepts/sports-betting-fundamentals.md
 read_status: deep-read
 maturity: draft
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-10-25
 ---
 
 ## Relations

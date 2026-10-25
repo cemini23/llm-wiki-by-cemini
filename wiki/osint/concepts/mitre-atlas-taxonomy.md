@@ -14,9 +14,10 @@ related:
   - entities/infrastructure/deepseek-api.md
   - entities/frameworks/fastmcp.md
   - entities/tools/deepteam.md
+  - concepts/reviewer-passive-injection-corpus.md
 maturity: validated
 created: 2026-05-04
-updated: 2026-05-11
+updated: 2026-10-25
 ---
 
 ## Relations

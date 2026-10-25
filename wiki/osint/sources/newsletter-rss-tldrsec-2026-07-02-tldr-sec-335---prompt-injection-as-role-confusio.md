@@ -3,10 +3,11 @@ title: tl;dr sec — [tl;dr sec] #335 - Prompt Injection as Role Confusion, PHP 
 type: source
 tags: [source, newsletter-rss, inbox-auto, tldrsec]
 keywords: [rss, newsletter, tldrsec]
-related: []
+related:
+  - sources/newsletter-rss-tldrsec-2026-07-09-tldr-sec-336.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-09
+updated: 2026-10-25
 read_status: skimmed
 ---
 

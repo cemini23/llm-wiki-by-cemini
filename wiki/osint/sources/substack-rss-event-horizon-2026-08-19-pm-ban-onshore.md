@@ -8,9 +8,10 @@ related:
   - sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md
   - concepts/kalshi-retail-lp.md
   - sources/substack-rss-event-horizon-2026-08-20-pm-republican-comms.md
+  - sources/substack-rss-event-horizon-2026-08-25-athlete-play-markets.md
 maturity: draft
 created: 2026-08-19
-updated: 2026-08-20
+updated: 2026-10-25
 read_status: read
 ---
 

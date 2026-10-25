@@ -28,9 +28,12 @@ related:
   - sources/arxiv-kalshi-live-belief-updating-2606.07811-2026-06-09.md
   - sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md
   - sources/daily-digest-batch-k179-2026-09-30.md
+  - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
+  - sources/daily-digest-rss-pm-eh-ep33-2026-09-21.md
+  - sources/rss-lsr-pm-industry-2026-09-29-30.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-09-30
+updated: 2026-10-25
 ---
 
 ## Relations

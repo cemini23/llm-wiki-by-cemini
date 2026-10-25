@@ -12,9 +12,10 @@ related:
   - concepts/conductor-orchestrator.md
   - concepts/high-signal-paper-patterns.md
   - concepts/cemini-knowledge-application-architecture.md
+  - sources/arxiv-2610.10478-base-model-screening-2026-10-08.md
 maturity: draft
 created: 2026-06-06
-updated: 2026-07-13
+updated: 2026-10-25
 ---
 
 ## Relations

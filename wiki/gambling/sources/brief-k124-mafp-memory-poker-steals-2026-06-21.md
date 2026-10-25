@@ -13,10 +13,13 @@ related:
   - entities/bots/cemini-devfun-poker-agent.md
   - sources/daily-digest-reject-cluster-k124-2026-06-21.md
   - sources/brief-k126-garip-selfplay-pm-forecast-steals-2026-06-23.md
+  - concepts/custom-agent-methodology.md
+  - sources/arxiv-2606.22688-garip-last-iterate-selfplay-2026-06-23.md
+  - sources/arxiv-2607.07666-ensemble-qsp-hierarchical-memory-2026-07-13.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-21
-updated: 2026-06-23
+updated: 2026-10-25
 cross-wiki-source: "briefs/2026-06-21_k124-mafp-memory-poker-research-steals.md"
 ---
 

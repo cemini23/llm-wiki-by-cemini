@@ -9,9 +9,10 @@ related:
   - concepts/diy-nfl-dfs-model-architecture.md
   - sources/cross-wiki-k125-diy-dfs-sweep-2026-06-20.md
   - meta/daily-research-digest-cadence.md
+  - concepts/nfl-weekly-slate-hub-workflow.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

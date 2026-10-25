@@ -8,9 +8,10 @@ related:
   - concepts/cemini-license-posture.md
   - entities/tools/betterleaks.md
   - "@cybersecurity-wiki/concepts/npm-supply-chain-defense.md"
+  - entities/tools/no-mistakes.md
 maturity: validated
 created: 2026-05-12
-updated: 2026-05-15
+updated: 2026-10-25
 ---
 
 ## Relations

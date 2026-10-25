@@ -10,10 +10,11 @@ related:
   - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
   - sources/arxiv-2606.30040-kalshi-macro-belief-distributions-2026-07-01.md
   - sources/brief-k135-pm-settlement-macro-beliefs-steals-2026-07-01.md
+  - sources/daily-digest-batch-k136-2026-07-02.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-10-25
 ---
 
 ## Relations

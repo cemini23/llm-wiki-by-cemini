@@ -14,9 +14,13 @@ related:
   - sources/arxiv-2606.14506-distribution-shift-model-eval-2026-06-22.md
   - sources/arxiv-2606.20820-celeus-llm-eval-eprocesses-2026-06-25.md
   - sources/brief-k129-celeus-tmax-eval-steals-2026-06-25.md
+  - concepts/nfl-dfs-data-sources.md
+  - entities/tools/ceminidfs.md
+  - sources/cross-wiki-k125-diy-dfs-sweep-2026-06-20.md
+  - sources/research-nfl-historical-odds-2026-06-20.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-25
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -11,10 +11,12 @@ related:
   - sources/daily-digest-reject-cluster-k125-2026-06-22.md
   - entities/bots/cemini-devfun-poker-agent.md
   - sweeps/2026-06-22-daily.md
+  - sources/arxiv-2606.20820-celeus-llm-eval-eprocesses-2026-06-25.md
+  - sources/brief-k129-celeus-tmax-eval-steals-2026-06-25.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.14506-2606-14506v1-beyond-the-training-distribution-ev.pdf
 phase_0_verdict: REFERENCE 2026-06-22 — pre-deploy eval under shift; not wagering-specific
 ---

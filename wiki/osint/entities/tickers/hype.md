@@ -5,9 +5,10 @@ tags: [ticker, crypto, hyperliquid, perp-dex, ww-178-short, technical-setup]
 keywords: [hype, hyperliquid, perpetual-dex, ww-178-short-setup, 41-37-entry, stop-44-77, target-34-54]
 related:
   - sources/ww-issue-178-2026-05-13.md
+  - sources/substack-rss-capital-flows-2026-07-09-purr-hyperliquid-update.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-10-25
 ---
 
 ## Relations

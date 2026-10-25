@@ -35,9 +35,13 @@ related:
   - sources/research-nfl-historical-odds-2026-06-20.md
   - sources/sharp-nfl-rb-prop-unders-2026-08-13.md
   - "@osint-wiki/concepts/active-project-research-routing.md"
+  - concepts/nfl-weekly-slate-hub-workflow.md
+  - sources/web-offseason-hub-w27-synthesis-2026-07-05.md
+  - sources/web-offseason-hub-w28-synthesis-2026-07-19.md
+  - sources/web-offseason-hub-w29-synthesis-2026-07-19.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Relations

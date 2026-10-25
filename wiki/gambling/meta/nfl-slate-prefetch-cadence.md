@@ -8,9 +8,10 @@ related:
   - meta/daily-research-digest-cadence.md
   - concepts/dfs-injury-and-news-workflow.md
   - entities/sports/nfl-betting.md
+  - meta/nfl-offseason-weekly-cadence.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

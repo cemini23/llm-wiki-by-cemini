@@ -19,9 +19,11 @@ related:
   - entities/platforms/polymarket.md
   - concepts/ip-sale-readiness.md
   - sources/substack-rss-event-horizon-2026-07-28-dodd-frank-pm.md
+  - sources/substack-rss-event-horizon-2026-07-16-trade-on-simulations.md
+  - sources/substack-rss-wublock-2026-07-11-weekly-project-updates-bonkdao-suffers-governanc.md
 maturity: validated
 created: 2026-04-25
-updated: 2026-07-28
+updated: 2026-10-25
 ---
 
 ## Relations

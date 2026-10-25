@@ -13,10 +13,11 @@ related:
   - sources/brief-k137-swe-interact-rlvr-nfl-steals-2026-07-03.md
   - sources/daily-digest-batch-k137-2026-07-03.md
   - sweeps/2026-07-03-daily.md
+  - sources/arxiv-2607.02389-steerability-constraints-coding-agents-2026-07-06.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-03
-updated: 2026-07-03
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.30573-2606-30573v1-swe-interact-reimagining-swe-benchm.pdf
 phase_0_verdict: CONDITIONAL-GO 2026-07-03 — Apache-2.0 github.com/scaleapi/SWE-Interact (~14★); benchmark reference for multi-turn sandbox harness, not prod dependency
 ---

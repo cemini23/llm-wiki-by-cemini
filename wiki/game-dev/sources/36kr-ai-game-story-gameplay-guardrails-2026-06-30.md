@@ -9,12 +9,13 @@ related:
   - sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md
   - sources/inbox-arxiv-reject-batch-2026-07-04.md
   - meta/cross-wiki-routing.md
+  - sources/arxiv-2609.23043-narrative-reliability-detective-games-2026-09-24.md
 read_status: read
 source_type: news-article
 source_url: https://www.36kr.com/p/3639191188114818
 maturity: validated
 created: 2026-07-04
-updated: 2026-07-04
+updated: 2026-10-25
 ---
 
 ## Raw Concept

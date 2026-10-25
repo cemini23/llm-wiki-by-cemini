@@ -13,10 +13,11 @@ related:
   - concepts/ip-sale-readiness.md
   - entities/frameworks/langgraph.md
   - entities/infrastructure/timescaledb.md
+  - sources/eval-cemini-github-repo-evaluation-2026-07-09.md
 maturity: draft
 read_status: read
 created: 2026-05-01
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Relations

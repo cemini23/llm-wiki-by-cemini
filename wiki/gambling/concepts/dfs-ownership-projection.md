@@ -9,9 +9,12 @@ related:
   - entities/tools/stokastic-dfs.md
   - entities/tools/fantasylabs-dfs.md
   - concepts/diy-nfl-dfs-model-architecture.md
+  - concepts/dfs-backtesting-framework.md
+  - entities/tools/ceminidfs.md
+  - sources/arxiv-2607.08692-pokemon-tcg-nash-lean-metagame-2026-07-13.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

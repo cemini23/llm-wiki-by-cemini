@@ -6,10 +6,11 @@ keywords: [lamar-props, hou-ind-under, chargers-plus-seven, snf-rams]
 related:
   - entities/sports/nfl-betting.md
   - sources/daily-digest-batch-k177-2026-09-28.md
+  - sources/rss-lsb-nhl-opening-night-props-2026-09-29.md
 maturity: draft
 read_status: stub
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — RSS titles only; verify live before bet
 wire_status: policy_wired
 ---

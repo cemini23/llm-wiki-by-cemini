@@ -12,11 +12,13 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-06-23.md
   - sources/gamedevbench-phase-0-audit-2026-06-21.md
   - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
+  - entities/tools/gamedevbench.md
+  - sources/inbox-arxiv-reject-batch-2026-06-22.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-10-25
 ---
 
 ## Raw Concept

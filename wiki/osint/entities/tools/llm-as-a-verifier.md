@@ -11,9 +11,10 @@ related:
   - concepts/atto-genealogy-agent-kit.md
   - entities/tools/google-sam.md
   - concepts/sovereign-agent-mesh-biscuit.md
+  - sources/arxiv-2610.06829-clift-web-agent-verification-2026-10-06.md
 maturity: draft
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-10-25
 harness_verb: FILE
 ---
 

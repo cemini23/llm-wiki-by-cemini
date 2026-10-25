@@ -14,10 +14,12 @@ related:
   - sources/brief-k151-pm-belief-to-trade-volatility-steals-2026-07-10.md
   - sources/daily-digest-batch-k151-2026-07-10.md
   - sweeps/2026-07-10-daily.md
+  - sources/arxiv-2607.07760-adversarial-social-epistemology-llm-2026-07-12.md
+  - sources/arxiv-2607.07820-deepsearch-world-self-distillation-2026-07-13.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2607.03015-beyond-forecasting-the-belief-to-trade-layer-in.pdf
 phase_0_verdict: CONDITIONAL-GO 2026-07-10 — MIT github.com/Alchemist-X/predict-raven (~65★); PM agent reference, ToS + live-risk gates
 ---

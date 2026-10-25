@@ -8,9 +8,10 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/sportsdataverse-py.md
   - sources/github-nfl-repo-eval-cemini-2026-06-21.md
+  - entities/tools/draftfast.md
 maturity: draft
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-10-25
 ---
 
 ## Relations

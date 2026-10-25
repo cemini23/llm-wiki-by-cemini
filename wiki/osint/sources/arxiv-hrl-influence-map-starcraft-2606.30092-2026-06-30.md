@@ -8,10 +8,13 @@ related:
   - concepts/castle-sim-pathfinding-steals.md
   - concepts/rl-marl-research.md
   - concepts/active-project-research-routing.md
+  - concepts/latent-maps-performance-counterfactual-feedback.md
+  - sources/arxiv-2607.00190-latent-maps-performance-2026-07-03.md
+  - sources/arxiv-ai-native-games-survey-2607.00527-2026-07-02.md
 maturity: draft
 read_status: read
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-10-25
 clusters: [rl-marl, game-dev]
 ---
 

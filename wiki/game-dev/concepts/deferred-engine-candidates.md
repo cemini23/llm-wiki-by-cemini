@@ -8,9 +8,10 @@ related:
   - concepts/game-dev-wiki-scope.md
   - sources/tool-evaluation-cross-wiki-routing-2026-06-13.md
   - concepts/tool-evaluation-cross-wiki-batch-2026-06-13.md
+  - sources/unreal-engine-58-mcp-shelf-2026-06-24.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-10-25
 ---
 
 ## Relations

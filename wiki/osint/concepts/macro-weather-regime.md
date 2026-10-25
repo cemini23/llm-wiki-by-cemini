@@ -36,9 +36,13 @@ related:
   - sources/substack-rss-klement-2026-10-13-ai-productivity-lower-debt.md
   - concepts/ai-productivity-fiscal-debt.md
   - concepts/k290-feeds-wave.md
+  - sources/substack-rss-capital-flows-2026-07-05-start-here-capital-flows-a-daily-macro-map-to-ta.md
+  - sources/substack-rss-capital-flows-2026-07-10-trading-investing-framework.md
+  - sources/substack-rss-capital-flows-2026-07-11-sofr-interest-rate-volatility-and-macro-endgame.md
+  - sources/substack-rss-klement-2026-07-09-synthetic-risk-transfers.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-13
+updated: 2026-10-25
 ---
 
 ## Relations

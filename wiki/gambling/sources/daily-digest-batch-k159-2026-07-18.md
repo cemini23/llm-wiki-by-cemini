@@ -11,10 +11,11 @@ related:
   - sources/arxiv-2607.07207-memory-scarcity-open-models-2026-07-18.md
   - entities/tools/aleena.md
   - sources/brief-k159-aleena-decision-continuity-steals-2026-07-18.md
+  - sources/daily-digest-batch-k160-2026-07-21.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-18
-updated: 2026-07-18
+updated: 2026-10-25
 ---
 
 ## Relations

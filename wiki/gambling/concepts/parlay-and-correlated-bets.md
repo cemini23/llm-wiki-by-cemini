@@ -31,9 +31,13 @@ related:
   - entities/sports/cfb-betting.md
   - sources/nfl-week4-tnf-result-postmortem-2026-10-02.md
   - sources/nfl-week4-result-postmortem-2026-10-09.md
+  - concepts/daily-edge-card.md
+  - sources/research-diy-pickem-props-master-plan-2026-07-05.md
+  - sources/rss-lsb-state-markets-2026-10-07.md
+  - sources/steelers-browns-tnf-metaplan-2026-10-01.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -8,9 +8,10 @@ related:
   - entities/tools/mcp-searxng.md
   - entities/tools/firecrawl-mcp-server.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/octobrowser.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

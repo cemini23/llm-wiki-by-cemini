@@ -11,9 +11,11 @@ related:
   - concepts/dfs-foss-tooling-landscape.md
   - concepts/pickem-fair-probability.md
   - concepts/nfl-dfs-field-edge-priors.md
+  - concepts/dfs-backtesting-framework.md
+  - concepts/pickem-stat-type-mapping.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-09-27
+updated: 2026-10-25
 ---
 
 ## Relations

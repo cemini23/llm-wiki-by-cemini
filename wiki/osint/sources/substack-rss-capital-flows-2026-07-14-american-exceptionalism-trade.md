@@ -6,10 +6,11 @@ keywords: [US-China surplus recycle, dollar reserve, TSMC Taiwan tail, gold hedg
 related:
   - concepts/capital-flows-sofr-conviction-framework.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-capital-flows-2026-07-15-winner-take-all-ai-race.md
 maturity: draft
 read_status: skim
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-25
 clusters: [k163-ingest, xsp]
 ---
 

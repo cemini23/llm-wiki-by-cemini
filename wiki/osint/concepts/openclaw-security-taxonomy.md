@@ -34,9 +34,12 @@ related:
   - sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md
   - sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md
   - entities/tools/openclaw.md
+  - entities/tools/snyk-studio-mcp.md
+  - entities/tools/sysadmin-copilot.md
+  - sources/eval-huggingface-models-k146-refresh-2026-07-05.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-07-14
+updated: 2026-10-25
 ---
 
 ## Relations

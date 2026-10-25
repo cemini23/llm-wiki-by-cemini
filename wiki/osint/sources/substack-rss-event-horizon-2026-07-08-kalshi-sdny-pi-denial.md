@@ -7,10 +7,11 @@ related:
   - concepts/dcm-state-preemption.md
   - entities/platforms/kalshi.md
   - sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md
+  - sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md
 maturity: draft
 read_status: read
 created: 2026-07-08
-updated: 2026-07-08
+updated: 2026-10-25
 ---
 
 ## Relations

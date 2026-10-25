@@ -14,10 +14,11 @@ related:
   - concepts/heads-up-arena-strategy.md
   - concepts/poker-axis-eval-literacy.md
   - @osint-wiki/sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
+  - concepts/poker-hl-analyst-loop.md
 maturity: validated
 read_status: read
 created: 2026-06-20
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

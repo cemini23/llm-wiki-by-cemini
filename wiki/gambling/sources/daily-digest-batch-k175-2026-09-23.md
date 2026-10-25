@@ -11,10 +11,13 @@ related:
   - meta/nfl-gemini-weekday-prompt-addendum.md
   - sweeps/2026-09-23-daily.md
   - sweeps/2026-09-22-daily.md
+  - concepts/prediction-markets-crossover.md
+  - entities/platforms/kalshi.md
+  - entities/sports/nfl-betting.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — regulatory awareness only
 wire_status: policy_wired
 ---

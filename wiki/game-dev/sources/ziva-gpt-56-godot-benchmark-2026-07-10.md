@@ -11,12 +11,13 @@ related:
   - concepts/godot-stagehand-ci-smoke-plan.md
   - sources/inbox-arxiv-reject-batch-2026-07-11.md
   - meta/cross-wiki-routing.md
+  - sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md
 read_status: read
 source_type: news-digest
 source_url: https://ziva.sh/blogs/gpt-5-6-benchmark-godot
 maturity: validated
 created: 2026-07-11
-updated: 2026-07-11
+updated: 2026-10-25
 ---
 
 ## Raw Concept

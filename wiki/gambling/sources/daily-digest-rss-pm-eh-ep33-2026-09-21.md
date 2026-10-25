@@ -9,10 +9,11 @@ related:
   - concepts/sportsbook-pm-line-divergence.md
   - sources/daily-digest-batch-k174-2026-09-21.md
   - sources/daily-digest-rss-pm-regulatory-2026-09-17.md
+  - entities/sports/nfl-betting.md
 maturity: draft
 read_status: stub
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — regulatory awareness only; no pm scp
 wire_status: policy_wired
 ---

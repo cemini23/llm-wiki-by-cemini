@@ -17,9 +17,10 @@ related:
   - sources/abc10news-cxw-otay-sale-2026-07-06.md
   - sources/corecivic-investor-deck-proforma-2026-07.md
   - sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md
+  - concepts/geo-ice-turnkey-acquisition-thesis.md
 maturity: validated
 created: 2026-07-06
-updated: 2026-07-08
+updated: 2026-10-25
 ---
 
 ## Relations

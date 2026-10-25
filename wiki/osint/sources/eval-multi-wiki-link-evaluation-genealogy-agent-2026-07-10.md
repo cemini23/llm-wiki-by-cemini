@@ -14,10 +14,11 @@ related:
   - entities/tools/bun-runtime.md
   - concepts/computational-genealogy-archival-automation.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/agent-skills-for-context-engineering.md
 maturity: validated
 read_status: read
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Relations

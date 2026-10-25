@@ -8,10 +8,11 @@ related:
   - concepts/llm-agent-systems.md
   - concepts/librarian-server-architecture.md
   - concepts/conductor-orchestrator.md
+  - sources/arxiv-selfcompact-lm-agents-2606.23525-2026-06-25.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -15,10 +15,11 @@ related:
   - entities/tools/anthropics-financial-services.md
   - sources/tool-eval-metaplan-81url-2026-06-24.md
   - sources/cemini-tool-evaluation-plan-62url-2026-06-23.md
+  - sources/eval-poker-github-repos-2026-06-26.md
 maturity: draft
 read_status: read
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 clusters: [agent-harness, wiki-tooling]
 ---
 

@@ -16,10 +16,12 @@ related:
   - sweeps/2026-08-18-daily.md
   - sources/daily-digest-batch-k167-2026-08-18.md
   - sources/brief-k167-sfp-mfg-shelf-2026-08-18.md
+  - sources/arxiv-2609.03660-lugl-lightgbm-game-playing-2026-09-11.md
+  - sources/arxiv-2609.18848-fp-tie-breaking-first-price-auctions-2026-09-17.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2608.15258-self-fictitious-play-for-potential-monotone-ergo.pdf
 phase_0_verdict: REFERENCE 2026-08-18 — ergodic MFG SFP theory shelf; no FOSS; decide() NO-GO
 wire_status: wont_wire

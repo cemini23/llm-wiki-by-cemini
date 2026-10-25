@@ -14,9 +14,10 @@ related:
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - entities/platforms/devfun-arena.md
   - entities/platforms/devfun-heads-up-pvp-s3.md
+  - sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
 maturity: validated
 created: 2026-06-19
-updated: 2026-06-08
+updated: 2026-10-25
 ---
 
 ## Relations

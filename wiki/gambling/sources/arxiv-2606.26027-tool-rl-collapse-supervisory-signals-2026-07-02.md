@@ -13,10 +13,12 @@ related:
   - sources/brief-k136-tool-rl-collapse-steals-2026-07-02.md
   - sources/daily-digest-batch-k136-2026-07-02.md
   - sweeps/2026-07-02-daily.md
+  - sources/arxiv-2606.30573-swe-interact-user-driven-coding-agents-2026-07-03.md
+  - sources/brief-k137-swe-interact-rlvr-nfl-steals-2026-07-03.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.26027-2606-26027v1-why-multi-step-tool-use-reinforceme.pdf
 phase_0_verdict: CONDITIONAL-GO 2026-07-02 — MIT github.com/hypasd-art/Tool-RL-Box (~5★); reference training stability for MCP agents, not prod decide()
 ---

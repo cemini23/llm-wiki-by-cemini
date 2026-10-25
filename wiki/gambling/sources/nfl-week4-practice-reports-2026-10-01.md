@@ -10,10 +10,11 @@ related:
   - sources/daily-digest-batch-k180-2026-10-02.md
   - concepts/dfs-injury-and-news-workflow.md
   - meta/nfl-gemini-weekday-prompt-addendum.md
+  - sources/nfl-week4-saturday-lock-2026-10-03.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/NFL Week 4 Practice Reports.docx
 phase_0_verdict: REFERENCE — Thu window; Friday designations supersede
 wire_status: policy_wired

@@ -14,9 +14,10 @@ related:
   - concepts/projected-exploitability-descent.md
   - sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
+  - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
 maturity: draft
 created: 2026-06-18
-updated: 2026-06-30
+updated: 2026-10-25
 ---
 
 ## Relations

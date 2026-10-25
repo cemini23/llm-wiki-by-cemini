@@ -14,10 +14,11 @@ related:
   - entities/bots/stake-engine-client.md
   - entities/tools/rlcard.md
   - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
+  - sources/brief-k130-rlcard-offline-baseline-adopt-2026-06-26.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-01
-updated: 2026-06-15
+updated: 2026-10-25
 ---
 
 ## Relations

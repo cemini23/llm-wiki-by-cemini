@@ -16,12 +16,13 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-07-05.md
   - meta/cross-wiki-routing.md
   - sources/arxiv-2609.34342-sage-strategic-reasoning-2026-09-30.md
+  - sources/arxiv-2607.05352-mira-multiplayer-world-models-2026-07-09.md
 read_status: read
 source_type: research-paper
 source_url: https://arxiv.org/abs/2606.29932
 maturity: validated
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Raw Concept

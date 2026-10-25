@@ -22,9 +22,10 @@ related:
   - sources/research-wnba-cold-streak-live-unders-2026-08-13.md
   - entities/sports/nhl-betting.md
   - entities/sports/cfb-betting.md
+  - sources/rss-sbc-summit-lisbon-2026-09-29.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-09-30
+updated: 2026-10-25
 ---
 
 ## Relations

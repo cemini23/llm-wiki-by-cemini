@@ -11,10 +11,11 @@ related:
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - entities/platforms/devfun-arena.md
   - entities/platforms/devfun-heads-up-pvp-s3.md
+  - sources/devfun-researcher-sandbox-researcher-guide-2026-06-08.md
 maturity: validated
 read_status: read
 created: 2026-06-20
-updated: 2026-06-22
+updated: 2026-10-25
 cross-wiki:
   - "@gambling-wiki/sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md"
 ---

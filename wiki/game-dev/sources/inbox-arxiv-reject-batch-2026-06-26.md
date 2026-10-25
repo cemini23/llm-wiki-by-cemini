@@ -11,11 +11,12 @@ related:
   - concepts/game-dev-wiki-scope.md
   - sources/notnull92-hera-agent-godot-devto-2026-06-25.md
   - sources/inbox-arxiv-reject-batch-2026-06-27.md
+  - sources/inbox-arxiv-reject-batch-2026-06-28.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Raw Concept

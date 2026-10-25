@@ -28,9 +28,11 @@ related:
   - concepts/hyperliquid-hlp-vs-user-vaults.md
   - sources/gemini-dr-pm-hl-strategies-2026-07-14.md
   - entities/tools/hyperliquid-python-sdk.md
+  - sources/substack-rss-wublock-2026-07-06-june-vc-report-funding-amount-and-deal-count-hit.md
+  - sources/substack-rss-wublock-2026-07-10-weekly-strategy-btc-swift.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-08-22
+updated: 2026-10-25
 ---
 
 ## Relations

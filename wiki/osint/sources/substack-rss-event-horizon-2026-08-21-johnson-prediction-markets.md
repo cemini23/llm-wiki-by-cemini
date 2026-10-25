@@ -8,9 +8,11 @@ related:
   - concepts/kalshi-retail-lp.md
   - concepts/polymarket-bot-architecture.md
   - concepts/xsp-lane-trading-framework.md
+  - concepts/k247-gambling-pm-wave.md
+  - sources/substack-rss-event-horizon-2026-08-25-athlete-play-markets.md
 maturity: draft
 created: 2026-08-21
-updated: 2026-08-21
+updated: 2026-10-25
 read_status: skimmed
 ---
 

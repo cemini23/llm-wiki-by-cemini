@@ -15,9 +15,10 @@ related:
   - concepts/computational-genealogy-archival-automation.md
   - concepts/italian-regional-genealogy-archive-playbook.md
   - entities/tools/transkribus.md
+  - sources/gemini-sellia-calabria-archive-routing-2026-07-11.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-21
+updated: 2026-10-25
 ---
 
 ## Relations

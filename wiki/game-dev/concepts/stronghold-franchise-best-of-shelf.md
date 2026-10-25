@@ -22,9 +22,10 @@ related:
   - sources/stronghold-hd-manual-2001.md
   - sources/stronghold-4-public-demo-2026-06-24.md
   - sources/stronghold-invasion-vs-freebuild-shelf-2026-07-12.md
+  - sources/mandate-order-city-walls-shelf-2026-06-25.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-07-13
+updated: 2026-10-25
 ---
 
 ## Relations

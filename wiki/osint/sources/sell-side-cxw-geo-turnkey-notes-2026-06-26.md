@@ -10,9 +10,10 @@ related:
   - sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md
   - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
   - concepts/corrections-reit-asset-sale-event-study.md
+  - concepts/geo-ice-turnkey-acquisition-thesis.md
 maturity: draft
 created: 2026-07-06
-updated: 2026-07-07
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -14,12 +14,15 @@ related:
   - sources/arxiv-2610.08215-learn2play-bench-experience-2026-10-07.md
   - sources/arxiv-2610.05041-mafia-communication-collective-inference-2026-10-07.md
   - sources/arxiv-2610.11464-who-verifies-the-verifier-2026-10-09.md
+  - concepts/minecraft-agent-harness-shelf.md
+  - sources/arxiv-2610.08076-speedrunbench-strategy-formation-2026-10-07.md
+  - sources/arxiv-2610.08720-worldsolver-visual-fidelity-2026-10-07.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2609.40324
 maturity: validated
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-25
 ---
 
 ## Raw Concept

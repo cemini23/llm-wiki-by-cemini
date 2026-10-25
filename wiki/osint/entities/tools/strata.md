@@ -6,9 +6,10 @@ keywords: [strata, 125b, moe, qwen3.8, local-inference, nvme, openai-endpoint, a
 related:
   - sources/eval-url-revenue-opportunity-2026-10-07.md
   - concepts/k284-eval-wave.md
+  - entities/tools/rapid-mlx.md
 maturity: draft
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-25
 ---
 
 ## Relations

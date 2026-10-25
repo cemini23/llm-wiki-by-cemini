@@ -9,10 +9,11 @@ related:
   - concepts/team-volume-pace-model.md
   - concepts/daily-edge-card.md
   - sources/daily-digest-batch-k181-2026-10-06.md
+  - sources/rss-sharp-football-week5-worksheets-2026-10-06.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/
 phase_0_verdict: MIXED — 2 pages free (GO for tooling), 7 paywalled (stub + method only)
 wire_status: policy_wired

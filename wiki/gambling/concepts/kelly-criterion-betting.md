@@ -25,9 +25,12 @@ related:
   - concepts/daily-edge-card.md
   - sources/arxiv-2604.27865-kellybench-2026-08-31.md
   - sources/brief-k168-nfl-season-paper-rss-2026-08-31.md
+  - concepts/diy-nfl-pickem-props-tool-architecture.md
+  - concepts/pm-structural-volatility.md
+  - sources/research-diy-pickem-props-master-plan-2026-07-05.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-08-31
+updated: 2026-10-25
 ---
 
 ## Relations

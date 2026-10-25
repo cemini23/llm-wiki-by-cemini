@@ -29,9 +29,10 @@ related:
   - sources/eval-url-revenue-and-project-analysis-2026-07-20.md
   - concepts/active-project-research-routing.md
   - entities/tools/autoresearch-genealogy.md
+  - entities/tools/terrastories.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-22
+updated: 2026-10-25
 ---
 
 ## Relations

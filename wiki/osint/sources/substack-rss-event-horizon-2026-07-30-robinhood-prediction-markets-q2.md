@@ -5,9 +5,10 @@ tags: [source, newsletter, event-horizon, pm-kalshi, gambling, k213]
 keywords: [Robinhood, Rothera, Kalshi, event contracts, CFTC]
 related:
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-event-horizon-2026-07-31-ny-ag-sues-kalshi.md
 maturity: draft
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-10-25
 read_status: deep-read
 ---
 

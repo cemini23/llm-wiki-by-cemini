@@ -10,10 +10,12 @@ related:
   - concepts/prediction-markets-crossover.md
   - concepts/sportsbook-pm-line-divergence.md
   - sources/daily-digest-batch-k180-2026-10-02.md
+  - sources/rss-operator-scrutiny-2026-10-07-08.md
+  - sources/rss-sbc-pm-europe-2026-10-01-05.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/
 phase_0_verdict: REFERENCE — regulatory + industry awareness; no pm scp
 wire_status: policy_wired

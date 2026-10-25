@@ -9,10 +9,11 @@ related:
   - concepts/dfs-pipeline-integration-spec.md
   - entities/tools/ceminidfs.md
   - sources/brief-k128-bbm7-draft-copilot-hub-2026-06-24.md
+  - sources/brief-k128b-bbm7-challenge-register-2026-06-24.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-20
-updated: 2026-06-26
+updated: 2026-10-25
 cross-wiki-source: "briefs/nfl-dfs-id-mapping-research.md"
 ---
 

@@ -13,10 +13,11 @@ related:
   - sources/arxiv-2607.01120-areal-agentic-rl-self-evolving-agents-2026-07-09.md
   - sources/openreview-prophets-profit-pm-LYSTj2Cnuu-2026-06-17.md
   - sources/brief-k150-pm-liquidity-proper-betting-steals-2026-07-09.md
+  - sources/daily-digest-batch-k151-2026-07-10.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Relations

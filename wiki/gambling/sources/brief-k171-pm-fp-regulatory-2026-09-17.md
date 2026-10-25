@@ -12,10 +12,12 @@ related:
   - concepts/prediction-markets-crossover.md
   - concepts/poker-hl-analyst-loop.md
   - concepts/bankroll-management.md
+  - concepts/opponent-modeling-imperfect-info.md
+  - meta/daily-research-digest-cadence.md
 maturity: validated
 read_status: deep-read
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-10-25
 wire_status: policy_wired
 cross-wiki-source: "briefs/2026-09-17_k171-gambling.md"
 ---

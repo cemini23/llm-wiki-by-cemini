@@ -8,9 +8,10 @@ related:
   - sources/eval-multi-wiki-agent-harness-v2-2026-07-03.md
   - entities/tools/agent-skills-eval.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/agentic-awesome-skills.md
 maturity: draft
 created: 2026-07-03
-updated: 2026-07-08
+updated: 2026-10-25
 ---
 
 ## Relations

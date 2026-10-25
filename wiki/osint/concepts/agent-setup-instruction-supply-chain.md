@@ -15,9 +15,10 @@ related:
   - concepts/self-evolving-runtime-defense.md
   - sources/substack-rss-wublock-2026-10-06-september-blockchain-tech.md
   - concepts/k283-feeds-wave.md
+  - sources/arxiv-2610.13651-tofu-orchestrator-fuzzing-2026-10-12.md
 maturity: draft
 created: 2026-07-18
-updated: 2026-10-06
+updated: 2026-10-25
 ---
 
 ## Relations

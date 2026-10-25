@@ -14,9 +14,11 @@ related:
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - entities/tools/skillnet.md
   - concepts/gambling-wiki-federation.md
+  - entities/tools/sportsbook-api-evangelist.md
+  - sources/eval-github-repo-plan-dfs-marl-poker-osint-2026-07-01.md
 maturity: validated
 created: 2026-05-30
-updated: 2026-05-31
+updated: 2026-10-25
 ---
 
 ## Relations

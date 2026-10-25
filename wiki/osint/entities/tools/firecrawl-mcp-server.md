@@ -8,9 +8,11 @@ related:
   - entities/tools/firecrawl.md
   - entities/tools/tavily-mcp.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/brightdata-mcp.md
+  - entities/tools/firecrawl-gov-index.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -7,11 +7,12 @@ related:
   - sources/k283-bedrock-addon-extracts-2026-10-06.md
   - sources/k282-level-editors-tile-tooling-2026-10-05.md
   - meta/cross-wiki-routing.md
+  - sources/inbox-arxiv-reject-batch-2026-10-09.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-10-08
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 ## Raw Concept

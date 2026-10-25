@@ -8,9 +8,10 @@ related:
   - concepts/bankroll-management.md
   - sources/youtube-operator-batch-casino-2026-05-31.md
   - sources/arxiv-2506.16995-mppo-style-preserving-game-agents-2026-07-12.md
+  - entities/tools/mppo.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-07-12
+updated: 2026-10-25
 ---
 
 ## Relations

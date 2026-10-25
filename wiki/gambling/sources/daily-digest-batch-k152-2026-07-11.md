@@ -11,10 +11,11 @@ related:
   - sources/arxiv-2607.07078-forgetting-factor-regret-zero-sum-2026-07-11.md
   - sources/brief-k152-expert-yardstick-forgetting-regret-steals-2026-07-11.md
   - entities/tools/adversarial-coevolution.md
+  - sources/daily-digest-batch-k153-2026-07-12.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-11
-updated: 2026-07-11
+updated: 2026-10-25
 ---
 
 ## Relations

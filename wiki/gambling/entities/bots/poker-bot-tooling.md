@@ -36,9 +36,13 @@ related:
   - sources/arxiv-2608.09389-regret-equilibrium-learning-games-guide-2026-08-12.md
   - sources/arxiv-2608.09256-distributed-team-orchestration-supervisor-2026-08-12.md
   - sources/brief-k166-regret-learning-games-shelf-2026-08-12.md
+  - sources/arxiv-2606.16139-team-zero-sum-games-complexity-2026-06-20.md
+  - sources/brief-k134-ganzfried-ped-deal-games-steals-2026-06-30.md
+  - sources/devfun-poker-researcher-track-email-2026-06-19.md
+  - sources/research-k122-poker-paper-landscape-2026-06-19.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-08-12
+updated: 2026-10-25
 ---
 
 ## Relations

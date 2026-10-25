@@ -10,10 +10,11 @@ related:
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/multi-agent-fictitious-play-llm.md
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
+  - sources/arxiv-takeover-auction-diligence-2606.29457-2026-07-01.md
 maturity: draft
 read_status: read
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-10-25
 clusters: [rl-marl]
 ---
 

@@ -8,9 +8,10 @@ related:
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
   - concepts/computational-genealogy-archival-automation.md
+  - sources/gemini-sellia-calabria-archive-routing-2026-07-11.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-20
+updated: 2026-10-25
 ---
 
 ## Relations

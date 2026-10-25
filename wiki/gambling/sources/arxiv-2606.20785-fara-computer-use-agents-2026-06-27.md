@@ -14,10 +14,13 @@ related:
   - sources/arxiv-2606.26294-red-queen-godel-machine-2026-06-29.md
   - sources/daily-digest-reject-cluster-k132-2026-06-27.md
   - sweeps/2026-06-27-daily.md
+  - sources/arxiv-2606.26027-tool-rl-collapse-supervisory-signals-2026-07-02.md
+  - sources/brief-k133-rqgm-evaluator-steals-2026-06-29.md
+  - sources/brief-k136-tool-rl-collapse-steals-2026-07-02.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-27
-updated: 2026-06-29
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.20785-2606-20785v1-fara-1-5-scalable-learning-environm.pdf
 phase_0_verdict: CONDITIONAL-GO 2026-06-27 — MIT github.com/microsoft/fara (5931★); reference env+verifier pipeline only, not wagering
 ---

@@ -119,9 +119,12 @@ related:
   - sources/arxiv-2607.22511-causalforge-lean-causal-research.md
   - concepts/skill-regression-tax.md
   - sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
+  - concepts/red-queen-controlled-utility-evolution.md
+  - entities/tools/loop-engineering.md
+  - sources/arxiv-red-queen-godel-machine-2606.26294-2026-06-29.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Relations

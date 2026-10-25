@@ -23,9 +23,10 @@ related:
   - concepts/game-ai-rl-augmentation-shelf.md
   - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
+  - sources/github-stronghold-2-scan-2026-06-13.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -7,9 +7,10 @@ related:
   - sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md
   - entities/tools/agentic-awesome-skills.md
   - entities/tools/agent-skills-for-context-engineering.md
+  - entities/tools/autoresearch-genealogy.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Relations

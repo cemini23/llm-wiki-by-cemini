@@ -16,9 +16,12 @@ related:
   - entities/tools/the-odds-api.md
   - sources/arxiv-2604.17194-odds-conversion-emh-2026-08-31.md
   - sources/brief-k168-nfl-season-paper-rss-2026-08-31.md
+  - entities/tools/sharp-football-analysis.md
+  - sources/nfl-week4-tnf-result-postmortem-2026-10-02.md
+  - sources/rss-sharp-football-week4-2026-10-03-04.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-10-10
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -10,12 +10,13 @@ related:
   - entities/tools/godot-mcp-landscape.md
   - sources/inbox-arxiv-reject-batch-2026-06-29.md
   - meta/cross-wiki-routing.md
+  - sources/ramen-aura-15-commercial-shelf-2026-06-26.md
 read_status: read
 source_type: news-digest
 source_url: https://www.vp-land.com/p/unreal-engine-5-8-embeds-an-mcp-server-so-ai-agents-can-drive-the-editor
 maturity: validated
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-10-25
 ---
 
 ## Raw Concept

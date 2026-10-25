@@ -16,10 +16,11 @@ related:
   - sources/arxiv-2607.02389-steerability-constraints-coding-agents-2026-07-06.md
   - sources/arxiv-2607.02453-oss-agent-framework-ecosystem-health-2026-07-06.md
   - sources/arxiv-2607.02467-human-capital-pm-hybrid-forecasting-2026-07-06.md
+  - sources/daily-digest-batch-k149-2026-07-07.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-10-25
 ---
 
 ## Relations

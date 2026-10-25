@@ -10,9 +10,12 @@ related:
   - concepts/poker-hl-analyst-loop.md
   - sources/devfun-poker-researcher-track-email-2026-06-19.md
   - sources/devfun-sandbox-researcher-guide-2026-06-26.md
+  - sources/brief-k122-poker-researcher-track-plan-2026-06-19.md
+  - sources/brief-k123-researcher-jun21-checklist-2026-06-20.md
+  - sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
 maturity: draft
 created: 2026-06-19
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

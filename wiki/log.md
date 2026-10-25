@@ -12,6 +12,14 @@ updated: 2026-10-23
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
 
+## [2026-10-25] tooling | wiki_lint backlink fixer repaired, debt halved
+
+- **Two defects.** The fixer wrote gap keys verbatim. A key `osint/sources/x.md` written into an osint page resolves to `wiki/osint/osint/sources/x.md`, which dangles — that is why `--apply` raised dangling links from 65 to 974. It also proposed `sweeps/` targets forever, because those pages have no frontmatter and can never hold a `related:` block.
+- **Fixes.** `_related_ref()` renders the reference the resolver accepts: bare domain-relative path inside a domain, `@alias/path` across domains. `alias_for_domain()` reads the alias from the federation table, so `cybersec` maps to `cybersecurity-wiki`. Frontmatter-less targets are now skipped and counted, not proposed.
+- **Applied.** 1,097 backlinks across 638 target pages. Bidirectional gaps **2,193 → 1,276**. Dangling `related:` held at **6** — no regression this time. 124 hub targets stay skipped by design; 69 sweeps targets are skipped as unfixable.
+- **Converged.** A second run proposes 0, so the fixer is now idempotent.
+- **Repaired.** Three pages that the earlier broken run had given duplicate `related:` keys.
+
 ## [2026-10-25] tooling | digest fan-out and archive split fixed
 
 - **Digest fan-out.** `scripts/daily_research_config.yaml` now gives every `paper_queries` and `queries` cluster a `wikis:` list. `filter_for_wiki()` in `daily_research_digest_run.py` keeps only the entries naming the running domain. Default for an entry with no `wikis` key is **osint only**, so a new query cannot fan out by omission.

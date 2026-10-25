@@ -8,10 +8,11 @@ related:
   - concepts/castle-sim-rts-micromanagement-steals.md
   - concepts/devfun-researcher-track-readiness-2026-06.md
   - sources/arxiv-hrl-influence-map-starcraft-2606.30092-2026-06-30.md
+  - sources/arxiv-2607.00190-latent-maps-performance-2026-07-03.md
 maturity: draft
 read_status: read
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-10-25
 clusters: [game-dev, agent-harness]
 ---
 

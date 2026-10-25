@@ -9,9 +9,11 @@ related:
   - concepts/prediction-market-statistical-arbitrage.md
   - concepts/instrumental-probability-learnable-alpha.md
   - entities/platforms/kalshi.md
+  - concepts/prediction-market-structural-volatility-dr-as.md
+  - sources/arxiv-2607.08199-prediction-market-volatility-structural-2026-07-14.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -11,11 +11,12 @@ related:
   - sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md
   - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
   - sources/inbox-arxiv-reject-batch-2026-06-26.md
+  - sources/godot-47-release-shelf-2026-06-25.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 ---
 
 ## Raw Concept

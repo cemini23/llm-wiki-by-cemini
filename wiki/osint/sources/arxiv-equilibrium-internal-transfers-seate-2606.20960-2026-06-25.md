@@ -9,10 +9,12 @@ related:
   - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
   - sources/arxiv-equilibrium-efgsas-2606.13093-2026-06-18.md
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/self-enforcing-transfer-equilibrium.md
+  - sources/arxiv-moral-geometry-nash-kantian-2606.21967-2026-06-25.md
 maturity: draft
 read_status: read
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 clusters: [rl-marl, llm-agents]
 ---
 

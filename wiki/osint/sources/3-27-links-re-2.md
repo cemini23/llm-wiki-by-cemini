@@ -11,10 +11,11 @@ related:
   - sources/ssrn-3247865.md
   - concepts/mcp-tool-marketplace.md
   - sources/signa.md
+  - entities/tools/strix.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
-updated: 2026-05-11
+updated: 2026-10-25
 ---
 
 ## Relations

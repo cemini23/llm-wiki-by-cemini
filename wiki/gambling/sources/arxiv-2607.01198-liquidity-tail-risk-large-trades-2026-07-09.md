@@ -13,10 +13,12 @@ related:
   - sources/brief-k150-pm-liquidity-proper-betting-steals-2026-07-09.md
   - sources/daily-digest-batch-k150-2026-07-09.md
   - sweeps/2026-07-09-daily.md
+  - concepts/pm-structural-volatility.md
+  - sources/arxiv-2607.08199-pm-structural-volatility-kalshi-2026-07-10.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2607.01198-2607-01198v1-when-large-trades-are-not-news-liqu.pdf
 phase_0_verdict: REFERENCE 2026-07-09 — paper-only; LOB theory for PM CLOB liquidity-tail ambiguity
 ---

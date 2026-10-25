@@ -11,9 +11,10 @@ related:
   - concepts/macro-weather-regime.md
   - concepts/macro-rotation-momentum-signals-2026-05.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/macro-charts-paid-forwards-vincent-2026-05-28-07-07.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-28
+updated: 2026-10-25
 ---
 
 ## Relations

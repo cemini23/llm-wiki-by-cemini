@@ -10,9 +10,12 @@ related:
   - sources/eval-github-repository-evaluation-plan-2026-08-10.md
   - sources/arxiv-2608.09485-diffcoop-civic-2026-08-11.md
   - sources/arxiv-2608.09857-agentic-harnesses-robot-2026-08-11.md
+  - sources/arxiv-2610.10426-cotrace-2026-10-08.md
+  - sources/newsletter-rss-latent-space-2026-10-07-cloud-native-harness.md
+  - sources/newsletter-rss-latent-space-2026-10-12-anthropic-dynamic-workflows.md
 maturity: draft
 created: 2026-08-10
-updated: 2026-08-20
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -14,10 +14,12 @@ related:
   - sources/web-tech-insider-nfl-betting-strategy-2026-06-20.md
   - sweeps/2026-06-20-tier2-w8-nfl.md
   - sources/brief-k169-nfl-week1-ready-2026-08-31.md
+  - entities/tools/fantasylabs-dfs.md
+  - entities/tools/stokastic-dfs.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-20
-updated: 2026-08-31
+updated: 2026-10-25
 ---
 
 ## Relations

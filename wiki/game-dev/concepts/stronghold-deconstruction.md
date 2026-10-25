@@ -14,9 +14,11 @@ related:
   - concepts/stronghold-2-systems-inventory.md
   - sources/northgard-economy-case-study-2018.md
   - sources/stronghold-hd-manual-2001.md
+  - sources/chris-tutorials-grid-placement-godot-shelf-2026-07-11.md
+  - sources/stronghold-invasion-vs-freebuild-shelf-2026-07-12.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-10-25
 ---
 
 ## Relations

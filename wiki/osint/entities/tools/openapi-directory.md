@@ -8,9 +8,10 @@ related:
   - sources/eval-github-url-revenue-infra-cli-2026-08-01.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/gpuology-genealogy-agent-kit.md
+  - sources/eval-url-revenue-plan-20url-2026-07-08.md
 maturity: draft
 created: 2026-08-01
-updated: 2026-08-01
+updated: 2026-10-25
 harness_verb: FILE
 ---
 

@@ -9,9 +9,10 @@ related:
   - sources/arxiv-2608.10693-fed-speaks-vol-surface-2026-08-12.md
   - concepts/xsp-lane-trading-framework.md
   - concepts/xsp-vol-regime-gates.md
+  - sources/arxiv-2610.03849-beneath-the-vix-2026-10-06.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-20
+updated: 2026-10-25
 ---
 
 ## Relations

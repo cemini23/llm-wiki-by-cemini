@@ -10,10 +10,11 @@ related:
   - concepts/kalshi-michigan-sports-injunction-2026-06.md
   - sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md
   - sources/daily-digest-batch-k182-2026-10-07.md
+  - sources/rss-pm-legal-2026-10-07-09.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/
 phase_0_verdict: REFERENCE — federal rulemaking + state enforcement; awareness only, no pm scp
 wire_status: policy_wired

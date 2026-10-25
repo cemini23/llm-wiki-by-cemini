@@ -43,9 +43,12 @@ related:
   - entities/tools/typesafe-mcp.md
   - entities/tools/pi-jev.md
   - concepts/jev-workflow-gates.md
+  - concepts/typed-judgement-desk-pattern.md
+  - sources/substack-rss-latent-space-2026-10-10-typesafe-jev-100m-arr.md
+  - sources/x-post-savipww-megabrain-jev-grok-bots-2026-09-23.md
 maturity: draft
 created: 2026-09-17
-updated: 2026-09-22
+updated: 2026-10-25
 phase_0_verdict: GO REFERENCE
 harness_verb: WIRE
 wire_status: runtime_wired

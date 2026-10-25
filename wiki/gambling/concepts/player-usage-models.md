@@ -11,9 +11,12 @@ related:
   - sources/sharp-nfl-rb-prop-unders-2026-08-13.md
   - sources/rotoviz-preseason-paywall-2026-08-14.md
   - concepts/nfl-dfs-field-edge-priors.md
+  - concepts/season-long-fantasy-waiver-wire.md
+  - sources/rss-rotoballer-w5-rb-waiver-2026-10-05.md
+  - sources/rss-rotoballer-week5-6-2026-10-11-12.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-09-27
+updated: 2026-10-25
 ---
 
 ## Relations

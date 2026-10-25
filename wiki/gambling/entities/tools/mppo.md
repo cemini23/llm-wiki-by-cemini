@@ -9,9 +9,10 @@ related:
   - entities/games/blackjack.md
   - sources/arxiv-2506.16995-mppo-style-preserving-game-agents-2026-07-12.md
   - sources/brief-k153-mppo-style-pm-evidence-steals-2026-07-12.md
+  - sources/daily-digest-batch-k153-2026-07-12.md
 maturity: draft
 created: 2026-07-12
-updated: 2026-07-12
+updated: 2026-10-25
 phase_0_verdict: CONDITIONAL-GO 2026-07-12 — no LICENSE; methods reference
 ---
 

@@ -7,9 +7,10 @@ related:
   - concepts/swarmer-prince-rollup-thesis.md
   - sources/swarmer-sourced-dossier-2026-10-08.md
   - sources/swarmer-ratel-revenue-check-2026-10-08.md
+  - sources/substack-rss-outlier-weekly-2026-10-12-swarmer-revenue.md
 maturity: draft
 created: 2026-10-09
-updated: 2026-10-10
+updated: 2026-10-25
 ---
 
 ## Relations

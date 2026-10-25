@@ -10,9 +10,12 @@ related:
   - concepts/nfl-dfs-data-sources.md
   - sources/research-diy-dfs-model-master-plan-2026-06-20.md
   - concepts/nfl-dfs-field-edge-priors.md
+  - entities/tools/sharp-football-analysis.md
+  - sources/nfl-week4-slate-env-2026-10-02.md
+  - sources/research-nfl-historical-odds-2026-06-20.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-09-27
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -5,9 +5,11 @@ tags: [tool, hardware, gpu, xsp, k157, watch]
 keywords: [on-prem inference, 8x4090, MIT, capex]
 related:
   - sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md
+  - entities/tools/colibri.md
+  - sources/eval-multi-wiki-repo-evaluation-strategy-2026-07-11.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -10,9 +10,11 @@ related:
   - entities/bots/README.md
   - sources/arxiv-2607.06854-lightweight-game-agent-expert-yardstick-2026-07-11.md
   - sources/brief-k152-expert-yardstick-forgetting-regret-steals-2026-07-11.md
+  - sources/arxiv-2610-fictitious-play-trio-2026-10-07.md
+  - sources/daily-digest-batch-k152-2026-07-11.md
 maturity: draft
 created: 2026-07-11
-updated: 2026-07-11
+updated: 2026-10-25
 phase_0_verdict: CONDITIONAL-GO 2026-07-11 — no LICENSE; methods + eval harness reference
 ---
 

@@ -6,10 +6,12 @@ keywords: [PURR, HYPE, mNAV, treasury, HIP3]
 related:
   - entities/platforms/hyperliquid.md
   - entities/tickers/hype.md
+  - concepts/capital-flows-sofr-conviction-framework.md
+  - sources/substack-rss-capital-flows-2026-07-10-trading-investing-framework.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Raw Concept

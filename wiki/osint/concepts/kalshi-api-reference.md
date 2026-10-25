@@ -19,9 +19,10 @@ related:
   - sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
   - sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md
   - "@gambling-wiki/entities/sports/wnba-betting.md"
+  - concepts/kalshi-implied-macro-belief-distributions.md
 maturity: validated
 created: 2026-05-05
-updated: 2026-08-13
+updated: 2026-10-25
 ---
 
 ## Relations

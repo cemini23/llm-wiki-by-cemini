@@ -8,9 +8,10 @@ related:
   - concepts/skill-misevolution.md
   - sources/substack-rss-addy-osmani-2026-08-14-practical-loop-engineering.md
   - sources/newsletter-rss-pragmatic-engineer-2026-07-14-what-is-loop-engineering.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-08-25-ramp-inspect-agent.md
 maturity: draft
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-10-25
 read_status: read
 ---
 

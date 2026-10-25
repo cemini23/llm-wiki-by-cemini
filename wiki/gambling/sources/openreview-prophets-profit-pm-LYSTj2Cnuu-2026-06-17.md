@@ -21,10 +21,12 @@ related:
   - sources/arxiv-2607.01377-kyle-liquidity-premium-investment-horizons-2026-07-09.md
   - sources/brief-k150-pm-liquidity-proper-betting-steals-2026-07-09.md
   - @osint-wiki/concepts/market-informedness-market-making.md
+  - entities/bots/predict-raven.md
+  - sources/arxiv-2607.03015-belief-to-trade-pm-agents-predict-raven-2026-07-10.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-17
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Relations

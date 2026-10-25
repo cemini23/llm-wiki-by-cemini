@@ -9,10 +9,11 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/openclaw-security-taxonomy.md
   - concepts/active-project-research-routing.md
+  - entities/tools/hf-mcp-server.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 clusters: [rl-marl, poker, wiki-tooling]
 ---
 

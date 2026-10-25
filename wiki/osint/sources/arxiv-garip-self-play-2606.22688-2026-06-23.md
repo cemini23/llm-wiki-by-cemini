@@ -10,10 +10,13 @@ related:
   - concepts/devfun-poker-agent-challenge-2026.md
   - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
   - sources/arxiv-agentic-time-machine-2606.21013-2026-06-23.md
+  - concepts/emagnet-parameter-space-ema-self-play.md
+  - sources/arxiv-emagnet-parameter-space-ema-2606.23995-2026-06-25.md
+  - sources/arxiv-irumai-indian-rummy-ppo-2606.21975-2026-06-25.md
 maturity: draft
 read_status: read
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-10-25
 clusters: [rl-marl, llm-agents]
 ---
 

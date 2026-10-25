@@ -19,9 +19,13 @@ related:
   - entities/tools/code-world-models.md
   - sources/arxiv-2607.27035-ccs-mccfr-2026-07-30.md
   - sources/brief-k164-ccs-mccfr-chance-sampling-steals-2026-07-30.md
+  - sources/arxiv-2607.01498-policy-representation-ssl-poker-2026-07-07.md
+  - sources/arxiv-2610-fictitious-play-trio-2026-10-07.md
+  - sources/brief-k149-policy-ssl-advent-poker-steals-2026-07-07.md
+  - sources/brief-k152-expert-yardstick-forgetting-regret-steals-2026-07-11.md
 maturity: validated
 created: 2026-06-01
-updated: 2026-07-30
+updated: 2026-10-25
 laptop_install: VERIFIED 2026-06-01 — OSINT `.local/venv-gambling-research` (rlcard 1.2.0); run `gambling_research_venv.sh` in OSINT repo
 phase_0_verdict: ADOPT 2026-06-26 — K130 refresh; MIT; offline Leduc/limit-HU baselines only
 ---

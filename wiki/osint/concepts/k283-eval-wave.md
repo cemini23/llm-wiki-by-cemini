@@ -25,9 +25,10 @@ related:
   - entities/tools/void-minecraft-proxy.md
   - entities/tools/bedrock-ui-animations.md
   - entities/tools/simple-money-minecraft-bedrock-addon.md
+  - concepts/k284-eval-wave.md
 maturity: draft
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-25
 harness_verb: FILE
 wire_status: policy_wired
 ---

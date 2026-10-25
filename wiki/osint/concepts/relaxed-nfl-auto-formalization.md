@@ -11,9 +11,10 @@ related:
   - concepts/rlvf-verifier-feedback-training.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/llm-agent-systems.md
 maturity: draft
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -13,9 +13,11 @@ related:
   - sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md
   - sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md
   - entities/infrastructure/cemini-egress-fi.md
+  - entities/tools/background-agents.md
+  - entities/tools/keyed-lock.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-09-18
+updated: 2026-10-25
 ---
 
 ## Relations

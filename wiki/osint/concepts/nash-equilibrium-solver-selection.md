@@ -16,9 +16,10 @@ related:
   - concepts/team-zero-sum-games-complexity.md
   - concepts/takeover-auction-diligence-solvers.md
   - sources/arxiv-takeover-auction-diligence-2606.29457-2026-07-01.md
+  - concepts/projected-exploitability-descent.md
 maturity: draft
 created: 2026-06-30
-updated: 2026-07-04
+updated: 2026-10-25
 ---
 
 ## Relations

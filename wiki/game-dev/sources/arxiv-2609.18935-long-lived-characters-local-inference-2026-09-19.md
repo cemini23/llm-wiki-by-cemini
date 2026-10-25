@@ -12,12 +12,13 @@ related:
   - sources/morganpage-local-npc-dialogue-2026.md
   - sources/ixie-agentic-npc-balance-2026.md
   - entities/projects/castle-sim.md
+  - sources/arxiv-2609.27606-state-grounded-conditioning-2026-09-24.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2609.18935
 maturity: validated
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-25
 ---
 
 ## Raw Concept

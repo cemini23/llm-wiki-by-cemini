@@ -6,10 +6,12 @@ keywords: [nflverse, the-odds-api, fanduel, draftkings, espn, open-meteo, owners
 related:
   - concepts/nfl-dfs-data-sources.md
   - entities/tools/the-odds-api.md
+  - concepts/pickem-data-sources.md
+  - concepts/pickem-legal-and-tos-posture.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

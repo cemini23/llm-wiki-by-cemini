@@ -16,9 +16,10 @@ related:
   - entities/tools/monid.md
   - entities/tools/refero-styles.md
   - entities/tools/21st-dev.md
+  - concepts/k285-eval-wave.md
 maturity: draft
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-25
 harness_verb: FILE
 wire_status: policy_wired
 ---

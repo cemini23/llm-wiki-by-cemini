@@ -5,10 +5,11 @@ tags: [source, arxiv, game-dev, agent-harness, castle-sim, k151]
 keywords: [GameEngineBench, C++, Godot, Unreal, coding agents, Nitrode]
 related:
   - concepts/active-project-research-routing.md
+  - sources/arxiv-multiplayer-world-models-2607.05352-2026-07-09.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Raw Concept

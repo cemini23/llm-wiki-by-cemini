@@ -13,9 +13,12 @@ related:
   - sources/arxiv-2607.08199-pm-structural-volatility-kalshi-2026-07-10.md
   - sources/arxiv-2607.01198-liquidity-tail-risk-large-trades-2026-07-09.md
   - sources/brief-k151-pm-belief-to-trade-volatility-steals-2026-07-10.md
+  - concepts/gambling-bot-architecture.md
+  - entities/bots/predict-raven.md
+  - sources/daily-digest-batch-k151-2026-07-10.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Relations

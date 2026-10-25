@@ -10,10 +10,11 @@ related:
   - entities/platforms/polymarket.md
   - entities/platforms/kalshi.md
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
+  - sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md
 maturity: draft
 read_status: read
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-10-25
 clusters: [prediction-markets, polymarket, kalshi]
 ---
 

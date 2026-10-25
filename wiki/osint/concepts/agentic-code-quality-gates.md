@@ -12,9 +12,12 @@ related:
   - entities/tools/pi-earendil.md
   - sources/substack-rss-pragmatic-engineer-2026-10-06-state-of-tech-2026.md
   - concepts/k284-feeds-wave.md
+  - concepts/k285-feeds-wave.md
+  - sources/arxiv-2610.13647-a-saw-agentic-software-architecture-2026-10-12.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-10-07-sam-newman-resilience.md
 maturity: draft
 created: 2026-08-08
-updated: 2026-10-07
+updated: 2026-10-25
 ---
 
 ## Relations

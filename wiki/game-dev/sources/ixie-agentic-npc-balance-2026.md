@@ -6,12 +6,13 @@ keywords: [agentic-npc, guardrails, memory, liveops, balance]
 related:
   - concepts/agentic-npc-design-guardrails.md
   - concepts/llm-npc-runtime-ai-shelf.md
+  - sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md
 read_status: read
 source_type: blog
 source_url: https://www.ixiegaming.com/blog/agentic-npcs-without-breaking-balance/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-10-25
 ---
 
 ## Raw Concept

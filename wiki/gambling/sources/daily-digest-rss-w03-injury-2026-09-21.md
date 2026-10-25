@@ -8,10 +8,12 @@ related:
   - sources/daily-digest-batch-k174-2026-09-21.md
   - sources/nfl-week2-saturday-deltas-2026-09-19.md
   - concepts/dfs-injury-and-news-workflow.md
+  - sources/daily-digest-rss-nfl-w03-lines-2026-09-23.md
+  - sources/nfl-week3-injury-research-2026-09-23.md
 maturity: draft
 read_status: stub
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-10-25
 phase_0_verdict: REFERENCE 2026-09-21 — RSS title-only; Week 3 awareness
 wire_status: policy_wired
 ---

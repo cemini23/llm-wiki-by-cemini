@@ -39,9 +39,12 @@ related:
   - sources/research-nfl-dfs-id-mapping-2026-06-20.md
   - sources/research-nfl-historical-odds-2026-06-20.md
   - "@osint-wiki/concepts/nfl-coherence-risk-features.md"
+  - concepts/nfl-weekly-slate-hub-workflow.md
+  - sources/brief-k128-bbm7-draft-copilot-hub-2026-06-24.md
+  - sources/web-nfl-dfs-correlation-stacking-2026-06-20.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-09-27
+updated: 2026-10-25
 ---
 
 ## Relations

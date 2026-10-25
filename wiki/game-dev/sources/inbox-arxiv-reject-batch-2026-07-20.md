@@ -9,11 +9,12 @@ related:
   - concepts/rts-networking-deferred.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-07-28.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-20
-updated: 2026-07-20
+updated: 2026-10-25
 ---
 
 ## Raw Concept

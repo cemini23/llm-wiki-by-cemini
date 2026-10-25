@@ -7,9 +7,10 @@ related:
   - sources/eval-multi-wiki-resource-plan-k248-2026-08-28.md
   - concepts/k248-atto-manuscript-wave.md
   - concepts/cemini-license-posture.md
+  - sources/eval-github-revenue-evaluation-k250-2026-08-29.md
 maturity: draft
 created: 2026-08-28
-updated: 2026-08-28
+updated: 2026-10-25
 harness_verb: KEEP
 wire_note: MIT Extract REFERENCE for Atto FIND 3D; no Integrate GO runtime
 ---

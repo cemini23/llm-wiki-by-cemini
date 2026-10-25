@@ -11,9 +11,10 @@ related:
   - entities/tools/git-rewind.md
   - entities/tools/gitnexus.md
   - entities/tools/ttok.md
+  - sources/eval-tool-routing-hermes-plan-2026-06-27.md
 maturity: validated
 created: 2026-05-04
-updated: 2026-05-14
+updated: 2026-10-25
 ---
 
 ## Install state — installed laptop-side 2026-05-04

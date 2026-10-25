@@ -12,10 +12,12 @@ related:
   - sources/brief-k152-expert-yardstick-forgetting-regret-steals-2026-07-11.md
   - sources/daily-digest-batch-k152-2026-07-11.md
   - sweeps/2026-07-11-daily.md
+  - sources/arxiv-2506.16995-mppo-style-preserving-game-agents-2026-07-12.md
+  - sources/arxiv-2607.07078-forgetting-factor-regret-zero-sum-2026-07-11.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-11
-updated: 2026-07-11
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2607.06854-a-gold-standard-study-of-what-makes-a-lightweigh.pdf
 phase_0_verdict: CONDITIONAL-GO 2026-07-11 — github.com/Nikelroid/adversarial-coevolution (2★, no LICENSE); expert-yardstick + Leduc methodology
 ---

@@ -12,10 +12,12 @@ related:
   - concepts/custom-agent-methodology.md
   - concepts/opponent-modeling-imperfect-info.md
   - entities/platforms/devfun-poker-arena.md
+  - entities/bots/cemini-devfun-poker-agent.md
+  - sources/arxiv-2508-17671-consistent-opponent-modeling.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 cross-wiki-source: "briefs/2026-06-26_k131-toolbench-ganzfried-steals.md"
 ---
 

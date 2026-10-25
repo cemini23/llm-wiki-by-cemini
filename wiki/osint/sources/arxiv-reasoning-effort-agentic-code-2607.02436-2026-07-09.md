@@ -6,10 +6,13 @@ keywords: [reasoning effort, xHigh, tool access, first-try reliability, observat
 related:
   - concepts/wiki-tooling-evaluation.md
   - sources/newsletter-rss-latent-space-2026-07-08-harness-engineering-rsi.md
+  - concepts/polyworkbench-multilingual-harness-eval.md
+  - sources/arxiv-polyworkbench-2607.06008-2026-07-10.md
+  - sources/substack-rss-addy-osmani-2026-07-09-own-the-outer-loop.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Relations

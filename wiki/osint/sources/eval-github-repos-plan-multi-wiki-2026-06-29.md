@@ -16,9 +16,10 @@ related:
   - entities/tools/mattpocock-skills.md
   - sources/eval-multi-wiki-discord-link-2026-06-28.md
   - concepts/llm-agent-systems.md
+  - sources/eval-github-repo-plan-dfs-marl-poker-osint-2026-07-01.md
 read_status: read
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-10-25
 clusters: [agent-harness, wiki-tooling, osint, cybersec]
 ---
 

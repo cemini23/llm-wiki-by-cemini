@@ -7,9 +7,10 @@ related:
   - concepts/guruwatcher-macro-watches.md
   - sources/substack-rss-capital-flows-2026-08-18-next-stage-macro.md
   - sources/newsletter-rss-latent-space-2026-08-19-memory-prices.md
+  - sources/substack-rss-klement-2026-08-26-higher-deficits-inflation.md
 maturity: draft
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-10-25
 read_status: read
 ---
 

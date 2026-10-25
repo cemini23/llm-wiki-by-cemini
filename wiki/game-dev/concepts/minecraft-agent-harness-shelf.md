@@ -11,9 +11,12 @@ related:
   - sources/arxiv-2609.40324-cogentic-proof-harness-2026-10-03.md
   - sources/minecraft-modding-deep-research-2026-10-05.md
   - sources/arxiv-2610.04672-masbench-partial-observability-2026-10-07.md
+  - concepts/agentic-npc-design-guardrails.md
+  - sources/arxiv-2610.03253-default-following-collective-action-2026-10-05.md
+  - sources/minecraft-social-scan-2026-10-05.md
 maturity: validated
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-25
 ---
 
 ## Relations

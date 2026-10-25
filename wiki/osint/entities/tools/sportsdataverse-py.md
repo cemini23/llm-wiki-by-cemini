@@ -9,9 +9,10 @@ related:
   - sources/github-nfl-repo-eval-cemini-2026-06-21.md
   - concepts/active-project-research-routing.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/espn-api.md
 maturity: draft
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-10-25
 ---
 
 ## Relations

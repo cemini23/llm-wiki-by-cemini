@@ -15,10 +15,13 @@ related:
   - sources/research-k122-poker-paper-landscape-2026-06-19.md
   - sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
   - sources/devfun-sandbox-researcher-guide-2026-06-26.md
+  - sources/brief-k122-poker-researcher-track-plan-2026-06-19.md
+  - sources/brief-k124-mafp-memory-poker-steals-2026-06-21.md
+  - sources/brief-k125-eval-gate-discipline-2026-06-22.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-20
-updated: 2026-06-26
+updated: 2026-10-25
 cross-wiki-source: "briefs/2026-06-20_k123-researcher-track-jun21-checklist.md"
 ---
 

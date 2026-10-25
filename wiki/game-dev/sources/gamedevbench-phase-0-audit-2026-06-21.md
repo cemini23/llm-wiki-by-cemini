@@ -18,12 +18,13 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-06-21.md
   - sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
   - meta/cross-wiki-routing.md
+  - sources/arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24.md
 read_status: read
 source_type: operator-audit
 source_url: https://github.com/waynchi/gamedevbench
 maturity: validated
 created: 2026-06-21
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Raw Concept

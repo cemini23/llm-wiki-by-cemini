@@ -10,9 +10,10 @@ related:
   - entities/sports/nfl-betting.md
   - sources/rss-rotoballer-w5-rb-waiver-2026-10-05.md
   - sources/daily-digest-batch-k181-2026-10-06.md
+  - sources/rss-rotoballer-week5-6-2026-10-11-12.md
 maturity: draft
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-25
 ---
 
 ## Relations

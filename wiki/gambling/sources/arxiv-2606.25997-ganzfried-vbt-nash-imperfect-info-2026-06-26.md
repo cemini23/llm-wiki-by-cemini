@@ -14,10 +14,12 @@ related:
   - sources/arxiv-2606.29169-ganzfried-ped-nash-imperfect-info-2026-06-30.md
   - sources/arxiv-2509.25618-ganzfried-qp-nash-imperfect-info-2026-07-06.md
   - sweeps/2026-06-26-daily.md
+  - sources/arxiv-2606.29457-takeover-auction-diligence-games-2026-06-30.md
+  - sources/brief-k134-ganzfried-ped-deal-games-steals-2026-06-30.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-26
-updated: 2026-06-30
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.25997-pdf-variable-bound-tightening-for-nash-equilibri.pdf
 phase_0_verdict: REFERENCE 2026-06-26 — exact Nash solver theory; no wagering bot adoption path
 ---

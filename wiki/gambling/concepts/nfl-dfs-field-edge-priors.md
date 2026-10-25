@@ -11,9 +11,10 @@ related:
   - concepts/player-usage-models.md
   - concepts/team-volume-pace-model.md
   - concepts/implied-team-totals-dfs.md
+  - sources/eagles-bears-parlay-research-2026-09-28.md
 maturity: draft
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-10-25
 ---
 
 ## Relations

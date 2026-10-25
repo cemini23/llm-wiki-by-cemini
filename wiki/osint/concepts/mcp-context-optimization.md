@@ -19,9 +19,11 @@ related:
   - sources/tool-attention.md
   - sources/arxiv-inference-scaling-llms-2605.19775.md
   - concepts/llm-routing-deepseek-openrouter-failover.md
+  - concepts/self-compacting-language-model-agents.md
+  - entities/tools/headroom.md
 maturity: draft
 created: 2026-05-09
-updated: 2026-06-05
+updated: 2026-10-25
 ---
 
 ## Relations

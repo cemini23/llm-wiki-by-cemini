@@ -5,9 +5,10 @@ tags: [source, newsletter-rss, crypto, vc, wublock, k147]
 keywords: [wu-blockchain, crypto-vc, RootData, DeFi, Morpho, Canton]
 related:
   - entities/platforms/hyperliquid.md
+  - sources/substack-rss-wublock-2026-07-07-suis-bet-on-payments-stablecoins-and-ai-agents.md
 maturity: draft
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-10-25
 read_status: skimmed
 ---
 

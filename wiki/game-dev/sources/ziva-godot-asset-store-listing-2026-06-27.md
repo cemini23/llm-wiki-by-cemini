@@ -8,12 +8,13 @@ related:
   - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
   - sources/inbox-arxiv-reject-batch-2026-07-02.md
   - meta/cross-wiki-routing.md
+  - concepts/ai-game-dev-tool-stack-2026.md
 read_status: read
 source_type: news-digest
 source_url: https://store.godotengine.org/asset/ziva/ziva/
 maturity: validated
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-10-25
 ---
 
 ## Raw Concept

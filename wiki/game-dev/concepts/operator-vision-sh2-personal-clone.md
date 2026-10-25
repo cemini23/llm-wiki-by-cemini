@@ -28,9 +28,10 @@ related:
   - sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
   - entities/tools/sh2-mp-ai-enabler.md
   - concepts/stronghold-2-visual-qol-presets.md
+  - sources/mandate-order-city-walls-shelf-2026-06-25.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-18
+updated: 2026-10-25
 ---
 
 ## Relations

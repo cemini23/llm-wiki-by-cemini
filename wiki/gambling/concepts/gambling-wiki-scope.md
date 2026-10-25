@@ -14,9 +14,11 @@ related:
   - meta/gambling-bot-ingest-rubric.md
   - meta/daily-research-digest-cadence.md
   - sources/brief-k93-federated-digest-2026-06-01.md
+  - sources/daily-digest-rss-industry-2026-09-24.md
+  - sources/rss-sbc-nfl-midnite-everton-2026-10-08-09.md
 maturity: core
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-10-25
 ---
 
 ## Relations

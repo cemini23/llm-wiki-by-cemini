@@ -12,9 +12,10 @@ related:
   - concepts/cemini-license-posture.md
   - sources/llms-get-lost-multi-turn-laban-2025.md
   - concepts/llms-get-lost-mitigation-audit.md
+  - concepts/reviewer-passive-injection-corpus.md
 maturity: draft
 created: 2026-05-11
-updated: 2026-05-13
+updated: 2026-10-25
 clusters: [llm-agents, methodology]
 ---
 

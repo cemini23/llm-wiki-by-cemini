@@ -10,10 +10,11 @@ related:
   - concepts/continual-harness-online-self-improvement.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/devfun-poker-agent-challenge-2026.md
+  - sources/arxiv-red-queen-godel-machine-2606.26294-2026-06-29.md
 maturity: draft
 read_status: read
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-10-25
 clusters: [llm-agents]
 ---
 

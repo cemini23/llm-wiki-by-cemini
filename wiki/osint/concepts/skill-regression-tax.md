@@ -17,9 +17,10 @@ related:
   - concepts/computational-genealogy-archival-automation.md
   - concepts/verifier-deployment-gap.md
   - sources/arxiv-2607.24300-self-authored-verification.md
+  - concepts/document-processing-pipeline-scale-patterns.md
 maturity: draft
 created: 2026-07-27
-updated: 2026-07-28
+updated: 2026-10-25
 clusters: [k196-ingest]
 ---
 

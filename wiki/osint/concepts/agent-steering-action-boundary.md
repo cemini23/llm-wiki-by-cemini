@@ -14,9 +14,10 @@ related:
   - concepts/intent-not-form-refusal.md
   - sources/arxiv-2608.14380-agentrewind-2026-08-17.md
   - sources/arxiv-2608.14490-twin-2026-08-17.md
+  - concepts/trading-strategy-autopsy-loop.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-08-17
+updated: 2026-10-25
 ---
 
 ## Relations

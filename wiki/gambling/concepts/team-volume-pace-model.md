@@ -9,9 +9,11 @@ related:
   - concepts/dfs-weather-adjustments.md
   - concepts/diy-nfl-dfs-model-architecture.md
   - concepts/nfl-dfs-field-edge-priors.md
+  - entities/tools/sharp-football-analysis.md
+  - sources/rss-sharp-football-week4-2026-10-03-04.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-09-27
+updated: 2026-10-25
 ---
 
 ## Relations

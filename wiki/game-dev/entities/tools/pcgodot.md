@@ -9,9 +9,10 @@ related:
   - concepts/scope-tiers.md
   - entities/projects/castle-sim.md
   - sources/pcgodot-phase-0-audit-2026-06-30.md
+  - concepts/ai-game-dev-tool-stack-2026.md
 maturity: validated
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-10-25
 ---
 
 ## Relations

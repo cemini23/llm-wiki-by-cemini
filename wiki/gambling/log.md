@@ -1397,3 +1397,10 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2607-28520-cs-rnr-opp
 - Updated `wiki/index.md`, `ROADMAP.md` W8
 - Rationale and evidence: `briefs/2026-10-04_w05-research-plan.md`; `CeminiDFS/briefs/2026-10-04_w04-build-postmortem.md`; `CeminiDFS/briefs/handoffs/2026-10-04_k283-team-coverage-darts.md`
 - W4 postmortem **P2 closed** — false positive. nflverse pbp puts Kenneth Walker III on KC and Isaiah Likely on NYG for weeks 1–3
+
+## [2026-10-25] tooling | backlink fixes touched this domain
+
+- `wiki_lint.py --fix-bidirectional` appended missing `related:` backlinks across gambling pages after the path-rendering bug was fixed. No content changed; only `related:` entries and `updated:` dates.
+- Two source pages had no index row: `daily-digest-reject-cluster-k123-2026-06-20`, `daily-digest-reject-cluster-k124-2026-06-21`. Rows added.
+- Stale `[NEEDS VERIFICATION]` tags remain on `underdog-pickem` (54d), `nhl-betting` (25d), `fantasylabs-dfs` (127d), and the fictitious-play trio source (18d). Not resolved here.
+

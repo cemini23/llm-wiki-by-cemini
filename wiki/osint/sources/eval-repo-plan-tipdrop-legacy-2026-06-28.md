@@ -7,10 +7,11 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/cemini-license-posture.md
   - sources/eval-multi-wiki-discord-link-2026-06-28.md
+  - sources/eval-github-batch-unusualwhales-2026-06-28.md
 maturity: draft
 read_status: read
 created: 2026-06-28
-updated: 2026-06-28
+updated: 2026-10-25
 clusters: [wiki-tooling]
 ---
 

@@ -6,9 +6,10 @@ keywords: [gbrain, garrytan, agent brain, memory router, multi-modal, entity ext
 related:
   - sources/tool-evaluation-multi-wiki-audit-may-2026.md
   - sources/eval-tool-routing-hermes-plan-2026-06-27.md
+  - entities/tools/graphiti.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-06-27
+updated: 2026-10-25
 ---
 
 ## Relations

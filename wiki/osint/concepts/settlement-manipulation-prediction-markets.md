@@ -11,9 +11,10 @@ related:
   - concepts/polymarket-updown-bot-taxonomy.md
   - entities/platforms/polymarket.md
   - entities/platforms/kalshi.md
+  - concepts/kalshi-implied-macro-belief-distributions.md
 maturity: draft
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-10-25
 ---
 
 ## Relations

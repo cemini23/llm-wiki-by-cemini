@@ -13,9 +13,10 @@ related:
   - entities/platforms/underdog-fantasy.md
   - sources/4for4-bbm7-guide-series-2026-06-18.md
   - sources/etr-best-ball-mania-manifesto-draft-timing-2026-06-18.md
+  - sources/brief-k128-bbm7-draft-copilot-hub-2026-06-24.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-10-25
 ---
 
 ## Relations

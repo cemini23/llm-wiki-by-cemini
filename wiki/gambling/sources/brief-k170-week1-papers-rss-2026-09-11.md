@@ -14,10 +14,14 @@ related:
   - entities/platforms/kalshi.md
   - concepts/vig-and-hold.md
   - concepts/poker-hl-analyst-loop.md
+  - concepts/favorite-longshot-bias.md
+  - concepts/opponent-modeling-imperfect-info.md
+  - concepts/prediction-markets-crossover.md
+  - meta/daily-research-digest-cadence.md
 maturity: validated
 read_status: deep-read
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-10-25
 wire_status: policy_wired
 cross-wiki-source: "briefs/2026-09-11_k170-gambling.md"
 ---

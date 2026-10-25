@@ -30,9 +30,12 @@ related:
   - sources/brief-k131-toolbench-ganzfried-steals-2026-06-26.md
   - concepts/poker-axis-eval-literacy.md
   - sources/arxiv-2607-28520-cs-rnr-safe-opponent-exploitation.md
+  - sources/arxiv-2609.31473-game-arena-strategic-llm-evaluation-2026-09-28.md
+  - sources/arxiv-2609.33669-rsd-poker-shift-robust-2026-09-29.md
+  - sources/arxiv-2610-fictitious-play-trio-2026-10-07.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-08-01
+updated: 2026-10-25
 phase_0_verdict: CONDITIONAL-GO 2026-06-01 — sanctioned bot arena (not live poker room); enter via arena API; prize claim needs X verify + external payout wallet
 adoption_status: PHASE-0-COMPLETE
 ---

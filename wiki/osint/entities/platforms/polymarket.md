@@ -116,9 +116,12 @@ related:
   - sources/substack-rss-wublock-2026-07-11-weekly-project-updates-bonkdao-suffers-governanc.md
   - sources/substack-rss-event-horizon-2026-08-10-prophetx.md
   - sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
+  - entities/tools/sportsbook-api-evangelist.md
+  - sources/arxiv-prophets-profit-prediction-markets-2607.06166-2026-07-09.md
+  - sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-08-11
+updated: 2026-10-25
 ---
 
 ## Relations

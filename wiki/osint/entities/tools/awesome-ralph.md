@@ -9,9 +9,10 @@ related:
   - concepts/ralph-autonomous-agent-pattern.md
   - concepts/tool-evaluation-framework.md
   - entities/tools/smart-ralph.md
+  - entities/tools/ralph-claude-code.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-08-11
+updated: 2026-10-25
 gemini_eval_doc1_url: 1
 phase_0_verdict: STEAL-FROM 2026-05-12 (extract Ralph methodology, no wholesale fork)
 ---

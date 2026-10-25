@@ -12,10 +12,11 @@ related:
   - sources/daily-digest-batch-k177-2026-09-28.md
   - meta/daily-research-digest-cadence.md
   - sweeps/2026-09-28-daily.md
+  - sources/arxiv-2609.33669-rsd-poker-shift-robust-2026-09-29.md
 maturity: draft
 read_status: skimmed
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2609.31473-game-arena-strategic-llm-evaluation-in-competiti.pdf
 phase_0_verdict: REFERENCE 2026-09-28 — eval platform awareness; no weight download; no prod wire
 wire_status: wont_wire

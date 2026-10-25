@@ -11,10 +11,12 @@ related:
   - concepts/pm-copy-trading-retail-risks.md
   - sources/daily-digest-rss-pm-regulatory-2026-09-29.md
   - sources/daily-digest-batch-k179-2026-09-30.md
+  - sources/rss-eh-kalshi-curry-geofence-2026-09-25.md
+  - sources/rss-lsb-cftc-rules-ohio-cd-2026-10-06.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — regulatory awareness; no operator action, no pm scp
 wire_status: policy_wired
 ---

@@ -12,9 +12,10 @@ related:
   - entities/tools/hyperliquid-python-sdk.md
   - concepts/perp-dex-price-discovery-lead-lag.md
   - sources/substack-rss-wublock-2026-07-17-weekly-iranian-wallets.md
+  - sources/substack-rss-wublock-2026-07-16-hl-preipo-cxmt.md
 maturity: draft
 created: 2026-07-14
-updated: 2026-07-18
+updated: 2026-10-25
 clusters: [hyperliquid]
 ---
 

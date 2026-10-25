@@ -12,9 +12,10 @@ related:
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
   - concepts/projected-exploitability-descent.md
   - sources/arxiv-2608.09256-dtoa-supervisor-networks-2026-08-11.md
+  - concepts/nash-equilibrium-solver-selection.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-08-11
+updated: 2026-10-25
 ---
 
 ## Relations

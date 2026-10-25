@@ -9,11 +9,15 @@ related:
   - sources/arxiv-2606.26925-vr-dynamic-feedback-pointing-2026-07-02.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-07-04.md
+  - sources/mandate-order-city-walls-shelf-2026-06-25.md
+  - sources/phaser-game-agent-shelf-2026-06-30.md
+  - sources/ziva-godot-asset-store-listing-2026-06-27.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-10-25
 ---
 
 ## Raw Concept

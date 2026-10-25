@@ -56,9 +56,10 @@ related:
   - sources/substack-rss-klement-2026-10-13-ai-productivity-lower-debt.md
   - concepts/ai-productivity-fiscal-debt.md
   - concepts/k290-feeds-wave.md
+  - sources/substack-rss-capital-flows-2026-10-11-sovereign-debt-volatility.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-09-20
+updated: 2026-10-25
 ---
 
 ## Relations

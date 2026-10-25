@@ -13,10 +13,11 @@ related:
   - entities/bots/cemini-devfun-poker-agent.md
   - sources/daily-digest-reject-cluster-k124-2026-06-21.md
   - sweeps/2026-06-21-daily.md
+  - sources/research-k122-poker-paper-landscape-2026-06-19.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.14571-2606-14571v1-streammembench-streaming-evaluation.pdf
 phase_0_verdict: REFERENCE 2026-06-21 — memory eval benchmark; not poker domain
 ---

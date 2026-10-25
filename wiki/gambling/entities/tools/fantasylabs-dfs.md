@@ -16,9 +16,11 @@ related:
   - entities/tools/stokastic-dfs.md
   - entities/tools/pydfs-lineup-optimizer.md
   - sources/web-dfs-hero-nfl-gpp-strategy-2026-06-20.md
+  - entities/tools/ceminidfs.md
+  - sources/research-diy-dfs-model-master-plan-2026-06-20.md
 maturity: validated
 created: 2026-06-20
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Relations

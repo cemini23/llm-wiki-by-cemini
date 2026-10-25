@@ -16,10 +16,12 @@ related:
   - sweeps/2026-06-09-daily.md
   - sources/daily-digest-arxiv-batch-2026-06-01.md
   - sources/arxiv-2606.30040-kalshi-macro-belief-distributions-2026-07-01.md
+  - sources/arxiv-2607.00164-verifiable-rewards-calibrated-forecasting-2026-07-03.md
+  - sources/brief-k135-pm-settlement-macro-beliefs-steals-2026-07-01.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-09
-updated: 2026-07-01
+updated: 2026-10-25
 ---
 
 ## Relations

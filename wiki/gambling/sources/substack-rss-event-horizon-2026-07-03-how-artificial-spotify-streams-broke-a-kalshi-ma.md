@@ -9,9 +9,10 @@ related:
   - concepts/prediction-markets-crossover.md
   - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
   - @osint-wiki/sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
+  - sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
 maturity: validated
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 read_status: deep-read
 cross-wiki-source: @osint-wiki/sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
 ---

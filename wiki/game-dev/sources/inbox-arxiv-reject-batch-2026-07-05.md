@@ -9,11 +9,13 @@ related:
   - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-07-07.md
+  - sources/inbox-arxiv-reject-batch-2026-07-08.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-10-25
 ---
 
 ## Raw Concept

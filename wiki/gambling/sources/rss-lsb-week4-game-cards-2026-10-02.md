@@ -9,10 +9,11 @@ related:
   - concepts/sports-betting-fundamentals.md
   - concepts/vig-and-hold.md
   - sources/daily-digest-batch-k181-2026-10-06.md
+  - sources/rss-lsb-week5-cards-2026-10-05-06.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/
 phase_0_verdict: REFERENCE — single-outlet cards; mechanisms only, no auto-enter
 wire_status: policy_wired

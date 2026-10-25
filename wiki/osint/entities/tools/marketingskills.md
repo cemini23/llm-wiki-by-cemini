@@ -8,9 +8,10 @@ related:
   - sources/multi-wiki-link-eval-prompt-2026-05-13.md
   - sources/eval-multi-wiki-github-mcp-2026-07-05.md
   - concepts/tool-evaluation-framework.md
+  - entities/tools/taste-skill.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-08-07
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -58,8 +58,10 @@ related:
   - concepts/cemini-wiki-ingest-workflow.md
   - meta/daily-research-digest-cadence.md
   - sources/gemini-sci-research-2602-03837.md
+  - sources/arxiv-false-summit-silent-drift-2606.21841-2026-06-25.md
+  - sources/arxiv-metanym-game-llm-benchmark-2606.21008-2026-06-25.md
 created: 2026-04-29
-updated: 2026-06-08
+updated: 2026-10-25
 maturity: validated
 ---
 

@@ -16,10 +16,14 @@ related:
   - concepts/opponent-modeling-imperfect-info.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - sources/brief-k107-poker-open-spot-audit-2026-06-09.md
+  - concepts/custom-agent-methodology.md
+  - entities/tools/devfun-poker-arena-starter-kit.md
+  - sources/arxiv-2606.11869-agents-all-the-way-down-2026-06-19.md
+  - sources/devfun-poker-researcher-track-email-2026-06-19.md
 maturity: validated
 read_status: read
 created: 2026-06-01
-updated: 2026-06-19
+updated: 2026-10-25
 ---
 
 ## Relations

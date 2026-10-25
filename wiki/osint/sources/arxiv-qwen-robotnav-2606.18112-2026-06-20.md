@@ -7,10 +7,11 @@ related:
   - concepts/agentic-navigation-memory-strategy.md
   - sources/arxiv-rng-bench-non-markov-mllm-2606.19338-2026-06-21.md
   - concepts/non-markov-belief-state-benchmarks.md
+  - sources/arxiv-scope-symbolic-world-planning-2606.22488-2026-06-25.md
 maturity: draft
 read_status: read
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-25
 clusters: [llm-agents]
 ---
 

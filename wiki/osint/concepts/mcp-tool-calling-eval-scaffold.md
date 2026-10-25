@@ -17,9 +17,10 @@ related:
   - sources/arxiv-claw-swe-bench-2606.12344-2026-06-16.md
   - concepts/claw-swe-bench-harness-evaluation.md
   - sources/arxiv-harnessfix-trace-repair-2606.06324-2026-06-16.md
+  - entities/tools/reverse-skill.md
 maturity: draft
 created: 2026-06-02
-updated: 2026-06-16
+updated: 2026-10-25
 cross-wiki-source: "@ccc-wiki/concepts/maven-agentic-tool-calling-generalization.md"
 ---
 

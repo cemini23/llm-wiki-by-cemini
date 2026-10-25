@@ -15,10 +15,12 @@ related:
   - sweeps/2026-08-12-daily.md
   - sources/arxiv-2608.15258-self-fictitious-play-mfg-2026-08-18.md
   - sources/brief-k167-sfp-mfg-shelf-2026-08-18.md
+  - entities/bots/poker-bot-tooling.md
+  - sources/arxiv-2609.18848-fp-tie-breaking-first-price-auctions-2026-09-17.md
 maturity: validated
 read_status: deep-read
 created: 2026-08-12
-updated: 2026-08-18
+updated: 2026-10-25
 wire_status: wont_wire
 cross-wiki-source: "briefs/2026-08-12_k166-regret-learning-games-shelf.md"
 ---

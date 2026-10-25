@@ -9,9 +9,10 @@ related:
   - concepts/openclaw-security-taxonomy.md
   - concepts/llm-agent-systems.md
   - entities/tools/aohp-os.md
+  - concepts/self-compacting-language-model-agents.md
 maturity: draft
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-10-25
 ---
 
 ## Relations

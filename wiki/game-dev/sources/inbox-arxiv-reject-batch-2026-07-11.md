@@ -9,11 +9,14 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-07-12.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/godot-47-release-shelf-2026-06-25.md
+  - sources/inbox-arxiv-reject-batch-2026-07-13.md
+  - sources/ziva-gpt-56-godot-benchmark-2026-07-10.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-11
-updated: 2026-07-11
+updated: 2026-10-25
 ---
 
 ## Raw Concept

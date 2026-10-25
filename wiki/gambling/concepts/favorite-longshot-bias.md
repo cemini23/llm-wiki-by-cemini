@@ -26,9 +26,12 @@ related:
   - sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md
   - sources/arxiv-2609.06739-profit-bias-identity-sports-betting-2026-09-11.md
   - sources/brief-k170-week1-papers-rss-2026-09-11.md
+  - concepts/daily-edge-card.md
+  - concepts/pm-whale-conviction-bias-2026-07.md
+  - sources/brief-k160-wc2026-agents-market-baseline-steals-2026-07-21.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-09-11
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -7,10 +7,11 @@ related:
   - sources/daily-digest-batch-k173-2026-09-20.md
   - sources/nfl-week2-saturday-deltas-2026-09-19.md
   - entities/sports/nfl-betting.md
+  - meta/daily-research-digest-cadence.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-25
 phase_0_verdict: REFERENCE
 wire_status: policy_wired
 ---

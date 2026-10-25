@@ -11,11 +11,12 @@ related:
   - concepts/game-ai-rl-augmentation-shelf.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-07-19.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-17
-updated: 2026-07-18
+updated: 2026-10-25
 ---
 
 ## Raw Concept

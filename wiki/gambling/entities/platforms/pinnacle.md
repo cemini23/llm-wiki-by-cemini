@@ -10,9 +10,10 @@ related:
   - entities/tools/sports-betting-georgedouzas.md
   - entities/people/rufus-peabody.md
   - sources/youtube-operator-batch-sports-betting-research-2026-05-31.md
+  - concepts/daily-edge-card.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -11,10 +11,12 @@ related:
   - entities/tools/fantasylabs-dfs.md
   - entities/tools/pydfs-lineup-optimizer.md
   - entities/platforms/fanduel.md
+  - concepts/implied-team-totals-dfs.md
+  - entities/tools/ceminidfs.md
 maturity: draft
 read_status: read
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

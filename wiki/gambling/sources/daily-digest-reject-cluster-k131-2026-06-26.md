@@ -10,10 +10,11 @@ related:
   - sources/arxiv-2606.25819-toolbench-x-tool-unreliability-2026-06-26.md
   - sources/arxiv-2606.25997-ganzfried-vbt-nash-imperfect-info-2026-06-26.md
   - sources/brief-k131-toolbench-ganzfried-steals-2026-06-26.md
+  - sources/daily-digest-reject-cluster-k132-2026-06-27.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -15,9 +15,12 @@ related:
   - concepts/k290-feeds-wave.md
   - entities/models/muse-wonder.md
   - concepts/ai-vendor-multimodel-resilience.md
+  - concepts/k288-feeds-wave.md
+  - sources/newsletter-rss-latent-space-2026-10-10-alphafold-bitter-lesson.md
+  - sources/substack-rss-latent-space-2026-10-06-reflection-beam.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-07
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -9,10 +9,12 @@ related:
   - sources/daily-digest-reject-cluster-k125-2026-06-22.md
   - sources/arxiv-2606.22688-garip-last-iterate-selfplay-2026-06-23.md
   - sources/arxiv-2606.21013-agentic-time-machine-forecasting-2026-06-23.md
+  - sources/brief-k126-garip-selfplay-pm-forecast-steals-2026-06-23.md
+  - sources/daily-digest-reject-cluster-k127-2026-06-24.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-10-25
 ---
 
 ## Relations

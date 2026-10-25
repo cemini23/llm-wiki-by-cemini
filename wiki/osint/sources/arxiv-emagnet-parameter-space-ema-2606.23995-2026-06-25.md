@@ -9,10 +9,11 @@ related:
   - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
   - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/emagnet-parameter-space-ema-self-play.md
 maturity: draft
 read_status: read
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-25
 clusters: [rl-marl, llm-agents]
 ---
 

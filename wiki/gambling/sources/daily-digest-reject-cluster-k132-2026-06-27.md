@@ -9,10 +9,11 @@ related:
   - sources/daily-digest-reject-cluster-k131-2026-06-26.md
   - sources/arxiv-2606.20785-fara-computer-use-agents-2026-06-27.md
   - sources/brief-k132-fara-agent-env-steals-2026-06-27.md
+  - sources/daily-digest-reject-cluster-k133-2026-06-29.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-27
-updated: 2026-06-27
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -13,10 +13,12 @@ related:
   - concepts/opponent-modeling-imperfect-info.md
   - concepts/poker-strategy-overview.md
   - "@osint-wiki/concepts/devfun-researcher-pro-style-targets-2026-06.md"
+  - concepts/heads-up-arena-strategy.md
+  - sources/brief-k122-poker-researcher-track-plan-2026-06-19.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-10-25
 ---
 
 ## Relations

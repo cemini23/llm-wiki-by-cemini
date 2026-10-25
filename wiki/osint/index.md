@@ -4769,3 +4769,14 @@ Codebase hubs maintained for agent navigation (`/obsidian-architect`).
 | sources/substack-rss-wublock-2026-10-24-weekly-project-updates-dogecoin-labs-launches-fo.md | source | RSS stub |
 | sources/substack-rss-wublock-2026-10-25-asias-weekly-top10-crypto-news-south-korea-regul.md | source | RSS stub |
 
+## K295 index backfill (2026-10-25)
+
+Rows missing since their source pages were committed. Found by
+`ingest_session_gate.py`.
+
+| Page | Type |
+|------|------|
+| sources/devfun-researcher-track-hu-format-2026-06-08.md | source |
+| sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md | source |
+| sources/substack-rss-outlier-weekly-2026-07-03-the-11b-warehouse-failure-behind-the-cxwgeo-trad.md | source |
+

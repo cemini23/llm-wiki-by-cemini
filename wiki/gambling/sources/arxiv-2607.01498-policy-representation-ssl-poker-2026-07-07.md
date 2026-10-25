@@ -12,10 +12,11 @@ related:
   - sources/brief-k149-policy-ssl-advent-poker-steals-2026-07-07.md
   - sources/daily-digest-batch-k149-2026-07-07.md
   - sweeps/2026-07-07-daily.md
+  - sources/arxiv-2607.06854-lightweight-game-agent-expert-yardstick-2026-07-11.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2607.01498-towards-learning-representations-of-policies-in.pdf
 phase_0_verdict: CONDITIONAL-GO 2026-07-07 — github.com/VitamintK/ssl-project (0★, no LICENSE file); Kuhn/Leduc research reference only
 ---

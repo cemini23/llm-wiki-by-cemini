@@ -8,12 +8,13 @@ related:
   - sources/arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03.md
   - sources/arxiv-2609.40324-cogentic-proof-harness-2026-10-03.md
   - sources/inbox-arxiv-reject-batch-2026-10-09.md
+  - sources/arxiv-2610.09371-confidence-game-delegation-2026-10-09.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2610.11464
 maturity: validated
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 ## Raw Concept

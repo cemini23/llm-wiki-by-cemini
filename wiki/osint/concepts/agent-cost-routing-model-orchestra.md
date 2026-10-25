@@ -21,9 +21,10 @@ related:
   - sources/newsletter-rss-pragmatic-engineer-2026-10-13-resilient-ai-systems.md
   - concepts/ai-vendor-multimodel-resilience.md
   - concepts/k290-feeds-wave.md
+  - sources/substack-rss-latent-space-2026-10-08-claude-haiku-55.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-29
+updated: 2026-10-25
 ---
 
 ## Relations

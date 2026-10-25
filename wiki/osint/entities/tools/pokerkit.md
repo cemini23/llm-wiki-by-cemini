@@ -9,9 +9,12 @@ related:
   - concepts/devfun-poker-agent-challenge-2026.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/ai-pokergame.md
+  - entities/tools/rlcard.md
+  - sources/arxiv-policy-representation-2607.01498-2026-07-07.md
 maturity: validated
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

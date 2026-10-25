@@ -11,10 +11,12 @@ related:
   - concepts/dfs-backtesting-framework.md
   - concepts/diy-nfl-dfs-model-architecture.md
   - entities/tools/ceminidfs.md
+  - concepts/diy-nfl-pickem-props-tool-architecture.md
+  - sources/research-diy-pickem-props-master-plan-2026-07-05.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-20
-updated: 2026-06-26
+updated: 2026-10-25
 cross-wiki-source: "briefs/nfl-historical-odds-research.md"
 ---
 

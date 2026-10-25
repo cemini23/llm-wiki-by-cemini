@@ -9,10 +9,11 @@ related:
   - concepts/instrumental-probability-learnable-alpha.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
+  - concepts/proper-betting-clob-prediction-markets.md
 maturity: validated
 read_status: deep-read
 created: 2026-07-09
-updated: 2026-07-12
+updated: 2026-10-25
 ---
 
 ## Relations

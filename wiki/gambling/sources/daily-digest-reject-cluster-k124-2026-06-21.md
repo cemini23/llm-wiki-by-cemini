@@ -9,10 +9,12 @@ related:
   - sources/daily-digest-reject-cluster-k123-2026-06-20.md
   - sources/arxiv-2606.19308-mafp-multi-agent-fictitious-play-2026-06-21.md
   - sources/arxiv-2606.14571-streammembench-agent-memory-2026-06-21.md
+  - sources/brief-k124-mafp-memory-poker-steals-2026-06-21.md
+  - sources/daily-digest-reject-cluster-k125-2026-06-22.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-10-25
 ---
 
 ## Relations

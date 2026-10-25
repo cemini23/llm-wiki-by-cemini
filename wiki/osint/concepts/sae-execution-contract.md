@@ -24,9 +24,10 @@ related:
   - concepts/agent-authorization-stack.md
   - sources/safeharness-2604.13630.md
   - concepts/mitre-atlas-taxonomy.md
+  - concepts/reviewer-passive-injection-corpus.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-06-29
+updated: 2026-10-25
 ---
 
 ## Relations

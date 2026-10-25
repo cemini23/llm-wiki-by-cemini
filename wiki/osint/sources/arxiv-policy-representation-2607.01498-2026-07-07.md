@@ -8,10 +8,11 @@ related:
   - concepts/multi-agent-fictitious-play-llm.md
   - concepts/devfun-poker-agent-challenge-2026.md
   - entities/tools/pokerkit.md
+  - sources/arxiv-footsiesgym-2607.06514-2026-07-09.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-10-25
 clusters: [poker, game-theory]
 ---
 

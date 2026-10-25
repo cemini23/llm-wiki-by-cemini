@@ -19,10 +19,11 @@ related:
   - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
   - sources/karpathy-llm-wiki-field-notes-png-2026-04-26.md
   - concepts/cemini-wiki-ingest-workflow.md
+  - concepts/interaction-native-knowledge-harness.md
 maturity: validated
 read_status: validated
 created: 2026-04-23
-updated: 2026-06-28
+updated: 2026-10-25
 ---
 
 ## Relations

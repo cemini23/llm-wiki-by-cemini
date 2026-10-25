@@ -14,10 +14,12 @@ related:
   - entities/bots/cemini-devfun-poker-agent.md
   - entities/platforms/polymarket.md
   - sources/daily-digest-reject-cluster-k126-2026-06-23.md
+  - sources/arxiv-2606.23995-emagnet-selfplay-regularization-2026-06-24.md
+  - sources/brief-k127-emagnet-irumai-selfplay-steals-2026-06-24.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-10-25
 cross-wiki-source: "briefs/2026-06-23_k126-garip-selfplay-pm-forecast-steals.md"
 ---
 

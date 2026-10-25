@@ -10,10 +10,12 @@ related:
   - sources/arxiv-2608.15258-self-fictitious-play-mfg-2026-08-18.md
   - sources/brief-k167-sfp-mfg-shelf-2026-08-18.md
   - sources/daily-digest-batch-k168-2026-08-31.md
+  - concepts/opponent-modeling-imperfect-info.md
+  - concepts/poker-hl-analyst-loop.md
 maturity: validated
 read_status: skimmed
 created: 2026-08-18
-updated: 2026-08-31
+updated: 2026-10-25
 ---
 
 ## Relations

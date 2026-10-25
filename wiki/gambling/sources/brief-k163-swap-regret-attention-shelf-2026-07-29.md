@@ -14,10 +14,11 @@ related:
   - sweeps/2026-07-29-daily.md
   - sources/arxiv-2608.09389-regret-equilibrium-learning-games-guide-2026-08-12.md
   - sources/daily-digest-batch-k166-2026-08-12.md
+  - sources/brief-k166-regret-learning-games-shelf-2026-08-12.md
 maturity: validated
 read_status: deep-read
 created: 2026-07-29
-updated: 2026-08-12
+updated: 2026-10-25
 cross-wiki-source: "briefs/2026-07-29_k163-swap-regret-attention-shelf.md"
 ---
 

@@ -16,9 +16,10 @@ related:
   - concepts/context-fractured-decomposition-attacks.md
   - concepts/reviewer-passive-injection-corpus.md
   - sources/arxiv-context-fractured-decomposition-cfd-2606.09084-2026-06-12.md
+  - sources/substack-rss-secpro-2026-07-10-from-defending-systems-to-governing-autonomous-e.md
 maturity: validated
 created: 2026-06-03
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Relations

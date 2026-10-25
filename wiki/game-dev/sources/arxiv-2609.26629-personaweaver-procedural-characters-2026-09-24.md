@@ -9,12 +9,13 @@ related:
   - concepts/stronghold-2-ai-lords.md
   - sources/inbox-arxiv-reject-batch-2026-09-24.md
   - concepts/scope-tiers.md
+  - concepts/agentic-npc-design-guardrails.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2609.26629
 maturity: validated
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-25
 ---
 
 ## Raw Concept

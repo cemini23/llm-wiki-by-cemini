@@ -8,9 +8,10 @@ related:
   - concepts/toolbench-x-tool-reliability-hazards.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/code-as-agent-harness.md
+  - concepts/llm-agent-systems.md
 maturity: draft
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

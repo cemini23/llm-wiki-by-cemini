@@ -11,10 +11,11 @@ related:
   - sources/arxiv-2607.08758-ideas-have-genomes-ig-bench-2026-07-14.md
   - sources/brief-k155-ideagene-lineage-steals-2026-07-14.md
   - entities/tools/ideagene-bench.md
+  - sources/daily-digest-batch-k156-2026-07-15.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-25
 ---
 
 ## Relations

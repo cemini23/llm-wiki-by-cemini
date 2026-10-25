@@ -12,12 +12,14 @@ related:
   - concepts/agent-harness-castle-project.md
   - sources/inbox-arxiv-reject-batch-2026-06-20.md
   - entities/projects/castle-sim.md
+  - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
+  - sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2606.20210
 maturity: validated
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Raw Concept

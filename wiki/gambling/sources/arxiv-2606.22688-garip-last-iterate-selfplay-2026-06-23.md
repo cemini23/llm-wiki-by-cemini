@@ -17,10 +17,11 @@ related:
   - sources/arxiv-2606.23995-emagnet-selfplay-regularization-2026-06-24.md
   - sources/brief-k127-emagnet-irumai-selfplay-steals-2026-06-24.md
   - sweeps/2026-06-23-daily.md
+  - sources/arxiv-2607.07078-forgetting-factor-regret-zero-sum-2026-07-11.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-23
-updated: 2026-06-24
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.22688-pdf-garip-a-running-average-moving-reference-for.pdf
 phase_0_verdict: REFERENCE 2026-06-23 — last-iterate self-play anchor design; offline HU selfplay tuning only
 ---

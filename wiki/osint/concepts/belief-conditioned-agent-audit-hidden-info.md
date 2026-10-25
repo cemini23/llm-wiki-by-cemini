@@ -8,9 +8,10 @@ related:
   - concepts/hierarchical-bounded-agent-memory.md
   - concepts/generator-verifier-inference-time-steering.md
   - concepts/play-adequacy-vs-prediction-accuracy.md
+  - sources/arxiv-2607.08861-fictitious-play-fbsde-stochastic-games-2026-07-16.md
 maturity: draft
 created: 2026-07-15
-updated: 2026-07-18
+updated: 2026-10-25
 ---
 
 ## Relations

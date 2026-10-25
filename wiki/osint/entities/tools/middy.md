@@ -6,9 +6,10 @@ keywords: [middy, AWS Lambda, middleware, MIT]
 related:
   - sources/eval-github-repo-revenue-evaluation-2026-07-15.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/fastify.md
 maturity: draft
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-10-25
 ---
 
 ## Narrative

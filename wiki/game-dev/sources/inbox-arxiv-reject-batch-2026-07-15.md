@@ -11,11 +11,13 @@ related:
   - concepts/game-dev-wiki-scope.md
   - concepts/game-ai-rl-augmentation-shelf.md
   - sources/brickworks-godot-lego-framework-shelf-2026-07-15.md
+  - sources/inbox-arxiv-reject-batch-2026-07-16.md
+  - sources/inbox-arxiv-reject-batch-2026-07-17.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-10-25
 ---
 
 ## Raw Concept

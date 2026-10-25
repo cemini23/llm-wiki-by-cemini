@@ -13,11 +13,12 @@ related:
   - sources/k282-level-editors-tile-tooling-2026-10-05.md
   - sources/k283-bedrock-addon-extracts-2026-10-06.md
   - sources/arxiv-2610.02023-sphere-vr-scene-routing-2026-10-06.md
+  - sources/inbox-arxiv-reject-batch-2026-10-07.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-25
 ---
 
 ## Raw Concept

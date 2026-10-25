@@ -11,9 +11,10 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/agentskills.md
   - entities/tools/agentic-awesome-skills.md
+  - entities/tools/davila7-claude-code-templates.md
 maturity: draft
 created: 2026-07-08
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Relations

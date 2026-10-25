@@ -8,10 +8,12 @@ related:
   - sweeps/2026-06-22-daily.md
   - sources/daily-digest-reject-cluster-k124-2026-06-21.md
   - sources/arxiv-2606.14506-distribution-shift-model-eval-2026-06-22.md
+  - sources/brief-k125-eval-gate-discipline-2026-06-22.md
+  - sources/daily-digest-reject-cluster-k126-2026-06-23.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-10-25
 ---
 
 ## Relations

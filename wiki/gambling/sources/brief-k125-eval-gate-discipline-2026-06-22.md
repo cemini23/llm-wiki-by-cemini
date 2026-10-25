@@ -15,10 +15,12 @@ related:
   - sources/brief-k129-celeus-tmax-eval-steals-2026-06-25.md
   - sources/arxiv-2606.20820-celeus-llm-eval-eprocesses-2026-06-25.md
   - sources/brief-k271-redagentbench-arena-eval-2026-08-12.md
+  - sources/arxiv-2606.22688-garip-last-iterate-selfplay-2026-06-23.md
+  - sources/brief-k127-emagnet-irumai-selfplay-steals-2026-06-24.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-22
-updated: 2026-08-15
+updated: 2026-10-25
 cross-wiki-source: "briefs/2026-06-22_k125-eval-gate-discipline-sandbox-bundle.md"
 ---
 

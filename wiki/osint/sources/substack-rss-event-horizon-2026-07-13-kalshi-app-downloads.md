@@ -8,10 +8,11 @@ related:
   - entities/platforms/kalshi.md
   - concepts/dcm-state-preemption.md
   - sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md
+  - sources/substack-rss-event-horizon-2026-07-14-kalshi-wc-volume-pro.md
 maturity: validated
 read_status: deep-read
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-10-25
 ---
 
 ## Raw Concept

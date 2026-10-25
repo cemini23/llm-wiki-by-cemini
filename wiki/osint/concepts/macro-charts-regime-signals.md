@@ -55,9 +55,11 @@ related:
   - sources/macro-charts-paid-forward-2026-07-30-korea-semis.md
   - sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md
   - sources/macro-charts-paid-forward-2026-07-31-situational-awareness-kospi.md
+  - meta/macro-charts-email-ingest-cadence.md
+  - meta/substack-rss-ingest-cadence.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-31
+updated: 2026-10-25
 ---
 
 ## Relations

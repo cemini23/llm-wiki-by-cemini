@@ -14,9 +14,10 @@ related:
   - sources/web-pro-villain-profiles-dwan-cates-2026-06-19.md
   - sources/devfun-poker-arena-phase0-2026-06-01.md
   - sources/devfun-poker-researcher-track-email-2026-06-19.md
+  - concepts/heads-up-arena-strategy.md
 maturity: validated
 created: 2026-06-03
-updated: 2026-06-19
+updated: 2026-10-25
 ---
 
 ## Relations

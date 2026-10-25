@@ -13,7 +13,8 @@ related:
   - concepts/active-project-research-routing.md
   - sources/arxiv-agentic-time-machine-2606.21013-2026-06-23.md
   - sources/tool-eval-metaplan-81url-2026-06-24.md
-updated: 2026-06-24
+  - sources/eval-url-cemini-research-2026-06-25.md
+updated: 2026-10-25
 ---
 
 ## Relations

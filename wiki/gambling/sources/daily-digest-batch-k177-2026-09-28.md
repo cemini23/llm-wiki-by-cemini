@@ -10,10 +10,11 @@ related:
   - sources/daily-digest-rss-nfl-w03-lock-2026-09-28.md
   - sources/daily-digest-rss-industry-2026-09-28.md
   - sweeps/2026-09-28-daily.md
+  - entities/sports/nfl-betting.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — Week 3 Sun lock; operator Enter
 wire_status: policy_wired
 ---

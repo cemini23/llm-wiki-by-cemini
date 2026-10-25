@@ -14,10 +14,13 @@ related:
   - entities/platforms/fanduel.md
   - sources/web-sportsbookreview-hard-rock-bet-2026-06-20.md
   - sweeps/2026-06-20-tier2-w8-nfl.md
+  - concepts/dfs-strategy-overview.md
+  - meta/daily-research-digest-cadence.md
+  - sources/web-dfs-hero-nfl-gpp-strategy-2026-06-20.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

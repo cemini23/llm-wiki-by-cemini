@@ -15,10 +15,11 @@ related:
   - sources/brief-k151-pm-belief-to-trade-volatility-steals-2026-07-10.md
   - concepts/pm-structural-volatility.md
   - entities/bots/predict-raven.md
+  - sources/daily-digest-batch-k152-2026-07-11.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Relations

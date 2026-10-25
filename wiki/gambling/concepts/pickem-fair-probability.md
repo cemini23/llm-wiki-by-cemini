@@ -11,9 +11,11 @@ related:
   - concepts/pickem-slip-ev-and-correlation.md
   - concepts/diy-nfl-pickem-props-tool-architecture.md
   - sources/sharp-nfl-rb-prop-unders-2026-08-13.md
+  - concepts/pickem-backtesting-framework.md
+  - concepts/pickem-pipeline-integration-spec.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-08-14
+updated: 2026-10-25
 ---
 
 ## Relations
