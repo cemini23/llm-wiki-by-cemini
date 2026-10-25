@@ -11,9 +11,14 @@ related:
   - sources/godot-stagehand-phase-0-audit-2026-06-13.md
   - sources/godot-stagehand-castle-sim-ci-eval-2026-06-13.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
+  - entities/tools/hera-agent-godot.md
+  - sources/arxiv-2607.10174-vrexplorer-vr-testing-2026-07-14.md
+  - sources/arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24.md
+  - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
+  - sources/ziva-gpt-56-godot-benchmark-2026-07-10.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-17
+updated: 2026-10-25
 ---
 
 ## Relations

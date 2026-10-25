@@ -36,9 +36,18 @@ related:
   - sources/daily-digest-rss-pm-regulatory-2026-09-17.md
   - sources/brief-k171-pm-fp-regulatory-2026-09-17.md
   - entities/sports/nhl-betting.md
+  - concepts/diy-nfl-pickem-props-tool-architecture.md
+  - concepts/pickem-operator-workflow.md
+  - entities/platforms/hard-rock-bet.md
+  - entities/platforms/prizepicks.md
+  - entities/platforms/underdog-pickem.md
+  - entities/sports/nfl-betting.md
+  - sources/brief-k108-gambling-wc-retail-hygiene-2026-06-09.md
+  - sources/web-dfs-hero-nfl-gpp-strategy-2026-06-20.md
+  - sources/web-tech-insider-nfl-betting-strategy-2026-06-20.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-09-30
+updated: 2026-10-25
 ---
 
 ## Relations

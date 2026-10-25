@@ -12,10 +12,16 @@ related:
   - sources/rss-sbc-nfl-midnite-everton-2026-10-08-09.md
   - sources/rss-sharp-football-week5-worksheets-2026-10-07.md
   - sweeps/2026-10-09-daily.md
+  - concepts/prediction-markets-crossover.md
+  - entities/platforms/draftkings.md
+  - entities/platforms/fanduel.md
+  - entities/platforms/kalshi.md
+  - entities/sports/cfb-betting.md
+  - entities/tools/sharp-football-analysis.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — 1 arXiv + 16 RSS, all NEW
 wire_status: policy_wired
 ---

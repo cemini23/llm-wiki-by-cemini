@@ -83,9 +83,21 @@ related:
   - sources/daily-digest-batch-k182-2026-10-07.md
   - sources/rss-pm-legal-2026-10-07-09.md
   - sources/daily-digest-batch-k183-2026-10-09.md
+  - entities/bots/predict-raven.md
+  - sources/arxiv-2606.21013-agentic-time-machine-forecasting-2026-06-23.md
+  - sources/arxiv-2607.01198-liquidity-tail-risk-large-trades-2026-07-09.md
+  - sources/arxiv-2607.01377-kyle-liquidity-premium-investment-horizons-2026-07-09.md
+  - sources/arxiv-2607.02467-human-capital-pm-hybrid-forecasting-2026-07-06.md
+  - sources/arxiv-2607.03015-belief-to-trade-pm-agents-predict-raven-2026-07-10.md
+  - sources/arxiv-2607.08199-pm-structural-volatility-kalshi-2026-07-10.md
+  - sources/daily-digest-rss-pm-eh-ep33-2026-09-21.md
+  - sources/rss-operator-scrutiny-2026-10-07-08.md
+  - sources/rss-sbc-brazil-stake-2026-10-09-12.md
+  - sources/rss-sbc-cee-merkur-2026-10-07.md
+  - sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 ## Relations

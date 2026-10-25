@@ -70,9 +70,19 @@ related:
   - sources/arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12.md
   - sources/arxiv-2610.13022-reqclarifybench-clarification-2026-10-12.md
   - sources/inbox-arxiv-reject-batch-2026-10-12.md
+  - entities/tools/craftbench-ue.md
+  - entities/tools/hera-agent-godot.md
+  - sources/arxiv-2610.02023-sphere-vr-scene-routing-2026-10-06.md
+  - sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md
+  - sources/claude-code-cc-ios-port-2026-07-07.md
+  - sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md
+  - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
+  - sources/notnull92-hera-agent-godot-devto-2026-06-25.md
+  - sources/phaser-game-agent-mcp-update-2026-07-08.md
+  - sources/ziva-gpt-56-godot-benchmark-2026-07-10.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-10-03
+updated: 2026-10-25
 wire_status: policy_wired
 wire_target: briefs/W2-harness-kickoff.md
 ---

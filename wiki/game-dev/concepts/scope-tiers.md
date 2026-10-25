@@ -1,6 +1,7 @@
 ---
 title: Scope tiers — hobby castle sim realism
 type: concept
+hub: true
 tags: [concept, scope, stronghold, planning]
 keywords: [scope, tiers, vertical-slice, solo-dev, stronghold, rts]
 related:

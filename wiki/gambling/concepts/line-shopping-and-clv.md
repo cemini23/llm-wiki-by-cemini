@@ -32,9 +32,19 @@ related:
   - sources/arxiv-2604.17194-odds-conversion-emh-2026-08-31.md
   - entities/sports/nhl-betting.md
   - entities/sports/cfb-betting.md
+  - concepts/diy-nfl-pickem-props-tool-architecture.md
+  - concepts/nfl-weekly-slate-hub-workflow.md
+  - concepts/pickem-backtesting-framework.md
+  - entities/platforms/hard-rock-bet.md
+  - sources/arxiv-2604.21851-betting-on-bets-stochastic-dominance-2026-07-06.md
+  - sources/arxiv-2609.06739-profit-bias-identity-sports-betting-2026-09-11.md
+  - sources/nfl-week4-tnf-result-postmortem-2026-10-02.md
+  - sources/rss-lsb-nhl-opening-night-props-2026-09-29.md
+  - sources/web-sportsbookreview-hard-rock-bet-2026-06-20.md
+  - sources/web-tech-insider-nfl-betting-strategy-2026-06-20.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-10-10
+updated: 2026-10-25
 ---
 
 ## Relations

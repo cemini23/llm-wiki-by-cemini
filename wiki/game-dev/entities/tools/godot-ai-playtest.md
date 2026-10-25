@@ -8,9 +8,16 @@ related:
   - entities/tools/godot-stagehand.md
   - sources/godot-ai-playtest-phase-0-audit-2026-06-13.md
   - entities/tools/godot-mcp-landscape.md
+  - entities/tools/binarytracking.md
+  - entities/tools/gamedevbench.md
+  - entities/tools/hera-agent-godot.md
+  - entities/tools/vrexplorer.md
+  - sources/arxiv-2607.10174-vrexplorer-vr-testing-2026-07-14.md
+  - sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md
+  - sources/vrexplorer-phase-0-audit-2026-07-14.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-10-25
 ---
 
 ## Relations

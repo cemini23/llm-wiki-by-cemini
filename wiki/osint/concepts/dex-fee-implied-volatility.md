@@ -11,10 +11,10 @@ related:
   - concepts/kalshi-retail-lp.md
   - concepts/polymarket-bot-architecture.md
   - sources/eval-url-revenue-opportunity-2026-08-14.md
+  - concepts/pm-canary-kalshi-poly.md
 maturity: draft
 created: 2026-08-14
-updated: 2026-08-14
-
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -25,9 +25,16 @@ related:
   - sweeps/2026-06-17-daily.md
   - sweeps/2026-07-09-daily.md
   - sweeps/2026-07-10-daily.md
+  - entities/bots/predict-raven.md
+  - sources/arxiv-2606.21013-agentic-time-machine-forecasting-2026-06-23.md
+  - sources/arxiv-2606.30040-kalshi-macro-belief-distributions-2026-07-01.md
+  - sources/arxiv-2607.00164-verifiable-rewards-calibrated-forecasting-2026-07-03.md
+  - sources/arxiv-2607.02467-human-capital-pm-hybrid-forecasting-2026-07-06.md
+  - sources/arxiv-2607.07760-adversarial-social-epistemology-llm-2026-07-12.md
+  - sources/arxiv-2607.08199-pm-structural-volatility-kalshi-2026-07-10.md
 maturity: validated
 created: 2026-06-17
-updated: 2026-07-10
+updated: 2026-10-25
 ---
 
 ## Relations

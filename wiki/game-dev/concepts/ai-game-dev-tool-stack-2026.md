@@ -39,9 +39,16 @@ related:
   - entities/tools/craftbench-ue.md
   - sources/arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24.md
   - sources/arxiv-2609.27585-unity-insight-code-asset-index-2026-09-24.md
+  - entities/tools/hera-agent-godot.md
+  - sources/arxiv-2607.10174-vrexplorer-vr-testing-2026-07-14.md
+  - sources/brickworks-godot-lego-framework-shelf-2026-07-15.md
+  - sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md
+  - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
+  - sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md
+  - sources/ziva-gpt-56-godot-benchmark-2026-07-10.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-09-24
+updated: 2026-10-25
 ---
 
 ## Relations

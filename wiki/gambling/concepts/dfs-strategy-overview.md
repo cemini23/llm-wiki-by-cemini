@@ -21,9 +21,16 @@ related:
   - sources/web-dfs-hero-nfl-gpp-strategy-2026-06-20.md
   - sources/web-tech-insider-nfl-betting-strategy-2026-06-20.md
   - sweeps/2026-06-20-tier2-w8-nfl.md
+  - concepts/dfs-ownership-projection.md
+  - concepts/dfs-paid-tool-methodologies.md
+  - concepts/season-long-fantasy-waiver-wire.md
+  - entities/tools/ceminidfs.md
+  - sources/gemini-github-sports-betting-landscape-2026-05-30.md
+  - sources/nfl-week3-dfs-research-2026-09-26.md
+  - sources/research-diy-dfs-model-master-plan-2026-06-20.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

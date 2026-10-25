@@ -23,9 +23,14 @@ related:
   - concepts/devfun-poker-agent-challenge-2026.md
   - concepts/kuhn-poker-sft-curriculum-reference.md
   - sources/arxiv-2608.13522-vero-2026-08-14.md
+  - concepts/belief-conditioned-agent-audit-hidden-info.md
+  - concepts/llm-agent-systems.md
+  - concepts/probabilistic-agent-policy-verification.md
+  - sources/arxiv-2607.10814-belief-conditioned-llm-agents-werewolf-audit-2026-07-15.md
+  - sources/arxiv-forex-lean4-fallacy-detection-2606.21867-2026-06-25.md
 maturity: draft
 created: 2026-06-18
-updated: 2026-08-14
+updated: 2026-10-25
 ---
 
 ## Relations

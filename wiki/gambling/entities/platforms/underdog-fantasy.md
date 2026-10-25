@@ -28,9 +28,15 @@ related:
   - sources/brief-k169-nfl-week1-ready-2026-08-31.md
   - sources/daily-digest-rss-pm-regulatory-2026-09-17.md
   - sources/brief-k171-pm-fp-regulatory-2026-09-17.md
+  - concepts/pickem-legal-and-tos-posture.md
+  - concepts/pickem-pipeline-integration-spec.md
+  - entities/platforms/hard-rock-bet.md
+  - sources/brief-k128b-bbm7-challenge-register-2026-06-24.md
+  - sources/brief-k128b-bbm7-challenges-and-solutions-2026-06-24.md
+  - sources/web-dfs-hero-nfl-gpp-strategy-2026-06-20.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-09-17
+updated: 2026-10-25
 ---
 
 ## Relations

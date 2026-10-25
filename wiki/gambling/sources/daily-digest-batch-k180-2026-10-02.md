@@ -13,10 +13,15 @@ related:
   - sources/nfl-week4-tnf-result-postmortem-2026-10-02.md
   - entities/sports/cfb-betting.md
   - sweeps/2026-10-02-daily.md
+  - concepts/prediction-markets-crossover.md
+  - entities/platforms/draftkings.md
+  - entities/platforms/fanduel.md
+  - entities/platforms/kalshi.md
+  - entities/sports/nfl-betting.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — 4 NFL W4 docx, 3 CFB cards, 5 PM/industry
 wire_status: policy_wired
 ---

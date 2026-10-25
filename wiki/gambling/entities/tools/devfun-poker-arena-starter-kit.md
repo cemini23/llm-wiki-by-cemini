@@ -18,9 +18,14 @@ related:
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - concepts/heads-up-arena-strategy.md
   - sources/devfun-sandbox-researcher-guide-2026-06-26.md
+  - sources/arxiv-2606.25819-toolbench-x-tool-unreliability-2026-06-26.md
+  - sources/brief-k122-poker-researcher-track-plan-2026-06-19.md
+  - sources/brief-k123-researcher-jun21-checklist-2026-06-20.md
+  - sources/devfun-poker-researcher-track-email-2026-06-19.md
+  - sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-26
+updated: 2026-10-25
 phase_0_verdict: REFERENCE 2026-06-06 — MIT verified; agent-driven Arena entry path; no CeminiSuite integration
 ---
 

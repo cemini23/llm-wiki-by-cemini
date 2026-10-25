@@ -18,9 +18,14 @@ related:
   - concepts/pm-proper-scoring-clob-profitability.md
   - sources/openreview-prophets-profit-pm-LYSTj2Cnuu-2026-06-17.md
   - sources/research-wnba-cold-streak-live-unders-2026-08-13.md
+  - concepts/pm-structural-volatility.md
+  - sources/arxiv-2606.30040-kalshi-macro-belief-distributions-2026-07-01.md
+  - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
+  - sources/arxiv-2607.00164-verifiable-rewards-calibrated-forecasting-2026-07-03.md
+  - sources/arxiv-2607.08199-pm-structural-volatility-kalshi-2026-07-10.md
 maturity: validated
 created: 2026-06-09
-updated: 2026-08-13
+updated: 2026-10-25
 ---
 
 ## Relations

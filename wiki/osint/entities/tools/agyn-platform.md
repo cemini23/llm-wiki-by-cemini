@@ -7,9 +7,10 @@ related:
   - sources/arxiv-agyn-agent-platform-2605-27575-2026-06-02.md
   - "@ccc-wiki/entities/tools/agyn.md"
   - concepts/librarian-server-architecture.md
+  - sources/arxiv-agyn-agent-platform-2605.27575-2026-06-02.md
 maturity: draft
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-25
 phase_0_verdict: NO-GO install 2026-06-02 — AGPL-3.0 (agynio/platform); REFERENCE governance checklist vs Hetzner brief-driven deploy
 ---
 

@@ -77,9 +77,32 @@ related:
   - sources/brief-k171-pm-fp-regulatory-2026-09-17.md
   - sources/arxiv-2610-fictitious-play-trio-2026-10-07.md
   - sources/arxiv-2610.09244-risk-averse-multi-population-mfg-2026-10-09.md
+  - concepts/poker-axis-eval-literacy.md
+  - entities/tools/adversarial-coevolution.md
+  - entities/tools/devfun-poker-arena-starter-kit.md
+  - entities/tools/mppo.md
+  - sources/arxiv-2506.16995-mppo-style-preserving-game-agents-2026-07-12.md
+  - sources/arxiv-2509.25618-ganzfried-qp-nash-imperfect-info-2026-07-06.md
+  - sources/arxiv-2606.14506-distribution-shift-model-eval-2026-06-22.md
+  - sources/arxiv-2606.14571-streammembench-agent-memory-2026-06-21.md
+  - sources/arxiv-2606.17682-trainee-to-trainer-llm-env-engineer-2026-06-20.md
+  - sources/arxiv-2606.20820-celeus-llm-eval-eprocesses-2026-06-25.md
+  - sources/arxiv-2606.30587-llm-vuln-detection-cognitive-heuristics-2026-07-06.md
+  - sources/arxiv-2607.01120-areal-agentic-rl-self-evolving-agents-2026-07-09.md
+  - sources/arxiv-2607.01498-policy-representation-ssl-poker-2026-07-07.md
+  - sources/arxiv-2607.01585-advent-ilp-poker-predicate-invention-2026-07-07.md
+  - sources/arxiv-2607.02389-steerability-constraints-coding-agents-2026-07-06.md
+  - sources/arxiv-2607.06854-lightweight-game-agent-expert-yardstick-2026-07-11.md
+  - sources/arxiv-2607.07078-forgetting-factor-regret-zero-sum-2026-07-11.md
+  - sources/brief-k123-researcher-jun21-checklist-2026-06-20.md
+  - sources/brief-k130-rlcard-offline-baseline-adopt-2026-06-26.md
+  - sources/brief-k137-swe-interact-rlvr-nfl-steals-2026-07-03.md
+  - sources/brief-k148-agent-framework-pm-betting-steals-2026-07-06.md
+  - sources/devfun-poker-researcher-track-email-2026-06-19.md
+  - sources/research-k122-poker-paper-landscape-2026-06-19.md
 maturity: validated
 created: 2026-06-03
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 ## Relations

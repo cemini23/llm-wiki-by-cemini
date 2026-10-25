@@ -1,6 +1,7 @@
 ---
 title: Active project research routing — brief targets vs legacy CeminiSuite
 type: concept
+hub: true
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher, basgiath, local-abliterated-lab]
 keywords: [brief-routing, atto, guruwatcher, basgiath, ceminidfs, ceminiparlays, wc-ticket-monitor, family-tree, genealogy, xsp-killer, polymarket, kalshi, local-abliterated-lab, ingest, daily-digest]
 related:

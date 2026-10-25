@@ -23,9 +23,15 @@ related:
   - sources/youtube-pokergo-dwan-hsp-mega-compilation-2026-06-03.md
   - concepts/opponent-modeling-imperfect-info.md
   - concepts/poker-hl-analyst-loop.md
+  - entities/people/daniel-cates-jungleman.md
+  - entities/tools/devfun-poker-arena-starter-kit.md
+  - sources/arxiv-2606.25997-ganzfried-vbt-nash-imperfect-info-2026-06-26.md
+  - sources/arxiv-2606.29169-ganzfried-ped-nash-imperfect-info-2026-06-30.md
+  - sources/devfun-poker-researcher-track-email-2026-06-19.md
+  - sources/web-pro-villain-profiles-dwan-cates-2026-06-19.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-06-04
+updated: 2026-10-25
 ---
 
 ## Relations

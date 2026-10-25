@@ -34,9 +34,22 @@ related:
   - meta/sandbox-season-harvest-cadence.md
   - sources/arxiv-2608.09389-regret-equilibrium-games-2026-08-11.md
   - sources/arxiv-2608.09574-hierarchical-game-llm-2026-08-11.md
+  - concepts/policy-representation-learning-imperfect-info.md
+  - concepts/relaxed-nfl-auto-formalization.md
+  - entities/tools/claude-video.md
+  - sources/arxiv-emagnet-parameter-space-ema-2606.23995-2026-06-25.md
+  - sources/arxiv-equilibrium-internal-transfers-seate-2606.20960-2026-06-25.md
+  - sources/arxiv-false-summit-silent-drift-2606.21841-2026-06-25.md
+  - sources/arxiv-fara-1-5-computer-use-2606.20785-2026-06-25.md
+  - sources/arxiv-forex-lean4-fallacy-detection-2606.21867-2026-06-25.md
+  - sources/arxiv-irumai-indian-rummy-ppo-2606.21975-2026-06-25.md
+  - sources/arxiv-moral-geometry-nash-kantian-2606.21967-2026-06-25.md
+  - sources/arxiv-policy-representation-2607.01498-2026-07-07.md
+  - sources/arxiv-red-queen-godel-machine-2606.26294-2026-06-29.md
+  - sources/arxiv-selfcompact-lm-agents-2606.23525-2026-06-25.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-08-11
+updated: 2026-10-25
 ---
 
 ## Relations

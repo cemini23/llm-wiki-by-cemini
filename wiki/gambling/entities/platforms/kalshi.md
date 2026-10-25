@@ -74,9 +74,16 @@ related:
   - sources/daily-digest-batch-k182-2026-10-07.md
   - sources/rss-pm-legal-2026-10-07-09.md
   - sources/daily-digest-batch-k183-2026-10-09.md
+  - concepts/vig-and-hold.md
+  - sources/arxiv-2606.21013-agentic-time-machine-forecasting-2026-06-23.md
+  - sources/arxiv-2607.01198-liquidity-tail-risk-large-trades-2026-07-09.md
+  - sources/brief-k135-pm-settlement-macro-beliefs-steals-2026-07-01.md
+  - sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
+  - sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md
+  - sources/substack-rss-klement-2026-07-02-a-fundamental-flaw-of-prediction-markets.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 ## Relations

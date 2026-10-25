@@ -41,9 +41,18 @@ related:
   - sources/newsletter-rss-sparktoro-2026-07-28-brand-affinity.md
   - sources/arxiv-2607.24663-aps-rag.md
   - sources/arxiv-2607.25620-epistemic-schizologia-llms.md
+  - entities/tools/claude-real-video.md
+  - entities/tools/crawl4ai.md
+  - entities/tools/olmocr.md
+  - entities/tools/unlimited-ocr.md
+  - meta/substack-rss-ingest-cadence.md
+  - sources/karpathy-llm-wiki-field-notes-png-2026-04-26.md
+  - sources/llm-wiki.md
+  - sources/multi-wiki-url-evaluation-2026-07-03.md
+  - sources/super-audit-ai-harness-2026-09-02.md
 maturity: core
 created: 2026-05-31
-updated: 2026-07-29
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -15,10 +15,18 @@ related:
   - sources/arxiv-2606.25819-toolbench-x-tool-unreliability-2026-06-26.md
   - sources/brief-k132-fara-agent-env-steals-2026-06-27.md
   - sources/arxiv-2606.20785-fara-computer-use-agents-2026-06-27.md
+  - concepts/poker-hl-analyst-loop.md
+  - sources/arxiv-2606.26027-tool-rl-collapse-supervisory-signals-2026-07-02.md
+  - sources/arxiv-2606.26294-red-queen-godel-machine-2026-06-29.md
+  - sources/arxiv-2606.30573-swe-interact-user-driven-coding-agents-2026-07-03.md
+  - sources/arxiv-2606.30587-llm-vuln-detection-cognitive-heuristics-2026-07-06.md
+  - sources/brief-k131-toolbench-ganzfried-steals-2026-06-26.md
+  - sources/brief-k133-rqgm-evaluator-steals-2026-06-29.md
+  - sources/brief-k136-tool-rl-collapse-steals-2026-07-02.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-26
-updated: 2026-06-27
+updated: 2026-10-25
 ---
 
 ## Relations

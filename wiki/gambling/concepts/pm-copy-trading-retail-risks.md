@@ -21,9 +21,15 @@ related:
   - concepts/pm-agent-cognitive-monoculture.md
   - concepts/pm-proper-scoring-clob-profitability.md
   - sources/openreview-prophets-profit-pm-LYSTj2Cnuu-2026-06-17.md
+  - concepts/kalshi-spotify-oracle-manipulation-2026-07.md
+  - concepts/pm-whale-conviction-bias-2026-07.md
+  - sources/arxiv-2606-13038-nous-prediction-market-cognitive-injection-2026-06-13.md
+  - sources/arxiv-2607.08692-pokemon-tcg-nash-lean-metagame-2026-07-13.md
+  - sources/rss-lsr-cftc-mention-market-advisory-2026-09-23.md
+  - sources/rss-lsr-ncpg-functionally-gambling-2026-09-23.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-06-17
+updated: 2026-10-25
 ---
 
 ## Relations

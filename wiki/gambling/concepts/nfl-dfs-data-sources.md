@@ -19,9 +19,14 @@ related:
   - concepts/free-slate-context.md
   - entities/tools/the-odds-api.md
   - sources/daily-digest-batch-k174-2026-09-21.md
+  - concepts/diy-nfl-pickem-props-tool-architecture.md
+  - concepts/pickem-legal-and-tos-posture.md
+  - entities/tools/ceminidfs.md
+  - entities/tools/momentum-odds.md
+  - sources/research-diy-pickem-props-master-plan-2026-07-05.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-09-21
+updated: 2026-10-25
 ---
 
 ## Relations

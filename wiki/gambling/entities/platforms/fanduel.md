@@ -29,9 +29,18 @@ related:
   - sources/daily-digest-batch-k180-2026-10-02.md
   - sources/rss-operator-scrutiny-2026-10-07-08.md
   - sources/daily-digest-batch-k183-2026-10-09.md
+  - concepts/diy-nfl-dfs-model-architecture.md
+  - concepts/fd-dk-scoring-conversion.md
+  - concepts/nfl-weekly-slate-hub-workflow.md
+  - entities/tools/ceminidfs.md
+  - sources/daily-digest-rss-week1-pm-nfl-2026-09-11.md
+  - sources/nfl-betting-dfs-intelligence-week1-2026-09-11.md
+  - sources/research-diy-dfs-model-master-plan-2026-06-20.md
+  - sources/rss-sbc-brazil-stake-2026-10-09-12.md
+  - sources/web-sportsbookreview-hard-rock-bet-2026-06-20.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -7,7 +7,6 @@ related:
   - sources/eval-url-cemini-research-2026-06-25.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/active-project-research-routing.md
-  - @image-gen-wiki/entities/tools/design-dna.md
 maturity: draft
 created: 2026-06-25
 updated: 2026-06-25
@@ -17,7 +16,6 @@ updated: 2026-06-25
 
 - @sources/eval-url-cemini-research-2026-06-25.md — K129 Adopt row (URL 9)
 - @concepts/wiki-tooling-evaluation.md — Phase-0 registry
-- @image-gen-wiki/entities/tools/design-dna.md — primary wiki home (cross-route stub)
 
 ## Raw Concept
 

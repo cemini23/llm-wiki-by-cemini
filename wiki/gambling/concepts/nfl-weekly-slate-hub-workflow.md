@@ -22,9 +22,14 @@ related:
   - concepts/dfs-weather-adjustments.md
   - concepts/dfs-dart-opposing-looks.md
   - meta/research-input-pipeline.md
+  - meta/nfl-slate-prefetch-cadence.md
+  - sources/nfl-betting-dfs-intelligence-week1-2026-09-11.md
+  - sources/nfl-week2-saturday-deltas-2026-09-19.md
+  - sources/nfl-week2-slate-env-analysis-2026-09-18.md
+  - sources/nfl-week3-saturday-deltas-2026-09-26.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-10-04
+updated: 2026-10-25
 ---
 
 ## Relations

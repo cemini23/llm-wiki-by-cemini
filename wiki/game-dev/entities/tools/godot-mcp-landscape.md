@@ -22,9 +22,14 @@ related:
   - sources/godot-stagehand-phase-0-audit-2026-06-13.md
   - sources/godot-ai-playtest-phase-0-audit-2026-06-13.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
+  - sources/arxiv-2609.27585-unity-insight-code-asset-index-2026-09-24.md
+  - sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md
+  - sources/notnull92-hera-agent-godot-devto-2026-06-25.md
+  - sources/phaser-game-agent-mcp-update-2026-07-08.md
+  - sources/unreal-engine-58-mcp-shelf-2026-06-24.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

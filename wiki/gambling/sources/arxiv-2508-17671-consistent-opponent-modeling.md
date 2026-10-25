@@ -9,10 +9,15 @@ related:
   - entities/platforms/devfun-poker-arena.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - sources/brief-k131-toolbench-ganzfried-steals-2026-06-26.md
+  - sources/arxiv-2606.16139-team-zero-sum-games-complexity-2026-06-20.md
+  - sources/arxiv-2606.25997-ganzfried-vbt-nash-imperfect-info-2026-06-26.md
+  - sources/arxiv-2606.29169-ganzfried-ped-nash-imperfect-info-2026-06-30.md
+  - sources/arxiv-2607.01498-policy-representation-ssl-poker-2026-07-07.md
+  - sources/research-k122-poker-paper-landscape-2026-06-19.md
 maturity: draft
 read_status: read
 created: 2026-06-03
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations

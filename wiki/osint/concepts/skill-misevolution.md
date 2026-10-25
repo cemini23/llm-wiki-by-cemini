@@ -22,9 +22,21 @@ related:
   - sources/arxiv-2608.19013-harness-continual-learning-2026-08-20.md
   - sources/eval-repository-revenue-2026-08-20.md
   - sources/newsletter-rss-pragmatic-engineer-2026-08-19-osmani-ai-engineering.md
+  - concepts/k250-skill-evolution-wave.md
+  - concepts/skill-set-selection-under-budget.md
+  - concepts/wayfinder-fog-of-war-planning.md
+  - entities/tools/recuris.md
+  - entities/tools/starharness.md
+  - sources/arxiv-2608.24804-starharness-2026-08-26.md
+  - sources/arxiv-2608.24876-recuris-em-wm-memory-2026-08-26.md
+  - sources/arxiv-2608.27454-wikiskill-2026-08-29.md
+  - sources/arxiv-2610.10345-sldr-2026-10-08.md
+  - sources/arxiv-k244-harness-skill-selection-cluster.md
+  - sources/newsletter-rss-latent-space-2026-08-20-wayfinder.md
+  - sources/substack-rss-addy-osmani-2026-08-21-software-factory.md
 maturity: draft
 created: 2026-08-14
-updated: 2026-08-20
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -8,11 +8,18 @@ related:
   - sources/arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - concepts/agent-harness-castle-project.md
+  - sources/arxiv-2609.23043-narrative-reliability-detective-games-2026-09-24.md
+  - sources/arxiv-2609.23142-craftbench-ue-deterministic-eval-2026-09-24.md
+  - sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md
+  - sources/arxiv-2609.27585-unity-insight-code-asset-index-2026-09-24.md
+  - sources/arxiv-2609.27606-state-grounded-conditioning-2026-09-24.md
+  - sources/inbox-arxiv-reject-batch-2026-09-30.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-25
 ---
 
 ## Raw Concept

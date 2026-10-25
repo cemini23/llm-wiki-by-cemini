@@ -73,9 +73,18 @@ related:
   - sources/brief-k170-week1-papers-rss-2026-09-11.md
   - sources/arxiv-2609.18848-fp-tie-breaking-first-price-auctions-2026-09-17.md
   - sources/brief-k171-pm-fp-regulatory-2026-09-17.md
+  - entities/games/indian-rummy.md
+  - entities/tools/devfun-poker-arena-starter-kit.md
+  - sources/arxiv-2606.22688-garip-last-iterate-selfplay-2026-06-23.md
+  - sources/arxiv-2606.23995-emagnet-selfplay-regularization-2026-06-24.md
+  - sources/arxiv-2609.33669-rsd-poker-shift-robust-2026-09-29.md
+  - sources/arxiv-2610-fictitious-play-trio-2026-10-07.md
+  - sources/arxiv-2610.09244-risk-averse-multi-population-mfg-2026-10-09.md
+  - sources/brief-k130-rlcard-offline-baseline-adopt-2026-06-26.md
+  - sources/research-k122-poker-paper-landscape-2026-06-19.md
 maturity: draft
 created: 2026-06-03
-updated: 2026-09-17
+updated: 2026-10-25
 ---
 
 ## Relations

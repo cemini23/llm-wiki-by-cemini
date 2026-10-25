@@ -41,9 +41,20 @@ related:
   - sources/arxiv-2607.17765-wc2026-agents-llm-forecasting-2026-07-21.md
   - sources/research-wnba-cold-streak-live-unders-2026-08-13.md
   - entities/sports/cfb-betting.md
+  - entities/sports/nhl-betting.md
+  - entities/sports/tennis-betting.md
+  - sources/arxiv-2604.21851-betting-on-bets-stochastic-dominance-2026-07-06.md
+  - sources/arxiv-2607.00164-verifiable-rewards-calibrated-forecasting-2026-07-03.md
+  - sources/arxiv-2609.07617-live-tennis-forecasting-2026-09-11.md
+  - sources/rss-lsb-cfb-texas-oklahoma-2026-10-07.md
+  - sources/rss-lsb-cfb-week6-cards-2026-10-01.md
+  - sources/rss-lsb-mlb-al-pennant-2026-10-09.md
+  - sources/rss-lsb-nhl-opening-night-props-2026-09-29.md
+  - sources/rss-lsb-week4-game-cards-2026-10-02.md
+  - sources/web-tech-insider-nfl-betting-strategy-2026-06-20.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-10-02
+updated: 2026-10-25
 ---
 
 ## Relations

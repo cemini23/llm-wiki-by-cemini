@@ -7,9 +7,19 @@ related:
   - sources/arxiv-2608.10669-redagentbench-2026-08-12.md
   - concepts/recognition-execution-gap.md
   - sources/newsletter-rss-tldrsec-2026-08-13-tldr-sec-341---hugging-face-incident-black-hat-t.md
+  - concepts/agent-runtime-identity-adr.md
+  - concepts/inadvertent-context-leakage.md
+  - sources/arxiv-2608.18628-safety-overrides-vision.md
+  - sources/arxiv-2608.19857-inadvertent-context-leakage.md
+  - sources/arxiv-2610.10276-patchbench-2026-10-08.md
+  - sources/arxiv-2610.11030-nomos-2026-10-10.md
+  - sources/arxiv-2610.13078-attention-mlp-refusal-2026-10-12.md
+  - sources/newsletter-rss-tldrsec-2026-08-20-tldr-sec-342.md
+  - sources/substack-rss-secpro-2026-08-21-ai-ready-soc.md
+  - sources/substack-rss-secpro-2026-10-05-associated-authors.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-13
+updated: 2026-10-25
 ---
 
 ## Relations

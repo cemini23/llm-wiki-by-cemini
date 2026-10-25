@@ -17,9 +17,14 @@ related:
   - sources/web-offseason-hub-w27-synthesis-2026-07-05.md
   - concepts/nfl-offseason-research-cadence.md
   - sources/rotoviz-preseason-paywall-2026-08-14.md
+  - meta/nfl-offseason-weekly-cadence.md
+  - sources/brief-k128-bbm7-draft-copilot-hub-2026-06-24.md
+  - sources/web-bleacher-report-key-injuries-2026-07-01.md
+  - sources/web-offseason-hub-w28-synthesis-2026-07-19.md
+  - sources/web-offseason-hub-w29-synthesis-2026-07-19.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-08-14
+updated: 2026-10-25
 ---
 
 ## Relations

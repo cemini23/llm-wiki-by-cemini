@@ -14,9 +14,16 @@ related:
   - entities/tools/fantasylabs-dfs.md
   - sources/gemini-github-sports-betting-landscape-2026-05-30.md
   - sources/web-nfl-dfs-correlation-stacking-2026-06-20.md
+  - concepts/dfs-distribution-layer.md
+  - concepts/dfs-foss-tooling-landscape.md
+  - concepts/dfs-paid-tool-methodologies.md
+  - concepts/dfs-pipeline-integration-spec.md
+  - concepts/diy-nfl-dfs-model-architecture.md
+  - entities/tools/ceminidfs.md
+  - sources/research-diy-dfs-model-master-plan-2026-06-20.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-06-20
+updated: 2026-10-25
 ---
 
 ## Relations

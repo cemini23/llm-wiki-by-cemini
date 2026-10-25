@@ -23,9 +23,18 @@ related:
   - sources/arxiv-2610.04261-social-deduction-rft-2026-10-07.md
   - sources/arxiv-2610.09683-system-switch-fast-slow-gate-2026-10-09.md
   - sources/arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12.md
+  - sources/arxiv-2607.05352-mira-multiplayer-world-models-2026-07-09.md
+  - sources/hero-rl-llm-npc-springer-2026-06-26.md
+  - sources/inbox-arxiv-reject-batch-2026-06-30.md
+  - sources/inbox-arxiv-reject-batch-2026-07-01.md
+  - sources/inbox-arxiv-reject-batch-2026-07-15.md
+  - sources/inbox-arxiv-reject-batch-2026-07-17.md
+  - sources/inbox-arxiv-reject-batch-2026-07-18.md
+  - sources/inbox-arxiv-reject-batch-2026-07-19.md
+  - sources/unity-sentis-practical-shelf-2026-06-23.md
 maturity: validated
 created: 2026-06-20
-updated: 2026-06-30
+updated: 2026-10-25
 ---
 
 ## Relations

@@ -19,9 +19,14 @@ related:
   - sources/arxiv-2607.02222-cofl-s-sector-flow-fields-2026-07-16.md
   - sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md
   - sources/inbox-arxiv-reject-batch-2026-08-15.md
+  - sources/inbox-arxiv-reject-batch-2026-07-16.md
+  - sources/inbox-arxiv-reject-batch-2026-07-17.md
+  - sources/inbox-arxiv-reject-batch-2026-07-18.md
+  - sources/inbox-arxiv-reject-batch-2026-07-19.md
+  - sources/inbox-arxiv-reject-batch-2026-07-22.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Relations

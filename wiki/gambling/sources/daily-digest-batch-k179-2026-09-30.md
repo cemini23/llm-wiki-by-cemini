@@ -12,10 +12,15 @@ related:
   - sources/rss-eh-kalshi-curry-geofence-2026-09-25.md
   - entities/sports/nhl-betting.md
   - sweeps/2026-09-30-daily.md
+  - concepts/prediction-markets-crossover.md
+  - concepts/sportsbook-pm-line-divergence.md
+  - entities/platforms/draftkings.md
+  - entities/platforms/kalshi.md
+  - entities/platforms/polymarket.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — 2 regulatory, 2 industry, 1 new sport vertical
 wire_status: policy_wired
 ---

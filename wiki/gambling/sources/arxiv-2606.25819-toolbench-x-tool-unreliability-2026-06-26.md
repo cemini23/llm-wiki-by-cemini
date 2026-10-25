@@ -15,10 +15,17 @@ related:
   - sources/arxiv-2606.20785-fara-computer-use-agents-2026-06-27.md
   - sources/arxiv-2606.26027-tool-rl-collapse-supervisory-signals-2026-07-02.md
   - sweeps/2026-06-26-daily.md
+  - entities/bots/cemini-devfun-poker-agent.md
+  - sources/arxiv-2606.26294-red-queen-godel-machine-2026-06-29.md
+  - sources/arxiv-2606.30573-swe-interact-user-driven-coding-agents-2026-07-03.md
+  - sources/brief-k132-fara-agent-env-steals-2026-06-27.md
+  - sources/brief-k133-rqgm-evaluator-steals-2026-06-29.md
+  - sources/brief-k136-tool-rl-collapse-steals-2026-07-02.md
+  - sources/brief-k137-swe-interact-rlvr-nfl-steals-2026-07-03.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-26
-updated: 2026-07-02
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.25819-2606-25819v1-beyond-function-calling-benchmarkin.pdf
 phase_0_verdict: CONDITIONAL-GO 2026-06-26 — ToolBench-X repo has no LICENSE (gh api); reference benchmark design only, no install
 ---

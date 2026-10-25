@@ -13,9 +13,14 @@ related:
   - sources/nfl-week2-slate-env-analysis-2026-09-18.md
   - sources/brief-k172-w02-env-rss-2026-09-18.md
   - sources/nfl-week2-saturday-deltas-2026-09-19.md
+  - entities/tools/sharp-football-analysis.md
+  - sources/nfl-week3-saturday-deltas-2026-09-26.md
+  - sources/nfl-week3-scheme-breakdown-2026-09-23.md
+  - sources/nfl-week4-slate-env-2026-10-02.md
+  - sources/steelers-browns-tnf-metaplan-2026-10-01.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-09-20
+updated: 2026-10-25
 ---
 
 ## Relations

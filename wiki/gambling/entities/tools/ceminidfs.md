@@ -21,9 +21,18 @@ related:
   - sources/research-nfl-historical-odds-2026-06-20.md
   - meta/research-input-pipeline.md
   - "@osint-wiki/concepts/active-project-research-routing.md"
+  - concepts/diy-nfl-pickem-props-tool-architecture.md
+  - concepts/nfl-offseason-research-cadence.md
+  - concepts/nfl-weekly-slate-hub-workflow.md
+  - concepts/pickem-backtesting-framework.md
+  - concepts/pickem-data-sources.md
+  - concepts/pickem-legal-and-tos-posture.md
+  - entities/tools/sharp-football-analysis.md
+  - sources/brief-k128b-bbm7-challenges-and-solutions-2026-06-24.md
+  - sources/research-diy-pickem-props-master-plan-2026-07-05.md
 maturity: validated
 created: 2026-06-20
-updated: 2026-10-10
+updated: 2026-10-25
 ---
 
 ## Relations

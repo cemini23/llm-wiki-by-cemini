@@ -25,9 +25,18 @@ related:
   - entities/tools/serena.md
   - sources/newsletter-rss-latent-space-2026-07-17-kimi-k3.md
   - entities/tools/kimi-cli.md
+  - entities/tools/fable-advisor.md
+  - entities/tools/gastown.md
+  - entities/tools/grok-build-plugin-cc.md
+  - entities/tools/sysadmin-copilot.md
+  - sources/arxiv-2607.14082-shor-algorithm-lean-agentic-formalization-2026-07-16.md
+  - sources/eval-github-repo-multi-wiki-copilot-2026-07-06.md
+  - sources/eval-multi-wiki-github-mcp-2026-07-05.md
+  - sources/eval-multi-wiki-repo-evaluation-strategy-2026-07-11.md
+  - sources/newsletter-rss-latent-space-2026-07-14-ainews-codex-harness-observability.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-18
+updated: 2026-10-25
 ---
 
 ## Relations

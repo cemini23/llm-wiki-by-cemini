@@ -30,9 +30,14 @@ related:
   - sources/godot-47-release-shelf-2026-06-25.md
   - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
   - sources/godot-engine-ai-contribution-policy-2026-07-01.md
+  - concepts/agent-harness-castle-project.md
+  - sources/arxiv-2609.27585-unity-insight-code-asset-index-2026-09-24.md
+  - sources/brickworks-godot-lego-framework-shelf-2026-07-15.md
+  - sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md
+  - sources/unity-sentis-practical-shelf-2026-06-23.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-07-03
+updated: 2026-10-25
 ---
 
 ## Relations

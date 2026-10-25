@@ -9,9 +9,10 @@ related:
   - concepts/k288-feeds-wave.md
   - concepts/active-project-research-routing.md
   - sources/eval-dfs-betting-repositories-2026-10-10.md
+  - concepts/k287-eval-wave.md
 maturity: draft
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-25
 harness_verb: FILE
 wire_status: policy_wired
 ---

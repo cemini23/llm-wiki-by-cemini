@@ -210,10 +210,22 @@ def _cross_domain(a, b):
     return RESOLVER.domain_of(a) != RESOLVER.domain_of(b)
 
 
+def _no_frontmatter(page_path):
+    """True for sweeps/ and digest pages: no frontmatter, so no related: block.
+
+    Symmetry cannot be satisfied against a page that has nowhere to record the
+    edge, and the backlink fixer cannot write one either. Reporting them as gaps
+    is permanent noise — 315 edges of it before this was exempted.
+    """
+    return bool((pages.get(page_path) or {}).get("_no_frontmatter"))
+
+
 gaps = []
 for src, tgts in outbound.items():
     for tgt in tgts:
         if _is_hub(tgt):
+            continue
+        if _no_frontmatter(tgt):
             continue
         if _cross_domain(src, tgt):
             continue

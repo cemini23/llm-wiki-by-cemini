@@ -21,11 +21,19 @@ related:
   - sources/godot-ai-playtest-phase-0-audit-2026-06-13.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
   - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
+  - entities/tools/gamelogicbench.md
+  - entities/tools/hera-agent-godot.md
+  - entities/tools/vrexplorer.md
+  - sources/arxiv-2607.10174-vrexplorer-vr-testing-2026-07-14.md
+  - sources/arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24.md
+  - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
+  - sources/notnull92-hera-agent-godot-devto-2026-06-25.md
+  - sources/vrexplorer-phase-0-audit-2026-07-14.md
 wire_status: policy_wired
 wire_target: concepts/agent-harness-castle-project.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-17
+updated: 2026-10-25
 ---
 
 ## Relations

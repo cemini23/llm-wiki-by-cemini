@@ -1,6 +1,7 @@
 ---
 title: Game dev wiki scope and sibling boundaries
 type: concept
+hub: true
 tags: [concept, meta, federation, scope]
 keywords: [scope, boundary, ccc-wiki, image-gen-wiki, castle-sim, stronghold]
 related:

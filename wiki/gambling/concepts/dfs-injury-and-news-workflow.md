@@ -16,9 +16,17 @@ related:
   - sources/nfl-week3-practice-reports-2026-09-24.md
   - sources/daily-digest-batch-k176-2026-09-24.md
   - meta/daily-research-digest-cadence.md
+  - concepts/diy-nfl-pickem-props-tool-architecture.md
+  - concepts/nfl-dfs-data-sources.md
+  - concepts/nfl-offseason-research-cadence.md
+  - concepts/nfl-weekly-slate-hub-workflow.md
+  - meta/nfl-slate-prefetch-cadence.md
+  - sources/nfl-betting-dfs-intelligence-week1-2026-09-11.md
+  - sources/nfl-week4-practice-reports-2026-10-01.md
+  - sources/nfl-week4-research-plan-2026-10-01.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-09-24
+updated: 2026-10-25
 ---
 
 ## Relations

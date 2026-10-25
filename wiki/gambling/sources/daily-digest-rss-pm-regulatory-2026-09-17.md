@@ -13,10 +13,15 @@ related:
   - sources/brief-k171-pm-fp-regulatory-2026-09-17.md
   - meta/daily-research-digest-cadence.md
   - sweeps/2026-09-17-daily.md
+  - sources/daily-digest-batch-k174-2026-09-21.md
+  - sources/daily-digest-batch-k175-2026-09-23.md
+  - sources/daily-digest-rss-pm-eh-ep33-2026-09-21.md
+  - sources/daily-digest-rss-pm-regulatory-2026-09-23.md
+  - sources/daily-digest-rss-w02-nfl-pm-2026-09-18.md
 maturity: draft
 read_status: skimmed
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-10-25
 wire_status: policy_wired
 ---
 

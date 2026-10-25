@@ -69,9 +69,25 @@ related:
   - entities/sports/wnba-betting.md
   - sources/research-wnba-cold-streak-live-unders-2026-08-13.md
   - sources/arxiv-2604.27865-kellybench-2026-08-31.md
+  - entities/games/indian-rummy.md
+  - sources/arxiv-2606-13038-nous-prediction-market-cognitive-injection-2026-06-13.md
+  - sources/arxiv-2606.21975-irumai-indian-rummy-rl-2026-06-24.md
+  - sources/arxiv-2606.23321-tmax-terminal-agents-2026-06-25.md
+  - sources/arxiv-2606.25819-toolbench-x-tool-unreliability-2026-06-26.md
+  - sources/arxiv-2606.26294-red-queen-godel-machine-2026-06-29.md
+  - sources/arxiv-2606.29457-takeover-auction-diligence-games-2026-06-30.md
+  - sources/arxiv-2606.30573-swe-interact-user-driven-coding-agents-2026-07-03.md
+  - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
+  - sources/arxiv-2607.07666-ensemble-qsp-hierarchical-memory-2026-07-13.md
+  - sources/arxiv-2607.07820-deepsearch-world-self-distillation-2026-07-13.md
+  - sources/arxiv-2607.08758-ideas-have-genomes-ig-bench-2026-07-14.md
+  - sources/brief-k132-fara-agent-env-steals-2026-06-27.md
+  - sources/brief-k133-rqgm-evaluator-steals-2026-06-29.md
+  - sources/brief-k136-tool-rl-collapse-steals-2026-07-02.md
+  - sources/daily-digest-reject-cluster-k119-2026-06-18.md
 maturity: core
 created: 2026-05-31
-updated: 2026-08-31
+updated: 2026-10-25
 ---
 
 # Gambling bot architecture (planned)

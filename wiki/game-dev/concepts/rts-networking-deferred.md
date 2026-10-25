@@ -8,9 +8,14 @@ related:
   - sources/arxiv-1705-09704-lockstep-simulation.md
   - concepts/game-dev-wiki-scope.md
   - sources/inbox-arxiv-reject-batch-2026-07-09.md
+  - sources/arxiv-2607.05352-mira-multiplayer-world-models-2026-07-09.md
+  - sources/inbox-arxiv-reject-batch-2026-07-07.md
+  - sources/inbox-arxiv-reject-batch-2026-07-08.md
+  - sources/inbox-arxiv-reject-batch-2026-07-20.md
+  - sources/inbox-arxiv-reject-batch-2026-07-28.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Relations

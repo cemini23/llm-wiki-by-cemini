@@ -8,9 +8,17 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - concepts/fomc-iv-surface-dynamics.md
   - concepts/high-iv-collar-shopping.md
+  - concepts/k283-arxiv-wave.md
+  - sources/arxiv-2610.03849-beneath-the-vix-2026-10-06.md
+  - sources/arxiv-2610.06495-uncertain-vol-error-bounds-2026-10-06.md
+  - sources/arxiv-2610.07554-bspline-galerkin-cgmy-2026-10-07.md
+  - sources/arxiv-2610.13044-fomo-flex-options-2026-10-12.md
+  - sources/arxiv-2610.13543-three-options-rough-heston-2026-10-12.md
+  - sources/substack-rss-glitchspx-2026-10-11-talon-weekly-oct-12-16.md
+  - sources/substack-rss-moontower-2026-10-11-iron-condor-destroyer.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-10-25
 ---
 
 ## Relations

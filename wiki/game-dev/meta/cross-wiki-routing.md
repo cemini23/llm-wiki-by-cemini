@@ -1,6 +1,7 @@
 ---
 title: Cross-wiki routing (game-dev vs ccc vs image-gen)
 type: concept
+hub: true
 tags: [meta, routing, federation]
 keywords: [routing, ccc-wiki, image-gen-wiki, osint-wiki, ingest]
 related:

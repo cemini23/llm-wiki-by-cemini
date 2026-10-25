@@ -69,9 +69,19 @@ related:
   - concepts/minecraft-modding-ecosystem.md
   - concepts/minecraft-data-driven-content-patterns.md
   - sources/k282-level-editors-tile-tooling-2026-10-05.md
+  - concepts/minecraft-bedrock-addons-scripting.md
+  - entities/tools/blockbench.md
+  - entities/tools/gamelogicbench.md
+  - entities/tools/hera-agent-godot.md
+  - entities/tools/pcgodot.md
+  - sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md
+  - sources/chris-tutorials-grid-placement-godot-shelf-2026-07-11.md
+  - sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md
+  - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
+  - sources/pcgodot-phase-0-audit-2026-06-30.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-08-15
+updated: 2026-10-25
 ---
 
 ## Relations

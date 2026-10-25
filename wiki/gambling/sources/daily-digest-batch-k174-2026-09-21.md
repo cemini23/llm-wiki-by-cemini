@@ -10,10 +10,15 @@ related:
   - sources/daily-digest-rss-pm-regulatory-2026-09-17.md
   - sweeps/2026-09-21-daily.md
   - meta/daily-research-digest-cadence.md
+  - concepts/dfs-injury-and-news-workflow.md
+  - concepts/nfl-dfs-data-sources.md
+  - entities/platforms/kalshi.md
+  - entities/sports/nfl-betting.md
+  - sources/daily-digest-batch-k175-2026-09-23.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-10-25
 phase_0_verdict: REFERENCE — Week 3 injury awareness; PM cross-link only
 wire_status: policy_wired
 ---

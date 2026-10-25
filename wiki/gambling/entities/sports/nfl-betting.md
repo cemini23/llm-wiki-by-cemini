@@ -85,9 +85,29 @@ related:
   - sources/rss-rotoballer-w5-rb-waiver-2026-10-05.md
   - sources/daily-digest-batch-k181-2026-10-06.md
   - meta/research-input-pipeline.md
+  - concepts/daily-edge-card.md
+  - concepts/implied-team-totals-dfs.md
+  - concepts/pickem-data-sources.md
+  - concepts/pickem-stat-type-mapping.md
+  - concepts/season-long-fantasy-waiver-wire.md
+  - entities/tools/sharp-football-analysis.md
+  - sources/daily-digest-rss-pm-regulatory-2026-09-17.md
+  - sources/daily-digest-rss-w02-sat-injury-2026-09-20.md
+  - sources/fantasylabs-picklabs-launch-2026-07-05.md
+  - sources/research-diy-pickem-props-master-plan-2026-07-05.md
+  - sources/rss-lsb-state-markets-2026-10-07.md
+  - sources/rss-lsb-week5-cards-2026-10-05-06.md
+  - sources/rss-rotoballer-week5-6-2026-10-11-12.md
+  - sources/rss-sbc-nfl-midnite-everton-2026-10-08-09.md
+  - sources/rss-sharp-football-week5-final-2026-10-09-11.md
+  - sources/rss-sharp-football-week5-worksheets-2026-10-06.md
+  - sources/rss-sharp-football-week5-worksheets-2026-10-07.md
+  - sources/web-bleacher-report-key-injuries-2026-07-01.md
+  - sources/web-dfs-hero-nfl-gpp-strategy-2026-06-20.md
+  - sources/web-offseason-hub-w27-synthesis-2026-07-05.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 ## Relations

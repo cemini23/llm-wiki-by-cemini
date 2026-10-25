@@ -39,9 +39,26 @@ related:
   - entities/tools/wc2026-agents.md
   - sources/brief-k160-wc2026-agents-market-baseline-steals-2026-07-21.md
   - sources/arxiv-2607.08861-fictitious-play-coupled-fbsde-2026-07-16.md
+  - sources/arxiv-2606.14571-streammembench-agent-memory-2026-06-21.md
+  - sources/arxiv-2606.20820-celeus-llm-eval-eprocesses-2026-06-25.md
+  - sources/arxiv-2606.23321-tmax-terminal-agents-2026-06-25.md
+  - sources/arxiv-2606.26807-karla-kb-augmented-retrieval-2026-07-06.md
+  - sources/arxiv-2606.30587-llm-vuln-detection-cognitive-heuristics-2026-07-06.md
+  - sources/arxiv-2607.01120-areal-agentic-rl-self-evolving-agents-2026-07-09.md
+  - sources/arxiv-2607.01585-advent-ilp-poker-predicate-invention-2026-07-07.md
+  - sources/arxiv-2607.02599-agentltl-trace-verification-agents-2026-07-10.md
+  - sources/arxiv-2607.03510-cage-1-enterprise-agent-governance-2026-07-10.md
+  - sources/arxiv-2607.10251-risk-sensitive-llm-poker-2026-07-15.md
+  - sources/arxiv-2609.31473-game-arena-strategic-llm-evaluation-2026-09-28.md
+  - sources/brief-k129-celeus-tmax-eval-steals-2026-06-25.md
+  - sources/brief-k131-toolbench-ganzfried-steals-2026-06-26.md
+  - sources/brief-k132-fara-agent-env-steals-2026-06-27.md
+  - sources/brief-k133-rqgm-evaluator-steals-2026-06-29.md
+  - sources/brief-k136-tool-rl-collapse-steals-2026-07-02.md
+  - sources/brief-k137-swe-interact-rlvr-nfl-steals-2026-07-03.md
 maturity: validated
 created: 2026-06-19
-updated: 2026-07-29
+updated: 2026-10-25
 ---
 
 ## Relations

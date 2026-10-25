@@ -1,6 +1,7 @@
 ---
 title: Daily research digest cadence (gambling-wiki)
 type: concept
+hub: true
 tags: [meta, automation, discovery, k93, federation]
 keywords: [daily-research-digest, exa, sweep, inbox, federated-digest, rss]
 related:

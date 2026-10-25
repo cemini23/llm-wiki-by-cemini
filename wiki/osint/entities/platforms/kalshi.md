@@ -85,9 +85,14 @@ related:
   - sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
   - sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md
   - "@gambling-wiki/entities/sports/wnba-betting.md"
+  - concepts/settlement-manipulation-prediction-markets.md
+  - entities/tools/sportsbook-api-evangelist.md
+  - sources/arxiv-settlement-manipulation-pm-2606.31675-2026-07-01.md
+  - sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
+  - sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-08-13
+updated: 2026-10-25
 ---
 
 ## Relations

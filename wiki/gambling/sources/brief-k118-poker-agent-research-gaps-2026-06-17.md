@@ -18,10 +18,20 @@ related:
   - sources/research-k122-poker-paper-landscape-2026-06-19.md
   - sources/brief-k125-eval-gate-discipline-2026-06-22.md
   - sources/arxiv-2606.14506-distribution-shift-model-eval-2026-06-22.md
+  - concepts/custom-agent-methodology.md
+  - concepts/heads-up-arena-strategy.md
+  - meta/daily-research-digest-cadence.md
+  - sources/arxiv-2606.11869-agents-all-the-way-down-2026-06-19.md
+  - sources/arxiv-2606.14571-streammembench-agent-memory-2026-06-21.md
+  - sources/brief-k122-poker-researcher-track-plan-2026-06-19.md
+  - sources/brief-k123-researcher-jun21-checklist-2026-06-20.md
+  - sources/brief-k130-rlcard-offline-baseline-adopt-2026-06-26.md
+  - sources/daily-digest-reject-cluster-k119-2026-06-18.md
+  - sources/devfun-poker-arena-phase0-2026-06-01.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-17
-updated: 2026-06-22
+updated: 2026-10-25
 cross-wiki-source: "briefs/2026-06-17_k118-gambling-poker-agent-research-gap-fixes.md"
 ---
 

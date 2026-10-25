@@ -38,9 +38,15 @@ related:
   - sources/rss-pm-legal-2026-10-07-09.md
   - sources/rss-operator-scrutiny-2026-10-07-08.md
   - sources/daily-digest-batch-k183-2026-10-09.md
+  - concepts/fd-dk-scoring-conversion.md
+  - entities/platforms/hard-rock-bet.md
+  - entities/tools/fantasylabs-dfs.md
+  - sources/rss-sbc-cee-merkur-2026-10-07.md
+  - sources/web-dfs-hero-nfl-gpp-strategy-2026-06-20.md
+  - sources/web-sportsbookreview-hard-rock-bet-2026-06-20.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 ## Relations

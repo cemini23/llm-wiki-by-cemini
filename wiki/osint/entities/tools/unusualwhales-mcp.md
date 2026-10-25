@@ -15,7 +15,6 @@ updated: 2026-06-28
 ## Relations
 
 - @sources/eval-github-batch-unusualwhales-2026-06-28.md — K133 Adopt row
-- @tipdrop-wiki/entities/data-vendors/unusual-whales.md — upstream vendor; official MCP cross-check
 
 ## Raw Concept
 

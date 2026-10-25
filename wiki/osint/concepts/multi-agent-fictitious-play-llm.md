@@ -14,7 +14,22 @@ related:
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
   - concepts/exact-multiplayer-nash-computation.md
   - concepts/k255-poker-game-theory-wave.md
-updated: 2026-09-04
+  - concepts/devfun-researcher-track-readiness-2026-06.md
+  - concepts/hybrid-intelligence-human-capital-forecasting.md
+  - concepts/nash-equilibrium-solver-selection.md
+  - concepts/policy-representation-learning-imperfect-info.md
+  - concepts/self-enforcing-transfer-equilibrium.md
+  - concepts/takeover-auction-diligence-solvers.md
+  - sources/arxiv-2608.15258-self-fictitious-play-2026-08-18.md
+  - sources/arxiv-emagnet-parameter-space-ema-2606.23995-2026-06-25.md
+  - sources/arxiv-equilibrium-internal-transfers-seate-2606.20960-2026-06-25.md
+  - sources/arxiv-irumai-indian-rummy-ppo-2606.21975-2026-06-25.md
+  - sources/arxiv-moral-geometry-nash-kantian-2606.21967-2026-06-25.md
+  - sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md
+  - sources/arxiv-policy-representation-2607.01498-2026-07-07.md
+  - sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md
+  - sources/arxiv-takeover-auction-diligence-2606.29457-2026-07-01.md
+updated: 2026-10-25
   - sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md
   - concepts/devfun-researcher-track-readiness-2026-06.md
   - concepts/projected-exploitability-descent.md

@@ -14,9 +14,15 @@ related:
   - entities/tools/gamedevbench.md
   - sources/gamedevbench-phase-0-audit-2026-06-21.md
   - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
+  - entities/tools/hera-agent-godot.md
+  - sources/arxiv-2609.27585-unity-insight-code-asset-index-2026-09-24.md
+  - sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md
+  - sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md
+  - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
+  - sources/sods2-godot-mcp-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-09-19
+updated: 2026-10-25
 wire_status: policy_wired
 wire_target: concepts/agent-harness-castle-project.md
 ---

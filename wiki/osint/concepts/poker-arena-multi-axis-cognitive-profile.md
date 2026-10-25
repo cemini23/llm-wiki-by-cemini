@@ -45,9 +45,24 @@ related:
   - sources/arxiv-ipo-finance-agent-2606.23032-2026-06-24.md
   - sources/arxiv-footsiesgym-2607.06514-2026-07-09.md
   - sources/arxiv-lightweight-game-agent-2607.06854-2026-07-09.md
+  - concepts/ai-native-games-taxonomy.md
+  - concepts/policy-representation-learning-imperfect-info.md
+  - concepts/relaxed-nfl-auto-formalization.md
+  - concepts/takeover-auction-diligence-solvers.md
+  - entities/tools/ai-pokergame.md
+  - entities/tools/claude-video.md
+  - entities/tools/pokerkit.md
+  - entities/tools/rlcard.md
+  - entities/tools/spade.md
+  - sources/arxiv-2608.19197-spade-2026-08-20.md
+  - sources/arxiv-forex-lean4-fallacy-detection-2606.21867-2026-06-25.md
+  - sources/arxiv-metanym-game-llm-benchmark-2606.21008-2026-06-25.md
+  - sources/arxiv-relaxed-nfl-auto-formalization-2606.24443-2026-06-26.md
+  - sources/arxiv-variable-bound-tightening-nash-2606.25997-2026-07-04.md
+  - sources/eval-poker-github-repos-2026-06-26.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-07-09
+updated: 2026-10-25
 ---
 
 ## Relations

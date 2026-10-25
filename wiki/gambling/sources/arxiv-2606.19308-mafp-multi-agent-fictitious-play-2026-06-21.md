@@ -23,10 +23,15 @@ related:
   - sources/brief-k166-regret-learning-games-shelf-2026-08-12.md
   - sources/arxiv-2608.15258-self-fictitious-play-mfg-2026-08-18.md
   - sources/brief-k167-sfp-mfg-shelf-2026-08-18.md
+  - concepts/poker-hl-analyst-loop.md
+  - sources/arxiv-2606.14571-streammembench-agent-memory-2026-06-21.md
+  - sources/arxiv-2606.20960-equilibrium-internal-transfers-2026-06-24.md
+  - sources/arxiv-2607.08692-pokemon-tcg-nash-lean-metagame-2026-07-13.md
+  - sources/brief-k157-fbsde-fictitious-play-shelf-2026-07-16.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-21
-updated: 2026-08-18
+updated: 2026-10-25
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2606.19308-enhancing-decision-making-with-large-language-mo.pdf
 phase_0_verdict: REFERENCE 2026-06-21 — game-theoretic MAS for competitive decisions; runtime LLM NO-GO for decide()
 ---

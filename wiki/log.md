@@ -12,6 +12,15 @@ updated: 2026-10-23
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
 
+## [2026-10-25] tooling | wiki lint cleared to zero hard errors
+
+- **2,318 → 0.** Four passes.
+- **Frontmatter-less exemption.** `_no_frontmatter()` keeps `sweeps/` and digest pages out of the bidirectional check. They have no frontmatter, so they cannot record an inbound edge and the fixer can never write one. That was 315 edges of permanent noise.
+- **Seven hub pages marked `hub: true`.** The linter already exempted hubs; these pages never declared it. They are routing, cadence, and scope indexes that legitimately collect spokes without enumerating them.
+- **32 cross-wiki stubs created.** Osint captures pointed at `@ccc-wiki`, `@cybersecurity-wiki` and `@gambling-wiki` counterparts that routing declared but never wrote. Each stub is `[tentative]`, carries a backlink to its citing page, and says nothing on it is verified.
+- **Three dead references repaired.** A truncated tl;dr sec slug now names the full page. An `@image-gen-wiki` twin of `design-dna` was dropped — the page exists only in osint. An `@tipdrop-wiki` link was dropped; TipDrop is retired and the page never existed.
+- **Remaining:** stale `[NEEDS VERIFICATION]` tags, 18 to 146 days old, on gambling and osint concept pages. Those need external verification.
+
 ## [2026-10-25] tooling | wiki_lint backlink fixer repaired, debt halved
 
 - **Two defects.** The fixer wrote gap keys verbatim. A key `osint/sources/x.md` written into an osint page resolves to `wiki/osint/osint/sources/x.md`, which dangles — that is why `--apply` raised dangling links from 65 to 974. It also proposed `sweeps/` targets forever, because those pages have no frontmatter and can never hold a `related:` block.

@@ -23,9 +23,14 @@ related:
   - sources/arxiv-2610.12813-vepa-verified-evolving-guardrails-2026-10-13.md
   - concepts/k290-feeds-wave.md
   - sources/arxiv-2610.12758-distressbench-2026-10-13.md
+  - concepts/typed-judgement-desk-pattern.md
+  - sources/arxiv-2608.24650-simthesizer-2026-08-26.md
+  - sources/arxiv-2610.10498-embodiedrsi-2026-10-08.md
+  - sources/arxiv-2610.13485-proactive-agentic-orchestration-2026-10-12.md
+  - sources/arxiv-theophyseval-2610.16733-2026-10-16.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-20
+updated: 2026-10-25
 ---
 
 ## Relations

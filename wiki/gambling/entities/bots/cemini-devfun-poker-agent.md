@@ -42,9 +42,16 @@ related:
   - sources/arxiv-2606.11869-agents-all-the-way-down-2026-06-19.md
   - entities/games/poker.md
   - sources/arxiv-2607-28520-cs-rnr-safe-opponent-exploitation.md
+  - concepts/heads-up-arena-strategy.md
+  - sources/arxiv-2606.14506-distribution-shift-model-eval-2026-06-22.md
+  - sources/arxiv-2606.14571-streammembench-agent-memory-2026-06-21.md
+  - sources/arxiv-2606.17682-trainee-to-trainer-llm-env-engineer-2026-06-20.md
+  - sources/arxiv-2606.19308-mafp-multi-agent-fictitious-play-2026-06-21.md
+  - sources/arxiv-2609.31473-game-arena-strategic-llm-evaluation-2026-09-28.md
+  - sources/arxiv-2609.33669-rsd-poker-shift-robust-2026-09-29.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-08-01
+updated: 2026-10-25
 adoption_status: ACTIVE-DEV
 claim_status: VERIFIED 2026-06-01 — @cemini23
 ---

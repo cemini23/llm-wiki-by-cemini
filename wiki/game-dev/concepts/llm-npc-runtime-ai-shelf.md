@@ -22,9 +22,14 @@ related:
   - sources/arxiv-2609.29837-pubg-ally-embodied-teammate-2026-09-30.md
   - sources/arxiv-2609.37853-anthrodial-social-npc-harness-2026-09-30.md
   - sources/arxiv-2610.04261-social-deduction-rft-2026-10-07.md
+  - concepts/stronghold-2-ai-lords.md
+  - sources/arxiv-2609.23043-narrative-reliability-detective-games-2026-09-24.md
+  - sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md
+  - sources/cross-wiki-routed-briefs-2026-10-05.md
+  - sources/inbox-arxiv-reject-batch-2026-09-19.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-09-19
+updated: 2026-10-25
 ---
 
 ## Relations

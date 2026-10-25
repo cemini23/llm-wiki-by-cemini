@@ -1,6 +1,7 @@
 ---
 title: NFL Gemini weekday prompt addendum
 type: concept
+hub: true
 tags: [meta, nfl, gemini, prompt, weekly-prep, operator]
 keywords: [gemini-prompt, tuesday, wednesday, thursday, friday, saturday, slate-hub, fanDuel, hard-rock]
 related:

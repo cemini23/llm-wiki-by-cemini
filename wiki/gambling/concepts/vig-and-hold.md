@@ -26,9 +26,16 @@ related:
   - sources/rss-lsr-nfl-app-downloads-pm-share-2026-09-24.md
   - entities/platforms/kalshi.md
   - entities/sports/cfb-betting.md
+  - concepts/diy-nfl-pickem-props-tool-architecture.md
+  - entities/sports/nhl-betting.md
+  - sources/research-diy-pickem-props-master-plan-2026-07-05.md
+  - sources/rss-lsb-cfb-week6-cards-2026-10-01.md
+  - sources/rss-lsb-nhl-opening-night-props-2026-09-29.md
+  - sources/rss-lsb-state-markets-2026-10-07.md
+  - sources/rss-lsb-week4-game-cards-2026-10-02.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-09-30
+updated: 2026-10-25
 ---
 
 ## Relations

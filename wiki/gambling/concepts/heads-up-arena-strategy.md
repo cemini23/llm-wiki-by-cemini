@@ -25,9 +25,16 @@ related:
   - sources/brief-k127-emagnet-irumai-selfplay-steals-2026-06-24.md
   - sources/brief-k122-poker-researcher-track-plan-2026-06-19.md
   - sources/devfun-sandbox-researcher-guide-2026-06-26.md
+  - entities/tools/agent-texas-poker.md
+  - sources/arxiv-2606.16139-team-zero-sum-games-complexity-2026-06-20.md
+  - sources/arxiv-2606.19308-mafp-multi-agent-fictitious-play-2026-06-21.md
+  - sources/arxiv-2606.25997-ganzfried-vbt-nash-imperfect-info-2026-06-26.md
+  - sources/arxiv-2607.10251-risk-sensitive-llm-poker-2026-07-15.md
+  - sources/arxiv-2610-fictitious-play-trio-2026-10-07.md
+  - sources/brief-k156-risk-sensitive-llm-poker-steals-2026-07-15.md
 maturity: draft
 created: 2026-06-19
-updated: 2026-06-26
+updated: 2026-10-25
 ---
 
 ## Relations
