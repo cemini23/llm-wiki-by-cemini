@@ -11,10 +11,10 @@ related:
 maturity: draft
 created: 2026-09-16
 updated: 2026-09-16
-phase_0_verdict: GO REFERENCE
-harness_verb: FILE
-wire_status: wont_wire
-wire_note: REFERENCE clone. Do not copy into Cursor skills. Ask before skill install.
+phase_0_verdict: GO — Integrate (operator ruling 2026-10-25)
+harness_verb: INTEGRATE
+wire_status: integrate
+wire_note: Supersedes the K262 FILE verdict. Verdict Integrate; first run DEFERRED — Atlas (Atto's newest repo) is under active development. Static-first when it does run; dynamic validation needs an OS-enforced sandbox with networking off.
 ---
 
 ## Relations
@@ -56,13 +56,21 @@ Structural check: `skills/security-audit/` holds `SKILL.md` plus **11** domain d
 
 **Two corrections to the report.** It names only five domain documents; there are eleven, so coverage is broader than stated. It also gives the last commit as 2026-10-17; the clone shows **2026-09-14**.
 
-### Conflict with the K262 verdict — `[NEEDS VERIFICATION 2026-10-25]`
+### Conflict with the K262 verdict — RESOLVED 2026-10-25
 
-This page carries a K262 Phase-0 verdict of **GO REFERENCE / FILE / 0 Integrate GO** (2026-09-16). The v10.9 evaluation scores it **Integrate**.
+This page carried a K262 Phase-0 verdict of **GO REFERENCE / FILE / 0 Integrate GO** (2026-09-16). The v10.9 evaluation scores it **Integrate**.
 
-Both cannot hold. The K262 decision read it as "reference only, do not copy into Cursor skills"; the new evaluation argues the 6-phase hunter/disprover split is directly usable against Atto. Nothing in the repo changed between the two — last commit 2026-09-14 predates both reads.
+**Operator ruled Integrate on 2026-10-25.** The K262 FILE reading was about not copying the skill into Cursor's skill directory unattended. The Integrate reading is about running the workflow as a tool against Atto. Both hold together: installed, run only on request, never written into the target repo's tree.
 
-Unresolved. Treat as FILE until the operator rules. Do not install on the strength of the newer report alone.
+Frontmatter and verdict reflect the ruling. The K262 row above is kept as history.
+
+### First run deferred — 2026-10-25
+
+**Do not audit Atto or Atlas yet.** Atlas is the newest repository and work is in flight there. A six-phase audit of a tree being actively rewritten produces findings against code that will not exist by the time anyone reads them.
+
+Resume when Atlas reaches a stable checkpoint. At that point run against a named commit, not a dirty worktree — the skill's own setup rule requires a recorded source ref and a note on whether the worktree is dirty.
+
+The install was interrupted before completing. Nothing is registered in `~/.claude/skills/` or `~/.agents/skills/`. Install is still owed.
 
 ### Why the 6-phase split matters
 

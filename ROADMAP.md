@@ -1937,7 +1937,7 @@ Inbox wave complete: 79 files, 61 duplicates, 1 eval doc, 8 Phase-0 audits. Log:
 
 ### Decisions the operator owes
 
-1. **`security-audit-skill`: FILE or Integrate?** K262 said FILE / 0 Integrate GO. v10.9 says Integrate. Repo unchanged between reads. Flagged `[NEEDS VERIFICATION 2026-10-25]`. Nothing installed.
+1. ~~**`security-audit-skill`: FILE or Integrate?**~~ **RESOLVED 2026-10-25 — Integrate.** Operator ruled Integrate. K262's FILE concern (no unattended Cursor skill copy) is compatible with running it as a tool on request. **Install did not complete**, and **the first run is deferred**: Atlas, Atto's newest repo, is under active development. Auditing a tree mid-rewrite yields findings against code that will not survive. Resume at a stable Atlas checkpoint, against a named commit, not a dirty worktree.
 2. **thinkrail: write the MCP wrapper, or drop it?** The graph tools are Apache-2.0 and present; `mcp/server.mjs` does not exist and `pi-spec-graph` declares no entrypoint. The payoff is two invariants: Atto cannot write `truth.ged`, GuruWatcher cannot clobber `watches.json`.
 3. **Atlas for Atto: scope the ISTAT gazetteer.** The `?year=&place=` contract is agreed as the pattern. Open: which historical source covers suppressed comuni and pre-unification provinces, and how eras are sliced for lazy-loading (issue #158 lesson).
 
