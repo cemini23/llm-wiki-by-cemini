@@ -9,7 +9,7 @@ related:
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25
-phase_0_verdict: CONDITIONAL-GO — no shipped MCP server
+phase_0_verdict: NO-GO — dropped 2026-10-25
 wire_status: pending
 wire_note: Extract packages/spec-graph tool source and wrap it. Do not assume mcp/server.mjs exists.
 ---
@@ -54,6 +54,16 @@ Those two rules, written once and queried every session, are the whole payoff.
 ### Context cost
 
 Ten workflow skills load at roughly 400 tokens always-on. Install two: `importing-a-codebase` and the spec-graph wrapper.
+
+## Decision — NO-GO, 2026-10-25
+
+Dropped. Three reasons.
+
+1. **The payoff was already covered.** The two invariants named were "Atto cannot write `truth.ged`" and "GuruWatcher cannot clobber `watches.json`". Both are already written into Atto's `.cursor/rules/atto-k*-phase1-wires.mdc` and `AGENTS.md`.
+2. **A spec graph is advisory, not enforcement.** It makes invariants queryable; an agent still has to choose to query. That is the same class of control as the existing rules, so it duplicates rather than strengthens them.
+3. **The server does not exist.** `mcp/server.mjs` is absent and `pi-spec-graph` declares no `bin` or `main`. Building and maintaining a wrapper across Atto, GuruWatcher and now Atlas, for two rules, is poor value.
+
+**If real enforcement is wanted**, a pre-commit hook that refuses a staged change to `truth.ged` or `watches.json` is cheaper and actually blocks. That is the recommendation, not a spec-graph server.
 
 ## Snippets
 

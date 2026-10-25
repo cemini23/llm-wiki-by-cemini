@@ -55,6 +55,12 @@ Known defect: issue #158 reports rendering lag with heavy polygons loaded at onc
 
 Atto Access share (20/mo) and Concierge (>=$2,500) deliverables; family-tree dogfood. Methodology page: @concepts/historical-jurisdiction-atlas.md.
 
+## Outcome — the pattern shipped (2026-10-25)
+
+`comuni-atlas` (Italia Storica Atlas, live at `youratto.com/atlas`) implements this contract over ISTAT data. See @concepts/historical-jurisdiction-atlas.md.
+
+The GPL-3.0 constraint was honoured the intended way: the upstream clone is kept in `_reference_jiangshan/`, which is **gitignored and untracked**. No GPL code or assets ship.
+
 ## Snippets
 
 > "its semantic URL router (?year=1079,1080&place=...) eliminates LLM coordinate hallucination by allowing the agent to pass only extracted dates and place names" — source report, URL 10

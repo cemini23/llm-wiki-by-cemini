@@ -14,7 +14,7 @@ created: 2026-09-16
 updated: 2026-10-25
 phase_0_verdict: GO — Integrate (operator ruling 2026-10-25)
 harness_verb: INTEGRATE
-wire_status: integrate
+wire_status: installed
 wire_note: Supersedes the K262 FILE verdict. Verdict Integrate; first run DEFERRED — Atlas (Atto's newest repo) is under active development. Static-first when it does run; dynamic validation needs an OS-enforced sandbox with networking off.
 ---
 
@@ -65,7 +65,17 @@ This page carried a K262 Phase-0 verdict of **GO REFERENCE / FILE / 0 Integrate 
 
 Frontmatter and verdict reflect the ruling. The K262 row above is kept as history.
 
-### First run deferred — 2026-10-25
+### Installed and first run — 2026-10-25
+
+Installed globally with `npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit -g -y`. Registration confirmed: the skill is available as `security-audit` in the session.
+
+**First run: `comuni-atlas`, guidance mode.** The deferral above said to wait for a stable Atlas checkpoint and to audit a named commit, not a dirty worktree. Atlas is now committed and live, so the condition is met, and it was audited **before** Atto because it is MIT, small (`cli/`, `lib/`, `web/`, `scripts/`), public-facing, and holds no family PII.
+
+Findings: no confirmed vulnerability. Details under `## Audit — comuni-atlas` below.
+
+**Still owed:** a full six-phase run against Atto. That is the higher-stakes target — it holds the family tree, the Stato Civile requests, and the citizenship packet.
+
+### First run deferred — 2026-10-25 (superseded)
 
 **Do not audit Atto or Atlas yet.** Atlas is the newest repository and work is in flight there. A six-phase audit of a tree being actively rewritten produces findings against code that will not exist by the time anyone reads them.
 

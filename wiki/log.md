@@ -12,6 +12,12 @@ updated: 2026-10-23
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
 
+## [2026-10-25] decision | Atlas shipped, security-audit installed, thinkrail dropped
+
+- **Atlas is built.** `comuni-atlas`, "Italia Storica Atlas", MIT, live at `youratto.com/atlas`. Historical atlas of Italian towns 1796–2026. For a town and a year it names the sovereign regime, the historical province, the modern comune, and the State Archive. The `?year=&place=` contract from jiangshan-map shipped essentially as specified: `place` and `year` are comma-parallel lists, a `route` slug is an alias for the same data, and the agent still never formats a coordinate. Same resolver in `cli/resolve.mjs`, `lib/engine.mjs` and the page, so the CLI and the map cannot disagree. The GPL-3.0 upstream clone sits in `_reference_jiangshan/`, gitignored and untracked — no copyleft ships. Concept page updated with the shipped details.
+- **security-audit-skill: installed and first run.** `npx skills add … -g -y` registered it. Audited **comuni-atlas** first, not Atto: MIT, small, public-facing, no family PII. Static review at `ccac569` found **no confirmed vulnerability** — DOM XSS is handled (`esc()` covers quotes), CLI has no shell injection, export script is `set -euo pipefail` with quoted paths, secrets in gitignored `.env`. One latent risk: URL scheme is not validated before `href`, so a poisoned data record could render `javascript:`. Data is currently clean. No CSP. Full six-phase run against **Atto** still owed.
+- **thinkrail: dropped.** The two invariants it would carry are already in Atto's `.cursor/rules/atto-k*-phase1-wires.mdc` and `AGENTS.md`; a spec graph is advisory like those rules rather than enforcement; and the MCP server does not ship (`pi-spec-graph` has no `bin` or `main`). Recommended instead, if real enforcement is wanted: a pre-commit hook that refuses staged changes to `truth.ged` or `watches.json`.
+
 ## [2026-10-25] tooling | wiki lint cleared to zero hard errors
 
 - **2,318 → 0.** Four passes.
