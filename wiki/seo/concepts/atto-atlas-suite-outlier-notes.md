@@ -16,7 +16,7 @@ created: 2026-10-25
 updated: 2026-10-25
 ship_draft: briefs/2026-10-25_outlier-weekly-atto-atlas-and-suite.md
 draft_version: draft-v2
-status: DRAFT v2 — operator revision applied; not scheduled
+status: SCHEDULED — publishes 2026-10-26 at 09:00 ET
 ---
 
 ## Raw Concept
@@ -34,10 +34,10 @@ Builder product with a public free tier. The free atlas answers a question about
 | Asset | Status |
 |-------|--------|
 | Marketing brief + paste body | `briefs/2026-10-25_outlier-weekly-atto-atlas-and-suite.md` — **draft-v2**, brief audit PASS 100/100 |
-| Outlier | **DRAFT** — not scheduled |
+| Outlier | **SCHEDULED** — 2026-10-26 at 09:00 ET |
 | X Article | **Deferred** (as with the first Atto issue) |
 | Hero image | Atlas at 1861, regime colors on the province mesh |
-| Publish window | Week of 2026-10-26 |
+| Publish window | 2026-10-26, 09:00 ET |
 | Issue number | Confirm next free issue at paste time |
 
 ### Title locked for paste
@@ -108,7 +108,7 @@ The first Atto issue sold a private vault and could not show the work, because t
 
 - [ ] Confirm issue number at paste time
 - [ ] Hero image yes/no
-- [ ] Publish day inside the week of 2026-10-26
+- [x] Publish day: 2026-10-26 at 09:00 ET
 - [ ] Optional X Article after Outlier goes live
 - [ ] Add the live Substack URL to this page and to the brief frontmatter
 

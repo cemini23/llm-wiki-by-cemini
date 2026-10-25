@@ -1875,5 +1875,6 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - Verified numbers recorded on the notes page: 9,869 places, 107 dioceses, 5 chronicles, kit 0.1.15 / build 25, 25 defects, 13.56 percent parser match, Kraken vs Transkribus NOT MEASURED.
 - Backlinks added on `concepts/x-account-voice-and-format.md`, `concepts/atto-outlier-family-story-notes.md`, and `@osint-wiki/concepts/historical-jurisdiction-atlas.md`. Index row added.
 - Status: draft, not scheduled. Publish window week of 2026-10-26.
+- **Scheduled.** Operator set the publish time: **2026-10-26 at 09:00 ET**. Status flipped to SCHEDULED in the brief and on the notes page.
 - **v2 same day.** Operator review applied: historical rules section replaces the limits section, surname page leads with the foundling detector and toponymic resolver, the 13.56 percent figure becomes the case against 1-click AI, and the CTA names Mac and Windows. Three fact corrections: PEC 7,745 official (not 7,900+), "clean-room" dropped, "official datasets" softened to "public datasets". Paste format rebuilt to the standard brief layout.
 
