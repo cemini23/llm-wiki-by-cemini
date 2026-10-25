@@ -4034,3 +4034,9 @@ Full triage of all 18 briefs in `briefs/` (the gitignored deliverables directory
 - **Verdict**: pipeline works — photoreal output, 90-110 s per 1024 px image locally. **Likeness failed**: six photos with only two face-dominant frames produced a body-accurate, face-poor LoRA. Retrain requires 8-10 portraits and a rare single-token trigger; it is not an editing problem.
 - **Backlinks** added to 12 related pages; index row added.
 - **Personal artefacts removed** from the machine at operator request: source photos, dataset, trained LoRA, imported models, renders, CLI binary. The reusable code (`scripts/lora/`) and this knowledge stay.
+
+## [2026-10-25] tooling | Pony V7 weights status confirmed
+
+- `index.md` carried `[NEEDS VERIFICATION 2026-05-06]` against Pony V7's weights-release status. Resolved: weights are released at `purplesmartai/pony-v7-base` on Hugging Face and on CivitAI 1901521, Apache-2.0 with restrictions, 7B parameters, GGUF quants available. Marked `[CONFIRMED 2026-10-25]`.
+- The source page `entities/models/pony-v7.md` had already resolved this on 2026-05-06; the index row was never updated. Check the index when a page resolves a tag.
+

@@ -29,7 +29,7 @@ Letta (formerly **MemGPT**) is an infrastructure platform for endowing autonomou
 ## Narrative
 
 - **URL**: github.com/letta-ai/letta (per K31 eval URL 18)
-- **License**: per eval claim — [NEEDS VERIFICATION 2026-05-05]; the MemGPT predecessor was Apache-2.0
+- **License**: Apache-2.0 `[CONFIRMED 2026-10-25]` — the main repo and the MemGPT predecessor are both Apache-2.0; `letta-evals` is MIT. Verified against the GitHub org listing and three independent summaries.
 - **Stack**: Docker-deployed infrastructure (LLM-agnostic), Python, Postgres + pgvector (similar to stash)
 - **Origin**: research project from UC Berkeley → spinout
 
@@ -59,7 +59,7 @@ NOT a current adoption candidate. Re-evaluation triggers:
 
 Until then, Letta stays in the reference shelf alongside the K30 NO-GOs (SwarmVault, PageIndex, Claude-OSINT).
 
-### Open questions [NEEDS VERIFICATION 2026-05-05]
+### Open questions [NEEDS VERIFICATION 2026-10-25] — re-dated; still open, not yet checked
 
 - Exact GitHub URL + license + maturity
 - Whether the MemGPT → Letta transition retained the Apache-2.0 license or moved to a more restrictive license (a common pattern when academic projects spin out)

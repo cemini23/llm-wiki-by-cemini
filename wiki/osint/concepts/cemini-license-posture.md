@@ -268,7 +268,7 @@ Originated from the user's 2026-05-03 question on whether the wiki needs a licen
 
 ### Cemini's own license
 
-Cemini source code is **proprietary, all rights reserved by default** [NEEDS VERIFICATION 2026-05-03] — there is no `LICENSE` file at `/opt/cemini/` on the production host, which means default copyright applies. This is fine for a private deployment, but **not** equivalent to having an explicit license. For IP-sale readiness, the recommended fix is to add an internal `LICENSE` file declaring "Proprietary — All Rights Reserved" or a custom proprietary license clarifying ownership transfer terms.
+Cemini source code is **proprietary, all rights reserved by default** `[RETRACTED 2026-10-25]` — this was observed against `/opt/cemini/` on the production host, which was deleted 2026-09-18. The observation can no longer be re-checked and no longer describes a live system. Treat the licence posture as unverified until it is re-read from a host that exists. This is fine for a private deployment, but **not** equivalent to having an explicit license. For IP-sale readiness, the recommended fix is to add an internal `LICENSE` file declaring "Proprietary — All Rights Reserved" or a custom proprietary license clarifying ownership transfer terms.
 
 The same applies to the librarian (`/opt/cemini-wiki/`) and to this OSINT workspace.
 
@@ -335,7 +335,7 @@ This policy is *operational*, not aspirational — license findings have trigger
 
 When the IP is eventually transferred or licensed (see @concepts/ip-sale-readiness.md):
 
-- **Buyer due-diligence scope**: full SBOM with license-per-component, including transitive dependencies. Tooling: `cyclonedx-bom`, `pip-licenses`, `npm-license-checker`. [NEEDS VERIFICATION 2026-05-03] — SBOM tooling not yet wired into Cemini CI.
+- **Buyer due-diligence scope**: full SBOM with license-per-component, including transitive dependencies. Tooling: `cyclonedx-bom`, `pip-licenses`, `npm-license-checker`. [NEEDS VERIFICATION 2026-10-25] — re-dated; SBOM tooling is still not wired into Cemini CI.
 - **Highest-risk findings**: any AGPL-3.0 dependency in prod (network-clause obligation transfers to buyer); any LLM-agent-generated code derived from GPL-3.0 sources (derivative-work claim risk).
 - **Cleanest deliverable**: explicit Cemini LICENSE file + clean SBOM + recorded license-evaluation history (the K-series record is itself an asset here).
 

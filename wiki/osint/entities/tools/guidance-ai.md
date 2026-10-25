@@ -27,7 +27,7 @@ Microsoft's library for **algorithmic control over LLM token-generation logic**.
 ## Narrative
 
 - **URL**: github.com/guidance-ai/guidance (per K31 eval URL 17 reference)
-- **License**: per eval claim — [NEEDS VERIFICATION 2026-05-05]; verify against LICENSE file (Microsoft repos are typically MIT)
+- **License**: MIT `[CONFIRMED 2026-10-25]` — GitHub org listing shows `guidance` and `llguidance` both MIT. The Microsoft CLA and Open Source Code of Conduct apply to contributions, not to use.
 - **Maintainer**: guidance-ai org (Microsoft-affiliated, originated from MS Research)
 - **Distribution**: pip install guidance
 
@@ -58,7 +58,7 @@ def routing_decision(taxonomy_class: str, query: str):
     ...
 ```
 
-### Open questions [NEEDS VERIFICATION 2026-05-05]
+### Open questions [NEEDS VERIFICATION 2026-10-25] — re-dated; still open, not yet checked
 
 - Compatibility with DeepSeek's API (guidance-ai works natively with OpenAI / Anthropic / local models; verify DeepSeek base_url pattern integrates cleanly)
 - License verification (Microsoft repos vary: MIT vs proprietary; check)

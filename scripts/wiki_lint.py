@@ -353,9 +353,22 @@ NEEDS_VERIFY_BARE_RE = re.compile(r"(?<!`)\[NEEDS VERIFICATION\](?!`)(?!\s+\d{4}
 stale_verifications = []  # (page, date_str, age_days, line_num, line_text)
 undated_verifications = []  # (page, line_num, line_text)
 
+
+def _append_only(page_key):
+    """True for log.md and sweeps/: historical records, not live claims.
+
+    A dated [NEEDS VERIFICATION] tag inside a log entry or a sweep recorded what
+    was open on that day. It cannot go stale, because it is not a claim about
+    the present, and re-dating it would falsify the record.
+    """
+    return page_key.endswith("log.md") or "/sweeps/" in page_key
+
+
 for src, fm in pages.items():
     body = fm.get("_body", "")
     if not body:
+        continue
+    if _append_only(src):
         continue
     for line_num, line in enumerate(body.splitlines(), start=1):
         for m in NEEDS_VERIFY_DATED_RE.finditer(line):
