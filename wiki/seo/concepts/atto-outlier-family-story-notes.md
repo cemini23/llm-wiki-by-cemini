@@ -5,6 +5,7 @@ tags: [social, substack, outlier-weekly, atto, genealogy, family, gtm]
 keywords: [atto, outlier, family-story, dual-citizenship, youratto, italian-documents]
 related:
   - concepts/x-account-voice-and-format.md
+  - concepts/atto-atlas-suite-outlier-notes.md
   - concepts/guruwatcher-outlier-x-article-notes.md
   - concepts/outlier-weekly-issue3-world-cup-bot-notes.md
   - entities/tools/substack-publisher-mcp.md
@@ -12,7 +13,7 @@ related:
   - "@osint-wiki/concepts/youratto-lean-conversion-page.md"
 maturity: draft
 created: 2026-08-08
-updated: 2026-08-08
+updated: 2026-10-25
 ship_draft: briefs/2026-08-08_outlier-weekly-atto-family-story.md
 draft_version: ship-ready
 status: SHIP-READY - Outlier only; X Article deferred

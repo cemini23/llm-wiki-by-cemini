@@ -14,6 +14,7 @@ related:
   - concepts/guruwatcher-outlier-x-article-notes.md
   - concepts/x-article-spcx-anthropic-notes.md
   - concepts/atto-outlier-family-story-notes.md
+  - concepts/atto-atlas-suite-outlier-notes.md
   - concepts/ttwo-gta6-outlier-notes.md
   - concepts/metals-tungsten-ptpd-outlier-notes.md
   - concepts/crml-tanbreez-outlier-notes.md
@@ -58,7 +59,7 @@ related:
   - concepts/swmr-revenue-outlier-notes.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-10-01
+updated: 2026-10-25
 ---
 
 ## Relations

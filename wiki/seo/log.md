@@ -1867,3 +1867,13 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - One RSS stub: Google Maps spam fighting (2026-10-22).
 - Archived to egress/seo. `[NOTE]` Prior newsletter waves were archived into `osint/` regardless of feed, so egress is split between `osint/` and `seo/` for this feed family.
 
+## [2026-10-25] article | Atto Outlier #2 — atlas + genealogy suite draft
+
+- New notes page `concepts/atto-atlas-suite-outlier-notes.md`. Draft `briefs/2026-10-25_outlier-weekly-atto-atlas-and-suite.md`, brief audit PASS 100/100.
+- Angle: the five free tools that went live on 2026-10-25, led by the historical atlas. Operator chose atlas-first order over app-first.
+- Title: "The Town Changed Its Name. The Map Should Not Guess." Slug `italian-town-changed-name-historical-atlas`.
+- Verified numbers recorded on the notes page: 9,869 places, 107 dioceses, 5 chronicles, kit 0.1.15 / build 25, 25 defects, 13.56 percent parser match, Kraken vs Transkribus NOT MEASURED.
+- Backlinks added on `concepts/x-account-voice-and-format.md`, `concepts/atto-outlier-family-story-notes.md`, and `@osint-wiki/concepts/historical-jurisdiction-atlas.md`. Index row added.
+- Status: draft, not scheduled. Publish window week of 2026-10-26.
+- **v2 same day.** Operator review applied: historical rules section replaces the limits section, surname page leads with the foundling detector and toponymic resolver, the 13.56 percent figure becomes the case against 1-click AI, and the CTA names Mac and Windows. Three fact corrections: PEC 7,745 official (not 7,900+), "clean-room" dropped, "official datasets" softened to "public datasets". Paste format rebuilt to the standard brief layout.
+

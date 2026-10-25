@@ -6,11 +6,12 @@ keywords: [substack, publisher-api, mcp, dkships, outlierweekly, subscriber-coun
 related:
   - concepts/x-account-voice-and-format.md
   - concepts/atto-outlier-family-story-notes.md
+  - concepts/atto-atlas-suite-outlier-notes.md
   - concepts/guruwatcher-outlier-x-article-notes.md
   - entities/platforms/twitter-x.md
 maturity: draft
 created: 2026-08-08
-updated: 2026-09-01
+updated: 2026-10-25
 phase0_decision: GO
 wire_status: deferred
 wire_target: stash ~/.cursor/mcp.substack.disabled.json · clone ~/.local/mcp/substack-publisher-mcp @ 237adde

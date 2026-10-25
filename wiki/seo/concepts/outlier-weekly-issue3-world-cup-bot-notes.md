@@ -17,11 +17,12 @@ related:
   - concepts/world-cup-bot-x-article-runbook-notes.md
   - entities/platforms/reddit.md
   - concepts/atto-outlier-family-story-notes.md
+  - concepts/atto-atlas-suite-outlier-notes.md
   - concepts/guruwatcher-outlier-x-article-notes.md
   - concepts/x-article-cxw-geo-th-postmortem-notes.md
 maturity: draft
 created: 2026-05-30
-updated: 2026-10-01
+updated: 2026-10-25
 ship_draft: briefs/2026-06-03_outlier-weekly-issue3-drafts.md
 draft_version: published-2026-06-03
 substack_url: https://outlierweekly.substack.com/p/i-open-sourced-the-world-cup-lp-bot
