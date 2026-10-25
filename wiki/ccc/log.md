@@ -2674,3 +2674,13 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-pragmatic-engine
 
 Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2609-35472-prm-discrete-diffusion-routed.md`.
 - Created wiki/sources/arxiv-2609-35472-prm-discrete-diffusion-routed.md (stub)
+
+## [2026-10-25] ingest | K295 — eval v10.9 tool wave
+
+- **Seven new tool pages.** thinkrail (Extract, Apache-2.0 — but no shipped MCP server), cindy, worktrunk, coolify, claude-hud, agent-teams-ai, deepinfer (all Context).
+- **thinkrail correction.** The report claims a portable `mcp/server.mjs`. That file is not in the public repo, and `pi-spec-graph` declares no entrypoint. The tool source is present; the wrapper is not.
+- **claude-hud CVE floor.** Require commit 234d9aa or later. CVE-2026-47090 and CVE-2026-47092 are fixed there.
+- **Seven RSS stubs** from Latent Space, 21 to 24 Oct.
+- **Route.** OpenRouter free wrote the four Context stubs. Parent corrected frontmatter backlinks and rewrote three.
+- **Archive.** 2 new newsletter raws to egress.
+

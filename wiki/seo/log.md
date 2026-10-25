@@ -1861,3 +1861,9 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - IndexNow ping HTTP 200 for all 11 owned URLs.
 - Wiki pushed: `93d7fb6..6858762` on `main`.
 - Ran from the Terminal panel, not the sandbox: this session's sandbox denies `github.com:443` and `registry.npmjs.org:443`.
+
+## [2026-10-25] ingest | K295 — Sterling Sky stub
+
+- One RSS stub: Google Maps spam fighting (2026-10-22).
+- Archived to egress/seo. `[NOTE]` Prior newsletter waves were archived into `osint/` regardless of feed, so egress is split between `osint/` and `seo/` for this feed family.
+

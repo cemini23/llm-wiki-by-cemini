@@ -10709,3 +10709,13 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Briefs:** Atto `../atto/briefs/2026-08-14_k237-ente-e2ee-vault.md` (ente required + Domus + rachoon + VoxCPM); CCC `../Cemini claude code CCC/briefs/2026-08-14_k237-meta-harness-vero-misevolution.md`; cyber `../Cybersecurity wiki/briefs/2026-08-14_k237-self-evolving-defense-misevolution.md` + `2026-08-14_k237-cyberscraper-rustscan.md`; SEO `../SEO:GEO B&M Business/briefs/2026-08-14_k237-sparktoro-zero-click.md`; `briefs/pm-k237-uniswap-fee-iv.md` (**scp cemini-prod**, skill_audit 100/100). GW skip (no price/level watch source); poker skip (no IIG hook).
 - **Phase-1 wires:** `.cursor/rules/cemini-phase1-policy-wires.mdc` — E2EE vault/AGPL isolate (K237), CyberScraper GO cyber-lab (K237), skill misevolution SHE gate (K237), self-evolving defense guardrails (K237). (Vero/AutoDesign wires already present from CCC K280/K281 batch.)
 - **Archive:** 13 raws → `cemini-egress-fi:/opt/cemini-bulk/research/osint/` (8 arXiv + 3 newsletters + 2 eval docx). Inbox empty.
+
+## [2026-10-25] ingest | K295 — eval v10.9, Atlas concept, 8 Phase-0 audits
+
+- **Eval v10.9.** 20 URLs. 3 Integrate, 5 Extract, 2 Watch, 6 Context, 4 Pass. Source page `sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md`, with three corrections to the report: jiangshan-map is **GPL-3.0** (report said NOT FOUND), thinkrail ships **no `mcp/server.mjs`**, and security-audit-skill has **11** domain docs and a 2026-09-14 commit (report said 5 and Oct 17).
+- **Atlas for Atto.** New concept `concepts/historical-jurisdiction-atlas.md`. The agent emits `?year=&place=` from the record; the client resolves boundaries; the agent never formats a coordinate. GPL-3.0 means Atto takes the contract, not the code.
+- **Entities.** New: jiangshan-map, firecrawl-gov-index. Updated: hallmark (GO), security-audit-skill (GO + open K262 conflict).
+- **DFS.** FanDuel NFL slate export, 509 players, filed as a raw data source.
+- **Archive.** 3 new RSS raws, the FanDuel CSV, and the eval docx. All 13 arXiv PDFs were already on egress.
+- **Boundary.** No install, no skill add, no scrape, no trade.
+

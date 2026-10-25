@@ -4756,3 +4756,16 @@ Codebase hubs maintained for agent navigation (`/obsidian-architect`).
 | concepts/k250-harness-intelligence-wave.md | concept |
 | concepts/k250-skill-evolution-wave.md | concept |
 | entities/tools/jit-agent.md | entity |
+
+## K295 wave (2026-10-25)
+
+| Page | Type | Note |
+|------|------|------|
+| sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md | source | 20-URL eval, 8 Phase-0 audits |
+| concepts/historical-jurisdiction-atlas.md | concept | zero-coordinate place resolution for Atto Atlas |
+| entities/tools/jiangshan-map.md | entity | Extract — GPL-3.0, pattern only |
+| entities/tools/firecrawl-gov-index.md | entity | Extract — US law index, client verified |
+| sources/substack-rss-capital-flows-2026-10-23-equity-and-bond-market-risks-video-breakdown.md | source | RSS stub |
+| sources/substack-rss-wublock-2026-10-24-weekly-project-updates-dogecoin-labs-launches-fo.md | source | RSS stub |
+| sources/substack-rss-wublock-2026-10-25-asias-weekly-top10-crypto-news-south-korea-regul.md | source | RSS stub |
+

@@ -438,3 +438,10 @@ If you're new to this wiki:
 - **svgrepo** (svgrepo.com) — 500,000+ free SVG icons, commercial-use cleared; baseline vector assets for web-design templates
 - **mobilepalette** (mobilepalette.colorion.co) — 3D color palette generator for mobile apps; Reference-only design reference
 - **markdown-preview-pluk** (pluk-inc/markdown-preview) — native macOS markdown previewer (LaTeX + Mermaid); tangential workflow tool for wiki authors
+
+## K295 wave (2026-10-25)
+
+| Page | Type | Note |
+|------|------|------|
+| sources/newsletter-rss-sterling-sky-2026-10-22-google-maps-spam-is-out-of-control-heres-how-to.md | source | RSS stub — GBP spam fighting |
+

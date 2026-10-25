@@ -343,3 +343,12 @@ Catalog of all wiki pages. Updated on each ingest.
 - [receiver-decides](sources/arxiv-receiver-decides-agent-negotiations-2610.18424-2026-10-14.md) — the holder explains 47% of outcome variance, the asker 2%
 - [choosing-llms](sources/arxiv-choosing-llms-strategic-agent-interactions-2610.18354-2026-10-14.md) — strategic model choice is game-specific
 - [game2real-bench](sources/arxiv-game2real-bench-toy-games-transfer-2610.18834-2026-10-14.md) — games and real-world visual reasoning correlate 0.935
+
+## K295 wave (2026-10-25)
+
+| Page | Type | Note |
+|------|------|------|
+| entities/tools/voicestudio.md | entity | Extract — AGPL-3.0 isolate only |
+| entities/tools/pausevfx.md | entity | Watch — sign-in wall |
+| entities/tools/dessa.md | entity | Watch — waitlist only |
+

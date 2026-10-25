@@ -1354,3 +1354,22 @@ Two harness papers, plus the model and safety items from the shared feeds batch.
 - [computer-use-agent-harness](concepts/computer-use-agent-harness.md) — observe / act / organise; do not micro-compact
 - [execution-window-rl](concepts/execution-window-rl.md) — credit at the boundary where the world answers back
 
+## K295 wave (2026-10-25)
+
+| Page | Type | Note |
+|------|------|------|
+| entities/tools/thinkrail.md | entity | Extract — Apache-2.0, no shipped MCP server |
+| entities/tools/cindy.md | entity | Context — desktop agent shell |
+| entities/tools/worktrunk.md | entity | Context — unverified |
+| entities/tools/coolify.md | entity | Context — self-hosted PaaS |
+| entities/tools/claude-hud.md | entity | Context — statusline HUD, CVE floor |
+| entities/tools/agent-teams-ai.md | entity | Context — desktop orchestrator |
+| entities/tools/deepinfer.md | entity | Context — datacenter inference engine |
+| sources/newsletter-rss-latent-space-2026-10-21-ai-for-the-fortune-2000-how-tenex-builds-an-ai-n.md | source | RSS stub |
+| sources/newsletter-rss-latent-space-2026-10-21-ainews-deepseek-deepinfer-open-source-sota-infer.md | source | RSS stub |
+| sources/newsletter-rss-latent-space-2026-10-21-claude-mods-flipping-the-harness-inside-out.md | source | RSS stub |
+| sources/newsletter-rss-latent-space-2026-10-22-ainews-openais-patch-the-planet-program-is-1-of.md | source | RSS stub |
+| sources/newsletter-rss-latent-space-2026-10-22-you-are-the-team-anekha-sokhal-moshi.md | source | RSS stub |
+| sources/newsletter-rss-latent-space-2026-10-23-ai-is-getting-good-at-math-heres-why.md | source | RSS stub |
+| sources/newsletter-rss-latent-space-2026-10-24-ainews-kimi-31-pro-104ba-28t-fable-51-class-open.md | source | RSS stub |
+

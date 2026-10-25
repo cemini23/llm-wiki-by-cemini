@@ -1928,3 +1928,31 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 - **Wave 5** — 4 Adopt (polymarket-mcp, claude-obsidian, alash3al/stash, Kronos tokenizer).
 - **K8–K18** — Cemini-internal queue exhausted.
 - **CI/CD** — `lint.yml` + `links.yml` + pre-commit hook.
+
+---
+
+## K295 — open items (2026-10-25)
+
+Inbox wave complete: 79 files, 61 duplicates, 1 eval doc, 8 Phase-0 audits. Log: `wiki/log.md`. Brief: `briefs/2026-10-25_k295-inbox-eval-phase0.md`.
+
+### Decisions the operator owes
+
+1. **`security-audit-skill`: FILE or Integrate?** K262 said FILE / 0 Integrate GO. v10.9 says Integrate. Repo unchanged between reads. Flagged `[NEEDS VERIFICATION 2026-10-25]`. Nothing installed.
+2. **thinkrail: write the MCP wrapper, or drop it?** The graph tools are Apache-2.0 and present; `mcp/server.mjs` does not exist and `pi-spec-graph` declares no entrypoint. The payoff is two invariants: Atto cannot write `truth.ged`, GuruWatcher cannot clobber `watches.json`.
+3. **Atlas for Atto: scope the ISTAT gazetteer.** The `?year=&place=` contract is agreed as the pattern. Open: which historical source covers suppressed comuni and pre-unification provinces, and how eras are sliced for lazy-loading (issue #158 lesson).
+
+### Work queued, not started
+
+- **hallmark GO** — install and run `skills/hallmark/scripts/sloplint.mjs` on Atto marketing pages. Note the report's `scripts/sloplint.mjs` path is wrong.
+- **claude-seo GO** — `/seo geo` and `/seo agentic` on Atto and Basgiath pages.
+- **firecrawl gov-index GO** — wire the five-field citation check into `atto-mcp` before any statute is treated as fact.
+- **experiential-labs** — measure hosted SLA under 15-minute polling before routing GuruWatcher through it.
+- **VoiceStudio** — benchmark engine latency on this hardware; keep hosted translation off for family audio.
+- **worktrunk** — no telemetry at all in the report; verify before spending time.
+
+### Ingest debt (pre-existing, not from this wave)
+
+- **Digest fan-out bug still open.** One global `paper_queries` list writes the same arXiv PDFs into eight domain inboxes. This wave was 61 duplicates of 13 papers.
+- **Newsletter archive is split.** Five Latent Space stubs sit in `egress/osint/`; two new ones went to `egress/ccc/`. Same feed, two folders.
+- **Wiki lint debt ~2,318** (2,188 bidirectional gaps, 65 dangling `related:`, 35 missing `@path`, 30 cross-wiki dangling). Pre-existing.
+- **Daily sweeps 2026-10-21 to 2026-10-25 untracked.**

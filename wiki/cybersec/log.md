@@ -2328,3 +2328,10 @@ Cross-wiki stub routed from `@3d-printing-wiki/sources/2026-corn-optimistic-veri
 - Support: thank-you + Outlier Weekly / youratto.com / guruwatcher.com / YouTube
 - CLAUDE.md Related Wikis: added game-dev-wiki row (matches federation table)
 - friend brief: n/a
+
+## [2026-10-25] ingest | K295 — experiential-labs, secpro stubs
+
+- **experiential-labs** filed as Extract. The retention split is the point: `glm-5.3-flash-uncensored` is zero retention on every route; `deepseek-v4.1-flash-uncensored` is **not**. The report pairs them in one combo play without distinguishing.
+- **Two SecPro RSS stubs.**
+- **Archive.** 2 new raws to egress/cybersec.
+

@@ -12,6 +12,16 @@ updated: 2026-10-23
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
 
+## [2026-10-25] ingest | K295 — full inbox, eval v10.9, 8 Phase-0 audits
+
+- **79 files. 61 duplicates. 13 PDFs, 13 newsletters, 1 eval docx pair, 1 CSV.** All 13 arXiv PDFs were already filed — 7 as source pages, 6 on the K293/K294 skip pages. The digest fan-out bug still writes one global query into eight inboxes.
+- **Eval v10.9 (20 URLs).** Tiers: 3 Integrate, 5 Extract, 2 Watch, 6 Context, 4 Pass. Source page: `osint/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md`.
+- **Phase-0, 8 tools cloned.** Seven of eight cloned. **Three findings that change decisions:** `DeanChensj/jiangshan-map` is **GPL-3.0**, not unlicensed as the report has it — pattern only, no code in Atto; `JetBrains/thinkrail` ships **no `mcp/server.mjs`** and `pi-spec-graph` declares no entrypoint, so the report's portability claim is unproven; `cloudflare/security-audit-skill` has **11** domain docs, not 5, and its last commit is **2026-09-14**, not Oct 17.
+- **Conflict left open.** `security-audit-skill` carries a K262 verdict of FILE / 0 Integrate GO. v10.9 says Integrate. Nothing in the repo changed between the two reads. Flagged `[NEEDS VERIFICATION 2026-10-25]` on the page; no install made.
+- **Atlas for Atto.** jiangshan-map's `?year=&place=` contract is the pattern for the in-flight Atlas work. New concept page `osint/concepts/historical-jurisdiction-atlas.md`. The agent emits a year and a place from the record; the client resolves boundaries; the agent never formats a coordinate.
+- **Pages.** 1 eval source page, 1 concept, 5 new tool pages (jiangshan-map, firecrawl-gov-index, experiential-labs, thinkrail, voicestudio, pausevfx, dessa), 3 tool pages updated (hallmark, security-audit-skill), 13 newsletter stubs.
+- **Boundary.** No install, no skill add, no scrape, no trade, no route swap, no clone into Atto. Clones live in `/tmp/phase0-audit/`.
+
 ## [2026-10-23] ingest | K294 — full inbox
 
 - **62 files. 8 duplicates. 34 PDFs and 28 newsletters.** The digest fan-out is still open. `2610.31158` is on the osint skip page.

@@ -911,3 +911,9 @@ Append-only chronological log.
 - Daily digest: federated install `game-dev` wiki-id; LaunchAgent staggered
 - GitHub: `cemini23/Game-Dev-wiki`
 - CCC eval v7 — surface 9
+
+## [2026-10-25] ingest | K295 — voice and video watch list
+
+- **voicestudio** filed as Extract. AGPL-3.0 — isolate only, never vendor into Atto. Good fit for Basgiath narration and offline family oral-history ASR.
+- **pausevfx** and **dessa** filed as Watch. Neither has a shippable artefact: pausevfx is behind a sign-in wall with no pricing or API; Dessa is waitlist-only with no weights.
+

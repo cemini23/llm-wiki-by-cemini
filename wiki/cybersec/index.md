@@ -1062,3 +1062,12 @@ Red-team and evaluation findings, plus one specialist-model result.
 - [ct0](sources/arxiv-ct0-cybersecurity-transformer-2610.16550-2026-10-14.md) — 4B specialist; 80 files/sec IoC; confidence-gated generation
 - [speccloak](sources/arxiv-speccloak-harmful-code-specifications-2610.17907-2026-10-14.md) — specification framing lowers refusal; 28.91% verified ASR
 - [sp2ec](sources/arxiv-sp2ec-self-speculative-decoding-vlm-2610.18735-2026-10-14.md) — VLM decoding speed; no security content
+
+## K295 wave (2026-10-25)
+
+| Page | Type | Note |
+|------|------|------|
+| entities/tools/experiential-labs.md | entity | Extract — gateway Apache-2.0; retention split by model |
+| sources/substack-rss-secpro-2026-10-23-257-from-sso-bypass-to-stolen-credentials.md | source | RSS stub |
+| sources/substack-rss-secpro-2026-10-24-secpro-ciso-update-episode-2.md | source | RSS stub |
+
