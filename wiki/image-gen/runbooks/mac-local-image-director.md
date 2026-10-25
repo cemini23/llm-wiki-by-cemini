@@ -4,6 +4,7 @@ type: runbook
 tags: [mac, apple-silicon, draw-things, ollama, abliterated, sdxl, pony, local, nsfw, storage]
 keywords: [MacBook Air M4, 16 GB unified memory, Draw Things, Pony V6, NoobAI, Illustrious, SDXL, Ollama, huihui abliterated, Qwen3-8B, external SSD, local generation, no-ToS]
 related:
+  - concepts/local-likeness-lora-lessons.md
   - entities/hardware/gpu-guide.md
   - entities/hardware/mac-studio.md
   - entities/models/pony-v6.md
@@ -53,7 +54,7 @@ Expect **minutes per still, not seconds.** The M4 Air has no fan and throttles d
 | # | Step | Where | Note |
 |---|---|---|---|
 | 1 | Install Draw Things | Air | The generation engine |
-| 2 | Add **Lustify V8** (or Juggernaut XL) | Air | Photoreal + uncensored SDXL checkpoint |
+| 2 | Add **Lustify V9 ZENITH** (or Juggernaut XL) | Air | Photoreal + uncensored SDXL checkpoint |
 | 3 | Prepare 20–30 photos, strip EXIF | Air | Vary outfits, angles, distance |
 | 4 | Train the LoRA against that checkpoint | **RunPod**, kohya | 45–90 min at 1024, rank 32 |
 | 5 | Copy back the ~150 MB LoRA | Air | |
@@ -66,7 +67,7 @@ Expect **minutes per still, not seconds.** The M4 Air has no fan and throttles d
 
 | Engine | Load size | Trainable LoRA | Realism | Note |
 |---|---|---|---|---|
-| **Lustify V8** (SDXL) | ~6.5 GB | Yes | High | Purpose-trained for explicit anatomy |
+| **Lustify V9 ZENITH** (SDXL) | ~6.5 GB | Yes | High | Purpose-trained for explicit anatomy |
 | **Juggernaut XL** (SDXL) | ~6.5 GB | Yes | High | Cinematic; looser on anatomy |
 | **Z-Image Turbo** (6B DiT) | ~4 GiB at 6-bit | **No** | Very high | Fast, fits easily — use it for prompts that do not need your likeness |
 | FLUX.1 dev | ~7 GB+ | Yes, but heaviest | High | Do not attempt to train on 16 GB |
@@ -125,7 +126,8 @@ Pull exactly one. Two SDXL checkpoints will not fit.
 | Anime | **Pony V6** | Stylized, native NSFW | Community default; needs score tags |
 | Anime | **NoobAI-XL** | Wider style range | Danbooru-trained |
 | Anime | **Illustrious-XL** | Cleaner linework | Danbooru-trained |
-| **Photoreal** | **Lustify V8** | Dedicated NSFW, photoreal | **Start here.** Purpose-trained for explicit anatomy |
+| **Photoreal** | **Lustify V9 ZENITH** | Dedicated NSFW, photoreal | **Start here.** Purpose-trained for explicit anatomy |
+| ~~Photoreal~~ | ~~Lustify V10~~ | **Do not use** | Krea 2 base, not SDXL. kohya and Draw Things cannot train it |
 | **Photoreal** | **Juggernaut XL** | Cinematic realism | [civitai.com/models/133005](https://civitai.com/models/133005/juggernaut-xl) |
 | **Photoreal** | **Epicrealism XL** | Naturalistic skin and lighting | Pairs well with Cyberrealistic |
 
@@ -202,6 +204,21 @@ Drop any photo that is blurry, heavily filtered, a group shot, or hides the face
 
 Twenty to thirty well-chosen photos beat a hundred casual ones. Past roughly thirty, returns fall off and outfit bake-in rises.
 
+**If you only have 4–5 photos.** Five is the documented floor for Draw Things, and it will train. Understand what you get: the LoRA reproduces those exact looks well and generalises badly. Expect it to lock onto the poses, outfits, and backgrounds it was shown, and to struggle with a pose it never saw.
+
+Adjust for a small set:
+
+| Setting | Small set (4–8) | Normal set (15–30) |
+|---|---|---|
+| Network dim | 8 | 16–32 |
+| Steps | 800–1200 | 1500–2000 |
+| Learning rate | 1e-4, or 5e-5 | 1e-4 |
+| Captions | Describe **everything except identity** | Short, 5–10 words |
+
+The caption rule matters most. With five images, any detail you leave uncaptioned gets absorbed into the trigger word. Caption the outfit, the pose, the background, and the lighting explicitly, then the trigger word is forced to carry only what is left: you.
+
+You can stretch five photos by cropping each into two or three framings — head and shoulders, three-quarter, full. That buys scale variety, not pose variety, but it helps.
+
 The trade to understand: clothing that covers the body hides the body. The LoRA reproduces what the photos reveal, so the outfit you want the character to wear should not be the same outfit worn in every reference image.
 
 **Training settings**
@@ -264,6 +281,24 @@ sips -s format png --out "$TMPDIR/x.png" "$f" && sips -s format jpeg -Z 1024 --o
 
 **Training on the pod**
 
+Three scripts in `scripts/lora/` implement this section:
+
+| Script | Run it | Does |
+|---|---|---|
+| `prep_dataset.sh` | on the Mac | HEIC/JPG/PNG → 1024 JPEG, EXIF stripped, one caption per image |
+| `pod_bootstrap.sh` | on the pod | installs sd-scripts, downloads the checkpoint, trains |
+| `pull_lora.sh` | on the Mac | copies checkpoints back, warns on truncated files |
+
+```bash
+# on the Mac
+bash scripts/lora/prep_dataset.sh "/path/to/photos" ./dataset mysubject
+# edit every caption that still contains [ ... ]
+# on the pod
+DATASET_DIR=/workspace/dataset CIVITAI_TOKEN=... MODEL_URL=... bash scripts/lora/pod_bootstrap.sh
+# back on the Mac
+bash scripts/lora/pull_lora.sh root@<pod-host> -p <port> /workspace/lora-out
+```
+
 Use kohya_ss for an SDXL LoRA (see @entities/training-tools/kohya-sd-scripts.md), or ai-toolkit. Both expect a folder of images plus captions.
 
 ```bash
@@ -271,13 +306,13 @@ Use kohya_ss for an SDXL LoRA (see @entities/training-tools/kohya-sd-scripts.md)
 scp -P <port> -r ~/Pictures/lora-out root@<pod-host>:/workspace/dataset
 ```
 
-Set the base model to the exact checkpoint you will generate with — Lustify V8 or Juggernaut XL for a photoreal likeness, Pony V6 for an animated one. Never base SDXL itself.
+Set the base model to the exact checkpoint you will generate with — Lustify V9 ZENITH (SDXL) or Juggernaut XL for a photoreal likeness, Pony V6 for an animated one. Never base SDXL itself.
 
 **Starting parameters** (kohya on a 24 GB card):
 
 | Setting | Value | Why |
 |---|---|---|
-| Base checkpoint | Lustify V8 | Train against the generator you will actually use |
+| Base checkpoint | Lustify V9 ZENITH | Train against the generator you will actually use |
 | Resolution | 1024 | Matches generation; 512 softens fine detail |
 | Network dim / alpha | 32 / 16 | Enough capacity for a body; 16 if you see overfit |
 | Learning rate (UNet) | 1e-4 | Standard for SDXL |
@@ -288,6 +323,37 @@ Set the base model to the exact checkpoint you will generate with — Lustify V8
 | Save interval | every 250 steps | Pick the best by test render, not by loss |
 
 Save intermediate checkpoints every 250 steps and test-render each of the last four. The best epoch for a likeness is often not the final one — overtraining bakes in the reference outfits and flattens skin texture.
+
+**Verified recipe — first successful run, 2026-10-24**
+
+```bash
+python3 sdxl_train_network.py \
+  --pretrained_model_name_or_path=/workspace/models/base.safetensors \
+  --train_data_dir=/workspace/train --enable_bucket \
+  --min_bucket_reso=640 --max_bucket_reso=1536 \
+  --output_dir=/workspace/lora-out --output_name=likeness \
+  --resolution=1024 --train_batch_size=1 --max_train_steps=1000 \
+  --learning_rate=5e-5 --lr_scheduler=cosine \
+  --network_module=networks.lora --network_dim=16 --network_alpha=8 \
+  --network_train_unet_only --optimizer_type=AdamW8bit \
+  --mixed_precision=fp16 --gradient_checkpointing --cache_latents --sdpa \
+  --save_every_n_steps=250 --save_model_as=safetensors \
+  --caption_extension=.txt --shuffle_caption --seed=42
+```
+
+Result: 1000 steps at 1.17 it/s, about 14 minutes on a 4090, 9.2 GB VRAM, loss 0.167 → 0.127.
+
+Seven failure modes, each of which cost a run:
+
+| Symptom | Cause | Fix |
+|---|---|---|
+| `No module named 'diffusers'` | dependency list incomplete | install sd-scripts `requirements.txt`, not a hand-written list |
+| `transformers` cannot find torch | accelerate launched `/usr/bin/python` | call `python3 sdxl_train_network.py` directly, skip accelerate |
+| `Could not import module 'CLIPTextModel'` | transformers 5.x moved it | `pip install "transformers>=4.44,<4.50"` |
+| `operator torchvision::nms does not exist` | torch/torchvision mismatch | pin `torch==2.5.1 torchvision==0.20.1` |
+| `ignore directory without repeats` | concept folder has no repeat prefix | name it `N_name`, e.g. `10_mysubject` |
+| `image size is small` | mixed sizes, bucketing off | add `--enable_bucket` |
+| CUDA OOM at 1024 | text-encoder training on 24 GB | `--gradient_checkpointing --cache_latents --network_train_unet_only --sdpa` |
 
 Then download the result and destroy the pod:
 
@@ -422,6 +488,82 @@ The rest of the curl calls in Step 6 work unchanged, because the tunnel puts the
 - Cold start is 1–3 minutes. Start the pod before you start writing briefs.
 
 **Alternative if you want zero cloud:** run the director locally at 4B instead of 8B. `huihui_ai/qwen3-abliterated:4b` is ~2.5 GB and fits beside the image stack. It follows the output contract less reliably — test it on ten briefs before trusting it.
+
+### When the likeness misses — retraining, not editing
+
+A LoRA cannot be edited after training. There is no way to correct one face in it; the weights encode a
+statistical delta, not a picture. If the face is wrong, the answer is a new dataset and a new run.
+
+**Diagnostic performed 2026-10-24.** Six images, rank 16, UNet-only, 1000 steps. Rendered a close-up
+portrait at strength 1.0 from both the 1000-step and 750-step LoRA, same seed. The two outputs were
+near-identical to each other, and neither resembled the reference photos. That is a weak-signal result:
+when the LoRA contributes little, the base checkpoint dominates and both variants converge.
+
+**Why it happened.** Face detail was scarce. Of six images, four were full body, where the face is
+roughly 80x100 px in a 1024 px frame. Only two frames carried usable facial information. Rank 16 is
+modest for identity, the text encoder was frozen so the trigger word's embedding never moved, and
+`--shuffle_caption` with `keep_tokens=0` let the trigger drift within the caption.
+
+**What to change for the retrain**
+
+| Item | First run | Retrain |
+|---|---|---|
+| Close-up portraits | 2 | **8-10** |
+| Full-body shots | 4 | 4-6 |
+| Rank / alpha | 16 / 8 | **32 / 16** |
+| Text encoder | frozen | train at 1e-5 |
+| Trigger word | `mysubject` (multi-subword) | **one rare token**, e.g. `zkxpersona` |
+| Caption order | shuffled, keep 0 | `--keep_tokens=1`, shuffle off |
+| Steps | 1000 | 1500-2000 |
+
+The trigger choice matters more than it looks. `mysubject` tokenises into several subword pieces, so
+binding it to one face is harder than binding a single rare token that the tokenizer has never split.
+
+Keep the current LoRA as a body-only asset. It captured proportions better than identity, and it can be
+stacked with a future face LoRA.
+
+### Step 6b — Headless generation with draw-things-cli
+
+Draw Things ships a command-line build, so generation need not go through the GUI. Verified 2026-10-24.
+
+```bash
+curl -L --fail -C - -o ~/.local/bin/draw-things-cli \
+  "https://github.com/drawthingsai/draw-things-community/releases/download/v26.1023.0/draw-things-cli"
+chmod +x ~/.local/bin/draw-things-cli
+```
+
+**Import the checkpoint, never the LoRA.**
+
+`models import` handles checkpoints only — it wants an autoencoder and text encoders, and returns `Error: tensorNotFound` if handed a LoRA. A LoRA is not imported at all; copy the file into the models directory.
+
+```bash
+# checkpoint (downloads companions: CLIP bigG, SDXL VAE, CLIP ViT-L)
+draw-things-cli models import ~/lustify_v9-zenith.safetensors \
+  --models-dir ~/Models/drawthings --name "Lustify V9"
+
+# LoRA: plain copy, no import
+cp likeness.safetensors ~/Models/drawthings/
+```
+
+`--dry-run` on import prints the inferred spec before writing anything. Useful for checking the family and companion list.
+
+**Generate with the LoRA.** The version token for SDXL is `sdxlBase`, read from the import spec.
+
+```bash
+draw-things-cli generate --models-dir ~/Models/drawthings \
+  --model lustify_v9_zenith_f16.ckpt \
+  --prompt "mysubject, a photo of mysubject, <outfit>, <pose>, <setting>, photorealistic, photograph, natural skin texture" \
+  --negative-prompt "cartoon, anime, 3d render, cgi, worst quality, low quality, bad anatomy, watermark, text" \
+  --steps 20 --cfg 6 --width 1024 --height 1024 --seed 42 \
+  --output ~/lora-likeness/renders/out.png \
+  --config-json '{"loras":[{"file":"likeness.safetensors","weight":0.8,"version":"sdxlBase"}]}'
+```
+
+Measured on an M4 Air 16 GB: **110 s total**, about 5 s per sampling step at 20 steps, 1024×1024.
+
+**Prompt note:** if the prompt names no clothing, an NSFW checkpoint renders the figure with none. Describe the outfit for clothed output; the absence of a garment is read as a request for none.
+
+**Both LoRAs need the same treatment.** A second LoRA such as `likeness-step00000750.safetensors` needs its own entry in `loras[]`, not a second model.
 
 ### Step 7 — The loop
 

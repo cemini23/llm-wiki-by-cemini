@@ -4009,3 +4009,28 @@ Full triage of all 18 briefs in `briefs/` (the gitignored deliverables directory
 - **Base-family fork documented** — anime (Pony/NoobAI/Illustrious) vs photoreal (Lustify/Juggernaut/Epicrealism) SDXL fine-tunes. The trained LoRA must match the generator family, so the choice is made in Step 3, before training. Score tags are Pony-only.
 - **Realism pass finalized** — Deep research 2026-10-24. Decisive constraint: Draw Things trains LoRA only for SDXL 1.0 / Flux.1 dev / Kwai Kolors / SD3 Medium, so Z-Image Turbo (supported, 6B, ~4 GiB at 6-bit, better photoreal skin) cannot carry a likeness. Plan set to Lustify V8 + kohya on RunPod at 1024/rank 32/LR 1e-4/1500-2000 steps, generation local at LoRA 0.7-0.9. Local-training fallback documented (8-bit SDXL, rank 8-16, 512, overnight). Dataset selection rules added: no beauty filters, varied distance/angle/expression.
 - **Updated** backlinks: `gpu-guide.md`, `pony-v6.md`, `noobai-xl.md`, `illustrious-xl.md`, `flux-2-klein.md`, `model-selection-workflow.md`, `de-censoring-techniques.md`, `censorship-tier-taxonomy.md`, `reference-plus-lora-stacking.md`, `prompt-engineering-uncensored.md`, `persona-legal-landscape.md`, `heretic.md`, `runpod-unified-gen-stack.md`, `index.md`
+
+## [2026-10-24] run | First LoRA trained end to end on RunPod
+
+- **Executed** `scripts/lora/prep_dataset.sh` on 7 HEIC photos → 6 kept (img_02 dropped: two other people in frame, not croppable without producing a transparent strip). 1024-long-edge JPEG, EXIF stripped, captions written from inspection.
+- **Checkpoint:** Lustify **V9 ZENITH** (CivitAI model 573152, version 3045803, SDXL 1.0, 6.5 GB). **V10 is Krea 2** — 11.9 GB, different architecture, cannot be trained by kohya or Draw Things. Recorded in the runbook.
+- **Pod:** RTX 4090 24 GB, SECURE, EUR-IS-2, $0.89/hr, container disk 80 GB, no volume. Created and terminated via `rest.runpod.io/v1` with a `rpa_` key.
+- **Training:** 1000 steps, rank 16 / alpha 8, LR 5e-5, UNet-only, gradient checkpointing + cache_latents + sdpa. 1.17 it/s, ~14 min, 9.2 GB VRAM, loss 0.167 → 0.127. Five checkpoints at 250/500/750/1000 + final.
+- **Pulled:** `likeness.safetensors` and `likeness-step00000750.safetensors`, 170,543,888 bytes each, size-matched to the pod. Pod wiped and terminated; pod list confirms empty.
+- **Runbook updated** with the verified kohya recipe and seven failure modes (diffusers missing, accelerate/python mismatch, transformers 5.x CLIPTextModel, torchvision nms, `N_name` folder prefix, `--enable_bucket`, 1024 OOM).
+
+## [2026-10-24] run | Headless Draw Things CLI unblocks generation
+
+- **Installed** `draw-things-cli` v26.1023.0 (276 MB universal binary) to `~/.local/bin`. The GUI app was moved to Trash; the CLI needs no App Store account either.
+- **Root cause of `Error: tensorNotFound`**: `models import` accepts checkpoints only — it expects an autoencoder and text encoders. A LoRA is never imported; it is copied into the models directory and referenced through `--config-json`.
+- **Working recipe**: import Lustify V9 with `--dry-run` first to read the inferred spec, then import for real (pulls CLIP bigG, SDXL VAE, CLIP ViT-L as companions). Copy the LoRA in. Generate with `loras[].version` = **`sdxlBase`**.
+- **Verified**: 1024×1024, 20 steps, seed 42 → 110 s total, ~4.98 s per step on an M4 Air 16 GB. LoRA at 0.8 applies and the output is photoreal.
+- **Freed**: uv cache 6.0 GiB (211,013 files) after stopping the tradingview-mcp process that held its lock; npm 268 MB; pip/bun/whisper/pre-commit ~340 MB; the 6.9 GB source safetensors after a successful test render. Disk 17 GB free.
+- **Runbook updated** with Step 6b — the headless generation recipe.
+
+## [2026-10-24] close | Local likeness pipeline — lessons filed, machine cleared
+
+- **NEW** `@concepts/local-likeness-lora-lessons.md` — the durable record of one complete attempt: cost (~$1.35), the ToS/hardware/training split that decides where each step runs, dataset face-coverage as the failure point, the two-checkpoint identity diagnostic, seven environment traps, `models import` misuse, the Krea-2 checkpoint trap, and the storage arithmetic on a 16 GB laptop.
+- **Verdict**: pipeline works — photoreal output, 90-110 s per 1024 px image locally. **Likeness failed**: six photos with only two face-dominant frames produced a body-accurate, face-poor LoRA. Retrain requires 8-10 portraits and a rare single-token trigger; it is not an editing problem.
+- **Backlinks** added to 12 related pages; index row added.
+- **Personal artefacts removed** from the machine at operator request: source photos, dataset, trained LoRA, imported models, renders, CLI binary. The reusable code (`scripts/lora/`) and this knowledge stay.

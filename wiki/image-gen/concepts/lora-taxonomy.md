@@ -4,6 +4,7 @@ type: concept
 tags: [lora, lycoris, parameter-efficient-finetuning, training, character-isolation]
 keywords: [LoRA, LoCon, LoHA, LoKr, DoRA, LyCORIS, low-rank adaptation, factor=4, magnitude direction decomposition, kronecker product, hadamard product]
 related:
+  - concepts/local-likeness-lora-lessons.md
   - sources/synthetic-character-consistency-survey.md
   - concepts/persona-consistency-methods.md
   - entities/training-tools/kohya-sd-scripts.md

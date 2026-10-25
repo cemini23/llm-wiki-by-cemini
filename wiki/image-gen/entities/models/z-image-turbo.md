@@ -4,6 +4,7 @@ type: entity
 tags: [model, dit, s3-dit, z-image, zeta-chroma, alibaba, tongyi-mai, lodestone-rock, completely-uncensored, photorealism, 6b, 8-step-distill, eastern-vanguard]
 keywords: [Z-Image, Z-Image Turbo, Zeta Chroma, Alibaba, Tongyi MAI, S3-DiT, Scalable Single-Stream Diffusion Transformer, 6B, 8-step distillation, photorealism, completely uncensored, Lodestone Rock, pixel-space DiT]
 related:
+  - concepts/local-likeness-lora-lessons.md
   - sources/uncensored-image-generation-survey.md
   - concepts/prompt-engineering-uncensored.md
   - concepts/two-pass-generation-workflow.md

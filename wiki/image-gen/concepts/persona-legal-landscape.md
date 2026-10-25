@@ -7,6 +7,7 @@ maturity: draft
 created: 2026-05-07
 updated: 2026-08-20
 related:
+  - concepts/local-likeness-lora-lessons.md
   - runbooks/mac-local-image-director.md
   - sources/persona-monetization-2026.md
   - concepts/persona-ops-workflow.md

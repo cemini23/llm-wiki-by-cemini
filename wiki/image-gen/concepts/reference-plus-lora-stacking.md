@@ -4,6 +4,7 @@ type: concept
 tags: [persona-consistency, production-pattern, lora-stacking, identity-adapter-stack, nsfw-mitigation, two-pass-pipeline]
 keywords: [reference plus LoRA, stack, 0.85 LoRA + 0.45 adapter, modal 2026 stack, two-pass face inpaint, Klein 9B face-swap, Chroma1-HD, NSFW LoRA stack]
 related:
+  - concepts/local-likeness-lora-lessons.md
   - runbooks/mac-local-image-director.md
   - concepts/character-dna-templates.md
   - concepts/de-censoring-techniques.md

@@ -4,6 +4,7 @@ type: entity
 tags: [training-tool, lora-training, kohya, sd-scripts, sdxl, flux, hunyuan, musubi]
 keywords: [Kohya, sd-scripts, kohya-ss, sdxl_train_network.py, flux_train_network.py, sd-trainer, kohya_ss GUI, Musubi Tuner, AdamW8bit, Prodigy]
 related:
+  - concepts/local-likeness-lora-lessons.md
   - sources/synthetic-character-consistency-survey.md
   - concepts/lora-taxonomy.md
   - concepts/persona-consistency-methods.md

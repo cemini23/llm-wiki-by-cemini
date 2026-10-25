@@ -7,6 +7,7 @@ maturity: draft
 created: 2026-05-06
 updated: 2026-05-06
 related:
+  - concepts/local-likeness-lora-lessons.md
   - sources/uncensored-image-generation-survey.md
   - concepts/prompt-engineering-uncensored.md
   - concepts/two-pass-generation-workflow.md

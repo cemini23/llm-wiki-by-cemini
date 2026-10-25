@@ -4,6 +4,7 @@ type: entity
 tags: [model, sdxl, pony, danbooru, lora-base, completely-uncensored, anime, stylized]
 keywords: [Pony V6, Pony Diffusion, AstraliteHeart, PurpleSmart.ai, SDXL, score_9, score_8_up, Danbooru tags, e621]
 related:
+  - concepts/local-likeness-lora-lessons.md
   - runbooks/mac-local-image-director.md
   - sources/uncensored-image-generation-survey.md
   - concepts/prompt-engineering-uncensored.md
