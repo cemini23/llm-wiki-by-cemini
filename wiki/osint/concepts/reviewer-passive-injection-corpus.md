@@ -17,9 +17,9 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - concepts/macro-weather-regime.md
   - concepts/active-project-research-routing.md
-  - "@cybersec-wiki/concepts/agent-runtime-guardrails.md"
-  - "@cybersec-wiki/concepts/intent-governed-tool-authorization.md"
-  - "@cybersec-wiki/concepts/mcp-execution-control-invariants.md"
+  - "@cybersecurity-wiki/concepts/agent-runtime-guardrails.md"
+  - "@cybersecurity-wiki/concepts/intent-governed-tool-authorization.md"
+  - "@cybersecurity-wiki/concepts/mcp-execution-control-invariants.md"
   - concepts/kelly-sizing-quarter.md
   - sources/arxiv-cage1-enterprise-governance-2607.03510-2026-07-10.md
 maturity: validated
@@ -42,9 +42,9 @@ updated: 2026-07-10
 - @concepts/xsp-lane-trading-framework.md — XSP killer lane map + Lane A/B rules
 - @concepts/macro-weather-regime.md — Macro Weather for portfolio Kelly; XSP dip lanes are explicit exception
 - @concepts/active-project-research-routing.md — xsp-killer co-primary brief routing
-- @cybersec-wiki/concepts/agent-runtime-guardrails.md — tool-chain failure modes (cross-wiki corpus)
-- @cybersec-wiki/concepts/intent-governed-tool-authorization.md — intent–tool consistency (cross-wiki corpus)
-- @cybersec-wiki/concepts/mcp-execution-control-invariants.md — execution-control invariants (cross-wiki corpus)
+- @cybersecurity-wiki/concepts/agent-runtime-guardrails.md — tool-chain failure modes (cross-wiki corpus)
+- @cybersecurity-wiki/concepts/intent-governed-tool-authorization.md — intent–tool consistency (cross-wiki corpus)
+- @cybersecurity-wiki/concepts/mcp-execution-control-invariants.md — execution-control invariants (cross-wiki corpus)
 - @concepts/kelly-sizing-quarter.md — fractional Kelly + hard position caps
 - @sources/arxiv-cage1-enterprise-governance-2607.03510-2026-07-10.md — CAGE-1 Prebind Assurance vocabulary (K155)
 
@@ -89,9 +89,9 @@ bash scripts/build_reviewer_context.sh
 | `xsp_lane_framework` | @concepts/xsp-lane-trading-framework.md | Lane A/B rules, -$75 stop, 10:30 ET cut, LEAPS hedge |
 | `xsp_regime_gate` | @concepts/macro-weather-regime.md | Macro Weather context; **not** universal GREEN-only entry for XSP dip lanes |
 | `kelly_sizing_caps` | @concepts/kelly-sizing-quarter.md | Fractional Kelly + hard per-position caps |
-| `igac_intent_scope` | @cybersec-wiki/concepts/intent-governed-tool-authorization.md | Intent must justify side-effecting call |
-| `mcp_execution_invariants` | @cybersec-wiki/concepts/mcp-execution-control-invariants.md | Eight execution-control invariants |
-| `agent_guardrail_failure_modes` | @cybersec-wiki/concepts/agent-runtime-guardrails.md | Authority confusion + permission laundering |
+| `igac_intent_scope` | @cybersecurity-wiki/concepts/intent-governed-tool-authorization.md | Intent must justify side-effecting call |
+| `mcp_execution_invariants` | @cybersecurity-wiki/concepts/mcp-execution-control-invariants.md | Eight execution-control invariants |
+| `agent_guardrail_failure_modes` | @cybersecurity-wiki/concepts/agent-runtime-guardrails.md | Authority confusion + permission laundering |
 | `cfd_provenance` | @concepts/context-fractured-decomposition-attacks.md | Cross-session artifact trust |
 
 ### Deployment boundary

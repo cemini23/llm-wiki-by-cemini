@@ -9,7 +9,7 @@ related:
   - entities/platforms/devfun-poker-arena.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - sources/devfun-poker-arena-phase0-2026-06-01.md
-  - osint-wiki/sources/trading-posts-compilation-7-2026-06-09.md
+  - @osint-wiki/sources/trading-posts-compilation-7-2026-06-09.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-09

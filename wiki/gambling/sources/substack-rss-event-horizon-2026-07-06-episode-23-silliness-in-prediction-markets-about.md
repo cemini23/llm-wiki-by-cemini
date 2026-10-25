@@ -8,7 +8,7 @@ related:
   - sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
   - entities/platforms/kalshi.md
   - sources/daily-digest-batch-k149-2026-07-07.md
-  - osint-wiki/sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
+  - @osint-wiki/sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-06

@@ -13,7 +13,7 @@ related:
   - entities/platforms/polymarket.md
   - sources/openreview-prophets-profit-pm-LYSTj2Cnuu-2026-06-17.md
   - sweeps/2026-06-17-daily.md
-  - osint-wiki/concepts/market-informedness-market-making.md
+  - @osint-wiki/concepts/market-informedness-market-making.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-17

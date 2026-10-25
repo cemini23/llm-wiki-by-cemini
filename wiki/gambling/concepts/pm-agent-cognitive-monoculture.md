@@ -20,7 +20,7 @@ related:
   - sources/arxiv-2606-13038-nous-prediction-market-cognitive-injection-2026-06-13.md
   - sources/arxiv-2607.07760-adversarial-social-epistemology-llm-2026-07-12.md
   - sources/brief-k153-mppo-style-pm-evidence-steals-2026-07-12.md
-  - osint-wiki/concepts/market-informedness-market-making.md
+  - @osint-wiki/concepts/market-informedness-market-making.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-07-12

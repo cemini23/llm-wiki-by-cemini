@@ -13,7 +13,7 @@ related:
   - entities/tools/pokerskill.md
   - entities/tools/rlcard.md
   - entities/tools/devfun-poker-arena-starter-kit.md
-  - osint-wiki/entities/tools/poker-query-language.md
+  - @osint-wiki/entities/tools/poker-query-language.md
   - sources/daily-digest-arxiv-batch-2026-06-01.md
   - sources/daily-digest-arxiv-batch-2026-06-02.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md

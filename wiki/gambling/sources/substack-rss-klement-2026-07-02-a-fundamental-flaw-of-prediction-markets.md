@@ -7,7 +7,7 @@ related:
   - concepts/pm-whale-conviction-bias-2026-07.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
-  - osint-wiki/sources/substack-rss-klement-2026-07-02-a-fundamental-flaw-of-prediction-markets.md
+  - @osint-wiki/sources/substack-rss-klement-2026-07-02-a-fundamental-flaw-of-prediction-markets.md
 maturity: draft
 created: 2026-07-05
 updated: 2026-07-05

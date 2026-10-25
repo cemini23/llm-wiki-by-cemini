@@ -4,7 +4,7 @@ type: entity
 tags: [tool, ccc]
 keywords: [deepinfer, deepseek, inference, sm100]
 related:
-  - ../../osint/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25
@@ -15,7 +15,7 @@ wire_note: Wiki reference only. No install.
 
 ## Raw Concept
 
-URL row of @../../osint/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md. Tier **Context** — reference only, no revenue path.
+URL row of @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md. Tier **Context** — reference only, no revenue path.
 
 ## Narrative
 

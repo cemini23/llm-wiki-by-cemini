@@ -1402,7 +1402,7 @@ Cyber ingest of host HWID / MAC-randomization OPSEC (`@cybersecurity-wiki/concep
 ## [2026-08-05] routing | TipDrop/David retired → local abliterated AI lab
 
 - David off TipDrop: remove `tipdrop` + `david-persona-image-gen` from `scripts/active_project_brief_targets.yaml`
-- Add `local-abliterated-lab` → `../Cybersecurity wiki/briefs/` (`@cybersec-wiki/concepts/local-abliterated-llm-pentest-stack.md`)
+- Add `local-abliterated-lab` → `../Cybersecurity wiki/briefs/` (`@cybersecurity-wiki/concepts/local-abliterated-llm-pentest-stack.md`)
 - `daily_research_config.yaml` active_topics + brief_routing_note; drop Instagram TipDrop competitor scan
 - ROADMAP + `@concepts/active-project-research-routing.md` updated
 - Links eval: CCC prompts → **v10.5** (no TipDrop scoring / no kit pushes)
@@ -4513,7 +4513,7 @@ Tier-2 sweep `@sweeps/2026-05-30.md` — user approved all four Tier-A/B candida
 - `@ccc-wiki/briefs/2026-05-21_k55-2-ridark-eth-ccc-relevant-repos.md` — CCC-relevant subset of @ridark_eth's 50 repos. nautilus_trader-tier audit candidates flagged.
 - `@image-gen-wiki/briefs/2026-05-21_k55-2-ridark-eth-image-gen-relevant-repos.md` — flux / VAR / Qwen3-TTS / VoxCPM / PersonaLive.
 - `@seo-wiki/briefs/2026-05-21_k55-2-ridark-eth-seo-relevant-repos.md` — SaaS-Boilerplate / akaunting / faveo-helpdesk / laracom / FreeDomain (PBN-relevance flagged).
-- `@cybersec-wiki/briefs/2026-05-21_k55-2-cybersec-toolset-from-osint-tool-eval.md` — CF-Hero / reconftw / LLM4Pentest / jadx-ai-mcp / Awesome-Hacking / open-source-web-scanners — all Reject-per-OSINT but license verifications recommended.
+- `@cybersecurity-wiki/briefs/2026-05-21_k55-2-cybersec-toolset-from-osint-tool-eval.md` — CF-Hero / reconftw / LLM4Pentest / jadx-ai-mcp / Awesome-Hacking / open-source-web-scanners — all Reject-per-OSINT but license verifications recommended.
 
 **K55-2 Reject discipline:** per ingest decision (briefs only, no per-tool stubs), the 31 Reject entries from the Tool Eval are documented as an aggregate appendix on the source page. **No reject-stub farm created.** 9 entries flagged for manual `gh api` license re-verification if/when adoption interest arises.
 

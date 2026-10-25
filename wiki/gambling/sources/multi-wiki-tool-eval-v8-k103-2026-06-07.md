@@ -8,8 +8,8 @@ related:
   - entities/bots/poker-bot-tooling.md
   - entities/tools/devfun-poker-arena-starter-kit.md
   - sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md
-  - osint-wiki/sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
-  - osint-wiki/entities/tools/poker-query-language.md
+  - @osint-wiki/sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
+  - @osint-wiki/entities/tools/poker-query-language.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-13

@@ -25,7 +25,7 @@ updated: 2026-07-10
 
 - @sources/cemini-external-code-audit-errors-2026-06-03.md — provenance (friend audit 2026-06-03)
 - @concepts/production-trading-blind-spots.md — operational failure taxonomy
-- @cybersec-wiki/concepts/agent-runtime-guardrails.md — RBAC / runtime guard patterns
+- @cybersecurity-wiki/concepts/agent-runtime-guardrails.md — RBAC / runtime guard patterns
 - @concepts/interaction-native-knowledge-harness.md — maturity × action-risk gates before prod memory writes
 - @concepts/reviewer-passive-injection-corpus.md — K37 reviewer passive-injection corpus hub
 - @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — InKH governance model (K99)

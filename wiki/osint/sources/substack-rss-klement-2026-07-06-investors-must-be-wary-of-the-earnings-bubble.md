@@ -4,7 +4,7 @@ type: source
 tags: [source, newsletter-rss, inbox-auto, klement]
 keywords: [rss, newsletter, klement]
 related:
-  - gambling-wiki/sources/substack-rss-klement-2026-07-06-investors-must-be-wary-of-the-earnings-bubble.md
+  - @gambling-wiki/sources/substack-rss-klement-2026-07-06-investors-must-be-wary-of-the-earnings-bubble.md
 maturity: draft
 created: 2026-07-05
 updated: 2026-07-06

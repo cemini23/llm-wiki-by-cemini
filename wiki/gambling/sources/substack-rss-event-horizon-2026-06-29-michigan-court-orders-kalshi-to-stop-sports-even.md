@@ -7,7 +7,7 @@ related:
   - concepts/kalshi-michigan-sports-injunction-2026-06.md
   - entities/platforms/kalshi.md
   - concepts/prediction-markets-crossover.md
-  - osint-wiki/sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md
+  - @osint-wiki/sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md
 maturity: validated
 created: 2026-07-05
 updated: 2026-07-05

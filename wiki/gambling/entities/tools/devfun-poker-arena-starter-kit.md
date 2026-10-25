@@ -14,7 +14,7 @@ related:
   - concepts/opponent-modeling-imperfect-info.md
   - sources/devfun-poker-arena-phase0-2026-06-01.md
   - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
-  - osint-wiki/sources/multi-wiki-tool-eval-50url-k102-2026-06-06.md
+  - @osint-wiki/sources/multi-wiki-tool-eval-50url-k102-2026-06-06.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - concepts/heads-up-arena-strategy.md
   - sources/devfun-sandbox-researcher-guide-2026-06-26.md

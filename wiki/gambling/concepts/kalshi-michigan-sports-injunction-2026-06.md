@@ -9,7 +9,7 @@ related:
   - concepts/sharp-vs-soft-books.md
   - sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md
   - sources/youtube-wsj-kalshi-polymarket-valuations-2026-06-01.md
-  - osint-wiki/sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md
+  - @osint-wiki/sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md
   - sources/daily-digest-rss-industry-2026-08-14.md
   - sources/brief-k222-k231-pm-retail-awareness-2026-08.md
   - sources/brief-k239-kalshi-sports-mention-2026-08-15.md

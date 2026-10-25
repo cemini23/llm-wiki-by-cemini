@@ -58,7 +58,7 @@ Three structural commonalities:
 
 **Pattern 1 — Query DSL inheritance.** Shodan's filter syntax (`country:`, `port:`, `org:`, `vuln:`) and ONYPHE's IQL are templates for designing internal CTI query languages. If Cemini ever needs internal exposure-management tooling, the DSL ergonomics are documented prior art worth referencing.
 
-**Pattern 2 — CTEM framework adoption (SOCRadar).** Continuous Threat Exposure Management is a Gartner-blessed methodology (Scoping → Discovery → Prioritization → Validation → Mobilization). The framework itself is methodology, not product; document in `@cybersec-wiki/concepts/ctem-framework.md` for blue-team reference.
+**Pattern 2 — CTEM framework adoption (SOCRadar).** Continuous Threat Exposure Management is a Gartner-blessed methodology (Scoping → Discovery → Prioritization → Validation → Mobilization). The framework itself is methodology, not product; document in `@cybersecurity-wiki/concepts/ctem-framework.md` for blue-team reference.
 
 **Pattern 3 — Pivot-graph reasoning (ONYPHE, IntelX).** These platforms encode investigator workflows where one indicator (IP / cert / email) expands across heterogeneous data sources. The pivot logic is methodology-portable; the underlying data is not.
 
@@ -75,13 +75,13 @@ Codify this triage hierarchy in `@concepts/tool-evaluation-framework.md` to spee
 
 ### Cross-routing decision
 
-**Primary route**: `@cybersec-wiki/` — stubs for each of the 9 SaaS tools under `cybersec-wiki/entities/threat-intel-saas/` with methodology snapshots. Their CTI workflows belong in the cybersec corpus, not the OSINT-financial corpus.
+**Primary route**: `@cybersecurity-wiki/` — stubs for each of the 9 SaaS tools under `cybersec-wiki/entities/threat-intel-saas/` with methodology snapshots. Their CTI workflows belong in the cybersec corpus, not the OSINT-financial corpus.
 
 **Secondary touchpoint**: OSINT-wiki retains this concept page as the *meta-decision* (why these 9 were batch-Rejected) but does not maintain individual tool pages — those live in cybersec-wiki.
 
 ### Open questions
 
-- Hunter.io has obvious overlap with OSINT investigation tradecraft (email-pattern enumeration). Worth a dedicated page in `@cybersec-wiki/concepts/email-enum-tradecraft.md` rather than just a SaaS stub.
+- Hunter.io has obvious overlap with OSINT investigation tradecraft (email-pattern enumeration). Worth a dedicated page in `@cybersecurity-wiki/concepts/email-enum-tradecraft.md` rather than just a SaaS stub.
 - Coalition's insurance-loss data could feed an `@concepts/insurance-loss-as-control-prioritization.md` page if Cemini ever extends into cyber-insurance modeling.
 - Shodan + ONYPHE could be Phase-0-audited for *free-tier query budget viability* against Cemini's actual CTI needs. Currently Reject is categorical; if free-tier suffices, a methodology-only API-call wrapper might re-enter consideration as a closed dependency outside `/opt/cemini`.
 

@@ -18,8 +18,8 @@ related:
   - concepts/bankroll-management.md
   - entities/platforms/polymarket.md
   - entities/platforms/kalshi.md
-  - osint-wiki/concepts/polymarket-retail-trading-discipline.md
-  - osint-wiki/sources/trading-posts-compilation-8-2026-06-09.md
+  - @osint-wiki/concepts/polymarket-retail-trading-discipline.md
+  - @osint-wiki/sources/trading-posts-compilation-8-2026-06-09.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-09

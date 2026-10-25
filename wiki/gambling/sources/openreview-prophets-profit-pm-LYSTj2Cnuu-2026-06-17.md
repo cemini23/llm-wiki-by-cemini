@@ -20,7 +20,7 @@ related:
   - sources/arxiv-2607.01198-liquidity-tail-risk-large-trades-2026-07-09.md
   - sources/arxiv-2607.01377-kyle-liquidity-premium-investment-horizons-2026-07-09.md
   - sources/brief-k150-pm-liquidity-proper-betting-steals-2026-07-09.md
-  - osint-wiki/concepts/market-informedness-market-making.md
+  - @osint-wiki/concepts/market-informedness-market-making.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-17

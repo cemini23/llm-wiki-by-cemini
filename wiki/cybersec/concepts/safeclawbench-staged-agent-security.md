@@ -4,8 +4,8 @@ type: concept
 tags: [concept, safeclawbench, agent-security, cross-wiki]
 keywords: [2606.18356, semantic-core, sandbox-harm, openclaw]
 related:
-  - ccc-wiki/sources/arxiv-safeclawbench-staged-agent-security-2606.18356.md
-  - ccc-wiki/concepts/safeclawbench-staged-security-endpoints.md
+  - @ccc-wiki/sources/arxiv-safeclawbench-staged-agent-security-2606.18356.md
+  - @ccc-wiki/concepts/safeclawbench-staged-security-endpoints.md
   - concepts/seclaw-agent-security-evaluation.md
   - entities/tools/defenseclaw.md
   - sources/arxiv-2606-23075-self-evolving-llm-agent-safety-mlas.md

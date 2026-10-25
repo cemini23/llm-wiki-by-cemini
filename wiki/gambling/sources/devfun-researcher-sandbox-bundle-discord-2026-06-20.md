@@ -13,7 +13,7 @@ related:
   - sources/brief-k125-eval-gate-discipline-2026-06-22.md
   - concepts/heads-up-arena-strategy.md
   - concepts/poker-axis-eval-literacy.md
-  - osint-wiki/sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
+  - @osint-wiki/sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
 maturity: validated
 read_status: read
 created: 2026-06-20

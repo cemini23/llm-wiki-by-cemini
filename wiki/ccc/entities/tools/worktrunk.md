@@ -4,8 +4,8 @@ type: entity
 tags: [tool, ccc, git, worktree, unverified]
 keywords: [worktrunk, git worktree, parallel agents, max-sixty]
 related:
-  - ../../osint/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
-  - tools/thinkrail.md
+  - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - entities/tools/thinkrail.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25
@@ -16,7 +16,7 @@ wire_note: Not cloned. Stars, commits, issues, and licence all unreported.
 
 ## Raw Concept
 
-URL 9 of @../../osint/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md. Tier **Context**.
+URL 9 of @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md. Tier **Context**.
 
 ## Narrative
 

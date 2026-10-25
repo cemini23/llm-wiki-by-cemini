@@ -6,7 +6,7 @@ keywords: [rss, newsletter, event-horizon, kalshi, spotify, k147]
 related:
   - entities/platforms/kalshi.md
   - sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
-  - gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md
+  - @gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md
 maturity: draft
 created: 2026-07-05
 updated: 2026-07-06

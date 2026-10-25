@@ -16,8 +16,8 @@ related:
   - concepts/pm-agent-cognitive-monoculture.md
   - entities/platforms/polymarket.md
   - sweeps/2026-06-13-daily.md
-  - osint-wiki/concepts/market-informedness-market-making.md
-  - osint-wiki/concepts/polymarket-retail-trading-discipline.md
+  - @osint-wiki/concepts/market-informedness-market-making.md
+  - @osint-wiki/concepts/polymarket-retail-trading-discipline.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-13

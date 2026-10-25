@@ -11,7 +11,7 @@ related:
   - entities/bots/cemini-devfun-poker-agent.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - sources/devfun-poker-arena-phase0-2026-06-01.md
-  - osint-wiki/concepts/cemini-knowledge-application-architecture.md
+  - @osint-wiki/concepts/cemini-knowledge-application-architecture.md
   - sweeps/2026-06-19-daily.md
   - sources/arxiv-2606.17682-trainee-to-trainer-llm-env-engineer-2026-06-20.md
   - sources/arxiv-2606.19308-mafp-multi-agent-fictitious-play-2026-06-21.md

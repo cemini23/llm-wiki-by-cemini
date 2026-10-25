@@ -4,8 +4,8 @@ type: source
 tags: [source, newsletter-rss, inbox-auto, event-horizon]
 keywords: [rss, newsletter, event-horizon]
 related:
-  - gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md
-  - gambling-wiki/sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
+  - @gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md
+  - @gambling-wiki/sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
 maturity: draft
 created: 2026-07-05
 updated: 2026-07-05

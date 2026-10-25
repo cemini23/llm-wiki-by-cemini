@@ -11,7 +11,7 @@ related:
   - sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
   - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
   - sources/substack-rss-event-horizon-2026-06-29-why-do-prediction-markets-insist-on-downplaying.md
-  - osint-wiki/sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
+  - @osint-wiki/sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
 maturity: validated
 created: 2026-07-05
 updated: 2026-07-05

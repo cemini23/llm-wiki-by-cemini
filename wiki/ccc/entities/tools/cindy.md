@@ -4,7 +4,7 @@ type: entity
 tags: [tool, ccc, agent-harness, context-tier]
 keywords: [cindy, orca-workflow, skillhub, desktop agent]
 related:
-  - ../../osint/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25
@@ -15,7 +15,7 @@ wire_note: Wiki reference only. No install.
 
 ## Raw Concept
 
-URL 1 of @../../osint/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md. Tier **Context**.
+URL 1 of @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md. Tier **Context**.
 
 ## Narrative
 

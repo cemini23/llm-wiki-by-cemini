@@ -13,7 +13,7 @@ related:
   - sources/devfun-poker-arena-phase0-2026-06-01.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - sweeps/2026-06-19-daily.md
-  - osint-wiki/concepts/cemini-knowledge-application-architecture.md
+  - @osint-wiki/concepts/cemini-knowledge-application-architecture.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-19

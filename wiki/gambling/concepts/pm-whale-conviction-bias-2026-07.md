@@ -10,7 +10,7 @@ related:
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
   - sources/substack-rss-klement-2026-07-02-a-fundamental-flaw-of-prediction-markets.md
-  - osint-wiki/sources/substack-rss-klement-2026-07-02-a-fundamental-flaw-of-prediction-markets.md
+  - @osint-wiki/sources/substack-rss-klement-2026-07-02-a-fundamental-flaw-of-prediction-markets.md
   - sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md
 maturity: draft
 created: 2026-07-05

@@ -4,7 +4,7 @@ type: source
 tags: [source, newsletter-rss, inbox-auto, klement]
 keywords: [rss, newsletter, klement]
 related:
-  - gambling-wiki/sources/substack-rss-klement-2026-07-06-is-water-use-priced-in-stock-markets.md
+  - @gambling-wiki/sources/substack-rss-klement-2026-07-06-is-water-use-priced-in-stock-markets.md
 maturity: draft
 created: 2026-07-05
 updated: 2026-07-06
