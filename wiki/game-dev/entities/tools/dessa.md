@@ -4,8 +4,8 @@ type: entity
 tags: [tool, game-dev, speech, watch]
 keywords: [Dessa, Block, full-duplex, speech model, Apple Silicon]
 related:
-  - ../../osint/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
-  - tools/voicestudio.md
+  - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - entities/tools/voicestudio.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25

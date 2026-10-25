@@ -4,8 +4,8 @@ type: entity
 tags: [tool, osint, firecrawl, legal, atto, pm-canary]
 keywords: [firecrawl gov-index, firecrawl_gov_search, US statutes, vital records, apostille]
 related:
-  - tools/firecrawl.md
-  - tools/firecrawl-mcp-server.md
+  - entities/tools/firecrawl.md
+  - entities/tools/firecrawl-mcp-server.md
   - sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
 maturity: draft
 created: 2026-10-25

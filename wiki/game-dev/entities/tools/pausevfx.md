@@ -4,8 +4,8 @@ type: entity
 tags: [tool, game-dev, video, watch]
 keywords: [Pause 1.0 Flash, pausevfx, AI video editing, Basgiath clips]
 related:
-  - ../../osint/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
-  - tools/voicestudio.md
+  - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - entities/tools/voicestudio.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25
