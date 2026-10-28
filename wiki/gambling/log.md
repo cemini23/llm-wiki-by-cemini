@@ -1404,3 +1404,10 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2607-28520-cs-rnr-opp
 - Two source pages had no index row: `daily-digest-reject-cluster-k123-2026-06-20`, `daily-digest-reject-cluster-k124-2026-06-21`. Rows added.
 - Stale `[NEEDS VERIFICATION]` tags remain on `underdog-pickem` (54d), `nhl-betting` (25d), `fantasylabs-dfs` (127d), and the fictitious-play trio source (18d). Not resolved here.
 
+## [2026-10-27] ingest | prediction-market communication (2 pages)
+
+- **Election markets sell probabilities, not predictions.** Event Horizon uses Brazil: markets gave Lula about 20% ahead of election day and he won. The author argues the outcome is a normal draw, not a market failure, and that Kalshi and Polymarket share blame for framing prices in a way that invites the misreading. Relevant to how this wiki treats calibration: measured across events, never on one result.
+- **NEXTPredict NYC roundup (Ep. 38)** is a teaser only. The feed carried the blurb and a payments sponsor block. Recorded as an index entry; the episode content is not captured.
+- Files created: `sources/substack-rss-event-horizon-2026-10-27-some-people-dont-understand-election-markets-jus.md`, `sources/substack-rss-event-horizon-2026-10-26-episode-38-breaking-down-the-news-at-nextpredict.md`. Index rows added.
+- Boundary: no betting recommendation, no calibration measurement performed here.
+

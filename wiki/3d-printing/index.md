@@ -13,6 +13,11 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 - [k293-3d-printing-wave](concepts/k293-3d-printing-wave.md) — functional CAD hub — `k293, cad`
 - [FunCAD (arXiv:2610.26861)](sources/arxiv-funcad-2610.26861-2026-10-20.md) — 46 mechanism families; test in simulation before the picture counts — `paper, cad, simulation, k293`
 
+### Ingest 2026-10-27 (fabrication methods)
+
+- [Inverse origami (arXiv:2610.34903)](sources/arxiv-2610.34903-inverse-origami-inspired-by-insect-morphogenesis-2026-10-27.md) — a flat sheet encodes a curved surface as a stretching field; printed prototypes unfold into the target — `paper, shape-programming, deployable-structures`
+- [AM microwave cavity clock (arXiv:2610.35588)](sources/arxiv-2610.35588-a-low-volume-cold-atom-microwave-clock-with-an-a-2026-10-27.md) — additively manufactured RF cavity inside a working cold-atom clock; SNR 370 at 1 Hz — `paper, additive-manufacturing, end-use-part`
+
 Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube transcripts). One page per canonical source.
 
 - [Adaptive Input Shaper Design for Unknown Second-Order Systems](sources/2025-aung-adaptive-input-shaper.md) — feedforward TDF input shaper with real-time RLS parameter estimation; simulation only — `paper, control, input-shaping, vibration`

@@ -1878,3 +1878,10 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - **Scheduled.** Operator set the publish time: **2026-10-26 at 09:00 ET**. Status flipped to SCHEDULED in the brief and on the notes page.
 - **v2 same day.** Operator review applied: historical rules section replaces the limits section, surname page leads with the foundling detector and toponymic resolver, the 13.56 percent figure becomes the case against 1-click AI, and the CTA names Mac and Windows. Three fact corrections: PEC 7,745 official (not 7,900+), "clean-room" dropped, "official datasets" softened to "public datasets". Paste format rebuilt to the standard brief layout.
 
+## [2026-10-27] ingest | Sterling Sky 2026 local SEO update (empty feed shell)
+
+- Received `newsletter-rss-sterling-sky-2026-10-26-local-seo-updates-2026-is-your-traffic-at-risk` from the RSS lane. **The feed delivered no body text.** The file is frontmatter only.
+- Wrote a stub page at `sources/newsletter-rss-sterling-sky-2026-10-26-local-seo-updates-2026-is-your-traffic-at-risk.md` with `read_status: unread-stub`. It records the reference and the inbound URL, and states plainly that no article text arrived. No content was invented.
+- Index row added under Platform / practitioner news with a ⚠ flag.
+- To promote: fetch https://www.sterlingsky.ca/the-state-of-local-seo-in-2026/ and replace the Narrative.
+

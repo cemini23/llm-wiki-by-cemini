@@ -2335,3 +2335,13 @@ Cross-wiki stub routed from `@3d-printing-wiki/sources/2026-corn-optimistic-veri
 - **Two SecPro RSS stubs.**
 - **Archive.** 2 new raws to egress/cybersec.
 
+
+## [2026-10-27] ingest | AI security wave (6 pages)
+
+- **Response-level controls do not protect the wire.** In edge-cloud split inference, Safe-LLaVA strips biometric content from its answers, yet the transmitted features still give up **75–85%** of the unprotected leakage with **20 labels per class**. Intermediate features leak age, gender and race at every split depth.
+- **Refusal is steerable inside the model.** On Qwen3-VL-4B, early vision layers move unsafe rejection across **6%–96%** with directional steering; later layers trade safety for selectivity. The same depth-dependent geometry recurs on InternVL2.5-4B. This is a white-box attack surface.
+- **Split the red-team roles.** Self-criticism works because it sees the target's live context — removing reasoning drops attack success **6%–17%**. Self-proposal fails: the target either refuses or sandbags. Best configuration: target diagnoses, separate attacker proposes. 63.2% overall on DTAP-BENCH (figure truncated in the skim).
+- **Steering vectors are executable supply chain.** An audit of eight open-source steering-plugin libraries finds no integrity verification, excess plugin privileges, and no runtime monitoring.
+- **Authentic image, false caption.** MiD-VLM reports **F1 0.9679** on DGM4+ for binary authenticity. Routed here from the image-gen inbox — the topic is disinformation detection, not generation.
+- **PHP2Shell.** Free teaser only: honeypot execution confirmed 24 Oct, production scale unresolved, exploit claims outran the evidence. CVE and patch guidance are behind the paywall.
+- **Files.** `arxiv-2610.32079-…-2026-10-27.md`, `arxiv-2610.32182-…-2026-10-27.md`, `arxiv-2610.34965-…-2026-10-27.md`, `arxiv-2610.35043-…-2026-10-27.md`, `arxiv-2610.32967-…-2026-10-27.md`, `substack-rss-secpro-2026-10-26-php2shell-another-emergency-another-scramble-to.md`.

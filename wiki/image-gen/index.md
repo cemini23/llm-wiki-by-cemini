@@ -13,6 +13,10 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 - [k293-image-gen-wave](concepts/k293-image-gen-wave.md) — OpenVLHarness hub — `k293, harness`
 - [OpenVLHarness (arXiv:2610.26860)](sources/arxiv-openvlharness-2610.26860-2026-10-20.md) — tools plus multimodal memory, +9.7–12.6 over no-tool baselines; REFERENCE — `paper, tools, memory, k293`
 
+### Ingest 2026-10-27 (scene generation)
+
+- [SceneBloom (arXiv:2610.32978)](sources/arxiv-2610.32978-scenebloom-agentic-indoor-environment-generation-2026-10-27.md) — diffusion layout priors plus a compile step yield collision-free 3D rooms; nav policies beat real-scan training — `paper, 3d-generation, scene-generation, agents`
+
 Sources are ingested research material (PDFs, docx, GitHub READMEs, model cards, deep-research outputs). One page per canonical source.
 
 - [UniReasoner: LLMs are Universal Reasoners for Visual Generation](sources/unireasoner.md) — Apple+JHU paper formalizing the understanding-generation gap and proposing Draft-Evaluate-Diffuse; 0.79→0.88 GenEval on identical SANA backbone — `paper, llm, diffusion, t2i, compositional-alignment`

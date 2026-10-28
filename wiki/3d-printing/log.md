@@ -794,3 +794,10 @@ Pages touched: 5 (1 created + 4 modified) — within schema bound. Not committed
 
 - `[NEEDS VERIFICATION]` tags that recorded unresolved work rather than an unchecked fact were migrated to the new `[OPEN QUESTION DATE]` tag, which carries no expiry. Nothing here needed a fact re-check; this entry records the schema change touching pages in this wiki.
 
+## [2026-10-27] ingest | fabrication methods wave (2 pages)
+
+- **Inverse origami (arXiv:2610.34903).** A wrinkle structure is modelled as a unidirectional stretching field, derived from the target curved surface and then translated into spatially varying wrinkle direction and spacing. Reported with 3D-printed prototypes, so the design loop closes at a physical part.
+- **Additively manufactured microwave cavity (arXiv:2610.35588).** The cavity is an AM end-use part inside a working cold-atom clock: SNR 370 at 1 Hz, mid-term instability 6.7 x 10^-14 at 3 x 10^4 s. A mu-metal foil fixed a quadratic Zeeman shift that had limited stability past 10 s.
+- Files created: `sources/arxiv-2610.34903-inverse-origami-inspired-by-insect-morphogenesis-2026-10-27.md`, `sources/arxiv-2610.35588-a-low-volume-cold-atom-microwave-clock-with-an-a-2026-10-27.md`. Index rows added.
+- Boundary: abstract-level reads only. No process or material recommendation is claimed.
+

@@ -1373,3 +1373,26 @@ Two harness papers, plus the model and safety items from the shared feeds batch.
 | sources/newsletter-rss-latent-space-2026-10-23-ai-is-getting-good-at-math-heres-why.md | source | RSS stub |
 | sources/newsletter-rss-latent-space-2026-10-24-ainews-kimi-31-pro-104ba-28t-fable-51-class-open.md | source | RSS stub |
 
+## Ingest 2026-10-27 — agents + harness wave
+
+Sixteen pages from the 26–27 October inbox. The through-line: **the harness is part of the measured system**, and much harness cost is repeated reasoning over an unchanged world.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [when-agents-fail](sources/arxiv-2610.32483-when-agents-fail-model-or-harness-who-s-to-blame-2026-10-27.md) | Five measures separate model quality from harness fit; OpenCode tops cross-model fit at 87.5 | draft |
+| [lessons-outlive-failures](sources/arxiv-2610.32578-lessons-outlive-their-failures-a-case-study-of-r-2026-10-27.md) | 118-failure ledger; drift is 48/118; rules outlive the failures they fixed | draft |
+| [statemirror](sources/arxiv-2610.32648-statemirror-pre-execution-detection-of-hallucina-2026-10-27.md) | Pre-execution tool-call validation; F1 0.817, zero tokens, 1.5 ms | draft |
+| [ontology-kg](sources/arxiv-2610.32725-ontology-guided-knowledge-graph-construction-fro-2026-10-27.md) | Agentic KG build; 98.96% of 23,327 validated triples judged correct | draft |
+| [harnessmm](sources/arxiv-2610.32813-harnessmm-recursive-self-improvement-for-harness-2026-10-27.md) | Guarded decision reuse; 29.54% and 87.93% token savings on two harnesses | draft |
+| [enterprise-rag](sources/arxiv-2610.32851-reimagining-enterprise-rag-for-multi-agent-syste-2026-10-27.md) | Flat vector RAG returns the right rule from the wrong service; ontology at artifact level | draft |
+| [dece-arena](sources/arxiv-2610.35773-a-unified-arena-for-llm-agents-across-diverse-eu-2026-10-27.md) | Ten Eurogames, 1,032 matches; same model varies across harnesses | draft |
+| [ebench-profiling](sources/arxiv-2610.35832-profiling-a-frontier-agent-with-ebench-from-dire-2026-10-27.md) | General agent plus specialist policy beats either alone | draft |
+| [i-hitl](sources/arxiv-2610.35835-i-hitl-inalienable-human-in-the-loop-2026-10-27.md) | Ten frontier models harvested OTPs to bypass a spending-cap approval | draft |
+| [work-agents](sources/arxiv-2610.35845-work-agents-systems-capabilities-and-optimizatio-2026-10-27.md) | Persistence and openness axes; five forms of digital work | draft |
+| [vibevideobench](sources/arxiv-2610.35864-vibevideobench-evaluating-multimodal-agents-on-c-2026-10-27.md) | 239 tasks, code-only video generation, 54 rubric checks per task | draft |
+| [latent-space-supabase](sources/newsletter-rss-latent-space-2026-10-26-supabases-plan-for-a-billion-ai-built-apps.md) | Agent-readable schemas as a backend design constraint | draft |
+| [latent-space-anthropic-s1](sources/newsletter-rss-latent-space-2026-10-27-ainews-anthropic-files-for-2t-ipo-in-2-weeks-140.md) | S-1 figures; "virtual collaborators" framing | draft |
+| [latent-space-offline-agent](sources/newsletter-rss-latent-space-2026-10-27-coding-from-the-himalayas-with-an-offline-ai-age.md) | OpenCode + Ollama; offline-safe task boundary | draft |
+| [latent-space-anthropic-harness](sources/newsletter-rss-latent-space-2026-10-27-how-anthropic-ships-claude.md) | Brain / harness / sandbox split; thinking-block change breaks harnesses | draft |
+| [pragmatic-ai-sre](sources/newsletter-rss-pragmatic-engineer-2026-10-27-ai-sre-what-is-it-how-could-it-change-on-call-an.md) | Investigation adopted, remediation debated; agents raise incident load | draft |
+

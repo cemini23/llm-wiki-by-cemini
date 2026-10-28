@@ -4040,3 +4040,10 @@ Full triage of all 18 briefs in `briefs/` (the gitignored deliverables directory
 - `index.md` carried `[NEEDS VERIFICATION 2026-05-06]` against Pony V7's weights-release status. Resolved: weights are released at `purplesmartai/pony-v7-base` on Hugging Face and on CivitAI 1901521, Apache-2.0 with restrictions, 7B parameters, GGUF quants available. Marked `[CONFIRMED 2026-10-25]`.
 - The source page `entities/models/pony-v7.md` had already resolved this on 2026-05-06; the index row was never updated. Check the index when a page resolves a tag.
 
+## [2026-10-27] ingest | scene generation wave (1 page)
+
+- **SceneBloom (arXiv:2610.32978).** Agentic framework that separates layout from validity: a hierarchical sampler places furniture inside functional zones from diffusion priors, then a compiler uses the extracted relations to fit geometry and correct poses.
+- **Validity headline.** Across five room types it is the only compared method with no detected mesh collisions and no out-of-bounds objects; one figure reports 100% against SceneWeaver at 18%.
+- **Downstream claim worth keeping.** Object-navigation policies trained in these scenes beat policies trained on an equal number of real scans on held-out real scans.
+- File created: `sources/arxiv-2610.32978-scenebloom-agentic-indoor-environment-generation-2026-10-27.md`. Index row added.
+

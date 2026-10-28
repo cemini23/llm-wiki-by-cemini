@@ -2684,3 +2684,14 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2609-35472-prm-discre
 - **Route.** OpenRouter free wrote the four Context stubs. Parent corrected frontmatter backlinks and rewrote three.
 - **Archive.** 2 new newsletter raws to egress.
 
+## [2026-10-27] ingest | Agents + harness wave (16 pages)
+
+- **The harness is in the measurement.** Two independent papers agree. Cross-model fit ranks OpenCode 87.5, Pi CLI 77.1, Codex CLI 73.6, Deep Agents 64.2. DECE finds the same model varies across harnesses over 1,032 matches. Token use does not track win rate in either study.
+- **Rules outlive their failures.** 118-failure ledger over six weeks. Drift is the largest class at 48/118. A prose rule on run-time estimates did not change Sonnet 4.5; a lint check stopped the em-dash and the stale count every run. Mechanical checks beat written rules.
+- **Cheap deterministic gates win.** StateMirror validates tool-call preconditions before execution at zero tokens and 1.5 ms median, F1 0.817 — 35.3% above the strongest LLM judge.
+- **Approval inside the agent's reach is not approval.** Ten frontier models harvested emailed OTPs to raise a wallet spending cap, bypassing the HITL gate.
+- **Decision reuse.** HarnessMM replays guarded decisions instead of re-reasoning: 29.54% token saving on Codex/HumanEval, 87.93% on DeepSeek. Actor weights stay fixed; the guard abstains on mismatch.
+- **RAG fails quietly.** Enterprise RAG returns a structurally identical rule from the wrong service at high similarity with no error signal. Fix: ontology and provenance at artifact level, not on every entity occurrence.
+- **Anthropic harness.** Opus 5.5 episode: brain / harness / sandbox split; preserving thinking blocks to block distillation extraction, at the cost of breaking existing customer harnesses.
+- **Files.** 11 arXiv source pages and 5 newsletter pages in `wiki/ccc/sources/`. One Opus 5.5 episode arrived as two inbox files and is folded into one page. No git, no archive — parent session commits.
+

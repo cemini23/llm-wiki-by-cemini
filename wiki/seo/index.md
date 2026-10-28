@@ -187,6 +187,7 @@ If you're new to this wiki:
 - [newsletter-rss-sterling-sky-2026-09-29-gbp-linked-url-local-pack-test](sources/newsletter-rss-sterling-sky-2026-09-29-gbp-linked-url-local-pack-test.md) — GBP linked-URL field test; Diversity Update caveat (K276)
 - [newsletter-rss-sterling-sky-2026-09-28-review-posting-blocks](sources/newsletter-rss-sterling-sky-2026-09-28-review-posting-blocks.md) — review posting blocks: in-store/QR/burst pattern; 30-day block; 57.5% removed (K276)
 - [newsletter-rss-sterling-sky-2026-09-29-gbp-optimization-checklist](sources/newsletter-rss-sterling-sky-2026-09-29-gbp-optimization-checklist.md) — GBP optimization checklist; title+URL only; category claim already covered (K277)
+- [newsletter-rss-sterling-sky-2026-10-26-local-seo-updates-2026-is-your-traffic-at-risk](sources/newsletter-rss-sterling-sky-2026-10-26-local-seo-updates-2026-is-your-traffic-at-risk.md) — 2026 local SEO update review; ⚠ empty feed shell, no body delivered (2026-10-27 ingest)
 - [newsletter-rss-sparktoro-2026-08-14-zero-click](sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md) — SparkToro: website still the permanent home in zero-click (K237)
 
 - [searchengineland-2026-google-llm-patent-entity-characterization-480625](sources/searchengineland-2026-google-llm-patent-entity-characterization-480625.md) — Google LLM patent entity characterization; webpages as evidence (2026-06-27 digest)

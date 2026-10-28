@@ -220,6 +220,8 @@ Catalog of all wiki pages. Updated on each ingest.
 
 | Page | Read status |
 |------|-------------|
+| [substack-rss-event-horizon-2026-10-27-some-people-dont-understand-election-markets-jus](sources/substack-rss-event-horizon-2026-10-27-some-people-dont-understand-election-markets-jus.md) | read | Brazil: Lula priced ~20%, won; markets sell probabilities, not predictions |
+| [substack-rss-event-horizon-2026-10-26-episode-38-breaking-down-the-news-at-nextpredict](sources/substack-rss-event-horizon-2026-10-26-episode-38-breaking-down-the-news-at-nextpredict.md) | read | NEXTPredict NYC weekly roundup — teaser only, no episode content |
 | [research-wnba-cold-streak-live-unders-2026-08-13](sources/research-wnba-cold-streak-live-unders-2026-08-13.md) | deep-read | ESPN PBP 189 games + Kalshi + OpenCLI social |
 | [brief-k118-poker-agent-research-gaps-2026-06-17](sources/brief-k118-poker-agent-research-gaps-2026-06-17.md) | deep-read |
 | [brief-k107-poker-open-spot-audit-2026-06-09](sources/brief-k107-poker-open-spot-audit-2026-06-09.md) | deep-read |

@@ -10719,3 +10719,14 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Archive.** 3 new RSS raws, the FanDuel CSV, and the eval docx. All 13 arXiv PDFs were already on egress.
 - **Boundary.** No install, no skill add, no scrape, no trade.
 
+## [2026-10-27] ingest | Macro + quant wave (15 pages)
+
+- **Vol-surface sampling.** arXiv 2610.33438 trains on a 2018–2025 NVDA panel. Sampling design must match the target functional. Liquidity-weighted PPS keeps far more tail-volatility windows than simple random sampling. PPS inflates variance when applied to the wrong target.
+- **Hawkes supercriticality.** Sornette (arXiv 2610.35159) argues that a branching ratio below one is a stationarity condition, not an existence condition. Imposing it makes transient supercritical episodes look near-critical. A single finite record can date the excursion above one. Detectability scales with the excess over one times the square root of exposed parents.
+- **CoreWeave credit stress.** Mid-October unsecured bond yields reached about 15%, one 2031 bond briefly passed 16%, and the shares fell nearly 25% in the week to 16 October. Q2 2026 revenue was $2.575bn, net loss $626m, net interest expense $640m. Interest expense exceeded the net loss.
+- **AI concentration and the regulatory cliff.** Capital Flows puts half of index returns in AI names, then puts the midterms, the Anthropic IPO, and a Fed decision in one month. A Democratic sweep is framed as the regime change that ends the deregulatory flow.
+- **Klement S&P target.** Year-end 2027 target of 5,000, down 35%. The argument is that earnings forecasts fail hardest when the market is priced for exceptional growth. The Reuters evidence is paywalled.
+- **German export share.** Kiel Institute data show Germany losing third-market share in cars, machinery, electrical equipment, and optical and medical equipment — its strongest categories.
+- **Italian genealogy atlas.** Outlier Weekly ships five free tools over 9,869 municipalities, 1796–2026. The design rule is that the atlas never invents a coordinate. This matches the existing place-and-year contract for historical jurisdiction work.
+- **Files.** 4 arXiv (2610.33438, 2610.35159, 2610.35240, 2610.35762) and 11 newsletter pages from Apricitas, Capital Flows, Klement (3), Moontower (3), Outlier Weekly, and Wu Blockchain (2). The Capital Flows video restatement was folded into the article page.
+

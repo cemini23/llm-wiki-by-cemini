@@ -8,6 +8,27 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### Ingest 2026-10-27 (macro + quant wave)
+Inbox sweep 2026-10-27: 15 OSINT pages. Tail-vol sampling rules for vol-surface forecasting, Sornette on transient supercritical Hawkes episodes, and the CoreWeave credit stress that moved the whole AI complex.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [implied-vol-surfaces](sources/arxiv-2610.33438-compiling-and-forecasting-implied-volatility-sur-2026-10-27.md) | Sampling design must match the target functional; PPS keeps tail-vol windows | draft |
+| [hawkes-supercriticality](sources/arxiv-2610.35159-transient-supercriticality-in-hawkes-processes-d-2026-10-27.md) | Branching ratio > 1 is finite on a finite horizon; stationarity prior hides the episode | draft |
+| [ocr-noise-rag](sources/arxiv-2610.35240-reading-beyond-ocr-noise-robust-cross-lingual-ra-2026-10-27.md) | Agentic RAG beats text-only baselines on a 200k-page Indian archive | draft |
+| [china-urban-screens](sources/arxiv-2610.35762-the-evolution-and-chineseness-of-urban-screens-i-2026-10-27.md) | "Chineseness" as a three-element media-urbanism frame | draft |
+| [apricitas-canada-decoupling](sources/substack-rss-apricitas-2026-10-25-how-canada-is-decoupling-from-the-us.md) | Non-US exports +40% in 12 months; US still 8x the EU | draft |
+| [capital-flows-ai-regulation](sources/substack-rss-capital-flows-2026-10-26-midterms-and-the-coming-ai-regulatory-crisis.md) | Three catalysts in one month; a Democratic sweep ends the deregulatory flow | draft |
+| [klement-daccs](sources/substack-rss-klement-2026-10-26-building-daccs-the-right-way.md) | The 100 Mt/yr European DACCS network changes with the integration boundary | draft |
+| [klement-earnings-forecasts](sources/substack-rss-klement-2026-10-26-nice-earnings-forecasts-you-have-shame-if-someth.md) | S&P 5,000 target for year-end 2027, down 35% | draft |
+| [klement-german-manufacturing](sources/substack-rss-klement-2026-10-27-the-decline-of-german-manufacturing.md) | Germany lost third-market share in cars, machinery, electrical and optical goods | draft |
+| [moontower-i-bonds-tips](sources/substack-rss-moontower-2026-10-25-i-bonds-vs-tips.md) | Annual vol to weekly vol: 7.5% / sqrt(52) | draft |
+| [moontower-slate](sources/substack-rss-moontower-2026-10-25-introducing-slate.md) | Short-form investing education channel, no market claim | draft |
+| [moontower-option-quote](sources/substack-rss-moontower-2026-10-25-staring-at-an-option-quote.md) | Small gold upside punt on cheap vols and low call skew percentile | draft |
+| [outlier-weekly-atlas](sources/substack-rss-outlier-weekly-2026-10-26-the-town-changed-its-name-the-map-should-not-gue.md) | 9,869 Italian municipalities, 1796–2026; never invents a coordinate | draft |
+| [wublock-weekly-outlook](sources/substack-rss-wublock-2026-10-26-wublockchain-weekly-outlook-microsoft-and-google.md) | Fed, ECB, BOJ plus MSFT, GOOGL, AMZN in one week | draft |
+| [wublock-coreweave](sources/substack-rss-wublock-2026-10-27-coreweave-how-did-a-former-ethereum-mining-compa.md) | Bond yields ~15%, shares -25%; interest expense exceeded net loss | draft |
+
 ### K294 ingest (2026-10-23)
 OSINT K294: **61 inbox files, 8 duplicates.** Quant-Arena did not beat equal-weight on the sealed year 2024, tool marks sit outside the model, and Kalshi trailing seven-day volume on 19 Oct is **$21.7bn**.
 

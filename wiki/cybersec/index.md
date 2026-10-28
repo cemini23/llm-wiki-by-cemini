@@ -1081,3 +1081,16 @@ Rows missing since their source pages were committed. Found by `ingest_session_g
 | sources/effective-threat-investigation-soc-analysts.md | source |
 | sources/next-gen-soc-ibm-qradar.md | source |
 | sources/open-source-soc-guide.md | source |
+
+## Ingest 2026-10-27 (AI security wave)
+
+Six sources. The theme is that response-level safeguards do not protect the layer underneath them.
+
+| Page | Summary |
+|------|---------|
+| [label-budgeted-attribute-inference](sources/arxiv-2610.32079-label-budgeted-attribute-inference-from-protecte-2026-10-27.md) | Split-MLLM features leak age/gender/race; Safe-LLaVA still leaks 75–85% from 20 labels per class |
+| [depth-dependent-safety-geometry](sources/arxiv-2610.32182-depth-dependent-safety-geometry-in-vision-langua-2026-10-27.md) | VLM refusal steers 6%–96% at early layers; white-box attack surface |
+| [self-improved-red-teaming](sources/arxiv-2610.34965-the-target-agent-is-its-own-best-critic-but-a-po-2026-10-27.md) | Self-criticism beats external critic; self-proposal sandbags; split the roles |
+| [trojan-steering-supply-chain](sources/arxiv-2610.35043-steering-for-safety-hijacking-for-profit-trojan-2026-10-27.md) | 8 steering-plugin libraries audited; no integrity check, excess privilege, no runtime monitor |
+| [mid-vlm-semantic-misinformation](sources/arxiv-2610.32967-mid-vlm-detecting-and-grounding-global-semantic-2026-10-27.md) | Authentic image + false caption; F1 0.9679 on DGM4+ (routed from image-gen inbox) |
+| [secpro-php2shell](sources/substack-rss-secpro-2026-10-26-php2shell-another-emergency-another-scramble-to.md) | PHP interpreter emergency; honeypot execution confirmed; production scale unresolved |
