@@ -13,10 +13,13 @@ related:
   - "@osint-wiki/concepts/atto-macos-gtm-gumroad.md"
 maturity: draft
 created: 2026-10-25
-updated: 2026-10-25
+updated: 2026-10-28
 ship_draft: briefs/2026-10-25_outlier-weekly-atto-atlas-and-suite.md
-draft_version: draft-v2
-status: SCHEDULED — publishes 2026-10-26 at 09:00 ET
+draft_version: published-2026-10-26
+status: LIVE — Outlier published 2026-10-26; hub deployed 2026-10-28
+substack_url: https://outlierweekly.substack.com/p/the-town-changed-its-name-the-map
+substack_slug: the-town-changed-its-name-the-map
+hub: https://outlierweekly.com/atlas/
 ---
 
 ## Raw Concept
@@ -34,7 +37,8 @@ Builder product with a public free tier. The free atlas answers a question about
 | Asset | Status |
 |-------|--------|
 | Marketing brief + paste body | `briefs/2026-10-25_outlier-weekly-atto-atlas-and-suite.md` — **draft-v2**, brief audit PASS 100/100 |
-| Outlier | **SCHEDULED** — 2026-10-26 at 09:00 ET |
+| Outlier | **LIVE** 2026-10-26 — [The Town Changed Its Name. The Map Should Not Guess.](https://outlierweekly.substack.com/p/the-town-changed-its-name-the-map) |
+| Owned hub | **LIVE** 2026-10-28 — [outlierweekly.com/atlas/](https://outlierweekly.com/atlas/) |
 | X Article | **Deferred** (as with the first Atto issue) |
 | Hero image | Atlas at 1861, regime colors on the province mesh |
 | Publish window | 2026-10-26, 09:00 ET |
@@ -114,7 +118,8 @@ The first Atto issue sold a private vault and could not show the work, because t
 
 ### After LIVE
 
-1. Flip the status row and `status:` frontmatter to LIVE with the Substack URL
-2. Add a row to `@concepts/x-account-voice-and-format.md` if the piece sets a new exemplar
-3. Append the live line to `wiki/seo/log.md`
-4. Record any reader corrections to the atlas data as a fix list
+1. [x] Status row and frontmatter flipped to LIVE with the Substack URL
+2. [ ] Add a row to `@concepts/x-account-voice-and-format.md` if the piece sets a new exemplar
+3. [x] Live line appended to `wiki/seo/log.md`
+4. [ ] Record any reader corrections to the atlas data as a fix list
+5. [x] Owned hub `/atlas/` built, deployed, and IndexNow pinged

@@ -344,7 +344,7 @@ If you're new to this wiki:
 - [x-article-spcx-anthropic-notes](concepts/x-article-spcx-anthropic-notes.md) — SPCX cheap versus Anthropic X Article **LIVE** 2026-08-17; owned hub `sites/outlierweekly/public/spcx-anthropic/` (2026-08-30)
 - [guruwatcher-outlier-x-article-notes](concepts/guruwatcher-outlier-x-article-notes.md) — GuruWatcher Outlier + X Article queue (alert-only newsletter → Discord)
 - [atto-outlier-family-story-notes](concepts/atto-outlier-family-story-notes.md) — Atto Outlier family-story queue (2026-08-08; X deferred)
-- [atto-atlas-suite-outlier-notes](concepts/atto-atlas-suite-outlier-notes.md) — Atto Outlier #2: atlas + genealogy suite (2026-10-25; draft, not scheduled)
+- [atto-atlas-suite-outlier-notes](concepts/atto-atlas-suite-outlier-notes.md) — Atto Outlier #2: atlas + genealogy suite **LIVE** 2026-10-26 ([letter](https://outlierweekly.substack.com/p/the-town-changed-its-name-the-map); hub `/atlas/`)
 - [outlier-weekly-issue3-world-cup-bot-notes](concepts/outlier-weekly-issue3-world-cup-bot-notes.md) — Issue 3 launch queue (2026-06-03)
 - [world-cup-bot-x-article-runbook-notes](concepts/world-cup-bot-x-article-runbook-notes.md) — X Article #4 CLI runbook (draft)
 - [world-cup-bot-search-discovery](concepts/world-cup-bot-search-discovery.md) — GitHub Pages + Google/Bing indexing for Polymarket/Kalshi queries; hub path `/prediction-market-lp-bot/` retired 2026-08-30 (301 → home). WC stays on GitHub Pages + Substack letters. Product hubs are `/atto/` and `/guruwatcher/`.

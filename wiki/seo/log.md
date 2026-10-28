@@ -1885,3 +1885,14 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - Index row added under Platform / practitioner news with a ⚠ flag.
 - To promote: fetch https://www.sterlingsky.ca/the-state-of-local-seo-in-2026/ and replace the Narrative.
 
+## [2026-10-28] publish | Atto atlas letter LIVE + owned hub `/atlas/`
+
+- **Letter** — [The Town Changed Its Name. The Map Should Not Guess.](https://outlierweekly.substack.com/p/the-town-changed-its-name-the-map) went live 2026-10-26, free. Slug `the-town-changed-its-name-the-map`.
+- **Hub** — `sites/outlierweekly/public/atlas/index.html`. Same template as `/swarmer/`: Article + BreadcrumbList JSON-LD, question headings, claim card. `src/index.js` needed no change; Workers assets serve any non-Substack path.
+- **Crawl files** — `sitemap.xml` gained `/atlas/` (lastmod 2026-10-26); `llms.txt` gained the owned page, the newest-letter row, and one claim-fence line.
+- **Internal link** — `/atto/` hub now carries both letters, with a table row and a paragraph pointing at `/atlas/`.
+- **Deploy** — `bash scripts/deploy.sh`, version `1b1c338e-797f-4313-852a-55357d6265b3`. 4 assets uploaded (sitemap, atlas, llms, atto). Deploy OK. IndexNow ping HTTP 200 for 13 owned URLs.
+- **Live check** — `/atlas/` returns 200 with the correct H1 and byline; `llms.txt` lists 13 owned pages with Historical Atlas fifth and the 26 October letter first.
+- **Wiki** — `concepts/atto-atlas-suite-outlier-notes.md` flipped to LIVE with `substack_url`, `substack_slug`, `hub`; index row updated.
+- Ran from the Terminal panel, not the sandbox: the session sandbox denies `github.com:443` and Cloudflare API egress.
+
