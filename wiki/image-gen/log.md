@@ -4047,3 +4047,10 @@ Full triage of all 18 briefs in `briefs/` (the gitignored deliverables directory
 - **Downstream claim worth keeping.** Object-navigation policies trained in these scenes beat policies trained on an equal number of real scans on held-out real scans.
 - File created: `sources/arxiv-2610.32978-scenebloom-agentic-indoor-environment-generation-2026-10-27.md`. Index row added.
 
+
+## [2026-11-01] ingest | inbox drain (3 pages)
+
+- `sources/arxiv-2610.37623-diffusive-dispersive-traveling-waves-and-kinetic-2026-11-01.md` — Diffusive-dispersive traveling waves for a flux with many inflection points
+- `sources/arxiv-2610.37626-know-then-draw-a-new-learning-paradigm-for-visua-2026-11-01.md` — Know, Then Draw: Autoregressive Knowledge, Diffusion Rendering
+- `sources/arxiv-2610.37642-metacognitive-decoding-efficient-inference-for-d-2026-11-01.md` — Metacognitive Decoding for Diffusion Language Agents
+

@@ -205,3 +205,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [3dcodeverse](sources/arxiv-3dcodeverse-2610.22341-2026-10-16.md) — 269,597 executable 3D programs; 90% human-preference win over Claude Design on the same backbone — `paper, 3d, code-generation, harness, k292`
 - [executable-3d-verification](concepts/executable-3d-verification-harness.md) — execute, then measure geometry numerically, then let a VLM judge — `concept, verification, harness, k292`
 
+## Ingest 2026-11-01 — inbox drain
+
+- [openjaws-an-open-hardware-umi-framework-with-ste.](sources/arxiv-2610.36598-openjaws-an-open-hardware-umi-framework-with-ste-2026-11-01.md) — A modular 3D-printed gripper carries a standardized ISO adapter and a low-cost stereo camera. — `paper, ingest-2026-11-01`
+

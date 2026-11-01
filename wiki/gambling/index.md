@@ -538,3 +538,12 @@ Rows missing since their source pages were committed. Found by
 | sources/daily-digest-reject-cluster-k123-2026-06-20.md | source |
 | sources/daily-digest-reject-cluster-k124-2026-06-21.md | source |
 
+## Ingest 2026-11-01 — inbox drain
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [news-utah-files-criminal-charges-against-kalshi](sources/substack-rss-event-horizon-2026-10-28-news-utah-files-criminal-charges-against-kalshi.md) | draft | It says Salt Lake City media reported the news first, and it names ABC 4 and Fox 13. |
+| [what-we-learned-about-robinhood-and-prediction-m](sources/substack-rss-event-horizon-2026-10-28-what-we-learned-about-robinhood-and-prediction-m.md) | draft | Event Horizon says prediction markets were a large part of Robinhood's Q3 earnings. |
+| [i-got-an-email-from-kalshi-asking-if-i-wanted-to](sources/substack-rss-event-horizon-2026-10-29-i-got-an-email-from-kalshi-asking-if-i-wanted-to.md) | draft | This Event Horizon briefing is dated 2026-10-29 in the inbox file. |
+| [a-prediction-market-gets-into-digital-rips-becau](sources/substack-rss-event-horizon-2026-10-30-a-prediction-market-gets-into-digital-rips-becau.md) | draft | Kalshi announces a $1 billion Series G at a $40 billion post-money valuation, co-led by Wellington and Sequoia. |
+

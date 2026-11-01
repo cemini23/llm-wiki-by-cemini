@@ -801,3 +801,8 @@ Pages touched: 5 (1 created + 4 modified) — within schema bound. Not committed
 - Files created: `sources/arxiv-2610.34903-inverse-origami-inspired-by-insect-morphogenesis-2026-10-27.md`, `sources/arxiv-2610.35588-a-low-volume-cold-atom-microwave-clock-with-an-a-2026-10-27.md`. Index rows added.
 - Boundary: abstract-level reads only. No process or material recommendation is claimed.
 
+
+## [2026-11-01] ingest | inbox drain (1 pages)
+
+- `sources/arxiv-2610.36598-openjaws-an-open-hardware-umi-framework-with-ste-2026-11-01.md` — OpenJaws: open 3D-printed UMI gripper with stereo localization
+

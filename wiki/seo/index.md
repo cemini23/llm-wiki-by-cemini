@@ -447,3 +447,15 @@ If you're new to this wiki:
 |------|------|------|
 | sources/newsletter-rss-sterling-sky-2026-10-22-google-maps-spam-is-out-of-control-heres-how-to.md | source | RSS stub — GBP spam fighting |
 
+## Ingest 2026-11-01 — inbox drain
+
+| Page | Type | Note |
+|------|------|------|
+| sources/arxiv-2610.37319-analogscout-simulation-efficient-pvt-aware-analo-2026-11-01.md | source | On three SKY130 OTAs of increasing complexity, the abstract claims AnalogScout reduces power by 43.3% relative to the evolution strategy CMA-ES at… |
+| sources/arxiv-2610.37343-hide-hierarchical-isolation-via-documentation-an-2026-11-01.md | source | The authors evaluate HIDE on 160 reproducible rustc bugs. |
+| sources/arxiv-2610.37443-etamem-decoupling-and-aligning-heterogeneous-mem-2026-11-01.md | source | The relative accuracy improvement is 12.46% on LoCoMo and 7.96% on LongMemEval-S. |
+| sources/arxiv-2610.40164-who-owns-digital-news-and-who-gets-cited-measuri-2026-11-01.md | source | Carragher and Carley compile an ownership dataset for 9,761 digital news outlets from Wikipedia and Wikidata. |
+| sources/arxiv-2610.40278-neighborhood-elites-quality-diversity-search-for-2026-11-01.md | source | It reports that neighborhood elites reaches 0.726 AUROC and 0.211 AUPRC lift over the base rate. |
+| sources/arxiv-2610.40292-dolphinrouting-cluster-level-binary-routing-for-2026-11-01.md | source | Across the mixed workload and real data, DolphinRouting with k-means reduces P90 TTFT by 5.7–7.9% and P90 TPOT by 2.6–10.1% relative to Dynamo. |
+| sources/newsletter-rss-sterling-sky-2026-10-28-who-updates-google-information-why-google-keeps.md | source | The excerpt names the sources in this order: publicly-available information, such as the official business website or social profiles; third-party… |
+

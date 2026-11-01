@@ -1896,3 +1896,14 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - **Wiki** — `concepts/atto-atlas-suite-outlier-notes.md` flipped to LIVE with `substack_url`, `substack_slug`, `hub`; index row updated.
 - Ran from the Terminal panel, not the sandbox: the session sandbox denies `github.com:443` and Cloudflare API egress.
 
+
+## [2026-11-01] ingest | inbox drain (7 pages)
+
+- `sources/arxiv-2610.37319-analogscout-simulation-efficient-pvt-aware-analo-2026-11-01.md` — AnalogScout: simulation-efficient PVT-aware analog sizing with LLM agents
+- `sources/arxiv-2610.37343-hide-hierarchical-isolation-via-documentation-an-2026-11-01.md` — HIDE: hierarchical LLM isolation of rustc bug source files
+- `sources/arxiv-2610.37443-etamem-decoupling-and-aligning-heterogeneous-mem-2026-11-01.md` — ETAMem: multi-view memory for long-term conversational agents
+- `sources/arxiv-2610.40164-who-owns-digital-news-and-who-gets-cited-measuri-2026-11-01.md` — Who owns digital news and who AI search cites
+- `sources/arxiv-2610.40278-neighborhood-elites-quality-diversity-search-for-2026-11-01.md` — Neighborhood Elites: quality-diversity search for QA uncertainty
+- `sources/arxiv-2610.40292-dolphinrouting-cluster-level-binary-routing-for-2026-11-01.md` — DolphinRouting: cluster-level binary routing for disaggregated LLM serving
+- `sources/newsletter-rss-sterling-sky-2026-10-28-who-updates-google-information-why-google-keeps.md` — Sterling Sky: Who Updates a Google Business Profile
+

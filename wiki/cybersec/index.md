@@ -1094,3 +1094,17 @@ Six sources. The theme is that response-level safeguards do not protect the laye
 | [trojan-steering-supply-chain](sources/arxiv-2610.35043-steering-for-safety-hijacking-for-profit-trojan-2026-10-27.md) | 8 steering-plugin libraries audited; no integrity check, excess privilege, no runtime monitor |
 | [mid-vlm-semantic-misinformation](sources/arxiv-2610.32967-mid-vlm-detecting-and-grounding-global-semantic-2026-10-27.md) | Authentic image + false caption; F1 0.9679 on DGM4+ (routed from image-gen inbox) |
 | [secpro-php2shell](sources/substack-rss-secpro-2026-10-26-php2shell-another-emergency-another-scramble-to.md) | PHP interpreter emergency; honeypot execution confirmed; production scale unresolved |
+
+## Ingest 2026-11-01 — inbox drain
+
+| Page | Maturity | Topic |
+|------|----------|-------|
+| [aligning-large-language-models-for-safety-in-afr.](sources/arxiv-2610.37245-aligning-large-language-models-for-safety-in-afr-2026-11-01.md) | draft | The abstract states that more than 200 million people speak Hausa across West Africa. |
+| [the-envelope-layer-an-underestimated-surface-of.](sources/arxiv-2610.37415-the-envelope-layer-an-underestimated-surface-of-2026-11-01.md) | draft | It uses the A2A-TIBA attack as the test vehicle. |
+| [when-visual-evidence-is-insufficient-how-instruc.](sources/arxiv-2610.37430-when-visual-evidence-is-insufficient-how-instruc-2026-11-01.md) | draft | Evidence-aware refusal instructions and general refusal instructions have stronger effects than an intentionally mismatched safety instruction. |
+| [revisiting-over-refusal-in-safety-aligned-large.](sources/arxiv-2610.39802-revisiting-over-refusal-in-safety-aligned-large-2026-11-01.md) | draft | The abstract says experiments on multiple models and benchmarks show that GOAL mitigates over-refusal and preserves safety performance and general… |
+| [how-i-aligned-your-model-scaling-up-multilingual.](sources/arxiv-2610.40516-how-i-aligned-your-model-scaling-up-multilingual-2026-11-01.md) | draft | Single source: this abstract states that the corpus spans 60 languages. |
+| [shallowdefend-harnessing-shallow-safety-alignmen.](sources/arxiv-2610.40627-shallowdefend-harnessing-shallow-safety-alignmen-2026-11-01.md) | draft | This result matters to a defensive security and AI-safety reader because the attack hides harmful intent across turns. |
+| [tldr-sec-352---unprompted-slides-aws-ai-post-com](sources/newsletter-rss-tldrsec-2026-10-29-tldr-sec-352---unprompted-slides-aws-ai-post-com.md) | draft | The newsletter says he used GPT-5.6 Sol and Daybreak Blue on a personal account, and that the work used 7% of a weekly Pro allowance. |
+| [php2shell-packet-to-process](sources/substack-rss-secpro-2026-10-30-php2shell-packet-to-process.md) | draft | Packt SecPro frames PHP2Shell as a problem of evidence. |
+

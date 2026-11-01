@@ -1207,3 +1207,9 @@ Five generative-media papers. Three robotics/world-model papers filed here were 
 - [omniverifier-c1](sources/arxiv-omniverifier-c1-2610.22355-2026-10-16.md) — decompose a prompt into K sub-questions; score = fraction satisfied — `paper, verification, reward-models, k292`
 - [decomposed-graded-verifier](concepts/decomposed-graded-verifier.md) — graded beats binary; pairwise beats pointwise when a reference exists — `concept, verification, reward-models, k292`
 
+## Ingest 2026-11-01 — inbox drain
+
+- [diffusive-dispersive-traveling-waves-and-kinetic.](sources/arxiv-2610.37623-diffusive-dispersive-traveling-waves-and-kinetic-2026-11-01.md) — Within the speed range of the generalized Maxwell construction, the main result classifies the left outgoing profiles by their limiting equilibria. — `paper, ingest-2026-11-01`
+- [know-then-draw-a-new-learning-paradigm-for-visua.](sources/arxiv-2610.37626-know-then-draw-a-new-learning-paradigm-for-visua-2026-11-01.md) — The same laws guide a 3B-parameter text-to-image model. — `paper, ingest-2026-11-01`
+- [metacognitive-decoding-efficient-inference-for-d.](sources/arxiv-2610.37642-metacognitive-decoding-efficient-inference-for-d-2026-11-01.md) — Experiments across five benchmarks report that the method reduces inference FLOPs by 20.6% on average compared with the most efficient baseline,… — `paper, ingest-2026-11-01`
+

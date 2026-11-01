@@ -2695,3 +2695,25 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2609-35472-prm-discre
 - **Anthropic harness.** Opus 5.5 episode: brain / harness / sandbox split; preserving thinking blocks to block distillation extraction, at the cost of breaking existing customer harnesses.
 - **Files.** 11 arXiv source pages and 5 newsletter pages in `wiki/ccc/sources/`. One Opus 5.5 episode arrived as two inbox files and is folded into one page. No git, no archive — parent session commits.
 
+
+## [2026-11-01] ingest | inbox drain (18 pages)
+
+- `sources/arxiv-2610.37375-agent-conditioned-routing-diverse-reasoning-path-2026-11-01.md` — Agent-Conditioned Routing: Diverse Paths in One Frozen Model
+- `sources/arxiv-2610.37461-concordat-typed-sessions-for-llm-agents-2026-11-01.md` — Concordat: Typed Sessions for LLM Agents
+- `sources/arxiv-2610.37482-from-interaction-to-capability-task-advancement-2026-11-01.md` — Task Advancement Memory for GUI Agents
+- `sources/arxiv-2610.37609-envsched-environment-aware-scheduling-for-rollou-2026-11-01.md` — EnvSched: environment-aware scheduling for rollout-efficient agent RL
+- `sources/arxiv-2610.37651-gepa-curator-curated-learning-for-self-improving-2026-11-01.md` — GEPA-Curator: Curated Learning for Self-Improving Agents
+- `sources/arxiv-2610.39685-practical-assessment-of-agentic-systems-in-acous-2026-11-01.md` — Practical assessment of agentic systems in acoustics
+- `sources/arxiv-2610.39884-karma-training-free-knowledge-atomic-harness-evo-2026-11-01.md` — KARMA: training-free knowledge-atomic harness evolution
+- `sources/arxiv-2610.40239-engineering-process-plants-as-code-in-the-age-of-2026-11-01.md` — Plant-as-Code and Design-Ops for agentic plant engineering
+- `sources/arxiv-2610.40488-rtaste-do-research-agents-have-taste-evaluating-2026-11-01.md` — RTaste: Do research agents have taste?
+- `sources/arxiv-2610.40578-vericua-verification-as-agentic-exploration-for-2026-11-01.md` — VeriCUA: Verification as Agentic Exploration for Computer-Using Agents
+- `sources/newsletter-rss-latent-space-2026-10-28-ainews-anthropic-ends-coding-interviews-hunger-b.md` — Latent Space AINews: Anthropic ends coding interviews
+- `sources/newsletter-rss-latent-space-2026-10-29-ainews-gemini-4-carbon-tops-leaderboards-launche.md` — Gemini 4 Carbon tops leaderboards and launches for cyber defenders
+- `sources/newsletter-rss-latent-space-2026-10-29-can-frontier-models-see-past-a-decoy-elorian-tes.md` — Elorian Glimpse and the DecoyCount visual-reasoning benchmark
+- `sources/newsletter-rss-latent-space-2026-10-30-ainews-building-aie-code-the-top-coding-agent-co.md` — Latent Space AINews: Building AIE CODE and the 28–29 Oct 2026 agent roundup
+- `sources/newsletter-rss-latent-space-2026-10-31-agents-prompt-people-using-agents-for-long-horiz.md` — Agents Prompt People: Arca's harness for long-horizon financial work
+- `sources/newsletter-rss-latent-space-2026-10-31-ainews-google-admits-ai-mode-hurts-search-revenu.md` — Latent Space: Google AI Mode hurts Search revenue; agent limits and harness costs
+- `sources/newsletter-rss-pragmatic-engineer-2026-10-29-software-engineering-at-google-cs-education-with.md` — Software engineering at Google and CS education with Titus Winters
+- `sources/newsletter-rss-pragmatic-engineer-2026-10-30-the-pulse-anthropic-kills-the-coding-interview.md` — The Pulse: Anthropic kills the coding interview
+

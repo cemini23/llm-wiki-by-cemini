@@ -4804,3 +4804,26 @@ Rows missing since their source pages were committed. Found by
 | sources/de1lymoon-three-formulas-2026-05.md | source |
 | sources/massif-capital-4q2025-letter.md | source |
 | sources/ww-issue-178-2026-05-13.md | source |
+
+## Ingest 2026-11-01 — inbox drain
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [the-term-structure-of-implied-fee-rates-in-liqui.](sources/arxiv-2610.36392-the-term-structure-of-implied-fee-rates-in-liqui-2026-11-01.md) | They apply the framework to Uniswap v2 and Uniswap v3 ETH–USDC pools. | draft |
+| [a-deep-learning-driven-operator-splitting-scheme.](sources/arxiv-2610.36921-a-deep-learning-driven-operator-splitting-scheme-2026-11-01.md) | The authors say S&P 500 data validate that drift. | draft |
+| [mining-the-nineteenth-century-for-the-thirteenth.](sources/arxiv-2610.36956-mining-the-nineteenth-century-for-the-thirteenth-2026-11-01.md) | Those transcriptions exist only for regnal years 1–2 of Reg. | draft |
+| [marginal-composite-likelihood-estimation-of-berg.](sources/arxiv-2610.40425-marginal-composite-likelihood-estimation-of-berg-2026-11-01.md) | This is a single source (arXiv:2610.40425v1, 29 Oct 2026, math.ST). | draft |
+| [the-feds-looming-policy-error](sources/substack-rss-capital-flows-2026-10-29-the-feds-looming-policy-error.md) | Capital Flows published this note on 2026-10-29. | draft |
+| [equity-selling-pressure](sources/substack-rss-capital-flows-2026-10-31-equity-selling-pressure.md) | RSS teaser; body carries no argument or numbers | draft |
+| [gold-reserves-and-exchange-rate-management](sources/substack-rss-klement-2026-10-28-gold-reserves-and-exchange-rate-management.md) | (2026) on emerging-market central banks that try to hold the exchange rate steady against the dollar. | draft |
+| [the-one-eyed-among-the-blind](sources/substack-rss-klement-2026-10-29-the-one-eyed-among-the-blind.md) | The post says long-term bond yields have increased substantially since 2025. | draft |
+| [demographics-is-not-destiny-election-edition](sources/substack-rss-klement-2026-10-30-demographics-is-not-destiny-election-edition.md) | Klement on Investing published this post on 2026-10-30. | draft |
+| [lael-brainard-on-why-groceries-cost-so-much](sources/substack-rss-kyla-2026-10-29-lael-brainard-on-why-groceries-cost-so-much.md) | Kyla's Newsletter published this post on 2026-10-29. | draft |
+| [using-geometry-to-see-why-volatility-scales-with](sources/substack-rss-moontower-2026-10-28-using-geometry-to-see-why-volatility-scales-with.md) | Moontower Meta dates this post to 2026-10-28. | draft |
+| [a16z-drops-crypto-from-its-name-is-there-still-h](sources/substack-rss-wublock-2026-10-28-a16z-drops-crypto-from-its-name-is-there-still-h.md) | Wu Blockchain reports that on 22 October 2026 Chris Dixon renamed a16z Crypto to a16z Frontier. | draft |
+| [coinbase-derivatives-head-on-deribit-integration](sources/substack-rss-wublock-2026-10-29-coinbase-derivatives-head-on-deribit-integration.md) | He states that about 80% of Deribit clients were institutional and about 20% were sophisticated active traders. | draft |
+| [wublockchain-weekly-binance-hacked-ice-invests-i](sources/substack-rss-wublock-2026-10-30-wublockchain-weekly-binance-hacked-ice-invests-i.md) | The lead item reports a Binance security update on 30 October 2026. | draft |
+| [binance-hit-by-63-billion-theft-3-billion-frozen](sources/substack-rss-wublock-2026-10-31-binance-hit-by-63-billion-theft-3-billion-frozen.md) | EDT on October 29, Binance estimated the total impact at approximately $6.3 billion. | draft |
+| [weekly-project-updates-ripple-approved-for-us-na](sources/substack-rss-wublock-2026-10-31-weekly-project-updates-ripple-approved-for-us-na.md) | Wu Blockchain's 31 October 2026 weekly roundup lists ten project updates. | draft |
+| [asias-weekly-top10-crypto-news-hong-kong-opens-t](sources/substack-rss-wublock-2026-11-01-asias-weekly-top10-crypto-news-hong-kong-opens-t.md) | The newsletter states that BlackRock's tokenized fund BUIDL has assets under management of approximately 2.17 billion US dollars. | draft |
+

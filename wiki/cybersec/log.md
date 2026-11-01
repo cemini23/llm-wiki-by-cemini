@@ -2345,3 +2345,15 @@ Cross-wiki stub routed from `@3d-printing-wiki/sources/2026-corn-optimistic-veri
 - **Authentic image, false caption.** MiD-VLM reports **F1 0.9679** on DGM4+ for binary authenticity. Routed here from the image-gen inbox — the topic is disinformation detection, not generation.
 - **PHP2Shell.** Free teaser only: honeypot execution confirmed 24 Oct, production scale unresolved, exploit claims outran the evidence. CVE and patch guidance are behind the paywall.
 - **Files.** `arxiv-2610.32079-…-2026-10-27.md`, `arxiv-2610.32182-…-2026-10-27.md`, `arxiv-2610.34965-…-2026-10-27.md`, `arxiv-2610.35043-…-2026-10-27.md`, `arxiv-2610.32967-…-2026-10-27.md`, `substack-rss-secpro-2026-10-26-php2shell-another-emergency-another-scramble-to.md`.
+
+## [2026-11-01] ingest | inbox drain (8 pages)
+
+- `sources/arxiv-2610.37245-aligning-large-language-models-for-safety-in-afr-2026-11-01.md` — Hausa Safety Alignment for Large Language Models
+- `sources/arxiv-2610.37415-the-envelope-layer-an-underestimated-surface-of-2026-11-01.md` — The Envelope Layer as an LLM Agent Defense Surface
+- `sources/arxiv-2610.37430-when-visual-evidence-is-insufficient-how-instruc-2026-11-01.md` — When visual evidence is insufficient: what shapes MLLM refusal
+- `sources/arxiv-2610.39802-revisiting-over-refusal-in-safety-aligned-large-2026-11-01.md` — Revisiting over-refusal in safety-aligned LLMs
+- `sources/arxiv-2610.40516-how-i-aligned-your-model-scaling-up-multilingual-2026-11-01.md` — Template Pipeline for Multilingual LLM Safety Data
+- `sources/arxiv-2610.40627-shallowdefend-harnessing-shallow-safety-alignmen-2026-11-01.md` — ShallowDefend: Multi-Turn Defense from Shallow Safety Alignment
+- `sources/newsletter-rss-tldrsec-2026-10-29-tldr-sec-352---unprompted-slides-aws-ai-post-com.md` — tl;dr sec #352 — Unprompted talks, AWS LLM post-compromise, malicious routers
+- `sources/substack-rss-secpro-2026-10-30-php2shell-packet-to-process.md` — PHP2Shell: packet-to-process evidence of code execution
+

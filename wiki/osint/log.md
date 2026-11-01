@@ -10730,3 +10730,24 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Italian genealogy atlas.** Outlier Weekly ships five free tools over 9,869 municipalities, 1796–2026. The design rule is that the atlas never invents a coordinate. This matches the existing place-and-year contract for historical jurisdiction work.
 - **Files.** 4 arXiv (2610.33438, 2610.35159, 2610.35240, 2610.35762) and 11 newsletter pages from Apricitas, Capital Flows, Klement (3), Moontower (3), Outlier Weekly, and Wu Blockchain (2). The Capital Flows video restatement was folded into the article page.
 
+
+## [2026-11-01] ingest | inbox drain (17 pages)
+
+- `sources/arxiv-2610.36392-the-term-structure-of-implied-fee-rates-in-liqui-2026-11-01.md` — Term structure of implied fee rates in AMM liquidity pools
+- `sources/arxiv-2610.36921-a-deep-learning-driven-operator-splitting-scheme-2026-11-01.md` — Deep learning operator splitting for American options in incomplete markets
+- `sources/arxiv-2610.36956-mining-the-nineteenth-century-for-the-thirteenth-2026-11-01.md` — Legacy editions as zero-label HTR targets for Honorius III
+- `sources/arxiv-2610.40425-marginal-composite-likelihood-estimation-of-berg-2026-11-01.md` — Marginal composite likelihood for Bergomi models from option prices
+- `sources/substack-rss-capital-flows-2026-10-29-the-feds-looming-policy-error.md` — The Fed's Looming Policy Error
+- `sources/substack-rss-capital-flows-2026-10-31-equity-selling-pressure.md` — Capital Flows — Equity Selling Pressure
+- `sources/substack-rss-klement-2026-10-28-gold-reserves-and-exchange-rate-management.md` — Gold reserves and exchange rate management
+- `sources/substack-rss-klement-2026-10-29-the-one-eyed-among-the-blind.md` — Relative debt and local inflation in emerging-market bond yields
+- `sources/substack-rss-klement-2026-10-30-demographics-is-not-destiny-election-edition.md` — Demographics is not destiny – election edition
+- `sources/substack-rss-kyla-2026-10-29-lael-brainard-on-why-groceries-cost-so-much.md` — Lael Brainard on grocery prices and three savings proposals
+- `sources/substack-rss-moontower-2026-10-28-using-geometry-to-see-why-volatility-scales-with.md` — Using geometry to see why volatility scales with √t
+- `sources/substack-rss-wublock-2026-10-28-a16z-drops-crypto-from-its-name-is-there-still-h.md` — a16z renames its crypto arm Frontier as early-stage crypto VC shrinks
+- `sources/substack-rss-wublock-2026-10-29-coinbase-derivatives-head-on-deribit-integration.md` — Wu Blockchain: Coinbase derivatives head on Deribit integration and crypto options
+- `sources/substack-rss-wublock-2026-10-30-wublockchain-weekly-binance-hacked-ice-invests-i.md` — WuBlockchain Weekly: Binance incident, ICE and Trade.xyz perps, Robinhood Q3
+- `sources/substack-rss-wublock-2026-10-31-binance-hit-by-63-billion-theft-3-billion-frozen.md` — Wu Blockchain: Binance $6.3 Billion Theft, $3 Billion Frozen
+- `sources/substack-rss-wublock-2026-10-31-weekly-project-updates-ripple-approved-for-us-na.md` — Wu Blockchain weekly: Ripple trust bank, Hyperliquid perps, Sky Q3
+- `sources/substack-rss-wublock-2026-11-01-asias-weekly-top10-crypto-news-hong-kong-opens-t.md` — Wu Blockchain Asia weekly: tokenized funds, JPYC circulation, and exchange rules
+

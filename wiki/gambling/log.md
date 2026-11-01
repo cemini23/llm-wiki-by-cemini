@@ -1411,3 +1411,11 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2607-28520-cs-rnr-opp
 - Files created: `sources/substack-rss-event-horizon-2026-10-27-some-people-dont-understand-election-markets-jus.md`, `sources/substack-rss-event-horizon-2026-10-26-episode-38-breaking-down-the-news-at-nextpredict.md`. Index rows added.
 - Boundary: no betting recommendation, no calibration measurement performed here.
 
+
+## [2026-11-01] ingest | inbox drain (4 pages)
+
+- `sources/substack-rss-event-horizon-2026-10-28-news-utah-files-criminal-charges-against-kalshi.md` — Utah files criminal charges against Kalshi and its co-founders
+- `sources/substack-rss-event-horizon-2026-10-28-what-we-learned-about-robinhood-and-prediction-m.md` — Robinhood Q3 2026 earnings on prediction markets
+- `sources/substack-rss-event-horizon-2026-10-29-i-got-an-email-from-kalshi-asking-if-i-wanted-to.md` — Event Horizon: Kalshi ski-town hedge email and Oct. 27 volume
+- `sources/substack-rss-event-horizon-2026-10-30-a-prediction-market-gets-into-digital-rips-becau.md` — Event Horizon: OG.com adds digital rips; Kalshi raises at $40 billion
+
