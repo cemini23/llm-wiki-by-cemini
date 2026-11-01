@@ -1419,3 +1419,5 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 | [software-engineering-at-google-cs-education-with](sources/newsletter-rss-pragmatic-engineer-2026-10-29-software-engineering-at-google-cs-education-with.md) | draft | In 2010, a few months after Titus joined Google, a team of a dozen people cleaned old C++ code. |
 | [the-pulse-anthropic-kills-the-coding-interview](sources/newsletter-rss-pragmatic-engineer-2026-10-30-the-pulse-anthropic-kills-the-coding-interview.md) | draft | The teaser says incident.io has cut AI spend from $4,500 per dev, per month, in August, to $1,600 now. |
 
+| [cash-subsidy-harness](sources/arxiv-2610.39244-cash-a-capability-aware-subsidy-harness-for-adve-2026-11-01.md) | draft | Capability licences route work between an LLM and a numeric model; +15.35% revenue per account online |
+| [latent-space-why-agents-love-supabase](sources/newsletter-rss-latent-space-2026-10-28-why-agents-love-supabase.md) | draft | Local backend without Docker, schema in Git, compute beside the database |

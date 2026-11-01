@@ -2717,3 +2717,8 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2609-35472-prm-discre
 - `sources/newsletter-rss-pragmatic-engineer-2026-10-29-software-engineering-at-google-cs-education-with.md` — Software engineering at Google and CS education with Titus Winters
 - `sources/newsletter-rss-pragmatic-engineer-2026-10-30-the-pulse-anthropic-kills-the-coding-interview.md` — The Pulse: Anthropic kills the coding interview
 
+
+### Late arrivals, same day
+
+- `sources/arxiv-2610.39244-cash-a-capability-aware-subsidy-harness-for-adve-2026-11-01.md` — capability licences govern source selection, agent review and budget allocation
+- `sources/newsletter-rss-latent-space-2026-10-28-why-agents-love-supabase.md` — Supabase's Build/Operate/Scale framing
