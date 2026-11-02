@@ -10774,3 +10774,16 @@ Duplicates not re-filed:
 - `substack-rss-moontower-2026-11-01-moontower-334.md` — parent digest. Two sections filed above; the third (`using-geometry-to-see-why-volatility-scales-with`) was filed 2026-10-28.
 - `substack-rss-wublock-2026-10-30-wublockchain-weekly-binance-hacked-ice-invests-i.md` — already filed 2026-11-01 by URL match.
 
+## [2026-11-02] archive | v10.10 raws to egress-fi
+
+7 osint raws scp'd and size-verified. Local copies removed on success.
+
+- `Multi-Wiki Link Revenue Evaluation.docx` → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`
+- `Multi-Wiki URL Revenue Evaluation.docx` → same
+- `substack-rss-moontower-2026-10-25-moontower-333.md`, `-2026-11-01-hacking-hope.md`, `-2026-11-01-if-it-feels-good-youre-too-late.md`, `-2026-11-01-moontower-334.md` → same
+- `substack-rss-wublock-2026-10-30-wublockchain-weekly-binance-hacked-ice-invests-i.md` → same
+
+Location fields added to the four source pages created in the v10.10 wave.
+
+Sandbox note: egress SSH is denied inside the sandbox. The archive ran from the Terminal panel, which is outside it.
+

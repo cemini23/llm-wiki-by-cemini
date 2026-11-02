@@ -811,3 +811,7 @@ Pages touched: 5 (1 created + 4 modified) — within schema bound. Not committed
 - `sources/arxiv-2610.39046-a-3d-measurement-workflow-for-assessing-replicat-2026-11-01.md` — A 3D measurement workflow for replication quality and printed-insert tool degradation
 - `sources/arxiv-2610.38948-open-source-framework-for-the-visualization-quan-2026-11-01.md` — 3D Slicer framework for 4D flow and high-dimensional MRI. Weak fit; filed as routed from the inbox batch rather than dropped.
 
+## [2026-11-02] archive | 3 raws to egress-fi
+
+`arxiv-2610.36598`, `arxiv-2610.38948`, `arxiv-2610.39046` → `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/`. All size-verified; local copies removed. Location fields added to the two source pages created on 2026-11-01.
+

@@ -2728,3 +2728,9 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2609-35472-prm-discre
 - `entities/tools/design-log-methodology.md` — **new**. Frozen design section plus an append-only Implementation Results log, with a "minimize new surface" gate. Portable to `claude.md`. Report says MIT; README states no licence.
 - `entities/tools/open-ontologies.md` — **new**. MIT Rust binary: plan, blast-radius report, apply/rollback. Emits `asserted.tsv` and `derivations.tsv` that a Lean checker verifies offline. Default in-memory mode certifies nothing.
 - Also routed here from batch A: `arxiv-2610.40239` (Plant-as-Code), `arxiv-2610.40488` (RTASTE research judgment), `arxiv-2610.40578` (VeriCUA) — filed earlier under the 2026-11-01 inbox drain.
+
+## [2026-11-02] archive | 3 raws to egress-fi
+
+`arxiv-2610.40239`, `arxiv-2610.40488`, `arxiv-2610.40578` → `cemini-egress-fi:/opt/cemini-bulk/research/ccc/`. Size-verified; local copies removed.
+
+Routing note: the PDFs sat in `research to be indexed/game-dev/` but were filed into this wiki, so they archived under `--wiki-id ccc`, not `game-dev`.

@@ -4060,3 +4060,7 @@ Full triage of all 18 briefs in `briefs/` (the gitignored deliverables directory
 - `sources/arxiv-2610.40640-sonoworld4d-from-one-video-to-a-4d-audio-visual-2026-11-01.md` — SonoWorld4D: one video to a 4D audio-visual scene
 - `sources/arxiv-2610.40647-read-allocate-route-role-coupled-tokenization-fo-2026-11-01.md` — SpecSlot: role-coupled tokenization for pixel-space generative transformers
 
+## [2026-11-02] archive | 3 raws to egress-fi
+
+`arxiv-2610.40618`, `arxiv-2610.40640`, `arxiv-2610.40647` → `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/`. All size-verified; local copies removed. Location fields added.
+
