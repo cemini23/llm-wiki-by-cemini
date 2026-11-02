@@ -13,6 +13,7 @@ related:
   - entities/tools/boardui.md
   - entities/tools/agent-desktop.md
   - entities/tools/kronos.md
+  - sources/arxiv-v10-10-batch-c-skipped-no-lane-2026-11-02.md
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-b-2026-11-01.md
 maturity: draft

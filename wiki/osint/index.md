@@ -4873,3 +4873,9 @@ Entities:
 | [kronos](entities/tools/kronos.md) | OHLCV-as-tokens forecasting model. **Watch** — unstated licence, Qlib daily-equity assumptions, demo stale since 2026-07-04. | draft |
 | [openmed](entities/tools/openmed.md) | **Updated.** SDK is Apache-2.0 but **model and dataset licences differ**; Italian is not in the language list the fetch returned. | draft |
 
+Skip record:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv-v10-10-batch-c-skipped-no-lane](sources/arxiv-v10-10-batch-c-skipped-no-lane-2026-11-02.md) | arXiv 2610.40772, DiscKosky — hep-th Feynman-integral package. "Genealogical" is physics terminology; no Atto relevance. | draft |
+

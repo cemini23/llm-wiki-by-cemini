@@ -10801,3 +10801,11 @@ Third batch to carry the v10.10 label. All 20 URLs are new; none repeat batches 
 
 Duplicate handling: `preingest_check.py` returns DUPLICATE on `Multi-Wiki URL Revenue Evaluation.docx` by filename. That is a **filename collision, not a content match** — 50,448 bytes here against 3,090 KB for batch B, different sha256. Archived under a dated name so the batch-B copy on egress is not clobbered.
 
+## [2026-11-02] ingest | straggler PDFs in the osint inbox
+
+Six PDFs appeared in `research to be indexed/osint/` during the wave. Five already had source pages from the 2026-10-27 and 2026-11-01 drains and needed archiving only. One was new.
+
+- `sources/arxiv-v10-10-batch-c-skipped-no-lane-2026-11-02.md` — **new skip record**. arXiv 2610.40772, DiscKosky: a Mathematica package for genealogical constraints on Feynman integrals (hep-th). **The filename is a false lead** — "genealogical" is a physics term here, and a title scan would wrongly route it to Atto.
+
+Already filed, archived without a new page: `2610.35762` (urban screens), `2610.36392` (implied fee rates), `2610.36921` (operator splitting), `2610.36956` (nineteenth-century mining), `2610.40425` (Bergomi composite likelihood).
+

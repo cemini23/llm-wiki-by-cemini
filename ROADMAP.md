@@ -30,6 +30,22 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-11-02 — v10.10 batch C)
+
+- **Third batch under the same label.** The runtime version does not advance between runs, so "v10.10" is a pipeline label, not a batch identity. All 20 URLs were new.
+- **Highest-action batch of the three:** 4 Integrate (Scrapling, kornia, unslop, TokenEconomizer), 7 Extract, 3 Watch, 2 Context, 3 Pass, 1 unavailable. The first two batches produced one Integrate between them.
+- **Phase-0 corrected four claims.** GitHub egress is still denied in the sandbox, so checks used README and LICENSE files, not clones.
+  - **kornia** — the 10x–70x speedup is **batched GPU**. Its own README says "OpenCV outperforms Kornia for single-image `uint8` CPU work", and cards are scanned one at a time. The value is operator composition, not throughput.
+  - **TokenEconomizer** — the published 18.4–30.9% is **cost on SWE-Bench**, not tokens. State lives in `~/.tokeneconomizer`; audit it before it goes near Atto.
+  - **openmed** — Apache-2.0 covers the **SDK only**. The README says model and dataset licences differ, so GPL-clearance must be re-checked per checkpoint. Italian was not in the language list the fetch returned. `[NEEDS VERIFICATION 2026-11-02]`
+  - **Scrapling** — BSD-3, but the Cloudflare bypass is claimed with **no mechanism described**, and the project disclaims exactly this use ("educational and research purposes only"). Adaptive parsing needs no approval; the evasion layer is a legal and business decision about specific sites, and the operator owns it. Never route to CeminiParlays.
+- **Filename collision handled.** The eval docx reused `Multi-Wiki URL Revenue Evaluation.docx`, already holding batch B on egress. `preingest_check.py` returned DUPLICATE on filename; the content is different (50,448 bytes against 3,090 KB, different sha256). Archived as `… 2026-11-02.docx` so the batch-B copy survives.
+- **Two existing pages improved.** `openmed` gained the model-licence correction. `worktrunk` closed its 2026-10-25 licence gap (MIT OR Apache-2.0) and moved Context → Extract, with the honest note that only its `pre-merge` hook is a control rather than a keystroke saver.
+- **Newsletters.** Event Horizon #39 carries the number that matters for CeminiParlays: Kalshi did $4.79bn on one Saturday and **73.9% of it was parlays**. Polymarket refunded $3.9M after a compromised third-party script hijacked user sessions.
+- **Archive.** 5 raws on egress, verified. Inbox empty.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps on the new pages.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
 ## Current state (2026-11-01 — v10.10 eval wave)
 
 - **Two 20-URL batches, both titled v10.10.** Different content, different inbox filenames (Link / URL). Batch A: 0 Integrate, 4 Extract, 1 Watch, 10 Context, 5 Pass. Batch B: **1 Integrate**, 5 Extract, 4 Watch, 7 Context, 2 Pass, 1 unavailable.
