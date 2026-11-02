@@ -1421,3 +1421,10 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 
 | [cash-subsidy-harness](sources/arxiv-2610.39244-cash-a-capability-aware-subsidy-harness-for-adve-2026-11-01.md) | draft | Capability licences route work between an LLM and a numeric model; +15.35% revenue per account online |
 | [latent-space-why-agents-love-supabase](sources/newsletter-rss-latent-space-2026-10-28-why-agents-love-supabase.md) | draft | Local backend without Docker, schema in Git, compute beside the database |
+
+## v10.10 eval wave (2026-11-01)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [design-log-methodology](entities/tools/design-log-methodology.md) | draft | Frozen design section plus an append-only Implementation Results log. Portable to `claude.md`. README states no licence — use the methodology, verify before vendoring. |
+| [open-ontologies](entities/tools/open-ontologies.md) | draft | MIT Rust binary: plan, blast radius, apply, plus oo-cert proof files a Lean checker verifies offline. Default in-memory mode certifies nothing. |

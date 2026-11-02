@@ -4054,3 +4054,9 @@ Full triage of all 18 briefs in `briefs/` (the gitignored deliverables directory
 - `sources/arxiv-2610.37626-know-then-draw-a-new-learning-paradigm-for-visua-2026-11-01.md` — Know, Then Draw: Autoregressive Knowledge, Diffusion Rendering
 - `sources/arxiv-2610.37642-metacognitive-decoding-efficient-inference-for-d-2026-11-01.md` — Metacognitive Decoding for Diffusion Language Agents
 
+## [2026-11-01] ingest | inbox drain (3 pages, late arrival)
+
+- `sources/arxiv-2610.40618-an-ode-based-sampler-for-discrete-diffusion-mode-2026-11-01.md` — An ODE-Based Sampler for Discrete Diffusion Models (exponential residual flows; preserves marginals)
+- `sources/arxiv-2610.40640-sonoworld4d-from-one-video-to-a-4d-audio-visual-2026-11-01.md` — SonoWorld4D: one video to a 4D audio-visual scene
+- `sources/arxiv-2610.40647-read-allocate-route-role-coupled-tokenization-fo-2026-11-01.md` — SpecSlot: role-coupled tokenization for pixel-space generative transformers
+

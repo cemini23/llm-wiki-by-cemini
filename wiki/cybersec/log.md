@@ -2357,3 +2357,11 @@ Cross-wiki stub routed from `@3d-printing-wiki/sources/2026-corn-optimistic-veri
 - `sources/newsletter-rss-tldrsec-2026-10-29-tldr-sec-352---unprompted-slides-aws-ai-post-com.md` — tl;dr sec #352 — Unprompted talks, AWS LLM post-compromise, malicious routers
 - `sources/substack-rss-secpro-2026-10-30-php2shell-packet-to-process.md` — PHP2Shell: packet-to-process evidence of code execution
 
+## [2026-11-01] ingest | v10.10 eval wave — Zero-Breach-Toolkit (1 entity page)
+
+Routed from `@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md` URL 12, Extract tier.
+
+- `entities/tools/zero-breach-toolkit.md` — **new**. Offline, read-only, zero-dependency spyware IOC scanner for Windows, macOS, Linux, Android dumps, and iPhone backups. Apache-2.0. The reusable asset is the 3-part output contract: findings, evidentiary strength grade, and an explicit list of surfaces that could not be checked.
+
+Not adopted. Signature verification and a source read are the conditions before any run on a production host.
+

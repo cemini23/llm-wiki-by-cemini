@@ -10,9 +10,10 @@ related:
   - concepts/librarian-server-architecture.md
   - entities/tools/swarmvault.md
   - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
+  - sources/eval-multi-wiki-link-revenue-v10.10-batch-b-2026-11-01.md
 maturity: validated
 created: 2026-05-05
-updated: 2026-05-13
+updated: 2026-11-01
 ---
 
 ## Relations
@@ -119,6 +120,22 @@ If a future re-evaluation triggers:
 ## Dead Ends
 
 *(none yet — Phase 0 audit pending.)*
+
+### K-v10.10 re-entry event (2026-11-01) — trigger fired
+
+`@sources/eval-multi-wiki-link-revenue-v10.10-batch-b-2026-11-01.md` URL 13 rates PageIndex **Extract** and routes it to Atto, family-tree, GuruWatcher, and Collectibles, applied to **multi-hundred-page Italian civil registers**.
+
+That is the condition this page already named. Quoting the re-entry rule above: *"PageIndex becomes a candidate ONLY IF Cemini begins indexing long-form professional documents (financial filings, legal PDFs, multi-hundred-page research papers) as a *separate* retrieval tier alongside the wiki."*
+
+So this is **not** a reversal. The wiki-layer NO-GO stands. A new Phase-0 is required, and it must be scoped to long-form archival PDFs only:
+
+- Measure retrieval quality on 5–10 real Italian civil register PDFs, not on wiki pages.
+- The single-file API (Q1 above) is a **feature** in this use case, not a defect — one register, one index.
+- The lost-graph and lost-metadata findings (Q5, Q6) do not apply; archival PDFs have no `@path` links and no frontmatter.
+- The agentic cost per query (Q2) still applies and still needs a budget answer.
+- Use the **local SDK** (`pageindex[claude]`), never the hosted API, for Atto vault records.
+
+Status: re-opened, not adopted.
 
 ### K42 re-surface (Doc 1, 2026-05-13)
 

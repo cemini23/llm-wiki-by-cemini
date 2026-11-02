@@ -10,6 +10,7 @@ related:
   - sources/agriciDaniel-claude-obsidian.md
   - entities/tools/agentic-soc-platform.md
   - entities/tools/probablyprofit.md
+  - entities/tools/karpathy-autoresearch.md
 maturity: draft
 created: 2026-05-04
 updated: 2026-05-11

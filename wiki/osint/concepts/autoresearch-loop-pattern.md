@@ -14,6 +14,8 @@ related:
   - concepts/scatter-gather-topology.md
   - sources/5-4-links-tool-eval.md
   - sources/rl-overview-murphy-2412-05265.md
+  - entities/tools/karpathy-autoresearch.md
+  - sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md
 maturity: draft
 created: 2026-05-04
 updated: 2026-05-11

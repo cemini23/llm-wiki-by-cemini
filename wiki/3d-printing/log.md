@@ -806,3 +806,8 @@ Pages touched: 5 (1 created + 4 modified) — within schema bound. Not committed
 
 - `sources/arxiv-2610.36598-openjaws-an-open-hardware-umi-framework-with-ste-2026-11-01.md` — OpenJaws: open 3D-printed UMI gripper with stereo localization
 
+## [2026-11-01] ingest | inbox drain (2 pages, late arrival)
+
+- `sources/arxiv-2610.39046-a-3d-measurement-workflow-for-assessing-replicat-2026-11-01.md` — A 3D measurement workflow for replication quality and printed-insert tool degradation
+- `sources/arxiv-2610.38948-open-source-framework-for-the-visualization-quan-2026-11-01.md` — 3D Slicer framework for 4D flow and high-dimensional MRI. Weak fit; filed as routed from the inbox batch rather than dropped.
+

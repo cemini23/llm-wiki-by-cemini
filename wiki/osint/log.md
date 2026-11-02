@@ -10751,3 +10751,26 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - `sources/substack-rss-wublock-2026-10-31-weekly-project-updates-ripple-approved-for-us-na.md` — Wu Blockchain weekly: Ripple trust bank, Hyperliquid perps, Sky Q3
 - `sources/substack-rss-wublock-2026-11-01-asias-weekly-top10-crypto-news-hong-kong-opens-t.md` — Wu Blockchain Asia weekly: tokenized funds, JPYC circulation, and exchange rules
 
+## [2026-11-01] ingest | v10.10 eval wave (2 source pages, 4 digest splits, 7 entity pages)
+
+Two `Multi-Wiki Link Revenue Evaluation v10.10` batches, 20 URLs each. Both share the internal title; the inbox filenames differ (Link / URL).
+
+- `sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md` — batch A. 0 Integrate, 4 Extract, 1 Watch, 10 Context, 5 Pass.
+- `sources/eval-multi-wiki-link-revenue-v10.10-batch-b-2026-11-01.md` — batch B. 1 Integrate, 5 Extract, 4 Watch, 7 Context, 2 Pass, 1 unavailable.
+- `sources/substack-rss-moontower-2026-11-01-hacking-hope.md` — Moontower #334 section: gambling risk as a hacked growth impulse
+- `sources/substack-rss-moontower-2026-11-01-if-it-feels-good-youre-too-late.md` — Moontower #334 section: act before the evidence is obvious
+- `entities/tools/lexifina-global-law.md` — **new**. Dated statutory corpora. Phase-0: Italy coverage starts 1947-02-22, so no 1865 and no 1912. Report claim corrected.
+- `entities/tools/liquidai-d1-2b.md` — **new**. 1.92B single-pass decision model. Integrate. LFM Open License, $10M threshold. 18.6 ms on Apple `mps`.
+- `entities/tools/jeveryword.md` — **new**. Numbered-token span extraction. Pattern only: remote model, 4 stars.
+- `entities/tools/karpathy-autoresearch.md` — **new**. Keep-or-revert loop. MIT, 99.0k stars, needs one NVIDIA GPU.
+- `entities/tools/quants-md.md` — **new**. Walk-forward harness and order/risk templates. Licence unresolved.
+- `entities/tools/parallel-ai.md` — **new**. Watch on measured latency: 13.6 s against 669 ms for Brave.
+- `entities/tools/agentdiscoverability-track.md` — **new**. ATO frame: Found, Picked, Positioned.
+- `entities/tools/pageindex.md` — **updated**. Recorded the documented re-entry trigger firing: long-form archival PDFs, not the wiki layer. NO-GO for the wiki stands.
+
+Duplicates not re-filed:
+
+- `substack-rss-moontower-2026-10-25-moontower-333.md` — all three sections already filed on 2026-10-25 (`introducing-slate`, `i-bonds-vs-tips`, `staring-at-an-option-quote`). **This closes the open decision carried in `hot.md` from 2026-10-25.** No page needed.
+- `substack-rss-moontower-2026-11-01-moontower-334.md` — parent digest. Two sections filed above; the third (`using-geometry-to-see-why-volatility-scales-with`) was filed 2026-10-28.
+- `substack-rss-wublock-2026-10-30-wublockchain-weekly-binance-hacked-ice-invests-i.md` — already filed 2026-11-01 by URL match.
+

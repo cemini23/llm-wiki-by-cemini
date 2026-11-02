@@ -2722,3 +2722,9 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2609-35472-prm-discre
 
 - `sources/arxiv-2610.39244-cash-a-capability-aware-subsidy-harness-for-adve-2026-11-01.md` — capability licences govern source selection, agent review and budget allocation
 - `sources/newsletter-rss-latent-space-2026-10-28-why-agents-love-supabase.md` — Supabase's Build/Operate/Scale framing
+
+### v10.10 eval wave (2026-11-01)
+
+- `entities/tools/design-log-methodology.md` — **new**. Frozen design section plus an append-only Implementation Results log, with a "minimize new surface" gate. Portable to `claude.md`. Report says MIT; README states no licence.
+- `entities/tools/open-ontologies.md` — **new**. MIT Rust binary: plan, blast-radius report, apply/rollback. Emits `asserted.tsv` and `derivations.tsv` that a Lean checker verifies offline. Default in-memory mode certifies nothing.
+- Also routed here from batch A: `arxiv-2610.40239` (Plant-as-Code), `arxiv-2610.40488` (RTASTE research judgment), `arxiv-2610.40578` (VeriCUA) — filed earlier under the 2026-11-01 inbox drain.

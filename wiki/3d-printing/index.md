@@ -208,4 +208,6 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 ## Ingest 2026-11-01 — inbox drain
 
 - [openjaws-an-open-hardware-umi-framework-with-ste.](sources/arxiv-2610.36598-openjaws-an-open-hardware-umi-framework-with-ste-2026-11-01.md) — A modular 3D-printed gripper carries a standardized ISO adapter and a low-cost stereo camera. — `paper, ingest-2026-11-01`
+- [a-3d-measurement-workflow-for-assessing-replicat.](sources/arxiv-2610.39046-a-3d-measurement-workflow-for-assessing-replicat-2026-11-01.md) — Whole-channel replication quality and printed-insert wear from two 3D scans, scored by slope-map correlation RQ_d. — `paper, metrology, tooling, ingest-2026-11-01`
+- [open-source-framework-for-the-visualization-quan.](sources/arxiv-2610.38948-open-source-framework-for-the-visualization-quan-2026-11-01.md) — 3D Slicer extension for 4D flow and high-dimensional MRI. Weak fit for this wiki; filed as routed from the inbox batch. — `paper, medical-imaging, weak-fit, ingest-2026-11-01`
 

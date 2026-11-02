@@ -4827,3 +4827,26 @@ Rows missing since their source pages were committed. Found by
 | [weekly-project-updates-ripple-approved-for-us-na](sources/substack-rss-wublock-2026-10-31-weekly-project-updates-ripple-approved-for-us-na.md) | Wu Blockchain's 31 October 2026 weekly roundup lists ten project updates. | draft |
 | [asias-weekly-top10-crypto-news-hong-kong-opens-t](sources/substack-rss-wublock-2026-11-01-asias-weekly-top10-crypto-news-hong-kong-opens-t.md) | The newsletter states that BlackRock's tokenized fund BUIDL has assets under management of approximately 2.17 billion US dollars. | draft |
 
+## v10.10 eval wave (2026-11-01)
+
+Sources:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-multi-wiki-link-revenue-v10.10-batch-a](sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md) | 20 URLs, Karpathy/quant/3D block. 0 Integrate, 4 Extract, 1 Watch, 10 Context, 5 Pass. Phase-0 cut the global-law claim to 1948 and later. | draft |
+| [eval-multi-wiki-link-revenue-v10.10-batch-b](sources/eval-multi-wiki-link-revenue-v10.10-batch-b-2026-11-01.md) | 20 URLs, System-One/ontology/ATO block. 1 Integrate (d1-2B), 5 Extract, 4 Watch, 7 Context, 2 Pass, 1 unavailable. Phase-0 cleared the d1-2B licence and blocked jeveryword on remote inference. | draft |
+| [hacking-hope](sources/substack-rss-moontower-2026-11-01-hacking-hope.md) | Gambling risk read as a hacked growth impulse; argues prediction marketing reframes a vice as learning. | draft |
+| [if-it-feels-good-youre-too-late](sources/substack-rss-moontower-2026-11-01-if-it-feels-good-youre-too-late.md) | Act before the evidence is obvious; the right/consensus 2x2; VC as a no-mean sample. | draft |
+
+Entities:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [lexifina-global-law](entities/tools/lexifina-global-law.md) | Dated statutory corpora with an in-force/replayed/current-only manifest. **Italy starts 1947-02-22** — no 1865, no 1912. Extract the schema, not the data. | draft |
+| [liquidai-d1-2b](entities/tools/liquidai-d1-2b.md) | 1.92B single-pass decision model. **Integrate.** LFM Open License clears commercial use below $10M. 18.6 ms on Apple `mps`. | draft |
+| [jeveryword](entities/tools/jeveryword.md) | Numbered-token span extraction with a `slice === value` invariant. Pattern only — the model is remote and the repo has 4 stars. | draft |
+| [karpathy-autoresearch](entities/tools/karpathy-autoresearch.md) | Keep-or-revert agent loop. MIT, 99.0k stars, **needs one NVIDIA GPU**. Extract the contract, not the harness. | draft |
+| [quants-md](entities/tools/quants-md.md) | 50 strategies, most below 0.5 Sharpe. Extract the walk-forward harness and order/risk templates. Licence unresolved. | draft |
+| [parallel-ai](entities/tools/parallel-ai.md) | Agent web APIs plus a no-account remote MCP. **Watch** — 13.6 s per search against 669 ms for Brave. | draft |
+| [agentdiscoverability-track](entities/tools/agentdiscoverability-track.md) | Agent Tool Optimization: Found, Picked, Positioned. Framework only; the scores are the vendor's own. | draft |
+

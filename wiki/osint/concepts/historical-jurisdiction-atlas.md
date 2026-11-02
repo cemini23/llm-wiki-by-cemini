@@ -5,6 +5,8 @@ tags: [concept, genealogy, cartography, atto, gazetteer]
 keywords: [historical jurisdiction, semantic URL router, gazetteer, ISTAT, comune, Atto]
 related:
   - sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md
+  - entities/tools/lexifina-global-law.md
   - entities/tools/jiangshan-map.md
   - "@seo-wiki/concepts/atto-atlas-suite-outlier-notes.md"
 maturity: draft

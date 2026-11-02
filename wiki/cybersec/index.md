@@ -1108,3 +1108,9 @@ Six sources. The theme is that response-level safeguards do not protect the laye
 | [tldr-sec-352---unprompted-slides-aws-ai-post-com](sources/newsletter-rss-tldrsec-2026-10-29-tldr-sec-352---unprompted-slides-aws-ai-post-com.md) | draft | The newsletter says he used GPT-5.6 Sol and Daybreak Blue on a personal account, and that the work used 7% of a weekly Pro allowance. |
 | [php2shell-packet-to-process](sources/substack-rss-secpro-2026-10-30-php2shell-packet-to-process.md) | draft | Packt SecPro frames PHP2Shell as a problem of evidence. |
 
+## v10.10 eval wave (2026-11-01)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [zero-breach-toolkit](entities/tools/zero-breach-toolkit.md) | draft | Offline read-only spyware IOC scanner, Apache-2.0. The 3-part contract — findings, evidentiary grade, **what could not be checked** — is the part to copy. Source: @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md URL 12. |
+
