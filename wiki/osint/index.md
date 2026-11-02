@@ -4267,6 +4267,10 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 
 Topics, theses, methodologies, strategies — ideas the research examines.
 
+### Desk pack (2026-11-01) — regime thresholds
+
+- [Regime watch thresholds](concepts/regime-threshold-parameters.md) — Eight-field threshold contract; mean-reversion, momentum, and circuit-breaker definitions; no value until a named source states it — concept, regime, mean-reversion, momentum, alert-only, guruwatcher
+
 ### Desk pack (2026-10-09) — Swarmer
 
 - [Swarmer Prince roll-up thesis](concepts/swarmer-prince-rollup-thesis.md) — Prince consolidates Ukraine's drone base; revenue round-trip; equity-only long — concept, defense, drones, ukraine, roll-up

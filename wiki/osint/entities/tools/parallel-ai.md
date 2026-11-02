@@ -59,6 +59,12 @@ A 13.6-second search inside an agent loop is the difference between a tool the a
 
 The report's own condition, which is the right one: a **head-to-head latency and accuracy bake-off against Firecrawl** before any paid commitment. The free MCP endpoint makes the first half of that test cheap — measure it on real targets before spending.
 
+### GuruWatcher decision, 2026-11-01
+
+**Watch. Not wired.** The three blocking reasons are recorded in the GuruWatcher repository at `docs/parallel-ai-monitor.md`: latency, unverified quota, and no bake-off. The gate is a measured head-to-head against the current Brave path on the real targets — newsletters and filings.
+
+If a Monitor webhook is ever wired, it may produce an alert. It may not produce an action. GuruWatcher stays alert-only.
+
 ### Phase-0 status
 
 **Not run at source level.** This is a proprietary SaaS with no repository to clone. The price and latency figures above come from the report's cited benchmark and are single-source. The report itself flags: "NEEDS VERIFICATION: Exact rate limits and daily/monthly quota ceilings on the unauthenticated MCP server."

@@ -41,7 +41,7 @@ Three things are worth extracting:
 | Target | Take |
 |--------|------|
 | xsp-killer | The walk-forward split harness, the bracket and stop-limit state machines, the circuit breaker. |
-| GuruWatcher | Threshold definitions for mean-reversion and momentum regime watches. **Documentation only** — GuruWatcher stays alert-only. |
+| GuruWatcher | Threshold definitions for mean-reversion and momentum regime watches. **Documentation only** — GuruWatcher stays alert-only. Written at @concepts/regime-threshold-parameters.md. |
 
 ### The hard ban still applies
 
