@@ -917,3 +917,13 @@ Append-only chronological log.
 - **voicestudio** filed as Extract. AGPL-3.0 — isolate only, never vendor into Atto. Good fit for Basgiath narration and offline family oral-history ASR.
 - **pausevfx** and **dessa** filed as Watch. Neither has a shippable artefact: pausevfx is behind a sign-in wall with no pricing or API; Dessa is waitlist-only with no weights.
 
+
+## [2026-11-02] ingest | Travian × Civilization single-player browser game — feasibility synthesis
+
+- **1 concept page:** `concepts/travian-civ-browser-strategy-design.md` — market gap, payback-time economy, greedy-scheduler AI, verified 2026 stack, prior-attempt lessons, open questions.
+- **Backlinks added (8):** scope-tiers, vertical-slice-v0, indie-kingdom-builder-lessons, ai-assisted-game-dev-workflows, ai-game-dev-tool-stack-2026, agentic-npc-design-guardrails, stronghold-2-ai-lords, medieval-sim-fun-vs-accuracy.
+- **Finding:** no commercial single-player Travian exists. Only direct competitor (`jurerotar/Pillage First`) is an AGPL alpha with no campaign arc and an admitted offline-attack blind spot.
+- **Finding:** the supplied architecture spec's primary renderer is a pre-1.0 framework with 7 stars and one maintainer. Simulation must stay renderer-free.
+- **Finding:** expansion beats optimisation about 7:1 in Travian's own ROI guidance; show payback time as the economy's visible language.
+- **Deliverable (local, gitignored):** `briefs/game-dev/2026-11-02_travian-civ-game-design-brief.docx` — full brief for Gemini.
+- No sources ingested to `sources/`; this is a synthesis page. External citations are inline URLs with retrieval dates.

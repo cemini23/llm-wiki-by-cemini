@@ -7,9 +7,10 @@ related:
   - sources/leiden-medieval-city-builder-accuracy-2020.md
   - concepts/scope-tiers.md
   - entities/games/stronghold-series.md
+  - concepts/travian-civ-browser-strategy-design.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-11-02
 ---
 
 ## Relations

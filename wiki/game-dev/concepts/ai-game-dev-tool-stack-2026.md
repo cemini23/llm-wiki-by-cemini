@@ -46,9 +46,10 @@ related:
   - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
   - sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md
   - sources/ziva-gpt-56-godot-benchmark-2026-07-10.md
+  - concepts/travian-civ-browser-strategy-design.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-10-25
+updated: 2026-11-02
 ---
 
 ## Relations

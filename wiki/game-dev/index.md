@@ -60,6 +60,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [minecraft-bedrock-addons-scripting](concepts/minecraft-bedrock-addons-scripting.md) | validated | Bedrock packs, Script API, Editor, Marketplace |
 | [minecraft-data-driven-content-patterns](concepts/minecraft-data-driven-content-patterns.md) | validated | Data components, datagen, jigsaw worldgen → castle-sim |
 | [minecraft-agent-harness-shelf](concepts/minecraft-agent-harness-shelf.md) | validated | Mineflayer, Voyager, MCP, benchmarks, harness lessons |
+| [travian-civ-browser-strategy-design](concepts/travian-civ-browser-strategy-design.md) | draft | Single-player Travian × Civ Rev feasibility — market gap, payback-time economy, honest AI, verified stack |
 
 ## Entities — Engines
 

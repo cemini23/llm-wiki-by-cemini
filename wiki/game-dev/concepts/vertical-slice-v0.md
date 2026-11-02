@@ -23,9 +23,10 @@ related:
   - sources/gdc-kingdoms-and-castles-postmortem-2019.md
   - sources/godot-4-phase-0-audit-2026-06-13.md
   - sources/arxiv-2610.13022-reqclarifybench-clarification-2026-10-12.md
+  - concepts/travian-civ-browser-strategy-design.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-11-02
 ---
 
 ## Relations

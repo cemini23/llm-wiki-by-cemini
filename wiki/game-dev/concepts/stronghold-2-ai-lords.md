@@ -31,9 +31,10 @@ related:
   - sources/arxiv-2609.34342-sage-strategic-reasoning-2026-09-30.md
   - sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md
   - sources/arxiv-2610.03695-queen-chess-explains-moves-2026-10-05.md
+  - concepts/travian-civ-browser-strategy-design.md
 maturity: validated
 created: 2026-06-17
-updated: 2026-10-25
+updated: 2026-11-02
 ---
 
 ## Relations

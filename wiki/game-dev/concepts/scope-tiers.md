@@ -28,9 +28,10 @@ related:
   - sources/leiden-medieval-city-builder-accuracy-2020.md
   - sources/northgard-economy-case-study-2018.md
   - concepts/minecraft-modding-ecosystem.md
+  - concepts/travian-civ-browser-strategy-design.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-11-02
 ---
 
 ## Relations

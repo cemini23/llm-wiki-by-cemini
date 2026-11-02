@@ -14,9 +14,10 @@ related:
   - sources/mandate-order-city-walls-shelf-2026-06-25.md
   - sources/arxiv-2606.26925-vr-dynamic-feedback-pointing-2026-07-02.md
   - concepts/agent-harness-castle-project.md
+  - concepts/travian-civ-browser-strategy-design.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-07-02
+updated: 2026-11-02
 ---
 
 ## Relations

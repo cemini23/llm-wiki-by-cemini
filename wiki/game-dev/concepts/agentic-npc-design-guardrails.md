@@ -21,9 +21,10 @@ related:
   - sources/arxiv-2610.04261-social-deduction-rft-2026-10-07.md
   - sources/hero-rl-llm-npc-springer-2026-06-26.md
   - sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md
+  - concepts/travian-civ-browser-strategy-design.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-10-25
+updated: 2026-11-02
 wire_status: policy_wired
 wire_target: concepts/agentic-npc-design-guardrails.md
 ---
