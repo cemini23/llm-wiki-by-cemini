@@ -1419,3 +1419,7 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2607-28520-cs-rnr-opp
 - `sources/substack-rss-event-horizon-2026-10-29-i-got-an-email-from-kalshi-asking-if-i-wanted-to.md` — Event Horizon: Kalshi ski-town hedge email and Oct. 27 volume
 - `sources/substack-rss-event-horizon-2026-10-30-a-prediction-market-gets-into-digital-rips-becau.md` — Event Horizon: OG.com adds digital rips; Kalshi raises at $40 billion
 
+## [2026-11-02] ingest | Event Horizon #39 (1 source)
+
+- `sources/substack-rss-event-horizon-2026-11-02-episode-39-election-markets-with-sam-henry-lazar.md` — **new**. Pre-midterm briefing with Sam Henry Lazarus (CFR). Saturday Kalshi volume $4.79bn, **73.9% parlays**. Polymarket returned $3.9M after a compromised third-party monitoring script hijacked user sessions. 37 state AGs filed an amicus supporting Utah in *KalshiEX v. Cox*.
+

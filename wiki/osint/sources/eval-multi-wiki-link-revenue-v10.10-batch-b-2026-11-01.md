@@ -11,6 +11,7 @@ related:
   - entities/tools/open-ontologies.md
   - entities/tools/pageindex.md
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md
+  - sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md
 maturity: draft
 created: 2026-11-01
 updated: 2026-11-01

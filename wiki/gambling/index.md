@@ -546,4 +546,5 @@ Rows missing since their source pages were committed. Found by
 | [what-we-learned-about-robinhood-and-prediction-m](sources/substack-rss-event-horizon-2026-10-28-what-we-learned-about-robinhood-and-prediction-m.md) | draft | Event Horizon says prediction markets were a large part of Robinhood's Q3 earnings. |
 | [i-got-an-email-from-kalshi-asking-if-i-wanted-to](sources/substack-rss-event-horizon-2026-10-29-i-got-an-email-from-kalshi-asking-if-i-wanted-to.md) | draft | This Event Horizon briefing is dated 2026-10-29 in the inbox file. |
 | [a-prediction-market-gets-into-digital-rips-becau](sources/substack-rss-event-horizon-2026-10-30-a-prediction-market-gets-into-digital-rips-becau.md) | draft | Kalshi announces a $1 billion Series G at a $40 billion post-money valuation, co-led by Wellington and Sequoia. |
+| [event-horizon-episode-39](sources/substack-rss-event-horizon-2026-11-02-episode-39-election-markets-with-sam-henry-lazar.md) | draft | Pre-midterm briefing: Kalshi Saturday volume $4.79bn with 73.9% parlays; Polymarket returns $3.9M after a third-party script hijacked sessions; 37 state AGs back Utah. |
 

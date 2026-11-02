@@ -5,6 +5,7 @@ tags: [tool, trading, backtesting, walk-forward, risk, xsp, guruwatcher]
 keywords: [quants.md, walk forward, circuit breaker, bracket order, trailing stop, risk parity, agenkit]
 related:
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md
+  - concepts/regime-threshold-parameters.md
 maturity: draft
 created: 2026-11-01
 updated: 2026-11-01

@@ -1428,3 +1428,14 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 |------|----------|---------|
 | [design-log-methodology](entities/tools/design-log-methodology.md) | draft | Frozen design section plus an append-only Implementation Results log. Portable to `claude.md`. README states no licence — use the methodology, verify before vendoring. |
 | [open-ontologies](entities/tools/open-ontologies.md) | draft | MIT Rust binary: plan, blast radius, apply, plus oo-cert proof files a Lean checker verifies offline. Default in-memory mode certifies nothing. |
+
+## v10.10 batch C (2026-11-02)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [unslop](entities/tools/unslop.md) | draft | Claude Code skill that audits and removes generic AI UI. CC-BY-4.0 — attribution owed only if the skill files are redistributed. Asks before editing. |
+| [tokeneconomizer](entities/tools/tokeneconomizer.md) | draft | Microsoft, Apache-2.0. Micro-skills, tool pruning, loop guard. **The 18.4–30.9% figure is cost on SWE-Bench, not tokens.** State lives in `~/.tokeneconomizer`. |
+| [misakanet](entities/tools/misakanet.md) | draft | Local BM25 failure memory behind a `PostToolUse` error hook. The external control is the asset — it does not rely on the model choosing to look something up. |
+| [boardui](entities/tools/boardui.md) | draft | Copy-and-own React Aria + Tailwind v4 components that ship their own `AGENTS.md`. MIT; Pro tier separate. You own the maintenance. |
+| [agent-desktop](entities/tools/agent-desktop.md) | draft | Native accessibility-tree control for agents. Skeleton traversal plus ref addressing. **Never route to CeminiParlays.** |
+| [worktrunk](entities/tools/worktrunk.md) | draft | **Updated.** Licence now confirmed MIT OR Apache-2.0; tier moved Context → Extract. The `pre-merge` hook is the part that is a control rather than a keystroke saver. |

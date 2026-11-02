@@ -10787,3 +10787,17 @@ Location fields added to the four source pages created in the v10.10 wave.
 
 Sandbox note: egress SSH is denied inside the sandbox. The archive ran from the Terminal panel, which is outside it.
 
+## [2026-11-02] ingest | v10.10 batch C (1 eval source, 2 newsletters, 3 entity pages, 2 updated)
+
+Third batch to carry the v10.10 label. All 20 URLs are new; none repeat batches A or B.
+
+- `sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md` — **new**. 4 Integrate, 7 Extract, 3 Watch, 2 Context, 3 Pass, 1 unavailable. Highest-action batch of the three.
+- `sources/substack-rss-wublock-2026-11-02-wublockchain-weekly-outlook-us-midterms-and-jobs.md` — **new**. Midterms, payrolls, BOE, AI-demand earnings.
+- `sources/substack-rss-klement-2026-11-02-women-are-their-own-enemies.md` — **new**. Self-assessment gap and adviser recommendations.
+- `entities/tools/scrapling.md` — **new**. BSD-3. Adaptive parsing is the win; the Cloudflare bypass is an unexplained, disclaimed capability. Operator decision, not a technical one.
+- `entities/tools/kornia.md` — **new**. Apache-2.0. Batched CV; the 10x–70x speedup is GPU-batch only and the README hands single-image CPU to OpenCV.
+- `entities/tools/kronos.md` — **new**. Watch: unstated licence, Qlib daily-equity assumptions, stale demo.
+- `entities/tools/openmed.md` — **updated**. SDK is Apache-2.0 but model and dataset licences differ. Italian not in the language list the fetch returned — `[NEEDS VERIFICATION 2026-11-02]`.
+
+Duplicate handling: `preingest_check.py` returns DUPLICATE on `Multi-Wiki URL Revenue Evaluation.docx` by filename. That is a **filename collision, not a content match** — 50,448 bytes here against 3,090 KB for batch B, different sha256. Archived under a dated name so the batch-B copy on egress is not clobbered.
+

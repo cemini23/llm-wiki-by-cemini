@@ -2365,3 +2365,9 @@ Routed from `@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-a-202
 
 Not adopted. Signature verification and a source read are the conditions before any run on a production host.
 
+## [2026-11-02] ingest | v10.10 batch C — heretic (1 entity page)
+
+Routed from `@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md` URL 10, Extract tier.
+
+- `entities/tools/heretic.md` — **new**. Training-free refusal-direction ablation with slop suppression. **Licence unstated**, so it is a method reference and must not be vendored. No training curve exists to reveal capability loss, so measure before and after. Lab scope unchanged: authorized defensive work only.
+

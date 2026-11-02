@@ -1907,3 +1907,7 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - `sources/arxiv-2610.40292-dolphinrouting-cluster-level-binary-routing-for-2026-11-01.md` — DolphinRouting: cluster-level binary routing for disaggregated LLM serving
 - `sources/newsletter-rss-sterling-sky-2026-10-28-who-updates-google-information-why-google-keeps.md` — Sterling Sky: Who Updates a Google Business Profile
 
+## [2026-11-02] ingest | SparkToro book post (1 source)
+
+- `sources/newsletter-rss-sparktoro-2026-11-02-20-zero-click-marketing-questions-everyones-aski.md` — **new**. Book-launch post for *Zero Click Marketing* (Fishkin and Natividad). The RSS body truncates before listing any of the 20 questions, so this page supports no claim about them.
+

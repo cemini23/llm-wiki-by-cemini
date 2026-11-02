@@ -458,4 +458,5 @@ If you're new to this wiki:
 | sources/arxiv-2610.40278-neighborhood-elites-quality-diversity-search-for-2026-11-01.md | source | It reports that neighborhood elites reaches 0.726 AUROC and 0.211 AUPRC lift over the base rate. |
 | sources/arxiv-2610.40292-dolphinrouting-cluster-level-binary-routing-for-2026-11-01.md | source | Across the mixed workload and real data, DolphinRouting with k-means reduces P90 TTFT by 5.7–7.9% and P90 TPOT by 2.6–10.1% relative to Dynamo. |
 | sources/newsletter-rss-sterling-sky-2026-10-28-who-updates-google-information-why-google-keeps.md | source | The excerpt names the sources in this order: publicly-available information, such as the official business website or social profiles; third-party… |
+| sources/newsletter-rss-sparktoro-2026-11-02-20-zero-click-marketing-questions-everyones-aski.md | source | Book-launch post for Zero Click Marketing (Fishkin and Natividad). The RSS body truncates before listing any of the 20 questions. |
 

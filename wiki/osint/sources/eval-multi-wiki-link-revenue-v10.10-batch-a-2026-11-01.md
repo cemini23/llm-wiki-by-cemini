@@ -13,6 +13,8 @@ related:
   - concepts/historical-jurisdiction-atlas.md
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-b-2026-11-01.md
   - sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md
+  - concepts/regime-threshold-parameters.md
 maturity: draft
 created: 2026-11-01
 updated: 2026-11-01

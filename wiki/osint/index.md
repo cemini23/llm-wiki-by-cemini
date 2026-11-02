@@ -4854,3 +4854,22 @@ Entities:
 | [parallel-ai](entities/tools/parallel-ai.md) | Agent web APIs plus a no-account remote MCP. **Watch** — 13.6 s per search against 669 ms for Brave. | draft |
 | [agentdiscoverability-track](entities/tools/agentdiscoverability-track.md) | Agent Tool Optimization: Found, Picked, Positioned. Framework only; the scores are the vendor's own. | draft |
 
+## v10.10 batch C (2026-11-02)
+
+Sources:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-multi-wiki-link-revenue-v10.10-batch-c](sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md) | Third batch to carry the v10.10 label; all 20 URLs new. 4 Integrate, 7 Extract, 3 Watch, 2 Context, 3 Pass, 1 unavailable. | draft |
+| [wublockchain-weekly-outlook](sources/substack-rss-wublock-2026-11-02-wublockchain-weekly-outlook-us-midterms-and-jobs.md) | Midterms, payrolls, and AI-demand earnings. Apple's 50.1% margin carried ~2pp of tariff refunds. | draft |
+| [women-are-their-own-enemies](sources/substack-rss-klement-2026-11-02-women-are-their-own-enemies.md) | 350-person STEM experiment: self-assessment gaps move adviser recommendations 44/31, then flip to 37/47 under a nudge. | draft |
+
+Entities:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [scrapling](entities/tools/scrapling.md) | BSD-3. Adaptive parsing is the real win. **The Cloudflare bypass is an unexplained capability the vendor disclaims — an operator decision, not a technical one.** | draft |
+| [kornia](entities/tools/kornia.md) | Apache-2.0. Batched differentiable CV. **The 10x–70x speedup is GPU-batch only; the README hands single-image CPU to OpenCV.** | draft |
+| [kronos](entities/tools/kronos.md) | OHLCV-as-tokens forecasting model. **Watch** — unstated licence, Qlib daily-equity assumptions, demo stale since 2026-07-04. | draft |
+| [openmed](entities/tools/openmed.md) | **Updated.** SDK is Apache-2.0 but **model and dataset licences differ**; Italian is not in the language list the fetch returned. | draft |
+

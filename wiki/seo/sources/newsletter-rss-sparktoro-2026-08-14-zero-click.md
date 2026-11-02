@@ -10,6 +10,7 @@ related:
   - concepts/geo-visibility-measurement.md
   - concepts/federated-daily-research-digest.md
   - sources/arxiv-lee-2026-filter-bubble-generative-search-2609.38946-2026-10-01.md
+  - sources/newsletter-rss-sparktoro-2026-11-02-20-zero-click-marketing-questions-everyones-aski.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-15

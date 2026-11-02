@@ -1114,3 +1114,9 @@ Six sources. The theme is that response-level safeguards do not protect the laye
 |------|----------|---------|
 | [zero-breach-toolkit](entities/tools/zero-breach-toolkit.md) | draft | Offline read-only spyware IOC scanner, Apache-2.0. The 3-part contract — findings, evidentiary grade, **what could not be checked** — is the part to copy. Source: @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md URL 12. |
 
+## v10.10 batch C (2026-11-02)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [heretic](entities/tools/heretic.md) | draft | Training-free refusal-direction ablation. **Licence unstated — method reference only, do not vendor.** No training curve exists to show what capability was lost, so measure before and after. Source: @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md URL 10. |
+

@@ -2734,3 +2734,12 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2609-35472-prm-discre
 `arxiv-2610.40239`, `arxiv-2610.40488`, `arxiv-2610.40578` → `cemini-egress-fi:/opt/cemini-bulk/research/ccc/`. Size-verified; local copies removed.
 
 Routing note: the PDFs sat in `research to be indexed/game-dev/` but were filed into this wiki, so they archived under `--wiki-id ccc`, not `game-dev`.
+
+## [2026-11-02] ingest | v10.10 batch C (5 new entity pages, 1 updated)
+
+- `entities/tools/unslop.md` — **new**. Claude Code design-audit skill. CC-BY-4.0; attribution owed only on redistribution of the skill files.
+- `entities/tools/tokeneconomizer.md` — **new**. Microsoft, Apache-2.0. Micro-skills, tool pruning, loop guard. The published 18.4–30.9% figure is **cost** on SWE-Bench, not tokens. State in `~/.tokeneconomizer`.
+- `entities/tools/misakanet.md` — **new**. Local BM25 failure memory behind a `PostToolUse` error hook. The external control is the asset.
+- `entities/tools/boardui.md` — **new**. Copy-and-own React Aria + Tailwind v4 components that ship an `AGENTS.md`.
+- `entities/tools/agent-desktop.md` — **new**. Native accessibility-tree control. Skeleton traversal plus ref addressing. Never route to CeminiParlays.
+- `entities/tools/worktrunk.md` — **updated**. Licence confirmed MIT OR Apache-2.0, closing the 2026-10-25 gap. Tier Context → Extract. The `pre-merge` hook is the part that is a control, not a keystroke saver.
