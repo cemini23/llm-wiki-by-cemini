@@ -30,6 +30,21 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-11-01 — v10.10 eval wave)
+
+- **Two 20-URL batches, both titled v10.10.** Different content, different inbox filenames (Link / URL). Batch A: 0 Integrate, 4 Extract, 1 Watch, 10 Context, 5 Pass. Batch B: **1 Integrate**, 5 Extract, 4 Watch, 7 Context, 2 Pass, 1 unavailable.
+- **Phase-0 cut three report claims.** GitHub egress is denied in the session sandbox, so checks used raw source files rather than clones — enough for licence text and README claims, not for commit depth.
+  - `lexifina/global-law` **has an Italy corpus but it starts 1947-02-22.** No 1865 Civil Code, no Law 555/1912. The report routed it to Atto for exactly those dates. Value is 1948 onward only.
+  - `karpathy/autoresearch` **needs one NVIDIA GPU** (H100 tested). MIT, 99.0k stars. The keep-or-revert contract transfers; the harness does not run on the laptop.
+  - `jeveryword` **needs a remote model** (`TYPESAFE_API_KEY`). Its `slice === value` invariant is safe, but the text leaves the machine. Bars it from Atto vault records. Repo has 4 stars.
+- **One Integrate.** `LiquidAI/d1-2B`, 1.92B, single forward pass, 18.6 ms per decision on Apple `mps`. LFM Open License v1.0 clears commercial bundling below $10M annual revenue. Routed to Collectibles pre-grade, Atto record triage, CeminiParlays slip screening.
+- **PageIndex re-entered.** The 2026-05-05 NO-GO was wiki-layer only and named long-form archival PDFs as the re-entry trigger. v10.10 batch B applies it to multi-hundred-page Italian civil registers. Not a reversal; a scoped Phase-0 against archival PDFs is now owed.
+- **Moontower #333 decision closed.** All three sections were already filed on 2026-10-25. The digest needs no page.
+- **Five integration prompts staged** in `briefs/`: Atto, CeminiDFS, CeminiParlays, GuruWatcher, comuni-atlas. `briefs/` is gitignored, so they are local-only.
+- **Blocked by the sandbox.** Raw archive to egress-fi and `git push` both need network the sandbox denies. The commit is local and unpushed; the 16 inbox files are still in `research to be indexed/`.
+- **Gate.** Ingest session gate passes. Lint: zero dangling links and zero bidirectional gaps on the new pages. Four of five prompts score 100/100 on `skill_audit.py`; the fifth hits a pre-existing renderer bug on `severity == "info"` (`skill_audit.py:1198`).
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
 ## Current state (2026-10-23 — K294 ingest)
 
 - Full inbox pass. 62 files. 34 PDFs and 28 newsletters. 8 PDFs were already filed. The digest fan-out is still open. Video-report benchmark `2610.31158` is on the skip page.
