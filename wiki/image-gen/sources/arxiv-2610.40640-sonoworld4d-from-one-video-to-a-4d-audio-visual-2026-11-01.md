@@ -19,6 +19,7 @@ updated: 2026-11-01
 | arXiv | 2610.40640 |
 | Pages | 24 |
 | File | `arxiv-2610.40640-sonoworld4d-from-one-video-to-a-4d-audio-visual.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2610.40640-sonoworld4d-from-one-video-to-a-4d-audio-visual.pdf` |
 | Retrieved | 2026-11-01 |
 | Project | https://humathe.github.io/sonoworld4d |
 | Read status | skimmed (abstract and first page) |

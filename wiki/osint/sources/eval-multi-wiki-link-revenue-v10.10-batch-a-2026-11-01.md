@@ -27,7 +27,7 @@ read_status: read
 | Type | Generated evaluation report, agent-authored and cited |
 | Author | Cemini eval pipeline |
 | Received | 2026-11-01 |
-| Inbox | `research to be indexed/Multi-Wiki Link Revenue Evaluation.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/Multi-Wiki Link Revenue Evaluation.docx` |
 | Sibling | `Multi-Wiki URL Revenue Evaluation.docx` — same runtime version, different batch |
 | Batch | 20 URLs, none deferred |
 | Lens | revenue plus project fit. Priority #1 Atto and Collectibles (co-equal), #2 GuruWatcher and Basgiath, #3 CeminiDFS, #4 CeminiParlays |

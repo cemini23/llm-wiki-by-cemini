@@ -17,6 +17,7 @@ updated: 2026-11-01
 | Title | if it feels good you're too late |
 | Source | moontower (Moontower Meta / Party at the Moontower) |
 | File | `substack-rss-moontower-2026-11-01-if-it-feels-good-youre-too-late.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-moontower-2026-11-01-if-it-feels-good-youre-too-late.md` |
 | Retrieved | 2026-11-01 |
 | Published | 2026-11-01T15:26:24+00:00 |
 | URL | https://moontowermeta.com/if-it-feels-good-youre-too-late/ |

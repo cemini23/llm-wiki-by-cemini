@@ -18,6 +18,7 @@ updated: 2026-11-01
 | arXiv | 2610.39046 |
 | Pages | 39 |
 | File | `arxiv-2610.39046-a-3d-measurement-workflow-for-assessing-replicat.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2610.39046-a-3d-measurement-workflow-for-assessing-replicat.pdf` |
 | Retrieved | 2026-11-01 |
 | Read status | skimmed (abstract and first page) |
 

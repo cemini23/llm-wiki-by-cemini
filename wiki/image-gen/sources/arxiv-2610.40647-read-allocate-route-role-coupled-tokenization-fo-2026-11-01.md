@@ -19,6 +19,7 @@ updated: 2026-11-01
 | arXiv | 2610.40647 |
 | Pages | 22 |
 | File | `arxiv-2610.40647-read-allocate-route-role-coupled-tokenization-fo.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2610.40647-read-allocate-route-role-coupled-tokenization-fo.pdf` |
 | Retrieved | 2026-11-01 |
 | Read status | skimmed (abstract and first page) |
 

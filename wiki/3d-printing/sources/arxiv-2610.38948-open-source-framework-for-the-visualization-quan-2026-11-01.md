@@ -18,6 +18,7 @@ updated: 2026-11-01
 | arXiv | 2610.38948 |
 | Pages | 59 |
 | File | `arxiv-2610.38948-open-source-framework-for-the-visualization-quan.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2610.38948-open-source-framework-for-the-visualization-quan.pdf` |
 | Retrieved | 2026-11-01 |
 | Read status | skimmed (abstract and first page) |
 

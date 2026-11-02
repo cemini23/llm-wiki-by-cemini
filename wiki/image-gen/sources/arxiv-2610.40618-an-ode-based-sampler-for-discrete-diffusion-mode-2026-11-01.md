@@ -19,6 +19,7 @@ updated: 2026-11-01
 | arXiv | 2610.40618 |
 | Pages | 76 |
 | File | `arxiv-2610.40618-an-ode-based-sampler-for-discrete-diffusion-mode.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2610.40618-an-ode-based-sampler-for-discrete-diffusion-mode.pdf` |
 | Retrieved | 2026-11-01 |
 | Read status | skimmed (abstract and first page) |
 

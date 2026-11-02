@@ -17,6 +17,7 @@ updated: 2026-11-01
 | Title | hacking hope |
 | Source | moontower (Moontower Meta / Party at the Moontower) |
 | File | `substack-rss-moontower-2026-11-01-hacking-hope.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-moontower-2026-11-01-hacking-hope.md` |
 | Retrieved | 2026-11-01 |
 | Published | 2026-11-01T15:26:23+00:00 |
 | URL | https://moontowermeta.com/hacking-hope/ |

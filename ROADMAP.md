@@ -41,7 +41,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **PageIndex re-entered.** The 2026-05-05 NO-GO was wiki-layer only and named long-form archival PDFs as the re-entry trigger. v10.10 batch B applies it to multi-hundred-page Italian civil registers. Not a reversal; a scoped Phase-0 against archival PDFs is now owed.
 - **Moontower #333 decision closed.** All three sections were already filed on 2026-10-25. The digest needs no page.
 - **Five integration prompts staged** in `briefs/`: Atto, CeminiDFS, CeminiParlays, GuruWatcher, comuni-atlas. `briefs/` is gitignored, so they are local-only.
-- **Blocked by the sandbox.** Raw archive to egress-fi and `git push` both need network the sandbox denies. The commit is local and unpushed; the 16 inbox files are still in `research to be indexed/`.
+- **Archive completed 2026-11-02** from the Terminal panel, which is outside the sandbox. 16 raws on egress, all verified. The sandbox denies egress SSH; the Terminal panel does not. **`git push` is still blocked** — the two commits are local and unpushed.
 - **Gate.** Ingest session gate passes. Lint: zero dangling links and zero bidirectional gaps on the new pages. Four of five prompts score 100/100 on `skill_audit.py`; the fifth hits a pre-existing renderer bug on `severity == "info"` (`skill_audit.py:1198`).
 - **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
 
