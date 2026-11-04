@@ -30,6 +30,25 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-11-03 — v10.11 wave)
+
+- **The runtime advanced.** First version change since 2026-10-25: **v10.11**. The priority stack also moved to **#1 Atto + Collectibles + Game-Time (co-equal)**, #2 CeminiDFS + CeminiParlays, #3 GuruWatcher + Basgiath.
+- **The largest finding is structural.** Seven of twenty URLs route to `/Users/claudiobarone/Projects/game-time`, and **that directory does not exist**. Game-Time is named, prioritised, and unbuilt. The three Travian documents filed this wave — design brief, architecture spec, deep research — are the entire project.
+- **The design brief argues against its own companion.** It calls the architecture spec *"a two-year scope presented as four phases"*, and names the worst part: the AI warlords, the reason the game exists, are scheduled **last**. Any start has to pick a milestone with an AI opponent in it, or it answers the wrong question.
+- **Phase-0 corrected two licences.**
+  - **desloppify** is **custom, not OSI**. Free for individuals and open-source companies; **for-profit closed-source commercialisation is priced**. The report's Extract recommendation outran the licence. Take the queue pattern; do not bundle the tool.
+  - **theatre** — `@theatre/core` is Apache-2.0 at 0.7.0, verified. `@theatre/studio` is **AGPL**. The licence story is only true if a build assertion keeps studio out of the bundle.
+- **One more Phase-0 correction:** **scenario-labs/skills** is MIT, but every generation skill needs Scenario's MCP server and paid "Creative Unit" credits. The report's "pre-spend cost gate" is a meter for that vendor's currency, not a general cost model.
+- **agent-desktop moved Extract → Integrate** with no new evidence. Its 78–96% token-saving figure is the report's own estimate, not a measurement. Treat it as unverified.
+- **Three papers converge.** CLEO prunes a harness until only what earns its place remains (two orders of magnitude smaller, 1.2 points behind the Claude Code SDK). RoboArchitect grows one by diagnosing failures (9.7% → 43.3% on unseen scenes). Ask-Don't-Equip says the missing thing is a hypothesis, not more tools. All three leave the model alone.
+- **Best security finding:** `MCP Tool Poisoning` — the first cross-framework measurement with real tool execution. MCP carries attacker-controlled descriptions, schema fields, and response data into model context unvalidated. This estate loads third-party MCP servers.
+- **Best single number:** a **single neuron** flips an LLM's investment recommendation, with no prompt change. Closed weights mean an unknown bias; open weights mean a chosen one.
+- **Three skips, one trap.** `2611.00360` is protein epistasis, where "ancestry" means phylogenetics. A title scan would have routed it to Atto.
+- **Five prompts staged** in `briefs/`: atto, game-time (a start prompt, not an integration), collectibles, and a combined dfs-parlays. **GuruWatcher and family-tree/Atlas received zero routings this round**, so they have no prompt — writing one would have been invention.
+- **Archive.** 56 raws. The eval docx archived as `… 2026-11-03.docx`; the undated names already hold earlier batches.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
 ## Current state (2026-11-02 — v10.10 batch C)
 
 - **Third batch under the same label.** The runtime version does not advance between runs, so "v10.10" is a pipeline label, not a batch identity. All 20 URLs were new.
