@@ -1428,3 +1428,7 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2607-28520-cs-rnr-opp
 - `sources/substack-rss-event-horizon-2026-11-03-five-thoughts-midterms-2026-11-03.md` — **new**. The bind: a bad call destroys credibility because the venues marketed accuracy in 2024; a Democratic Congress brings worse oversight. Thought 3 opens "Election markets are almost a rounding error".
 - `sources/arxiv-2611.01754-mean-field-games-optimization-2026-11-03.md` — **new**. Mean field games survey, filed for the equilibrium formalism rather than any market content. Title page only.
 
+## [2026-11-04] ingest | Event Horizon midterm postmortem (1 source)
+
+- `sources/substack-rss-event-horizon-2026-11-04-midterms-postmortem-2026-11-04.md` — **new**. Democrats won both chambers. Markets called direction correctly and missed the scale — because the "blue wave" contract was a **218/49 threshold**, not a magnitude forecast. The durable claim is **speed**: markets converged well before media decision desks. The industry got the roundabout outcome: vindicated on accuracy, worse off politically.
+

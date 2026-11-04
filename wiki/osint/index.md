@@ -4902,4 +4902,5 @@ Skip record:
 | [helix-foundry](entities/tools/helix-foundry.md) | Apache-2.0 local ontology drafter with a human promotion gate and row/quote provenance. **Calls Claude or OpenAI by default if a key is exported** — a direct clash with Atto's ban 4. | draft |
 | [worldmonitor](entities/tools/worldmonitor.md) | **Updated — fourth evaluation.** `tools/call` needs a paid key; the "free feed" hypothesis is retired. The report's licence line was wrong in the permissive direction. | draft |
 | [klement-europeans-stocks](sources/substack-rss-klement-2026-11-04-europeans-stocks-2026-11-04.md) | A €50,000 windfall lifts non-stockholder participation 8.4–12.8pp and leaves allocation unchanged. **Over 60% still hold nothing.** | draft |
+| [nonparametric-garch-neural-estimator](sources/arxiv-2611.04157-nonparametric-garch-neural-estimator-2026-11-04.md) | Estimates the GARCH recursion map nonparametrically; minimax rate-optimal up to log factors. **Rates do not degrade when the lag order is overspecified.** | draft |
 

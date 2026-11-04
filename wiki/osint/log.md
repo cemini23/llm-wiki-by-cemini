@@ -10839,3 +10839,9 @@ A weak batch by content and a strong one by correction: **0 Integrate**, eight l
 
 Four URLs in this batch were repeats — worktrunk, scenario-labs, botmux, unslop — and each re-tiered differently, which is its own signal about stability.
 
+### Late arrivals, same day
+
+- `sources/arxiv-2611.04157-nonparametric-garch-neural-estimator-2026-11-04.md` — **new**. An iterated neural estimator alternating between the recursion map and the latent conditional variances. Minimax rate-optimal up to log factors, and **rates hold when fitted lag orders are overspecified** — a practical property, since the order is always a guess.
+
+Re-delivered and already filed, archived without new pages: `2610.40772` (DiscKosky), `2611.00360` (protein epistasis), `2611.00958` (crypto repair risk), `2611.01355` (derivatives notes), `2611.01635` (Urdu VLM).
+
