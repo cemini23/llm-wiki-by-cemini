@@ -4,6 +4,7 @@ type: source
 tags: [source, newsletter, prediction-markets, kalshi, polymarket, regulation, midterms]
 related:
   - sources/substack-rss-event-horizon-2026-11-02-episode-39-election-markets-with-sam-henry-lazar.md
+  - sources/substack-rss-event-horizon-2026-11-04-midterms-postmortem-2026-11-04.md
 maturity: draft
 read_status: skimmed
 created: 2026-11-03
