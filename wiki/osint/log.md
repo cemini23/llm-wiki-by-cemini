@@ -10826,3 +10826,16 @@ Already filed, archived without a new page: `2610.35762` (urban screens), `2610.
 
 **The largest finding of the wave is structural:** seven of twenty URLs route to `/Users/claudiobarone/Projects/game-time`, and **that directory does not exist**. Game-time is named, prioritised, and unbuilt. See @game-dev-wiki/concepts/travian-civ-browser-strategy-design.md.
 
+## [2026-11-04] ingest | Repository Revenue Evaluation (1 eval source, 1 newsletter, 2 entity pages, 1 updated)
+
+A weak batch by content and a strong one by correction: **0 Integrate**, eight licences recorded as "NOT FOUND", and seven rows that admit the repository was never retrieved.
+
+- `sources/eval-multi-wiki-repository-revenue-2026-11-04.md` — **new**. Phase-0 found four material errors.
+- `sources/substack-rss-klement-2026-11-04-europeans-stocks-2026-11-04.md` — **new**.
+- `entities/tools/helix-foundry.md` — **new**. The one genuinely valuable find, and it carries a ban-4 hazard: it uses Claude or OpenAI by default when a key is present.
+- `entities/tools/worldmonitor.md` — **updated, fourth evaluation**. `tools/call` requires a paid key, which retires the free-feed hypothesis four passes have assumed.
+
+**The correction worth carrying forward:** the report called `kgoedecke/doop` **MIT** and "compliant with Game-Time's zero-copyleft rule". It is **AGPL-3.0**. Taken at face value, that would have put copyleft obligations on a commercial game's entire source tree.
+
+Four URLs in this batch were repeats — worktrunk, scenario-labs, botmux, unslop — and each re-tiered differently, which is its own signal about stability.
+

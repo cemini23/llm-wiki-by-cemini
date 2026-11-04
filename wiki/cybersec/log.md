@@ -2380,3 +2380,7 @@ Routed from `@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-202
 - `sources/arxiv-2610.40893-qistas-portable-fairness-protocol-2026-11-03.md` — **new**. Pre-registered portable fairness protocol, instantiated for Iraq.
 - `sources/arxiv-2611.02746-replay-continual-learning-mopd-2026-11-03.md` — **new**.
 
+## [2026-11-04] ingest | Repository Revenue Evaluation — Soup (1 entity page)
+
+- `entities/tools/soup.md` — **new**. Apache-2.0 (report said NOT FOUND), 10.1k stars, `soup-cli`. YAML-driven SFT/DPO/GRPO/LoRA with layer streaming. **The 4 GB claim is CUDA; Apple Silicon is "supported" but the streaming path is an opt-in beta** and its behaviour on MPS is unstated. Lab scope only.
+

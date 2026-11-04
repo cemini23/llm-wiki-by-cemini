@@ -1461,4 +1461,13 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 | [legora-legal-agents](sources/newsletter-rss-latent-space-2026-11-02-legal-agents-legora-2026-11-03.md) | draft | Test environments built like RL "worlds" when you cannot see production data. Three engineers plus three lawyers, permanently. |
 | [tenfold-prs](sources/newsletter-rss-pragmatic-engineer-2026-11-03-tenfold-prs-2026-11-03.md) | draft | 8–20 PRs/month → 200+. Comms and review vanished; **thrashing, lost shared context, and less design focus** replaced them. |
 | [ainews-weights](sources/newsletter-rss-latent-space-2026-11-03-ainews-weights-2026-11-03.md) | draft | Models reading and writing weights of small networks directly. |
+
+## Repository Revenue Evaluation (2026-11-04)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [doop](entities/tools/doop.md) | draft | Self-hosted design canvas with a 42-tool MCP server and a screenshot loop. **AGPL-3.0 — the report called it MIT.** Cannot ship in a zero-copyleft build. |
+| [worktrunk](entities/tools/worktrunk.md) | draft | **Third sighting.** Adds deterministic per-branch port hashing. Three evaluations, three Extract ratings, licence unchanged. |
+| [scenario-labs-skills](entities/tools/scenario-labs-skills.md) | draft | **Second sighting.** The "MIT complies with zero-copyleft" framing is true and misleading — the vendor cloud is still required. |
+| [unslop](entities/tools/unslop.md) | draft | **Second sighting.** Report says licence NOT FOUND; it was verified CC-BY-4.0 on 2026-11-02. A retrieval failure, not a change. |
 | [worktrunk](entities/tools/worktrunk.md) | draft | **Updated.** Licence now confirmed MIT OR Apache-2.0; tier moved Context → Extract. The `pre-merge` hook is the part that is a control rather than a keystroke saver. |

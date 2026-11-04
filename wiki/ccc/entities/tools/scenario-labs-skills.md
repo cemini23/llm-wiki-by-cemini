@@ -57,6 +57,14 @@ The report correctly separates the two repositories: **`scenario-labs/skills` is
 
 Extract, **patterns only**. No account, no key, no credits.
 
+## Second sighting — 2026-11-04, and the claim that keeps reappearing
+
+`@osint-wiki/sources/eval-multi-wiki-repository-revenue-2026-11-04.md` URL 8 rates it **Extract** again and states: *"MIT — complies with Game-Time's zero-copyleft production dependency requirement."*
+
+**That sentence is true and misleading at the same time.** The repository licence is MIT; the skills are not usable without Scenario's MCP server, an account or API key, and paid Creative Unit credits. A zero-copyleft *dependency* requirement is satisfied; a **zero-cost, zero-vendor, offline-first** requirement is not, and Game-Time's stated constraints include offline-first.
+
+This is the second batch to make the same framing error, so it is worth naming as a standing correction: **for this repository, quote the licence and the vendor requirement in the same sentence, every time.** A licence check that stops at the LICENSE file will keep passing this and keep missing the dependency.
+
 ## Snippets
 
 > "Most skills rely on the Scenario MCP server at `https://mcp.scenario.com/mcp`." Usage is measured in "Creative Unit" credits. [README, fetched 2026-11-03]

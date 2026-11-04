@@ -2756,4 +2756,13 @@ Routing note: the PDFs sat in `research to be indexed/game-dev/` but were filed 
 - Newsletters: `latent-space` Legora legal agents, `pragmatic-engineer` tenfold PRs, `latent-space` AINews weights.
 
 **Convergent finding across three papers:** CLEO prunes a harness until only what earns its place remains; RoboArchitect grows one by diagnosing failures; Ask-Don't-Equip says the missing thing is a hypothesis, not more tools. All three leave the model alone and say the harness is where the leverage is.
+
+## [2026-11-04] ingest | Repository Revenue Evaluation (1 new entity, 3 updated)
+
+- `entities/tools/doop.md` — **new**. Design canvas with an agent screenshot loop. **AGPL-3.0, not MIT as the report claimed.**
+- `entities/tools/worktrunk.md` — **updated**. Third sighting; adds deterministic per-branch port hashing.
+- `entities/tools/scenario-labs-skills.md` — **updated**. Second sighting of the "MIT complies with zero-copyleft" framing; the vendor cloud is the real constraint.
+- `entities/tools/unslop.md` — **updated**. Report logged the licence as NOT FOUND; it was verified CC-BY-4.0 on 2026-11-02.
+
+**Pattern across this batch:** every re-surfaced tool re-tiered differently from its first appearance, and two of the four carried a licence error. Recurrence is not convergence.
 - `entities/tools/worktrunk.md` — **updated**. Licence confirmed MIT OR Apache-2.0, closing the 2026-10-25 gap. Tier Context → Extract. The `pre-merge` hook is the part that is a control, not a keystroke saver.

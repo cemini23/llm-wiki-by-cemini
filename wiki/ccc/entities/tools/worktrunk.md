@@ -55,6 +55,17 @@ A CLI for creating and removing git worktrees so several coding agents can work 
 
 So the honest position is narrower than either report: **creation is still a wrapper; hooks and per-worktree diff review are the parts that could matter.** Extract those ideas; whether to adopt the CLI is a separate, smaller question.
 
+## Third sighting — 2026-11-04
+
+`@osint-wiki/sources/eval-multi-wiki-repository-revenue-2026-11-04.md` URL 1 rates it **Extract** again and adds two specifics neither earlier pass carried:
+
+- **Deterministic per-branch port hashing.** Concurrent agents each get a stable dev-server port from the branch name, so two worktrees do not collide on localhost. That is a concrete fix for a real failure, and it is not something `git worktree` provides.
+- It is framed as solving **index contention** across concurrent coding agents — the git index is shared across worktrees, so parallel agents writing the index interfere.
+
+The licence is unchanged and matches what was verified on 2026-11-02: **MIT OR Apache-2.0**.
+
+**Verdict is stable across three passes.** Three evaluations, three Extract ratings, no new concerns. That is the strongest signal in this batch — most recurring items move between tiers.
+
 ## Dead Ends
 
 - Treating the report's Context rating as an evaluation. It is a placeholder, not a finding.

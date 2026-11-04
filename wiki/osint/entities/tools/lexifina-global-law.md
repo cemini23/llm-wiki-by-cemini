@@ -5,6 +5,7 @@ tags: [tool, law, genealogy, mcp, atto, provenance]
 keywords: [global-law, lexifina, statutory provenance, point-in-time law, italy, jure sanguinis, atto-mcp]
 related:
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md
+  - entities/tools/helix-foundry.md
   - concepts/historical-jurisdiction-atlas.md
 maturity: draft
 created: 2026-11-01

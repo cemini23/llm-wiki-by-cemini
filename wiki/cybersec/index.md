@@ -1131,3 +1131,9 @@ Six sources. The theme is that response-level safeguards do not protect the laye
 | [qistas-fairness-protocol](sources/arxiv-2610.40893-qistas-portable-fairness-protocol-2026-11-03.md) | draft | Pre-registered, portable fairness protocol. Hypotheses fixed before the models run. |
 | [replay-mopd](sources/arxiv-2611.02746-replay-continual-learning-mopd-2026-11-03.md) | draft | Continual distillation when earlier teachers are gone; sequential is 6.2 points below joint. |
 
+## Repository Revenue Evaluation (2026-11-04)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [soup](entities/tools/soup.md) | draft | Apache-2.0 YAML fine-tuning CLI, 10.1k stars. **The "4 GB laptop GPU" claim is a CUDA story** — Apple Silicon is "supported" but layer streaming is an opt-in beta and untested on MPS. Source: @osint-wiki/sources/eval-multi-wiki-repository-revenue-2026-11-04.md URL 10. |
+

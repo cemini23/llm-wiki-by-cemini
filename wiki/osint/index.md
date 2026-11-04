@@ -4894,3 +4894,12 @@ Skip record:
 | [glitchspx-two-zones-four-paths](sources/substack-rss-glitchspx-2026-11-03-two-zones-four-paths-2026-11-03.md) | VIX curve flip predicts **volatility, not direction**: median +2.6% twenty sessions later. | draft |
 | [arxiv-v10-11-skipped-no-lane](sources/arxiv-v10-11-skipped-no-lane-2026-11-03.md) | Three skips: movable antennas, lattice gauge theory, protein epistasis. "Ancestry" in the last is phylogenetics. | draft |
 
+## Repository Revenue Evaluation (2026-11-04)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-multi-wiki-repository-revenue](sources/eval-multi-wiki-repository-revenue-2026-11-04.md) | 20 URLs, **0 Integrate**. Eight licences "NOT FOUND"; seven rows admit the repo was never retrieved. Phase-0 found **four material errors**, including doop being AGPL not MIT. | draft |
+| [helix-foundry](entities/tools/helix-foundry.md) | Apache-2.0 local ontology drafter with a human promotion gate and row/quote provenance. **Calls Claude or OpenAI by default if a key is exported** — a direct clash with Atto's ban 4. | draft |
+| [worldmonitor](entities/tools/worldmonitor.md) | **Updated — fourth evaluation.** `tools/call` needs a paid key; the "free feed" hypothesis is retired. The report's licence line was wrong in the permissive direction. | draft |
+| [klement-europeans-stocks](sources/substack-rss-klement-2026-11-04-europeans-stocks-2026-11-04.md) | A €50,000 windfall lifts non-stockholder participation 8.4–12.8pp and leaves allocation unchanged. **Over 60% still hold nothing.** | draft |
+

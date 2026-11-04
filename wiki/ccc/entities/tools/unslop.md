@@ -60,6 +60,14 @@ The honest scope: this improves how a page reads, not whether the product is cor
 
 Integrate. Local use, no attribution owed. Review the diff.
 
+## Second sighting — 2026-11-04: the report contradicts a verified fact
+
+`@osint-wiki/sources/eval-multi-wiki-repository-revenue-2026-11-04.md` URL 20 re-surfaces this tool and records its licence as **"NOT FOUND"**, with the improvement line "None verified in crawl" — meaning the report did not retrieve the repository.
+
+**The licence was verified on 2026-11-02: CC-BY-4.0**, with the attribution obligation applying only to redistribution of the skill files. This page is correct and the report is not.
+
+The tool has now appeared in **two** batches and been downgraded to "unindexed" in the second. That is a retrieval failure on the eval side, not a change in the world — and it is the clearest illustration in this batch of why every licence line needs a Phase-0 pass rather than a citation.
+
 ## Snippets
 
 > "It also edits real source code and may offer to connect an image-generation service — it asks first." [README, fetched 2026-11-02]

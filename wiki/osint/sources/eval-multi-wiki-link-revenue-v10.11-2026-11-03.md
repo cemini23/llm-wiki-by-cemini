@@ -12,6 +12,7 @@ related:
   - entities/tools/webmcp.md
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md
   - sources/arxiv-v10-11-skipped-no-lane-2026-11-03.md
+  - sources/eval-multi-wiki-repository-revenue-2026-11-04.md
   - "@game-dev-wiki/sources/travian-civ-game-design-brief-2026-11-02.md"
 maturity: draft
 created: 2026-11-03
