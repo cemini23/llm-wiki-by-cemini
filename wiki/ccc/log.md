@@ -2742,4 +2742,18 @@ Routing note: the PDFs sat in `research to be indexed/game-dev/` but were filed 
 - `entities/tools/misakanet.md` — **new**. Local BM25 failure memory behind a `PostToolUse` error hook. The external control is the asset.
 - `entities/tools/boardui.md` — **new**. Copy-and-own React Aria + Tailwind v4 components that ship an `AGENTS.md`.
 - `entities/tools/agent-desktop.md` — **new**. Native accessibility-tree control. Skeleton traversal plus ref addressing. Never route to CeminiParlays.
+
+## [2026-11-03] ingest | v10.11 wave (6 entity pages, 9 papers, 3 newsletters)
+
+- `entities/tools/theatre.md` — **new**. Apache-2.0 core verified at 0.7.0; AGPL studio must stay a devDependency.
+- `entities/tools/desloppify.md` — **new**. **Custom licence, not OSI.** For-profit closed-source commercialisation is priced.
+- `entities/tools/scenario-labs-skills.md` — **new**. MIT skills, vendor cloud behind every generation.
+- `entities/tools/svgjs.md` — **new**. Three MIT plugins; annotation is not measurement.
+- `entities/tools/webmcp.md` — **new**. W3C spec for agent-callable browser tools.
+- `entities/tools/earendil-djs.md` — **new**. Watch: no licence, 18 hours old.
+- `entities/tools/agent-desktop.md` — **updated**. v10.11 raises it to Integrate; the 78–96% figure is the report's own.
+- Papers: `2611.03434` CLEO, `2610.42141` RoboArchitect, `2611.03412` DeliverBench, `2610.41350` Operon-S1, `2610.41172` context-as-infrastructure, `2610.41216` TinyAstral, `2611.03517` Ask-Don't-Equip, `2611.03586` FedReady, `2610.41717` instrument-centred agents.
+- Newsletters: `latent-space` Legora legal agents, `pragmatic-engineer` tenfold PRs, `latent-space` AINews weights.
+
+**Convergent finding across three papers:** CLEO prunes a harness until only what earns its place remains; RoboArchitect grows one by diagnosing failures; Ask-Don't-Equip says the missing thing is a hypothesis, not more tools. All three leave the model alone and say the harness is where the leverage is.
 - `entities/tools/worktrunk.md` — **updated**. Licence confirmed MIT OR Apache-2.0, closing the 2026-10-25 gap. Tier Context → Extract. The `pre-merge` hook is the part that is a control, not a keystroke saver.

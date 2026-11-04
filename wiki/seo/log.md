@@ -1911,3 +1911,12 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 
 - `sources/newsletter-rss-sparktoro-2026-11-02-20-zero-click-marketing-questions-everyones-aski.md` — **new**. Book-launch post for *Zero Click Marketing* (Fishkin and Natividad). The RSS body truncates before listing any of the 20 questions, so this page supports no claim about them.
 
+## [2026-11-03] ingest | v10.11 wave (6 papers)
+
+- `sources/arxiv-2611.02643-searchinject-retrieval-exposure-control-2026-11-03.md` — **new**. Admission-level defence against indirect prompt injection. Tuned against false quarantine on clean data, not against a detection rate. Reports honestly that the test threshold missed its calibration target.
+- `sources/arxiv-2611.02758-cadre-ecommerce-relevance-adjudication-2026-11-03.md` — **new**. Verifier-guided multi-agent adjudication offline, distilled for online serving.
+- `sources/arxiv-2610.41738-metacognitive-reliability-supervision-2026-11-03.md` — **new**. Final-answer correctness is only indirect evidence about whether searching was the right call.
+- `sources/arxiv-2610.41743-task-vectors-linear-decomposition-2026-11-03.md` — **new**. TR/TL decomposition; reports that random-direction optimisation also helps.
+- `sources/arxiv-2611.02634-evolving-explanations-faithfulness-2026-11-03.md` — **new**. Faithfulness enforced by extracting a checkable expression, not by asking a model to judge quality.
+- `sources/arxiv-2610.41893-automated-keyword-generation-dvs-2026-11-03.md` — **new**. Problem framing only; abstract truncated before the method.
+

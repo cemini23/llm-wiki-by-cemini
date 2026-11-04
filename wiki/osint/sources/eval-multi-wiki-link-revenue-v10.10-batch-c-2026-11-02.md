@@ -15,6 +15,7 @@ related:
   - entities/tools/kronos.md
   - sources/arxiv-v10-10-batch-c-skipped-no-lane-2026-11-02.md
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md
+  - sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-b-2026-11-01.md
 maturity: draft
 created: 2026-11-02

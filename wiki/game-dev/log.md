@@ -926,4 +926,16 @@ Append-only chronological log.
 - **Finding:** the supplied architecture spec's primary renderer is a pre-1.0 framework with 7 stars and one maintainer. Simulation must stay renderer-free.
 - **Finding:** expansion beats optimisation about 7:1 in Travian's own ROI guidance; show payback time as the economy's visible language.
 - **Deliverable (local, gitignored):** `briefs/game-dev/2026-11-02_travian-civ-game-design-brief.docx` — full brief for Gemini.
+
+## [2026-11-03] ingest | v10.11 — the three Travian source documents filed
+
+The 2026-11-02 synthesis page existed but the three underlying documents were still sitting in the osint inbox, unfiled. They are now source pages.
+
+- `sources/travian-civ-game-design-brief-2026-11-02.md` — **new**. 7,344 words. The market case and the critique of the other two documents.
+- `sources/travian-strategy-engine-architecture-2026-11-02.md` — **new**. 8,283 words. T4 economy, siege maths, event-warp clock.
+- `sources/travian-civ-deep-research-report-2026-11-02.md` — **new**. 5,306 words. Prior art and tooling.
+
+- `concepts/travian-civ-browser-strategy-design.md` — **updated**. Records that the project is now named **Game-Time**, is co-equal Priority #1 in the v10.11 eval, and that **`/Users/claudiobarone/Projects/game-time` does not exist**. Seven v10.11 URLs route to it; all are launch inventory, not improvements.
+
+A duplicate concept page (`game-time-project.md`) was created and then removed once the existing 2026-11-02 synthesis was found. One page per project.
 - No sources ingested to `sources/`; this is a synthesis page. External citations are inline URLs with retrieval dates.

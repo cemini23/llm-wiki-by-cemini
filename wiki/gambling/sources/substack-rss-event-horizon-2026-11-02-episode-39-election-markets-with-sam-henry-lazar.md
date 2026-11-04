@@ -4,6 +4,7 @@ type: source
 tags: [source, newsletter, prediction-markets, kalshi, polymarket, regulation]
 related:
   - "@osint-wiki/concepts/dcm-state-preemption.md"
+  - sources/substack-rss-event-horizon-2026-11-03-five-thoughts-midterms-2026-11-03.md
 maturity: draft
 read_status: read
 created: 2026-11-02

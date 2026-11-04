@@ -12,9 +12,13 @@ related:
   - concepts/agentic-npc-design-guardrails.md
   - concepts/stronghold-2-ai-lords.md
   - concepts/medieval-sim-fun-vs-accuracy.md
+  - sources/travian-civ-game-design-brief-2026-11-02.md
+  - sources/travian-strategy-engine-architecture-2026-11-02.md
+  - sources/travian-civ-deep-research-report-2026-11-02.md
+  - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md"
 maturity: draft
 created: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 ## Raw Concept
@@ -111,6 +115,22 @@ The load-bearing rule is not the choice of renderer. It is that **the simulation
 6. Target device: desktop only, or tablet?
 7. Narration: story, or personalities only?
 8. Distribution: itch.io, Steam wrapper, or self-hosted?
+
+### The project is now named, and it does not exist yet (2026-11-03)
+
+The eval runtime advanced to **v10.11** on 2026-11-03 and moved the priority stack. It now reads: **#1 Atto + Collectibles + Game-Time (co-equal)**, #2 CeminiDFS + CeminiParlays, #3 GuruWatcher + Basgiath.
+
+That names this project **Game-Time**, and lifts it to co-equal first priority.
+
+**`/Users/claudiobarone/Projects/game-time` does not exist.** No working copy exists under `~/Projects` as of 2026-11-03. The three source documents below and this concept page are the entire project.
+
+Consequence for the eval's routings: **seven of the twenty v10.11 URLs route to game-time** — Effekseer, theatre, svg.js, agent-desktop, scenario-labs skills, desloppify, and a Watch on `djs`. All seven are **launch inventory for a project at day zero**, not improvements to a running system. None should be acted on before the milestone in the Verdict above is chosen.
+
+The three underlying documents are now filed as source pages:
+
+- @sources/travian-civ-game-design-brief-2026-11-02.md — the market case and the critique of the other two
+- @sources/travian-strategy-engine-architecture-2026-11-02.md — the T4 mathematics and the event-warp clock
+- @sources/travian-civ-deep-research-report-2026-11-02.md — prior art and what killed similar projects
 
 ## Snippets
 

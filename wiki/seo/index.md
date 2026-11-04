@@ -459,4 +459,10 @@ If you're new to this wiki:
 | sources/arxiv-2610.40292-dolphinrouting-cluster-level-binary-routing-for-2026-11-01.md | source | Across the mixed workload and real data, DolphinRouting with k-means reduces P90 TTFT by 5.7–7.9% and P90 TPOT by 2.6–10.1% relative to Dynamo. |
 | sources/newsletter-rss-sterling-sky-2026-10-28-who-updates-google-information-why-google-keeps.md | source | The excerpt names the sources in this order: publicly-available information, such as the official business website or social profiles; third-party… |
 | sources/newsletter-rss-sparktoro-2026-11-02-20-zero-click-marketing-questions-everyones-aski.md | source | Book-launch post for Zero Click Marketing (Fishkin and Natividad). The RSS body truncates before listing any of the 20 questions. |
+| sources/arxiv-2611.02643-searchinject-retrieval-exposure-control-2026-11-03.md | source | Controls which pages reach model context. Top-10 target exposure 0.94 to 0.16, clean nDCG@10 changed by 0.0018. |
+| sources/arxiv-2611.02758-cadre-ecommerce-relevance-adjudication-2026-11-03.md | source | Expensive multi-agent adjudication offline, distilled into a cheap student for serving. |
+| sources/arxiv-2610.41738-metacognitive-reliability-supervision-2026-11-03.md | source | Reward the search decision, not the answer: current-state reliability plus search-action score. |
+| sources/arxiv-2610.41743-task-vectors-linear-decomposition-2026-11-03.md | source | Task vectors split into task-recognition and task-learning components; random directions also help, TR/TL are just more reliable. |
+| sources/arxiv-2611.02634-evolving-explanations-faithfulness-2026-11-03.md | source | A validator extracts a symbolic expression from an explanation and checks it numerically. 84.0% pass rate. |
+| sources/arxiv-2610.41893-automated-keyword-generation-dvs-2026-11-03.md | source | Keyword generation for variant datasets; the useful keyword is often the difference. Abstract truncated. |
 

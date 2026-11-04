@@ -1216,3 +1216,12 @@ Five generative-media papers. Three robotics/world-model papers filed here were 
 - [sonoworld4d-from-one-video-to-a-4d-audio-visual.](sources/arxiv-2610.40640-sonoworld4d-from-one-video-to-a-4d-audio-visual-2026-11-01.md) — One monocular video becomes a 4D audio-visual scene: 360 background, foreground motion trajectories, and a synchronized sound field. — `paper, video, spatial-audio, 4d, ingest-2026-11-01`
 - [read-allocate-route-role-coupled-tokenization-fo.](sources/arxiv-2610.40647-read-allocate-route-role-coupled-tokenization-fo-2026-11-01.md) — SpecSlot splits DCT bands across slots so only the lowest-frequency slot joins global attention, decoupling detail from attention cost. — `paper, tokenization, efficiency, ingest-2026-11-01`
 
+## v10.11 wave (2026-11-03)
+
+- [a-better-critic-matters-for-distribution-matchin.](sources/arxiv-2610.42135-better-critic-distribution-matching-distillation-2026-11-03.md) — A bigger teacher can collapse distillation when the critic stays small; joint scaling and a step-aware critic fix it. — `paper, distillation, diffusion, ingest-2026-11-03`
+- [hierarchical-world-models-with-implicit-dynamics.](sources/arxiv-2610.42146-hierarchical-world-models-implicit-dynamics-2026-11-03.md) — ID-WM separates reachability from control: 38.5% over policy and diffusion planners. — `paper, world-models, planning, ingest-2026-11-03`
+- [latent-reasoning-in-continuous-space-for-unified.](sources/arxiv-2610.42149-larc-latent-reasoning-continuous-2026-11-03.md) — LARC: reasoning in continuous space because chain-of-thought is in the wrong substrate for image generation. — `paper, multimodal, reasoning, ingest-2026-11-03`
+- [bisect-bilevel-spectral-decomposition-for-low-ra.](sources/arxiv-2611.03574-bisect-bilevel-spectral-lora-2026-11-03.md) — Spectral starvation: locking a LoRA basis before seeing the task refuses available capacity. — `paper, lora, continual-learning, ingest-2026-11-03`
+- [structured-visual-landscape-generating-preferred.](sources/arxiv-2611.03597-structured-visual-landscape-2026-11-03.md) — Vis-Lens generates a neuron's preferred image in one pass instead of per-image optimisation. — `paper, interpretability, diffusion, ingest-2026-11-03`
+- [reviso-not-all-visual-evidence-deserves-equal-at.](sources/arxiv-2611.03602-reviso-video-captioning-attention-2026-11-03.md) — Reviso: a global preview then selective attention, because uniform sampling misses the event. — `paper, video, captioning, ingest-2026-11-03`
+

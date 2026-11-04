@@ -2371,3 +2371,12 @@ Routed from `@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-202
 
 - `entities/tools/heretic.md` — **new**. Training-free refusal-direction ablation with slop suppression. **Licence unstated**, so it is a method reference and must not be vendored. No training curve exists to reveal capability loss, so measure before and after. Lab scope unchanged: authorized defensive work only.
 
+## [2026-11-03] ingest | v10.11 wave (6 papers)
+
+- `sources/arxiv-2611.03555-mcp-tool-poisoning-cross-framework-2026-11-03.md` — **new**. First cross-framework MCP tool-poisoning measurement with real execution. The MCP design carries attacker-controlled descriptions, schema fields, and response data into model context unvalidated.
+- `sources/arxiv-2611.03374-goal-harm-conflict-2026-11-03.md` — **new**. Goal–harm conflict unifies agentic misalignment and alignment faking.
+- `sources/arxiv-2610.40959-p-contextbench-personal-context-2026-11-03.md` — **new**. Life-story personal context, not profiles.
+- `sources/arxiv-2610.40966-incomplete-relevance-judgments-2026-11-03.md` — **new**. 28%→72% of no-gold contexts contain the answer as retrievers improve; shortcut precision .68→.10.
+- `sources/arxiv-2610.40893-qistas-portable-fairness-protocol-2026-11-03.md` — **new**. Pre-registered portable fairness protocol, instantiated for Iraq.
+- `sources/arxiv-2611.02746-replay-continual-learning-mopd-2026-11-03.md` — **new**.
+

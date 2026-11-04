@@ -1423,3 +1423,8 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2607-28520-cs-rnr-opp
 
 - `sources/substack-rss-event-horizon-2026-11-02-episode-39-election-markets-with-sam-henry-lazar.md` — **new**. Pre-midterm briefing with Sam Henry Lazarus (CFR). Saturday Kalshi volume $4.79bn, **73.9% parlays**. Polymarket returned $3.9M after a compromised third-party monitoring script hijacked user sessions. 37 state AGs filed an amicus supporting Utah in *KalshiEX v. Cox*.
 
+## [2026-11-03] ingest | v10.11 wave (2 sources)
+
+- `sources/substack-rss-event-horizon-2026-11-03-five-thoughts-midterms-2026-11-03.md` — **new**. The bind: a bad call destroys credibility because the venues marketed accuracy in 2024; a Democratic Congress brings worse oversight. Thought 3 opens "Election markets are almost a rounding error".
+- `sources/arxiv-2611.01754-mean-field-games-optimization-2026-11-03.md` — **new**. Mean field games survey, filed for the equilibrium formalism rather than any market content. Title page only.
+

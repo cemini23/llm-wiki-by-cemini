@@ -5,6 +5,8 @@ tags: [tool, agents, desktop-automation, accessibility, vercel]
 keywords: [agent-desktop, accessibility api, ax tree, skeleton traversal, c-abi, ffi, native automation]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md"
+  - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md"
+  - entities/tools/webmcp.md
 maturity: draft
 created: 2026-11-02
 updated: 2026-11-02
@@ -53,6 +55,20 @@ More generally: a tool that can drive any native app is also a tool that can dri
 ### Status
 
 Extract. The traversal pattern is the asset. Scope any actual use narrowly.
+
+## Re-surface — v10.11 (2026-11-03): Extract → Integrate
+
+`@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md` URL 14 raises this to **Integrate** and routes it to Collectibles, game-time, and Atto.
+
+**The licence did not change and neither did the mechanism.** Apache-2.0, same accessibility-tree approach. What changed is the report's estimate: it claims a **78%–96% reduction in GUI automation token spend**.
+
+**Treat that number as unverified.** It is the report's own estimate, not a vendor benchmark and not a measurement on this machine. The mechanism is sound — a text accessibility tree is far smaller than a screenshot — but the specific range has no source behind it. Measure before quoting it.
+
+**The install path is new.** The report gives `npx skills add https://github.com/vercel-labs/agent-desktop --skill agent-desktop`, which installs a skill rather than only a CLI. That widens the surface: a skill is instructions an agent follows, so the same question applies as to any skill — what does it let the agent do, and to which apps.
+
+**The CeminiParlays ban from batch C still stands and is now more important.** The v10.11 report does **not** list CeminiParlays among its routes, which is correct. General desktop automation must never reach a sportsbook UI.
+
+**What Integrate means here.** Not "install it everywhere". It means: run the read-only snapshot and ref actions on the specific apps the operator already drives by hand, and decide per app. The three apps named are a cataloguing tool, an Electron game wrapper (via `--cdp`), and Atto's desktop flows.
 
 ## Snippets
 

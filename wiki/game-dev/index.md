@@ -353,3 +353,11 @@ Catalog of all wiki pages. Updated on each ingest.
 | entities/tools/pausevfx.md | entity | Watch — sign-in wall |
 | entities/tools/dessa.md | entity | Watch — waitlist only |
 
+## v10.11 wave (2026-11-03)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [travian-civ-game-design-brief](sources/travian-civ-game-design-brief-2026-11-02.md) | The market case **and the critique of its own companion spec**: "a two-year scope presented as four phases", with the AI — the reason the game exists — scheduled last. | draft |
+| [travian-strategy-engine-architecture](sources/travian-strategy-engine-architecture-2026-11-02.md) | T4 economy, siege mathematics, and the analytical event-warp clock. Deterministic simulation separated from presentation. | draft |
+| [travian-civ-deep-research-report](sources/travian-civ-deep-research-report-2026-11-02.md) | Prior art, tooling, and what killed similar projects. CONFIRMED/CLAIMED/UNVERIFIED/IDEA evidence labels. | draft |
+

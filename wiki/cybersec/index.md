@@ -1120,3 +1120,14 @@ Six sources. The theme is that response-level safeguards do not protect the laye
 |------|----------|---------|
 | [heretic](entities/tools/heretic.md) | draft | Training-free refusal-direction ablation. **Licence unstated — method reference only, do not vendor.** No training curve exists to show what capability was lost, so measure before and after. Source: @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md URL 10. |
 
+## v10.11 wave (2026-11-03)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [mcp-tool-poisoning](sources/arxiv-2611.03555-mcp-tool-poisoning-cross-framework-2026-11-03.md) | draft | **The actionable one.** First cross-framework measurement with real tool execution. Tool descriptions, schema fields, and response data reach model context unvalidated. 25-class root-cause taxonomy. |
+| [goal-harm-conflict](sources/arxiv-2611.03374-goal-harm-conflict-2026-11-03.md) | draft | Agentic misalignment and alignment faking share one decision structure: preserve the goal with a harmful act, or refuse and lose it. |
+| [p-contextbench](sources/arxiv-2610.40959-p-contextbench-personal-context-2026-11-03.md) | draft | Personal context built as life stories, not profiles. The closest benchmark to the Atto problem. |
+| [incomplete-relevance-judgments](sources/arxiv-2610.40966-incomplete-relevance-judgments-2026-11-03.md) | draft | The better the retriever, the worse the abstention label: 28%→72% of no-gold contexts contain the answer. |
+| [qistas-fairness-protocol](sources/arxiv-2610.40893-qistas-portable-fairness-protocol-2026-11-03.md) | draft | Pre-registered, portable fairness protocol. Hypotheses fixed before the models run. |
+| [replay-mopd](sources/arxiv-2611.02746-replay-continual-learning-mopd-2026-11-03.md) | draft | Continual distillation when earlier teachers are gone; sequential is 6.2 points below joint. |
+

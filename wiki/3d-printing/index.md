@@ -211,3 +211,9 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [a-3d-measurement-workflow-for-assessing-replicat.](sources/arxiv-2610.39046-a-3d-measurement-workflow-for-assessing-replicat-2026-11-01.md) — Whole-channel replication quality and printed-insert wear from two 3D scans, scored by slope-map correlation RQ_d. — `paper, metrology, tooling, ingest-2026-11-01`
 - [open-source-framework-for-the-visualization-quan.](sources/arxiv-2610.38948-open-source-framework-for-the-visualization-quan-2026-11-01.md) — 3D Slicer extension for 4D flow and high-dimensional MRI. Weak fit for this wiki; filed as routed from the inbox batch. — `paper, medical-imaging, weak-fit, ingest-2026-11-01`
 
+## v10.11 wave (2026-11-03)
+
+- [isotropic-metamaterials-hashin-shtrikman-pinn](sources/arxiv-2611.02622-isotropic-metamaterials-hashin-shtrikman-pinn-2026-11-03.md) — Plate-lattice metamaterials pushed to the Hashin-Shtrikman stiffness bound, isotropically, using a physics-informed network as the generator. — `paper, metamaterials, lattice, ingest-2026-11-03`
+- [self-aligning-printed-structures-optical-fibers](sources/arxiv-2611.02850-self-aligning-printed-structures-optical-fibers-2026-11-03.md) — Two-photon printing on planar substrates with a compliant socket that self-aligns, so devices batch-print and the substrate becomes a magazine. — `paper, microfabrication, ingest-2026-11-03`
+- [one-shot-printable-soft-robots-co-design](sources/arxiv-2611.03216-one-shot-printable-soft-robots-co-design-2026-11-03.md) — Co-designs material, actuator placement and control against a differentiable MPM simulator, then prints monolithically on FDM. — `paper, soft-robotics, fdm, ingest-2026-11-03`
+

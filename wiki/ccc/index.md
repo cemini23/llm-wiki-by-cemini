@@ -1437,5 +1437,28 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 | [tokeneconomizer](entities/tools/tokeneconomizer.md) | draft | Microsoft, Apache-2.0. Micro-skills, tool pruning, loop guard. **The 18.4–30.9% figure is cost on SWE-Bench, not tokens.** State lives in `~/.tokeneconomizer`. |
 | [misakanet](entities/tools/misakanet.md) | draft | Local BM25 failure memory behind a `PostToolUse` error hook. The external control is the asset — it does not rely on the model choosing to look something up. |
 | [boardui](entities/tools/boardui.md) | draft | Copy-and-own React Aria + Tailwind v4 components that ship their own `AGENTS.md`. MIT; Pro tier separate. You own the maintenance. |
-| [agent-desktop](entities/tools/agent-desktop.md) | draft | Native accessibility-tree control for agents. Skeleton traversal plus ref addressing. **Never route to CeminiParlays.** |
+| [agent-desktop](entities/tools/agent-desktop.md) | draft | Native accessibility-tree control for agents. Skeleton traversal plus ref addressing. **Never route to CeminiParlays.** **Re-surfaced v10.11: Extract → Integrate; the 78–96% saving is unverified.** |
+
+## v10.11 wave (2026-11-03)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [theatre](entities/tools/theatre.md) | draft | `@theatre/core` Apache-2.0 0.7.0, verified. `@theatre/studio` is **AGPL** — keep it a devDependency or the licence story is a hope. |
+| [desloppify](entities/tools/desloppify.md) | draft | **Custom licence, not OSI.** Free for individuals; for-profit closed-source commercialisation is priced. Take the queue pattern, not the tool. |
+| [scenario-labs-skills](entities/tools/scenario-labs-skills.md) | draft | MIT skills, but every generation needs Scenario's MCP server and paid Creative Units. The "pre-spend cost gate" meters *their* currency. |
+| [svgjs](entities/tools/svgjs.md) | draft | MIT plugins: `pathmorphing`, `topoly`, `select`/`resize`. A hand-drawn box is an annotation, never a measurement. |
+| [webmcp](entities/tools/webmcp.md) | draft | W3C community spec for declaring browser tools. The third link after agent-discoverability: Found → Picked → **callable**. |
+| [earendil-djs](entities/tools/earendil-djs.md) | draft | Snapshottable JS/TS-to-WASM engine. **Watch** — 18 hours old, no licence file. |
+| [cleo-optimize-the-harness](sources/arxiv-2611.03434-optimize-the-harness-not-the-model-cleo-2026-11-03.md) | draft | A harness **two orders of magnitude smaller** loses 1.2 points to Claude Code SDK at 83.8%. Most of a big harness is surface area. |
+| [roboarchitect](sources/arxiv-2610.42141-roboarchitect-harness-design-automation-2026-11-03.md) | draft | A coding model rewrites the harness around a frozen policy: 9.7% → 43.3% on unseen scenes. |
+| [deliverbench](sources/arxiv-2611.03412-deliverbench-multi-stage-projects-2026-11-03.md) | draft | Best of seven systems scores 65.0/100. All seven fixed the findings; **one preserved traceability**. |
+| [operon-s1](sources/arxiv-2610.41350-operon-s1-decision-controller-2026-11-03.md) | draft | 13 closed-question decision points; messages never contain an answer, so any model can judge. |
+| [context-as-infrastructure](sources/arxiv-2610.41172-context-as-infrastructure-2026-11-03.md) | draft | Compile context ahead of time for a search harness. |
+| [tinyastral](sources/arxiv-2610.41216-tinyastral-self-evolving-harnesses-2026-11-03.md) | draft | An evolved harness transfers to a 4B student: 62.8 against a 180B teacher's 63.6. |
+| [ask-dont-equip](sources/arxiv-2611.03517-ask-dont-equip-question-driven-agents-2026-11-03.md) | draft | Agents respond to hard targets by adding equipment; what they lack is a hypothesis about where the gap is. |
+| [fedready](sources/arxiv-2611.03586-fedready-bounded-agents-federation-2026-11-03.md) | draft | Bounded agents propose; the runtime admits artifacts by digest. The agent cannot admit its own work. |
+| [instrument-centered-agents](sources/arxiv-2610.41717-instrument-centered-ai-agents-2026-11-03.md) | draft | Evaluation when the environment is expensive to reset. |
+| [legora-legal-agents](sources/newsletter-rss-latent-space-2026-11-02-legal-agents-legora-2026-11-03.md) | draft | Test environments built like RL "worlds" when you cannot see production data. Three engineers plus three lawyers, permanently. |
+| [tenfold-prs](sources/newsletter-rss-pragmatic-engineer-2026-11-03-tenfold-prs-2026-11-03.md) | draft | 8–20 PRs/month → 200+. Comms and review vanished; **thrashing, lost shared context, and less design focus** replaced them. |
+| [ainews-weights](sources/newsletter-rss-latent-space-2026-11-03-ainews-weights-2026-11-03.md) | draft | Models reading and writing weights of small networks directly. |
 | [worktrunk](entities/tools/worktrunk.md) | draft | **Updated.** Licence now confirmed MIT OR Apache-2.0; tier moved Context → Extract. The `pre-merge` hook is the part that is a control rather than a keystroke saver. |

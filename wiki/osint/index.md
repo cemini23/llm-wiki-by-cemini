@@ -4879,3 +4879,18 @@ Skip record:
 |------|---------|----------|
 | [arxiv-v10-10-batch-c-skipped-no-lane](sources/arxiv-v10-10-batch-c-skipped-no-lane-2026-11-02.md) | arXiv 2610.40772, DiscKosky — hep-th Feynman-integral package. "Genealogical" is physics terminology; no Atto relevance. | draft |
 
+## v10.11 wave (2026-11-03)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-multi-wiki-link-revenue-v10.11](sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md) | Runtime advanced to v10.11. 1 Integrate, 6 Extract, 1 Watch, 10 Context, 2 Pass. Priority stack changed: **Game-Time joins #1**. Phase-0 corrected the desloppify and scenario-labs licences. | draft |
+| [crypto-option-repair-risk](sources/arxiv-2611.00958-crypto-option-repair-risk-2026-11-03.md) | Admissible repairs of one quote panel disagree downstream; curvature differs by 4ε/h². Report the dispersion, not one surface. | draft |
+| [financial-derivatives-lecture-notes](sources/arxiv-2611.01355-financial-derivatives-lecture-notes-2026-11-03.md) | Lorig, 226 pp, open lecture notes. Reference text, not a research contribution. | draft |
+| [urdu-nastaliq-vlm-benchmark](sources/arxiv-2611.01635-urdu-nastaliq-vlm-benchmark-2026-11-03.md) | Zero-shot VLM OCR limits. A refusal beats a plausible wrong transcription. | draft |
+| [outlier-weekly-2026-11-02](sources/substack-rss-outlier-weekly-2026-11-02-twenty-years-of-cost-one-year-of-revenue.md) | Anthropic S-1: consumption revenue against compute commitments up to **20 years with escalators**. | draft |
+| [klement-its-not-you-its-your-ai](sources/substack-rss-klement-2026-11-03-its-not-you-its-your-ai.md) | **One neuron** flips an LLM's investment recommendation, no prompt change. Closed weights: unknown bias. Open weights: chosen bias. | draft |
+| [klement-ai-iran](sources/substack-rss-klement-2026-11-03-ai-iran-trump-2026-11-03.md) | Teaser: the AI boom as a bet against a strike on Iran. Paywalled. | draft |
+| [wublock-vc-monthly](sources/substack-rss-wublock-2026-11-03-vc-monthly-kalshi-1b-2026-11-03.md) | Oct crypto VC: 67 deals, $2.099bn, **−65.3% YoY**. Kalshi $1bn at **$40bn**, up from $22bn in May. | draft |
+| [glitchspx-two-zones-four-paths](sources/substack-rss-glitchspx-2026-11-03-two-zones-four-paths-2026-11-03.md) | VIX curve flip predicts **volatility, not direction**: median +2.6% twenty sessions later. | draft |
+| [arxiv-v10-11-skipped-no-lane](sources/arxiv-v10-11-skipped-no-lane-2026-11-03.md) | Three skips: movable antennas, lattice gauge theory, protein epistasis. "Ancestry" in the last is phylogenetics. | draft |
+

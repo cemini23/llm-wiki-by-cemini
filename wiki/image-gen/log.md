@@ -4064,3 +4064,14 @@ Full triage of all 18 briefs in `briefs/` (the gitignored deliverables directory
 
 `arxiv-2610.40618`, `arxiv-2610.40640`, `arxiv-2610.40647` → `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/`. All size-verified; local copies removed. Location fields added.
 
+## [2026-11-03] ingest | v10.11 wave (6 papers)
+
+- `sources/arxiv-2610.42135-better-critic-distribution-matching-distillation-2026-11-03.md` — **new**. A larger teacher with a fixed critic degrades or collapses the student; joint scaling plus a step-aware critic (STAC).
+- `sources/arxiv-2610.42146-hierarchical-world-models-implicit-dynamics-2026-11-03.md` — **new**. High level samples reachable transitions, low level solves inverse dynamics.
+- `sources/arxiv-2610.42149-larc-latent-reasoning-continuous-2026-11-03.md` — **new**. Reasoning in a different substrate than generation is the failure; curriculum SFT then information-gain RL.
+- `sources/arxiv-2611.03574-bisect-bilevel-spectral-lora-2026-11-03.md` — **new**. Orthogonality-based LoRA isolation starves the update; capacity is refused rather than competed for.
+- `sources/arxiv-2611.03597-structured-visual-landscape-2026-11-03.md` — **new**. Preferred images in one pass via an activation prior.
+- `sources/arxiv-2611.03602-reviso-video-captioning-attention-2026-11-03.md` — **new**. Global preview then selective attention; uniform sampling is why captions name objects and miss events.
+
+Skipped to `@osint-wiki/sources/arxiv-v10-11-skipped-no-lane-2026-11-03.md`: `2611.03530` (non-Abelian lattice gauge theory).
+

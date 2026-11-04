@@ -815,3 +815,11 @@ Pages touched: 5 (1 created + 4 modified) — within schema bound. Not committed
 
 `arxiv-2610.36598`, `arxiv-2610.38948`, `arxiv-2610.39046` → `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/`. All size-verified; local copies removed. Location fields added to the two source pages created on 2026-11-01.
 
+## [2026-11-03] ingest | v10.11 wave (3 papers)
+
+- `sources/arxiv-2611.02622-isotropic-metamaterials-hashin-shtrikman-pinn-2026-11-03.md` — **new**. Hashin-Shtrikman stiffness limit reached isotropically with a PINN as the design generator.
+- `sources/arxiv-2611.02850-self-aligning-printed-structures-optical-fibers-2026-11-03.md` — **new**. Passive compliant alignment plus planar batch printing. Two-photon scale, not FDM.
+- `sources/arxiv-2611.03216-one-shot-printable-soft-robots-co-design-2026-11-03.md` — **new**. The strongest FDM-relevant paper of the three: differentiable MPM co-design producing a monolithic print with no post-assembly.
+
+Re-delivered and already filed: `2610.36598`, `2610.38948`, `2610.39046`. Archived again without new pages.
+

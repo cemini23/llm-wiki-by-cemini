@@ -10809,3 +10809,20 @@ Six PDFs appeared in `research to be indexed/osint/` during the wave. Five alrea
 
 Already filed, archived without a new page: `2610.35762` (urban screens), `2610.36392` (implied fee rates), `2610.36921` (operator splitting), `2610.36956` (nineteenth-century mining), `2610.40425` (Bergomi composite likelihood).
 
+## [2026-11-03] ingest | v10.11 eval wave (1 eval source, 5 newsletters, 3 papers, 1 skip record)
+
+**The runtime advanced to v10.11** — the first time the version string has moved since 2026-10-25. The priority stack also changed: **#1 Atto + Collectibles + Game-Time (co-equal)**, #2 CeminiDFS + CeminiParlays, #3 GuruWatcher + Basgiath.
+
+- `sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md` — **new**. 1 Integrate (agent-desktop), 6 Extract, 1 Watch, 10 Context, 2 Pass.
+- `sources/arxiv-2611.00958-crypto-option-repair-risk-2026-11-03.md` — **new**.
+- `sources/arxiv-2611.01355-financial-derivatives-lecture-notes-2026-11-03.md` — **new**. Reference text.
+- `sources/arxiv-2611.01635-urdu-nastaliq-vlm-benchmark-2026-11-03.md` — **new**. Weak-fit method reference.
+- `sources/substack-rss-outlier-weekly-2026-11-02-twenty-years-of-cost-one-year-of-revenue.md` — **new**. Anthropic S-1 duration mismatch.
+- `sources/substack-rss-klement-2026-11-03-its-not-you-its-your-ai.md` — **new**. Single-neuron investment bias.
+- `sources/substack-rss-klement-2026-11-03-ai-iran-trump-2026-11-03.md` — **new**. Paywalled teaser.
+- `sources/substack-rss-wublock-2026-11-03-vc-monthly-kalshi-1b-2026-11-03.md` — **new**.
+- `sources/substack-rss-glitchspx-2026-11-03-two-zones-four-paths-2026-11-03.md` — **new**.
+- `sources/arxiv-v10-11-skipped-no-lane-2026-11-03.md` — **new skip record**. 2610.42078 (antennas), 2611.03530 (lattice gauge), 2611.00360 (protein epistasis — "ancestry" is phylogenetic, not genealogical).
+
+**The largest finding of the wave is structural:** seven of twenty URLs route to `/Users/claudiobarone/Projects/game-time`, and **that directory does not exist**. Game-time is named, prioritised, and unbuilt. See @game-dev-wiki/concepts/travian-civ-browser-strategy-design.md.
+
