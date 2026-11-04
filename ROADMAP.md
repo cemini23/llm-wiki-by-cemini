@@ -30,6 +30,19 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-11-04 — repository revenue evaluation)
+
+- **A weak batch by content, a strong one by correction.** 20 URLs, **0 Integrate**, eight licences recorded as "NOT FOUND", and seven rows that admit the repository was never retrieved. Four of the twenty were repeats from earlier batches.
+- **The correction that mattered:** the report called `kgoedecke/doop` **MIT** and "compliant with Game-Time's zero-copyleft rule". It is **AGPL-3.0**. Taken at face value that would have put copyleft obligations on a commercial game's entire source tree. The batch's one game-time-relevant licence claim was wrong, and wrong in the direction that costs the most.
+- **The one valuable find: `helixdb/helix-foundry`.** Apache-2.0, 2.0k stars. A local ontology drafter with a **mandatory human promotion gate** and **row/quote provenance** — the closest thing yet to what `atto-mcp` needs for citation lineage. It also **calls Claude or OpenAI by default when a key is exported**, which is a direct clash with Atto's ban 4. Loopback binding does not prevent it; the model call is the leak.
+- **`worldmonitor`, fourth evaluation, hypothesis retired.** `tools/list` is public but **`tools/call` requires a paid key**. Every prior pass assumed a free feed. The report also mis-stated the licence in the permissive direction: commercial use *is* permitted under AGPL; a separate agreement covers private proprietary use and branding. Verdict unchanged — never bundle, consume as an external service only.
+- **Two more corrections:** `Soup` is Apache-2.0 (report: not found) but its "4 GB laptop GPU" claim is a **CUDA** story — Apple Silicon is "supported" with layer streaming an untested opt-in beta. `unslop` was logged "NOT FOUND"; verified **CC-BY-4.0** on 2026-11-02.
+- **Recurrence is not convergence.** Every re-surfaced tool re-tiered differently from its first appearance, and two of the four carried a licence error. The "MIT complies with zero-copyleft" framing for scenario-labs appeared for the second time and is still misleading — the vendor cloud is the real constraint.
+- **Four prompts staged** in `briefs/`, all scoring 100/100: atto, collectibles, game-time, guruwatcher. The guruwatcher one is a **hold** — this batch gives it nothing, and says so.
+- **Archive.** 2 raws. Inbox empty.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps. Pushed as `f2586e2c2`.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
 ## Current state (2026-11-03 — v10.11 wave)
 
 - **The runtime advanced.** First version change since 2026-10-25: **v10.11**. The priority stack also moved to **#1 Atto + Collectibles + Game-Time (co-equal)**, #2 CeminiDFS + CeminiParlays, #3 GuruWatcher + Basgiath.
