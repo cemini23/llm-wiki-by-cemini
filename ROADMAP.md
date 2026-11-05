@@ -30,6 +30,25 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-11-05 — v10.11 link evaluation)
+
+- **One Integrate: `deja-vu`.** MIT, ~1.4k stars, local Go binary that indexes the session transcripts 43 coding harnesses already write to disk — commands with exit codes, files opened, and the exact `Edit` spans. **Zero LLM calls by default.** The first tool in weeks that is unambiguously safe for Atto.
+  - **Configure `~/.config/deja/exclude` before the first index**, with `Desktop/family/` and `~/AttoVault/` listed.
+  - **The report omitted the caveat that matters:** *credentials are redacted at index time, but the original transcripts keep them.*
+- **Phase-0 corrected two licences.** `pagesift` was logged "NOT FOUND" and is **AGPL-3.0** — and was routed to two commercial projects. `crawlee` was logged unverified and is Apache-2.0. That is the third batch running where an unverified licence turned out to be copyleft.
+- **`ontographia` is architecturally right for Atto and blocked on maturity.** Ontology-gated query compilation: the model emits schema-constrained Intent, never Cypher. But **15 stars, 0 forks, 105 commits**, and the README does not say whether its experimental LLM layer runs locally. Under ban 4 that is the whole question.
+- **`helix-foundry` re-tiered Extract → Watch in one day**, on a packaging detail (no `0.1.0` tag, no published Docker image). The substantive finding is unchanged: it calls Claude or OpenAI by default when a key is exported.
+- **Three papers matter more than most of the eval.**
+  - **EditVeto** — a 0.6B gate that **reverts the OCR corrections an LLM got wrong**. The oracle finding is the design insight: given true error locations, per-span generation is *worse* than no correction; vetoing a full rewrite's edits helps. Directly relevant to any Atto post-OCR step.
+  - **auto_research** — a number enters a report only if **a recorded tool output contains it**. Provenance as a lookup, not a prompt instruction.
+  - **Subconscious** — **speculative decoding is not behaviour-neutral past ~30 steps.** It shifts long-horizon trajectories in random directions, so the setting belongs in the reproducibility record.
+- **Scraping stack, sorted for Collectibles:** spider (MIT) and crawlee (Apache-2.0) are clean; pagesift is AGPL; botasaurus's anti-detect layer is the same per-site evasion decision Scrapling raised on 2026-11-02. The recurring blocker is still the **hand-labelled set**, not a ninth crawler.
+- **A fourth licence trap in game-time's path:** `lz4` splits — `liblz4` is BSD-2-Clause, the `lz4` CLI is **GPL-2.0-or-later**. Link the library, never shell out to the CLI.
+- **Four prompts staged**, all 100/100. Game-time and GuruWatcher are both holds.
+- **Egress host is offline.** `cemini-egress-fi` last seen 2h ago; the 32 inbox files are ingested but **not archived**. Push succeeded from Bash now that the sandbox is off.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps. Pushed as `796ccf0ea`.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
 ## Current state (2026-11-04 — repository revenue evaluation)
 
 - **A weak batch by content, a strong one by correction.** 20 URLs, **0 Integrate**, eight licences recorded as "NOT FOUND", and seven rows that admit the repository was never retrieved. Four of the twenty were repeats from earlier batches.
