@@ -321,12 +321,17 @@ Tier 2 is user-gated-commit; do NOT silently auto-run.
 ### 2. Inbox check
 
 ```bash
-find "research to be indexed" -mindepth 2 -maxdepth 2 -type f -not -path '*/.*' 2>/dev/null
+find "research to be indexed" -mindepth 2 -maxdepth 2 -type f -not -path '*/.*' -not -path '*/_*' 2>/dev/null
 ```
 
 The inbox is namespaced by domain (`research to be indexed/<domain>/`) after the federation
 merge. If items exist that the user hasn't asked you to address, mention briefly: "Btw, you
 have N items in `research to be indexed/<domain>/`. Want me to triage them?"
+
+**Underscore-prefixed folders are holding areas, not the inbox.** `_ingested-awaiting-archive/`
+holds sources that already have wiki pages but have not reached the cold store — start there
+when `cemini-egress-fi` is unavailable. Anything there is processed and must not be triaged
+again. The `-not -path '*/_*'` clause is what keeps it out of this check.
 
 ### 3. HL funding Dune backtest cadence (quarterly)
 
