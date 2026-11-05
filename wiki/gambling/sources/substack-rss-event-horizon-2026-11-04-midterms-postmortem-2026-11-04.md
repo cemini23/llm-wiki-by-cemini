@@ -4,6 +4,7 @@ type: source
 tags: [source, newsletter, prediction-markets, kalshi, midterms, accuracy]
 related:
   - sources/substack-rss-event-horizon-2026-11-03-five-thoughts-midterms-2026-11-03.md
+  - sources/substack-rss-event-horizon-2026-11-05-election-night-2026-11-05.md
 maturity: draft
 read_status: read
 created: 2026-11-04

@@ -4075,3 +4075,10 @@ Full triage of all 18 briefs in `briefs/` (the gitignored deliverables directory
 
 Skipped to `@osint-wiki/sources/arxiv-v10-11-skipped-no-lane-2026-11-03.md`: `2611.03530` (non-Abelian lattice gauge theory).
 
+## [2026-11-05] ingest | Link Evaluation v10.11 (2 papers)
+
+- `sources/arxiv-2611.05377-dreamx-latent-action-2026-11-05.md` — **new**. Latent actions from a video diffusion model separate motion from appearance, which makes motion transfer across embodiments possible.
+- `sources/arxiv-2611.05279-mobius-motion-language-2026-11-05.md` — **new**. Unified motion model; the concrete capability is a frame-windowed conditional insert.
+
+Skipped: `2611.05258`.
+

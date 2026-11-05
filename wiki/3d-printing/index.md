@@ -217,3 +217,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [self-aligning-printed-structures-optical-fibers](sources/arxiv-2611.02850-self-aligning-printed-structures-optical-fibers-2026-11-03.md) — Two-photon printing on planar substrates with a compliant socket that self-aligns, so devices batch-print and the substrate becomes a magazine. — `paper, microfabrication, ingest-2026-11-03`
 - [one-shot-printable-soft-robots-co-design](sources/arxiv-2611.03216-one-shot-printable-soft-robots-co-design-2026-11-03.md) — Co-designs material, actuator placement and control against a differentiable MPM simulator, then prints monolithically on FDM. — `paper, soft-robotics, fdm, ingest-2026-11-03`
 
+## Link Evaluation v10.11 (2026-11-05)
+
+- [differentiable-topology-acoustic-holography](sources/arxiv-2611.04251-differentiable-topology-acoustic-holography-2026-11-05.md) — 3D lens topologies optimised directly with a differentiable angular-spectrum solver, quantifying where the thin-element approximation fails. — `paper, topology-optimization, acoustics, ingest-2026-11-05`
+

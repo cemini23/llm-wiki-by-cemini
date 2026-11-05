@@ -5,6 +5,8 @@ tags: [tool, ontology, provenance, atto, local-first, apache-2.0]
 keywords: [helix foundry, ontology agent, promotion gate, citation lineage, helixdb, loopback]
 related:
   - sources/eval-multi-wiki-repository-revenue-2026-11-04.md
+  - sources/eval-multi-wiki-link-revenue-v10-11-2026-11-05.md
+  - entities/tools/ontographia.md
   - entities/tools/lexifina-global-law.md
   - "@ccc-wiki/entities/tools/open-ontologies.md"
 maturity: draft
@@ -64,6 +66,16 @@ Even if the tool is never run, two of its ideas transfer:
 ### Status
 
 Extract. The provenance and promotion patterns are the asset. Running it against real family data is **not** sanctioned without the four conditions above.
+
+## Re-tiered to Watch — 2026-11-05
+
+`@sources/eval-multi-wiki-link-revenue-v10-11-2026-11-05.md` URL 16 rates it **Watch**, one day after rating it Extract. The stated blockers: **no `0.1.0` release tag**, and the **`ontology-agent` Docker image is not yet publicly published**, so `docker compose up` cannot complete.
+
+**That is a packaging blocker, not a substantive one.** Everything above — the human promotion gate, the row/quote provenance, the cloud-model default — is unchanged and still correct.
+
+**But the re-tier itself is informative.** A project rated Extract one day and Watch the next, on a release-tag detail, tells you the packaging is not finished. For Atto, that reinforces the existing position: **take the pattern now, do not depend on the tool.**
+
+The one thing to carry across both ratings is the condition list, because it is the part that would cause harm if missed and it does not depend on whether the Docker image ships.
 
 ## Snippets
 

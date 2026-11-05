@@ -465,4 +465,7 @@ If you're new to this wiki:
 | sources/arxiv-2610.41743-task-vectors-linear-decomposition-2026-11-03.md | source | Task vectors split into task-recognition and task-learning components; random directions also help, TR/TL are just more reliable. |
 | sources/arxiv-2611.02634-evolving-explanations-faithfulness-2026-11-03.md | source | A validator extracts a symbolic expression from an explanation and checks it numerically. 84.0% pass rate. |
 | sources/arxiv-2610.41893-automated-keyword-generation-dvs-2026-11-03.md | source | Keyword generation for variant datasets; the useful keyword is often the difference. Abstract truncated. |
+| sources/arxiv-2611.05251-auto-research-provenance-2026-11-05.md | source | **A number enters a report only if a recorded tool output contains it.** Provenance as a lookup, plus cross-provider review before a tool is promoted. |
+| sources/arxiv-2611.04787-resi-math-recoverable-frontier-2026-11-05.md | source | Failure does not mean inability: a recoverable capability frontier exists between direct decoding and search. |
+| sources/arxiv-2611.04640-tunebench-power-system-2026-11-05.md | source | Agent benchmark built from a real TSO calibration workflow. Useful as a task-shape template. |
 

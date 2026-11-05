@@ -4904,3 +4904,18 @@ Skip record:
 | [klement-europeans-stocks](sources/substack-rss-klement-2026-11-04-europeans-stocks-2026-11-04.md) | A €50,000 windfall lifts non-stockholder participation 8.4–12.8pp and leaves allocation unchanged. **Over 60% still hold nothing.** | draft |
 | [nonparametric-garch-neural-estimator](sources/arxiv-2611.04157-nonparametric-garch-neural-estimator-2026-11-04.md) | Estimates the GARCH recursion map nonparametrically; minimax rate-optimal up to log factors. **Rates do not degrade when the lag order is overspecified.** | draft |
 
+## Link Evaluation v10.11 (2026-11-05)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-multi-wiki-link-revenue-v10-11](sources/eval-multi-wiki-link-revenue-v10-11-2026-11-05.md) | 20 URLs, 1 Integrate. Phase-0: **pagesift is AGPL**, not unverified; crawlee is Apache-2.0; deja-vu MIT; helix-foundry re-tiered to Watch in one day. | draft |
+| [ontographia](entities/tools/ontographia.md) | Ontology-gated query compilation — model emits Intent, never Cypher. Right architecture, **15 stars**, and the LLM layer's locality is unstated. | draft |
+| [pagesift](entities/tools/pagesift.md) | Rust document-to-Markdown, 373 formats. **AGPL-3.0** with a paid commercial option. Operator tool only. | draft |
+| [editveto-post-ocr](sources/arxiv-2611.05539-editveto-post-ocr-2026-11-05.md) | A 0.6B gate that **reverts the OCR corrections an LLM got wrong**. Oracle finding: per-span generation beats nothing, but vetoing a full rewrite helps. | draft |
+| [jazz-influence-lineages](sources/arxiv-2611.05750-jazz-influence-lineages-2026-11-05.md) | Reconstructing a lineage from incomplete evidence — ERGM over collaboration, collaborator overlap, and sonic similarity. Method reference for genealogy. | draft |
+| [china-decoupling](sources/substack-rss-klement-2026-11-05-china-decoupling-2026-11-05.md) | Bank of Finland: China's imports shift bloc, and Western exporters lose share. Blocs defined by Taiwan posture. | draft |
+| [conversational-ai-media](sources/substack-rss-moontower-2026-11-04-conversational-ai-media-2026-11-05.md) | Custom conversational media runs on tokens where publishing runs on zero marginal cost; the middle hollows out. | draft |
+| [strive-vs-strategy](sources/substack-rss-wublock-2026-11-04-strive-vs-strategy-2026-11-05.md) | Strive +6,182 BTC and 61.1% preferred load against Strategy's 29.6% and STRC buyback. SATS pays a fixed 15% funded by more issuance. | draft |
+| [october-blockchain-tech](sources/substack-rss-wublock-2026-11-05-october-blockchain-tech-2026-11-05.md) | Bitcoin Core v32.1 fixes an IP leak under private broadcast. **Disclosure policy now assumes LLM-assisted rediscovery.** | draft |
+| [arxiv-v10-11-late-skip-no-lane](sources/arxiv-v10-11-late-skip-no-lane-2026-11-05.md) | Two skips: strategyproof facility location (social choice) and anomalous diffusion (statistical physics). | draft |
+

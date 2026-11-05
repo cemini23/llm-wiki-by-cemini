@@ -2766,3 +2766,15 @@ Routing note: the PDFs sat in `research to be indexed/game-dev/` but were filed 
 
 **Pattern across this batch:** every re-surfaced tool re-tiered differently from its first appearance, and two of the four carried a licence error. Recurrence is not convergence.
 - `entities/tools/worktrunk.md` — **updated**. Licence confirmed MIT OR Apache-2.0, closing the 2026-10-25 gap. Tier Context → Extract. The `pre-merge` hook is the part that is a control, not a keystroke saver.
+
+## [2026-11-05] ingest | Link Evaluation v10.11 (1 entity, 4 papers, 2 newsletters)
+
+- `entities/tools/deja-vu.md` — **new**. The batch's only Integrate. MIT, local, zero LLM, 43 harnesses. **Redaction is at the index; the original transcripts keep credentials.**
+- `sources/arxiv-2611.05139-meta2-harness-evolution-2026-11-05.md` — **new**. Fifth paper in two batches arguing the harness is where the leverage is; adds how to stop the adaptation overfitting.
+- `sources/arxiv-2611.05275-route-anything-2026-11-05.md` — **new**.
+- `sources/arxiv-2611.04439-dualevolve-2026-11-05.md` — **new**.
+- `sources/arxiv-2611.05345-subconscious-speculative-reasoning-2026-11-05.md` — **new**. **Speculative decoding changes long-horizon behaviour in random directions.**
+- `sources/newsletter-rss-latent-space-2026-11-05-swapping-season-2026-11-05.md` — **new**.
+- `sources/newsletter-rss-latent-space-2026-11-04-weight-space-walkback-2026-11-05.md` — **new**. Corrects the 2026-11-03 weight-space page: framing overstated, core replicated.
+
+**The most operationally useful line in the batch:** a decoding optimisation that shifts a long agent trajectory changes what a benchmark measures. Speculative settings belong next to the model id in any reproducibility record.

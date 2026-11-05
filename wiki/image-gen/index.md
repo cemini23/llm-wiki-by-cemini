@@ -1225,3 +1225,10 @@ Five generative-media papers. Three robotics/world-model papers filed here were 
 - [structured-visual-landscape-generating-preferred.](sources/arxiv-2611.03597-structured-visual-landscape-2026-11-03.md) — Vis-Lens generates a neuron's preferred image in one pass instead of per-image optimisation. — `paper, interpretability, diffusion, ingest-2026-11-03`
 - [reviso-not-all-visual-evidence-deserves-equal-at.](sources/arxiv-2611.03602-reviso-video-captioning-attention-2026-11-03.md) — Reviso: a global preview then selective attention, because uniform sampling misses the event. — `paper, video, captioning, ingest-2026-11-03`
 
+## Link Evaluation v10.11 (2026-11-05)
+
+- [dreamx-latent-action](sources/arxiv-2611.05377-dreamx-latent-action-2026-11-05.md) — A video diffusion model yields compact embodiment-agnostic latent actions: appearance from the prior, motion from the latent. Enables motion transfer. — `paper, video, transfer, ingest-2026-11-05`
+- [mobius-motion-language](sources/arxiv-2611.05279-mobius-motion-language-2026-11-05.md) — One motion representation for generation, completion, editing and description; frame-windowed conditional insertion. — `paper, motion, editing, ingest-2026-11-05`
+
+Skipped to `@osint-wiki/sources/arxiv-v10-11-late-skip-no-lane-2026-11-05.md`: `2611.05258` (statistical physics, anomalous diffusion).
+

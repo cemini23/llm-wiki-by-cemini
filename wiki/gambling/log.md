@@ -1432,3 +1432,7 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2607-28520-cs-rnr-opp
 
 - `sources/substack-rss-event-horizon-2026-11-04-midterms-postmortem-2026-11-04.md` — **new**. Democrats won both chambers. Markets called direction correctly and missed the scale — because the "blue wave" contract was a **218/49 threshold**, not a magnitude forecast. The durable claim is **speed**: markets converged well before media decision desks. The industry got the roundabout outcome: vindicated on accuracy, worse off politically.
 
+## [2026-11-05] ingest | Event Horizon on election night (1 source)
+
+- `sources/substack-rss-event-horizon-2026-11-05-election-night-2026-11-05.md` — **new**. A political journalist describing their own change of habit: watching Kalshi price the returns was more useful than TV coverage, and "beats the NYT needle". It is an adoption and product-experience claim, not an accuracy one — and it pairs with the postmortem: the same threshold design that made the market wrong on magnitude is what made it good to watch.
+

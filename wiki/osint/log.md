@@ -10845,3 +10845,17 @@ Four URLs in this batch were repeats — worktrunk, scenario-labs, botmux, unslo
 
 Re-delivered and already filed, archived without new pages: `2610.40772` (DiscKosky), `2611.00360` (protein epistasis), `2611.00958` (crypto repair risk), `2611.01355` (derivatives notes), `2611.01635` (Urdu VLM).
 
+## [2026-11-05] ingest | Link Evaluation v10.11 (1 eval source, 4 newsletters, 3 papers, 1 skip record)
+
+Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first tool in weeks that is unambiguously safe for Atto.
+
+- `sources/eval-multi-wiki-link-revenue-v10-11-2026-11-05.md` — **new**. Phase-0 corrected two licences.
+- `entities/tools/ontographia.md` — **new**. Ontology-gated Intent→Cypher. Right architecture, 15 stars, LLM locality unstated.
+- `entities/tools/pagesift.md` — **new**. **AGPL-3.0**, not "not found".
+- `sources/arxiv-2611.05539-editveto-post-ocr-2026-11-05.md` — **new**. The most Atto-relevant paper in the batch: a gate that reverts wrong OCR corrections.
+- `sources/arxiv-2611.05750-jazz-influence-lineages-2026-11-05.md` — **new**. Lineage reconstruction from proxies; a genealogy-method reference.
+- Newsletters: Klement on China decoupling, Moontower on conversational media, WuBlockchain on Strive vs Strategy and on October's protocol work.
+- `sources/arxiv-v10-11-late-skip-no-lane-2026-11-05.md` — **new skip record**. `2611.05092` (facility location) and `2611.05258` (anomalous diffusion).
+
+**The licence finding that repeats:** pagesift's licence was logged as unverified and is **AGPL-3.0**. That is the third batch in a row where an unverified licence turned out to be copyleft, and the second where the tool was routed to a commercial project anyway.
+

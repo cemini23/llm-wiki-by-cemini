@@ -4,6 +4,7 @@ type: source
 tags: [source, newsletter, weights, interpretability, autoresearch, capability]
 related:
   - "@osint-wiki/entities/tools/karpathy-autoresearch.md"
+  - sources/newsletter-rss-latent-space-2026-11-04-weight-space-walkback-2026-11-05.md
 maturity: draft
 read_status: skimmed
 created: 2026-11-03

@@ -823,3 +823,9 @@ Pages touched: 5 (1 created + 4 modified) — within schema bound. Not committed
 
 Re-delivered and already filed: `2610.36598`, `2610.38948`, `2610.39046`. Archived again without new pages.
 
+## [2026-11-05] ingest | Link Evaluation v10.11 (1 paper)
+
+- `sources/arxiv-2611.04251-differentiable-topology-acoustic-holography-2026-11-05.md` — **new**. Acoustic lens topologies generated as 3D material distributions, with a differentiable solver that does not assume a thin element. Printable part in the medical and NDT space.
+
+Re-delivered and already filed: `2611.02850`, `2611.03216`.
+

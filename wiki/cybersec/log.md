@@ -2384,3 +2384,11 @@ Routed from `@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-202
 
 - `entities/tools/soup.md` — **new**. Apache-2.0 (report said NOT FOUND), 10.1k stars, `soup-cli`. YAML-driven SFT/DPO/GRPO/LoRA with layer streaming. **The 4 GB claim is CUDA; Apple Silicon is "supported" but the streaming path is an opt-in beta** and its behaviour on MPS is unstated. Lab scope only.
 
+## [2026-11-05] ingest | Link Evaluation v10.11 (3 papers)
+
+- `sources/arxiv-2611.04086-affordance-delegated-scope-2026-11-05.md` — **new**. Multi-agent scope violations track **visibility of the peer action**, not permission. Deterministic no-model detector over hash-chained logs.
+- `sources/arxiv-2611.05272-geometry-of-ignorance-2026-11-05.md` — **new**. Suppressed knowledge is geometrically distinguishable from absent knowledge, across ten models.
+- `sources/arxiv-2611.04349-sparse-internal-control-2026-11-05.md` — **new**. Sparse multi-site activation steering with an explicit six-axis evaluation protocol.
+
+**The one to act on:** if cross-scope behaviour is driven by which peer actions appear in context, then the control is the listed action surface. That is a harness change, not a permissions change.
+

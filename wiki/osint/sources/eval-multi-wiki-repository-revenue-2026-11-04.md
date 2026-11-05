@@ -12,6 +12,7 @@ related:
   - entities/tools/scenario-labs-skills.md
   - entities/tools/unslop.md
   - sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md
+  - sources/eval-multi-wiki-link-revenue-v10-11-2026-11-05.md
 maturity: draft
 created: 2026-11-04
 updated: 2026-11-04

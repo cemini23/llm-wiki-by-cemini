@@ -1920,3 +1920,11 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - `sources/arxiv-2611.02634-evolving-explanations-faithfulness-2026-11-03.md` — **new**. Faithfulness enforced by extracting a checkable expression, not by asking a model to judge quality.
 - `sources/arxiv-2610.41893-automated-keyword-generation-dvs-2026-11-03.md` — **new**. Problem framing only; abstract truncated before the method.
 
+## [2026-11-05] ingest | Link Evaluation v10.11 (3 papers)
+
+- `sources/arxiv-2611.05251-auto-research-provenance-2026-11-05.md` — **new**. Enforced provenance: a number passes only if a recorded tool output contains it. Tools are earned through repeated runs, a fabrication-phrase scan, cross-provider review, and a human promotion gate.
+- `sources/arxiv-2611.04787-resi-math-recoverable-frontier-2026-11-05.md` — **new**. A failed sample is not a capability verdict; search recovers some failures. 272 verifiable problems recovered on one 8B model.
+- `sources/arxiv-2611.04640-tunebench-power-system-2026-11-05.md` — **new**. Five-page benchmark from a real transmission-system operator calibration workflow.
+
+**Why these are in SEO:** they arrived in this inbox and none has an SEO topic. They are filed for method — provenance enforcement, capability measurement, and benchmark construction — not for the domain.
+

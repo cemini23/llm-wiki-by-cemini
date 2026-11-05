@@ -1471,3 +1471,16 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 | [scenario-labs-skills](entities/tools/scenario-labs-skills.md) | draft | **Second sighting.** The "MIT complies with zero-copyleft" framing is true and misleading — the vendor cloud is still required. |
 | [unslop](entities/tools/unslop.md) | draft | **Second sighting.** Report says licence NOT FOUND; it was verified CC-BY-4.0 on 2026-11-02. A retrieval failure, not a change. |
 | [worktrunk](entities/tools/worktrunk.md) | draft | **Updated.** Licence now confirmed MIT OR Apache-2.0; tier moved Context → Extract. The `pre-merge` hook is the part that is a control rather than a keystroke saver. |
+
+## Link Evaluation v10.11 (2026-11-05)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [deja-vu](entities/tools/deja-vu.md) | draft | **Integrate.** MIT, local, zero LLM. Indexes 43 harnesses' transcripts from disk. **Credentials are redacted at the index, not the source.** |
+| [meta2](sources/arxiv-2611.05139-meta2-harness-evolution-2026-11-05.md) | draft | Learn *how to evolve a harness* rather than one harness — ship an adaptation method, not an adapted artefact. |
+| [route-anything](sources/arxiv-2611.05275-route-anything-2026-11-05.md) | draft | Routing as a policy over heterogeneous candidates, with a joint performance-cost objective. |
+| [dualevolve](sources/arxiv-2611.04439-dualevolve-2026-11-05.md) | draft | A separate score for **experimentation quality**, not just task performance. |
+| [subconscious-speculative](sources/arxiv-2611.05345-subconscious-speculative-reasoning-2026-11-05.md) | draft | **Speculative decoding is not behaviour-neutral past ~30 steps.** It is a variance source, so the setting belongs in the reproducibility record. |
+| [legora-legal-agents](sources/newsletter-rss-latent-space-2026-11-02-legal-agents-legora-2026-11-03.md) | draft | (see 2026-11-03) |
+| [swapping-season](sources/newsletter-rss-latent-space-2026-11-05-swapping-season-2026-11-05.md) | draft | Cat Wu Anthropic→OpenAI; Sharon Zhou AMD→Anthropic; Meta buys Conductor. |
+| [weight-space-walkback](sources/newsletter-rss-latent-space-2026-11-04-weight-space-walkback-2026-11-05.md) | draft | The weight-space framing was overstated; the core claim replicated. Framing error, not a retraction. |

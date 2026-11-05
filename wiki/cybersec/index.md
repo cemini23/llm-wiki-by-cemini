@@ -1137,3 +1137,11 @@ Six sources. The theme is that response-level safeguards do not protect the laye
 |------|----------|---------|
 | [soup](entities/tools/soup.md) | draft | Apache-2.0 YAML fine-tuning CLI, 10.1k stars. **The "4 GB laptop GPU" claim is a CUDA story** — Apple Silicon is "supported" but layer streaming is an opt-in beta and untested on MPS. Source: @osint-wiki/sources/eval-multi-wiki-repository-revenue-2026-11-04.md URL 10. |
 
+## Link Evaluation v10.11 (2026-11-05)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [affordance-delegated-scope](sources/arxiv-2611.04086-affordance-delegated-scope-2026-11-05.md) | draft | **Action representation, not permission, governs cross-scope behaviour.** No agent crosses when the peer action is unlisted. Narrow the visible surface, not the permissions. |
+| [geometry-of-ignorance](sources/arxiv-2611.05272-geometry-of-ignorance-2026-11-05.md) | draft | A refusal is not evidence of absence. Known concepts form tight clusters; ignorance fragments. Honest caveat: the recovery correlation's sign flips by attack type. |
+| [sparse-internal-control](sources/arxiv-2611.04349-sparse-internal-control-2026-11-05.md) | draft | Steering from a few nodes, with off-target preservation as an explicit constraint and a six-axis evaluation protocol. |
+
