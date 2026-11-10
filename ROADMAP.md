@@ -43,6 +43,22 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Archive still blocked.** `cemini-egress-fi` times out. 114 raw sources, about 250 MB, exist only on this laptop.
 - **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
 
+## Current state (2026-11-10 — v10.11 link evaluation, Jev family)
+
+- **Two Integrates, both process rather than runtime.** `worktrunk` (fourth evaluation, licence never moved) and `dzhng/skills` — a MIT skill library whose `write-spec` → `implement-spec` pair slices work into reviewable passes with **playable checkpoints**. Neither can touch data, which is why they clear while three Atto extracts all have blockers.
+- **The batch's one real opening: `jevals` runs fully offline.** MIT, and the README documents **Laya** — in-process on Apple Silicon, **no key, no network**. The eval framed the tool entirely around hosted Jev at $0.042/M tokens. That framing made it a ban-4 problem; the local backend makes it the **first judge this workspace can run against vault data** without breaking the boundary. Prove the offline path with a test before depending on it.
+- **Three more report corrections.**
+  - **`ontosmith`** — MIT, but needs **Neo4j 5.x** for live builds, uses a **cloud LLM by default** (OpenRouter → Claude Haiku/Sonnet), and is **tested on Linux only with WSL2 on Windows**. macOS is untested. Take the propose-then-judge contract; do not install.
+  - **`browser-use`** — licence is **MIT**, not unfound, and `Browser('chromium')` with a local model needs **no key**. The metered Browser Use Cloud is the *default*, not the only path.
+  - **`gbrain`** — **revived after a May retirement.** One of its two retirement reasons expired when kb-server was deleted on 2026-06-14. Markdown store, **rebuildable index**, keyless keyword search; synthesis still needs a model.
+- **Pattern across four batches:** the eval describes cloud-with-a-local-option as cloud-only, and free-with-a-cloud-option as free. Both errors push toward the metered path.
+- **The Atto pipeline the batch describes** — ontosmith proposes facts with evidence spans → jevals gates groundedness and PII locally → gbrain indexes approved facts cheaply. Coherent as a chain; each link has one blocker: Neo4j, the model path, and synthesis.
+- **Prompts staged:** [atto](briefs/2026-11-10_atto-integration-prompt.md), [collectibles](briefs/2026-11-10_collectibles-integration-prompt.md), [game-time](briefs/2026-11-10_game-time-start-prompt.md), [guruwatcher](briefs/2026-11-10_guruwatcher-integration-prompt.md). All 100/100. **Guruwatcher is a third consecutive hold.**
+- **GuruWatcher's real defect list is unchanged and growing.** GW-05 to GW-08 plus the split archive, and now a fifth: **the service was down for at least two hours on 2026-11-05 and nothing reported it.** An alert-only system that fails silently cannot be trusted to have been running.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps. Pushed as `2d4bd1733`.
+- **Archive still blocked** — `cemini-egress-fi` remains suspended. 115 files in `_ingested-awaiting-archive/`.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
 ## Current state (2026-11-05 — v10.11 link evaluation)
 
 - **One Integrate: `deja-vu`.** MIT, ~1.4k stars, local Go binary that indexes the session transcripts 43 coding harnesses already write to disk — commands with exit codes, files opened, and the exact `Edit` spans. **Zero LLM calls by default.** The first tool in weeks that is unambiguously safe for Atto.
