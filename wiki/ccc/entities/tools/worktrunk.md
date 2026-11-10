@@ -7,10 +7,13 @@ related:
   - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md"
   - entities/tools/thinkrail.md
+  - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md"
+  - "@osint-wiki/sources/eval-multi-wiki-link-evaluation-2026-11-10.md"
+  - entities/tools/dzhng-skills.md
 maturity: draft
 created: 2026-10-25
-updated: 2026-11-02
-phase_0_verdict: EXTRACT — licence confirmed, not cloned
+updated: 2026-11-10
+phase_0_verdict: INTEGRATE — licence confirmed across four evaluations, not cloned
 wire_status: none
 wire_note: Licence confirmed MIT OR Apache-2.0 on 2026-11-02. Still not cloned; stars, commits, and issues unreported.
 ---
@@ -32,7 +35,7 @@ A CLI for creating and removing git worktrees so several coding agents can work 
 
 **Why it is not adopted:** `git worktree` already does this, and Claude Code and Cursor both isolate branches. The wrapper saves keystrokes, not risk.
 
-`[NEEDS VERIFICATION 2026-11-02]` — **the licence is now confirmed** (MIT OR Apache-2.0, see below). Still unverified: star count, commit cadence, and open issues. The first report carried no telemetry at all for this row.
+**Licence confirmed** MIT OR Apache-2.0, verified 2026-11-02 and 2026-11-04, unchanged across four evaluations. Star count, commit cadence, and open-issue count remain unreported by every pass — but four consistent verdicts make that less material than it was.
 
 ## Re-surface — v10.10 batch C (2026-11-02)
 
@@ -65,6 +68,19 @@ So the honest position is narrower than either report: **creation is still a wra
 The licence is unchanged and matches what was verified on 2026-11-02: **MIT OR Apache-2.0**.
 
 **Verdict is stable across three passes.** Three evaluations, three Extract ratings, no new concerns. That is the strongest signal in this batch — most recurring items move between tiers.
+
+## Fourth sighting — 2026-11-10: Extract → Integrate
+
+`@osint-wiki/sources/eval-multi-wiki-link-evaluation-2026-11-10.md` URL 5 raises it to **Integrate**. Licence unchanged: **MIT OR Apache-2.0**, verified 2026-11-02 and 2026-11-04.
+
+Two specifics this pass adds to the earlier `pre-merge` hook and port-hashing findings:
+
+- **`wt step` copy-ignored sharing** — targets and build caches (`target/`, `build`) are shared across worktrees, so a fresh worktree does not pay the cold-compile cost on its first build.
+- **`hash_port` as a template filter** — the per-branch port is derived in the config rather than set by hand.
+
+**Four evaluations, four consistent verdicts, and the licence has never moved.** That is the most stable item in the entire eval pipeline — everything else that recurs has re-tiered at least once.
+
+The Integrate is reasonable on that record. The one condition from 2026-11-02 stands: the value is in worktree isolation, cache sharing, and the `pre-merge` gate, not the keystroke savings.
 
 ## Dead Ends
 

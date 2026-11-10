@@ -2939,4 +2939,11 @@ Routing note: the PDFs sat in `research to be indexed/game-dev/` but were filed 
 
 - `sources/newsletter-rss-pragmatic-engineer-2026-11-06-the-pragmatic-summit-2027.md` — **new**. Paywalled teaser; one paragraph only. No technical claim extracted.
 - `concepts/ai-native-engineering-curriculum.md` — **updated** with backlink.
+
+## [2026-11-10] ingest | Link Evaluation — two Integrates for the harness
+
+- `entities/tools/dzhng-skills.md` — **new**. MIT. **`write-spec` → `implement-spec`** slices a feature into independently reviewable passes with playable checkpoints; `close-spec` gives a spec an end. 40+ skills across engineering, visual review, authoring, and graphics.
+- `entities/tools/worktrunk.md` — **updated, fourth sighting.** Extract → Integrate. `wt step` copy-ignored shares build caches; `hash_port` derives a stable per-branch port. Licence unchanged across all four evaluations — the most stable item in the pipeline.
+
+**Both are process, not runtime.** Neither adds a dependency that can touch data, which is why they clear while three Atto Extract items in the same batch all carry blockers.
 - Routing: wiki-only; no distribution.

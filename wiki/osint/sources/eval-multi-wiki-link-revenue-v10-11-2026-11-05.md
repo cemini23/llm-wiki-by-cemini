@@ -9,6 +9,7 @@ related:
   - entities/tools/pagesift.md
   - entities/tools/helix-foundry.md
   - sources/eval-multi-wiki-repository-revenue-2026-11-04.md
+  - sources/eval-multi-wiki-link-evaluation-2026-11-10.md
   - sources/arxiv-v10-11-late-skip-no-lane-2026-11-05.md
 maturity: draft
 created: 2026-11-05

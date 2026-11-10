@@ -11003,5 +11003,16 @@ Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first
 - The proposed design is a three-shard MPC vault: device, Gate, recovery partner, with a 48-hour withdrawal delay and an open-source recovery path if Gate disappears.
 - Three claims are testable and none is tested: the independence of the partner, the existence of the recovery tools, and whether the 48-hour delay is server-side.
 - `concepts/crypto-custody-single-point-of-failure.md` — **updated**. The loss split and the withdrawal-halt lesson from the Binance incident sit on the same page.
+
+## [2026-11-10] ingest | Link Evaluation — Jev family and the Atto pipeline (1 eval source, 4 entity pages, 1 updated)
+
+- `sources/eval-multi-wiki-link-evaluation-2026-11-10.md` — **new**. 2 Integrate, 6 Extract, 2 Watch, 7 Context, 3 Pass.
+- `entities/tools/jevals.md` — **new**. **The batch's key correction:** the report framed it around hosted Jev, but it runs **fully offline on Apple Silicon via the Laya backend** — in-process, no key. That is the first ban-4-compatible judge this workspace has found.
+- `entities/tools/gbrain.md` — **updated, reviving a retired tool.** One of the two 2026-05-18 retirement reasons expired when kb-server was deleted on 2026-06-14.
+- `entities/tools/ontosmith.md` — **new**. Propose-then-judge extraction with mandatory evidence spans. **Three blockers the report missed:** Neo4j required, cloud LLM by default, Linux-only.
+- `entities/tools/browser-use.md` — **new**. Report said licence NOT FOUND; it is **MIT**, and the local Chromium path needs no key.
+- `entities/tools/worktrunk.md` — **updated, fourth sighting.** Extract → Integrate; licence unchanged across all four evaluations.
+
+**The pattern across three batches now:** the eval keeps describing cloud-with-a-local-option as cloud-only, and local-with-a-cloud-option as free. Both errors push toward the metered path.
 - Routing: wiki-only; no distribution.
 

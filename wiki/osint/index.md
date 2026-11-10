@@ -4965,5 +4965,10 @@ New concepts and entities:
 | [coreweave](entities/companies/coreweave.md) | AI-infrastructure credit proxy. Interest expense is about 25% of revenue. | draft |
 | [circle](entities/companies/circle.md) | USDC issuer. Revenue +17% on circulation +8%, so the growth is reserve-yield dependent. | draft |
 | [tether](entities/companies/tether.md) | USDT issuer. About 150k BTC, $132.4bn Treasuries including repos, $7.95bn excess reserves. | draft |
+| [eval-multi-wiki-link-evaluation-2026-11-10](sources/eval-multi-wiki-link-evaluation-2026-11-10.md) | 20 URLs, 2 Integrate. **jevals runs fully offline via Laya**; ontosmith needs Neo4j and is Linux-only; browser-use is MIT with a local path; gbrain is local Markdown with a disposable index. | draft |
+| [jevals](entities/tools/jevals.md) | Decision-model guardrails. **Laya backend runs in-process on Apple Silicon, offline, no key** — the first ban-4-compatible judge found. | draft |
+| [gbrain](entities/tools/gbrain.md) | **Revived 2026-11-10** — retired in May partly for redundancy with kb-server, which was deleted in June. Markdown store, rebuildable index, keyless search. | draft |
+| [ontosmith](entities/tools/ontosmith.md) | Propose-then-judge extraction with mandatory evidence spans. **Neo4j required, cloud LLM by default, Linux-only** — take the contract, not the install. | draft |
+| [browser-use](entities/tools/browser-use.md) | MIT. Local Chromium with a local model, no key; partial checkpoints for multi-page harvests. The cloud path is the *default*, not the only one. | draft |
 | [draftkings](entities/companies/draftkings.md) | First listed incumbent with a full prediction-market stack. Take rate 11.1%, 20-month cohort payback. | draft |
 

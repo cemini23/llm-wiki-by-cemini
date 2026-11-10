@@ -7,9 +7,11 @@ related:
   - sources/tool-evaluation-multi-wiki-audit-may-2026.md
   - sources/eval-tool-routing-hermes-plan-2026-06-27.md
   - entities/tools/graphiti.md
+  - sources/eval-multi-wiki-link-evaluation-2026-11-10.md
+  - entities/tools/ontosmith.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations
@@ -37,4 +39,40 @@ Garry Tan's opinionated agent brain — a thin router that transforms articles, 
 
 **License**: MIT — aggressive corporate adoption permitted.
 
-**Open question** [NEEDS VERIFICATION 2026-06-27]: Entity extraction accuracy under dense financial jargon — unchanged from 2026-05-16; K132 spike may revisit if hybrid-search eval runs.
+**Open question** [OPEN QUESTION 2026-11-10]: Entity extraction accuracy under dense financial jargon. Unchanged since 2026-05-16 and not resolvable by looking anything up — only a test on real corpus text settles it. The K132 hybrid-search spike was approved and never run.
+
+## Re-surfaced as Extract — 2026-11-10, and one retirement reason has expired
+
+`@sources/eval-multi-wiki-link-evaluation-2026-11-10.md` URL 4 rates it **Extract** again, routed to Atto and family-tree, with a claimed ~86% cut in multi-session vault token cost.
+
+**Read the 2026-05-18 retirement reasoning against what is true now.** It rested on two arguments:
+
+1. **Redundant with two other retrieval layers** — direct file reads, and "full-text search via kb-server (bot-facing, indexes all four wikis)".
+2. **Git-based sync conflicted with rsync** wiki-sync.
+
+**Argument 1 has partly expired.** `cemini-librarian` and kb-server were **deleted 2026-06-14**. The full-text search layer that made gbrain a third redundant tier no longer exists. What remains is direct file reads — which are current but do not retrieve semantically, and do not span sessions.
+
+That does not automatically revive the tool. It does mean the earlier verdict was reasoned against an architecture this workspace no longer has.
+
+### Phase-0, 2026-11-10 — what the current README says
+
+| Property | Finding |
+|----------|---------|
+| Licence | **MIT** — "GBrain is MIT-licensed and free to self-host; gbrain.io is optional paid hosting" |
+| Store | **Markdown in a git repo.** "The database is an index rebuildable from it." |
+| Local engine | **PGLite** (WASM Postgres 17), no setup, personal brains to ~50K pages |
+| Large engine | Postgres + pgvector, self-hosted or Supabase, same interface |
+| **Where data leaves** | **Synthesis requires a configured chat model**; optional embedding/reranking providers can receive text; hosted gbrain.io is paid |
+| Keyless path | **Keyword-only search needs no model API** |
+| Install | **Not on npm** — an unrelated `gbrain` package shadows it; install via Bun from GitHub |
+| Backup | "Markdown export is not a full database backup" |
+
+**The storage decision is the part worth taking on its own merit:** the durable artefact is Markdown in version control, and the retrieval index is disposable. A bad index is an inconvenience, not a data loss.
+
+### What this does and does not reopen
+
+- **Reopened:** cheap cross-session recall over an existing Markdown corpus, with keyless keyword search and no cloud call.
+- **Not reopened:** synthesis and semantic search, both of which need a model and therefore fall under Atto's ban 4 unless the model is local.
+- **Unchanged:** the git-sync conflict is still a real operational cost if it runs against this repo.
+
+**Next step if pursued:** a hybrid-search spike on the *existing* wiki Markdown, read-only, keyless — the same scope the K132 note already approved and that was never run.

@@ -6,6 +6,7 @@ keywords: [jeveryword, jev, numbered tokens, span extraction, pii detection, ver
 related:
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-b-2026-11-01.md
   - entities/tools/liquidai-d1-2b.md
+  - entities/tools/jevals.md
 maturity: draft
 created: 2026-11-01
 updated: 2026-11-01

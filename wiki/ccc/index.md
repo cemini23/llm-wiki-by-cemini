@@ -1533,4 +1533,5 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 | [subconscious-speculative](sources/arxiv-2611.05345-subconscious-speculative-reasoning-2026-11-05.md) | draft | **Speculative decoding is not behaviour-neutral past ~30 steps.** It is a variance source, so the setting belongs in the reproducibility record. |
 | [legora-legal-agents](sources/newsletter-rss-latent-space-2026-11-02-legal-agents-legora-2026-11-03.md) | draft | (see 2026-11-03) |
 | [swapping-season](sources/newsletter-rss-latent-space-2026-11-05-swapping-season-2026-11-05.md) | draft | Cat Wu Anthropic→OpenAI; Sharon Zhou AMD→Anthropic; Meta buys Conductor. |
+| [dzhng-skills](entities/tools/dzhng-skills.md) | draft | **Integrate.** MIT skill library. `write-spec` → `implement-spec` slices work into reviewable passes with playable checkpoints; `close-spec` ends a spec. Process, not runtime. |
 | [weight-space-walkback](sources/newsletter-rss-latent-space-2026-11-04-weight-space-walkback-2026-11-05.md) | draft | The weight-space framing was overstated; the core claim replicated. Framing error, not a retraction. |
