@@ -14,9 +14,10 @@ related:
   - concepts/season-long-fantasy-waiver-wire.md
   - sources/rss-rotoballer-w5-rb-waiver-2026-10-05.md
   - sources/rss-rotoballer-week5-6-2026-10-11-12.md
+  - concepts/gaussian-copula-joint-stat-distribution.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations
@@ -56,6 +57,14 @@ Committee detection via HHI on carry shares; confidence penalty on projections w
 - **Snap%** = soft role gate (logistic), not direct production driver
 - **QB attempts** = team dropbacks × (1 - sack - scramble); ignore QB snap%
 - **Rookies:** Beta-Binomial shrinkage; volume updates faster than efficiency
+
+### Why usage matters for joint distributions
+
+Usage is the shared driver that makes a player's statistics correlated. A player on the field for more snaps, and with a larger target or carry share, accumulates every counting stat at once. So the correlation between two stat lines is not a free parameter — much of it comes through usage.
+
+This is why a joint-distribution model should condition on projected usage rather than fit a raw correlation matrix. A 2026 NBA study makes the same point for points, rebounds, and assists: the author names playing time as **the main driver of the dependence** and calls predicted possessions the obvious extension `[TENTATIVE — single NBA study]`. Method: @concepts/gaussian-copula-joint-stat-distribution.md.
+
+For the NFL, the analogues are snap share and route participation. The open work is to test whether conditioning on those shares shrinks the residual correlation enough to model it simply.
 
 ### Canonical key
 

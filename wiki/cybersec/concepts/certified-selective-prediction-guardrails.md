@@ -13,9 +13,10 @@ related:
   - concepts/measurement-integrity-mcp-security-eval.md
   - concepts/genai-access-control-policy-enforcement.md
   - sources/arxiv-2609-28322-learning-cost-reliable-inference.md
+  - concepts/external-filter-safety-utility-tradeoff.md
 maturity: draft
 created: 2026-09-21
-updated: 2026-10-09
+updated: 2026-11-10
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K354)"
 ---

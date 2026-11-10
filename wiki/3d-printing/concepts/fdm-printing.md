@@ -93,9 +93,11 @@ related:
   - sources/2026-qin-cosserat-trimmed-helicoid.md
   - sources/2026-liu-chunkvla-am-vla-deployment.md
   - sources/2026-zhong-pneutac-mpm-gaussian-tactile.md
+  - concepts/precision-optomechanics-am.md
+  - concepts/agent-skill-libraries-mechanical-engineering.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-10-03
+updated: 2026-11-10
 ---
 
 ## Relations

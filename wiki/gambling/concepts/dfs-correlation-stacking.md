@@ -11,9 +11,11 @@ related:
   - concepts/pickem-slip-ev-and-correlation.md
   - concepts/dfs-distribution-layer.md
   - sources/nfl-week3-scheme-breakdown-2026-09-23.md
+  - concepts/gaussian-copula-joint-stat-distribution.md
+  - sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations
@@ -68,6 +70,8 @@ Use a **Gaussian copula with role-conditioned correlations**, not a raw multivar
 6. **If you only need a simple normal sim, use Cholesky directly.**  
    With `L = chol(Sigma)` and `eps ~ N(0, I)`, sample `z = L eps`.  
    But for real DFS distributions, the **copula path is better** because fantasy outcomes are skewed and heavy-tailed.
+
+**Evidence for the copula path.** Steps 2–5 above are the published estimator, not an invention of this wiki. A 2026 study on NBA player stat lines uses exactly this chain — rank-based normal scores, empirical marginals, `nearPD` repair, walk-forward refit — and reports that the Gaussian copula beats the independence product in 25 of 27 joint-threshold combinations `[TENTATIVE — single NBA study]`. It also confirms the failure mode: the independence product under-predicts high joint exceedance, and the empirical joint frequency is zero for rare combinations. Method: @concepts/gaussian-copula-joint-stat-distribution.md. Do **not** copy its correlation magnitudes — those are within-player, single-player, three-counting-stat values. The role-prior table above is measured on NFL pairs and is far larger. See @sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md.
 
 ### Default stack rules for `pydfs`
 

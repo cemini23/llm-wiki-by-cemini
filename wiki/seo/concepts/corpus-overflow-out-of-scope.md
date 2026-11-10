@@ -158,9 +158,13 @@ related:
   - sources/arxiv-shinde-2026-pdp-priority-scheduling-2610.04587-2026-10-07.md
   - sources/arxiv-cheng-2026-hierarchy-gbp-factor-graph-2610.06978-2026-10-07.md
   - sweeps/2026-10-07-daily.md
+  - sources/arxiv-limited-knowledge-exchange-biological-subfields-2611.06596.md
+  - sources/arxiv-camp-3d-imc-weight-mapping-2611.07707.md
+  - sources/arxiv-zero-shot-weight-space-programming-2611.09271.md
+  - sources/arxiv-formally-verified-quantum-programs-2611.09822.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-10-07
+updated: 2026-11-10
 ---
 
 ## Relations

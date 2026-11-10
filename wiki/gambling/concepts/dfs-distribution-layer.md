@@ -14,9 +14,11 @@ related:
   - concepts/diy-nfl-pickem-props-tool-architecture.md
   - concepts/pickem-stat-type-mapping.md
   - sources/research-diy-pickem-props-master-plan-2026-07-05.md
+  - concepts/gaussian-copula-joint-stat-distribution.md
+  - sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations
@@ -66,6 +68,12 @@ pydfs optimize(n=500-2000 candidates) → Monte Carlo rerank → select final 15
 ```
 
 chanzer0/NFL-DFS-Tools = methodology reference only (no LICENSE — no code reuse).
+
+### Empirical support for the copula step
+
+The `copula correlation` in step 1 of the simulator is the part that carried the weight. A 2026 study on NBA player stat lines fits the same structure — empirical marginals plus a Gaussian copula, refit before every game — and finds that the copula beats the independence product in 25 of 27 joint-threshold combinations. The independence product also **systematically under-predicts high joint exceedance** `[TENTATIVE — single NBA study]`. That is the failure mode this layer exists to avoid. Method detail: @concepts/gaussian-copula-joint-stat-distribution.md; source: @sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md.
+
+The study also found that the **empirical joint frequency** is only competitive at low thresholds. At high thresholds it loses to the copula because a 20-game history rarely shows the joint event at all. This supports simulating from a fitted copula rather than counting historical co-occurrences, which is the current design.
 
 ## Snippets
 

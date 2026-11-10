@@ -7,9 +7,12 @@ related:
   - sources/trading-playbook-research.md
   - concepts/macro-weather-regime.md
   - entities/components/kelly-cvar-risk-engine.md
+  - sources/substack-rss-moontower-2026-11-08-moontower-335.md
+  - concepts/tracking-error-dispersion-active-management.md
+  - concepts/commodity-index-construction.md
 maturity: retracted
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-11-10
 ---
 
 ## Relations

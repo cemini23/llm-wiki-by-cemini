@@ -4082,3 +4082,80 @@ Skipped to `@osint-wiki/sources/arxiv-v10-11-skipped-no-lane-2026-11-03.md`: `26
 
 Skipped: `2611.05258`.
 
+## [2026-11-10] ingest | VA-TDM: Velocity Adversarial Distillation (arXiv:2611.06796)
+
+- **Problem.** Intermediate-step distillation needs the student's own score, and the usual estimator scores a different distribution because the student's clean prediction and residual are correlated.
+- **Mechanism.** Supervise velocity fields instead. A-form matches the rectified velocity of the expected clean prediction; B-form matches a score-equivalent Gaussian velocity. A vector critic turns the gap to the teacher into feedback.
+- **Coverage.** One derivation covers score distillation, Fisher matching and moment matching, and explains the heuristic MMD update.
+- **Numbers.** Four-step GenEval 0.61→0.67 on SD3.5-Medium; 0.78→0.80 and OCR 0.64→0.69 on FLUX.2 Klein 4B; 61.33% human preference against Fast-H3 on MiniMax-H3 33B, 45.53% against the 100-NFE teacher.
+- Files created: `sources/arxiv-va-tdm-velocity-adversarial-distillation-2611.06796.md`, `concepts/velocity-adversarial-distillation.md`.
+- Routing: not locally trainable (needs a teacher plus a critic). Wiki-only reference for the wiki's distillation lane; no distribution.
+
+## [2026-11-10] ingest | Same Layout, Different Count — number words past ten (arXiv:2611.06840)
+
+- **Method.** Same-noise test: hold object and seed, change one thing, count with people who never see the prompt. 3,088 human-counted images.
+- **Reach per model.** Qwen-Image and FLUX.2 Klein follow loosely to 25; SD3.5-Medium stops near ten; FLUX.1-dev stops at about ten. All five follow 2–8 at 80–99%.
+- **The split that matters.** Past the reach the layout survives and the count does not. A fine-scale noise redraw moves a crowd two-thirds as far as a new number.
+- **Workaround.** A noised grid in the starting latent gives correct counts in 59% of images against 4% from the prompt.
+- **Measurement trap.** Exact match cannot separate a loose follower from a model that ignores the number; a relative-error score can prefer a constant guess of sixteen.
+- Files created: `sources/arxiv-number-words-past-ten-t2i-2611.06840.md`, `concepts/t2i-counting-reach.md`. Updated `entities/models/flux-1-dev.md`, `entities/models/flux-2-klein.md`, `entities/models/qwen-image-2512.md`, `concepts/prompt-engineering-uncensored.md`.
+- Routing: persona and product prompt work — the rule "write counts only up to about eight" is directly usable. Brief-worthy.
+
+## [2026-11-10] ingest | AR-Edit: Training-Free Autoregressive Video Editing (arXiv:2611.09795)
+
+- **Observation.** In DMD-distilled AR video models Q and K stay near their clean-source values across timesteps (0.68, 0.73) while V diverges (0.30). The asymmetry is inherited from the bidirectional teacher and is strongest at high noise, where a 3–4-step student lives.
+- **Method.** Cache V from one clean forward pass of the source frame, then denoise an edit from Gaussian noise under the target prompt and inject the cached V. Later steps restrict injection to the unedited region with a cross-attention mask.
+- **Claim.** Inversion is redundant in this regime; with 3–4 steps the inverted latent falls outside the expected noise distribution anyway.
+- **Defaults.** S = SCtA = 2, b_min = 22, b_cta = 19 — the knee of the source/text trade-off. Below b_min = 22 the source gain saturates while text keeps degrading.
+- Files created: `sources/arxiv-ar-edit-streaming-video-editing-2611.09795.md`, `concepts/value-cache-streaming-video-editing.md`. Updated `concepts/layered-diffusion-content-preserving-video-editing.md`, `concepts/agentic-video-editing-orchestration.md`, `concepts/disentangled-context-memory-video-edits.md`.
+- Routing: live persona video — edit a stream inside the AR model's latency budget with no training. Brief-worthy; depends on a released distilled AR backbone.
+
+## [2026-11-10] ingest | DISCO: Diffusion-free Score Matching (arXiv:2611.09758)
+
+- **Claim.** A diffusion model learns a family of score fields, but conditioning is defined only for clean data, so any conditioned sampler is a heuristic.
+- **Alternative.** Learn one score field of the slightly perturbed data distribution. Fixing observed variables in the joint score gives the exact conditional score, which MCMC can sample.
+- **Evidence.** On a 2D Gaussian mixture, gradient guidance, the replacement heuristic and the twisted diffusion sampler all deviate from the true conditional; DISCO matches it.
+- **Honest limit.** Exactness holds for the low-dimensional energy parameterisation with Metropolis correction. On images, with an unconstrained score, it is exact only at the population optimum.
+- Files created: `sources/arxiv-disco-diffusion-free-score-matching-2611.09758.md`, `concepts/single-score-field-conditional-sampling.md`. Updated `concepts/tuned-diffusion-sampling-oys.md`, `concepts/constrained-braided-diffusion-sampling.md`, `concepts/fokker-planck-stationary-distributions.md`.
+- Routing: wiki-only; no distribution. REFERENCE for why guidance-based conditionals drift.
+
+## [2026-11-10] ingest | MAEM: residual-stream direction inversion (arXiv:2611.08465)
+
+- **Method.** A fine-tuned LM takes a residual-stream direction as input and generates text whose activations align with it. The reward is max cosine similarity on a frozen subject model, so each exemplar is checkable with one forward pass.
+- **Results (Qwen3.6-27B).** Beats corpus search and an NLA on held-out activation inversion; fires 89% of held-out SAE features with a batch of eight; recovers rank-1 LoRA backdoor payloads more often than corpus search.
+- **Limits.** 6.5% of SAE features never fired; sample diversity is lower than corpus; an auto-interp explainer fed MAEM exemplars was worse than one fed corpus windows.
+- Files created: `sources/arxiv-maem-residual-stream-inversion-2611.08465.md`, `concepts/activation-inversion-metamodels.md`. Updated `concepts/activation-steering-video-generation.md`, `concepts/lora-weight-fingerprint-moderation.md`.
+- Routing: persona-ops moderation — reading what a marketplace LoRA does, in text. Wiki-only today; no distribution.
+
+## [2026-11-10] ingest | GLP: generative latent priors for protein LMs (arXiv:2611.09818)
+
+- **Peripheral.** Subject is ESM-2 protein language models. Logged for one transferable design rule.
+- **Rule.** Re-noise and de-noise an edited activation to pull it back onto a learned manifold, keeping the intended shift.
+- **Honest negative.** The correction works in isolation but fails after re-decoding: structural plausibility breaks, and only one motif survives. The authors blame the rewriting coverage and the decoder, not the prior.
+- Files created: `sources/arxiv-glp-protein-activation-prior-2611.09818.md`, `concepts/generative-latent-prior-activation-steering.md`. Updated `concepts/activation-steering-video-generation.md`, `concepts/contextual-token-interpretability.md`.
+- Routing: wiki-only; no distribution. No image-model experiment.
+
+## [2026-11-10] ingest | DiffSequence-Q: quantum-assisted protein diffusion (arXiv:2611.08434)
+
+- **Relevant part.** Multinomial diffusion with two condition granularities: a per-residue secondary-structure label and one continuous solubility target for the whole sequence.
+- **Quantum part.** A QNN or QKAN acts as an auxiliary property head during training. Generation is fully classical, so there is no inference speedup.
+- **Numbers.** Best of four on CATH secondary-structure recovery (+8.96 DSSP9, +4.77 Q3); predicted solubility +14.0% (QNN) and +22.7% (QKAN) over an MLP baseline; three protein families showed experimental activity.
+- File created: `sources/arxiv-diffsequence-q-protein-diffusion-2611.08434.md`, `concepts/multinomial-diffusion-bimodal-conditioning.md`. Updated `concepts/mdlm-padding-termination-decoupling.md`.
+- Routing: wiki-only; no distribution. Peripheral — one conditioning pattern, no image artefact.
+
+## [2026-11-10] ingest | Disorder-blind Mpemba acceleration of quantum state preparation (arXiv:2611.08424)
+
+- **Peripheral.** Quantum statistical mechanics. No model, no sampler, no image experiment.
+- **Result.** A "blind" preparation built from the clean chain, without knowledge of the disorder, can still beat a reference in typical samples. At strong dephasing the density dynamics map to a resistor chain, and the residual slow-mode overlap tracks the resistance profile.
+- **Thresholds.** Finite mean resistance suffices for diffusion; the L^(−1/2) overlap decay needs finite resistance variance.
+- File created: `sources/arxiv-mpemba-quantum-state-preparation-2611.08424.md`. Updated `concepts/fokker-planck-stationary-distributions.md`.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Pearson type IV drift-diffusion stationary distributions (arXiv:2611.06749)
+
+- **Peripheral.** "Drift-diffusion" here means Fokker-Planck, not image diffusion. Nine pages of stochastic-process mathematics.
+- **Result.** Pearson type IV is derived as the stationary solution of a standardised Fokker-Planck equation with linear drift and quadratic diffusion, with necessary and sufficient conditions, closed-form CDF, a moment recurrence, skewness, kurtosis and mode.
+- **Reading.** Tail weight comes from the curvature of the diffusion coefficient; asymmetry comes from its gradient. Asymmetric fluctuations can appear with a symmetric restoring drift.
+- File created: `sources/arxiv-pearson-type-iv-drift-diffusion-2611.06749.md`. Updated `concepts/fokker-planck-stationary-distributions.md`.
+- Routing: wiki-only; no distribution. Logged to stop a keyword search from producing a false positive.
+

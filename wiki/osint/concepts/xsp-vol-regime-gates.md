@@ -5,6 +5,10 @@ tags: [concept, xsp, options, vol-regime, k233]
 keywords: [xsp, vol-regime, green-playbook, entry-gate]
 related:
   - sources/arxiv-2608.10693-fed-speaks-vol-surface-2026-08-12.md
+  - sources/substack-rss-glitchspx-2026-11-06-the-93-million-put-dump-that-wasnt.md
+  - sources/arxiv-risvix-vix-term-structure-2611.07120.md
+  - concepts/options-flow-package-reading.md
+  - concepts/vix-term-structure-fractional-memory.md
   - concepts/xsp-lane-trading-framework.md
   - concepts/fomc-iv-surface-dynamics.md
   - concepts/high-iv-collar-shopping.md
@@ -18,7 +22,7 @@ related:
   - sources/substack-rss-moontower-2026-10-11-iron-condor-destroyer.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations

@@ -5,6 +5,8 @@ tags: [concept, video-editing, layered-diffusion, compositing, alpha-matte]
 keywords: [Vera, edit layer, alpha matte, MoT, content preservation, non-destructive editing]
 related:
   - sources/arxiv-2606-23610-vera-layered-content-preserving-video-editing.md
+  - sources/arxiv-ar-edit-streaming-video-editing-2611.09795.md
+  - concepts/value-cache-streaming-video-editing.md
   - entities/models/vera.md
   - concepts/disentangled-context-memory-video-edits.md
   - concepts/albedo-guided-instance-video-editing.md

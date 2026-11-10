@@ -5,6 +5,10 @@ tags: [concept, video-generation, steering, safety, optimal-control, inference-t
 keywords: [LA-LQR, activation steering, latent LQR, T2V safety, contrastive vectors, reduced-order control, inference-time alignment, DiT]
 related:
   - sources/arxiv-activation-steering-video-gen-2606.04775-2026-06-05.md
+  - sources/arxiv-maem-residual-stream-inversion-2611.08465.md
+  - concepts/activation-inversion-metamodels.md
+  - sources/arxiv-glp-protein-activation-prior-2611.09818.md
+  - concepts/generative-latent-prior-activation-steering.md
   - sources/arxiv-optiworld-optimal-control-video-world-2606-00499.md
   - concepts/censorship-tier-taxonomy.md
   - concepts/prompt-engineering-uncensored.md

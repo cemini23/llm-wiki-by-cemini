@@ -10,11 +10,13 @@ related:
   - concepts/verifiable-deterministic-agent-benchmarking.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-30_ccc-k406-k410-sip-ready.md
+  - concepts/task-efficient-eval-cached-traces.md
+  - sources/arxiv-task-efficient-agent-eval-cached-traces-2611.06803.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-11-10
 ---
 
 ## Relations

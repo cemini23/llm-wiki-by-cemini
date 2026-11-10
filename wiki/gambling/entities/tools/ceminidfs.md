@@ -30,9 +30,11 @@ related:
   - entities/tools/sharp-football-analysis.md
   - sources/brief-k128b-bbm7-challenges-and-solutions-2026-06-24.md
   - sources/research-diy-pickem-props-master-plan-2026-07-05.md
+  - concepts/gaussian-copula-joint-stat-distribution.md
+  - sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md
 maturity: validated
 created: 2026-06-20
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations
@@ -65,6 +67,12 @@ Implementation repo for K125 DIY NFL DFS projection pipeline. Phases 0–5 compl
 - Ownership sim + copula rerank for MME pools
 - Late-swap pydfs integration after team lock
 - FanDuel slate GPP strategy (stacking, correlation, leverage)
+
+### Joint-distribution method reference
+
+A 2026 NBA paper validates the copula structure that this repo's correlation layer uses: empirical marginals, rank-based normal scores, `nearPD` repair, and a walk-forward refit before every game. It reports that the Gaussian copula beats the independence product in 25 of 27 joint-threshold combinations `[TENTATIVE — single NBA study]`. The method is directly portable; the correlation matrix is not. See @concepts/gaussian-copula-joint-stat-distribution.md and @sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md.
+
+The one actionable idea is the usage-driver link: the paper names playing time as the main driver of dependence. For NFL, that is snap share. See @concepts/player-usage-models.md for the conditioning variables.
 
 ### Flags that stay off (2026-10-10)
 

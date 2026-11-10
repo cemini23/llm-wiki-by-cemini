@@ -45,9 +45,13 @@ related:
   - sources/arxiv-acem-agentic-cost-estimation-2608.02582.md
   - concepts/hybrid-gui-mcp-tool-adoption-gap.md
   - sources/arxiv-screenshots-or-tools-gui-mcp-2608.03327.md
+  - concepts/visual-token-routing.md
+  - concepts/frontier-model-release-cadence.md
+  - sources/newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant.md
+  - entities/models/claude-fable-5-2.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-08-05
+updated: 2026-11-10
 ---
 
 ## Relations

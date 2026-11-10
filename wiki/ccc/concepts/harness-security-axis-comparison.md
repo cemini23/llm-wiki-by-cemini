@@ -9,11 +9,13 @@ related:
   - briefs/2026-10-05_k282-ccc-agent-eval-route.md
   - concepts/code-enforces-decisions-multi-fidelity-eval.md
   - sources/arxiv-bt-agent-behavior-trees-onboard-2610.13862.md
+  - concepts/runtime-pattern-relationship-decay.md
+  - sources/arxiv-routine-operations-break-patterns-2611.09088.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-10-06
-updated: 2026-10-12
+updated: 2026-11-10
 ---
 
 ## Relations

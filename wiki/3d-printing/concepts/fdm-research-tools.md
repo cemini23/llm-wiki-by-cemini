@@ -13,9 +13,10 @@ related:
   - sources/2026-cheng-stl-to-stokeslet.md
   - sources/2026-demircali-thermal-drawing-preforms.md
   - sources/2025-kota-3d-cal-tactile-calibration.md
+  - sources/arxiv-fishsense-lite-laser-mount-2611.08732.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-05
+updated: 2026-11-10
 ---
 
 ## Relations

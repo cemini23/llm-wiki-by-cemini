@@ -939,3 +939,35 @@ The 2026-11-02 synthesis page existed but the three underlying documents were st
 
 A duplicate concept page (`game-time-project.md`) was created and then removed once the existing 2026-11-02 synthesis was found. One page per project.
 - No sources ingested to `sources/`; this is a synthesis page. External citations are inline URLs with retrieval dates.
+
+## [2026-11-10] ingest | SpecCompact — accelerating LLM agent context compaction
+
+- **New source page:** `sources/arxiv-speccompact-context-compaction-2611.06876.md`. Twelve pages. SpecCompact writes structured summary slots in parallel with a small drafter and line-wise target verification.
+- **New concept page:** `concepts/context-compaction-game-harness.md` — the six-slot schema as a milestone state record, plus the rule to keep the raw record beside the summary.
+- **Updated `concepts/agent-harness-castle-project.md`** — rule **H16**: compact into named slots, keep the raw record. It reads with H7 (raw record beats summary) and H8 (inherited notes go stale), and gives H3's ledger a fixed shape.
+- **Finding:** the speedup is real (2.04–5.63×, 8.68× median in a Hermes user study). The accuracy gain is not. Task goal completion dropped 2.50–4.07 points on Gemma4 and rose 0.83–4.76 points on Qwen3.5.
+- **Finding:** slots read from different places. Progress and Decisions draw from all over the history; Goal, Constraints, and Next Steps mostly from the head or the tail.
+- **Judgement:** domain-neutral agent-systems work. It serves game dev through the agent harness, not through the game. A CCC cross-reference would also be correct. The page exists here because the harness is an active project and the six-slot record is a concrete artefact.
+- Routing: agent harness for game dev (castle-sim W2 planner and executor sessions).
+
+## [2026-11-10] ingest | Context enrichment and selective robustness in LLM social agents
+
+- **New source page:** `sources/arxiv-context-enrichment-selective-robustness-2611.06914.md`. Twelve pages. NeurIPS 2026 SocialAgent workshop. Five controlled prompt-enrichment conditions and one two-part validation criterion.
+- **New concept page:** `concepts/npc-prompt-robustness.md` — a format sweep plus a world sweep, scored on a plane rather than on one accuracy number.
+- **Updated `concepts/agentic-npc-design-guardrails.md`** — section 9 ties the existing testing section to the criterion.
+- **Updated `concepts/llm-npc-runtime-ai-shelf.md`** — new adoption gate 5: the NPC prompt must pass the robustness sweep.
+- **Finding:** grounded prompt conditions raised world responsiveness for both models tested. Only one model also gained surface stability. One cell swung from at most 0.9% to 89.9% transfer on a paraphrase that preserved meaning.
+- **Caution recorded:** the paper states that it does not separate decision grounding from the extra salience that a grounded prompt adds.
+- **Judgement:** a method transfer to the Tier 3+ NPC shelf, not a game result. The paper studies social simulation. The value here is the acceptance test for an NPC prompt.
+- Routing: wiki-only; no distribution. It serves the agentic NPC shelf only if runtime NPCs open.
+
+## [2026-11-10] ingest | The Power of Meta Access in the Software of the Future
+
+- **New source page:** `sources/arxiv-meta-access-interfaces-2611.08428.md`. Twenty-eight pages. A position paper, grounded in the Chat AI Meta Chat prototype.
+- **Updated `concepts/agent-harness-castle-project.md`** — rule **H17**: keep the authority and capability control plane outside the agent's writable scope.
+- **Updated `concepts/agentic-npc-design-guardrails.md`** — section 10: an NPC that acts on the game is a level-4 mutation and takes the same six-part capability contract.
+- **Finding:** the six-level ladder runs from tutoring, to metadata, to content, to confirmed mutation, to orchestration. The key boundary is between reading and changing state.
+- **Finding:** for a general-purpose harness the paper adds a target axis (behavioural, state, capability, authority) and the 4S and 5S labels. The hard rule: a harness must not let the assistant approve its own authority changes.
+- **Finding:** if the harness has file-edit or shell tools, typed capability checks are bypassed. Classification must follow the capability used, not the file path.
+- **Judgement:** it serves game dev through the agent harness and the W2 MCP write policy. It gives the existing "read-only MCP first" rule a vocabulary and a ladder. It is a position paper with no user study, so treat the claims as design guidance.
+- Routing: agent harness for game dev (W2 MCP admission policy and Godot write path).

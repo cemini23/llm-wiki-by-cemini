@@ -19,9 +19,11 @@ related:
   - concepts/process-verified-agentic-search-geo.md
   - concepts/agent-ready-website-local-bm.md
   - sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md
+  - sources/arxiv-halucheck-hallucination-benchmark-2611.08231.md
+  - concepts/ai-factual-error-types-business-facts.md
 maturity: validated
 created: 2026-06-28
-updated: 2026-10-01
+updated: 2026-11-10
 ---
 
 ## Relations

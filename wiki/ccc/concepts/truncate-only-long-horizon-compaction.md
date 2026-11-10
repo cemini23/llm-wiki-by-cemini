@@ -7,11 +7,13 @@ related:
   - sources/arxiv-cliffcompaction-long-horizon-compaction-2609.26779.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-23_ccc-k376-k384-sip-ready.md
+  - concepts/runtime-pattern-relationship-decay.md
+  - sources/arxiv-routine-operations-break-patterns-2611.09088.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-11-10
 ---
 
 ## Relations

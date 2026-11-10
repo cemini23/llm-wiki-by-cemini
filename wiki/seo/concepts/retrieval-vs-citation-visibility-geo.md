@@ -9,9 +9,13 @@ related:
   - concepts/competitive-geo-citation-factors.md
   - concepts/geo-visibility-measurement.md
   - concepts/ai-citation-sourcing-geo.md
+  - concepts/passage-evidence-screening-geo.md
+  - sources/arxiv-cascadefilter-semantic-filtering-2611.08367.md
+  - sources/arxiv-rag-competitive-programming-2611.09791.md
+  - sources/arxiv-verifier-guided-self-consistency-2611.06606.md
 maturity: validated
 created: 2026-10-14
-updated: 2026-10-14
+updated: 2026-11-10
 ---
 
 ## Relations

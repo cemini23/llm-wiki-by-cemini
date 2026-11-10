@@ -681,6 +681,27 @@
 | @sources/arxiv-2608-12290-ood-i2v-agentic-optimization.md | draft | OOD I2V agentic optimization (2608.12290) → image-gen |
 | @sources/arxiv-2608-13069-ood-behavioral-reprogramming.md | draft | OOD behavioral reprogramming (2608.13069) → image-gen |
 
+### Guardrails, measurement, and agent serving (2026-11-10 wave)
+
+| Page | Maturity | Topic |
+|------|----------|-------|
+| @sources/arxiv-llm-auditors-computation-not-weights-2611.07847.md | draft | LLM audits networks with a calculator, not raw weights (2611.07847) |
+| @concepts/llm-audit-computation-not-weight-access.md | draft | White-box weight access is not a prerequisite for an audit |
+| @sources/arxiv-user-scrutiny-llm-conversations-2611.08232.md | draft | User scrutiny in 368k real LLM conversations (2611.08232) |
+| @concepts/verification-environment-user-scrutiny.md | draft | Signifier is not inspectable evidence; 24:1 attribution-to-URL |
+| @sources/arxiv-contextual-integrity-generative-2611.08284.md | draft | Generative contextual-integrity disclosure sim (2611.08284) |
+| @concepts/contextual-integrity-disclosure-simulation.md | draft | Need is not entitlement — the Type III pretext |
+| @sources/arxiv-jev-llm-safety-guardrail-2611.08845.md | draft | Jev as external input/output guardrail (2611.08845) |
+| @concepts/external-filter-safety-utility-tradeoff.md | draft | A guardrail has two error rates, not one |
+| @sources/arxiv-prefix-cache-collapse-renewal-law-2611.08902.md | draft | Prefix-cache collapse in LLM agent serving (2611.08902) |
+| @concepts/prefix-cache-collapse-agent-serving.md | draft | A burst can trap a serving pool; session cap is the control |
+| @sources/arxiv-bmms-policy-conditioned-behavioral-compliance-2611.09147.md | draft | BMMS policy-conditioned compliance suite (2611.09147) |
+| @concepts/policy-conditioned-compliance-measurement.md | draft | The policy is the argument; rank fleets, range absolute scores |
+| @sources/newsletter-rss-tldrsec-2026-11-05-tldr-sec-353---a-thousand-fewer-paths-to-root-ku.md | draft | tl;dr sec #353 — 948 LPEs, Bedrock Mantle quarantine gap, K8s logging |
+| @concepts/cloud-llm-service-quarantine-coverage-gap.md | draft | A cloud quarantine deny-list lags new services |
+| @sources/substack-rss-secpro-2026-11-06-five-issues-the-php-crisis-has-brought-into-view.md | draft | SecPro — five institutional issues from the PHP crisis |
+| @concepts/software-maintenance-institutional-insecurity.md | draft | An available fix is not a fixed service |
+
 ### Education + ethics
 
 | Page | Maturity | Topic |

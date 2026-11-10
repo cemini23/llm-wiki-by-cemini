@@ -5,6 +5,9 @@ tags: [model, flux, flux-2, klein, mm-dit, dit, black-forest-labs, minimal-censo
 keywords: [FLUX.2 Klein, FLUX.2 Klein 9B, FLUX.2 Klein 4B, Black Forest Labs, BFL, sub-second inference, 8-13GB VRAM, multi-reference conditioning, photorealism]
 related:
   - runbooks/mac-local-image-director.md
+  - sources/arxiv-va-tdm-velocity-adversarial-distillation-2611.06796.md
+  - sources/arxiv-number-words-past-ten-t2i-2611.06840.md
+  - concepts/t2i-counting-reach.md
   - sources/uncensored-image-generation-survey.md
   - concepts/prompt-engineering-uncensored.md
   - concepts/two-pass-generation-workflow.md

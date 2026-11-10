@@ -4919,3 +4919,51 @@ Skip record:
 | [october-blockchain-tech](sources/substack-rss-wublock-2026-11-05-october-blockchain-tech-2026-11-05.md) | Bitcoin Core v32.1 fixes an IP leak under private broadcast. **Disclosure policy now assumes LLM-assisted rediscovery.** | draft |
 | [arxiv-v10-11-late-skip-no-lane](sources/arxiv-v10-11-late-skip-no-lane-2026-11-05.md) | Two skips: strategyproof facility location (social choice) and anomalous diffusion (statistical physics). | draft |
 
+## K296 wave (2026-11-10)
+
+Nineteen sources: 3 papers and 16 newsletters. The midterm aftermath, prediction-market structure, and two instrument-reading corrections.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k296-feeds-wave](concepts/k296-feeds-wave.md) | Wave hub. Kalshi $5.36bn record day, **about 75% of volume is parlays**, Binance $6.34bn breach, RISVIX MSE −13.06%. | draft |
+| [risvix-vix-term-structure](sources/arxiv-risvix-vix-term-structure-2611.07120.md) | Fitted memory parameter in the VIX curve. Term structure is a Mittag-Leffler mixture of spot and long-run level. | draft |
+| [genealogical-reinforcement](sources/arxiv-genealogical-reinforcement-2611.08548.md) | Offspring probability as a function of local family density. Identifiability needs depth D ≥ 2. | draft |
+| [random-lcm-memory](sources/arxiv-random-lcm-memory-2611.11301.md) | Memory parameter a = 1/2 flips the fluctuation scale from √n log n to n^a. Mean unchanged. | draft |
+| [capital-flows-market-status](sources/substack-rss-capital-flows-2026-11-05-market-status-market-bottom-or-beginning-of-the.md) | Thesis only: AI capex absorbed foreign inflows and does not convert to profit. No trigger or level. | draft |
+| [capital-flows-jensen-ipo](sources/substack-rss-capital-flows-2026-11-09-the-fall-of-jensen-anthropic-ipo-and-the-systemi.md) | Video teaser. AI credit risk into the Anthropic IPO. No data. | draft |
+| [eh-cftc-impartial-access](sources/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md) | CFTC orders DCMs to stop geofencing states in 30 days. Kalshi launches single-stock perps. | draft |
+| [eh-misery-index](sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md) | Kalshi $5.33bn record. CFTC versus states and tribes. Vanderbilt flags a $191k pre-poll bet. | draft |
+| [eh-trade-out-moat](sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md) | The moat is trade-out UX, not price. Kalshi $5.36bn record again. | draft |
+| [glitchspx-put-dump](sources/substack-rss-glitchspx-2026-11-06-the-93-million-put-dump-that-wasnt.md) | A $283m three-leg package read backwards by every feed. The 725 put purchase was the largest leg. | draft |
+| [klement-italy-divide](sources/substack-rss-klement-2026-11-06-the-economic-divide-in-italy.md) | Church construction dates the Italian north–south gap to about 1000, not 1300. | draft |
+| [klement-dei](sources/substack-rss-klement-2026-11-09-dei-is-dead.md) | DEI post share falls at the largest 40 firms. Silence and termination are indistinguishable. | draft |
+| [klement-europe-startups](sources/substack-rss-klement-2026-11-10-the-start-up-challenge-in-europe.md) | The EU–US gap sits in the tail: 40% of EU firms take over seven years to scale, 1.5 years slower on average. | draft |
+| [moontower-335](sources/substack-rss-moontower-2026-11-08-moontower-335.md) | Commodity indices are oil bets (GSCI about 85% of risk). The tracking-error formula explains manager underperformance. | draft |
+| [moontower-gerrymandered](sources/substack-rss-moontower-2026-11-08-your-thoughts-are-gerrymandered.md) | Essay. P/L is the falsification gate. No market content. | draft |
+| [wublock-democratic-selloff](sources/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md) | Nasdaq −4.98% intraday, $870m liquidations, 93% long. The Binance breach chain ends at EIP-7702. | draft |
+| [wublock-project-updates](sources/substack-rss-wublock-2026-11-07-weekly-project-updates-aave-rolls-out-fixed-rate.md) | Aave buys Avon for fixed-rate lending; $30bn deposits. Glamsterdam gas EIPs break contracts. | draft |
+| [wublock-asia-top10](sources/substack-rss-wublock-2026-11-08-asias-weekly-top10-crypto-news-pboc-to-probe-sol.md) | PBOC suspends a Solana Shanghai event. Korea delays crypto tax to 2029 and weighs a 99% cold-wallet rule. | draft |
+| [wublock-outlook-cpi](sources/substack-rss-wublock-2026-11-09-wublockchain-weekly-outlook-us-cpi-and-ppi-test.md) | CoreWeave: $104bn backlog, $626m net loss, **$640m quarterly interest** on $2.575bn revenue. | draft |
+| [wublock-gate-custody](sources/substack-rss-wublock-2026-11-10-gate-founder-shares-his-approach-to-security-no.md) | Gate proposes a 3-shard MPC vault with a 48-hour delay. **60% of 2026 H1 losses are key compromise.** | draft |
+
+New concepts and entities:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [vix-term-structure-fractional-memory](concepts/vix-term-structure-fractional-memory.md) | Mittag-Leffler decay in the VIX curve. Four parameters set the term structure; gains concentrate in high-VIX states. | draft |
+| [options-flow-package-reading](concepts/options-flow-package-reading.md) | Four trade types, package price allocation, and four checks before calling a print "bought to open". | draft |
+| [prediction-market-impartial-access-dcm](concepts/prediction-market-impartial-access-dcm.md) | The CFTC interpretation, its two 30-day duties, and the federal–state conflict it creates. | draft |
+| [prediction-market-trade-out-moat](concepts/prediction-market-trade-out-moat.md) | Trade-out quality as the moat, with the parlay-share counter-evidence stated. | draft |
+| [commodity-index-construction](concepts/commodity-index-construction.md) | Sector caps do not cap risk. Variance drag on the GSCI runs 5.1% to 2.7%. | draft |
+| [tracking-error-dispersion-active-management](concepts/tracking-error-dispersion-active-management.md) | Share underperforming ≈ N(costs / tracking error); 69% at 1.5% cost and 3% tracking error. | draft |
+| [crypto-custody-single-point-of-failure](concepts/crypto-custody-single-point-of-failure.md) | 60% of losses are key compromise. MPC shards convert one single point into three. | draft |
+| [italy-regional-prosperity-divergence](concepts/italy-regional-prosperity-divergence.md) | Trade openness raises mean and variance together, with two plague-era reversals. | draft |
+| [european-startup-scaling-gap](concepts/european-startup-scaling-gap.md) | The gap is a tail difference, not a mean shift. | draft |
+| [corporate-political-risk-disclosure](concepts/corporate-political-risk-disclosure.md) | Government revenue exposure prices public speech; disclosure is a choice variable. | draft |
+| [genealogical-reinforcement-branching](concepts/genealogical-reinforcement-branching.md) | Local density as a growth feature, with a simulated null when a parameter sits on the boundary. | draft |
+| [long-memory-phase-transition-correlated-bernoulli](concepts/long-memory-phase-transition-correlated-bernoulli.md) | A memory threshold changes the scaling class, not the mean. | draft |
+| [coreweave](entities/companies/coreweave.md) | AI-infrastructure credit proxy. Interest expense is about 25% of revenue. | draft |
+| [circle](entities/companies/circle.md) | USDC issuer. Revenue +17% on circulation +8%, so the growth is reserve-yield dependent. | draft |
+| [tether](entities/companies/tether.md) | USDT issuer. About 150k BTC, $132.4bn Treasuries including repos, $7.95bn excess reserves. | draft |
+| [draftkings](entities/companies/draftkings.md) | First listed incumbent with a full prediction-market stack. Take rate 11.1%, 20-month cohort payback. | draft |
+

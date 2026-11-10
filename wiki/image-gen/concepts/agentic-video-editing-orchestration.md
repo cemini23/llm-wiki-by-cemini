@@ -5,6 +5,8 @@ tags: [concept, video-editing, agent, orchestration, workflow]
 keywords: [VideoAgent, multi-agent, shot planning, textual-gradient graph, intent parsing, long-form video]
 related:
   - sources/arxiv-2606-23327-videoagent-all-in-one-framework.md
+  - sources/arxiv-ar-edit-streaming-video-editing-2611.09795.md
+  - concepts/value-cache-streaming-video-editing.md
   - entities/models/videoagent.md
   - entities/persona-ops/n8n.md
   - concepts/persona-ops-stack.md

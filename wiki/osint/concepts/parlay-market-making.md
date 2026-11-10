@@ -8,9 +8,13 @@ related:
   - entities/platforms/kalshi.md
   - concepts/market-microstructure.md
   - concepts/agent-authorization-stack.md
+  - concepts/prediction-market-trade-out-moat.md
+  - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md
+  - sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md
+  - entities/companies/draftkings.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-11-10
 ---
 
 ## Relations

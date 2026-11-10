@@ -4,6 +4,9 @@ type: concept
 tags: [concept, quant, regime, hurst, mean-reversion, trend-following, k67, phosphenq]
 keywords: [hurst-exponent, market-memory, regime-classification, trend-vs-mean-reversion, phosphenq]
 related:
+  - sources/arxiv-random-lcm-memory-2611.11301.md
+  - concepts/long-memory-phase-transition-correlated-bernoulli.md
+  - concepts/vix-term-structure-fractional-memory.md
   - sources/trading-posts-compilation-38-2026-05-26.md
   - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - concepts/monte-carlo-permutation-test-mcpt.md
@@ -12,7 +15,7 @@ related:
   - sources/arxiv-2608.16749-rough-volatility-across-assets-2026-08-18.md
 maturity: draft
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-11-10
 ---
 
 ## Relations

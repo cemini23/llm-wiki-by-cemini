@@ -6,8 +6,9 @@ related:
   - sources/arxiv-2610-23254-ignored-not-refused.md
   - sources/arxiv-2610-26595-jailbreak-asr-evaluator-sensitivity.md
   - sources/arxiv-2610-22333-eval-awareness-indic.md
+  - concepts/external-filter-safety-utility-tradeoff.md
 maturity: draft
-updated: 2026-10-20
+updated: 2026-11-10
 ---
 
 ## Raw Concept

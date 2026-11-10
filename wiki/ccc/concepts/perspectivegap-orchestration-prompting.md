@@ -11,9 +11,11 @@ related:
   - concepts/channel-fracture-cross-agent-memory-delivery.md
   - entities/patterns/scatter-gather.md
   - entities/patterns/glasswing-deliberate-disagreement.md
+  - concepts/workflow-orchestration-as-capability.md
+  - sources/newsletter-rss-latent-space-2026-11-08-one-million-ai-engineer-special-how-stanford-tea.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-11-10
 ---
 
 ## Relations

@@ -22,9 +22,12 @@ related:
   - sources/hero-rl-llm-npc-springer-2026-06-26.md
   - sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md
   - concepts/travian-civ-browser-strategy-design.md
+  - concepts/npc-prompt-robustness.md
+  - sources/arxiv-context-enrichment-selective-robustness-2611.06914.md
+  - sources/arxiv-meta-access-interfaces-2611.08428.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-11-02
+updated: 2026-11-10
 wire_status: policy_wired
 wire_target: concepts/agentic-npc-design-guardrails.md
 ---
@@ -121,6 +124,16 @@ Memory: last 3 player decisions (decay after session)
 ### 8. Choice architecture is part of the guardrail [CONFIRMED — arXiv 2610.03253]
 
 A pre-filled default pulls an LLM's choice toward that value, and the pull depends on wording and on how coarse the action list is. For an advisor or lord prompt, do not pre-fill a recommended action where the design wants neutrality, and prefer permission-style wording. A fine-grained option list is more swayable than a short list of high-level choices. See @sources/arxiv-2610.03253-default-following-collective-action-2026-10-05.md.
+
+### 9. Selective robustness is the acceptance test for section 6 [TENTATIVE — arXiv 2611.06914]
+
+Section 6 above asks for behavior snapshot tests with variance bounds. This paper turns that into one criterion with two halves. **Surface invariance:** the same world and the same context in a different format — prose, bullets, key-value, paraphrase — must not move the answer much. **World responsiveness:** one real change in the decision-relevant fact must move the answer in the direction fixed before the test. In the paper's pilot, one model gained both. The other stayed surface-sensitive, and one cell swung from at most 0.9% transfer to 89.9% on a paraphrase alone. [TENTATIVE — one scenario, two models from one family]
+
+Practical shape for the NPC shelf: run a format sweep and a world sweep, and score on the plane between surface sensitivity and world responsiveness. Do not use a single accuracy number; it hides both failure axes. Detail: @concepts/npc-prompt-robustness.md · @sources/arxiv-context-enrichment-selective-robustness-2611.06914.md
+
+### 10. Meta access is a guardrail layer for the editor, not only the NPC [TENTATIVE — arXiv 2611.08428]
+
+An NPC that can act on the game — spawn a unit, change a tax rate — is a level-4 mutation in the meta-access ladder. The same six-part capability contract applies: evidence source, permitted scope, target validation, disclosure, confirmation, and failure behavior. Enforce it in code, not in the prompt. The paper's authority rule also fits in-game advisors: an NPC must never widen its own permissions or alter the rules that bound it. See @sources/arxiv-meta-access-interfaces-2611.08428.md.
 
 ## Dead Ends
 

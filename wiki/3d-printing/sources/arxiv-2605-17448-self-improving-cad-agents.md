@@ -8,10 +8,11 @@ related:
   - concepts/ai-design-tools.md
   - concepts/novice-cad-workflows.md
   - sources/2026-george-agentscad-fdm-dfm.md
+  - concepts/agent-skill-libraries-mechanical-engineering.md
 maturity: draft
 read_status: deep-read
 created: 2026-06-03
-updated: 2026-07-16
+updated: 2026-11-10
 ---
 
 ## Relations

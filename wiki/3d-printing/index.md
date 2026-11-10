@@ -148,6 +148,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [Cursor](entities/tools/cursor.md) — IDE + Chat with `@` file refs; **friend handoff AI** (Cursor Pro, not Claude Code) — `tool, cursor, IDE, AI, friend-handoff`
 - [reBot-DevArm](entities/tools/rebot-devarm.md) — open-source 6-DOF robotic arm; bisected CNC-aluminum + 3D-print (ABS/TPU 95+) BOM; STEAL-FROM tier for hybrid-manufacturing methodology + infill profiles; CERN-OHL-W-2.0 hardware / Apache-2.0 software — `tool, robotics, robotic-arm, open-hardware, hybrid-manufacturing, ROS2, steal-from`
 - [markdown-preview-pluk](entities/tools/markdown-preview-pluk.md) — native macOS markdown previewer with LaTeX + Mermaid; cross-wiki stub (canonical in OSINT wiki); tangential workflow tip for wiki authors — `tool, markdown, previewer, macOS, LaTeX, Mermaid, cross-wiki-stub`
+- [Mechanical Engineering Skills](entities/tools/mechanical-engineering-skills.md) — CMU BaratiLab library of 33 agent skills; every number comes from a tested script, not model arithmetic; install copies folders only — `tool, agents, skills, CAD, DFM, verification, phase-0`
 
 ### AI design tools
 
@@ -193,7 +194,9 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [Industrial AM — Monitoring, Smart Factories, and Metal Processes](concepts/industrial-am-monitoring.md) — `industrial, LPBF, SLS, smart-factory, ML, background`
 - [Printed Photonics and Metamaterials — Background](concepts/printed-photonics-background.md) — `photonics, SLA, 2PP, THz, background, stub-hub`
 - [FDM Research Tools — Repurposed Printers and Hybrid Processes](concepts/fdm-research-tools.md) — `research, tooling, photogrammetry, repurposed, hybrid`
----
+- [Agent Skill Libraries for Engineering](concepts/agent-skill-libraries-mechanical-engineering.md) — tools compute and the model orchestrates; every result travels with its check; a failed check is reported, not hidden — `agents, skills, verification, DFM, methodology`
+- [Precision Optomechanics — AM and the Tolerance Budget](concepts/precision-optomechanics-am.md) — measure mount motion, convert it to the units the optics care about, then judge; printing replaces assembly, not dynamics — `optics, tolerance, metrology, LPBF, precision`
+- [Printed Robot Arm Platforms](concepts/printed-robot-arm-platforms.md) — all-printed Inmoov versus bisected CNC-plus-print; 1.9 kg PLA per arm; budget two or three print cycles per bought-component interface — `robotics, open-hardware, PLA, arm, mass`
 
 ## Meta
 
@@ -220,4 +223,15 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 ## Link Evaluation v10.11 (2026-11-05)
 
 - [differentiable-topology-acoustic-holography](sources/arxiv-2611.04251-differentiable-topology-acoustic-holography-2026-11-05.md) — 3D lens topologies optimised directly with a differentiable angular-spectrum solver, quantifying where the thin-element approximation fails. — `paper, topology-optimization, acoustics, ingest-2026-11-05`
+
+## Ingest 2026-11-10 — eight-paper inbox drain
+
+- [mechanical-engineering-skills](sources/arxiv-mechanical-engineering-skills-2611.05758.md) — 33 agent skills for design, analysis and manufacturing; nineteen package CMU papers; every number comes from a tested script; no with-versus-without benchmark. — `paper, agents, skills, CAD, DFM, ingest-2026-11-10`
+- [sharp-field-selector-system](sources/arxiv-sharp-field-selector-system-2611.06332.md) — Twelve moving probes share one focal plane for the SHARP spectrograph; machined aluminium, no AM; combined tilt ±0.115° from ±0.30 mm mechanical shift. Weak fit, filed for the tolerance method. — `paper, optomechanics, tolerance, metrology, weak-fit, ingest-2026-11-10`
+- [monolithic-optomechanical-chassis](sources/arxiv-monolithic-optomechanical-chassis-2611.06898.md) — L-PBF Invar36 chassis with printed flexures; 13% smaller footprint; visibility 0.861 to 0.878 against more than 0.98 with conventional mounts; the 20 h print failed. — `paper, LPBF, optomechanics, Invar36, flexure, ingest-2026-11-10`
+- [ct-image-noise-phantom](sources/arxiv-ct-image-noise-phantom-2611.07357.md) — CT noise against prescribed Noise Index across organs; DLIR cuts liver dose about 22%; the phantom is bought, not printed. Weak fit, filed as phantom QA precedent. — `paper, medical, phantom, CT, weak-fit, ingest-2026-11-10`
+- [track-height-control-am](sources/arxiv-track-height-control-am-2611.07704.md) — Feedforward, feedback and lookup-table control for DED-LB track height on porous substrates; conceptual only, no experiment; the three classes map onto FDM pressure advance. — `paper, control, DED, metal, conceptual, ingest-2026-11-10`
+- [anthropomorphic-arm-charmie](sources/arxiv-anthropomorphic-arm-charmie-2611.08013.md) — Inmoov arm in PLA; 1864 g printed mass, 2700 g total, 5 DOF; four documented reprints after the first build; MediaPipe teleoperation at 16 to 25 fps. — `paper, robotics, PLA, open-hardware, arm, ingest-2026-11-10`
+- [fishsense-lite-laser-mount](sources/arxiv-fishsense-lite-laser-mount-2611.08732.md) — A PLA mount clamps a dive laser to a camera; 1% of a US$1,300 unit; rigid targets within 1.3% and 99% of 1,055 frames inside 15%. — `paper, mount, PLA, field-validated, metrology, ingest-2026-11-10`
+- [geometric-texture-mesh-segmentation](sources/arxiv-geometric-texture-mesh-segmentation-2611.08897.md) — Middle-level geometric texture segmentation on 3D meshes; SAM3 plus DINO features lifted from views to surface; names 3D printing once, prints nothing. Weak fit. — `paper, graphics, mesh, segmentation, weak-fit, ingest-2026-11-10`
 

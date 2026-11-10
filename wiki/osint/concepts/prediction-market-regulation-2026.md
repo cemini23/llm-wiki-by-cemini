@@ -4,6 +4,13 @@ type: concept
 tags: [concept, prediction-markets, regulation, kalshi, cftc, k233, k236]
 keywords: [cftc, kalshi, new-york-ag, event-contracts, state-gaming-laws, wildfire-betting, emergency-authority, novig, responsible-trading, incentive-programs, nyc-council, baltimore]
 related:
+  - sources/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md
+  - sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md
+  - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md
+  - sources/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md
+  - concepts/prediction-market-impartial-access-dcm.md
+  - concepts/prediction-market-trade-out-moat.md
+  - entities/companies/draftkings.md
   - sources/newsletter-event-horizon-wildfires-2026-08-12.md
   - sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md
   - concepts/polymarket-bot-architecture.md
@@ -33,9 +40,10 @@ related:
   - concepts/k288-feeds-wave.md
   - sources/k292-osint-feeds-2026-10-16.md
   - sources/substack-rss-wublock-2026-10-10-weekly-project-updates.md
+  - entities/platforms/polymarket.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations

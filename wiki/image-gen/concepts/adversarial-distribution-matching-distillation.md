@@ -5,6 +5,8 @@ tags: [distillation, video-generation, diffusion, acceleration, technique]
 keywords: [DMAD, distribution matching distillation, DMD, DMD2, adversarial distillation, discriminator head, few-step student, gap reweighting, Wan 2.1, SDXL]
 related:
   - sources/arxiv-2610-02188-dmad.md
+  - sources/arxiv-va-tdm-velocity-adversarial-distillation-2611.06796.md
+  - concepts/velocity-adversarial-distillation.md
   - concepts/plug-and-play-distillation-lora.md
   - concepts/one-step-autoregressive-video-distillation.md
   - entities/models/wan-2-2.md

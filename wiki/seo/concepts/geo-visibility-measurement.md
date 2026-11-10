@@ -75,9 +75,10 @@ related:
   - sources/newsletter-rss-latent-space-2026-09-07-aeo-tracker-2026-09-08.md
   - sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md
   - sweeps/2026-10-07-daily.md
+  - sources/arxiv-rag-competitive-programming-2611.09791.md
 maturity: validated
 created: 2026-06-10
-updated: 2026-10-07
+updated: 2026-11-10
 ---
 
 ## Relations

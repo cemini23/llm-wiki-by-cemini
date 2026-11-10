@@ -26,9 +26,11 @@ related:
   - sources/arxiv-channel-fracture-cross-agent-memory-2606.04896.md
   - entities/skills/step-gate.md
   - briefs/2026-08-31_ccc-pretooluse-scout-bm25-sip-ready.md
+  - concepts/runtime-pattern-relationship-decay.md
+  - sources/arxiv-routine-operations-break-patterns-2611.09088.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-08-31
+updated: 2026-11-10
 ---
 
 ## Relations

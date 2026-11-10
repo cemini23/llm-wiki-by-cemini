@@ -59,10 +59,11 @@ related:
   - sources/arxiv-agent-harness-operational-definition-2606.10106.md
   - entities/tools/bayesian-agent.md
   - sources/arxiv-claude-code-complete-user-handbook-2608.26742.md
+  - entities/tools/wake5.md
 maturity: core
 hub: true
 created: 2026-05-13
-updated: 2026-08-28
+updated: 2026-11-10
 ---
 
 ## Relations

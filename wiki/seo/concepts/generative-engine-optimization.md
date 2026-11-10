@@ -146,9 +146,11 @@ related:
   - concepts/conversational-capture-geo.md
   - sweeps/2026-09-30-daily.md
   - sweeps/2026-10-01-daily.md
+  - concepts/passage-evidence-screening-geo.md
+  - concepts/ai-factual-error-types-business-facts.md
 maturity: validated
 created: 2026-05-07
-updated: 2026-10-01
+updated: 2026-11-10
 ---
 
 ## Relations

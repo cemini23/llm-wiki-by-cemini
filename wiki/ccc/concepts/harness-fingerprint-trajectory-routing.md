@@ -7,11 +7,13 @@ related:
   - sources/arxiv-cotrace-harness-fingerprint-routing-2610.10426.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-10-08_k285-ccc-route.md
+  - concepts/harness-fingerprinting-telemetry.md
+  - sources/arxiv-say-shibboleth-fingerprinting-2611.12386.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-11-10
 ---
 
 ## Relations

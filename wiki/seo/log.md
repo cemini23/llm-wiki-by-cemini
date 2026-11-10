@@ -1928,3 +1928,78 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 
 **Why these are in SEO:** they arrived in this inbox and none has an SEO topic. They are filed for method — provenance enforcement, capability measurement, and benchmark construction — not for the domain.
 
+## [2026-11-10] ingest | New Research: Traffic to the Open Web Has Fallen 24% in 5 years
+
+- `sources/newsletter-rss-sparktoro-2026-11-10-new-research-traffic-to-the-open-web-has-fallen.md` — **new**. SparkToro with the Similarweb research team: open-web traffic down **24%** from 2021 to 2026. The theory under test is that the top few Big Tech sites hold a growing share of web traffic.
+- **The feed body was truncated.** Only the lead paragraph arrived. The headline figure is tagged `[TENTATIVE]`. The study's tables, site list and method are not on the page. Re-fetch before any brief uses the number.
+- Backlinks: `concepts/first-90-days-playbook.md`, `sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md`. Index row added under Platform / practitioner news with a ⚠ flag.
+- Routing: Atto priority #1 — supports the owned-hub argument; no brief staged.
+
+## [2026-11-10] ingest | CascadeFilter: Cost-Efficient Semantic Filtering with Joint Threshold Selection
+
+- `sources/arxiv-cascadefilter-semantic-filtering-2611.08367.md` — **new**. Three-stage filter: small model on extracted evidence, small model on the full document, frontier oracle on the rest. Joint threshold search against a token-cost objective, with a finite-population error certificate.
+- **The transferable idea:** the chunk view "isolates the deciding signal — a different error mode, not just cheaper". A 28-token passage against a 430-token document. If a cheap stage reads a short passage first, the short passage decides.
+- **New concept page** `concepts/passage-evidence-screening-geo.md` — the cheap gate a page must clear. Marked draft; one source, no engine measurement.
+- Backlinks: `concepts/retrieval-vs-citation-visibility-geo.md`, `concepts/on-page-seo-local.md`, `concepts/generative-engine-optimization.md`, `entities/tools/denseon-lateon.md`. Index rows added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | From Twisted Facts to Rogue Agents (HALUCHECK)
+
+- `sources/arxiv-halucheck-hallucination-benchmark-2611.08231.md` — **new**. HALUCHECK holds **42,980** annotated pairs in English and Chinese, with detection, span localisation, correction and agent root-turn tracing.
+- **The three error classes** come from observed failures and are then injected: **misattribution**, **numerical deviation**, **detail invention**. The paper reports the highest error rates on entity expressions, and names numbers and dates first.
+- **Agent classes:** planning, perception and tool use.
+- **Ceiling:** best detection about 84%; most models 50-70%. Localisation and correction are worse. Thinking, web search and fine-tuning each help partly. None solves it.
+- **New concept page** `concepts/ai-factual-error-types-business-facts.md` — the audit rubric. The mapping from benchmark to business facts is this wiki's inference and is tagged `[TENTATIVE]`.
+- Backlinks: `concepts/citation-verification-aeo.md`, `concepts/canonical-business-facts-geo.md`, `concepts/llm-reputation-signals-geo.md`, `concepts/generative-engine-optimization.md`. Index rows added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Assessing the Impact of Retrieval-Augmented Generation on Algorithmic Problem-Solving
+
+- `sources/arxiv-rag-competitive-programming-2611.09791.md` — **new**. The topic is competitive programming, not SEO. The measurement design is the steal.
+- **Two controls.** (i) A **random-retrieval baseline** isolates the value of relevance: mean pass@1 is 20.37% similar, 17.9% zero-shot, 17.28% random. (ii) **Min-K membership inference** tests whether the gain came from pretraining memory rather than from the retrieved context.
+- The authors state that model limits mattered more than the example content, and that random context helped some models and hurt others.
+- Backlinks: `concepts/retrieval-vs-citation-visibility-geo.md`, `concepts/geo-visibility-measurement.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Verifier-Guided Self-Consistency
+
+- `sources/arxiv-verifier-guided-self-consistency-2611.06606.md` — **new**. VGSC samples candidate steps and accepts or resamples them with a step verifier and a future-outcome predictor. The paper reads the method as approximate sampling from a verifier-tilted trajectory distribution.
+- **Honest link: thin.** No search experiment appears. The one carry-over is mechanism: an answer is a sample, so the sampling policy sets how much answers vary across runs. That is a limit on single-probe GEO measurement, not a content lever.
+- Backlink: `concepts/retrieval-vs-citation-visibility-geo.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | On Turn-Level Best-of-N Sampling for Scaling LLM Agents
+
+- `sources/arxiv-turn-level-best-of-n-agents-2611.06868.md` — **new**. A generator proposes N candidate actions each turn; an off-the-shelf LLM selector picks one. Reported gains: 5-10% accuracy, fewer turns, less looping.
+- **Honest link: thin.** The benchmark is long-horizon terminal work. The carry-over is that a step agent prefers the action it can judge clearly best, which favours a page with one obvious next step.
+- Backlink: `concepts/agent-ready-website-local-bm.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Limited knowledge exchange across biological subfields
+
+- `sources/arxiv-limited-knowledge-exchange-biological-subfields-2611.06596.md` — **new**. A bibliometric pipeline with a two-stage zero-shot classifier (Qwen3:8b, temperature 0) over 22,936 agent-based-modelling articles. 83/81/69% of citations stay inside the subfield; 91% of authors publish in one subfield only.
+- **No SEO topic.** One thin idea: the same method carries two names across communities, so a vocabulary built from one community misses the other. Inferred, not tested.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | CAMP: Context-Aware Mapping and Placement for LLMs on 3D-IMC Arrays
+
+- `sources/arxiv-camp-3d-imc-weight-mapping-2611.07707.md` — **new**. Weight mapping for analog in-memory accelerators. Compute utilization 42.4% to 60.3%; up to 2.0x array throughput and 1.74x end-to-end.
+- **No SEO link.** Accelerator architecture. Filed for inventory honesty only. The acronym collides with other "CAMP" uses; search the full title.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Zero-Shot Weight-Space Programming Across a Difficulty-Graded Ladder of Two-Player Games
+
+- `sources/arxiv-zero-shot-weight-space-programming-2611.09271.md` — **new**. Ten hand-built networks across Nim, tic-tac-toe, Connect Four and a chess endgame. Six carry a complete correctness proof. The chess endgame is exact on one-ply tactics (84.1-100%) and collapses in full play (0.57-9.13%).
+- **No SEO link.** Board games with exact oracles. The ladder design is a general experimental discipline, not an SEO result.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Discovering formally verified quantum programs with AI
+
+- `sources/arxiv-formally-verified-quantum-programs-2611.09822.md` — **new**. A Lean quantum Hoare logic library plus agent teams that synthesise and prove quantum programs, with an independent verifier against a frozen specification. Gains up to 1.4x, 290x, 11x, 8x and 2.5x across five problems.
+- **No SEO link.** Quantum algorithm discovery. Two mechanisms are noted for routing honesty, not as SEO findings: a shared wiki as the agent coordination record, and a frozen specification with an independent verifier as the acceptance gate.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.
+

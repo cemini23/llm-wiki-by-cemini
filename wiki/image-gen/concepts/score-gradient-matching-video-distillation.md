@@ -5,6 +5,8 @@ tags: [concept, video-generation, distillation, few-step, training]
 keywords: [SGMD, DMD2, fake score, dual potentials, motion dynamics, LightX2V]
 related:
   - sources/arxiv-2605-30116-sgmd-score-gradient-matching-distillation.md
+  - sources/arxiv-va-tdm-velocity-adversarial-distillation-2611.06796.md
+  - concepts/velocity-adversarial-distillation.md
   - concepts/one-step-autoregressive-video-distillation.md
   - concepts/budget-aware-diffusion-caching.md
   - entities/models/wan-2-2.md

@@ -4,6 +4,12 @@ type: entity
 tags: [platform, prediction-markets, exchange, cemini-venue]
 keywords: []
 related:
+  - sources/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md
+  - sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md
+  - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md
+  - concepts/prediction-market-impartial-access-dcm.md
+  - concepts/prediction-market-trade-out-moat.md
+  - entities/companies/draftkings.md
   - sources/substack-rss-event-horizon-2026-07-16-kalshi-teleprompter-insider.md
   - sources/substack-rss-event-horizon-2026-07-16-trade-on-simulations.md
   - sources/substack-rss-event-horizon-2026-07-15-kalshi-flights-compute-cftc.md
@@ -92,7 +98,7 @@ related:
   - sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations

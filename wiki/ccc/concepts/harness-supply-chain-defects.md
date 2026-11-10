@@ -7,11 +7,12 @@ related:
   - sources/arxiv-scanning-harness-supply-chain-defects-2609.07360.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-11_ccc-k346-k357-sip-ready.md
+  - concepts/similarity-score-not-independence.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-11-10
 ---
 
 ## Relations

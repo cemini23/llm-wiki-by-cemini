@@ -4,6 +4,8 @@ type: concept
 tags: [genealogy, archival, automation, italy, antenati, draft]
 keywords: [stato civile, parish, Trent 1563, notarial, IIIF, HTR, GEDCOM, Double Metaphone, kinship graph]
 related:
+  - sources/arxiv-genealogical-reinforcement-2611.08548.md
+  - concepts/genealogical-reinforcement-branching.md
   - sources/arxiv-2608.22316-arabic-handwriting-warmup-ocr.md
   - entities/tools/qwen-mm-plugins.md
   - entities/tools/diagram-design.md
@@ -86,7 +88,7 @@ related:
   - sources/arxiv-2608.19385-phoenix-athar-arabic-htr.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations

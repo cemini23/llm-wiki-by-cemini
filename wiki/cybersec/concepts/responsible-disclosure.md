@@ -44,9 +44,11 @@ related:
   - sources/arxiv-2608-11337-association-privacy-wireless-formal.md
   - concepts/association-inference-attack-wireless.md
   - concepts/zero-trust-mission-critical-robotic-fleets.md
+  - concepts/software-maintenance-institutional-insecurity.md
+  - sources/substack-rss-secpro-2026-11-06-five-issues-the-php-crisis-has-brought-into-view.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-10-09
+updated: 2026-11-10
 ---
 
 ## Relations

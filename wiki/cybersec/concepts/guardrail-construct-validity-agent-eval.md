@@ -22,9 +22,13 @@ related:
   - concepts/ai-redteam-evidential-ceiling.md
   - concepts/agent-safety-executable-evaluation.md
   - concepts/culturally-responsive-llm-benchmark-audit.md
+  - sources/arxiv-bmms-policy-conditioned-behavioral-compliance-2611.09147.md
+  - concepts/policy-conditioned-compliance-measurement.md
+  - sources/arxiv-jev-llm-safety-guardrail-2611.08845.md
+  - concepts/external-filter-safety-utility-tradeoff.md
 maturity: draft
 created: 2026-09-02
-updated: 2026-10-09
+updated: 2026-11-10
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K321)"
 ---

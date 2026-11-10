@@ -13,9 +13,11 @@ related:
   - concepts/pickem-backtesting-framework.md
   - concepts/pickem-operator-workflow.md
   - concepts/pickem-pipeline-integration-spec.md
+  - concepts/gaussian-copula-joint-stat-distribution.md
+  - sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations
@@ -72,6 +74,8 @@ Use independent product only for **cross-game** legs with weak correlation, and 
 | **Gaussian copula on binary** | Fast ranker | Map each leg to latent `Z_i`; correlate via role matrix from @concepts/dfs-correlation-stacking.md |
 | **Empirical conditional** | Backtest calibration | `P(WR over \| QB over)` from historical slates |
 | **ρ bump heuristic** | Quick filter | `P_joint ≈ P_naive × (1 + κρ)` — [TENTATIVE] not for production sizing |
+
+**Published measurement of the copula row.** A 2026 NBA study gives measured numbers for the first three rows: the Gaussian copula beat the independence product in 25 of 27 joint-threshold combinations, and independent marginals under-predicted joint exceedance `[TENTATIVE — single NBA study]`. The largest gain sits at the all-high-threshold combination, which is exactly the same-game overs stack this page prices. Method: @concepts/gaussian-copula-joint-stat-distribution.md. It uses a **player-relative** threshold and does **not** test against market lines, so it supports the direction of the adjustment, not its size against a lounge multiplier.
 
 **Same-game QB + WR yards example:**
 

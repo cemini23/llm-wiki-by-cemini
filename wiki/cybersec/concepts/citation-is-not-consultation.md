@@ -9,9 +9,11 @@ related:
   - concepts/compliance-verdict-rule-invariance.md
   - concepts/compliance-boundary-adjacent-pair-search.md
   - concepts/faithful-agent-asr-measurement.md
+  - concepts/verification-environment-user-scrutiny.md
+  - sources/arxiv-user-scrutiny-llm-conversations-2611.08232.md
 maturity: draft
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-11-10
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K416)"
 ---

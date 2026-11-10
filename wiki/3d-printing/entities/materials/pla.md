@@ -22,9 +22,12 @@ related:
   - sources/2026-chen-hybrid-rigid-soft-gripper.md
   - sources/2026-wade-slicer-project-compilation.md
   - concepts/slicer-project-compilation.md
+  - concepts/printed-robot-arm-platforms.md
+  - sources/arxiv-anthropomorphic-arm-charmie-2611.08013.md
+  - sources/arxiv-fishsense-lite-laser-mount-2611.08732.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-07-29
+updated: 2026-11-10
 ---
 
 ## Relations

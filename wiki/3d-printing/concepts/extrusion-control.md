@@ -19,9 +19,12 @@ related:
   - sources/2025-khod-xray-ct-am-protocol-ai.md
   - sources/2026-mohammadi-rce-lqr-extrusion.md
   - sources/2025-looey-physics-informed-extrusion-dynamical.md
+  - sources/arxiv-track-height-control-am-2611.07704.md
+  - sources/arxiv-mechanical-engineering-skills-2611.05758.md
+  - entities/tools/mechanical-engineering-skills.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-06-05
+updated: 2026-11-10
 ---
 
 ## Relations

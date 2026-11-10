@@ -30,6 +30,19 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-11-10 — K296 full-inbox wave, 82 sources)
+
+- **The whole inbox is ingested.** 82 sources across eight domains: 59 arXiv PDFs and 28 newsletter or Substack files. 189 new wiki pages, 121 updated. The live inbox is empty; every source is queued in `_ingested-awaiting-archive/`.
+- **The session-start check under-reported by 28 files.** `-mindepth 2 -maxdepth 2` never sees root-level `.md`. Fix the ritual before the next wave or the newsletter lane will keep silently accumulating.
+- **Six re-drops.** sha256-identical copies sat in the live inbox beside their archived originals. Removed. The pattern suggests the digest re-fetches items it has already filed.
+- **Best find of the wave: the box-score Gaussian copula (2611.10152).** It is evidence for the copula step that `dfs-distribution-layer` already specifies, not a new design. It beats an independence product in 25 of 27 joint-threshold combinations, and independence systematically under-predicts high joint exceedance — exactly the defect the design exists to prevent. **Do not copy the magnitudes** (NBA PTS/REB/AST is mild; NFL role priors are far larger). The actionable line is the author's: playing time drives the dependence, which maps to snap share and route participation. Target: CeminiDFS.
+- **`/route` has five independent supporting papers.** Terminal-Bench maintenance debt (repairs moved accuracy more than 10 points), BOXBOX (1.70x vs 1.44x frozen), routine-operation decay (enabled is not the same as ran), WorkflowArena (workflow quality separable from model skill), and Fable 5.2 economics (20% cheaper per token, 31% costlier per task — effort settings do not transfer across versions).
+- **PM/Kalshi gets a venue-selection reframe.** Event Horizon argues the moat is exit quality, not quote price, and gives the volume mix (75% parlays) that decides which book a bot is really sizing against. A separate CFTC impartial-access order collides with state injunctions and changes venue availability, not just sentiment.
+- **XSP gets implementable flow rules.** The GlitchSPX $93M put piece yields package price allocation, four trade types, four checks, and next-morning open-interest confirmation.
+- **Two integrity flags, unresolved.** BMMS (2611.09147) reports one cell as 70.7% in the abstract and 35.0%/22.5%/42.5% in Section 5. SparkToro's −24% open-web figure comes from a truncated RSS body. Neither is safe to quote yet.
+- **Archive still blocked.** `cemini-egress-fi` times out. 114 raw sources, about 250 MB, exist only on this laptop.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
 ## Current state (2026-11-05 — v10.11 link evaluation)
 
 - **One Integrate: `deja-vu`.** MIT, ~1.4k stars, local Go binary that indexes the session transcripts 43 coding harnesses already write to disk — commands with exit codes, files opened, and the exact `Edit` spans. **Zero LLM calls by default.** The first tool in weeks that is unambiguously safe for Atto.

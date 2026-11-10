@@ -5,6 +5,8 @@ tags: [prompting, uncensored, prompt-engineering, sd-xl, flux, z-image, pony, da
 keywords: [prompt engineering, uncensored generation, Danbooru tags, T5 encoder, CLIP-L, dual encoder, negative prompts, CFG scale, two-pass workflow]
 related:
   - runbooks/mac-local-image-director.md
+  - concepts/t2i-counting-reach.md
+  - sources/arxiv-number-words-past-ten-t2i-2611.06840.md
   - sources/uncensored-image-generation-survey.md
   - sources/synthetic-character-consistency-survey.md
   - concepts/censorship-tier-taxonomy.md

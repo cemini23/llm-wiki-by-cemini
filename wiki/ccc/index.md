@@ -183,6 +183,14 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [`autoscirub`](entities/tools/autoscirub.md) | draft | AutoSciRub evaluation-first rubric induction — MIT REFERENCE <500MB (K331) |
 | [`harness-of-harness`](entities/tools/harness-of-harness.md) | draft | Harness-of-Harness meta-wrap — MIT REFERENCE ~312MB (K335) |
 | [`safeevolve`](entities/tools/safeevolve.md) | draft | SafeEvolve safety co-evolution — MIT REFERENCE ~841KB (K340) |
+| [`wake5`](entities/tools/wake5.md) | draft | Python Solidity fuzzing + static analysis exposed over MCP — REFERENCE (2611.09307) |
+
+## entities/models/
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [`claude-fable-5-2`](entities/models/claude-fable-5-2.md) | draft | Fable 5.2 — effort levels, cost per task, architect-lane fit |
+| [`inkling-2-small`](entities/models/inkling-2-small.md) | draft | Thinking Machines 594B/17B open-weight MoE — token-heavy, cheap per task |
 
 ## entities/mcp-servers/
 
@@ -710,6 +718,24 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [`agent-trace-tampering-audit-gap`](concepts/agent-trace-tampering-audit-gap.md) | draft | Agent-writable traces vs external audit — 2609.30266 (K394) |
 | [`kv-cache-working-set-serving`](concepts/kv-cache-working-set-serving.md) | draft | KV cache working-set serving — 2609.27746 (K387) |
 | [`regulated-enterprise-multi-agent-governance`](concepts/regulated-enterprise-multi-agent-governance.md) | draft | Regulated insurer multi-agent — 2609.27636 (K386) |
+| [`task-efficient-eval-cached-traces`](concepts/task-efficient-eval-cached-traces.md) | draft | Estimate a full bench score from cached traces — 2611.06803 |
+| [`visual-token-routing`](concepts/visual-token-routing.md) | draft | Spend image context on pixels that change the action — 2611.06854 |
+| [`agentic-robotics-harness`](concepts/agentic-robotics-harness.md) | draft | VABAR criteria + AMP1 direct control + Video-Coder loop |
+| [`similarity-score-not-independence`](concepts/similarity-score-not-independence.md) | draft | One low JPlag score proves nothing — 2611.07887 |
+| [`ordinal-peer-prediction`](concepts/ordinal-peer-prediction.md) | draft | Kendall-tau pairwise agreement elicits honest rankings — 2611.08366 |
+| [`benchmark-maintenance-debt`](concepts/benchmark-maintenance-debt.md) | draft | Task defects, repair effects, and budgets as spec — 2611.08417 |
+| [`runtime-pattern-relationship-decay`](concepts/runtime-pattern-relationship-decay.md) | draft | Enabled plugin ≠ plugin that ran — 2611.09088 |
+| [`recursive-harness-hot-reload`](concepts/recursive-harness-hot-reload.md) | draft | Agent asks, kernel swaps, context preserved — 2611.09218 |
+| [`agent-written-fuzz-harness`](concepts/agent-written-fuzz-harness.md) | draft | Generator prior bounds fuzzing; agent writes the harness — 2611.09307 |
+| [`causal-intervention-evaluation`](concepts/causal-intervention-evaluation.md) | draft | A review gate is a treatment with a sign — 2611.09792 |
+| [`harness-fingerprinting-telemetry`](concepts/harness-fingerprinting-telemetry.md) | draft | Timing, redaction, and scheduling reveal the harness — 2611.12386 |
+| [`auto-researcher-human-similarity`](concepts/auto-researcher-human-similarity.md) | draft | AutoHRS scores decisions per stage — 2611.12429 |
+| [`workflow-orchestration-as-capability`](concepts/workflow-orchestration-as-capability.md) | draft | Workflow quality is measurable apart from model skill — 2611.12856 |
+| [`ai-native-engineering-curriculum`](concepts/ai-native-engineering-curriculum.md) | draft | What CS146S teaches when agents write the homework |
+| [`foundational-work-verification`](concepts/foundational-work-verification.md) | draft | Verify foundations by hand; trust the rest |
+| [`expert-data-rl-environments`](concepts/expert-data-rl-environments.md) | draft | What a training-data vendor sells: environments + grader |
+| [`baseline-and-metric-calibration`](concepts/baseline-and-metric-calibration.md) | draft | Check the trivial baseline before believing the ranking |
+| [`frontier-model-release-cadence`](concepts/frontier-model-release-cadence.md) | draft | Read cost per task, effort setting, and harness, not the launch post |
 
 ## sources/
 
@@ -1178,6 +1204,30 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [`arxiv-low-cost-cross-vendor-behavior-assays-2609.30012`](sources/arxiv-low-cost-cross-vendor-behavior-assays-2609.30012.md) | draft | Low-cost behavior assays — 2609.30012 (K392) |
 | [`arxiv-instrumental-monitor-evasion-task-pressure-2609.30217`](sources/arxiv-instrumental-monitor-evasion-task-pressure-2609.30217.md) | draft | Instrumental monitor evasion — 2609.30217 (K393) |
 | [`arxiv-agent-trace-tampering-2609.30266`](sources/arxiv-agent-trace-tampering-2609.30266.md) | draft | Agent trace tampering — 2609.30266 (K394) |
+| [`arxiv-task-efficient-agent-eval-cached-traces-2611.06803`](sources/arxiv-task-efficient-agent-eval-cached-traces-2611.06803.md) | draft | trubric cached-trace benchmark estimation — 2611.06803 |
+| [`arxiv-visual-token-routing-2611.06854`](sources/arxiv-visual-token-routing-2611.06854.md) | draft | VTR sparse visual tokens for CUAs — 2611.06854 |
+| [`arxiv-vabar-variational-automation-benchmark-2611.06881`](sources/arxiv-vabar-variational-automation-benchmark-2611.06881.md) | draft | VABAR agentic-robotics benchmark criteria — 2611.06881 |
+| [`arxiv-low-similarity-independence-rewrites-2611.07887`](sources/arxiv-low-similarity-independence-rewrites-2611.07887.md) | draft | Low similarity is not independence — 2611.07887 |
+| [`arxiv-information-elicitation-ordinal-agreement-2611.08366`](sources/arxiv-information-elicitation-ordinal-agreement-2611.08366.md) | draft | Kendall-tau ordinal peer prediction — 2611.08366 |
+| [`arxiv-benchmarks-as-software-terminal-bench-2611.08417`](sources/arxiv-benchmarks-as-software-terminal-bench-2611.08417.md) | draft | Terminal-Bench 2.1 + maintenance debt — 2611.08417 |
+| [`arxiv-routine-operations-break-patterns-2611.09088`](sources/arxiv-routine-operations-break-patterns-2611.09088.md) | draft | Callback order and retained state decay — 2611.09088 |
+| [`arxiv-boxbox-recursive-harness-2611.09218`](sources/arxiv-boxbox-recursive-harness-2611.09218.md) | draft | BOXBOX hot-reload harness revision — 2611.09218 |
+| [`arxiv-wake5-solidity-fuzzing-mcp-2611.09307`](sources/arxiv-wake5-solidity-fuzzing-mcp-2611.09307.md) | draft | Wake 5 Solidity fuzzing + MCP static analysis — 2611.09307 |
+| [`arxiv-knowing-when-to-intervene-2611.09792`](sources/arxiv-knowing-when-to-intervene-2611.09792.md) | draft | Causal blip effects for agent interventions — 2611.09792 |
+| [`arxiv-agentic-manipulation-policies-amp1-2611.09892`](sources/arxiv-agentic-manipulation-policies-amp1-2611.09892.md) | draft | AMP1 generalist robot control — 2611.09892 |
+| [`arxiv-video-coder-agentic-coding-2611.09894`](sources/arxiv-video-coder-agentic-coding-2611.09894.md) | draft | Code-driven video scene agent — 2611.09894 |
+| [`arxiv-say-shibboleth-fingerprinting-2611.12386`](sources/arxiv-say-shibboleth-fingerprinting-2611.12386.md) | draft | Model and harness fingerprinting — 2611.12386 |
+| [`arxiv-auto-researchers-reconstruct-human-2611.12429`](sources/arxiv-auto-researchers-reconstruct-human-2611.12429.md) | draft | AutoHRS stage-wise reconstruction — 2611.12429 |
+| [`arxiv-workflowarena-workflow-orchestration-2611.12856`](sources/arxiv-workflowarena-workflow-orchestration-2611.12856.md) | draft | WorkflowArena orchestration benchmark — 2611.12856 |
+| [`newsletter-rss-latent-space-2026-11-06-ainews-inkling-2-small-17a-594b-trained-in-68-ho`](sources/newsletter-rss-latent-space-2026-11-06-ainews-inkling-2-small-17a-594b-trained-in-68-ho.md) | draft | Inkling 2 Small release — 2026-11-06 |
+| [`newsletter-rss-latent-space-2026-11-06-controlling-biology---fabian-theis-helmholtz-mun`](sources/newsletter-rss-latent-space-2026-11-06-controlling-biology---fabian-theis-helmholtz-mun.md) | draft | Theis on Virtual Cell and metric calibration — 2026-11-06 |
+| [`newsletter-rss-latent-space-2026-11-07-ainews-anthropic-ipo-whither-now`](sources/newsletter-rss-latent-space-2026-11-07-ainews-anthropic-ipo-whither-now.md) | draft | Anthropic IPO + open-weight week — 2026-11-07 |
+| [`newsletter-rss-latent-space-2026-11-08-how-stanford-teaches-ai-native-engineering-mihai`](sources/newsletter-rss-latent-space-2026-11-08-how-stanford-teaches-ai-native-engineering-mihai.md) | draft | CS146S AI-native engineering — 2026-11-08 |
+| [`newsletter-rss-latent-space-2026-11-08-one-million-ai-engineer-special-how-stanford-tea`](sources/newsletter-rss-latent-space-2026-11-08-one-million-ai-engineer-special-how-stanford-tea.md) | draft | CS146S episode note + timestamp map — 2026-11-08 |
+| [`newsletter-rss-latent-space-2026-11-09-what-frontier-labs-buy-a-data-deep-dive-with-han`](sources/newsletter-rss-latent-space-2026-11-09-what-frontier-labs-buy-a-data-deep-dive-with-han.md) | draft | Handshake RL environments — 2026-11-09 |
+| [`newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant`](sources/newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant.md) | draft | Fable 5.2 launch and evals — 2026-11-10 |
+| [`newsletter-rss-pragmatic-engineer-2026-11-05-scaling-slack-and-github-with-maude-lemaire`](sources/newsletter-rss-pragmatic-engineer-2026-11-05-scaling-slack-and-github-with-maude-lemaire.md) | draft | Maude Lemaire on scaling and verifying LLM output — 2026-11-05 |
+| [`newsletter-rss-pragmatic-engineer-2026-11-06-the-pragmatic-summit-2027`](sources/newsletter-rss-pragmatic-engineer-2026-11-06-the-pragmatic-summit-2027.md) | draft | Summit 2027 teaser — no technical claim |
 
 ## meta/
 

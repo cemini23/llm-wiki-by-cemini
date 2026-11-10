@@ -16,11 +16,15 @@ related:
   - concepts/environment-evolution-terminal-agents.md
   - sources/arxiv-environment-evolution-terminal-agents-2609.04128.md
   - concepts/headless-claude-code-controlled-eval-lane.md
+  - concepts/benchmark-maintenance-debt.md
+  - concepts/task-efficient-eval-cached-traces.md
+  - sources/arxiv-benchmarks-as-software-terminal-bench-2611.08417.md
+  - concepts/recursive-harness-hot-reload.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-09-02
-updated: 2026-09-04
+updated: 2026-11-10
 
 ---
 

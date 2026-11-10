@@ -5,6 +5,7 @@ tags: [concept, video-generation, autoregressive, distillation, one-step, infere
 keywords: [AAD-1, asymmetric adversarial distillation, one-step AR video, bidirectional discriminator, DMD warmup, motion collapse, streaming I2V]
 related:
   - sources/arxiv-2606-03972-aad-1-one-step-ar-video.md
+  - concepts/velocity-adversarial-distillation.md
   - concepts/autoregressive-video-foresight-training.md
   - concepts/grpo-i2v-post-training.md
   - concepts/seam-stitching-strategies.md

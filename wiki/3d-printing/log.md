@@ -829,3 +829,78 @@ Re-delivered and already filed: `2610.36598`, `2610.38948`, `2610.39046`. Archiv
 
 Re-delivered and already filed: `2611.02850`, `2611.03216`.
 
+## [2026-11-10] ingest | Mechanical Engineering Skills: An Open Library of Agent Skills for Design, Analysis and Manufacturing
+
+- Created `sources/arxiv-mechanical-engineering-skills-2611.05758.md`.
+- Created `entities/tools/mechanical-engineering-skills.md` — repository, install command, skill anatomy, fallback limits.
+- Created `concepts/agent-skill-libraries-mechanical-engineering.md` — the six verification rules, and why the packaging matters more than the skills.
+- Updated `concepts/self-improving-cad-generation-agents.md` — backlink; one CAD-agent loop is now one skill in the library.
+- Updated `concepts/extrusion-control.md` — backlink; `llm-3d-print-monitor` names bounded in-print correction on Klipper.
+- Updated `concepts/fdm-printing.md` — backlink to the new concept.
+- Created `sources/arxiv-2605-17448-self-improving-cad-agents.md` edit — backlink only.
+- Key limit recorded: the library installs folders, not solvers. A missing dependency returns a validator, an analytical estimate, or rehearsal data.
+- Routing: wiki-only; no distribution. The paper gives no with-versus-without benchmark, so it does not justify a tool trial on the print farm.
+
+## [2026-11-10] ingest | Developing the Field Selector System for the SHARP Multi-IFU
+
+- Created `sources/arxiv-sharp-field-selector-system-2611.06332.md`.
+- Created `concepts/precision-optomechanics-am.md` — shared with 2611.06898; states the tolerance-chain method.
+- Updated `concepts/fdm-printing.md` — backlink to the new concept.
+- Key limit recorded: no additive manufacturing. The structural box is machined 6xxx or 7xxx aluminium. Filed for the method that converts mechanical error into optical tilt.
+- Measured prototype errors: total tilt ±0.115 degrees from ±0.30 mm combined shift; ambient test only, cryogenic deferred.
+- Routing: wiki-only; no distribution. No print-farm link.
+
+## [2026-11-10] ingest | 3D Printed Monolithic Optomechanical Chassis for an Unbalanced Field-Widened Interferometer
+
+- Created `sources/arxiv-monolithic-optomechanical-chassis-2611.06898.md`.
+- Updated `concepts/precision-optomechanics-am.md` — second source, printed route.
+- Updated `concepts/industrial-am-monitoring.md` — backlink; L-PBF process rules and a failed long build.
+- Results: 13% smaller footprint with 2-inch optics, about 20% with 1-inch; visibility 0.861 ± 0.025 single-mode and 0.878 ± 0.038 multimode, against more than 0.98 with conventional mounts.
+- Key limit recorded: the 20-hour print failed, and the flexures keep low-frequency modes. A printed flexure trades a bolted joint for an elastic mode.
+- Routing: wiki-only; no distribution. L-PBF Invar36 is a lab process, not a P1S process.
+
+## [2026-11-10] ingest | Evaluation of Image Noise from Computed Tomography in an Organ-Specific Anthropomorphic Phantom
+
+- Created `sources/arxiv-ct-image-noise-phantom-2611.07357.md`.
+- Updated `concepts/niche-fdm-applications.md` — backlink.
+- Updated `sources/2024-rotoo-canine-head-phantom-vet.md` — backlink between the two phantom QA studies.
+- Key limit recorded: the phantom is a bought Kyoto Kagaku PBU-60 model. No additive manufacturing. Weak fit, filed as a phantom-QA precedent only.
+- Results: CTDIvol against Noise Index is a power law with exponent -2.23; DLIR cuts liver dose by about 1.3 mGy, about 22%; the authors call the numbers noise-matched projections, not validated protocols.
+- Routing: wiki-only; no distribution. No print-farm link.
+
+## [2026-11-10] ingest | Towards Track Height Control in Additive Manufacturing on Porous Substrates
+
+- Created `sources/arxiv-track-height-control-am-2611.07704.md`.
+- Updated `concepts/extrusion-control.md` — backlink; the three control classes map onto FDM.
+- Updated `concepts/industrial-am-monitoring.md` — backlink.
+- Key limit recorded: conceptual paper, no experimental control result. The recommendation is for the authors' DED-LB machine, not for FDM.
+- Useful method: step changes along one track give both steady-state and dynamic response from one track.
+- Routing: wiki-only; no distribution. The paper does not test any filament printer. [OPEN QUESTION 2026-11-10] which class suits a P1S farm.
+
+## [2026-11-10] ingest | Development of Anthropomorphic Arm for Collaborative and Home Service Robot CHARMIE
+
+- Created `sources/arxiv-anthropomorphic-arm-charmie-2611.08013.md`.
+- Created `concepts/printed-robot-arm-platforms.md` — pairs the all-printed Inmoov build with the bisected reBot-DevArm part split.
+- Updated `entities/tools/rebot-devarm.md` — backlink.
+- Updated `entities/materials/pla.md` — backlink.
+- Updated `concepts/open-source-legged-robotics.md` — backlink; extends the printed-robotics material from legs to arms.
+- Print data recorded: 1864 g of PLA, 804 g of motors, about 2700 g total, 5 DOF, Makerbot Replicator 2.
+- Key limit recorded: no pose accuracy, repeatability, or payload test. The safety factor of 15 is a static FEA result.
+- Routing: Bambu/P1S print farm. The 1.9 kg printed mass per arm is a usable capacity figure. No brief is warranted; the modifications are maker-tier.
+
+## [2026-11-10] ingest | FishSense Lite: A Camera-Based, Single Laser Hardware Framework
+
+- Created `sources/arxiv-fishsense-lite-laser-mount-2611.08732.md`.
+- Updated `concepts/fdm-research-tools.md` — backlink; printed fixture for a research instrument.
+- Updated `entities/materials/pla.md` — backlink.
+- Results: rigid targets within 1.3%; 99% of 1,055 frames inside a 15% error budget; mean difference against stereo +0.8% on seven wild fish; 73 fish across seven dives.
+- Key design point recorded: the mount is 1% of a US$1,300 unit and the only part that must be made. The fixture sets the geometry; repeat frames carry the accuracy.
+- Routing: wiki-only; no distribution. The mount is a simple PLA clamp with no print-farm process lesson.
+
+## [2026-11-10] ingest | Segmenting Geometric Textures of 3D Meshes
+
+- Created `sources/arxiv-geometric-texture-mesh-segmentation-2611.08897.md`.
+- Updated `concepts/ai-design-tools.md` — backlink; texture-region editing on a scanned or sculpted mesh.
+- Key limit recorded: weak fit. The paper names 3D printing once and prints nothing. The public benchmark at github.com/ALingll/GTSeg is the only reusable asset.
+- Routing: wiki-only; no distribution. No slicer, filament, or tolerance content.
+

@@ -4,6 +4,8 @@ type: concept
 tags: [concept, day-trading, order-flow, tape-reading, level-2, execution, k79]
 keywords: [tape-reading, time-and-sales, level-2, order-flow, absorption, refresh, sweep-orders, ugro-case-study]
 related:
+  - concepts/options-flow-package-reading.md
+  - sources/substack-rss-glitchspx-2026-11-06-the-93-million-put-dump-that-wasnt.md
   - entities/organizations/smb-capital.md
   - sources/smb-capital-youtube-week-2026-05-22.md
   - sources/smb-capital-youtube-week-2026-05-05.md
@@ -14,7 +16,7 @@ related:
   - sources/insights-from-a-gemini.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-11-10
 ---
 
 ## Relations

@@ -5,6 +5,7 @@ tags: [diffusion-transformer, interpretability, training-technique, concept]
 keywords: [contextual tokens, MM-DiT, multimodal attention, Contextual Reader, probe, underspecified attributes, Contextual Alignment, denoising trajectory, human preference]
 related:
   - sources/arxiv-2610-06844-contextual-reader-dit.md
+  - concepts/generative-latent-prior-activation-steering.md
   - concepts/mllm-dit-video-fusion.md
   - sweeps/2026-10-06-daily.md
   - concepts/federated-daily-research-digest.md

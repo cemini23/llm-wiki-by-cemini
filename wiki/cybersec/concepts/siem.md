@@ -28,9 +28,10 @@ related:
   - sources/arxiv-2606-08173-ai-native-closed-loop-6g-cps-security.md
   - sources/arxiv-2606-21059-defengraph-knowledge-graph-blue-team.md
   - entities/tools/defengraph.md
+  - sources/newsletter-rss-tldrsec-2026-11-05-tldr-sec-353---a-thousand-fewer-paths-to-root-ku.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-06-23
+updated: 2026-11-10
 ---
 
 ## Relations

@@ -7,10 +7,12 @@ related:
   - sources/arxiv-opengcua-2610.22200-2026-10-16.md
   - concepts/k292-ccc-wave.md
   - "@osint-wiki/concepts/agentic-context-management.md"
+  - concepts/visual-token-routing.md
+  - sources/arxiv-visual-token-routing-2611.06854.md
 maturity: draft
 read_status: read
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-11-10
 ---
 
 ## Relations

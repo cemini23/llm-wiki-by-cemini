@@ -53,9 +53,12 @@ related:
   - concepts/state-injection-over-history-reconstruction.md
   - concepts/lossless-visual-memory-harness.md
   - concepts/active-evidence-acquisition-multimodal.md
+  - concepts/visual-token-routing.md
+  - concepts/recursive-harness-hot-reload.md
+  - sources/arxiv-visual-token-routing-2611.06854.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-08-28
+updated: 2026-11-10
 ---
 
 ## Relations

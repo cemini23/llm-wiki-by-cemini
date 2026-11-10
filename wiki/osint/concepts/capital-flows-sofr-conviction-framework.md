@@ -4,6 +4,10 @@ type: concept
 tags: [concept, macro, sofr, conviction, rates, k155]
 keywords: [capital-flows, sofr-curve, conviction, cross-asset, z6, cme-single-stock-futures]
 related:
+  - sources/substack-rss-capital-flows-2026-11-05-market-status-market-bottom-or-beginning-of-the.md
+  - sources/substack-rss-capital-flows-2026-11-09-the-fall-of-jensen-anthropic-ipo-and-the-systemi.md
+  - sources/substack-rss-wublock-2026-11-09-wublockchain-weekly-outlook-us-cpi-and-ppi-test.md
+  - entities/companies/coreweave.md
   - sources/substack-rss-capital-flows-2026-08-03-misdirection-play.md
   - sources/substack-rss-capital-flows-2026-07-16-market-shift-and-risks.md
   - sources/substack-rss-capital-flows-2026-07-16-market-view-positions-changed.md
@@ -25,7 +29,7 @@ related:
   - sources/substack-rss-capital-flows-2026-08-10-fx-volatility.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-08-11
+updated: 2026-11-10
 ---
 
 ## Relations

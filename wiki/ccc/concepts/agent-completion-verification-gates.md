@@ -87,9 +87,12 @@ related:
   - sources/arxiv-ontrack-streaming-monitor-2610.12375.md
   - concepts/code-enforces-decisions-multi-fidelity-eval.md
   - sources/arxiv-bt-agent-behavior-trees-onboard-2610.13862.md
+  - concepts/causal-intervention-evaluation.md
+  - concepts/foundational-work-verification.md
+  - sources/arxiv-knowing-when-to-intervene-2611.09792.md
 maturity: draft
 created: 2026-05-27
-updated: 2026-10-12
+updated: 2026-11-10
 cross-wiki-source: "@osint-wiki/sources/trading-posts-compilation-25-2026-05-27.md"
 ---
 

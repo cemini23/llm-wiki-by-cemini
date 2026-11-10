@@ -35,6 +35,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [nfl-dfs-field-edge-priors](concepts/nfl-dfs-field-edge-priors.md) | draft | CPOE is a residual; volume, goal line, wind, rookie prior |
 | [fd-dk-scoring-conversion](concepts/fd-dk-scoring-conversion.md) | draft | Site scoring rules |
 | [dfs-distribution-layer](concepts/dfs-distribution-layer.md) | draft | Monte Carlo, ceiling/floor |
+| [gaussian-copula-joint-stat-distribution](concepts/gaussian-copula-joint-stat-distribution.md) | draft | Empirical marginals + Gaussian copula for joint stat exceedance |
 | [dfs-correlation-stacking](concepts/dfs-correlation-stacking.md) | draft | Correlation matrix, pydfs stacks |
 | [dfs-ownership-projection](concepts/dfs-ownership-projection.md) | draft | Field modeling, leverage |
 | [dfs-backtesting-framework](concepts/dfs-backtesting-framework.md) | draft | Walk-forward, MAE benchmarks |
@@ -551,4 +552,10 @@ Rows missing since their source pages were committed. Found by
 | [mean-field-games-optimization](sources/arxiv-2611.01754-mean-field-games-optimization-2026-11-03.md) | draft | 125-page survey of discrete-time mean field games. Equilibrium formalism for a crowd; no market content. |
 | [event-horizon-midterms-postmortem](sources/substack-rss-event-horizon-2026-11-04-midterms-postmortem-2026-11-04.md) | draft | Postmortem: Democrats took both chambers. Markets got **direction, not breadth** — the "blue wave" contract was a 218/49 threshold, not a magnitude forecast. Markets converged faster than media. |
 | [event-horizon-election-night](sources/substack-rss-event-horizon-2026-11-05-election-night-2026-11-05.md) | draft | A journalist's conversion: watching Kalshi price the returns beat TV coverage and the NYT needle. A product-experience claim, not an accuracy one. |
+
+## Ingest 2026-11-10 — joint stat distribution method
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [joint-distribution-box-score-gaussian-copula](sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md) | draft | Watts (UVA), arXiv:2611.10152. Per-player Gaussian copula on NBA PTS/REB/AST, walk-forward, 22k player-games. Beats independence in 25 of 27 joint-threshold combos; independence under-predicts high joint exceedance. |
 

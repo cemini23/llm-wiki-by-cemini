@@ -5,9 +5,10 @@ tags: [ticker, crypto, defi, ww-179]
 keywords: [aave, liquidity-sweep-80, oct-10-wick]
 related:
   - sources/ww-issue-179-2026-05-27.md
+  - sources/substack-rss-wublock-2026-11-07-weekly-project-updates-aave-rolls-out-fixed-rate.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-11-10
 ---
 
 ## Relations

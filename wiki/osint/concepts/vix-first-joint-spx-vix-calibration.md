@@ -8,9 +8,11 @@ related:
   - sources/arxiv-2608.01479-vix-derived-volatility-model.md
   - sources/arxiv-2608.01217-lsv-calibration-neural-operator.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/arxiv-risvix-vix-term-structure-2611.07120.md
+  - concepts/vix-term-structure-fractional-memory.md
 maturity: draft
 created: 2026-08-04
-updated: 2026-08-05
+updated: 2026-11-10
 ---
 
 ## Relations

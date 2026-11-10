@@ -19,9 +19,12 @@ related:
   - sources/2025-banerjee-neuromorphic-lpbf.md
   - sources/2026-pelaez-stgt-lpbf-quality-prediction.md
   - concepts/volumetric-additive-manufacturing.md
+  - sources/arxiv-track-height-control-am-2611.07704.md
+  - sources/arxiv-monolithic-optomechanical-chassis-2611.06898.md
+  - concepts/precision-optomechanics-am.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-12
+updated: 2026-11-10
 ---
 
 ## Relations

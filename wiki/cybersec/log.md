@@ -2392,3 +2392,78 @@ Routed from `@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-202
 
 **The one to act on:** if cross-scope behaviour is driven by which peer actions appear in context, then the control is the listed action surface. That is a harness change, not a permissions change.
 
+## [2026-11-10] ingest | Computation, not weight access: LLMs as auditors of clinical prediction networks (2611.07847)
+
+- `sources/arxiv-llm-auditors-computation-not-weights-2611.07847.md` — **new**. Factorial study that separates "weights in the prompt" from "a calculator that holds the model". Five GPT models, networks from 105 to 38,401 weights, pre-specified scoring.
+- `concepts/llm-audit-computation-not-weight-access.md` — **new**. At 3,457 weights the no-tool condition becomes unstable; with the calculator, 29/29 planted relationships recovered and 15 null runs produced no false alarm. Black-box access equalled white-box access.
+- **Elicitation is part of the measurement.** A one-sentence default instruction declined 11 of 12 audit and repair runs as unidentifiable. One paragraph of explicit instruction removed all refusals without adding false alarms.
+- Single study, simulated clinical data, tanh MLPs. No claim transfers to a billion-parameter LLM.
+- Routing: local abliterated / whitehat lab — third-party model-audit pattern; header `../Cybersecurity wiki/briefs/`.
+
+## [2026-11-10] ingest | Signals, evidence, and context: user scrutiny in real-world LLM conversations (2611.08232)
+
+- `sources/arxiv-user-scrutiny-llm-conversations-2611.08232.md` — **new**. 489,283 assistant–user pairs, 98,007 conversations, ShareChat and WildChat. 368,644 qualifying pairs.
+- `concepts/verification-environment-user-scrutiny.md` — **new**. Four separate components: signifier, material support, epistemic cue, verification pathway.
+- **The headline number.** Broad attribution appears in 31.9% of qualifying responses; explicit URLs in 1.33%. Ratio about 24:1, or 10:1 to 20:1 after precision correction. Attribution and URLs are almost uncorrelated (φ = 0.03).
+- Scrutiny is 28.7% of qualifying pairs. Uncertainty is the only pooled cue that favours checking, and the effect is 6% in ratio terms. Task context predicts better than response wording.
+- Labels are model-assigned with no double-coded human sample. Treat prevalence as tentative.
+- Routing: defensive SOC/IR tradecraft — analyst verification of AI-generated summaries; no distribution.
+
+## [2026-11-10] ingest | A generative model of contextual integrity (2611.08284)
+
+- `sources/arxiv-contextual-integrity-generative-2611.08284.md` — **new**. Two LLM actors in Concordia, four scenario types, 55 pages. NeurIPS 2026.
+- `concepts/contextual-integrity-disclosure-simulation.md` — **new**. Split "does the context need this information" from "is this person entitled to receive it". Sharing is appropriate only when both are true.
+- **The failure mode is Type III.** A real process needs the information and the asker is not entitled. Holders disclosed in most Type III conversations. That is the shape of a pretext.
+- The over-refusal cost is explicit. An always-withholding actor scores perfectly on Types I to III and fails every Type IV request. A drill that scores only withholding rewards that policy.
+- Actors are LLMs; generator and actor share a Gemini bias. No human-subject baseline.
+- Routing: local abliterated / whitehat lab — pretext and consent drills with both error directions; header `../Cybersecurity wiki/briefs/`.
+
+## [2026-11-10] ingest | Jev as an LLM safety guardrail (2611.08845)
+
+- `sources/arxiv-jev-llm-safety-guardrail-2611.08845.md` — **new**. Jev input gate and tiered input-plus-output review in front of Qwen2.5-1.5B. 970 prompts.
+- `concepts/external-filter-safety-utility-tradeoff.md` — **new**. A guardrail has two error rates. Report both, plus review call volume, and never tune and evaluate on the same prompts.
+- **Numbers.** Harmful-prompt answers fall from 73.2% to 2.4% with an input gate, and benign refusals rise from 1.2% to 10.8%. The tiered gate settles at 5.6% and 4.0%.
+- **Output review is not free.** Of 79 reviewed outputs, 13 were blocked: seven harmful and six safe. A manual audit put 46.2% of the blocked responses in the safe class.
+- **Matched budgets remove most of the gain.** A retuned single gate reaches the same benign-refusal rate with a lower or comparable unsafe-answer rate. The held-out split did not corroborate a benefit from the review stage.
+- Backlinked from `concepts/calibrated-decision-models-pentest-harness-jev.md`, `concepts/low-asr-is-not-refusal.md`, `concepts/certified-selective-prediction-guardrails.md`, `concepts/guardrail-construct-validity-agent-eval.md`.
+- Routing: defensive SOC/IR tradecraft — guardrail calibration and over-refusal reporting; no distribution.
+
+## [2026-11-10] ingest | Inside the trap: a renewal law for prefix-cache collapse (2611.08902)
+
+- `sources/arxiv-prefix-cache-collapse-renewal-law-2611.08902.md` — **new**. Registered paired tests on SGLang 0.5.22 and vLLM 0.32.0, two GPUs, two 7–8B models, 66 pages.
+- `concepts/prefix-cache-collapse-agent-serving.md` — **new**. A burst of 200 sessions left the engine at zero cache hits to the end in all 30 runs. Matched no-burst runs stayed good. A client-side session cap prevented the trap in all 30 capped runs.
+- **The counterintuitive result.** Sessions complete faster inside the trap than at the all-miss capacity, so the throughput read inside a trap overstates the recovery threshold. A cut below trapped throughput and above all-miss capacity does not clear it.
+- **The control that works.** A session cap at about the throughput-curve peak rescued 9 of 9 established traps with no session shed. A 600 s arrival stop failed; a 3600 s stop recovered.
+- **Security framing is an inference, not a tested claim.** The paper models no adversary. The reader-facing point is that a short burst of sessions is a cheap input to a shared agent pool, and admission control is a security control.
+- Routing: defensive SOC/IR tradecraft — availability of agent-serving infrastructure; no distribution.
+
+## [2026-11-10] ingest | BMMS: policy-conditioned measurement of behavioral compliance (2611.09147)
+
+- `sources/arxiv-bmms-policy-conditioned-behavioral-compliance-2611.09147.md` — **new**. Metric suite that takes a policy corpus as an argument. 1,003 obligations from eleven documents in five registers. NeurIPS 2026 TAE workshop.
+- `concepts/policy-conditioned-compliance-measurement.md` — **new**. Four metrics: CAS, CRM, BIV, BDI. Report a vector. The admission test is the content, and attribution is the binding criterion.
+- **The register result.** Vendor specifications admit at 68.0%; conduct regulation at 25.4%; analytical guidance at 16.0%. After per-register precision correction the spread widens. The documents that govern deployed AI behaviour are written by vendors, not regulators.
+- **Judge panel.** Three judges agree on ordering (Kendall τ +1.000 between swaps, +0.905 against the primary) and disagree on level (one target spans 0.216 CAS). Rank fleets with confidence; quote absolute numbers with a panel range.
+- **Headline to check before reuse.** The abstract reports GPT-4o failing 70.7% of hard constraints in the OpenAI Model Spec, against 0.0% and 9.1% for two Claude models. Section 5 reports the same cell at 35.0% / 22.5% / 42.5% under the panel. Both are recorded; the definition of the denominator differs.
+- Backlinked from `concepts/guardrail-construct-validity-agent-eval.md`, `concepts/measurement-integrity-mcp-security-eval.md`, `concepts/compliance-verdict-rule-invariance.md`.
+- Routing: defensive SOC/IR tradecraft — vendor-spec compliance audit pattern; no distribution.
+
+## [2026-11-10] ingest | tl;dr sec #353 — A thousand fewer paths to root
+
+- `sources/newsletter-rss-tldrsec-2026-11-05-tldr-sec-353---a-thousand-fewer-paths-to-root-ku.md` — **new**. Issue #353, 5 November 2026.
+- `concepts/cloud-llm-service-quarantine-coverage-gap.md` — **new**. AWS `AWSCompromisedKeyQuarantineV3` blocks `bedrock:InvokeModel` and misses `bedrock-mantle:CreateInference`. A quarantine is a deny-list, and the calls are CloudTrail data events that most accounts disable.
+- **OpenAI autonomous LPE pipeline.** 948 Linux local privilege escalation vulnerabilities validated and patched in one run, $1.2M of API cost, about $1,279 per LPE, at least 10 novel exploitation techniques. Backlinks `concepts/llm-vulnerability-discovery.md`.
+- **Kubernetes security logging.** Audit logs, control-plane logs, DaemonSet collectors, runtime events, network flows, immutable object-lock storage, then SIEM. High-value detections: `system:anonymous`, `cluster-admin` bindings, `pods/exec`, privileged pod creation. Backlinks `concepts/siem.md`.
+- **Two open-source SOC artefacts.** `depalmar/ai-dfir-toolkit` ships 161 Sigma/YARA/Suricata rules across nine AI-attack categories. `thomasunise/argus` ships eight read-only AI agents and 12 canary types. Neither is evaluated here; both are references.
+- **Risk-adaptive review.** Postman auto-closes 25% of releases under a triage questionnaire, reclaims three AppSec weeks per half-year, and audits the automated decisions monthly.
+- Routing: defensive SOC/IR tradecraft — Kubernetes log sources, DFIR signatures, cloud quarantine verification; header `../Cybersecurity wiki/briefs/`.
+
+## [2026-11-10] ingest | Five issues the PHP crisis has brought into view
+
+- `sources/substack-rss-secpro-2026-11-06-five-issues-the-php-crisis-has-brought-into-view.md` — **new**. Packt SecPro, 6 November 2026, on the PHP2Shell disclosure wave.
+- `concepts/software-maintenance-institutional-insecurity.md` — **new**. Five issues: fragile maintainer institutions, disclosure-coordination breakdown, supplier precaution as customer incident, remediation as a dependency chain, and uncertain evidence as an expensive decision.
+- **The operating rule.** "Patch available" is not "service fixed". Record supplier, build, runtime owner, deployment evidence and remaining mitigation per service, and keep the exposure investigation separate from the patch record.
+- **Evidence discipline.** Fastly signatures identified a different vulnerability in 98.6% and 99.9% of one-hour sample matches. A honeypot report proves execution on three monitored systems, not 35 production victims. Record whether a decision rests on confirmed execution, credible exposure, or precaution.
+- **Supporting incidents.** cPGuard updater compromise (~2,950 servers), APT CVE-2026-109518 package-verification bypass, Zyxel GS1900 Patch 2 gap, unpatched SonicWall EOL flaws, Barracuda ESG chain, CWPdoor log suppression.
+- Backlinked from `concepts/npm-supply-chain-defense.md`, `concepts/responsible-disclosure.md`.
+- Routing: defensive SOC/IR tradecraft — remediation and incident-evidence record; no distribution.
+

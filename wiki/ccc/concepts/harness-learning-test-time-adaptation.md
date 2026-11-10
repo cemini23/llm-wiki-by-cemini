@@ -7,11 +7,13 @@ related:
   - sources/arxiv-harness-learning-test-time-adaptation-2609.35738.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-29_ccc-k401-k405-sip-ready.md
+  - concepts/agentic-robotics-harness.md
+  - sources/arxiv-video-coder-agentic-coding-2611.09894.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-11-10
 ---
 
 ## Relations

@@ -7,11 +7,13 @@ related:
   - sources/arxiv-mcp-developer-error-messages-hurt-agents-2609.35381.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-29_ccc-k401-k405-sip-ready.md
+  - concepts/agent-written-fuzz-harness.md
+  - sources/arxiv-wake5-solidity-fuzzing-mcp-2611.09307.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-11-10
 ---
 
 ## Relations

@@ -26,9 +26,11 @@ related:
   - concepts/bounded-self-refinement-vs-rsi-taxonomy.md
   - concepts/claim-centered-retrieval-with-provenance.md
   - sources/arxiv-askchem-claim-centered-literature-2607.28618.md
+  - concepts/auto-researcher-human-similarity.md
+  - sources/arxiv-auto-researchers-reconstruct-human-2611.12429.md
 maturity: draft
 created: 2026-06-22
-updated: 2026-07-31
+updated: 2026-11-10
 ---
 
 ## Relations

@@ -19,9 +19,11 @@ related:
   - concepts/authority-framing-agentic-cicd.md
   - sources/arxiv-2607-19267-authority-framing-laundered-cicd.md
   - concepts/product-build-integrity-slsa-sigstore.md
+  - concepts/software-maintenance-institutional-insecurity.md
+  - sources/substack-rss-secpro-2026-11-06-five-issues-the-php-crisis-has-brought-into-view.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-10-09
+updated: 2026-11-10
 ---
 
 ## Relations

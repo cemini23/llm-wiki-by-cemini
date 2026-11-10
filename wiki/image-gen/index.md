@@ -1232,3 +1232,28 @@ Five generative-media papers. Three robotics/world-model papers filed here were 
 
 Skipped to `@osint-wiki/sources/arxiv-v10-11-late-skip-no-lane-2026-11-05.md`: `2611.05258` (statistical physics, anomalous diffusion).
 
+## Ingest 2026-11-10 — image-gen wave (9 papers)
+
+Sources:
+
+- [VA-TDM few-step distillation](sources/arxiv-va-tdm-velocity-adversarial-distillation-2611.06796.md) — Velocity adversarial distillation: supervise student velocity fields instead of an unlearnable score. 4-NFE GenEval 0.61→0.67 on SD3.5-M, 0.78→0.80 on FLUX.2 Klein, 61.33% preference over Fast-H3 on MiniMax-H3 33B. — `paper, distillation, few-step, t2i, t2v, ingest-2026-11-10`
+- [Number words past ten](sources/arxiv-number-words-past-ten-t2i-2611.06840.md) — Five open T2I models measured with a same-noise test; each has a "reach" past which the number word keeps the layout but not the count. A noised grid raises correct counts from 4% to 59%. — `paper, t2i, counting, prompt-engineering, evaluation, ingest-2026-11-10`
+- [AR-Edit streaming video editing](sources/arxiv-ar-edit-streaming-video-editing-2611.09795.md) — In DMD-distilled AR video models Q and K are noise-stable and V diverges, so one cached source-V pass replaces inversion. Training-free real-time stream editing. — `paper, video-editing, streaming, training-free, neurips, ingest-2026-11-10`
+- [DISCO diffusion-free score matching](sources/arxiv-disco-diffusion-free-score-matching-2611.09758.md) — One joint score field instead of a time-indexed family makes conditionals exact in principle; diffusion guidance heuristics are shown biased on a 2D GMM. — `paper, score-matching, conditional-sampling, theory, ingest-2026-11-10`
+- [MAEM residual-stream inversion](sources/arxiv-maem-residual-stream-inversion-2611.08465.md) — A fine-tuned LM writes text that maximally fires a given residual-stream direction; verifiable by one forward pass. Reads rank-1 LoRA backdoor payloads better than corpus search. — `paper, interpretability, activation-steering, lora, safety, ingest-2026-11-10`
+- [GLP protein activation prior](sources/arxiv-glp-protein-activation-prior-2611.09818.md) — A flow-matching model of a frozen host's activations serves as lens and as an on-manifold corrector for steering. Correction fails after re-decoding. Peripheral: protein LMs. — `paper, interpretability, activation-steering, peripheral, ingest-2026-11-10`
+- [DiffSequence-Q protein diffusion](sources/arxiv-diffsequence-q-protein-diffusion-2611.08434.md) — Multinomial diffusion with a per-residue structure condition plus one global property target. Quantum auxiliary head; sampling is classical. Peripheral. — `paper, discrete-diffusion, conditioning, peripheral, ingest-2026-11-10`
+- [Disorder-blind Mpemba acceleration](sources/arxiv-mpemba-quantum-state-preparation-2611.08424.md) — Quantum relaxation by initial-state design; residual overlap links to a resistor-chain resistance profile. Peripheral physics, no image link. — `paper, quantum, physics, peripheral, ingest-2026-11-10`
+- [Pearson type IV drift-diffusion](sources/arxiv-pearson-type-iv-drift-diffusion-2611.06749.md) — Pearson type IV derived as the stationary solution of a Fokker-Planck equation with linear drift and quadratic diffusion. Peripheral mathematics. — `paper, stochastic-processes, physics, peripheral, ingest-2026-11-10`
+
+Concepts:
+
+- [Velocity adversarial distillation](concepts/velocity-adversarial-distillation.md) — Few-step students supervised on velocity fields rather than an estimated score; one derivation covers score distillation, Fisher matching and moment matching. — `concept, distillation, few-step, technique`
+- [T2I counting reach](concepts/t2i-counting-reach.md) — Per-model count range where a number word still works, plus the measurement trap (exact match cannot separate following from ignoring) and the count-in-noise workaround. — `concept, t2i, prompt-engineering, evaluation`
+- [Value-cache streaming video editing](concepts/value-cache-streaming-video-editing.md) — Identity lives in V, routing in Q/K; cache V once and inject it to edit a stream with no inversion and no training. — `concept, video-editing, streaming, identity-preservation`
+- [Single score field for conditional sampling](concepts/single-score-field-conditional-sampling.md) — Why conditioning a family of score fields is a heuristic, and what a single joint field changes; states both exactness regimes. — `concept, score-matching, theory`
+- [Activation inversion metamodels](concepts/activation-inversion-metamodels.md) — Read a steering direction or LoRA adapter by generating text that fires it, and verify with a forward pass. — `concept, interpretability, lora, safety`
+- [Generative latent prior steering corrector](concepts/generative-latent-prior-activation-steering.md) — Re-noise and de-noise an edited activation back onto the learned manifold; one rule and one honest negative result. — `concept, interpretability, activation-steering, peripheral`
+- [Multinomial diffusion with two condition granularities](concepts/multinomial-diffusion-bimodal-conditioning.md) — Per-token structural condition plus one continuous global target in one discrete diffusion objective. — `concept, discrete-diffusion, conditioning, peripheral`
+- [Fokker-Planck stationary distributions](concepts/fokker-planck-stationary-distributions.md) — Groups the Pearson-IV and Mpemba papers; the classical stationary-solution and relaxation-rate mathematics adjacent to diffusion sampling. — `concept, stochastic-processes, peripheral`
+

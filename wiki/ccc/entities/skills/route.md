@@ -18,9 +18,10 @@ related:
   - concepts/progress-guided-step-routing.md
   - entities/skills/scout-tool-search.md
   - sources/arxiv-progrouter-progress-orchestration-2608.25992.md
+  - entities/models/claude-fable-5-2.md
 maturity: validated
 created: 2026-07-01
-updated: 2026-09-11
+updated: 2026-11-10
 ---
 
 ## Relations

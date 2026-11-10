@@ -33,9 +33,11 @@ related:
   - sources/arxiv-cai-2026-jrdb-avr-active-visual-reasoning-2609.35032-2026-09-30.md
   - sources/arxiv-finder-2026-ax-is-the-new-aeo-2609.34951-2026-09-30.md
   - sources/arxiv-yu-2026-conversational-capture-geo-2609.40069-2026-10-01.md
+  - sources/arxiv-halucheck-hallucination-benchmark-2611.08231.md
+  - concepts/ai-factual-error-types-business-facts.md
 maturity: draft
 created: 2026-06-06
-updated: 2026-10-01
+updated: 2026-11-10
 ---
 
 ## Relations

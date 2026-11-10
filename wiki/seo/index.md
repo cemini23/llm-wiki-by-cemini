@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
 type: index
-updated: 2026-09-24
+updated: 2026-11-10
 ---
 
 # Wiki Index
@@ -180,6 +180,15 @@ If you're new to this wiki:
 - [arxiv-lee-2026-filter-bubble-generative-search-2609.38946-2026-10-01](sources/arxiv-lee-2026-filter-bubble-generative-search-2609.38946-2026-10-01.md) — IN-SCOPE: WaPo randomized field experiment; cited-source clicks +14 pp (K284)
 - [arxiv-shinde-2026-pdp-priority-scheduling-2610.04587-2026-10-07](sources/arxiv-shinde-2026-pdp-priority-scheduling-2610.04587-2026-10-07.md) — OOD: PDP switch priority scheduling; query false positive (K285)
 - [arxiv-cheng-2026-hierarchy-gbp-factor-graph-2610.06978-2026-10-07](sources/arxiv-cheng-2026-hierarchy-gbp-factor-graph-2610.06978-2026-10-07.md) — OOD: Hierarchy-GBP; **GBP acronym collision** (K285)
+- [arxiv-cascadefilter-semantic-filtering-2611.08367](sources/arxiv-cascadefilter-semantic-filtering-2611.08367.md) — CascadeFilter: cheap evidence stage, then full page, then oracle; chunk view isolates the deciding signal (2026-11-10 ingest)
+- [arxiv-halucheck-hallucination-benchmark-2611.08231](sources/arxiv-halucheck-hallucination-benchmark-2611.08231.md) — HALUCHECK: 42,980 pairs; misattribution / numerical deviation / detail invention; best detector ~84% (2026-11-10 ingest)
+- [arxiv-rag-competitive-programming-2611.09791](sources/arxiv-rag-competitive-programming-2611.09791.md) — RAG eval design: random-retrieval control + membership-inference control (2026-11-10 ingest)
+- [arxiv-verifier-guided-self-consistency-2611.06606](sources/arxiv-verifier-guided-self-consistency-2611.06606.md) — VGSC: answer trajectories are samples; sampling policy sets answer variance (2026-11-10 ingest; thin)
+- [arxiv-turn-level-best-of-n-agents-2611.06868](sources/arxiv-turn-level-best-of-n-agents-2611.06868.md) — Turn-BoN: agent picks one action from N per turn; selector prefers the clearly-best next step (2026-11-10 ingest; thin)
+- [arxiv-limited-knowledge-exchange-biological-subfields-2611.06596](sources/arxiv-limited-knowledge-exchange-biological-subfields-2611.06596.md) — OOD: LLM-assisted bibliometrics; terminology divergence (2026-11-10 ingest)
+- [arxiv-camp-3d-imc-weight-mapping-2611.07707](sources/arxiv-camp-3d-imc-weight-mapping-2611.07707.md) — OOD: 3D-IMC weight mapping for LLM accelerators (2026-11-10 ingest)
+- [arxiv-zero-shot-weight-space-programming-2611.09271](sources/arxiv-zero-shot-weight-space-programming-2611.09271.md) — OOD: hand-built neural networks across a game ladder (2026-11-10 ingest)
+- [arxiv-formally-verified-quantum-programs-2611.09822](sources/arxiv-formally-verified-quantum-programs-2611.09822.md) — OOD: Lean-verified quantum programs from agent teams (2026-11-10 ingest)
 
 ### Platform / practitioner news
 
@@ -189,6 +198,7 @@ If you're new to this wiki:
 - [newsletter-rss-sterling-sky-2026-09-29-gbp-optimization-checklist](sources/newsletter-rss-sterling-sky-2026-09-29-gbp-optimization-checklist.md) — GBP optimization checklist; title+URL only; category claim already covered (K277)
 - [newsletter-rss-sterling-sky-2026-10-26-local-seo-updates-2026-is-your-traffic-at-risk](sources/newsletter-rss-sterling-sky-2026-10-26-local-seo-updates-2026-is-your-traffic-at-risk.md) — 2026 local SEO update review; ⚠ empty feed shell, no body delivered (2026-10-27 ingest)
 - [newsletter-rss-sparktoro-2026-08-14-zero-click](sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md) — SparkToro: website still the permanent home in zero-click (K237)
+- [newsletter-rss-sparktoro-2026-11-10-new-research-traffic-to-the-open-web-has-fallen](sources/newsletter-rss-sparktoro-2026-11-10-new-research-traffic-to-the-open-web-has-fallen.md) — SparkToro + Similarweb: open-web traffic down 24% over five years; ⚠ feed body truncated (2026-11-10 ingest)
 
 - [searchengineland-2026-google-llm-patent-entity-characterization-480625](sources/searchengineland-2026-google-llm-patent-entity-characterization-480625.md) — Google LLM patent entity characterization; webpages as evidence (2026-06-27 digest)
 - [techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06](sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md) — Google “Good SEO is good GEO”; llms.txt skip; GSC AI reports (2026-06-27 digest)
@@ -248,6 +258,8 @@ If you're new to this wiki:
 
 - [barbershop-marketing-fundamentals](concepts/barbershop-marketing-fundamentals.md) — industry context: visit frequency, customer LTV, two-shop dynamics, marketing-stack priority
 - [generative-engine-optimization](concepts/generative-engine-optimization.md) — GEO/AEO: getting cited in ChatGPT/Claude/Perplexity/Google AI Overviews
+- [passage-evidence-screening-geo](concepts/passage-evidence-screening-geo.md) — the cheap chunk-level gate a page must clear before a full read (CascadeFilter, 2026-11-10)
+- [ai-factual-error-types-business-facts](concepts/ai-factual-error-types-business-facts.md) — misattribution / numerical deviation / detail invention as an audit rubric for business facts (HALUCHECK, 2026-11-10)
 - [adaptive-rag-internal-linking-geo](concepts/adaptive-rag-internal-linking-geo.md) — K100: adaptive RAG routing + WebKnoGraph internal-link pre-deploy evaluation
 - [citation-verification-aeo](concepts/citation-verification-aeo.md) — claim–source verification loop; Med-V1 hallucination evidence
 - [retrieval-vs-citation-visibility-geo](concepts/retrieval-vs-citation-visibility-geo.md) — retrieval visibility vs citation visibility; why the standard GEO checklist underperforms

@@ -7,9 +7,11 @@ related:
   - entities/materials/abs.md
   - entities/materials/tpu.md
   - concepts/print-farm-operations.md
+  - concepts/printed-robot-arm-platforms.md
+  - sources/arxiv-anthropomorphic-arm-charmie-2611.08013.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-11-10
 ---
 
 ## Relations

@@ -5,6 +5,7 @@ tags: [concept, mdlm, masked-diffusion, language-model, training, inference]
 keywords: [VoidPadding, VOID token, EOS overflow, MDLM instruction tuning, Dream, LLaDA, adaptive canvas, block decoding]
 related:
   - sources/arxiv-2606-17999-voidpadding-mdlm-padding.md
+  - concepts/multinomial-diffusion-bimodal-conditioning.md
 maturity: draft
 created: 2026-06-21
 updated: 2026-06-21

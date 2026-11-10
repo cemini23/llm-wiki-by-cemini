@@ -4,6 +4,11 @@ type: entity
 tags: [platform, prediction-markets, on-chain, cemini-venue-adjacent]
 keywords: []
 related:
+  - sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md
+  - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md
+  - concepts/prediction-market-trade-out-moat.md
+  - concepts/prediction-market-regulation-2026.md
+  - entities/companies/draftkings.md
   - entities/tools/last30days-skill.md
   - sources/substack-rss-event-horizon-2026-07-14-congress-pm-hearing.md
   - sources/3-19-kalshi-trading-strategy-research.md
@@ -121,7 +126,7 @@ related:
   - sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations

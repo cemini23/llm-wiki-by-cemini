@@ -2778,3 +2778,165 @@ Routing note: the PDFs sat in `research to be indexed/game-dev/` but were filed 
 - `sources/newsletter-rss-latent-space-2026-11-04-weight-space-walkback-2026-11-05.md` — **new**. Corrects the 2026-11-03 weight-space page: framing overstated, core replicated.
 
 **The most operationally useful line in the batch:** a decoding optimisation that shifts a long agent trajectory changes what a benchmark measures. Speculative settings belong next to the model id in any reproducibility record.
+
+## [2026-11-10] ingest | Task-efficient agent evaluation using cached traces (2611.06803)
+
+- `sources/arxiv-task-efficient-agent-eval-cached-traces-2611.06803.md` — **new**. trubric: LLM rubric summary of a trace plus a text encoder. Cuts MAE 0.13 → 0.08 on SWE-bench Verified at one task.
+- `concepts/task-efficient-eval-cached-traces.md` — **new**. A trace is a measurement of behaviour. The method deliberately strips harness signal, so it must not be used to compare harnesses.
+- `concepts/baseline-and-metric-calibration.md` — **new**, cross-linked. One full agent evaluation can exceed $2,000.
+- Routing: harness evolution from `_route_runs` — rubric summaries could cut the cost of comparing harness variants.
+
+## [2026-11-10] ingest | Visual Token Routing (2611.06854)
+
+- `sources/arxiv-visual-token-routing-2611.06854.md` — **new**. 2.5–5.8× fewer visual tokens at full-resolution parity on OSWorld and CUA-World.
+- `concepts/visual-token-routing.md` — **new**. Transferable rule: a token earns its place only if it can change the next action.
+- `concepts/context-engineering.md`, `concepts/computer-use-agent-harness.md`, `concepts/token-economics-and-prompt-caching.md` — **updated** with backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | VABAR — Variational Automation benchmark (2611.06881)
+
+- `sources/arxiv-vabar-variational-automation-benchmark-2611.06881.md` — **new**. Seven benchmark design criteria, six task classes, 33 skills.
+- `concepts/agentic-robotics-harness.md` — **new**, covering VABAR, AMP1, and Video-Coder.
+- `concepts/benchmark-maintenance-debt.md` — **new** in this batch; absorbs the saturation-resistance criterion.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | A low similarity score does not show independence (2611.07887)
+
+- `sources/arxiv-low-similarity-independence-rewrites-2611.07887.md` — **new**. 69 agent rewrites, six copyleft projects. Run-to-run variation is 61% of the variance.
+- `concepts/similarity-score-not-independence.md` — **new**. One score is one draw. Report repeats plus an independent baseline.
+- `concepts/tool-eval-license-skepticism-patterns.md`, `concepts/harness-supply-chain-defects.md` — **updated** with backlinks.
+- Routing: agent-toolkit — applies directly to provenance claims for adopted skills and tools.
+
+## [2026-11-10] ingest | Information elicitation by ordinal agreement (2611.08366)
+
+- `sources/arxiv-information-elicitation-ordinal-agreement-2611.08366.md` — **new**. Kendall-tau pairwise agreement is stochastically dominant under Bayesian SOC structures.
+- `concepts/ordinal-peer-prediction.md` — **new**. Ask for a ranking, weight by pairwise agreement.
+- `concepts/gatekeeper-layered-agent-evaluation.md` — **updated** with backlink.
+- Routing: agent-toolkit — informs how multi-model council votes are weighted.
+
+## [2026-11-10] ingest | Benchmarks as software — Terminal-Bench 2.1 (2611.08417)
+
+- `sources/arxiv-benchmarks-as-software-terminal-bench-2611.08417.md` — **new**. Audit finds issues in ~30% of Terminal-Bench 2.0. Repairs raise accuracy >10 points and move ranks by up to three.
+- `concepts/benchmark-maintenance-debt.md` — **new**. **Resource budgets are part of the measurement.** Extending a time limit closed a 20-point harness gap.
+- `concepts/harness-as-eval-artifact.md`, `concepts/terminal-state-eval-discovery-reliability-gap.md` — **updated** with backlinks.
+- Routing: harness evolution from `_route_runs` — record the time and token budget next to every harness comparison.
+
+## [2026-11-10] ingest | Routine operations break pattern relationships (2611.09088)
+
+- `sources/arxiv-routine-operations-break-patterns-2611.09088.md` — **new**. Five harnesses, fourteen plugins. A mode switch reordered callbacks and a prohibited edit executed.
+- `concepts/runtime-pattern-relationship-decay.md` — **new**. **Enabled is not the same as ran.** Runtime order and retained state carry the relationship.
+- `concepts/hooks-for-automation.md`, `concepts/truncate-only-long-horizon-compaction.md`, `concepts/harness-security-axis-comparison.md` — **updated** with backlinks.
+- Routing: `/route` lane failover — re-verify guardrails after any settings reload or lane switch.
+
+## [2026-11-10] ingest | BOXBOX recursive harness self-improvement (2611.09218)
+
+- `sources/arxiv-boxbox-recursive-harness-2611.09218.md` — **new**. PERFRACE benchmark, 50 tasks. BOXBOX 1.70× Speedup@4h against 1.44× frozen and 1.28× offline evolution.
+- `concepts/recursive-harness-hot-reload.md` — **new**. The agent decides **when** to revise; a kernel performs the swap and preserves context.
+- `concepts/meta-harness-continual-improvement.md`, `concepts/harness-as-eval-artifact.md`, `concepts/context-engineering.md` — **updated** with backlinks.
+- Routing: harness evolution from `_route_runs` — the closest design to a supervised self-revising lane.
+
+## [2026-11-10] ingest | Wake 5 Solidity fuzzing framework (2611.09307)
+
+- `sources/arxiv-wake5-solidity-fuzzing-mcp-2611.09307.md` — **new**. Matches Foundry throughput; all three fuzzers plateau because of the generator prior.
+- `concepts/agent-written-fuzz-harness.md` — **new**. Agent-written harness reaches all 153 assertions in 33–79 minutes.
+- `entities/tools/wake5.md` — **new**. REFERENCE only: no Solidity workload here. The MCP static-analysis surface is the exemplar.
+- Routing: agent-toolkit — pattern for agent-facing analysis servers.
+
+## [2026-11-10] ingest | Knowing when to intervene (2611.09792)
+
+- `sources/arxiv-knowing-when-to-intervene-2611.09792.md` — **new**. Micro-randomized trials inside trajectories; three causal estimands plus a decision impact score.
+- `concepts/causal-intervention-evaluation.md` — **new**. **A review gate is a treatment with a sign.** Placement matters more than existence.
+- `concepts/streaming-trajectory-monitor-pre-execution-gate.md`, `concepts/subagent-orchestration.md`, `concepts/agent-completion-verification-gates.md` — **updated** with backlinks.
+- Routing: agent-toolkit — informs where `step-gate` should fire and what it must log.
+
+## [2026-11-10] ingest | On agentic manipulation policies (2611.09892)
+
+- `sources/arxiv-agentic-manipulation-policies-amp1-2611.09892.md` — **new**. AMP1 reaches 85.6% zero-shot on RoboLab-120 against 49.2% for the best VLA.
+- `concepts/agentic-robotics-harness.md` — **updated** with the AMP1 control experiments.
+- **Model choice dominates the harness**; assistive routines help weak models and hurt strong ones. Replacing images with text cut success from 82.8% to 36.8%.
+- Routing: Grok/Codex implementer lanes — model strength, not harness scaffolding, is the first variable to set.
+
+## [2026-11-10] ingest | Video-Coder agentic coding for video (2611.09894)
+
+- `sources/arxiv-video-coder-agentic-coding-2611.09894.md` — **new**. Code builds a 3D scene; a draft video conditions the generator. Execution reward anneals into video reward.
+- `concepts/agentic-robotics-harness.md` — **updated**. The harness is the training environment, not a separate simulator.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Say Shibboleth — fingerprinting models and harnesses (2611.12386)
+
+- `sources/arxiv-say-shibboleth-fingerprinting-2611.12386.md` — **new**. 90–92% top-1 across 15 models; 92% harness identification across four harnesses with fixed rules.
+- `concepts/harness-fingerprinting-telemetry.md` — **new**. A harness leaks identity through timing, redaction, and tool-call scheduling.
+- `concepts/harness-fingerprint-trajectory-routing.md`, `concepts/measurement-integrity-mcp-security-eval.md` — **updated** with backlinks.
+- Routing: `/route` lane failover — the same probes can confirm which lane actually served a request.
+
+## [2026-11-10] ingest | Can frontier auto researchers reconstruct human decisions (2611.12429)
+
+- `sources/arxiv-auto-researchers-reconstruct-human-2611.12429.md` — **new**. AutoHRS on 152 ICLR orals. Idea generation 0.29, experiment design 0.36, paper synthesis 0.65.
+- `concepts/auto-researcher-human-similarity.md` — **new**. Score decisions per stage; derive the rubric from the reference, then human-filter it.
+- `concepts/claim-drift-automated-research.md`, `concepts/ordinal-peer-prediction.md` — **updated** with backlinks.
+- Routing: agent-toolkit — a stage-wise checklist is a cheap gate for research briefs.
+
+## [2026-11-10] ingest | WorkflowArena workflow orchestration (2611.12856)
+
+- `sources/arxiv-workflowarena-workflow-orchestration-2611.12856.md` — **new**. 145 tasks, 8 domains. Best configuration resolves 36.95%.
+- `concepts/workflow-orchestration-as-capability.md` — **new**. Fixed-executor test: Opus-authored workflows raise four weaker executors by 6.41 points on average.
+- Claude Code delegates less often with larger groups; Codex delegates more often in smaller units.
+- Routing: harness evolution from `_route_runs` — direct evidence for the architect/implementer split.
+
+## [2026-11-10] ingest | AINews — Inkling 2 Small (2026-11-06)
+
+- `sources/newsletter-rss-latent-space-2026-11-06-ainews-inkling-2-small-17a-594b-trained-in-68-ho.md` — **new**. 594B/17B MoE, 68 hours on GB300s, Apache-2.0 promised.
+- `entities/models/inkling-2-small.md` — **new**. ~150K output tokens per Index task at $1.18; 5× the tokens per task of its predecessor.
+- Alignment disclosure: early checkpoints circumvented guardrails and needed an alignment sprint.
+- Routing: `/route` lane failover — a cheap-task option, not an implementer.
+
+## [2026-11-10] ingest | Latent Space — Controlling Biology with Fabian Theis (2026-11-06)
+
+- `sources/newsletter-rss-latent-space-2026-11-06-controlling-biology---fabian-theis-helmholtz-mun.md` — **new**. Virtual Cell Challenge: constant baselines beat complex models.
+- `concepts/baseline-and-metric-calibration.md` — **new**. The metrics were poorly calibrated; they rewarded the mean.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | AINews — Anthropic IPO and the open-weight week (2026-11-07)
+
+- `sources/newsletter-rss-latent-space-2026-11-07-ainews-anthropic-ipo-whither-now.md` — **new**. Kimi K3.1 Pro, ERNIE-5.5-Flash-Base, Tencent Hy4, Meta Muse.
+- **Endpoint fidelity:** nearly 1 in 4 serverless endpoints score below the self-hosted reference. Endpoint choice is part of the measurement.
+- Inkling 2 Small swore in 50 of 2,655 Vals runs, clustered late in long runs after failed recoveries.
+- Routing: `/route` lane failover — endpoint selection changes results.
+
+## [2026-11-10] ingest | How Stanford teaches AI-native engineering (2026-11-08, full)
+
+- `sources/newsletter-rss-latent-space-2026-11-08-how-stanford-teaches-ai-native-engineering-mihai.md` — **new**. CS146S moves the assignment to an open-source contribution with maintainer review.
+- `concepts/ai-native-engineering-curriculum.md` — **new**. "You buy to learn, and you build to keep." Faros: 98% more merged PRs, 91% longer review time.
+- `concepts/foundational-work-verification.md` — **new** in this batch, from the paired Maude Lemaire episode.
+- Routing: agent-toolkit — the diff-reading exercise is a cheap post-run check.
+
+## [2026-11-10] ingest | One Million AI Engineer special — CS146S note (2026-11-08)
+
+- `sources/newsletter-rss-latent-space-2026-11-08-one-million-ai-engineer-special-how-stanford-tea.md` — **new**. Short episode note with a usable timestamp map for the full interview.
+- Prediction recorded: open-source repositories become agent-run software factories.
+- Routing: agent-toolkit — timestamp index points to the harness and context-engineering segments.
+
+## [2026-11-10] ingest | What frontier labs buy — Handshake AI (2026-11-09)
+
+- `sources/newsletter-rss-latent-space-2026-11-09-what-frontier-labs-buy-a-data-deep-dive-with-han.md` — **new**. ATLAS-Finance, VIALS, file-access and safety environments.
+- `concepts/expert-data-rl-environments.md` — **new**. **Knowledge failure and placement failure are different.** The transcript is the wrong review unit. An agent gamed the Excel grader.
+- Routing: agent-toolkit — environment checklist: state, observability, adversarial grader, partial credit.
+
+## [2026-11-10] ingest | AINews — Fable 5.2 retakes the top spot (2026-11-10)
+
+- `sources/newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant.md` — **new**. $8/$40 per 1M tokens, five effort levels, medium default.
+- `entities/models/claude-fable-5-2.md` — **new**. Task cost rose 31% despite a 20% price cut, because it wrote more tests and spawned subagents.
+- `concepts/frontier-model-release-cadence.md` — **new**. **Compare cost per solved task, never cost per token.** Effort settings do not transfer across versions.
+- Routing: `/route` lane failover — High is the efficiency point; max is a known cost trap.
+
+## [2026-11-10] ingest | Pragmatic Engineer — Scaling Slack and GitHub (2026-11-05)
+
+- `sources/newsletter-rss-pragmatic-engineer-2026-11-05-scaling-slack-and-github-with-maude-lemaire.md` — **new**. Slack, GitHub, and Cursor scaling lessons.
+- `concepts/foundational-work-verification.md` — **new**. Verify foundational work by hand; let non-foundational work pass.
+- Routing: agent-toolkit — the partition belongs in the task, before the run.
+
+## [2026-11-10] ingest | Pragmatic Engineer — The Pragmatic Summit 2027 (2026-11-06)
+
+- `sources/newsletter-rss-pragmatic-engineer-2026-11-06-the-pragmatic-summit-2027.md` — **new**. Paywalled teaser; one paragraph only. No technical claim extracted.
+- `concepts/ai-native-engineering-curriculum.md` — **updated** with backlink.
+- Routing: wiki-only; no distribution.

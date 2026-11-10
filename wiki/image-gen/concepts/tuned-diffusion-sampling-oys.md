@@ -5,6 +5,8 @@ tags: [concept, sampling, diffusion, bayesian-optimization]
 keywords: [OYS, Align Your Steps, timestep schedule]
 related:
   - sources/arxiv-2608-18040-oys-tuned-sampling.md
+  - sources/arxiv-disco-diffusion-free-score-matching-2611.09758.md
+  - concepts/single-score-field-conditional-sampling.md
   - concepts/budget-aware-diffusion-caching.md
   - sweeps/2026-08-19-daily.md
 maturity: draft

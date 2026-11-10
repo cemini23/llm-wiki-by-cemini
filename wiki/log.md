@@ -4,13 +4,26 @@ type: concept
 related:
   - index.md
   - osint/log.md
-updated: 2026-10-23
+updated: 2026-11-10
 ---
 
 # Operations log
 
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
+
+## [2026-11-10] ingest | K296 full-inbox wave — 82 sources across eight domains
+
+- **Scope.** The whole live inbox is processed. That is 82 sources: 59 arXiv PDFs (53 new, 6 removed as byte-identical re-drops) and 28 root-level newsletter and Substack files. The inbox is now empty except the `_ingested-awaiting-archive/` holding folder.
+- **Funnel gap found.** The session-start inbox check uses `-mindepth 2 -maxdepth 2`, which silently skips every root-level `.md`. The check reported 59 files when 87 were present. Any future ritual must count depth 1 as well.
+- **Duplicates.** Six files sat in the live inbox while sha256-identical copies already waited in `_ingested-awaiting-archive/` (5 osint, 1 gambling). The live copies were removed. Nothing was lost.
+- **Pages.** 189 new pages and 121 updated across the eight domains. ccc 45 new pages, osint 19 source pages plus 4 entities and 13 concepts, image-gen 17, cybersec 16, seo 12, 3d-printing 12, game-dev 5, gambling 2.
+- **Sources by domain:** ccc 24, osint 19, seo 10, image-gen 9, 3d-printing 8, cybersec 8, game-dev 3, gambling 1.
+- **Two integrity flags raised, both kept as open items.** The BMMS paper (2611.09147) reports the same result cell as 70.7% in the abstract and 35.0%/22.5%/42.5% in Section 5; both versions stand on the page with a denominator caveat. The SparkToro "-24% open-web traffic" figure comes from a truncated RSS body and is `[TENTATIVE]`.
+- **Honest misfits recorded, not hidden.** Four seo papers and four image-gen papers have no practical link to their domain. They are filed with that stated plainly on the page and marked `wiki-only; no distribution`.
+- **Routing.** Highest-value items: the box-score Gaussian copula (2611.10152) validates the CeminiDFS copula design and names playing time as the dependence driver; GlitchSPX put-flow rules go to the XSP killer bot; Event Horizon's trade-out moat and CFTC impartial access go to the PM/Kalshi retail bot; WuBlockchain's CoreWeave ratio goes to GuruWatcher; Terminal-Bench maintenance debt, BOXBOX, routine-operation decay, WorkflowArena and Fable 5.2 economics all go to `/route` lane failover and harness evolution.
+- **Archive: NOT DONE.** `cemini-egress-fi` still times out on port 22. All 82 sources remain local, plus the 32 from 2026-11-05. That is 114 raw sources, about 250 MB, existing only on this laptop. Every source page `Location` field cites the local inbox path and needs an update once the copy runs.
+- **gate:** `wiki_lint.py` clean — 0 hard errors, 0 bidirectional gaps, 0 dangling links across 10,571 files. 14 backlink gaps from the concurrent ingest were repaired before the commit. `ingest_session_gate.py` WARN acknowledged: the stale `[NEEDS VERIFICATION]` tags it reports are pre-existing (image-gen `qwen-image-2512` at 188d, image-gen `one-step-autoregressive-video-distillation` at 157d, seo `agent-ready-website-local-bm` at 41d). This wave created none of them.
 
 ## [2026-10-25] decision | Atlas shipped, security-audit installed, thinkrail dropped
 

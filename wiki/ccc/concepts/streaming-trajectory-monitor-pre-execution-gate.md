@@ -13,11 +13,13 @@ related:
   - briefs/2026-10-09_ccc-k441-k444-sip-ready.md
   - briefs/2026-10-12_k286-k288-ccc-route.md
   - concepts/nomos-compiled-tool-call-gate.md
+  - concepts/causal-intervention-evaluation.md
+  - sources/arxiv-knowing-when-to-intervene-2611.09792.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-10-09
-updated: 2026-10-12
+updated: 2026-11-10
 ---
 
 ## Relations

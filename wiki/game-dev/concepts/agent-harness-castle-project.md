@@ -80,9 +80,12 @@ related:
   - sources/notnull92-hera-agent-godot-devto-2026-06-25.md
   - sources/phaser-game-agent-mcp-update-2026-07-08.md
   - sources/ziva-gpt-56-godot-benchmark-2026-07-10.md
+  - concepts/context-compaction-game-harness.md
+  - sources/arxiv-speccompact-context-compaction-2611.06876.md
+  - sources/arxiv-meta-access-interfaces-2611.08428.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-10-25
+updated: 2026-11-10
 wire_status: policy_wired
 wire_target: briefs/W2-harness-kickoff.md
 ---
@@ -271,6 +274,16 @@ Two additions worth carrying forward:
 - **Human judgment for fuzzy goals.** The BASALT benchmark's four "fuzzy" tasks were never solved robustly by any team — scalar rewards fail on aesthetic goals. Keep a person or a rubric in the loop.
 
 Full detail: @concepts/minecraft-agent-harness-shelf.md · @entities/tools/mineflayer.md · @entities/tools/minecraft-agent-mcp-shelf.md
+
+### Phase-1 wires (2026-11-10)
+
+**Rule H16 — compact into named slots, and keep the raw record beside the summary** [TENTATIVE — arXiv 2611.06876]
+
+SpecCompact shows that a six-slot summary (Goal, Constraints, Progress, Key Decisions, Next Steps, Critical Context) can be written slot-by-slot with no loss of the information the next agent step needs. That lets the slots be written in parallel, which cuts compaction latency by 2.04–5.63×. The cost is real: task goal completion fell 2.50–4.07 points on one target model, and the authors state there is no consistent accuracy gain. For castle-sim: adopt the six-slot schema for the per-milestone state record, treat the summary as lossy with a generation time, and keep the raw action record underneath it. This reads with **H7** (keep the complete raw record) and **H8** (inherited notes can be stale). It also gives **H3**'s ledger a fixed shape. Detail: @concepts/context-compaction-game-harness.md · @sources/arxiv-speccompact-context-compaction-2611.06876.md
+
+**Rule H17 — keep the authority and capability control plane outside the agent's writable scope** [TENTATIVE — arXiv 2611.08428]
+
+A meta-access ladder runs from tutoring (level 1) to metadata (2), content (3), confirmed mutation (4), and orchestration (5). For a general-purpose harness the paper adds a second axis, the **target** of a change: behavioural, state, capability (tools, servers, network), and authority (permissions, approval policy, sandbox, hooks). The hard rule is that a harness must not let the assistant approve its own authority changes at any level. If the harness also has file-edit or shell tools, it can change its own config without touching a typed capability, so the classification must follow the capability used, not the file path. For castle-sim this names the risk in the Godot MCP write path: scene writes and project-setting writes are level-4 mutations, and any change to tool registries or permissions is 4S or 5S. That stays with the operator and stays outside the agent's write scope. This is the policy shape behind the W2 MCP table's "read-only MCP first; no writes until operator OK". Detail: @sources/arxiv-meta-access-interfaces-2611.08428.md
 
 ## Snippets
 

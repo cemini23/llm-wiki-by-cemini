@@ -4,6 +4,8 @@ type: concept
 tags: [trading-strategy, market-making, polymarket, prediction-markets, mit, architectural-pattern, k30-synthesis]
 keywords: [polymarket-mm, market-making, amm-keeper, two-sided-liquidity, risk-aware-mm, smart-money-copy, btc-15min-niche, polymarket-trading-bot-v3]
 related:
+  - concepts/prediction-market-trade-out-moat.md
+  - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md
   - sources/links-3-5-4-tool-eval.md
   - sources/polymarket-5-5-tool-eval.md
   - sources/5-5-links-2-tool-eval.md
@@ -24,7 +26,7 @@ related:
 maturity: draft
 hub: true
 created: 2026-05-05
-updated: 2026-06-07
+updated: 2026-11-10
 ---
 
 ## Relations

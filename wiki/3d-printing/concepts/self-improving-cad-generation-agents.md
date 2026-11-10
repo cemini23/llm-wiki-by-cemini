@@ -12,9 +12,12 @@ related:
   - concepts/ai-design-tools.md
   - concepts/novice-cad-workflows.md
   - sources/2026-hong-printanything-gplan.md
+  - sources/arxiv-mechanical-engineering-skills-2611.05758.md
+  - concepts/agent-skill-libraries-mechanical-engineering.md
+  - entities/tools/mechanical-engineering-skills.md
 maturity: draft
 created: 2026-06-03
-updated: 2026-10-20
+updated: 2026-11-10
 ---
 
 ## Relations

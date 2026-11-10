@@ -27,9 +27,11 @@ related:
   - sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md
   - sources/cross-wiki-routed-briefs-2026-10-05.md
   - sources/inbox-arxiv-reject-batch-2026-09-19.md
+  - concepts/npc-prompt-robustness.md
+  - sources/arxiv-context-enrichment-selective-robustness-2611.06914.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations
@@ -91,6 +93,11 @@ Adopt runtime LLM NPCs only when:
 2. @concepts/agentic-npc-design-guardrails.md implemented (constraints, memory, telemetry)
 3. Cost model bounded (caps, cache, VIP NPCs only)
 4. Godot integration path chosen (custom HTTP to local Ollama vs wait for mature plugin)
+5. The NPC prompt passes the selective-robustness sweep — stable across prompt formats, responsive to real game-state changes (@concepts/npc-prompt-robustness.md)
+
+### Validation method addition (2026-11-10)
+
+Gate 5 is new. LLM agents change behavior under meaning-preserving prompt edits, so a fluent NPC prompt is not a validated one. The test from arXiv 2611.06914 measures both halves on one plane: mean surface sensitivity and world responsiveness. Detail: @sources/arxiv-context-enrichment-selective-robustness-2611.06914.md
 
 ## Snippets
 

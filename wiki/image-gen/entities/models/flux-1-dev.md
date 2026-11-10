@@ -5,6 +5,8 @@ tags: [model, flux, flux-1, mm-dit, dit, black-forest-labs, minimal-censorship, 
 keywords: [FLUX.1 Dev, FLUX.1 Schnell, FLUX.1 Pro, Black Forest Labs, BFL, MMDiT, flow-matching, T5 encoder, FLUX-UNCENSORED-Merged, Chroma1-HD, SNOFS, abliteration]
 related:
   - sources/uncensored-image-generation-survey.md
+  - sources/arxiv-number-words-past-ten-t2i-2611.06840.md
+  - concepts/t2i-counting-reach.md
   - concepts/prompt-engineering-uncensored.md
   - concepts/synthetic-media-compute-economics.md
   - concepts/two-pass-generation-workflow.md

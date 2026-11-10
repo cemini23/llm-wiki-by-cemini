@@ -34,9 +34,10 @@ related:
   - sources/2026-wade-slicer-project-compilation.md
   - sources/2026-hong-printanything-gplan.md
   - entities/tools/printanything.md
+  - sources/arxiv-geometric-texture-mesh-segmentation-2611.08897.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-07-31
+updated: 2026-11-10
 ---
 
 ## Relations

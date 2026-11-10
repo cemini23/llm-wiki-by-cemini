@@ -14,11 +14,13 @@ related:
   - sources/brief-k295-k299-harness-wave-2026-08-21.md
   - briefs/2026-08-21_ccc-handoff-k295-k299-ingest.md
   - concepts/phase1-adopt-wire.md
+  - concepts/benchmark-maintenance-debt.md
+  - sources/arxiv-benchmarks-as-software-terminal-bench-2611.08417.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-08-21
-updated: 2026-08-25
+updated: 2026-11-10
 ---
 
 ## Relations

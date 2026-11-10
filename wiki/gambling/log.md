@@ -1436,3 +1436,20 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2607-28520-cs-rnr-opp
 
 - `sources/substack-rss-event-horizon-2026-11-05-election-night-2026-11-05.md` — **new**. A political journalist describing their own change of habit: watching Kalshi price the returns was more useful than TV coverage, and "beats the NYT needle". It is an adoption and product-experience claim, not an accuracy one — and it pairs with the postmortem: the same threshold design that made the market wrong on magnitude is what made it good to watch.
 
+
+## [2026-11-10] ingest | Modeling the Joint Distribution of Box Score Statistics: A Gaussian Copula Approach
+
+- Source: `arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md` — Kenny Watts (University of Virginia), arXiv:2611.10152v1 [stat.AP], 6 Nov 2026. Read in full (12 pages).
+- **What it does.** Fits a Gaussian copula per NBA player on points, rebounds, and assists, with empirical marginals. Refits before every game on that player's own prior games only. 207 players, about 22,000 player-game binary outcomes, seven two-season windows.
+- **What it finds.** The copula beats the independence product (the product of marginal exceedance probabilities) in **25 of 27** quartile threshold combinations. The gap is largest at high three-way thresholds: 2%–8% log-loss cut where several thresholds sit at Q75. The independence model is **mis-calibrated** — it systematically under-predicts joint exceedance. The copula also beats the raw empirical joint frequency at high thresholds, because a short history often shows zero such games.
+- **New concept page** `concepts/gaussian-copula-joint-stat-distribution.md` — estimation recipe (rank-based normal scores, `nearPD` repair, Monte Carlo invert), the decision table for copula vs empirical vs independence, and the limits.
+- **Updated** `concepts/dfs-distribution-layer.md` — empirical support for the copula step in the simulator; states the independence failure mode the layer exists to avoid.
+- **Updated** `concepts/dfs-correlation-stacking.md` — notes that its steps 2–5 are the published estimator, and warns not to copy the within-player NBA magnitudes into the NFL role-prior matrix.
+- **Updated** `concepts/pickem-slip-ev-and-correlation.md` — measured backing for the Gaussian-copula row of the correlation-method table.
+- **Updated** `concepts/parlay-and-correlated-bets.md` — the naive independent product under-prices a correlated SGP in the direction that helps the book; this is correlation-tax input, not a bet signal.
+- **Updated** `concepts/player-usage-models.md` — usage is the shared driver of stat correlation; the paper names playing time as the main driver, which maps to snap share and route participation.
+- **Updated** `entities/tools/ceminidfs.md` — joint-distribution method reference; method portable, matrix not.
+- **Index** — concept row plus a 2026-11-10 ingest section.
+- **Caveats.** The paper is NBA; CeminiDFS is NFL. The method transfers, the numbers do not. It uses player-relative quartiles, not posted lines, and does **not** test against market-implied odds. Single source — every empirical number is `[TENTATIVE]`.
+- Not archived: the raw file stays in `research to be indexed/gambling/` because the archive host is offline.
+- Routing: CeminiDFS (joint-distribution projection method). The same-game-parlay EV consequence is a CeminiParlays input and stays on that side of the boundary.

@@ -5,6 +5,7 @@ tags: [image-generation, diffusion-sampling, geometry, inference-time, technique
 keywords: [braided sampling, constrained sampling, conformal map, Droste, generalized inverse, Penrose consistency, projection operator, frozen T2I, Escher, inference-time]
 related:
   - sources/arxiv-2610-02210-moore-escher-penrose.md
+  - concepts/single-score-field-conditional-sampling.md
   - concepts/camera-controlled-video-generation.md
   - sweeps/2026-10-02-daily.md
 maturity: draft

@@ -4,6 +4,10 @@ type: concept
 tags: [concept, kalshi, prediction-markets, lp, k233]
 keywords: [kalshi, lp, event-contracts, volume, regulation]
 related:
+  - sources/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md
+  - sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md
+  - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md
+  - concepts/prediction-market-trade-out-moat.md
   - sources/newsletter-event-horizon-wildfires-2026-08-12.md
   - sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md
   - sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md
@@ -27,7 +31,7 @@ related:
   - sources/substack-rss-event-horizon-2026-10-07-kalshi-election-push.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations

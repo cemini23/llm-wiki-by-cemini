@@ -12,6 +12,8 @@ related:
   - concepts/compliance-boundary-adjacent-pair-search.md
   - concepts/guardrail-construct-validity-agent-eval.md
   - concepts/faithful-agent-asr-measurement.md
+  - concepts/policy-conditioned-compliance-measurement.md
+  - sources/arxiv-bmms-policy-conditioned-behavioral-compliance-2611.09147.md
 maturity: draft
 created: 2026-10-09
 updated: 2026-10-09

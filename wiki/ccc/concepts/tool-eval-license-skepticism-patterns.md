@@ -21,9 +21,11 @@ related:
   - sources/arxiv-autodesign-meta-harness-2608.13560.md
   - concepts/marc-clinical-multi-agent-coordination.md
   - concepts/repo-level-verified-code-proof-eval.md
+  - concepts/similarity-score-not-independence.md
+  - sources/arxiv-low-similarity-independence-rewrites-2611.07887.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-08-14
+updated: 2026-11-10
 cross-wiki-source: "@osint-wiki/sources/multi-wiki-tool-eval-25url-2026-05-28.md"
 ---
 

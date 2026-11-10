@@ -18,9 +18,11 @@ related:
   - concepts/distributed-harness-security-controls.md
   - concepts/scaffold-over-tool-interface.md
   - concepts/agentic-configuration-management-acm.md
+  - concepts/agentic-robotics-harness.md
+  - sources/arxiv-agentic-manipulation-policies-amp1-2611.09892.md
 maturity: draft
 created: 2026-06-24
-updated: 2026-08-12
+updated: 2026-11-10
 ---
 
 ## Relations

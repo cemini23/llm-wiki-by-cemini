@@ -10859,3 +10859,149 @@ Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first
 
 **The licence finding that repeats:** pagesift's licence was logged as unverified and is **AGPL-3.0**. That is the third batch in a row where an unverified licence turned out to be copyleft, and the second where the tool was routed to a commercial project anyway.
 
+## [2026-11-10] ingest | Rough instantaneous squared VIX (RISVIX) — Yang, Su, Horvath
+
+- `sources/arxiv-risvix-vix-term-structure-2611.07120.md` — **new**. Fractional kernel in the ISVIX framework. Term structure is a Mittag-Leffler mixture of spot and long-run levels; only `(α, κ, V0, θ0)` set it.
+- `concepts/vix-term-structure-fractional-memory.md` — **new**. Method page with the calibration split and the regime dependence.
+- Out-of-sample option pricing improves on the Markovian benchmark: **MSE −13.06%**, **MAE −6.33%**, with the gains concentrated at short maturities and in high-VIX states.
+- `concepts/vix-first-joint-spx-vix-calibration.md`, `concepts/xsp-vol-regime-gates.md` — **updated**. Backlinks added. The model has no SPX dynamics and does not replace the VIX-first joint pattern.
+- Routing: XSP killer bot — vol-regime context only; no distribution.
+
+## [2026-11-10] ingest | Genealogical reinforcement in branching processes — Kochocki
+
+- `sources/arxiv-genealogical-reinforcement-2611.08548.md` — **new**. Offspring probability as a logistic function of a distance-weighted count of living relatives, truncated at depth `D`.
+- `concepts/genealogical-reinforcement-branching.md` — **new**. The three statistical results: identifiability needs `D ≥ 2`, the null must be simulated (thresholds 11.11 at D = 3 and 12.11 at D = 5), and depth buys detection power.
+- `concepts/computational-genealogy-archival-automation.md` — **updated**. Backlink only. **This is not an archival-genealogy paper** — "genealogical" means kinship distance, not civil records. Same false-lead pattern as arXiv 2610.40772.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Phase transitions for random least common multiples with memory — Wang, Yang, Zhou
+
+- `sources/arxiv-random-lcm-memory-2611.11301.md` — **new**. Correlated Bernoulli selection with a copying rule; a genealogical forest carries the dependence.
+- `concepts/long-memory-phase-transition-correlated-bernoulli.md` — **new**. The `a = 1/2` threshold: below it the fluctuation scale matches the independent case; above it the scale becomes `n^a` and the limit is non-Gaussian. The law of large numbers is unchanged throughout.
+- `concepts/market-memory-hurst-regime.md` — **updated**. Backlink. The paper is a method reference for regime classification; `a` is not a Hurst exponent.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Capital Flows — market status: bottom or beginning of the end
+
+- `sources/substack-rss-capital-flows-2026-11-05-market-status-market-bottom-or-beginning-of-the.md` — **new**. Paywalled teaser. Causal chain: managed Chinese currency, foreign inflow into US assets, AI capex as the sink, no profit pass-through.
+- `entities/companies/coreweave.md` — **new**. Created from this wave. The post's one numeric claim is CoreWeave down **77%** from its high, undated.
+- `concepts/capital-flows-sofr-conviction-framework.md` — **updated**. Backlinks to both Capital Flows posts and the WuBlockchain outlook.
+- **Weak source.** No trigger, level, or date. It cannot arm an alert, which is the test for a GuruWatcher watch.
+- Routing: GuruWatcher — credit-watch framing only; no distribution.
+
+## [2026-11-10] ingest | Capital Flows — the fall of Jensen, the Anthropic IPO, systemic liquidity risk
+
+- `sources/substack-rss-capital-flows-2026-11-09-the-fall-of-jensen-anthropic-ipo-and-the-systemi.md` — **new**. About 200 words of stub for a video. One durable line: a correct fundamental view with a wrong positioning read still loses money.
+- **Weakest source in the wave.** No data. The title makes two claims the teaser does not support.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Event Horizon — CFTC to prediction markets: stop blocking states
+
+- `sources/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md` — **new**. Interpretation of Regulation 38.151(b): DCMs must cease domestic geographic restrictions within 30 days or file an explanation. The second duty reaches intermediaries, so FanDuel and Robinhood are in scope.
+- `concepts/prediction-market-impartial-access-dcm.md` — **new**. The rule, the two 30-day duties, the three unresolved points, and the operator dilemma between federal and state authority.
+- Kalshi launched regulated **single-stock perpetual futures** on 50+ names, with over **$300m** traded on the stealth-launch morning.
+- Kalshi November 4 volume **$4.19bn**: 70.4% parlays, 12.8% sports, 10.8% crypto. DraftKings Q3: 1m+ new Predictions customers, 11.1% DKeX take rate, $650–700m 2026 spend.
+- `entities/platforms/kalshi.md`, `entities/companies/draftkings.md`, `concepts/prediction-market-regulation-2026.md`, `concepts/kalshi-retail-lp.md` — **new or updated**.
+- Routing: PM/Kalshi retail bot — regulatory gate on venue access; no distribution.
+
+## [2026-11-10] ingest | Event Horizon — Episode 40: the Misery Index
+
+- `sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md` — **new**. Kalshi set a record of **$5.33bn** on Nov 7; parlays were about 75% of volume.
+- Legal cluster: the CFTC directive against court orders, two circuit courts rejecting Kalshi in Connecticut, New York, and Nevada, an Arkansas suit, and Ohio and Utah operators withdrawing sports contracts.
+- Vanderbilt found a **$191,277** Polymarket position on Ricketts about an hour before a Times/Siena poll that showed him six points ahead.
+- Accuracy: the NYT found markets no better than poll-based forecasts except as polling went stale. A Brennan Center study found the odds shift voters' own expectations.
+- Routing: PM/Kalshi retail bot — volume mix and regulation; no distribution.
+
+## [2026-11-10] ingest | Event Horizon — the moat is trading, not pricing
+
+- `sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md` — **new**. Price is not the moat. Trade-out quality is: availability, live display, partial exits.
+- `concepts/prediction-market-trade-out-moat.md` — **new**. The thesis plus the counter-evidence: about 75% of Kalshi volume is parlay product, which does not need a trade-out.
+- Kalshi **$5.36bn** again, seven-day **$29.7bn**. Election-day volume **$726.9m**, nearly triple 2024.
+- DraftKings drew downgrades from JPMorgan, UBS, and Stifel over the near-$1bn spend. River Markets won FCM approval. Cboe launched mini-Russell 2000 binary options.
+- `concepts/polymarket-market-making-architectures.md`, `concepts/parlay-market-making.md`, `entities/platforms/kalshi.md`, `entities/platforms/polymarket.md` — **updated**.
+- Routing: PM/Kalshi retail bot — exit-quality metrics; no distribution.
+
+## [2026-11-10] ingest | GlitchSPX — the $93 million put dump that was not a dump
+
+- `sources/substack-rss-glitchspx-2026-11-06-the-93-million-put-dump-that-wasnt.md` — **new**. A three-leg SPY package of about **$283m** premium printed inside five microseconds. Sizes reconcile: 77,555 + 111,253 = 188,808. The 725 put purchase was the largest leg and most feeds scored it zero.
+- `concepts/options-flow-package-reading.md` — **new**. The four trade types, why package price allocation breaks the bid/ask label, the four checks, and the hedge-versus-bet test.
+- The desk's signature is a base size of about **55,600 contracts** in fixed slices, with new insurance always about $13–15 below spot. It rolled 750 to 740 on November 2 and 740 to 725 on November 6.
+- The author states the confidence split honestly: the package reading is high confidence, the side is lower, and Monday's open interest is the test.
+- `concepts/tape-reading-order-flow-day-trading.md`, `concepts/xsp-vol-regime-gates.md` — **updated**.
+- Routing: XSP killer bot — flow-reading rules for the entry gate; no distribution.
+
+## [2026-11-10] ingest | Klement on Investing — the economic divide in Italy
+
+- `sources/substack-rss-klement-2026-11-06-the-economic-divide-in-italy.md` — **new**. Salvo and Weisdorf (2026) use church construction and date the north–south divergence to about **1000**, roughly 300 years before the Venice account.
+- `concepts/italy-regional-prosperity-divergence.md` — **new**. Two reversals around 1300 and 1500 fit plague arrivals. Openness raises mean and variance together.
+- **Not Atto material.** The topic is regional economic history, not civil records or archival genealogy.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Klement on Investing — DEI is dead
+
+- `sources/substack-rss-klement-2026-11-09-dei-is-dead.md` — **new**. Lopes and Goncalves (2026) measure the DEI share of social posts at the largest 20 US and 20 European firms and find a sharp fall from 2024 to 2025.
+- `concepts/corporate-political-risk-disclosure.md` — **new**. The mechanism is government revenue exposure. The limit is that silence and termination look identical in the data.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Klement on Investing — the start-up challenge in Europe
+
+- `sources/substack-rss-klement-2026-11-10-the-start-up-challenge-in-europe.md` — **new**. Mistral's **$3.5bn** Series D is the largest European round ever and ranks 19th against US rounds.
+- `concepts/european-startup-scaling-gap.md` — **new**. The OECD analysis: about **40%** of EU firms need more than seven years to scale, EU firms take **1.5 years longer** on average, and the divergence is at the tail.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Moontower #335 — commodity indices, dispersion, Levine index
+
+- `sources/substack-rss-moontower-2026-11-08-moontower-335.md` — **new**. Three sections with numbers: commodity index construction, the tracking-error explanation for active manager underperformance, and a personal corpus-indexing pipeline.
+- `concepts/commodity-index-construction.md` — **new**. GSCI energy weight over 50% and about **85%** of historical risk; BCOM's 33% sector cap still leaves about half the risk in energy; variance drag from 5.1% average to 2.7% compounded.
+- `concepts/tracking-error-dispersion-active-management.md` — **new**. `Share underperforming ≈ N(costs / tracking error)` gives about **69%** at 1.5% cost and 3% tracking error. Dispersion does not enter the formula.
+- The agent-built Levine index read **1,533** columns, **8,845** sections, **277** candidates, and kept **160** — a reusable recipe for a personal research index.
+- `concepts/dispersion-trading.md` — **updated**. Backlinks added to a page marked `retracted`.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | Moontower Meta — your thoughts are gerrymandered
+
+- `sources/substack-rss-moontower-2026-11-08-your-thoughts-are-gerrymandered.md` — **new**. Essay, no market content. The one transferable line: P/L is the falsification gate over enough trials.
+- Duplicated as the lead section of Moontower #335; filed separately because it is a distinct item.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | WuBlockchain Weekly — Democratic win triggers a selloff
+
+- `sources/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md` — **new**. Nasdaq **−4.98%** intraday, S&P 500 **−3.25%**, BTC to **$75,558** (−5.32%), ETH to **$2,236** (−7.23%). Liquidations: **$870m** in four hours, **$812m** long.
+- Binance breach: **$6.34bn**, with **$2.85bn** frozen. The chain ran from a fake job interview to a compromised laptop to internal AI tools to stolen credentials to an **EIP-7702** delegation. Withdrawals halted did not stop the on-chain authorisation.
+- `concepts/crypto-custody-single-point-of-failure.md` — **new**, with the Gate essay in the same wave.
+- `entities/companies/circle.md`, `entities/companies/tether.md` — **new**. Circle Q3 revenue **$865m** (+17%) on USDC circulation **$73.3bn** (+8%). Tether holds about **150,000 BTC** and **$132.4bn** of Treasuries including repos.
+- Routing: PM/Kalshi retail bot — crypto risk-asset context and incident playbook; no distribution.
+
+## [2026-11-10] ingest | WuBlockchain — weekly project updates
+
+- `sources/substack-rss-wublock-2026-11-07-weekly-project-updates-aave-rolls-out-fixed-rate.md` — **new**. Aave Labs bought Avon for fixed-rate lending; Aave reports **$30bn** deposits and **$12bn** active loans.
+- Ethereum: EIP-8037 and EIP-8038 change gas costs and the state-storage charging mechanism, and some contracts break. Core developers postponed the Hoodi hard fork.
+- Solana revised validator delegation to 12-month terms, a 100-validator cap, and a 50,000 SOL ceiling. Base shipped Denim with 200 ms blocks and retired Flashblocks.
+- Scroll's on-chain net profit is about **$42.50**; Scroll, Zilliqa, and ZetaChain are all closing or repurposing a general-purpose chain.
+- `entities/tickers/aave.md`, `entities/tickers/eth.md`, `entities/tickers/sol.md` — **updated**.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | WuBlockchain Asia TOP10
+
+- `sources/substack-rss-wublock-2026-11-08-asias-weekly-top10-crypto-news-pboc-to-probe-sol.md` — **new**. The PBOC suspended the Solana Accelerate China 2026 event and opened an investigation into advertising through domestic entities in Lujiazui.
+- Korea delayed the crypto gains tax to **2029**, the fourth delay, at a **22%** composite rate above **2.5m KRW**. The FSC is weighing a **99%** cold-wallet ratio, up from 80%.
+- GOPAX halted trading and moved all user assets to cold storage after threatening emails.
+- The cold-wallet item is the operational conflict: a 99% cold ratio and instant withdrawals cannot both hold.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-10] ingest | WuBlockchain Weekly Outlook — US CPI and PPI, CoreWeave Q3
+
+- `sources/substack-rss-wublock-2026-11-09-wublockchain-weekly-outlook-us-cpi-and-ppi-test.md` — **new**. The numeric frame for AI-infrastructure credit: CoreWeave Q2 revenue **$2.575bn** (+112%), backlog about **$104bn**, net loss **$626m**, net interest expense **$640m**.
+- Interest expense is about **25% of revenue**. The ratio to watch is quarterly net interest against quarterly revenue, and second the backlog conversion rate.
+- Prior prints for the calendar: US September CPI +3.7% y/y and core +2.6%; PPI +6.3% y/y. October payrolls +165,000 with unemployment at 4.1%.
+- `entities/companies/coreweave.md`, `concepts/capital-flows-sofr-conviction-framework.md` — **updated**.
+- Routing: GuruWatcher — CoreWeave interest-expense watch and CPI/PPI calendar points; no distribution.
+
+## [2026-11-10] ingest | WuBlockchain — Gate founder on custody
+
+- `sources/substack-rss-wublock-2026-11-10-gate-founder-shares-his-approach-to-security-no.md` — **new**. Company essay. More than **600 incidents** and **$8bn** of losses in 2026. **Over 60%** of first-half losses came from key compromise and phishing; code vulnerabilities were a little over **10%**.
+- The proposed design is a three-shard MPC vault: device, Gate, recovery partner, with a 48-hour withdrawal delay and an open-source recovery path if Gate disappears.
+- Three claims are testable and none is tested: the independence of the partner, the existence of the recovery tools, and whether the 48-hour delay is server-side.
+- `concepts/crypto-custody-single-point-of-failure.md` — **updated**. The loss split and the withdrawal-halt lesson from the Binance incident sit on the same page.
+- Routing: wiki-only; no distribution.
+

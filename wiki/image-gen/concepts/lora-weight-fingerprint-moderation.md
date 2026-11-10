@@ -5,6 +5,8 @@ tags: [concept, safety, moderation, lora, defensive]
 keywords: [u1-singular-vector, weight-fingerprint, CSAM-LoRA-detection, marketplace-screening]
 related:
   - sources/arxiv-2607-25750-csam-lora-weight-detect.md
+  - sources/arxiv-maem-residual-stream-inversion-2611.08465.md
+  - concepts/activation-inversion-metamodels.md
   - concepts/persona-ops-stack.md
   - entities/marketplaces/civitai.md
   - sweeps/2026-07-29-daily.md

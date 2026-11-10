@@ -135,9 +135,15 @@ related:
   - concepts/graph-engineering-system-intelligence.md
   - concepts/query-aware-role-fusion.md
   - concepts/state-injection-over-history-reconstruction.md
+  - concepts/workflow-orchestration-as-capability.md
+  - concepts/causal-intervention-evaluation.md
+  - concepts/ai-native-engineering-curriculum.md
+  - sources/arxiv-workflowarena-workflow-orchestration-2611.12856.md
+  - sources/arxiv-knowing-when-to-intervene-2611.09792.md
+  - sources/arxiv-agentic-manipulation-policies-amp1-2611.09892.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-08-28
+updated: 2026-11-10
 ---
 
 ## Relations

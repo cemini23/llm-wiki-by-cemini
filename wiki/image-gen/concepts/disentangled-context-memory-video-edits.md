@@ -5,6 +5,7 @@ tags: [concept, video-generation, memory, video-editing, camera-control, consist
 keywords: [PermaVid, RGB depth memory, edit-aware invalidation, global edit, local edit, viewpoint revisiting]
 related:
   - sources/arxiv-2606-16449-permavid-disentangled-context-memory.md
+  - concepts/value-cache-streaming-video-editing.md
   - entities/models/permavid.md
   - concepts/camera-controlled-video-generation.md
   - concepts/latent-spatial-memory-video-world-models.md

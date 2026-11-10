@@ -11,10 +11,11 @@ related:
   - concepts/federated-daily-research-digest.md
   - sources/arxiv-lee-2026-filter-bubble-generative-search-2609.38946-2026-10-01.md
   - sources/newsletter-rss-sparktoro-2026-11-02-20-zero-click-marketing-questions-everyones-aski.md
+  - sources/newsletter-rss-sparktoro-2026-11-10-new-research-traffic-to-the-open-web-has-fallen.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-15
-updated: 2026-10-01
+updated: 2026-11-10
 cross-wiki-source: "@osint-wiki/sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md"
 ---
 

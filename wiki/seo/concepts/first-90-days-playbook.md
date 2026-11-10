@@ -31,9 +31,10 @@ related:
   - entities/platforms/bing-places.md
   - sources/google-business-profile-help-2026-tips-get-more-reviews-3474122.md
   - sources/salon-today-2026-review-gating-ftc-compliance-dodson-2026-06-24.md
+  - sources/newsletter-rss-sparktoro-2026-11-10-new-research-traffic-to-the-open-web-has-fallen.md
 maturity: validated
 created: 2026-05-07
-updated: 2026-10-01
+updated: 2026-11-10
 ---
 
 ## Relations

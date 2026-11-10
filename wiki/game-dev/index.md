@@ -61,6 +61,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [minecraft-data-driven-content-patterns](concepts/minecraft-data-driven-content-patterns.md) | validated | Data components, datagen, jigsaw worldgen → castle-sim |
 | [minecraft-agent-harness-shelf](concepts/minecraft-agent-harness-shelf.md) | validated | Mineflayer, Voyager, MCP, benchmarks, harness lessons |
 | [travian-civ-browser-strategy-design](concepts/travian-civ-browser-strategy-design.md) | draft | Single-player Travian × Civ Rev feasibility — market gap, payback-time economy, honest AI, verified stack |
+| [context-compaction-game-harness](concepts/context-compaction-game-harness.md) | draft | Six-slot compaction, parallel slots, keep raw record (2611.06876) |
+| [npc-prompt-robustness](concepts/npc-prompt-robustness.md) | draft | Selective robustness: format sweep + world sweep NPC test (2611.06914) |
 
 ## Entities — Engines
 
@@ -335,6 +337,9 @@ Catalog of all wiki pages. Updated on each ingest.
 | [arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12](sources/arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12.md) | read |
 | [arxiv-2610.13022-reqclarifybench-clarification-2026-10-12](sources/arxiv-2610.13022-reqclarifybench-clarification-2026-10-12.md) | read |
 | [inbox-arxiv-reject-batch-2026-10-12](sources/inbox-arxiv-reject-batch-2026-10-12.md) | read |
+| [arxiv-speccompact-context-compaction-2611.06876](sources/arxiv-speccompact-context-compaction-2611.06876.md) | read |
+| [arxiv-context-enrichment-selective-robustness-2611.06914](sources/arxiv-context-enrichment-selective-robustness-2611.06914.md) | read |
+| [arxiv-meta-access-interfaces-2611.08428](sources/arxiv-meta-access-interfaces-2611.08428.md) | read |
 
 ## K291 ingest (2026-10-14)
 

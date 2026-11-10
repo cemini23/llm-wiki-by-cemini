@@ -6,9 +6,10 @@ keywords: [veterinary radiotherapy, polyjet, Agilus30, VeroUltraWhite, QA phanto
 related:
   - concepts/niche-fdm-applications.md
   - concepts/fdm-printing.md
+  - sources/arxiv-ct-image-noise-phantom-2611.07357.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-11-10
 read_status: skimmed
 ---
 

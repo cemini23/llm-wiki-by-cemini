@@ -29,9 +29,11 @@ related:
   - sources/arxiv-deepsearch-world-self-distillation-2607.07820.md
   - concepts/businesscasebench-rubric-from-expert-solutions.md
   - concepts/verifiable-deterministic-agent-benchmarking.md
+  - concepts/ordinal-peer-prediction.md
+  - sources/arxiv-information-elicitation-ordinal-agreement-2611.08366.md
 maturity: draft
 created: 2026-06-21
-updated: 2026-07-22
+updated: 2026-11-10
 ---
 
 ## Relations

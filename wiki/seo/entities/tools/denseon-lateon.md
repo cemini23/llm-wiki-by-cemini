@@ -14,9 +14,10 @@ related:
   - sweeps/2026-07-30-daily.md
   - sources/arxiv-ferhatosmanoglu-2026-qasp-vector-search-policy-2607.29606-2026-08-03.md
   - sources/arxiv-tamang-2026-beyond-top-k-read-document-ops-2608.06305-2026-08-07.md
+  - sources/arxiv-cascadefilter-semantic-filtering-2611.08367.md
 maturity: draft
 created: 2026-07-30
-updated: 2026-08-07
+updated: 2026-11-10
 wire_status: policy_wired
 wire_target: .cursor/rules/cemini-phase1-seo-geo-wires.mdc
 ---

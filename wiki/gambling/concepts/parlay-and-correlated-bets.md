@@ -35,9 +35,11 @@ related:
   - sources/research-diy-pickem-props-master-plan-2026-07-05.md
   - sources/rss-lsb-state-markets-2026-10-07.md
   - sources/steelers-browns-tnf-metaplan-2026-10-01.md
+  - concepts/gaussian-copula-joint-stat-distribution.md
+  - sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-10-25
+updated: 2026-11-10
 ---
 
 ## Relations
@@ -77,6 +79,10 @@ Independent legs multiply implied probabilities — and **vig compounds**. A 3-l
 ### Same-game parlays (SGP)
 
 Correlated outcomes (QB yards + team total + WR receptions) — books model correlation and often **embed extra margin**. Occasional +EV when correlation is mispriced [TENTATIVE — requires model].
+
+**Why the naive product is wrong (measured).** A 2026 study on NBA player stat lines fits a Gaussian copula per player and measures it against the independence product. The independence product under-predicts joint exceedance and loses to the copula in 25 of 27 joint-threshold combinations, with the biggest gap at high three-way thresholds `[TENTATIVE — single NBA study]`. The book's own SGP model prices the correlation the naive product ignores, so the retail error runs in the direction that helps the book. Method: @concepts/gaussian-copula-joint-stat-distribution.md; source: @sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md.
+
+This is an input to **how much correlation tax a book is charging**, not a bet signal by itself. The paper does not test against posted lines, so it cannot say whether a specific SGP is +EV. Parlay pricing work routes to CeminiParlays; the projection method belongs to CeminiDFS.
 
 | Platform | NFL SGP notes |
 |----------|---------------|

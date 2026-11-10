@@ -13,9 +13,10 @@ related:
   - sources/2025-tran-3d-printed-acoustic-guitars.md
   - sources/2024-rotoo-canine-head-phantom-vet.md
   - sources/2026-kashef-multi-vine-working-channel.md
+  - sources/arxiv-ct-image-noise-phantom-2611.07357.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-09-11
+updated: 2026-11-10
 ---
 
 ## Relations

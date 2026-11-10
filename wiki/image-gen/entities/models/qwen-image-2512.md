@@ -5,6 +5,8 @@ tags: [model, dit, qwen-image, alibaba-qwen, eastern-vanguard, 20b, layout-reaso
 keywords: [Qwen-Image-2512, Qwen-Image, Alibaba-Qwen, 20B, layout reasoning, text rendering, typography, GGUF, 14-16GB consumer, minimal censorship]
 related:
   - sources/uncensored-image-generation-survey.md
+  - sources/arxiv-number-words-past-ten-t2i-2611.06840.md
+  - concepts/t2i-counting-reach.md
   - entities/models/linca.md
   - sources/arxiv-2608-17973-linca.md
   - entities/models/editbridge.md
