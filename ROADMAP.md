@@ -43,6 +43,26 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Archive still blocked.** `cemini-egress-fi` times out. 114 raw sources, about 250 MB, exist only on this laptop.
 - **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
 
+## Current state (2026-11-11 — v10.11 agent-skills evaluation)
+
+- **Three Integrates — the most any batch has produced.** All three are harness tooling, not project dependencies, which is why they clear while the Extract items keep hitting blockers.
+  - **`shadcn/improve`** — MIT. Recon → 9-category parallel audit → **Vet** → Prioritize → Plan. Frontier model plans, cheap model executes, **"merging is always yours"**. The skill writes only to `plans/`; executors run in disposable worktrees.
+  - **`autoharness`** — MIT. Reflects every 50 tool calls into skills. **Writes `.claude/skills/`; `.claude/autoharness/` is state only** (report had this wrong). Claims it never touches hand-written skills — verify on a scratch repo.
+  - **`claude-video`** — MIT. Video → timestamped frames + transcript.
+- **Two data-path traps Phase-0 caught.**
+  - **`claude-video`'s default engine is Gemini when a key is present** — YouTube goes straight to Google, and **other URLs and local files are uploaded to Google's Files API**. The **local engine only runs with no key**. On this machine that is the normal state, so the default is a ban-4 hazard.
+  - **`neo4jev` is hosted-only** — needs `TYPESAFE_API_KEY` and Neo4j, and without the key it silently emits "labelled stand-in answers". **Same Jev family as `jevals`, opposite locality.** Do not generalise between them.
+- **The pattern is now unambiguous across five batches:** the eval describes cloud-with-a-local-option as cloud-only, and free-with-a-cloud-option as free. Both errors push toward the metered path. Check the **default**, not the capability.
+- **Best security paper: `arXiv 2611.13960`.** A coding harness is a **Living-off-the-Land platform** — once instructions can be injected into retrieved content, `bash`, `curl`, and `find` are the payload. Security is a **structural property of the assembly**, not a behavioural property of the model.
+- **Best evaluation paper: `arXiv 2611.14419`.** **Mechanical validity is not faithfulness.** A generated world model can parse, run, and be the wrong game — the same gap as a valid certificate about false premises, or a wiki page that passes lint.
+- **Best economics number:** Mercor reports spending **3× as much on inference as on salaries**, and claims it pays back through productivity. But its product *is* human expertise evaluated against models, which makes it the least representative firm for that ratio.
+- **AEO got numbers.** Claude Code picked Resend first in **64 of 102** email recommendations; SendGrid was first 7 times but appeared as an alternative 55 times. **Second place is worth almost nothing, because the first answer gets implemented.**
+- **Benchmark caution from CAGE 4:** the simulator charges a team for a Restore it **silently discarded**, with no error. A benchmark's counts can be wrong while the interface looks clean.
+- **Prompts staged:** atto, collectibles, game-time. All 100/100. Guruwatcher received one secondary fit and has no prompt this round.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps. Pushed as `8c74986f7`.
+- **Archive still blocked** — `cemini-egress-fi` remains suspended. 146 files in `_ingested-awaiting-archive/`.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
 ## Current state (2026-11-10 — v10.11 link evaluation, Jev family)
 
 - **Two Integrates, both process rather than runtime.** `worktrunk` (fourth evaluation, licence never moved) and `dzhng/skills` — a MIT skill library whose `write-spec` → `implement-spec` pair slices work into reviewable passes with **playable checkpoints**. Neither can touch data, which is why they clear while three Atto extracts all have blockers.
