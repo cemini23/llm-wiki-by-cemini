@@ -1166,3 +1166,11 @@ Six sources. The theme is that response-level safeguards do not protect the laye
 | [geometry-of-ignorance](sources/arxiv-2611.05272-geometry-of-ignorance-2026-11-05.md) | draft | A refusal is not evidence of absence. Known concepts form tight clusters; ignorance fragments. Honest caveat: the recovery correlation's sign flips by attack type. |
 | [sparse-internal-control](sources/arxiv-2611.04349-sparse-internal-control-2026-11-05.md) | draft | Steering from a few nodes, with off-target preservation as an explicit constraint and a six-axis evaluation protocol. |
 
+
+## Repository Revenue Evaluation (2026-11-11)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [attack-surface-to-defense-architecture](sources/arxiv-2611.13960-attack-surface-to-defense-architecture-2026-11-11.md) | draft | **A coding harness is a Living-off-the-Land platform.** bash, curl, find are the payload. Security is structural, not behavioural. |
+| [bars-budget-aware-sampling](sources/arxiv-2611.14171-bars-budget-aware-sampling-2026-11-11.md) | draft | Majority vote with a **refusal** option and anytime-valid confidence. |
+| [poem-block-sparse-attention](sources/arxiv-2611.13578-poem-block-sparse-attention-2026-11-11.md) | draft | Importance against the full output is not importance against what remains. |

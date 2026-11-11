@@ -559,3 +559,4 @@ Rows missing since their source pages were committed. Found by
 |------|----------|---------|
 | [joint-distribution-box-score-gaussian-copula](sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md) | draft | Watts (UVA), arXiv:2611.10152. Per-player Gaussian copula on NBA PTS/REB/AST, walk-forward, 22k player-games. Beats independence in 25 of 27 joint-threshold combos; independence under-predicts high joint exceedance. |
 
+| [event-horizon-unfair-surprise](sources/substack-rss-event-horizon-2026-11-11-unfair-surprise-2026-11-11.md) | draft | "Hard to believe Congress intended to allow sports betting in 50 states." Substance over form, from a non-lawyer who concedes the legal difference. |

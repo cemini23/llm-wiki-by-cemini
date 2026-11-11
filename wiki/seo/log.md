@@ -2003,3 +2003,9 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
 - Routing: wiki-only; no distribution.
 
+
+## [2026-11-11] ingest | Repository Revenue Evaluation (3 papers)
+
+- `sources/arxiv-2611.14106-proofcoder-2026-11-11.md` — **new**. Continuous reasoning versus a harness-controlled tactic loop.
+- `sources/arxiv-2611.14149-search-to-decision-survey-2026-11-11.md` — **new**. Six information-seeking capabilities; a map for five papers already filed here.
+- `sources/arxiv-2611.14382-learning-by-thinking-cognitive-map-2026-11-11.md` — **new**. Learning by thinking, separated from learning from input. Framework only.

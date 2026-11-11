@@ -7,7 +7,10 @@ related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10-11-2026-11-05.md"
 maturity: draft
 created: 2026-11-05
-updated: 2026-11-05
+updated: 2026-11-10
+wire_status: runtime_wired
+wire_target: "~/.local/bin/deja and ~/.config/deja/exclude"
+wire_note: 2026-11-10. Binary v0.24.1 installed after the exclude list. Desktop/family and AttoVault are excluded. deja install was not run. deja embed was not run.
 ---
 
 ## Raw Concept

@@ -7,6 +7,8 @@ related:
   - sources/eval-multi-wiki-link-evaluation-2026-11-10.md
   - entities/tools/jeveryword.md
   - entities/tools/ontosmith.md
+  - entities/tools/neo4jev.md
+  - sources/eval-multi-wiki-repository-revenue-2026-11-11.md
 maturity: draft
 created: 2026-11-10
 updated: 2026-11-10

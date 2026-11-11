@@ -1453,3 +1453,7 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2607-28520-cs-rnr-opp
 - **Caveats.** The paper is NBA; CeminiDFS is NFL. The method transfers, the numbers do not. It uses player-relative quartiles, not posted lines, and does **not** test against market-implied odds. Single source — every empirical number is `[TENTATIVE]`.
 - Not archived: the raw file stays in `research to be indexed/gambling/` because the archive host is offline.
 - Routing: CeminiDFS (joint-distribution projection method). The same-game-parlay EV consequence is a CeminiParlays input and stays on that side of the boundary.
+
+## [2026-11-11] ingest | Event Horizon — the substance-over-form objection (1 source)
+
+- `sources/substack-rss-event-horizon-2026-11-11-unfair-surprise-2026-11-11.md` — **new**. A non-lawyer's practical objection: **"It's hard to believe Congress intended to allow sports betting in 50 states."** Concedes the legal difference from sportsbooks, then observes that the activity most users engage in is identifiable as sports betting. Pairs with the 73.9% parlay-volume figure already on file.

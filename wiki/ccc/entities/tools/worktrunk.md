@@ -14,8 +14,9 @@ maturity: draft
 created: 2026-10-25
 updated: 2026-11-10
 phase_0_verdict: INTEGRATE — licence confirmed across four evaluations, not cloned
-wire_status: none
-wire_note: Licence confirmed MIT OR Apache-2.0 on 2026-11-02. Still not cloned; stars, commits, and issues unreported.
+wire_status: runtime_wired
+wire_target: "~/.local/bin/wt and Game time/.config/wt.toml"
+wire_note: 2026-11-10. Release binary v0.81.0 installed (sha256 checked). Not a game dependency. Project config copies only .worktreeinclude caches and sets hash_port. The repo was not cloned.
 ---
 
 ## Raw Concept

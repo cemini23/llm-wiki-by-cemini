@@ -1,3 +1,10 @@
+## [2026-11-10] phase-1 | game-time adopts the two Integrates plus deja-vu
+
+- **worktrunk** — `runtime_wired`. Release binary `wt` v0.81.0. Project config in Game time. Not a package dependency.
+- **dzhng/skills** — `runtime_wired`. Ten MIT skills in `Game time/.grok/skills`. The rest of the library stays out.
+- **deja-vu** — `runtime_wired`. Binary v0.24.1. Exclude list written first for `Desktop/family` and `AttoVault`. `deja install` not run.
+- **Boundary** — doop stays excluded (AGPL-3.0). lz4 CLI stays out. No MCP edits.
+
 ## [2026-10-23] ingest | K294 — evolve the interface
 
 - **Hub** — @concepts/k294-ccc-wave.md. Harness papers routed from other inboxes.
@@ -2947,3 +2954,16 @@ Routing note: the PDFs sat in `research to be indexed/game-dev/` but were filed 
 
 **Both are process, not runtime.** Neither adds a dependency that can touch data, which is why they clear while three Atto Extract items in the same batch all carry blockers.
 - Routing: wiki-only; no distribution.
+
+## [2026-11-11] ingest | Repository Revenue Evaluation — agent skills wave (2 entities, 5 papers, 5 newsletters)
+
+- `entities/tools/shadcn-improve.md` — **new**. Audit with the frontier model, execute with a cheap one. **Five phases, not six**; executors run in disposable worktrees and **merging is always yours**.
+- `entities/tools/autoharness.md` — **new**. Distils skills from live sessions. **Writes to `.claude/skills/`**, not `.claude/autoharness/` (that is state). Claims it never touches hand-written skills.
+- `sources/arxiv-2611.13960-*` → cybersec. Papers filed here: CAGE 4 audit, agent-eval frameworks, Continual-ARC, LLM world models, agentic traffic class.
+- `sources/arxiv-2611.14068-cage4-benchmark-audit-2026-11-11.md` — **new**. CAGE 4 charges for actions it silently discarded.
+- `sources/arxiv-2611.14419-llm-world-models-neuro-symbolic-2026-11-11.md` — **new**. Mechanical validity is not faithfulness.
+- `sources/arxiv-2611.14505-continual-arc-skill-acquisition-2026-11-11.md` — **new**. Tasks return after gaps with fresh instances — the memorise-versus-learn test.
+- `sources/arxiv-2611.14493-agent-evaluation-frameworks-2026-11-11.md` — **new**. Stability, detection, discovery: three different evaluation questions.
+- `sources/arxiv-2611.14211-verifiable-agentic-traffic-class-2026-11-11.md` — **new**.
+- Newsletters: AEO measured (Resend picked first 64/102), AI Engineer Code Summit, Naive-N0.5-Flash, Mercor 3:1 inference-to-salary, Pragmatic Engineer teaser.
+- Routing: no distribution.

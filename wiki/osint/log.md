@@ -11016,3 +11016,14 @@ Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first
 **The pattern across three batches now:** the eval keeps describing cloud-with-a-local-option as cloud-only, and local-with-a-cloud-option as free. Both errors push toward the metered path.
 - Routing: wiki-only; no distribution.
 
+
+## [2026-11-11] ingest | Repository Revenue Evaluation — agent skills wave (1 eval, 5 papers, 3 newsletters, 1 skip)
+
+- `sources/eval-multi-wiki-repository-revenue-2026-11-11.md` — **new**. 3 Integrate, 6 Extract, 2 Watch, 6 Context, 3 Pass.
+- `entities/tools/neo4jev.md` — **new**. Bounded graph navigation over Jev. **Hosted-only** — needs `TYPESAFE_API_KEY` and Neo4j, the opposite of `jevals`.
+- `sources/arxiv-2611.10956-risk-sensitive-rl-options-mm-2026-11-11.md` — **new**. Risk-sensitive RL for an options market maker on real S&P 500 options (Hull, Cheng et al.).
+- `sources/arxiv-2611.10928-polynomial-preserving-volatility-2026-11-11.md` — **new**. Exact moments of arbitrary order for discrete-time volatility.
+- `sources/arxiv-2611.12814-curbside-chatbots-2026-11-11.md` — **new**. Mental-health advice audited per audience — clinician, caregiver, patient.
+- `sources/arxiv-v10-11-late-skip-no-lane-2026-11-11.md` — **new skip record**. `2611.13763`, bacterial recombination.
+- Newsletters: Klement on gold vs Treasuries as hedges; WuBlockchain on RWA distribution; Capital Flows inflation teaser.
+- Routing: no distribution.

@@ -481,3 +481,6 @@ If you're new to this wiki:
 | sources/arxiv-2611.04787-resi-math-recoverable-frontier-2026-11-05.md | source | Failure does not mean inability: a recoverable capability frontier exists between direct decoding and search. |
 | sources/arxiv-2611.04640-tunebench-power-system-2026-11-05.md | source | Agent benchmark built from a real TSO calibration workflow. Useful as a task-shape template. |
 
+| sources/arxiv-2611.14106-proofcoder-2026-11-11.md | source | Continuous reasoning versus a harness-controlled tactic loop in proof assistants. |
+| sources/arxiv-2611.14149-search-to-decision-survey-2026-11-11.md | source | Six information-seeking capabilities — a map for five papers already filed here. |
+| sources/arxiv-2611.14382-learning-by-thinking-cognitive-map-2026-11-11.md | source | Learning by thinking, separated from learning from input. Framework only. |

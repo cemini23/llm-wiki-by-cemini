@@ -2467,3 +2467,9 @@ Routed from `@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-202
 - Backlinked from `concepts/npm-supply-chain-defense.md`, `concepts/responsible-disclosure.md`.
 - Routing: defensive SOC/IR tradecraft — remediation and incident-evidence record; no distribution.
 
+
+## [2026-11-11] ingest | Repository Revenue Evaluation (3 papers)
+
+- `sources/arxiv-2611.13960-attack-surface-to-defense-architecture-2026-11-11.md` — **new**. **A coding harness is a Living-off-the-Land platform.** Security is a structural property of the assembly, not a behavioural property of the model.
+- `sources/arxiv-2611.14171-bars-budget-aware-sampling-2026-11-11.md` — **new**. Majority vote with a **refusal** option and anytime-valid confidence.
+- `sources/arxiv-2611.13578-poem-block-sparse-attention-2026-11-11.md` — **new**. Importance measured against the full dense output is not importance measured against what remains after pruning.

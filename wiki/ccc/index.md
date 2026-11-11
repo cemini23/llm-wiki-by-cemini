@@ -1535,3 +1535,20 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 | [swapping-season](sources/newsletter-rss-latent-space-2026-11-05-swapping-season-2026-11-05.md) | draft | Cat Wu Anthropic→OpenAI; Sharon Zhou AMD→Anthropic; Meta buys Conductor. |
 | [dzhng-skills](entities/tools/dzhng-skills.md) | draft | **Integrate.** MIT skill library. `write-spec` → `implement-spec` slices work into reviewable passes with playable checkpoints; `close-spec` ends a spec. Process, not runtime. |
 | [weight-space-walkback](sources/newsletter-rss-latent-space-2026-11-04-weight-space-walkback-2026-11-05.md) | draft | The weight-space framing was overstated; the core claim replicated. Framing error, not a retraction. |
+
+## Repository Revenue Evaluation (2026-11-11)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [shadcn-improve](entities/tools/shadcn-improve.md) | draft | **Integrate.** Frontier model audits and plans; cheap model executes in a disposable worktree; **you merge**. Vet phase removes false positives. |
+| [autoharness](entities/tools/autoharness.md) | draft | **Integrate.** Reflects every 50 tool calls into skills. Writes `.claude/skills/`; `.claude/autoharness/` is state. Claims it never touches hand-written skills — verify. |
+| [cage4-benchmark-audit](sources/arxiv-2611.14068-cage4-benchmark-audit-2026-11-11.md) | draft | CAGE 4 charges for actions it silently discarded. The scores reproduce; what they measure is smaller than assumed. |
+| [llm-world-models-neuro-symbolic](sources/arxiv-2611.14419-llm-world-models-neuro-symbolic-2026-11-11.md) | draft | Mechanical validity is not faithfulness. A game can parse, run, and be the wrong game. |
+| [continual-arc](sources/arxiv-2611.14505-continual-arc-skill-acquisition-2026-11-11.md) | draft | Tasks return after gaps with fresh instances — the only clean memorise-versus-learn test. |
+| [agent-evaluation-frameworks](sources/arxiv-2611.14493-agent-evaluation-frameworks-2026-11-11.md) | draft | Stability, detection, discovery — three different questions an evaluation can answer. |
+| [verifiable-agentic-traffic-class](sources/arxiv-2611.14211-verifiable-agentic-traffic-class-2026-11-11.md) | draft | Agent traffic has no QoS class, and declared classes can be spoofed. |
+| [aeo-resend-study](sources/newsletter-rss-latent-space-2026-11-10-designing-for-agents-aeo-2026-11-11.md) | draft | Claude Code picked Resend first in 64/102 email recommendations. Second place is worth almost nothing. |
+| [ai-engineer-code-summit](sources/newsletter-rss-latent-space-2026-11-11-ai-engineer-code-summit-2026-11-11.md) | draft | OpenAI on Codex: "the shift to cloud is still confusing to many users". |
+| [naiveai-n05-flash](sources/newsletter-rss-latent-space-2026-11-10-naiveai-n05-flash-2026-11-11.md) | draft | 2,100 tokens/sec is throughput, not capability. |
+| [mercor-3b](sources/newsletter-rss-latent-space-2026-11-11-mercor-3b-2026-11-11.md) | draft | 3:1 inference-to-salary spend — at a firm whose product is human expertise. |
+| [pragmatic-correctness-supply-chain](sources/newsletter-rss-pragmatic-engineer-2026-11-10-correctness-supply-chain-2026-11-11.md) | draft | Paywalled teaser; records the subject only. |

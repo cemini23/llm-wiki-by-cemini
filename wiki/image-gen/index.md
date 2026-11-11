@@ -1257,3 +1257,10 @@ Concepts:
 - [Multinomial diffusion with two condition granularities](concepts/multinomial-diffusion-bimodal-conditioning.md) — Per-token structural condition plus one continuous global target in one discrete diffusion objective. — `concept, discrete-diffusion, conditioning, peripheral`
 - [Fokker-Planck stationary distributions](concepts/fokker-planck-stationary-distributions.md) — Groups the Pearson-IV and Mpemba papers; the classical stationary-solution and relaxation-rate mathematics adjacent to diffusion sampling. — `concept, stochastic-processes, peripheral`
 
+
+## Repository Revenue Evaluation (2026-11-11)
+
+- [claude-video](entities/tools/claude-video.md) — Video ingest for agents. **Gemini engine is the default when a key is present** and uploads local files to Google; the local engine runs with no key. — `entity, video, tools, ingest-2026-11-11`
+- [malora-margin-lora](sources/arxiv-2611.14397-malora-margin-lora-2026-11-11.md) — A margin explanation for LoRA's forgetting resistance and why adapter merging works. — `paper, lora, theory, ingest-2026-11-11`
+- [b3-overlapping-block-diffusion](sources/arxiv-2611.14387-b3-overlapping-block-diffusion-2026-11-11.md) — Two blocks refined in one forward pass, with a self-calibrating open condition. Training-free. — `paper, diffusion, latency, ingest-2026-11-11`
+- [energy-based-model-tutorial](sources/arxiv-2611.14383-energy-based-model-tutorial-2026-11-11.md) — 78-page EBM tutorial used as one lens over all of ML: energy, inference, learning. — `paper, tutorial, foundations, ingest-2026-11-11`

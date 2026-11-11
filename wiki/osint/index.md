@@ -4972,3 +4972,17 @@ New concepts and entities:
 | [browser-use](entities/tools/browser-use.md) | MIT. Local Chromium with a local model, no key; partial checkpoints for multi-page harvests. The cloud path is the *default*, not the only one. | draft |
 | [draftkings](entities/companies/draftkings.md) | First listed incumbent with a full prediction-market stack. Take rate 11.1%, 20-month cohort payback. | draft |
 
+
+## Repository Revenue Evaluation (2026-11-11)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-multi-wiki-repository-revenue-2026-11-11](sources/eval-multi-wiki-repository-revenue-2026-11-11.md) | 20 URLs, **3 Integrate**. Phase-0: claude-video's default engine uploads local files to Google; neo4jev is hosted-only; autoharness writes to `.claude/skills/`, not `.claude/autoharness/`. | draft |
+| [neo4jev](entities/tools/neo4jev.md) | Bounded Jev navigation over a graph — Choice + Noul with beam search. **Hosted-only**: needs `TYPESAFE_API_KEY` and Neo4j. The opposite of `jevals` on locality. | draft |
+| [risk-sensitive-rl-options-mm](sources/arxiv-2611.10956-risk-sensitive-rl-options-mm-2026-11-11.md) | Risk-sensitive RL for an options market maker, on real S&P 500 options. Expected P&L is the wrong objective; the paper formalises why. | draft |
+| [polynomial-preserving-volatility](sources/arxiv-2611.10928-polynomial-preserving-volatility-2026-11-11.md) | Exact moments of arbitrary order in discrete time, converging to polynomial diffusions. | draft |
+| [curbside-chatbots](sources/arxiv-2611.12814-curbside-chatbots-2026-11-11.md) | Mental-health advice audited separately for clinicians, caregivers, and patients — the audience-conditioned axis most evals ignore. | draft |
+| [treasuries-haven](sources/substack-rss-klement-2026-11-11-treasuries-haven-2026-11-11.md) | Banque de France haven scores: gold works but ranks below most government bonds; Bitcoin, oil, silver do not qualify. | draft |
+| [plume-rwa](sources/substack-rss-wublock-2026-11-11-plume-rwa-2026-11-11.md) | RWA distribution, not tokenisation, is the constraint. 12–15% yields are credit, custody, duration, illiquidity. | draft |
+| [inflation-cycle](sources/substack-rss-capital-flows-2026-11-11-inflation-cycle-2026-11-11.md) | Paywalled teaser. Usable only for the 60/40 nominal-versus-purchasing-power framing. | draft |
+| [arxiv-v10-11-late-skip-no-lane](sources/arxiv-v10-11-late-skip-no-lane-2026-11-11.md) | Skip: `2611.13763`, bacterial recombination detection. | draft |

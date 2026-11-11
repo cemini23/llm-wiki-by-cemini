@@ -904,3 +904,9 @@ Re-delivered and already filed: `2611.02850`, `2611.03216`.
 - Key limit recorded: weak fit. The paper names 3D printing once and prints nothing. The public benchmark at github.com/ALingll/GTSeg is the only reusable asset.
 - Routing: wiki-only; no distribution. No slicer, filament, or tolerance content.
 
+
+## [2026-11-11] ingest | Repository Revenue Evaluation (3 papers)
+
+- `sources/arxiv-2611.13800-additive-ceramic-optical-platforms-2026-11-11.md` — **new**. Lithography-based ceramic manufacturing for alignment-free atomic sensor heads.
+- `sources/arxiv-2611.13876-spion-branching-geometry-2026-11-11.md` — **new**. Branching geometry governs nanoparticle transport; experiment and simulation coupled.
+- `sources/arxiv-2611.13983-robotic-am-path-planning-2026-11-11.md` — **new**. Optimisation-based path planning validated on a UR10e in winding and printing.

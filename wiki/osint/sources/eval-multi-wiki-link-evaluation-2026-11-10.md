@@ -11,6 +11,7 @@ related:
   - entities/tools/browser-use.md
   - "@ccc-wiki/entities/tools/worktrunk.md"
   - sources/eval-multi-wiki-link-revenue-v10-11-2026-11-05.md
+  - sources/eval-multi-wiki-repository-revenue-2026-11-11.md
 maturity: draft
 created: 2026-11-10
 updated: 2026-11-10

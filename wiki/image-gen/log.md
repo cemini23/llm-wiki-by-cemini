@@ -4159,3 +4159,10 @@ Skipped: `2611.05258`.
 - File created: `sources/arxiv-pearson-type-iv-drift-diffusion-2611.06749.md`. Updated `concepts/fokker-planck-stationary-distributions.md`.
 - Routing: wiki-only; no distribution. Logged to stop a keyword search from producing a false positive.
 
+
+## [2026-11-11] ingest | Repository Revenue Evaluation (3 papers, 1 entity)
+
+- `entities/tools/claude-video.md` — **new**. Video ingest for agents. **The Gemini engine is the default when a key is present** — local files are uploaded to Google. Local engine with no key.
+- `sources/arxiv-2611.14397-malora-margin-lora-2026-11-11.md` — **new**. A margin explanation for LoRA's forgetting resistance and adapter merging.
+- `sources/arxiv-2611.14387-b3-overlapping-block-diffusion-2026-11-11.md` — **new**. Overlapping blocks with a self-calibrating open condition.
+- `sources/arxiv-2611.14383-energy-based-model-tutorial-2026-11-11.md` — **new**. 78-page EBM tutorial used as a unifying lens.

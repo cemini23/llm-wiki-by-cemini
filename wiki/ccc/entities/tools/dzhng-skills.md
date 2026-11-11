@@ -9,6 +9,9 @@ related:
 maturity: draft
 created: 2026-11-10
 updated: 2026-11-10
+wire_status: runtime_wired
+wire_target: "Game time/.grok/skills"
+wire_note: 2026-11-10. Ten skills copied from commit 828e386. MIT licence file checked. Visual skills and auto-research not installed.
 ---
 
 ## Raw Concept

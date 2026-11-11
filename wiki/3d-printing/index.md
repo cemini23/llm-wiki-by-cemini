@@ -235,3 +235,9 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [fishsense-lite-laser-mount](sources/arxiv-fishsense-lite-laser-mount-2611.08732.md) — A PLA mount clamps a dive laser to a camera; 1% of a US$1,300 unit; rigid targets within 1.3% and 99% of 1,055 frames inside 15%. — `paper, mount, PLA, field-validated, metrology, ingest-2026-11-10`
 - [geometric-texture-mesh-segmentation](sources/arxiv-geometric-texture-mesh-segmentation-2611.08897.md) — Middle-level geometric texture segmentation on 3D meshes; SAM3 plus DINO features lifted from views to surface; names 3D printing once, prints nothing. Weak fit. — `paper, graphics, mesh, segmentation, weak-fit, ingest-2026-11-10`
 
+
+## Repository Revenue Evaluation (2026-11-11)
+
+- [additive-ceramic-optical-platforms](sources/arxiv-2611.13800-additive-ceramic-optical-platforms-2026-11-11.md) — Lithography-based ceramic manufacturing for alignment-free atomic sensor heads. — `paper, ceramics, photonics, ingest-2026-11-11`
+- [spion-branching-geometry](sources/arxiv-2611.13876-spion-branching-geometry-2026-11-11.md) — Branching geometry governs nanoparticle transport; experiment and simulation coupled. — `paper, microfluidics, ingest-2026-11-11`
+- [robotic-am-path-planning](sources/arxiv-2611.13983-robotic-am-path-planning-2026-11-11.md) — Optimisation-based path planning validated on a UR10e in winding and printing. — `paper, robotic-am, ingest-2026-11-11`
