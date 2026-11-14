@@ -6,6 +6,40 @@ Newest entries on top.
 
 ---
 
+## 2026-11-03 — A scheduled run cannot approve its own terminal call, so it cannot deploy
+
+**What happened.** A one-time task was scheduled for 09:00 on 2 November to run the Outlier Weekly deploy. It fired on time, confirmed the commits were present, then stopped. `run_in_terminal` requires a person's approval, and a scheduled run has nobody to approve it. The sandboxed Bash tool could not reach `registry.npmjs.org` or `api.cloudflare.com`, so the deploy had no path. The run still reported **succeeded**, because it completed its analysis rather than its purpose. The site stayed stale for a day and a half while the Substack post was live.
+
+*Apply:*
+1. **Never schedule a step that needs an approval.** A scheduled run has no operator. If the step needs `run_in_terminal` or any interactive prompt, the schedule will not do it.
+2. **"succeeded" is not "done".** Read the run's transcript, not its status. A run that reports success while saying "BLOCKED" in its body is a false green.
+3. **Check the live surface, not the local one.** The run verified the files on disk and called that a pass. The only proof is a request to the real URL.
+4. **For a time-gated launch, either run it by hand at the drop time, or give the schedule a path that needs no approval.**
+
+---
+
+## 2026-11-01 — When a filing is too big for the fetch tool, download it and parse it
+
+**What happened.** The Anthropic S-1 is 14.1 MB. The fetch tool caps at 10 MB, and the sandbox denies direct egress to `www.sec.gov`. The draft was marked "main document not readable" and built from press reporting. An independent check against the full filing then found **8 wrong claims out of 55**, including a customer-concentration figure that a whole section of the argument rested on.
+
+**Why it failed.** Two shortfalls compounded. The fetch path was treated as the only way to read a document, and press reporting was treated as a substitute for the primary text rather than a pointer to it.
+
+**What worked.** Running the download in the user's own terminal, outside the sandbox, then parsing locally:
+
+```
+curl -sSL -A "Cemini Research research@cemini.local" -o ".local/tmp/s1.htm" "<edgar url>"
+```
+
+Strip the tags, then grep. A 14 MB filing becomes about 1.5 MB of searchable text in seconds.
+
+*Apply:*
+1. **A fetch limit is not a dead end.** If a document exceeds 10 MB or the sandbox denies the host, download it through the user's terminal or `run_in_terminal`, then parse with `python3 -I`. Keep it in `.local/tmp/`, which is gitignored.
+2. **Press reporting is a pointer, not a source.** It is fine for discovery. It is not fine for a number in a final draft. Every figure in a published piece should trace to the primary document.
+3. **A secondary source that is right about eight things can still be wrong about the ninth.** The Unusual Whales piece was accurate on revenue and loss and wrong on customer concentration. Check each claim, not each source.
+4. **Absence of a figure is not absence of the fact.** The MD&A table rendered as positioned cells and did not linearise cleanly. Note 13 carried the same data in prose. Look at the notes before concluding the filing is silent.
+
+---
+
 ## 2026-10-08 — A one-shot prompt is consumed when it is written; send new work as a brief
 
 **What happened.** For Basgiath (`Projects/dragon-rider-map/`), new work was folded into `docs/NEXT-ACTIONS-PROMPT.md` and `docs/JAVA-PORT-PROMPT.md` after those prompts had already been run. The operator ran the prompt as soon as it was written. Later edits to the file are **inert** — nobody re-runs a consumed prompt.
