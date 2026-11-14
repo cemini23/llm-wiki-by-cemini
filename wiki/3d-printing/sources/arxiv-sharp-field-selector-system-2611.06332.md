@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | Developing the Field Selector System for the SHARP Multi-IFU: Optomechanical Design and First Prototype Validation |
 | Author | H. Mahmoodzadeh, P. Saracco, I. Di Antonio, P. Conconi, D. Scaccabarozzi, B. Saggin, E. Molinari, and others (INAF, Politecnico di Milano, Universita di Padova) |
 | Type | arXiv preprint (astronomical instrumentation) |
-| Location | `research to be indexed/3d-printing/arxiv-2611.06332-developing-the-field-selector-system-for-the-sha.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.06332-developing-the-field-selector-system-for-the-sha.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.06332-developing-the-field-selector-system-for-the-sha.pdf` |
 | Read status | read |

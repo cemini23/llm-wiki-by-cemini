@@ -17,7 +17,7 @@ updated: 2026-11-14
 | Title | Non-Functional Requirements to Hyperparameter Translation for Quantum Software via LLMs |
 | Author | Joseph G. Bronyah; Nasir U. Eisty (University of Tennessee, Knoxville) |
 | Type | arXiv preprint, 2611.16902v1 |
-| Location | `research to be indexed/cybersec/arxiv-2611.16902-non-functional-requirements-to-hyperparameter-tr.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.16902-non-functional-requirements-to-hyperparameter-tr.pdf` |
 | URL | https://arxiv.org/abs/2611.16902 |
 | Retrieved | 2026-11-13 |
 | Pages | 11 |

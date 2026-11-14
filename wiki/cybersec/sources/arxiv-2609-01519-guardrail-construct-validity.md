@@ -26,7 +26,7 @@ wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K321)"
 | Title | When Guardrails Look Effective: Construct Validity Failures in LLM Agent Commerce Evaluation |
 | Authors | Peiying Zhu, Sidi Chang |
 | arXiv | 2609.01519 |
-| Location | inbox `research to be indexed/arxiv-2609.01519-when-guardrails-look-effective-construct-validit.pdf` (archive pending) |
+| Location | inbox `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2609.01519-when-guardrails-look-effective-construct-validit.pdf` (archive pending) |
 | Retrieved | 2026-09-02 |
 | Read status | read (abstract + contract) |
 | Public code | none at hunt |

@@ -12,7 +12,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/substack-rss-wublock-2026-10-24-weekly-project-updates-dogecoin-labs-launches-fo.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-10-24-weekly-project-updates-dogecoin-labs-launches-fo.md`.
 
 | Field | Value |
 |-------|-------|

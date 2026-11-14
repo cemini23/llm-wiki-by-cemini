@@ -16,7 +16,7 @@ updated: 2026-11-14
 | Title | Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon |
 | Author | Haozhe Wang, Lina Chen, Fanqi Wan, Qi Han, Yinmin Zhang, Zheng Ge, Daxin Jiang, Junchi Yan (SJTU, Beijing Zhongguancun Academy, StepFun) |
 | Type | arXiv preprint, 2611.17294 |
-| Location | `research to be indexed/ccc/arxiv-2611.17294-metal-sandbox-isolated-execution-and-command-sch.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.17294-metal-sandbox-isolated-execution-and-command-sch.pdf` |
 | Retrieved | 2026-11-14 |
 | Pages | 16 |
 | Read status | read |

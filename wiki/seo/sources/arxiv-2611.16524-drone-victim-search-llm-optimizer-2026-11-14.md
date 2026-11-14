@@ -18,7 +18,7 @@ updated: 2026-11-14
 | Authors | Yinghao Zhang, Yalin Liu, Hong-Ning Dai, Yan Zhang, Qubeijian Wang, Bishenghui Tao, Yaohan Li (Hong Kong Metropolitan University; HKBU; UESTC; Northwestern Polytechnical University) |
 | arXiv | 2611.16524 |
 | Pages | 8 |
-| Location | `research to be indexed/seo/arxiv-2611.16524-a-joint-llm-and-optimization-agent-solution-for.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.16524-a-joint-llm-and-optimization-agent-solution-for.pdf` |
 | Retrieved | 2026-11-13 |
 | Read status | read |
 

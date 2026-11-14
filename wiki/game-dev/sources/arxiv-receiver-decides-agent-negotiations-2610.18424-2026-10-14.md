@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: Receiver Decides — Agent-to-Agent Negotiations
 Authors: Fardeen Sadab, Alif Hasnain, Afsana Shehrin, Md. Azam Hossain, Abu Raihan Mostofa Kamal (Islamic University of Technology)
 Type: arXiv preprint (2610.18424)
-Location: `research to be indexed/game-dev/arxiv-2610.18424-receiver-decides-agent-to-agent-negotiations.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2610.18424-receiver-decides-agent-to-agent-negotiations.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

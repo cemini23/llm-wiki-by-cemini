@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | Segmenting Geometric Textures of 3D Meshes |
 | Author | Weidan Xiong, Kaijie Qu, Shihao Feng, Shunqi Fan, Rongyu Xiong, Hui Huang (Shenzhen University, NetEase, NTU Singapore) |
 | Type | Conference paper, Pacific Graphics 2026 |
-| Location | `research to be indexed/3d-printing/arxiv-2611.08897-segmenting-geometric-textures-of-3d-meshes.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.08897-segmenting-geometric-textures-of-3d-meshes.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.08897-segmenting-geometric-textures-of-3d-meshes.pdf` |
 | Read status | read |

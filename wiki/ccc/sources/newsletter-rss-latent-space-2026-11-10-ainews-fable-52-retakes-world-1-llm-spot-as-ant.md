@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | [AINews] Fable 5.2 retakes World #1 LLM spot as $ANT IPO roadshow begins |
 | Author | Latent Space (AINews roundup) |
 | Type | newsletter (RSS) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant.md` |
 | Retrieved | 2026-11-10 |
 | Published | 2026-11-10 |
 | Read status | read |

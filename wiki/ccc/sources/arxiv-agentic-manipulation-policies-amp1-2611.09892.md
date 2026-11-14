@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | On Agentic Manipulation Policies |
 | Author | Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji, and others (Apple) |
 | Type | Research article (arXiv cs.RO), 2611.09892 |
-| Location | `research to be indexed/ccc/arxiv-2611.09892-on-agentic-manipulation-policies.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.09892-on-agentic-manipulation-policies.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 31 |
 | Read status | read |

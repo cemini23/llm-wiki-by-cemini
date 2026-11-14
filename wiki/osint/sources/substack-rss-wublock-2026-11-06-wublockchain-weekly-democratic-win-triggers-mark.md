@@ -20,7 +20,7 @@ updated: 2026-11-10
 | Title | WuBlockchain Weekly: Democratic Win Triggers Market Selloff, Vitalik Flags Crypto Survival Priority, Binance Exposes $6.34B Hack Plot, etc |
 | Author | Wu Blockchain |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md` |
 | Retrieved | 2026-11-06 |
 | File | substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md |
 | Read status | read |

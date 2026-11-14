@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: Agent-Reflex — Teaching Language Agents to Act Reflectively
 Authors: Guanting Dong, Xinyu Yang, Jiajie Jin et al. (Renmin University of China, NUS)
 Type: arXiv preprint (2610.17953)
-Location: `research to be indexed/ccc/arxiv-2610.17953-agent-reflex-teaching-language-agents-to-act-ref.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2610.17953-agent-reflex-teaching-language-agents-to-act-ref.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

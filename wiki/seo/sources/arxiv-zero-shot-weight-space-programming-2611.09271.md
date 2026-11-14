@@ -19,7 +19,7 @@ updated: 2026-11-10
 | Author | Eduardo Garrido Merchán (Universidad Pontificia Comillas, IIT DIGNUM) |
 | Type | arXiv preprint (cs.AI) |
 | arXiv | 2611.09271v1, 6 Nov 2026 |
-| Location | `research to be indexed/seo/arxiv-2611.09271-zero-shot-weight-space-programming-across-a-diff.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.09271-zero-shot-weight-space-programming-across-a-diff.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.09271-zero-shot-weight-space-programming-across-a-diff.pdf` |
 | Pages | 24 |

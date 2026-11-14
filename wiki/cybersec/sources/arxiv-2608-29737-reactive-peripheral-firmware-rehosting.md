@@ -24,7 +24,7 @@ wire_target: ".cursor/rules/cemini-cybersec-lab-redteam.mdc (K322)"
 |-------|-------|
 | Title | Reactive Peripheral Modeling for Faithful Firmware Rehosting |
 | arXiv | 2608.29737 |
-| Location | inbox `research to be indexed/arxiv-2608.29737-reactive-peripheral-modeling-for-faithful-firmwa.pdf` (archive pending) |
+| Location | inbox `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2608.29737-reactive-peripheral-modeling-for-faithful-firmwa.pdf` (archive pending) |
 | Retrieved | 2026-09-02 |
 | Read status | skimmed (abstract + problem statement) |
 | Public code | not hunted this batch |

@@ -24,7 +24,7 @@ updated: 2026-10-14
 Title: EmbodiedEvo — Self-improving Coding Agents for Physical Intelligence
 Authors: Wenyi Li et al. (Navers Lab, Einsia.AI; Tsinghua University)
 Type: arXiv preprint (2610.18867)
-Location: `research to be indexed/osint/arxiv-2610.18867-embodiedevo-self-improving-coding-agents-for-phy.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.18867-embodiedevo-self-improving-coding-agents-for-phy.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

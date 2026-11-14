@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: Learning to Play — Reinforcement Learning and Games
 Author: Aske Plaat
 Type: Springer Nature book, announced on arXiv (2610.17391)
-Location: `research to be indexed/osint/arxiv-2610.17391-learning-to-play-reinforcement-learning-and-game.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.17391-learning-to-play-reinforcement-learning-and-game.pdf`
 Retrieved: 2026-10-14
 Read status: unread-stub
 

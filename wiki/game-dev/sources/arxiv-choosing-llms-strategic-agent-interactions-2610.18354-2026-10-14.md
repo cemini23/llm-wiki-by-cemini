@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: Choosing LLMs for Strategic Agent Interactions
 Authors: Arastun Mammadli, Herbert Woisetschläger, Jawad Fayaz, Shiqiang Wang (University of Exeter, IBM Research)
 Type: arXiv preprint (2610.18354)
-Location: `research to be indexed/game-dev/arxiv-2610.18354-choosing-llms-for-strategic-agent-interactions.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2610.18354-choosing-llms-for-strategic-agent-interactions.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

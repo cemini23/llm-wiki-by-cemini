@@ -22,7 +22,7 @@ updated: 2026-11-10
 | Title | Modeling the Joint Distribution of Box Score Statistics: A Gaussian Copula Approach |
 | Author | Kenny Watts, University of Virginia |
 | Type | academic paper (arXiv preprint, stat.AP) |
-| Location | `research to be indexed/gambling/arxiv-2611.10152-modeling-the-joint-distribution-of-box-score-sta.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2611.10152-modeling-the-joint-distribution-of-box-score-sta.pdf` |
 | arXiv | 2611.10152v1, 6 November 2026 |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.10152-modeling-the-joint-distribution-of-box-score-sta.pdf` |

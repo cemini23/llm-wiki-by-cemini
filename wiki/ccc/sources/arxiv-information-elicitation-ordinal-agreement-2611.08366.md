@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | Information Elicitation by Ordinal Agreement |
 | Author | Yiling Chen, Shi Feng, Grant Schoenebeck, Fang-Yi Yu |
 | Type | arXiv paper (cs.GT), 2611.08366 |
-| Location | `research to be indexed/ccc/arxiv-2611.08366-information-elicitation-by-ordinal-agreement.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.08366-information-elicitation-by-ordinal-agreement.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 33 |
 | Read status | read |

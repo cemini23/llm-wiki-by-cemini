@@ -17,7 +17,7 @@ updated: 2026-11-10
 | Title | A Drift-Diffusion Approach for Pearson Type IV Heavy-Tail Distributions |
 | Author | Daniele Belardinelli, Simone Benella, Mirko Stumpo, Giuseppe Consolini |
 | Type | arXiv:2611.06749, 9 pages |
-| Location | `research to be indexed/image-gen/arxiv-2611.06749-a-drift-diffusion-approach-for-pearson-type-iv-h.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.06749-a-drift-diffusion-approach-for-pearson-type-iv-h.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.06749-a-drift-diffusion-approach-for-pearson-type-iv-h.pdf` |
 | Read status | read (abstract, derivation sketch) |

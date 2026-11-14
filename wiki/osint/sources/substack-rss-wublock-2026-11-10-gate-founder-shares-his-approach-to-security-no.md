@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | Gate Founder Shares His Approach to Security: No Single Party Can Move Funds Alone |
 | Author | Dr. Han (Gate founder and CEO), compiled by Wu Blockchain |
 | Type | newsletter, RSS, sponsored-adjacent company essay |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-10-gate-founder-shares-his-approach-to-security-no.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-10-gate-founder-shares-his-approach-to-security-no.md` |
 | Retrieved | 2026-11-10 |
 | File | substack-rss-wublock-2026-11-10-gate-founder-shares-his-approach-to-security-no.md |
 | Read status | read |

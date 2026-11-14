@@ -22,7 +22,7 @@ updated: 2026-10-14
 Title: DiffNash — Finding Nash Equilibrium in High-Dimensional Continuous Action Spaces with Diffusion Policies
 Authors: Haichuan Wang, Anagata Satish, Jiale Zheng, Saisneha Ghatti, Lingkai Kong, Kai Wang, Milind Tambe (Harvard, MIT, Georgia Tech)
 Type: arXiv preprint (2610.15932)
-Location: `research to be indexed/osint/arxiv-2610.15932-diffnash-finding-nash-equilibrium-in-high-dimens.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.15932-diffnash-finding-nash-equilibrium-in-high-dimens.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

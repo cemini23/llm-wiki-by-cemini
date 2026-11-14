@@ -20,7 +20,7 @@ updated: 2026-11-10
 | Title | VA-TDM: A Unified View for Improving Few-Step Diffusion Models by Velocity Adversarial Distillation |
 | Author | Yihong Luo (HKUST), Tianyu Pang, Tianyang Hu (CUHK-Shenzhen) |
 | Type | arXiv:2611.06796 [cs.CV], 24 pages |
-| Location | `research to be indexed/image-gen/arxiv-2611.06796-va-tdm-a-unified-view-for-improving-few-step-dif.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.06796-va-tdm-a-unified-view-for-improving-few-step-dif.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.06796-va-tdm-a-unified-view-for-improving-few-step-dif.pdf` |
 | Read status | read (abstract, method, results) |

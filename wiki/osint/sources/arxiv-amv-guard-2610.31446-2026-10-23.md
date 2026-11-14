@@ -14,7 +14,7 @@ updated: 2026-10-23
 Title: When is a memory safe enough to act on?
 Authors: Yiqi Wang and coauthors
 Type: arXiv preprint (2610.31446), 23 Oct 2026
-Inbox file: `research to be indexed/osint/arxiv-2610.31446-when-is-a-memory-safe-enough-to-act-on-action-co.pdf`
+Inbox file: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.31446-when-is-a-memory-safe-enough-to-act-on-action-co.pdf`
 Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.31446-when-is-a-memory-safe-enough-to-act-on-action-co.pdf`
 Retrieved: 2026-10-23
 Read status: skimmed (abstract)

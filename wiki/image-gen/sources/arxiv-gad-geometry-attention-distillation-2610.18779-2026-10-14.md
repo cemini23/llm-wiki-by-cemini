@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: GAD — Geometry Attention Distillation for Consistent Video Generation
 Authors: Junfeng Ni, Ziyu Zhu, Fan Jiang et al. (Tsinghua, AMAP Alibaba, BIGAI)
 Type: arXiv preprint (2610.18779)
-Location: `research to be indexed/image-gen/arxiv-2610.18779-gad-geometry-attention-distillation-for-consiste.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2610.18779-gad-geometry-attention-distillation-for-consiste.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

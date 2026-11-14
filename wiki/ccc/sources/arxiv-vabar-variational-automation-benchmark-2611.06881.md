@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | VABAR: A Variational Automation Benchmark for Agentic Robotics |
 | Author | Shuangyu Xie, Kaiyuan Chen, Uksang Yoo, and others (UC Berkeley, NVIDIA, Siemens) |
 | Type | arXiv paper (cs.RO), 2611.06881 |
-| Location | `research to be indexed/ccc/arxiv-2611.06881-vabar-a-variational-automation-benchmark-for-age.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.06881-vabar-a-variational-automation-benchmark-for-age.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 9 |
 | Read status | read |

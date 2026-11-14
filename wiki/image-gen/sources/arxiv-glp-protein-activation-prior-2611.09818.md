@@ -18,7 +18,7 @@ updated: 2026-11-10
 | Title | Generative Latent Priors for Interpreting and Steering Protein Language Models |
 | Author | Daniel Hinjos (BSC, UPC), Lucía Urcelay (CRG) |
 | Type | arXiv:2611.09818 [cs.AI], 22 pages; Interp4Discovery workshop, NeurIPS 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.09818-generative-latent-priors-for-interpreting-and-st.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.09818-generative-latent-priors-for-interpreting-and-st.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.09818-generative-latent-priors-for-interpreting-and-st.pdf` |
 | Read status | read (abstract, method, conclusions) |

@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | Genealogical Reinforcement in Branching Processes |
 | Author | Alina Kochocki (Loyola Marymount University) |
 | Type | arXiv preprint, q-bio.PE |
-| Location | `research to be indexed/osint/arxiv-2611.08548-genealogical-reinforcement-in-branching-processe.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.08548-genealogical-reinforcement-in-branching-processe.pdf` |
 | Retrieved | 2026-11-10 |
 | File | arxiv-2611.08548-genealogical-reinforcement-in-branching-processe.pdf (11 pages) |
 | Read status | read |

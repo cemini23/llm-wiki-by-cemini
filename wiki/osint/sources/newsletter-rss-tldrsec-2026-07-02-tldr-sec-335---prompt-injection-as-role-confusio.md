@@ -16,7 +16,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/newsletter-rss-tldrsec-2026-07-02-tldr-sec-335---prompt-injection-as-role-confusio.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-tldrsec-2026-07-02-tldr-sec-335---prompt-injection-as-role-confusio.md`.
 Cross-wiki route target: @cybersecurity-wiki.
 
 | Field | Value |

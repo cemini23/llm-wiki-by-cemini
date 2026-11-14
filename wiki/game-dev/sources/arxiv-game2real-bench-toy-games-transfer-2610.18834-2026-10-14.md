@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: Game2Real-Bench — Do Toy Games Reveal and Transfer to Real-World Visual Reasoning?
 Authors: Qingan Liu, Juntong Feng, Yue Zhu et al. (Dalian University of Technology, NTU)
 Type: arXiv preprint (2610.18834)
-Location: `research to be indexed/game-dev/arxiv-2610.18834-game2real-bench-do-toy-games-reveal-and-transfer.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2610.18834-game2real-bench-do-toy-games-reveal-and-transfer.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

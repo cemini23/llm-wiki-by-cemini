@@ -17,7 +17,7 @@ updated: 2026-11-14
 | Author | Wu Blockchain |
 | Type | newsletter, RSS |
 | URL | https://wublock.substack.com/p/wublockchain-weekly-goldman-citi |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-13-wublockchain-weekly-goldman-citi-launch-joint-us.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-13-wublockchain-weekly-goldman-citi-launch-joint-us.md` |
 | Retrieved | 2026-11-13 |
 | Published | 2026-11-13 |
 | Read status | read |

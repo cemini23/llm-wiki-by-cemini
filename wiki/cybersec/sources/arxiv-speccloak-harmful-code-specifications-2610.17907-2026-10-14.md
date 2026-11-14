@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: SpecCloak — Probing Harmful Code Generation through Engineering Specifications
 Authors: Wenbin Chen, Jiexin Wang, Guanting Wu, Jiaxi Liang, Yi Cai
 Type: arXiv preprint (2610.17907)
-Location: `research to be indexed/cybersec/arxiv-2610.17907-speccloak-probing-harmful-code-generation-throug.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2610.17907-speccloak-probing-harmful-code-generation-throug.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

@@ -13,7 +13,7 @@ updated: 2026-10-23
 Title: Arithmetic models for commodity futures, vanilla, and calendar-spread options
 Authors: Malthe Rauh Johansen, Nina Lange, David Skovmand, University of Copenhagen
 Type: arXiv preprint (2610.28071)
-Inbox file: `research to be indexed/osint/arxiv-2610.28071-arithmetic-models-for-commodity-futures-vanilla.pdf`
+Inbox file: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.28071-arithmetic-models-for-commodity-futures-vanilla.pdf`
 Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.28071-arithmetic-models-for-commodity-futures-vanilla.pdf`
 Retrieved: 2026-10-23
 Read status: skimmed (abstract)

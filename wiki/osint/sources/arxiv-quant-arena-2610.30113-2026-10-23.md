@@ -13,7 +13,7 @@ updated: 2026-10-23
 Title: Quant-Arena (arXiv 2610.30113)
 Authors: Houde Qian and coauthors, Navers Lab / Einsia.AI
 Type: arXiv preprint (2610.30113)
-Inbox file: `research to be indexed/seo/arxiv-2610.30113-quant-arena-benchmarking-llm-agents-for-quantita.pdf`
+Inbox file: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.30113-quant-arena-benchmarking-llm-agents-for-quantita.pdf`
 Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.30113-quant-arena-benchmarking-llm-agents-for-quantita.pdf`
 Retrieved: 2026-10-23
 Read status: skimmed (abstract)

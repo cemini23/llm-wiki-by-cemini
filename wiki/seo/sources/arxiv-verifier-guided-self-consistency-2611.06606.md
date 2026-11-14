@@ -19,7 +19,7 @@ updated: 2026-11-10
 | Author | Ekaterina Fadeeva, Xueyan Li, Mrinmaya Sachan, Maxim Panov (ETH Zürich; MBZUAI; Max Planck Institute for Intelligent Systems) |
 | Type | arXiv preprint (cs.LG) |
 | arXiv | 2611.06606v1, 4 Nov 2026 |
-| Location | `research to be indexed/seo/arxiv-2611.06606-verifier-guided-self-consistency-test-time-reaso.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.06606-verifier-guided-self-consistency-test-time-reaso.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.06606-verifier-guided-self-consistency-test-time-reaso.pdf` |
 | Pages | 31 |

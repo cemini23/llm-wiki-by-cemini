@@ -18,7 +18,7 @@ updated: 2026-11-14
 | Author | Event Horizon (Next Event Horizon) |
 | Type | newsletter, RSS |
 | URL | https://nexteventhorizon.substack.com/p/will-dustin-come-back-from-bandon-dunes |
-| Location | `research to be indexed/substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md` |
 | Retrieved | 2026-11-13 |
 | Published | 2026-11-13 |
 | Read status | read |

@@ -18,7 +18,7 @@ updated: 2026-11-14
 | Title | Safety as a Budget: Calibrating the Control Channel of Constrained GRPO for Vision-Language Models |
 | Author | Bo Han (Lanzhou University) |
 | Type | arXiv preprint (cs.AI), 2611.16628v1 |
-| Location | `research to be indexed/cybersec/arxiv-2611.16628-safety-as-a-budget-calibrating-the-control-chann.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.16628-safety-as-a-budget-calibrating-the-control-chann.pdf` |
 | URL | https://arxiv.org/abs/2611.16628 |
 | Retrieved | 2026-11-13 |
 | Pages | 10 |

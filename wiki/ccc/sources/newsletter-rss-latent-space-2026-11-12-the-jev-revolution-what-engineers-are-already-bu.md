@@ -14,7 +14,7 @@ updated: 2026-11-14
 | Title | The Jev Revolution: What Engineers Are Already Building with System One Models |
 | Author | Latent Space (AI Engineer Code Summit coverage) |
 | Type | Newsletter (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-12-the-jev-revolution-what-engineers-are-already-bu.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-12-the-jev-revolution-what-engineers-are-already-bu.md` |
 | Retrieved | 2026-11-14 (published 2026-11-12) |
 | Pages | n/a |
 | Read status | read |

@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: Beyond Fixed Targets — On-Policy One-Shot Speaker Personalization for Autoregressive Text-to-Speech Models
 Authors: Sangkwon Park, Che Hyun Lee, Heeseung Kim, Sungroh Yoon (Seoul National University, University of Seoul)
 Type: arXiv preprint (2610.17838)
-Location: `research to be indexed/image-gen/arxiv-2610.17838-beyond-fixed-targets-on-policy-one-shot-speaker.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2610.17838-beyond-fixed-targets-on-policy-one-shot-speaker.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

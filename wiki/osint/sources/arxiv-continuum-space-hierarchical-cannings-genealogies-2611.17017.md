@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Type | arXiv preprint, probability (60K35) |
 | arXiv | 2611.17017v1, 13 Nov 2026 |
 | Pages | 54 |
-| Location | `research to be indexed/osint/arxiv-2611.17017-continuum-space-hierarchical-cannings-process-ii.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.17017-continuum-space-hierarchical-cannings-process-ii.pdf` |
 | Retrieved | 2026-11-14 |
 | Read status | read |
 

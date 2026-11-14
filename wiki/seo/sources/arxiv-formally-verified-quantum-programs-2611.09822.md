@@ -19,7 +19,7 @@ updated: 2026-11-10
 | Author | Sergey Shirobokov, Ben Jaderberg, Katerina Hristova, George Tsoukalas, Johannes Bausch, and others (Google DeepMind; Google Quantum AI) |
 | Type | arXiv preprint (quant-ph) |
 | arXiv | 2611.09822v1, 6 Nov 2026 (dated 9 November 2026) |
-| Location | `research to be indexed/seo/arxiv-2611.09822-discovering-formally-verified-quantum-programs-w.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.09822-discovering-formally-verified-quantum-programs-w.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.09822-discovering-formally-verified-quantum-programs-w.pdf` |
 | Pages | 45 |

@@ -16,7 +16,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/substack-rss-outlier-weekly-2026-07-03-the-11b-warehouse-failure-behind-the-cxwgeo-trad.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-outlier-weekly-2026-07-03-the-11b-warehouse-failure-behind-the-cxwgeo-trad.md`.
 Cross-wiki route target: @gambling-wiki.
 
 | Field | Value |

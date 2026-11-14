@@ -18,7 +18,7 @@ read_status: read
 | Authors | Divya Nalajala, Swapnil Bhure, R. Ajithkannan, Shubhang Galagali, Abhik Choudhury (Indian Institute of Science Bengaluru; IIT Madras; NITK Surathkal) |
 | Type | arXiv preprint (cond-mat.mtrl-sci) |
 | arXiv | 2611.16535v1, dated 12 November 2026 |
-| Location | `research to be indexed/3d-printing/arxiv-2611.16535-bulk-cmsx-4-single-crystal-builds-via-laser-dire.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.16535-bulk-cmsx-4-single-crystal-builds-via-laser-dire.pdf` |
 | Retrieved | 2026-11-14 |
 | Pages | 38 |
 | Read status | read |

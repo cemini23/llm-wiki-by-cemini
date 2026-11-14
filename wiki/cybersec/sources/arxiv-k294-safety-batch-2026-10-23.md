@@ -13,12 +13,12 @@ updated: 2026-10-23
 Type: safety batch, six arXiv PDFs
 arXiv: 2610.27304, 2610.27446, 2610.28067, 2610.29342, 2610.29555, 2610.30785
 Inbox files:
-- `research to be indexed/ccc/arxiv-2610.27304-global-security-blind-spots-translation-as-a-saf.pdf`
-- `research to be indexed/ccc/arxiv-2610.27446-decision-sufficiency-of-learned-representation-i.pdf`
-- `research to be indexed/ccc/arxiv-2610.28067-contextual-candour-role-aware-graduated-disclosu.pdf`
-- `research to be indexed/seo/arxiv-2610.29342-uncensored-is-not-unbiased-abliteration-removes.pdf`
-- `research to be indexed/seo/arxiv-2610.29555-wrdo-weighted-refusal-direction-optimization-in.pdf`
-- `research to be indexed/osint/arxiv-2610.30785-invisibilization-as-a-source-of-probability-bias.pdf`
+- `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2610.27304-global-security-blind-spots-translation-as-a-saf.pdf`
+- `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2610.27446-decision-sufficiency-of-learned-representation-i.pdf`
+- `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2610.28067-contextual-candour-role-aware-graduated-disclosu.pdf`
+- `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2610.29342-uncensored-is-not-unbiased-abliteration-removes.pdf`
+- `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2610.29555-wrdo-weighted-refusal-direction-optimization-in.pdf`
+- `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2610.30785-invisibilization-as-a-source-of-probability-bias.pdf`
 Location: `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/<basename>`
 Retrieved: 2026-10-23
 Read status: skimmed (title and abstract only)

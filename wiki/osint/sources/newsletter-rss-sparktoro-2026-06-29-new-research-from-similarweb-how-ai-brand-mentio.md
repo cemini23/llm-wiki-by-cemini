@@ -16,7 +16,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/newsletter-rss-sparktoro-2026-06-29-new-research-from-similarweb-how-ai-brand-mentio.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-sparktoro-2026-06-29-new-research-from-similarweb-how-ai-brand-mentio.md`.
 Cross-wiki route target: @seo-wiki.
 
 | Field | Value |

@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification |
 | Author | Yulu An, Yifei Feng, Xiangyang Yin (New York University) |
 | Type | arXiv preprint (cs.CL) |
-| Location | `research to be indexed/game-dev/arxiv-2611.06876-speccompact-accelerating-llm-agent-context-compa.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2611.06876-speccompact-accelerating-llm-agent-context-compa.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.06876-speccompact-accelerating-llm-agent-context-compa.pdf` |
 | Pages | 12 |

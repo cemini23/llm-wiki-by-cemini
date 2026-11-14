@@ -15,7 +15,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/newsletter-rss-latent-space-2026-07-02-the-website-of-the-future-may-assemble-itself-fo.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-latent-space-2026-07-02-the-website-of-the-future-may-assemble-itself-fo.md`.
 Cross-wiki route target: @ccc-wiki.
 
 | Field | Value |

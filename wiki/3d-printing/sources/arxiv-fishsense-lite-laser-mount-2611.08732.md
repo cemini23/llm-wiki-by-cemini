@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Title | FishSense Lite: A Camera-Based, Single Laser Hardware Framework with Software System for In Situ Fish Length Measurement |
 | Author | Christopher L. Crutchfield, Kyle Hu, Nathan Hui, Omair Qazi, Jennifer Loch, Alli Candelmo, Brice X. Semmens, Curt Schurgers, Ryan Kastner (UC San Diego, REEF, Scripps) |
 | Type | arXiv preprint (cs.CV) |
-| Location | `research to be indexed/3d-printing/arxiv-2611.08732-fishsense-lite-a-camera-based-single-laser-hardw.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.08732-fishsense-lite-a-camera-based-single-laser-hardw.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.08732-fishsense-lite-a-camera-based-single-laser-hardw.pdf` |
 | Read status | read |

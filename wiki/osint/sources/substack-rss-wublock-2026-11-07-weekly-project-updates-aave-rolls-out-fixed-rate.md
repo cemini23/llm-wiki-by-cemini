@@ -17,7 +17,7 @@ updated: 2026-11-10
 | Title | Weekly Project Updates: Aave Rolls Out Fixed-Rate Lending, WLFI Plans Token Buyback, Base Deploys Denim Upgrade, etc |
 | Author | Wu Blockchain |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-07-weekly-project-updates-aave-rolls-out-fixed-rate.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-07-weekly-project-updates-aave-rolls-out-fixed-rate.md` |
 | Retrieved | 2026-11-07 |
 | File | substack-rss-wublock-2026-11-07-weekly-project-updates-aave-rolls-out-fixed-rate.md |
 | Read status | read |

@@ -13,7 +13,7 @@ updated: 2026-11-14
 | Title | AI Ambition: ArtCraft Cloned Photoshop and Now Wants to "Rebuild Everything" |
 | Author | Latent Space (AI Engineer Code Summit coverage) |
 | Type | Newsletter (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-13-ai-ambition-artcraft-cloned-photoshop-and-now-wa.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-13-ai-ambition-artcraft-cloned-photoshop-and-now-wa.md` |
 | Retrieved | 2026-11-14 (published 2026-11-13) |
 | Pages | n/a |
 | Read status | read |

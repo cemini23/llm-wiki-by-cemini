@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Type | arXiv preprint, physics / network science |
 | arXiv | 2611.16513v1, 13 Nov 2026 |
 | Pages | 10 |
-| Location | `research to be indexed/osint/arxiv-2611.16513-scale-rich-network-metamaterials-grow-by-local-r.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.16513-scale-rich-network-metamaterials-grow-by-local-r.pdf` |
 | Retrieved | 2026-11-14 |
 | Read status | read |
 

@@ -12,7 +12,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/newsletter-rss-sterling-sky-2026-10-22-google-maps-spam-is-out-of-control-heres-how-to.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/seo/newsletter-rss-sterling-sky-2026-10-22-google-maps-spam-is-out-of-control-heres-how-to.md`.
 
 | Field | Value |
 |-------|-------|

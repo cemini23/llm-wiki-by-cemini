@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | Say Shibboleth: Fingerprinting the LLMs and Harnesses Behind Agentic Attacks |
 | Author | Dario Pasquini, Reworr, Giuseppe Ateniese, Manish Bhatt, Sergej Epp |
 | Type | arXiv paper (cs.CR), 2611.12386 |
-| Location | `research to be indexed/ccc/arxiv-2611.12386-say-shibboleth-fingerprinting-the-llms-and-harne.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.12386-say-shibboleth-fingerprinting-the-llms-and-harne.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 19 |
 | Read status | read |

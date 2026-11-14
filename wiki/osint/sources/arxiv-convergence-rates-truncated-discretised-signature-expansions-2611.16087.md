@@ -17,7 +17,7 @@ updated: 2026-11-14
 | Type | arXiv preprint, math.PR |
 | arXiv | 2611.16087v1, 11 Nov 2026 |
 | Pages | 39 |
-| Location | `research to be indexed/osint/arxiv-2611.16087-convergence-rates-for-truncated-and-discretised.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.16087-convergence-rates-for-truncated-and-discretised.pdf` |
 | Retrieved | 2026-11-14 |
 | Read status | read |
 

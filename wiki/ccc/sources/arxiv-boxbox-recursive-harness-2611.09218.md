@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | BOXBOX: Recursive Harness Self-Improvement for Long-Running Performance Optimization |
 | Author | Yuhao Tan, Hanyun Jiang, Fangkai Yang, and others (Nanjing University, Zhejiang University, Microsoft) |
 | Type | arXiv paper (cs.SE), 2611.09218 |
-| Location | `research to be indexed/ccc/arxiv-2611.09218-boxbox-recursive-harness-self-improvement-for-lo.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.09218-boxbox-recursive-harness-self-improvement-for-lo.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 47 |
 | Read status | read |

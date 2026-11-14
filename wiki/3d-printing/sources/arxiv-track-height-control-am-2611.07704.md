@@ -17,7 +17,7 @@ updated: 2026-11-14
 | Title | Towards Track Height Control in Additive Manufacturing on Porous Substrates: An Approach for System Identification and Controller Selection |
 | Author | Amelie Schatull, Torge Kolditz, Simon Kleinschmidt, Annika Raatz, Jorg Seewig (RPTU Kaiserslautern-Landau, Leibniz University Hannover) |
 | Type | arXiv preprint (eess.SY) |
-| Location | `research to be indexed/3d-printing/arxiv-2611.07704-towards-track-height-control-in-additive-manufac.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.07704-towards-track-height-control-in-additive-manufac.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.07704-towards-track-height-control-in-additive-manufac.pdf` |
 | Read status | read |

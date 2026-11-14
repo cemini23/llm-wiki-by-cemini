@@ -17,7 +17,7 @@ updated: 2026-11-14
 | Title | BMMS: Policy-Conditioned Measurement of Behavioral Compliance in Language Models |
 | Author | Anthony Rhodes; Gadi Singer (Confidential Core AI) |
 | Type | arXiv preprint (cs.AI) — NeurIPS 2026 TAE workshop |
-| Location | `research to be indexed/cybersec/arxiv-2611.09147-bmms-policy-conditioned-measurement-of-behaviora.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.09147-bmms-policy-conditioned-measurement-of-behaviora.pdf` |
 | Retrieved | 2026-11-09 |
 | File | `arxiv-2611.09147-bmms-policy-conditioned-measurement-of-behaviora.pdf` |
 | Pages | 21 |

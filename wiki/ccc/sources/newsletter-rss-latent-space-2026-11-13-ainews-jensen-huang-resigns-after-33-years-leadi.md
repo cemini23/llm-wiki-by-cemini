@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Title | [AINews] Jensen Huang resigns after 33 years leading NVIDIA |
 | Author | Latent Space (AINews desk) |
 | Type | Newsletter (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md` |
 | Retrieved | 2026-11-14 (published 2026-11-13) |
 | Pages | n/a |
 | Read status | read |

@@ -21,7 +21,7 @@ updated: 2026-11-10
 | Title | The Moat For Prediction Markets Is Trading, Not Pricing |
 | Author | Dustin Gouker (Event Horizon) |
 | Type | newsletter, RSS teaser |
-| Location | `research to be indexed/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md` |
 | Retrieved | 2026-11-10 |
 | File | substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md |
 | Read status | read |

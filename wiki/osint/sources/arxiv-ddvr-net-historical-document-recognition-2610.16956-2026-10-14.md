@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: DDVR-Net — Degradation-Aware Decoupling and Visibility-Guided Restoration for Historical Document Recognition
 Authors: Jiu Sha, Yu Weng, Mengxiao Zhu (Minzu University of China, NCUT)
 Type: arXiv preprint (2610.16956)
-Location: `research to be indexed/osint/arxiv-2610.16956-ddvr-net-degradation-aware-decoupling-and-visibi.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.16956-ddvr-net-degradation-aware-decoupling-and-visibi.pdf`
 Retrieved: 2026-10-14
 Read status: skimmed
 

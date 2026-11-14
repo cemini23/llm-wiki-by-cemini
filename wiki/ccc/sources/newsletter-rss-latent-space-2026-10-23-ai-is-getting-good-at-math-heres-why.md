@@ -12,7 +12,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/newsletter-rss-latent-space-2026-10-23-ai-is-getting-good-at-math-heres-why.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-10-23-ai-is-getting-good-at-math-heres-why.md`.
 
 | Field | Value |
 |-------|-------|

@@ -17,7 +17,7 @@ updated: 2026-11-10
 | Title | Disorder-blind Mpemba acceleration of quantum state preparation |
 | Author | M Nishanth, Shreyas Sadugol, Payman Mahmoudi, Alexander Yosifov, Aditya Iyer, Roopayan Ghosh, Jinzhao Sun (IIT Bhubaneswar, QMUL, MCLA, Oxford) |
 | Type | arXiv:2611.08424, 21 pages |
-| Location | `research to be indexed/image-gen/arxiv-2611.08424-disorder-blind-mpemba-acceleration-of-quantum-st.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.08424-disorder-blind-mpemba-acceleration-of-quantum-st.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.08424-disorder-blind-mpemba-acceleration-of-quantum-st.pdf` |
 | Read status | read (abstract, mechanism, thresholds) |

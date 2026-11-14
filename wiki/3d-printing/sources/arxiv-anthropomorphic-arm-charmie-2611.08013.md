@@ -18,7 +18,7 @@ updated: 2026-11-10
 | Title | Development of Anthropomorphic Arm for collaborative and Home Service Robot CHARMIE |
 | Author | Hafiz Syed Fawad Adil, Tiago Ribeiro, Antonio Ribeiro, Carolina Lopes, Joana Coelho, Gil Lopes, Fernando Ribeiro (University of Minho, ISEP Porto) |
 | Type | arXiv preprint (robotics dissertation) |
-| Location | `research to be indexed/3d-printing/arxiv-2611.08013-development-of-anthropomorphic-arm-for-collabora.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.08013-development-of-anthropomorphic-arm-for-collabora.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.08013-development-of-anthropomorphic-arm-for-collabora.pdf` |
 | Read status | read |

@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | Wake 5: A Python Framework for Solidity Testing, Fuzzing, and Static Analysis |
 | Author | Josef Gattermayer, Michal Prevrátil (ack3, Czech Technical University in Prague) |
 | Type | arXiv paper (cs.SE), 2611.09307 |
-| Location | `research to be indexed/ccc/arxiv-2611.09307-wake-5-a-python-framework-for-solidity-testing-f.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.09307-wake-5-a-python-framework-for-solidity-testing-f.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 20 |
 | Read status | read |

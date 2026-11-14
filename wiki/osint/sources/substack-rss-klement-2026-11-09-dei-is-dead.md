@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | DEI is dead… |
 | Author | Joachim Klement |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-klement-2026-11-09-dei-is-dead.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-09-dei-is-dead.md` |
 | Retrieved | 2026-11-09 |
 | File | substack-rss-klement-2026-11-09-dei-is-dead.md |
 | Read status | read |

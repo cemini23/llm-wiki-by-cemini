@@ -21,7 +21,7 @@ updated: 2026-11-10
 | Author | Yanji He, Tao Zhong, Hongyang Chen, Xiaobo Zhang, Mingyu Yang, Wei Wang |
 | Type | arXiv preprint (cs.IR / data systems) |
 | arXiv | 2611.08367v1, 5 Nov 2026 |
-| Location | `research to be indexed/seo/arxiv-2611.08367-cascadefilter-cost-efficient-semantic-filtering.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.08367-cascadefilter-cost-efficient-semantic-filtering.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.08367-cascadefilter-cost-efficient-semantic-filtering.pdf` |
 | Pages | 18 |

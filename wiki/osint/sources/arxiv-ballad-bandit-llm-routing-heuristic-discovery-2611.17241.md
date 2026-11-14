@@ -18,7 +18,7 @@ updated: 2026-11-14
 | Type | arXiv preprint, cs.AI; NeurIPS 2026 |
 | arXiv | 2611.17241v1, 12 Nov 2026 |
 | Pages | 48 |
-| Location | `research to be indexed/osint/arxiv-2611.17241-ballad-bandit-based-llm-routing-for-automated-he.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.17241-ballad-bandit-based-llm-routing-for-automated-he.pdf` |
 | Retrieved | 2026-11-14 |
 | Read status | read |
 

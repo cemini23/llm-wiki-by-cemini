@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Author | Joachim Klement |
 | Type | newsletter, RSS |
 | URL | https://klementoninvesting.substack.com/p/the-start-up-challenge-in-europe-af0 |
-| Location | `research to be indexed/substack-rss-klement-2026-11-12-the-start-up-challenge-in-europe-part-deux.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-12-the-start-up-challenge-in-europe-part-deux.md` |
 | Retrieved | 2026-11-12 |
 | Published | 2026-11-12 |
 | Read status | read |

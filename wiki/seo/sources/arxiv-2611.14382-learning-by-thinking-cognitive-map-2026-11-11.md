@@ -20,7 +20,7 @@ updated: 2026-11-14
 | Authors | Dong Han, Jin Zhang, Kunyue Yang (Northeast Normal University; American Scholars Press) |
 | arXiv | 2611.14382 |
 | Pages | 24 |
-| Location | `research to be indexed/seo/arxiv-2611.14382-cognitive-mapping-of-learning-by-thinking-mechan.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.14382-cognitive-mapping-of-learning-by-thinking-mechan.pdf` |
 | Retrieved | 2026-11-12 |
 | Read status | read |
 

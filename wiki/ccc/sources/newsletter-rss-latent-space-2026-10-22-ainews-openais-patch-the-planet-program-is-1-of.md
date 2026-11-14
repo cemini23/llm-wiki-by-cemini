@@ -12,7 +12,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/newsletter-rss-latent-space-2026-10-22-ainews-openais-patch-the-planet-program-is-1-of.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-10-22-ainews-openais-patch-the-planet-program-is-1-of.md`.
 
 | Field | Value |
 |-------|-------|

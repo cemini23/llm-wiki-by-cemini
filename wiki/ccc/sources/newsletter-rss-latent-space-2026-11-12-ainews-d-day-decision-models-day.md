@@ -17,7 +17,7 @@ updated: 2026-11-14
 | Title | [AINews] D-Day (Decision Models Day) |
 | Author | Latent Space (AINews desk) |
 | Type | Newsletter (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md` |
 | Retrieved | 2026-11-14 (published 2026-11-12) |
 | Pages | n/a |
 | Read status | read |

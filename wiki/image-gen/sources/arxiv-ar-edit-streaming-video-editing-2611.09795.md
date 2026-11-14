@@ -19,7 +19,7 @@ updated: 2026-11-10
 | Title | AR-Edit: Training-Free Autoregressive Video Editing without Inversion |
 | Author | Hovhannes Margaryan, Quentin Bammey, Christian Sandor, Vicky Kalogeiton (Université Paris-Saclay, Télécom Paris, École Polytechnique) |
 | Type | arXiv:2611.09795 [cs.CV], 31 pages; NeurIPS 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.09795-ar-edit-training-free-autoregressive-video-editi.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.09795-ar-edit-training-free-autoregressive-video-editi.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.09795-ar-edit-training-free-autoregressive-video-editi.pdf` |
 | Read status | read (abstract, method, ablations) |

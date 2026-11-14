@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | A Low Similarity Score Does Not Show Independence after Source-Conditioned Repository Rewriting |
 | Author | Micheline Benedicte Moumoula, Serge Lionel Nikiema, Tailia Malloy, Abdoul Kader Kabore, Jacques Klein, Tegawende F. Bissyande (University of Luxembourg) |
 | Type | arXiv paper (cs.SE), 2611.07887 |
-| Location | `research to be indexed/ccc/arxiv-2611.07887-a-low-similarity-score-does-not-show-independenc.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.07887-a-low-similarity-score-does-not-show-independenc.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 20 |
 | Read status | read |

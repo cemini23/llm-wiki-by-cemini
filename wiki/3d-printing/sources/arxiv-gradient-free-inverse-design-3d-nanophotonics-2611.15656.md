@@ -18,7 +18,7 @@ read_status: read
 | Authors | Oliver Kuster, Carsten Rockstuhl, Thomas Jebb Sturges (Karlsruhe Institute of Technology) |
 | Type | arXiv preprint (physics.optics) |
 | arXiv | 2611.15656v1, dated 11 November 2026 |
-| Location | `research to be indexed/3d-printing/arxiv-2611.15656-gradient-free-inverse-design-of-3d-nanophotonic.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.15656-gradient-free-inverse-design-of-3d-nanophotonic.pdf` |
 | Retrieved | 2026-11-14 |
 | Pages | 7 |
 | Read status | read |

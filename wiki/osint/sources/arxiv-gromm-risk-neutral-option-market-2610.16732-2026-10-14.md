@@ -22,7 +22,7 @@ updated: 2026-10-14
 Title: GROMM — Generative Risk-neutral Option Market Models
 Authors: Magnus Wiese, Hans Buehler, Blanka Horvath (Oxford Mathematical Institute; Oxford-Man Institute)
 Type: arXiv preprint (2610.16732)
-Location: `research to be indexed/osint/arxiv-2610.16732-gromm-generative-risk-neutral-option-market-mode.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.16732-gromm-generative-risk-neutral-option-market-mode.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team |
 | Author | Latent Space (multi-host podcast notes) |
 | Type | newsletter / podcast notes (RSS) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-09-what-frontier-labs-buy-a-data-deep-dive-with-han.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-09-what-frontier-labs-buy-a-data-deep-dive-with-han.md` |
 | Retrieved | 2026-11-10 |
 | Published | 2026-11-09 |
 | Read status | read |

@@ -19,7 +19,7 @@ updated: 2026-11-10
 | Author | Kira Pugh, Rebecca M Crossley, Sara Hamis (Uppsala University; University of Oxford) |
 | Type | arXiv preprint (physics.soc-ph) |
 | arXiv | 2611.06596v1, 4 Nov 2026 |
-| Location | `research to be indexed/seo/arxiv-2611.06596-limited-knowledge-exchange-across-biological-sub.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.06596-limited-knowledge-exchange-across-biological-sub.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.06596-limited-knowledge-exchange-across-biological-sub.pdf` |
 | Pages | 21 |

@@ -17,7 +17,7 @@ updated: 2026-11-14
 | Author | Wu Blockchain |
 | Type | newsletter, RSS |
 | URL | https://wublock.substack.com/p/weekly-project-updates-cftc-weighs |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md` |
 | Retrieved | 2026-11-14 |
 | Published | 2026-11-14 |
 | Read status | read |

@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Author | Capital Flows Research |
 | Type | newsletter, RSS teaser |
 | URL | https://www.capitalflowsresearch.com/p/inflation-cycle-playbook-livestream |
-| Location | `research to be indexed/substack-rss-capital-flows-2026-11-13-inflation-cycle-playbook-livestream-reply.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-capital-flows-2026-11-13-inflation-cycle-playbook-livestream-reply.md` |
 | Retrieved | 2026-11-13 |
 | Published | 2026-11-13 |
 | Read status | read (RSS teaser; full post is paywalled) |

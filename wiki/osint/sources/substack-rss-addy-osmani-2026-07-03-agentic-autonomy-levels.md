@@ -18,7 +18,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/substack-rss-addy-osmani-2026-07-03-agentic-autonomy-levels.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-addy-osmani-2026-07-03-agentic-autonomy-levels.md`.
 Cross-wiki route target: @ccc-wiki.
 
 | Field | Value |

@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: LongHisDoc — A Comprehensive Benchmark for Chinese Long Historical Document Understanding
 Authors: Zeyu Shan, Yongxin Shi, Shihang Wu, Peirong Zhang, Yuanyuan Fang, Zhaopeng Wang, Lianwen Jin (SCUT, Sichuan University)
 Type: arXiv preprint (2610.14531)
-Location: `research to be indexed/osint/arxiv-2610.14531-longhisdoc-a-comprehensive-benchmark-for-chinese.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.14531-longhisdoc-a-comprehensive-benchmark-for-chinese.pdf`
 Retrieved: 2026-10-14
 Read status: skimmed
 

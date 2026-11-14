@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | A Framework for Context Enrichment and Selective Robustness in LLM Social Agents |
 | Author | Mattia Greiche, Reihaneh Rabbany, Maximilian Puelma Touzel (McGill University, Mila) |
 | Type | arXiv preprint (cs.MA) — NeurIPS 2026 SocialAgent workshop |
-| Location | `research to be indexed/game-dev/arxiv-2611.06914-a-framework-for-context-enrichment-and-selective.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2611.06914-a-framework-for-context-enrichment-and-selective.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.06914-a-framework-for-context-enrichment-and-selective.pdf` |
 | Pages | 12 |

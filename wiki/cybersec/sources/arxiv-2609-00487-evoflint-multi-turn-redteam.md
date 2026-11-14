@@ -25,7 +25,7 @@ wire_target: ".cursor/rules/cemini-cybersec-lab-redteam.mdc + agent-audit.mdc (K
 | Title | EvoFlint: An Evolutionary Atlas of Multi-Turn LLM Vulnerabilities |
 | Authors | Feitong Qiao et al. |
 | arXiv | 2609.00487 |
-| Location | inbox `research to be indexed/arxiv-2609.00487-evoflint-an-evolutionary-atlas-of-multi-turn-llm.pdf` (archive pending) |
+| Location | inbox `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2609.00487-evoflint-an-evolutionary-atlas-of-multi-turn-llm.pdf` (archive pending) |
 | Retrieved | 2026-09-02 |
 | Read status | read (abstract + method) |
 | Public artifact | HF space `reinforcelabs/EvoFlint`; paper repo at release — WATCH |

@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Author | Wu Blockchain |
 | Type | newsletter, RSS teaser (body is a 35-item list) |
 | URL | https://wublock.substack.com/p/global-crypto-mining-news-in-october-a1b |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-12-global-crypto-mining-news-in-october-binance-poo.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-12-global-crypto-mining-news-in-october-binance-poo.md` |
 | Retrieved | 2026-11-12 |
 | Read status | read |
 

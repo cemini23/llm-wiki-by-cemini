@@ -12,7 +12,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/newsletter-rss-latent-space-2026-10-24-ainews-kimi-31-pro-104ba-28t-fable-51-class-open.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-10-24-ainews-kimi-31-pro-104ba-28t-fable-51-class-open.md`.
 
 | Field | Value |
 |-------|-------|

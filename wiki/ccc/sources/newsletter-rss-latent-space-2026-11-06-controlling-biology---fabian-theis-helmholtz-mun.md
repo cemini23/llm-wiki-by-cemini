@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | Controlling Biology - Fabian Theis, Helmholtz Munich |
 | Author | Latent Space (interview) |
 | Type | newsletter / podcast notes (RSS) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-06-controlling-biology---fabian-theis-helmholtz-mun.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-06-controlling-biology---fabian-theis-helmholtz-mun.md` |
 | Retrieved | 2026-11-10 |
 | Published | 2026-11-06 |
 | Read status | read |

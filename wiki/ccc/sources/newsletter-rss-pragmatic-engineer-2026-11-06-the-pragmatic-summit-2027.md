@@ -13,7 +13,7 @@ updated: 2026-11-10
 | Title | The Pragmatic Summit 2027 |
 | Author | The Pragmatic Engineer (Gergely Orosz) |
 | Type | newsletter (RSS teaser, paywalled) |
-| Location | `research to be indexed/newsletter-rss-pragmatic-engineer-2026-11-06-the-pragmatic-summit-2027.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-pragmatic-engineer-2026-11-06-the-pragmatic-summit-2027.md` |
 | Retrieved | 2026-11-10 |
 | Published | 2026-11-06 |
 | Read status | read |

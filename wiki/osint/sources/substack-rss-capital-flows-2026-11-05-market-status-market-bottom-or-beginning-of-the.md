@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Title | Market Status: Market Bottom or Beginning Of The End? |
 | Author | Capital Flows (Capital Flows Research) |
 | Type | newsletter, RSS teaser |
-| Location | `research to be indexed/substack-rss-capital-flows-2026-11-05-market-status-market-bottom-or-beginning-of-the.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-capital-flows-2026-11-05-market-status-market-bottom-or-beginning-of-the.md` |
 | Retrieved | 2026-11-05 |
 | File | substack-rss-capital-flows-2026-11-05-market-status-market-bottom-or-beginning-of-the.md |
 | Read status | read |

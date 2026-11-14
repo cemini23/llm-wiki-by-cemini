@@ -17,7 +17,7 @@ updated: 2026-11-10
 | Title | DiffSequence-Q: Diffusion Design with Quantum Assistance for Biologically Active Proteins |
 | Author | Ke-Xin Tang et al. (TuringQ, Shanghai Jiao Tong University, Atomology) |
 | Type | arXiv:2611.08434 [quant-ph], 29 pages |
-| Location | `research to be indexed/image-gen/arxiv-2611.08434-diffsequence-q-diffusion-design-with-quantum-ass.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.08434-diffsequence-q-diffusion-design-with-quantum-ass.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.08434-diffsequence-q-diffusion-design-with-quantum-ass.pdf` |
 | Read status | read (abstract, method, contributions) |

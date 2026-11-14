@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: CT0 — Cybersecurity Transformer
 Author: Víctor Mayoral-Vilches (Alias Robotics)
 Type: arXiv preprint (2610.16550)
-Location: `research to be indexed/cybersec/arxiv-2610.16550-ct0-cybersecurity-transformer.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2610.16550-ct0-cybersecurity-transformer.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

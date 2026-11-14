@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Title | When Routine Operations Break Architectural Pattern Relationships in LLM Agent Harnesses |
 | Author | Boming Xia, Qinghua Lu, Dino Sejdinovic, Liming Zhu (CSIRO, Adelaide University, UNSW) |
 | Type | arXiv paper (cs.SE), 2611.09088 |
-| Location | `research to be indexed/ccc/arxiv-2611.09088-when-routine-operations-break-architectural-patt.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.09088-when-routine-operations-break-architectural-patt.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 12 |
 | Read status | read |

@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | Video-Coder: Reinforcing Agentic Coding for Video Generation |
 | Author | Chaoyang Wang, Sicheng Gao, Junan Hu, and others (UCF, Wurzburg, Microsoft Research, Tsinghua, UNC, UW-Madison) |
 | Type | arXiv paper (cs.CV), 2611.09894 |
-| Location | `research to be indexed/ccc/arxiv-2611.09894-video-coder-reinforcing-agentic-coding-for-video.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.09894-video-coder-reinforcing-agentic-coding-for-video.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 16 |
 | Read status | read |

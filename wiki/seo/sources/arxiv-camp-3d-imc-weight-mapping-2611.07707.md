@@ -19,7 +19,7 @@ updated: 2026-11-10
 | Author | Orhun Görkem, Athanasios Vasilopoulos, Georgios Pagonis, Victoria Clerico, Hadjer Benmeziane, Irem Boybat, Hsinyu Tsai, Abu Sebastian, William Andrew Simon (IBM Research) |
 | Type | arXiv preprint (cs.AR) |
 | arXiv | 2611.07707v1, 5 Nov 2026 |
-| Location | `research to be indexed/seo/arxiv-2611.07707-camp-context-aware-mapping-and-placement-for-llm.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.07707-camp-context-aware-mapping-and-placement-for-llm.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.07707-camp-context-aware-mapping-and-placement-for-llm.pdf` |
 | Pages | 20 |

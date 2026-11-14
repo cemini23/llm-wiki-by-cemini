@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: InstantFusion — A Shared Latent Interface for Heterogeneous Image Generators
 Authors: Xuanlang Dai, Jiazi Bu, Yujie Zhou et al. (Fudan, Shanghai AI Lab, SJTU, CUHK)
 Type: arXiv preprint (2610.13944)
-Location: `research to be indexed/image-gen/arxiv-2610.13944-instantfusion-a-shared-latent-interface-for-hete.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2610.13944-instantfusion-a-shared-latent-interface-for-hete.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

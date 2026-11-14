@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Title | ControlHarbor: A Benchmark for Control Design by Coding Agents |
 | Author | Jieqiang Wei (EQT), Fahad Ali (Redpine), Jonny Reichwald (EQT), Silun Zhang (KTH) |
 | Type | arXiv preprint (math.DS), 2611.16867v1; dated 2026-11-12 |
-| Location | `research to be indexed/ccc/arxiv-2611.16867-controlharbor-a-benchmark-for-control-design-by.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.16867-controlharbor-a-benchmark-for-control-design-by.pdf` |
 | Retrieved | 2026-11-14 |
 | Pages | 21 |
 | Read status | read |

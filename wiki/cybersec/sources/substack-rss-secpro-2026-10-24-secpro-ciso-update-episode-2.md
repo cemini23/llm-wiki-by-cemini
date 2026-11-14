@@ -12,7 +12,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/substack-rss-secpro-2026-10-24-secpro-ciso-update-episode-2.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/substack-rss-secpro-2026-10-24-secpro-ciso-update-episode-2.md`.
 
 | Field | Value |
 |-------|-------|

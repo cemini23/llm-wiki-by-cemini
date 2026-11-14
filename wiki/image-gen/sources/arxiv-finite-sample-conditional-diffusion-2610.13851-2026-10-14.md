@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: Finite-Sample Guarantees for Fully Discrete Conditional Diffusion Models
 Author: Qiuyun Zhu (University of Iowa)
 Type: arXiv preprint (2610.13851)
-Location: `research to be indexed/image-gen/arxiv-2610.13851-finite-sample-guarantees-for-fully-discrete-cond.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2610.13851-finite-sample-guarantees-for-fully-discrete-cond.pdf`
 Retrieved: 2026-10-14
 Read status: skimmed
 

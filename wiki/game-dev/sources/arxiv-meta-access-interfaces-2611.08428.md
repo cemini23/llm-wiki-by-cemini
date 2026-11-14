@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | The Power of Meta Access in the Software of the Future — Demonstrated on LLM Chat UIs and Chat AI |
 | Author | Julian Kunkel, Ali Doosthosseini (Universität Göttingen, GWDG) |
 | Type | arXiv position paper (cs.AI), grounded in a prototype |
-| Location | `research to be indexed/game-dev/arxiv-2611.08428-the-power-of-meta-access-in-the-software-of-the.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2611.08428-the-power-of-meta-access-in-the-software-of-the.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.08428-the-power-of-meta-access-in-the-software-of-the.pdf` |
 | Pages | 28 |

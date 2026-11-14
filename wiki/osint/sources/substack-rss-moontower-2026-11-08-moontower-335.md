@@ -17,7 +17,7 @@ updated: 2026-11-10
 | Title | Moontower #335 |
 | Author | Kris Abdelmessih (Party at the Moontower) |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-moontower-2026-11-08-moontower-335.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-moontower-2026-11-08-moontower-335.md` |
 | Retrieved | 2026-11-08 |
 | File | substack-rss-moontower-2026-11-08-moontower-335.md |
 | Read status | read |

@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: SP2EC — Adaptive Self-Speculative Decoding for Vision-Language Models
 Authors: Yuqi Huang, Xingyao Li, Yunlong Hou, Fengzhuo Zhang, Jiachun Pan, Vincent Y. F. Tan (NUS, Yale)
 Type: arXiv preprint (2610.18735)
-Location: `research to be indexed/cybersec/arxiv-2610.18735-sp-2-ec-adaptive-self-speculative-decoding-for-v.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2610.18735-sp-2-ec-adaptive-self-speculative-decoding-for-v.pdf`
 Retrieved: 2026-10-14
 Read status: skimmed
 

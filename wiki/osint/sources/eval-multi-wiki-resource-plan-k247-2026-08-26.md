@@ -36,7 +36,7 @@ read_status: read
 |-------|--------|
 | File | `Multi-Wiki Resource Evaluation Plan.docx` |
 | sha256 | `dc079dc08310517263ae61c31bfeaaa7e49e1b65d1a9792a0e4e84866c2a1299` |
-| Location | `research to be indexed/Multi-Wiki Resource Evaluation Plan.docx` (pre-archive) |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/Multi-Wiki Resource Evaluation Plan.docx` (pre-archive) |
 | Retrieved | 2026-08-26 |
 | URLs evaluated | 20 |
 | Theme | Agent orchestration, Atto vault, GuruWatcher intel MCP, cyber AD tools |

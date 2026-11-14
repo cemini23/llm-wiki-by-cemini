@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | [AINews] Inkling 2 Small: 17A-594B trained in 68 hours on 12T tokens, beating Muse Spark |
 | Author | Latent Space (AINews roundup) |
 | Type | newsletter (RSS) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-06-ainews-inkling-2-small-17a-594b-trained-in-68-ho.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-06-ainews-inkling-2-small-17a-594b-trained-in-68-ho.md` |
 | Retrieved | 2026-11-10 |
 | Published | 2026-11-06 |
 | Read status | read |

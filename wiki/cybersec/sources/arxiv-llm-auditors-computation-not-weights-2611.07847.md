@@ -13,7 +13,7 @@ updated: 2026-11-10
 | Title | Computation, not weight access: large language models as auditors of clinical prediction networks |
 | Author | Zhiyu Liu (Tianjin Medical University); Xinyu Yang (Tianjin Medical University General Hospital) |
 | Type | arXiv preprint (cs.LG) |
-| Location | `research to be indexed/cybersec/arxiv-2611.07847-computation-not-weight-access-large-language-mod.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.07847-computation-not-weight-access-large-language-mod.pdf` |
 | Retrieved | 2026-11-06 |
 | File | `arxiv-2611.07847-computation-not-weight-access-large-language-mod.pdf` |
 | Pages | 13 |

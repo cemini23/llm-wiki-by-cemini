@@ -18,7 +18,7 @@ updated: 2026-11-14
 | Title | Fictitious Play When Agents Are Not Expected-Utility Maximizers: A Geometric Analysis in 2-Action Games |
 | Authors | Hao Liang, Solaleh Mohammadi, Kaiqing Zhang (University of Maryland, College Park) |
 | Type | academic paper (arXiv preprint, cs.GT) |
-| Location | `research to be indexed/gambling/arxiv-2611.17286-fictitious-play-when-agents-are-not-expected-uti.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2611.17286-fictitious-play-when-agents-are-not-expected-uti.pdf` |
 | arXiv | 2611.17286v1 [cs.GT], 12 November 2026 |
 | Retrieved | 2026-11-14 |
 | Pages | 79 |

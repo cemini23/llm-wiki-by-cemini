@@ -21,7 +21,7 @@ updated: 2026-11-14
 | Authors | Felix O'Mahony, Daniel Olmeda Reino, Roberto Cipolla, Ayush Tewari (University of Cambridge, Toyota Motor Europe) |
 | Type | arXiv preprint, cs.CV |
 | arXiv | 2611.17324v1, 12 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.17324-k2v-generative-keyframing-for-physically-plausib.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.17324-k2v-generative-keyframing-for-physically-plausib.pdf` |
 | URL | https://arxiv.org/abs/2611.17324 |
 | Retrieved | 2026-11-14 |
 | Pages | 16 |

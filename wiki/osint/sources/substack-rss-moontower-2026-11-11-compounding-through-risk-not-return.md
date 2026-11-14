@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Author | Kris Abdelmessih (Moontower Meta), curating Flirting with Models S7E35 |
 | Type | newsletter, RSS; transcript curation |
 | URL | https://moontowermeta.com/compounding-through-risk-not-return/ |
-| Location | `research to be indexed/substack-rss-moontower-2026-11-11-compounding-through-risk-not-return.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-moontower-2026-11-11-compounding-through-risk-not-return.md` |
 | Retrieved | 2026-11-11 |
 | Published | 2026-11-11 |
 | Read status | read |

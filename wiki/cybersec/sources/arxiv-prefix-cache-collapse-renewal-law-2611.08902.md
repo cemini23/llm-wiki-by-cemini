@@ -13,7 +13,7 @@ updated: 2026-11-10
 | Title | Inside the Trap: A Renewal Law for Prefix-Cache Collapse in LLM Agent Serving |
 | Author | Akshat Valse; Ali Jannesari (Iowa State University) |
 | Type | arXiv preprint (cs.DC) |
-| Location | `research to be indexed/cybersec/arxiv-2611.08902-inside-the-trap-a-renewal-law-for-prefix-cache-c.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.08902-inside-the-trap-a-renewal-law-for-prefix-cache-c.pdf` |
 | Retrieved | 2026-11-09 |
 | File | `arxiv-2611.08902-inside-the-trap-a-renewal-law-for-prefix-cache-c.pdf` |
 | Pages | 66 |

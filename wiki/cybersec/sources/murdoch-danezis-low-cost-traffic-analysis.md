@@ -28,7 +28,7 @@ wire_status: wont_wire
 | Venue | 2005 IEEE Symposium on Security and Privacy (Oakland, CA, USA) |
 | URL | https://www.cl.cam.ac.uk/~sjm217/papers/oakland05torta.pdf |
 | Retrieved | 2026-08-12 |
-| Location | `research to be indexed/murdoch-danezis-low-cost-traffic-analysis.pdf` → archived to egress-fi cybersec/ |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/murdoch-danezis-low-cost-traffic-analysis.pdf` → archived to egress-fi cybersec/ |
 
 ## Narrative
 
@@ -38,4 +38,4 @@ The network-size intuition is important for the wiki concept: adding more relays
 
 ## Snippets
 
-Page 1 (paraphrase, not verbatim — PDF text extraction garbled): the abstract frames Tor as the second-generation onion-routing anonymity network whose low latency, needed for interactive use like web browsing, is precisely what makes its traffic pattern correlatable by an observer, and proposes low-cost traffic-analysis attacks plus design countermeasures. Locator: p.1, `research to be indexed/murdoch-danezis-low-cost-traffic-analysis.pdf`.
+Page 1 (paraphrase, not verbatim — PDF text extraction garbled): the abstract frames Tor as the second-generation onion-routing anonymity network whose low latency, needed for interactive use like web browsing, is precisely what makes its traffic pattern correlatable by an observer, and proposes low-cost traffic-analysis attacks plus design countermeasures. Locator: p.1, `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/murdoch-danezis-low-cost-traffic-analysis.pdf`.

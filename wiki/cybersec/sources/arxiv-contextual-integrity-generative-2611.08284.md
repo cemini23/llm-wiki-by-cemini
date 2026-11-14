@@ -13,7 +13,7 @@ updated: 2026-11-10
 | Title | A Generative Model of Contextual Integrity: Appropriate vs. Inappropriate Information Sharing |
 | Author | Omer Ebead (Cooperative AI Foundation; Cape Institute for Safe AI; African Institute for Mathematical Sciences); Claude Formanek (Cooperative AI Foundation; Cape Institute for Safe AI); Joel Z. Leibo (Google DeepMind) |
 | Type | arXiv preprint (cs.AI) — NeurIPS 2026 |
-| Location | `research to be indexed/cybersec/arxiv-2611.08284-a-generative-model-of-contextual-integrity-appro.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.08284-a-generative-model-of-contextual-integrity-appro.pdf` |
 | Retrieved | 2026-11-06 |
 | File | `arxiv-2611.08284-a-generative-model-of-contextual-integrity-appro.pdf` |
 | Pages | 55 |

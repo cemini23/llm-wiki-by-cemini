@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Title | The $93 Million Put "Dump" That Wasn't |
 | Author | Glitch (Glitch SPX, Talon Weekly) |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-glitchspx-2026-11-06-the-93-million-put-dump-that-wasnt.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-glitchspx-2026-11-06-the-93-million-put-dump-that-wasnt.md` |
 | Retrieved | 2026-11-06 |
 | File | substack-rss-glitchspx-2026-11-06-the-93-million-put-dump-that-wasnt.md |
 | Read status | read |

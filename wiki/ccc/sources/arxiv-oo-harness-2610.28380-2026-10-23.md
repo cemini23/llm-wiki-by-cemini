@@ -13,7 +13,7 @@ updated: 2026-10-23
 Title: Object-oriented harness — evolving agent harnesses
 Authors: Gaotang Li and coauthors, UIUC and Google Cloud AI Research
 Type: arXiv preprint (2610.28380), 21 Oct 2026
-Inbox file: `research to be indexed/cybersec/arxiv-2610.28380-object-oriented-harness-evolving-agent-harnesses.pdf`
+Inbox file: `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2610.28380-object-oriented-harness-evolving-agent-harnesses.pdf`
 Location: `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2610.28380-object-oriented-harness-evolving-agent-harnesses.pdf`
 Retrieved: 2026-10-23
 Read status: skimmed (abstract)

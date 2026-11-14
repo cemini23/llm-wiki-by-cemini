@@ -19,7 +19,7 @@ updated: 2026-11-14
 | Authors | David Sánchez, Benet Manzanares, Josep Domingo-Ferrer (Universitat Rovira i Virgili; ENS-PSL) |
 | arXiv | 2611.17012 (cs.CR) |
 | Pages | 32 |
-| Location | `research to be indexed/seo/arxiv-2611.17012-anonymous-in-name-only-a-critical-review-and-a-r.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.17012-anonymous-in-name-only-a-critical-review-and-a-r.pdf` |
 | Retrieved | 2026-11-13 |
 | Read status | read |
 

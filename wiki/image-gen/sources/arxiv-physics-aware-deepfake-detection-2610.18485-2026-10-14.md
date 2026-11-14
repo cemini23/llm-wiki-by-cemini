@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: Physics-Aware Deepfake Detection via Distance–Speech Consistency
 Authors: Kyeongrae Kim, Kim Sung-Bin, Oh Hyun-Bin, Tae-Hyun Oh (KAIST, POSTECH)
 Type: arXiv preprint (2610.18485). Code: `byulharang.github.io/PADD/`
-Location: `research to be indexed/image-gen/arxiv-2610.18485-physics-aware-deepfake-detection-via-distance-sp.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2610.18485-physics-aware-deepfake-detection-via-distance-sp.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

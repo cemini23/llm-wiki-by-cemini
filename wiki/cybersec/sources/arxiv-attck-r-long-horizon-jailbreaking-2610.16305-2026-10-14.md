@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: ATTCK-R — Knowledge-Aware Long-Horizon Jailbreaking for Protected LLMs
 Authors: Md Mushfiqur Rahman, Tobias Rohde, Rahul Tripathi, Khalil Elkhalil, Kevin Lybarger (George Mason University, Amazon)
 Type: arXiv preprint (2610.16305)
-Location: `research to be indexed/cybersec/arxiv-2610.16305-attck-r-knowledge-aware-long-horizon-jailbreakin.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2610.16305-attck-r-knowledge-aware-long-horizon-jailbreakin.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

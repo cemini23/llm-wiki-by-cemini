@@ -16,7 +16,7 @@ updated: 2026-11-14
 | Title | A Monotone Meshfree–Particle Method for Mean Field Games on Scattered Point Clouds |
 | Authors | Jiongyi Wang, Linyu Peng (Keio University) |
 | Type | academic paper (arXiv preprint, math.NA) |
-| Location | `research to be indexed/gambling/arxiv-2611.15132-a-monotone-meshfree-particle-method-for-mean-fie.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2611.15132-a-monotone-meshfree-particle-method-for-mean-fie.pdf` |
 | arXiv | 2611.15132v1 [math.NA], 11 November 2026 |
 | Retrieved | 2026-11-14 |
 | Pages | 36 |

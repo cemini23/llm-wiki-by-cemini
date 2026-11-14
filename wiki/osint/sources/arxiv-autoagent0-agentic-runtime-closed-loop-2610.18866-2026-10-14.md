@@ -24,7 +24,7 @@ updated: 2026-10-14
 Title: AutoAgent0 — An Agentic Runtime for Safe Closed-Loop Driving
 Authors: Jiageng Liu, Seth Z. Zhao, Zewei Zhou et al. (UCLA, CMU, UT Dallas, Stanford)
 Type: arXiv preprint (2610.18866)
-Location: `research to be indexed/osint/arxiv-2610.18866-autoagent0-an-agentic-runtime-for-safe-closed-lo.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.18866-autoagent0-an-agentic-runtime-for-safe-closed-lo.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

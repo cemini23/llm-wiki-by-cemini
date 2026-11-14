@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | Visual Token Routing: Learning to keep tokens that matter |
 | Author | Pranjal Aggarwal, Sean Welleck (Carnegie Mellon University) |
 | Type | arXiv preprint (cs.CV), 2611.06854 |
-| Location | `research to be indexed/ccc/arxiv-2611.06854-visual-token-routing-learning-to-keep-tokens-tha.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.06854-visual-token-routing-learning-to-keep-tokens-tha.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 18 |
 | Read status | read |

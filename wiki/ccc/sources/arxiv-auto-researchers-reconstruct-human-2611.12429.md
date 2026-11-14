@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Title | Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI? |
 | Author | Shengyun Si, Junjie Chu, Ye Leng, Yang Zhang (CISPA Helmholtz Center for Information Security) |
 | Type | arXiv paper (cs.AI), 2611.12429 |
-| Location | `research to be indexed/ccc/arxiv-2611.12429-can-frontier-auto-researchers-reconstruct-human.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.12429-can-frontier-auto-researchers-reconstruct-human.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 14 |
 | Read status | read |

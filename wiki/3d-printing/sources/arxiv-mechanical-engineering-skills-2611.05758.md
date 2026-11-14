@@ -18,7 +18,7 @@ updated: 2026-11-10
 | Title | Mechanical Engineering Skills: An Open Library of Agent Skills for Design, Analysis and Manufacturing |
 | Author | Achuth Chandrasekhar, Jesse Barkley, Peter Pak, Rumi Loghmani, Aakash Oza, Amir Barati Farimani (Carnegie Mellon University) |
 | Type | arXiv preprint (cs.MA) |
-| Location | `research to be indexed/3d-printing/arxiv-2611.05758-mechanical-engineering-skills-an-open-library-of.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.05758-mechanical-engineering-skills-an-open-library-of.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.05758-mechanical-engineering-skills-an-open-library-of.pdf` |
 | Read status | read |

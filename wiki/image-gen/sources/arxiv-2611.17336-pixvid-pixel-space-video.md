@@ -21,7 +21,7 @@ updated: 2026-11-14
 | Authors | Yanke Song, Shuo Chen, Chris Rockwell, Guande He, Nan Liu, Desai Xie, Tianpei Gu, Yong-Hyun Park, Aryan V S, Dennis Yuren Menn, Ming-Hsuan Yang, Xun Huang (Roblox; UC Merced; UPenn; UT Austin) |
 | Type | arXiv preprint, cs.CV |
 | arXiv | 2611.17336v1, 12 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.17336-back-to-pixels-lifting-latent-video-diffusion-in.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.17336-back-to-pixels-lifting-latent-video-diffusion-in.pdf` |
 | URL | https://arxiv.org/abs/2611.17336 |
 | Project page | https://chenshuo20.github.io/PixVid/ |
 | Retrieved | 2026-11-14 |

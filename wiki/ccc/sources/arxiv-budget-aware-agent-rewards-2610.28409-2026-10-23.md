@@ -13,7 +13,7 @@ updated: 2026-10-23
 Title: Rewards for budget-aware multi-turn agents
 Authors: Tom A. Lamb and coauthors, Apple and Oxford
 Type: arXiv preprint (2610.28409)
-Inbox file: `research to be indexed/cybersec/arxiv-2610.28409-rewards-for-budget-aware-multi-turn-agents-that.pdf`
+Inbox file: `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2610.28409-rewards-for-budget-aware-multi-turn-agents-that.pdf`
 Location: `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2610.28409-rewards-for-budget-aware-multi-turn-agents-that.pdf`
 Retrieved: 2026-10-23
 Read status: skimmed (abstract)

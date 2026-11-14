@@ -16,7 +16,7 @@ updated: 2026-11-14
 | Title | Where LLM Agents Get Stuck Debugging Databases: Access More Than Reasoning |
 | Author | Gustavo Pinto (Federal University of Pará, UFPA) |
 | Type | arXiv preprint, 2611.17304 |
-| Location | `research to be indexed/ccc/arxiv-2611.17304-where-llm-agents-get-stuck-debugging-databases-a.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.17304-where-llm-agents-get-stuck-debugging-databases-a.pdf` |
 | Retrieved | 2026-11-14 |
 | Pages | 12 |
 | Read status | read |

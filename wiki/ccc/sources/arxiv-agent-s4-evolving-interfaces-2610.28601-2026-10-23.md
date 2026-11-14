@@ -13,7 +13,7 @@ updated: 2026-10-23
 Title: Evolving agent interfaces (Agent S4)
 Authors: Saaket Agashe, Yuzhe Yang, Xin Eric Wang
 Type: arXiv preprint (2610.28601)
-Inbox file: `research to be indexed/seo/arxiv-2610.28601-evolving-agent-interfaces.pdf`
+Inbox file: `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2610.28601-evolving-agent-interfaces.pdf`
 Location: `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2610.28601-evolving-agent-interfaces.pdf`
 Retrieved: 2026-10-23
 Read status: skimmed (abstract)

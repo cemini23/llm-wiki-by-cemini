@@ -15,7 +15,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/newsletter-rss-pragmatic-engineer-2026-07-01-how-kent-beck-shapes-the-software-engineering-in.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-pragmatic-engineer-2026-07-01-how-kent-beck-shapes-the-software-engineering-in.md`.
 Cross-wiki route target: @ccc-wiki.
 
 | Field | Value |

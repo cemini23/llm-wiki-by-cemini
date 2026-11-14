@@ -19,7 +19,7 @@ updated: 2026-11-10
 | Title | Episode 40: The Misery Index With Adjacent Markets' Lucas Kohorst |
 | Author | Event Horizon (with Daniel O'Boyle, InGame) |
 | Type | newsletter with podcast, RSS teaser |
-| Location | `research to be indexed/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md` |
 | Retrieved | 2026-11-09 |
 | File | substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md |
 | Read status | read |

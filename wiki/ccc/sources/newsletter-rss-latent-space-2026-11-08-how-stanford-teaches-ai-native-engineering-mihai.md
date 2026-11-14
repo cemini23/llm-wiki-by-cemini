@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco |
 | Author | Latent Space (interview with transcript) |
 | Type | newsletter / podcast notes (RSS) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-08-how-stanford-teaches-ai-native-engineering-mihai.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-08-how-stanford-teaches-ai-native-engineering-mihai.md` |
 | Retrieved | 2026-11-10 |
 | Published | 2026-11-08 |
 | Read status | read (editorial section and transcript opening; full transcript sampled) |

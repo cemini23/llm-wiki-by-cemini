@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Title | Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks |
 | Author | E. Kelly Buchanan, Crystal Zhou, Scott W. Linderman, Christopher Re (Stanford, Cornell) |
 | Type | arXiv paper (cs.AI), 2611.08417 |
-| Location | `research to be indexed/ccc/arxiv-2611.08417-benchmarks-as-software-terminal-bench-and-the-ca.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.08417-benchmarks-as-software-terminal-bench-and-the-ca.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 24 |
 | Read status | read |

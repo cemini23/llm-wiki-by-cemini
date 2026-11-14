@@ -13,7 +13,7 @@ updated: 2026-10-23
 Title: DSINC beyond Heston
 Author: Andrey Itkin, NYU
 Type: arXiv preprint (2610.28847), 22 Oct 2026
-Inbox file: `research to be indexed/ccc/arxiv-2610.28847-dsinc-beyond-heston-the-3-2-and-other-non-affine.pdf`
+Inbox file: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.28847-dsinc-beyond-heston-the-3-2-and-other-non-affine.pdf`
 Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.28847-dsinc-beyond-heston-the-3-2-and-other-non-affine.pdf`
 Retrieved: 2026-10-23
 Read status: skimmed (abstract)

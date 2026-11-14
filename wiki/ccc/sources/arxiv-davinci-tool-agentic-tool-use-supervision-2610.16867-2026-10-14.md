@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: Davinci-Tool — Scaling Agentic Tool-Use Supervision with Verifiable Executable Environments
 Authors: Xiaoyang Yuan, Ji Zhao, Xingyu Hu et al. (Tongji, Shanghai Innovation Institute, USTC, Southeast)
 Type: arXiv preprint (2610.16867). Code: `github.com/MassLab-SII/Davinci-Tool`
-Location: `research to be indexed/ccc/arxiv-2610.16867-davinci-tool-scaling-agentic-tool-use-supervisio.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2610.16867-davinci-tool-scaling-agentic-tool-use-supervisio.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

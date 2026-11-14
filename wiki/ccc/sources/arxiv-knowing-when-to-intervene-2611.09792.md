@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Title | Knowing When to Intervene: Causal Evaluation of AI Agents |
 | Author | Ayush Sawarni, Wenqian Xing, Tijana Zrnic, Ramesh Johari, Vasilis Syrgkanis (Stanford University) |
 | Type | arXiv paper (cs.AI), 2611.09792 |
-| Location | `research to be indexed/ccc/arxiv-2611.09792-knowing-when-to-intervene-causal-evaluation-of-a.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.09792-knowing-when-to-intervene-causal-evaluation-of-a.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 35 |
 | Read status | read |

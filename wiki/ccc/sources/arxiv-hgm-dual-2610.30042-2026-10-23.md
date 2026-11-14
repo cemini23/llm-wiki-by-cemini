@@ -13,7 +13,7 @@ updated: 2026-10-23
 Title: HGM-Dual — lineage-aware guided agent-harness optimization
 Authors: Sudipta Paul and coauthors, Samsung Research America
 Type: arXiv preprint (2610.30042)
-Inbox file: `research to be indexed/seo/arxiv-2610.30042-hgm-dual-lineage-aware-guided-agent-harness-opti.pdf`
+Inbox file: `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2610.30042-hgm-dual-lineage-aware-guided-agent-harness-opti.pdf`
 Location: `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2610.30042-hgm-dual-lineage-aware-guided-agent-harness-opti.pdf`
 Retrieved: 2026-10-23
 Read status: skimmed (abstract)

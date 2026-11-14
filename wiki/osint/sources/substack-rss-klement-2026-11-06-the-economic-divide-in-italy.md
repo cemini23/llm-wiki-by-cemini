@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | The economic divide in Italy |
 | Author | Joachim Klement |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-klement-2026-11-06-the-economic-divide-in-italy.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-06-the-economic-divide-in-italy.md` |
 | Retrieved | 2026-11-06 |
 | File | substack-rss-klement-2026-11-06-the-economic-divide-in-italy.md |
 | Read status | read |

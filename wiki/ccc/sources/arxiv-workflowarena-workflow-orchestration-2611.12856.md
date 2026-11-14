@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems |
 | Author | Zheng Jiang, Fang Niu, Bo Peng, and others (Navers Lab, Einsia.AI, Tsinghua University) |
 | Type | arXiv paper (cs.CL), 2611.12856 |
-| Location | `research to be indexed/ccc/arxiv-2611.12856-workflowarena-benchmarking-executable-workflow-o.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.12856-workflowarena-benchmarking-executable-workflow-o.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 22 |
 | Read status | read |

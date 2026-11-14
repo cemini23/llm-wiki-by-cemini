@@ -17,7 +17,7 @@ updated: 2026-11-10
 | Title | Asia's weekly TOP10 crypto news: PBOC to Probe Solana's Lujiazui Ad Campaign, South Korea Pushes Crypto Gains Tax to 2029 |
 | Author | Wu Blockchain |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-08-asias-weekly-top10-crypto-news-pboc-to-probe-sol.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-08-asias-weekly-top10-crypto-news-pboc-to-probe-sol.md` |
 | Retrieved | 2026-11-08 |
 | File | substack-rss-wublock-2026-11-08-asias-weekly-top10-crypto-news-pboc-to-probe-sol.md |
 | Read status | read |

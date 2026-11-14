@@ -16,7 +16,7 @@ updated: 2026-11-14
 | Author | Event Horizon (Next Event Horizon) |
 | Type | newsletter, RSS teaser |
 | URL | https://nexteventhorizon.substack.com/p/house-subcommittee-jabs-at-prediction-markets-college-gambling |
-| Location | `research to be indexed/substack-rss-event-horizon-2026-11-12-house-subcommittee-jabs-at-prediction-markets-du.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-12-house-subcommittee-jabs-at-prediction-markets-du.md` |
 | Retrieved | 2026-11-12 |
 | Published | 2026-11-12 |
 | Read status | read (RSS teaser; the briefing sections are present in full) |

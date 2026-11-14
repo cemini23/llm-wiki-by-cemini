@@ -40,7 +40,7 @@ read_status: read
 |-------|--------|
 | File | `Deep Research URL Evaluation Plan.docx` |
 | sha256 | `6d24aebe8c89ba6dee0cdbde1df513d0d87dd1f60bdc955812d8d1c052b2be3a` |
-| Location | `research to be indexed/Deep Research URL Evaluation Plan.docx` (pre-archive) |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/Deep Research URL Evaluation Plan.docx` (pre-archive) |
 | Retrieved | 2026-08-28 |
 | URLs evaluated | 20 |
 | Theme | Atto FIND 3D / HTR adjacent, CCC free-LLM API + screenshot→code, cyber RE lab, image-gen AGPL skip |

@@ -15,7 +15,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/substack-rss-secpro-2026-07-03-identity-became-the-new-perimeter.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-secpro-2026-07-03-identity-became-the-new-perimeter.md`.
 Cross-wiki route target: @cybersecurity-wiki.
 
 | Field | Value |

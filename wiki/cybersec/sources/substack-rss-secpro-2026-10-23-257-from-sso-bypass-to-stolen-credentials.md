@@ -12,7 +12,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/substack-rss-secpro-2026-10-23-257-from-sso-bypass-to-stolen-credentials.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/substack-rss-secpro-2026-10-23-257-from-sso-bypass-to-stolen-credentials.md`.
 
 | Field | Value |
 |-------|-------|

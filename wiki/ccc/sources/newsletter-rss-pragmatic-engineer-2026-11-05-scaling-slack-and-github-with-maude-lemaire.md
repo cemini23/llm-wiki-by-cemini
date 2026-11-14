@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | Scaling Slack and GitHub with Maude Lemaire |
 | Author | The Pragmatic Engineer (Gergely Orosz, interview) |
 | Type | newsletter / podcast notes (RSS) |
-| Location | `research to be indexed/newsletter-rss-pragmatic-engineer-2026-11-05-scaling-slack-and-github-with-maude-lemaire.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-pragmatic-engineer-2026-11-05-scaling-slack-and-github-with-maude-lemaire.md` |
 | Retrieved | 2026-11-10 |
 | Published | 2026-11-05 |
 | Read status | read |

@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Title | Evaluation of Image Noise from Computed Tomography in an Organ-Specific Anthropomorphic Phantom |
 | Author | Lucas McCullum, Mojtaba Zarei, Andy Tsai, Michael J. Callahan, Peng Sun, Da Zhang (Boston Children's Hospital, Harvard Medical School, GE HealthCare) |
 | Type | arXiv preprint (medical physics) |
-| Location | `research to be indexed/3d-printing/arxiv-2611.07357-evaluation-of-image-noise-from-computed-tomograp.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.07357-evaluation-of-image-noise-from-computed-tomograp.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.07357-evaluation-of-image-noise-from-computed-tomograp.pdf` |
 | Read status | read |

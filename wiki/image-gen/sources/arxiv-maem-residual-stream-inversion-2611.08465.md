@@ -19,7 +19,7 @@ updated: 2026-11-10
 | Title | Towards Interpreting Any Residual Stream Direction by Scaling Activation Inversion |
 | Author | Celeste De Schamphelaere (MATS), Juan J. Vazquez, Ari Spiesberger, Tomáš Gavenčiak, Gavin Leech (Arb Research), Euan Ong, Jiahai Feng (Anthropic) |
 | Type | arXiv:2611.08465 [cs.LG], 50 pages |
-| Location | `research to be indexed/image-gen/arxiv-2611.08465-towards-interpreting-any-residual-stream-directi.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.08465-towards-interpreting-any-residual-stream-directi.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.08465-towards-interpreting-any-residual-stream-directi.pdf` |
 | Read status | read (abstract, method, results summary) |

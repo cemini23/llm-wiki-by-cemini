@@ -15,7 +15,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/substack-rss-klement-2026-07-07-momentum-crash-warnings-flash-red-heres-how-you.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-07-07-momentum-crash-warnings-flash-red-heres-how-you.md`.
 Cross-wiki route target: @gambling-wiki.
 
 | Field | Value |

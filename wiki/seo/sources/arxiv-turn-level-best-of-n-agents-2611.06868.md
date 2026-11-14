@@ -19,7 +19,7 @@ updated: 2026-11-10
 | Author | Jalaj Bhandari, Dhawal Gupta, Hongli Zhan, Zhenting Wang, Varad Pimpalkhute, Zhengzhong Liu, Eric Xing, Rupesh Srivastava (Institute of Foundation Models, MBZUAI) |
 | Type | arXiv preprint (cs.AI) |
 | arXiv | 2611.06868v1, 4 Nov 2026 |
-| Location | `research to be indexed/seo/arxiv-2611.06868-on-turn-level-best-of-n-sampling-for-scaling-llm.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.06868-on-turn-level-best-of-n-sampling-for-scaling-llm.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.06868-on-turn-level-best-of-n-sampling-for-scaling-llm.pdf` |
 | Pages | 39 |

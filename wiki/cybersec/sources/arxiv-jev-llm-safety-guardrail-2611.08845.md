@@ -17,7 +17,7 @@ updated: 2026-11-14
 | Title | Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal |
 | Author | Olivia Cognetti; Bhaskar Krishnamachari (University of Southern California) |
 | Type | arXiv preprint (cs.CR) |
-| Location | `research to be indexed/cybersec/arxiv-2611.08845-jev-as-an-llm-safety-guardrail-an-empirical-stud.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.08845-jev-as-an-llm-safety-guardrail-an-empirical-stud.pdf` |
 | Retrieved | 2026-11-09 |
 | File | `arxiv-2611.08845-jev-as-an-llm-safety-guardrail-an-empirical-stud.pdf` |
 | Pages | 9 |

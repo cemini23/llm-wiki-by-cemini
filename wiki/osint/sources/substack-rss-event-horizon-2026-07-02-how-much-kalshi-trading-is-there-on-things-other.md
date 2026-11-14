@@ -15,7 +15,7 @@ read_status: skimmed
 
 ## Raw Concept
 
-Auto-dropped RSS newsletter stub from `research to be indexed/substack-rss-event-horizon-2026-07-02-how-much-kalshi-trading-is-there-on-things-other.md`.
+Auto-dropped RSS newsletter stub from `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-07-02-how-much-kalshi-trading-is-there-on-things-other.md`.
 Cross-wiki route target: @gambling-wiki.
 
 | Field | Value |

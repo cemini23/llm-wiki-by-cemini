@@ -20,7 +20,7 @@ updated: 2026-10-14
 Title: ChunkAct — Action Chunking for Agentic Robotics
 Authors: Bingxin Xu, Wenrui Bao, Xinxin Liu, Jiawei Zhou, Yuzhang Shang, Emilio Ferrara (USC, UCF, Stony Brook)
 Type: arXiv preprint (2610.18874)
-Location: `research to be indexed/ccc/arxiv-2610.18874-chunkact-action-chunking-for-agentic-robotics.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2610.18874-chunkact-action-chunking-for-agentic-robotics.pdf`
 Retrieved: 2026-10-14
 Read status: read
 

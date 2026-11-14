@@ -20,7 +20,7 @@ updated: 2026-11-10
 | Author | Gabriel Souza Baggio, Gabriel Machado Lunardi, Guilherme Medeiros Machado, Subhankar Maity, Faiza Belbachir, José Palazzo Moreira de Oliveira |
 | Type | arXiv preprint (cs.AI) |
 | arXiv | 2611.09791v1, 6 Nov 2026 |
-| Location | `research to be indexed/seo/arxiv-2611.09791-assessing-the-impact-of-retrieval-augmented-gene.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.09791-assessing-the-impact-of-retrieval-augmented-gene.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.09791-assessing-the-impact-of-retrieval-augmented-gene.pdf` |
 | Pages | 25 |

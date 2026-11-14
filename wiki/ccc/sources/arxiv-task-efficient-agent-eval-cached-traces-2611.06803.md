@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Title | Task-Efficient Agent Evaluation Using Cached Traces |
 | Author | Ben Johnson (Jataware), Hayden Helm (Helivan) |
 | Type | arXiv paper (cs.AI), 2611.06803 |
-| Location | `research to be indexed/ccc/arxiv-2611.06803-task-efficient-agent-evaluation-using-cached-tra.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.06803-task-efficient-agent-evaluation-using-cached-tra.pdf` |
 | Retrieved | 2026-11-10 |
 | Pages | 22 |
 | Read status | read |

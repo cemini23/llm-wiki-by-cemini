@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Author | Outlier Weekly |
 | Type | newsletter, RSS; project log |
 | URL | https://outlierweekly.substack.com/p/fifty-years-of-cards-ten-days-of |
-| Location | `research to be indexed/substack-rss-outlier-weekly-2026-11-11-fifty-years-of-cards-ten-days-of-ledger.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-outlier-weekly-2026-11-11-fifty-years-of-cards-ten-days-of-ledger.md` |
 | Retrieved | 2026-11-11 |
 | Published | 2026-11-11 |
 | Read status | read |

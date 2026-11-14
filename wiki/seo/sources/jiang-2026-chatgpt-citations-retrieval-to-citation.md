@@ -28,7 +28,7 @@ updated: 2026-10-14
 Title: Understanding ChatGPT Citations: Evidence from Production Web Search Across Model Generations
 Authors: Yunxuan Jiang, Shiqi Zhang, Anqi Xing, Xiangyu Chang, Xiaokui Xiao (XJTU, NUS, SGIT AI Lab)
 Type: arXiv preprint
-Location: `research to be indexed/seo/arxiv-2610.15382-understanding-chatgpt-citations-evidence-from-pr.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2610.15382-understanding-chatgpt-citations-evidence-from-pr.pdf`
 Retrieved: 2026-10-14
 Pages: 11
 Read status: deep-read

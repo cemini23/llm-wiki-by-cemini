@@ -28,7 +28,7 @@ updated: 2026-10-14
 Title: What Drives AI Citations? Content, Retrieval and Model Knowledge in Generative Engine Optimization (GEO)
 Authors: Mahe Chen, Nick Koudas (University of Toronto)
 Type: arXiv preprint, ACM format
-Location: `research to be indexed/seo/arxiv-2610.15033-what-drives-ai-citations-content-retrieval-and-m.pdf`
+Location: `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2610.15033-what-drives-ai-citations-content-retrieval-and-m.pdf`
 Retrieved: 2026-10-14
 Pages: 11
 Read status: deep-read

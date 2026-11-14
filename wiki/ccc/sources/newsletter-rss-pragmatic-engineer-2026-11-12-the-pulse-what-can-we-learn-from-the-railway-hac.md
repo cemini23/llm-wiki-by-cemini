@@ -14,7 +14,7 @@ updated: 2026-11-14
 | Title | The Pulse: What can we learn from the Railway hack? |
 | Author | The Pragmatic Engineer |
 | Type | Newsletter (RSS teaser; full post may be paywalled) |
-| Location | `research to be indexed/newsletter-rss-pragmatic-engineer-2026-11-12-the-pulse-what-can-we-learn-from-the-railway-hac.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-pragmatic-engineer-2026-11-12-the-pulse-what-can-we-learn-from-the-railway-hac.md` |
 | Retrieved | 2026-11-14 (published 2026-11-12) |
 | Pages | n/a |
 | Read status | read (teaser only) |

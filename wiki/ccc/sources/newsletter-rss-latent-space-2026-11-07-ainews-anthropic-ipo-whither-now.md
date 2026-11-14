@@ -14,7 +14,7 @@ updated: 2026-11-10
 | Title | [AINews] Anthropic IPO: Whither Now? |
 | Author | Latent Space (AINews roundup) |
 | Type | newsletter (RSS) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-07-ainews-anthropic-ipo-whither-now.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-07-ainews-anthropic-ipo-whither-now.md` |
 | Retrieved | 2026-11-10 |
 | Published | 2026-11-07 |
 | Read status | read |

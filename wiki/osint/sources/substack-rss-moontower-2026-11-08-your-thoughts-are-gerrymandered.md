@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | your thoughts are gerrymandered |
 | Author | Kris Abdelmessih (Party at the Moontower) |
 | Type | newsletter essay, RSS |
-| Location | `research to be indexed/substack-rss-moontower-2026-11-08-your-thoughts-are-gerrymandered.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-moontower-2026-11-08-your-thoughts-are-gerrymandered.md` |
 | Retrieved | 2026-11-08 |
 | File | substack-rss-moontower-2026-11-08-your-thoughts-are-gerrymandered.md |
 | Read status | read |

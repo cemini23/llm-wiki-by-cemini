@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Title | A Rough Instantaneous Squared VIX Model for Term Structure and Option Pricing |
 | Author | Tianfeng Yang, Wen Su, Blanka Horvath |
 | Type | arXiv preprint, q-fin.PR |
-| Location | `research to be indexed/osint/arxiv-2611.07120-a-rough-instantaneous-squared-vix-model-for-term.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.07120-a-rough-instantaneous-squared-vix-model-for-term.pdf` |
 | Retrieved | 2026-11-10 |
 | File | arxiv-2611.07120-a-rough-instantaneous-squared-vix-model-for-term.pdf (33 pages) |
 | Read status | read |

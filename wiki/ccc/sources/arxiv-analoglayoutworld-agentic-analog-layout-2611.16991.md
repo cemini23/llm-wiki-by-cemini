@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Title | AnalogLayoutWorld: An Open Benchmark for Agentic Analog Layout Design |
 | Author | Nova-Silicon Team |
 | Type | arXiv preprint, 2611.16991; preprint, 2026-11 |
-| Location | `research to be indexed/ccc/arxiv-2611.16991-analoglayoutworld-an-open-benchmark-for-agentic.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.16991-analoglayoutworld-an-open-benchmark-for-agentic.pdf` |
 | Retrieved | 2026-11-14 |
 | Pages | 19 |
 | Read status | read |

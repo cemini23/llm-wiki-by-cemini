@@ -14,7 +14,7 @@ updated: 2026-10-23
 Title: A certified execution harness for agentic AI
 Authors: Chao Gu, Quanyan Zhu
 Type: arXiv preprint (2610.31376)
-Inbox file: `research to be indexed/osint/arxiv-2610.31376-certified-execution-harness-for-agentic-ai-safe.pdf`
+Inbox file: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.31376-certified-execution-harness-for-agentic-ai-safe.pdf`
 Location: `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2610.31376-certified-execution-harness-for-agentic-ai-safe.pdf`
 Retrieved: 2026-10-23
 Read status: skimmed (abstract)

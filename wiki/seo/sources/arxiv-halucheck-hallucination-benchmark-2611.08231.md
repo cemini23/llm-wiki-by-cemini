@@ -21,7 +21,7 @@ updated: 2026-11-10
 | Author | Hanyu Qiu, Ze Liu, Zhe Zhao, Kuang Xiong, Blaze Chen, Zhenxiang Yan, Renfen Hu (Beijing Normal University; Tencent AI Lab) |
 | Type | arXiv preprint (cs.CL), benchmark |
 | arXiv | 2611.08231v1, 5 Nov 2026 |
-| Location | `research to be indexed/seo/arxiv-2611.08231-from-twisted-facts-to-rogue-agents-can-llms-reli.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.08231-from-twisted-facts-to-rogue-agents-can-llms-reli.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.08231-from-twisted-facts-to-rogue-agents-can-llms-reli.pdf` |
 | Pages | 22 |

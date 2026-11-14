@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Title | ReA-Bench: Benchmarking Responsible Agent Auditing |
 | Author | Zipeng Ye, Shenyu Dai, Yong Xie, Kun Wang, Jiyang Guan, Zhikai Chen, Jiaqi Weng, Jialing Tao, Hui Xue (Alibaba AAIG) |
 | Type | arXiv preprint (cs.AI), 2611.16493; dated 2026-11-06 |
-| Location | `research to be indexed/ccc/arxiv-2611.16493-rea-bench-benchmarking-responsible-agent-auditin.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.16493-rea-bench-benchmarking-responsible-agent-auditin.pdf` |
 | Retrieved | 2026-11-14 |
 | Pages | 50 |
 | Read status | read |

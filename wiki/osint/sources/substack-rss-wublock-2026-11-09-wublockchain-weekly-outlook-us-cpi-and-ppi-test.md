@@ -15,7 +15,7 @@ updated: 2026-11-10
 | Title | WuBlockchain Weekly Outlook \| U.S. CPI and PPI Test Rate Expectations as CoreWeave and AI Infrastructure Firms Report |
 | Author | Wu Blockchain |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-09-wublockchain-weekly-outlook-us-cpi-and-ppi-test.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-09-wublockchain-weekly-outlook-us-cpi-and-ppi-test.md` |
 | Retrieved | 2026-11-09 |
 | File | substack-rss-wublock-2026-11-09-wublockchain-weekly-outlook-us-cpi-and-ppi-test.md |
 | Read status | read |

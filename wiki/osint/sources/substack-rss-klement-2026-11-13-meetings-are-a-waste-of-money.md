@@ -15,7 +15,7 @@ updated: 2026-11-14
 | Author | Joachim Klement |
 | Type | newsletter, RSS |
 | URL | https://klementoninvesting.substack.com/p/meetings-are-a-waste-of-money |
-| Location | `research to be indexed/substack-rss-klement-2026-11-13-meetings-are-a-waste-of-money.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-13-meetings-are-a-waste-of-money.md` |
 | Retrieved | 2026-11-13 |
 | Published | 2026-11-13 |
 | Read status | read |

@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Title | 3D Printed Monolithic Optomechanical Chassis for an Unbalanced Field-Widened Interferometer |
 | Author | Ramy Tannous, Dogan Sinar, Sagar Patel, Tabitha D. Arulpragasam, Issa Rishmawi, Mark Kirby, Vlad Paserin, Mihaela Vlasea, Thomas Jennewein (University of Waterloo, Institute for Quantum Computing) |
 | Type | arXiv preprint (physics.optics) |
-| Location | `research to be indexed/3d-printing/arxiv-2611.06898-3d-printed-monolithic-optomechanical-chassis-for.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.06898-3d-printed-monolithic-optomechanical-chassis-for.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.06898-3d-printed-monolithic-optomechanical-chassis-for.pdf` |
 | Read status | read |

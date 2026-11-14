@@ -16,7 +16,7 @@ updated: 2026-11-14
 | Title | Parsed, Plausible, Wrong: Output Format Controls Silent Errors in Small-Model Semantic Parsing |
 | Author | Umar Ahmed; Maxim Dunaev; Mohammad Nour Al Awad; Sergey Ivanov; Ivan Khodnenko (ITMO University) |
 | Type | arXiv preprint (cs.CL), 2611.17169v1 |
-| Location | `research to be indexed/cybersec/arxiv-2611.17169-parsed-plausible-wrong-output-format-controls-si.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.17169-parsed-plausible-wrong-output-format-controls-si.pdf` |
 | URL | https://arxiv.org/abs/2611.17169 |
 | Retrieved | 2026-11-13 |
 | Pages | 10 |

@@ -18,7 +18,7 @@ updated: 2026-11-14
 | Authors | Minhae Oh, Jeonghye Kim, Jinwoo Koo, Yeongoon Kim, Jimin Seo, Minsik Seol, Jungwoo Lee (Seoul National University, KAIST) |
 | Type | arXiv preprint, cs.CL |
 | arXiv | 2611.17320v1, 12 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.17320-learning-when-diffusion-language-models-should-r.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.17320-learning-when-diffusion-language-models-should-r.pdf` |
 | URL | https://arxiv.org/abs/2611.17320 |
 | Code | https://github.com/minhaeoh/DiVR |
 | Retrieved | 2026-11-14 |

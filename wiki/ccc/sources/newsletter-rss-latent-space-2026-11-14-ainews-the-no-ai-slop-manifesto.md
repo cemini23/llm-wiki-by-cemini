@@ -18,7 +18,7 @@ updated: 2026-11-14
 | Title | [AINews] The No AI Slop Manifesto |
 | Author | Latent Space (AINews desk) |
 | Type | Newsletter (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md` |
 | Retrieved | 2026-11-14 (published 2026-11-14) |
 | Pages | n/a |
 | Read status | read |

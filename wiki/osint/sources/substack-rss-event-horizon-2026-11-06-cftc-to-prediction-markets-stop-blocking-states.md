@@ -18,7 +18,7 @@ updated: 2026-11-10
 | Title | CFTC To Prediction Markets: Stop Blocking States — Or Explain Why You Can't |
 | Author | Dustin Gouker (Event Horizon) |
 | Type | newsletter, RSS teaser |
-| Location | `research to be indexed/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md` |
 | Retrieved | 2026-11-06 |
 | File | substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md |
 | Read status | read |

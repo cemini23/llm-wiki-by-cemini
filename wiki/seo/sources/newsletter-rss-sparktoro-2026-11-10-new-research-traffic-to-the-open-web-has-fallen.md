@@ -21,7 +21,7 @@ updated: 2026-11-10
 | Type | newsletter (RSS blog post) |
 | URL | https://sparktoro.com/blog/new-research-traffic-to-the-open-web-has-fallen-24-in-5-years/ |
 | Feed | sparktoro (https://sparktoro.com/blog/feed) |
-| Location | `research to be indexed/newsletter-rss-sparktoro-2026-11-10-new-research-traffic-to-the-open-web-has-fallen.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/newsletter-rss-sparktoro-2026-11-10-new-research-traffic-to-the-open-web-has-fallen.md` |
 | Retrieved | 2026-11-10 |
 | File | `newsletter-rss-sparktoro-2026-11-10-new-research-traffic-to-the-open-web-has-fallen.md` |
 | Read status | read |

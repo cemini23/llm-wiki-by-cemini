@@ -21,7 +21,7 @@ updated: 2026-11-10
 | Title | Same Layout, Different Count: What Number Words Do Past Ten in Text-to-Image Models |
 | Author | Liang Yue, Eric A. Vance (University of Colorado Boulder) |
 | Type | arXiv:2611.06840 [cs.CV], 43 pages |
-| Location | `research to be indexed/image-gen/arxiv-2611.06840-same-layout-different-count-what-number-words-do.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.06840-same-layout-different-count-what-number-words-do.pdf` |
 | Retrieved | 2026-11-10 |
 | File | `arxiv-2611.06840-same-layout-different-count-what-number-words-do.pdf` |
 | Read status | read (abstract, methods, result tables) |
