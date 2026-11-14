@@ -27,6 +27,11 @@ def arxiv_id_from_url(url: str) -> str | None:
     return m.group(1) if m else None
 
 
+def doi_from_url(url: str) -> str | None:
+    m = re.search(r"(?:dx\.)?doi\.org/(10\.\d{4,9}/[^\s?#]+)", url or "", re.I)
+    return m.group(1).rstrip(".,;") if m else None
+
+
 def normalize_title(t: str) -> str:
     if not t:
         return ""
@@ -74,7 +79,7 @@ def _extract_own_metadata_section(text: str) -> str:
     parts = text.split("---", 2)
     fm = parts[1] if len(parts) >= 2 else ""
     rc = ""
-    m = re.search(r"^## Raw Concept\s*\n(.*?)(?=^##\s)", text, re.MULTILINE | re.DOTALL)
+    m = re.search(r"^## Raw Concept\s*\n(.*?)(?=^##\s|\Z)", text, re.MULTILINE | re.DOTALL)
     if m:
         rc = m.group(1)
     return fm + "\n" + rc
@@ -96,8 +101,8 @@ def _extract_arxiv_index_text(text: str, path: Path) -> str:
     return own
 
 
-def build_wiki_index(sources_dir: Path) -> dict:
-    idx = {
+def empty_index() -> dict:
+    return {
         "arxiv": defaultdict(list),
         "doi": defaultdict(list),
         "url": defaultdict(list),
@@ -105,7 +110,22 @@ def build_wiki_index(sources_dir: Path) -> dict:
         "title_norm": defaultdict(list),
         "all_titles": [],
     }
-    wiki = sources_dir.parent
+
+
+def sources_dirs(wiki_root: Path) -> list[Path]:
+    """Every sources directory that exists under the merged wiki.
+
+    Before the 2026-10-14 federation merge there was one `wiki/sources/`. Now
+    every domain keeps its own, so a single-directory lookup reads nothing and
+    every already-ingested paper looks new.
+    """
+    candidates = [wiki_root / "sources", *sorted(wiki_root.glob("*/sources"))]
+    return sorted({p for p in candidates if p.is_dir()})
+
+
+def build_wiki_index(sources_dir: Path, *, rel_root: Path | None = None) -> dict:
+    idx = empty_index()
+    wiki = rel_root or sources_dir.parent
     for md in sources_dir.rglob("*.md"):
         text = md.read_text(errors="replace")
         rel = str(md.relative_to(wiki))
@@ -131,12 +151,37 @@ def build_wiki_index(sources_dir: Path) -> dict:
     return idx
 
 
-def inbox_arxiv_ids(inbox: Path) -> set[str]:
+def build_repo_wiki_index(wiki_root: Path) -> dict:
+    """Union of every domain's source index.
+
+    The daily digest calls this before a download. Reading one directory made
+    the duplicate guard a no-op after the merge, so 24 of 64 inbox files in the
+    2026-11-14 wave were re-drops of papers that already had source pages.
+    """
+    idx = empty_index()
+    for d in sources_dirs(wiki_root):
+        part = build_wiki_index(d, rel_root=wiki_root)
+        for key in ("arxiv", "doi", "url", "location_basename", "title_norm"):
+            for k, paths in part[key].items():
+                idx[key][k].extend(paths)
+        idx["all_titles"].extend(part["all_titles"])
+    return idx
+
+
+def inbox_arxiv_ids(inbox: Path, *, recursive: bool = False) -> set[str]:
+    """arXiv IDs encoded in file names under `inbox`.
+
+    Set `recursive` for the holding area, whose files sit one level deeper at
+    `_ingested-awaiting-archive/<domain>/`.
+    """
     ids: set[str] = set()
     if not inbox.is_dir():
         return ids
-    for p in inbox.iterdir():
+    entries = inbox.rglob("*") if recursive else inbox.iterdir()
+    for p in entries:
         if not p.is_file() or p.name.startswith("."):
+            continue
+        if any(part.startswith(".") for part in p.relative_to(inbox).parts):
             continue
         for m in ARXIV_RE.finditer(p.name):
             ids.add(m.group(1))
@@ -162,6 +207,11 @@ def verdict_for_remote_hit(
         if aid in idx["arxiv"]:
             paths = sorted(set(idx["arxiv"][aid]))
             return "DUPLICATE", [f"arXiv {aid} in wiki → {', '.join(paths[:3])}"]
+
+    doi = doi_from_url(url)
+    if doi and doi in idx["doi"]:
+        paths = sorted(set(idx["doi"][doi]))
+        return "DUPLICATE", [f"DOI {doi} in wiki → {', '.join(paths[:3])}"]
 
     nu = normalize_url(url)
     if nu in idx["url"]:

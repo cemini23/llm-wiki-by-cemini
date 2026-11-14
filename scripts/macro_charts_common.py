@@ -86,16 +86,38 @@ def record_post_export(
     }
 
 
+_INBOX_TEXT_CACHE: dict[Path, str] | None = None
+_NEWSLETTER_PREFIXES = ("macro-charts-", "substack-rss-", "newsletter-rss-")
+
+
+def _inbox_texts() -> dict[Path, str]:
+    """Every newsletter file under the inbox tree, read once per process.
+
+    The holding area nests its files by domain
+    (`_ingested-awaiting-archive/<domain>/`), so a flat glob saw none of the
+    posts that were ingested but not yet archived. Without this, a lost state
+    file re-exports every recent post.
+    """
+    global _INBOX_TEXT_CACHE
+    if _INBOX_TEXT_CACHE is not None:
+        return _INBOX_TEXT_CACHE
+    out: dict[Path, str] = {}
+    if INBOX.is_dir():
+        for path in INBOX.rglob("*.md"):
+            if any(part.startswith(".") for part in path.relative_to(INBOX).parts):
+                continue
+            if not path.name.startswith(_NEWSLETTER_PREFIXES):
+                continue
+            out[path] = path.read_text(encoding="utf-8", errors="replace")
+    _INBOX_TEXT_CACHE = out
+    return out
+
+
 def inbox_has_url(url: str) -> bool:
     slug = post_slug_from_url(url)
-    if not INBOX.is_dir():
-        return False
-    patterns = ("macro-charts-*.md", "substack-rss-*.md", "newsletter-rss-*.md")
-    for pattern in patterns:
-        for path in INBOX.glob(pattern):
-            text = path.read_text(encoding="utf-8", errors="replace")
-            if url in text or slug in path.name:
-                return True
+    for path, text in _inbox_texts().items():
+        if url in text or slug in path.name:
+            return True
     return False
 
 

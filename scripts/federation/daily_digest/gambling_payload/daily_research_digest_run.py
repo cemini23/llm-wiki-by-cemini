@@ -31,7 +31,7 @@ from agent_reach_daily_social import run_agent_reach_social_pass  # noqa: E402
 from arxiv_api_search import arxiv_search  # noqa: E402
 from daily_research_fetch import FetchOutcome, fetch_papers  # noqa: E402
 from rss_digest import render_rss_section, run_rss_feeds, write_inbox_stubs  # noqa: E402
-from wiki_source_index import build_wiki_index  # noqa: E402
+from wiki_source_index import build_repo_wiki_index  # noqa: E402
 
 
 def load_exa_key() -> str:
@@ -495,7 +495,7 @@ def main() -> int:
     rss_inbox_written: list[Path] = []
     rss_write_inbox = bool(rss_cfg.get("write_inbox", False))
     if rss_enabled:
-        wiki_idx = build_wiki_index(repo / "wiki" / "sources")
+        wiki_idx = build_repo_wiki_index(repo / "wiki")
         rss_cutoff = datetime.now(timezone.utc) - timedelta(days=rss_window)
         rss_outcomes = run_rss_feeds(
             cfg,

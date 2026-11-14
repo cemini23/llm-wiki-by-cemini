@@ -3,12 +3,14 @@
 
 from __future__ import annotations
 
+import json
 import os
 import re
 import sys
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 
 _SCRIPTS = Path(__file__).resolve().parent
@@ -17,10 +19,12 @@ if str(_SCRIPTS) not in sys.path:
 
 from wiki_source_index import (  # noqa: E402
     arxiv_id_from_url,
-    build_wiki_index,
+    build_repo_wiki_index,
     inbox_arxiv_ids,
     verdict_for_remote_hit,
 )
+
+SKIP_LEDGER = Path(".local") / "state" / "digest-fetch-skips.jsonl"
 
 
 @dataclass
@@ -75,14 +79,50 @@ def pending_inbox_arxiv_ids(repo: Path, inbox: Path) -> set[str]:
     federation ingests the same paper eight times. Treating a peer inbox's id as
     already pending lets the first domain to run claim the paper and the rest skip
     it.
+
+    The scan is recursive so it also reaches `_ingested-awaiting-archive/<domain>/`.
+    A flat scan saw only that folder's domain directories and no files at all, so
+    64 already-ingested papers stayed available for re-download.
     """
-    ids = inbox_arxiv_ids(inbox)
+    ids = inbox_arxiv_ids(inbox, recursive=True)
     root = repo / "research to be indexed"
     if root.is_dir():
         for d in sorted(p for p in root.iterdir() if p.is_dir()):
-            if d != inbox:
-                ids |= inbox_arxiv_ids(d)
+            if d != inbox and not d.name.startswith("."):
+                ids |= inbox_arxiv_ids(d, recursive=True)
     return ids
+
+
+def record_skips(repo: Path, outcomes: list[FetchOutcome]) -> Path | None:
+    """Append every skip to a durable ledger so a skip is auditable later.
+
+    The sweep report lists skips for the day, but the digest overwrites that
+    report each morning. The ledger keeps the full history in `.local/state/`.
+    """
+    skipped = [o for o in outcomes if o.status.startswith("skipped")]
+    if not skipped:
+        return None
+    ledger = repo / SKIP_LEDGER
+    ledger.parent.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    with ledger.open("a", encoding="utf-8") as fh:
+        for o in skipped:
+            fh.write(
+                json.dumps(
+                    {
+                        "ts": stamp,
+                        "status": o.status,
+                        "cluster": o.cluster,
+                        "arxiv_id": o.arxiv_id,
+                        "url": o.url,
+                        "title": o.title[:200],
+                        "detail": o.detail[:300],
+                    },
+                    ensure_ascii=False,
+                )
+                + "\n"
+            )
+    return ledger
 
 
 def fetch_papers(
@@ -94,8 +134,7 @@ def fetch_papers(
 ) -> list[FetchOutcome]:
     inbox = inbox_dir(repo)
     inbox.mkdir(parents=True, exist_ok=True)
-    sources = repo / "wiki" / "sources"
-    idx = build_wiki_index(sources)
+    idx = build_repo_wiki_index(repo / "wiki")
     pending_inbox = pending_inbox_arxiv_ids(repo, inbox)
 
     outcomes: list[FetchOutcome] = []
@@ -161,4 +200,5 @@ def fetch_papers(
                     FetchOutcome(cluster, title, url, aid, "failed", detail=str(e)[:200])
                 )
 
+    record_skips(repo, outcomes)
     return outcomes
