@@ -24,6 +24,9 @@ related:
   - entities/tools/openevolve.md
   - concepts/agent-token-discipline-openclaw-hermes.md
   - concepts/karpathy-token-efficiency-patterns.md
+  - sources/newsletter-rss-latent-space-2026-11-12-the-jev-revolution-what-engineers-are-already-bu.md
+  - concepts/decision-model-hybrid-agent-routing.md
+  - concepts/reasoning-effort-calibration.md
   - concepts/deepseek-coding-cost-routing.md
   - concepts/agentic-memory-cross-scenario-generality.md
   - concepts/long-thread-context-decay.md

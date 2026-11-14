@@ -35,9 +35,10 @@ related:
   - sources/2026-hong-printanything-gplan.md
   - entities/tools/printanything.md
   - sources/arxiv-geometric-texture-mesh-segmentation-2611.08897.md
+  - concepts/inverse-design-am-parts.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -47,6 +48,8 @@ updated: 2026-11-10
 - @concepts/2026-05-13_gracia-ai-volumetric-3d-export.md — volumetric-capture (Gaussian Splatting) variant of the generative-3D-to-printable-mesh pipeline
 
 ## Raw Concept
+
+**Scope note.** This page covers generative 3D tools. It does not cover inverse design, which optimizes a shape against a physics solver. That topic is on @concepts/inverse-design-am-parts.md. A query about "AI design for printing" may mean either one.
 
 The 2024-2026 wave of generative-AI 3D-modeling platforms (Meshy, RodinAI, 3DAIStudio) that compress the text-or-image → 3D-printable-asset pipeline from days-of-CAD to minutes-of-prompting. With Bambu Studio's 3MF integration, AI-generated multi-color models flow directly to AMS-mapped print jobs — collapsing the time-to-Etsy-listing for decorative items. Synthesized from the 25-repo Phase-0 audit's "Integrated Workflows" section + the VLM-in-manufacturing cluster's adjacent context.
 

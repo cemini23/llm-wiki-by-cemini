@@ -9,9 +9,10 @@ related:
   - concepts/on-page-seo-local.md
   - concepts/adaptive-rag-internal-linking-geo.md
   - sources/arxiv-webknograph-internal-linking-2606.06106-2026-06-05.md
+  - concepts/search-query-data-supply.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-07-31
+updated: 2026-11-14
 wire_status: wont_wire
 wire_target: Operator SaaS dashboard — no Cursor harness
 ---

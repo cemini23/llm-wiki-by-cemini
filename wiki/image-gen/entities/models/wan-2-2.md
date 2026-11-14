@@ -282,13 +282,18 @@ related:
   - sources/arxiv-2610-12442-lego-exo-to-ego.md
   - concepts/decoupled-gradient-flows-autoregressive-video.md
   - sources/arxiv-2610-13733-kveil-unlearnable-videos.md
+  - sources/arxiv-2611.17324-k2v-generative-keyframing.md
+  - concepts/training-free-keyframe-latent-conditioning.md
+  - sources/arxiv-2611.17336-pixvid-pixel-space-video.md
+  - concepts/framewise-pixel-space-video-generation.md
+  - concepts/vlm-guided-physical-video-generation.md
 title: Wan 2.2 (Alibaba)
 type: entity
 tags: [model, video, dit, moe, wan, alibaba, eastern-vanguard, completely-uncensored-after-lora]
 keywords: [wan2.2, wan-2-2, alibaba, mixture-of-experts, dual-expert, snr-routing, 27b, 14b, 5b, ti2v, apache-2.0, abliterated-text-encoder, mq-lab, blink, theyurilover]
 maturity: draft
 created: 2026-05-07
-updated: 2026-09-25
+updated: 2026-11-14
 ---
 ## Relations
 
@@ -325,6 +330,13 @@ Synthesized from @sources/video-generation-survey-2026.md.
 [Source: Video Generation Models Survey 2026.docx p.1, citing github.com/Wan-Video/Wan2.2 (retrieved 2026-05-06)]
 
 **2026-07-04 control watch:** QWERTY (@concepts/query-warped-video-motion-control.md) implements training-free query-warped motion control on **Wan 2.2 TI2V-5B**. No public implementation was found at ingest, but a ComfyUI/diffusers port would be high priority for persona I2V motion control.
+
+**2026-11-14 — two training-free upgrades on stock weights.**
+
+1. **Interior keyframe conditioning (K2V).** Wan2.2's first-frame channel tolerates keyframes written at latent-block ends. No training, no adapter. The behaviour survives from pre-training, which included frame interpolation as a task. This gives multi-anchor control of an unmodified checkpoint — the cheapest physics lever in the wiki. Reported effect: Physics-IQ Verified I2V rises from 32.2 to 55.0 on the 14B model, and 50.0 on the 5B model. → @concepts/training-free-keyframe-latent-conditioning.md
+2. **Pixel-space lift (PixVid).** A Wan2.1-14B checkpoint fine-tunes into a frame-wise pixel model in about 4,000 B200 GPU-hours. The paper states the recipe transfers to Wan2.2-based models with different VAEs. Gain: per-frame control alignment and 495 ms → 34 ms latency. Cost: a large compute bill, so this is a research reference, not a laptop recipe. → @concepts/framewise-pixel-space-video-generation.md
+
+**Timing note for the 14B model.** K2V needs `L_T = 4` (the Wan2.2 VAE temporal compression factor) to place keyframe slots. Any community VAE swap changes that constant.
 
 ### Licensing and commercial posture
 

@@ -18,6 +18,7 @@ related:
   - entities/tools/slot-casino-game-developer-skills.md
   - entities/tools/application-skills.md
   - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-12-the-pulse-what-can-we-learn-from-the-railway-hac.md
   - entities/tools/aarri-bench.md
   - sources/arxiv-aarri-research-intern-bench-2606-07462-2026-06-09.md
 maturity: draft

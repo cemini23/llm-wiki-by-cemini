@@ -15,7 +15,8 @@ related:
   - concepts/frontier-model-release-cadence.md
   - sources/arxiv-boxbox-recursive-harness-2611.09218.md
   - concepts/task-efficient-eval-cached-traces.md
-updated: 2026-11-10
+  - concepts/eval-integrity-minimum-standards.md
+updated: 2026-11-14
 ---
 
 ## Raw Concept

@@ -28,6 +28,8 @@ related:
   - entities/models/video-deltanet.md
   - sources/arxiv-2609-20744-video-deltanet.md
   - sweeps/2026-09-19-daily.md
+  - sources/arxiv-2611.17336-pixvid-pixel-space-video.md
+  - concepts/framewise-pixel-space-video-generation.md
 ---
 
 
@@ -42,6 +44,8 @@ Ingest 2026-06-11 from Ultra Flash (arXiv:2606.09150) — cascaded LR AR stream 
 ## Narrative
 
 **Problem:** 2026 AR streaming video (Self Forcing, CausVid, StreamForce) hits real-time at **480P** only. Direct HR AR diffusion is quadratic-attention bound.
+
+**Alternative route (2026-11-14).** PixVid raises resolution without a second model. Double the pixel patch and add one detailer up-block, so the token grid is unchanged. 960×1664 then costs nearly the same as 480×832: 32,760 vs 37,440 tokens and 192 s vs 176 s per 21-frame clip. The cascade above buys resolution with compute; PixVid buys it with patch size. See @concepts/framewise-pixel-space-video-generation.md. Trade-off: PixVid's per-frame tokens cost more per second of video at low resolution.
 
 **Ultra Flash pattern:** decouple semantics/motion (LR AR generator) from detail (causal latent SR + HR decoder):
 

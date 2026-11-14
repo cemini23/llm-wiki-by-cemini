@@ -25,9 +25,11 @@ related:
   - sources/arxiv-2610-06847-s2pd.md
   - concepts/serial-to-parallel-diffusion-schedule.md
   - sources/arxiv-2610-08791-world-models-physics-exam.md
+  - sources/arxiv-2611.17324-k2v-generative-keyframing.md
+  - concepts/training-free-keyframe-latent-conditioning.md
 maturity: draft
 created: 2026-06-07
-updated: 2026-06-22
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -47,6 +49,8 @@ Concept from 2026-06-07 ingest — arXiv:2606.04811 Dream.exe.
 **Implication for world models:** internet-scale video generators (Wan, Hunyuan, LTX, closed APIs) may already encode **executable** physics — but **visual leadership ≠ physical leadership**. Persona/video operators should treat flashy I2V as untrusted for contact-heavy motion until executability-style probes exist for their domain.
 
 **Wiki physics cluster:** YoCausal (causal understanding), Proprio (physics scoring at inference), OrthoPhys (multi-view plausibility) — Dream.exe adds **action grounding** via robot sim.
+
+**Benchmark context (2026-11-14).** K2V reports on Physics-IQ Verified, a benchmark that scores error beyond the variance between two ground-truth videos. It reports a key finding for this page: visual quality and physical understanding are largely uncorrelated across current generators. K2V raises Wan2.2-14B from 32.2 to 55.0 on the I2V track, and states that Sora 2 scores 26.5. See @sources/arxiv-2611.17324-k2v-generative-keyframing.md.
 
 ## Snippets
 

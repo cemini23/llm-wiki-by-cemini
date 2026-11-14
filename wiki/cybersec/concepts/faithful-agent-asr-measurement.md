@@ -25,6 +25,7 @@ related:
   - concepts/deception-aware-honeypot-ai-pentesters-rouxii.md
   - concepts/cross-dimensional-agentic-ai-security-taxonomy.md
   - concepts/rrsi-regularized-harness-self-improvement.md
+  - concepts/provider-refusal-measurement-contamination.md
 
   - concepts/safety-harness-evolution.md
   - concepts/ai-for-cybersecurity.md
@@ -57,7 +58,7 @@ related:
   - sources/arxiv-2609-30266-llm-agents-trace-tampering.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-09
+updated: 2026-11-14
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-lab-redteam.mdc + cemin-cybersec-agent-audit.mdc (K271)"
 ---

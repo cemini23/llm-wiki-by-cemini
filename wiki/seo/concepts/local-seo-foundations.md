@@ -30,9 +30,10 @@ related:
   - concepts/first-90-days-playbook.md
   - sources/searchengineland-2026-google-llm-patent-entity-characterization-480625.md
   - sources/newsletter-rss-sterling-sky-2026-09-29-gbp-optimization-checklist.md
+  - concepts/search-query-data-supply.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-10-01
+updated: 2026-11-14
 ---
 
 ## Relations

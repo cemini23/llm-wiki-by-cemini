@@ -60,10 +60,12 @@ related:
   - entities/tools/bayesian-agent.md
   - sources/arxiv-claude-code-complete-user-handbook-2608.26742.md
   - entities/tools/wake5.md
+  - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
+  - sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md
 maturity: core
 hub: true
 created: 2026-05-13
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -118,6 +120,8 @@ The harness is built around **session-scoped context windows**. The model has a 
 - **Operator cheat sheet** — Shift+Tab (mode cycle), Escape×2 (rewind turn), Ctrl+S (stash prompt). Full surface map: `@concepts/claude-code-cheat-sheet-shortcuts.md` (K97 Post 2).
 
 **Fast vs Opus pricing model**: at the time of writing Cemini runs on `claude-opus-4-7[1m]` for primary sessions, with Sonnet 4.6 for cheaper subagents and Haiku 4.5 for high-throughput orchestration jobs. Models change rapidly; verify against the current `--model` flag rather than relying on this page.
+
+**Projects surface (reported 2026-11-13 to 2026-11-14):** Projects gained a more proactive coordinator plus `/btw` and `/fork` commands. Desktop custom themes now ship through mods. Anthropic also opened a private beta for **self-hosted Claude Managed Agents**, where a customer runs the harness, sandboxes, and session history in its own cloud or on-prem. [TENTATIVE — vendor announcement; no Cemini evaluation]
 
 ## Snippets
 

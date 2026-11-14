@@ -2473,3 +2473,57 @@ Routed from `@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-202
 - `sources/arxiv-2611.13960-attack-surface-to-defense-architecture-2026-11-11.md` — **new**. **A coding harness is a Living-off-the-Land platform.** Security is a structural property of the assembly, not a behavioural property of the model.
 - `sources/arxiv-2611.14171-bars-budget-aware-sampling-2026-11-11.md` — **new**. Majority vote with a **refusal** option and anytime-valid confidence.
 - `sources/arxiv-2611.13578-poem-block-sparse-attention-2026-11-11.md` — **new**. Importance measured against the full dense output is not importance measured against what remains after pruning.
+
+## [2026-11-14] ingest | Safety as a Budget: calibrating the control channel of constrained GRPO (2611.16628)
+
+- `sources/arxiv-safety-as-a-budget-2611.16628.md` — **new**. Bo Han, Lanzhou University, 12 November 2026.
+- `concepts/safety-budget-control-channel-calibration.md` — **new**. A safety target stated as a rate budget fails twice: the scorer mean bias selects the controller state, and group standardisation cancels the multiplier before it reaches the gradient.
+- **The fix.** Keep the raw score in the base reward, pass the penalty and the constraint estimate through a monotone isotonic map fitted on judge labels, and leave advantages unscaled. The multiplier then scales the gradient.
+- **The number.** Held-out harm falls from 8.9% to 4.8% with the same reward, optimizer and budget, lower in every seed. Over-refusal stays at or below 2% on 400 benign queries. The unseen HADES benchmark moves from 28.9% to 12.8%.
+- **The operator rule.** Measure the scorer mean bias before trusting a budget. A ranker can have excellent AUROC and still drive the controller into the inactive or saturated state.
+- Backlinked from `concepts/guardrail-construct-validity-agent-eval.md`, `concepts/calibrated-decision-models-pentest-harness-jev.md`, `concepts/agent-runtime-guardrails.md`, `sources/arxiv-jev-llm-safety-guardrail-2611.08845.md`, `sources/arxiv-bmms-policy-conditioned-behavioral-compliance-2611.09147.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — calibration discipline for scored controls; no distribution.
+
+## [2026-11-14] ingest | Non-functional requirements to hyperparameter translation for quantum software via LLMs (2611.16902)
+
+- `sources/arxiv-nfr-to-hyperparameter-quantum-2611.16902.md` — **new**. Bronyah and Eisty, University of Tennessee, 12 November 2026.
+- `concepts/provider-refusal-measurement-contamination.md` — **new**. A provider safety refusal produces the same blank result as a model error. Under a strict protocol it is scored as a translation failure, so the benchmark measures moderation policy.
+- **The evidence.** Thirteen failures came from five hazard-themed seed families. On that subset one model passed 0 of 13 while others passed 7 to 12. The stories were never answered.
+- **Capability result.** Every LLM beat the keyword heuristic on real-world holdout stories, 55.6–83.3% against 16.7%. No LLM-to-LLM pair survived correction, so the paper claims no model ranking.
+- **Metric design.** Score the execution consequence, not the text. A well-formed configuration can still violate the stated requirement, and schema validation cannot see it.
+- Backlinked from `concepts/guardrail-construct-validity-agent-eval.md`, `concepts/agent-safety-executable-evaluation.md`, `concepts/measurement-integrity-mcp-security-eval.md`, `concepts/faithful-agent-asr-measurement.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — evaluation hygiene for agent benchmarks; no distribution.
+
+## [2026-11-14] ingest | Parsed, Plausible, Wrong: output format controls silent errors (2611.17169)
+
+- `sources/arxiv-parsed-plausible-wrong-output-format-2611.17169.md` — **new**. ITMO University, 12 November 2026.
+- `concepts/silent-error-rate-structured-output.md` — **new**. Rank parsers on the four-way split: correct, silent, unparseable, refused. Only the silent class reaches the customer with no signal.
+- **The result.** A plain-words encoding has the highest exact match and the lowest silent rate: 4.5% against 10.3% for the native s-expression, a ratio of 2.3 on Qwen. It also emits 4.1x fewer tokens.
+- **Length is not the mechanism.** A shortened symbolic format loses 10.6 points. The matched-length pair separates surface form from length, and natural words win in every cell.
+- **Guardrail price.** Held-out negatives are refused 95.9–99.0% of the time. The cost is 2.1–10.1% of genuine orders, mostly polite phrasing the training grammar never produces.
+- Backlinked from `concepts/agent-safety-executable-evaluation.md`, `concepts/guardrail-construct-validity-agent-eval.md`, `concepts/measurement-integrity-mcp-security-eval.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — validation rule for agent tool calls; no distribution.
+
+## [2026-11-14] ingest | tl;dr sec #354 — ARTEX and agentic hacking in the wild
+
+- `sources/newsletter-rss-tldrsec-2026-11-12-tldr-sec-354---artex-agentic-hacking-in-the-wild.md` — **new**. Clint Gibler, 12 November 2026.
+- `entities/tools/artex.md` — **new**. AI-native pentest framework with a planner-worker split, a shared blackboard, and reported use against AWS with stolen long-term IAM keys. Detection signatures recorded as hypotheses.
+- `concepts/patchless-window.md` — **new**. The gap between a public open-source fix and its CVE grew from 5.1 days in January 2026 to 39.2 days in August across 18,594 CVEs. Exploits arrive in 4–16 hours at the fastest.
+- `entities/tools/mcptrace.md` — **new**. Volatility 3 plugin for MCP and JSON-RPC artefacts. Reference only; untested here.
+- `entities/tools/abliterated-out-of-the-box.md` — **new**. Inference-time refusal removal in a `llama.cpp` fork. Lab-only; untested here.
+- **Agentic frameworks in the wild.** Datadog and Mandiant report ARTEX, PentAGI and Hexstrike in real intrusions `[TENTATIVE]`. Some runs reached deep access in about 15 minutes. Five defensive layers: restrict control plane, short-lived credentials, continuous scanning, feature-abuse hardening, behavioural detection.
+- **Abliterated model trade.** 26% fewer source findings, no exploit-development gain, deeper unprompted post-exploitation, more robust proofs of concept in 4 of 5 cases. Backlinks `concepts/local-abliterated-llm-pentest-stack.md`.
+- **Backport debt.** Ubuntu 26.04 has 770 unfixed CVEs, Debian 13 has 4,562, stable kernel 5.10.y more than 2,000 `[TENTATIVE]`. An AI-assisted run landed 142 fixes for 90 CVEs.
+- Updated `concepts/agentic-offensive-security-kill-chain.md` with the in-the-wild stage progression, and `concepts/software-maintenance-institutional-insecurity.md` with the patchless window.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — detection signatures, credential hygiene, lab trade-offs; no distribution.
+
+## [2026-11-14] ingest | Packt SecPro — The Microsoft Out(r)age Bumper Issue
+
+- `sources/substack-rss-secpro-2026-11-13-the-microsoft-outrage-bumper-issue.md` — **new**. Packt SecPro, 13 November 2026, on the Microsoft 365 outage of 12–13 November.
+- `concepts/provider-outage-control-verification.md` — **new**. An outage is a control-verification event. Separate the four detection steps, verify receipt rather than send, and reconcile the backlog after recovery.
+- **Timeline.** Exchange Online impact from 16:17 Thursday, wider incident at 18:26, patch to an upstream authentication and routing component at 07:25 Friday, mail timeout extended to 48 hours `[TENTATIVE]`. `[NEEDS VERIFICATION 2026-11-14]` against the Microsoft post-incident report.
+- **Security impact.** Safe Links rewrites failed, Defender XDR pages did not load, message traces were delayed, Intune check-in and Purview searches were intermittent `[TENTATIVE]`. Microsoft reported no evidence of malicious activity.
+- **Scale discipline.** About 130,000 Downdetector reports measure submissions, not affected tenants. The useful unit is a task: could staff receive, send, schedule and trace?
+- **Abuse risk.** Opportunistic phishing and payment-change fraud, on the CrowdStrike 2024 precedent. Defence is procedural: verify through a known number and keep MFA codes private.
+- Updated `concepts/soc-operations.md`, `concepts/incident-response.md`, and `concepts/software-maintenance-institutional-insecurity.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — continuity and evidence-reconciliation procedure; no distribution.

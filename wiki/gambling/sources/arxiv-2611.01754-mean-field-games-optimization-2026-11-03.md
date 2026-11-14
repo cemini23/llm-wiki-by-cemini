@@ -2,11 +2,12 @@
 title: "Optimization frameworks and learning algorithms for discrete-time mean field games"
 type: source
 tags: [source, arxiv, mean-field-games, equilibrium, optimization, math]
-related: []
+related:
+  - sources/arxiv-monotone-meshfree-particle-method-mean-field-games-2611.15132.md
 maturity: draft
 read_status: skimmed
 created: 2026-11-03
-updated: 2026-11-03
+updated: 2026-11-14
 ---
 
 ## Raw Concept
@@ -30,6 +31,8 @@ A 125-page survey of discrete-time mean field games — the equilibrium framewor
 **Caveat.** Only the title page was read. Nothing about the specific frameworks or algorithms is established on this page.
 
 **What would make it useful later.** If a future page needs to reason about equilibrium in a crowded market — why a popular strategy decays, why an obvious trade is already priced — this is the reference for the formalism. Until then it is a shelf item.
+
+**Shelf neighbour.** A second MFG paper arrived in the same inbox on 2026-11-14 and is filed beside this one for the same reason: @sources/arxiv-monotone-meshfree-particle-method-mean-field-games-2611.15132.md. That one is a numerical solver, not a survey, and also has no market content.
 
 ## Snippets
 

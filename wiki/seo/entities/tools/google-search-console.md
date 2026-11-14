@@ -25,9 +25,10 @@ related:
   - sources/arxiv-sielinski-2026-ai-visibility-uncertainty-2603.08924-2026-06-10.md
   - sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md
   - sources/google-search-central-2026-ai-optimization-guide.md
+  - concepts/search-query-data-supply.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-10-01
+updated: 2026-11-14
 wire_status: wont_wire
 wire_target: Operator Google account — no Cursor harness
 ---

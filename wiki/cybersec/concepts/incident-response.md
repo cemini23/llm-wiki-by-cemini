@@ -46,9 +46,11 @@ related:
   - entities/tools/defengraph.md
   - sources/elearnsecurity-certified-threat-hunting-introduction-pt-1.md
   - concepts/cyber-range-autonomous-incident-response-agents.md
+  - concepts/provider-outage-control-verification.md
+  - sources/substack-rss-secpro-2026-11-13-the-microsoft-outrage-bumper-issue.md
 maturity: validated
 created: 2026-05-12
-updated: 2026-09-16
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -173,3 +175,16 @@ When signing keys, vault encryption keys, or KMS master material is exfiltrated 
 4. **Cross-store correlation** — check whether data stores AND key-management layers were hit in same campaign (P3·P4 chain in EA models).
 
 See @concepts/exceptional-access-risk-quantification.md for the structured risk framework; carrier/LI incidents (Salt Typhoon) follow the T-EA variant with LI target-list exfil as primary impact.
+
+### Provider outage as an IR event (November 2026)
+
+A SaaS outage is an availability incident and a control-verification incident at the same time. During the Microsoft 365 outage of 12–13 November 2026, security functions were degraded: Safe Links failed, Defender XDR pages did not load, message traces were delayed, and Intune and Purview functions were intermittent `[TENTATIVE]`.
+
+Playbook deltas:
+
+1. **Move incident command off the affected service.** Use a fallback bridge that does not depend on the failing provider, and confirm that responders can join without their work mailbox.
+2. **Separate the four detection steps.** Sensor generation, service ingestion, team visibility and action effect are independent. Record which one failed.
+3. **Reconcile after recovery.** Match resubmitted requests against the originals. Compare gateway records, provider traces and application logs. Classify each item as accepted, deferred, delivered or rejected.
+4. **Close on demonstration, not on provider status.** Recovery is complete when priority controls and workflows are tested and every evidence gap has an owner.
+
+See @concepts/provider-outage-control-verification.md.

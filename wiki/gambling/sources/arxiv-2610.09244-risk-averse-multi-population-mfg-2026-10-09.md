@@ -8,10 +8,11 @@ related:
   - concepts/opponent-modeling-imperfect-info.md
   - sources/arxiv-2610-fictitious-play-trio-2026-10-07.md
   - sources/daily-digest-batch-k183-2026-10-09.md
+  - sources/arxiv-fictitious-play-non-expected-utility-geometric-2611.17286.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-11-14
 location: cemini-egress-fi:/opt/cemini-bulk/research/gambling/arxiv-2610.09244-beyond-nominal-equilibria-risk-averse-multi-popu.pdf
 phase_0_verdict: REFERENCE — theory; `wont_wire`
 wire_status: wont_wire

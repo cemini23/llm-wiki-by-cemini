@@ -184,6 +184,9 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [`harness-of-harness`](entities/tools/harness-of-harness.md) | draft | Harness-of-Harness meta-wrap — MIT REFERENCE ~312MB (K335) |
 | [`safeevolve`](entities/tools/safeevolve.md) | draft | SafeEvolve safety co-evolution — MIT REFERENCE ~841KB (K340) |
 | [`wake5`](entities/tools/wake5.md) | draft | Python Solidity fuzzing + static analysis exposed over MCP — REFERENCE (2611.09307) |
+| [`harbor`](entities/tools/harbor.md) | draft | Task format + rollout runner for coding-agent benchmarks |
+| [`metal-sandbox`](entities/tools/metal-sandbox.md) | draft | Per-instance isolation + command scheduling on Macs — 2611.17294 |
+| [`analoglayoutworld`](entities/tools/analoglayoutworld.md) | draft | 40-task analog layout benchmark — 2611.16991 |
 
 ## entities/models/
 
@@ -736,6 +739,13 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [`expert-data-rl-environments`](concepts/expert-data-rl-environments.md) | draft | What a training-data vendor sells: environments + grader |
 | [`baseline-and-metric-calibration`](concepts/baseline-and-metric-calibration.md) | draft | Check the trivial baseline before believing the ranking |
 | [`frontier-model-release-cadence`](concepts/frontier-model-release-cadence.md) | draft | Read cost per task, effort setting, and harness, not the launch post |
+| [`trajectory-audit-diagnostic-tiers`](concepts/trajectory-audit-diagnostic-tiers.md) | draft | Six tiers name why an auditor fails — ReA-Bench |
+| [`generation-verification-gap-agent-artifacts`](concepts/generation-verification-gap-agent-artifacts.md) | draft | A produced artifact is not an accepted artifact |
+| [`command-level-gpu-sandbox-scheduling`](concepts/command-level-gpu-sandbox-scheduling.md) | draft | Schedule commands, not sessions — Metal Sandbox |
+| [`production-state-access-bottleneck`](concepts/production-state-access-bottleneck.md) | draft | Instrumentation can bind before the model does |
+| [`decision-model-hybrid-agent-routing`](concepts/decision-model-hybrid-agent-routing.md) | draft | Small classifiers inside the harness |
+| [`reasoning-effort-calibration`](concepts/reasoning-effort-calibration.md) | draft | A higher tier beats a higher effort setting |
+| [`eval-integrity-minimum-standards`](concepts/eval-integrity-minimum-standards.md) | draft | Four checks before a benchmark score counts |
 
 ## sources/
 
@@ -1228,6 +1238,17 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [`newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant`](sources/newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant.md) | draft | Fable 5.2 launch and evals — 2026-11-10 |
 | [`newsletter-rss-pragmatic-engineer-2026-11-05-scaling-slack-and-github-with-maude-lemaire`](sources/newsletter-rss-pragmatic-engineer-2026-11-05-scaling-slack-and-github-with-maude-lemaire.md) | draft | Maude Lemaire on scaling and verifying LLM output — 2026-11-05 |
 | [`newsletter-rss-pragmatic-engineer-2026-11-06-the-pragmatic-summit-2027`](sources/newsletter-rss-pragmatic-engineer-2026-11-06-the-pragmatic-summit-2027.md) | draft | Summit 2027 teaser — no technical claim |
+| [`arxiv-rea-bench-responsible-agent-auditing-2611.16493`](sources/arxiv-rea-bench-responsible-agent-auditing-2611.16493.md) | draft | Six audit tiers, hard benign cases — 2611.16493 |
+| [`arxiv-controlharbor-control-design-coding-agents-2611.16867`](sources/arxiv-controlharbor-control-design-coding-agents-2611.16867.md) | draft | Single-file controllers, parity in a minority of sessions — 2611.16867 |
+| [`arxiv-analoglayoutworld-agentic-analog-layout-2611.16991`](sources/arxiv-analoglayoutworld-agentic-analog-layout-2611.16991.md) | draft | 91.1% GDS, 21.3% accepted — 2611.16991 |
+| [`arxiv-metal-sandbox-gpu-coding-agents-apple-silicon-2611.17294`](sources/arxiv-metal-sandbox-gpu-coding-agents-apple-silicon-2611.17294.md) | draft | Command scheduling across Macs — 2611.17294 |
+| [`arxiv-where-llm-agents-get-stuck-debugging-databases-2611.17304`](sources/arxiv-where-llm-agents-get-stuck-debugging-databases-2611.17304.md) | draft | Access gap in 5/5 concurrency incidents — 2611.17304 |
+| [`newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day`](sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md) | draft | Gemini Decision 1 + hybrid routing — 2026-11-12 |
+| [`newsletter-rss-latent-space-2026-11-12-the-jev-revolution-what-engineers-are-already-bu`](sources/newsletter-rss-latent-space-2026-11-12-the-jev-revolution-what-engineers-are-already-bu.md) | draft | System one models inside app code — 2026-11-12 |
+| [`newsletter-rss-latent-space-2026-11-13-ai-ambition-artcraft-cloned-photoshop-and-now-wa`](sources/newsletter-rss-latent-space-2026-11-13-ai-ambition-artcraft-cloned-photoshop-and-now-wa.md) | draft | Agent-built apps + authorship boundary — 2026-11-13 |
+| [`newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi`](sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md) | draft | Self-hosted managed agents + TRUST gating — 2026-11-13 |
+| [`newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto`](sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md) | draft | Coding-agent index, effort economics, eval integrity — 2026-11-14 |
+| [`newsletter-rss-pragmatic-engineer-2026-11-12-the-pulse-what-can-we-learn-from-the-railway-hac`](sources/newsletter-rss-pragmatic-engineer-2026-11-12-the-pulse-what-can-we-learn-from-the-railway-hac.md) | draft | Railway hack teaser, abliterated models — 2026-11-12 |
 
 ## meta/
 

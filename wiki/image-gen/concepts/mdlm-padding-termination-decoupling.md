@@ -6,9 +6,11 @@ keywords: [VoidPadding, VOID token, EOS overflow, MDLM instruction tuning, Dream
 related:
   - sources/arxiv-2606-17999-voidpadding-mdlm-padding.md
   - concepts/multinomial-diffusion-bimodal-conditioning.md
+  - sources/arxiv-2611.17320-divr-diffusion-verifier-regeneration.md
+  - concepts/outcome-supervised-block-regeneration.md
 maturity: draft
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -30,6 +32,8 @@ Ingest 2026-06-21 from VoidPadding (arXiv:2606.17999) — separate padding from 
 ### Workspace relevance
 
 Operator note for **Dream / LLaDA** MDLM backends in caption or chat pipelines — not image diffusion proper.
+
+**Decoding sibling (2026-11-14).** DiVR adds revision to the same Dream / LLaDA family. It does not change padding or termination. It decides when to re-sample a whole block, using a verifier trained on final-answer correctness. See @concepts/outcome-supervised-block-regeneration.md.
 
 ## Snippets
 

@@ -46,9 +46,10 @@ related:
   - concepts/atobench-verification-chain-deception.md
   - concepts/agent-execution-trace-tampering-audit.md
   - sources/arxiv-2609-30266-llm-agents-trace-tampering.md
+  - entities/tools/mcptrace.md
 maturity: draft
 created: 2026-06-07
-updated: 2026-10-09
+updated: 2026-11-14
 ---
 
 ## Relations

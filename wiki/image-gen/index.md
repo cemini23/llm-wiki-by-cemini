@@ -1264,3 +1264,17 @@ Concepts:
 - [malora-margin-lora](sources/arxiv-2611.14397-malora-margin-lora-2026-11-11.md) — A margin explanation for LoRA's forgetting resistance and why adapter merging works. — `paper, lora, theory, ingest-2026-11-11`
 - [b3-overlapping-block-diffusion](sources/arxiv-2611.14387-b3-overlapping-block-diffusion-2026-11-11.md) — Two blocks refined in one forward pass, with a self-calibrating open condition. Training-free. — `paper, diffusion, latency, ingest-2026-11-11`
 - [energy-based-model-tutorial](sources/arxiv-2611.14383-energy-based-model-tutorial-2026-11-11.md) — 78-page EBM tutorial used as one lens over all of ML: energy, inference, learning. — `paper, tutorial, foundations, ingest-2026-11-11`
+
+## Ingest 2026-11-14 — three arXiv papers (physics, pixel space, MDLM decoding)
+
+Sources:
+
+- [K2V generative keyframing](sources/arxiv-2611.17324-k2v-generative-keyframing.md) — A VLM plans keyframes, an image model renders them, and unmodified Wan2.2 interpolates. Physics-IQ Verified I2V rises 32.2 → 55.0 on 14B and 50.0 on 5B. About $0.47–0.59 per clip. — `paper, video-generation, physics, keyframes, training-free, ingest-2026-11-14`
+- [PixVid pixel-space lift](sources/arxiv-2611.17336-pixvid-pixel-space-video.md) — Keep the DiT, drop the VAE. A causal convolutional detailer head plus x-prediction and a larger noise shift. 960×1664 at 480×832 token count; control latency 495 ms → 34 ms. — `paper, video-generation, pixel-space, high-resolution, latency, ingest-2026-11-14`
+- [DiVR diffusion verifier for regeneration](sources/arxiv-2611.17320-divr-diffusion-verifier-regeneration.md) — A verifier that shares the generator backbone decides when to re-sample a block, labelled by final-answer correctness. 35.3 → 43.4 on five benchmarks. Adjacent: MDLM text, not image. — `paper, mdlm, decoding, verifier, peripheral, ingest-2026-11-14`
+
+Concepts:
+
+- [Training-free keyframe conditioning](concepts/training-free-keyframe-latent-conditioning.md) — Write keyframes into the first-frame channel at latent-block ends. Mask, slot index, repeat-keyframe and colour-drift rules. — `concept, video-generation, keyframes, conditioning, wan`
+- [Frame-wise pixel-space video generation](concepts/framewise-pixel-space-video-generation.md) — The lift recipe: fitted pixel-to-latent init, convolutional detailer head, x-prediction, larger noise shift, Euler sampler. What per-frame tokens buy. — `concept, video-generation, pixel-space, high-resolution, latency`
+- [Outcome-supervised block regeneration](concepts/outcome-supervised-block-regeneration.md) — Regenerate a region, not an element; score the partial state by predicted outcome; spend the budget on early blocks. Mapping to image and video diffusion. — `concept, diffusion, decoding, verifier, inference-time`

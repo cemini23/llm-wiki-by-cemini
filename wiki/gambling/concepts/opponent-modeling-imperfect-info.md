@@ -80,11 +80,12 @@ related:
   - sources/arxiv-2609.33669-rsd-poker-shift-robust-2026-09-29.md
   - sources/arxiv-2610-fictitious-play-trio-2026-10-07.md
   - sources/arxiv-2610.09244-risk-averse-multi-population-mfg-2026-10-09.md
+  - sources/arxiv-fictitious-play-non-expected-utility-geometric-2611.17286.md
   - sources/brief-k130-rlcard-offline-baseline-adopt-2026-06-26.md
   - sources/research-k122-poker-paper-landscape-2026-06-19.md
 maturity: draft
 created: 2026-06-03
-updated: 2026-10-25
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -211,6 +212,12 @@ See `@sources/daily-digest-arxiv-batch-2026-06-04.md` and `@entities/bots/poker-
 @sources/arxiv-2608.09389-regret-equilibrium-learning-games-guide-2026-08-12.md: Mertikopoulos unified tour of **regularized learning** (FTRL / Hedge / EXP3 / Tsallis-INF) with Brown–Robinson FP (Thm 1), a quantitative zero-sum ergodic Gap bound (Thm 4), and the folk theorem linking NE ↔ attracting points of regularized learning (Thm 5). Literacy shelf next to K163/K157/K152 — explains *why* FP/MAFP equilibrium-seeking converges in zero-sum and where no-regret dynamics land (strict NE attract, mixed NE are avoided by EXP3-style play). **decide() NO-GO.**
 
 @sources/arxiv-2608.09256-distributed-team-orchestration-supervisor-2026-08-12.md: team-FP over a **supervisor network** with Byzantine misreporting (DTOA / BR-DTOA) — weak adjacency to MAFP; belief-estimation device, not a villain HUD. **FOSS NO-GO** (claimed repo HTTP 404). Shelf only.
+
+### Nonlinear fictitious play / NL-FP (2026-11) [REFERENCE]
+
+@sources/arxiv-fictitious-play-non-expected-utility-geometric-2611.17286.md: Liang, Mohammadi, Zhang (UMD). Each action is scored by a **nonlinear functional** of the payoff distribution — CVaR, spectral risk measures, rank-dependent utility, CPT — instead of the mean. Equilibrium becomes a **ρ-Nash** point. Results: single crossing of the advantage function preserves the classical 2×2 FP geometry; a **finite-crossing** condition extends convergence; but a 2×3 game with a CVaR row player admits a **nonconstant periodic orbit**.
+
+Shelf posture, same as K157 / K167. The object is a learning rule in an abstract 2-action matrix game. It does **not** treat staking, prices, or markets. Do not import the convergence result into `decide()` or an arena lane. The one durable point is bookkeeping: **record which objective a bot optimises**, because a risk-measure objective can reach a different equilibrium than an expected-value one.
 
 ### Self-fictitious-play MFG (K167) [REFERENCE]
 

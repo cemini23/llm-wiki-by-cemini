@@ -1457,3 +1457,29 @@ Cross-wiki stub routed from `@image-gen-wiki/sources/arxiv-2607-28520-cs-rnr-opp
 ## [2026-11-11] ingest | Event Horizon — the substance-over-form objection (1 source)
 
 - `sources/substack-rss-event-horizon-2026-11-11-unfair-surprise-2026-11-11.md` — **new**. A non-lawyer's practical objection: **"It's hard to believe Congress intended to allow sports betting in 50 states."** Concedes the legal difference from sportsbooks, then observes that the activity most users engage in is identifiable as sports betting. Pairs with the 73.9% parlay-volume figure already on file.
+
+## [2026-11-14] ingest | A Monotone Meshfree-Particle Method for Mean Field Games on Scattered Point Clouds
+
+- Source: `sources/arxiv-monotone-meshfree-particle-method-mean-field-games-2611.15132.md` — Jiongyi Wang and Linyu Peng (Keio University), arXiv:2611.15132v1 [math.NA], 11 Nov 2026. Read in full (36 pages).
+- **What it does.** Solves the backward Hamilton–Jacobi–Bellman equation on a fixed scattered collocation cloud with generalized finite differences, carries the forward Fokker–Planck density with reflected and killed particles, and couples the two by interpolation and mass-preserving kernel density estimation.
+- **What it proves.** Monotonicity imposed row by row. Each fixed-policy matrix is an M-matrix at any cell-Péclet number, so a discrete comparison principle holds on a cloud with no separation condition. On polygons, re-entrant corners included, one backward solve at a prescribed density converges to the viscosity solution away from the boundary vertices.
+- **What it costs.** At matched degrees of freedom the meshfree solve is about twice the cost of a five-point finite-difference solve, with larger L2 error and smaller L∞ error.
+- **Verdict.** No usable link to betting, DFS, or prediction markets. The domain is pedestrian evacuation with obstacles and exits. The paper arrived on the keywords "mean field games" and "fictitious play"; both words name numerical objects here, not market objects.
+- **Updated** `sources/arxiv-2611.01754-mean-field-games-optimization-2026-11-03.md` — reciprocal link and a shelf-neighbour note.
+- **Index** — new 2026-11-14 section.
+- Not archived: the raw file stays in `research to be indexed/gambling/` because the archive host is offline.
+- Routing: wiki-only; no distribution. `wont_wire` — shelf item next to the MFG survey.
+
+## [2026-11-14] ingest | Fictitious Play When Agents Are Not Expected-Utility Maximizers: A Geometric Analysis in 2-Action Games
+
+- Source: `sources/arxiv-fictitious-play-non-expected-utility-geometric-2611.17286.md` — Hao Liang, Solaleh Mohammadi, Kaiqing Zhang (University of Maryland, College Park), arXiv:2611.17286v1 [cs.GT], 12 Nov 2026. Read in full through the conclusion (79 pages).
+- **What it does.** Extends fictitious play so each action is scored by a general nonlinear functional of the payoff distribution — CVaR, spectral risk measures, rank-dependent utility, cumulative prospect theory — instead of the mean. Defines a **ρ-Nash equilibrium** for a fixed functional per player.
+- **What it proves.** In 2×2 games, single crossing of the advantage function preserves the classical FP geometry and convergence. A finite-crossing condition extends convergence to cases where single crossing fails. Beyond 2×2 the positive result is fragile: a 2×3 game with a CVaR row player and a risk-neutral column player admits a nonconstant periodic orbit in continuous time. Under finite crossing plus nondegeneracy, 2×n convergence holds when the row best response depends on a linear projection of the opponent's strategy.
+- **Where the link is.** A nonlinear evaluation functional and a staking rule are the same kind of object: each maps a payoff distribution to one number. `ρ-Nash` is the equilibrium version of "each side uses its own risk measure". This is the discrete counterpart of the risk-averse MFG page already on file.
+- **Where the link stops.** The object is a learning rule in an abstract 2-action matrix game. No prices, no stakes, no market, no empirical data. The paper does not treat staking, and the word Kelly does not appear in the parts read. The result is about convergence of the iteration, not the quality of a decision. The caution that survives is bookkeeping: record which objective a bot optimises.
+- **Updated** `concepts/opponent-modeling-imperfect-info.md` — reciprocal link and a shelf subsection; `updated` bumped.
+- **Updated** `sources/arxiv-2610.09244-risk-averse-multi-population-mfg-2026-10-09.md` — reciprocal link; `updated` bumped.
+- **Caveats.** Single source. The authors disclose that three proofs were AI-assisted; the 2×3 counterexample was not verified here. [TENTATIVE]
+- **Index** — new 2026-11-14 section.
+- Not archived: the raw file stays in `research to be indexed/gambling/` because the archive host is offline.
+- Routing: wiki-only; no distribution. `wont_wire` — FP theory shelf.

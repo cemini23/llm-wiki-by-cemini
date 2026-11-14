@@ -30,6 +30,18 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-11-14 — inbox cleared, egress restored)
+
+- **40 sources ingested, 24 re-drops removed.** ccc 11, osint 14, cybersec 5, image-gen 3, seo 3, 3d-printing 2, gambling 2. Lint clean.
+- **`cemini-egress-fi` is back.** The Hetzner suspension ended. The 146-file backlog and the 40 new sources are copying to the cold store. The single-copy exposure that built up since 5 November is closing.
+- **The digest re-fetch loop is confirmed, not suspected.** Two gambling papers were deleted in the morning and reappeared within the hour. Three waves running now. Until the digest stops re-fetching what it already filed, every future ingest pays this tax.
+- **A silent data-loss hazard was caught.** Three eval `.docx` files matched existing archive names exactly. All three were new documents, so each was renamed with its drop date before the copy. Without the hash check, two archives would have been overwritten.
+- **K2V is the one build candidate.** Training-free keyframing on stock Wan2.2 weights: Physics-IQ Verified I2V 32.2 to 55.0 (14B), and 5B with K2V beats plain 14B at a third of the parameters, at $0.47–0.59 per clip. The Wan2.2 VAE constant `L_T = 4` is load-bearing — a community VAE swap silently breaks it.
+- **`/route` lane calibration gets two inputs.** AA Coding Agent Index v2.1 dropped every configuration except GPT-6.1 Terra in Codex; Codex is cheapest at score 48+ ($1.51/task). A hybrid decision model cut six LLM calls to one and 40K tokens to 1.8K.
+- **Defensive monitoring gets a metric.** The patchless window grew from 5.1 to 39.2 days while exploits still arrive in hours. Monitor commits, not only advisory feeds.
+- **Corrections made this wave.** The DMA paper's "4.87 million" figure contradicts its Table 1 (4,871,552,575); the table was cited. CMSX-4 was wrongly called a thermoelectric material in the brief — it is a nickel-base single-crystal superalloy.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
 ## Current state (2026-11-10 — K296 full-inbox wave, 82 sources)
 
 - **The whole inbox is ingested.** 82 sources across eight domains: 59 arXiv PDFs and 28 newsletter or Substack files. 189 new wiki pages, 121 updated. The live inbox is empty; every source is queued in `_ingested-awaiting-archive/`.

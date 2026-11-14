@@ -96,9 +96,12 @@ related:
   - sources/arxiv-settlement-manipulation-pm-2606.31675-2026-07-01.md
   - sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
   - sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md
+  - sources/substack-rss-event-horizon-2026-11-12-house-subcommittee-jabs-at-prediction-markets-du.md
+  - sources/substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md
+  - sources/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -201,6 +204,22 @@ The ParlayMarket design (Ising-model AMM with shadow trades + composite-likeliho
 
 Public catalog (no auth): **88** WNBA / Women’s Pro Basketball series. Game/total/spread + half/quarter/team totals exist; **no** last-2-minute time-window contract. Live 4Q books can be too wide to fill. Strategy empirics + alert-only posture: `@gambling-wiki/entities/sports/wnba-betting.md`. OSINT stub: `@sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md`. Do **not** place prod orders from research sessions without LIVE OK.
 
+### November 2026 — valuation, volume and the self-certification probe
+
+**Valuation.** Kalshi is in talks to raise at a **$65bn** valuation, weeks after closing a round at **$40bn**. That is a 62.5% step-up in weeks. Reported by Bloomberg from unnamed sources. [TENTATIVE]
+
+**Volume.** Single-day volume was **$3.06bn** on 10 November and **$3.35bn** on 11 November. Trailing seven-day volume was **$28.2bn** and **$27.4bn**. The mix moved from **63.5%** to **65.7%** parlays, and from **16.6%** to **15.8%** sports, with crypto at **15.9%** then **14.7%**. Data from TickerTracker, a single vendor. [TENTATIVE]
+
+The parlay share is the load-bearing number for a market maker. Parlay flow is correlated across legs and longer-dated than a single-game contract, so it changes the inventory profile that any quoting engine must hedge.
+
+**Self-certification probe.** The CFTC is investigating whether Kalshi completed the required notification for dozens of proposed contracts, and has warned of possible enforcement. Kalshi says the issue is procedural and concerns a small number of contracts. The real exposure is structural: a rule that forces a 90-day review on every new listing removes the speed advantage of self-certification.
+
+**Adviser exit.** Donald Trump Jr. left his strategic-adviser role after his firm invested in a competitor. He had held a stake the FT valued at $300,000.
+
+**Novig ruling.** SDNY held that the CEA does not preempt New York gambling law for a competing DCM. The reasoning applies to the whole event-contract category, not only to Novig. See @concepts/dcm-state-preemption.md.
+
+Sources: @sources/substack-rss-event-horizon-2026-11-12-house-subcommittee-jabs-at-prediction-markets-du.md, @sources/substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md, @sources/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md.
+
 ## Snippets
 
-*(populate as source stubs are deep-read.)*
+> "Weeks after finalizing new funding at a $40 billion valuation, prediction marketplace Kalshi is in talks with investors to raise new capital at a $65 billion valuation." — Bloomberg [Source: substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md]

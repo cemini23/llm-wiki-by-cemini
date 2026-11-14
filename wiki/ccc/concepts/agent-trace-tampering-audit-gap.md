@@ -8,6 +8,10 @@ related:
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-25_ccc-k390-k394-sip-ready.md
   - entities/tools/replay-agent-recorder.md
+  - sources/arxiv-rea-bench-responsible-agent-auditing-2611.16493.md
+  - sources/arxiv-where-llm-agents-get-stuck-debugging-databases-2611.17304.md
+  - concepts/trajectory-audit-diagnostic-tiers.md
+  - concepts/eval-integrity-minimum-standards.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"

@@ -39,9 +39,12 @@ related:
   - sources/pta-metric-anchoring-ssrn-4549819.md
   - sources/mit-quant-bible.md
   - sources/arxiv-deep-hedging-delta-corrections-2605.21696.md
+  - sources/arxiv-convergence-rates-truncated-discretised-signature-expansions-2611.16087.md
+  - concepts/signature-expansion-truncation-rates.md
+  - concepts/compounding-through-risk-not-return.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-08-12
+updated: 2026-11-14
 ---
 
 ## Relations

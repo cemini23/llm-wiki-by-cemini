@@ -5,7 +5,9 @@ related:
   - concepts/external-filter-safety-utility-tradeoff.md
   - concepts/calibrated-decision-models-pentest-harness-jev.md
   - concepts/guardrail-construct-validity-agent-eval.md
-updated: 2026-11-10
+  - concepts/safety-budget-control-channel-calibration.md
+  - sources/arxiv-safety-as-a-budget-2611.16628.md
+updated: 2026-11-14
 ---
 
 ## Raw Concept

@@ -5,7 +5,8 @@ related:
   - concepts/software-maintenance-institutional-insecurity.md
   - concepts/npm-supply-chain-defense.md
   - concepts/responsible-disclosure.md
-updated: 2026-11-10
+  - concepts/patchless-window.md
+updated: 2026-11-14
 ---
 
 ## Raw Concept

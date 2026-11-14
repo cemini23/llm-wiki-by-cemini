@@ -5,7 +5,8 @@ related:
   - entities/companies/tether.md
   - sources/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md
   - concepts/crypto-custody-single-point-of-failure.md
-updated: 2026-11-10
+  - sources/substack-rss-wublock-2026-11-13-wublockchain-weekly-goldman-citi-launch-joint-us.md
+updated: 2026-11-14
 ---
 
 ## Raw Concept
@@ -44,6 +45,20 @@ Revenue grew 17% and net income grew 5%. The gap is cost growth plus the mix eff
 ### Why it matters here
 
 Circle is the cleanest listed read on stablecoin float. If a strategy depends on stablecoin supply or on short-rate carry in crypto, Circle's circulation and reserve yield are the observable inputs.
+
+### Competitive map, November 2026
+
+Two developments change the field around Circle.
+
+**Project Faro.** Twenty-one financial institutions are building a bank-run stablecoin. Goldman Sachs, Citigroup, Santander and Deutsche Bank committed about **$270m** to fund five years of operations. Wells Fargo, Fidelity, UBS and Lloyds are also participants. The plan is a US issuer and a dollar token in the first half of 2027, then other currencies. The project has no chief executive and no final name.
+
+**Coinbase trust bank charter.** Coinbase received final OCC approval for a national trust bank charter. It can expand custody and payments, and may issue its own stablecoin or administer issuance for others. Coinbase is a distribution partner. A charter turns it into a potential competitor.
+
+**Share context.** USDT and USDC together are roughly **85%** of the global stablecoin market.
+
+The competitive threat from the banks is distribution and compliance, not product. The threat from Coinbase is that it already holds both.
+
+[Source: @sources/substack-rss-wublock-2026-11-13-wublockchain-weekly-goldman-citi-launch-joint-us.md]
 
 ## Snippets
 

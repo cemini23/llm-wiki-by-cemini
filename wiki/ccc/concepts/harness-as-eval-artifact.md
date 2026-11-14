@@ -20,11 +20,17 @@ related:
   - concepts/task-efficient-eval-cached-traces.md
   - sources/arxiv-benchmarks-as-software-terminal-bench-2611.08417.md
   - concepts/recursive-harness-hot-reload.md
+  - sources/arxiv-controlharbor-control-design-coding-agents-2611.16867.md
+  - sources/arxiv-analoglayoutworld-agentic-analog-layout-2611.16991.md
+  - concepts/generation-verification-gap-agent-artifacts.md
+  - concepts/eval-integrity-minimum-standards.md
+  - entities/tools/harbor.md
+  - entities/tools/analoglayoutworld.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-09-02
-updated: 2026-11-10
+updated: 2026-11-14
 
 ---
 
@@ -59,6 +65,8 @@ The question: when agents "improve themselves," should we score task answers or 
 - **Visible feedback ≠ held-out transfer** — evolution loops show improvement on the feedback channel that does not fully survive held-out evaluation.
 - **Executor swap negates gains** — harness evolution tied to one model may not transfer when the executor changes.
 - **State defined ≠ state fired** — memory and state components appear in generated code but **never execute** at runtime; static review misses this; **integration verify required** (execution traces, required-hook coverage).
+
+**Extension (2026-11-14).** Two benchmarks grade a single artifact against an external specification, and both show a wide generation-to-verification gap. AnalogLayoutWorld produces a GDS layout in 91.1% of attempts and acceptance in 21.3%. ControlHarbor reaches the reference return on parity tasks in a minority of sessions, and controllers tuned for return fail under perturbation. The eval unit is right; the acceptance test still needs held-out seeds and a second quality axis. See `@concepts/generation-verification-gap-agent-artifacts.md`.
 
 **CCC policy lines (wire `policy_wired`):**
 

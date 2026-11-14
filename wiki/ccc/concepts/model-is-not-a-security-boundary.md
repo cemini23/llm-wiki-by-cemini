@@ -7,11 +7,12 @@ related:
   - sources/arxiv-containing-autonomous-operator-k8s-agent-security-2610.02861.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-10-05_ccc-k421-k425-sip-ready.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-12-the-pulse-what-can-we-learn-from-the-railway-hac.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-11-14
 ---
 
 ## Relations

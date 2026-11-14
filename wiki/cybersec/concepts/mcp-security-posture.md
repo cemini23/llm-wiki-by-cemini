@@ -118,9 +118,10 @@ related:
   - concepts/planner-state-integrity-embodied-agents.md
   - sources/arxiv-2608-18351-excess-authority-least-privilege.md
   - concepts/task-conditioned-excess-authority.md
+  - entities/tools/mcptrace.md
 maturity: validated
 created: 2026-06-05
-updated: 2026-10-12
+updated: 2026-11-14
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-mcp-tool-control.mdc"
 ---

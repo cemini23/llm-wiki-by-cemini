@@ -5,7 +5,11 @@ related:
   - sources/substack-rss-secpro-2026-11-06-five-issues-the-php-crisis-has-brought-into-view.md
   - concepts/npm-supply-chain-defense.md
   - concepts/responsible-disclosure.md
-updated: 2026-11-10
+  - concepts/patchless-window.md
+  - sources/newsletter-rss-tldrsec-2026-11-12-tldr-sec-354---artex-agentic-hacking-in-the-wild.md
+  - concepts/provider-outage-control-verification.md
+  - sources/substack-rss-secpro-2026-11-13-the-microsoft-outrage-bumper-issue.md
+updated: 2026-11-14
 ---
 
 ## Raw Concept
@@ -65,6 +69,16 @@ For each affected service, record the supplier, the build, the runtime owner, th
 ### Why this belongs in the wiki
 
 This is the governance layer around `@concepts/npm-supply-chain-defense.md` and `@concepts/responsible-disclosure.md`. The package-integrity page covers the artefact. This page covers the institution, the release calendar, the supplier boundary and the evidence record.
+
+### The patchless window widens the same gap
+
+The distance between an available fix and a fixed service has a second half. A public open-source fix precedes its CVE by a growing interval, reported as 5.1 days in January 2026 and 39.2 days in August 2026 `[TENTATIVE]`. During that interval the code is patchable and invisible to vulnerability management, because scanners key on the CVE identifier.
+
+This is the release-calendar problem in a different form. The institution ships the fix. The coordination process lags. The scanner waits for the last artefact. See @concepts/patchless-window.md.
+
+The backport record shows the scale of the standing debt: Ubuntu 26.04 with 770 unfixed CVEs and Debian 13 with 4,562, both with about 40% high or critical `[TENTATIVE]`.
+
+A provider outage adds a third form. When the service that hosts the control fails, the tenant cannot observe whether the control worked. See @concepts/provider-outage-control-verification.md.
 
 Confidence: the incident facts are `[TENTATIVE]` — one newsletter, citing primary advisories. The CVE numbers and affected-product details should be checked against the vendor advisories before operational use.
 

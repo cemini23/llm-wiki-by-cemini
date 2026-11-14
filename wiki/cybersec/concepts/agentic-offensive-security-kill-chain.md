@@ -23,11 +23,13 @@ related:
   - concepts/ethics-autonomous-offensive-ai-agents.md
   - concepts/agent-decoy-defense-autonomous-pentest.md
   - entities/tools/cyberstrike.md
+  - sources/newsletter-rss-tldrsec-2026-11-12-tldr-sec-354---artex-agentic-hacking-in-the-wild.md
+  - entities/tools/artex.md
 
   - sources/arxiv-ethics-autonomous-offensive-ai-2607.20255.md
 maturity: draft
 created: 2026-06-25
-updated: 2026-08-02
+updated: 2026-11-14
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-containment.mdc"
 ---
@@ -95,6 +97,18 @@ Pairs with @concepts/llm-pentest-automation.md Tier-2 scope gates — **scope �
 See `briefs/2026-06-25_agentic-red-team-secure-architecture-handoff.md` and `briefs/2026-06-25_agent-phishing-tier2-eval-checklist.md`.
 
 `[TENTATIVE]` — audit covers default configs of 12 OSS tools; hardened deployments not measured.
+
+### In the wild (November 2026)
+
+Agentic attack tooling now appears in real intrusions, not only in lab studies. Datadog observed ARTEX against AWS environments in October 2026 `[TENTATIVE]`. Google Threat Intelligence Group and Mandiant observed several actors using ARTEX, PentAGI and Hexstrike `[TENTATIVE]`. Some operations reached deep system access in about 15 minutes from initial access.
+
+The reported progression adds two stages to the framework timeline. Stage 6 is a multi-agent, low-sophistication attack with little human interaction, expected within 1–3 months. Stage 7 is a sophisticated fully autonomous attack, expected within 3–6 months `[TENTATIVE]`.
+
+Two properties change the defence. First, speed: a 15-minute intrusion removes the human review loop from containment. Second, noise: the frameworks generate many permission-denied errors and API bursts. The noise is a detection opportunity, so do not suppress it as benign scanner activity.
+
+Mandiant recommends five layers: restrict control-plane access to trusted networks, migrate to short-lived workload credentials, scan continuously, harden applications against feature abuse, and detect identity velocity and API bursts. The first two remove the entry condition, because the observed access used long-term static keys.
+
+See @entities/tools/artex.md for the detection signatures.
 
 ## Snippets
 

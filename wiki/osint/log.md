@@ -11027,3 +11027,110 @@ Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first
 - `sources/arxiv-v10-11-late-skip-no-lane-2026-11-11.md` — **new skip record**. `2611.13763`, bacterial recombination.
 - Newsletters: Klement on gold vs Treasuries as hedges; WuBlockchain on RWA distribution; Capital Flows inflation teaser.
 - Routing: no distribution.
+
+## [2026-11-14] ingest | Convergence rates for truncated and discretised signature expansions (arXiv 2611.16087)
+
+- `sources/arxiv-convergence-rates-truncated-discretised-signature-expansions-2611.16087.md` — **new**. Truncation error decays like (B^M / (M!)^ε)^a; discretisation error is N^(-a/2) strong and N^-1 weak for polynomial test functions; M and N are chosen independently.
+- The negative result is the useful part: for Stratonovich signatures the weak error does **not** improve on the strong error. Itô–Taylor intuition does not transfer.
+- `concepts/signature-expansion-truncation-rates.md` — **new**. The compute-budget page: set M from accuracy, then N of order (M!)^(2ε) B^(-2M).
+- `concepts/options-derivatives.md` — **updated**. Signature source and concept added to the corpus index.
+- Routing: wiki-only. No Cemini lane prices with signature volatility models. XSP and PM/Kalshi use implied and realised vol surfaces, not signatures.
+
+## [2026-11-14] ingest | Scale-rich network metamaterials grow by local rules (arXiv 2611.16513)
+
+- `sources/arxiv-scale-rich-network-metamaterials-local-rules-2611.16513.md` — **new**. The SR construction is Cowan's iterated cell division with area-weighted selection; the dual graph grows face-locally.
+- The identification result: length is a fitness fixed at birth, not preferential-attachment reinforcement. Both give γ=3 in 2D, so only the degree fluctuations separate them. Measured dispersion is 0.92 to 1.38, close to Poisson; the topological surrogate runs 10x to 91x above the mean.
+- **No practical Cemini project link.** Materials physics. The shared word "preferential attachment" is not a shared method. Do not wire it to any lane.
+- Routing: wiki-only. Filed as a negative-test template.
+
+## [2026-11-14] ingest | Continuum space hierarchical Cannings process II (arXiv 2611.17017)
+
+- `sources/arxiv-continuum-space-hierarchical-cannings-genealogies-2611.17017.md` — **new**. Second of three papers. Builds genealogies and an ancestral web for the continuum-space Cannings process, with a Lévy-web dual.
+- Two regimes: stochastic (single local ancestor) and deterministic (family decomposition is "dust"), separated by migration recurrence.
+- **No practical Cemini project link.** Pure probability (60K35). The word "genealogy" does not connect to the Atto genealogy product, which builds civil-record trees from Italian archives.
+- Routing: wiki-only. Filed so the next duplicate check skips it.
+
+## [2026-11-14] ingest | BALLAD: bandit-based LLM routing for heuristic discovery (arXiv 2611.17241)
+
+- `sources/arxiv-ballad-bandit-llm-routing-heuristic-discovery-2611.17241.md` — **new**. Five NP-hard problems, four models: **no consistent advantage** for larger or costlier models.
+- Three components: quantile-of-maxima arm index, DAG credit through the mutation genealogy, sliding-window normalisation. Matches or beats the best solo model on several problems, and cuts API cost by up to **65.6%**.
+- `concepts/bandit-llm-routing-heuristic-search.md` — **new**. Records the three transfer conditions; only the code-verification lane has a cheap automatic score today.
+- `concepts/llm-routing-deepseek-openrouter-failover.md`, `concepts/heuristic-portfolio-optimization-hpo.md` — **updated**.
+- Routing: wiki-only. Design reference for the fable-advisor / Grok / Codex / DeepSeek lane choice. No harness was run.
+
+## [2026-11-14] ingest | Capital Flows — inflation cycle playbook (livestream reply)
+
+- `sources/substack-rss-capital-flows-2026-11-13-inflation-cycle-playbook-livestream-reply.md` — **new**. RSS teaser only; the deck and transcript are paywalled.
+- One checkable claim: nominal demand near **6%** against a **4%** policy rate, so the real policy stance is still accommodative. The rest (inflation swaps mispricing deceleration, factor flows positioned for AI momentum, more than half of nominal return eaten by inflation) is unfalsifiable from the teaser.
+- `concepts/inflation-risk-regime-2026.md` — **updated** with the nominal-demand-minus-policy-rate spread monitor.
+- Routing: GuruWatcher. Armed-watch candidate on the spread. No distribution.
+
+## [2026-11-14] ingest | Event Horizon — House subcommittee hearing on college gambling
+
+- `sources/substack-rss-event-horizon-2026-11-12-house-subcommittee-jabs-at-prediction-markets-du.md` — **new**. Four witnesses attack prediction markets: Mortenson (not investments), Durkin (age 18 vs 21), Maynard (regulatory arbitrage), Clouner (students do not classify app bets as gambling).
+- The harder item is the **SDNY ruling**: Judge McMahon denied Novig's preliminary injunction and held that sports event contracts are sports betting. The CEA does not preempt state gambling law for a DCM.
+- Volume: Kalshi **$3.06bn** on 10 November, **63.5%** parlays, **16.6%** sports, **15.9%** crypto. Seven-day trailing **$28.2bn**.
+- `entities/platforms/kalshi.md`, `concepts/prediction-market-regulation-2026.md` — **updated**.
+- Routing: PM/Kalshi retail bot. The parlay share changes the inventory profile a quoting engine must hedge.
+
+## [2026-11-14] ingest | Event Horizon — Louisiana sues the sector, Kalshi at $65bn
+
+- `sources/substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md` — **new**. Louisiana AG Murrill sues Kalshi, Polymarket, Robinhood, Crypto.com, Underdog, Novig, ProphetX and others. Kalshi gets a TRO in the Western District of Louisiana; the order requires geofencing.
+- Kalshi is in talks to raise at **$65bn**, weeks after a **$40bn** round. Donald Trump Jr. is out as an adviser.
+- Volume: Kalshi **$3.35bn**, parlay share **65.7%**, sports **15.8%**, crypto **14.7%**. Trailing seven-day **$27.4bn**; Polymarket US **$3.70bn**.
+- `entities/platforms/kalshi.md`, `entities/platforms/polymarket.md`, `concepts/prediction-market-regulation-2026.md`, `concepts/dcm-state-preemption.md` — **updated**.
+- Routing: PM/Kalshi retail bot. Geofence coverage is now a live operational constraint.
+
+## [2026-11-14] ingest | Klement — the start-up challenge in Europe, part deux
+
+- `sources/substack-rss-klement-2026-11-12-the-start-up-challenge-in-europe-part-deux.md` — **new**. Becker, Benmelech and Monteiro (2026) give cost of capital as the answer to why megacaps are American.
+- The gap is a **size premium**, not a level difference: below-median European firms pay much more than below-median US firms, and the gap widened after 2015.
+- `concepts/european-startup-scaling-gap.md` — **updated** with the price side.
+- Routing: wiki-only. Macro context; no Cemini lane trades European small caps.
+
+## [2026-11-14] ingest | Klement — meetings are a waste of money
+
+- `sources/substack-rss-klement-2026-11-13-meetings-are-a-waste-of-money.md` — **new**. Deming et al. (2026) survey more than 9,000 US workers. Finance and IT spend about **20%** of the wage bill on meeting attendance; retail about **10%**.
+- `concepts/meeting-cost-share-of-wage-bill.md` — **new**. The loaded-wage calculation applies to recurring operator rituals such as the federation morning summary.
+- Routing: wiki-only. Management-cost reference. No distribution.
+
+## [2026-11-14] ingest | Moontower — compounding through risk, not return
+
+- `sources/substack-rss-moontower-2026-11-11-compounding-through-risk-not-return.md` — **new**. Philip and Alan Maymin on Flirting with Models S7E35, curated by Moontower.
+- Core doctrine: alpha is fickle and slow to measure; risk is estimable and improves with finer sampling. Read the option tails, discard the middle 80%, track the change in tail shape.
+- Tail correlations go to ±1; the only question is the sign. A simple regime proxy maps vol quartiles to ±1 or 0. Risk is defined as the chance of missing the client's objective, not volatility.
+- `concepts/compounding-through-risk-not-return.md` — **new**. `concepts/options-derivatives.md` — **updated**.
+- Routing: XSP killer bot. This is the doctrine behind vol-regime gates and drawdown rules.
+
+## [2026-11-14] ingest | Outlier Weekly — fifty years of cards, ten days of ledger
+
+- `sources/substack-rss-outlier-weekly-2026-11-11-fifty-years-of-cards-ten-days-of-ledger.md` — **new**. A 1,068-card collection: 387 rows have a comp, **614** are stamped NO_EVIDENCE, and cost basis is known for **zero**.
+- The worked error: the same card comped at $2.25 on the base page and $19.99 on the blue-refractor page, on the same day. A comp is a claim about a different card that shares a name.
+- Grading is an option: the fee is the premium and the grade spread is the payoff. The breakeven PSA-10 probability decides the submission.
+- `concepts/card-comps-and-grading-option-value.md` — **new**. The method maps directly onto the wiki's `[NEEDS VERIFICATION]` discipline.
+- Routing: wiki-only. The forward call is logged to 2027-05-11.
+
+## [2026-11-14] ingest | Wu Blockchain — global crypto mining news in October
+
+- `sources/substack-rss-wublock-2026-11-12-global-crypto-mining-news-in-october-binance-poo.md` — **new**. Transaction fees were **0.31%** of block rewards on 11 October, the second-lowest reading since July 2016, and below 1% for **51** consecutive days.
+- Hashprice near **$33/PH/s**: a 25 J/TH rig earns $32.68 and spends $36 on power at $0.06/kWh. Negative gross margin before hosting.
+- Two cohorts: IREN, Core Scientific, Bitfarms, TeraWulf and Cipher down about **47%** year on year; MARA, CleanSpark, Riot, HIVE and American Bitcoin up **16%**. The falling group is the group that pivoted to AI hosting.
+- Binance Pool shut down on 10 November. Zcash rose about 3,000% and two backers each target about 20% of hashrate.
+- `concepts/bitcoin-mining-economics-2026.md` — **new**.
+- Routing: wiki-only. Crypto risk-asset context for the PM/Kalshi retail bot. No distribution.
+
+## [2026-11-14] ingest | WuBlockchain Weekly — Project Faro, Coinbase charter, USDT drain
+
+- `sources/substack-rss-wublock-2026-11-13-wublockchain-weekly-goldman-citi-launch-joint-us.md` — **new**. CryptoQuant: USDT market cap fell **$6.6bn** in 60 days, more than the post-FTX redemption wave. Bitcoin apparent demand −284,000 coins in 30 days; Coinbase premium negative for 30 days.
+- Fourteen listed companies sold about **108,247 BTC** worth **$8.08bn**; MARA sold 40,581 and Riot 20,264.
+- Project Faro: 21 institutions, about **$270m** committed, dollar token in the first half of 2027. Coinbase won final OCC trust bank approval. Canada will bar federal lenders from direct stablecoin issuance from 2027.
+- `entities/companies/circle.md`, `entities/companies/tether.md`, `concepts/bitcoin-mining-economics-2026.md` — **updated**.
+- Routing: GuruWatcher. USDT supply and the Coinbase premium are alert candidates. No distribution.
+
+## [2026-11-14] ingest | Wu Blockchain — weekly project updates, CFTC weighs charges against Kalshi
+
+- `sources/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md` — **new**. The CFTC is investigating whether Kalshi completed required notification for dozens of contracts, and has warned of enforcement. The mechanism is **self-certification**: list the day after certifying, no explicit approval.
+- The real exposure is a rule, not a fine: a mandatory 90-day review window would remove the speed advantage the listing model depends on.
+- Also: the CFTC is probing whether Polymarket breached the US-access terms of its 2022 settlement. NYSE will settle tokenized stocks on Avalanche. Zcash proposed NU8 for late January 2027 at about 200 private TPS.
+- `entities/platforms/kalshi.md`, `entities/platforms/polymarket.md`, `concepts/prediction-market-regulation-2026.md` — **updated**.
+- Routing: PM/Kalshi retail bot. Self-certification is the load-bearing listing mechanism; track the rule, not the fine.

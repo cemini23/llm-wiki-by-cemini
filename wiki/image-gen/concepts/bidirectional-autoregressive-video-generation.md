@@ -12,9 +12,11 @@ related:
   - concepts/seam-stitching-strategies.md
   - entities/models/wan-2-2.md
   - sources/video-generation-survey-2026.md
+  - sources/arxiv-2611.17336-pixvid-pixel-space-video.md
+  - concepts/framewise-pixel-space-video-generation.md
 maturity: draft
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -40,6 +42,8 @@ Inference           →  KV cache + flexible past/future conditioning
 ```
 
 **Persona workflows unlocked:** Prologue before existing clip, inbetween two persona shots, loopable B-roll, storyboard keyframe → connect.
+
+**Related constraint (2026-11-14).** PixVid shows that temporal VAE compression sets a floor on interaction latency in any block-based AR model. A multi-frame latent means a control waits for the rest of its block. One-frame pixel tokens remove that wait. This does not change the backward/inbetween problem above, but it changes the block size an operator can choose. See @concepts/framewise-pixel-space-video-generation.md.
 
 ## Snippets
 

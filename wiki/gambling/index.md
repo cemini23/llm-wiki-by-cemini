@@ -560,3 +560,12 @@ Rows missing since their source pages were committed. Found by
 | [joint-distribution-box-score-gaussian-copula](sources/arxiv-joint-distribution-box-score-gaussian-copula-2611.10152.md) | draft | Watts (UVA), arXiv:2611.10152. Per-player Gaussian copula on NBA PTS/REB/AST, walk-forward, 22k player-games. Beats independence in 25 of 27 joint-threshold combos; independence under-predicts high joint exceedance. |
 
 | [event-horizon-unfair-surprise](sources/substack-rss-event-horizon-2026-11-11-unfair-surprise-2026-11-11.md) | draft | "Hard to believe Congress intended to allow sports betting in 50 states." Substance over form, from a non-lawyer who concedes the legal difference. |
+
+## Ingest 2026-11-14 — two theory shelf items (no betting fit)
+
+Both papers arrived in the gambling inbox by keyword. Neither reaches a market result. Recorded so the next reader does not re-open them.
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [monotone-meshfree-particle-method-mean-field-games](sources/arxiv-monotone-meshfree-particle-method-mean-field-games-2611.15132.md) | draft | Wang and Peng (Keio), arXiv:2611.15132. Numerical solver for mean field games on a scattered point cloud: monotone GFDM rows, M-matrix property, particle transport. Evacuation geometry only. **No gambling link.** |
+| [fictitious-play-non-expected-utility-geometric](sources/arxiv-fictitious-play-non-expected-utility-geometric-2611.17286.md) | draft | Liang, Mohammadi, Zhang (UMD), arXiv:2611.17286. Nonlinear fictitious play: actions scored by a risk measure, not the mean. Convergence under single and finite crossing in 2×2; CVaR counterexample cycles in 2×3. **Shelf only, no adopt.** |

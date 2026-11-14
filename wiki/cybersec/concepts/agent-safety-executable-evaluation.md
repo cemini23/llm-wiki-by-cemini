@@ -15,9 +15,13 @@ related:
   - concepts/guardrail-construct-validity-agent-eval.md
   - concepts/safeevolve-harness-policy-co-evolution.md
   - concepts/linguistic-illegibility-llm-security.md
+  - concepts/silent-error-rate-structured-output.md
+  - sources/arxiv-nfr-to-hyperparameter-quantum-2611.16902.md
+  - sources/arxiv-parsed-plausible-wrong-output-format-2611.17169.md
+  - concepts/provider-refusal-measurement-contamination.md
 maturity: draft
 created: 2026-08-21
-updated: 2026-09-02
+updated: 2026-11-14
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K298 executable eval)"
 ---

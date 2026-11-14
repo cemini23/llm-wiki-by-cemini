@@ -25,6 +25,8 @@ related:
   - entities/tools/retro-harness.md
   - concepts/self-harness-model-specific-improvement-loop.md
   - sources/arxiv-self-harness-improve-themselves-2606.09498.md
+  - sources/arxiv-where-llm-agents-get-stuck-debugging-databases-2611.17304.md
+  - concepts/production-state-access-bottleneck.md
   - concepts/harnessx-composable-evolution-foundry.md
   - concepts/specification-driven-scientific-workflow-management.md
   - sources/arxiv-specification-to-execution-scientific-workflow-2606.18425.md

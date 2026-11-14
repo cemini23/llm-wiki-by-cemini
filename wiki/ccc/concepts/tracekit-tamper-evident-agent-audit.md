@@ -7,11 +7,12 @@ related:
   - sources/arxiv-tracekit-tamper-evident-agent-audit-2609.35659.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-29_ccc-k401-k405-sip-ready.md
+  - concepts/trajectory-audit-diagnostic-tiers.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-11-14
 ---
 
 ## Relations

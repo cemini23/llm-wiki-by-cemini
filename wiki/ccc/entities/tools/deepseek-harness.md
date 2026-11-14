@@ -12,9 +12,10 @@ related:
   - concepts/llm-routing-deepseek-openrouter-failover.md
   - "@osint-wiki/concepts/llm-routing-deepseek-openrouter-failover.md"
   - sources/brief-k237-meta-harness-vero-misevolution-2026-08-14.md
+  - sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md
 maturity: draft
 created: 2026-08-14
-updated: 2026-09-11
+updated: 2026-11-14
 wire_status: runtime_wired
 ---
 
@@ -77,6 +78,10 @@ What prompted this page: 2026-08-14 Phase-0 audit of the **official** DeepSeek H
 7. HITL GO — **operator 2026-08-14** (this page)
 
 **Wire posture:** `wire_status: runtime_wired`. Route SKILL.md **v2.4.3**. Wire id `deepseek-flash` (V4.1 Flash). V4 Pro off rotation. OpenCode / Reasonix remain NO-GO as PATH swaps.
+
+### Leaderboard result (reported 2026-11-12)
+
+DeepSeek Harness ties for first on the Hugging Face Harness Leaderboard. It loses 1.5–1.7 points when it **kills background servers before grading**. The harness is not wrong to clean up; it is wrong to clean up before the verifier runs. Keep teardown after verification. [TENTATIVE — third-party leaderboard, single report]
 
 ## Snippets
 

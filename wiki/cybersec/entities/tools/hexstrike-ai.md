@@ -17,9 +17,11 @@ related:
   - entities/tools/cai-framework.md
   - entities/tools/pentestgpt.md
   - sources/github-cai-framework.md
+  - entities/tools/artex.md
+  - sources/newsletter-rss-tldrsec-2026-11-12-tldr-sec-354---artex-agentic-hacking-in-the-wild.md
 maturity: draft
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-11-14
 phase_0_verdict: "REFERENCE 2026-08-02 — MIT SPDX; desk Phase-0 only; no clone until operator orders; no OS sandbox (MCP host runs tools)"
 wire_status: deferred
 wire_target: "Do not install host MCP server without operator OK + lab VM"

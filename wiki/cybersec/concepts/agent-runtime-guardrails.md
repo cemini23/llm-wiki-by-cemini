@@ -190,9 +190,11 @@ related:
   - concepts/secure-ai-powered-pentest-agents.md
   - concepts/chain-of-self-questioning-selective-abstention.md
   - concepts/asleval-privacy-exposure-displacement.md
+  - concepts/safety-budget-control-channel-calibration.md
+  - sources/arxiv-safety-as-a-budget-2611.16628.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-10-12
+updated: 2026-11-14
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-mcp-tool-control.mdc"
 ---

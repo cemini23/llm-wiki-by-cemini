@@ -6,7 +6,7 @@ keywords: [world model, world simulator, interactive video generation, action-co
   - sources/arxiv-2609-31349-dymd.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-09-25
+updated: 2026-11-14
 related:
   - concepts/activation-steering-video-generation.md
   - concepts/camera-controlled-video-generation.md
@@ -30,6 +30,8 @@ related:
   - concepts/ucm-time-aware-pe-warping-world-models.md
   - concepts/video-generation-physical-executability.md
   - concepts/vlm-guided-physical-video-generation.md
+  - concepts/training-free-keyframe-latent-conditioning.md
+  - sources/arxiv-2611.17324-k2v-generative-keyframing.md
   - entities/benchmarks/camworldqa.md
   - entities/benchmarks/worldexam.md
   - entities/models/bwm.md

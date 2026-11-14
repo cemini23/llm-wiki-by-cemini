@@ -10,7 +10,7 @@ related:
   - gambling/index.md
   - game-dev/index.md
   - 3d-printing/index.md
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 # Federation wiki — catalog index
@@ -24,14 +24,14 @@ and `@<alias>/<path>` resolves to `wiki/<domain>/<path>`.
 
 | Domain | Alias | Pages | Sources | Entities | Concepts | Sweeps | Catalog |
 |---|---|---|---|---|---|---|---|
-| osint | `osint-wiki` | 4,190 | 2,103 | 1,099 | 742 | 172 | [catalog](osint/index.md) |
-| ccc | `ccc-wiki` | 1,617 | 597 | 307 | 462 | 158 | [catalog](ccc/index.md) |
-| cybersec | `cybersecurity-wiki` | 1,455 | 740 | 189 | 360 | 163 | [catalog](cybersec/index.md) |
-| image-gen | `image-gen-wiki` | 1,305 | 637 | 310 | 184 | 163 | [catalog](image-gen/index.md) |
-| gambling | `gambling-wiki` | 640 | 325 | 57 | 84 | 165 | [catalog](gambling/index.md) |
-| seo | `seo-wiki` | 556 | 234 | 68 | 89 | 162 | [catalog](seo/index.md) |
-| game-dev | `game-dev-wiki` | 468 | 216 | 37 | 58 | 152 | [catalog](game-dev/index.md) |
-| 3d-printing | `3d-printing-wiki` | 339 | 116 | 24 | 34 | 162 | [catalog](3d-printing/index.md) |
+| osint | `osint-wiki` | 4,228 | 2,126 | 1,103 | 749 | 176 | [catalog](osint/index.md) |
+| ccc | `ccc-wiki` | 1,655 | 618 | 313 | 469 | 162 | [catalog](ccc/index.md) |
+| cybersec | `cybersecurity-wiki` | 1,475 | 748 | 192 | 365 | 167 | [catalog](cybersec/index.md) |
+| image-gen | `image-gen-wiki` | 1,318 | 643 | 311 | 187 | 167 | [catalog](image-gen/index.md) |
+| gambling | `gambling-wiki` | 647 | 328 | 57 | 84 | 169 | [catalog](gambling/index.md) |
+| seo | `seo-wiki` | 567 | 239 | 68 | 91 | 166 | [catalog](seo/index.md) |
+| game-dev | `game-dev-wiki` | 472 | 216 | 37 | 58 | 156 | [catalog](game-dev/index.md) |
+| 3d-printing | `3d-printing-wiki` | 349 | 121 | 24 | 35 | 166 | [catalog](3d-printing/index.md) |
 
 ## Which domain holds what
 

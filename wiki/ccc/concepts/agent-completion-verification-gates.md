@@ -20,6 +20,9 @@ related:
   - concepts/ship-subagent-writer-reviewer-tester.md
   - concepts/agent-harness-operational-definition.md
   - concepts/progressive-autonomy-incident-resolution.md
+  - sources/arxiv-where-llm-agents-get-stuck-debugging-databases-2611.17304.md
+  - concepts/generation-verification-gap-agent-artifacts.md
+  - concepts/production-state-access-bottleneck.md
   - sources/arxiv-agent-harness-operational-definition-2606.10106.md
   - sources/arxiv-autonomous-hyperscale-incident-resolution-2606.09122.md
   - concepts/self-harness-model-specific-improvement-loop.md

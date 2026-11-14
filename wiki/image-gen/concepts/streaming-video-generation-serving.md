@@ -15,9 +15,11 @@ related:
   - sources/video-generation-survey-2026.md
   - sources/arxiv-2606-17566-aoizora-topology-aware-dit-parallel.md
   - concepts/topology-aware-dit-parallel-inference.md
+  - sources/arxiv-2611.17336-pixvid-pixel-space-video.md
+  - concepts/framewise-pixel-space-video-generation.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-23
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -48,6 +50,8 @@ Ingest 2026-06-20 from TurboServe (arXiv:2606.19271) — cluster serving for sta
 ### Workspace relevance
 
 Reference architecture for **hosted** interactive video products. Single-operator laptop ComfyUI workflows bypass this layer unless scaling a streaming Wan API.
+
+**Latency floor (2026-11-14).** PixVid shows that a serving stack cannot remove one latency source: the model's block size. A four-frame latent forces a control to wait up to three frames before generation starts. With one-frame pixel blocks, the same base model reports 495 ms → 34 ms median control-to-screen latency. Serving optimizes throughput and placement; block size is a model-side choice. See @concepts/framewise-pixel-space-video-generation.md.
 
 ## Snippets
 

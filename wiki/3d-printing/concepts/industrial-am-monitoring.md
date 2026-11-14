@@ -22,9 +22,10 @@ related:
   - sources/arxiv-track-height-control-am-2611.07704.md
   - sources/arxiv-monolithic-optomechanical-chassis-2611.06898.md
   - concepts/precision-optomechanics-am.md
+  - sources/arxiv-bulk-cmsx-4-single-crystal-lded-2611.16535.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -49,6 +50,21 @@ Bridges @concepts/print-farm-operations.md (heuristic fleet ops) with **formal**
 Pelaez et al. (arXiv 2606.10227) argues image/sequence models underperform because they ignore **cross-layer thermal history**. Their weighted k-NN graph connects fusing points in 3D; STGT's neighborhood attention peaks on the immediately preceding layer (layer offset +1), matching physical reheating intuition. Evaluated on NIST AMS 100-69 overhang benchmark (88k fusing locations, micro-XCT ground truth). [TENTATIVE] Single benchmark geometry — transfer to other parts unproven.
 
 Contrast with consumer FDM (@concepts/fault-detection.md): Bambu's stack is gross-failure classification on enclosure camera + lidar; this LPBF work targets **spatially resolved ex-situ quality regression** from melt-pool dynamics — factory QA tier, not spaghetti detection.
+
+### DED — closed loop held on a microstructure, not a geometry
+
+@sources/arxiv-bulk-cmsx-4-single-crystal-lded-2611.16535.md is the clearest case in this wiki where the control target is a material property. The team prints a single-crystal nickel superalloy (CMSX-4) rod by L-DED. An infrared camera reads the melt pool; its signal drives laser power down as the build rises. A simulation, not the camera, sizes an external cooling setup.
+
+| Loop element | What the paper uses |
+|---|---|
+| Sensor | Optris PI05M IR camera, 10 Hz, 382 × 288 pixels |
+| Actuator | Laser power, reduced from 1200 W to 1000 W over the first 15 mm |
+| Model | Process simulation of heat input against heat extraction |
+| Target | Continuous epitaxial growth, checked by EBSD |
+
+The result is single-crystal growth to nearly twice the height that power control alone reaches, and a 47% shorter solutionizing heat treatment. [TENTATIVE — one alloy, one machine, rod geometry]
+
+The counterpart paper, @sources/arxiv-track-height-control-am-2611.07704.md, controls a geometry (track height) on the same class of machine. Read the two together: same process family, two different controlled variables.
 
 ## Snippets
 

@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
 type: index
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 # Wiki Index
@@ -260,6 +260,8 @@ If you're new to this wiki:
 - [generative-engine-optimization](concepts/generative-engine-optimization.md) — GEO/AEO: getting cited in ChatGPT/Claude/Perplexity/Google AI Overviews
 - [passage-evidence-screening-geo](concepts/passage-evidence-screening-geo.md) — the cheap chunk-level gate a page must clear before a full read (CascadeFilter, 2026-11-10)
 - [ai-factual-error-types-business-facts](concepts/ai-factual-error-types-business-facts.md) — misattribution / numerical deviation / detail invention as an audit rubric for business facts (HALUCHECK, 2026-11-10)
+- [external-anchoring-generative-content-geo](concepts/external-anchoring-generative-content-geo.md) — why a self-critiquing content loop degrades, and why one stage must take its signal from outside the model (2026-11-14)
+- [search-query-data-supply](concepts/search-query-data-supply.md) — the three routes that supply keyword data, and the exclusion rule behind each number (2026-11-14)
 - [adaptive-rag-internal-linking-geo](concepts/adaptive-rag-internal-linking-geo.md) — K100: adaptive RAG routing + WebKnoGraph internal-link pre-deploy evaluation
 - [citation-verification-aeo](concepts/citation-verification-aeo.md) — claim–source verification loop; Med-V1 hallucination evidence
 - [retrieval-vs-citation-visibility-geo](concepts/retrieval-vs-citation-visibility-geo.md) — retrieval visibility vs citation visibility; why the standard GEO checklist underperforms
@@ -483,4 +485,14 @@ If you're new to this wiki:
 
 | sources/arxiv-2611.14106-proofcoder-2026-11-11.md | source | Continuous reasoning versus a harness-controlled tactic loop in proof assistants. |
 | sources/arxiv-2611.14149-search-to-decision-survey-2026-11-11.md | source | Six information-seeking capabilities — a map for five papers already filed here. |
-| sources/arxiv-2611.14382-learning-by-thinking-cognitive-map-2026-11-11.md | source | Learning by thinking, separated from learning from input. Framework only. |
+| sources/arxiv-2611.14382-learning-by-thinking-cognitive-map-2026-11-11.md | source | Deep-read 2026-11-14. Four LbT mechanisms; external anchoring is the condition for a reliable loop. |
+
+## Ingest 2026-11-14 — three arXiv sources
+
+| Page | Type | Note |
+|------|------|------|
+| sources/arxiv-2611.14382-learning-by-thinking-cognitive-map-2026-11-11.md | source | Deep-read. Four-mechanism framework; the transfer is external anchoring, not the taxonomy. |
+| concepts/external-anchoring-generative-content-geo.md | concept | Closed-loop content degrades; one stage must take its signal from outside the model. `[TENTATIVE]` |
+| sources/arxiv-2611.16524-drone-victim-search-llm-optimizer-2026-11-14.md | source | No SEO link. Drone scheduling for search and rescue; record-only. |
+| sources/arxiv-2611.17012-dma-google-search-anonymization-2026-11-14.md | source | No GEO link. EC anonymisation measures for Google Search data; 17.91% of queries stay unique. |
+| concepts/search-query-data-supply.md | concept | Three keyword-data supply routes; long tail versus anonymisation tension. `[TENTATIVE]` |

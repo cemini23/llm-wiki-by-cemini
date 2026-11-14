@@ -72,9 +72,11 @@ related:
   - concepts/autonomous-defense-agent-transferability.md
   - concepts/sentinel-rl-soc-topological-reasoning.md
   - concepts/cyber-range-autonomous-incident-response-agents.md
+  - concepts/provider-outage-control-verification.md
+  - sources/substack-rss-secpro-2026-11-13-the-microsoft-outrage-bumper-issue.md
 maturity: validated
 created: 2026-05-12
-updated: 2026-09-16
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -207,3 +209,11 @@ Treat as the default network-design assumption when modeling modern SOC scope. S
 ### Distributed / MEC-tier SOC (6G CPS — 2606.08173)
 
 Enterprise tier-1/2/3 SOC model assumes central correlation latency. **6G CPS** (URLLC slices) needs **edge sense→detect→mitigate** inside p99 tail bounds — CDR slow-path + RAN fast-path at MEC, actuation via O-RAN RIC xApps/SDN, retrain via federated learning. Complements but does not replace central SOC for enterprise IT; see @concepts/6g-cps-closed-loop-security.md. [TENTATIVE] — telco survey, not laptop SOC lab validated here.
+
+### Dependence on a SaaS provider (November 2026)
+
+A SOC frequently runs its detection and response consoles inside a SaaS platform. When that platform fails, the SOC loses visibility and may lose the ability to act. The Microsoft 365 outage of 12–13 November 2026 showed the pattern: Safe Links failed on rewritten URLs, Defender XDR pages did not load, Intune check-ins were intermittent, and Purview searches were delayed.
+
+Three rules follow. First, distinguish four steps: the sensor generates the event, the event reaches the service, the team can see it, and the response action takes effect. A blank portal proves only the third. Second, keep a second data path. A separate gateway, endpoint console or SIEM can carry the evidence. Third, verify receipt, not send. Measure event time, ingestion time and read time separately.
+
+See @concepts/provider-outage-control-verification.md for the full checklist and rehearsal plan.

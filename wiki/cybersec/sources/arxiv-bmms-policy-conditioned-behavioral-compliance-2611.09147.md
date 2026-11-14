@@ -6,7 +6,8 @@ related:
   - concepts/guardrail-construct-validity-agent-eval.md
   - concepts/measurement-integrity-mcp-security-eval.md
   - concepts/compliance-verdict-rule-invariance.md
-updated: 2026-11-10
+  - sources/arxiv-safety-as-a-budget-2611.16628.md
+updated: 2026-11-14
 ---
 
 ## Raw Concept

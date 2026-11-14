@@ -11,9 +11,10 @@ related:
   - concepts/reasoning-induced-misalignment.md
   - concepts/tripwire-safety-neuron-clamp.md
   - concepts/ai-redteam-evidential-ceiling.md
+  - entities/tools/abliterated-out-of-the-box.md
 maturity: draft
 created: 2026-08-20
-updated: 2026-10-09
+updated: 2026-11-14
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-lab-redteam.mdc (K295)"
 ---

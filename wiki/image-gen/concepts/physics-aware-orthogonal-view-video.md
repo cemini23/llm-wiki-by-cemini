@@ -10,9 +10,11 @@ related:
   - sources/arxiv-optiworld-optimal-control-video-world-2606-00499.md
   - sources/arxiv-yocausal-world-model-benchmark-2605-30346.md
   - sources/video-generation-survey-2026.md
+  - sources/arxiv-2611.17324-k2v-generative-keyframing.md
+  - concepts/training-free-keyframe-latent-conditioning.md
 maturity: draft
 created: 2026-06-06
-updated: 2026-06-06
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -39,6 +41,8 @@ Avoids full physics-engine inference loop while grounding motion in 3D-consisten
 - **YoCausal** — measure causal understanding
 
 Not persona build-track — useful for evaluating whether persona action clips violate basic physics.
+
+**Contrast (2026-11-14).** K2V reaches the same goal with no training and no multi-view intermediate. It predicts keyframes with a VLM and writes them into Wan2.2's conditioning channel. OrthoPhys needs a trained two-stage model and a synthetic dataset. See @concepts/training-free-keyframe-latent-conditioning.md for the cheaper route, and @concepts/vlm-guided-physical-video-generation.md for the comparison table.
 
 ## Snippets
 

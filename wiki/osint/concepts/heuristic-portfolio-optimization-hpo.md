@@ -9,9 +9,11 @@ related:
   - sources/toplogical-risk-parity.md
   - concepts/regime-conditioned-evaluation.md
   - concepts/regime-adaptive-continual-portfolio-learning.md
+  - sources/arxiv-ballad-bandit-llm-routing-heuristic-discovery-2611.17241.md
+  - concepts/bandit-llm-routing-heuristic-search.md
 maturity: draft
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-11-14
 ---
 
 ## Relations

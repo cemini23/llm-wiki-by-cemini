@@ -37,9 +37,11 @@ related:
   - sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md
   - concepts/k260-ccc-models-wave.md
   - sources/newsletter-rss-latent-space-2026-09-12-ainews-v41-flash-2026-09-13.md
+  - sources/arxiv-ballad-bandit-llm-routing-heuristic-discovery-2611.17241.md
+  - concepts/bandit-llm-routing-heuristic-search.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-09-13
+updated: 2026-11-14
 ---
 
 ## Relations

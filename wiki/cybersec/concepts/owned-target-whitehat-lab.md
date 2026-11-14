@@ -34,9 +34,11 @@ related:
   - concepts/commercial-spyware-stalkerware-defense.md
   - entities/tools/cyberscraper-2077.md
   - entities/tools/rustscan.md
+  - entities/tools/artex.md
+  - entities/tools/abliterated-out-of-the-box.md
 maturity: draft
 created: 2026-08-02
-updated: 2026-10-09
+updated: 2026-11-14
 ---
 
 ## Relations

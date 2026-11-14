@@ -46,9 +46,10 @@ related:
   - concepts/zero-trust-mission-critical-robotic-fleets.md
   - concepts/software-maintenance-institutional-insecurity.md
   - sources/substack-rss-secpro-2026-11-06-five-issues-the-php-crisis-has-brought-into-view.md
+  - concepts/patchless-window.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 ## Relations

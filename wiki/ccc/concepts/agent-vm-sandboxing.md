@@ -20,9 +20,13 @@ related:
   - concepts/distributed-harness-security-controls.md
   - entities/tools/shard-secure-harness-distribution.md
   - sources/arxiv-shard-harness-security-distribution-2607.25890.md
+  - sources/arxiv-metal-sandbox-gpu-coding-agents-apple-silicon-2611.17294.md
+  - concepts/command-level-gpu-sandbox-scheduling.md
+  - entities/tools/metal-sandbox.md
+  - sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md
 maturity: draft
 created: 2026-05-17
-updated: 2026-07-30
+updated: 2026-11-14
 cross-wiki-source: "@cybersecurity-wiki/concepts/agent-vm-sandboxing.md"
 ---
 

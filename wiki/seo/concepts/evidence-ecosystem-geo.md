@@ -27,9 +27,10 @@ related:
   - sources/arxiv-finder-2026-ax-is-the-new-aeo-2609.34951-2026-09-30.md
   - sources/arxiv-lee-2026-filter-bubble-generative-search-2609.38946-2026-10-01.md
   - sources/arxiv-yu-2026-conversational-capture-geo-2609.40069-2026-10-01.md
+  - concepts/external-anchoring-generative-content-geo.md
 maturity: draft
 created: 2026-07-04
-updated: 2026-10-01
+updated: 2026-11-14
 ---
 
 ## Relations

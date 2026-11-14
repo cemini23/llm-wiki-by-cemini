@@ -1174,3 +1174,21 @@ Six sources. The theme is that response-level safeguards do not protect the laye
 | [attack-surface-to-defense-architecture](sources/arxiv-2611.13960-attack-surface-to-defense-architecture-2026-11-11.md) | draft | **A coding harness is a Living-off-the-Land platform.** bash, curl, find are the payload. Security is structural, not behavioural. |
 | [bars-budget-aware-sampling](sources/arxiv-2611.14171-bars-budget-aware-sampling-2026-11-11.md) | draft | Majority vote with a **refusal** option and anytime-valid confidence. |
 | [poem-block-sparse-attention](sources/arxiv-2611.13578-poem-block-sparse-attention-2026-11-11.md) | draft | Importance against the full output is not importance against what remains. |
+
+## Ingest wave (2026-11-14) — safety budgets, parser silent errors, agentic tooling in the wild
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [safety-budget-control-channel-calibration](concepts/safety-budget-control-channel-calibration.md) | draft | **A budget reads a level, not a ranking.** Mean bias decides whether the constraint enforces, switches off or saturates; group standardisation cancels the multiplier. |
+| [silent-error-rate-structured-output](concepts/silent-error-rate-structured-output.md) | draft | Exact match hides the errors that ship. Report the four-way split and minimise the silent rate. |
+| [provider-refusal-measurement-contamination](concepts/provider-refusal-measurement-contamination.md) | draft | A provider refusal is a missing data point, not a model error. Exclude it, report the count, never compare across providers on a refused set. |
+| [patchless-window](concepts/patchless-window.md) | draft | Public fix to public CVE grew from 5.1 to 39.2 days. Exploits arrive in hours; scanners wait for the identifier. |
+| [provider-outage-control-verification](concepts/provider-outage-control-verification.md) | draft | An outage is a control-verification event. Verify receipt, not send, and record event, ingestion and read time separately. |
+| [artex](entities/tools/artex.md) | draft | AI-native pentest framework observed in real AWS intrusions. Planner-worker split, detection signatures, five defensive layers. |
+| [mcptrace](entities/tools/mcptrace.md) | draft | Volatility 3 plugin for MCP and JSON-RPC artefacts in memory. Untested here; DFIR reference. |
+| [abliterated-out-of-the-box](entities/tools/abliterated-out-of-the-box.md) | draft | `llama.cpp` fork that removes refusals at inference time. Lab-only; unverified. |
+| [safety-as-a-budget](sources/arxiv-safety-as-a-budget-2611.16628.md) | draft | Held-out harm 8.9% to 4.8% with one calibrated control channel. Two failure modes explained and tested. |
+| [nfr-to-hyperparameter-quantum](sources/arxiv-nfr-to-hyperparameter-quantum-2611.16902.md) | draft | LLM translation of requirements to Qiskit parameters. Every LLM beat the heuristic; provider refusals polluted 13 cells. |
+| [parsed-plausible-wrong](sources/arxiv-parsed-plausible-wrong-output-format-2611.17169.md) | draft | Plain-word output format cuts silent errors 2.3x. Shorter is not better; refusal costs 2.1–10.1% of real orders. |
+| [tl;dr sec #354](sources/newsletter-rss-tldrsec-2026-11-12-tldr-sec-354---artex-agentic-hacking-in-the-wild.md) | draft | ARTEX in the wild, the patchless window, backport debt, abliterated models in AppSec, AWS bucket squatting. |
+| [Packt SecPro 2026-11-13](sources/substack-rss-secpro-2026-11-13-the-microsoft-outrage-bumper-issue.md) | draft | Microsoft 365 outage timeline, security-control impact, and a continuity checklist for the SOC. |

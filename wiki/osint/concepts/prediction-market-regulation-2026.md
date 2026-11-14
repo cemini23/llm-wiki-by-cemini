@@ -41,9 +41,12 @@ related:
   - sources/k292-osint-feeds-2026-10-16.md
   - sources/substack-rss-wublock-2026-10-10-weekly-project-updates.md
   - entities/platforms/polymarket.md
+  - sources/substack-rss-event-horizon-2026-11-12-house-subcommittee-jabs-at-prediction-markets-du.md
+  - sources/substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md
+  - sources/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -103,3 +106,21 @@ Net for pm-bot ops: retail-facing incentive/marketing programs are now a regulat
 **K285 — 39 states file at SCOTUS; Michigan halts Coinbase (2026-10-08).** **39 states filed an amicus brief** backing New Jersey's SCOTUS petition to rule that federal law **does not preempt state gambling law** for sports event contracts. **The NFL also sided with New Jersey.** The states' argument: markets cannot strip states of sovereign power through **"relabeling and window-dressing"**; certiorari grounds are state sovereignty, the **major-questions doctrine**, citizen protection, and a **circuit split**. **Ten states did not join** (TX, FL largest). **IAGR/NAGRA** filed too, on **IGRA / Class III** tribal-gaming grounds. Circuit picture: the **Third Circuit** ruled for Kalshi vs New Jersey, but Kalshi **lost in the Ninth and Sixth**. Separately, **Coinbase agreed to halt sports event contracts in Michigan by 2026-10-10** (after Robinhood Derivatives and a KalshiEX injunction), and **Kalshi launched tribal prediction apps**, dividing Indian country. **Awareness only — no pm scp.** [Source: @sources/substack-rss-event-horizon-2026-10-08-39-states-scotus-brief.md]
 
 **K289 — the CFTC carves out casinos and claims event contracts (2026-10-12).** Two moves the same Friday. **(1) An Interim Final Rule** codifies that **casino-style gambling products — sportsbook wagers and casino games — are excluded from the "swap" definition.** Selig: "Casino-style gambling products are not derivatives." The purpose is to blunt the argument that if sports event contracts are swaps, ordinary sports bets are too (which would pull state sportsbooks under CFTC jurisdiction). **(2) A Notice of Proposed Rulemaking** would expressly **include event contracts — sports, politics, culture, weather — in the definition of "swap"**, and asserts the CFTC's **exclusive jurisdiction**. **Read together it is a preemption play for the courts.** **Kalshi filed for a Sixth Circuit rehearing on Oct 9, the same day**, citing the new rules. The SCOTUS briefs grew to include the **NFL, 145 tribes, 39 states, Christopher Dodd, and Gary Gensler**. Also: **Kalshi "protected" NFL player markets** (early-exit payout at the pre-kickoff fair price; Yes only, pre-game only, reduces payout), **Polymarket 50-leg parlays**, and **Verifact** — markets on **disputed facts about the past**. **Awareness only — no pm scp.** [Source: @sources/substack-rss-event-horizon-2026-10-12-ep36-verifact.md]
+
+**Nov 2026 — SDNY rejects Novig preemption; Louisiana sues the sector (2026-11-12/13).** Two events in two days.
+
+**(1) SDNY, Judge McMahon.** The court denied Novig's preliminary injunction. It refused to defer to the CFTC's position that Novig's contracts are swaps while ordinary sports bets are not. The opinion states that "Novig's sports event contracts are sports betting" and that the Kalshi order "smacks of a collusive effort between a regulator and regulatee to generate a claim for conflict preemption". The reasoning turns on the CEA swap definition: a sports outcome is a contingency, but it lacks the financial or commercial consequence a swap requires. Separately, the court held that the CFTC's own special rule bars listing event contracts that relate to gaming, so the claimed conflict between federal and state law is a "mirage".
+
+This is a district opinion and binds nothing outside its district. It gives state regulators a quotable precedent that the federal preemption claim is weaker than the CFTC asserts. See @concepts/dcm-state-preemption.md.
+
+**(2) Louisiana.** Attorney General Liz Murrill sued Kalshi, Polymarket, Robinhood, Crypto.com, Underdog, Novig, ProphetX and others in the 21st Judicial District Court. Kalshi obtained a temporary restraining order from the federal court in the Western District of Louisiana. The order restrains all named operators from offering event contracts in the state, requires geofencing, and bars any claim that the contracts are licensed in Louisiana.
+
+The Louisiana action is the first state suit that names the whole operator set at once. It converts a set of bilateral fights into a single test.
+
+**Nov 2026 — self-certification under attack (2026-11-14).** The CFTC is investigating whether Kalshi completed the required notification for dozens of proposed contracts, and has warned of enforcement action. Kalshi calls it a procedural error in a small number of contracts, many not yet launched. The mechanism under scrutiny is self-certification: an exchange may list the day after certifying compliance, with no explicit approval. The CFTC warned operators in July against overly broad certification language, and a June proposal would add a 90-day review window.
+
+In parallel, the CFTC is investigating whether Polymarket breached the US-access terms of its 2022 settlement.
+
+The fine is the smaller risk. A mandatory review window removes the speed advantage that self-certification creates, which is the operational core of the Kalshi listing model.
+
+[Sources: @sources/substack-rss-event-horizon-2026-11-12-house-subcommittee-jabs-at-prediction-markets-du.md, @sources/substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md, @sources/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md]

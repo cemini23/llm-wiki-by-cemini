@@ -6,10 +6,12 @@ keywords: [graded verifier, decomposition, sub-questions, pairwise, pointwise, d
 related:
   - sources/arxiv-omniverifier-c1-2610.22355-2026-10-16.md
   - concepts/k292-image-gen-wave.md
+  - concepts/outcome-supervised-block-regeneration.md
+  - sources/arxiv-2611.17320-divr-diffusion-verifier-regeneration.md
 maturity: draft
 read_status: read
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -61,6 +63,10 @@ The authors warn that **excessive decomposition adds redundant or unsupported su
 The pattern matches three other K292 findings without being the same thing: the VEPA evidence gate decides *when* a deterministic rule may fire; the OpenGCUA `todo` state separates *claimed* from *verified*; DistressBench scores care delivered rather than refusal. All four replace a binary with a counted, inspectable signal. That convergence is the K292 theme.
 
 **Domain caveat:** the paper's own evaluation is limited to game environments with unique ground truth. Generalisation beyond that is untested.
+
+### Sibling: a binary verifier used as a control signal
+
+DiVR (arXiv:2611.17320, 2026-11-14) keeps a binary verifier but changes its job. It does not score output quality; it decides **when to regenerate a block** during decoding. It shares the generator's backbone through a LoRA adapter and is trained on the generator's own trajectories, labelled by final-answer correctness. See @concepts/outcome-supervised-block-regeneration.md. The two designs compose: a graded verifier could serve as the outcome label for the regeneration trigger.
 
 ## Snippets
 

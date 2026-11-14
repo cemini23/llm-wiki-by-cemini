@@ -35,9 +35,11 @@ related:
   - sources/arxiv-yu-2026-conversational-capture-geo-2609.40069-2026-10-01.md
   - sources/arxiv-halucheck-hallucination-benchmark-2611.08231.md
   - concepts/ai-factual-error-types-business-facts.md
+  - sources/arxiv-2611.14382-learning-by-thinking-cognitive-map-2026-11-11.md
+  - concepts/external-anchoring-generative-content-geo.md
 maturity: draft
 created: 2026-06-06
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 ## Relations

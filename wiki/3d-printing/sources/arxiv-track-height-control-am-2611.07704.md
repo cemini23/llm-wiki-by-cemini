@@ -4,9 +4,10 @@ type: source
 related:
   - concepts/extrusion-control.md
   - concepts/industrial-am-monitoring.md
+  - sources/arxiv-bulk-cmsx-4-single-crystal-lded-2611.16535.md
 maturity: draft
 read_status: read
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 ## Raw Concept

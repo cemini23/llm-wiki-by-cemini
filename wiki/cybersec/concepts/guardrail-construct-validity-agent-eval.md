@@ -26,9 +26,15 @@ related:
   - concepts/policy-conditioned-compliance-measurement.md
   - sources/arxiv-jev-llm-safety-guardrail-2611.08845.md
   - concepts/external-filter-safety-utility-tradeoff.md
+  - sources/arxiv-safety-as-a-budget-2611.16628.md
+  - sources/arxiv-nfr-to-hyperparameter-quantum-2611.16902.md
+  - sources/arxiv-parsed-plausible-wrong-output-format-2611.17169.md
+  - concepts/provider-refusal-measurement-contamination.md
+  - concepts/safety-budget-control-channel-calibration.md
+  - concepts/silent-error-rate-structured-output.md
 maturity: draft
 created: 2026-09-02
-updated: 2026-11-10
+updated: 2026-11-14
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K321)"
 ---
@@ -64,6 +70,16 @@ Agent guardrail studies can show large welfare or safety lifts that **reverse** 
 4. **Welfare accounting** — scripted positive controls bound interpretability.
 
 Return **Invalid** or **Inconclusive** before licensing causal guardrail claims. Pairs K277 measurement integrity and K271 faithful ASR reporting.
+
+### Two more validity checks (November 2026)
+
+The three sources below add two failure modes to the contract.
+
+**1. A budget reads a level, not a ranking.** A safety target stated as a rate budget compares the scorer mean with the budget. Rank quality does not enter that comparison. A scorer can rank well and still carry a mean bias of 0.16, which drives the controller into a saturated or inactive state. Measure the mean bias on labeled responses before you report a budget result. See @concepts/safety-budget-control-channel-calibration.md.
+
+**2. Provider refusal is a missing data point.** When a provider filter blocks a test item, the benchmark records a failure that measures policy, not capability. Exclude the item, report the excluded count, and never compare providers on a set that one provider refuses. See @concepts/provider-refusal-measurement-contamination.md.
+
+**3. Exact match hides silent errors.** Rank parsers and tool calls on the four-way split, and treat the silent-error rate as the deployment objective. See @concepts/silent-error-rate-structured-output.md.
 
 ## Snippets
 

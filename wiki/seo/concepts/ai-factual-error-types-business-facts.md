@@ -9,9 +9,11 @@ related:
   - concepts/citation-verification-aeo.md
   - concepts/llm-reputation-signals-geo.md
   - concepts/generative-engine-optimization.md
+  - sources/arxiv-2611.14382-learning-by-thinking-cognitive-map-2026-11-11.md
+  - concepts/external-anchoring-generative-content-geo.md
 maturity: draft
 created: 2026-11-10
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 ## Raw Concept

@@ -2967,3 +2967,85 @@ Routing note: the PDFs sat in `research to be indexed/game-dev/` but were filed 
 - `sources/arxiv-2611.14211-verifiable-agentic-traffic-class-2026-11-11.md` — **new**.
 - Newsletters: AEO measured (Resend picked first 64/102), AI Engineer Code Summit, Naive-N0.5-Flash, Mercor 3:1 inference-to-salary, Pragmatic Engineer teaser.
 - Routing: no distribution.
+
+## [2026-11-14] ingest | ReA-Bench — Benchmarking Responsible Agent Auditing
+
+- `sources/arxiv-rea-bench-responsible-agent-auditing-2611.16493.md` — **new**. Six audit tiers: knowledge, contradictions, evidence dilution, provenance, indirect steering, missing information. 587 trajectories, with hard benign cases and shortened/supplied controls.
+- `concepts/trajectory-audit-diagnostic-tiers.md` — **new**. Report by tier, not risk type; separate recall from false positives; shortening fixes few errors.
+- `concepts/agent-trace-tampering-audit-gap.md`, `concepts/trajectory-driven-safety-harness-evolution.md`, `concepts/tracekit-tamper-evident-agent-audit.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-14] ingest | ControlHarbor — control design by coding agents
+
+- `sources/arxiv-controlharbor-control-design-coding-agents-2611.16867.md` — **new**. 44 tasks, 13 plants, one Python controller file, Harbor format, 330 sessions. Parity reached in a minority of sessions. Five visible seeds give a 0.45 failure bound against 0.072 at 40 held-out seeds.
+- `entities/tools/harbor.md` — **new**. Task container + rollout runner used by ControlHarbor, Metal Sandbox, and CS329Z.
+- `concepts/generation-verification-gap-agent-artifacts.md` — **new**. Produced is not accepted.
+- `concepts/harness-as-eval-artifact.md` — **updated** with the 2026-11 extension and backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-14] ingest | AnalogLayoutWorld — agentic analog layout
+
+- `sources/arxiv-analoglayoutworld-agentic-analog-layout-2611.16991.md` — **new**. 40 expert-reviewed tasks. 91.1% produce GDS, 21.3% pass acceptance. Device count correlates with difficulty (rho = −0.73).
+- `entities/tools/analoglayoutworld.md` — **new**. Five-part scoring model; internal Novara system at 0.8154.
+- `concepts/generation-verification-gap-agent-artifacts.md` — **new**, now covers both benchmark papers and the ArtCraft parity claim.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-14] ingest | Metal Sandbox — isolated execution and command scheduling on Apple Silicon
+
+- `sources/arxiv-metal-sandbox-gpu-coding-agents-apple-silicon-2611.17294.md` — **new**. GPU active for 2.32% of one session. Command-level scheduling: 1.68×–2.05× throughput, 18.8% less tool waiting in replay.
+- `entities/tools/metal-sandbox.md` — **new**. Per-instance file isolation, serial queue per node, reserve/claim/commit migration. License unknown.
+- `concepts/command-level-gpu-sandbox-scheduling.md` — **new**. Schedule commands, not sessions.
+- `concepts/agent-vm-sandboxing.md` — **updated**. Metal Sandbox is process-level isolation, not a Tier-2 boundary.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-14] ingest | Where LLM agents get stuck debugging databases
+
+- `sources/arxiv-where-llm-agents-get-stuck-debugging-databases-2611.17304.md` — **new**. Eight incidents, 22 fix commits. Access gap in 5/5 concurrency incidents; no incident limited by reasoning alone.
+- `concepts/production-state-access-bottleneck.md` — **new**. Proposes a safe interrogation API, a lock flight recorder, and a replay harness.
+- `concepts/failed-trajectory-harness-repair.md`, `concepts/trajectory-error-lifecycle-attribution.md`, `concepts/agent-completion-verification-gates.md`, `concepts/agent-trace-tampering-audit-gap.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-14] ingest | AINews D-Day — decision models, hybrid routing, harness leaderboard
+
+- `sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md` — **new**. Gemini Decision 1 at $0.10 per 1M input tokens. Cloudflare hybrid design cut six LLM calls to one and 40K tokens to 1.8K.
+- `concepts/decision-model-hybrid-agent-routing.md` — **new**. Closed output space, abstention, and a checkable result; compare cost per resolved decision.
+- `concepts/reasoning-effort-calibration.md` — **new**. A tier change beats an effort change in the Claude line; high effort on DeepSeek V4.1 Flash costs 28% more with no gain.
+- `entities/models/claude-fable-5-2.md` — **updated**. Agent Arena +30.4%, $8/$40 price, Pareto frontier at medium through xhigh.
+- `entities/tools/deepseek-harness.md` — **updated**. Ties first on the Harness Leaderboard, loses 1.5–1.7 points from pre-grading teardown.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-14] ingest | The Jev Revolution — system one models inside application code
+
+- `sources/newsletter-rss-latent-space-2026-11-12-the-jev-revolution-what-engineers-are-already-bu.md` — **new**. Glean uses Jev for zero-shot taxonomy flexibility; UiPath ranks chunks in under a second with thousands of calls.
+- `concepts/decision-model-hybrid-agent-routing.md` — **new**, second source.
+- `concepts/token-economics-and-prompt-caching.md` — **updated** backlink.
+- Routing: CeminiSuite — candidate classifier for `/route`; no brief staged.
+
+## [2026-11-14] ingest | AI Ambition — ArtCraft clones Photoshop with agents
+
+- `sources/newsletter-rss-latent-space-2026-11-13-ai-ambition-artcraft-cloned-photoshop-and-now-wa.md` — **new**. Prompt-first build, MCP/CLI compatible. Parity reported at 60%, GitHub claims 76% feature breadth and 46% professional readiness.
+- `concepts/generation-verification-gap-agent-artifacts.md` — **new**. Adds the authorship boundary: agents on immutable artifacts, humans on schema and API work.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-14] ingest | AINews — Jensen Huang resigns; self-hosted managed agents
+
+- `sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md` — **new**. Self-hosted Claude Managed Agents (harness, sandboxes, history in customer cloud). TRUST statistical gating cuts bad harness updates from 45.59% to 2.78%.
+- `entities/tools/claude-code.md` — **updated** with the Projects and Managed Agents report.
+- `concepts/eval-integrity-minimum-standards.md` — **new**. PostTrainBench underperformance and ParseBench-2 disclosure gaps.
+- `concepts/agent-vm-sandboxing.md` — **updated** backlink.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-14] ingest | AINews — The No AI Slop manifesto
+
+- `sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md` — **new**. AA Coding Agent Index v2.1 drops 5 points on average; GPT-6.1 Terra in Codex is the only configuration that held. Cost per task spread $1.51–$44.22.
+- `concepts/eval-integrity-minimum-standards.md` — **new**. Epoch eval attack, Anthropic 10 recommendations, ParseBench-2 adapter bug (64.5% to 93.6%).
+- `concepts/reasoning-effort-calibration.md`, `concepts/decision-model-hybrid-agent-routing.md` — **new**, third and fourth sources.
+- `entities/tools/claude-code.md`, `entities/tools/openai-codex-cli.md`, `entities/models/claude-fable-5-2.md` — **updated**.
+- Routing: CeminiSuite — Codex lane and effort-setting calibration note; no brief staged.
+
+## [2026-11-14] ingest | The Pragmatic Engineer — Railway hack teaser
+
+- `sources/newsletter-rss-pragmatic-engineer-2026-11-12-the-pulse-what-can-we-learn-from-the-railway-hac.md` — **new**. Teaser only: Railway published a postmortem, and the attacker likely used abliterated models.
+- `concepts/model-is-not-a-security-boundary.md`, `concepts/tools-we-dont-use.md` — **updated** backlinks.
+- Do not cite detail from the teaser. Read the primary postmortem first. [OPEN QUESTION 2026-11-14]
+- Routing: wiki-only; no distribution.

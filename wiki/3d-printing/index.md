@@ -197,6 +197,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [Agent Skill Libraries for Engineering](concepts/agent-skill-libraries-mechanical-engineering.md) — tools compute and the model orchestrates; every result travels with its check; a failed check is reported, not hidden — `agents, skills, verification, DFM, methodology`
 - [Precision Optomechanics — AM and the Tolerance Budget](concepts/precision-optomechanics-am.md) — measure mount motion, convert it to the units the optics care about, then judge; printing replaces assembly, not dynamics — `optics, tolerance, metrology, LPBF, precision`
 - [Printed Robot Arm Platforms](concepts/printed-robot-arm-platforms.md) — all-printed Inmoov versus bisected CNC-plus-print; 1.9 kg PLA per arm; budget two or three print cycles per bought-component interface — `robotics, open-hardware, PLA, arm, mass`
+- [Inverse Design and Topology Optimization for AM](concepts/inverse-design-am-parts.md) — physics-solver optimization loop, not generative AI; gradient-based versus gradient-free; a discrete DFM rule must be tested directly; not an FDM topic — `inverse-design, topology-optimization, background, non-FFF`
 
 ## Meta
 
@@ -241,3 +242,8 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 - [additive-ceramic-optical-platforms](sources/arxiv-2611.13800-additive-ceramic-optical-platforms-2026-11-11.md) — Lithography-based ceramic manufacturing for alignment-free atomic sensor heads. — `paper, ceramics, photonics, ingest-2026-11-11`
 - [spion-branching-geometry](sources/arxiv-2611.13876-spion-branching-geometry-2026-11-11.md) — Branching geometry governs nanoparticle transport; experiment and simulation coupled. — `paper, microfluidics, ingest-2026-11-11`
 - [robotic-am-path-planning](sources/arxiv-2611.13983-robotic-am-path-planning-2026-11-11.md) — Optimisation-based path planning validated on a UR10e in winding and printing. — `paper, robotic-am, ingest-2026-11-11`
+
+## Ingest 2026-11-14 — two-paper inbox drain
+
+- [gradient-free-inverse-design-3d-nanophotonics](sources/arxiv-gradient-free-inverse-design-3d-nanophotonics-2611.15656.md) — Level-set inverse design of a micron-scale Y-splitter; 384 variables, 42.5% coupling efficiency, 75 hours on 8 CPU processes; connectivity enforced as a hard rule. Weak fit: 2PP photonics, no FDM. — `paper, inverse-design, photonics, 2PP, weak-fit, ingest-2026-11-14`
+- [bulk-cmsx-4-single-crystal-lded](sources/arxiv-bulk-cmsx-4-single-crystal-lded-2611.16535.md) — CMSX-4 nickel superalloy single crystal by L-DED; IR camera drives laser power; external cooling doubles build height; 47% shorter solutionizing. Weak fit: metal AM, no FDM. — `paper, DED, metal, superalloy, single-crystal, weak-fit, ingest-2026-11-14`

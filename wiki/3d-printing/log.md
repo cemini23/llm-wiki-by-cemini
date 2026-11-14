@@ -910,3 +910,24 @@ Re-delivered and already filed: `2611.02850`, `2611.03216`.
 - `sources/arxiv-2611.13800-additive-ceramic-optical-platforms-2026-11-11.md` — **new**. Lithography-based ceramic manufacturing for alignment-free atomic sensor heads.
 - `sources/arxiv-2611.13876-spion-branching-geometry-2026-11-11.md` — **new**. Branching geometry governs nanoparticle transport; experiment and simulation coupled.
 - `sources/arxiv-2611.13983-robotic-am-path-planning-2026-11-11.md` — **new**. Optimisation-based path planning validated on a UR10e in winding and printing.
+
+## [2026-11-14] ingest | Gradient-Free Inverse Design of 3D Nanophotonic Devices Using the Level-Set Method
+
+- Created `sources/arxiv-gradient-free-inverse-design-3d-nanophotonics-2611.15656.md`.
+- Created `concepts/inverse-design-am-parts.md` — gradient-based versus gradient-free inverse design, and why a discrete DFM rule cannot enter a gradient loop.
+- Updated `concepts/printed-photonics-background.md` — backlinks; first page there about how a 2PP device gets its shape.
+- Updated `concepts/ai-design-tools.md` — scope note; generative 3D is not inverse design.
+- Updated `sources/arxiv-2611.04251-differentiable-topology-acoustic-holography-2026-11-05.md` — backlink; the gradient-based neighbour.
+- Method: level-set geometry from Gaussian radial basis functions, 384 weights; differential evolution via Nevergrad; FDTD solver Meep; connected-component analysis enforces material and void connectivity as a hard constraint.
+- Results: Y-splitter 12 × 8 × 2 µm, 42.5% coupling efficiency, more than 45% flux transmission; 10 000 iterations, about 75 h on 8 CPU processes; stable when re-evaluated at double resolution.
+- Routing: wiki-only; no distribution. The devices are micron-scale 2PP photonics. A consumer FDM printer cannot make them, and no figure applies to a print farm.
+
+## [2026-11-14] ingest | Bulk CMSX-4 Single-Crystal Builds via Laser-Directed Energy Deposition
+
+- Created `sources/arxiv-bulk-cmsx-4-single-crystal-lded-2611.16535.md`.
+- Updated `concepts/industrial-am-monitoring.md` — backlink; new section on a closed loop whose target is a microstructure, not a geometry.
+- Updated `sources/arxiv-track-height-control-am-2611.07704.md` — backlink; same machine class, different controlled variable.
+- Name correction recorded: the inbox filename says `cmsx-4`, and the source page was described as a thermoelectric material. The alloy is CMSX-4, a nickel-base single-crystal superalloy. The paper has no thermoelectric content.
+- Method: L-DED of 10 mm × 100 mm CMSX-4 rods on a single-crystal substrate; a 10 Hz infrared camera drives laser power down from 1200 W to 1000 W; a process simulation sizes an external cooling setup.
+- Results: continuous single-crystal growth to nearly twice the height of power control alone; EBSD confirmation; near-constant primary dendrite arm spacing; 47% shorter solutionizing time; precipitate structure close to the cast material.
+- Routing: wiki-only; no distribution. Powder-fed metal AM with a 1000 °C substrate is outside a Bambu print farm. The control pattern is the transferable part.

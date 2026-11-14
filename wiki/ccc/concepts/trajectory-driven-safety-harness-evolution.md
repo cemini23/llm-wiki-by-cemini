@@ -16,6 +16,8 @@ related:
   - sources/arxiv-skill-misevolution-2608.12851.md
   - concepts/harness-policy-co-evolution-safety.md
   - sources/arxiv-safeevolve-harness-policy-co-evolution-2609.02786.md
+  - sources/arxiv-rea-bench-responsible-agent-auditing-2611.16493.md
+  - concepts/trajectory-audit-diagnostic-tiers.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"

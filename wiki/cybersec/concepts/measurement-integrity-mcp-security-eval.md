@@ -26,9 +26,11 @@ related:
   - concepts/asleval-privacy-exposure-displacement.md
   - concepts/policy-conditioned-compliance-measurement.md
   - sources/arxiv-bmms-policy-conditioned-behavioral-compliance-2611.09147.md
+  - concepts/provider-refusal-measurement-contamination.md
+  - concepts/silent-error-rate-structured-output.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-11-10
+updated: 2026-11-14
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc (CCC K277 dual-ID note)"
 ---

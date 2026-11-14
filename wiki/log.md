@@ -4,13 +4,25 @@ type: concept
 related:
   - index.md
   - osint/log.md
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 # Operations log
 
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
+
+## [2026-11-14] ingest | inbox cleared again — 40 sources, and egress restored
+
+- **Scope.** 64 files arrived. 24 were byte-identical re-drops and were removed after a sha256 check against their archived copies. 40 genuinely new sources were ingested: ccc 11, osint 14, cybersec 5, image-gen 3, seo 3, 3d-printing 2, gambling 2.
+- **The egress host is back.** `cemini-egress-fi` answers again after the Hetzner suspension. The 146-file backlog started clearing and the 40 new sources were archived to the cold store.
+- **The re-fetch loop is live and confirmed.** Two gambling papers (`2611.01754`, `2611.10152`) were deleted in the morning and had reappeared within the hour. This is the third consecutive wave with re-drops. It is a pipeline defect, not an accident, and it will keep producing duplicates until the digest stops re-fetching what it already filed.
+- **A collision was caught before it destroyed data.** Three eval `.docx` files in the holding folder matched archived names exactly. Hash comparison showed all three were new documents, so each was renamed with its drop date before archiving.
+- **Best find: K2V (2611.17324).** Training-free keyframing on stock Wan2.2 weights. Physics-IQ Verified I2V rises 32.2 to 55.0 on the 14B model, and the 5B model with K2V beats the plain 14B at a third of the parameters. The Wan2.2 VAE constant `L_T = 4` is load-bearing, so a community VAE swap silently breaks it.
+- **Two findings worth acting on.** The AA Coding Agent Index v2.1 dropped every configuration except GPT-6.1 Terra in Codex, and Codex is cheapest at score 48+ ($1.51/task) — a `/route` lane calibration input. The patchless window grew from 5.1 to 39.2 days while exploits still land in hours, which argues for monitoring commits rather than advisory feeds.
+- **Errors caught in the sources and in the brief.** The DMA anonymisation paper says "4.87 million" on p.30 while its Table 1 gives 4,871,552,575; the table was cited. Separately, the ccc brief's author described CMSX-4 as a thermoelectric material when it is a nickel-base single-crystal superalloy — corrected on the page and in the log.
+- **Honest negatives recorded.** The meshfree mean-field-games paper has no gambling link at all. The drone search-and-rescue and DMA privacy papers have no SEO link. Two osint arXiv papers share words with Cemini projects but not methods. All are filed with that stated.
+- **gate:** `wiki_lint.py` clean — 0 hard errors, 0 bidirectional gaps, 0 dangling links.
 
 ## [2026-11-10] ingest | K296 full-inbox wave — 82 sources across eight domains
 

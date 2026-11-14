@@ -34,9 +34,10 @@ related:
   - sources/hubspot-2026-ai-search-optimization-aeo-primer-2026-06-29.md
   - sources/newsletter-rss-latent-space-2026-09-07-aeo-tracker-2026-09-08.md
   - sources/searchengineland-2026-google-llm-patent-entity-characterization-480625.md
+  - concepts/external-anchoring-generative-content-geo.md
 maturity: validated
 created: 2026-06-26
-updated: 2026-10-01
+updated: 2026-11-14
 ---
 
 ## Relations

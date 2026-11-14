@@ -2,11 +2,12 @@
 title: "Differentiable topology optimization for acoustic holography — thick lenses, not thin elements"
 type: source
 tags: [source, arxiv, topology-optimization, acoustics, additive-manufacturing]
-related: []
+related:
+  - concepts/inverse-design-am-parts.md
 maturity: draft
 read_status: skimmed
 created: 2026-11-05
-updated: 2026-11-05
+updated: 2026-11-14
 ---
 
 ## Raw Concept

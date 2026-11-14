@@ -21,9 +21,10 @@ related:
   - sources/substack-rss-event-horizon-2026-07-28-dodd-frank-pm.md
   - sources/substack-rss-event-horizon-2026-07-16-trade-on-simulations.md
   - sources/substack-rss-wublock-2026-07-11-weekly-project-updates-bonkdao-suffers-governanc.md
+  - sources/substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md
 maturity: validated
 created: 2026-04-25
-updated: 2026-10-25
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -108,7 +109,26 @@ The compliance-leverage thesis at `@entities/platforms/kalshi.md` role 3 — tha
 
 The structural risk is **binary, not gradient**. A pre-acquisition due-diligence process today should treat "preemption holds" vs "states win" as two materially different architectures. See `briefs/2026-04-25_post-kalshi-advisory-regulatory-update.md` §4 for the implications walk-through.
 
+## S4 — SDNY rejects preemption for Novig (2026-11-12)
+
+Judge McMahon denied Novig's preliminary injunction in the Southern District of New York. Four holdings matter:
+
+1. **The swap definition fails.** A sports outcome is a contingency under the CEA, but it lacks the financial or commercial consequence required for a swap. The court declined to defer to the CFTC's contrary view.
+2. **The CEA does not preempt state gambling law.** States may not regulate the operation or licensing of a DCM, which is CFTC territory. The CEA does not stop a state from enforcing its gambling rules.
+3. **The CFTC's own rule cuts against the listing.** The special rule bars event contracts that relate to gaming. The court therefore found the claimed federal-state conflict a "mirage".
+4. **The Kalshi order draws criticism.** The court described it as smacking of "a collusive effort between a regulator and regulatee to generate a claim for conflict preemption".
+
+This is a district opinion. It does not bind other circuits, and the Third Circuit has already ruled the other way. Its value is as a reasoning template for state regulators. The binary architecture risk noted above remains binary: this moves the probability, not the structure.
+
+[Source: @sources/substack-rss-event-horizon-2026-11-12-house-subcommittee-jabs-at-prediction-markets-du.md]
+
 ## Snippets
+
+### S5 — McMahon on the swap definition (verbatim, quoted in the newsletter)
+
+> "The Court is not required to disregard common sense - Novig's sports event contracts are sports betting."
+
+[Source: SDNY order, as quoted in @sources/substack-rss-event-horizon-2026-11-12-house-subcommittee-jabs-at-prediction-markets-du.md]
 
 ### S1 — Liburdi's preemption finding (paraphrased from secondary)
 > "The Act grants the CFTC 'exclusive jurisdiction' over the regulation of 'swaps,' traded or executed on a Designated Contract Markets."

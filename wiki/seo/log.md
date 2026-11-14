@@ -2009,3 +2009,28 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - `sources/arxiv-2611.14106-proofcoder-2026-11-11.md` — **new**. Continuous reasoning versus a harness-controlled tactic loop.
 - `sources/arxiv-2611.14149-search-to-decision-survey-2026-11-11.md` — **new**. Six information-seeking capabilities; a map for five papers already filed here.
 - `sources/arxiv-2611.14382-learning-by-thinking-cognitive-map-2026-11-11.md` — **new**. Learning by thinking, separated from learning from input. Framework only.
+
+## [2026-11-14] ingest | Cognitive Mapping of Learning by Thinking Mechanisms in Large Language Models
+
+- `sources/arxiv-2611.14382-learning-by-thinking-cognitive-map-2026-11-11.md` — **updated from skim to deep-read**. Four mechanisms: Reflective Reasoning, Internal Simulation (generative); Synthetic Memory Formation, Conceptual Self-Organization (consolidating). Four structural asymmetries explain the failure modes: shared generator and monitor, closed loops without external grounding, symbolic instead of sensorimotor simulation, and efficiency.
+- **The one transferable claim.** The loop is reliable only when one stage takes its signal from outside the model. Voyager succeeds because execution errors, game state and verification checks close its loop. The paper states that intrinsic self-correction "has produced fragile or negative results".
+- **New concept page** `concepts/external-anchoring-generative-content-geo.md` — the mechanism, five rules for a content pipeline, and its limits. The transfer to content production is this wiki's inference and is tagged `[TENTATIVE]`.
+- Backlinks: `concepts/citation-verification-aeo.md`, `concepts/ai-citation-sourcing-geo.md`, `concepts/evidence-ecosystem-geo.md`, `concepts/ai-factual-error-types-business-facts.md`. Index rows added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-14] ingest | A Joint LLM and Optimization Agent Solution for Drone Scheduling in Victim Search Missions
+
+- `sources/arxiv-2611.16524-drone-victim-search-llm-optimizer-2026-11-14.md` — **new**. A ground-station agent splits each cycle: an LLM reasons about where to search, and an optimizer dispatches drones under an energy constraint.
+- **Reported results.** The joint system completed 5/5 missions and found 5.0 ± 0.0 victims. Direct LLM scheduling completed 2/5. All six non-LLM baselines completed 0/5. Cost differs by about 8.5x in tokens per run.
+- **No SEO link.** Search and rescue has no connection to retrieval, citation or ranking. One analogy is marked as an analogy only: a model proposes candidates, a deterministic layer enforces a hard constraint.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-14] ingest | Anonymous in Name Only — EC anonymisation measures for Google Search data under DMA Article 6(11)
+
+- `sources/arxiv-2611.17012-dma-google-search-anonymization-2026-11-14.md` — **new**. The EC decision of 16 July 2026 (case DMA.100209) sets the measures Alphabet must apply before sharing Search query, click and view data with competing search engines. The paper tests them on Irish and Spanish data.
+- **The finding.** In a six-month Irish sample, 17.91% of queries stay unique. Unique search records reach 24.27% without the timestamp and 43.82% with it. Eircodes and minority-language query clusters produced reidentifications. The authors state the measures meet none of the three EDPB criteria.
+- **No GEO link.** The paper measures privacy, not citation. The live SEO thread is data supply: the Commission states a goal of preserving "unique queries", and the paper argues that goal is incompatible with anonymisation. Long-tail data is both the most useful data for a small site and the data that identifies people.
+- **New concept page** `concepts/search-query-data-supply.md` — three supply routes, the exclusion rule behind each, and three open questions. The link to keyword research is tagged `[TENTATIVE]`.
+- Backlinks: `concepts/search-query-data-supply.md`, `entities/tools/google-search-console.md`, `entities/tools/semrush.md`, `concepts/local-seo-foundations.md`, `concepts/corpus-overflow-out-of-scope.md`. Index rows added.
+- Routing: wiki-only; no distribution.

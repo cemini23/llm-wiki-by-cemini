@@ -3,7 +3,8 @@ title: European start-up scaling gap — the tail, not the average
 type: concept
 related:
   - sources/substack-rss-klement-2026-11-10-the-start-up-challenge-in-europe.md
-updated: 2026-11-10
+  - sources/substack-rss-klement-2026-11-12-the-start-up-challenge-in-europe-part-deux.md
+updated: 2026-11-14
 ---
 
 ## Raw Concept
@@ -56,6 +57,25 @@ Klement says a follow-up post covers a second study on another blocking factor. 
 ### Reading
 
 The data supports "the US concentrates more capital in its largest private companies". It does not by itself support "European start-ups fail for lack of capital". Those are different claims, and the round table is evidence for the first.
+
+### The price side — cost of capital (2026-11-12)
+
+The earlier post answered a supply question. A second study answers the price question.
+
+Becker, Benmelech and Monteiro (2026) study listed companies only. They ask why the largest megacaps are almost all American. They reject fundamentals and give **cost of capital** as the answer.
+
+Klement's prior was the reverse: European policy rates are lower, so the cost of debt should be lower; the Fernandez survey puts cost of equity roughly equal. The data says the cost of capital is **higher** for European firms.
+
+The shape of the gap is the finding:
+
+| Firm size | Cost-of-capital gap |
+|---|---|
+| Above median market cap | Small |
+| Below median market cap | Large |
+
+The disadvantage is a **size premium**, and it widened in the second half of the 2010s. The two halves of the story therefore combine: Europe supplies early capital at a similar rate, then prices scale capital badly for small firms.
+
+[Source: @sources/substack-rss-klement-2026-11-12-the-start-up-challenge-in-europe-part-deux.md]
 
 ## Snippets
 

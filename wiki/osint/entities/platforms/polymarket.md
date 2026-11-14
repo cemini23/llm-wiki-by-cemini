@@ -124,9 +124,11 @@ related:
   - entities/tools/sportsbook-api-evangelist.md
   - sources/arxiv-prophets-profit-prediction-markets-2607.06166-2026-07-09.md
   - sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md
+  - sources/substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md
+  - sources/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 ## Relations
@@ -220,6 +222,16 @@ The 2026-05-13 ingest (@AlterEgo_eth + @de1lymoon) formalized two complementary 
 ## K138 — 5-min BTC settlement manipulation (2026-07-01)
 
 @sources/arxiv-settlement-manipulation-pm-2606.31675-2026-07-01.md — empirical footprint on Polymarket **5-min BTC up/down** (Binance spot push at close). See @concepts/settlement-manipulation-prediction-markets.md. Cemini read-only posture unchanged; **prod bot NO-GO** on 5-min asset-oracle lanes.
+
+## Nov 2026 — layoffs and the settlement-access probe (2026-11-13/14)
+
+**Layoffs.** Polymarket cut some full-time staff and significantly reduced its contractor pool, mostly in marketing. Viral claims of a 30% cut are inaccurate, per Front Office Sports. The former CMO Matthew Modabber was fired in October and replaced by Travis VanderZanden as chief growth officer. The reorganisation is described as preparation to "professionalize" ahead of a possible go-public deal as soon as 2027. [TENTATIVE: unnamed sources]
+
+**CFTC probe.** The CFTC is investigating whether Polymarket breached the US-access terms of its 2022 settlement agreement. This is a separate matter from the Kalshi self-certification investigation. The 2022 settlement is the legal basis on which Polymarket keeps US persons off the international venue; a breach would reopen the access question.
+
+**Louisiana.** Polymarket is one of the operators named in the Louisiana attorney general's suit. See @concepts/prediction-market-regulation-2026.md.
+
+Sources: @sources/substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md, @sources/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md.
 
 ## Snippets
 

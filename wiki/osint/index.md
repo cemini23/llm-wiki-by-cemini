@@ -8,6 +8,33 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### Ingest 2026-11-14 (osint inbox wave, 14 sources)
+Four arXiv PDFs and ten newsletters. Two papers have no project lane and say so. The live content is prediction-market regulation, mining economics, and a tail-first risk doctrine.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [wave hub](concepts/osint-inbox-wave-2026-11-14.md) | Wave hub — 14 sources, routing table, two honest negatives | draft |
+| [signature-expansion-rates](sources/arxiv-convergence-rates-truncated-discretised-signature-expansions-2611.16087.md) | Truncation (M!)^-ε, discretisation N^-a/2; no weak gain for Stratonovich | draft |
+| [signature-truncation-concept](concepts/signature-expansion-truncation-rates.md) | How to budget M and N for a signature model | draft |
+| [scale-rich-metamaterials](sources/arxiv-scale-rich-network-metamaterials-local-rules-2611.16513.md) | γ=3 from birth-length fitness, not preferential attachment; no Cemini lane | draft |
+| [cannings-genealogies](sources/arxiv-continuum-space-hierarchical-cannings-genealogies-2611.17017.md) | Continuum Cannings II, ancestral web; pure probability, no Cemini lane | draft |
+| [ballad-llm-routing](sources/arxiv-ballad-bandit-llm-routing-heuristic-discovery-2611.17241.md) | Bandit routing beats any solo model, 65.6% cheaper API cost | draft |
+| [bandit-routing-concept](concepts/bandit-llm-routing-heuristic-search.md) | P1 extreme value, P2 DAG credit, P3 non-stationary; what transfers here | draft |
+| [capital-flows-inflation](sources/substack-rss-capital-flows-2026-11-13-inflation-cycle-playbook-livestream-reply.md) | Teaser: nominal demand 6% vs policy rate 4% | draft |
+| [eh-college-gambling-hearing](sources/substack-rss-event-horizon-2026-11-12-house-subcommittee-jabs-at-prediction-markets-du.md) | Four witnesses attack PMs; SDNY denies Novig preemption; parlays 63.5% | draft |
+| [eh-louisiana-65bn](sources/substack-rss-event-horizon-2026-11-13-will-dustin-come-back-from-bandon-dunes-yes-trad.md) | Louisiana sues the sector; Kalshi at $65bn; parlay share 65.7% | draft |
+| [klement-europe-cost-of-capital](sources/substack-rss-klement-2026-11-12-the-start-up-challenge-in-europe-part-deux.md) | European small caps pay a size premium in cost of capital | draft |
+| [klement-meetings](sources/substack-rss-klement-2026-11-13-meetings-are-a-waste-of-money.md) | Meetings are about 20% of the wage bill in finance and IT | draft |
+| [meeting-cost-concept](concepts/meeting-cost-share-of-wage-bill.md) | The loaded-wage calculation for a recurring ritual | draft |
+| [moontower-compounding](sources/substack-rss-moontower-2026-11-11-compounding-through-risk-not-return.md) | Maymin brothers: compound through risk, read the option tails | draft |
+| [compounding-risk-concept](concepts/compounding-through-risk-not-return.md) | Tails over body; tail correlation is ±1; risk is objective shortfall | draft |
+| [outlier-cards-ledger](sources/substack-rss-outlier-weekly-2026-11-11-fifty-years-of-cards-ten-days-of-ledger.md) | 1,068 cards, 614 NO_EVIDENCE, 8.9x same-name comp error | draft |
+| [card-comps-concept](concepts/card-comps-and-grading-option-value.md) | Comp as a claim about another asset; grading as an option | draft |
+| [wublock-mining-october](sources/substack-rss-wublock-2026-11-12-global-crypto-mining-news-in-october-binance-poo.md) | Fee share 0.31%; hashprice $33/PH/s below electricity cost | draft |
+| [bitcoin-mining-economics](concepts/bitcoin-mining-economics-2026.md) | Subsidy-only revenue, two miner cohorts, capex vs power split | draft |
+| [wublock-weekly-faro](sources/substack-rss-wublock-2026-11-13-wublockchain-weekly-goldman-citi-launch-joint-us.md) | USDT −$6.6bn in 60 days; Project Faro $270m; Coinbase charter | draft |
+| [wublock-project-updates](sources/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md) | CFTC weighs self-certification charges against Kalshi | draft |
+
 ### Ingest 2026-10-27 (macro + quant wave)
 Inbox sweep 2026-10-27: 15 OSINT pages. Tail-vol sampling rules for vol-surface forecasting, Sornette on transient supercritical Hawkes episodes, and the CoreWeave credit stress that moved the whole AI complex.
 

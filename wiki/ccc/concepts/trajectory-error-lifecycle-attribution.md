@@ -14,6 +14,7 @@ related:
   - briefs/2026-08-07_phase1-wire-status-closeout-k254-k258.md
   - concepts/epistemic-humility-identify-solve-escalate.md
   - sources/arxiv-epistemic-humility-knowledge-conflict-2610.12360.md
+  - concepts/production-state-access-bottleneck.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"

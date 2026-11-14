@@ -6,7 +6,10 @@ related:
   - concepts/token-economics-and-prompt-caching.md
   - sources/newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant.md
   - entities/skills/route.md
-updated: 2026-11-10
+  - sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md
+  - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
+  - concepts/reasoning-effort-calibration.md
+updated: 2026-11-14
 ---
 
 ## Raw Concept
@@ -38,6 +41,14 @@ Released 2026-11-10 with Claude Mythos 5.2, on the same day Anthropic's IPO road
 Cheaper per token, more expensive per task. SemiAnalysis measured $88.15 per task on GDPx against $67.16 for Fable 5.1, a 31% rise, because the model wrote far more test cases and spawned verification subagents. At max effort, about $26.5 per task, roughly 2.6 times Opus 5.5.
 
 At high and xhigh it scores 62 on the Intelligence Index using about 98K output tokens per task, against 173K for Opus 5.5 at max. High is the efficiency point.
+
+### Agent Arena and pricing (reported 2026-11-12 to 2026-11-14)
+
+Fable 5.2 ranks first on Agent Arena with a +30.4% net improvement across 4.7K sessions. That is about 1.6× Opus 5.5 at +19.5%. The lead grows on long tasks: 93% against 85% no-correction responses at 16 or more turns. [TENTATIVE — vendor leaderboard]
+
+API price fell from $10/$50 to $8/$40 per 1M input/output tokens. Median cost per task is $7.3, against $5.5 for Opus 5.5, $1.5 for Gemini 4 Carbon at high, and $6.0 for GPT-6 Astra.
+
+On the AA Coding Agent Index v2.1, Fable 5.2 and Opus 5.5 tie at 58. Fable at max costs $44.22 per task, while a cheap configuration costs $1.51. Medium, high, and xhigh all sit on the Pareto frontier.
 
 ### Route fit
 

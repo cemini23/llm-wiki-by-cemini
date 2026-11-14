@@ -4166,3 +4166,30 @@ Skipped: `2611.05258`.
 - `sources/arxiv-2611.14397-malora-margin-lora-2026-11-11.md` — **new**. A margin explanation for LoRA's forgetting resistance and adapter merging.
 - `sources/arxiv-2611.14387-b3-overlapping-block-diffusion-2026-11-11.md` — **new**. Overlapping blocks with a self-calibrating open condition.
 - `sources/arxiv-2611.14383-energy-based-model-tutorial-2026-11-11.md` — **new**. 78-page EBM tutorial used as a unifying lens.
+
+## [2026-11-14] ingest | K2V: generative keyframing for physically plausible video (arXiv:2611.17324)
+
+- **On-topic.** Video diffusion physics. A VLM planning agent predicts keyframes; an image edit model renders them; Wan2.2 interpolates with no training.
+- **Mechanism.** Write keyframes into Wan2.2's existing first-frame conditioning channel at latent-block ends (`L_T = 4`). Update the mask. No fine-tuning.
+- **Numbers.** Physics-IQ Verified I2V: Wan2.2-14B 32.2 → 55.0; Wan2.2-5B + K2V 50.0; best prior 42.7. PhyGenBench state of the art 0.56 → 0.63. Cost $0.47–0.59 per clip, mostly planning.
+- **Ablation.** Ground-truth keyframes also raise the score monotonically, so the conditioning structure is the cause, independent of keyframe quality.
+- Files created: `sources/arxiv-2611.17324-k2v-generative-keyframing.md`, `concepts/training-free-keyframe-latent-conditioning.md`. Updated `concepts/vlm-guided-physical-video-generation.md`, `concepts/video-generation-physical-executability.md`, `concepts/physics-aware-orthogonal-view-video.md`, `entities/models/wan-2-2.md`.
+- Routing: wiki-only; no distribution. Brief candidate (single strongest training-free physics lever).
+
+## [2026-11-14] ingest | PixVid: lifting latent video diffusion into pixel space (arXiv:2611.17336)
+
+- **On-topic.** Video diffusion architecture. Keep the DiT, remove the VAE encoder and decoder.
+- **Mechanism.** Fitted linear pixel-to-latent map initializes the patch embedding. A causal convolutional detailer head renders tokens to pixels. x-prediction, larger noise shift, Euler sampler.
+- **Numbers.** VBench 84.78 at 480p and 85.09 at 960×1664, against 84.05 for Wan2.1-14B. Per-frame depth editing keeps 98% of fast motion vs 83%. Control latency 495 ms → 34 ms. 4,000 B200 GPU-hours to lift.
+- **Limits.** No code release stated. Colour is the one quality dimension below baseline. 3.9× token rate at 480×832.
+- Files created: `sources/arxiv-2611.17336-pixvid-pixel-space-video.md`, `concepts/framewise-pixel-space-video-generation.md`. Updated `concepts/vae-latent-space-downstream-diffusion.md`, `concepts/cascaded-streaming-high-resolution-video.md`, `concepts/streaming-video-generation-serving.md`, `concepts/bidirectional-autoregressive-video-generation.md`, `entities/models/wan-2-2.md`.
+- Routing: wiki-only; no distribution. Brief candidate (resolution and latency trade-off decision).
+
+## [2026-11-14] ingest | Learning when diffusion language models should regenerate (arXiv:2611.17320)
+
+- **Adjacent, not image generation.** Masked diffusion language model decoding for text reasoning (LLaDA-8B, Dream). Logged for the transferable design rule.
+- **Diagnosis.** Hidden states separate wrong from correct cells better than confidence (AUROC 0.838 vs 0.685). Re-masking one wrong cell usually reproduces it (mean probability 0.869). A gold oracle repairs only 6 of 77 failures.
+- **Rule.** Regenerate a whole block, score the partial canvas by predicted final outcome, and spend the budget on early blocks. Repairs concentrate in block 0 (114 of 154 on GSM8K).
+- **Numbers.** Five-benchmark average 35.3 → 43.4 at 1.9–3.5× greedy cost. Two search baselines reach 39.1% and 37.3% at 3.8–7.4×.
+- Files created: `sources/arxiv-2611.17320-divr-diffusion-verifier-regeneration.md`, `concepts/outcome-supervised-block-regeneration.md`. Updated `concepts/mdlm-padding-termination-decoupling.md`, `concepts/decomposed-graded-verifier.md`.
+- Routing: wiki-only; no distribution. Peripheral — one decoding rule, no image artefact.

@@ -300,9 +300,10 @@ related:
   - sources/arxiv-2608-13030-intersage.md
   - concepts/intersage-trust-native-ioa-protocol.md
   - sources/arxiv-2608-13069-ood-behavioral-reprogramming.md
+  - entities/tools/artex.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-10-09
+updated: 2026-11-14
 ---
 
 ## Relations

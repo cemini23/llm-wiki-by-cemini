@@ -4,7 +4,8 @@ type: entity
 related:
   - sources/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md
   - entities/companies/circle.md
-updated: 2026-11-10
+  - sources/substack-rss-wublock-2026-11-13-wublockchain-weekly-goldman-citi-launch-joint-us.md
+updated: 2026-11-14
 ---
 
 ## Raw Concept
@@ -41,6 +42,18 @@ Tether is the largest single holder of short US paper among crypto issuers. Its 
 ### The ratio to watch
 
 Excess reserves against total liabilities. A fall in that ratio, or a rise in the repo share of holdings, changes the liquidity profile without changing the headline number.
+
+### The supply drain, November 2026
+
+CryptoQuant reports the USDT market capitalisation fell **$6.6bn** over 60 days. That exceeds the redemption wave after the FTX collapse in December 2022. The report reads stablecoin supply as purchasing power: a sustained fall means less capital available to buy Bitcoin.
+
+The same report has two supporting numbers: Bitcoin apparent demand fell **284,000** coins over 30 days, the largest drop since March 2025, and the Coinbase premium index stayed negative for **30** consecutive days.
+
+CryptoQuant also notes that similar demand contractions appeared near earlier Bitcoin bottoms, while stablecoin liquidity was still shrinking and US spot buying had not recovered.
+
+**Regulatory pressure.** Senator Blumenthal, as ranking member of the Senate Permanent Subcommittee on Investigations, sent a records demand to Tether with a 4 January 2027 deadline. The probe concerns unlawful use of cryptocurrencies and communications between the Trump administration and crypto firms.
+
+[Source: @sources/substack-rss-wublock-2026-11-13-wublockchain-weekly-goldman-citi-launch-joint-us.md]
 
 ## Snippets
 
