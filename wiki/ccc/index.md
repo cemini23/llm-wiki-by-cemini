@@ -1586,3 +1586,14 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 | [naiveai-n05-flash](sources/newsletter-rss-latent-space-2026-11-10-naiveai-n05-flash-2026-11-11.md) | draft | 2,100 tokens/sec is throughput, not capability. |
 | [mercor-3b](sources/newsletter-rss-latent-space-2026-11-11-mercor-3b-2026-11-11.md) | draft | 3:1 inference-to-salary spend — at a firm whose product is human expertise. |
 | [pragmatic-correctness-supply-chain](sources/newsletter-rss-pragmatic-engineer-2026-11-10-correctness-supply-chain-2026-11-11.md) | draft | Paywalled teaser; records the subject only. |
+
+## Entities
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [ag-ui — event protocol between an agent and a front end (MIT)](entities/tools/ag-ui.md) | (added by wiki_finalize_batch) | draft |
+| [jev-recipes — 248 small typed decisions for JavaScript and TypeScript (MIT)](entities/tools/jev-recipes.md) | (added by wiki_finalize_batch) | draft |
+| [plannotator — human review gate for agent plans and diffs (Apache-2.0)](entities/tools/plannotator.md) | (added by wiki_finalize_batch) | draft |
+| [product-engineering — 45 release-gate skills from shipped products (MIT)](entities/tools/product-engineering-skills.md) | (added by wiki_finalize_batch) | draft |
+
+- [stitch-skills — design-to-code agent skills for Stitch MCP (Apache-2.0)](entities/stitch-skills.md) — cross-wiki stub routed from ingest — `cross-wiki`

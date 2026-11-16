@@ -1,3 +1,7 @@
+## [2026-11-16] ingest | Ingest Deep Research link evaluation winners routed to image-gen (2026-11-16)
+
+- @entities/tools/claude-video.md
+
 ## [2026-11-16] ingest | K297 — 2 arXiv papers (pixel-space video DiT, distilled-generator diversity collapse)
 
 - @concepts/diversity-collapse-in-distilled-generators.md

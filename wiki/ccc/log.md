@@ -1,3 +1,12 @@
+## [2026-11-16] ingest | Ingest Deep Research link evaluation winners routed to ccc (2026-11-16)
+
+- @entities/stitch-skills.md
+- @entities/tools/ag-ui.md
+- @entities/tools/jev-recipes.md
+- @entities/tools/plannotator.md
+- @entities/tools/product-engineering-skills.md
+- @entities/tools/univer.md
+
 ## [2026-11-16] ingest | K297 — 4 arXiv papers (privacy fix dataset, learnable harness, weight-space benchmark, sim-to-real robot agents)
 
 - @concepts/learnable-agent-harness.md
@@ -3060,3 +3069,8 @@ Routing note: the PDFs sat in `research to be indexed/game-dev/` but were filed 
 - `concepts/model-is-not-a-security-boundary.md`, `concepts/tools-we-dont-use.md` — **updated** backlinks.
 - Do not cite detail from the teaser. Read the primary postmortem first. [OPEN QUESTION 2026-11-14]
 - Routing: wiki-only; no distribution.
+
+## [2026-11-16] cross-wiki route | stitch-skills — design-to-code agent skills for Stitch MCP (Apache-2.0)
+
+Cross-wiki stub routed from `@osint-wiki/sources/2026-11-16-deep-research-link-eval-agentic-harnesses.md`.
+- Created wiki/entities/stitch-skills.md (stub)

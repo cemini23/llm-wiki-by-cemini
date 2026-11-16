@@ -1,3 +1,9 @@
+## [2026-11-16] ingest | Ingest Deep Research link evaluation winners routed to game-dev (2026-11-16)
+
+- @entities/modern-web-guidance.md
+- @entities/tools/estella.md
+- @entities/tools/ffmpeg-skill.md
+
 ## [2026-10-20] ingest | K293 — inbox routed out
 
 - **No game-dev page.** The new PDFs in this inbox are safety and honesty papers. They are filed in cybersec (`2610.22068`, `2610.22333`) and ccc (`2610.22292`). `2610.22341` (3DCodeVerse) was already ingested in K292. The other copies are byte-identical papers already filed elsewhere.
@@ -971,3 +977,8 @@ A duplicate concept page (`game-time-project.md`) was created and then removed o
 - **Finding:** if the harness has file-edit or shell tools, typed capability checks are bypassed. Classification must follow the capability used, not the file path.
 - **Judgement:** it serves game dev through the agent harness and the W2 MCP write policy. It gives the existing "read-only MCP first" rule a vocabulary and a ladder. It is a position paper with no user study, so treat the claims as design guidance.
 - Routing: agent harness for game dev (W2 MCP admission policy and Godot write path).
+
+## [2026-11-16] cross-wiki route | modern-web-guidance — modern web platform skill for agents (Apache-2.0)
+
+Cross-wiki stub routed from `@osint-wiki/sources/2026-11-16-deep-research-link-eval-agentic-harnesses.md`.
+- Created wiki/entities/modern-web-guidance.md (stub)

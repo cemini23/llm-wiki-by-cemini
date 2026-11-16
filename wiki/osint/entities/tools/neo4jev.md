@@ -5,11 +5,14 @@ tags: [tool, graph, jev, neo4j, atto, hosted-only]
 keywords: [neo4jev, system_one, beam search, noul, choice, typesafe, neo4j, kinship]
 related:
   - sources/eval-multi-wiki-repository-revenue-2026-11-11.md
+  - sources/2026-11-16-deep-research-link-eval-agentic-harnesses.md
+  - concepts/agent-link-evaluation-gates-v1013.md
   - entities/tools/jevals.md
   - entities/tools/ontosmith.md
+  - "@ccc-wiki/entities/tools/jev-recipes.md"
 maturity: draft
 created: 2026-11-11
-updated: 2026-11-11
+updated: 2026-11-16
 ---
 
 ## Raw Concept
@@ -58,6 +61,17 @@ So two dependencies, one of which is a cloud call on every hop.
 ### Status
 
 Extract, **design reference only**. The pattern is worth taking; the implementation cannot run under Atto's ban 4 and needs Neo4j besides.
+
+### Reaffirmed 2026-11-16 — Extract again, still fails the local-first gate
+
+The Deep Research batch graded this **Extract** without repeating the cloud dependency.
+The 2026-11-11 finding stands unchanged: every hop calls a remote TypeSafe
+`system_one` service. Under
+@concepts/agent-link-evaluation-gates-v1013.md that is a Gate-2 failure, so the item
+does **not** enter a project upgrade queue. MIT licence confirmed. [CONFIRMED]
+
+For the local counterpart in the same family see
+@ccc-wiki/entities/tools/jev-recipes.md, which runs against a local backend.
 
 ## Snippets
 

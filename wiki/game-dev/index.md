@@ -366,3 +366,12 @@ Catalog of all wiki pages. Updated on each ingest.
 | [travian-strategy-engine-architecture](sources/travian-strategy-engine-architecture-2026-11-02.md) | T4 economy, siege mathematics, and the analytical event-warp clock. Deterministic simulation separated from presentation. | draft |
 | [travian-civ-deep-research-report](sources/travian-civ-deep-research-report-2026-11-02.md) | Prior art, tooling, and what killed similar projects. CONFIRMED/CLAIMED/UNVERIFIED/IDEA evidence labels. | draft |
 
+
+## Entities
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [estella — TypeScript game engine over a C++/WebAssembly core (Apache-2.0)](entities/tools/estella.md) | (added by wiki_finalize_batch) | draft |
+| [ffmpeg-skill — 42 local FFmpeg operations for a coding agent (MIT)](entities/tools/ffmpeg-skill.md) | (added by wiki_finalize_batch) | draft |
+
+- [modern-web-guidance — modern web platform skill for agents (Apache-2.0)](entities/modern-web-guidance.md) — cross-wiki stub routed from ingest — `cross-wiki`

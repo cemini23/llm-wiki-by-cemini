@@ -1,3 +1,11 @@
+## [2026-11-16] ingest | Ingest Deep Research link evaluation batches A and B (40 URLs, 16 winners) plus v10.13 gate concept
+
+- @concepts/agent-link-evaluation-gates-v1013.md
+- @entities/tools/chrome-devtools-mcp.md
+- @entities/tools/neo4jev.md
+- @sources/2026-11-16-deep-research-link-eval-agentic-harnesses.md
+- @sources/2026-11-16-deep-research-link-eval-game-media.md
+
 ## [2026-11-16] ingest | K297 — 3 arXiv papers (HTR domain adaptation x2, local stochastic volatility) and 8 newsletter captures
 
 - @concepts/asia-tokenisation-and-exchange-policy-2026-11.md

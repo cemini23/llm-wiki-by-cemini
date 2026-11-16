@@ -721,6 +721,8 @@
 |------|----------|
 | @entities/frameworks/mitre-attack.md | validated |
 | @entities/frameworks/cyber-kill-chain.md | validated |
+| [Claude-BugHunter — bug-bounty skill bundle with a cross-engagement ledger (MIT code / CC-BY-4.0 prose)](entities/tools/claude-bughunter.md) | (added by wiki_finalize_batch) | draft |
+| [wrapvm — agent desktop VM with shared Chrome (NO-GO: no licence)](entities/tools/wrapvm.md) | (added by wiki_finalize_batch) | draft |
 
 ### Certifications
 

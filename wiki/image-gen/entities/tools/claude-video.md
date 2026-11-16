@@ -5,9 +5,11 @@ tags: [tool, video, agents, transcription, whisperx, local, mit]
 keywords: [claude-video, frame extraction, whisperx, gemini engine, local engine, ban-4]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-repository-revenue-2026-11-11.md"
+  - "@osint-wiki/sources/2026-11-16-deep-research-link-eval-agentic-harnesses.md"
+  - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
 maturity: draft
 created: 2026-11-11
-updated: 2026-11-11
+updated: 2026-11-16
 ---
 
 ## Raw Concept
@@ -38,6 +40,17 @@ The report rates this Integrate and does not discuss where the video goes. It de
 **This is a ban-4 hazard with the same shape as the last four batches.** A key in the environment silently selects the cloud path. On this machine that is the normal state.
 
 **The fix is the same as `jevals`:** use the local engine, and assert in a test that no network call happens.
+
+### Reaffirmed 2026-11-16 — Extract, Gate-2 conditional
+
+The Deep Research batch graded this **Extract** for Collectibles and game-time. MIT
+licence confirmed, 21k stars. [CONFIRMED]
+
+The 2026-11-11 Phase-0 finding still governs: with an API key present the default engine
+uploads to Google. Under
+@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md the item passes Gate 2 only
+when run with the local engine and no key in the environment. Queue it with that
+condition attached, not as a default install.
 
 ### Setup cost
 

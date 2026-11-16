@@ -1,3 +1,8 @@
+## [2026-11-16] ingest | Ingest Deep Research link evaluation winners routed to cybersec (2026-11-16)
+
+- @entities/tools/claude-bughunter.md
+- @entities/tools/wrapvm.md
+
 ## [2026-11-16] ingest | K297 — 3 arXiv papers (GPU hidden-state forensics, silent order errors, trading-agent compliance)
 
 - @concepts/gpu-hidden-state-forensics.md

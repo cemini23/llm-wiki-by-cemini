@@ -45,6 +45,8 @@ Four arXiv PDFs and ten newsletters. Two papers have no project lane and say so.
 | [Moontower Meta — no such thing as a stock market bubble?](sources/substack-rss-moontower-2026-11-15-no-such-thing-as-a-stock-market-bubble.md) | (added by wiki_finalize_batch) | draft |
 | [Wu Blockchain — Asia's weekly TOP10 crypto news (2026-11-15)](sources/substack-rss-wublock-2026-11-15-asias-weekly-top10-crypto-news-shanghai-encourag.md) | (added by wiki_finalize_batch) | draft |
 | [Wu Blockchain — WuBlockchain Weekly Outlook (2026-11-16)](sources/substack-rss-wublock-2026-11-16-wublockchain-weekly-outlook-nvidia-earnings-anth.md) | (added by wiki_finalize_batch) | draft |
+| [Deep Research link evaluation — agentic harnesses, MCP browser automation, Jev workflows (2026-11-16)](sources/2026-11-16-deep-research-link-eval-agentic-harnesses.md) | (added by wiki_finalize_batch) | draft |
+| [Deep Research link evaluation — game engine, media verification, container ops (2026-11-16)](sources/2026-11-16-deep-research-link-eval-game-media.md) | (added by wiki_finalize_batch) | draft |
 
 ### Ingest 2026-10-27 (macro + quant wave)
 Inbox sweep 2026-10-27: 15 OSINT pages. Tail-vol sampling rules for vol-surface forecasting, Sornette on transient supercritical Hawkes episodes, and the CoreWeave credit stress that moved the whole AI complex.
@@ -4814,6 +4816,7 @@ Codebase hubs maintained for agent navigation (`/obsidian-architect`).
 | [Reading a scanner watchlist: OTE, GEX, VEX, and invalidation](concepts/talon-scanner-level-semantics.md) | (added by wiki_finalize_batch) | draft |
 | [CME settlement mechanics for Polymarket commodity & index markets](concepts/cme-settlement-mechanics-for-prediction-markets.md) | (added by wiki_finalize_batch) | draft |
 | [Calibrating local stochastic volatility by fixed-point iteration](concepts/local-stochastic-volatility-calibration.md) | (added by wiki_finalize_batch) | draft |
+| [Link evaluation gates v10.13 — how a graded URL becomes a queued item](concepts/agent-link-evaluation-gates-v1013.md) | (added by wiki_finalize_batch) | draft |
 
 ### K250 wave (2026-08-29)
 
