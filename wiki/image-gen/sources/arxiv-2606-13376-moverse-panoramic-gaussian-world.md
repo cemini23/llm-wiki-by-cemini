@@ -49,7 +49,7 @@ updated: 2026-06-16
 
 **Claims [TENTATIVE]:** **8 FPS real-time roaming on single RTX 4090**; explicit scaffold prevents long-trajectory drift vs implicit video WMs.
 
-**Release posture:** GitHub repo live; weights/code under corporate review (~1 month per README) `[NEEDS VERIFICATION 2026-11-16]`.
+**Release posture:** weights are downloadable. `[CONFIRMED 2026-11-16]` — `github.com/Orange-3DV-Team/MoVerse` publishes `scripts/download_weights.sh`, which fetches AutoLevel (`gimbal360/autolevel.pth`), Pano LoRA (`gimbal360/pytorch_lora_weights.safetensors`), the Gaussian Predictor checkpoint, Self-Forcing Video and the TAEHV VAE. External gated dependencies: `black-forest-labs/FLUX.1-Fill-dev`, `depth-anything/DA3NESTED-GIANT-LARGE-1.1`, `Wan-AI/Wan2.1-T2V-1.3B`. `[RETRACTED 2026-11-16]` the earlier "weights/code under corporate review, ~1 month" note. [Source: https://github.com/Orange-3DV-Team/MoVerse (retrieved 2026-11-16)]
 
 ### Workspace relevance
 

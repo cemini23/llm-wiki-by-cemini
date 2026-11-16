@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.18553-weightbench-evaluating-language-models-as-weight.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18553
-- **Read status:** skimmed (abstract)
+- **Read status:** full — 9 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -32,3 +32,7 @@ The "impossible edit" track is the one worth remembering: a model that cannot te
 ## Snippets
 
 > "frontier agents can already read small networks and write working control policies without ever running them, but cannot yet patch language models, compress them without data, or tell an impossible edit from a hard one."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** Appendix E: the OS sandbox blocked one exploit with 0 false positives across 90 honest control trials; subject models are seeded procedurally to defeat memorisation. [Source: arxiv-weightbench-2611.18553.md full text, 9pp]

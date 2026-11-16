@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.18272-from-bytes-to-behavior-request-level-attribution.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18272
-- **Read status:** skimmed (abstract)
+- **Read status:** full — 7 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -34,3 +34,7 @@ The operational point is that a deployed model's per-request internal state is r
 ## Snippets
 
 > "distinguishing refusal from compliance with an AUROC of 0.88 on held-out prompts."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** Stated scope bound: conclusions are limited to what live states can support, excluding any claim about semantic content or intent. [Source: arxiv-gpu-hidden-state-forensics-2611.18272.md full text, 7pp]

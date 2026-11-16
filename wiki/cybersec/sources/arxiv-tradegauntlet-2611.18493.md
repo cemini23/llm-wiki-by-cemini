@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.18493-tradegauntlet-evaluating-compliance-controls-for.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18493
-- **Read status:** skimmed (abstract)
+- **Read status:** full — 21 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -34,3 +34,7 @@ Also reported: aggregate caps reduce the response-dependent gain unevenly, and e
 > "all conduct alerts were self-matches."
 
 > "zero alerts alone do not establish an agent's compliance."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** Extending the detection window from 120s to 180s raised detections from 10/15 to 15/15 selected cases — the authors call this tuning performance, not independent recall. [Source: arxiv-tradegauntlet-2611.18493.md full text, 21pp]

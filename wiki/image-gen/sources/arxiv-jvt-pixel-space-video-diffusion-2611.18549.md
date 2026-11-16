@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.18549-jvt-just-video-transformer-makes-pixel-space-vid.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18549
-- **Read status:** skimmed (abstract)
+- **Read status:** full — 23 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -30,3 +30,7 @@ The more interesting property is structural: because generation happens in pixel
 ## Snippets
 
 > "without a pretrained autoencoder, auxiliary detailers, cascaded stages, or U-Net-style skip connections."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** Camera-conditioned generators follow rotations reliably but reproduce translations less accurately. FVD is computed at 2048 samples while several baselines use 10000, so cross-paper FVD is not directly comparable. [Source: arxiv-jvt-pixel-space-video-diffusion-2611.18549.md full text, 23pp]

@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.18214-local-stochastic-volatility-iterations.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18214
-- **Read status:** skimmed (abstract + introduction)
+- **Read status:** full — 12 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -34,3 +34,7 @@ Relevance: a recalibration routine that needs only a handful of iterations and a
 > "After five iterations, leverage factors with 63 and 143 coefficients reproduce the implied volatility surface fitted to the quotes within a few basis points."
 
 > "A few regularized Gauss–Newton steps against the quotes then bring 87% and 95% of the liquid quotes inside their bid–ask intervals."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** No dedicated limitations section. The paper notes the underlying McKean-Vlasov equation has open existence and uniqueness in general; the method is validated numerically. [Source: arxiv-local-stochastic-volatility-2611.18214.md full text, 12pp]

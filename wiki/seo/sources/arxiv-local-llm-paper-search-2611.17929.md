@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.17929-evaluating-large-language-models-for-scientific.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.17929
-- **Read status:** skimmed (abstract)
+- **Read status:** full — 9 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -36,3 +36,7 @@ No SEO lane. Recorded here because it was dropped in the seo inbox; the content 
 > "retrieval success depends strongly on the selected model and the specificity of the query."
 
 > "A100 GPUs are generally faster than the Mac Studio, but its unified memory allows larger models that could not be loaded in the tested GPU configuration."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** Discussion and Conclusion: local LLM execution is a practical basis for web-assisted paper search **only while results remain subject to human verification**. [Source: arxiv-local-llm-paper-search-2611.17929.md full text, 9pp]

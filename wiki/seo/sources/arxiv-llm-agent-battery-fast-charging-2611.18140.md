@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.18140-large-language-model-empowered-intelligent-agent.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18140
-- **Read status:** skimmed (abstract)
+- **Read status:** full — 9 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -34,3 +34,7 @@ No SEO lane. Recorded because it was dropped in the seo inbox.
 ## Snippets
 
 > "Rather than using the LLM merely as a predictor, the proposed framework formulates battery charging as a closed-loop interaction process."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** The stated motivation is that fixed protocols cannot adapt to chemistry, condition or ageing; the paper calls the result a simulation-grounded proof of concept. [Source: arxiv-llm-agent-battery-fast-charging-2611.18140.md full text, 9pp]

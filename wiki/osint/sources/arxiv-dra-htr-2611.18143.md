@@ -16,7 +16,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.18143-dra-htr-disentangling-representation-and-adaptat.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18143
-- **Read status:** skimmed (abstract)
+- **Read status:** full — 20 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -33,3 +33,7 @@ The stability number is the interesting one. A method that works on four of seve
 ## Snippets
 
 > "it reduces the Character Error Rate (CER) in average by 13.52 percentage points, and the average standard deviation decreases from 7.23 to 1.11 percentage points."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** The limitation that motivates the method: labelled historical data is scarce, so adaptation must exploit unlabelled target data. [Source: arxiv-dra-htr-2611.18143.md full text, 20pp]

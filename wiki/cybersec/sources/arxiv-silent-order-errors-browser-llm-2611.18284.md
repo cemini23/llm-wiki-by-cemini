@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.18284-clean-tickets-wrong-orders-catching-silent-error.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18284
-- **Read status:** skimmed (abstract + figure)
+- **Read status:** full — 4 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -32,3 +32,7 @@ The lesson is not about pizza. A validator that checks schema will pass a confid
 ## Snippets
 
 > "It can print something broken, which any system rejects. Or it can print a clean, well formed order that nobody placed."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** Conclusion: a clean parse is not a correct one, and when the model runs in the visitor's tab there may be no one else to notice. [Source: arxiv-silent-order-errors-browser-llm-2611.18284.md full text, 4pp]

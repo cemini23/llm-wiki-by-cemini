@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.18533-modharness-rl-recasting-harnesses-as-learnable-a.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18533
-- **Read status:** skimmed (abstract)
+- **Read status:** full — 27 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -32,3 +32,7 @@ Directly relevant to the harness-tuning question in this workspace: the finding 
 ## Snippets
 
 > "a COMPRESSION program that assembles the accumulated history into the model's context and a STEERING program that supplies guidance when behavior deviates."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** The harness is learned as programs over structured state, proposed from recent trajectories and verified by execution; improvement holds in most, not all, settings. [Source: arxiv-modharness-rl-2611.18533.md full text, 27pp]

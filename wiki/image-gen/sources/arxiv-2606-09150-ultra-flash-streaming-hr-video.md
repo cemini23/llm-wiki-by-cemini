@@ -58,4 +58,4 @@ Not a persona identity tool — a **throughput + resolution** layer for interact
 
 ## Dead Ends
 
-Base model coupling unspecified — which Wan/Self-Forcing checkpoint is the default demo? Open weights `[NEEDS VERIFICATION 2026-11-16]`. AIGC degradation tuned for diffusion artifacts — may underperform on real-camera LR input.
+Base model coupling is Self-Forcing on Wan2.1-1.3B. Open weights `[CONFIRMED 2026-11-16]` — Hugging Face `xin1u/UltraFlash` publishes a model card under Apache-2.0, with code at `github.com/xin1u/UltraFlash`. AIGC degradation tuned for diffusion artifacts — may underperform on real-camera LR input. [Source: https://huggingface.co/xin1u/UltraFlash (retrieved 2026-11-16)]

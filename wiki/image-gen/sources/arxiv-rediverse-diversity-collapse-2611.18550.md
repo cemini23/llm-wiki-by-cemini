@@ -16,7 +16,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.18550-restoring-diversity-in-distilled-image-and-video.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18550
-- **Read status:** skimmed (abstract)
+- **Read status:** full — 42 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -35,3 +35,7 @@ Relevance to any distilled or LoRA-merged pipeline in this wiki: a dropdown in o
 ## Snippets
 
 > "distilled students maintain total activation variance comparable to their teachers, but concentrate it into substantially fewer directions."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** Discussion: diversity is lost at a single collapsed block, where the student's features lose the teacher's principal directions of variation that downstream blocks could still render. [Source: arxiv-rediverse-diversity-collapse-2611.18550.md full text, 42pp]

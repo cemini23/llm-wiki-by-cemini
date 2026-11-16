@@ -76,57 +76,57 @@ paper_queries:
   - cluster: poker-agent-paper
     wikis: [gambling]
     query: "research paper poker reinforcement learning opponent modeling imperfect information game"
-    arxiv_query: '(all:poker OR all:holdem OR all:"texas hold") AND (all:reinforcement OR all:CFR OR all:"opponent modeling" OR all:"imperfect information")'
+    arxiv_query: '((all:poker OR all:holdem OR all:"texas hold") AND (all:reinforcement OR all:CFR OR all:"opponent modeling" OR all:"imperfect information")) AND (cat:cs.AI OR cat:cs.LG OR cat:cs.GT OR cat:cs.MA OR cat:econ.GN)'
     category: research paper
 
   - cluster: poker-mafp-fictitious-play-paper
     wikis: [gambling]
     query: "research paper multi-agent fictitious play poker game theory equilibrium learning"
-    arxiv_query: '(all:"fictitious play" OR all:MAFP) AND (all:poker OR all:game OR all:equilibrium OR all:"multi-agent")'
+    arxiv_query: '((all:"fictitious play" OR all:MAFP) AND (all:poker OR all:game OR all:equilibrium OR all:"multi-agent")) AND (cat:cs.AI OR cat:cs.LG OR cat:cs.GT OR cat:cs.MA OR cat:econ.GN)'
     category: research paper
 
   - cluster: options-index-paper
     wikis: [osint]
     query: "research paper index options LEAPS volatility surface mini-SPX XSP hedging"
-    arxiv_query: '(all:option OR all:options) AND (all:volatility OR all:hedging OR all:LEAPS OR all:"implied volatility")'
+    arxiv_query: '((all:option OR all:options) AND (all:volatility OR all:hedging OR all:LEAPS OR all:"implied volatility")) AND (cat:q-fin.PR OR cat:q-fin.MF OR cat:q-fin.TR OR cat:q-fin.CP OR cat:cs.LG)'
     category: research paper
 
   - cluster: genealogy-archive-paper
     wikis: [osint]
     query: "research paper genealogy archival handwriting recognition IIIF GEDCOM entity resolution historical records"
-    arxiv_query: 'all:genealogy OR all:GEDCOM OR all:IIIF OR all:"handwriting recognition" OR all:"historical document" OR all:HTR'
+    arxiv_query: '(all:genealogy OR all:GEDCOM OR all:IIIF OR all:"handwriting recognition" OR all:"historical document" OR all:HTR) AND (cat:cs.CV OR cat:cs.CL OR cat:cs.IR OR cat:cs.DL)'
     category: research paper
 
   - cluster: agent-harness-paper
     wikis: [ccc, game-dev]
     query: "research paper LLM agent harness playtesting verification game development OR poker"
-    arxiv_query: '(all:agent AND (all:harness OR all:playtest OR all:verification)) OR (all:LLM AND all:agent AND (all:game OR all:poker))'
+    arxiv_query: '((all:agent AND (all:harness OR all:playtest OR all:verification)) OR (all:LLM AND all:agent AND (all:game OR all:poker))) AND (cat:cs.AI OR cat:cs.SE OR cat:cs.CL OR cat:cs.MA OR cat:cs.LG)'
     category: research paper
 
   # Standing steal for federation /route + agent-toolkit (K232 SHE / failover ops)
   - cluster: cursor-route-harness
     wikis: [ccc]
     query: "research paper LLM agent task router harness failover SIP verification trajectory safety tool policy"
-    arxiv_query: '(all:agent AND (all:harness OR all:router OR all:failover OR all:"tool policy" OR all:"safety memory")) AND (all:LLM OR all:"language model" OR all:trajectory)'
+    arxiv_query: '((all:agent AND (all:harness OR all:router OR all:failover OR all:"tool policy" OR all:"safety memory")) AND (all:LLM OR all:"language model" OR all:trajectory)) AND (cat:cs.AI OR cat:cs.SE OR cat:cs.CL OR cat:cs.LG)'
     category: research paper
 
   - cluster: local-abliterated-llm-paper
     wikis: [cybersec]
     query: "research paper local LLM inference abliteration refusal reduction pentest assist open-weight agent"
-    arxiv_query: '(all:abliteration OR all:"refusal" OR all:"uncensored") AND (all:LLM OR all:"language model") OR (all:local AND all:LLM AND (all:pentest OR all:vLLM OR all:Ollama))'
+    arxiv_query: '((all:abliteration OR all:"refusal" OR all:"uncensored") AND (all:LLM OR all:"language model") OR (all:local AND all:LLM AND (all:pentest OR all:vLLM OR all:Ollama))) AND (cat:cs.CL OR cat:cs.CR OR cat:cs.AI OR cat:cs.LG)'
     category: research paper
 
   - cluster: nfl-dfs-projection-paper
     wikis: [gambling]
     query: "research paper NFL daily fantasy sports player projection ownership simulation FanDuel DraftKings"
     # Never bare "DFS" — matches depth-first search on arXiv.
-    arxiv_query: '(all:"daily fantasy" OR all:DraftKings OR all:FanDuel OR all:"fantasy football") AND (all:NFL OR all:projection OR all:ownership OR all:lineup)'
+    arxiv_query: '((all:"daily fantasy" OR all:DraftKings OR all:FanDuel OR all:"fantasy football") AND (all:NFL OR all:projection OR all:ownership OR all:lineup)) AND (cat:cs.LG OR cat:cs.AI OR cat:stat.AP OR cat:econ.GN)'
     category: research paper
 
   - cluster: nfl-parlay-sgp-paper
     wikis: [gambling]
     query: "research paper NFL same-game parlay correlation copula sportsbook vig pick'em"
-    arxiv_query: '(all:parlay OR all:SGP OR all:"same-game") AND (all:NFL OR all:sportsbook OR all:correlation OR all:copula)'
+    arxiv_query: '((all:parlay OR all:SGP OR all:"same-game") AND (all:NFL OR all:sportsbook OR all:correlation OR all:copula)) AND (cat:cs.LG OR cat:stat.AP OR cat:econ.GN OR cat:cs.AI)'
     category: research paper
 
 # Web/news — digest only; gated by exa.news_enabled (default false = zero Exa news spend)
@@ -140,19 +140,19 @@ paper_queries:
     wikis: [seo]
     query: "research paper search ranking generative engine optimization AI overview citation retrieval augmented answer"
     # "GEO" alone matches geospatial on arXiv, so the query spells it out.
-    arxiv_query: '(all:"search engine" AND (all:ranking OR all:retrieval OR all:citation)) OR all:"generative engine optimization" OR (all:"large language model" AND all:"search")'
+    arxiv_query: '((all:"search engine" AND (all:ranking OR all:retrieval OR all:citation)) OR all:"generative engine optimization" OR (all:"large language model" AND all:"search")) AND (cat:cs.IR OR cat:cs.CL OR cat:cs.CY OR cat:cs.AI OR cat:econ.GN)'
     category: research paper
 
   - cluster: image-gen-diffusion-paper
     wikis: [image-gen]
     query: "research paper diffusion model text-to-image LoRA adapter personalization image synthesis control"
-    arxiv_query: '(all:diffusion OR all:"text-to-image" OR all:LoRA) AND (all:image OR all:generation OR all:personalization OR all:adapter)'
+    arxiv_query: '((all:diffusion OR all:"text-to-image" OR all:LoRA) AND (all:image OR all:generation OR all:personalization OR all:adapter)) AND (cat:cs.CV OR cat:cs.GR OR cat:cs.LG OR cat:cs.AI)'
     category: research paper
 
   - cluster: 3d-printing-additive-paper
     wikis: [3d-printing]
     query: "research paper additive manufacturing 3D printing slicer fused deposition material extrusion quality"
-    arxiv_query: 'all:"additive manufacturing" OR all:"3D printing" OR all:slicer OR all:"fused deposition" OR all:"material extrusion"'
+    arxiv_query: '(all:"additive manufacturing" OR all:"3D printing" OR all:slicer OR all:"fused deposition" OR all:"material extrusion") AND (cat:cs.GR OR cat:cs.CE OR cat:eess.SY OR cat:cond-mat.mtrl-sci OR cat:physics.app-ph)'
     category: research paper
 queries:
   - cluster: guruwatcher-newsletter-alerts

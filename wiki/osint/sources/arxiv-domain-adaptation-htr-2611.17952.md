@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.17952-domain-adaptation-based-pipeline-for-character-c.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.17952
-- **Read status:** skimmed (abstract + introduction)
+- **Read status:** full — 20 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -34,3 +34,7 @@ Directly relevant to any OCR or archive-digitisation lane, including historical 
 > "The unsupervised training increases the computation time only during training not in inference."
 
 > "We establish a new state-of-the-art on the Safran-MNIST-DLS dataset … with 76.17% Macro F1-score."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** The motivating limitation is that supervised models generalise poorly to unseen distributions; the pipeline closes that gap, it does not remove it. [Source: arxiv-domain-adaptation-htr-2611.17952.md full text, 20pp]

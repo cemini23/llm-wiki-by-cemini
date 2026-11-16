@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.18562-training-reasoning-models-in-simulation-to-nativ.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18562
-- **Read status:** skimmed (abstract + figure)
+- **Read status:** full — 21 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -32,3 +32,7 @@ The framing that transfers beyond robotics: an agent trained in simulation on a 
 ## Snippets
 
 > "It is trained with reinforcement learning entirely in simulation and deployed on a real robot."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** Stated limitation, verbatim: "We have not been able to scale up our training." [Source: arxiv-simulation-reasoning-real-robots-2611.18562.md full text, 21pp]

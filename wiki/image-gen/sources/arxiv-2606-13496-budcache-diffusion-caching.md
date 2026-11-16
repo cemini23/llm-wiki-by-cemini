@@ -73,4 +73,4 @@ Both are build-track **inference acceleration** axes for FLUX persona T2I and Wa
 
 ## Dead Ends
 
-No ComfyUI node at release `[NEEDS VERIFICATION 2026-11-16]`. Per-model offline search required — not universal zero-config. FLUX weights remain BFL non-commercial.
+No ComfyUI node as of 2026-11-16. `[CONFIRMED 2026-11-16]` — the official code lives at `github.com/Westlake-AGI-Lab/BudCache`; no official or community ComfyUI custom node was found. Per-model offline search required — not universal zero-config. FLUX weights remain BFL non-commercial. [Source: https://github.com/Westlake-AGI-Lab/BudCache (retrieved 2026-11-16)]

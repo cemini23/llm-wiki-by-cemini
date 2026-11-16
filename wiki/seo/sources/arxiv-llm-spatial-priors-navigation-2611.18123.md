@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.18123-evaluating-language-models-as-spatial-priors-for.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18123
-- **Read status:** skimmed (abstract)
+- **Read status:** full — 96 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -36,3 +36,7 @@ No SEO lane. Recorded because it was dropped in the seo inbox.
 ## Snippets
 
 > "the real-layout prior gives the lower search cost in every room type."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** Generated placements reduce search area by less than a third of the real-layout prior; after smoothing the fraction stays below two thirds, and the real-layout prior wins in every room type. [Source: arxiv-llm-spatial-priors-navigation-2611.18123.md full text, 96pp]

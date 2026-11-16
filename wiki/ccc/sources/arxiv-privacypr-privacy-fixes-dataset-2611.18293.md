@@ -15,7 +15,7 @@ updated: 2026-11-16
 - **Location:** `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.18293-privacypr-a-dataset-of-real-world-privacy-fixes.pdf`
 - **Retrieved:** 2026-11-16
 - **arXiv:** 2611.18293
-- **Read status:** skimmed (abstract)
+- **Read status:** full — 5 pages extracted 2026-11-16
 
 ## Narrative
 
@@ -32,3 +32,7 @@ Numbers: on Small, two coding agents detect only 42-51% of defects under a gener
 ## Snippets
 
 > "two coding agents detect only 42–51% of defects under a generic review prompt, but 88–91% when explicitly asked to check privacy, while flagging 11–15% of non-fix PRs."
+
+## Dead Ends
+
+- **Full-read note (2026-11-16):** Scope is public GitHub pull requests; the 99% in-browser fidelity figure applies to the PIZZA matcher, not to general code review. [Source: arxiv-privacypr-privacy-fixes-dataset-2611.18293.md full text, 5pp]
