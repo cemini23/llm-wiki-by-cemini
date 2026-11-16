@@ -50,7 +50,7 @@ A learned vector-valued critic compares the chosen student field against the tea
 
 **Reported numbers.** Four-step gains on SD3.5-Medium (GenEval 0.61 → 0.67), FLUX.2 Klein 4B (GenEval 0.78 → 0.80; OCR 0.64 → 0.69), and MiniMax-H3 33B (61.33% human preference against Fast-H3 at the same 4 NFE; 45.53% against the 100-NFE teacher).
 
-**Operator caveats.** Training needs a teacher plus a critic in the same run, so this is not locally trainable. No released weights were checked [NEEDS VERIFICATION 2026-11-16]. The reported gains are on models that are already good at four steps, so the practical delta is small in absolute terms.
+**Operator caveats.** Training needs a teacher plus a critic in the same run, so this is not locally trainable. No released weights were checked `[CONFIRMED 2026-11-16]` Training code is public at https://github.com/Luo-Yihong/VA-TDM, but no released weights were found. [Source: https://arxiv.org/abs/2611.06796 (retrieved 2026-11-16)]. The reported gains are on models that are already good at four steps, so the practical delta is small in absolute terms.
 
 ## Snippets
 
