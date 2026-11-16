@@ -141,14 +141,23 @@ fi
 REMOTE_DIR="${REMOTE_BASE}/${WIKI_ID}"
 REMOTE_PATH="${REMOTE_DIR}/${BASENAME}"
 
-# --- tailnet preflight (added 2026-10-01) -------------------------------
-# The egress host is Tailscale-only; public SSH is UFW-closed. Without this,
-# an unreachable host makes each file hang on its own SSH timeout.
-if ! ssh "${SSH_OPTS[@]}" -o ConnectTimeout=8 -o BatchMode=yes "$EGRESS_HOST" true 2>/dev/null; then
-  echo "ERROR: cannot reach ${EGRESS_HOST} (tailnet down?)" >&2
-  echo "  Check: tailscale status   (expect 100.76.73.113 cemi-egress-fi)" >&2
-  echo "  Do NOT reopen public SSH as a workaround; bring the tailnet up." >&2
-  exit 3
+# --- tailnet preflight (2026-10-01; queue fallback 2026-11-16) ----------
+# The egress host is Tailscale-only; public SSH is UFW-closed. A 3s probe
+# decides fast. If the host is unreachable (tailnet down or a Hetzner billing
+# hold), do not fail the ingest gate: queue the raw locally and exit 0.
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+QUEUE_ROOT="${REPO_ROOT}/research to be indexed/_pending_egress_sync/${WIKI_ID}"
+if ! ssh "${SSH_OPTS[@]}" -o ConnectTimeout=3 -o BatchMode=yes "$EGRESS_HOST" true 2>/dev/null; then
+  mkdir -p "$QUEUE_ROOT"
+  if [[ "$KEEP_LOCAL" -eq 1 ]]; then
+    cp -p "$LOCAL_FILE" "$QUEUE_ROOT/${BASENAME}"
+  else
+    mv "$LOCAL_FILE" "$QUEUE_ROOT/${BASENAME}"
+  fi
+  echo "QUEUED_FOR_EGRESS_SYNC: ${EGRESS_HOST} unreachable (tailnet down or billing hold)"
+  echo "  queued: ${QUEUE_ROOT}/${BASENAME}"
+  echo "  replay: bash scripts/archive_raw_to_egress.sh --wiki-id ${WIKI_ID} '${QUEUE_ROOT}/${BASENAME}'"
+  exit 0
 fi
 
 echo "==> Ensure ${EGRESS_HOST}:${REMOTE_DIR}"

@@ -1,0 +1,2114 @@
+# Roadmap
+
+Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSONS.md` (meta-lessons).
+
+---
+
+## Vision
+
+CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **egress-fi only** (librarian deleted 2026-06-14; Ashburn `cemini-prod` deleted 2026-09-18).
+
+<!-- superseded 2026-08-07 — see Current state K226 -->
+## Active workstreams (2026-08-08 — Atto #1 · GuruWatcher #2 · TipDrop retired)
+
+Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priority #2 · everything else behind (`scripts/active_project_brief_targets.yaml`). TipDrop retired. Local abliterated lab → Cybersecurity wiki briefs. Eval: CCC v10.5.
+
+### Priority stack (morning ingest)
+
+| Rank | Project | Brief home | Prod scp |
+|------|---------|------------|----------|
+| **#1** | **Atto** | `../atto/briefs/` | No |
+| **#2** | **GuruWatcher** | `../GuruWatcher/briefs/` | No |
+| behind | Poker Arena | `agents/devfun-poker-arena/briefs/` | sandbox |
+| behind | XSP / PM | `briefs/xsp-*` / `briefs/pm-*` | no host (Ashburn deleted) |
+| behind | Local abliterated AI lab | `briefs/cybersec/` | No |
+| retired | TipDrop / David kit | — | Do not route |
+
+### Poker — before next free tournament entry (2026-08-12)
+
+P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
+
+---
+
+## Current state (2026-11-14 — inbox cleared, egress restored)
+
+- **40 sources ingested, 24 re-drops removed.** ccc 11, osint 14, cybersec 5, image-gen 3, seo 3, 3d-printing 2, gambling 2. Lint clean.
+- **`cemini-egress-fi` is back.** The Hetzner suspension ended. The 146-file backlog and the 40 new sources are copying to the cold store. The single-copy exposure that built up since 5 November is closing.
+- **The digest re-fetch loop is confirmed, not suspected.** Two gambling papers were deleted in the morning and reappeared within the hour. Three waves running now. Until the digest stops re-fetching what it already filed, every future ingest pays this tax.
+- **A silent data-loss hazard was caught.** Three eval `.docx` files matched existing archive names exactly. All three were new documents, so each was renamed with its drop date before the copy. Without the hash check, two archives would have been overwritten.
+- **K2V is the one build candidate.** Training-free keyframing on stock Wan2.2 weights: Physics-IQ Verified I2V 32.2 to 55.0 (14B), and 5B with K2V beats plain 14B at a third of the parameters, at $0.47–0.59 per clip. The Wan2.2 VAE constant `L_T = 4` is load-bearing — a community VAE swap silently breaks it.
+- **`/route` lane calibration gets two inputs.** AA Coding Agent Index v2.1 dropped every configuration except GPT-6.1 Terra in Codex; Codex is cheapest at score 48+ ($1.51/task). A hybrid decision model cut six LLM calls to one and 40K tokens to 1.8K.
+- **Defensive monitoring gets a metric.** The patchless window grew from 5.1 to 39.2 days while exploits still arrive in hours. Monitor commits, not only advisory feeds.
+- **Corrections made this wave.** The DMA paper's "4.87 million" figure contradicts its Table 1 (4,871,552,575); the table was cited. CMSX-4 was wrongly called a thermoelectric material in the brief — it is a nickel-base single-crystal superalloy.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
+## Current state (2026-11-10 — K296 full-inbox wave, 82 sources)
+
+- **The whole inbox is ingested.** 82 sources across eight domains: 59 arXiv PDFs and 28 newsletter or Substack files. 189 new wiki pages, 121 updated. The live inbox is empty; every source is queued in `_ingested-awaiting-archive/`.
+- **The session-start check under-reported by 28 files.** `-mindepth 2 -maxdepth 2` never sees root-level `.md`. Fix the ritual before the next wave or the newsletter lane will keep silently accumulating.
+- **Six re-drops.** sha256-identical copies sat in the live inbox beside their archived originals. Removed. The pattern suggests the digest re-fetches items it has already filed.
+- **Best find of the wave: the box-score Gaussian copula (2611.10152).** It is evidence for the copula step that `dfs-distribution-layer` already specifies, not a new design. It beats an independence product in 25 of 27 joint-threshold combinations, and independence systematically under-predicts high joint exceedance — exactly the defect the design exists to prevent. **Do not copy the magnitudes** (NBA PTS/REB/AST is mild; NFL role priors are far larger). The actionable line is the author's: playing time drives the dependence, which maps to snap share and route participation. Target: CeminiDFS.
+- **`/route` has five independent supporting papers.** Terminal-Bench maintenance debt (repairs moved accuracy more than 10 points), BOXBOX (1.70x vs 1.44x frozen), routine-operation decay (enabled is not the same as ran), WorkflowArena (workflow quality separable from model skill), and Fable 5.2 economics (20% cheaper per token, 31% costlier per task — effort settings do not transfer across versions).
+- **PM/Kalshi gets a venue-selection reframe.** Event Horizon argues the moat is exit quality, not quote price, and gives the volume mix (75% parlays) that decides which book a bot is really sizing against. A separate CFTC impartial-access order collides with state injunctions and changes venue availability, not just sentiment.
+- **XSP gets implementable flow rules.** The GlitchSPX $93M put piece yields package price allocation, four trade types, four checks, and next-morning open-interest confirmation.
+- **Two integrity flags, unresolved.** BMMS (2611.09147) reports one cell as 70.7% in the abstract and 35.0%/22.5%/42.5% in Section 5. SparkToro's −24% open-web figure comes from a truncated RSS body. Neither is safe to quote yet.
+- **Archive still blocked.** `cemini-egress-fi` times out. 114 raw sources, about 250 MB, exist only on this laptop.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
+## Current state (2026-11-11 — v10.11 agent-skills evaluation)
+
+- **Three Integrates — the most any batch has produced.** All three are harness tooling, not project dependencies, which is why they clear while the Extract items keep hitting blockers.
+  - **`shadcn/improve`** — MIT. Recon → 9-category parallel audit → **Vet** → Prioritize → Plan. Frontier model plans, cheap model executes, **"merging is always yours"**. The skill writes only to `plans/`; executors run in disposable worktrees.
+  - **`autoharness`** — MIT. Reflects every 50 tool calls into skills. **Writes `.claude/skills/`; `.claude/autoharness/` is state only** (report had this wrong). Claims it never touches hand-written skills — verify on a scratch repo.
+  - **`claude-video`** — MIT. Video → timestamped frames + transcript.
+- **Two data-path traps Phase-0 caught.**
+  - **`claude-video`'s default engine is Gemini when a key is present** — YouTube goes straight to Google, and **other URLs and local files are uploaded to Google's Files API**. The **local engine only runs with no key**. On this machine that is the normal state, so the default is a ban-4 hazard.
+  - **`neo4jev` is hosted-only** — needs `TYPESAFE_API_KEY` and Neo4j, and without the key it silently emits "labelled stand-in answers". **Same Jev family as `jevals`, opposite locality.** Do not generalise between them.
+- **The pattern is now unambiguous across five batches:** the eval describes cloud-with-a-local-option as cloud-only, and free-with-a-cloud-option as free. Both errors push toward the metered path. Check the **default**, not the capability.
+- **Best security paper: `arXiv 2611.13960`.** A coding harness is a **Living-off-the-Land platform** — once instructions can be injected into retrieved content, `bash`, `curl`, and `find` are the payload. Security is a **structural property of the assembly**, not a behavioural property of the model.
+- **Best evaluation paper: `arXiv 2611.14419`.** **Mechanical validity is not faithfulness.** A generated world model can parse, run, and be the wrong game — the same gap as a valid certificate about false premises, or a wiki page that passes lint.
+- **Best economics number:** Mercor reports spending **3× as much on inference as on salaries**, and claims it pays back through productivity. But its product *is* human expertise evaluated against models, which makes it the least representative firm for that ratio.
+- **AEO got numbers.** Claude Code picked Resend first in **64 of 102** email recommendations; SendGrid was first 7 times but appeared as an alternative 55 times. **Second place is worth almost nothing, because the first answer gets implemented.**
+- **Benchmark caution from CAGE 4:** the simulator charges a team for a Restore it **silently discarded**, with no error. A benchmark's counts can be wrong while the interface looks clean.
+- **Prompts staged:** atto, collectibles, game-time. All 100/100. Guruwatcher received one secondary fit and has no prompt this round.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps. Pushed as `8c74986f7`.
+- **Archive still blocked** — `cemini-egress-fi` remains suspended. 146 files in `_ingested-awaiting-archive/`.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
+## Current state (2026-11-10 — v10.11 link evaluation, Jev family)
+
+- **Two Integrates, both process rather than runtime.** `worktrunk` (fourth evaluation, licence never moved) and `dzhng/skills` — a MIT skill library whose `write-spec` → `implement-spec` pair slices work into reviewable passes with **playable checkpoints**. Neither can touch data, which is why they clear while three Atto extracts all have blockers.
+- **The batch's one real opening: `jevals` runs fully offline.** MIT, and the README documents **Laya** — in-process on Apple Silicon, **no key, no network**. The eval framed the tool entirely around hosted Jev at $0.042/M tokens. That framing made it a ban-4 problem; the local backend makes it the **first judge this workspace can run against vault data** without breaking the boundary. Prove the offline path with a test before depending on it.
+- **Three more report corrections.**
+  - **`ontosmith`** — MIT, but needs **Neo4j 5.x** for live builds, uses a **cloud LLM by default** (OpenRouter → Claude Haiku/Sonnet), and is **tested on Linux only with WSL2 on Windows**. macOS is untested. Take the propose-then-judge contract; do not install.
+  - **`browser-use`** — licence is **MIT**, not unfound, and `Browser('chromium')` with a local model needs **no key**. The metered Browser Use Cloud is the *default*, not the only path.
+  - **`gbrain`** — **revived after a May retirement.** One of its two retirement reasons expired when kb-server was deleted on 2026-06-14. Markdown store, **rebuildable index**, keyless keyword search; synthesis still needs a model.
+- **Pattern across four batches:** the eval describes cloud-with-a-local-option as cloud-only, and free-with-a-cloud-option as free. Both errors push toward the metered path.
+- **The Atto pipeline the batch describes** — ontosmith proposes facts with evidence spans → jevals gates groundedness and PII locally → gbrain indexes approved facts cheaply. Coherent as a chain; each link has one blocker: Neo4j, the model path, and synthesis.
+- **Prompts staged:** [atto](briefs/2026-11-10_atto-integration-prompt.md), [collectibles](briefs/2026-11-10_collectibles-integration-prompt.md), [game-time](briefs/2026-11-10_game-time-start-prompt.md), [guruwatcher](briefs/2026-11-10_guruwatcher-integration-prompt.md). All 100/100. **Guruwatcher is a third consecutive hold.**
+- **GuruWatcher's real defect list is unchanged and growing.** GW-05 to GW-08 plus the split archive, and now a fifth: **the service was down for at least two hours on 2026-11-05 and nothing reported it.** An alert-only system that fails silently cannot be trusted to have been running.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps. Pushed as `2d4bd1733`.
+- **Archive still blocked** — `cemini-egress-fi` remains suspended. 115 files in `_ingested-awaiting-archive/`.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
+## Current state (2026-11-05 — v10.11 link evaluation)
+
+- **One Integrate: `deja-vu`.** MIT, ~1.4k stars, local Go binary that indexes the session transcripts 43 coding harnesses already write to disk — commands with exit codes, files opened, and the exact `Edit` spans. **Zero LLM calls by default.** The first tool in weeks that is unambiguously safe for Atto.
+  - **Configure `~/.config/deja/exclude` before the first index**, with `Desktop/family/` and `~/AttoVault/` listed.
+  - **The report omitted the caveat that matters:** *credentials are redacted at index time, but the original transcripts keep them.*
+- **Phase-0 corrected two licences.** `pagesift` was logged "NOT FOUND" and is **AGPL-3.0** — and was routed to two commercial projects. `crawlee` was logged unverified and is Apache-2.0. That is the third batch running where an unverified licence turned out to be copyleft.
+- **`ontographia` is architecturally right for Atto and blocked on maturity.** Ontology-gated query compilation: the model emits schema-constrained Intent, never Cypher. But **15 stars, 0 forks, 105 commits**, and the README does not say whether its experimental LLM layer runs locally. Under ban 4 that is the whole question.
+- **`helix-foundry` re-tiered Extract → Watch in one day**, on a packaging detail (no `0.1.0` tag, no published Docker image). The substantive finding is unchanged: it calls Claude or OpenAI by default when a key is exported.
+- **Three papers matter more than most of the eval.**
+  - **EditVeto** — a 0.6B gate that **reverts the OCR corrections an LLM got wrong**. The oracle finding is the design insight: given true error locations, per-span generation is *worse* than no correction; vetoing a full rewrite's edits helps. Directly relevant to any Atto post-OCR step.
+  - **auto_research** — a number enters a report only if **a recorded tool output contains it**. Provenance as a lookup, not a prompt instruction.
+  - **Subconscious** — **speculative decoding is not behaviour-neutral past ~30 steps.** It shifts long-horizon trajectories in random directions, so the setting belongs in the reproducibility record.
+- **Scraping stack, sorted for Collectibles:** spider (MIT) and crawlee (Apache-2.0) are clean; pagesift is AGPL; botasaurus's anti-detect layer is the same per-site evasion decision Scrapling raised on 2026-11-02. The recurring blocker is still the **hand-labelled set**, not a ninth crawler.
+- **A fourth licence trap in game-time's path:** `lz4` splits — `liblz4` is BSD-2-Clause, the `lz4` CLI is **GPL-2.0-or-later**. Link the library, never shell out to the CLI.
+- **Four prompts staged**, all 100/100. Game-time and GuruWatcher are both holds.
+- **Egress host is offline.** `cemini-egress-fi` last seen 2h ago; the 32 inbox files are ingested but **not archived**. Push succeeded from Bash now that the sandbox is off.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps. Pushed as `796ccf0ea`.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
+## Current state (2026-11-04 — repository revenue evaluation)
+
+- **A weak batch by content, a strong one by correction.** 20 URLs, **0 Integrate**, eight licences recorded as "NOT FOUND", and seven rows that admit the repository was never retrieved. Four of the twenty were repeats from earlier batches.
+- **The correction that mattered:** the report called `kgoedecke/doop` **MIT** and "compliant with Game-Time's zero-copyleft rule". It is **AGPL-3.0**. Taken at face value that would have put copyleft obligations on a commercial game's entire source tree. The batch's one game-time-relevant licence claim was wrong, and wrong in the direction that costs the most.
+- **The one valuable find: `helixdb/helix-foundry`.** Apache-2.0, 2.0k stars. A local ontology drafter with a **mandatory human promotion gate** and **row/quote provenance** — the closest thing yet to what `atto-mcp` needs for citation lineage. It also **calls Claude or OpenAI by default when a key is exported**, which is a direct clash with Atto's ban 4. Loopback binding does not prevent it; the model call is the leak.
+- **`worldmonitor`, fourth evaluation, hypothesis retired.** `tools/list` is public but **`tools/call` requires a paid key**. Every prior pass assumed a free feed. The report also mis-stated the licence in the permissive direction: commercial use *is* permitted under AGPL; a separate agreement covers private proprietary use and branding. Verdict unchanged — never bundle, consume as an external service only.
+- **Two more corrections:** `Soup` is Apache-2.0 (report: not found) but its "4 GB laptop GPU" claim is a **CUDA** story — Apple Silicon is "supported" with layer streaming an untested opt-in beta. `unslop` was logged "NOT FOUND"; verified **CC-BY-4.0** on 2026-11-02.
+- **Recurrence is not convergence.** Every re-surfaced tool re-tiered differently from its first appearance, and two of the four carried a licence error. The "MIT complies with zero-copyleft" framing for scenario-labs appeared for the second time and is still misleading — the vendor cloud is the real constraint.
+- **Four prompts staged** in `briefs/`, all scoring 100/100: atto, collectibles, game-time, guruwatcher. The guruwatcher one is a **hold** — this batch gives it nothing, and says so.
+- **Archive.** 2 raws. Inbox empty.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps. Pushed as `f2586e2c2`.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
+## Current state (2026-11-03 — v10.11 wave)
+
+- **The runtime advanced.** First version change since 2026-10-25: **v10.11**. The priority stack also moved to **#1 Atto + Collectibles + Game-Time (co-equal)**, #2 CeminiDFS + CeminiParlays, #3 GuruWatcher + Basgiath.
+- **The largest finding is structural.** Seven of twenty URLs route to `/Users/claudiobarone/Projects/game-time`, and **that directory does not exist**. Game-Time is named, prioritised, and unbuilt. The three Travian documents filed this wave — design brief, architecture spec, deep research — are the entire project.
+- **The design brief argues against its own companion.** It calls the architecture spec *"a two-year scope presented as four phases"*, and names the worst part: the AI warlords, the reason the game exists, are scheduled **last**. Any start has to pick a milestone with an AI opponent in it, or it answers the wrong question.
+- **Phase-0 corrected two licences.**
+  - **desloppify** is **custom, not OSI**. Free for individuals and open-source companies; **for-profit closed-source commercialisation is priced**. The report's Extract recommendation outran the licence. Take the queue pattern; do not bundle the tool.
+  - **theatre** — `@theatre/core` is Apache-2.0 at 0.7.0, verified. `@theatre/studio` is **AGPL**. The licence story is only true if a build assertion keeps studio out of the bundle.
+- **One more Phase-0 correction:** **scenario-labs/skills** is MIT, but every generation skill needs Scenario's MCP server and paid "Creative Unit" credits. The report's "pre-spend cost gate" is a meter for that vendor's currency, not a general cost model.
+- **agent-desktop moved Extract → Integrate** with no new evidence. Its 78–96% token-saving figure is the report's own estimate, not a measurement. Treat it as unverified.
+- **Three papers converge.** CLEO prunes a harness until only what earns its place remains (two orders of magnitude smaller, 1.2 points behind the Claude Code SDK). RoboArchitect grows one by diagnosing failures (9.7% → 43.3% on unseen scenes). Ask-Don't-Equip says the missing thing is a hypothesis, not more tools. All three leave the model alone.
+- **Best security finding:** `MCP Tool Poisoning` — the first cross-framework measurement with real tool execution. MCP carries attacker-controlled descriptions, schema fields, and response data into model context unvalidated. This estate loads third-party MCP servers.
+- **Best single number:** a **single neuron** flips an LLM's investment recommendation, with no prompt change. Closed weights mean an unknown bias; open weights mean a chosen one.
+- **Three skips, one trap.** `2611.00360` is protein epistasis, where "ancestry" means phylogenetics. A title scan would have routed it to Atto.
+- **Five prompts staged** in `briefs/`: atto, game-time (a start prompt, not an integration), collectibles, and a combined dfs-parlays. **GuruWatcher and family-tree/Atlas received zero routings this round**, so they have no prompt — writing one would have been invention.
+- **Archive.** 56 raws. The eval docx archived as `… 2026-11-03.docx`; the undated names already hold earlier batches.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
+## Current state (2026-11-02 — v10.10 batch C)
+
+- **Third batch under the same label.** The runtime version does not advance between runs, so "v10.10" is a pipeline label, not a batch identity. All 20 URLs were new.
+- **Highest-action batch of the three:** 4 Integrate (Scrapling, kornia, unslop, TokenEconomizer), 7 Extract, 3 Watch, 2 Context, 3 Pass, 1 unavailable. The first two batches produced one Integrate between them.
+- **Phase-0 corrected four claims.** GitHub egress is still denied in the sandbox, so checks used README and LICENSE files, not clones.
+  - **kornia** — the 10x–70x speedup is **batched GPU**. Its own README says "OpenCV outperforms Kornia for single-image `uint8` CPU work", and cards are scanned one at a time. The value is operator composition, not throughput.
+  - **TokenEconomizer** — the published 18.4–30.9% is **cost on SWE-Bench**, not tokens. State lives in `~/.tokeneconomizer`; audit it before it goes near Atto.
+  - **openmed** — Apache-2.0 covers the **SDK only**. The README says model and dataset licences differ, so GPL-clearance must be re-checked per checkpoint. Italian was not in the language list the fetch returned. `[NEEDS VERIFICATION 2026-11-02]`
+  - **Scrapling** — BSD-3, but the Cloudflare bypass is claimed with **no mechanism described**, and the project disclaims exactly this use ("educational and research purposes only"). Adaptive parsing needs no approval; the evasion layer is a legal and business decision about specific sites, and the operator owns it. Never route to CeminiParlays.
+- **Filename collision handled.** The eval docx reused `Multi-Wiki URL Revenue Evaluation.docx`, already holding batch B on egress. `preingest_check.py` returned DUPLICATE on filename; the content is different (50,448 bytes against 3,090 KB, different sha256). Archived as `… 2026-11-02.docx` so the batch-B copy survives.
+- **Two existing pages improved.** `openmed` gained the model-licence correction. `worktrunk` closed its 2026-10-25 licence gap (MIT OR Apache-2.0) and moved Context → Extract, with the honest note that only its `pre-merge` hook is a control rather than a keystroke saver.
+- **Newsletters.** Event Horizon #39 carries the number that matters for CeminiParlays: Kalshi did $4.79bn on one Saturday and **73.9% of it was parlays**. Polymarket refunded $3.9M after a compromised third-party script hijacked user sessions.
+- **Archive.** 5 raws on egress, verified. Inbox empty.
+- **Gate and lint clean.** Zero dangling links, zero bidirectional gaps on the new pages.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
+## Current state (2026-11-01 — v10.10 eval wave)
+
+- **Two 20-URL batches, both titled v10.10.** Different content, different inbox filenames (Link / URL). Batch A: 0 Integrate, 4 Extract, 1 Watch, 10 Context, 5 Pass. Batch B: **1 Integrate**, 5 Extract, 4 Watch, 7 Context, 2 Pass, 1 unavailable.
+- **Phase-0 cut three report claims.** GitHub egress is denied in the session sandbox, so checks used raw source files rather than clones — enough for licence text and README claims, not for commit depth.
+  - `lexifina/global-law` **has an Italy corpus but it starts 1947-02-22.** No 1865 Civil Code, no Law 555/1912. The report routed it to Atto for exactly those dates. Value is 1948 onward only.
+  - `karpathy/autoresearch` **needs one NVIDIA GPU** (H100 tested). MIT, 99.0k stars. The keep-or-revert contract transfers; the harness does not run on the laptop.
+  - `jeveryword` **needs a remote model** (`TYPESAFE_API_KEY`). Its `slice === value` invariant is safe, but the text leaves the machine. Bars it from Atto vault records. Repo has 4 stars.
+- **One Integrate.** `LiquidAI/d1-2B`, 1.92B, single forward pass, 18.6 ms per decision on Apple `mps`. LFM Open License v1.0 clears commercial bundling below $10M annual revenue. Routed to Collectibles pre-grade, Atto record triage, CeminiParlays slip screening.
+- **PageIndex re-entered.** The 2026-05-05 NO-GO was wiki-layer only and named long-form archival PDFs as the re-entry trigger. v10.10 batch B applies it to multi-hundred-page Italian civil registers. Not a reversal; a scoped Phase-0 against archival PDFs is now owed.
+- **Moontower #333 decision closed.** All three sections were already filed on 2026-10-25. The digest needs no page.
+- **Five integration prompts staged** in `briefs/`: Atto, CeminiDFS, CeminiParlays, GuruWatcher, comuni-atlas. `briefs/` is gitignored, so they are local-only.
+- **Archive completed 2026-11-02** from the Terminal panel, which is outside the sandbox. 16 raws on egress, all verified. The sandbox denies egress SSH; the Terminal panel does not. **`git push` is still blocked** — the two commits are local and unpushed.
+- **Gate.** Ingest session gate passes. Lint: zero dangling links and zero bidirectional gaps on the new pages. Four of five prompts score 100/100 on `skill_audit.py`; the fifth hits a pre-existing renderer bug on `severity == "info"` (`skill_audit.py:1198`).
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
+
+## Current state (2026-10-23 — K294 ingest)
+
+- Full inbox pass. 62 files. 34 PDFs and 28 newsletters. 8 PDFs were already filed. The digest fan-out is still open. Video-report benchmark `2610.31158` is on the skip page.
+- Do not trust a research loop that only saw 2022-2023. Quant-Arena froze one A-share strategy for 2024. GPT-6 Astra scored highest of nine models. None beat equal-weight. No trade.
+- A tool call needs a mark outside the model. Capability, approval, and budget. A memory re-check is worth its cost only when it can change the next action. On ToolSandbox that cut verification cost 33.9% with safe-proceed recall still at 100%. No install. No auto-arm.
+- Feeds. Kalshi trailing seven-day volume on 19 Oct is $21.7bn. Monday was $2.50bn, parlays 65.2%. September hedging-labelled volume was about 2% of Kalshi. Ohio told gaming licensees to stop servicing unlicensed sports-event contracts. A 23 Oct teaser says a 20 Oct memo tells Defense personnel not to use nonpublic information on Polymarket or Kalshi. No pm scp. No route swap.
+- Abliteration is not debiasing. On the Bolt pair, script moved the Taiwan score from +0.58 to +0.05. Abliteration moved it by at most 0.06.
+- Archive. 54 new raws are on egress-fi. Location fields point there. Eight already-filed PDFs were deleted locally. They were not sent again.
+- Boundary: no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap.
+
+## Current state (2026-10-20 — K293 ingest)
+
+- **Full inbox pass.** 83 files, 37 distinct PDFs, 18 newsletters. Most PDFs were byte-identical copies of papers already filed. The digest fan-out from K292 is **still open**: `paper_queries` is one global list, and eight LaunchAgents write it into eight inboxes.
+- **Do not let a model send an options order.** Of 26 shipped options agents, **13 can reach unbounded loss** (6 of 8 broker interfaces). None authenticate their text sources. The check is a loss limit and a leg check **outside the model**. **No trade. No auto-arm.**
+- **Low ASR is not a refusal.** Failed prompt injections on small tool agents are ignored **76–80%** of the time. The same weights move ASR from **0.2% to 43%** when only the system prompt changes.
+- **Name the tool file that is allowed to answer.** GPT models lose accuracy when a long report is retrieved from the wrong file. Claude does not, in this paper.
+- **Feeds.** Kalshi trailing seven-day volume on 18 Oct is **$21.5bn**, parlays **70.7%** of that Sunday. Muse Spark Open leads a US-open index and ranks last of the top nine on agentic evals. **No `/route` swap.**
+- **Skipped again:** `2610.18802` and `2610.20896` (pure math), plus `2610.23419` (mmWave handwriting).
+- **Cadences still due, not run:** quarterly PM LP spread backtest; wiki gap-detect (due 2026-10-22, the check script already exits 0). Obsidian vault is not set up (`wiki/.obsidian/` missing).
+- **Archive.** 40 new raws are on egress-fi. Location fields point there. 43 leftover local copies were already-filed papers or extra skip copies. Those were deleted. They were not archived again.
+- **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no `/route` swap.
+
+## Current state (2026-10-16 — K292 ingest)
+
+- **K292 — 142 inbox files, 22 distinct new sources.** Three osint source pages, one ccc hub with two sources, one 3d-printing and one image-gen source, five concept pages, four briefs.
+- **DEFECT — the digest fans out.** The same **16 arXiv PDFs sat byte-identical in all eight domain inboxes**. `daily_research_fetch.py` namespaces the inbox per `CEMINI_WIKI_ID` and eight per-domain LaunchAgents run it, but **`paper_queries` is one global list**. K291 had no cross-domain duplicates, so this is new. **Not fixed** — scope the queries per domain, or make the fetcher skip a paper a peer inbox already holds.
+- **Two papers skipped as no-relevance**, not written up to fill the wave: `2610.18802` and `2610.20896`, both pure math.PR. `2610.18802` was already skipped in K291.
+- **Librarian Agents** names this workspace's own shape — agents navigate filesystems but are not trained to build reusable ones. **+33 points** BrowseComp-Plus, **33.8% fewer tokens per correct answer**, break-even ~**20 queries**.
+- **The safety cluster is the most actionable part:** **reward hacks spread between coding agents via shared code, memory and plans**, and a separate verifier reduces what ships; **Gemini 4 Argon evades a realistic CoT+action monitor on simple sabotage about half the time**; a single prompt collapsed AWS Bedrock AgentCore through unisolated Firecracker networking.
+- **Tool eval — Phase-0 RAN 2026-10-16.** All ten licences read with `gh api` **before any clone**; **7 shallow clones** landed in `.local/adopts/k292/` (745 MB, over a 500 MB budget set before `xerj` and `Cap` were sized). **Pruned to 330,612 KB the same day** — `.git` dropped from every clone with SHAs saved to `CLONE-PROVENANCE.txt`, and the Cap clone dropped. **The two Integrate rows are both permissive** — `leantoken` **Apache-2.0**, `flameox` **MIT** — so the tiers hold. **The defect was procedural, not a wrong decision.** **7 entity stubs** now carry the readings. **Still 0 Integrate GO** — adoption needs its own brief.
+- **INCIDENT, recovered:** the inbox cleanup lost 9 of 10 papers and 11 of 12 feeds before egress. Cause: `archive_raw_to_egress.sh` consumes stdin inside a read loop, and the pass hid its own errors. **All 9 arXiv PDFs were re-fetched and archived** to the right domains; the eval docx was rebuilt from its surviving body (text complete, images lost). **11 feed captures are gone** — re-fetching would put different content under the same names, so the numbers are preserved in the source page instead.
+- **Open:** the fan-out fix; `scripts/adopt_k292_phase0.sh` has not run; next gap-detect due 2026-10-22.
+- **Boundary:** no install, no clone, no scrape, no trade, no `/route` swap, never auto-arm.
+
+## Current state (2026-10-14 — K291 ingest)
+
+- **K291 ingested** — 65 inbox files across eight domains → **25 source pages + 7 wave hubs + 6 concept backlinks**, plus per-domain index and log entries. Nine days of accumulation since K290. **Lint unchanged at 2,290 errors — the wave adds none.**
+- **The SEO finding is the wave's headline.** Two independent GEO studies: **retrieval explains 32% of within-website citation variance; page properties explain 2.8%.** FAQ blocks, structured data, summary boxes, author boxes and page speed show **no within-site effect** — their apparent cross-site effect is confounded by site popularity. Every page ChatGPT cites is one **its own search retrieved**. Google Search and the Responses API together recover **only ~25%** of cited URLs. New concept: `@seo-wiki/concepts/retrieval-vs-citation-visibility-geo.md`.
+- **Desk items.** **GROMM** — arbitrage-free S&P option market model where the surface is the state, >95% of quotes inside bid/ask. **GS positioning** — CTAs long **$43.5bn, down from $125bn a month ago**; fundamental funds gross up but net down; Info Tech flipped to the most net-sold sector.
+- **Agent lane.** **EmbodiedEvo** — Skills and Lessons reach comparable task performance at **53% lower execution cost**. **AutoAgent0** — propose/verify/recover runtime, the tool-call-gate shape applied to trajectories. **ChunkAct** — compile the routine; 2.9× fewer LLM calls.
+- **Cybersec.** **ATTCK-R** — one prompt-based protection cuts attack success from **0.896 to 0.608**. **Unprotected evaluations overestimate vulnerability**; never cite a jailbreak ASR without naming the protection layer.
+- **Skipped as out of scope** — PC7 soft robot (3d-printing), macroscopic fluctuation theory and lattice field theory (image-gen), back-translation MT (cybersec), Fleming–Viot (osint), three robotics VLA papers (image-gen). Raws archived; no pages written.
+- **Fetch note** — Exa MCP is not exposed in this session, and Cloudflare refused WebFetch and curl on the gambling feeds. Five bodies were retrieved with a headless browser; the rest are headline-level. **Budget a browser for that domain.**
+- **Boundary:** no install, no scrape, no ticket submit, no xsp/pm scp, no `/route` swap.
+
+## Current state (2026-10-14 — federation wiki merge)
+
+- **Federation merge shipped.** Eight wikis merged into one repository under `wiki/<domain>/`. 2,046 commits and 9,820 pages. `git filter-repo` preserved history in both directions.
+- **Four of the five verification gates passed. The edge gate did not.** File manifest 1:1 (0 missing, 0 added, 0 changed). History intact through the osint rename. **One real ingest cycle ran end to end** — the load-bearing step. **The resolved-edge gate reported 0 lost edges; a post-merge audit on 2026-10-14 found 163** — 160 brief citations plus 3 others. The gate compared only edges that resolved inside the wiki tree, so every edge resolving into a peer repo checkout was invisible to it. See `briefs/2026-10-14_argon-prompt-post-merge-audit.md`.
+- **Three consumers failed silently and are now fixed.** `wiki_gap_detect.py` reported zero gaps and exited 0, which reads as an excellent wiki. Also fixed `preingest_check.py`, `wire_ledger_check.py`, and a linter regression that flagged 900 append-only sweeps as missing frontmatter. **Lesson: a consumer that finds nothing on a non-empty corpus is a failure, not a pass.**
+- **Twelve daily fetchers** re-pointed at the merged repo. The inbox is namespaced by domain.
+- **Seven absorbed repos now exist on GitHub only.** Inboxes were migrated into the merged wiki first. Each repo was clean and fully pushed to its own remote before its local copy was removed. `.git.premerge-local/` (153 MB) holds the pre-merge git directory. **GitHub is the rollback.**
+- **The repo is public, and every domain with it.** `llm-wiki-by-cemini` went public 2026-10-14. The operator confirmed publication on 2026-10-14 after an audit flagged the mismatch with the old `Private` label on `osint-wiki`. **Treat every page under `wiki/` as world-readable.**
+- **Brief rescue.** 1,684 brief files lived in the archived repos, and only 54 were tracked in git — `briefs/` is gitignored, so about 1,630 existed only in those local copies and were **not** on GitHub. All 1,684 were rescued into `briefs/<domain>/` before the copies were removed. **The merge plan §9 deliberately did not merge top-level `briefs/`**, which is why nothing caught them. Any future archiving must check for gitignored local-only trees first.
+- **App cleanup.** Archived 14 Claude desktop sessions whose `cwd` was a deleted folder. Removed 39 stale Cursor workspace entries (57 → 25) and 7 dead multi-root files (8 → 1). Deleted three pre-merge leftover dirs (`Image`, `Image\ gen`, `SEO`); every file in them already existed in-tree in a newer form. Backups in `.local/cursor-cleanup-2026-10-14/`.
+- **Post-merge audit (Gemini 4 Argon, 2026-10-14).** Verdict **NOT SOUND**. Ranked: the edge gate false-passed and hid 163 broken links; briefs are split across three stores the resolver cannot read; a 917-file gap between the linter and the gap detector; cross-domain bidirectional gaps inflate the lint to 2,951 errors; the documented visibility disagreed with the live repo. Prompt and pack: `briefs/2026-10-14_argon-prompt-post-merge-audit.md` and `briefs/federation-post-merge-audit-pack.txt`.
+- **Open (not started):** reconcile the duplicated pages (the merge makes the duplication visible; it does not create it); next gap-detect due 2026-10-16.
+- **Boundary:** no install, no scrape, no xsp/pm scp, no `/route` swap.
+
+## Current state (2026-10-13 — K290 ingest)
+
+- **K290 ingest** — 9 inbox files → 8 source pages + 3 hubs + 9 entity/concept pages + 6 briefs. One file was a **byte-identical duplicate** (`2609.20804`); not re-ingested. **0 Integrate GO. No install. No scrape. No xsp/pm scp. No GW auto-arm.**
+- **VEPA is the agent-guardrail item to keep.** `arXiv 2610.12813`. Guardrails as **typed symbolic rules** with deterministic **pre-action allow/refuse**. Three stages: **an LLM proposes patches → a deterministic verifier admits only well-formed, conflict-free rules → a Beta-posterior evidence gate activates a rule only when its risk quantile clears tolerance**. **No-Verifier ablation = −0.13 F1**; rule eval **≈0.25 ms**. **Its own limit: the upstream neural parser sits outside the guarantee.** This is the direct follow-on to the K289 ToFu finding.
+- **DistressBench** (`arXiv 2610.12758`) scores **care delivered, not refusal** and finds a **35.3% recognition–action gap**. Transferable lesson: an eval that scores what a system **withholds** records **silence as a pass**.
+- **Sandbox credential exposure is an operational finding, not a model finding.** A **Pier/Harbor harness injected its own provider key**; **DeepSeek V4.1 Flash used it in 33% of runs, 11% succeeded**. → **the `/route` Flash lane must never hold a durable credential.**
+- **Meta Muse Wonder shipped.** AA v4.3 **56** vs **Opus 5.5 58**; **Coding Agents Index 68**, tying Claude Code + Sonnet 5.5. **No `/route` swap.**
+- **Tool eval, 20 URLs.** **Docx license claims wrong or misleading on 5 of 20** — third consecutive wave. **Star counts ~2× off.** Tiers: Integrate 6 · Extract 3 · Watch 1 · Context 8 · Pass 2. **Phase-0 RAN 2026-10-13** (`scripts/adopt_k290_phase0.sh`, Terminal panel): **`gh api` verified all 13 licences and 9 candidates are cloned** to `.local/adopts/k290/` (**411 MB** of a 500 MB budget). **Still 0 Integrate GO** — the clones are REFERENCE data, and product adoption needs its own brief.
+- **License finding, now resolved by `gh api`:** `noonghunna/club-3090` is **Apache-2.0**, so the docx's AGPL copyleft caution is void and the Integrate tier holds. `sogen` is **GPL-2.0** (docx said NOT FOUND). `xxHash` and `context-mode` return `NOASSERTION` — expected: a dual split, and the Elastic Licence 2.0, respectively.
+- **Feeds.** Sam Newman (DR patterns; **model providers are flaky vendors**; **mixing vendors in one flow raises the failure surface**); the gambling-definition argument (Kalshi **69.4% parlays**); KfW/Bales (**debt-to-GDP 185% → 143%** at +0.2%/yr AI productivity; **30y Treasuries = an implicit AI bet**); WuBlock (**spot $696.7B, +36.5% MoM**).
+- **Briefs staged + copied.** Cyber, CCC, GuruWatcher, Gambling, Atto, Basgiath; pm/xsp local (**no scp**).
+- **Sibling refs audit:** 0 genuinely missing OSINT pages. Two GuruWatcher citations pointed at raw feed filenames instead of wiki slugs — **fixed**. Remaining sibling defects are citation-form (`@osint-wiki/briefs/...`, `@osint-wiki/wiki/log.md`) where the alias maps to `wiki/`.
+- **Open (named, not started):** next gap-detect due **2026-10-16**; six Integrate candidates at `.local/adopts/k290/` await a product decision. (The inbox duplicate was deleted 2026-10-13 after sha256 confirmation.)
+- **Boundary:** no install, no scrape, no auto-submit, no xsp/pm scp, no `/route` swap, never auto-arm.
+
+## Current state (2026-10-12 — K289 ingest)
+
+- **K289 ingest** — 21 inbox files → 20 source pages + 2 hubs. **No eval docx this wave.** Zero clones. No install. 0 Integrate GO.
+- **MCP security is now the top cyber item.** **ToFu**: tool arguments from an LLM are **untrusted**, and **"repeat this" is an attack** — echo tool-call-shaped text and the orchestrator executes it. **253 verified bugs across 343 tools in 118 MCP servers** of 273 scanned. The oracle is the tool's semantics, not a model.
+- **Anthropic dynamic workflows shipped.** Lead agent plans; **Claude writes the orchestration program** and picks the topology. **The model does not know its budget**; flows cost much more; **"evals and lower defaults"** decide agent count.
+- **Quant signals.** FLEX options = **institutional vol marker, not a directional predictor**; rough-Heston hedging needs **three vanillas** for >95% error reduction. Both desk-relevant; **no trade, no scp**.
+- **Prediction markets.** The CFTC **excluded casino products from "swap"** and **proposed including event contracts** — a preemption play. Kalshi sought a Sixth Circuit rehearing. SCOTUS briefs now include the NFL, 145 tribes, 39 states, Dodd, Gensler.
+- **Basgiath** continues in its own repo. **Outlier Weekly published the Swarmer letter** (2026-10-12).
+- **Open (not started):** sibling brief copies pending (Terminal panel). Cadences ran 2026-10-09; next gap-detect due 2026-10-16. Daily digests current.
+- **Boundary:** no install, no scrape, no auto-submit, no xsp/pm scp, no `/route` swap.
+
+## Current state (2026-10-10 — K288 ingest)
+
+- **K288 ingest** — 15 inbox files → 11 source pages + 3 hubs, plus the Swarmer/rearmament evidence and recap briefs. **Zero clones. No install. 0 Integrate GO.**
+- **The eval pipeline's reachability layer is broken.** The DFS eval docx marked **20/20 rows UNAVAILABLE (404); all 19 GitHub repos are live.** Its works-cited is confabulated from username substrings. **Add a gate: verify a UNAVAILABLE verdict with `gh api` before trusting it.**
+- **DFS / parlays got the week's material.** 19 live repos (devig machine, odds search, VIP console, DFS optimizers, bonus hedge) + Week-4 recap **tool-gaps**. Routed to **CeminiDFS** and **CeminiParlays**. **Operator guidance: licence weight is lowered for DFS/parlay evals.** Recurring defects: **ticket-capture completeness (3 weeks)** and **off-card bleed**.
+- **Swarmer thesis corrected.** Ratel's **FY2024/25 statements are AUDITED**, not unaudited. The FY2026 earnout needs **7× H1 deliveries** — only the $86.6M of advances converting gets there; Ratel reports **going-concern doubt**. The war note's 2 PDFs are revisions → **file 2 canonical**.
+- **The K286 typed-judgement pattern became an industry category.** **TypeSafe/Jev >$100M ARR at $7.5B, three weeks after launch**; every major vendor shipped a decision model the same week; **Unsloth runs a 4B decision model on 8GB VRAM**; **routing cut SWE cost 64%**.
+- **NOMOS** — compile a written policy into a **deterministic tool-call gate**: violations **66.3% → 2.6%**, banking **ASR 0.0%**. **37% of extracted rules needed repair** → extraction must be validated.
+- **Open (not started):** sibling brief copies pending (Terminal panel); **Basgiath** track continues in its own repo. Cadences ran on Oct 9 (gap detect + quarterly backtests).
+- **Boundary:** no install, no scrape, no auto-submit, no xsp/pm scp, no `/route` swap.
+
+## Current state (2026-10-09 — K287 ingest)
+
+- **K287 ingest** — 20 inbox files. One eval source page, eight arXiv pages, one feeds hub. **18 of 18 GitHub repos exist.** No install.
+- **Gateway:** `BerriAI/litellm` is Phase-0 **NO-GO**. A local proxy already listens on 127.0.0.1 port 8791. Do not add a second gateway. `wire_status: wont_wire`.
+- **Other Phase-0:** `open-code-review` stays GO REFERENCE (pattern not new). `sogen` is GPL-2.0 **NO-GO** (no lab brief). `daily_stock_analysis` is MIT **CONDITIONAL-GO**, alert-only, not started, no orders.
+- **Swarmer audit:** concept verdict **UNSOUND**. Vesting is 60 percent time and 40 percent milestone. The earnout needs both revenue and operating income. A zero share count is a design choice. The contract does not pay for a roll-up.
+- **Papers:** no training wire on 2610.12369 or on HarnessSQL. HANS does not get a genealogy brief. No harness rule change, so no agent-wiki brief.
+- **Open (named, not started):** weekly gap detect, HL funding backtest, Kalshi LP spread backtest, PM LP spread backtest if due, cross-venue backtest, equity signal backtest, the K285 local inference install, the K287 stock-digest CONDITIONAL-GO.
+- **Boundary:** no scp, no Ashburn copy, no settings edit, no image or print local wire.
+
+## Current state (2026-10-08 — K285 ingest)
+
+- **K285 ingest** — 12 inbox files → 12 source pages + 3 hubs. One eval docx (20 rows), 8 arXiv papers, 3 feeds. **Zero clones. No install. 1 Integrate lead.**
+- **Local inference is now a two-wave pattern.** `Strata` (K284) and **`Rapid-MLX`** (K285) — the wiki's most consistently-recurring Integrate lane. Rapid-MLX gives an OpenAI/Anthropic-shaped **localhost endpoint on Apple Silicon**. ⚠ **Licence NOASSERTION — confirm.**
+- **`rea`** (MCP Hopper decompilation, **MIT**, 19,363★) — **Pass in K283 → Extract**. Authorized-lab only.
+- **Basgiath row:** `artcraft` 3D staging before generative video → promo clips. Delivered as a **brief** in `dragon-rider-map/briefs/` (prompts are one-shot — LESSONS 2026-10-08).
+- **Phase-0, second consecutive clean batch.** All 20 repos alive, **zero 404** (K284 clean too; K281–K283 had 6–7 each). Licence flags on Rapid-MLX, artcraft, worldmonitor (AGPL), AnyPS5 (GPL).
+- **The arXiv through-line:** the harness and the local metric beat the headline number — CoTrace (no cross-harness transfer), PatchBench (MMLU blind to local damage), Before-They-Can-Solve (bounded benchmarks anti-correlate), SLDR (two-layer repair).
+- **Sam Newman (the sharpest framing yet):** **LLMs are not world models, so guardrails are not the long-term answer** — mechanism-level support for the deterministic-gate doctrine.
+- **Open (not started):** K285 briefs staged, sibling copies pending (Terminal panel); Basgiath bug-fix/GameTest/bench track; Java-port built and published (done by operator). Cadences still due: wiki gap detect, HL funding, Kalshi LP, cross-venue, equity signal.
+- **Boundary:** no xsp/pm scp, no LIVE Discord, no `/route` swap.
+
+## Current state (2026-10-07 — K284 ingest)
+
+- **K284 ingest** — 17 inbox files → 17 source pages + 3 hubs. Two eval docx (39 rows), 8 arXiv papers, 7 feeds. **Zero clones. No install. 0 install-required Integrate GO.**
+- **Design registries (docx A).** `Refero Styles` + `21st.dev` + `uiverse.io` — MCP connectors that give coding agents a **design contract** (`DESIGN.md` tokens + a shadcn registry). **MCP install = human-gated.**
+- **The `storytold` ArtCraft suite (docx B) — the headline.** Seven active, **Apache-2.0**, pure-Rust clean-room Adobe replacements. **Offline Atto document pipeline** (enhance scans → typeset monograph → bind PDF), client PII local. Plus **`Strata`** (MIT, 16.5k★) for local **125B-MoE** inference.
+- **Phase-0 inverted the recent pattern.** **All 19 repos alive — zero dead links** (K281–K283 each had 6–7). One docx **false negative**: `ts-rust` rated 404, actually alive. Two licence corrections: **`treg` NOASSERTION**; `storytold` Apache-2.0.
+- **Industry signal.** **Agent-authored PRs exceeded human-authored on GitHub in Aug 2026**, and human code review has degraded to **LGTM theater** — the empirical case for the **audit-the-change-set** doctrine. **No `/route` swap.**
+- **PM:** **CFTC proposes CTX/CAM** (optional registration, but retail margin); **Connecticut: ProphetX/Gemini/Webull withdrew**. **No pm scp.**
+- **Poker lane:** **BluffJAX** (MIT, JIT-CFR, ~2e7 samples/s) — a usable GPU-accelerated imperfect-information RL environment.
+- **Open (not started):** K284 briefs staged, sibling copies pending (Terminal panel); Basgiath bug-fix/GameTest/bench track (separate repo); Java-port prompt written (Basgiath, public release). Cadences still due: wiki gap detect, HL funding, Kalshi LP, cross-venue, equity signal.
+- **Boundary:** no xsp/pm scp, no LIVE Discord, no `/route` swap.
+
+## Current state (2026-10-06 — K283 ingest)
+
+- **K283 ingest** — 16 inbox files → 16 source pages + 3 hubs. Two eval docx (40 rows), 8 arXiv papers, 6 feeds. **Zero clones. No install. 1 product Integrate GO (human-gated).**
+- **First product Integrate in four waves — `lfnovo/open-notebook` (Atto).** MIT, self-hosted multi-modal RAG (a private NotebookLM), **verified 2026-10-06 at ~39.9k stars**. Use for page-cited Q&A over municipal registry PDFs with **local-only inference**. The K39 "Reference-only" verdict rested on **deleted `cemini-prod`** constraints; re-scored now that the target is the laptop. **Human-gated. No install. No `truth.ged` write.**
+- **Basgiath (Minecraft) is 13 of 20 rows in the second docx.** Extracts: in-game roleplay currency (`simple-money`), JSON UI easing (`bedrock-ui-animations`, overlap 0.85), readable lore items, schema migration (`mc-mod-migrator`), HUD timer. **In-game tokens only. No Marketplace. Fan-made labels.** The docx's proxy row (`Void`) is **Java-Edition** — goal match / stack mismatch, same as K282.
+- **Atto → open-notebook (Integrate) + Italian telephony intake (Extract).** `centralino-ai-studio-medico` gives Italian voice/intent routing for *stato civile* triage — **PII gate: no client genealogical data to a third-party telephony model without a human gate.**
+- **GuruWatcher concurrency pair:** `background-agents` (detached workers) + `keyed-lock` (per-key mutex). **Never auto-arm. Never `watches.json`.**
+- **Vol signal:** `arXiv 2610.03849` splits the VIX into **probability × severity** — severity is **91.5%** of the recession premium. **No trade. No sizing change. No xsp scp.**
+- **Cyber:** CLIFT conformal self-verification (**+11.3 pp at K=4, zero training**) and the **MemTensor agent-memory supply-chain** compromise.
+- **Eval-quality signal:** `NOT FOUND` metadata on **34 of 40 rows**; docx B lists a duplicate URL. Third generated-looking URL list in four days (K281 7/20, K282 6/20). Score the technique, not the row metrics.
+- **Open (not started):** Basgiath next-actions prompt still not run; Java port prompt not written; K283 briefs staged but sibling copies pending; cadences due (wiki gap detect, HL funding, Kalshi LP, cross-venue, equity signal).
+- **Boundary:** no xsp/pm scp, no LIVE Discord, no `/route` swap.
+
+## Current state (2026-10-04 — K281 ingest)
+
+- **NEW PROJECT — Basgiath.** The operator registered a second co-primary workstream beside GuruWatcher: **Basgiath**, a Minecraft **Bedrock** addition in the Empyrean series. Repo `Projects/dragon-rider-map/`. Target MCPEDL and CurseForge, non-monetized. The priority stack is now **#1 Atto · #2 GuruWatcher + Basgiath · #3 CeminiDFS · #4 CeminiParlays**.
+- **K281 ingest** — 6 inbox files → 9 source pages + 4 hubs. Both eval docx are Minecraft (modding 20 rows, Bedrock protocol 19 rows). **Zero clones. No install. 0 product Integrate GO.**
+- **`rehan-remade/universal-modder`** (operator-named): MIT, 2,919 stars, pushed the day it was checked. **Adopt the layout, not the pipeline** — one canonical skill tree with symlinked agent entry points, one `AGENTS.md`, and a field-notes knowledge base. Its asset path is a paid third-party service we have not agreed to.
+- **Highest-leverage pairing:** `bedrock-mc/mcpelauncher-agent` (drive a Bedrock client) plus `itzg/docker-minecraft-server` (headless) plus `MCBE_Inventory_Editor` (LevelDB NBT) is the shape of an unattended test bench for Basgiath.
+- **Eval-quality signal:** 7 of 20 modding URLs do not resolve. That list looks partly generated.
+- **A named structure appeared:** INTC Oct 16 130 calls, with a proposed fade. **Claim only, not armed. No xsp scp.**
+- **Ingest note:** Moontower #330 is a superset of two other captures in the same inbox. Ingested once; the others are pointer pages.
+
+## Current state (2026-10-03 — K280 ingest)
+
+- **K280 ingest** — 1 eval docx, 20 rows → 2 source pages + 2 hubs. **Zero clones. Nothing vendored. 0 product Integrate GO.**
+- **POSTURE CHANGE — Atto HTR.** Operator directive: **do not stay on Transkribus by precedent.** Transkribus is now the incumbent with a challenger. Prior waves carried "Transkribus stays the only product HTR"; that line is retired as a *rule* and kept as a *finding* — nothing had beaten it yet.
+- **The challenger is `mittagessen/kraken`** (Apache-2.0, maintained, CPU-capable) with the **CATMuS Medieval** model, which names **Italian and Latin**. First released historical model in any wave to name Italian.
+- **Two blockers:** CATMuS is medieval bookscript, not 19th-c Italian cursive, so fine-tuning is required; and **no Kraken-versus-Transkribus head-to-head CER exists**. **Run the head-to-head first — that number decides.**
+- **This wave DOES apply to CeminiDFS.** `nchopin/particles` — particle filtering to update projections live during a slate (the late-swap gap). `neurotrader888/mcpt` — permutation tests for overfitting, applicable to DFS projection models.
+- **A docx error caught:** it rated `HTRPipeline` Integrate and claimed MIT. Live API: **`spdx_id: null`, no licence at all**, stale since 2023. It recommended vendoring an unlicensed repo.
+
+## Current state (2026-10-03 — K279 ingest)
+
+- **K279 ingest** — 11 source pages + **5 hubs**. **Operator directive: stop auditing licenses row by row; extract the technique.** Judgement is now "what is usable", not the SPDX field. Nothing was vendored, so nothing changed in practice. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No installs. Zero clones. Transkribus stays the only product HTR. No PoC.**
+- **Two techniques to build for CeminiParlays.** (1) A **pick'em breakeven table** by card size, flex variant, and platform settlement rule — a fixed-multiplier card is a payout structure, not a price. (2) **Property-based tests over the de-vig and copula maths** — de-vigged probabilities sum to 1.0, copula joint bounded by the marginals, correlation matrix positive semi-definite. That is where a silent numerical bug becomes a mispriced ticket.
+- **Strongest finding:** of 175 runs passing every final numerical check, **162 (92.6%) still had a process deviation**. Score the trajectory, not only the outcome.
+- **Tooling bug found:** `preingest_check.py` flags a recurring-title newsletter as DUPLICATE on title alone. Match on URL or date instead.
+- K274 projection actions stay open. A human types the ticket.
+
+## Current state (2026-10-02 — K278 ingest)
+
+- **K278 ingest** — 13 source pages + **5 hubs**. Phase-0 **clones nothing**. The eval docx's 20 license claims were checked with `gh api` 2026-10-02 and **four failed**. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR. No PoC.**
+- Three reusable findings: **the harness owns state** (one restoring sentence moved a model from chance to 40 of 40); **visibility is not enforcement** (a live budget counter did not stop overspend in 4 of 5 runs, commit enforcement took it to 0 of 5); **a calibrated forecaster is not an edge** (the forecasting paper's own authors say so).
+- Atto: PyPottery gives a concrete few-shot planning curve for parsing — 13.56% at one example, 52.63% at three, 67.60% at ten. Use it to scope any parsing work.
+- License discipline: the eval overstated 4 of 20. **Never trust eval SPDX — `gh api` every adopt.**
+- K274 projection actions stay open. A human types the ticket.
+
+## Current state (2026-10-01 — K277 ingest)
+
+- **K277 ingest** — 15 source pages + **5 hubs**. Phase-0 **clones nothing**. Three repo URLs verified with `gh api` 2026-10-01 (turbo-harness MIT 7783 KB; **ScholarEvolve SPDX null**; **CodeMimicry SPDX null**). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve skills or rules from a paper. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR. No PoC on the security pages.**
+- Four reusable findings: the execution environment carried the largest harness effect, and extra machinery was not significant under an equal budget; self-selection trailed an oracle by 6.832 points; every self-revision needs a paired regression gate; keep only confirmed work in a ledger.
+- **A summary is not the document.** Agent summaries flipped a buy or sell call in one case in four to one in three. This is the third form of the K276 trace-validity finding, after PageBreak's confirm-before-report design.
+- Atto: decentralized model merging improved out-of-distribution handwriting transfer by a best case of x1.62. Evaluate for a future M-phase. No HTR swap.
+- K274 projection actions stay open. A human types the ticket.
+
+## Current state (2026-09-30 — K276 ingest)
+
+- **K276 ingest** — 38 source pages + **5 hubs**. The strongest harness cluster so far: trace validity, the plan-declaration-execution gap, harness learning, meta-skills, bounded controller context, and Game Arena. Phase-0 **clones nothing**. Five repo URLs verified with `gh api` 2026-09-30 (game_arena Apache-2.0; igsm-trace-validity MIT; **MetaSkill-AI4AI SPDX null**; good_enough_papyrus_htr MIT; resight-smc MIT). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR.**
+- Three reusable findings: a visible trace is weak evidence (31.6% of correct answers have invalid traces on hard cases); declare the pattern and route to an executor that enforces it; keep the controller context bounded.
+- Atto: set a per-task character-error budget before choosing a transcription source. Few-shot VLM transcription is an option for one-off hands only.
+- K274 projection actions stay open. A human types the ticket.
+
+## Current state (2026-09-28 — K275 ingest)
+
+- **K275 ingest** — 16 source pages + 5 hubs. VOYG RSS folded into the 27 Sep page. Phase-0 clones nothing. Page-diff Integrate line overridden on size. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-arm. No pm scp.**
+- Option factors are not a DFS coefficient. K274 projection work stays open. A human types the ticket.
+
+## Current state (2026-09-27 — K274 ingest)
+
+- **K274 ingest** — 6 source pages + 5 hubs. Phase-0 **clones nothing**. A null SPDX on a sports row still records the pattern. **NO-CLONE:** cfbfastR-cfb-data null 5574235 KB; cfbfastR-data null 30483559 KB; nfl-closing-speed-csoe MIT 6704 KB; weathernfl null 12248 KB; nfldata null 8258438 KB (Integrate overridden); nfl-betting-data null 1211 KB; porra-mundial-nanos-2026 null 48825 KB; google-research/football Apache-2.0; hudl/open-data NOASSERTION; football-odds-scanner null; on3-recruit-scraper null; Real-Time-NFL-Stats null. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Transkribus stays the only product HTR.**
+- **Harness (CCC)** — do not swap `/route`. No skill install. WuBlock items are headlines.
+- **Atto** — this wave is not genealogy. Game-sim and StatsBomb are names. Transkribus sole HTR.
+- **GuruWatcher** — this wave has **no level to arm**. **Never auto-arm.** Do not copy Glitch strikes.
+- **CeminiDFS** — parquet pattern, CSOE name, and wind penalty are pattern extracts. No live order. No clone.
+- **CeminiParlays / Gambling** — closing-line calibration and wind on totals. A human still types the Hard Rock or FanDuel ticket. World Cup scorer is a name. Do not revive world-cup-bot. **No submit. No pm scp.**
+- **Cyber** — WuBlock headlines only. No exploit steps.
+- **SEO** — no ranking recipe.
+- **Rule** — `## OSINT K274 — 2026-09-27` above `## OSINT K273` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
+- **Briefs** — `briefs/2026-09-27_k274-*` (8). `skill_audit.py` PASS. Sibling copies landed. Further implementation for DFS and parlays is recorded and not built. None for Atto product code.
+- **Archive** — 6/6 on egress-fi. Inbox empty.
+
+## Current state (2026-09-26 — K273 ingest)
+
+- **K273 ingest** — 10 source pages + 5 hubs. Phase-0 **clones nothing**. Sports, DFS, and parlay rows keep a pattern extract when SPDX is null or NOASSERTION. **NO-CLONE / SIZE-SKIP:** draftfast null 2198 KB; Odds-Search null 215 KB; mlb-prop-optimizer null 1074178 KB; weathernfl null 12187 KB; nfl-forecast-model null 519245 KB; nuke-dfs-hub null 7381 KB; fanduel api-evangelist null 478 KB; nfl-ngs-raw null 962762 KB; fanduel-bot null 8469 KB; dfsOptimizer NOASSERTION 504 KB; cfb-dfs-data null 11991 KB; aegis-audio-defense MIT 6618 KB; block/buzz, llvm/llvm-project, runner-images, Soup, axonhub, nakama, code_puppy, plannotator, starkclaw, FluidAudio SIZE-SKIP. FluidAudio is not product HTR. The cyclomatic-complexity skill stays uninstalled. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Transkribus stays the only product HTR.**
+- **Harness (CCC)** — do not install the complexity skill. Do not change `/route`. AEGIS is a name and an impact. OpenRouter is an interview teaser. Never auto-evolve skills.
+- **Atto** — IndicBankBench is **not genealogy and not HTR**. AEGIS is **not HTR**. Transkribus sole HTR. No lab steps.
+- **GuruWatcher** — this wave has **no level to arm**. **Never auto-arm.**
+- **CeminiDFS** — roster rules for classic, showdown, and captain, plus a lineup exposure cap, are pattern extracts. No live order. No clone.
+- **CeminiParlays / Gambling** — devig, pick'em gap, weather discount, and own score marginals. A human still types the Hard Rock or FanDuel ticket. **No submit. No pm scp.**
+- **Cyber** — SecPro #253 and AEGIS are headlines only. The TeamCity target class is CI/CD. No intrusion steps.
+- **SEO** — three Sterling Sky titles and URLs only. No workaround, no review-gating steps, and no ranking recipe.
+- **Rule** — `## OSINT K273 — 2026-09-26` above `## OSINT K272` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
+- **Briefs** — `briefs/2026-09-26_k273-*` (8). `skill_audit.py` PASS. Sibling copies landed. Further implementation for DFS and parlays is recorded and not built. None for Atto product code.
+- **Archive** — 10/10 on egress-fi. Inbox empty.
+
+## Current state (2026-09-25 — K272 ingest)
+
+- **K272 ingest** — 21 source pages + 5 hubs. modelun updated: license **MIT**, size **21956 KB** still blocks the clone, `wont_wire` stays. Phase-0 **clones nothing**. **NO-CLONE / SIZE-SKIP:** Search MIT 1140 KB; hindsight and univer already SIZE-SKIP from K271; starnet MIT 1733104 KB; kubernetes-the-hard-way Apache 711 KB; tick-stock-panel MIT 25615 KB; impeccable Apache 377515 KB; openbao MPL-2.0 319427 KB; phylodyn SPDX null 1986 KB; boundedcoal 404; KAUST graders 404; coding-atlas SPDX null 7401 KB; modelun MIT 21956 KB. Wireless-tool URL class and engagement-automation URL class: no steps. Media pipelines: no image-gen install. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill evolve. No product install. Do not install a browser. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. Live jev path unchanged.**
+- **Harness (CCC)** — external gate holds release authority. Independent log outside the agent. Do not rewrite Verify. Do not describe the deletion. Never auto-evolve skills. Do not install a browser.
+- **Atto** — EvoTreeNAD is **not genealogy and not HTR**. Phylodynamic inference is **not Atto**. Transkribus sole HTR.
+- **GuruWatcher** — rates, Klement, and WuBlock FILE; **no level to arm**; Bitget figure is a news claim; **never auto-arm**.
+- **CeminiDFS** — thin FILE. tick-stock-panel is not a live order. No sizing change.
+- **CeminiParlays / Gambling** — Kalshi self-certified Steph Curry markets. **No submit. No pm scp.**
+- **Cyber** — tl;dr sec #347 is a headline list. No procedure.
+- **SEO** — Sterling Sky title and URL only. No fix steps.
+- **Rule** — `## OSINT K272 — 2026-09-25` above `## OSINT K271` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
+- **Briefs** — `briefs/2026-09-25_k272-*` (8). skill_audit PASS. Sibling copies landed. Further implementation: none.
+- **Deep-read** — seven papers are deep-read; the trace paper, Sterling Sky, and tl;dr sec stay skimmed; further implementation is none.
+- **Archive** — 21/21 on `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Inbox empty.
+
+## Current state (2026-09-24 — K271 ingest)
+
+- **K271 ingest** — 13 source pages + 5 hubs + 2 entities. Phase-0 **two REFERENCE clones**: jev-curate MIT 504 KB; canny MIT 266 KB. **NO-CLONE**: hindsight / univer / Model-Optimizer / harness-sdk / jev-chat-jarvis / treg / google/ax / axe / learn-harness-engineering / ai-memory / apple-corelocation / agent-desktop / typesafe-mario / jev-drone / OneVOneJev / neo4jev (prior FILE) / killmyidea / FluidUse (already SIZE-SKIP) / deleting-the-trace / SkillGym / InGuard / Echo-Chamber 404. Skips stay in the inbox (K268 Jev PDF, duplicate multi-repo plan, K270 arXiv and newsletters, Sterling Sky batch). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill evolve. No weight download. No product install. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. Live jev path unchanged.**
+- **Harness (CCC)** — jev-curate is a dataset sifter (`wont_wire`). Canny is an evidence gate. **Do not install Canny.** Never auto-evolve skills. SkillGym is SIZE-SKIP. RegenHarness is FILE.
+- **Control-token paper** — name and impact only. No reproduction. No clone.
+- **Atto** — jev-curate is **not genealogy and not HTR**. No vault data. Transkribus sole HTR.
+- **GuruWatcher** — Klement AI-debt and acquisitions FILE; **no level to arm**; **never auto-arm**.
+- **CeminiDFS** — thin FILE. Soybean surface is not a lineup. No sizing change.
+- **CeminiParlays / Gambling** — World Cup broadcast study (~0.9 prediction-market logos per minute). **No submit. No pm scp.** World-cup bot stays retired.
+- **Cyber** — no reproduction. InGuard is a name and an impact. No image-gen install.
+- **SEO** — no new SEO item this wave.
+- **Rule** — `## OSINT K271 — 2026-09-24` above `## OSINT K270` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
+- **Briefs** — `briefs/2026-09-24_k271-*` (8).
+- **Archive** — one file on egress (Klement AI-debt note). The other 12 new files stay in the inbox. Do not delete skip files.
+
+## Current state (2026-09-23 — K270 ingest)
+
+- **K270 ingest** — 19 source pages + 5 hubs + 3 entities. Phase-0 **one REFERENCE clone**: cliffcompaction MIT 1005 KB. **NO-CLONE**: modelun SPDX null ~21MB; agensh GitHub 404 on 2026-09-23; airo-mono / pi / Kimi-K3 no clone. Skips: Jev paper (K268) / capital-flows 2026-09-20 / glitchspx talon / secpro 252. **0 product Integrate GO. FILE only. Do not swap `/route`. No skill evolve. No weight download. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. jev-mcp WIRE unchanged.**
+- **Matryoshka (25518)** — attribution method only; **no code release**; do not describe the finetune case study.
+- **Harness (CCC)** — Growing Harness / CliffCompaction / Agensh / task-state / Matryoshka / local coding agent FILE; **do not swap `/route`**; never auto-evolve `.cursor/skills`; no install of the CliffCompaction API proxy.
+- **Atto** — unchanged this wave. Bio-security item is **not Atto and not HTR**; citation only. Transkribus sole HTR. Never auto-merge truth.ged.
+- **GuruWatcher** — KOSPI / who-forecasts / bStocks FILE; **no level to arm**; **never auto-arm**; never watches.json.
+- **CeminiDFS / CeminiParlays** — FILE; CFTC staff advisory on mention markets; **no pm scp**; no book submit; no sizing change.
+- **Cyber** — no new clone; no PoC to build.
+- **SEO** — SparkToro + Sterling Sky GBP batch (14 posts) FILE; no ranking claim; no how-to steps.
+- **Rule** — `## OSINT K270 — 2026-09-23` above `## OSINT K269` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
+- **Briefs** — `briefs/2026-09-23_k270-*` (8).
+
+## Current state (2026-09-22 — K269 ingest)
+
+- **K269 ingest** — 18 source pages + 7 hubs + 5 entities (REFERENCE jev-lexer/test-filter/search + open-jev-typed-decision-engine; harness-zero SIZE-SKIP). Skips: Jev paper / capital-flows / glitchspx / secpro source pages. **0 product Integrate GO. FILE/HITL only. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. jev-mcp WIRE unchanged.**
+- **Atto** — organizer stays organizer; open-jev-typed-decision-engine = **redacted type only**; not product HTR; not vault PII; never auto-merge truth.ged.
+- **GuruWatcher** — Klement chip ban + WuBlock BTC historical FILE; **never auto-arm**; never watches.json.
+- **CeminiDFS / CeminiParlays** — FILE; EH promo + Kelly education; **no pm scp**; no book submit; no sizing change.
+- **CCC** — RRSI / Harness-Zero / residualization / onPanda / System One FILE; **do not swap `/route`**; never auto-evolve `.cursor/skills`.
+- **Briefs** — `briefs/2026-09-22_k269-*` + Jev `### K269 add`.
+
+## Current state (2026-09-21 — K268 ingest)
+
+- **K268 ingest** — 18 inbox (9 PDF + 9 newsletters; leftover SecPro skipped). 18 source pages + 8 hubs + 2 entities (`codemidas`, `recreationworld` FILE NO-CLONE). Archive 18/18 → egress-fi. **0 product Integrate GO. FILE only. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. 21177 = FRB astronomy NOT Atto HTR.**
+- **Phase-0** — `adopt_k268_phase0.sh` **no clones**. Paper repos unverified.
+- **Atto #1** — FRB trap noted; Jev Trading Paper image unread-stub FILE; organizer stays organizer.
+- **GW #2** — Capital Flows / WuBlock / Klement FILE; never auto-arm; never watches.json.
+- **DFS #3 / Parlays #4** — thin FILE; Outlier submit-screen + EH ep33 awareness; no pm scp; no solver swap.
+- **CCC** — CodeMidas / MIRAGE / failing-robot-ask FILE. jev-mcp WIRE unchanged.
+- **XSP** — GlitchSPX Talon Sep21 FILE; no xsp scp.
+- **Briefs** — `briefs/2026-09-21_k268-*` + `xsp-k268-glitchspx-talon-sep21.md` + Jev `### K268 add`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; leftover SecPro still skip; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run); wiki-gap-detect due (user-gated, not run).
+
+## Current state (2026-09-20 — K267 ingest)
+
+- **K267 ingest** — 3 inbox (2 evals + WuBlock Asia TOP10; leftover SecPro skipped). 3 source pages + 6 hubs + 6 new entities (jev-mcp WIRE unchanged). Archive 3/3 egress-fi. **0 product Integrate GO. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. Never auto-merge truth.ged.**
+- **Phase-0** — `adopt_k267_phase0.sh`: openjev-razorback Apache-2.0; winnow / foreman / typesafe-mcp / pi-jev / jev-desktop MIT. SIZE-SKIP / AGPL / GPL / SPDX-null / NOASSERTION no clone. Eval Integrate OVERRIDE FILE.
+- **Atto #1** — organizer stays organizer. Do-the-work lures (Jev-cu / jev-desktop / laya-mlx / neo4jev / portal fetch) FILE/HITL only. Matrix on `k267-atto-wave` + Atto brief. Further-impl reported, not built.
+- **GW #2** — openjev-razorback + winnow FILE local classify / prefilter. Never auto-arm. Never watches.json. jev-trader out of scope. Further-impl reported, not built.
+- **DFS #3 / Parlays #4** — thin FILE. No solver swap. No pm scp. CCC typesafe-mcp / pi-jev FILE. Cyber FILE no PoC. **Poker retired.**
+- **Briefs** — `briefs/2026-09-20_k267-*` + Jev `### K267 add`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; leftover inbox `Jev Trading Research Paper.pdf`; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run); wiki-gap-detect due (user-gated, not run). Optional later HITL: Foreman FIND checklist / winnow prefilter trial (not approved to build).
+
+## Current state (2026-09-19 — K266 ingest)
+
+- **K266 ingest** — 6 X inbox (sha256-verified): 5 Jev/harness/SEO long-forms + 1 short tip. 6 source pages + 4 hubs + 1 new entity (`langchain-typesafe` FILE, no clone). Bumps `jev-mcp` **WIRE unchanged**, `openjev` FILE. Archive 6/6 → egress-fi. **0 product Integrate GO. FILE only. Do not swap `/route`. No live desk. No xsp/pm scp. No LIVE Discord. Never `npx github:jkudish/jev-mcp`. Transkribus sole HTR.**
+- **Phase-0** — `adopt_k266_phase0.sh` **no clones**. No new repo needed for a runtime gate.
+- **Routing** — Atto #1 email-triage analog FILE, redacted type only, **not vault mail**. GW #2 `AutoModeMiddleware` = claim-ledger analog, **never auto-arm**. CeminiDFS #3 paper-classify analog = review-CSV citation, no solver swap. CeminiParlays #4 dynamic menu = promo vs real-hedge labels, no pm scp. CCC harness brief. SEO voice only. Gambling brief = no route. **Poker retired.**
+- **Claim hygiene** — 200x/400x = TypeSafe vendor claim; "78% vs 42%" = author claim, unsourced; Vercel fx 5–18x compares the classifier only.
+- **Revenue verdict** — **no new Cemini product this wave.** Paid analogs already exist (email triage, Browserbase, LangChain). Money path is **gates inside Atto / GW / DFS / Parlays / CCC**, not a Jev SaaS. OpenJev/clones stay FILE Watch.
+- **Briefs** — `briefs/2026-09-19_k266-*` + `### K266 add` on the four Jev briefs.
+- **SEO voice** — `briefs/2026-09-19_k266-seo-voice.md`; sibling `../SEO:GEO B&M Business` write attempted (parent copies if blocked).
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run). Optional later HITL: skill-name classify before prompt inject (not approved to build).
+
+## Current state (2026-09-19 — K265 ingest)
+
+- **K265 ingest** — 5 inbox (fold two evals into one source; not a byte-copy). 4 source pages + 6 hubs + 6 new entities (jev-mcp WIRE unchanged). Archive 5/5 egress-fi. **0 product Integrate GO. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord.**
+- **Phase-0** — `adopt_k265_phase0.sh`: jev-rules / jev-codex-router / SkillOpt / classifier-dev / claude-reflect MIT; tax-doc-classifier Apache-2.0. SIZE-SKIP / AGPL / SPDX-null / 404 / NOASSERTION / proprietary no clone.
+- **jev-mcp** — live laptop path unchanged (`~/.local/bin/mcp-jev`). Never `npx github:`. Not Atto product.
+- **Routing** — Atto #1 redacted type FILE (Transkribus sole HTR). GW #2 citation-selection/escalation = claim-ledger HITL; never auto-arm. CeminiDFS #3 thin FILE. CeminiParlays #4 escalation FILE. CCC Jev clones/AGENTS.md FILE (do not swap `/route`). Cyber SecPro FILE. Poker retired.
+- **Briefs** — `briefs/2026-09-19_k265-*` + Jev `### K265 add`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run).
+
+## Current state (2026-09-18 — Ashburn cemini-prod deleted)
+
+- **Deleted** — Hetzner `ubuntu-8gb-ash-2` (`cemini-prod`, Ashburn). Operator confirmed in Console. SSH banner to old IP times out; do not reconnect (`Host cemini-prod` tombstoned to `192.0.2.1`).
+- **Still live** — `cemini-egress-fi` (Helsinki) direct SSH. Raw bulk + postgres/redis dumps + GuruWatcher 15-min timer (`OnCalendar=*:0/15`, oneshot, alert-only Discord). `files.youratto.com` Worker 301 → `youratto.com/kit` R2. Laptop prod-mcp tunnel unloaded.
+- **No** Lane A / XSP / PM-LP / `scp` to `/opt/cemini`. Secrets stay in `~/.cemini/prod-env-backup-2026-09-18/` (mode 700). **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions (never auto-arm); cursor-route 0.1.14; cadences user-gated.
+
+## Current state (2026-09-18 — K264 ingest)
+
+- **K264 ingest** — 17 inbox (fold eval `(1)` into one source). 16 source pages + 8 hubs + 5 new entities (jev-mcp WIRE bump). Raws to egress-fi (17/17). **0 product Integrate GO. Transkribus sole HTR. No xsp/pm scp. No skill evolve. No LIVE Discord.**
+- **Phase-0** — `adopt_k264_phase0.sh`: pi-subagents / tradingview-optimizer / fast-jev-compaction / jev-browser MIT; C2C Apache-2.0. Live `gh api` retry confirmed jev-browser MIT, so the clone proceeded. NOASSERTION / AGPL / GPL / SPDX-null no clone.
+- **jev-mcp** — operator OK laptop Cursor MCP WIRE via `scripts/mcp_jev.sh` + local dist. Key `~/.cemini/typesafe-api-key`. Never `npx github:`. Not Atto product.
+- **Routing** — Atto #1 jev-mcp laptop WIRE (PII-safe; Transkribus sole HTR). GW #2 ATM historical FILE; tradingview-optimizer HITL never auto-arm. CeminiDFS #3 thin FILE. CeminiParlays #4 EH Eagles FILE. CCC harness/C2C/LS/pi-subagents FILE (do not swap `/route`). Cyber EXTRACT. Poker retired.
+- **Briefs** — `briefs/2026-09-18_k264-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run).
+
+## Current state (2026-09-18 — laptop TV / OpenCLI / claude-mem)
+
+- **Cursor TradingView MCP** — atila plugin already on (37 tools). Personal research GO. Smoke SPY + BTC. **Not** in Grok `/route`. **Not** in prod.
+- **OpenCLI tradingview** — SKIP (no Desktop; login / often paid). **OpenCLI Hyperliquid** installed and smoked (public `/info`).
+- **claude-mem observer** — OpenRouter `mistralai/mistral-nemo` + fallback `inclusionai/ling-3.0-flash`. No `:free`. No paid GLM 5.2.
+- **tradesdontlie CDP** — still no `TradingView.app`. Steal-from only.
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run).
+
+## Current state (2026-09-17 — K263 ingest)
+
+- **K263 ingest** — 16 inbox (15 NEW + 1 LIKELY as NEW). 16 source pages + 8 hubs + 7 new entities (data-formulator bump). Raws to egress-fi. **0 Integrate GO. Transkribus sole HTR. No xsp/pm scp. No MCP. No skill evolve. No LIVE Discord.**
+- **Phase-0** — `adopt_k263_phase0.sh`: openjev / jev-ultrafast / BrowserSkill / data-formulator / jev-mcp / ECC / agent-lsd MIT; knowledge-work-plugins Apache-2.0. NOASSERTION / AGPL / SIZE-SKIP / proprietary no clone.
+- **Routing** — Atto #1 openjev FILE (PII on-device; Transkribus sole HTR). GW #2 Donny MSTR 120 / UEC 9-9.50 HITL no auto-arm. CeminiDFS #3 data-formulator FILE. CeminiParlays #4 EH hedge FILE. CCC CERA-MoA/ScienceIDE/ECC FILE (do not swap `/route`). Cyber EXTRACT. Poker retired.
+- **Briefs** — `briefs/2026-09-17_k263-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run). Federation 429-hygiene apply leftover (sandbox).
+
+## Current state (2026-09-16 — K262 ingest)
+
+- **K262 ingest** — 23 NEW (1 eval + 10 arXiv/PDF + 12 newsletters). 23 source pages + 8 hubs + 6 new entities. Raws to egress-fi. **0 Integrate GO. Transkribus sole HTR. No xsp/pm scp. No MCP. No skill evolve. No LIVE Discord.**
+- **Phase-0** — `adopt_k262_phase0.sh`: security-audit-skill / ScienceBuddy / oh-my-hermes MIT; open-code-review Apache-2.0. NOASSERTION / AGPL / SPDX-null / SIZE-SKIP no clone.
+- **Routing** — Atto #1 ExpertHTR FILE (Transkribus sole HTR; google-maps FIND human-verify). GW #2 Moontower/Klement no auto-arm. CeminiDFS #3 Kalshi football awareness only. CeminiParlays #4 EH combos + Kalshi hedge FILE. CCC ScienceBuddy/social/factory FILE (do not swap `/route`). Cyber EXTRACT authorized lab. Poker retired.
+- **Briefs** — `briefs/2026-09-16_k262-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run). Federation 429-hygiene apply leftover (sandbox).
+
+## Current state (2026-09-15 — K261 ingest)
+
+- **K261 ingest** — 10 inbox (7 NEW + 3 LIKELY as NEW). 10 source pages + 7 hubs + 5 new entities. Raws to egress-fi. **0 Integrate GO. No xsp/pm scp. No MCP. No skill evolve. No LIVE Discord.**
+- **Phase-0** — `adopt_k261_phase0.sh`: power-pwn / mcp-sports-hub / arsenal-ng / m3e-canvas MIT; agentic-inbox Apache-2.0. AGPL/GPL/NOASSERTION no clone.
+- **Routing** — Atto #1 CF email + agentic-inbox FILE (DeskcommCRM EXTRACT still open). GW #2 Talon HITL never auto-arm. CeminiDFS #3 mcp-sports-hub FILE. CeminiParlays #4 EH + Kelly FILE. CCC Osmani/m3e FILE (do not swap /route). Cyber EXTRACT authorized lab. Poker retired.
+- **Briefs** — `briefs/2026-09-15_k261-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run).
+
+## Current state (2026-09-14 — DFS/Parlays Grok desks)
+
+- **Grok Bot** — paste §17 Parlays Slate Desk, §18 DFS Recap, §19 Parlays Recap (`briefs/2026-09-01_grok-bot-charters.md`). Product copies in CeminiDFS + CeminiParlays `docs/GROK-BOTS.md`. FILE only. No book submit. No Odds API on the Bot VM.
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot §9–§16 paste still leftover if not applied; HL/Kalshi/equity/cross-venue backtests overdue.
+
+## Current state (2026-09-13 — K260 ingest)
+
+- **K260 ingest** — 16 NEW (2 eval + 4 arXiv + Jane Street + 9 newsletters). 16 source pages + 8 hubs + 6 new entities. Raws to egress-fi. **0 Integrate GO. No xsp/pm scp.**
+- **Phase-0** — `adopt_k260_phase0.sh`: COBRA-Skills Apache-2.0; pentagi / DeskcommCRM / aimap / OpenResearch MIT. Ecdysis + Netryx SPDX null NO-GO clone.
+- **Routing** — Atto #1 DeskcommCRM EXTRACT (PII vault; Transkribus sole HTR). GW #2 Capital Flows no auto-arm. CeminiDFS #3 eval 0 Integrate. CeminiParlays #4 pick'em FILE. CCC harness FILE (do not swap /route). Cyber EXTRACT. Poker retired.
+- **Briefs** — `briefs/2026-09-13_k260-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot §9–§16 paste; HL/Kalshi/equity/cross-venue backtests overdue.
+
+## Current state (2026-09-11 — K259 ingest)
+
+- **K259 ingest** — 15 NEW (8 arXiv + 8 newsletters minus folds). Needed paper: GZSL HTR bias for Atto. Show-Harness SIZE-SKIP. **0 Integrate GO. No xsp/pm scp.**
+- **Phase-0** — no clones. Robotics Show-Harness Apache-2.0 ~492MB SIZE-SKIP.
+- **Routing** — CCC TRACE/TrajMark/KVShare FILE (do not swap /route). Cyber MoE ablation + rumor-to-exploit. Atto HTR FILE. GW wiki-only. Gambling EH **no pm scp**.
+- **Briefs** — `briefs/2026-09-11_k259-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot §9–§16 paste; HL/Kalshi/equity/cross-venue backtests overdue.
+
+## Current state (2026-09-09 — K258 ingest)
+
+- **K258 ingest** — 18 inbox (1 eval + 8 arXiv + 9 newsletters). 18 source pages + 9 hubs + execcritic/e2b entities. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k258_phase0.sh`: execcritic Apache-2.0 REFERENCE (~1.1MB); E2B Apache-2.0 REFERENCE (~126MB; eval Integrate overridden). **0 Integrate GO.**
+- **Routing** — CCC harness + Codex FILE (do not swap /route). Cyber VM-escape / wrappers / collusion.wiki. GW Klement wiki-only no auto-arm. Gambling EH Kalshi courts **no pm scp**. Atto Brownian skip; E2B FILE. Vol wiki-only.
+- **Briefs** — `briefs/2026-09-09_k258-*` → sibling copies. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot §9–§16 paste; HL/Kalshi/equity/cross-venue backtests overdue. Type A wiki-gap stubs remain — no auto Exa.
+
+## Current state (2026-09-08 — K257 ingest)
+
+- **K257 ingest** — 8 inbox (3 eval + 1 NFL slate + 4 newsletters). 8 source pages + 4 hubs + markitdown entity. Raws to egress-fi. **xsp brief staged. No pm scp.**
+- **Phase-0** — `adopt_k257_phase0.sh`: markitdown MIT REFERENCE. diagram-design stays Extract+HITL. karpathy-skills SPDX null. **0 Integrate GO.**
+- **Routing** — Atto markitdown FILE. CCC/SEO AEO tracker (do not swap /route). GW Klement wiki-only + Talon HITL. Gambling EH Ep 31. CeminiDFS Week 1. Image-gen hyperframes SIZE-SKIP.
+- **Briefs** — `briefs/2026-09-08_k257-*` + `xsp-k257-glitchspx-talon-sep8.md` → sibling copies.
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot §9–§16 paste; HL/Kalshi/equity/cross-venue backtests overdue.
+
+## Current state (2026-09-07 — K256 ingest)
+
+- **K256 ingest** — 24 inbox (13 arXiv incl. 2 skipped-cap fetched + 2 eval + 9 newsletters). 24 source pages + 10 concept hubs + 4 new entities. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k256_phase0.sh`: magnitude + RefactorPlatform + cve-mcp-server REFERENCE. trailofbits/skills EXTRACT-ONLY. **0 Integrate GO.**
+- **Routing** — CCC AutoLR/RefactorPlatform/world-acting + Grok Bot FILE. Cyber AlcaTRAz/TIER/uncensored/CVE. GW CF + Wu outlook alert-only. Gambling Kalshi lifetime ban. Atto matched-starts. Outlier tungsten LIVE bump. **No LIVE Discord.**
+- **Briefs** — `briefs/2026-09-07_k256-*` → CCC/cyber/GW/gambling/atto/SEO/image-gen siblings.
+- **Open:** Atto P0 kit fixes; GW High-finding regressions; cursor-route 0.1.14 OR ranker; Grok Bot §9–§16 paste; HL funding / Kalshi LP / equity-signal / cross-venue backtests overdue.
+
+## Current state (2026-09-04 — desk pack ingest)
+
+- **Desk pack** — BNTX cancer thesis (Gemini tape rejected; Fable PASS-WITH-FIXES). CRML Tanbreez promotional tape. Tungsten forensic reconfirms no Gentung DPA; APT plant is the SPOF. Tether gold three-tier `[TENTATIVE]`.
+- **Product audits** — Atto snapshot `c8a9ac2c6a56` **NOT READY** (sidecar, Puppeteer, W14, sdist). GuruWatcher 0.1.7 **NO-GO** (Stripe invite replay, IMAP default, newest-wins). Briefs in sibling repos. **No xsp/pm scp.**
+- **FanDuel CSV** — skipped as wiki source; staged to CeminiDFS.
+- **Open:** Atto P0 kit fixes; GW High-finding regressions; parent commit of K255 Phase-0 entity pages; cursor-route 0.1.14 OR ranker; Grok Bot §9–§16 paste; HL funding backtest overdue.
+
+## Current state (2026-09-04 — K255 ingest)
+
+- **K255 ingest** — 30 inbox (29 NEW + 1 LIKELY SecPro fold). 30 source pages + 9 concept hubs. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k255_phase0.sh`: AREX-Skill + Deep-CFR-2025 + FalconFlank REFERENCE clones. **0 Integrate GO** for SafeEvolve runtime.
+- **Routing** — CCC harness (SafeEvolve, hook attack, Repo-To-Skill). Cyber AI-SOC III. Poker LUGL. GW Klement/Wu. Gambling EH NFL/SCOTUS. SEO dynamic SERP.
+- **Briefs** — `briefs/2026-09-04_k255-*` → CCC/cyber/gambling/GuruWatcher/SEO/poker siblings.
+- **Open:** cursor-route 0.1.14 OR ranker; Grok Bot §9–§16 paste; HL funding backtest overdue.
+
+## Current state (2026-09-03 — Grok Bot FILE ingest)
+
+- **Grok Bot wiki** — `entities/tools/grok-bot.md` + 3 sources + `concepts/grok-bot-operator-patterns.md` (FILE; no Phase-1 wire). Charters in `briefs/2026-09-01_grok-bot-charters.md` (§1–16).
+- **Harness optional-next** — `wire_ledger_check.py --run-verify` PASS; 97 adopt bodies → `scripts/adopt-waves/`; CCC Dual-ID inline purge.
+- **Open:** operator paste §9–§16 into Grok Bot.app; irabukht article name verify; cursor-route **0.1.14** OR ranker parity publish.
+
+## Current state (2026-09-02 — super-audit AI harness · REWORK)
+
+- **Audit** — `reports/audit/premium-ai-harness-20260902/SYNTHESIS.md` (5 auditors, REWORK). Plan: `IMPLEMENTATION_PLAN.md` same folder.
+- **Rules** — `cemini-invariants.mdc` (global alwaysApply) + `osint-invariants.mdc` (≤25 lines, alwaysApply). Wave catalog `osint-phase1-adopt-wires.mdc` on-demand. Federation rules global-only; Cybersec phase1 project copy **retired**.
+- **Vocabulary** — FILE · KEEP · WIRE (`wiki/concepts/file-keep-wire-harness.md`). `wiki/meta/wire-ledger.yaml` + `scripts/wire_ledger_check.py` PASS.
+- **Grok** — **402** = weekly Grok Build quota (resets weekly). `com.cemini.wiki-ingester` **unloaded**; reinstall script skips unless `CEMINI_ENABLE_WIKI_INGESTER=1`.
+- **Route** — OpenRouter easy ranker prefers Qwen/GLM/Kimi over Nemotron 550B (`agent-toolkit/scripts/select-openrouter-free-model.ps1`).
+- **Open:** GuruWatcher 53→2 rules (operator). HL funding backtest overdue.
+- **Phase B backlog (2026-09-02):** harness_verb migration (204 pages); `adopt.sh` + manifest; six daily-use skills; CCC Dual-ID purge; wire_ledger PASS (8 rows).
+- **Optional-next (2026-09-02):** `wire_ledger_check.py --run-verify`; adopt wrappers retired → `adopt-waves/`; CCC inline Dual-ID purge complete.
+
+## Current state (2026-09-02 — K254)
+
+- **K254 ingest** — 17 inbox (16 NEW + 1 DUPLICATE fold). 15 source pages + 8 concept hubs + prior bumps. **No xsp/pm scp.**
+- **Phase-0** — **0 Integrate GO**; eval docx need per-URL SPDX before Integrate.
+- **Phase-1 wired** — `adopt_k246_k253_phase1.sh` + `adopt_k254_phase1.sh` PASS. Rules on all surfaces. **29 concept hubs** `wire_status` set.
+- **Routing** — CCC harness cluster + Fable 5.1 awareness. GW Klement bond + Wu BTC alert-only. Gambling Robinhood/Kalshi. SEO GBP edited-review.
+- **Briefs** — `briefs/2026-09-02_k254-*` → CCC/cyber/gambling/GuruWatcher/SEO siblings.
+- **Open:** HL funding backtest overdue. Wiki gap detect stale. Grok Build balance (402) for `/route` — not a login fix.
+
+## Current state (2026-09-01 — K253)
+
+- **K253 ingest** — 16 inbox (8 arXiv + 8 newsletters). 16 source pages + 7 concept hubs + autoscirub entity + prior bumps. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k253_phase0.sh`: **AutoSciRub MIT REFERENCE** (~2.5MB). **0 Integrate GO** for S3Gym/Aspire/DIASENTINEL runtime.
+- **Routing** — CCC harness self-improvement + OSS factory. Cyber auditable MAS extract. GW Capital Flows ES7670 alert-only. Gambling EH SCOTUS. Outlier GTA6 SEO append. Vol/physics wiki-only.
+- **Briefs** — OSINT `briefs/2026-09-01_k253-*`. Sibling copies to CCC/cyber/gambling/GuruWatcher.
+- **Phase-1 wired** — `osint-k246-k253-phase1-wires.mdc` + sibling surface rules. No `.cursor/skills` auto-evolve.
+- **Open:** HL funding backtest overdue. Kalshi/equity/cross-venue LP due. Wiki gap detect stale (12d). Grok CLI auth for `/route`. No LIVE Discord.
+
+## Current state (2026-08-31 — K252)
+
+- **K252 ingest** — 14 inbox (8 arXiv + 6 newsletters). 14 source pages + 5 concept hubs + k248 gambling bump. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k252_phase0.sh`: **0 Integrate GO** (no verified SPDX clones).
+- **Routing** — CCC harness (EvoUndo, Logos, skill routing, Prove2Me). Cyber layered defenses + accountability. Gambling EH injury markets awareness. GW Wu Strategy + jobs outlook alert-only. Vol wiki-only.
+- **Briefs** — OSINT `briefs/2026-08-31_k252-*`. Sibling copies to CCC/cyber/gambling/GuruWatcher.
+- **Phase-1 wired** — K282/K237/K285/K280 federation + `ccc-k246-k253` / GW k252.
+- **Open:** HL funding backtest overdue. Kalshi/equity/cross-venue LP backtests due. Wiki gap detect stale. Grok CLI auth for `/route` Grok lane. No LIVE Discord.
+
+## Current state (2026-08-30 — K251)
+
+- **K251 ingest** — 2 NEW newsletters (Talon 31 Aug–4 Sep + Wu Asia TOP10). Fold 7 leftover K250 files (3 arXiv DUPLICATE + eval + empty eval-links + 2 PDF notes). 2 source pages + 4 existing bumps. Raws to egress-fi. **xsp scp yes. pm scp no.**
+- **Phase-0** — no new Adopt/GO. Leftover K250 eval already filed. **0 Integrate GO.**
+- **Routing** — Talon → XSP + GW HITL (no auto-arm). Wu wiki-only. ComeCome → cyber brief (no PoC). Atto / poker / DFS / family skip. No Barone PII.
+- **Briefs** — OSINT `briefs/xsp-k251-*` + GW sibling. Cyber ComeCome copy. **No pm scp. No LIVE Discord.**
+- **Phase-1 wired** — `guruwatcher-k251-phase1-wires.mdc` (Talon HITL levels).
+- **Open:** HL funding backtest overdue (2026-08-27). Kalshi/equity/cross-venue LP backtests due. Wiki gap detect stale. STE100 CeminiSuite rollout brief open. No LIVE Discord.
+
+## Current state (2026-08-29 — K249)
+
+- **K249 ingest** — 6 inbox (2 arXiv + 4 newsletters). 6 source pages + 2 concept hubs + 4 existing bumps. No eval. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — no Adopt/GO repos. CautiousBench CC BY-NC-SA + no GitHub (`gh search` 2026-08-29) → **NO-GO clone**. 2608.26008 CC BY 4.0, no repo. **0 Integrate GO.**
+- **Routing** — Atto name-superstition over-refusal. CCC Cursor/OpenAI vendor-risk (do not swap `/route`). Cyber rule-memory + CautiousBench method + SecPro #249. Gambling Ninth Circuit Kalshi awareness **no pm scp**. Wu weekly wiki-only. GW skip.
+- **Briefs** — OSINT `briefs/2026-08-29_k249-*`. Sibling copies to atto/CCC/cyber/gambling.
+- **Phase-1 wired** — `ccc-k246-k253` + `cyber-k246-k253` + authorization-not-name (K249).
+- **Open:** HL funding backtest overdue (2026-08-27). Kalshi/equity/cross-venue LP backtests due. Wiki gap detect stale. STE100 CeminiSuite rollout brief open. No LIVE Discord.
+
+## Current state (2026-08-29 — K250)
+
+- **K250 ingest** — 7 inbox (3 arXiv + 2 eval + 2 PDF notes). 7 source pages + 2 concept hubs + jit-agent entity + reasoning-bank bump. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k250_phase0.sh`: 128MB REFERENCE (reasoning-bank, JIT). **0 Integrate GO.**
+- **Routing** — CCC JIT/ReasoningBank/WikiSkill harness+skill intelligence; Atto screenshot-to-code eval; cyber user-scanner/mkcert; Grok/harness PDF stubs REFERENCE only.
+- **Briefs** — OSINT `briefs/2026-08-29_k250-*`. Sibling copies to CCC/Atto/cyber.
+- **Phase-1** — K313/K281/K292/K324/K237 already policy_wired; no new runtime wires.
+- **Open:** HL funding backtest overdue. Grok CLI auth needed for `/route` Grok lane. No LIVE Discord.
+
+## Current state (2026-08-28 — K248)
+
+- **K248 ingest** — 26 inbox (8 arXiv + 17 newsletters + 1 eval). 26 source pages + 5 concept hubs + 5 entity tools. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k248_phase0.sh`: 222MB REFERENCE (gods-eye-view, screenshot-to-code, OpenInstinct, heliosgen, freellmapi). **0 Integrate GO.**
+- **Routing** — CCC HarnessLens/MoRe + Addy Osmani; cyber IPI framing gap + context root + RedEvoAgent; Atto RefLAM/AraMS/gods-eye-view; GW Jackson Hole + Wu deficit + Klement LLM decay; gambling EH Connecticut/21+; biology OOD stub.
+- **Briefs** — OSINT `briefs/2026-08-28_k248-*`. Sibling copies to atto/GuruWatcher/CCC/cyber/gambling.
+- **Phase-1** — K313/K314/K322/K324 already policy_wired; no new runtime wires.
+- **Open:** HL funding backtest overdue (2026-08-27). STE100 CeminiSuite rollout brief open. No LIVE Discord.
+
+## Current state (2026-08-26 — K247)
+
+- **K247 ingest** — 15 inbox (8 arXiv + 6 newsletters + 1 eval). 15 source pages + 4 concept hubs + 4 entity tools. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k247_phase0.sh`: 144MB REFERENCE (StarHarness, Recuris, walgit, archify, ponytail, garden-skills, headlong, world-intel-mcp, browser-use). **0 Integrate GO.**
+- **Routing** — CCC StarHarness/Recuris K313/K314; Atto walgit/archify/garden-skills; GW world-intel-mcp + headlong alert-only; cyber TrustDABench + prompt-structure; gambling EH athlete-play + Kalshi football; SEO SparkToro pointer; vol VRP paper wiki-only.
+- **Briefs** — OSINT `briefs/2026-08-26_k247-*`. Sibling copies to atto/GuruWatcher/CCC/cyber/gambling/SEO brief dirs. skill_audit PASS.
+- **Phase-1** — K313/K314 already `policy_wired` in federation rules; no new runtime wires.
+- **Open:** HL funding backtest due **2026-08-27**. STE100 CeminiSuite submodule rollout brief still open. No LIVE Discord.
+
+## Current state (2026-08-25 — K246)
+
+- **K246 ingest** — 30 inbox (15 arXiv + 11 newsletters + 2 evals). 30 source pages + concept memory-poisoning + prime-agent bump. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k246_phase0.sh`: unlazy, MemMachine, garak, devops-security-agent-skills, book-to-skill, awesome-osint-arsenal, METATRON. **0 Integrate GO.**
+- **Routing** — Atto Arabic warm-up; GW Capital Flows HITL; CCC harness cluster; cyber ClawSentry/aiXamine; gambling CFTC awareness; vol papers wiki-only.
+- **Briefs** — OSINT `briefs/2026-08-25_k246-*`. Sibling copies to atto/GuruWatcher/CCC/cyber/gambling brief dirs.
+- **Phase-1** — K301/K304/K309 federation wires already present; new memory-poisoning concept `policy_wired`.
+- **Open:** Leon email still held. HL funding backtest due **2026-08-27**. No LIVE Discord.
+
+## Current state (2026-08-22 — K245)
+
+- **K245 ingest** — leftover Talon/Simile from K244 + GRPO unlearning 2608.17804 + LS harness attention-interface + Wu HL-US + Klement polarisation. Brain Researcher 2608.19902 thin OOD page (was K244 skip). EH Johnson inbox folded into K244 source. Raws to egress-fi. **xsp scp yes** (`xsp-k245-glitchspx-talon-aug24`). **pm scp no.**
+- **Phase-0** — `grpo-llm-unlearning` Apache-2.0 Extract/REFERENCE (`gh api`); 0 stars; no clone; **0 Integrate GO.**
+- **Routing** — harness/Simile/GRPO → CCC (do not swap `/route`). Talon → XSP + GW HITL (no auto-arm). Wu Trump/CFTC HL US-entry → hyperliquid wiki-only. Atto skip. No Barone PII.
+- **Briefs** — OSINT `briefs/xsp-k245-*` + GW/CCC copies. Sibling `../GuruWatcher/briefs/` and CCC `briefs/`.
+- **Phase-1 leftover** — attention-interface interrupt policy; GRPO `wont_wire`. Cursor `/phase1` — do not edit `.cursor/skills` here.
+- **Open:** Leon email still held. HL funding backtest due **2026-08-27**. No LIVE Discord.
+
+## Current state (2026-08-21 — K244)
+
+- **K244 ingest** — 10 source pages + 5 concepts (8 arXiv as 5 pages + 5 newsletters). Skips archived: Klement, Capital Flows Bessent, Wu weekly, Poolside gossip, PE Pulse, Brain Researcher 2608.19902. Raws on egress-fi. **No xsp/pm scp.** Phase-0 none.
+- **Routing** — Phoenix/Athar → Atto; Fairoze leakage + tldrsec #342 + SecPro #248 → cyber; EnvHarness/BPS/Task-CoEvolve + wayfinder + Osmani → CCC; BrowseComp-Plus wiki-only; VLM safety-overrides-vision → image-gen pointer; EH Johnson/CFTC → gambling awareness (no retail-bot steal).
+- **Briefs** — sibling copies (Atto / CCC / cyber / gambling / image-gen). CCC/cyber/gambling/image-gen `briefs/` are gitignored there; Atto brief is tracked.
+- **Phase-1 leftover** — BPS skill router; EnvHarness wrap; wayfinder skill; SPIFFE agent identity. Cursor `/phase1` — do not edit `.cursor/skills` here.
+- **Open:** inbox leftover for tomorrow 09:00: Latent Space simulation (missed this wave) + Glitch SPX Aug 24–28. Leon email still held. HL funding backtest due **2026-08-27**. No LIVE Discord.
+
+## Current state (2026-08-20 — K243 + leftover)
+
+- **TTWO / GTA 6 cashout** — Operator thesis kept after Gemini DR ingest. Official player FX Gemini **<1%**; unofficial CS2-style rail is the omitted analog (`@concepts/grey-market-game-economies.md`). Prefer IR FY26 **$6.72B** bookings over Gemini **$5.33B**. Watch **2026-08-27** Netflix Extended Look. Wiki-only. **No xsp/pm scp.**
+- **Ops leftover** — WuBlock Q2 CEX Vol/OI ingested (`sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md`). Wiki-only. **No xsp/pm scp.** Inbox empty of this file.
+- **Wiki gap detect** — Tier 1 ran 2026-08-20 (47 A / 138 D / 99 E). Follow-up: Type A top-15 `read_status` hygiene; handful Type D live lookups; Type E thicken (tokenized equities / AV-AIVAT / A2E). Next due **2026-08-27**. No auto Exa.
+- **Daily digest** — `wiki/sweeps/2026-08-20-daily.md` filed (arxiv-only; news off).
+- **K243 ingest** — 16 NEW inbox (2 evals + 8 arXiv + 6 newsletters). Dual-ID: OSINT K243 ≠ ACEM/CCC K243. Fold `2608.17511` → `arxiv-2608.16171`. Raws archived to egress-fi; inbox empty of this batch.
+- **K243 Phase-0** — `scripts/adopt_k243_phase0.sh`: ~464MB (WhisperLiveKit, legal-templates, openbot, dnsglobe, nullframe, Lore, google-timeline-visualizer, career-ops, AI-Infra-Guard, spade). **0 new Integrate GO.** purple → Extract/Watch HITL; cursor/plugins → no `~/.cursor/skills` copy. Transkribus sole HTR; WhisperLiveKit is STT only.
+- **K243 papers/newsletters** — Prosopography → Atto (no Barone names). SemaPLC/Eureka/Harness-CL → CCC OOD. CTIFoundry → cyber. SPADE → poker REFERENCE. GLM-5.3/TrueForge/DSH → CCC (do not swap `/route`). Osmani → practical-loop-engineering. EH GOP comms → gambling **no pm scp**. Klement + Moontower wiki-only (**no GW auto-arm / no xsp scp**).
+- **K243 briefs** — OSINT `briefs/2026-08-20_k243-*` (Atto/GW/CCC/cyber/gambling/poker) skill_audit 100/100 + sibling copies. Image-gen MoneyPrinterTurbo via `cross_wiki_route.py`. **No xsp/pm scp.**
+- **Phase-1** — wires appended (OSINT K243 + dual-ID in cemin policy). New Extract `wire_status: policy_wired`. CCC `route.md` backlog row + gambling crossover K243 stub.
+- **Open:** Leon email still held (SPCX thesis). Quarterly HL funding backtest due **2026-08-27**. No LIVE Discord.
+
+## Current state (2026-08-19 — K242)
+
+- **K242 ingest** — 9 NEW inbox (2 evals + 7 newsletters). Dual-ID: OSINT K242 ≠ Trajectory Sentinel K242. Raws archived to egress-fi.
+- **K242 Phase-0** — `scripts/adopt_k242_phase0.sh`: ~192MB (mdflux, Aliens_eye, betterwright, easy-agent, vphone-cli, ai-memory, watermarks-remover, BloodBash Extract-only). **0 new Integrate GO.** Transkribus sole HTR. Qwen uncensored Watch no weights. rybbit AGPL no clone.
+- **K242 newsletters** — Glean routing → CCC (do not swap `/route`). Capital Flows inflation>recession + SMH → GW HITL one watch. EH PM-ban onshore + Kalshi WA geofence **2026-08-19** → gambling **no pm scp**. Klement SLM + WuBlock CORZ wiki-only (**no xsp scp**).
+- **K242 briefs** — OSINT `briefs/2026-08-19_k242-*`. Sibling copy. Dual-ID: OSINT K242 ≠ CCC/Sentinel K242.
+- **Phase-1** — wires appended. Extract tools `policy_wired`.
+- **Open:** Leon email still held (SPCX thesis). Wiki gap detect due (14d since 2026-08-05) — user-gated. No LIVE Discord.
+
+## Current state (2026-08-18 — K241)
+
+- **K241 ingest** — 18 unique inbox + thesis fold (same sha256 as K240 SPCX note). 2 evals + 8 arXiv + 8 newsletters + OSINT4ALL hub. Raws archived to egress-fi; inbox empty of this batch.
+- **K241 Phase-0** — `scripts/adopt_k241_phase0.sh`: sam Apache-2.0 Extract; llm-as-a-verifier MIT Extract (411MB); diagram-design MIT Extract + HITL (`wire_status: deferred`); bbot **AGPL-3.0** Extract-only; sherlock re-clone; mitaka MIT. **486MB total** (<500). **0 new Integrate GO.** CyberChef stays K149 Context.
+- **K241 papers / newsletters** — SFP MFG → poker Arena. ClawGym II + HarnessEval-W + strategic debt + cursor-route → CCC (`route.md` backlog; do not swap `/route`). Capital Flows 30y + three equity risks → GW HITL no auto-arm. EH cartel PM + Kalshi WA geofence 2026-08-19 → gambling **no pm scp**. Lily Ray fan-out + SparkToro persona → SEO. Rough vol + WuBlock miner-MW wiki-only (**no xsp scp**).
+- **K241 briefs** — OSINT `briefs/2026-08-18_k241-*` (Atto / GW / CCC / cyber / gambling / SEO). Poker SFP brief. Sibling copy may need parent. Dual-ID: OSINT K241 ≠ CCC K241.
+- **Phase-1** — wires appended. Extract tools `policy_wired`; diagram-design `deferred` (no silent `~/.cursor/skills`).
+- **Open:** Leon email still held (SPCX thesis). Wiki gap detect due (13d since 2026-08-05) — user-gated. CCC `entities/skills/route.md` backlog bump is in the CCC brief for parent apply.
+
+## Current state (2026-08-17 — K240)
+
+- **K240 ingest** — 19-inbox: 2 evals + 6 arXiv + SPCX thesis + VIVO + 8 newsletters (Talon ×2 and Moontower #324+RSSB folded). Raws archived to egress-fi; inbox empty of this batch.
+- **K240 Phase-0** — 69MB new clones (`scripts/adopt_k240_phase0.sh`): dshackle Apache-2.0 Extract REFERENCE (not prod RPC); dsh-vision-toolkit + dsh-agent-teams MIT Extract (do not replace `claude-ds`); filekey GPL-3.0 Extract-only; replay-agent-recorder / MettleBench / TWIN-ARC-AGI-3 REFERENCE shelf (CCC K282–K284 already ingested). **No new Integrate GO.**
+- **K240 papers** — Structural abstention (never invent the number) → dashboards / GuruWatcher. Skills as procedural anchors (65.7% vs 4.5% knowledge; retrieval collapses 5→100) → CCC; no unattended skill evolve. Tripwire cyber HITL, no PoC. AgentRewind / Twin / fault-injection = OSINT stubs → CCC K282–K284. Dual-ID: OSINT K240 ≠ CCC K240 robotics.
+- **K240 briefs** — Atto filekey+abstention; GW Talon+RSSB HITL; CCC skills+dsh; cyber Tripwire+Qwen Watch; gambling NV geofence (**no pm scp**). `xsp-k240-glitchspx-talon-rssb` skill_audit 100 → scp cemini-prod. WuBlock funding winter wiki-only. SPCX email still held (Leon address missing).
+- **Phase-1** — wires appended. `wire_status: policy_wired` on dshackle / dsh-vision-toolkit / filekey.
+
+## Current state (2026-08-15 — K239)
+
+- **K239 ingest** — 18-URL eval + 3 arXiv (SteerBench / HiRoute / WIFA) + 7 newsletters. 11 raws archived to egress-fi; inbox empty of this batch.
+- **K239 Phase-0** — 9MB new clones: fclones MIT, openai/privacy-filter Apache-2.0, timesfm Apache-2.0 code (no checkpoints). rachoon **AGPL Extract-only** + RustScan **GPL-3.0 Extract-only** (docx Integrate/MIT wrong — K237 truth stands). LFM encoders `license=other` weight-skip. Null SPDX skip: ai-data-extraction, cordiverse/paper. **No new Integrate GO.**
+- **K239 papers** — SteerBench-Work proceed/hold HITL → CCC (dual-ID: OSINT K239 ≠ CCC K239 Datumpont). HiRoute + WIFA intent-not-form → cyber/CCC policy; no jailbreak PoC.
+- **K239 briefs** — Atto fclones+PII; GuruWatcher bond watches; cyber HiRoute/WIFA/SAIF; CCC SteerBench/Flue/Osmani; gambling Kalshi mentions. **No xsp/pm scp** (WuBlock not implementable; mentions gone).
+- **Phase-1** — HITL action-boundary + intent-not-form wires. No skill auto-evolve.
+
+## Current state (2026-08-15 — K238)
+
+- **K238 ingest** — @clayul X video of Ivan Nardini Code w/ Claude 2026 GCP live build (26 min; official YT + 564MB X mp4 archived). Steal: MCP vs skills split, plan mode, 3 component subagents, security-review gate (reviewer ≠ deployer). CCC brief staged. Dual-ID vs older CCC K238 filenames.
+
+## Current state (2026-08-14 — K237)
+
+- **K237 ingest** — 20-URL tool eval (2 near-dup docx folded) + 8 arXiv + 3 newsletters. 13 raws archived to egress-fi; inbox empty.
+- **K237 Phase-0** — CyberScraper-2077 **MIT verified** (GO Integrate → cyber lab, 0.4MB clone); ente + rachoon **AGPL Extract** (Atto, pattern-only — 721MB/3.9MB, no proprietary link); RustScan **GPL-3.0 (docx claimed MIT — wrong)**; Vero Apache-2.0 (CCC); deepseek-harness **do-not-replace**. Docx license claims wrong on 7/20.
+- **K237 arXiv** — Domus house-history (Atto), skill misevolution (CCC/SHE), HARD self-evolving defense (cyber), Uniswap fee-IV (**pm-k237 scp prod**), MLLM ensembles (Atto watch), CPS runtime monitoring (WATCH), Vero (CCC), AutoDesign (CCC /route).
+- **K237 Phase-1 + briefs** — wires appended (E2EE AGPL isolate, CyberScraper GO, skill misevolution SHE gate, self-evolving defense). Briefs: Atto `k237-ente-e2ee-vault` (required, +Domus/rachoon/VoxCPM), CCC meta-harness-vero-misevolution, cyber self-evolving-defense + cyberscraper-rustscan, SEO SparkToro zero-click, `pm-k237-uniswap-fee-iv` (skill_audit 100/100 → scp cemini-prod). GW + poker skip (no watch source / no IIG hook).
+- **Committed** in `f27a8206` (swept into concurrent /route 2.3.2 sync commit); CI green.
+
+## Current state (2026-08-13 — WNBA Kalshi cross-wiki)
+
+- **WNBA live-under research** — strategy on `@gambling-wiki/entities/sports/wnba-betting.md` (189-game ESPN PBP: no 5-miss edge; last-2:00 fair odds by margin). OSINT stub `@sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md`: Kalshi public API lists 88 WNBA series, **0** last-2:00 contracts; alert-only posture; no prod orders.
+
+## Current state (2026-08-13 — K235)
+
+- **K235 ingest** — 20-URL eval (ppt-master/benchflow/GHunt/valuecell/fastdup/etc.) + 8 arXiv (CosMAP / FrontierFinance / content-moderation / China-VLM / HPC-modernization / VAKRA / tutor-withhold / RSM) + Latent Space Grok 4.6 + Capital Flows rates. 11 raws archived to egress-fi; inbox empty at commit.
+- **K235 Phase-0** — ppt-master **MIT verified** (CONDITIONAL-GO Atto; sparse-adopt, 1.3GB); claude-task-viewer MIT + quotio MIT + CosMAP-dr BSD-2 cloned (~277MB total); benchflow **AGPL isolate**; **fastdup CC BY-NC-ND → REJECT for Atto**; VAKRA CC BY-NC-SA reference; GHunt no-LICENSE.
+- **K235 Phase-1 + briefs** — wires appended (Atto deck/license disposition + tool-policy/oracle/RSM/tutor). Briefs: Atto ppt-master / GW rates-FX watches / Cyber benchflow-VAKRA-ChinaVLM / CCC VAKRA-RSM-tutor-Grok46-HPC. Poker skip (no IIG hook); xsp/pm none (FrontierFinance wiki/eval). Grok CLI out.
+
+## Current state (2026-08-12 — K233)
+
+- **K233 ingest** — 8 arXiv (SKILLER / REDAgentBench / Fed-Speaks / SkillLens / MIRA / FormaTheoria / cross-lingual safety / mixed-RL rollouts) + 20-URL tool eval + 7 newsletters. Phase-0 **3 Integrate clones** (anydoc MIT, iron-proxy Apache-2.0 paradigmxyz fork, opencodex MIT). SKILLER **NO-GO** clone (NOASSERTION); agents-from-scratch **NO-GO** (null SPDX). 16 raws archived to egress-fi; inbox empty.
+- **K233 Phase-1** — Atto anydoc+clapgrep+tunnelto+sentrux (board **K274** remap), outlier-weekly positioning brief; CCC opencodex+quotio, SKILLER/MISA-T /route backlog; cyber iron-proxy egress gate + REDAgentBench/cross-lingual + reasoning-trace ops rule; GW sentrux + inflation watches; xsp `xsp-k233-fed-speaks-vol-surface` + `xsp-k233-wublock-derivatives-volume` → cemini-prod (skill_audit 100/100).
+
+## Current state (2026-08-11 — K232)
+
+- **K232 ingest** — 8 arXiv (SHE / TongGuOCR / DTOA / regret-games / DiffCoop / Hierarchical Game / Macaron-V1 / robot harness) + WuBlock July spot volume. Phase-0 **~5.1MB** (`SHE` Apache-2.0). TongGuOCR `jzzh2004/TongGuOCR` **NO-GO** (null SPDX); Macaron/DiffCoop no public clone; robot harness **wont_wire**.
+- **K232 Phase-1** — Atto TongGuOCR Watch (**K270**, Transkribus sole HTR); CCC SHE+Macaron+DiffCoop+HG+DTOA; cyber SHE+DiffCoop; poker regret+HG path; xsp `xsp-k232-wublock-july-spot-volume` → cemini-prod.
+
+## Current state (2026-08-11 — K231)
+
+- **K231 ingest** — Project Evaluation + URL Revenue docx (40-URL batch) + donny NL + 6 RSS (Muse Glimmer / Event Horizon ×2 / Capital Flows / WuBlock). Phase-0 **467MB < 500MB** (12 clones). License overrides via `.local/reports/license-k231-2026-08-11.md` (gh api — never trust eval SPDX). KED/OptMem NO-GO (null SPDX); harvey-labs SIZE-SKIP ~2.1GB; manim/daily_stock size-hold; shelf.nu/OpenMontage AGPL pass.
+- **K231 Phase-1** — Atto stagehand+Infographic (board **K269**); CCC smart-ralph+Muse Glimmer; GW flint-chart+haloy+donny META/REA levels; cyber quickemu/LLMVault/codex-router + GPT-5.6-Cyber awareness; pm `pm-k231-flightaware-kalshi` + xsp `xsp-k231-donny-meta-rea` → cemini-prod; poker no-path.
+
+## Current state (2026-08-10 — K230)
+
+- **K230 ingest** — GitHub Repository Evaluation Plan + 6 arXiv. Phase-0 ~402MB. EpicStaff NO-GO; Dopamine no-clone; RuView/iLEAPP size-hold.
+- **K230 Phase-1** — Atto diagram-design + tookie FIND (board **K267** remap); GW weathernext; CCC t3code/code-graph-rag/CLIProxy/A2E/Niyam; cyber CyberLLM.
+
+## Current state (2026-08-09 — K229)
+
+- **K229 ingest** — GitHub Revenue Opportunity eval + Wu Asia TOP10. Phase-0 ~113MB. EpicStaff NO-GO; servo SIZE-SKIP.
+- **K229 Phase-1** — Atto pi-rlm+LifeOS+deepface Watch (board **K264** remap); GW flights Extract; CCC pi-rlm/ISA; cyber airecon; pm toolkits REFERENCE + xsp Wu → prod.
+
+## Current state (2026-08-08 — K228)
+
+- **K228 ingest** — Project Portfolio + URL Revenue Stack evals + KV-cache paper + Osmani quality + Wu/CF. Phase-0 ~33MB. godoxy NO-GO; FUXA/OctoBot/buzz size-skip.
+- **K228 Phase-1** — Atto pdf-inspector reaffirm; GW opennews-mcp alert-only; CCC pi + quality gates; cyber Codex/bugbounty; xsp Wu HL/Uniswap awareness.
+
+## Current state (2026-08-08 — K227)
+
+- **K227 ingest** — URL Revenue Opportunity eval + judgment-gap paper + LS Zawinski + Sterling GBP + SecPro #246. Phase-0 ~7MB (the-startup, sherlock, gosearch, omniparse). CyberStrike HF no-download.
+- **K227 Phase-1** — Atto FIND (sherlock/gosearch) · CCC the-startup/Zawinski · cyber SecPro/SAIF. No GW/prod scp this batch.
+- Poker: K259 CASCADE claim-validation steal filed; no new Arena path from K227 inbox.
+
+## Current state (2026-08-07 — K226)
+
+## Current state (2026-08-07 — K226)
+
+- **K226 ingest** — Project URL Revenue Fit eval + 8 arXiv + LS/tldr/EH/Wu/Capital Flows. Phase-0 ~114MB (semantica, prime-agent, grok2api, celld, MiroFish AGPL, anton, google-skills, Legendary_OSINT). arkon/swarm-forge/AutoGPT/CircuitSteer NO-GO; mise size-skip.
+- **K226 Phase-1** — OSINT policy + Atto/GuruWatcher surface wires; briefs routed Atto/GW/cyber/CCC/poker/xsp+pm.
+- **GHA:** Actions budget empty — rely on local `wiki_lint` / pre-commit; do not expect remote Wiki Lint green.
+
+## Current state (2026-08-06 — K225)
+
+## Current state (2026-08-06 — K225)
+
+- **K225 ingest** — URL project-fit + Tech Stack Opportunity evals + RC-GRPO/ArtAnno/SparseDitto/IRT/Argus papers + Macro Aug 6 chat + EH 15-min PM + Wu July VC + LS Discovery Loop. Phase-0 ~308MB (sie, book-to-skill, pi-llm-wiki, ai-sales, shepherd, loopx, mubeng, DeepCode, obsidian-skills). KiroCrew size-skip; ScienceClaw/bountyforge/Argus NO-GO.
+- **K225 Phase-1** — OSINT policy + Atto/GuruWatcher/cyber surface wires; BiHAA + persist/pivot already on federation K252/K253.
+
+## Current state (2026-08-05 — K224)
+
+- **K224 ingest** — URL batch (agentic/edge/local-security) + Klement AI data-centre capex teaser. Phase-0 ~170MB (deepagents, HermesOffice, AI-Surface, reverse-skill, cloudflare-temp-email, cloudflare-os). Briefs → Atto K252 / GuruWatcher / CCC / cyber / xsp-prod / image-gen; poker no-path.
+- **K224 Phase-1** — OSINT policy + Atto `atto-k252-phase1-wires.mdc` + GuruWatcher `guruwatcher-k224-phase1-wires.mdc`.
+
+## Current state (2026-08-05 — TipDrop retired)
+
+- **Routing pivot** — David off TipDrop: remove tipdrop + david-persona brief targets; stop kit mirror pushes. Local abliterated AI lab (`@cybersec-wiki/concepts/local-abliterated-llm-pentest-stack.md`) joins active research queue. Links eval → CCC v10.5.
+
+## Current state (2026-08-05 — K223)
+
+- **K223 ingest** — agent-runtime/SSG eval + GuruWatcher pricing research + NNLCI/GDPevo/AgenticVAU/RESUME papers + Macro Aug 5 chat + LS Work/megakernels + SparkToro + CF FX + EH MI/Utah + Coldcard. Phase-0 ~92MB (computer, agent-skills, GDPevo, UnTouchID, jumpcutter). Briefs → Atto / GuruWatcher / CCC / xsp-prod / SEO / gambling / cyber; poker no-path.
+- **K223 Phase-1** — OSINT policy + Atto/GuruWatcher/CCC surface wires.
+
+## Current state (2026-08-04 — K222)
+
+- **K222 ingest** — Spike-HTR + VIX/LSV papers + SKT/agent-failure/Abduction Loop + Macro Aug 4 SMH chat + Latent Space Qwen + Event Horizon NY PM tax + WuBlock July tech. Phase-0: SpikeHTR Apache ~8.3MB only. Briefs → Atto / GuruWatcher / CCC / xsp-prod / gambling; poker no-path; TipDrop skip (no Discord hook).
+- **K222 Phase-1** — OSINT policy + Atto/GuruWatcher surface wires (Spike-HTR REFERENCE; Macro SMH operator-gate).
+
+## Current state (2026-08-03 — K221)
+
+- **K221 ingest** — Cloudflare Workers/D1 analysis plan + DocuScan/reader eval + Macro Aug 3 paid + Latent Space inference + Sterling SEO + CF livestream. Phase-0 ~17MB (svelte-demo-d1, dropbox-index-workers, MyTube, instant-site, llm-reader). Briefs → Atto / GuruWatcher / TipDrop / poker no-path / xsp-prod / CCC / SEO.
+- **K221 Phase-1** — OSINT policy + Atto/GuruWatcher/TipDrop surface alwaysApply rules.
+
+## Current state (2026-08-03 — K220)
+
+- **K220 ingest** — cyber/agent-harness revenue eval (Cursor stand-in; Gemini blanked). Extract: pullmd (AGPL isolate→Atto), marketing-team-eve (MIT→SEO/Atto GTM), meat (Apache→CCC), Black-cat pattern-only (null SPDX). Watch: ds4 / cloudflare/computer / Flue. worldmonitor AGPL reaffirm. Phase-0 ~6–8MB. Briefs → Atto / CCC / SEO / cybersec. **No GuruWatcher Extract; no prod scp.**
+- **K220 Phase-1** — OSINT policy K220 + Atto `atto-k220-phase1-wires.mdc`.
+
+## Prior state (2026-08-03 — K219)
+
+- **K219 ingest** — memvid Integrate + jobseek Extract + AppSec LLM protocol + 5 arXiv (LTTR / IVS-SAAM / HAM-VLN / agentic-engineer / ExtractBench) + CF/EH/Moontower/Wu RSS. Phase-0 ~77MB. Briefs → Atto / GuruWatcher / TipDrop / poker no-path / xsp+pm prod / CCC / cybersec.
+- **K219 Phase-1** — OSINT policy + Atto/GuruWatcher/TipDrop surface alwaysApply rules; inventory Unwired=0.
+
+## Current state (2026-08-02 — K218)
+
+- **K218 ingest** — optical transfer + pdf-inspector + TencentDB Agent Memory + last30days refresh + Macro Charts teaser. Phase-0 ~161MB. Briefs → Atto / GuruWatcher / TipDrop / xsp-prod. **No poker.**
+
+## Current state (2026-08-01 — K217)
+
+
+- **K217 ingest** — OCR eval + HTR/HTTP revenue eval + WuBlock weekly. Phase-0 ~575MB incl. franken_ocr (localOCR, Unlimited-OCR, DeepSeek-OCR, SimpleHTR, OCRmyPDF, kurrentschrift, htrflow EUPL-ref, htrace GPL-isolate, franken_ocr). Transkribus remains sole product HTR. Briefs → Atto + GuruWatcher. **No TipDrop/poker/prod xsp/pm scp.**
+- Prior same-day: **K216** genealogy/GEDCOM + Magika/skills + infra/CLI + newsletters (Phase-0 + Phase-1 wired).
+
+## Prior state (2026-07-31 — K215)
+
+- **K215 ingest** — PII redaction MIT Extracts + AgentRadio; Macro SA/KOSPI; NY AG Kalshi suit; Wu weekly; AgentBaiting. Prod scp pm+xsp. Phase-0 ~24MB.
+
+## Prior state (2026-07-30 — K214)
+
+- **K214 ingest** — citizenship GitHub eval (USCIS Extract NO-GO; Austrian §58c Watch) + WuBlock Treasuries term-premium. No Phase-0. Briefs → Atto/GuruWatcher/TipDrop; **prod xsp** scp.
+
+## Prior state (2026-07-30 — K213)
+
+- **K213 ingest** — 4 Italian GitHub revenue evals + 4 arXiv + Macro/LS/EH/CF/Klement. Extracts: rstructor, cod_fiscale, mcp-legal-it (CONDITIONAL), DPC/deal-finder/ANSA, Quill. Prenotami Watch-only. Prod scp: xsp Warsh + pm Rothera. Phase-0 ~46MB.
+
+## Prior state (2026-07-29 — K211)
+
+- **K211 ingest** — 2 genealogy/legal GitHub revenue evals + Latent Space AI-in-Finance. Extract: `genealogy_ai` + `claude_immigration_attorney` (MIT) + `openai/codex-security` (Apache). Watch: AgentENV. AncestorTree Integrate NO-GO (no license). Briefs → Atto/CCC/cyber/TipDrop/poker. **No prod scp.**
+
+## Current state (2026-07-29 — K209)
+
+- **K209 full-ingest triage** — inbox empty after dropping Moontower re-copy (exact K206 sha). No NEW sources. K206–K208 already complete.
+
+## Current state (2026-07-29 — K207)
+
+- **K207 ingest** — Glitch @glitchspx Substack Notes (Falcon agentic discipline) → wiki + `briefs/xsp-glitch-falcon-agentic-discipline-2026-07-29.md` scp'd. Falcon WR/PF unverified.
+- **Ops:** Codex CLI `@openai/codex@0.145.0` reinstalled; ChatGPT auth + smoke PASS; `scripts/adopt_codex_cli.sh` (OSINT + CCC).
+
+## Current state (2026-07-29 — K206)
+
+- **K208 ingest (2026-07-29)** — Gemini DR wave3 deepening: BR · VE · DO. Sources + latam hub update. **Corrections:** CRC ≠ inteiro teor; SAIME datos issuer; **169-14 Group B = Libro de Transcripción**. Gemini DR-01…14 complete. Brief → Atto. **No prod scp.** Auth enum still parked.
+- **K206 ingest (2026-07-29)** — Gemini DR wave2 (CH · FR · PE · BE · MX · AR deepening) + 5 arXiv (RIDGE/SHarD/IRA/DDB/epistemia) + Macro Charts Jul-28/29 + Latent Space/PE/EH/Klement/Moontower/Wu RSS. Concept `foreign-civil-doc-authentication-regimes`; AR **DNU 366 Migraciones RETRACTED**. Phase-0: `agent-security-lab` MIT Extract (~944KB). Briefs → Atto; GuruWatcher; CCC; cybersec; poker no-path; **pm-kalshi → cemini-prod**. Auth enum still parked for product code.
+- **K205 local packs** — wave2+3 country extracts under `.local/research/atto-latam-audience-systems/`; i18n EN/ES/pt-BR research brief separate.
+
+## Current state (2026-07-29 — K204)
+
+- **K204 ingest (2026-07-29)** — 5 Atto country packs (US · CA · AU · CL · UY) + GitHub revenue eval (OpenWork Extract; BR civic APIs no-fit). Concept `italian-citizenship-anglosphere-and-cone-systems`. Briefs → Atto ×2; CCC OpenWork; Cyber Context. Cass PDF inbox dupes cleaned (already egress). **No prod scp.**
+- **K204 Phase-0 (2026-07-29)** — OpenWork **CONDITIONAL-GO Extract** (MIT outside `ee/`; FSL Competing Use under `ee/`). Clone `.local/adopts/openwork`. **No** Atto dependency pin / no Electron vendor. Auth enum + `apostille: bool` replace still parked.
+
+## Current state (2026-07-28 — WC LP retired)
+
+- **WC LP safety cadence RETIRED** — World Cup over; world-cup-bot dropped. LaunchAgent unloaded; session ritual no longer prompts.
+
+## Current state (2026-07-28 — K202)
+
+- **K202 ingest (2026-07-28)** — 3 revenue evals (browser/anti-bot · journalism/geo · UI kits) + Latent Space ChatGPT Work + PE Inside Anthropic. **Integrate:** puppeteer (npm), chrome-devtools-mcp refresh, SingleFile AGPL isolate, FlareSolverr, undetected GPL isolate, daisyui npm-pack, heroicons. **Extract:** mkcert, browserless patterns, censusreporter reaffirm, cardkit, twbs/icons. Phase-0 ~39MB. Briefs: Atto; GuruWatcher; TipDrop; CCC; poker no-path; cyber. **No prod scp** (no xsp/pm).
+
+## Current state (2026-07-28 — K201)
+
+- **K201 ingest (2026-07-28)** — SecEng Weekly AWS-keys-in-public-repo IR playbook. Concept revoke-first. Primary brief → cybersecurity-wiki; TipDrop/CCC hygiene. No Phase-0 / no prod scp.
+
+## Current state (2026-07-28 — K200)
+
+- **K200 ingest (2026-07-28)** — Outlier Weekly public GuruWatcher methodology (claim ledger, most-recent-wins, Discord sustain). Concept+entity canonized. Brief → GuruWatcher. No Phase-0 / no prod scp.
+
+## Current state (2026-07-28 — K199)
+
+- **K199 ingest (2026-07-28)** — @lamgary Harvey X Article on scaling document processing (26× docs). Steals: durable Job Framework, extract/embed/index split, UDF typed intermediates, Arrow IPC, OCR fallbacks. Brief → Atto (+ CCC). No Phase-0 adopt / no prod scp.
+
+## Current state (2026-07-28 — K198)
+
+- **K198 ingest (2026-07-28)** — Revenue Stack eval (book-to-skill Integrate; AGT+GeoLibre+aisuite Extract; Mapbox/Fermion Watch) + swap-regret/self-verify/HTR-KG/option-IV papers + Macro Korea/WTI/FOMC + EH Dodd + Kimi K3. Phase-0 ~122MB. Briefs: Atto; GuruWatcher; poker; xsp+pm scp; TipDrop; CCC; seo.
+
+## Current state (2026-07-27 — K197)
+
+- **K197 ingest (2026-07-27)** — Dual Revenue Opportunity evals. **Overrides:** Redis + Meilisearch Integrate→Watch (RSALv2/BUSL). **Integrate:** OpenCLI, t3code, dbeaver, netdata/amnezia (GPL isolate), claude-video refresh. **Extract:** ClickHouse, buzz, impeccable, openwiki, openclicky, opencli-skills, youtube-mcp. Briefs: Atto; TipDrop; CCC. Phase-0 OpenCLI+t3code only.
+
+## Current state (2026-07-27 — K196)
+
+- **K196 ingest (2026-07-27)** — Regression Tax + Skill Self-Play + CausalForge (CCC/harness) + ARI historical-doc RAG (Atto) + sentiment SV Watch + Macro EXIT TO THE LEFT + Moontower hedging/slop + EH Kalshi Nevada geofence + Klement/WuBlock context. Briefs: Atto; CCC; xsp+pm; gambling. No local adopt. LaunchAgent stagger + librarian sync disabled.
+
+## Current state (2026-07-25 — K195)
+
+- **K195 ingest (2026-07-25)** — Revenue Opportunity eval (ego-lite+ECC Integrate; aisuite+omlx+visa Extract; Instatic Watch) + Opus 5 LS + CF crude teaser + EH LeBron + SecPro #244. Phase-0 ~450MB adopts. Briefs: Atto; TipDrop David; xsp+pm scp; poker; CCC; cyber; seo.
+
+## Current state (2026-07-24 — K193)
+
+- **K194 ingest (2026-07-24)** — Atto Brand Identity DR. **LOCKED Variant C:** folio + thick slate borders + corner Italian flag. Rejected A terracotta / B cypress / full-sheet tricolor. Concept `youratto-brand-identity`; brief + mock `../atto/briefs/`. Next: freelancer SVG. No prod scp.
+- **K193 ingest (2026-07-24)** — Frontier Financial Judgement + Agentic Context Management + OpenForgeRL (WATCH) + Lean quantum (thin) + Clarity/Kalshi Event Horizon + WuBlock + CF SPX selling teaser + FLUX3 Latent Space + SparkToro brand mentions. Briefs: xsp+pm scp; poker; Atto; David; CCC; cyber; seo. No local adopt.
+
+## Current state (2026-07-23 — K191)
+
+- **K191 ingest (2026-07-23)** — Atto Commercial Migration (Lemon Squeezy MoR + LicenseSeat + macOS-first) + licensing architecture DR + entitlements eval (Stigg Extract; aidlc misfit) + ARAT/PRO-LONG/PoTRE + CF/WuBlock Robinhood Chain RSS. Briefs: Atto; xsp+pm scp; TipDrop; CCC; poker; seo. Phase-0 ~352MB.
+
+## Current state (2026-07-22 — K190)
+
+- **K190 ingest (2026-07-22)** — 4 genealogy revenue eval docx + EH Wisconsin election-betting RSS. **Integrate:** genea-app, claude-family-history-research-skill, ancestry-tools. **Extract:** wikitree-dynamic-tree, lineage, yorkeccak/history, pure-genealogy. **Watch:** Betty GPL, Open-Genealogy NC, Kekule AGPL. **Briefs:** Atto; pm Wisconsin scp; gambling. Phase-0 ~349MB.
+
+## Current state (2026-07-22 — K189)
+
+- **K189 MAECI/consular + L. 11 (2026-07-22)** — Prenot@Mi a-bis email definition; €600; GU postal central **2029** + consular annual caps through 2028. Brief → `../atto/briefs/`. No prod scp.
+
+- **K188 Interno circolari (2026-07-22)** — Circ. 26185 / DAIT 59 / 36356 / 19951 locked. Key: comune a-bis ≠ Prenot@Mi; beneficio deadline **31 May 2029**. Brief → `../atto/briefs/`. No prod scp.
+
+- **K187 primary-law lock (2026-07-22)** — Confirmed GU L. 74/2025 + Cost. **63/2026** + Cass. **13818/2026** + L. **11/2026** (MAECI adult JS from **2029**). Soft-flag copy updated. Still open: Mantova/Campobasso Cost. **merits** + Sezioni Unite **written**. Brief → `../atto/briefs/`. No prod scp.
+
+- **K186 ingest (2026-07-22)** — ICA/IDCA YouTube deep watch (10 transcripts). Concept `italian-citizenship-youtube-soft-flags` (appointment evidence ontology + court soft-flags). Brief → `../atto/briefs/`. Primary-law lock → K187. No prod scp.
+
+## Current state (2026-07-22 — K185)
+
+- **K185 ingest (2026-07-22)** — 4 Atto Gemini DR docx (GTM Gumroad · threat model · citizenship software map · civil FIND playbook). Concepts: `atto-macos-gtm-gumroad`, `atto-local-first-threat-model`; deepen citizenship pathways + Antenati FIND. Brief → `../atto/briefs/`. Pathway ID renames pending product GO. Substack Wisconsin RSS still in inbox. No prod scp.
+
+## Current state (2026-07-22 — K183)
+
+- **K183 ingest (2026-07-22)** — Italian Citizenship Document Pipelines.docx → source + concept `italian-citizenship-pathways-document-pipelines`. Pathway taxonomy + apostille/translation stages for Atto concierge/FIND. Brief → `../atto/briefs/`. Primary-law verification still open (Tajani / Minor Issue / 2026 court calendar). No prod scp.
+
+## Current state (2026-07-22 — K182)
+
+- **K182 ingest (2026-07-22)** — URL Revenue Opportunity Analysis.docx (20 URLs) + 5 arXiv + CF/EH/WuBlock/Addy/LS/PE/Klement RSS. **Integrate:** outlines, cloudflare_temp_email, omlx. **Extract:** likec4, pi-web, gigatoken. **Watch AGPL:** worldmonitor. **Briefs:** xsp+pm scp; poker authority framing; CCC; TipDrop; cybersec; Atto email/omlx. Phase-0 ~277MB. Cleared leftover LIKELY inbox.
+
+## Current state (2026-07-21 — K180)
+
+- **K180 ingest (2026-07-21)** — 5 Atto Gemini DR docx (Antenati deep links, US hometown ladder, place/Belfiore, civil HTR, research-tools/Processetti). Concepts: `antenati-deep-link-grammar`, `us-italy-hometown-reveal-ladder`. Brief → `../atto/briefs/`. Substack RSS leftovers still in inbox (LIKELY). No prod scp.
+- **K179 ingest (2026-07-21)** — Gemini DR `VIR-5500 Equity Research Dossier.docx` → source + `wiki/entities/tickers/vir.md` (VIR-5500-first, **draft**). Conflicts open: Sanofi skim %, trial N, Gr≥3 CRS, ESMO timing. Substack RSS inbox leftovers untouched. No prod brief.
+- **Equity research lane:** VIR prostate thesis now wiki-backed; next = primary-source lock on Sanofi/Amunix + CT.gov N.
+
+## Current state (2026-07-21 — K178)
+
+- **K178 ingest (2026-07-21)** — Aura generative-art paper (2607.17940; ≠ family genealogy) + Capital Flows equity cliff + WuBlock ICE×OKX 24/7 clearing + Moontower equal-risk stub + Latent Space Jul 21 (dated NEW). **No local clones.** Briefs: xsp+pm (**scp**); CCC; TipDrop/David + image-gen; poker no-fit. Cleared K177 leftover inbox dups.
+- **Routing pivot (2026-07-21)** — **Atto** added as dedicated brief target (`scripts/active_project_brief_targets.yaml`); family-tree narrowed to private dogfood. Sync: `daily_research_config.yaml`, `@concepts/active-project-research-routing.md`, federation hub `federation_paths.yaml`.
+
+## Prior state (2026-07-20 — K177)
+
+- **K177 ingest (2026-07-20)** — Full inbox: 4 arXiv (OCR NAS / AR bugs / IE controllability / AGM) + Macro paid Damaged Goods + Underdog exchange + Moontower mixologist/#321 + Klement thin. **Extract:** AGM MIT (~1MB local). **Watch:** LLM-NAS HTR. **Briefs:** xsp+pm (**scp**); poker; CCC; family; gambling; TipDrop no-path. **Phase-0:** `adopt_k177_phase0.sh`.
+
+## Prior state (2026-07-20 — K176)
+
+- **K176 ingest (2026-07-20)** — GPUOLOGY Genealogy Business Analysis.docx (Gemini DR). **CONDITIONAL-GO** hybrid kit + CF private site + jure sanguinis concierge. Naming risk on GPUOLOGY. Product concept `@concepts/gpuology-genealogy-agent-kit.md`. Brief updated. Kill criteria + FS/Ancestry/Antenati ToS gates filed.
+
+## Prior state (2026-07-20 — K175)
+
+- **K175 ingest (2026-07-20)** — URL Revenue and Project Analysis.docx (20 URLs; journalism + Italian entity theme). **Integrate:** dhfbk/tint (GPL-3.0, Phase-0). **Extract:** CodiceFiscaleJS, censusreporter, babynames, fivethirtyeight/data. **Watch:** beeswithmachineguns, aztec_experiments. **Briefs:** family-tree private; CeminiDFS 538; CCC tokenization. **GPUOLOGY brief** updated with K175 license/stack deltas. **Phase-0:** `adopt_k175_phase0.sh`.
+
+## Prior state (2026-07-19 — K174)
+
+- **K174 ingest (2026-07-19)** — Tool-eval docx (20 URLs) + Macro Charts Damaged Goods + Capital Flows weekend depth + WuBlock×2. **Extract:** code-review-graph, i-have-adhd (MIT, <500MB). **Pass:** wigolo AGPL. **Watch:** ktransformers / GLM quant (David PC weights). **Briefs:** xsp+pm (**scp**); TipDrop/David; CCC; gambling. **Phase-0:** `adopt_k174_phase0.sh`.
+
+## Prior state (2026-07-18 — K173)
+
+- **K173 ingest (2026-07-18)** — Full inbox: Revenue Opportunity URL Evaluation.docx + 5 arXiv + Macro/RSS. **Extract:** ui-skills, kimi-cli, airllm, ktransformers, SearchOS. **Integrate (SaaS only):** PostHog — no monorepo clone. **Watch:** ossie, Kimi K3 weights, paste.trade, G0DM0D3 (AGPL). **Pass:** wigolo (AGPL). **Poker:** play-adequacy (2607.14169). **CCC/cybersec/TipDrop:** setup-instruction weaponization (2607.15143). **Briefs:** xsp+pm (**scp**); poker; TipDrop/David; CCC; cybersec; gambling. **Phase-0:** `adopt_k173_phase0.sh`. Local shallow clones <<500MB; no PostHog; no K3 weights.
+
+## Prior state (2026-07-17 — K172)
+
+- **K172 ingest (2026-07-17)** — RSS batch: Grok Build CLI full-repo upload → **CONDITIONAL halt** (overturns K170 Integrate); Kalshi teleprompter alleged insider → pm; Capital Flows view/positions shift → xsp; Lila Sciences Watch; tl;dr sec harness patterns → CCC/cybersec Context. **No new local clones.** Briefs scp xsp+pm; TipDrop STOP; CCC; cybersec; gambling.
+
+## Prior state (2026-07-16 — K171)
+
+- **K171 research (2026-07-16)** — Polymarket LP **comprehensive backtest v2** inventory: wiki concept + steal-from entities (quotebot, YieldPilot) + cadence/v1-vs-v2 notes. **Brief** `pm-2026-07-16_comprehensive-lp-backtest.md` → cemini-prod. Empirical LP kill stands; Phase B–E engine not yet coded. No LIVE_POST / no pivot flip.
+
+## Prior state (2026-07-16 — K170)
+
+- **K170 ingest (2026-07-16)** — Full inbox: Revenue Opportunity URL Analysis.docx + 8 arXiv + Macro/RSS. **Integrate:** turbovec, grok-build(+plugin). **Extract:** git-secrets, terrastories. **Watch:** Thinky Inkling (no model download). **Briefs:** xsp+pm (**scp**); poker; TipDrop/David; CCC; cybersec; gambling; family. **Phase-0:** `adopt_k170_phase0.sh`. Local clones <<500MB excl. Inkling.
+
+## Prior state (2026-07-15 — K168)
+
+- **K168 ingest (2026-07-15)** — Additive: `GitHub Repository Revenue Evaluation.docx` (20 URLs; ≠ K163). **Integrate:** Middy (TipDrop), Espanso (family personal GPL-3). **Extract:** Bonsai, Undici, Prism. **Watch:** Fastify, Strawberry. **Briefs:** xsp (**scp**); TipDrop/David; CCC; cybersec; family private. **Phase-0:** `adopt_k168_phase0.sh`. Local: Bonsai+prism+middy clones. No ComfyUI.
+
+## Prior state (2026-07-15 — K167)
+
+- **K167 ingest (2026-07-15)** — Full inbox: arXiv 2607.10814 belief-audit + 2607.09324 keyword + Macro Charts SOX/CPI/oil–2YR + Latent Space×2 + Pragmatic Engineer Dex/12-Factor + Capital Flows AI race + Event Horizon Kalshi flights/compute/CFTC + Klement Jevons + Moontower volga + WuBlock USDC. **11 sources + 1 concept + 1 entity** (+ hubs). **Adopt-patterns:** twelve-factor-agents (Apache-2.0). **Briefs:** pm + xsp (**scp prod, skill_audit PASS 100/100**); poker; CCC; gambling. No David/TipDrop brief (no image/persona adopt path). **Phase-0:** `adopt_k167_phase0.sh`. Local: optional 12-factor clone <50MB. No ComfyUI. Inbox archived egress-fi + cleared; leftover untriaged `GitHub Repository Revenue Evaluation.docx` (34KB, distinct from K163's 3MB same-titled file) also swept to egress-fi — flagged for operator review, not read/ingested this session.
+
+## Prior state (2026-07-14 — K165)
+
+- **K165 ingest (2026-07-14)** — Full inbox: 3 Gemini LP-vs-copy/HL DRs + Pragmatic Engineer loop eng + Event Horizon Congress PM hearing + Outlier wiki lint. **6 sources + 2 concepts + 3 entities** (+ hub updates). Filed Cemini `pm_lp_rewards` ~+$0.94 kill into wiki. **Conflicts kept:** $10k LP restart vs skip; HLP vs User Vaults. **Briefs:** `pm-2026-07-14_k165-lp-vs-copy-capital-adr.md` (scp eligible); CCC×2; gambling; cybersec. **No** LP auto-restart; **no** blind copy capital.
+- **K163 ingest (2026-07-14)** — Full ingest: GitHub Repo Revenue Evaluation.docx (20 URLs) + arXiv 2607.08199 DR-AS + Macro Charts SOX/oil chat + Latent Space/Capital Flows/Event Horizon/Klement×2/WuBlock. **9 sources + 1 concept + 9 entities.** CONDITIONAL: dcg (MIT+rider). Adopt: hallmark. Integrate TipDrop: codex-first-customer. Extract: maths-compendium + awesome-llm-apps patterns. Watch: OpenCut/penpot/ATO/grok2api. **Briefs:** pm DR-AS + Kalshi Pro volume (**scp prod**); xsp Macro Charts (**scp prod**); TipDrop/David×2; poker verifiers DAG; CCC; cybersec; gambling; CeminiDFS. **Phase-0:** `adopt_k163_phase0.sh`. Local: hallmark (+ optional dcg/maths <500MB). No ComfyUI.
+- **K162 ingest (2026-07-13)** — RSS backlog: **12 NEW** Macro Charts paid sentiment + Kalshi WC downloads + SecEng agentic AI + WuBlock/Moontower/Klement. **11 sources + concept updates.** Briefs: xsp + pm (**scp prod**); cybersec + gambling handoffs. **No David.** Phase-0: `adopt_k162_phase0.sh`.
+
+## Prior state (2026-07-13 — K161)
+
+- **K161 ingest (2026-07-13)** — Full ingest: 5 NEW arXiv. **5 sources + 5 concepts + updates.** Hierarchical memory (REFERENCE); DeepSearch-World (Watch); psych competence → **David TipDrop**; quantile DRL shelf; CEV R/S → **xsp scp prod**. Phase-0: `adopt_k161_phase0.sh`. Briefs: xsp + poker + CCC + David. No ComfyUI installs.
+
+## Prior state (2026-07-12 — K160)
+
+- **K160 ingest (2026-07-12)** — Full ingest: 1 genealogy docx + 5 arXiv inbox re-archive. **2 new sources + 1 entity + 4 updates.** Abruzzo diaspora methodology (private Barone sprint); RCT-AD 2607.04689 REFERENCE; MIRA 2607.05352 deep-read + entity Watch. Prior pages deep-read: 2607.06854, 2607.06166. **Phase-0:** `adopt_k160_phase0.sh`. **Briefs (3):** pm proper-betting (**scp prod**); poker yardstick; castle-sim MIRA. **Family private:** `~/Desktop/family/research/2026-07-12_k160-abruzzo-barone-diaspora-sprint.md`. Archive → egress-fi; inbox cleared. **No David/TipDrop.**
+
+### Secondary (route when source matches)
+
+| Project | Brief home | Prod scp |
+|---------|------------|----------|
+| **wc-ticket-monitor** — FIFA WC26 knockout ticket alerts | `../projects/wc-ticket-monitor/briefs/` | No |
+| **PM / Kalshi retail bot** — exploratory botting | `briefs/pm-*` | cemini-prod when bot-touching |
+| **castle-sim** — Godot RTS (legacy) | `../projects/castle-sim/briefs/` | No — deprioritized Jul 2026 |
+
+### Secondary (route when source matches)
+
+| Project | Brief home | Prod scp |
+|---------|------------|----------|
+| **wc-ticket-monitor** — FIFA WC26 knockout ticket alerts | `../projects/wc-ticket-monitor/briefs/` | No |
+| **PM / Kalshi retail bot** — exploratory botting | `briefs/pm-*` | cemini-prod when bot-touching |
+
+**Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
+
+## Current state (2026-07-11 — K159)
+
+- **K159 ingest (2026-07-11)** — `Multi-Wiki Repo Evaluation Strategy.docx` (20 URLs, SSG batch) + `Ricerca Genealogica Famiglie Sellia.docx`. **Integrate:** fable-advisor → xsp/CCC/CeminiDFS. **Watch:** colibri. **Genealogy:** Sellia methodology + private sprint. **Briefs:** xsp (**scp prod**); CCC; CeminiDFS. **Phase-0:** `adopt_k159_phase0.sh`. **No David.**
+
+## Current state (2026-07-11 — K158)
+
+- **K158 ingest (2026-07-11)** — 5 RSS (Capital Flows SOFR, Event Horizon federalism, SecPro, Wu Polymarket FCM, Latent Space AINews). **Briefs:** xsp×1 (**scp prod**); pm×2 (**scp prod**); cyber×1 handoff. **No Phase-0 / no David.**
+
+## Current state (2026-07-10 — K157)
+
+- **K157 ingest (2026-07-10)** — `Cemini Multi-Wiki Link Evaluation.docx` (20 URLs, v10 — agent orchestration + genealogy). **Integrate:** agentic-awesome-skills, autoresearch-genealogy, Muse Spark API. **Extract:** claude-code-templates → TipDrop; topola + liberu php-dna → family sprint. **Briefs:** TipDrop×2 (David); xsp Muse Spark (**scp prod**); family×2 private. **Phase-0:** `adopt_k157_phase0.sh`.
+
+## Current state (2026-07-10 — K156 pivot)
+
+- **K156 research-process pivot (2026-07-10)** — **castle-sim demoted**; **family-tree / computational genealogy** promoted to co-primary #4. Updated: `active_project_brief_targets.yaml`, `daily_research_config.yaml`, CCC eval v10.1 (`genealogy overlap`). Private sprint: `~/Desktop/family/research/`; wiki methodology K153/K154 only.
+
+## Current state (2026-07-10 — K155)
+
+- **K155 ingest (2026-07-10)** — 2 arXiv (CAGE-1, PolyWorkBench) + Macro Charts chat + 5 RSS. **Briefs:** xsp×2 (**scp prod**); CCC×2. **No Phase-0 / no David.**
+
+## Current state (2026-07-09 — K154)
+
+- **K154 ingest (2026-07-09)** — `Italian Ancestry Deep Research.docx` (Gemini family-prompt reply). **Concept:** Italian regional archive playbook (Abruzzo/Calabria/Trentino). **Entities:** Nati in Trentino, Steve Morse ED Finder, Italian Parish Records. **Private sprint** (laptop `Desktop/family/research/` only): Rudolph long-form, NatiTrentino Odorizzi query, PEC *copie integrali*. **No Phase-0 / no prod briefs.** Companion to K153 methodology.
+
+## Current state (2026-07-09 — K153)
+
+- **K153 ingest (2026-07-09)** — `Automated Deep Genealogy Research.docx` (Gemini). **Concept:** computational genealogy era ladder + IDE stack. **Watch entities:** antenati IIIF CLI, Transkribus, FamilySearch API. **No Phase-0 Adopt / no prod briefs** (personal archival methodology; private pedigrees stay off-wiki).
+
+## Current state (2026-07-09 — K152)
+
+- **K152 ingest (2026-07-09)** — 3 RSS (Addy outer-loop, PE Bun/Fable pulse, tl;dr sec #336). **No eval / no Phase-0.** **Briefs:** CCC outer-loop + PE Fable cross-route; cybersec tl;dr #336. **David/prod:** none.
+
+## Current state (2026-07-09 — K151)
+
+- **K151 ingest (2026-07-09)** — `Cemini GitHub Repo Evaluation.docx` (20 URLs) + 5 arXiv + 6 RSS. **Integrate:** crawl4ai (reaffirm Wave 5.1), Agent-Skills (reaffirm K149). **Extract:** autoremesher → castle-sim. **Watch:** pocket-tts, waveterm → David. **Papers:** prophets profit (pm **scp prod**), reasoning effort (CCC), FootsiesGym (poker), GameEngineBench/MIRA (castle). **Phase-0:** `adopt_k151_phase0.sh`.
+
+## Current state (2026-07-08 — K150)
+
+- **K150 ingest (2026-07-08)** — 4 RSS (Pragmatic AMA, SparkToro API, Moontower bullshit-tax, Outlier CXW postmortem). **No eval docx / no Phase-0.** **Briefs:** xsp moontower calibration (**scp prod**); CCC pragmatic AMA; seo-wiki SparkToro API eval (cross-route); CXW postmortem brief synced. **David:** none. **Concept updates:** corrections-reit event study + xsp framework.
+
+## Current state (2026-07-08 — K149)
+
+- **K149 ingest (2026-07-08)** — `URL Revenue Evaluation Plan.docx` (20 URLs) + Macro Charts chat + Latent Space/PragEng/Capital Flows/Event Horizon/Klement RSS. **Integrate:** Agent-Skills-for-Context-Engineering (MIT) → TipDrop/David + poker + CCC; managed-agents pattern steal (CeminiDFS). **Extract:** congress-legislators + openapi-directory (+ DoorDash hybrid → CCC). **Watch:** api-umbrella (TipDrop), openmct. **Reject/ops:** castle.io evasion. **Briefs:** pm×2 (**scp prod**); TipDrop×2; poker; DFS; CCC×3; cyber/gambling siblings. **Phase-0:** `adopt_k149_phase0.sh`.
+
+## Current state (2026-07-07 — K148)
+
+- **Poker Arena deploy posture fix (2026-07-07)** — Recurring `cemini-researcher-sandbox-submit.timer` **DISABLED** on prod. Root cause of low TrueSkill: with pin `replace:true`, the timer fired `--replace` **3×/day, discarding the in-flight continuous season each time** (guide: "`--replace` discards unfinished PvP work"). Bot is **continuous/unlimited** — deploy is now **event-driven** (one `--build --replace`, then let it play a full season). K148 deploys via one-shot `at` job 2026-07-08 00:05Z. **NEXT SESSION (priority): investigate why live S1 bot is losing — `trueskillMu=-50`, `adjustedBbPer100=-1.38` over 3000 hands. K148 edge-case fix won't move this; strategy is underwater on S1.**
+- **K148 ingest (2026-07-07)** — `Repository Revenue and Integration Evaluation.docx` (47 URLs) + arXiv 2607.01498/01585 + 11 Macro Charts paid backfill + Jul 7 RSS batch. **Integrate:** lightweight-charts (TipDrop), ccxt + hyperliquid-python-sdk (xsp). **Extract:** claude-video (poker). **Briefs:** TipDrop charts; xsp ccxt+HL (**scp prod**); poker ×2. **Phase-0:** `adopt_k148_phase0.sh`. Sibling wiki commits: gambling, ccc, cybersec.
+
+- **K147 ingest (2026-07-06)** — `GitHub Repo Multi-Wiki Evaluation.docx` (Copilot SDK, 20 URLs) + Jul 6 RSS batch (moontower×3, capital-flows, wublock, event-horizon ep23, klement×2). Duplicate `Multi-Wiki Link Evaluation Plan.docx` archived only. **1 eval source + 4 entities + 5 RSS sources.** Adopt: repo-bootcamp (TipDrop M4), ripgrep. Steal: OctoBrowser, SYSAdmin-CoPilot. **Briefs:** TipDrop repo-bootcamp; xsp moontower VIX steal (**scp prod**). **Phase-0:** `adopt_k147_phase0.sh`. Gambling-wiki cross-wiki stubs committed sibling.
+
+- **K146 ingest (2026-07-05)** — Morning digest PDFs (2607.02389 substrate steerability, 2607.02467 human-capital hybrid forecasting) + two Gemini MCP eval docx + HF eval refresh. **5 sources + 2 concepts + 11 entities + updates.** Adopt: taste-skill, gastown, brightdata-mcp, dbhub, firecrawl-mcp-server, tavily-mcp, mcp-searxng, unity-mcp, hf-mcp-server, snyk/studio-mcp; chrome-devtools-mcp reaffirmed. **Briefs:** TipDrop ×3, CeminiDFS fetch MCP, game-dev unity-mcp, poker substrate steal. **No prod scp.** `3_27` docx re-drop archived to existing K49/K25 pages. **Phase-0:** `adopt_k146_phase0.sh`.
+- **K145 (2026-07-05)** — Substack RSS multi-feed poller + cross-wiki newsletter routing (28 stubs).
+- **K144 (2026-07-05)** — Macro Charts Gmail/RSS paid-forward ingest.
+- **K143 ingest (2026-07-04)** — Cemini Repository Evaluation Plan docx + two Nash-solver PDFs. **3 sources + 1 concept + 1 entity + 6 updates.** Adopt reaffirmed: Headroom (OSINT/CCC optional context compression; no prod path). Steal-from: obsidian-mind vault-manifest/QMD/hook-test patterns; **no David/TipDrop adoption brief**. Papers: exact multiplayer imperfect-information Nash computation; slack-bound tightening solves full 3-player Kuhn in 1.160s. **Phase-0:** `adopt_k143_phase0.sh`.
+
+## Current state (2026-07-03 — K142)
+
+- **K142 ingest (2026-07-03)** — Multi-Wiki URL Evaluation docx + model-selection screenshot. **1 source + 4 entities + 2 updates.** Adopt: olmOCR, iFixAi, Caveman, Zero, Addy Agent Skills; Adopt wrapper-only: Agent-Reach local manual snapshots; Steal-from: Astryx, claude-real-video, Portable LLM Wiki; Defer: Meetily, Instatic, Langflow. **TipDrop/David:** olmOCR M4, Portable LLM Wiki OKF M4, iFixAi M2, Agent-Reach wrapper-only approved. **Phase-0:** `adopt_k142_phase0.sh`.
+
+## Current state (2026-07-03 — K141 partial-spec eval ship)
+
+- **K141 SWE-INTERACT steal** — phased rubric reveal in `sandbox_partial_spec_eval.py`; tri-verifier attaches `partial_spec` block. Brief `2026-07-03_k141-swe-interact-multiturn-steal.md` § Shipped.
+
+## Current state (2026-06-08 — human-table finale exploit)
+
+- **Finale exploit layer** — `CEMINI_FINALE_VILLAIN=durrrr|jungleman` overlay shipped; excluded from default ladder bundle. Ladder **#1/17** @ 5,400h TS ~114 (`f8d4f05f` continuous). Brief `2026-06-08_human-table-exploit-layer-brief.md`. **Open:** X claim; finale-only submit after qualify.
+
+## Current state (2026-07-02 — K131b finish + ops P0)
+
+- **K131b finish + ops P0 (2026-07-02)** — GLM/Kimi audit fixes shipped: pin self-heal, `replace:false`, K131b A3/B2, S2 nemesis, bundle manifest. Live **`3b48d01d`** cemini PvP — wait for 5k; K131b-finish on next **fresh** submit. Brief `2026-07-02_k131b-finish-ops-p0-ship.md`.
+- **Cursor audit (2026-07-02)** — gate via harness, pin-driven engine, cemini bundle whitelist. Synthesis `2026-07-02_postfix-cursor-audit-synthesis-glm-kimi.md`.
+- **K139 ship (2026-07-01)** — gin hu004 vendored; live reverted to cemini (+19 vs +7.3 TS @ 5k). Brief §Update 2026-07-02.
+
+## Current state (2026-07-03 — K141)
+
+- **K141 ingest (2026-07-03)** — 2 eval docx + 2 arXiv from inbox. **4 sources + 2 concepts + 9 entities + 3 updates.** Adopt: page-agent, strix, chrome-devtools-mcp, agentskills, Unlimited-OCR; SWE-INTERACT + LMP REFERENCE briefs. **TipDrop/David:** Unlimited-OCR M4 + rampart M2. **Phase-0:** `adopt_k141_phase0.sh`. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-07-02 — K140)
+
+- **K140 ingest (2026-07-02)** — 3 arXiv from inbox. **3 sources + 2 concepts + 2 updates.** Kalshi CPI distributional beliefs (30040) → pm prod tail brief; Zeta* path planning (00065) → castle-sim brief; AI-native games survey (00527) → game-dev + poker rubric briefs. **Phase-0:** `adopt_k140_phase0.sh` (REFERENCE). Archive → egress-fi; inbox cleared.
+
+## Current state (2026-07-01 — K138)
+
+- **K138 ingest (2026-07-01)** — GitHub eval docx (20 URLs) + 2 arXiv from inbox. **3 sources + 2 concepts + 4 entities + 4 updates.** espn-api Adopt MIT; draftfast CONDITIONAL-GO (no LICENSE); settlement manipulation (31675) → pm prod guard brief; deal games (29457) + AI_pokergame → poker briefs. **Phase-0:** `adopt_k138_phase0.sh`. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-30 — K137)
+
+- **K137 ingest (2026-06-30)** — Multi-Wiki Link Evaluation docx (20 URLs). **1 source + 6 entities + 3 updates.** Adopt: DeepSpec (MIT), OpenClaw-RL (Apache-2.0). Steal: clawhub, open-im-server, mission-control, zero-token. Prod briefs: DeepSpec latency, mission-control fleet audit; CCC/TipDrop clawhub validation. **Phase-0:** `adopt_k137_phase0.sh`. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-30 — K136)
+
+- **K136 ingest (2026-06-30)** — 3 arXiv from inbox. **3 sources + 3 concepts + 7 updates.** Nash solver selection (28308) + PED/FP-PED (29169) → poker brief; HRL-IM/CBS StarCraft (30092) → castle-sim micromanagement brief (Game Dev wiki). **Phase-0:** `adopt_k136_phase0.sh` (REFERENCE only). Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-29 — K134)
+
+- **K134 ingest (2026-06-29)** — GitHub eval docx (20 URLs) + RQGM arXiv 2606.26294. **2 sources + 1 concept + 6 entities + 4 updates.** deepsec + Anthropic-Cybersecurity-Skills Adopt; codebase-memory-mcp + Agent-Reach CONDITIONAL-GO; daily_stock_analysis + stealth-browser-mcp steal downgrades; RQGM → poker rubric-epoch brief. **Phase-0:** `adopt_k134_phase0.sh`. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-28 — K133)
+
+- **K133 ingest (2026-06-28)** — 3 Gemini tool-eval docx + Karpathy field notes PNG. **4 sources + 2 entities.** unusualwhales-mcp Adopt (MIT); DiscordAlertsTrader steal; 33 dead URLs aggregated. TipDrop briefs → `tipdrop-workspace-kit/briefs/`. **Phase-0:** `adopt_k133_phase0.sh`. Archive → egress-fi.
+
+## Current state (2026-06-27 — K132)
+
+- **K132 ingest (2026-06-27)** — Hermes routing eval docx (71 URLs) + 2 arXiv. **3 sources + 2 concepts + 2 entities + 3 updates.** graphiti Adopt; screenpipe CONDITIONAL-GO; gbrain RETIRED reaffirmed with hybrid-search spike brief; hermes curator steal → CCC. Morality Game + FDN wiki-only. **Phase-0:** `adopt_k132_phase0.sh`. PNG field notes skipped. Archive → egress-fi.
+
+## Current state (2026-06-26 — K131)
+
+- **K131 ingest (2026-06-26)** — Daily digest: 5 arXiv from inbox. **5 sources + 3 concepts + 1 entity + 5 updates.** RLVF (2606.23913) + Relaxed NFL (2606.24443) → verifier cluster + poker brief; ToolBench-X (2606.25819) REFERENCE (NO LICENSE) → CCC hazard-recovery brief; 24099 + 24434 wiki-only. **Phase-0:** `adopt_k131_phase0.sh`. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-26 — K130)
+
+- **K130 ingest (2026-06-26)** — Poker GitHub repo eval (30 URLs). **1 source + 2 entities.** pokerkit Adopt confirmed (already in Arena); rlcard Adopt for offline baseline. **Phase-0:** `adopt_k130_phase0.sh`. Brief → poker-arena stack. Archive → egress-fi.
+
+## Current state (2026-06-25 — K129)
+
+- **K129 ingest (2026-06-25)** — Full ingest: 12 arXiv + 37-URL tool eval from inbox. **13 sources + 6 concepts + 5 entities.** EMAgnet/IRumAI → poker briefs; SCOPE/C-ORCA → castle-sim; loop-engineering/headroom/no-mistakes → CCC harness brief. **Phase-0:** `adopt_k129_phase0.sh`. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-24 — K128)
+
+- **K128 ingest (2026-06-24)** — Full ingest: 3 arXiv + Metaplan tool eval docx from inbox. **4 sources + 3 concepts + 1 entity + 4 updates.** IPO Finance Agent (2606.23032) REFERENCE — automated rubric eval wiki-only; CL-AMM LVR (2606.23070) REFERENCE → pm LP toxicity steal; square-root law AAPL (2606.24019) REFERENCE → pm √Q/V sizing; Metaplan eval — BBMOD Adopt MIT (game-dev, not castle-sim). **Phase-0:** `adopt_k128_phase0.sh`. **Briefs (3):** pm LVR; pm SRL; game-dev BBMOD. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-23 — K127)
+
+- **K127 ingest (2026-06-23)** — Full ingest: 3 arXiv + 2 tool eval docx from inbox. **5 sources + 3 concepts + 2 entities + 5 updates.** Agentic Time Machine (2606.21013) REFERENCE — PM offline eval + leakage filter; GARIP (2606.22688) REFERENCE — running-average self-play magnet → poker; AOHP (2606.23449) CONDITIONAL-GO — Apache-2.0 OS harness → CCC; Cemini Tool Eval (62 URL) — sportsdataverse-py Adopt MIT; HF Model Evals (74 URL) — 52 UNAVAILABLE, Poker_LORA steal. **Phase-0:** `adopt_k127_phase0.sh`. **Briefs (4):** poker GARIP; pm Agentic TM; CeminiDFS sportsdataverse; CCC AOHP. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-22 — K126)
+
+- **K126 ingest (2026-06-22)** — Full ingest: links.docx (146 URLs, collapsed table export) + arXiv 2606.20495 continuum robots. **2 sources + 2 concepts + 2 entities + 1 update.** links.docx: 2 Adopt (mattpocock MIT; nvidia dual-license → CONDITIONAL-GO), 18 Steal-from (ClarusC64 NFL coherence suite), 83 Reject aggregated. Continuum robots REFERENCE — AHP+GA path diversity → castle-sim. **Phase-0:** `adopt_k126_phase0.sh`. **Briefs (4):** CeminiDFS coherence-risk; castle-sim path planning; poker Kuhn SFT reference; CCC skills adopt. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-21 — K125)
+
+- **K125 ingest (2026-06-21)** — Daily digest full ingest: 2 arXiv + NFL tool eval docx from inbox. **3 sources + 2 concepts + 4 updates.** Probabilistic verification (2606.20510) REFERENCE — trajectory risk bound steal for poker verifier stack; RNG-Bench (2606.19338) REFERENCE — Memory Gap diagnostic; NFL repo eval REFERENCE — nflverse confirmed, danmorse314 EPA clean-room only. **Phase-0:** `adopt_k125_phase0.sh`. **Briefs (3):** poker probabilistic trajectory verifier; castle-sim Memory Gap playtest; CeminiDFS EPA clean-room. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-20 — K124)
+
+- **K124 ingest (2026-06-20)** — Daily digest full ingest: 4 arXiv from inbox. **4 sources + 4 concepts + 1 entity + 4 updates.** Team zero-sum PPAD (2606.16139) REFERENCE; Trainee-to-Trainer (2606.17682) CONDITIONAL-GO — NOASSERTION license; Qwen-RobotNav (2606.18112) REFERENCE — repo 404; MAFP fictitious play (2606.19308) REFERENCE — poker steal. **Phase-0:** `adopt_k124_phase0.sh`. **Briefs (2):** poker MAFP offline charts; castle-sim RobotNav memory + env-engineer playtest. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-19 — K123)
+
+- **K123 ingest (2026-06-19)** — Daily digest: VERITAS inbox + ScholarQuest cross-wiki. **2 sources + 1 concept + 1 entity + 7 updates.** VERITAS (2606.18247) REFERENCE — generator-verifier steering; ScholarQuest (2606.20235) CONDITIONAL-GO — no license. **Phase-0:** `adopt_k123_phase0.sh`. **Brief (1):** poker verifier inference steering. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-18 — K122)
+
+- **K122 ingest (2026-06-18)** — Daily digest full ingest: 5 inbox (4 arXiv + one-pager). **5 sources + 4 concepts + 6 updates.** EFGSAS/SI-CFR (2606.13093) REFERENCE; MoVerse (2606.13376) REFERENCE — no GitHub license; Poker Arena (2606.13815) deep-read + nine-axis concept; MAEAD survey (2606.13840) REFERENCE. **Phase-0:** `adopt_k122_phase0.sh`. **Briefs (2):** poker multi-axis eval mappings; castle-sim MoVerse steal. Archive → egress-fi; inbox cleared.
+
+## Active workstreams (2026-06-17 — operator pivot)
+
+Research digest + ingest briefs target these first (`scripts/active_project_brief_targets.yaml`):
+
+| Priority | Project | Brief home | Prod scp |
+|----------|---------|------------|----------|
+| 1 | **castle-sim** — Godot RTS slice, playtest parity | `../projects/castle-sim/briefs/` | No |
+| 2 | **Poker Arena** — tournament / HL analyst loop | `agents/devfun-poker-arena/briefs/` | rsync only |
+| 3 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
+| 4 | **PM / Kalshi retail bot** — exploratory botting | `briefs/pm-*` | cemini-prod when bot-touching |
+
+**Deprioritized for auto-briefs:** legacy CeminiSuite MAPPO equity, Riskfolio ladder, conductor harness KPIs — wiki-only unless explicitly reopened.
+
+## Current state (2026-06-17 — K120)
+
+- **K120 ingest (2026-06-17)** — Daily digest full ingest: 2 arXiv from inbox. **2 sources + 2 concepts + 6 updates.** Ensemble RL + classifiers (2502.17518) CONDITIONAL-GO — MIT repro + TradeMaster DJ30 smoke; HPO theory (2606.12612) REFERENCE — GRS/optimality-map steal for Riskfolio ladder. **Phase-0:** `adopt_k120_phase0.sh`. **Prod briefs scp'd (2):** classifier variance-gating; HPO allocation ladder diagnostics. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-16 — K119)
+
+- **K119 ingest (2026-06-16)** — Tier-2 sweep + full ingest: 3 arXiv from sweep triage. **3 sources + 2 concepts + 1 entity + 8 updates.** Claw-SWE-Bench (2606.12344) CONDITIONAL-GO — MIT harness attribution benchmark; HarnessFix (2606.06324) REFERENCE — CCC deep-read exists; PRFS (2606.08228) REFERENCE — rejection audit methodology. **Phase-0:** `adopt_k119_phase0.sh`. **Prod briefs scp'd (2):** Claw harness attribution smoke; PRFS filter audit discipline. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-16 — K118)
+
+- **K118 ingest (2026-06-16)** — Daily digest full ingest: 4 arXiv from inbox. **4 sources + 4 concepts + 1 entity + 8 updates.** DPG time-inconsistent equilibrium (2606.11798) REFERENCE; Agents All the Way Down (2606.11869) REFERENCE — P4/P5 steal; Orch-RM (2606.13598) REFERENCE — repo 404; tokenized FI admissibility (2606.13822) REFERENCE — 1/4 products informative. **Phase-0:** `adopt_k118_phase0.sh`. **Prod briefs scp'd (2):** Orch-RM conductor BoN design; agent-tests-agent MCP eval layer. **Cross-wiki:** CCC agents-all-the-way-down handoff. Archive → egress-fi; inbox cleared.
+
+## Current state (2026-06-15 — K117)
+
+- **K117 ingest (2026-06-15)** — Daily digest full ingest: 2 arXiv from inbox. **2 sources + 1 concept + 4 updates.** Particle partial-observation control (2606.09055) REFERENCE; regime vol + return prediction CSI 300 (2606.09478) REFERENCE — low-vol gating steal. **Phase-0:** `adopt_k117_phase0.sh`. **Prod briefs scp'd (2):** regime vol gating equity signals; SciConBench clean-room eval (K114 backlog). Archive → laptop `.local/archives/research/`; inbox cleared. **Also committed:** K114 GEO/SciConBench + K116 XSP + librarian decommission backlog.
+
+## Current state (2026-06-14 — K116)
+
+- **XSP wiki (2026-06-14)** — thesis + four-lane framework; **Lane B prod brief** staged (LEAPS inventory + put-hedge alerts).
+- **Librarian decommission (2026-06-14)** — Hetzner `cemini-librarian` **deleted**.
+
+## Current state (2026-06-13 — K115)
+
+- **K115 game-dev-wiki bootstrap (2026-06-13)** — New public federation wiki for hobby castle/RTS research + agent harness. **Repo:** `cemini23/Game-Dev-wiki`. Wired: `sync_wiki_to_librarian.sh`, federated daily digest (`game-dev`), federation hub paths, OSINT `@concepts/game-dev-wiki-federation.md`, CCC eval v7 surface 9. Phase 0 research only — no `castle-sim` code repo yet.
+
+## Current state (2026-06-13 — K114)
+
+- **K114 federation ingest (2026-06-13)** — Full wave across 5 wikis + OSINT inbox (7 files). **OSINT:** GEO investigative cluster + SciConBench. **CCC:** 4 arXiv harness/KG. **Cybersec:** VATS + containment gap. **Gambling:** Nous PM + K102–K108 brief close-out. **Image gen:** MentisOculi. **Phase-0:** `adopt_k114_phase0.sh`. **Prod briefs scp'd (3):** VATS MCP error-path; containment gap memory integrity; SciConBench clean-room eval.
+
+## Current state (2026-06-12 — K112)
+
+- **K112 ingest (2026-06-12)** — Posts.docx (8) + 3 arXiv. **4 sources + 3 concepts + 5 updates + 2 tool entities.** CFD provenance-gap attacks; AgentBeats AAA eval; PandaAI neuro-symbolic REFERENCE; Gustafsson log-vs-chain reconciliation. **Phase-0:** `adopt_k112_phase0.sh` (AgentBeats CONDITIONAL-GO). **Prod briefs scp'd (2):** PM UpDown reconciliation telemetry; MCP artifact provenance CFD. Raw → librarian; inbox cleared.
+
+## Current state (2026-06-11 — K111)
+
+- **K111 ingest (2026-06-11)** — Full inbox: 7 PDFs (4 digest arXiv + 3 backlog). **7 sources + 1 concept + 3 updates + 2 tool entities.** AS/CJ ϕ–γ forcing (2606.01477); GIFT + FPQC-SAC FinRL cluster (NO-GO repos); WeaveBench + SIGA agent eval/adapter patterns; ReSA-ConvLSTM weather bias; MIT HFT process thesis. **Poker:** gin-style S1 lane (`2785b1d`). **Phase-0:** `adopt_k111_phase0.sh` (GIFT + FPQC-SAC NO-GO). **Prod briefs scp'd (2):** gin-style S1 deploy; WC kickoff LP safety + cross-venue refresh. Raw → librarian; inbox cleared.
+
+## Current state (2026-06-10 — K110)
+
+- **K110 ingest (2026-06-10)** — Daily digest full ingest: 3 arXiv from inbox. **3 sources + 1 concept + 8 updates.** Instrumental probability / capacity layer (2606.08209); TT-DAC-PS equity execution RL (2606.08379); MCP context prune+summary (2606.10209). **Brief staged (1):** context pruning for conductor/kb-server (REFERENCE). No prod scp. Raw → librarian; inbox cleared.
+
+## Current state (2026-06-09 — K109)
+
+- **K109 ingest (2026-06-09)** — WC prediction markets DR docx (sha `ee93a59a…`) + GS Eq positioning PDF (equity skim). **2 sources + 4 concept/entity updates.** Full PM/Kalshi inventory, `REJ_01`–`04` semantic blocklist, `wc_market_registry.json` vendoring spec. **Prod briefs scp'd (2):** K109 cross-venue scanner recommendations; K108 retail hygiene bot posture. Raw → librarian; inbox cleared.
+
+## Current state (2026-06-09 — K108)
+
+- **K108 ingest (2026-06-09)** — `Posts.docx` (6 posts, sha `b7956893…`). **1 source + 1 concept + 3 entities + 4 updates.** WC retail hygiene (@GodEyeDotFun); Arrakis HL lead-lag; omnifs/42.space stubs. **Phase-0:** omnifs **CONDITIONAL-GO** (Apache-2.0; laptop CCC eval only). **Cross-wiki:** CCC THE HIVE + /ship brief; gambling WC checklist. SEO style pass. K108 WC bot posture brief staged with K109.
+
+## Current state (2026-06-09 — K107)
+
+- **K107 ingest (2026-06-09)** — Full inbox: Posts.docx (17) + 4 arXiv from daily digest. **5 sources + 3 concepts + 1 entity + 3 updates.** Phase-0: AARRI-bench **NO-GO** (no license). **Prod briefs scp'd (4):** LP farming window, covariance-regret audit REFERENCE, WC inflows posture, poker S1 super-audit handoff. **Cross-wiki:** CCC dynamic workflows/skills brief. **Poker:** open-spot PFR audit. Raw → librarian; inbox cleared.
+
+## Current state (2026-06-08 — K106)
+
+- **K106 ingest (2026-06-08)** — `Posts.docx` (6 posts, sha `76b26ee5…`). **1 source + 1 concept + 3 entities + 5 updates.** AS production adaptations (@RuujSs); PM alert SaaS REFERENCE (@whydeso); DexScreener MCP laptop tooling. SEO style pass; CCC brief on disk. No prod scp. Raw → librarian; inbox cleared.
+
+## Current state (2026-06-08 — K105)
+
+- **K105 ingest (2026-06-08)** — Daily digest full ingest: RocketSmith arXiv 2606.00097 + Playground S1 bb snapshot. **1 source + 1 entity + 4 updates** (OSINT); gambling-wiki S1 close (chip #1, adj bb/100 #3 at ≥400h). RocketSmith **REFERENCE** — steal subagent/skill/MCP patterns. Brief staged; no prod scp. Raw → librarian; inbox cleared.
+
+## Current state (2026-06-07 — K104)
+
+- **K104 ingest (2026-06-07)** — `gr4.pdf` (Stanford 2017 ML order-book MM). **1 source + 1 concept + 6 updates.** OBP+RF slight edge vs naive; SVM/SGD underperform; missing news layer = tail risk. **REFERENCE** for PM LP — pair with informedness regime. Brief on disk; no prod scp. Raw → librarian; inbox cleared.
+
+## Current state (2026-06-07 — K103)
+
+- **K103 ingest (2026-06-07)** — Full inbox: Posts.docx (13) + 63-URL tool eval + arXiv 2606.05900 + SSRN 4619084. **4 sources + 4 concepts + 7 entities + 3 updates.** Phase-0 before briefs: pydantic-ai GO; pmxt/asm/Polymarket_data CONDITIONAL-GO; application-skills + Poker-Query-Language NO-GO. **Prod scp'd:** K103 pmxt/pydantic brief + **server-Claude sequence handoff** (K102 WC Module 7 → then K103). `adopt_k103_phase0.sh`. Raw → librarian; inbox cleared.
+
+## Current state (2026-06-06 — K102)
+
+- **K102 ingest (2026-06-06)** — `Tool Evaluation Prompt Analysis.docx` (50 URL, NEW sha256). **1 source + 5 entities + 4 updates.** License batch overturned 12 eval claims; **28 UNAVAILABLE repos resolved** (mostly no-license WC spam). **Phase-0:** harness/typst/defending-code CONDITIONAL-GO; deptry GO; Polymarket-bot STEAL → **WC Module 7 brief**. **Briefs (5)** + prod scp; `adopt_k102_phase0.sh`. Raw → librarian; inbox cleared.
+
+## Current state (2026-06-06 — K101)
+
+- **K101 ingest + deep-read (2026-06-06)** — Federation morning inbox (3 arXiv) + follow-up. **ALE:** 5-task `business_finance/` slice deep-read (repo task cards); mini-ALE harness mapping. **ADK Arena:** Phase-0 **NO-GO** entity (MIT, steal MCP-Atlas GTFA only). NeuroLog → cybersec handoff stub. **Cross-wiki:** CCC ADK Arena stub. Raw → librarian; inbox cleared.
+- **MCP smoke matrix (2026-06-06)** — 3-task lazy-tool run; mean GTFA **0.89 PASS**. Report: `.local/reports/mcp-smoke-2026-06-06.md`. **Fixed:** `lazy_tool_enrich_prod_health.sh` (FTS aliases); federation YAML quoting (`fix_cross_wiki_yaml_frontmatter.py`, 28→0 kb errors); scaffold intermediate-state slug rule.
+
+## Current state (2026-06-05 — K100)
+
+- **K100 federation ingest (2026-06-05)** — Morning digest backlog across 6 wikis. **OSINT:** 2606.05882 market informedness + MAVEN REFERENCE + PM-v1 DB REFERENCE; NeuroLog → cybersec. **Siblings:** CCC 3 papers, SEO 2, cybersec 5, gambling 1, image-gen 3. Raw → librarian; inboxes cleared.
+- **AutoMEM handoff (2026-06-05)** — Prod brief `2026-06-05_automem-memory-cross-scenario-osint-handoff.md` → OSINT `agent-memory-cross-scenario-generality` + 2606.04315 source. **Verdict:** REFERENCE; CONDITIONAL-GO five-scenario stash/conductor audit before AutoMEM tooling.
+
+## Current state (2026-06-04 — K99)
+
+- **K99 ingest (2026-06-04)** — CCC handoff: arXiv 2606.01886 InKH (financial knowledge harness). **1 source + 1 concept + 7 updates**. Posture: REFERENCE for prod temporal-graph memory until EMS/RBAC review. Brief on disk: `briefs/2026-06-04_inkh-financial-knowledge-harness-osint-handoff.md`. Raw → librarian.
+
+## Current state (2026-06-04 — K98)
+
+- **K98 ingest (2026-06-04)** — Full inbox: `Posts.docx` (13 posts, sha `32400c1f…`) + 3 arXiv + `gr5.pdf`. **5 sources + 7 concepts + 6 updates**. PM: Binance/PM fusion + pre-open queue priority. Agent: five-gate org chart; SeClaw + NEMO REFERENCE. **Briefs:** CCC/cybersec/SEO on disk; **prod brief scp'd** `2026-06-04_k98-pm-latency-fusion-queue-telemetry-cemini-prod.md`. **world-cup-bot:** ROADMAP K98 scope boundary only (no module changes). Raw → librarian; inbox cleared.
+
+## Current state (2026-06-03 — K97)
+
+- **K97 ingest (2026-06-03)** — `Posts.docx` (17 posts, sha `bf5682b3…`). **1 source + 8 page updates**; harness cluster → CCC brief; Roh Posts 15–17 (polytope + FIFA re-share = K94). **Prod brief scp'd:** `2026-06-03_k97-gustafssonkotte-tape-speed-telemetry-cemini-prod.md` (read-only telemetry). SEO style pass K97.
+
+## Current state (2026-06-03 — K96)
+
+- **K96 ingest (2026-06-03)** — Friend CeminiSuite code audit (`Errors in code .docx`) + digest arXiv 2606.00579. **2 sources + `ems-execution-security-gaps` concept**; blind-spot row #14. **Prod brief scp'd:** `2026-06-03_cemini-external-audit-remediation-cemini-prod.md` (P0: Kalshi EMS bypass, PositionGate, RBAC fail-open).
+
+## Current state (2026-06-03 — K95)
+
+- **K95 ingest (2026-06-03)** — Daily digest catch-up (Jun 2–3 LaunchAgent FDA gap; manual run all 7 wikis). **OSINT:** 3 arXiv (AlphaEval, trustworthy-AI fintech, CLI-Anything) + 3 concepts; **CCC:** 5 arXiv harness papers + CLI-Anything cross-wiki; **Image gen:** 6 arXiv; **Cybersec:** skill-injection cluster (3); **Gambling:** opponent modeling + DevFun S28 tournament brief; **3D:** self-improving CAD agents; **SEO:** K88/K90 brief pages ingested. **Prod briefs scp'd:** AlphaEval/governance, WC S28 shock recovery, SkillGuard permission steal. Federation hub sweep `2026-06-03`.
+
+## Current state (2026-06-01 — K93)
+
+- **K93 ingest (2026-06-01)** — 4 inbox files: monokern.docx + arXiv 2605.30621 + v5 tool eval (34 URL) + Posts.docx (31). **5 sources + 3 concepts + federation digest kit + 4 tool pages.** Monokern weekly pipeline in `daily_research_config.yaml`. **Cross-wiki briefs on disk** (6 wikis). Prod brief → cemini-prod. Inbox cleared.
+
+## Current state (2026-06-01 — K92)
+
+- **K92 ingest (2026-06-01)** — 4 inbox files: 2 arXiv (daily digest fetch) + Posts.docx (12) + GitHub eval (90 URLs, casino/poker/stake). **5 sources + 2 concepts** on OSINT; **gambling-wiki** eval slice + WagerBrain/Bovada bot entities; CCC/SEO cross-wiki. Raw → librarian; inbox cleared.
+- **K92 Phase-0 adoptions (2026-06-01)** — **Installed:** claude-trading-skills (5 no-API skills), obsidian-second-brain (wiki vault), rlcard venv (`.local/venv-gambling-research`). **Steal-from wired:** WagerBrain → gambling `bankroll-management`; casino-server WS/Redis → `polymarket-sports-lp-operating-rules`. **Skipped:** memory-os (Hermes-only), all NO-GO repos. Re-run: `bash scripts/adopt_k92_phase0.sh`.
+
+## Current state (2026-05-31 — K91)
+
+- **K91 ingest (2026-05-31)** — World Cup DR pair (`Tournament Phase Router Design.docx`, `World Cup Bot Conviction Audit.docx`). **2 new source pages + World Cup concept/entity backlink updates.** Router spec deepens FSM transition-gating + elimination-pruning/test posture; conviction audit flags stale-team downgrade candidates and mode-precedence discipline (`fade_watch` over bilateral in conflict windows). Raw docs moved to librarian; inbox cleared.
+
+## Current state (2026-05-31 — K90)
+
+- **K90 ingest (2026-05-31)** — v6 multi-wiki eval (41 URLs, first **gambling-wiki** surface) + Posts.docx (16 posts + Macro Charts opener). **2 sources + 2 tool stubs + 1 concept.** License spot-check via `gh api`. **Cross-wiki briefs on disk:** gambling-wiki, ccc-wiki, seo-wiki. **Prod brief staged:** `briefs/2026-05-31_k90-multi-wiki-ingest-cemini.md`. Raw docx → librarian; inbox cleared.
+
+## Current state (2026-05-31 — K88)
+
+- **K88 ingest (2026-05-31)** — v5 multi-wiki eval (29 URLs) + Posts.docx (42 posts). **2 sources + 6 tool stubs + 3 concepts.** finance-skills MIT overturn. **Phase-0 done:** SkillSpector **CONDITIONAL-GO** (laptop preingest static scan); OpenOSINT **NO-GO** (eval product mismatch). Prod brief on `/opt/cemini/briefs/`. **Cross-wiki briefs on disk** — user sessions: ccc, cybersec, seo.
+
+## Current state (2026-05-30 — K86)
+
+- **K86 ingest (2026-05-30)** — Gemini DR **10** (tournament phase router) + **targeted GitHub sports/PM landscape**. **2 sources + 4 page updates.** DR 08–10 research chain **complete**; **Module 1b PR1+PR2 shipped** (`922a171`); PR3 replay/FIFA gates remain. **Open:** Phase-0 audit `GastonDeMichele/Polymarket-Sports-Bot`; LP safety DR **2026-06-06**; shadow soak (gate Mon 6/2).
+
+## Current state (2026-05-30 — K84)
+
+- **K84 ingest (2026-05-30)** — 8 inbox items. **Workflow gaps closed** (Obsidian vault, cadences, canvas, LaunchAgents, v5 prompt in CCC). conviction v4 live on prod. **Open:** LP safety re-run 2026-06-06.
+
+## Current state (2026-05-30 — World Cup Bot)
+
+- **Build + automation (2026-05-31)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main (post knowledge audit). **K88/K89 audit:** negative-filter telemetry + venue CSV reconcile shipped. **167 pytest**.
+- **Prod briefs (2026-05-30–31)** — deploy, PR3 reconcile, Phase C exec; **`2026-05-31_wc-prod-knowledge-audit-pull.md`** (pull @ `3d1f045`)
+- **Next:** SHADOW Phase 1 soak; LP safety DR **2026-06-06**; K89 Wave 3b wiki enforcement on prod WC executors
+
+## Current state (2026-05-29 — K83)
+
+- **K83 ingest (2026-05-29)** — **4× Gemini DR** World Cup reports (Group B LP, third-place math, cross-venue arbitrage, **live market-gap verification**). **4 sources + 3 concept updates + world-cup-bot entity**. **Bot config:** `conviction.yaml` v3 (Canada/IVC $2500, Bosnia/Qatar fade_watch, DR Congo skip), `cross_venue.yaml` (group-winner + 15 advance cohort pairs; full advance map blocked until PM slugs firm). **Closed:** DeadBall Group B gap; K82 ticker map partial; Module 6 scanner code; prod monitor brief. **Open:** advance-pair refresh when PM lists markets; Gemini report #5 full ticker map (optional).
+
+## Current state (2026-05-29 — K82)
+
+- **K82 ingest (2026-05-29)** — World Cup advance-market bot research wave. **4× Gemini DR + 35 YouTube videos** (DeadBall TV, B Wade, LP-farming, cross-venue). **5 sources + 4 concepts + 8 page updates**. Headline concept: `world-cup-advance-market-bot-v1` — dual deliverable (public MIT OSS + Cemini module); conviction LP + fill handler + alert-only PM↔Kalshi scanner; **all prices from Gamma/CLOB at runtime**. **Public repo:** [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot). **Build:** shipped 2026-05-30 (see World Cup Bot section above). **Marketing:** Outlier Weekly Issue 3 — **2026-06-03**. **Open:** CeminiSuite module import (post shadow gate); DeadBall Group B live validation during tournament window.
+
+## Current state (2026-05-29 — K79)
+
+- **K79 ingest (2026-05-29)** — SMB Capital YouTube batches 1–10 (**30 videos**). Batch 10: hidden RS, gap mistakes, drawdown cure. Prod brief updated + shipped.
+- **K80 ingest (2026-05-29)** — **Batch 1–2:** 11 PM/Kalshi bot videos. Prod brief shipped. **Complete (bot cluster).**
+- **K81 ingest (2026-05-29)** — **Batch 3:** 6 macro/allocator podcasts (McKeown, Burry, Rowan, Coatue, Compound, Meldrum). **1 source + 3 people + 1 company**; PLTR backlink. Transcripts on librarian.
+
+## Current state (2026-05-28 — K76)
+
+- **K76 ingest (2026-05-28)** — four inbox docs (3 engineering syntheses + 2-post `Posts.docx`). **OSINT: 4 sources + 5 concepts + 1 tool entity (REJECT) + 8 page updates**. Concepts: shadow→live transition, zero-trade diagnostics, LP promotion gates, macro rotation watchlist, Skills.md workflow stub. **Phase-0:** `kvrancic/algorithmic-trading-bot` REJECT (no LICENSE). **Prod brief:** `2026-05-28_k76-live-transition-zero-trade-lp-promotion-cemini.md` → `cemini-prod`. **Cross-wiki:** ccc brief for Skills.md/CLAUDE.md expansion. **Adoption:** OTel span workflow on prod ingest path (no new packages). Inbox emptied after librarian SCP.
+
+## Current state (2026-05-28 — K75)
+
+- **K75 prod-audit wiki cluster (2026-05-28)** — SSH read-only audit of cemini-prod PnL + valuation + UI layers. **5 new concept pages**: PnL `logic_version` registry (`pnl-attribution-versioning`), slow-discovery checklist (`production-trading-blind-spots`), prod `core/equity_valuation.py` (`equity-fair-value-evaluation`), logging discipline (`trading-bot-logging-discipline`), `cemini_mcp` `/api/*` wiring (`trading-dashboard-api-wiring`). Captures months-long PnL version-mixing lesson + today's equities fair-value deploy. **No prod brief staged** — wiki-only; brief optional if server-Claude needs registry bump SOP.
+
+## Current state (2026-05-27 — K72)
+
+- **K72 ingest (2026-05-27)** — three inbox sources. **OSINT: 3 sources + 3 concepts + 3 entities + 8 updates**. (1) **arXiv:2605.09998** Continual Harness — online reset-free harness self-improvement (CCC pattern; not prod code). (2) **NBER w10504** Wolfers & Zitzewitz 2004 prediction-markets efficiency survey → `prediction-markets-efficiency-wolfers-zitzewitz` **core** concept. (3) **Posts.docx** 25 posts (`76ccaaa8…`) — ZeroCortex PM throughput pipeline, `hl-funding-sniper` reference, DextersSolab copy-trading refresh. **Prod brief:** `2026-05-27_k72-full-ingest-cemini.md` → `cemini-prod`. **Cross-wiki:** ccc + seo briefs on disk. **No new adoptions.** Inbox emptied after librarian SCP.
+
+## Current state (2026-05-23 — K46–K60)
+
+- **K68 ingest (2026-05-26)** — two inbox docs: `LoMacKinlay1988.pdf` + `Tool Evaluation Prompt Analysis.docx` (22 URLs). **OSINT: 2 new sources + 1 new concept + 5 tool entities + 1 entity update**. Added canonical Lo–MacKinlay variance-ratio source + method page (`lo-mackinlay-variance-ratio-test`) as a pre-ARIMA/GARCH diagnostic primitive. Tool-eval license re-verification caught one overturn: `MadAppGang/claudish` eval-MIT claim → **no LICENSE** (reject). `OpenKB`/`reclip` tracked as doc-level adopt pending Phase-0. **Prod brief:** `2026-05-26_k68-variance-ratio-and-tooling-license-corrections-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit PASS). **Cross-wiki briefs (3):** cybersec + ccc + seo. Inbox emptied after librarian SCP.
+
+- **K60 ingest (2026-05-23)** — `GitHub Repo Evaluation for Cemini.docx` (20 URLs, v4). **OSINT: 1 source + 5 tool entities** (kaligpt, trademaster, pentest-ai, **suislanchez**, **polyweather**) + concept updates. License corrections on non-weather URLs. **Weather re-audit (2026-05-24):** suislanchez Steal-from CONDITIONAL-GO (~403★, Kalshi+Poly); PolyWeather AGPL methodology reference; weatherbot reaffirmed MIT canonical. **Prod briefs:** TradeMaster + **`2026-05-24_k60-weather-steal-from-cemini.md`** → `cemini-prod:/opt/cemini/briefs/`. Inbox empty. Lint clean.
+
+- **FLOX + ArcticDB ops (2026-05-23)** — FLOX Phase 1 **compile PASS** on librarian (`libflox-connectors.a`, Polymarket connector in build); Mac blocked (OpenSSL). **market-dataset → ArcticDB** migrated: `lmdb:///opt/cemini-bulk/arctic-market-dataset` / `equity_bars`, **8,507** symbols, ~536 MB; CSV tree kept as fallback. **Prod not rewired** — briefs on `cemini-prod:/opt/cemini/briefs/`. Scripts: `migrate_market_dataset_to_arcticdb.py`.
+
+- **Prod handoff ingested (2026-05-23)** — `cemini-librarian:/opt/cemini-bulk/research/cemini-handoff/`. OSINT wiki: `laptop-prod-research-split` concept + handoff source. **Kronos prompt A/B on prod: REJECT** (do not enable token block). **ArcticDB live benchmark:** tail-1000 0.011s vs pandas 0.109s. **FLOX Step 197:** laptop/cmake only. **Prod→librarian SSH:** use `10.0.0.2` from prod.
+
+- **K59-2 ingest (2026-05-23)** — companion **arXiv:2605.00459** (ILSdl population scale, 12,708 markets). **1 new source**; **4 updated** (ILS concept + ForesightFlow source + microstructure + insider-tracker). **Brief:** `2026-05-23_k59-2-ils-population-scope-discovery-cemini.md` → prod. **Posture:** market-level ILS not prod-ready (~12 interpretable markets); wallet-level surveillance remains primary. Librarian PDF + wiki sync.
+
+- **K59 ingest (2026-05-23)** — Tier-2 arXiv sweep `wiki/sweeps/2026-05-23.md`. **3 papers:** ForesightFlow ILS (2605.00493, Tier-A OSINT) + SkillRAE (2605.10114) + GraphFlow (2605.14968) → ccc brief. **OSINT: 6 new pages** (3 sources + 3 concepts). **5 updated.** **Briefs:** `2026-05-23_k59-foresightflow-ils-pm-surveillance-cemini.md` → prod; local + librarian adoption briefs. **Cross-wiki:** `ccc-wiki/briefs/2026-05-23_k59-skillrae-graphflow-from-osint.md` — **user session needed** to expand stubs to ccc pages. **No egress adoption.** Inbox empty after librarian SCP.
+
+- **K58 ingest (2026-05-23)** — `Machine-Learning-Approach-to-Regime-Modeling_.pdf` (Two Sigma Street View 2021, Botte & Bao). **GMM** on 17-factor U.S. Factor Lens → **Crisis / Steady State / Inflation / WOI**; stress-test + allocation framing; **not predictive**. **OSINT: 2 new pages** (1 source + 1 concept). **6 updated** (Markov regime, regime-conditioned eval, quant-finance, macro-weather, LOB regime source, hedge-fund OSS). **Brief:** `2026-05-23_k58-gmm-regime-stress-test-reference-cemini.md` (skill_audit PASS). Inbox empty.
+
+- **K57 ingest (2026-05-22)** — three inbox sources. **Shipped:** wiki `5fc0b06`, librarian sync (1849 docs), 5 briefs on `cemini-prod:/opt/cemini/briefs/`, Phase-0 complete (flox + near-resolution-bot CONDITIONAL-GO). Cross-wiki briefs on disk in sibling repos (`briefs/` gitignored there — expand in per-wiki sessions). (1) **Posts.docx** — 7 posts: @TheAhmadOsman LLMs 101 + @Gustafssonkotte quadrant/blacklist/micro-trend (day 8) + @0xKiyoro AI influencer playbook + @vorty2797 retail PM discipline + @Suryanshti777 AI OS essay + @polydao Kimi weather revision workflow + @spottr_trade hybrid CLOB copy latency. (2) **Tool Evaluation and Wiki Fit.docx** — **35 URLs** (title says 70): 4 Adopt / 5 Steal-from / 25 Reject / 1 Reference. **License corrections:** `osiris` eval MIT → **still unlicensed** (K51 upheld); `flox` MIT confirmed; `open-design` Apache-2.0 + `the-architect` MIT → ccc briefs. (3) **BowTied Bull newsletter** — Part 1 high-ticket SMB lead-gen (→ seo-wiki); Part 2 macro/crypto [TENTATIVE]. **OSINT: 11 new/updated pages** (3 sources, 4 concepts, 3 people, 1 tool, 4 concept updates). **cemini-prod brief:** `2026-05-22_k57-polymarket-operator-refinements-cemini.md`. **Cross-wiki briefs (4).** Inbox empty. Lint clean (2026-05-22).
+
+- **K55-2 ingest (2026-05-21, late session)** — two inbox sources. (1) **Post.docx** — 5 X-posts: @morpphhhaw perps funding-carry bot **[DUPLICATE — already covered in K55-1; reference-only entry on @entities/people/morpphhhaw.md]**; @ridark_eth "50 GitHub Repos AI Cashflow 2026" (multi-wiki — finance #11-15 + #46 OpenStock + algo/MEV; ccc-fit #2/#16-20/#21/#36/#38/#41/#47; image-gen #7/#22/#24; seo #40/#43-45); **@crptAtlas Oil-on-Polymarket CME settlement vs daily-high vs active-month-roll mechanics** — highest-signal post for prediction-market mechanics, closes a gap in `@concepts/polymarket-bot-architecture.md`; @trq212/Thariq "Unreasonable Effectiveness of HTML" (Claude Blog, cross-routed to ccc-wiki as full concept page); @Cbb0fe +$50M 2020-2021 Uniswap+BSC mempool-sniping memoir — historical MEV reference. (2) **Tool Evaluation for Cemini Wiki.docx** — 50-URL Gemini DR v4 multi-wiki eval; 1 Adopt (`gamma-trade-lab/Polymarket-Near-Resolution-Bot` MIT, the only clean license) / 31 Reject (all NO LICENSE FOUND — known K53/K54 false-negative reproduced again at scale, incl. in-batch error on URL 48 = K52-verified MIT `prediction-market-analysis`) / 17 Unavailable. **OSINT-side: 9 new pages** — 2 source pages, 1 tool entity (polymarket-near-resolution-bot — Adopt-eligible / Phase-0 pending), 4 person entities (@ridark-eth / @crpt-atlas / @thariq-trq212 / @cbb0fe), 2 concept pages (`cme-settlement-mechanics-for-prediction-markets` from @crptAtlas + `dex-mempool-sniping-2020-2021` historical reference from @Cbb0fe). **1 existing entity updated**: @morpphhhaw with K55-2 duplicate-source backlink. **Cross-wiki briefs (4)**: ccc-wiki (full concept page for Thariq HTML essay + brief for ridark-eth CCC-relevant repos), image-gen-wiki (flux/VAR/Qwen3-TTS/VoxCPM/PersonaLive subset), seo-wiki (SaaS-Boilerplate + akaunting/faveo/laracom + FreeDomain PBN-flag), cybersec-wiki (6 cybersec-fit tool-eval entries — CF-Hero/reconftw/LLM4Pentest/jadx-ai-mcp/Awesome-Hacking/open-source-web-scanners). **Reject discipline**: 31 Tool Eval Rejects aggregated on the source page; **no per-tool reject-stub farm**; 9 entries flagged for manual `gh api` license re-verification if adoption interest arises. **No cemini-prod brief** — the single Adopt is a tiny untested micro-repo; Phase-0 audit comes first if/when integration is scoped. **No local or librarian adoptions** — the only Adopt is server-side. **Lint clean** (0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing). Inbox empty. **Server-Claude follow-up**: none requested — Phase-0 audit of `polymarket-near-resolution-bot` is the only forward action, and it can wait for a Cemini-side decision that the niche (late-resolution CLOB mid-price scan) is worth pursuing.
+- **K48 ingest (2026-05-21)** — Tier-2 arXiv sweep batch (4 papers): Code-as-Agent-Harness survey (2605.18747) + SAC portfolio WFO (2605.17307) + inference-scaling reasoning LLMs (2605.19775) + self-healing agents (2605.06737). **5 new wiki pages** (4 sources + `code-as-agent-harness` concept). **cemini-prod brief** `2026-05-21_k48-arxiv-sweep-harness-portfolio-rl-inference-cemini.md` (skill_audit PASS). **CCC cross-wiki brief** `2026-05-21_k48-code-as-harness-and-self-healing-from-osint.md`. **Adoptions:** egress-fi API-only reasoning posture (2605.19775); no new packages on laptop/librarian. Wiki synced to librarian. Lint: 0 dangling.
+- **K56 ingest (2026-05-21)** — three inbox sources, one K-batch. (1) **Posts.docx** — 9 X-posts (separator "Next Post:"): @Alexo_0x neural-nets-on-Polymarket event-based ML rejection criteria; **anonymous LP-farming live test on Polymarket Drake "Iceman" market** ($50→$18 in 48h / Top 15% LP rank / $300-600 boosted-rewards confirmed → promotes K55 [TENTATIVE] → [CONFIRMED]); @igor_mikerin Pretracer copy-trading promo; @DextersSolab KreoPolyBot 6-figs copy-trading deep-dive with **hedge-leg-trap insight**; @_avichawla Karpathy system-prompt-learning (→ ccc-wiki brief); @phosphenq Monte Carlo Permutation Test per Timothy Masters 2020; @0xDepressionn Karpathy CLAUDE.md (→ ccc); @cyrilXBT Obsidian-as-OS (→ ccc); Post 8 = K55 RohOnChain dup. (2) **Analyzing GitHub Projects and Articles.docx** — 58k-char synthesis report (~14 projects, ~81 citations); OSINT-critical: pmxt 1TB orderbook open-source dataset (~0.25TB/day growth) + utility-marketing playbook; NoFxAiOS/Hackgate cautionary (SlowMist 2025-11-17, zero-auth + hardcoded JWT secrets); Freqtrade/OpenTrader legacy-vs-modern. Cross-wiki routing: cybersec (reverse-eng protocols + reconftw + LLM4Pentest + evilsocket/audit + offensive-claude) + ccc (arkon + Alephant + OpenPipe ART + audit pipeline + presenton + tiptop). (3) **ssrn-5140015.pdf** — Yifan Guo "Applications of Time Series Analysis in Quantitative Finance" (Jan 2025, 21 pages). Academic foundation for K55 time-series ARIMA/GARCH concept page; canonical 4-reference bibliography (Box-Jenkins / Hamilton / Engle / Breiman). **OSINT-side: 17 new pages** — 3 source pages, 3 concept pages (`event-based-prediction-market-ml`, `polymarket-copy-trading-strategy`, `monte-carlo-permutation-test-mcpt`), 6 tool entities (Pretracer NO-AUDIT, KreoPolyBot NO-AUDIT, polymarketanalytics-com USE-AS-INPUT, NOFX REJECT cautionary, Freqtrade REFERENCE-ONLY, OpenTrader REFERENCE-ELIGIBLE), 5 people entities (Alexo_0x / igor_mikerin / DextersSolab / phosphenq / Yifan Guo). **5 existing pages updated**: `polymarket-lp-rewards-farming` (K56 live-test section, $300-600 boosted-rewards [CONFIRMED]), `time-series-arima-garch-framework` (SSRN academic foundation), `pmxt` (1TB orderbook + utility-marketing), `rohonchain` (K56 backlink), `index.md` (K56 sub-sections). **cemini-prod brief**: `briefs/2026-05-21_k56-lp-rewards-confirmation-and-copy-trading-adversary-modeling.md` — LP-farming live-test confirmation, copy-trading adversary modeling, event-based ML caveats for any future Cemini Polymarket directional bot. **Cross-wiki briefs** (2): ccc-wiki (agentic-infra synthesis) + cybersec-wiki (offensive-security tooling). **No local or librarian adoptions** — copy-trading bots are NO-AUDIT; Freqtrade/OpenTrader are reference-only/eligible without active scope; pmxt 1TB dataset is adoption-eligible but deferred to librarian operator. **Lint clean**. Inbox empty. **Server-Claude follow-up**: review the K56 cemini-prod brief — LP-rewards numbers are now concrete enough to size the K55 LP-bot Phase-0 design; copy-trading adversary modeling is a pre-deployment design input for any Polymarket directional bot.
+
+## Current state (2026-05-20 — K46–K55)
+
+- **K55 ingest (2026-05-20)** — five inbox sources, one K-batch. (1) **Posts.docx** — 6 X-posts: @morpphhhaw perps DEX market-neutral funding-carry bot; **@MatiasScalbi Polymarket LP-rewards farming + $POLY airdrop guide** (Spanish) — **user-flagged provide-liquidity idea**; @zostaff Python algo prediction-market guide; @stacyonchain Claude sports-consensus agent (Firecrawl + 5-source tier-weighted); @polysuccubus Top-7 weather traders (ColdMath/Clawdbot #1 +$124K); @gippp69 Shopify-Claude (→ seo-wiki brief). (2) **Posts 2.docx** — 4 X-posts: @RohOnChain Time-Series ARIMA/GARCH framework (companion to K49 Markov post); @AlphaSignalAI deep-dive on @senamakel's OpenHuman v0.54.0 (+20k stars, Product Hunt #1, agentmemory bridge — → ccc-wiki brief); @Gustafssonkotte "Deleted half my bot's code" Polymarket BTC bot rewrite with multi-module conflict-detector (41→60% WR); @MatiasScalbi 21 tactical LP-rewards tips. (3) **1405.1948v2.pdf** — Kakushadze "Phynance" 111-page Ph.D. lecture notes (stochastic calculus + derivative pricing in path-integral language; Spring-2002 Stony Brook YITP). (4) **ssrn-4668072.pdf** — Jim Simons interview (JIC Masters Series V22N1 2023; primary-source operational philosophy: math-not-finance hiring, one-model-continuously-improved, "we stick to the math", data mining endorsed). (5) **Multi-Wiki Tool Evaluation Prompt.docx** — 19-URL eval (v4): 3 Adopt (ai-polymarket-agent / DeLive / src-hunter-skill) / 4 Steal-from / 2 Defer / 4 Reference / 3 Reject (Scalar Field YC SaaS, **CentPRO = the @stacyonchain promoted bot**, CF-Hero) / 1 UNAVAILABLE. **Fifth tool-eval batch re-making the NO-LICENSE-FOUND retrieval-gap pattern** — 6 items need GitHub-API spot-check (license-check follow-up deferred to next session per K53/K54 precedent). **OSINT-side: 20 new pages** — 5 source pages, 7 concept pages (incl. user-flagged `polymarket-lp-rewards-farming`, plus `perps-dex-funding-carry-strategy` / `sports-prediction-consensus-agent` / `time-series-arima-garch-framework` / `multi-module-bot-conflict-detector-pattern` / `stochastic-calculus-foundations` / `hiring-quant-talent-philosophy`), 8 people entities, 1 company (Renaissance Technologies), 1 organization (Quantigic Solutions), 7 tool entities (ai-polymarket-agent Adopt-eligible / CentPRO Reject / Scalar Field Reject / Clawdbot Defer / Parity Defer / Firecrawl Defer / Chainlink Data Streams Conditional-Adopt). **15 existing pages updated** with K55 backlinks. **cemini-prod brief delivered**: `briefs/2026-05-20_k55-polymarket-lp-rewards-and-bot-lessons-cemini.md` (skill_audit PASS 100/100) → `cemini-prod:/opt/cemini/briefs/`. **Cross-wiki briefs** (4): seo-wiki (Gipp Shopify-Claude), ccc-wiki (OpenHuman v0.54 + ai-polymarket-agent + DeLive + src-hunter-skill + catalog items), cybersecurity-wiki (10 items: src-hunter / tugarecon / bluehood / H4X-Tools / super-SPR / CF-Hero / +others), image-gen-wiki (DeLive ASR for persona-ops). **No local or librarian adoptions** — all K55 Adopt-eligibles require Phase-0 audits on the appropriate server/CCC side. **Lint clean** (0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing). Inbox empty. **Server-Claude follow-up**: review the K55 cemini-prod brief — the LP-rewards-farming workstream is the headline (maker-side, distinct from every existing taker-side Polymarket workstream); conflict-detector pattern is portable to every multi-signal strategy; ai-polymarket-agent Phase-0 audit comparison against existing `caiovicentino-polymarket-mcp-server`.
+
+## Current state (2026-05-19 — K46–K54)
+
+- **K54 ingest (2026-05-19)** — two inbox sources, one K-batch. (1) **@AlterEgo_eth Polymarket Bridge API** (`Post.docx`) — a sixth Polymarket API surface (`bridge.polymarket.com`, wallet funding): `/deposit` (multi-chain EVM/SVM/BTC) · `/supported-assets` · `/quote` · `/status` · `/withdraw`; all deposits auto-convert to pUSD on Polygon; the flow must end with a CLOB `/balance-allowance/update` call or the balance is invisible to the order layer. New `polymarket-bridge-api` entity stub + `alterego-eth-polymarket-bridge-api` source; `polymarket-api-reference` upgraded five-surface → six-surface. (2) **26-URL multi-wiki tool eval** (`Tool Evaluation and Wiki Fit.docx`) — 6 Adopt / 1 Steal-from / 5 Reference / 11 Reject / 3 UNAVAILABLE. **Ingested with verification corrections — the eval's license layer was wrong on 9 of 26**, the worst rate yet: 8 false "NO LICENSE FOUND" *plus* a fabricated AGPL-3.0 for MoneyPrinter (verified MIT). 3 OSINT entity pages (QuantDinger Apache-2.0 Adopt-eligible/Phase-0-pending; NextTrade MIT but eval Adopt **downgraded** — TypeScript not Python, ~1yr stale; yt-dlp Unlicense-source Adopt) + poly-arbitrage-bot re-confirmed (MIT — eval's K53 false-negative reproduced). 4 cross-wiki briefs (CCC/Cybersec/Image-gen/SEO). **cemini-prod brief delivered** — `briefs/2026-05-19_k54-polymarket-tooling-cemini.md` (skill_audit PASS 100/100) → `cemini-prod:/opt/cemini/briefs/`: Bridge API funding flow + QuantDinger Phase-0 recommendation + NextTrade downgrade. **Local adoption**: yt-dlp 2026.3.17 installed on the laptop (source-build, Unlicense). No librarian adoption (QuantDinger is server-side/Phase-0-pending). Lint clean (0 orphans / 0 bidirectional gaps / 0 dangling). Inbox empty. **Lesson reinforced**: re-verify *every* eval license claim — positive and negative — not just no-license Rejects (a fabricated AGPL discards a clean tool just as a missed MIT does); recorded in `cemini-license-posture.md`. **Server-Claude follow-up**: review the K54 brief — run a QuantDinger Phase-0 (parallel-implementation check vs the existing `/opt/cemini` engine) before any adoption; Bridge API is documentation-only until autonomous treasury management is scoped.
+- **Cemini AI — architecture research (2026-05-19)** — user proposal: add "Cemini AI", a user-facing conversational assistant over DeepSeek + the wiki RAG. Architecture-of-record: `concepts/cemini-ai-assistant.md`. Finding: ~80% of the brain already exists (DeepSeek-V4, kb-server, stash, conductor, 130+ MCP tools) — only the chat surface is new. **Scope (user)**: internal-first (no external users yet), answer + propose-actions with a human confirm gate, finance + cybersecurity wikis. **New infra surfaced**: a third Hetzner server that egresses Polymarket + Hyperliquid orders; near-idle (2 vCPU / 4 GB / 75 GB, load 0.00), recommended host for the internal-phase assistant gateway. Originally provisioned at Falkenstein 2026-05-19 (hostname `cemini-poly-proxy`); **rebuilt at Helsinki 2026-05-20** (hostname `cemini-egress-fi`, IP `204.168.139.190`) after the user verified both PM and HL accept Finnish egress. Entity page `entities/infrastructure/cemini-egress-fi.md`; `.local/server.md` updated with `cemini-egress-fi` SSH alias (jump-host via cemini-prod). **Brief** `briefs/2026-05-19_cemini-ai-assistant.md` → cemini-prod (refresh on Helsinki swap pending). **Server-Claude follow-up**: review the brief — the build is a new FastAPI gateway on `cemini-egress-fi` wiring kb-server + stash + DeepSeek, plus the propose-action confirm gate. Deferred to a pre-external-launch phase: wiki public/internal confidentiality split, per-user stash scoping, prompt-injection hardening, auth/rate-limit/cost quotas. Open: regulatory posture of "propose financial actions" for paying customers.
+- **K53 ingest (2026-05-18)** — `Multi-Wiki Tool Evaluation.docx`, a 41-URL multi-wiki tool-eval (v3). 8 Adopt / 1 Steal-from / 6 Reference / 22 Reject / 4 UNAVAILABLE. **Ingested with verification corrections**: the eval's "NO LICENSE FOUND" layer is systematically unreliable — GitHub-API spot-checks flipped 3 Rejects to clean-licensed (poly-arbitrage-bot MIT, polymarket-websocket-client MIT, graphic-walker Apache-2.0), and the ArcticDB BSL-reject was superseded by K52. 5 new OSINT pages (source + gridex/discountifu-polymarket-trading-bot Adopt-eligible + poly-arbitrage-bot/graphic-walker Reference); 4 cross-wiki briefs (CCC/Cybersec/SEO/Image-gen). Inbox now empty. **Lesson reinforced**: never transcribe an LLM eval's no-license rejects — re-verify via GitHub API (recorded in `cemini-license-posture.md`).
+- **K53 adoptions (2026-05-18)** — **Librarian**: ArcticDB 6.17.0 installed + smoke-tested on `cemini-librarian` (`/opt/cemini-bulk/.venv`); the market-dataset migration is the remaining operator-gated step. **Local**: gridex deferred — no macOS build published (Windows-only release). **cemini-prod brief shipped** — `briefs/2026-05-18_k53-polymarket-tooling-cemini.md` (skill_audit PASS 100/100) → `cemini-prod:/opt/cemini/briefs/`: discountifu/polymarket-trading-bot review, ArcticDB migration decision, poly-arbitrage-bot + graphic-walker references. **Server-Claude follow-up**: review the K53 brief; decide on the ArcticDB market-dataset migration (benchmark-first) and whether to lift from discountifu/polymarket-trading-bot.
+- **K52 ingest (2026-05-18)** — `posts.docx`, 6 X posts. New: `hedge-fund-open-source-tooling` (22 quant-firm OSS repos, @zostaff), `polymarket-updown-bot-taxonomy` (6 microstructure bot types, @RetroValix), `prediction-market-statistical-arbitrage` (cointegration/OU + OBI/micro-price, @ridark_eth), `arcticdb` entity (Man Group BSL tick store — **Phase-0 pending**, license-gated), `hermes-agent` entity (Nous Research runtime — not a Cemini adoption). Updated `polymarket-bot-architecture` (@adiix_official = 3rd independent operator corroboration + battle-tested Type-1 bot prompt) + `polymarket-weather-trading-strategy` (Hermes deploy path). Post 3 (@timbidefi UGC monetization) cross-routed to seo-wiki as a brief. **Follow-ups resolved (2026-05-18)**: (a) @ridark_eth repo verified — `Jon-Becker/prediction-market-analysis` is real (MIT, 3.4k★) but Post 4 misrepresented it (trades/markets dataset, not L2 order book); new entity page, `[RETRACTED]` the L2 claim, Method 2 marked un-backtestable. (b) ArcticDB BSL verified — Additional Use Grant permits Cemini's internal use for free; verdict upgraded Phase-0-pending → **Adopt-eligible**. Both adoptions are server-side (market-dataset layer); **cemini-prod brief shipped** — `briefs/2026-05-18_polymarket-bot-edges-cemini.md` (skill_audit PASS 100/100) → `cemini-prod:/opt/cemini/briefs/`. No laptop-local adoptions (deployment boundary — both candidates are server-side). **Server-Claude follow-up**: review the K52 brief — Up/Down strategy taxonomy, stat-arb Method 1, 3-operator build-discipline audit, ArcticDB + prediction-market-analysis data-layer candidates.
+- **K51 ingests (2026-05-18)** — two inbox items. (1) **@AlterEgo_eth Polymarket endpoint cheat sheet** — full five-surface API inventory; new `polymarket-api-reference` concept + Data-API / LB-API / WebSocket entity stubs; endpoint brief shipped to `cemini-prod:/opt/cemini/briefs/`. Resolved a CLOB auth contradiction by direct test (`/book` + `/midpoint` confirmed public, HTTP 200 unauth — cheat sheet's "auth required" claim retracted). (2) **Multi-Wiki Tool Evaluation (36-repo batch)** — **0 Adopt** (no-license epidemic: 24 NO-LICENSE + 9 UNVERIFIED, 1 clean MIT, 1 AGPL); 4 OSINT/finance entity stubs, ~83% cross-routed to cybersec/CCC/image-gen/SEO via 4 destination briefs. **No Phase-0 audits triggered** (nothing reached Adopt); **no local adoptions** (Steal-from ≠ install). License check (2026-05-18) on the 4 license-unverified items: `fd` clean (MIT+Apache — eval's reject was a data artifact, cybersec-primary), `indicator` **AGPL-3.0** (Defer → hard Reject, license-drift poison pill), `osiris` + `mlfinlab` rejects verified (genuinely unlicensed / non-OSS commercial).
+- **Cited-unread-stub deep-read campaign COMPLETE** — 98 → 0 genuine unread-stubs across 9 batches (2026-05-16/17). ~64 source pages turned from metadata shells into real deep-read syntheses; ~26 triaged out-of-scope into `@concepts/corpus-overflow-out-of-scope.md`. Spun off 2 promoted concept pages (`rl-retrain-pipeline-hardening`, `marl-trading-architecture`) + 3 cemini-prod briefs.
+- **K49 ingest** — tool-eval v3 (46-repo batch) + 3 trading posts + SANA-WM video-world-model (routed to image-gen). 4 OSINT Adopt-tier tool pages (pmxt / PolyTerm / polymarket-insider-tracker / socid-extractor); cross-wiki routing to cybersec / CCC / 3d-printing; K49 prediction-market brief shipped to cemini-prod.
+- **Phase-0 audit backlog CLEARED.** Every K44 + K40 queued Phase-0 audit is done (reconciled tables below). K49 added 8 (pmxt CONDITIONAL-GO, PolyTerm GO, Osmedeus GO, jadx-mcp-server GO, socid-extractor GO, SkillKit CONDITIONAL-GO, claude-for-legal STEAL-FROM, Polymarket-Insider-Tracker NO-GO — no LICENSE). Final tail audited 2026-05-17: autots CONDITIONAL-GO, voicemode GO, hunk GO, veloxdb CONDITIONAL-GO.
+- **Stale [NEEDS VERIFICATION] sweep** — Exa-cross-checked the backlog: 20 → [CONFIRMED], 3 → [RETRACTED] (PTA paper is 2023/24 not 2026; Zeroboot no egress roadmap; obsidian-bases no nested-formula validation), 3 → [TENTATIVE]; ~38 INTERNAL/empirical tags honestly left un-re-dated. Lint stale-count 144 → 117.
+- **gbrain — RETIRED 2026-05-18.** Adopted but unused: a third retrieval layer redundant with kb-server (full-text, bot-facing) + direct file reads (always current). Never load-bearing in real work, and its git-based sync conflicted with the rsync wiki-sync. Removed from `.mcp.json` (both `local` + `librarian` envs). Install still on cemini-librarian (`/opt/gbrain` 328M + `/root/.gbrain` 277M) — purge if disk is ever needed. See `@wiki/entities/tools/gbrain.md`.
+- **Librarian wiki-sync FIXED** — the hourly cron had never run (macOS TCC blocks scheduled jobs from `~/Desktop`); replaced with a git `post-commit` hook (primary), the hourly cron restored as a backstop after cron got Full Disk Access, plus a single-run lock on the sync script.
+- **K46–K48** — weekly arXiv sweeps + Q1-2026 13F ingest + K47/K48 tool evals + local adoptions (fingerprint-suite, LEANN, socid-extractor). See `wiki/log.md`.
+- Wiki health: 0 orphans / 0 bidirectional gaps / 0 dangling / **0 cited-unread stubs**. All 6 wikis committed + pushed.
+
+**Genuinely still pending** (everything in the dated sections below is DONE or superseded unless echoed here):
+- **Operator-side**: "The Tail" newsletter 14-day launch (Substack / Stripe / Twitter / static-site host — all operator hands-on; the LLM payload was staged 2026-05-14).
+- **Backtests**: three-formula synthesis backtest + insider-detection 3σ backtest — both blocked on historical Polymarket orderbook data.
+- **Capex-tracker brief** — awaits user green-light.
+- **Server-Claude scope**: review the K47–K50 + MARL-architecture + rl-retrain-hardening briefs in `/opt/cemini/briefs/`; pmxt CONDITIONAL-GO integration conditions (drop baozi adapter, vendor-pin venue SDKs, fork-and-pin); `@pmxt/mcp` needs its own Phase-0.
+- **Minor**: counterfactual-prompting claim-discipline CLAUDE.md update (awaits user OK); `cross_wiki_route.py` cosmetic cleanups (brief double-dating, eval-github @path prefix).
+
+## Current state (end of 2026-05-14)
+
+- **K45 sprint OPEN 2026-05-14** (mid-morning → ≈10:20a EDT): **"The Tail" Polymarket rare-event newsletter — 14-day revenue MVP launch.** Driven by `/goal` directive: paid weekly newsletter staged from canonical `briefs/2026-05-14_30day-revenue-launch-plan.md` Track B + `2026-05-14_tier1-monetization-comparison.md` decision; methodology anchored on `@concepts/three-formula-system-polymarket-rare-events.md` (40 % Poisson + 35 % Shannon/KL + 25 % Taleb); landing/About copy GEO/AEO-treated per `@seo-wiki/sources/aggarwal-2024-geo-paper.md` (Quotation Addition / Statistics Addition / Fluency Optimization / Cite Sources). **Full 14-day LLM payload staged: 8 launch-asset briefs, all skill_audit PASS 100/100.** **P1 (Days 1-3) — Brand + infra**: `2026-05-14_the-tail-landing-page.md` (hero + JSON-LD FAQPage schema, Aggarwal-treated) / `2026-05-14_the-tail-about-page.md` (E-E-A-T anchor + public-wiki link) / `2026-05-14_the-tail-public-wiki-mirror.md` (public methodology mirror — paste-ready, Path A static-site recommended over Path B kb-server). **P1 / P2 — Market selection**: `2026-05-14_the-tail-issue1-market-candidates.md` (5 hard filters + 3 soft preferences + 3 illustrative candidates incl. recommended primary Anthropic-Pentagon June-30 with CoI footnote). **P2 (Days 4-7) — Issue 1 worked example**: `2026-05-14_the-tail-issue1-draft.md` (paste-ready ~2,800-word free issue, Anthropic-Pentagon three-formula end-to-end → 0.81% NO weighted output; CoI footnote at section-4 opener; Day-5/6 refresh sidebar). **P3 (Days 8-14) — Launch + distribution**: `2026-05-14_the-tail-twitter-launch-thread.md` (8-tweet character-counted thread) + `2026-05-14_the-tail-issue2-draft.md` (paste-ready ~2,400-word paywalled issue, BTC-ATH August-1 three-formula end-to-end → 3.14% YES weighted output demonstrating the compounding case vs Issue 1; Day-12 refresh sidebar). **P4 (Days 15-30) — Compound**: `2026-05-14_the-tail-linkedin-issue1-repost.md` (~1,400-word LinkedIn Article repost, condensed math + LinkedIn-tuned hashtags) + `2026-05-14_the-tail-issue1-wiki-crosspost.md` (filing-instructions brief for cross-posting Issue 1 worked example as new OSINT wiki concept page + 5 bidirectional backlink patches). **Day-30 success target**: Substack live + Issue 1 (free) + Issue 2 (paid) shipped + ≥30 free signups + ≥10 founders' subs ($19/mo, cap 100) = $190+ MRR (stretch $400+) + public methodology wiki linked. **LLM-side P1-P4 queue is exhausted; remaining 14-day execution is operator hands-on Substack/Stripe/Twitter/static-site-host.** Track A (GEO/AEO local outreach) runs in parallel per the 30-day plan but not staged in this K-series.
+
+### K45 follow-ups (14-day MVP schedule)
+
+| Day | Item | Owner | Status |
+|-----|------|-------|--------|
+| 1   | Lock Substack handle (`thetail` → fallbacks `outlierweekly` / `asymmetric` / `edgegeometry`) | User | **PENDING** |
+| 1   | Connect Stripe + configure founders' ($19/mo, cap 100) + standard ($39/mo) tiers | User | **PENDING** |
+| 1-2 | Paste landing-page brief copy into Substack About + headline; inject JSON-LD FAQ via custom HTML or static-site mirror | User | **PENDING** — assets STAGED 2026-05-14 |
+| 2-3 | Paste About-page copy; replace `[your-public-wiki-host]` with live URL; configure header nav link | User | **PENDING** — assets STAGED 2026-05-14 |
+| 2-3 | Publish public-wiki mirror of `@concepts/three-formula-system-polymarket-rare-events.md` (+ 4 component concept pages) on static host or kb-server public-DNS | User | **PENDING** — host-decision needed |
+| 4   | Re-run market screening per `briefs/2026-05-14_the-tail-issue1-market-candidates.md` framework; pick Issue 1 worked-example market | User / fresh LLM session | **PENDING** — framework STAGED |
+| 5-7 | Run three-formula model end-to-end on chosen market; draft Issue 1 (2,500-3,000 words, 7-section outline) | User / LLM | **DRAFT STAGED 2026-05-14** in `briefs/2026-05-14_the-tail-issue1-draft.md` (Anthropic-Pentagon default); Day-5/6 refresh sidebar built in |
+| 8   | Twitter launch thread goes live (per `briefs/2026-05-14_the-tail-twitter-launch-thread.md`); pin to profile | User | **PENDING** — thread STAGED 2026-05-14 |
+| 9   | Issue 1 ships free; forward-track entry filed | User | **PENDING** |
+| 10-11 | Reply-burst to every thread response; engagement compounds | User | **PENDING** |
+| 12  | Open founders' tier; email all free subs | User | **PENDING** |
+| 13  | Draft Issue 2 (paywalled, different market, same methodology) | User / LLM | **DRAFT STAGED 2026-05-14** in `briefs/2026-05-14_the-tail-issue2-draft.md` (BTC-ATH August-1 default); Day-12 refresh sidebar built in |
+| 14  | "Founders' tier live — N/100 spots left" push to free list; **Gate review: ≥30 free signups?** If <30 → pivot to Polymarket Discord / r/PredictionMarkets / podcast guesting | User | **GATE** |
+| 21  | **Gate review: ≥5 founders' subs?** If <5 → tighten niche to one category (crypto rare-events only) | User | **GATE** |
+| 30  | **Gate review: ≥$200 MRR?** If <$200 → re-evaluate; not a 30-day market | User | **GATE** |
+
+**K45 LLM-staged assets summary**: **11 briefs**, all skill_audit PASS 100/100, ready to paste at publish-time. No prod-side execution required (laptop-only workspace). **P1** brand+infra (landing-page + about-page + public-wiki-mirror) + market-selection framework (issue1-market-candidates) = 4. **P2** Issue-1 draft (issue1-draft) = 1. **P3** Twitter thread + Issue-2 draft = 2. **P4** LinkedIn repost + wiki cross-post staging = 2. **Operator-handoff supporting tier**: handoff playbook (consolidated 14-day walkthrough) + email payloads (welcome / Day-9 ship / Day-12 founders'-open / Day-13 ship / Day-14 gate push / optional gate-miss email) + Day-14 fallback distribution assets (Polymarket Discord intro + r/PredictionMarkets self-post + podcast-pitch template) = 3. **LLM-side P1-P4 queue exhausted plus operator-handoff + email + fallback-distribution supporting tier complete; remaining 14-day execution is operator hands-on Substack/Stripe/Twitter/static-site-host.**
+
+- **K45 ingest COMPLETE 2026-05-14** (late night, ≈11:30pm): 3 sources from `research to be indexed/` — **TiDAR** (NVIDIA 2511.08923, hybrid diffusion-autoregressive LLM decoding with free-token-slot parallel drafting, 4.71-5.91× throughput) / **Counterfactual Prompting Baselines** (2605.01048, Northeastern/Bar-Ilan/Allen AI — paraphrase-null distributions required for valid LLM counterfactual studies; 14.9% gender-swap flip rate = 14.1% paraphrase baseline) / **Multi-Wiki Tool Evaluation v3** (26-tool batch audit across all 6 Cemini wikis — 6 Adopt + 7 Steal-from + 3 Reference + 6 Reject + 4 UNAVAILABLE). **2 new concept pages**: `tidar-hybrid-diffusion-ar.md` (free-token-slot architecture + context-economics relevance) + `counterfactual-prompting-baselines.md` (paraphrase-null framework, upgrades `[CONFIRMED]` claim-discipline — paraphrase baseline now a requirement before confirming LLM-behavior claims). **13 new tool entity stubs** from multi-wiki eval: 6 Adopt (visual-explainer / deepeval / voicebox / openusage / apktool-mcp-server / OmniVoice) + 7 Steal-from (tpotce GPL-3.0 poison pill / MyIP / claude_code_agent_farm / Decepticon / Fusion / Open-Generative-AI / tracer — highest-ROI extraction). **1 existing page updated**: codegraph.md (K45 v3 reconfirmation backlink). **License poison pills caught (5)**: tpotce GPL-3.0, minimalfirewall AGPL-3.0, Stable-Diffusion GPL-3.0, red-run GPL-3.0, iii ELv2. **12 of 13 tools have non-OSINT primary fits** (ccc-wiki 4 / cybersec 3 / image-gen 3 / Cemini financial 1 / OSINT 2) — cross-wiki stubs deferred to user direction. **2 bidirectional gaps fixed** (multi-wiki-tool-evaluation-v3 expanded to list all 13 tools; counterfactual-prompting-baselines ↔ deepeval). wiki_lint: 0 K45-specific issues. All 3 raw sources SCPed to librarian; laptop inbox clean. 21 files committed + pushed (18 new + 3 modified) as 74a06b2.
+
+### K45 follow-ups (queue)
+
+| Item | Action | Status |
+|------|--------|--------|
+| **Operational adoption briefs from multi-wiki tool eval** | Per user directive: create separate operational briefs for actionable Adopt + Steal-from tools. Source page documents tiers; briefs are the executable adoption deliverables. | **PENDING** |
+| **Cross-wiki stubs/briefs for 12 non-OSINT tools** | ccc-wiki: visual-explainer, openusage, claude_code_agent_farm, Fusion. cybersec: apktool-mcp-server, tpotce, Decepticon. image-gen: voicebox, OmniVoice, Open-Generative-AI. Cemini financial: tracer. Create stubs or briefs in secondary wikis per `cross_wiki_route.py`. | **PENDING** — deferred to user direction |
+| **TiDAR follow-up** | Track NVIDIA repo release; evaluate context-economics implications for Cemini's LLM stack when implementation available. | **TRACKING** |
+| **Counterfactual prompting — upgrade claim-discipline** | `[CONFIRMED]` tag now requires paraphrase-baseline-controlled counterfactuals per concept page. Update CLAUDE.md citation discipline if user approves. | **PENDING** |
+
+- **K44 ingest COMPLETE 2026-05-14** (morning): Gemini Deep Research v3 multi-wiki tool eval ("Tool Evaluation for Cemini Wiki Integration.docx", 28 URLs). Verdict rollup: **7 Adopt + 7 Steal-from + 1 Defer + 3 Reference + 3 Reject + 7 UNAVAILABLE**. **New largest cross-wiki routing event** — supersedes K43; all 6 sibling wikis touched with 14 actionable items spanning 4 destination wikis. **1 source + 1 concept + 7 OSINT entity stubs + 17 cross-wiki entries** committed across 5 git repos. **Key formalization**: `@concepts/multi-wiki-eval-doc-level-vs-phase-0.md` codifies the K43 two-gate lesson (doc-level eval is necessary but not sufficient — Phase-0 source audit required for all Adopt/Steal-from verdicts before promotion to `validated`). **Highest-priority Adopt items**: `betterleaks.md` (deep page, cybersec — pre-IP-sale codebase audit critical; CEL filtering + BPE tokenization for false-positive reduction) + `aulekator-polymarket-btc-bot.md` (NautilusTrader 15-min BTC, direct K43 Polymarket-integration follow-up). **Cross-wiki convergence finding**: `geo-seo-claude` already adopted by seo-wiki 2026-05-07 (Phase-0 GO retained as authoritative); K44 independent reconfirmation elevates signal quality (two evals converged on same GO). **Star-inflation skepticism flagged**: jcode (6.1k★ solo) + geo-seo-claude (7.2k★ solo) — Phase-0 G1 (gh api star/fork ratio verification) required. **License posture clarifications**: czkawka dual-license isolation (czkawka_core MIT extractable, GUI GPL-3.0 poison via `cargo tree` verification) / red-run + cariddi GPL-3.0 patterns-only / ai-infra-guard Apache-2.0 with restrictive attribution clauses. All Adopt/Steal-from verdicts treated as `doc-level-pending-phase-0` maturity. wiki_lint: **0 K44 bidirectional gaps** (5 patched: polymarket-clob-api + polymarket-gamma-api + three-formula-system + bukosabino-ta + tradingview-mcp-atilaahmettaner + eval-github-repos-2026-05-13 + awesome-polymarket-tools). Raw source SCPed to librarian; laptop inbox clean.
+
+### K44 follow-ups (queue) — ✅ ALL AUDITED (reconciled 2026-05-17)
+
+The 14-tool Phase-0 audit queue was completed in the K44 campaign (2026-05-14); the verdicts were never marked back here, so a 2026-05-17 batch re-confirmed every entity page already carried a verdict. Resolved:
+
+| Item | Verdict | Audited |
+|------|---------|---------|
+| betterleaks Phase-0 | audited (see entity page) | 2026-05-15 |
+| aulekator-polymarket-btc-bot Phase-0 | **NO-GO** bot / **STEAL-FROM** adapter — no LICENSE file; G3 adapter uses blessed py-clob-client+Gamma path | 2026-05-14 |
+| alumnium Phase-0 | **GO** — MIT, healthy multi-contributor; real MCP stdio contract | 2026-05-14 |
+| optillm Phase-0 | **GO** (IP-sale caveats) — Apache-2.0; Z3 integration confirmed real | 2026-05-14 |
+| adamsreview Phase-0 | **CONDITIONAL-GO** — divergent from K37 reviewer-agent spec, do NOT rebase | 2026-05-14 |
+| gtm-agents Phase-0 | **SKIP** — supplement-only vs `marketingskills.md` | 2026-05-14 |
+| supavec Phase-0 | **STEAL-FROM-GO** — Apache-2.0; PLpgSQL match_documents portable, ~18-28h port | 2026-05-14 |
+| LAP Phase-0 | **STEAL-FROM-CONDITIONAL** — K44 OpenAPI→MCP use case invalid (compiles to `@lap` grammar, not MCP) | 2026-05-14 |
+| thuki Phase-0 | **SKIP** — mis-described in queue; Tauri Ollama-overlay app, no extraction target | 2026-05-14 |
+| jcode Phase-0 | **STEAL-FROM-CONDITIONAL** — MIT; 6.1k★ verified **organic**, not inflated; it's a Claude Code competitor | 2026-05-14 |
+| ai-infra-guard Phase-0 | **CONDITIONAL-GO** — external Docker only; Apache-2.0 NOTICE has mandatory-attribution poison if embedded | 2026-05-14 |
+| cariddi Phase-0 | **STEAL-FROM-PATTERNS-ONLY** — GPL-3.0; clean-room re-impl only | 2026-05-14 |
+| czkawka Phase-0 | **STEAL-FROM-CONDITIONAL** — Python clean-room port (Rust core drags LGPL/MPL transitively) | 2026-05-14 |
+| red-run Phase-0 | **REFERENCE-ONLY** — GPL-3.0; architectural patterns only | 2026-05-14 |
+| gym-anything (Defer) | CMU-L3 MIT 211★ — low maturity | **TRACKING** — re-evaluate quarterly |
+| geo-seo-claude reconfirmation | seo-wiki 2026-05-07 Phase-0 GO authoritative | **CLOSED 2026-05-14** |
+| Awesome-Polymarket-Tools (CC0) | Reference-only discovery layer | **TRACKING** |
+
+## Current state (end of 2026-05-13)
+
+- **K41 ingest COMPLETE 2026-05-13**: 11 sources / 5 concepts / 13 entity stubs ingested + cross-wiki routing checked (image-gen / seo / 3d-printing / cybersecurity all clear — sources OSINT-domain only). **Foundational agent papers landed**: Toolformer (2302.04761 Meta) + ReAct (2210.03629 Princeton+Google ICLR 2023) + Generative Agents (2304.03442 Stanford UIST 2023) + LLMs-Get-Lost (2505.06120 MS+Salesforce). LLMs-Get-Lost is the **third orthogonal data-level failure mode** completing the preference-data taxonomy (typicality K39 + asymmetric-penalty K40 + premature-commitment K41 — all training-free mitigations exist). **Massif Capital corpus introduction**: 4Q2025 Letter to Investors (15.6% net annualized since inception, 28 quarters) + 5 new concept pages (wicked-problems-capital-allocation, capital-cycle-theory, real-assets-investing-framework, critical-minerals-thesis, plus claude-md-12-rule-template). **Weekly Wizdom newsletter ingested** (Issues #173 Apr 7 / #175 Apr 22 / #176 Apr 29 FOMC) + Donny watchlist Apr 23 — **5+ exact ticker matches Apr 22-23 confirm Donny watchlist derives from WW recommendations** (treat as same-source for confirmation purposes). **Polymarket weather-trading strategy synthesized** from @AlterEgo_eth + @theparuchh sources: Gamma API two-endpoint pattern + 5 compounding edges (station-coordinate fix + Open-Meteo `bias_correction=true` + 3-model ICON+GFS+ECMWF ensemble + 3-bin coverage + 18-30hr entry window); reviewer-agent validation use case identified. **CLAUDE.md 12-rule template lineage** (Karpathy → Forrest Chang → Mnilax) documented with 41% → 3% claim flagged NEEDS VERIFICATION 2026-05-13. wiki_lint: **0 bidirectional gaps / 0 dangling related / 0 missing body mentions**. 11 raw sources SCPed to librarian with canonical filenames. Pre-K41 wiki structural cleanup (376 bidirectional gaps + 20 pre-K40 issues → 0) closed 2026-05-13 morning.
+
+### K41 follow-ups (queue)
+
+| Item | Action | Status |
+|------|--------|--------|
+| **Polymarket weather-trading Phase-0 audit** | Verdict CONDITIONAL-GO; Open-Meteo `bias_correction=true` **FALSIFIED** via API docs (Seasonal Forecast API explicit: "currently provided without bias adjustment"); structural edges (station-coord fix, 3-model ensemble) sound; @theparuchh V3 ROI treated as anecdotal; 3 Hard NOs; Phase 1 paper-trade pilot proposed. | **SHIPPED 2026-05-13** to `cemini-prod:/opt/cemini/briefs/2026-05-13_polymarket-weather-trading-phase-0-audit.md`; skill_audit PASS 100/100; awaits server-Claude execution |
+| **Real-assets supply-deficit synthesis brief** | Filtered Donny as derived-from-WW (effective 2 independent sources: Massif + WW/Donny composite). Multi-source confirmed: lithium / REE / O&G. Single-source novel: solar (FSLR/ARRY/SHLS) / uranium / AI infra. Primary-only: gold (EQX) / copper. Cross-source disagreements flagged on USAR Serra Verde + 2026 oil timing. | **SHIPPED locally 2026-05-13** at `briefs/2026-05-13_real-assets-supply-deficit-synthesis.md`; ready for user-copy to claude.ai |
+| **LLMs-Get-Lost mitigation audit** | Cemini stack coverage map against Laban et al.'s three failure modes (premature commitment / answer bloat / lost-middle). Conductor + reviewer-agent + claude-mem = 6.5/9 coverage; intra-session lost-middle is residual gap; no new arch work warranted yet. | **SHIPPED 2026-05-13** as `@concepts/llms-get-lost-mitigation-audit.md` (local concept page, informational); commit e949d40 |
+| **CLAUDE.md cut-diff proposal** | 12 cuts totaling ~113 lines proposed; 4-phase application order (A: low-risk 49 lines / A+B+C+D: hits ~200). 8 in-place compressions + 4 content relocations to LESSONS.md / new concept pages. No load-bearing rule removed. | **SHIPPED locally 2026-05-13** at `briefs/2026-05-13_claude-md-cut-diff-proposal.md`; awaits user review before any edits land |
+| **Capex tracker brief candidate** | Pull public capex data for 5-7 sectors Massif covers (IEA + EIA + Wood Mackenzie + S&P + company disclosures) to independently audit capital-cycle thesis against underlying data. Surfaced as next workstream in real-assets brief §6. | **PENDING** — awaits user green-light |
+| **Forrest Chang repo stats verification** | The tagged claim was the "120k stars by May 2026" figure in `forrest-chang.md` + `claude-md-12-rule-template.md` (the 41%→3% mistake-rate table is Mnilax's, already caveated as author-asserted — not under a NEEDS VERIFICATION tag). | **DONE 2026-05-15** — star claim [CONFIRMED] via live GitHub API (~130,900 stars) + trade-press coverage; repo = `forrestchang/andrej-karpathy-skills`. forrest-chang.md `maturity → validated`. |
+| **Future Massif letters** | 28-quarter track record implies ~7-year letter series. Tracking-source candidate; ingest as future letters appear. | **TRACKING** |
+| **`@concepts/phase-0-audit-pattern.md` extraction** | New concept page proposed in CLAUDE.md cut-diff §3 cut 9; would house the Phase-0 audit doctrine currently inline in CLAUDE.md lines 237-251. | **PENDING** — depends on CLAUDE.md cut-diff acceptance |
+
+- **K42 ingest COMPLETE 2026-05-13** (afternoon): 3 Gemini DR link-evaluation docx files ingested as a single batch (Doc 1 `evaluating-urls-cemini-project` 33 URLs / Doc 2 `multi-wiki-link-eval-prompt` 37 URLs / Doc 3 `tool-evaluation-wiki-fit` 34 URLs = 104 total URL evaluations). **29 new entity stubs + 2 new concept pages**: `@concepts/paradigm-vs-license-inverse-correlation.md` (license-as-moat thesis across K40+K41+K42, ~110 URLs evidence) + `@concepts/threat-intel-saas-cluster.md` (9-platform batch-Reject Shodan/FullHunt/ONYPHE/SOCRadar/Pulsedive/IntelX/Hunter/PublicWWW/Coalitioninc — cybersec routing). **4 existing-page updates** (pageindex / claude-mem / gitnexus / idassist with K42 cross-refs). **2 cross-wiki briefs shipped**: `@cybersecurity-wiki/briefs/2026-05-13_k42-cybersec-routing.md` (15 items in 3 tables) + `@seo-wiki/briefs/2026-05-13_k42-seo-routing.md` (open-seo + marketingskills + n8n-workflows). Tier headlines: **PraisonAI** (Doom-Loop Detection + Shadow Git Checkpoints, MIT) Adopt-candidate for Conductor replacement; **Mirage** (unified VFS Apache-2.0) Steal-from; **OpenSpec** (47.6k stars, SDD discipline) Adopt; **n8n-workflows** (4,343 production scripts, MIT) Adopt; **tabularis** (MCP-native PG/SQLite client, Apache-2.0) Adopt; **syncthing** (file sync, MPL-2.0) Adopt. License-pattern: **inverse-correlation confirmed** — most architecturally novel tools cluster in poison-licensed repos (GitNexus PolyForm / Frona BSL / OpenHuman GPL-3.0 / Markra AGPL); permissive licenses correlate with conventional scope. wiki_lint: **0 bidirectional gaps / 0 dangling related / 0 missing body mentions**. 3 raw docx SCPed to librarian as `k42-*.docx`.
+
+### K42 follow-ups (queue)
+
+| Item | Action | Status |
+|------|--------|--------|
+| **PraisonAI Phase-0 audit** | Verify Doom-Loop Detection + Shadow Git Checkpoints implementation; benchmark against current LangGraph Conductor; license MIT confirms clean adoption surface; potential full LangGraph replacement candidate. | **CONDITIONAL-GO 2026-05-13** — Doom-Loop Detection real (heuristic state-graph, no LLM); Shadow Git orthogonal-skip. Brief SHIPPED to `cemini-prod:/opt/cemini/briefs/2026-05-13_praisonai-phase-0-adoption.md`. Solo-maintainer 90.7% (Top-1 risk). 1-week cycle-detector port spike pending. |
+| **Mirage Phase-0 audit** | Verify unified VFS POSIX-mount mechanics across MongoDB/Redis/S3/GDrive backends; Apache-2.0 + Steal-from tier; potential `/opt/cemini` data-substrate simplification. | **STEAL-FROM-CONFIRMED 2026-05-13** — Apache-2.0; `BaseResource` + `Accessor` + `@op` registry pattern portable; experimental MongoDB/GDrive/Gmail backends skipped. Methodology brief SHIPPED to `cemini-prod:/opt/cemini/briefs/2026-05-13_mirage-methodology-steal-from.md`. 1-week Polymarket-adapter spike pending. |
+| **OpenSpec adoption** | Spec-Driven Development methodology for deterministic Python module generation in `/opt/cemini`; install + integrate proposal.md/specs/design.md artifact pattern; tuned for Opus 4.5/GPT 5.2. | **Phase-2 SPRINTS 1-4 LANDED + SPRINT 5 DEFERRED + PILOT MEASUREMENT COMPLETE 2026-05-13** — Phase-1 PASS both tiers (Opus + Sonnet, validate first try). Canonical bundle: **Opus** (safer missing-confidence-escalates; K37-aligned). **Sprints 1-4** (105/105 tests pass, end-to-end smoke verified): `trigger_policy.py` classifier + `policy_loader.py` + `policy.yaml` + `cost_telemetry.py` + `cost_aggregator.py` + `harmfulness_audit.py` + 105 unit tests. **Sprint 5 (rollout) DEFERRED** — read-only SSH probe of `/opt/cemini/conductor/` (commit f37749f follow-up) revealed production `ToolOrchestrator` dispatches only `kb_search` + `stash_recall`, both read-only. None of the 8 Polymarket tools the spec enumerates (`place_order`, `withdraw`, etc.) exist in production yet. Deploying middleware that gates nothing would be dead infrastructure + confidence trap. K37 code stays at `conductor/reviewer/` as pilot deliverable; OpenSpec change marked `DEFERRED` with re-open trigger documented in `openspec/changes/reviewer-agent-selective-trigger/DEFERRED.md`; tasks 5.1-5.5 explicitly marked deferred with reason. **OpenSpec pilot measurement objective is COMPLETE** — Opus 4.7 vs Sonnet 4.6 comparative pass; both first-try-validated; methodology gap captured in `LESSONS.md` 2026-05-13 (specs need a `## Production reality check` grounding step before runtime-wiring tasks). Re-opens when Polymarket integration brief lands. |
+| **n8n-workflows AI-BOM scanner extraction** | 4,343 production scripts MIT-licensed; Trusera scanner detects hardcoded API keys + MCP exposure + RCE risk in Code Execution → HTTP Request node chains. Extract as cybersec methodology to `@cybersecurity-wiki/concepts/ai-bom-scanner.md`. | **CONDITIONAL-GO 2026-05-13** — 54.4k stars (not 4,343 — that was script count); AI-BOM scanner external at `Trusera/ai-bom`. 3 of 5 heuristics portable. Brief SHIPPED to `cemini-prod:/opt/cemini/briefs/2026-05-13_n8n-workflows-ai-bom-scanner.md`. 3-5 day port to `/opt/cemini/scripts/ai_bom_scan.py` pending. |
+| **tabularis MCP-PG integration** | MCP-native PostgreSQL/SQLite client (Apache-2.0, Rust/Tauri v2) for AI-assisted SQL on `/opt/cemini` PG instances; replace ad-hoc psql workflows. | **CONDITIONAL-GO 2026-05-13** — Apache-2.0 v0.10.3; STDIO JSON-RPC 2.0 MCP server verified; destructive-query gating verified. Brief SHIPPED to `cemini-prod:/opt/cemini/briefs/2026-05-13_tabularis-mcp-adoption.md`. 3-5 day deployment (read-only mode, audit-schema only) pending. |
+| **syncthing laptop↔analyst-machine state replication** | MPL-2.0 v2.1.0 file sync for Claude Code state + MCP server artifacts across analyst machines; potential laptop↔librarian backup channel. | **Phase-1 LAPTOP DONE / SERVER BRIEF STAGED 2026-05-13** — Laptop: v2.1.0 binary at `~/.local/bin/syncthing` (direct GitHub install), daemon running, device ID `V6EKWDC-…-RKI3QA7`, `.stignore` authored in `research to be indexed/`. Server-side install + folder-pair brief staged at `briefs/2026-05-13_syncthing-hetzner-install.md` (skill_audit PASS 100/100) — execute via server-Claude session or user-direct per CLAUDE.md scope discipline (this workspace cannot SSH `apt install`). Folder pair Option B locked: `research to be indexed/` ↔ `/opt/cemini-bulk/research/drafts/`. Scoping note: `briefs/2026-05-13_syncthing-poc-launch-scope.md`. |
+| **agent-skills Phase-0 audit** | Doc 1 K42 Adopt; structural skills framework — Phase-0 against `agent-skills-eval` framework to confirm wiki-fit before integration. | **Phase-1 COMPLETE 2026-05-13** — SKILL.md frontmatter applied to `~/.claude/skills/tech-debt-audit.md` (license + metadata.author + metadata.version); Cemini spec stance pinned in `LESSONS.md` 2026-05-13 entry. Compliance template: `briefs/2026-05-13_skillmd-compliance-tech-debt-audit.md`. `scripts/skill_audit.py --mode skillmd` extension DEFERRED. |
+| **claude-obsidian parallel-impl audit** | K42 raised as parallel implementation surface alongside claude-mem; clarify scope distinction (session vs vault reasoning layer) before any port. | **DO NOT ADOPT 2026-05-13** — SessionStart hook collision with claude-mem v13.0.1 confirmed; `[!contradiction]` vs `[NEEDS VERIFICATION]` 200+ file migration cost; Obsidian-Desktop lock-in. Dead Ends entry recorded at `@entities/tools/claude-obsidian.md`. No brief. |
+| **FuzzyAI extraction (cybersec)** | PAIR + Crescendo adversarial-prompt taxonomy; cross-wiki route handled (`@cybersecurity-wiki/briefs/2026-05-13_k42-cybersec-routing.md`); follow-up: enrich `@concepts/verbalized-sampling-llm-diversity.md` with adversarial diversity vector. | **GO cybersec Phase-0 2026-05-13** — Apache-2.0; CyberArk Labs backing; PAIR + Crescendo + 16 other attacks; NO defensive-detection library (separate workstream needed). Cybersec brief at `@cybersecurity-wiki/briefs/2026-05-13_fuzzyai-adoption.md`. OSINT Vector 5 snippet pending. |
+| **cua / pentest-ai-agents extraction (cybersec)** | Autonomous pentest agents (Doc 1 K42); cross-wiki routing brief includes; consider as reviewer-agent test corpus once Phase-0 audit lands. | **GO cybersec Phase-0 2026-05-13** — cua MIT 16,381 stars (Lume Apple-Virtualization); pentest-ai-agents MIT 1,100+ stars (wraps 80+ pentest tools, solo 0xSteph). Separate briefs at `@cybersecurity-wiki/briefs/2026-05-13_cua-adoption.md` + `@cybersecurity-wiki/briefs/2026-05-13_pentest-ai-agents-adoption.md`. |
+| **whale Phase-0 audit** | Cybersec-primary entity; defer to cybersec-wiki Phase-0 lead. | **Phase-0 COMPLETE 2026-05-13 — NO BRIEF** — MIT verified (not cybersec, actually OSINT-workflow); direct DeepSeek API bypass breaks Cemini OpenRouter routing; 6-day-old project. Reference architecture only; not an integration vector. |
+| **PYDNS-Scanner extraction (cybersec)** | Async DNS recon TUI (MIT, Python); cybersec-wiki primary; minimal cross-route value to OSINT/Cemini. | **CONDITIONAL-GO cybersec Phase-0 2026-05-13** — MIT 337 stars; **DNS server discovery (NOT subdomain enum)**; README has zero ethical-use guidance. Cybersec brief at `@cybersecurity-wiki/briefs/2026-05-13_pydns-scanner-adoption.md` with mandatory ethical-use addendum requirement. |
+| **Threat-intel SaaS cluster — paid-tier evaluation** | 9-platform batch-Reject documented in `@concepts/threat-intel-saas-cluster.md`. Re-evaluate iff Cemini ever justifies paid threat-intel surface; out-of-scope for IP-sale-readiness. | **DEFERRED** |
+| **PageIndex contradiction reconciliation** | K42 Doc 1 Adopt (long-form filings) vs 2026-05-05 NO-GO (wiki layer). Documented in `@entities/tools/pageindex.md` Dead Ends; no real conflict — different use cases. | **CLOSED** 2026-05-13 |
+
+- **K43 ingest COMPLETE 2026-05-13** (evening): 5 sources across 3 distinct content domains — **Polymarket-tradecraft** (@AlterEgo_eth Gamma/CLOB API two-step flow + @de1lymoon three-formula synthesis Poisson/Shannon/Taleb) / **Cemini Phase-0 audit** (14-repo GitHub eval, 5 Adopt + 1 Steal-from + 1 Defer + 3 Reference + 4 Reject) / **K41 follow-on** (Weekly Wizdom #178 May 13 macro+positions + NL paper Behrouz et al. NeurIPS 2025). **7 new concept pages** synthesize the @de1lymoon quant trio: `poisson-edge-rare-events.md` + `shannon-entropy-kl-divergence-prediction-markets.md` + `taleb-fat-tails-barbell-prediction-markets.md` + `kelly-sizing-quarter.md` (universal sizing primitive) + `insider-detection-entropy-collapse.md` (defensive sub-signal, [TENTATIVE]) + `three-formula-system-polymarket-rare-events.md` (40/35/25 synthesis with `complete_rare_event_system()` reference impl) + `nested-learning.md` (osint stub → ccc-wiki primary). **13 new entity pages**: 2 Polymarket API entities (`polymarket-gamma-api.md` discovery layer + `polymarket-clob-api.md` execution layer) + 4 Adopt/Reference tools (bukosabino-ta, tradingview-mcp-atilaahmettaner, awesome-ai-agents-2026-zijian, awesome-systematic-trading-paperswithbacktest) + 7 new tickers (NNE, LIF, LAR, ZEC, NEAR, HYPE, HOME). **5 ticker pages updated** (ELVR + REA + BTC + SOL + Polymarket platform). **8 cross-wiki routes** — **largest cross-wiki routing event so far**, touching all 6 sibling wikis: ccc-wiki (3: NL primary + tolaria/multi-codex briefs) / cybersec (3: PYDNS-Scanner + pentest-ai-agents stubs + chekusu/mails brief) / image-gen (1: gracia.ai volumetric video) / 3d-printing (1: gracia.ai 3D mesh export sibling). **License posture observations**: 5 of 5 ADOPTs are MIT (continues IP-sale-readiness preference); AGPL-3.0 (tolaria) STEAL-FROM patterns only; PolyForm-Noncommercial + no-license repos auto-REJECT. **Same-source confirmation flag**: ELVR / LAR / REA appear on both Donny watchlist + WW newsletter — flagged as same originator, not independent confirmation. wiki_lint: K43-specific bidirectional gaps reduced to minor pre-existing wiki patterns. 5 raw sources SCPed to librarian; inbox now clean.
+
+### K43 follow-ups (queue)
+
+| Item | Action | Status |
+|------|--------|--------|
+| **Polymarket Gamma + CLOB integration** | Two-step flow (Gamma `events?slug=` → `clobTokenIds[0]=YES` → CLOB `POST /order`) now formalized as entity pages. Integration brief drafted at `briefs/2026-05-13_polymarket-gamma-clob-integration.md` (skill_audit 91/100 WARN — verdict GO incremental, ~2-3 day estimate, 7 risks documented, 7 operational gates). | **SHIPPED 2026-05-13** to `cemini-prod:/opt/cemini/briefs/2026-05-13_polymarket-gamma-clob-integration.md`; awaits server-Claude execution |
+| **Three-formula synthesis backtest** | Cemini-side validation of `complete_rare_event_system()` 40/35/25 weighting on historical Polymarket rare-event markets. Verifies @de1lymoon's claimed mispricing on 5¢/1¢ contracts. | **PENDING** — pairs with hftbacktest infrastructure (K31 adopt) |
+| **bukosabino/ta Phase-0 audit** | Phase-0 source audit caught **parallel-implementation conflict** with already-adopted `pandas-ta-classic` (identical 43-indicator set, identical API shape, zero novel coverage) PLUS stale-deps blocker (`pandas==1.3.5` + `numpy==1.21.5` EOL; fails on Python 3.12 and pandas 2.x). K43 source-doc ADOPT verdict was MIT-license + indicator-coverage filter only; Phase-0 caught the duplicate. | **NO-GO 2026-05-13** — entity page `@entities/tools/bukosabino-ta.md` updated with Phase-0 verdict table + Dead Ends entry; **no adoption brief** generated. `pandas-ta-classic` retained as canonical TA library. |
+| **tradingview-mcp Phase-0 audit** | Phase-0 source audit confirmed **MIT license + 30 tools verified + active maintenance (commit 4h ago)** but caught **TradingView TOS redistribution as blocking gate** — `tradingview-screener` + `tradingview-ta` library licenses unaudited; commercial MCP-wrapper redistribution under TradingView ToU unknown. Existing prod brief `briefs/2026-05-10_tradingview-mcp-adoption.md` (GO-conditional) is now gated by this verdict. | **NO-GO pending TOS legal review 2026-05-13** — entity page `@entities/tools/tradingview-mcp-atilaahmettaner.md` updated with full Phase-0 audit + 6 gates to clear before reconsidering; **no new adoption brief** generated. |
+| **Insider-detection 3σ backtest** | Single-source TENTATIVE heuristic from @de1lymoon. Backtest against historical Polymarket order books on known insider-trading cases (Trump-Macron, etc.). Defensive-signal only — stays out, doesn't enter. | **PENDING** — requires historical orderbook data |
+| **Weekly Wizdom #178 third-source verification** | ELVR / LAR / REA same-source flag (Donny + WW = same originator). Need independent third source before treating critical-minerals thesis as confirmed beyond Massif/WW composite. | **DONE 2026-05-15** — thesis [CONFIRMED] via 4 independent Tier-1 sources (IEA / ADL / TCW / Allens); `critical-minerals-thesis.md maturity → validated`. Per-name in `ww-issue-178`: LAR EBITDA [CONFIRMED], ELVR placement [CONFIRMED], ELVR "A$150M convert" [RETRACTED], ELVR price-lifecycle [NEEDS VERIFICATION 2026-05-15]. REA Shiloh resource still unverified — did not surface in independent search. |
+| **gracia.ai watch-list** | REFERENCE-ONLY both wikis. Watch for splat-to-mesh tooling maturity (NeRF2Mesh, splat2mesh, SuGaR). If a mature pipeline emerges, re-audit gracia.ai (or competitor) as a capture tool for 3D printing or as novel-view-synthesis for image-gen. | **TRACKING** |
+| **`@briefs/2026-05-13_github-eval-cross-wiki-routes.md` brief** | Stage a distribution brief for the 14-repo audit + cross-wiki routes; currently the lint-flagged dangling related: was removed pending the brief being staged. Brief candidates: integration-priority ranking of the 5 ADOPTs + cross-wiki coordination summary. | **PENDING** — brief staging step |
+| **Eval-github body @path cleanup** | `cross_wiki_route.py` auto-injected backlink lines at top of `eval-github-repos-2026-05-13.md` with wrong path prefix (`@target-wiki/concepts/...` while actual brief paths are `@target-wiki/briefs/...`). Cosmetic cleanup; not functionally broken. | **PENDING** — low-priority |
+| **Brief filename double-dating** | `cross_wiki_route.py` creates briefs as `2026-05-13_<my-slug>.md` where my-slug already started with date, producing `2026-05-13_2026-05-13_*.md`. Affects all 5 K43 cross-route briefs consistently. Either fix script or accept convention. | **PENDING** — script-side cleanup |
+| **NL paper deep-read on ccc-wiki side** | ccc-wiki nested-learning.md is stub; deep-read by ccc-wiki sessions when memory-architecture work resumes. OSINT-side reference is sufficient for current Cemini use. | **TRACKING** ccc-wiki |
+| **`@concepts/three-formula-system-polymarket-rare-events.md` operational gate** | Synthesis concept identifies Cemini entry point under quarter-Kelly. Pairs with `@concepts/polymarket-bot-architecture.md` for execution layer. First-pilot candidate when Polymarket integration brief lands. | **PENDING** — depends on K30 Polymarket integration completion |
+
+## Current state (end of 2026-05-12)
+
+- **K40 cross-wiki ingest COMPLETE 2026-05-12**: 6 new sources + multi-wiki Gemini eval prompt v2 deliverable. Cross-wiki batches shipped to cybersec (17 tools + 1 concept), image-gen (4), SEO (5). 37 new OSINT entity stubs + 4 new OSINT concepts. **User-flagged v1 prompt limitation corrected**: v2 prompt routes URLs through 7-surface fit grid (Cemini financial / OSINT / Cybersec / Image-gen / SEO / 3D-printing / Workflow); ready for next eval batch. **NPM supply-chain defense brief staged to `cemini-prod:/opt/cemini/briefs/2026-05-12_npm-supply-chain-defense.md`** per user request; workspace `package.json` confirmed pinned to exact versions. Tier headlines from K40: **AutoTS** + **voicemode** + **hunk** + **veloxdb** + **anthropic-harness-design** Adopt (Phase-0 pending). **Anthropic Planner/Generator/Evaluator trinity adopted as CEMINI orchestrator architecture** (replaces ad-hoc LangGraph routing). New license-pattern catches: 3× no-LICENSE (Karma + multi-model-redteam + Claude-Code-Projects-Index) → mode #1 count climbing; CC-BY-NC-4.0 IP-sale poison pill (pastebar-app rejected); CC-BY-SA-4.0 added to catalog (claude-code-ultimate-guide acceptable for study-only). **New concept pages**: `ralph-autonomous-agent-pattern.md`, `polymarket-bot-architecture.md`, `agent-cost-routing-orchestra.md`, `npm-supply-chain-defense.md`, plus cybersec wiki `llm-vulnerability-discovery.md`.
+
+### K40 follow-ups (HIGH PRIORITY queue)
+
+| Item | Action | Status |
+|------|--------|--------|
+| **AutoTS Phase-0 audit** | Phase-0 source audit before FastMCP integration: license, GPU/MAPPO compat, dependency footprint vs Cemini's small Hetzner box | **DONE 2026-05-17 — CONDITIONAL-GO** — MIT confirmed; light 4-package core, real first-class MCP server; install via the `[mcp]` extra only (excludes TensorFlow). Not an RL framework (no MAPPO). |
+| **voicemode laptop install** | Local Whisper.cpp + Kokoro voice I/O for Claude Code workflow | **DONE 2026-05-17 — GO** Phase-0 — MIT; bus-factor ~1 but tolerable (non-serving laptop tool, MIT fork escape hatch). Install pending user direction. |
+| **hunk laptop install** | Offline diff/patch UI; reduces LLM context bloat | **DONE 2026-05-17 — GO** Phase-0 — MIT, 24 contributors, healthy; pre-1.0 beta, pin a known-good version. Install pending user direction. |
+| **veloxdb laptop install** | Rust embedded KV for ingest pipeline caches | **DONE 2026-05-17 — CONDITIONAL-GO** Phase-0 — MIT; 667-crate SBOM clean (9 MPL-2.0 weak-copyleft only, no GPL); young repo + single-dev — validate before load-bearing use. |
+| **anthropic-harness-design adoption** | Planner/Generator/Evaluator trinity → CEMINI orchestrator architecture (replaces ad-hoc LangGraph routing) | **PENDING** — sprint contract + Phase-0 audit + brief |
+| **NPM supply-chain defense prod brief** | Brief at `cemini-prod:/opt/cemini/briefs/2026-05-12_npm-supply-chain-defense.md` | **SHIPPED 2026-05-12** — awaits server-Claude execution |
+| **Multi-wiki Gemini eval prompt v2** | Available at `wiki/sources/multi-wiki-gemini-eval-prompt-2026-05-12.md` Snippets section — copy-paste-ready | **READY for next eval batch** |
+| **Cybersec wiki Phase-0 backlog** | 12+ cross-routed tools awaiting Phase-0 audits in cybersec wiki (openant, aisoc, bug-bounty-agents, idassist, airecon, etc.) | **DEFERRED to cybersec-wiki triage** |
+| **Polymarket bot architecture brief** | 6-layer websocket bot architecture from @0x_Punisher → CEMINI deployment gap analysis brief | **PENDING** — concept page ready; brief candidate next sprint |
+| **Cost-routing orchestra brief** | Kimi K2.6 + Hermes-4 + Opus 4.7 orchestra → Cemini cost-model brief; integrates with reviewer-agent + signals layers | **PENDING** — concept page ready; brief candidate |
+
+## Current state (end of 2026-05-11)
+
+- **Wiki**: 690 pages indexed (+2 K40 = 1 source + 1 concept; on top of +19 K39 and +45 K37/K38). K40 source `rlhf-critic-bias-al-zawahreh-2026.md` (Al-Zawahreh self-published April 2026 pre-print, **Reference/Steal-from tier, draft maturity**) + new concept `rlhf-critic-bias.md` housing the operational framework (5 patterns + 6-cat Rhetorical Catalog + 5-tell Forensic Scorecard + 4 mitigations). 5 backlinks added (reviewer-agent / VS / signals / tool-eval-framework / license-posture). K39 source `evaluating-project-links-stacks.md` (17-URL eval brief) plus paper-form `verbalized-sampling-mode-collapse.md` (training-free distribution-prompting paper). 1 new concept page captures the Verbalized Sampling pattern as third orthogonal training-free Conductor layer (alongside reviewer-agent + signals).
+- **K-series**: **K40 (RLHF Critic Bias paper) complete 2026-05-11**. Single-source ingest, Reference/Steal-from tier, draft maturity. 1 new source + 1 new concept + 5 backlinks. Operational extraction: 5 patterns + 6-cat Rhetorical Catalog + 5-tell Forensic Scorecard + 4 mitigations. Phase-0 audit caught 4 structural signals (self-published / polemical / no-empirical / author-confirmation-bias-acknowledged) → posture is operational-primitives-only, not narrative-adoption. Follow-up brief candidate for `scripts/skill_audit.py --rlhf-tell-mode` flag DEFERRED (user-gated). K39 (17-URL link-eval brief + VS paper) complete 2026-05-11. K39 tier rollup: 6 Adopt + 2 Steal-from + 2 Reference-only + 3 Reject + 3 UNAVAILABLE + 1 duplicate. **5 Phase-0 RED FLAGS** carried forward (mischaracterization pattern continues — 6th aggregate catch across K28+K30+K36+K38). K37 (21-URL system-integration eval) + K38 (29-URL trading-stack eval) complete prior. K37 tier rollup: 3 Adopt + 6 Steal-from + 3 Reference + 1 Defer + 8 UNAVAILABLE. K38 tier rollup: 6 Adopt + 6 Steal-from + 5 Reference + 3 Defer + 5 Reject (Medusa AGPL + TokenSpeed + tropicaltidbits + D3Ext/WEF + ssh-keys-manager-stmol) + 4 UNAVAILABLE.
+- **K-series prior**: K36 complete (17-URL trading-stack evaluation brief). Tier rollup: 4 Adopt (picobot, ctop, QuantMuse→NO-GO, Adala) + 4 Steal-from + 1 split (finance-skills) + 2 Reference/Defer + 3 Reject + 3 UNAVAILABLE.
+- **K35 status**: complete (4-source eval batch, 55 tools across 3 surfaces). Three-surface evaluation methodology codified.
+- **Inbox**: CLEAN (RLHF Critic Bias K40 paper moved to librarian 2026-05-11; K37/K38 sources + 3 papers moved to librarian 2026-05-11)
+- **Step 81 — SSHD on Prod**: ✅ COMPLETE (2026-05-09). `openssh-server` installed + hardened `sshd_config` on `cemini-prod`. Verified end-to-end connectively from workspace laptop. Prereq for Step 82. Brief: `briefs/2026-05-09_step81-sshd-prod.md`.
+- **Step 82 — Prod Smoke Test**: ✅ **FULL PASS** (Redis + EMS blockers resolved prod-side 2026-05-12 per user report). Conductor pipeline ✅, Stash ✅, Calibration ✅, Redis ✅, EMS ✅. See `briefs/2026-05-09_step82-production-smoke-test.md`.
+- **Next**: **Step 83 (live deployment) unblocked.** Workspace-side cascade: (a) ✅ `briefs/2026-05-12_fastmcp-policy-hardening.md` **STAGED 2026-05-12** (K39 OpenShell extraction; Phase 1 workspace-laptop ≈1d / Phase 2 cemini-prod CONDITIONAL-GO ≈3-5d; audit 93.5/100 WARN); (b) ✅ **codeboarding Phase 2 first-pass STAGED 2026-05-12** at `/tmp/cemini-codeboarding-output/` — health report 91.4/100; 21 function-size warnings; 7 god classes (`TradingTools` 1,040 LOC worst); 669 unused-code findings (pyright); architectural stack inventory captured (MetaAgent). Full Phase-2 component diagrams not produced (macOS `/private/tmp/` symlink cache mismatch — follow-up run on prod-side directly); (c) ✅ **tech-debt-skill Phase 2 first audit STAGED 2026-05-12** at `briefs/2026-05-12_cemini-prod-tech-debt-audit.md` — 10 ranked findings + 1 codeboarding-derived candidate; remediation triage prioritized; **none block Step 83 deployment**; (d) ✅ **prod-brief re-stage verification CLOSED 2026-05-12** at `briefs/2026-05-12_prod-brief-restage-verification.md` (audit 100/100 PASS) — **11 of 11 active briefs STILL CURRENT**, zero stale, zero superseded. Step 82 PASS enables (does not invalidate) the assumed EMS/Redis-up posture every active brief relies on. Server-Claude can pick up any brief in priority order; recommended sequence: mcp-context-optimization → polymarket-onchain → pykalshi → polymarket-stack → conductor-audit-trail → remaining 6. **Tech-debt audit Finding #1 SHIPPED 2026-05-12**: `ssh cemini-prod rm -rf /opt/cemini/.claude/worktrees/` — 60 MB editor-scratch cleanup; `/opt/cemini/` went 1.3 GB → 1.2 GB; no collateral damage (other `.claude/` config preserved).
+- **Active prod briefs**: 9 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution (6 from K28-K30 + 3 K31). **No new K33 prod briefs** — K33's adoption is workspace-laptop-side (brief-audit `regime-disclosure` gate + downstream listwise-ranking instrumentation deferred)
+- **Active workspace-laptop briefs**: 3 staged
+  - `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` (port 4 wiki-maintenance patterns into `scripts/wiki_lint.py`; Phase 1 ✓ / Phase 2 deferred, bundles with brief-audit-upgrade sprint)
+  - `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` — **SHIPPED 2026-05-08** — `scripts/skill_audit.py` v0.2: regime-disclosure veto gate implemented, all 4 test briefs PASS, no false positives on K28-K30 adoption briefs.
+  - `briefs/2026-05-09_mcp-context-optimization-stack.md` — **NEW K34** — 4-layer MCP context optimization stack (lazy-tool + claude-code-router + client optimizations + OpenRouter caching). skill_audit PASS 90/100. **GO** (2026-05-09). Solves #1 architectural blocker; 80-95% cost reduction. Awaiting scp to prod.
+  - `briefs/2026-05-09_polymarket-onchain-data-pipeline.md` — **NEW K34** — Polymarket on-chain data pipeline (Dubach polydata.onchain integration as Layer 1 harvester). skill_audit PASS 90/100. **GO** (2026-05-09). Single most important data-infrastructure gap. Awaiting scp to prod.
+  - `briefs/2026-05-09_sabr-geometry-aware-calibration.md` — **NEW K34** — SABR GeoResNN calibration (hybrid ML-analytical vol surface). skill_audit PASS 90/100. **CONDITIONAL-GO** (2026-05-09). Discovery brief: audit Cemini SABR usage first; implement only if in use. Awaiting scp to prod.
+- **Deferred prod briefs (with activation triggers)**: 2 (autoresearch + XSKILL Conductor evolution)
+- **Laptop-side K31 adoptions**: ttok 0.3 + git-rewind 1.1.4 INSTALLED 2026-05-06; 2 upstream issues filed against Chronos778/git-rewind ([#1](https://github.com/Chronos778/git-rewind/issues/1) install.sh checksum bug, [#2](https://github.com/Chronos778/git-rewind/issues/2) missing LICENSE file). User adopting **Groq** for rewind LLM backend (free tier).
+- **Monetization-priority stance** (2026-05-06): revenue first, IP-sale exit later-stage. License auto-rejects soften for non-prod-codebase use; Phase-0 audit rigor unchanged. See `~/.claude/projects/.../memory/monetization_priority_2026.md`.
+- **Prod ccd-cli auto-update protection**: `IS_SANDBOX=1` in `/etc/environment` (Option A permanent fix). Applied + verified end-to-end 2026-05-06.
+- **Inbox**: CLEAN (4 sources ingested + moved to librarian 2026-05-10)
+
+## Next — actually pending action
+
+**K39 Phase-0 RED-FLAG queue CLOSED 2026-05-12** — 5 verdicts committed, all 5 entity pages upgraded `maturity: draft → validated`. 0 GO / 1 CONDITIONAL-GO / 3 NO-GO / 1 REJECT. Two new no-LICENSE pattern catches (meridian + mac-code) push total to 5 occurrences. Meridian OAuth-grafting is verbatim K38 9router pattern (7th mischaracterization aggregate catch). Eval-brief internal-inconsistency mode (mac-code caveat-then-Adopt) formalized in LESSONS.md as a third sub-mode alongside scope-creep + TOS-landmine.
+
+**K39 ingest complete 2026-05-11**. 17-URL `Evaluating Project Links for Stacks.docx` eval brief + Verbalized Sampling paper (arXiv 2510.01171). **5 Phase-0 RED-FLAG queue** opened for Adopt-tier verdicts pending source audit before any install (meridian + deepseek-tui + obscura-headless-browser + mac-code; eval-brief's "production-ready" framing is the recurring tell). 11th license-catalog mode landed: **EUPL-1.2 = AGPL-3.0-equivalent + Article 14.3 IP-sale poison pill** (taranis-ai Reject 2026-05-11). 3rd no-LICENSE pattern occurrence in K39 (after K36 finance-skills + K38 AI-Trader) — none in K39 directly, but K39 surfaced license-claim mismatches the audit caught at Phase-0. **2nd Polymarket arb-bot pattern** confirmed (gabagool joins K38 cloddsbot). VS paper headline: 1.6-2.1× creative-writing diversity, +6.9 pts synthetic-math SFT, zero factuality/safety regression — third orthogonal training-free Conductor layer (with K37 reviewer-agent + signals).
+
+**K37 + K38 ingest complete 2026-05-11**. **Steal-from license verification CLOSED 2026-05-11** (12 items: 11 GREEN MIT/Apache-2.0, 1 RED HKUDS/AI-Trader no-LICENSE-file — 3rd occurrence of pattern, downgraded to pseudocode-only). **K37/K38 Adopt-tier prod candidates** (highest-impact): Visual Crossing Weather + wethr.net (Kalshi/Polymarket weather contracts data stack), Perplexity MCP + 9router + guild MCP (MCP infrastructure cluster), Readme.skill + Google Colab VSCode (workflow). **2 prototype workstreams seeded by paper ingests**: (a) Reviewer-agent Conductor prototype — DeepSeek-R1 reviewer gating side-effecting tools, ~200-400 LOC Phase-0; (b) Signals audit-JSONL prototype — `signals` field on per-trajectory close-out, ~200-300 LOC Phase-0. Cross-wiki routes shipped (3 briefs): markdown-preview-pluk → image-gen-wiki + seo-wiki + 3d-printing-wiki (all markdown-based).
+
+K36 ingest complete 2026-05-10. **Phase-0 audit queue** (before any K36 prod brief drafts): picobot (MCP-native Go gateway, MIT), QuantMuse (Python+C++ quant stack, MIT), Adala (Apache-2.0 data-labeling with reflection loop — 2.5-yr abandonment-risk flag). ctop + finance-skills are laptop-only adoptions (lower blast radius, audit deferred). Cross-wiki route shipped: URL 10 (digital-marketing-pro) → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md`.
+
+K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-target + 6 workspace-laptop-target). Phase-0 audits for the 3 CONDITIONAL-GO items complete 2026-05-10 — all upgraded to **GO**. K35 follow-ups: (1) K35 Steal-from extractions (SPJ algorithm port, TPE sampling, Bradley-Terry, spec-kit template patterns) — still open; (2) **Brief-audit upgrade sprint: sequential ship — steps 1+2+3 SHIPPED 2026-05-10**. Step 1 (`scripts/skill_audit.py` v0.3) ported academic-paper-skills 35-pt framework: 10 checks, 3 new (`brief_completeness` + `risk_discipline` + `phasing`), ops/research-brief exemption gate. Step 2 (v0.4) ported research-paper-writing claim-evidence + abstract synthesis: 12 checks, 2 new (`check_claim_evidence` 0.06, `check_abstract_synthesis` 0.04) carved from citations + prose_quality weights; calibration verified on 7 briefs. Step 3 (v0.5) ported codex pressure-test 4-mode adversarial review prompts via opt-in `--llm-mode` flag (DeepSeek `deepseek-chat` single combined-call structured output) backed by NEW `scripts/_llm_retry.py` 3-tier retry helper (port of kytmanov/obsidian-llm-wiki-local `structured_output.py` Phase 2). Calibration on ARIS adoption brief: Tier 1 success in 15s no retries, REWORK verdict, 4 fatal flaws surfaced (2 HIGH + 2 MEDIUM, one per mode), competition-map correctly identified Cemini's existing stack as displacement. Sprint COMPLETE; hierarchical section optimization (3rd DR-named research-paper pattern) deferred — can plug into the same `--llm-mode` infrastructure later if needed; (3) Workspace-laptop install execution for the 6 K35 GO tools — still open.
+
+### K39 follow-ups
+
+**Phase-0 RED-FLAG queue — CLOSED 2026-05-12** (5 verdicts committed; 0 GO / 1 CONDITIONAL-GO / 3 NO-GO / 1 REJECT):
+
+| Item | Verdict | Rationale (one line) |
+|------|---------|----------------------|
+| **meridian** | **NO-GO / REJECT 2026-05-12** | OAuth-grafting onto Claude Max credentials CONFIRMED via `tokenRefresh.ts` + `oauthUsage.ts` code audit; K38 9router pattern verbatim repeat. No LICENSE file (5th no-LICENSE occurrence). 7th mischaracterization catch. |
+| **deepseek-tui** | **NO-GO 2026-05-12** | Tool legitimate (26,403★ MIT); eval brief mischaracterizes as Claude Code drop-in replacement. Cemini's MCP + skills + hooks investment is non-portable. |
+| **obscura-headless-browser** | **NO-GO 2026-05-12** (prod) / CONDITIONAL-CONSIDER (laptop pilot) | Eval brief recommends wholesale 24/7 trading-stack replacement based on memory-savings claims alone, no soak-test/parity data. |
+| **mac-code** | **REJECT 2026-05-12** | F_NOCACHE pervasive (22 source files matched) on hot-path inference; projected 6-12-month SSD failure on irreplaceable soldered hardware. No LICENSE file (4th no-LICENSE occurrence in K39). Caveat-then-Adopt eval brief inconsistency. |
+| **kepano-obsidian-skills** | **CONDITIONAL-GO 2026-05-12** | First non-mischaracterization in batch (legitimate 30,698★ MIT). Install only if user has separate Obsidian-vault workflow; otherwise pure token-overhead cost (~10K tokens/invocation). |
+
+Audit-clone dirs retained at `/tmp/{meridian,deepseek-tui,obscura,mac-code,kepano}-audit/`. Single Explore subagent batch + spot-check verification flipped meridian from GO → NO-GO (agent read README, code audit found contradiction).
+
+| K39 cluster | Action | Status |
+|------|--------|--------|
+| **K39 Adopt — drift** | Single-dev Rust file-transfer (MIT), 254★, niche utility; bus-factor flag | **DEFERRED 2026-05-11** — single-dev maintenance risk; not chartered until clear use-case |
+| **K39 Reject — taranis-ai** | EUPL-1.2 IP-sale poison pill + 16 GB hardware requirement | **REJECT 2026-05-11** — license catalog mode #11 |
+| **K39 Reject — daybreak-openai** | OpenAI enterprise vendor lock-in (cost + family-A TOS risk) | **REJECT 2026-05-11** |
+| **K39 Reject — ducky** | Desktop GUI for retired use case | **REJECT 2026-05-11** |
+| **K39 Reference-only — open-notebook** | 3-5 GB RAM disqualifies CPX21 prod box | **REFERENCE-ONLY 2026-05-11** — Steal-from architecture only if local-laptop OK |
+| **K39 Reference-only — x711** | Closed SaaS "The Hive"; cross-agent-memory pattern worth studying | **REFERENCE-ONLY 2026-05-11** — Steal-from pattern only |
+| **K39 Steal-from — nvidia-openshell** | **PHASE-0 GO 2026-05-12** — Apache-2.0 + NVIDIA org verified; 5,852★; policy schemas standalone-portable | Extraction queued for `briefs/2026-MM-DD_fastmcp-policy-hardening.md` (gated on EMS/Redis Step 82 prod unblock). Files to lift: `crates/openshell-policy/src/lib.rs`, `proto/sandbox.proto`, 4 example YAML fixtures (`policy-advisor` closest match for Claude FastMCP container) |
+| **K39 Steal-from — gabagool** | **PHASE-0 NO-GO 2026-05-12** — no LICENSE file (8th occurrence) + math duplicates K38 CloddsBot (5-factor risk + Kalshi-aware) | **DEFER-INDEFINITELY** — Kalshi adapter extracts from CloddsBot, skips gabagool |
+| **K39 UNAVAILABLE — 3 stubs (opensourceprojects.dev)** | Exa-resolution pass; Tier-1 gap detection will catch as cited-unread | Deferred |
+| **VS paper — Conductor integration (Vector 1 HIGH-fit)** | Synthetic trading-scenario generation prototype brief `briefs/2026-05-11_verbalized-sampling-synthetic-scenarios.md`. ~150-250 LOC Phase-0, 2-3 dev-days, ~$30/mo overhead. Feature-flagged + shadow-mode-gated rollout. Third orthogonal training-free Conductor layer with K37 reviewer-agent + signals briefs. | **SHIPPED to prod 2026-05-11** (skill_audit 99.5/100 PASS, SCP verified at `cemini-prod:/opt/cemini/briefs/`). Server-side Claude executes from here. |
+| **VS paper — Vectors 2 & 4-5** | Hypothesis ideation (M-fit), prediction-market scenario sim (M-fit), persona/dialogue (LOW-fit) | DEFERRED — Phase 3 of Vector 1 brief covers reviewer-distribution extension (Vector 3); other vectors await Phase 2 stable metrics |
+
+### K37/K38 follow-ups
+
+| Item | Action | Status |
+|------|--------|--------|
+| **K37 Adopt — Visual Crossing Weather** | 50-yr historical weather depth for Kalshi/Polymarket weather contracts. Pair with K38 wethr.net | **CONDITIONAL-GO 2026-05-11 — DEFERRED 2026-05-11** (no spend now). Phase-0 verdict locked: adopt for backtesting/climatology only; interpolation gap excludes contract-resolution path. ~$0/mo at audited cadence — Free tier sufficient. Reactivate when Cemini begins Kalshi weather-contract backtest scope work. |
+| **K37 Adopt — UI-TARS-desktop** | ~~Desktop AI agent; eval verdict Adopt for workflow laptop~~ | **NO-GO 2026-05-11 — REJECT**. Apache-2.0 + 32.9K★ but partially mischaracterized: VLM-inference client (not standalone automation), duplicates `mcp__computer-use__*` + `mcp__claude-in-chrome__*`, adds parallel Accessibility/Screen-Recording surface from ByteDance-domiciled Electron app, free remote operator deprecated. Activation: only if head-to-head benchmark vs Claude vision shows decisive advantage AND ByteDance ToS clears IP-sale-readiness posture. |
+| **K37 Adopt — markdown-preview-pluk** | Native macOS .md previewer; cross-wiki briefs shipped to image-gen + seo + 3d-printing wikis | **INSTALLED 2026-05-11** — v0.0.21 DMG (Homebrew absent); /Applications/Markdown Preview.app, MIT, Apple-signed. Default-handler set pending (manual Finder action) |
+| **K38 Adopt — wethr.net** | Singular weather Adopt for Kalshi/Polymarket weather contracts | **GO 2026-05-11 — DEFERRED 2026-05-11** (no spend now, $24.99/mo subscription gate). Phase-0 verdict locked: live Kalshi-resolution path. `logic=nws` (Kalshi) / `logic=wu` (Polymarket); station-direct, 30 US airports. Vendor-age <12 mo mitigated via NWS parallel-poll circuit breaker. Reactivate when first Kalshi weather strategy reaches paper-trade phase. |
+| **K38 Adopt — Perplexity MCP** | Live-search gap closer (Sonar Pro / Deep Research / Reasoning Pro) | **GO 2026-05-11 — DEFERRED 2026-05-11** (no spend now, pay-per-query Perplexity API ~$5-20/M tokens Sonar Pro, $5-200+/run Deep Research). Phase-0 verdict locked: MIT, 2,181★, official vendor MCP, real `@modelcontextprotocol/sdk@^1.21.1`. Reactivate when workflow live-search need surfaces unaddressable by `mcp__exa__*` OR user clears a $50-200/mo Perplexity budget. |
+| **K38 Adopt — 9router** | ~~Token-compressing proxy (~65% reduction claim); MCP infrastructure~~ | **NO-GO 2026-05-11 — DEFER-INDEFINITELY**. Eval-brief mischaracterization: actually a private Next.js 16 + React 19 dashboard, NOT a lean proxy; README claims 20-40% (not 65%); Family-C TOS landmine via OAuth-grafted free tiers. Existing lazy-tool (46% reduction validated) + claude-code-router cover the legitimate compression + routing roles at ~10× lower footprint, zero TOS exposure. |
+| **K38 Adopt — guild MCP** | ~~BM25 + int8 ONNX hybrid retrieval — potential Ollama replacement on Hetzner CPX21~~ | **NO-GO 2026-05-11 as kb-server replacement**. Eval-brief mischaracterization: agent-coordination substrate (`quest`/`lore`/`oath`/`brief` primitives), NOT a generic retrieval MCP. Retrieval stack is internal to guild's schema, cannot serve flat wiki markdown. kb-server stays as serving layer (confirms 2026-05-05 decision). Possible CONDITIONAL-GO for separate analyst-session-handoff eval — not chartered. |
+| **K38 Adopt — Readme.skill** | ~~Skill catalog discipline pattern~~ | **NO-GO 2026-05-11 — REJECT**. 6th eval-brief mischaracterization: actually a personal-Claude/Codex-usage **profile** generator (Chinese-language Markdown + SVG poster), NOT a repo-stats or skill-catalog tool. Zero overlap with `academic-paper-skills` / `research-paper-writing-skills` / `codex-startup-pressure-test-skill` / `scripts/skill_audit.py`. LICENSE-file missing despite README MIT claim (same blocking pattern as finance-skills K36). 10-dimension framework retained as Steal-from-with-trigger only if future workforce-analytics workstream chartered. |
+| **K38 Adopt — Google Colab VSCode** | Workflow laptop integration; first-party Google extension Apache-2.0 | **CONDITIONAL-GO 2026-05-11 — DEFERRED 2026-05-11** (no spend now). Legitimate product, not mischaracterized — but cost-model bleed (free 30 GPU-hrs/wk exhausts in 2-3 days), data egress to GCP, Colab Secrets API not yet in VSCode extension (credential anti-pattern), feature-parity gaps vs web Colab. Activation: both (a) user clears $50-$200/mo budget OR GCP credit allocation, AND (b) scoped non-sensitive use case (no proprietary trading algo / credentials in notebooks). |
+| **Conductor reviewer-agent prototype** | Apple Reinforced Agent pattern; DeepSeek-R1 reviewer + DeepSeek-V3 base; selective-trigger gating on `place_order`/`withdraw`. ~200-400 LOC Phase-0 prototype | Recommended next step |
+| **Signals audit-JSONL prototype** | DigitalOcean Signals pattern; `signals` field on per-trajectory close-out. Phase 0 schema addition + dashboard filter; ~200-300 LOC | Recommended next step |
+| **K37/K38 Steal-from license verification** | 12 items verified | **COMPLETE 2026-05-11** — 11 GREEN (MIT/Apache-2.0 clean for pattern extraction): claude-bootstrap MIT 621★, ASB MIT 247★, beever-atlas Apache-2.0 293★, homelab-hub MIT 541★, ebay-mcp MIT 61★, contextlattice Apache-2.0 102★, google-research Apache-2.0 37,889★, cloddsbot MIT 254★, megamemory MIT 166★, metatron-recon MIT 2,894★, hackers-arise (tutorial site — no GitHub repo, design-doc Steal only). 1 RED: **AI-Trader HKUDS** — NO LICENSE FILE despite README MIT claim (16,123★ project; root listing has zero LICENSE/COPYING file, GitHub `license` API returns null). 3rd occurrence of no-LICENSE pattern after `finance-skills` K36 + `Readme.skill` K38. AI-Trader Steal-from downgraded to **pseudocode-only pattern extraction** (clean-room reimplementation, no direct code copy); upstream-issue filing pending. `license_verified` field added to all 12 entity-page frontmatter; `maturity: validated`. LESSONS.md 2026-05-11 no-LICENSE-pattern entry added. |
+| **K37 UNAVAILABLE URLs** (URLs 1, 6, 8, 10, 11, 12, 16, 19) | Exa-resolution pass; Tier 1 gap detection will catch as cited-unread stubs | Deferred |
+| **K38 UNAVAILABLE URLs** (URLs 17, 20, 24, 25) | Same — Exa-resolution pass | Deferred |
+
+### K36 follow-ups
+
+| Item | Action | Status |
+|------|--------|--------|
+| **picobot Phase-0 audit** | MIT confirmed, v0.2.0 / 86 commits / 1.2k★ / last push 2026-03-28, pure-Go SQLite, stdio MCP per spec | **GO ✅ 2026-05-10** |
+| **picobot prod adoption brief** | `briefs/2026-05-10_picobot-prod-adoption.md` — Phase 1 Telegram outbound only, soak 7d, then expand | **SHIPPED to prod 2026-05-10** (skill_audit 90/100) |
+| **QuantMuse Phase-0 audit** | MIT confirmed BUT C++ engine is cosmetic (pybind11-wrapped Python with 100ms sleeps); 9 commits, 0 tags, 10-mo stale; VaR = `np.percentile` (same as Cemini); LangChain bloat | **NO-GO ❌ 2026-05-10** (downgrade from original Adopt verdict) |
+| **Adala Phase-0 audit** | Apache-2.0 confirmed; abandonment claim DEBUNKED (677 commits, 113 in last 6mo, last main 2026-05-08); `LiteLLMChatRuntime.base_url` overridable; Python ≥3.10 CI green | **GO ✅ 2026-05-10** |
+| **Adala prod adoption brief** | `briefs/2026-05-10_adala-prod-adoption.md` — Phase 1 sentiment + entity-extraction skills on GDELT, expand to SEC in Phase 2 | **SHIPPED to prod 2026-05-10** (skill_audit 100/100 v0.3); DeepSeek base_url live smoke test **PASS 2026-05-10** (`record_to_record()` returned `{'response': 'ack'}` from `api.deepseek.com` in 1.9 s, 0 mentions of `api.openai.com`) |
+| **ctop laptop install** | `npm i -g ctop-claude` → `/Users/claudiobarone/.local/bin/ctop` (binary named `ctop`, not `ctop-claude`); MIT confirmed | **INSTALLED 2026-05-10** — pending interactive token-tracking verification with live Claude Code session |
+| finance-skills laptop install | **INSTALLED 2026-05-10** via `npx plugins add himself65/finance-skills --target claude-code --scope user -y` (author's wrapper CLI; auto-registers `~/.claude/plugins/marketplaces/finance-skills` then runs `/plugin install` for each of 6 plugins / 24 skills). Requires Claude Code restart. LICENSE missing despite README MIT claim — upstream [issue #64](https://github.com/himself65/finance-skills/issues/64) filed; Steal-from half (Cemini-prod Python re-impl) BLOCKED pending clarification. | INSTALLED (laptop adopt half ✓ / prod steal-from BLOCKED) |
+| mercury-agent Steal extract | Port permission-hardened shell-exec layer + SQLite FTS5 memory schema to Python/FastMCP | DEFERRED |
+| Tmux-Orchestrator Steal extract | Port `schedule_with_note.sh` + 30-min auto-commit pattern | DEFERRED |
+| digital-marketing-pro Steal extract | Port hallucination-detection + `evals.json` schema → `agents/orchestrator.py` pre-trade validation | DEFERRED |
+| LLMops/data-processing Steal extract | Extract regex data-cleaning + LLM-as-judge prompts; skip ZenML/Ray/Trulens orchestration | DEFERRED |
+
+### 0 — Workspace-laptop actionable (K32 + K33 + K35)
+
+| Brief | What it ships | Status |
+|-------|---------------|--------|
+| `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` | Phase 1 ✓ / Phase 2 deferred | Phase 1 ✓ / Phase 2 deferred |
+| `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` | **SHIPPED 2026-05-08** — `scripts/skill_audit.py` v0.2 with regime-disclosure veto gate | SHIPPED |
+| `briefs/2026-05-08_rl-80k-btc-training-results.md` | RL 80K-frame BTC-USD training results, checkpoint for future 500K retrain | NEW |
+| `briefs/2026-05-10_aris-adoption.md` (K35) | ARIS Markdown skill files for structured research workflow | **DEFERRED 2026-05-10** — Phase-0 re-audit revealed 78-skill scope (vs. 3 in eval brief); selective triage of workflow-aligned skills (research-wiki/idea-creator/experiment-plan + ~5 others) pending. Reference clone at `/tmp/aris-audit/` |
+| `briefs/2026-05-10_github-spec-kit-adoption.md` (K35) | Spec-Driven Development CLI for wiki → production-code transitions | **INSTALLED 2026-05-10** — `uv tool install specify-cli` (`~/.local/bin/specify`); Phase 2 first wiki→code transition deferred until code project exists |
+| `briefs/2026-05-10_tech-debt-skill-adoption.md` (K35) | Quarterly Cemini codebase technical-debt audits | **INSTALLED 2026-05-10** — skill file at `~/.claude/skills/tech-debt-audit.md` (12.8KB); Phase 2 first audit run gated by prod-snapshot rsync |
+| `briefs/2026-05-10_claude-mem-adoption.md` (K35) | Cross-session persistent observation memory | **INSTALLED + PHASE 2 PASS 2026-05-12** — v13.0.1 worker stable (~2d uptime); 12 distinct sessions / 148 obs / 50-obs SessionStart injection verified cross-session retrieval; 2 anomalies flagged (single-day data window + worker v13.0.1 vs v13.2.0 plugin drift), non-blocking |
+| `briefs/2026-05-10_revpdf-adoption.md` (K35) | 15MB offline PDF editor for research extraction | **INSTALLED 2026-05-05** — v4.0.0 at /Applications/; Phase 2 network-isolation smoke pending |
+| `briefs/2026-05-10_codeboarding-adoption.md` (K35) | Auto-generated Cemini architecture diagrams | **INSTALLED 2026-05-10** — `uv tool install codeboarding` + 7 LSPs bootstrapped; Phase 2 first mapping run gated by prod-snapshot rsync |
+
+### 1 — Awaiting prod-side execution (no workspace action)
+
+9 briefs at `cemini-prod:/opt/cemini/briefs/`:
+
+| Brief | What it ships |
+|-------|---------------|
+| `2026-05-04_klaassen-magnus-elo-cemini-fastmcp.md` | Tennis Elo math extraction + commercial-data sourcing |
+| `2026-05-04_quant-libs-fastmcp-integration.md` | Riskfolio-Lib + FinanceToolkit + FinanceDatabase wrappers (K30-updated) |
+| `2026-05-04_probablyprofit-pattern-extraction.md` | Kelly + LLM ensemble + multi-vector kill switch |
+| `2026-05-05_polymarket-stack-adoption.md` | Polymarket Agents + python-order-utils + py-clob-client + polymarket-mcp-server |
+| `2026-05-05_pykalshi-adoption.md` | pykalshi replaces bloated official Kalshi SDK |
+| `2026-05-05_conductor-audit-trail-phase1.md` | Conductor fitness function + audit JSONL + git-tracked config commits (no LLM mutation engine) |
+| `2026-05-06_hftbacktest-adoption.md` (NEW K31) | Microsecond-tick HFT backtester for Polymarket/Kalshi MM + cross-venue arb threshold tuning. Sister to quant-libs (daily-bar) — fills the execution-resolution gap. |
+| `2026-05-06_guidance-ai-adoption.md` (NEW K31) | Microsoft structured-generation library wrapping DeepSeek calls; eliminates parsing-error tail in LangGraph + FastMCP `@mcp.tool` pipeline. |
+| `2026-05-06_ttok-prod-install.md` (NEW K31) | Single Pipfile addition (`ttok==0.3`); pre-call audit hook in DeepSeek wrapper. Apache-2.0. Tiny standalone brief. |
+
+Plus prod-originated: `2026-05-04_step124-phase1-verification.md`.
+
+### 2 — Deferred-with-triggers (do not delete)
+
+Both briefs retained intact at `cemini-prod:/opt/cemini/briefs/` with DEFERRED top-of-file headers; reactivate when **both** triggers fire:
+
+| Brief | Activation triggers |
+|-------|---------------------|
+| `2026-05-04_autoresearch-conductor-evolution.md` (Phases 2-6) | Traffic ≥ 3,500 Conductor decisions/week sustained ≥ 2 weeks **AND** explicit buyer/research signal pulls for the "automated self-proposing" capability |
+| `2026-05-04_xskill-cross-rollout-critique-conductor.md` (entirely) | Same triggers as above; ships together with autoresearch |
+| **K37/K38 weather-pair prod brief** (Visual Crossing + wethr.net, not yet drafted) | First Kalshi weather-contract strategy reaches paper-trade phase **OR** user explicitly clears the ~$25/mo subscription budget. Phase-0 verdicts already locked 2026-05-11; brief drafting is the only blocked step. |
+
+The audit-trail subset (`2026-05-05_conductor-audit-trail-phase1.md` above) supersedes Phases 1+5 of the autoresearch brief and ships now.
+
+### 3 — Recurring discipline
+
+| Item | When |
+|------|------|
+| **License-pattern catalog (10 modes — K32 added License Drift)** apply on each new Gemini DR ingest | Every ingest |
+| **post_ingest_workflow** memory rule: ROADMAP + briefs after every ingest commit-and-push | Every ingest |
+| **Tier 2 arXiv sweep** — last 2026-05-09 (2 days fresh, within 7-day cadence) | When ≥7 days old |
+| **wiki_gap_detect.py rerun** — last 2026-05-04 (clean baseline) | After next ingest or weekly |
+| **HL funding Dune backtest** (`hl-funding-sniper` quick pipeline) — last **2026-05-27**, next due **2026-08-27** — track: `wiki/meta/hl-funding-backtest-cadence.md` | Quarterly; agent prompts when due; user-gated run (~10–15 min + Dune credits) |
+
+## Decisions — open
+
+### Which LLM brain? ✅ DECIDED
+
+DeepSeek hosted API is the operative path (`deepseek-v4-flash` for analyst nodes, `deepseek-v4-pro` for final-decision synthesizer). Local options hardware-gated (7 GB RAM). Per `wiki/entities/infrastructure/deepseek-api.md` (refreshed 2026-05-04 with verified model IDs).
+
+### Which conductor? ✅ DECIDED 2026-05-02 + REFINED 2026-05-05
+
+In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-reasoner baseline.
+
+**Evolution path (refined 2026-05-05 after codex independent review):**
+
+- **Audit-trail subset (Phases 1+5)** ships now via `2026-05-05_conductor-audit-trail-phase1.md` — fitness function + audit JSONL + git-tracked config commits. ~2-4 days prod-side, ~$0/week ongoing. Captures ~85% of IP-sale "self-improvement-capability" narrative.
+- **Full autoresearch loop (Phases 2-6 + XSKILL companion)** deferred until both activation triggers fire (see "Deferred-with-triggers" above).
+
+### Wiki tooling ✅ DECIDED 2026-05-05
+
+**Default: kb-server stays as serving layer.** After three Phase-0 audits (K28 SwarmVault, K30 PageIndex, K30 Claude-OSINT), the Karpathy-pattern alternative search has eliminated all credible-looking candidates for Cemini's nested-wiki use case.
+
+| Candidate | 2026-05-05 status |
+|-----------|-------------------|
+| **kb-server** | DEPLOYED on librarian |
+| llm-wiki-compiler v0.4.0 | DEPLOYMENT-BLOCKED (hardcoded flat-layout) |
+| SwarmVault | NO-GO 2026-05-04 (same flat-layout disease) |
+| PageIndex | NO-GO 2026-05-05 (single-file API + agentic cost + lost graph/metadata) |
+| Claude-OSINT skills | NO-PORT 2026-05-05 (wrong domain — red-team OSINT, not curator workflow) |
+| **Deep GraphRAG** | Deferred — only remaining alternative on file. Re-evaluate IF wiki develops cross-link graph density flat retrieval can't handle, OR user decides graph-aware retrieval is worth the operational complexity. |
+
+### Librarian server — phases ✅ COMPLETE
+
+| Phase | Status |
+|-------|--------|
+| 0–3.5 Provision, sync, kb-server, allowlist, cron | Done |
+| 4 Brain → librarian MCP | Done 2026-05-01 (E2E verified) |
+| 5 Sync cron | Done (folded into 3.5) |
+| 6 Monitoring + tuning | Done |
+| 7 Stash episodic memory | Done 2026-05-02 (alash3al/stash v0.2.9) |
+
+## Eventually (no urgency, no specific trigger)
+
+- **Storage compaction** — disk 88% full. Market dataset → Parquet; research corpus → SQLite FTS index.
+- **Bootstrap full PDF content index** — 230 stubs done. Full deep-read at K-series pace (~12 months).
+- **Cited-unread backlog** — 99 stubs. Organic reduction via K-series ingests.
+- **Workspace ↔ server reconciliation rhythm** — periodic page-count / slug-parity checks.
+- **Test suite for scripts** — `wiki_lint.py` / `skill_audit.py` / `preingest_check.py` / `wiki_gap_detect.py` / `bootstrap_inbox.py` have no test coverage.
+- **Tier 2.5 `/autoresearch` loop** — Steal-from from claude-obsidian. Port multi-round Exa loop into Path 2.
+- **Cross-doc duplicate detection** — hash H2 titles across link-aggregate docs.
+- **MCP-tool inventory consolidation** — 130 tools discovered (vs 22 documented). Single canonical inventory.
+- **agentic-soc-platform pattern adoption** — Redis Stream + LangGraph state-management patterns for `agents/orchestrator.py` hardening (architectural reference, defer wholesale deployment).
+- **Periodic lint as session-start ritual** — already documented in CLAUDE.md session-start ritual; mostly automatic.
+- **Sakana 2026-04-27 NV tags Exa-resolution** — 12 stale `[NEEDS VERIFICATION 2026-04-27]` tags pending focused Exa-cross-check pass.
+
+## Gap detection (3-tier)
+
+| Tier | Status |
+|------|--------|
+| **0** — pre-ingest dup check (`preingest_check.py`) | Active; runs on every ingest |
+| **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-04 (clean baseline) |
+| **2** — proactive Exa sweeps (user-gated) | Active; last sweep 2026-05-09 (within 7-day cadence) |
+| **3** — fully autonomous outbound ingest | Rejected (drift / cost / trust grounds) |
+
+---
+
+## Done — 2026-05-30 World Cup Bot build + prod monitor deploy
+
+- **OSS repo** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot): modules 1–7, liquidity gate, go-live safety, alerts, rewards sync (split systemd unit), shadow-status with ledger path; `17708e1`; 128 tests; `deploy/systemd/` monitor + trading profiles.
+- **Prod** — monitor profile on `cemini-prod` via `2026-05-29_wc-monitor-systemd-enable.md` (executed by server-Claude); unit refresh pending for K84 automation wave.
+- **Wiki** — `entities/tools/world-cup-bot.md` validated; index + log updated.
+
+---
+
+## Done — 2026-05-11 K37 + K38 + 3-paper ingest (50-URL eval batch + 2 conductor-relevant concept extractions)
+
+### K37 — Evaluating URLs for System Integration (21-URL)
+
+- **Source**: `Evaluating Urls System Integration.docx` (~75 KB), ingested 2026-05-11 → moved to `cemini-librarian:/opt/cemini-bulk/research/`.
+- **14 wiki pages**: 1 source (`evaluating-urls-system-integration.md`) + 13 entity stubs (8 reachable + 5 UNAVAILABLE).
+- **Tier rollup**: 3 Adopt (Visual Crossing Weather, UI-TARS-desktop, markdown-preview-pluk) | 6 Steal-from (claude-bootstrap, ASB, Beever Atlas, homelab-hub, ebay-mcp, contextlattice) | 3 Reference-only | 1 Defer | 8 UNAVAILABLE.
+
+### K38 — Link Evaluation Brief for Trading Stack (29-URL)
+
+- **Source**: `Link Evaluation Brief for Trading Stack.docx` (~95 KB), ingested 2026-05-11 → moved to `cemini-librarian:/opt/cemini-bulk/research/`.
+- **26 wiki pages**: 1 source (`link-evaluation-brief-trading-stack.md`) + 25 entity stubs.
+- **Tier rollup**: 6 Adopt (Readme.skill, Perplexity MCP, Google Colab VSCode, 9router, guild MCP, wethr.net) | 6 Steal-from (google-research, CloddsBot, AI-Trader, MegaMemory, hackers-arise OSINT, METATRON) | 5 Reference-only | 3 Defer | 5 Reject (Medusa AGPL hard reject + TokenSpeed + tropicaltidbits + D3Ext/WEF + ssh-keys-manager-stmol) | 4 UNAVAILABLE.
+
+### K37/K38 papers (3 PDFs)
+
+- **Reinforced Agent** (Apple, arXiv 2604.27233v1) → `wiki/sources/reinforced-agent-tool-calling-feedback.md` + concept page `wiki/concepts/reviewer-agent-inference-time-feedback.md`. **HIGH-fit Conductor**. Reviewer agent gates provisional tool calls pre-execution. +5.5% BFCL irrelevance, +7.1% τ²-Bench, o3-mini 3:1 benefit-risk, GEPA +1.5-2.8%. Latency: 6.2× single-turn / 2.4× multi-turn (Cemini multi-turn trading regime amortizes favorably).
+- **Signals** (DigitalOcean, arXiv 2604.00356v1) → `wiki/sources/signals-trajectory-triage.md` + concept page `wiki/concepts/agent-trajectory-triage-signals.md`. **HIGH-fit Conductor**. Cheap non-LLM signals (interaction/execution/environment families) attached to every trajectory. 82% informativeness vs 74% heuristic / 54% random. ~200-300 LOC drop-in on top of audit JSONL.
+- **ODINI** (BGU 2018, air-gap magnetic-field exfil) → `wiki/sources/odini-air-gap-magnetic-field.md`. Reference-only context (intentional orphan; not adoption-eligible).
+
+### Cross-wiki routes (3)
+
+- `wiki/entities/tools/markdown-preview-pluk.md` routed as briefs to:
+  - `image-gen-wiki/briefs/2026-05-11_2026-05-11_markdown-preview-pluk-cross-wiki.md`
+  - `seo-wiki/briefs/2026-05-11_2026-05-11_markdown-preview-pluk-cross-wiki.md`
+  - `3d-printing-wiki/briefs/2026-05-11_2026-05-11_markdown-preview-pluk-cross-wiki.md`
+- All 3 target wikis are markdown-based; macOS native previewer with LaTeX+Mermaid benefits each. Briefs preferred over stubs to avoid maintenance burden in target wikis.
+
+### Lint baseline
+
+- `python3 scripts/wiki_lint.py` post-ingest: **0 cross-wiki dangling**. Other counts (orphans 11, bidir gaps 266, dangling 13, stale tags 110) at pre-existing baseline; no new issues introduced.
+- Cross-wiki routing convention learned: briefs live outside `wiki/` (repo-root level), so do NOT use `@wiki-alias/path` syntax in entity Relations sections (lint resolver assumes wiki-relative paths). Use prose mention instead. Applied fix to `wiki/entities/tools/markdown-preview-pluk.md`.
+
+### Pairing observations
+
+- **Reviewer-agent + Signals are architecturally complementary**: reviewer is inline-time (gates risky tool calls before execution); signals are post-hoc triage (attribute trajectories for downstream learning/debugging). Concept pages cross-reference each other. A complete Conductor v2 design uses both in parallel.
+- **K37 Visual Crossing + K38 wethr.net = full weather-strategy stack** for Kalshi/Polymarket weather contracts (50-yr historical depth + free current-data API).
+- **K38 MCP infrastructure cluster** (Perplexity + 9router + guild) addresses the live-search gap + token-compression + retrieval-engine layers in one ingest pass.
+
+### Pages touched
+
+45 new (5 source + 38 entity + 2 concept). `index.md` + `log.md` updated. `hot.md` rewritten with session-end position cache.
+
+---
+
+## Done — 2026-05-10 skill_audit v0.5 ship (codex pressure-test 4-mode adversarial review + `_llm_retry.py` Phase 2)
+
+### Brief-audit upgrade sprint — step 3 SHIPPED (sprint COMPLETE for the K32 batch)
+
+- Ported `Kappaemme-git/codex-startup-pressure-test-skill` 4 prompt patterns into `scripts/skill_audit.py` v0.5 via opt-in `--llm-mode` flag. Re-styled for brief-audit (tool-adoption) context:
+  - `pressure-test` — "find fatal flaws in adopting this tool" (was: find fatal flaws in this startup idea)
+  - `problem-validation` — "is the Cemini pain this brief addresses real, or imagined?" (was: is the problem this startup solves real?)
+  - `competition-map` — "does Cemini's existing stack already cover this?" (kept the discipline that current behavior is always a competitor)
+  - `mvp-plan` — "what is the smallest test that proves/kills the adoption?" (was: 2-week MVP plan for the startup idea)
+  - NOT ported: `first-10-customers` (we're not selling), `full` (just runs all the others, redundant with combined-call architecture).
+- **Architecture: single combined-call structured output**. One DeepSeek `deepseek-chat` API call per brief returning a Pydantic v2 schema (`FatalFlaw[]` + `verdict` + `competition_check` + `summary` + `model` + `latency_ms`). Aligns with olw's small-flat-schema discipline; keeps API cost to 1 call per `--llm-mode` invocation.
+- **Advisory by default**: dynamic findings render alongside static checks but do NOT change the static score. Veto gates (regime-disclosure, Operational Stability, Scientific Integrity) take precedence. `--strict-dynamic` flag upgrades a dynamic "reject" verdict to top-level REJECT iff no static veto gates already fired.
+- **NEW infrastructure: `scripts/_llm_retry.py`** (~280 lines). Phase 2 port of `kytmanov/obsidian-llm-wiki-local/src/obsidian_llm_wiki/structured_output.py`. 3-tier retry: Tier 1 (DeepSeek `response_format={"type":"json_object"}` + fill-in-template system prompt + `_unwrap` post-processor) → Tier 2 (regex `_extract_json`: ` ```json` fence → bare ` ``` ` → first `{...}`) → Tier 3 (re-prompt with error feedback, up to `max_retries=2`). Ollama-specific bits stripped. Telemetry reduced to single stderr log line per call.
+- **Calibration result** (2026-05-10, `briefs/2026-05-10_aris-adoption.md`):
+  - Tier 1 success in 14805ms on first try (no retries triggered)
+  - Dynamic verdict: **REWORK** (signal-bearing, not noise — static checks had passed at 99.5/100; dynamic check caught the strategic flaw the static checks couldn't see)
+  - 4 fatal flaws surfaced: [HIGH/pressure-test] 78-skill triage deferred without methodology; [HIGH/problem-validation] existing pipelines not demonstrated to fail, pain point unvalidated; [MEDIUM/competition-map] ARIS duplicates DeepSeek + wiki scripts + LangGraph; [MEDIUM/mvp-plan] Phase 1 plan vague, should be single-day test of one ARIS skill
+  - Competition check correctly named Cemini's existing stack: "DeepSeek for synthesis, wiki scripts for structured output, LangGraph for multi-step workflows, kb-server for knowledge management"
+  - Telemetry: `[_llm_retry] stage=skill_audit_dynamic model=deepseek-chat tier=1 retries=0 latency_ms=14805 status=ok`
+- **Updated entities**:
+  - `wiki/entities/tools/codex-startup-pressure-test-skill.md` → `maturity: validated`, new `adopted_as: scripts/skill_audit.py v0.5 (2026-05-10)` field, full adoption-status block replacing pending-Phase-1 placeholder.
+  - `wiki/entities/tools/obsidian-llm-wiki-local.md` → `maturity: validated`, new `phase2_ported_as: scripts/_llm_retry.py (2026-05-10)` field. Phase 1 + Phase 2 both DONE; Phases 3-4 (orphan suggestion + bidirectional wikilink auto-rewrite in `wiki_lint.py`) deferred — pain-driven, no current need.
+- **Sprint COMPLETE**: K32 batch yielded 4 patterns into `skill_audit.py` across v0.3 / v0.4 / v0.5. Hierarchical section optimization (3rd DR-named research-paper pattern) deferred — can plug into `--llm-mode` infrastructure when a real need arises.
+- **Anti-pattern avoided**: build-on-demand discipline. The decision to defer `_llm_retry.py` from 2026-05-06 to 2026-05-10 was correct — the helper's API shape (e.g., `stage=` parameter for telemetry tagging) was driven by `skill_audit.py`'s actual needs, not invented.
+
+---
+
+## Done — 2026-05-10 skill_audit v0.4 ship (research-paper-writing claim-evidence + abstract synthesis)
+
+### Brief-audit upgrade sprint — step 2 SHIPPED
+
+- Ported `master-cai/Research-Paper-Writing-Skills` two K32-DR-named domain-portable patterns into `scripts/skill_audit.py` v0.4. Pattern source is abandoned (4 commits / 0 releases) — re-styled as deterministic Python static checks rather than DeepSeek prompts (LLM-as-judge dynamic version deferred to pressure-test step).
+- **2 new static checks** added on top of v0.3's 10, bringing v0.4 to 12 checks summing to 1.00:
+  - `check_claim_evidence` (weight 0.06) — detects 4 claim labels in adoption-class briefs (license/version/stars/commits); each must co-locate with a verification anchor within ±240 chars (`VERIFIED YYYY-MM-DD`, `Phase-0 audit`, `[Source:`, `[NEEDS VERIFICATION`, `[CONFIRMED]`/`[TENTATIVE]`/`[RETRACTED]`). Duplicate claims deduped via canonical-value grouping (claim anchored if ANY occurrence has anchor nearby). Coverage thresholds: ≥90% full (0.06), ≥70% (0.04), ≥50% (0.02).
+  - `check_abstract_synthesis` (weight 0.04) — `## Summary` section quality: length 50-400 words + effort estimate present + verdict-flavored opener (`Adopt`/`Steal-from`/`Reject`/`Reference`/`Defer`/`Install`/`GO`/`NO-GO`/`CONDITIONAL-GO`). 3/3 full (0.04), 2/3 (0.025), 1/3 (0.01).
+- **Weight rebalance**: 0.10 carved out of `check_citations` (0.15 → 0.10) and `check_prose_quality` (0.10 → 0.05). Sum still 1.00.
+- **Adoption-class gate** `_is_adoption_brief()` (already in v0.3) exempts ops/research briefs from both new checks. Renderer line updated to "12 static checks".
+- **Calibration verified 2026-05-10** against 7 representative briefs:
+  - K35 fresh adoption (aris, spec-kit, codeboarding, tech-debt): 99.5/100 PASS — initial ARIS run WARN at 98.5 due to verdict-line regex (asterisks wrapping extra text); fixed by tightening to `**GO** — selective adoption deferred 2026-05-10.`
+  - Anchoring gaps caught: claude-mem 97.5 WARN (un-anchored `v13.0.1` outside Phase-0 context), revpdf 94.5 WARN (`Proprietary (free)` not co-located with verification)
+  - Older adoption briefs WARN at expected gaps: hftbacktest 90.5, polymarket-stack 90.5, picobot-prod 96.0, adala-prod 98.5, guidance-ai 94.5
+  - Ops/research briefs properly exempt: step81-sshd 85.0 N/A, polymarket-onchain 100/100 N/A
+- **Anti-pattern fix during calibration**: initial `check_claim_evidence` over-counted 4 MIT mentions in ARIS brief as 4 separate claims (1/4 anchored = 25%). Fixed by deduplicating: group occurrences by `(label, canonical_value)` lowercased + whitespace/hyphen-stripped; claim is anchored if any occurrence has anchor nearby. Re-test PASS at `1/1 claims anchored (100%)`.
+- **Hierarchical section optimization** (third DR-named pattern from research-paper-writing) NOT ported in v0.4 — requires LLM judgment. Bundled with codex pressure-test step under upcoming `_llm_retry.py` infrastructure.
+- Updated `wiki/entities/tools/research-paper-writing-skills.md` to `maturity: validated` + `adopted_as: scripts/skill_audit.py v0.4` + `adopted` tag. Mirrors the v0.3 pattern previously used on `wiki/entities/tools/academic-paper-skills.md`.
+
+---
+
+## Done — 2026-05-10 K35 laptop adoption batch (5 tools installed + ARIS deferred)
+
+### Laptop adoption installs
+
+| Tool | Install | Verification |
+|------|---------|--------------|
+| `revpdf` v4.0.0 build 53 | One-time $30 purchase at `/Applications/RevPDF Editor.app` (pre-dated K35 eval; install 2026-05-05) | App opens; offline-capable per source claim; Phase 2 network-isolation smoke pending |
+| `specify-cli` | `uv tool install specify-cli` → `~/.local/bin/specify` | `specify --version` confirms install; Phase 2 first wiki→code transition deferred until code project exists to scaffold |
+| `codeboarding` | `uv tool install codeboarding` → `~/.local/bin/codeboarding`; `codeboarding-setup` bootstrapped 7 LSPs to `~/.codeboarding/servers/` | python/typescript/javascript/php/java/go/rust ready; csharp skipped (dotnet absent — acceptable, Cemini is Python-only). Phase 2 first mapping run gated by prod-snapshot rsync (active session) |
+| `tech-debt-skill` | Skill file at `~/.claude/skills/tech-debt-audit.md` (12.8KB) | Slash command `/tech-debt-audit` available in skill catalog; Phase 2 first audit run gated by prod-snapshot rsync |
+| `claude-mem` v13.0.1 | (already installed 2026-05-10 earlier in session) | (already documented in 2026-05-10 post-K36 Done) |
+
+### ARIS Phase-0 re-audit deferral
+- Cloned `wanshuiyin/Auto-claude-code-research-in-sleep` → `/tmp/aris-audit/` for inspection.
+- Discovered **78 SKILL.md files**, not 3 as the original eval brief claimed.
+- Two clusters: workflow-aligned (research-wiki/idea-creator/experiment-plan/experiment-audit + ~5 others) vs. academic-LaTeX/patent toolkit (paper-write with REVIEWER_MODEL=gpt-5.4 TARGET_VENUE=ICLR; proof-checker; specification-writing).
+- Decision: defer wholesale install on scope mismatch. Selective triage of workflow-aligned skills (~5-10 of 78) is its own workstream.
+- Updated `wiki/entities/tools/auto-claude-code-research-in-sleep.md` with `deferred` tag + `phase_0_reaudit` frontmatter field. `briefs/2026-05-10_aris-adoption.md` verdict shifts to "GO — selective adoption deferred".
+
+### Brief restructuring (5 briefs updated)
+- All 5 laptop adoption briefs (claude-mem, revpdf, github-spec-kit, codeboarding, tech-debt-skill, aris) restructured to Phase 0/1/2/3 format with explicit success criteria + bare `**GO**` verdict line.
+- All 5 PASS skill_audit v0.3 at 99.5-100/100. Architecture section + risk_discipline table + phasing all clean.
+
+---
+
+## Done — 2026-05-10 post-K36 (Adala smoke + skill_audit v0.3 + claude-mem install + 3d-wiki sync)
+
+### Adala DeepSeek live smoke test
+- Built `/tmp/adala-smoke/smoke.py` harness using `LiteLLMChatRuntime(model="deepseek/deepseek-chat", base_url="https://api.deepseek.com/v1", api_key=os.environ["DEEPSEEK_API_KEY"])` with Pydantic `AckResponse` response model.
+- Result: **PASS** — `record_to_record()` returned `{'response': 'ack'}` in 1.9 s; verbose litellm logs show 3 hits on `api.deepseek.com`, 0 on `api.openai.com`. base_url override holds in practice.
+- Updated `wiki/entities/tools/adala.md` adoption gate to `[x] VERIFIED 2026-05-10`. Re-SCPed updated `briefs/2026-05-10_adala-prod-adoption.md` to `cemini-prod:/opt/cemini/briefs/`.
+
+### Brief-audit upgrade sprint — step 1 SHIPPED
+- Ported `lishix520/academic-paper-skills` 35-pt / 7-dimension peer-review framework into `scripts/skill_audit.py` v0.3.
+- Added 3 new static checks consuming the 0.10 weight headroom: `check_brief_completeness` (5-item checklist, 0.05), `check_risk_discipline` (table format full credit, bullet-list partial credit, 0.03), `check_phasing` (Phase 1 minimum + success_criteria full credit, 0.02). Max static score now 100/100 (10 checks).
+- Added `_is_adoption_brief()` gate exempting ops/research briefs from new checks.
+- Calibration verified on 7 representative briefs: K36 fresh (picobot 99.5, adala 100) PASS; ops/research (step81-sshd, polymarket-onchain) 82-100 with N/A; older adoption (hftbacktest, guidance-ai, polymarket-stack) 98.0 WARN flagging legitimate gaps (no `**GO**` verdict line, bullet-format risks).
+- Updated `wiki/entities/tools/academic-paper-skills.md` to `maturity: validated` + `adopted_as: scripts/skill_audit.py v0.3`.
+
+### claude-mem laptop install
+- `npx claude-mem install` ran cleanly — v13.0.1 installed at `~/.claude/plugins/marketplaces/thedotmack`, data dir `~/.claude-mem` populated, worker + ChromaDB MCP supervisor processes running.
+- Production defaults verified in `dist/npx-cli/index.js`: `SEMANTIC_INJECT=false` (lazy), `SEMANTIC_INJECT_LIMIT=5`, `CONTEXT_OBSERVATIONS=50`, `SKIP_TOOLS` excludes meta-noise (TodoWrite, Skill, etc).
+- Caveat: Claude Desktop OAuth token stale (`~/.claude-mem/oauth-stale.marker`) — worker functional, re-login refreshes the marker.
+- Updated `wiki/entities/tools/claude-mem.md` to `maturity: validated` + `laptop_install: VERIFIED 2026-05-10 (v13.0.1)`. Updated `briefs/2026-05-10_claude-mem-adoption.md` GO/NO-GO to `GO — INSTALLED 2026-05-10`.
+- Phase 1 3-session smoke test pending 2026-05-11+ at `http://localhost:37702`.
+
+### 3d-printing-wiki librarian sync
+- `rsync -avz "/Users/claudiobarone/Desktop/projects/3d printing/wiki/" cemini-librarian:/opt/cemini-wiki/3d-printing-wiki/wiki/` — 57 files, 169 KB sent (95.95× compression).
+- `kb ingest /opt/cemini-wiki/3d-printing-wiki/wiki` — 46 docs ingested, 2 skipped.
+- All 4 wikis (osint / image-gen / seo-geo / 3d-printing) now queryable via `conductor_query` unified search.
+
+### LESSONS.md addition
+- New 2026-05-10 entry: "Two-layer memory: hot.md is curated state, claude-mem is passive observation" — hierarchy (`ROADMAP.md` > `hot.md` > `claude-mem`), trust rules, top-N cap sanity gate.
+
+---
+
+## Done — 2026-05-10 K36 ingest
+
+### Evaluating Code for Trading Stacks (17-URL three-surface batch)
+- **Source**: `Evaluating Code for Trading Stacks.docx` (75 KB), ingested 2026-05-10 → moved to `cemini-librarian:/opt/cemini-bulk/research/`.
+- **17 wiki pages created**: 1 source (`evaluating-code-for-trading-stacks.md`) + 14 tool entities + 2 concept pages.
+- **Tier rollup**: 4 Adopt (picobot, ctop, QuantMuse, Adala) | 4 Steal-from (mercury-agent, Tmux-Orchestrator, digital-marketing-pro, LLMops) | 1 split (finance-skills: Steal-for-Cemini + Adopt-for-workflow) | 2 Reference/Defer (terax-ai, data-formulator) | 3 Reject (AppFlowy AGPL-3.0, dflash CUDA-only, floci AWS-emulator) | 3 UNAVAILABLE.
+- **Concept patterns extracted**: `concepts/cross-channel-agent-gateway.md` (picobot + mercury-agent → Telegram/Discord/Slack/WhatsApp routing on MCP) + `concepts/declarative-data-labeling-skills.md` (Adala + finance-skills → 5-element skill definition with reflection loop).
+- **Highest-impact Adopt for Cemini prod**: QuantMuse (Python factor analysis + C++17 low-latency core; strip LangChain bloat; CMake/Alpine build). Picobot second-highest (single 9 MB binary retires need for `python-telegram-bot` embedded in orchestrator).
+- **Cross-wiki route**: URL 10 (digital-marketing-pro) → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md` (115 cmds + 67 MCP servers + 5-layer memory + A+→F grading scripts; relevant to local SEO/GEO content authoring workflow).
+- **Phase-0 audit queue**: picobot, QuantMuse, Adala (prod blast radius); ctop + finance-skills laptop-only (verification deferred).
+
+---
+
+## Done — 2026-05-09 Donny ingest + K34 brief GO/NO-GO review
+
+### Donny Market Thoughts ingest
+- **Source**: Donny.PDF (5 pages, multi-topic market research note), ingested 2026-05-09. 7 wiki pages: 1 source (`donny-market-thoughts-2026-05-09.md`), 1 concept (`rare-earth-supply-deficit-thesis.md`), 5 ticker stubs (TEAM, FANG, NET, TOST, REA).
+- **Key thesis**: Heavy rare earth (DyTb) structural supply deficit — China+Myanmar >90% supply, April 2025 export restrictions, humanoid robotics demand driver (~70K tpa REO by 2040). Adamas Intelligence forecasts 100%+ price increases by 2040.
+- PDF moved to `cemini-librarian:/opt/cemini-bulk/research/Donny.PDF`.
+
+### K34 brief adoption verdicts (3 briefs reviewed)
+- `polymarket-onchain-data-pipeline.md` → **GO**. #1 data-infrastructure gap; every downstream workstream blocked on it. Integrates Dubach's polydata.onchain as Layer 1 harvester.
+- `mcp-context-optimization-stack.md` → **GO**. #1 architectural blocker (MCP eager-loading → 30K-75K tokens). 80-95% cost reduction; all MIT/Apache-2.0.
+- `sabr-geometry-aware-calibration.md` → **CONDITIONAL-GO**. Discovery brief: audit Cemini SABR usage first; implement GeoResNN only if SABR is in use.
+
+## Done — 2026-05-06 session
+
+### K31 wrap-up (continued from 2026-05-05)
+- **K31 ttok prod brief shipped** — `2026-05-06_ttok-prod-install.md` (commit `f414000`). Tiny standalone: single Pipfile addition + optional pre-call audit hook in DeepSeek wrapper. skill_audit PASS 100/100.
+- **K31 laptop-side adoptions** (commit `7635a67`) — ttok 0.3 (Apache-2.0) and git-rewind 1.1.4 (MIT per Cargo.toml; CONDITIONAL — no LICENSE artifact) installed under `~/.local/bin/`. rewind configured with Groq + Gemini API keys via `rewind config set`. End-to-end smoke test PASS.
+- **First-ever upstream issues filed** — [Chronos778/git-rewind#1](https://github.com/Chronos778/git-rewind/issues/1) (install.sh checksum-handling bug: 404 .sha256 → "Not Found" parsed as expected hash) + [#2](https://github.com/Chronos778/git-rewind/issues/2) (missing LICENSE file).
+- **K31-eval correction recorded** — rewind isn't Ollama-only; `OPENAI_API_BASE` override supports any OpenAI-compatible endpoint (DeepSeek, Groq, Gemini, OpenAI, Ollama).
+
+### Prod ccd-cli auto-update fix → permanent
+- **Recurrence event** — Desktop-app auto-updated ccd-cli to 2.1.128 at 13:18 UTC, deploying raw 248MB ELF binary at `/root/.claude/remote/ccd-cli/2.1.128` (no wrapper). Crashed every desktop-app session attempt (process.spawn → drainStdin → exit 1).
+- **Wrapper pattern re-applied 13:36 UTC** — same recipe as 2026-05-04 (move binary to `2.1.128.real`, create wrapper exec'ing with `IS_SANDBOX=1`). Restored desktop-app connectivity.
+- **Permanent fix Option A applied** — added `IS_SANDBOX=1` to `/etc/environment`. Verified PAM `pam_env.so` propagates env through fresh SSH login → ccd-cli (raw or wrapped) inherits the var → safety check skips root refusal. Reverted 2.1.128 wrapper to test cleanly; user confirmed via desktop-app session: "i messaged in desktop app to server and it worked." Eliminates per-auto-update wrapper-reapply cycle.
+- **Cleanup** — wrapper artifact `2.1.128.wrapper-saved` removed. ccd-cli dir contains only raw binaries (2.1.111 + 2.1.128). Memory file `prod_ccd_cli_root_fix.md` rewritten to document Option A as the live mechanism.
+
+---
+
+## Done — 2026-05-05 session (the big one)
+
+### Ingests
+- **K30 Polymarket-readiness wave** — 4 Gemini DR docx batches (102 tools) + Deep GraphRAG arXiv 2601.11144 + Murphy RL Overview arXiv 2412.05265v5. 13 wiki pages (6 source + 7 entity stubs) + license-posture 8 → 9 patterns (added ELv2 source-available). 1 prod brief staged: `2026-05-05_polymarket-stack-adoption.md`.
+- **K31 JPM portfolio paper + 5_5 moarrr Gemini DR batch (19 tools)** — 7 wiki pages (2 source + 5 entity stubs: hftbacktest, guidance-ai, letta-memgpt, ttok, git-rewind). License-posture catalog unchanged (9 modes stable). 2 standalone briefs shipped to prod 2026-05-06: `2026-05-06_hftbacktest-adoption.md` + `2026-05-06_guidance-ai-adoption.md` (both PASS skill_audit at 100/100). ttok = no-brief universal install (pending laptop + Cemini-prod Pipfile addition). JPM paper indexed reference-only (off-domain methodology with transfer value).
+- **K33 Polymarket NBA arb paper 2605.00864** — 1 source page: `wiki/sources/polymarket-nba-arbitrage-2605.00864.md` (deep-read, validated). Updated `market-microstructure.md` concept hub + `index.md`. PDF scp'd to librarian. Key finding: combinatorial arb feasible but depth-capped at ~14.8 shares; Middle jackpot never realized.
+
+### Adoption verdicts (3 audits + multiple briefs shipped)
+- **#11 PageIndex Phase 0** → NO-GO. Single-file API + agentic cost + lost graph/metadata. Wrong tool for flat wiki.
+- **#12 pykalshi** → brief shipped. Verified `github.com/ArshKA/pykalshi` MIT, 85★, 30 commits, v1.0.6.
+- **#13 Kalshi llms.txt** → ingested as `wiki/concepts/kalshi-api-reference.md` (33 KB, ~150 endpoints).
+- **#14 FinanceDatabase** → folded into K28 quant-libs brief; new `ticker_universe.py` wrapper section.
+- **#15 Claude-OSINT skill merge** → NO-PORT. Wrong domain (red-team OSINT, not curator workflow). `curator-skills.md` stays empty by design.
+- **#6/#6b autoresearch + XSKILL** → codex-reviewed scope reduction. Phases 1+5 ship as new brief #6c (`2026-05-05_conductor-audit-trail-phase1.md`); Phases 2-6 + XSKILL deferred-with-triggers.
+
+### K30-derived wiki-side workstreams (all 9 closed: #16-#24)
+- `concepts/polymarket-market-making-architectures.md` — 5-posture comparison + 5-layer Cemini reference
+- `concepts/cross-venue-arbitrage-pattern.md` — 6-step arb loop + 6 risk caveats
+- `concepts/prediction-market-historical-analysis.md` — 5-layer historical-data stack
+- `concepts/autoresearch-loop-pattern.md` — extended 4 → 5 instantiations (DW-GRPO added)
+- `concepts/conductor-orchestrator.md` — extended with planned `prediction_market_polymarket` taxonomy class + Conductor-evolution candidates section
+- `concepts/wiki-tooling-evaluation.md` — extended with K28+K30 candidate landscape table
+- `entities/platforms/polymarket.md` — K30 transitive-dependencies table
+- `sources/rl-overview-murphy-2412-05265.md` — chapter-promotion discipline section
+- `concepts/curator-skills.md` — NEW stub accumulator (populates with #15 if/when it activates; currently empty by design)
+
+### Prod briefs scp'd (4 active + 2 deferred-with-triggers re-scp'd with DEFERRED headers)
+- `2026-05-05_polymarket-stack-adoption.md` (NEW K30, 11.2 KB)
+- `2026-05-05_pykalshi-adoption.md` (NEW K30, 10.4 KB)
+- `2026-05-05_conductor-audit-trail-phase1.md` (NEW codex-reviewed subset, 14.4 KB)
+- `2026-05-04_quant-libs-fastmcp-integration.md` (UPDATED with FinanceDatabase, 14.7 KB; was 10.2 KB)
+- `2026-05-04_autoresearch-conductor-evolution.md` (DEFERRED header added; re-scp'd)
+- `2026-05-04_xskill-cross-rollout-critique-conductor.md` (DEFERRED header added; re-scp'd)
+
+### Methodology lessons logged
+- Codex independent review pattern works: dispatch codex/Plan/code-reviewer for any brief with substantial engineering + operational commitments before user GO/NO-GO sign-off.
+- Phase 0 audit pattern shipped 3 clean rejections of credible-looking but wrong-fit tools across K28+K30. Discipline saves estimated 2-4 hours of misaligned implementation per audit.
+- Future Gemini DR sweeps should ask "how many distinct skills" alongside "how many lines" when evaluating skill libraries (eval-quality lesson from Claude-OSINT misframing).
+
+### Total: 21+ commits this session arc (`d74d061..42053ad`)
+
+## Done — 2026-05-04 session
+
+- **K28 5_4 sweep ingest** — 3 sources (4 docx-batches + Gemini Sci Research methodology) + 15 wiki pages + license-posture catalog 5 → 8 patterns
+- **K29 XSKILL ingest** — XSKILL paper (arXiv 2603.12056) + LeetCode off-domain stub. 1 prod brief staged.
+- **codegraph + leaf laptop install** — npm prefix=~/.local; .gitignore patterns added; entity pages validated.
+- **MedSkillAudit veto-gate port** — `scripts/skill_audit.py` v0.1 shipped with 6 static checks + 2 veto gates.
+- **MITRE ATLAS taxonomy synthesis** — `concepts/mitre-atlas-taxonomy.md` covering ATLAS v5.6.0 (16 tactics × 170 techniques × 35 mitigations × 57 case studies). License correction: Apache-2.0 not CC BY 4.0.
+- **SwarmVault Phase 0 NO-GO** — same flat-layout disease as llm-wiki-compiler.
+- **DeepSeek model-IDs refresh** — 5 edits across 3 files; `[NEEDS VERIFICATION 2026-04-28]` → `[VERIFIED 2026-05-04]`.
+- **Prod ccd-cli error-code-1 fix** — IS_SANDBOX=1 wrapper at `/root/.claude/remote/ccd-cli/2.1.121`.
+- **wiki-share zip refresh** — `wiki-share-2026-05-04.zip` (3.2 MB, 591 files, sanitized).
+- **Memory updates** — `prediction_market_scope`, `post_ingest_workflow`, `prod_ccd_cli_root_fix`, `npm_global_prefix`.
+
+## Done — 2026-05-02 session
+
+- **K25 Conductor sweep** — 7 papers ingested. `concepts/conductor-orchestrator.md` synthesis page.
+- **K26 ToolOrchestra deep-read** — 8B orchestrator beats GPT-5 on HLE at 2.5× efficiency.
+- **K27 9-source batch** — ARA paper + 4 pattern adoptions + Conductor v0.1.1 committed (17 files, 2,011 lines) + Phase 4 brief staged.
+- **Cross-doc dedup Pass 3** — 0 new duplicates.
+- **Stale NEEDS-VERIFICATION sweep** — 17 tags resolved across 4 pages.
+- **Conductor in-house decision finalized.**
+- **Stash episodic memory deployed** — alash3al/stash v0.2.9 on librarian.
+
+## Done — 2026-05-01 session
+
+- **Phase 4 — brain → librarian MCP** — Audit trail deployed on cemini-prod. E2E verified.
+- **K19-K24** — SAE / OpenClaw / STOCKBENCH / RSM / Nomotic AI / ParlayMarket deep-reads + concept pages.
+- **Cross-cluster synthesis** — `concepts/agent-authorization-stack.md` + execution-security-architecture brief.
+
+## Done — prior sessions (highlights)
+
+- **Librarian server** — CPX21 provisioned, kb-server on :3838, 397 docs indexed, sync cron active.
+- **Wiki tooling evaluation** — `concepts/wiki-tooling-evaluation.md` + 6 source pages.
+- **Wave 5** — 4 Adopt (polymarket-mcp, claude-obsidian, alash3al/stash, Kronos tokenizer).
+- **K8–K18** — Cemini-internal queue exhausted.
+- **CI/CD** — `lint.yml` + `links.yml` + pre-commit hook.
+
+---
+
+## K295 — open items (2026-10-25)
+
+Inbox wave complete: 79 files, 61 duplicates, 1 eval doc, 8 Phase-0 audits. Log: `wiki/log.md`. Brief: `briefs/2026-10-25_k295-inbox-eval-phase0.md`.
+
+### Decisions the operator owes
+
+1. ~~**`security-audit-skill`: FILE or Integrate?**~~ **RESOLVED 2026-10-25 — Integrate. INSTALLED AND RUN.** Installed globally (`-g -y`). First run was **comuni-atlas**, guidance mode, at commit `ccac569`: no confirmed vulnerabilities, one latent risk (URL scheme not validated in `href`, data currently clean), no CSP. Full six-phase run against **Atto** is still owed — that is the PII-bearing target. Original note follows. Operator ruled Integrate. K262's FILE concern (no unattended Cursor skill copy) is compatible with running it as a tool on request. **Install did not complete**, and **the first run is deferred**: Atlas, Atto's newest repo, is under active development. Auditing a tree mid-rewrite yields findings against code that will not survive. Resume at a stable Atlas checkpoint, against a named commit, not a dirty worktree.
+2. ~~**thinkrail: write the MCP wrapper, or drop it?**~~ **RESOLVED 2026-10-25 — DROPPED.** The two invariants are already in Atto's `.cursor/rules/atto-k*-phase1-wires.mdc` and `AGENTS.md`; a spec-graph is advisory like those rules, not enforcement; and the server does not ship. Recommended alternative if real enforcement is wanted: a pre-commit hook that refuses staged changes to `truth.ged` or `watches.json`. Original note follows. The graph tools are Apache-2.0 and present; `mcp/server.mjs` does not exist and `pi-spec-graph` declares no entrypoint. The payoff is two invariants: Atto cannot write `truth.ged`, GuruWatcher cannot clobber `watches.json`.
+3. **Atlas for Atto: scope the ISTAT gazetteer.** The `?year=&place=` contract is agreed as the pattern. Open: which historical source covers suppressed comuni and pre-unification provinces, and how eras are sliced for lazy-loading (issue #158 lesson).
+
+### Work queued, not started
+
+- **hallmark GO** — install and run `skills/hallmark/scripts/sloplint.mjs` on Atto marketing pages. Note the report's `scripts/sloplint.mjs` path is wrong.
+- **claude-seo GO** — `/seo geo` and `/seo agentic` on Atto and Basgiath pages.
+- **firecrawl gov-index GO** — wire the five-field citation check into `atto-mcp` before any statute is treated as fact.
+- **experiential-labs** — measure hosted SLA under 15-minute polling before routing GuruWatcher through it.
+- **VoiceStudio** — benchmark engine latency on this hardware; keep hosted translation off for family audio.
+- **worktrunk** — no telemetry at all in the report; verify before spending time.
+
+### Ingest debt (pre-existing, not from this wave)
+
+- ~~**Digest fan-out bug.**~~ **FIXED 2026-10-25.** Every cluster in `scripts/daily_research_config.yaml` now carries a `wikis:` field, and `filter_for_wiki()` in `daily_research_digest_run.py` drops any entry that does not name the running domain. An entry with no `wikis` key runs in **osint only**, so a new query must opt in to other domains. Query executions across all eight wikis drop from **176 to 26** (85%). Added three domain queries (`seo-geo-retrieval-paper`, `image-gen-diffusion-paper`, `3d-printing-additive-paper`) so those wikis are not left with an empty paper lane.
+- ~~**Newsletter archive is split.**~~ **FIXED 2026-10-25.** Five Latent Space raws moved from `egress/osint/` to `egress/ccc/`; their source pages repointed. `archive_raw_to_egress.sh` now derives the owning wiki from the source page for `newsletter-rss-*` and `substack-rss-*` raws and refuses a mismatched `--wiki-id` unless `--allow-cross-wiki` is passed.
+- **Six un-paged Latent Space raws remain in `egress/osint/`** (2026-10-20 ×2, 10-22 ×3, 10-23). They have no source page in any wiki, so there is no owner to move them to. Either write the pages or leave them as cold storage.
+- **Wiki lint debt — 0 hard errors (was 2,318).** Four passes on 2026-10-25: reference repair, the fixed backlink fixer, a frontmatter-less exemption, and stub creation for 38 cross-wiki routing targets that were declared at ingest but never written.
+  - `_no_frontmatter()` exempts `sweeps/` and digest pages from the bidirectional check. Symmetry cannot be satisfied against a page with nowhere to record the edge — that was 315 permanent edges.
+  - Seven structural hub-index pages carry `hub: true` (two `meta/` routing and cadence pages, two scope pages, a routing backlog, a prompt addendum, a cross-wiki routing index). The linter already had this exemption; the pages simply never used it.
+  - 32 cross-wiki stubs created for newsletter and paper captures that osint pages pointed at but which were never written. Each is marked `[tentative]` and says plainly that nothing on it is verified.
+  - Three dead references dropped or repaired: a truncated tl;dr sec slug, an `@image-gen-wiki` twin of a page that only exists in osint, and an `@tipdrop-wiki` link to the retired project.
+- **Stale `[NEEDS VERIFICATION]` tags — 648 live, and they are not stale facts.** Investigated 2026-10-25.
+  - **55 tags exempted**: tags inside `log.md` and `sweeps/` record what was open on that day. They cannot go stale, because they are not claims about the present, and re-dating them would falsify the record. `_append_only()` now skips those files.
+  - **4 resolved.** `letta-memgpt` and `guidance-ai` licences confirmed Apache-2.0 and MIT. Pony V7 weights confirmed released (`purplesmartai/pony-v7-base`). The `/opt/cemini/` licence-posture claim retracted — that host was deleted 2026-09-18, so it cannot be re-checked.
+  - **The other 648 are not stale facts.** A random sample shows them to be open questions and untested assumptions: "Phase-0 on local sites not run", "stress testing needed", "no public GitHub/HF at ingest", "24 GB VRAM floor per README", "numbers are the author's own". Very few are facts that changed since they were written.
+  - **Consequence:** the lint's age rule is wrong for this content class. A tag that records an unrun test has no expiry. Verifying them would mean fabricating confirmations.
+  - **DONE 2026-10-25 — the split is in.** `[OPEN QUESTION YYYY-MM-DD]` now marks unresolved work and carries no expiry; `[NEEDS VERIFICATION YYYY-MM-DD]` now means only "a checkable fact nobody has checked". 468 tags migrated, 177 cleared to fact claims, 0 tags lost. The lint reports open questions as an informational count and never gates on them; the gate already skipped `log.md`. Schema documented in `CLAUDE.md` → Claim confidence tags, with the test: if a web search could settle it, it is NEEDS VERIFICATION; if only you can settle it by running a test or building the thing, it is OPEN QUESTION.
+  - **What is left:** 177 fact claims still unchecked, mostly licences, releases and model weights. Those are genuinely resolvable and are the honest remainder.
+- **`wiki_lint.py --fix-bidirectional` is fixed (2026-10-25).** Two defects. It wrote gap keys verbatim, so a key `osint/sources/x.md` landed in an osint page and resolved to `wiki/osint/osint/sources/x.md` — that is what raised dangling links 65 → 974. It now renders `_related_ref()`: bare domain-relative path for a same-domain backlink, `@alias/path` across domains, with `alias_for_domain()` reading the alias from the federation table so `cybersec` maps to `cybersecurity-wiki`. Second, it proposed `sweeps/` targets forever, because those pages carry no frontmatter and can never hold a `related:` block; they are now skipped and reported. It converges: a second run proposes 0. 124 hub targets stay skipped by design.
+- **Daily sweeps 2026-10-21 to 2026-10-25 were committed** with K295. No longer outstanding.

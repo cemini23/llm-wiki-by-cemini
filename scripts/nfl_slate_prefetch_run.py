@@ -321,7 +321,25 @@ def write_prefetch(
         f"Target: briefs/{hub_name}\n",
         encoding="utf-8",
     )
+    rotate_slate_briefs(out_dir)
     return path, True
+
+
+def rotate_slate_briefs(out_dir: Path, keep: int = 3) -> None:
+    """Keep at most `keep` slate-prefetch briefs; move older brief + sidecar to _archive."""
+    briefs = sorted(
+        (p for p in out_dir.glob("*.md")),
+        key=lambda p: p.stat().st_mtime,
+    )
+    if len(briefs) <= keep:
+        return
+    archive = out_dir.parent / "_archive" / "slate-prefetch"
+    archive.mkdir(parents=True, exist_ok=True)
+    for p in briefs[:-keep]:
+        sidecar = out_dir / f".cursor-prompt-{p.stem}.txt"
+        for f in (p, sidecar):
+            if f.exists():
+                f.replace(archive / f.name)
 
 
 def notify_macos(title: str, message: str) -> None:

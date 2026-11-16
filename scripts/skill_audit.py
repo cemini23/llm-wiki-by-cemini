@@ -1195,7 +1195,7 @@ def render_text(report: AuditReport) -> str:
         lines.append("")
     lines.append("CHECKS:")
     for c in report.checks:
-        glyph = {"pass": "✓", "warn": "⚠", "veto": "✖"}[c.severity]
+        glyph = {"pass": "✓", "warn": "⚠", "veto": "✖", "info": "·"}.get(c.severity, "·")
         lines.append(f"  {glyph} [{c.severity.upper():4}] {c.name}: {c.detail}")
         if c.evidence:
             for e in c.evidence[:5]:

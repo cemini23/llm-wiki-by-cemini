@@ -178,9 +178,9 @@ gain. The whole `briefs/` tree is gitignored, so briefs are local-only by design
    - If no page: create a stub (frontmatter + one-line Narrative + Relations). Real content accumulates over subsequent ingests
 7. Update `wiki/<domain>/index.md` — add rows for new pages
 8. Append to `wiki/<domain>/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed
-9. **Archive raw source to egress-fi**: `bash scripts/archive_raw_to_egress.sh --wiki-id <domain> "research to be indexed/<domain>/<filename>"` — update source page `Location` to `cemini-egress-fi:/opt/cemini-bulk/research/<domain>/<filename>`. **`<domain>` is the wiki-id, not always osint.** The old form hardcoded `--wiki-id osint`, which after the federation merge would archive a ccc or gambling source into the osint cold-store folder. Script removes the local copy on success; pass `--keep-local` to retain it.
+9. **Archive raw source to egress-fi**: `bash scripts/archive_raw_to_egress.sh --wiki-id <domain> "research to be indexed/<domain>/<filename>"` — update source page `Location` to `cemini-egress-fi:/opt/cemini-bulk/research/<domain>/<filename>`. **`<domain>` is the wiki-id, not always osint.** The old form hardcoded `--wiki-id osint`, which after the federation merge would archive a ccc or gambling source into the osint cold-store folder. Script removes the local copy on success; pass `--keep-local` to retain it. If `cemini-egress-fi` is unreachable, the script queues the raw to `research to be indexed/_pending_egress_sync/<domain>/`, prints `QUEUED_FOR_EGRESS_SYNC`, and exits 0. Set `Location` to the queued path until the replay succeeds.
 10. Run lint + **`python3 scripts/ingest_session_gate.py`** + commit + push (wiki only)
-11. **Update ROADMAP.md + stage briefs in `briefs/` per `post_ingest_workflow` memory rule.** This is the immediately-next step after commit-and-push. Without it, ingest research dies in the wiki.
+11. **Wiki-only by default (brief policy).** Stage no brief and write no `ROADMAP.md` block. At most **2 sources per 20-link batch** may stage a brief, and only if the source solves an active blocker in the 120-line `ROADMAP.md`. When a project's state changes, **overwrite its single block in place** — never append a dated block. This keeps `ROADMAP.md` under 120 lines permanently. `briefs/` holds at most 3 active briefs per project.
 12. A single ingest must touch 3-15 pages. If it touches 0 new pages, ask whether the source is worth ingesting
 
 ### Query (answering a question)
@@ -321,7 +321,7 @@ Tier 2 is user-gated-commit; do NOT silently auto-run.
 ### 2. Inbox check
 
 ```bash
-find "research to be indexed" -mindepth 2 -maxdepth 2 -type f -not -path '*/.*' -not -path '*/_*' 2>/dev/null
+find "research to be indexed" -mindepth 1 -maxdepth 2 -type f -not -path '*/.*' -not -path '*/_*' 2>/dev/null
 ```
 
 The inbox is namespaced by domain (`research to be indexed/<domain>/`) after the federation

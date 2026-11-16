@@ -34,8 +34,8 @@ Read `@.cursor/rules/osint-ingest-gates.mdc` first — human gates are non-negot
 5. **`wiki/index.md`** + **`wiki/log.md`** append
 6. **`python3 scripts/wiki_lint.py`** — fix orphans, bidirectional gaps, dangling links
 7. **`python3 scripts/ingest_session_gate.py`** — mechanical pre-commit check
-8. **`bash scripts/archive_raw_to_egress.sh --wiki-id osint "<file>"`** — scp raw to egress-fi; rm local on success
-9. **`ROADMAP.md`** + stage briefs per `scripts/active_project_brief_targets.yaml` (not default cemini-prod)
+8. **`bash scripts/archive_raw_to_egress.sh --wiki-id <domain> "<file>"`** — scp raw to egress-fi; rm local on success. If egress-fi is unreachable it queues to `research to be indexed/_pending_egress_sync/<domain>/` and exits 0 with `QUEUED_FOR_EGRESS_SYNC`.
+9. **Wiki-only by default.** Stage no brief and write no `ROADMAP.md` block. At most 2 sources per 20-link batch may stage a brief, and only if it solves an active blocker in the 120-line `ROADMAP.md`. When ROADMAP changes, overwrite the project's single block in place.
 10. **`python3 scripts/skill_audit.py briefs/<file>.md`** before any prod scp
 
 ## A — Daily sweep ingest
@@ -85,8 +85,8 @@ Ingest selected rows from wiki/sweeps/YYYY-MM-DD-daily.md:
 - [ ] index.md + log.md updated
 - [ ] wiki_lint clean
 - [ ] ingest_session_gate.py
-- [ ] archive_raw_to_egress.sh (wiki-id) + Location field on source page
-- [ ] ROADMAP + briefs staged (route per `scripts/active_project_brief_targets.yaml`)
+- [ ] archive_raw_to_egress.sh (wiki-id) + Location field on source page (or QUEUED_FOR_EGRESS_SYNC)
+- [ ] Wiki-only by default; briefs only for an active ROADMAP blocker (max 2 per 20 links); ROADMAP edited in place
 - [ ] skill_audit on prod briefs (only xsp-killer + pm-kalshi-bot → cemini-prod by default)
 
 ## E — Active-project brief routing (2026-10-05)
@@ -94,6 +94,8 @@ Ingest selected rows from wiki/sweeps/YYYY-MM-DD-daily.md:
 Read `scripts/active_project_brief_targets.yaml` + `@concepts/active-project-research-routing.md` **before** staging briefs.
 
 **Priority:** **#1 Atto** · **#2 GuruWatcher + Basgiath** · **#3 CeminiDFS** · **#4 CeminiParlays** · everything else behind (route when source matches).
+
+**Cap:** max 3 active briefs per project across all destinations. Wiki-only is the default; a brief needs an active blocker listed in `ROADMAP.md`. Current stack lives in `ROADMAP.md`, not here.
 
 | Project | Brief home | Prod `scp`? |
 |---------|------------|-------------|
