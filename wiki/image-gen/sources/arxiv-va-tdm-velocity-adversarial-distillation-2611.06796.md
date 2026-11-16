@@ -67,4 +67,4 @@ VA-TDM then runs both forms along the student trajectory, with a shared auxiliar
 
 ## Dead Ends
 
-- **Checking the weights.** No Hugging Face or GitHub release was verified. Code is cited as `Luo-Yihong/VA-TDM` [NEEDS VERIFICATION 2026-11-16].
+- **Checking the weights.** `[CONFIRMED 2026-11-16]` Training code is public at `https://github.com/Luo-Yihong/VA-TDM`, released November 2026, which supersedes the earlier "no GitHub release" note; no Hugging Face checkpoint was found. [Source: https://github.com/Luo-Yihong/VA-TDM (retrieved 2026-11-16)]

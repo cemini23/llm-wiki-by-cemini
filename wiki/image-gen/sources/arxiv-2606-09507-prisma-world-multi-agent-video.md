@@ -67,4 +67,4 @@ Persona relevance: research path toward **multi-camera synthetic scenes** (same 
 
 ## Dead Ends
 
-UE5-synthetic training — open-domain human persona transfer unverified. Weights/code `[NEEDS VERIFICATION 2026-11-16]`. Gaming-scene bias (compare Solaris/MultiWorld Minecraft limits).
+UE5-synthetic training — open-domain human persona transfer unverified. Weights/code `[CONFIRMED 2026-11-16]` not released: the project page serves demos and a BibTeX entry only, with no repository or checkpoint link. [Source: https://huiqiang-sun.github.io/prisma-world/ (retrieved 2026-11-16)] Gaming-scene bias (compare Solaris/MultiWorld Minecraft limits).

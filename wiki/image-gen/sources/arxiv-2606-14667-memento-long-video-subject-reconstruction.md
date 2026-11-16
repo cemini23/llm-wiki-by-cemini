@@ -53,7 +53,7 @@ updated: 2026-06-24
 | LongLive-RAG | Latent retrieval against window drift |
 | **Memento** | Explicit subject reconstruction loss + disentangled queries |
 
-**Release:** No public GitHub/HF at ingest `[NEEDS VERIFICATION 2026-11-16]`.
+**Release:** `[CONFIRMED 2026-11-16]` the project page `https://ernie-research.github.io/Memento/` advertises full code and demo videos; no standalone `github.com` repository was located, so code may ship from the project page or the ERNIE-Research org. [Source: https://ernie-research.github.io/Memento/ (retrieved 2026-11-16)]
 
 ### Workspace relevance
 
