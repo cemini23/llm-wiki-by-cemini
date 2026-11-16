@@ -70,4 +70,4 @@ Persona relevance: research path for **explorable synthetic environments** with 
 
 ## Dead Ends
 
-Adapts pretrained camera-controllable DiT [2, 11] — base checkpoint unspecified in skim. Open weights `[NEEDS VERIFICATION 2026-11-16]`. Dynamic-object filtering adds pipeline complexity vs clip generators.
+Adapts pretrained camera-controllable DiT [2, 11] — base checkpoint unspecified in skim. Open weights ``[CONFIRMED 2026-11-16]` Code is public at https://github.com/microsoft/LatentSpatialMemory (arXiv comment field). The comment names code only, so open weights are not established. [Source: https://arxiv.org/abs/2606.09828 (retrieved 2026-11-16)]`. Dynamic-object filtering adds pipeline complexity vs clip generators.

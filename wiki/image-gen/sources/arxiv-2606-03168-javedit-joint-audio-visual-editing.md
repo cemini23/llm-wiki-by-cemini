@@ -51,7 +51,7 @@ First large-scale **instruction-guided joint audio-visual editing** benchmark + 
 
 ### Workspace relevance
 
-Direct upgrade path for **persona post-edit** — change outfit/background/dialogue in one pass vs Fish-Speech + LatentSync + FFmpeg cascade (@concepts/persona-audio-stack.md). Extends OmniCustom customization tier (@concepts/sync-audio-video-customization.md) with **natural-language instructions**. Watch LTX-2.3 VRAM + license for NSFW persona ops `[NEEDS VERIFICATION 2026-11-16]`.
+Direct upgrade path for **persona post-edit** — change outfit/background/dialogue in one pass vs Fish-Speech + LatentSync + FFmpeg cascade (@concepts/persona-audio-stack.md). Extends OmniCustom customization tier (@concepts/sync-audio-video-customization.md) with **natural-language instructions**. Watch LTX-2.3 VRAM + license for NSFW persona ops ``[CONFIRMED 2026-11-16]` Code is public at https://github.com/RyanChenYN/JAVEdit (arXiv comment field). [Source: https://arxiv.org/abs/2606.03168 (retrieved 2026-11-16)]`.
 
 ## Snippets
 

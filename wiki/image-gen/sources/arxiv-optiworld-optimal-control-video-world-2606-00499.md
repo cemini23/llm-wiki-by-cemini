@@ -55,4 +55,4 @@ Complements **Proprio** (post-hoc physics scoring/refinement) and **YoCausal** (
 
 ## Dead Ends
 
-None — local stack fit depends on released code and which 3D-aware video backbones are supported `[NEEDS VERIFICATION 2026-11-16]`.
+None — local stack fit depends on released code and which 3D-aware video backbones are supported ``[CONFIRMED 2026-11-16]` the arXiv record lists no code, only a project page at https://yuyuanspace.com/OptiWorld/. [Source: https://arxiv.org/abs/2606.00499 (retrieved 2026-11-16)]`.

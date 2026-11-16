@@ -62,7 +62,7 @@ updated: 2026-06-26
 
 ### Workspace relevance
 
-Fills gap vs **single-turn** @entities/adapters/flux-kontext.md in persona img2img loops (@concepts/two-pass-generation-workflow.md). Build-track blocked by **40GB+ VRAM** and Wan finetune cost — watch weights release `[NEEDS VERIFICATION 2026-11-16]`.
+Fills gap vs **single-turn** @entities/adapters/flux-kontext.md in persona img2img loops (@concepts/two-pass-generation-workflow.md). Build-track blocked by **40GB+ VRAM** and Wan finetune cost — watch weights release ``[CONFIRMED 2026-11-16]` Code is public at https://github.com/xuhang07/AnchorEdit (arXiv comment field); weights are not stated there, and the 40GB+ VRAM requirement is unchanged. [Source: https://arxiv.org/abs/2606.11751 (retrieved 2026-11-16)]`.
 
 ## Snippets
 
