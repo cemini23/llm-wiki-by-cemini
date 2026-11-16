@@ -8,7 +8,7 @@ History before 2026-11-16 is in `docs/archive/ROADMAP_ARCHIVE_2026-11-16.md`.
 ## 1. Standing invariants and anti-bloat rules
 
 - **Overwrite in place.** Never append a new dated state block. Edit the project's single block.
-- **Max 3 active briefs per project.** Ingest is wiki-only by default (CLAUDE.md Step 12).
+- **Uncapped discovery, one queue file per project.** Any number of `Integrate`/`Extract` winners per batch. Never a per-URL brief; append to `briefs/<project>-upgrade-queue.md`, ranked by ROI.
 - **Harness is frozen during link evaluations.** No harness edits while an eval batch runs.
 - **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
 - **Priority stack:** #1 Atto · Collectibles · Game-Time (co-equal). #2 CeminiDFS · CeminiParlays. #3 GuruWatcher · Basgiath.

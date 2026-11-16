@@ -35,7 +35,11 @@ Read `@.cursor/rules/osint-ingest-gates.mdc` first — human gates are non-negot
 6. **`python3 scripts/wiki_lint.py`** — fix orphans, bidirectional gaps, dangling links
 7. **`python3 scripts/ingest_session_gate.py`** — mechanical pre-commit check
 8. **`bash scripts/archive_raw_to_egress.sh --wiki-id <domain> "<file>"`** — scp raw to egress-fi; rm local on success. If egress-fi is unreachable it queues to `research to be indexed/_pending_egress_sync/<domain>/` and exits 0 with `QUEUED_FOR_EGRESS_SYNC`.
-9. **Wiki-only by default.** Stage no brief and write no `ROADMAP.md` block. At most 2 sources per 20-link batch may stage a brief, and only if it solves an active blocker in the 120-line `ROADMAP.md`. When ROADMAP changes, overwrite the project's single block in place.
+9. **Uncapped discovery, one queue file per project.** Any number of `Integrate`/`Extract` winners per batch, 1 or 10, no cap. Never a per-URL file in `briefs/`. Append to `briefs/<project>-upgrade-queue.md`, ranked by ROI, linking each `wiki/<domain>/sources/<slug>.md`. When ROADMAP changes, overwrite the project's single block in place.
+
+   **One command replaces steps 5–8:** after the markdown pages exist, run
+   `python3 scripts/wiki_finalize_batch.py --domain <domain> --summary "<batch>" [--archive-raw <file> ...]`.
+   It does the `index.md` row, the `log.md` entry, symmetric `related[]` backlinks, the egress archive, and both gates.
 10. **`python3 scripts/skill_audit.py briefs/<file>.md`** before any prod scp
 
 ## A — Daily sweep ingest
@@ -95,7 +99,7 @@ Read `scripts/active_project_brief_targets.yaml` + `@concepts/active-project-res
 
 **Priority:** **#1 Atto** · **#2 GuruWatcher + Basgiath** · **#3 CeminiDFS** · **#4 CeminiParlays** · everything else behind (route when source matches).
 
-**Cap:** max 3 active briefs per project across all destinations. Wiki-only is the default; a brief needs an active blocker listed in `ROADMAP.md`. Current stack lives in `ROADMAP.md`, not here.
+**Cap:** none on discovery. One living `briefs/<project>-upgrade-queue.md` per project, ranked by ROI — never a per-URL brief. Current stack lives in `ROADMAP.md`, not here.
 
 | Project | Brief home | Prod `scp`? |
 |---------|------------|-------------|
