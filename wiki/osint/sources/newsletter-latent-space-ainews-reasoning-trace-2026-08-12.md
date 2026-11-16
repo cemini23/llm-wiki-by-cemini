@@ -20,7 +20,7 @@ read_status: read
 - @concepts/llm-routing-deepseek-openrouter-failover.md — provider-proxy relevance
 - @concepts/agent-skill-rl-extraction.md — skill-compilation paragraph connects to SKILLER/K233
 - @concepts/ai-industry-trends-2026.md
-- @cybersecurity-wiki/briefs/2026-08-12_k233-reasoning-trace-exfil.md (cross-wiki brief)
+- `cybersecurity-wiki/briefs/2026-08-12_k233-reasoning-trace-exfil.md` (archived brief) (cross-wiki brief)
 
 ## Raw Concept
 

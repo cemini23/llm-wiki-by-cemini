@@ -15,7 +15,7 @@ clusters: [k201-ingest, cybersec]
 ---
 
 ## Relations
-- @cybersecurity-wiki/briefs/2026-07-28_k201-seceng-aws-keys-public-repo.md  (cross-wiki brief)
+- `cybersecurity-wiki/briefs/2026-07-28_k201-seceng-aws-keys-public-repo.md` (archived brief)  (cross-wiki brief)
 
 - @concepts/credential-leak-revoke-first-response.md
 - @concepts/code-as-agent-harness.md — agent/CI secret hygiene adjacency

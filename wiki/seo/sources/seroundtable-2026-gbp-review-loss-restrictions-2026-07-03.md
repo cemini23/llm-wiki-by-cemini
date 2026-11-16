@@ -54,7 +54,7 @@ Two July 3 GBP review incidents matter for operators:
 - Do not assume every review drop is a policy violation; July 2026 has a reported bug/investigation path.
 - Capture screenshots/export counts weekly so review loss can be documented.
 - If fake-review attacks precede review disappearance, record dates, examples, and forum/support case IDs.
-- If a restriction notice cites incentivized reviews, stop all review campaigns immediately and audit vendors against @briefs/2026-07-01_k135-review-compliance-vendor-audit-hands-on.md.
+- If a restriction notice cites incentivized reviews, stop all review campaigns immediately and audit vendors against `briefs/2026-07-01_k135-review-compliance-vendor-audit-hands-on.md.` (archived brief)
 - Repeated violations can lengthen restriction windows; first-party rule remains no incentives for reviews, edits, or negative-review removal.
 
 Hands-on: `briefs/2026-07-03_k137-gbp-review-loss-restriction-response-hands-on.md`.

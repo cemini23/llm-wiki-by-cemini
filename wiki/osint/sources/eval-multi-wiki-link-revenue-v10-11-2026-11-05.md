@@ -4,7 +4,6 @@ type: source
 tags: [source, eval, tool-evaluation, revenue-lens]
 keywords: [runtime v10.11, phase-0, deja-vu, ontographia, pagesift, helix-foundry]
 related:
-  - entities/tools/deja-vu.md
   - entities/tools/ontographia.md
   - entities/tools/pagesift.md
   - entities/tools/helix-foundry.md

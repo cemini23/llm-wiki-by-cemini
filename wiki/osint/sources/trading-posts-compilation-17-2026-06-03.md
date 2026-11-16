@@ -32,7 +32,7 @@ clusters: [agent-harness, polymarket-quant, seo-funnel]
 - @sources/trading-posts-compilation-12-2026-06-01.md — prior batch (different sha256)
 - @sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md — Post 17 ≈ same FIFA shock article (K94 deep-read)
 - @entities/tools/world-cup-bot.md — Module 8 implements shock path (not Dome)
-- @ccc-wiki/briefs/2026-06-03_k97-ccc-agent-harness-from-osint.md — harness cluster handoff
+- `ccc-wiki/briefs/2026-06-03_k97-ccc-agent-harness-from-osint.md` (archived brief) — harness cluster handoff
 - @seo-wiki/concepts/x-account-voice-and-format.md — K97 style pass
 
 ## Raw Concept

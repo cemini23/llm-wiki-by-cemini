@@ -21,8 +21,8 @@ clusters: [tool-evaluation]
 ---
 
 ## Relations
-- @ccc-wiki/briefs/2026-05-23_k60-ai-engineering-roadmap-from-osint.md  (cross-wiki brief)
-- @cybersecurity-wiki/briefs/2026-05-23_k60-cybersec-tool-eval-from-osint.md  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-05-23_k60-ai-engineering-roadmap-from-osint.md` (archived brief)  (cross-wiki brief)
+- `cybersecurity-wiki/briefs/2026-05-23_k60-cybersec-tool-eval-from-osint.md` (archived brief)  (cross-wiki brief)
 
 - @entities/tools/kaligpt.md — URL 1; eval Adopt **downgraded** (custom non-commercial license, not MIT)
 - @entities/tools/trademaster.md — URL 4 Steal-from (Apache-2.0 verified)

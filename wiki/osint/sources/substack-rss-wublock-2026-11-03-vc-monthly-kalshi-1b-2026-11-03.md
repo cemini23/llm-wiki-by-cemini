@@ -3,7 +3,6 @@ title: "WuBlockchain VC monthly — October 2026: 67 deals, $2.099bn, Kalshi at 
 type: source
 tags: [source, newsletter, crypto, venture, kalshi, funding]
 related:
-  - sources/substack-rss-event-horizon-2026-11-02-episode-39-election-markets-with-sam-henry-lazar.md
 maturity: draft
 read_status: read
 created: 2026-11-03

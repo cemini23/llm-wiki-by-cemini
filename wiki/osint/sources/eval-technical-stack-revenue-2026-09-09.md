@@ -14,8 +14,8 @@ read_status: read
 ---
 
 ## Relations
-- @3d-printing-wiki/briefs/2026-09-09_k258-text-to-cad-pascal-editor.md  (cross-wiki brief)
-- @game-dev-wiki/briefs/2026-09-09_k258-modern-cpp-context.md  (cross-wiki brief)
+- `3d-printing-wiki/briefs/2026-09-09_k258-text-to-cad-pascal-editor.md` (archived brief)  (cross-wiki brief)
+- `game-dev-wiki/briefs/2026-09-09_k258-modern-cpp-context.md` (archived brief)  (cross-wiki brief)
 
 - @concepts/k258-eval-github-wave.md
 - @concepts/k258-cybersec-wave.md

@@ -18,7 +18,6 @@ related:
   - concepts/retail-pm-edge-myth-debunk.md
   - concepts/market-informedness-market-making.md
   - sources/trading-posts-compilation-8-2026-06-09.md
-  - "@gambling-wiki/briefs/2026-06-09_k108-gambling-wc-retail-hygiene-from-osint.md"
 maturity: draft
 created: 2026-05-22
 updated: 2026-06-09
@@ -34,7 +33,7 @@ clusters: [polymarket, risk]
 - @entities/tools/polymarket-clob-api.md — `py-clob-client-v2` reference client
 - @concepts/polymarket-three-quadrant-blacklist-microtrend.md — complementary bot-side subtractive filters
 - @sources/trading-posts-compilation-8-2026-06-09.md — K108 Post 0 (@GodEyeDotFun WC 2026 ten mistakes)
-- @gambling-wiki/briefs/2026-06-09_k108-gambling-wc-retail-hygiene-from-osint.md — operator checklist handoff
+- `gambling-wiki/briefs/2026-06-09_k108-gambling-wc-retail-hygiene-from-osint.md` (archived brief) — operator checklist handoff
 
 ## Raw Concept
 

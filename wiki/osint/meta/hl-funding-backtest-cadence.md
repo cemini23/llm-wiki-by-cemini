@@ -44,5 +44,5 @@ Or ask the agent: **“run quarterly HL funding backtest”**.
 ## References
 
 - @entities/tools/hl-funding-sniper.md
-- @briefs/2026-05-27_k72-local-adoption.md (gitignored; laptop)
+- `briefs/2026-05-27_k72-local-adoption.md` (archived brief) (gitignored; laptop)
 - Report: `.local/tools/hl-funding-sniper-reference/data/reports/backtest_report.html`

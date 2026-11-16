@@ -20,14 +20,14 @@ updated: 2026-05-27
 
 - @sources/x-kirillk-kimi-agent-swarm-guide-2026-05-24.md — K65 ingest ( @kirillk_web3 )
 - @sources/trading-posts-compilation-20-2026-05-27.md — K69 Post 7 brick-and-mortar landing-page batch
-- @seo-wiki/briefs/2026-05-27_k69-local-business-website-gap-kimi-from-osint.md
+- `seo-wiki/briefs/2026-05-27_k69-local-business-website-gap-kimi-from-osint.md` (archived brief)
 - @entities/models/kimi-k2-6.md — coordinator LLM
 - @concepts/kimi-agent-swarm-vs-claude-agent-teams.md — comparison vs Anthropic Agent Teams
 - @concepts/llm-agent-systems.md — multi-agent systems hub
 - @concepts/agent-cost-routing-model-orchestra.md — same K2.6 vendor / cost-routing family
 - @ccc-wiki/entities/tools/kimi-agent-swarm.md — CCC routing entity
 - @sources/trading-posts-compilation-20-2026-05-27.md — K69 Post 7
-- @seo-wiki/briefs/2026-05-27_k69-local-business-website-gap-kimi-from-osint.md
+- `seo-wiki/briefs/2026-05-27_k69-local-business-website-gap-kimi-from-osint.md` (archived brief)
 
 ## Raw Concept
 

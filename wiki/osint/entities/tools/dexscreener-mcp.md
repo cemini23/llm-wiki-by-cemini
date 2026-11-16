@@ -6,7 +6,6 @@ keywords: [dexscreener, mcp-server, claude-desktop, node-js, pre-trade-diligence
 related:
   - sources/trading-posts-compilation-6-2026-06-08.md
   - concepts/hermes-onchain-forensics-pipeline.md
-  - "@ccc-wiki/briefs/2026-06-08_k106-ccc-dexscreener-mcp-from-osint.md"
   - "@ccc-wiki/entities/tools/dexscreener-mcp.md"
   - "@ccc-wiki/concepts/mcp-pre-trade-diligence-boundary.md"
 maturity: draft
@@ -18,7 +17,7 @@ updated: 2026-06-08
 
 - @sources/trading-posts-compilation-6-2026-06-08.md — @AlphaCartell Post 5 (K106)
 - @concepts/hermes-onchain-forensics-pipeline.md — K78 Hermes skill bundle also uses DexScreener (different stack: agent runtime + x402)
-- @ccc-wiki/briefs/2026-06-08_k106-ccc-dexscreener-mcp-from-osint.md — setup handoff
+- `ccc-wiki/briefs/2026-06-08_k106-ccc-dexscreener-mcp-from-osint.md` (archived brief) — setup handoff
 
 ## Raw Concept
 

@@ -25,7 +25,7 @@ updated: 2026-05-26
 - @concepts/llm-agent-systems.md — parent corpus for agent coordination patterns
 - @concepts/scatter-gather-topology.md — Cemini's bounded parallel pattern (contrast to 300-agent fan-out)
 - @concepts/conductor-orchestrator.md — prod routing layer; not replaced by Kimi Swarm
-- @ccc-wiki/briefs/2026-05-24_k65-kimi-agent-swarm-vs-claude-teams.md — CCC-facing orchestration brief
+- `ccc-wiki/briefs/2026-05-24_k65-kimi-agent-swarm-vs-claude-teams.md` (archived brief) — CCC-facing orchestration brief
 - @ccc-wiki/concepts/kimi-agent-swarm-vs-claude-agent-teams.md — CCC synthesis (orchestration fit)
 
 ## Raw Concept

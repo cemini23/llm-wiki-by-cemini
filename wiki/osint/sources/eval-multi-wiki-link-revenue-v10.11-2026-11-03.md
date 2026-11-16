@@ -4,12 +4,6 @@ type: source
 tags: [source, eval, tool-evaluation, revenue-lens]
 keywords: [multi-wiki link evaluation, runtime v10.11, phase-0, game-time, agent-desktop, theatre, desloppify]
 related:
-  - entities/tools/agent-desktop.md
-  - entities/tools/theatre.md
-  - entities/tools/svgjs.md
-  - entities/tools/desloppify.md
-  - entities/tools/scenario-labs-skills.md
-  - entities/tools/webmcp.md
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md
   - sources/arxiv-v10-11-skipped-no-lane-2026-11-03.md
   - sources/eval-multi-wiki-repository-revenue-2026-11-04.md

@@ -25,9 +25,9 @@ read_status: read
 ---
 
 ## Relations
-- @image-gen-wiki/briefs/2026-08-11_k231-infographic-svg.md  (cross-wiki brief)
-- @cybersecurity-wiki/briefs/2026-08-11_k231-llmvault-quickemu-codex-router.md  (cross-wiki brief)
-- @ccc-wiki/briefs/2026-08-11_k231-smart-ralph-muse-glimmer.md  (cross-wiki brief)
+- `image-gen-wiki/briefs/2026-08-11_k231-infographic-svg.md` (archived brief)  (cross-wiki brief)
+- `cybersecurity-wiki/briefs/2026-08-11_k231-llmvault-quickemu-codex-router.md` (archived brief)  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-08-11_k231-smart-ralph-muse-glimmer.md` (archived brief)  (cross-wiki brief)
 
 - @entities/tools/infographic.md — GO Integrate (Atto SVG lineage)
 - @entities/tools/smart-ralph.md — GO Integrate (CCC SDD loop)

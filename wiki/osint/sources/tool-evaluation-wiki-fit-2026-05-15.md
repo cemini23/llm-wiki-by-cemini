@@ -20,10 +20,10 @@ clusters: [eval, multi-wiki-routing, k47]
 ---
 
 ## Relations
-- @cybersecurity-wiki/briefs/2026-05-15_osint-tool-eval-routing-2026-05-15.md  (cross-wiki brief)
-- @seo-wiki/briefs/2026-05-15_osint-tool-eval-routing-2026-05-15.md  (cross-wiki brief)
-- @image-gen-wiki/briefs/2026-05-15_osint-tool-eval-routing-2026-05-15.md  (cross-wiki brief)
-- @ccc-wiki/briefs/2026-05-15_osint-tool-eval-routing-2026-05-15.md  (cross-wiki brief)
+- `cybersecurity-wiki/briefs/2026-05-15_osint-tool-eval-routing-2026-05-15.md` (archived brief)  (cross-wiki brief)
+- `seo-wiki/briefs/2026-05-15_osint-tool-eval-routing-2026-05-15.md` (archived brief)  (cross-wiki brief)
+- `image-gen-wiki/briefs/2026-05-15_osint-tool-eval-routing-2026-05-15.md` (archived brief)  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-05-15_osint-tool-eval-routing-2026-05-15.md` (archived brief)  (cross-wiki brief)
 
 - @concepts/ip-sale-readiness.md — the report applies the IP-sale license gate (AGPL / non-commercial / no-license = reject)
 - @concepts/multi-wiki-eval-doc-level-vs-phase-0.md — doc-level eval only; all Adopt verdicts still require a Phase-0 source audit before real adoption

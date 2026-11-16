@@ -25,7 +25,7 @@ clusters: [k202-ingest]
 
 ## Relations
 
-- @cybersecurity-wiki/briefs/2026-07-28_k202-flaresolverr-undetected.md — cross-wiki brief
+- `cybersecurity-wiki/briefs/2026-07-28_k202-flaresolverr-undetected.md` (archived brief) — cross-wiki brief
 - @sources/eval-github-revenue-journalism-geo-2026-07-28.md — same-day journalism/geo batch
 - @sources/eval-ui-repositories-revenue-plan-2026-07-28.md — same-day UI batch
 - @concepts/wiki-tooling-evaluation.md

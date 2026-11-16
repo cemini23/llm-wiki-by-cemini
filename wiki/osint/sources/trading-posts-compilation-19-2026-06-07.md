@@ -13,7 +13,6 @@ related:
   - entities/tools/pyth-terminal.md
   - entities/people/rohonchain.md
   - sources/trading-posts-compilation-6-2026-06-08.md
-  - "@ccc-wiki/briefs/2026-06-07_k103-ccc-agent-harness-from-osint.md"
   - "@ccc-wiki/sources/trading-posts-compilation-19-2026-06-07.md"
   - "@seo-wiki/concepts/x-account-voice-and-format.md"
 maturity: draft
@@ -29,7 +28,7 @@ clusters: [polymarket-quant, agent-harness, seo-funnel]
 - @concepts/pyth-pro-saas-build-patterns.md — Post 2 (@smaaaliy)
 - @concepts/retail-pm-edge-myth-debunk.md — Post 3 (@zeuuss_01)
 - @entities/tools/pyth-terminal.md — Pyth Pro / MCP anchor
-- @ccc-wiki/briefs/2026-06-07_k103-ccc-agent-harness-from-osint.md — harness cluster handoff
+- `ccc-wiki/briefs/2026-06-07_k103-ccc-agent-harness-from-osint.md` (archived brief) — harness cluster handoff
 - @seo-wiki/concepts/x-account-voice-and-format.md — K103 style pass
 
 ## Raw Concept

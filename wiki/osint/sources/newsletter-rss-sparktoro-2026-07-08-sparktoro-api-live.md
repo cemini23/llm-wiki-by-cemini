@@ -12,7 +12,7 @@ updated: 2026-07-08
 ---
 
 ## Relations
-- @seo-wiki/briefs/2026-07-08_2026-07-08_sparktoro-api-audience-infrastructure-eval.md  (cross-wiki brief)
+- `seo-wiki/briefs/2026-07-08_2026-07-08_sparktoro-api-audience-infrastructure-eval.md` (archived brief)  (cross-wiki brief)
 
 - @sources/newsletter-rss-sparktoro-2026-06-29-new-research-from-similarweb-how-ai-brand-mentio.md — prior SparkToro RSS ingest
 

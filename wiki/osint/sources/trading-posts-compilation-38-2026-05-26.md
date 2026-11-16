@@ -41,7 +41,7 @@ clusters: [trading-posts, polymarket, discretionary-crypto, quant-validation]
 ## Relations
 
 - @sources/trading-posts-compilation-25-2026-05-27.md — successor Posts.docx batch (K72, 25 posts)
-- @ccc-wiki/briefs/2026-05-26_k67-claude-obsidian-workflows-from-osint.md  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-05-26_k67-claude-obsidian-workflows-from-osint.md` (archived brief)  (cross-wiki brief)
 - @ccc-wiki/concepts/claude-premortem-skill.md
 - @ccc-wiki/concepts/obsidian-agent-maintenance-workflow.md
 - @ccc-wiki/concepts/obsidian-trading-journal-workflow.md

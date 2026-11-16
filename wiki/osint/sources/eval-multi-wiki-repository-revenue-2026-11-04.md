@@ -6,11 +6,6 @@ keywords: [repository revenue evaluation, runtime v10.11, phase-0, helix-foundry
 related:
   - entities/tools/helix-foundry.md
   - entities/tools/worldmonitor.md
-  - entities/tools/doop.md
-  - entities/tools/soup.md
-  - entities/tools/worktrunk.md
-  - entities/tools/scenario-labs-skills.md
-  - entities/tools/unslop.md
   - sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md
   - sources/eval-multi-wiki-link-revenue-v10-11-2026-11-05.md
 maturity: draft

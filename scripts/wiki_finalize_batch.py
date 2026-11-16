@@ -289,7 +289,7 @@ def main() -> int:
     if args.skip_gates or args.dry_run:
         print("gates: skipped")
         return 0
-    lint = run([sys.executable, "scripts/wiki_lint.py", "--domain", args.domain])
+    lint = run([sys.executable, "scripts/wiki_lint.py"])
     gate = run([sys.executable, "scripts/ingest_session_gate.py"])
     if lint != 0 or gate != 0:
         print("gates failed", file=sys.stderr)

@@ -37,9 +37,9 @@ clusters: [tool-evaluation]
 - @concepts/polymarket-weather-trading-strategy.md — URLs 19–20, 23 + Tsukamg weather corrections
 - @entities/tools/freqtrade.md — URL 30 GPL reaffirm
 - @sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md — prior v4 20-URL batch (K60)
-- @ccc-wiki/briefs/2026-05-24_k63-ccc-cursor-agent-tooling-from-osint.md
-- @cybersecurity-wiki/briefs/2026-05-24_k63-cybersec-nidhogg-from-osint.md
-- @seo-wiki/briefs/2026-05-24_k63-weather-icons-ui-from-osint.md
+- `ccc-wiki/briefs/2026-05-24_k63-ccc-cursor-agent-tooling-from-osint.md` (archived brief)
+- `cybersecurity-wiki/briefs/2026-05-24_k63-cybersec-nidhogg-from-osint.md` (archived brief)
+- `seo-wiki/briefs/2026-05-24_k63-weather-icons-ui-from-osint.md` (archived brief)
 
 ## Raw Concept
 

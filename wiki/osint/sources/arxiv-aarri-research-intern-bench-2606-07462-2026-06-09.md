@@ -9,7 +9,6 @@ related:
   - sources/arxiv-agents-last-exam-2606.05405-2026-06-06.md
   - sources/agentic-harness-engineering.md
   - sources/trading-posts-compilation-7-2026-06-09.md
-  - "@ccc-wiki/briefs/2026-06-09_k107-ccc-dynamic-workflows-skills-from-osint.md"
 maturity: draft
 read_status: read
 created: 2026-06-09

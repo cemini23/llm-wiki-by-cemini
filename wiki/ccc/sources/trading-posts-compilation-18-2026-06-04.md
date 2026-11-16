@@ -14,7 +14,6 @@ related:
   - entities/tools/lazy-tool.md
   - sources/k67-explorax-100-repos-reference.md
   - "@osint-wiki/sources/trading-posts-compilation-18-2026-06-04.md"
-  - "@ccc-wiki/briefs/2026-06-04_k98-ccc-agent-org-chart-mcp-from-osint.md"
   - concepts/subagent-orchestration.md
 maturity: draft
 read_status: skimmed

@@ -13,7 +13,6 @@ related:
   - "@osint-wiki/concepts/seclaw-agent-security-evaluation.md"
   - "@cybersecurity-wiki/concepts/seclaw-agent-security-evaluation.md"
   - "@cybersecurity-wiki/entities/tools/seclaw-eval.md"
-  - "@cybersecurity-wiki/briefs/2026-06-04_cybersecurity-handoff-defenseclaw-seclaw.md"
   - sources/trading-posts-compilation-18-2026-06-04.md
   - concepts/cross-wiki-tool-adoption-routing.md
   - concepts/failed-trajectory-harness-repair.md

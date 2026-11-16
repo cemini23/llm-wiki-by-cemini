@@ -104,7 +104,7 @@ Perplexity cited **most** (90k+ rows) and **widest domain set** (16k domains) wi
 
 ### Minimal operator audit
 
-1. Run 5 unbranded local prompts per engine (see @briefs/2026-06-19_k123-ranqo-geo-visibility-baseline-hands-on.md).
+1. Run 5 unbranded local prompts per engine (see `briefs/2026-06-19_k123-ranqo-geo-visibility-baseline-hands-on.md` (archived brief)).
 2. **List every cited URL** — classify: owned / Wikipedia / GBP/Yelp / directory / local news / other.
 3. Compute **owned share** = owned citations ÷ total URL citations.
 4. Gap-fill top missing third-party classes (not spam directories).

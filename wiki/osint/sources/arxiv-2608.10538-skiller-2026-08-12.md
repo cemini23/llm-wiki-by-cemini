@@ -18,7 +18,7 @@ read_status: skimmed
 - @entities/tools/skiller.md — Phase-0 NO-GO clone (NOASSERTION SPDX), research-reference only
 - @concepts/agent-skill-rl-extraction.md
 - @concepts/cemini-license-posture.md
-- @ccc-wiki/briefs/2026-08-12_k233-skiller-rollout-scheduling.md (cross-wiki brief)
+- `ccc-wiki/briefs/2026-08-12_k233-skiller-rollout-scheduling.md` (archived brief) (cross-wiki brief)
 
 ## Raw Concept
 

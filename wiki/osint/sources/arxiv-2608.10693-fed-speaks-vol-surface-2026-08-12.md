@@ -17,7 +17,7 @@ read_status: skimmed
 
 - @concepts/fomc-iv-surface-dynamics.md
 - @concepts/xsp-lane-trading-framework.md
-- @briefs/xsp-k233-fed-speaks-vol-surface.md
+- `briefs/xsp-k233-fed-speaks-vol-surface.md` (archived brief)
 
 ## Raw Concept
 

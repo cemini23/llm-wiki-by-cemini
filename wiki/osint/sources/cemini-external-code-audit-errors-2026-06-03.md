@@ -18,7 +18,7 @@ updated: 2026-06-03
 
 - @concepts/ems-execution-security-gaps.md — synthesized failure catalog + fixes
 - @concepts/production-trading-blind-spots.md — parent blind-spot taxonomy
-- @briefs/2026-06-03_cemini-external-audit-remediation-cemini-prod.md — prod handoff (gitignored briefs/)
+- `briefs/2026-06-03_cemini-external-audit-remediation-cemini-prod.md` (archived brief) — prod handoff (gitignored briefs/)
 
 ## Raw Concept
 

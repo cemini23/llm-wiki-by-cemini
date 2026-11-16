@@ -7,7 +7,6 @@ related:
   - sources/multi-wiki-tool-eval-v5-k113-2026-06-12.md
   - concepts/tool-evaluation-framework.md
   - "@ccc-wiki/entities/tools/ai-research-skills.md"
-  - "@cybersecurity-wiki/briefs/2026-06-12_k113-cybersec-ai-research-skills-from-osint.md"
   - "@cybersecurity-wiki/entities/tools/ai-research-skills.md"
 maturity: draft
 created: 2026-06-12
@@ -18,7 +17,7 @@ license_verified: MIT
 ## Relations
 
 - @sources/multi-wiki-tool-eval-v5-k113-2026-06-12.md — K113 Adopt
-- @cybersecurity-wiki/briefs/2026-06-12_k113-cybersec-ai-research-skills-from-osint.md — ML security skills subset
+- `cybersecurity-wiki/briefs/2026-06-12_k113-cybersec-ai-research-skills-from-osint.md` (archived brief) — ML security skills subset
 - @cybersecurity-wiki/entities/tools/ai-research-skills.md — cybersec cherry-pick entity
 - @ccc-wiki/entities/tools/ai-research-skills.md — CCC install notes
 

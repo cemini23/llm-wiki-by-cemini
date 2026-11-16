@@ -69,7 +69,7 @@ For a barbershop, the practical **KB** is not a database file — it is the **co
 2. **GBP-first update order** — change listing, then website, then directories (wiki hands-on rule).
 3. **Treat contradictions as bugs** — if Yelp shows old hours and GBP shows new, AI may blend wrong facts (@sources/davidson-2026-factual-gv-gap.md).
 4. **Schema = typed relations** — KARLA uses relation triggers; `openingHours`, `priceRange`, `hasOfferCatalog` map facts to queryable relations.
-5. **Verify AI answers against KB** — @concepts/citation-verification-aeo.md after @briefs/2026-06-28_k132-canonical-fact-sync-audit-hands-on.md.
+5. **Verify AI answers against KB** — @concepts/citation-verification-aeo.md after `briefs/2026-06-28_k132-canonical-fact-sync-audit-hands-on.md.` (archived brief)
 
 ### vs K130 citation sourcing
 

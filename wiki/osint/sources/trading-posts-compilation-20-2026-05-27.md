@@ -43,9 +43,9 @@ clusters: [trading-posts, polymarket, prediction-markets, geo-aeo, claude-workfl
 - @entities/tools/hermes-agent.md — Post 11 (@NainsiDwiv50980 persistent memory / self-improving agent)
 - @entities/platforms/polymarket.md — platform context for Posts 5, 10, 14
 - @concepts/polymarket-bot-architecture.md — execution stack for microstructure posts
-- @seo-wiki/briefs/2026-05-27_k69-local-business-website-gap-kimi-from-osint.md
-- @seo-wiki/briefs/2026-05-27_k69-obsidian-offline-geo-coherence-from-osint.md
-- @ccc-wiki/briefs/2026-05-27_k69-claude-obsidian-llm-workflows-from-osint.md
+- `seo-wiki/briefs/2026-05-27_k69-local-business-website-gap-kimi-from-osint.md` (archived brief)
+- `seo-wiki/briefs/2026-05-27_k69-obsidian-offline-geo-coherence-from-osint.md` (archived brief)
+- `ccc-wiki/briefs/2026-05-27_k69-claude-obsidian-llm-workflows-from-osint.md` (archived brief)
 
 ## Raw Concept
 

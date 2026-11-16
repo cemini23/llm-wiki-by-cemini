@@ -2922,7 +2922,7 @@ updated: 2026-07-29
 - **Source** — @sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md (Tencent hierarchical path-KV; AUTHTRACE 63.2%)
 - **Entity** — @entities/tools/wikikv.md (REFERENCE — no OSS)
 - **Updated** — @concepts/wiki-tooling-evaluation.md (K121 candidate row), @meta/librarian-decommission-2026-06-14.md
-- **Prod brief** — @seo-wiki/briefs/2026-06-17_k121-wikikv-hierarchical-wiki-storage-cemini-prod.md → scp prod
+- **Prod brief** — `seo-wiki/briefs/2026-06-17_k121-wikikv-hierarchical-wiki-storage-cemini-prod.md` (archived brief) → scp prod
 
 ## [2026-06-17] ingest | K120 daily digest — 2 arXiv full ingest
 

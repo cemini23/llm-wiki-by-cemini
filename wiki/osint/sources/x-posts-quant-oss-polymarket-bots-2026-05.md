@@ -38,7 +38,7 @@ clusters: [quant-finance]
 - @entities/tools/arcticdb.md — Post 1's tick-store repo (Man Group), an adoption candidate for the Cemini market-dataset layer
 - @entities/tools/prediction-market-analysis.md — the repo Post 4 advertised; verified 2026-05-18 (real + MIT, but the post misrepresents its contents)
 - @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — K64; Hermes use-case catalog (Post 2) extends Post 5 path
-- @seo-wiki/briefs/2026-05-18_ugc-3-platform-monetization-loop.md — Post 3 (@timbidefi UGC creator monetization) routed to seo-wiki as a brief; off-topic for OSINT
+- `seo-wiki/briefs/2026-05-18_ugc-3-platform-monetization-loop.md` (archived brief) — Post 3 (@timbidefi UGC creator monetization) routed to seo-wiki as a brief; off-topic for OSINT
 
 ## Raw Concept
 
@@ -64,7 +64,7 @@ Claims to have analyzed 1,000 profitable bots on short crypto Up/Down markets an
 
 ### Post 3 — @timbidefi: "Most UGC Creators are wrong. The 3-Platform \$17,000/month loop"
 
-A UGC-creator monetization workflow: reverse-engineer viral TikTok hooks with Claude, build a visual identity from Pinterest references, generate faceless videos with Higgsfield, distribute on TikTok + Instagram + (the under-served) Pinterest, and sell 3-platform retainers instead of per-video. **Off-topic for OSINT/financial research** — creator marketing / social-media operations. Routed to **seo-wiki** as a brief — @seo-wiki/briefs/2026-05-18_ugc-3-platform-monetization-loop.md — and not given an OSINT wiki page. See cross-wiki routing note in `## Snippets`.
+A UGC-creator monetization workflow: reverse-engineer viral TikTok hooks with Claude, build a visual identity from Pinterest references, generate faceless videos with Higgsfield, distribute on TikTok + Instagram + (the under-served) Pinterest, and sell 3-platform retainers instead of per-video. **Off-topic for OSINT/financial research** — creator marketing / social-media operations. Routed to **seo-wiki** as a brief — `seo-wiki/briefs/2026-05-18_ugc-3-platform-monetization-loop.md` (archived brief) — and not given an OSINT wiki page. See cross-wiki routing note in `## Snippets`.
 
 ### Post 4 — @ridark_eth: "How To Trade Cross-Market Statistical Arbitrage On Prediction Markets"
 

@@ -7,8 +7,6 @@ related:
   - entities/tools/liquidai-d1-2b.md
   - entities/tools/jeveryword.md
   - entities/tools/agentdiscoverability-track.md
-  - entities/tools/design-log-methodology.md
-  - entities/tools/open-ontologies.md
   - entities/tools/pageindex.md
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md

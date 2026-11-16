@@ -67,7 +67,6 @@ related:
   - concepts/etclovg-harness-layers.md
   - "@cybersecurity-wiki/concepts/mcp-security-posture.md"
   - "@cybersecurity-wiki/sources/arxiv-prompt-injection-persistence-2606.04425-2026-06-05.md"
-  - "@cybersecurity-wiki/briefs/2026-05-31_ccc-handoff-k100-spi-skill-vetting-checklist.md"
   - entities/skills/cursor-audit.md
   - entities/skills/super-audit.md
   - entities/skills/free-audit.md

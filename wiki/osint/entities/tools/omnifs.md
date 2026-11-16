@@ -9,7 +9,6 @@ related:
   - concepts/cemini-repository-topology.md
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/omnifs.md
-  - "@ccc-wiki/briefs/2026-06-09_k108-ccc-hive-ship-omnifs-from-osint.md"
   - "@ccc-wiki/entities/tools/omnifs.md"
   - "@ccc-wiki/concepts/the-hive-loop-routines-pattern.md"
   - "@ccc-wiki/concepts/ship-subagent-writer-reviewer-tester.md"
@@ -23,7 +22,7 @@ updated: 2026-06-09
 - @sources/trading-posts-compilation-8-2026-06-09.md — K108 Post 1 (@raulvk)
 - @concepts/claude-code-skills-md-workflow.md — complementary agent substrate (skills vs path namespace)
 - @concepts/wiki-tooling-evaluation.md — Phase-0 registry
-- @ccc-wiki/briefs/2026-06-09_k108-ccc-hive-ship-omnifs-from-osint.md — setup handoff
+- `ccc-wiki/briefs/2026-06-09_k108-ccc-hive-ship-omnifs-from-osint.md` (archived brief) — setup handoff
 
 ## Raw Concept
 

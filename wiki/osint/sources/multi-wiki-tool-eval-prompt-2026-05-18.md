@@ -25,10 +25,10 @@ clusters: [tool-evaluation]
 - @entities/tools/mlfinlab.md — Reject (license unverified), Cemini-financial primary (Hudson & Thames ML-finance toolbox)
 - @concepts/cemini-license-posture.md — the IP-sale copyleft / no-license posture this eval enforces
 - @sources/multi-wiki-tool-eval-ipsale-risk-2026-05-17.md — immediately-prior multi-wiki tool-eval batch (K50, 56 repos); this is the successor batch
-- @cybersecurity-wiki/briefs/2026-05-18_multi-wiki-tool-eval-k51-cybersec.md — cross-routed brief: 14 cybersec-primary tools
-- @ccc-wiki/briefs/2026-05-18_multi-wiki-tool-eval-k51-ccc.md — cross-routed brief: 10 CCC-primary tools
-- @image-gen-wiki/briefs/2026-05-18_multi-wiki-tool-eval-k51-imagegen.md — cross-routed brief: 2 image-gen-primary items
-- @seo-wiki/briefs/2026-05-18_multi-wiki-tool-eval-k51-seo.md — cross-routed brief: 2 SEO-primary items
+- `cybersecurity-wiki/briefs/2026-05-18_multi-wiki-tool-eval-k51-cybersec.md` (archived brief) — cross-routed brief: 14 cybersec-primary tools
+- `ccc-wiki/briefs/2026-05-18_multi-wiki-tool-eval-k51-ccc.md` (archived brief) — cross-routed brief: 10 CCC-primary tools
+- `image-gen-wiki/briefs/2026-05-18_multi-wiki-tool-eval-k51-imagegen.md` (archived brief) — cross-routed brief: 2 image-gen-primary items
+- `seo-wiki/briefs/2026-05-18_multi-wiki-tool-eval-k51-seo.md` (archived brief) — cross-routed brief: 2 SEO-primary items
 
 ## Raw Concept
 

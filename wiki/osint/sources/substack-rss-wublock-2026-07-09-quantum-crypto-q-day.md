@@ -13,7 +13,7 @@ updated: 2026-07-09
 
 ## Relations
 
-- @cybersecurity-wiki/briefs/2026-07-09_2026-07-09_q-day-quantum-crypto-migration-context.md  (cross-wiki brief)
+- `cybersecurity-wiki/briefs/2026-07-09_2026-07-09_q-day-quantum-crypto-migration-context.md` (archived brief)  (cross-wiki brief)
 
 
 ## Raw Concept

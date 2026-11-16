@@ -14,7 +14,7 @@ updated: 2026-07-09
 ---
 
 ## Relations
-- @ccc-wiki/briefs/2026-07-09_2026-07-09_pragmatic-engineer-bun-fable-pulse.md  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-07-09_2026-07-09_pragmatic-engineer-bun-fable-pulse.md` (archived brief)  (cross-wiki brief)
 
 - @sources/newsletter-rss-pragmatic-engineer-2026-07-08-the-pragmatic-engineer-ama.md — prior PE AMA
 - @sources/newsletter-rss-latent-space-2026-07-09-grok-45-cursor.md — Grok 4.5 same week

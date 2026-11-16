@@ -76,7 +76,7 @@ CoreCivic facility page customer base `[CONFIRMED]`:
 
 - Grantee `UNITED STATES` (Mar–Jul 2026): **no index hits**
 - Grantor `CORRECTIONS CORP`: only **1990s** land-stack DEEDs (Eloy/Florence assembly) — not 2026 sale signals
-- Prod timer: `cemini-ice-recorder-watch.timer` (4h) — @briefs/2026-07-02_ice-turnkey-recorder-watch-24x7-cemini-prod.md
+- Prod timer: `cemini-ice-recorder-watch.timer` (4h) — `briefs/2026-07-02_ice-turnkey-recorder-watch-24x7-cemini-prod.md` (archived brief)
 
 ### Turnkey thesis posture
 

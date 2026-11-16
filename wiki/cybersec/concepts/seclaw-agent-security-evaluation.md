@@ -17,7 +17,6 @@ related:
   - concepts/agent-execution-provenance.md
   - "@osint-wiki/concepts/seclaw-agent-security-evaluation.md"
   - "@ccc-wiki/concepts/seclaw-agent-security-evaluation.md"
-  - "@ccc-wiki/briefs/2026-06-04_cybersecurity-handoff-defenseclaw-seclaw.md"
   - sources/arxiv-2606-10749-toward-secure-llm-agents-survey.md
   - sources/arxiv-2606-13757-sevra-bench-social-engineering-review-agents.md
   - concepts/llm-code-review-agent-security.md

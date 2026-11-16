@@ -9,7 +9,6 @@ related:
   - sources/tradingagents.md
   - concepts/algorithmic-stopping-conditions.md
   - concepts/conductor-orchestrator.md
-  - "@ccc-wiki/briefs/2026-06-04_k98-ccc-agent-org-chart-mcp-from-osint.md"
 maturity: draft
 created: 2026-06-04
 updated: 2026-06-09

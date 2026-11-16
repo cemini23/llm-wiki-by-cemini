@@ -29,10 +29,10 @@ clusters: [tool-evaluation]
 - @entities/tools/arcticdb.md — URL 16, eval Reject on BSL **superseded** by the K52 license verification (BSL Additional Use Grant permits Cemini use)
 - @concepts/cemini-license-posture.md — this eval is a fresh case of the "don't trust retrieval-gap no-license rejects" lesson
 - @concepts/cross-venue-arbitrage-pattern.md — URL 1 (poly-arbitrage-bot) is a concrete implementation of this pattern
-- @ccc-wiki/briefs/2026-05-18_k53-tool-eval-ccc-items.md — cross-routed CCC items (cc-wf-studio, picoclaw, git-truck, hermes-desktop, ai-engineer-roadmap)
-- @cybersecurity-wiki/briefs/2026-05-18_k53-tool-eval-cybersec-items.md — cross-routed Cybersec items (grex, vanguard, netviz, iOS pentest list)
-- @seo-wiki/briefs/2026-05-18_k53-tool-eval-seo-items.md — cross-routed SEO items (colorion, snippeteditor, svgrepo)
-- @image-gen-wiki/briefs/2026-05-18_k53-tool-eval-imagegen-items.md — cross-routed Image-gen item (awesome-nano-banana-pro-prompts)
+- `ccc-wiki/briefs/2026-05-18_k53-tool-eval-ccc-items.md` (archived brief) — cross-routed CCC items (cc-wf-studio, picoclaw, git-truck, hermes-desktop, ai-engineer-roadmap)
+- `cybersecurity-wiki/briefs/2026-05-18_k53-tool-eval-cybersec-items.md` (archived brief) — cross-routed Cybersec items (grex, vanguard, netviz, iOS pentest list)
+- `seo-wiki/briefs/2026-05-18_k53-tool-eval-seo-items.md` (archived brief) — cross-routed SEO items (colorion, snippeteditor, svgrepo)
+- `image-gen-wiki/briefs/2026-05-18_k53-tool-eval-imagegen-items.md` (archived brief) — cross-routed Image-gen item (awesome-nano-banana-pro-prompts)
 - @sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md — K60 successor v4 20-URL batch; same license-layer failure modes
 
 ## Raw Concept

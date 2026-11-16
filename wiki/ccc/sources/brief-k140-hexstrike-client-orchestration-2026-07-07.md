@@ -15,7 +15,7 @@ updated: 2026-07-07
 ## Relations
 
 - @concepts/client-as-first-order-harness-factor.md
-- @briefs/2026-07-07_ccc-handoff-hexstrike-client-orchestration-ingest.md
+- `briefs/2026-07-07_ccc-handoff-hexstrike-client-orchestration-ingest.md` (archived brief)
 
 ## Raw Concept
 

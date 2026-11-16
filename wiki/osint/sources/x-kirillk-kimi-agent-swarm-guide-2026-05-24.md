@@ -10,7 +10,6 @@ related:
   - concepts/agent-cost-routing-model-orchestra.md
   - concepts/llm-agent-systems.md
   - entities/people/kirillk-web3.md
-  - "@ccc-wiki/briefs/2026-05-24_k65-kimi-agent-swarm-vs-claude-teams.md"
 maturity: validated
 read_status: deep-read
 created: 2026-05-24
@@ -26,7 +25,7 @@ clusters: [llm-agents]
 - @concepts/agent-cost-routing-model-orchestra.md — same vendor/model family (Moonshot / K2.6)
 - @concepts/llm-agent-systems.md — multi-agent coordination corpus
 - @entities/people/kirillk-web3.md — author / curator (promotional)
-- @ccc-wiki/briefs/2026-05-24_k65-kimi-agent-swarm-vs-claude-teams.md — primary consumer wiki (orchestration fit)
+- `ccc-wiki/briefs/2026-05-24_k65-kimi-agent-swarm-vs-claude-teams.md` (archived brief) — primary consumer wiki (orchestration fit)
 
 ## Raw Concept
 

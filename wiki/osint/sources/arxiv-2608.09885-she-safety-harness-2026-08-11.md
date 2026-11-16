@@ -13,7 +13,7 @@ read_status: skimmed
 ---
 
 ## Relations
-- @ccc-wiki/briefs/2026-08-11_2026-08-11_k232-she-harness-wave.md  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-08-11_2026-08-11_k232-she-harness-wave.md` (archived brief)  (cross-wiki brief)
 
 - @entities/tools/she-safety-harness.md
 - @concepts/ralph-autonomous-agent-pattern.md

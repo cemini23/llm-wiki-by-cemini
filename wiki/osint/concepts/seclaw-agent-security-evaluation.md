@@ -7,14 +7,12 @@ related:
   - sources/arxiv-seclaw-spec-driven-agent-security-2606-02302-2026-06-04.md
   - concepts/ems-execution-security-gaps.md
   - concepts/cli-anything-agent-native-computer-use.md
-  - "@cybersecurity-wiki/briefs/2026-06-04_k98-seclaw-agent-eval-from-osint.md"
   - "@cybersecurity-wiki/sources/arxiv-2606-02302-seclaw-spec-driven-agent-security.md"
   - "@cybersecurity-wiki/entities/tools/seclaw-eval.md"
   - "@cybersecurity-wiki/concepts/seclaw-agent-security-evaluation.md"
   - concepts/context-fractured-decomposition-attacks.md
   - sources/arxiv-context-fractured-decomposition-cfd-2606.09084-2026-06-12.md
   - "@cybersecurity-wiki/entities/tools/defenseclaw.md"
-  - "@cybersecurity-wiki/briefs/2026-06-04_cybersecurity-handoff-defenseclaw-seclaw.md"
 maturity: draft
 created: 2026-06-04
 updated: 2026-06-04

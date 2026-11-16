@@ -7,7 +7,6 @@ related:
   - entities/tools/lexifina-global-law.md
   - entities/tools/karpathy-autoresearch.md
   - entities/tools/quants-md.md
-  - entities/tools/zero-breach-toolkit.md
   - entities/tools/parallel-ai.md
   - concepts/autoresearch-loop-pattern.md
   - concepts/historical-jurisdiction-atlas.md

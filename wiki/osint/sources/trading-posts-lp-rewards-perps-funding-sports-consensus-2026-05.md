@@ -33,7 +33,7 @@ clusters: [quant-finance, polymarket]
 ---
 
 ## Relations
-- @seo-wiki/briefs/2026-05-20_2026-05-20_k55-shopify-with-claude-5-methods.md  (cross-wiki brief)
+- `seo-wiki/briefs/2026-05-20_2026-05-20_k55-shopify-with-claude-5-methods.md` (archived brief)  (cross-wiki brief)
 
 - @concepts/polymarket-lp-rewards-farming.md — synthesized from Post 2 (@MatiasScalbi LP-rewards + $POLY airdrop thesis)
 - @concepts/perps-dex-funding-carry-strategy.md — synthesized from Post 1 (@morpphhhaw market-neutral funding-carry bot)

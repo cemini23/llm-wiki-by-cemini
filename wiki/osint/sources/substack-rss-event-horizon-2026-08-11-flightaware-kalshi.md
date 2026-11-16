@@ -16,7 +16,7 @@ read_status: read
 ---
 
 ## Relations
-- @gambling-wiki/briefs/2026-08-11_k231-flightaware-kalshi.md  (cross-wiki brief)
+- `gambling-wiki/briefs/2026-08-11_k231-flightaware-kalshi.md` (archived brief)  (cross-wiki brief)
 
 - @entities/platforms/kalshi.md
 - @entities/platforms/polymarket.md

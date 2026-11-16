@@ -18,7 +18,7 @@ read_status: skimmed
 - @concepts/agent-safety-executable-evaluation.md
 - @concepts/recognition-execution-gap.md
 - @cybersecurity-wiki/concepts/local-abliterated-llm-pentest-stack.md
-- @cybersecurity-wiki/briefs/2026-08-12_k233-redagentbench-crosslingual-safety.md (cross-wiki brief)
+- `cybersecurity-wiki/briefs/2026-08-12_k233-redagentbench-crosslingual-safety.md` (archived brief) (cross-wiki brief)
 
 ## Raw Concept
 

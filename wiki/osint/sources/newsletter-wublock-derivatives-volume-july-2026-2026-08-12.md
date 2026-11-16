@@ -16,7 +16,7 @@ read_status: read
 ## Relations
 
 - @concepts/crypto-derivatives-volume-2026.md
-- @briefs/xsp-k233-wublock-derivatives-volume.md
+- `briefs/xsp-k233-wublock-derivatives-volume.md` (archived brief)
 - @sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md — Q2 Vol/PoR + OI/PoR quality overlay (wiki-only leftover)
 
 ## Raw Concept

@@ -16,7 +16,7 @@ read_status: skimmed
 
 - @entities/tools/skilllens.md
 - @concepts/gui-procedural-memory.md
-- @ccc-wiki/briefs/2026-08-12_k233-skiller-rollout-scheduling.md (cross-wiki brief — skill representation family)
+- `ccc-wiki/briefs/2026-08-12_k233-skiller-rollout-scheduling.md` (archived brief) (cross-wiki brief — skill representation family)
 
 ## Raw Concept
 

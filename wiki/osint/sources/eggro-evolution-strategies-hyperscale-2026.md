@@ -16,7 +16,7 @@ clusters: [rl-marl, ml-methods]
 ---
 
 ## Relations
-- @ccc-wiki/briefs/2026-05-15_2026-05-15_eggro-evolution-strategies-llm-fine-tuning.md  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-05-15_2026-05-15_eggro-evolution-strategies-llm-fine-tuning.md` (archived brief)  (cross-wiki brief)
 
 - @sources/matching-accuracy-different-geometry-es-grpo.md — companion paper comparing ES vs GRPO training geometry; EGGROLL provides the scalable ES implementation
 - @sources/sakana-conductor-rl-orchestration.md — Conductor uses GRPO; EGGROLL offers an ES alternative for non-differentiable reward functions

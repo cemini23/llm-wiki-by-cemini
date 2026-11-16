@@ -10,7 +10,7 @@ maturity: validated
 read_status: deep-read
 created: 2026-06-12
 updated: 2026-06-12
-cross-wiki-source: "@osint-wiki/briefs/2026-06-12_k112-cybersec-google-ai-api-fuzzing-from-osint.md"
+cross-wiki-source: "`osint-wiki/briefs/2026-06-12_k112-cybersec-google-ai-api-fuzzing-from-osint.md` (archived brief)"
 ---
 
 ## Relations
@@ -31,4 +31,4 @@ Offensive API recon methodology REFERENCE from X long-form. Bounty totals need v
 
 ## Sources
 
-- @osint-wiki/briefs/2026-06-12_k112-cybersec-google-ai-api-fuzzing-from-osint.md
+- `osint-wiki/briefs/2026-06-12_k112-cybersec-google-ai-api-fuzzing-from-osint.md` (archived brief)

@@ -12,7 +12,7 @@ read_status: read
 ---
 
 ## Relations
-- @image-gen-wiki/briefs/2026-09-09_k258-ls-image-notes.md  (cross-wiki brief)
+- `image-gen-wiki/briefs/2026-09-09_k258-ls-image-notes.md` (archived brief)  (cross-wiki brief)
 
 - @concepts/k258-ccc-models-wave.md
 

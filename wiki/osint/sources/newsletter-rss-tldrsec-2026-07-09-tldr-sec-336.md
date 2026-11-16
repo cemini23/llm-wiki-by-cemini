@@ -12,7 +12,7 @@ updated: 2026-07-09
 ---
 
 ## Relations
-- @cybersecurity-wiki/briefs/2026-07-09_2026-07-09_tldrsec-336-autonomous-hunting-guarddog.md  (cross-wiki brief)
+- `cybersecurity-wiki/briefs/2026-07-09_2026-07-09_tldrsec-336-autonomous-hunting-guarddog.md` (archived brief)  (cross-wiki brief)
 
 - @sources/newsletter-rss-tldrsec-2026-07-02-tldr-sec-335---prompt-injection-as-role-confusio.md — prior issue
 

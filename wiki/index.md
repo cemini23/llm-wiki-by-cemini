@@ -2,14 +2,6 @@
 title: Federation wiki — catalog index
 type: concept
 related:
-  - osint/index.md
-  - ccc/index.md
-  - cybersec/index.md
-  - seo/index.md
-  - image-gen/index.md
-  - gambling/index.md
-  - game-dev/index.md
-  - 3d-printing/index.md
 updated: 2026-11-14
 ---
 

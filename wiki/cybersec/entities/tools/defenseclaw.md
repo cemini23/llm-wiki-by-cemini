@@ -25,7 +25,6 @@ related:
   - sources/arxiv-2606-02822-owasp-llm-defense-attribution.md
   - "@ccc-wiki/entities/tools/defenseclaw.md"
   - concepts/mcp-security-posture.md
-  - "@ccc-wiki/briefs/2026-06-04_cybersecurity-handoff-defenseclaw-seclaw.md"
   - sources/arxiv-attested-tool-server-admission-2605.24248-2026-06-05.md
   - sources/arxiv-mcp-description-code-inconsistency-2606.04769-2026-06-05.md
   - sources/arxiv-2606-06387-webmcp-tool-surface-poisoning.md

@@ -11,7 +11,6 @@ related:
   - entities/tools/hermes-agent.md
   - "@seo-wiki/concepts/x-account-voice-and-format.md"
   - "@ccc-wiki/sources/trading-posts-compilation-12-2026-06-01.md"
-  - "@ccc-wiki/briefs/2026-06-01_k92-ccc-agent-harness-from-osint.md"
   - "@ccc-wiki/concepts/harness-layer-competition-cursor-claude-perplexity.md"
   - "@ccc-wiki/concepts/deepseek-coding-cost-routing.md"
   - "@ccc-wiki/concepts/agentic-pm-review-artifacts.md"
@@ -29,7 +28,7 @@ clusters: [macro, agent-harness, seo-funnel]
 ---
 
 ## Relations
-- @ccc-wiki/briefs/2026-06-01_k92-ccc-agent-harness-from-osint.md
+- `ccc-wiki/briefs/2026-06-01_k92-ccc-agent-harness-from-osint.md` (archived brief)
 
 - @sources/trading-posts-compilation-16-2026-05-31.md — prior batch (different sha256)
 - @seo-wiki/concepts/x-account-voice-and-format.md — K92 style pass

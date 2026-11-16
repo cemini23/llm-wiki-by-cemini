@@ -12,7 +12,6 @@ related:
   - concepts/agent-team-five-gate-decision-memo.md
   - concepts/polymarket-weather-trading-strategy.md
   - sources/arxiv-aarri-research-intern-bench-2606-07462-2026-06-09.md
-  - "@ccc-wiki/briefs/2026-06-09_k107-ccc-dynamic-workflows-skills-from-osint.md"
   - "@seo-wiki/concepts/x-account-voice-and-format.md"
 maturity: draft
 read_status: read

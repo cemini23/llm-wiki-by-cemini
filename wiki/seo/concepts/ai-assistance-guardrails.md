@@ -4,7 +4,6 @@ type: concept
 tags: [ai-assistance, claude, creator-economy, policy-compliance]
 keywords: [ai guardrails, claude usage, content safety, detection avoidance]
 related:
-  - briefs/2026-05-08_ai-content-workflow.md
   - concepts/creator-content-strategy.md
   - concepts/creator-marketing-foundations.md
   - entities/platforms/onlyfans.md
@@ -24,7 +23,7 @@ updated: 2026-10-01
 
 ## Relations
 
-- @briefs/2026-05-08_ai-content-workflow.md
+- `briefs/2026-05-08_ai-content-workflow.md` (archived brief)
 - @concepts/creator-content-strategy.md
 - @concepts/creator-marketing-foundations.md
 - @entities/platforms/onlyfans.md

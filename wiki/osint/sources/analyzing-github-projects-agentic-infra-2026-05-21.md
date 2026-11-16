@@ -18,8 +18,8 @@ clusters: [agentic-ai, prediction-markets, algorithmic-trading]
 ---
 
 ## Relations
-- @cybersecurity-wiki/briefs/2026-05-21_2026-05-21_k56-offensive-security-from-osint.md  (cross-wiki brief)
-- @ccc-wiki/briefs/2026-05-21_2026-05-21_k56-agentic-infra-from-osint.md  (cross-wiki brief)
+- `cybersecurity-wiki/briefs/2026-05-21_2026-05-21_k56-offensive-security-from-osint.md` (archived brief)  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-05-21_2026-05-21_k56-agentic-infra-from-osint.md` (archived brief)  (cross-wiki brief)
 
 - @entities/tools/pmxt.md — section "Standardizing Prediction Markets: The PMXT Ecosystem" extends our existing pmxt entity with the 1TB orderbook open-source release + "utility marketing" growth playbook
 - @entities/tools/nofx-ai-os.md — "Hackgate" cautionary tale (zero-auth + hardcoded JWT secrets at scale)

@@ -21,7 +21,7 @@ clusters: [trading-posts, claude-workflows, polymarket]
 ---
 
 ## Relations
-- @ccc-wiki/briefs/2026-05-28_k73-ccc-workflows-from-osint.md  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-05-28_k73-ccc-workflows-from-osint.md` (archived brief)  (cross-wiki brief)
 
 - @sources/trading-posts-compilation-38-2026-05-26.md — prior 38-post Posts.docx batch (different hash + content)
 - @sources/trading-posts-compilation-25-2026-05-27.md — K72 batch baseline

@@ -24,10 +24,10 @@ clusters: [tool-evaluation]
 - @entities/tools/yt-dlp.md — URL 19, Adopt (Unlicense source); OSINT audio-visual intelligence gathering
 - @entities/tools/poly-arbitrage-bot.md — URL 23, eval Reject **corrected** (verified MIT — already K53-verified); Polymarket↔Kalshi arb bot
 - @concepts/cemini-license-posture.md — this eval is the K54 case: 9 of 26 license findings were wrong
-- @ccc-wiki/briefs/2026-05-19_k54-tool-eval-ccc-items.md — cross-routed CCC items
-- @cybersecurity-wiki/briefs/2026-05-19_k54-tool-eval-cybersec-items.md — cross-routed Cybersec items
-- @image-gen-wiki/briefs/2026-05-19_k54-tool-eval-imagegen-items.md — cross-routed Image-gen items
-- @seo-wiki/briefs/2026-05-19_k54-tool-eval-seo-items.md — cross-routed SEO item
+- `ccc-wiki/briefs/2026-05-19_k54-tool-eval-ccc-items.md` (archived brief) — cross-routed CCC items
+- `cybersecurity-wiki/briefs/2026-05-19_k54-tool-eval-cybersec-items.md` (archived brief) — cross-routed Cybersec items
+- `image-gen-wiki/briefs/2026-05-19_k54-tool-eval-imagegen-items.md` (archived brief) — cross-routed Image-gen items
+- `seo-wiki/briefs/2026-05-19_k54-tool-eval-seo-items.md` (archived brief) — cross-routed SEO item
 
 ## Raw Concept
 

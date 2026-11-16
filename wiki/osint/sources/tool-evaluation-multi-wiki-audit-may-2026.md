@@ -22,10 +22,10 @@ updated: 2026-05-16
 ---
 
 ## Relations
-- @seo-wiki/briefs/2026-05-16_osint-audit-garden-skills-may-2026.md  (cross-wiki brief)
-- @image-gen-wiki/briefs/2026-05-16_osint-audit-garden-skills-may-2026.md  (cross-wiki brief)
-- @cybersecurity-wiki/briefs/2026-05-16_osint-audit-cross-routes-may-2026.md  (cross-wiki brief)
-- @ccc-wiki/briefs/2026-05-16_osint-audit-cross-routes-may-2026.md  (cross-wiki brief)
+- `seo-wiki/briefs/2026-05-16_osint-audit-garden-skills-may-2026.md` (archived brief)  (cross-wiki brief)
+- `image-gen-wiki/briefs/2026-05-16_osint-audit-garden-skills-may-2026.md` (archived brief)  (cross-wiki brief)
+- `cybersecurity-wiki/briefs/2026-05-16_osint-audit-cross-routes-may-2026.md` (archived brief)  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-05-16_osint-audit-cross-routes-may-2026.md` (archived brief)  (cross-wiki brief)
 
 - `@concepts/tool-evaluation-framework.md` — methodology this audit applies
 - `@concepts/ip-sale-readiness.md` — IP-sale boundary enforced by the license checks

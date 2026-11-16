@@ -5,7 +5,6 @@ tags: [concept, agent-harness, benchmark, eval, ccc, k155, reference-only]
 keywords: [PolyWorkBench, multilingual, long-horizon, hybrid eval, structural, executable, LLM semantic]
 related:
   - sources/arxiv-polyworkbench-2607.06008-2026-07-10.md
-  - concepts/agent-rubrics-self-correction.md
   - concepts/reviewer-agent-inference-time-feedback.md
   - sources/arxiv-reasoning-effort-agentic-code-2607.02436-2026-07-09.md
 maturity: draft

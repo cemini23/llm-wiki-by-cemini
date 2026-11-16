@@ -14,7 +14,7 @@ clusters: [agent-harness, ccc-routed]
 ---
 
 ## Relations
-- @ccc-wiki/briefs/2026-06-02_2026-06-02_k94-ccc-agent-skills-agyn-toolforge-from-osint.md  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-06-02_2026-06-02_k94-ccc-agent-skills-agyn-toolforge-from-osint.md` (archived brief)  (cross-wiki brief)
 
 - @concepts/llm-agent-systems.md — agent paradigm context
 - @ccc-wiki/concepts/thin-harness-fat-skills-garrytan.md — skills/harness posture (CCC expand agent-skills taxonomy on brief)

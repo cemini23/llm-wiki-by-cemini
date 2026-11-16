@@ -12,7 +12,7 @@ maturity: validated
 read_status: deep-read
 created: 2026-06-12
 updated: 2026-06-12
-cross-wiki-source: "@osint-wiki/briefs/2026-06-12_k113-cybersec-ai-research-skills-from-osint.md"
+cross-wiki-source: "`osint-wiki/briefs/2026-06-12_k113-cybersec-ai-research-skills-from-osint.md` (archived brief)"
 ---
 
 ## Relations
@@ -33,4 +33,4 @@ K113 tool eval URL 9 — ML research skills library. Cybersec wiki keeps **subse
 
 ## Sources
 
-- @osint-wiki/briefs/2026-06-12_k113-cybersec-ai-research-skills-from-osint.md
+- `osint-wiki/briefs/2026-06-12_k113-cybersec-ai-research-skills-from-osint.md` (archived brief)

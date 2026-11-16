@@ -20,9 +20,9 @@ clusters: [tool-evaluation]
 ---
 
 ## Relations
-- @image-gen-wiki/briefs/2026-05-20_2026-05-20_k55-delive-asr-persona-ops.md  (cross-wiki brief)
-- @cybersecurity-wiki/briefs/2026-05-20_2026-05-20_k55-tool-eval-cybersec-items.md  (cross-wiki brief)
-- @ccc-wiki/briefs/2026-05-20_2026-05-20_k55-tool-eval-and-openhuman-ccc-items.md  (cross-wiki brief)
+- `image-gen-wiki/briefs/2026-05-20_2026-05-20_k55-delive-asr-persona-ops.md` (archived brief)  (cross-wiki brief)
+- `cybersecurity-wiki/briefs/2026-05-20_2026-05-20_k55-tool-eval-cybersec-items.md` (archived brief)  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-05-20_2026-05-20_k55-tool-eval-and-openhuman-ccc-items.md` (archived brief)  (cross-wiki brief)
 
 - @concepts/cemini-license-posture.md — license-hygiene policy referenced throughout the eval
 - @concepts/tool-evaluation-framework.md — multi-wiki tier framework used here

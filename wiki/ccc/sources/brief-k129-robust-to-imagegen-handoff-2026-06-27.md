@@ -10,7 +10,7 @@ maturity: validated
 read_status: deep-read
 created: 2026-06-27
 updated: 2026-06-27
-cross-wiki-source: "@image-gen-wiki/briefs/2026-06-27_k129-robust-to-confidence-tool-orchestration-handoff.md"
+cross-wiki-source: "`image-gen-wiki/briefs/2026-06-27_k129-robust-to-confidence-tool-orchestration-handoff.md` (archived brief)"
 ---
 
 ## Relations
@@ -31,4 +31,4 @@ Robust-TO confidence-aware video tool orchestration — image-gen wiki owns corr
 
 ## Sources
 
-- @image-gen-wiki/briefs/2026-06-27_k129-robust-to-confidence-tool-orchestration-handoff.md
+- `image-gen-wiki/briefs/2026-06-27_k129-robust-to-confidence-tool-orchestration-handoff.md` (archived brief)

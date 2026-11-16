@@ -16,7 +16,6 @@ related:
   - entities/platforms/polymarket.md
   - entities/people/ruujss.md
   - "@seo-wiki/concepts/x-account-voice-and-format.md"
-  - "@ccc-wiki/briefs/2026-06-08_k106-ccc-dexscreener-mcp-from-osint.md"
 maturity: draft
 read_status: read
 created: 2026-06-08
@@ -32,7 +31,7 @@ clusters: [market-making, polymarket-quant, agent-harness, seo-funnel]
 - @concepts/polymarket-alert-monitoring-saas.md — Post 2 (@whydeso)
 - @entities/tools/dexscreener-mcp.md — Post 5 (@AlphaCartell Claude Desktop path)
 - @seo-wiki/concepts/x-account-voice-and-format.md — K106 style pass (Zephyr n8n)
-- @ccc-wiki/briefs/2026-06-08_k106-ccc-dexscreener-mcp-from-osint.md — MCP setup handoff
+- `ccc-wiki/briefs/2026-06-08_k106-ccc-dexscreener-mcp-from-osint.md` (archived brief) — MCP setup handoff
 
 ## Raw Concept
 

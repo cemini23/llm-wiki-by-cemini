@@ -28,7 +28,6 @@ related:
   - sources/ai-detection-enforcement-2026.md
   - sources/creator-email-marketing-2026.md
   - sources/paid-advertising-creators-2026.md
-  - briefs/2026-05-09_creator-24hr-sprint.md
   - concepts/generative-engine-optimization.md
   - "@image-gen-wiki/concepts/marketing-your-persona.md"
   - "@image-gen-wiki/concepts/persona-monetization-models.md"
@@ -64,7 +63,7 @@ updated: 2026-06-18
 - @sources/ai-detection-enforcement-2026.md
 - @sources/creator-email-marketing-2026.md
 - @sources/paid-advertising-creators-2026.md
-- @briefs/2026-05-09_creator-24hr-sprint.md
+- `briefs/2026-05-09_creator-24hr-sprint.md` (archived brief)
 - @image-gen-wiki/concepts/marketing-your-persona.md — build stack bridge (ComfyUI, LoRA, voice)
 - @image-gen-wiki/concepts/persona-monetization-models.md — revenue mechanics + ROI math
 - @image-gen-wiki/concepts/persona-ops-stack.md — automation architecture
@@ -139,7 +138,7 @@ Each stage has distinct tactics:
 
 ### First 90 days for a new creator
 
-Detailed 3-phase launch timeline aligned with @briefs/2026-05-08_onlyfans-launch-strategy.md:
+Detailed 3-phase launch timeline aligned with `briefs/2026-05-08_onlyfans-launch-strategy.md:` (archived brief)
 
 - **Phase 1: Pre-launch (days 1–7)**:
   - Set up OnlyFans (verification takes 24–48h; configure tiers per @entities/platforms/onlyfans.md)

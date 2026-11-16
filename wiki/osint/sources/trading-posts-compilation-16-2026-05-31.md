@@ -15,7 +15,6 @@ related:
   - "@gambling-wiki/concepts/polymarket-weather-wagering-retail.md"
   - "@seo-wiki/concepts/x-account-voice-and-format.md"
   - "@ccc-wiki/sources/trading-posts-compilation-16-2026-05-31.md"
-  - "@ccc-wiki/briefs/2026-05-31_k90-ccc-agent-harness-from-osint.md"
 maturity: draft
 read_status: read
 created: 2026-05-31
@@ -24,8 +23,8 @@ clusters: [macro, polymarket-retail, agent-harness, seo-funnel]
 ---
 
 ## Relations
-- @seo-wiki/briefs/2026-05-31_k90-seo-from-osint.md  (cross-wiki brief)
-- @ccc-wiki/briefs/2026-05-31_k90-ccc-agent-harness-from-osint.md  (cross-wiki brief)
+- `seo-wiki/briefs/2026-05-31_k90-seo-from-osint.md` (archived brief)  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-05-31_k90-ccc-agent-harness-from-osint.md` (archived brief)  (cross-wiki brief)
 
 - @sources/trading-posts-compilation-42-2026-05-31.md — prior batch (different sha256; 42 posts)
 - @concepts/polymarket-weather-trading-strategy.md — OSINT bot/strategy layer; K90 Post 15 is **retail copy-trading** angle → gambling-wiki

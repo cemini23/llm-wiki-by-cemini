@@ -13,7 +13,6 @@ related:
   - concepts/regime-conditioned-evaluation.md
   - sources/tradingagents.md
   - sources/arxiv-seclaw-spec-driven-agent-security-2606-02302-2026-06-04.md
-  - "@ccc-wiki/briefs/2026-06-04_k98-ccc-agent-org-chart-mcp-from-osint.md"
   - "@seo-wiki/concepts/x-account-voice-and-format.md"
   - concepts/polymarket-retail-trading-discipline.md
   - concepts/polymarket-updown-bot-taxonomy.md
@@ -31,7 +30,7 @@ clusters: [agent-harness, polymarket-quant, seo-funnel]
 - @concepts/agent-team-five-gate-decision-memo.md — Post 1 (Voxyz / TradingAgents org chart)
 - @concepts/polymarket-binance-oracle-latency-fusion.md — Posts 2, 13
 - @concepts/polymarket-preopen-queue-priority.md — Post 3
-- @ccc-wiki/briefs/2026-06-04_k98-ccc-agent-org-chart-mcp-from-osint.md — harness cluster handoff
+- `ccc-wiki/briefs/2026-06-04_k98-ccc-agent-org-chart-mcp-from-osint.md` (archived brief) — harness cluster handoff
 - @seo-wiki/concepts/x-account-voice-and-format.md — K98 style pass
 
 ## Raw Concept

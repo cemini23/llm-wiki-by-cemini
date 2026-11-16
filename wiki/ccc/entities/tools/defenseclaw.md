@@ -12,7 +12,6 @@ related:
   - concepts/cross-wiki-tool-adoption-routing.md
   - "@cybersecurity-wiki/entities/tools/defenseclaw.md"
   - "@cybersecurity-wiki/concepts/seclaw-agent-security-evaluation.md"
-  - "@cybersecurity-wiki/briefs/2026-06-04_cybersecurity-handoff-defenseclaw-seclaw.md"
   - concepts/mcp-server-runtime-fault-taxonomy.md
   - sources/arxiv-mcp-runtime-fault-taxonomy-2606.05339.md
   - concepts/queen-bee-beespec-enterprise-orchestration.md

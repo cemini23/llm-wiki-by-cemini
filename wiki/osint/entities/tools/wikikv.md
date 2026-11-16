@@ -40,4 +40,4 @@ Cross-wiki entity from SEO K121 ingest. Tencent WikiKV — production hierarchic
 | vs llm-wiki-compiler | WikiKV assumes hierarchy-native storage; compiler blocked on flat-layout — orthogonal problems |
 | vs Deep GraphRAG | Both hierarchy-first; WikiKV is storage layer not graph-community retrieval |
 
-Prod brief: @seo-wiki/briefs/2026-06-17_k121-wikikv-hierarchical-wiki-storage-cemini-prod.md
+Prod brief: `seo-wiki/briefs/2026-06-17_k121-wikikv-hierarchical-wiki-storage-cemini-prod.md` (archived brief)

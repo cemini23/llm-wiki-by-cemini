@@ -16,7 +16,7 @@ read_status: read
 
 - @concepts/atto-genealogy-agent-kit.md
 - @concepts/computational-genealogy-archival-automation.md
-- @briefs/2026-08-12_atto-positioning-outlier-weekly.md
+- `briefs/2026-08-12_atto-positioning-outlier-weekly.md` (archived brief)
 
 ## Raw Concept
 

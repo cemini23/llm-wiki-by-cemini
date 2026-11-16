@@ -25,7 +25,7 @@ read_status: read
 ---
 
 ## Relations
-- @image-gen-wiki/briefs/2026-08-20_moneyprinterturbo-video-gen-size-skip.md  (cross-wiki brief)
+- `image-gen-wiki/briefs/2026-08-20_moneyprinterturbo-video-gen-size-skip.md` (archived brief)  (cross-wiki brief)
 
 - @entities/tools/career-ops.md — MIT Extract Playwright/claim ingest for GuruWatcher
 - @entities/tools/lore.md — MIT Extract narrative schemas; no living-person vitals

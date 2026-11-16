@@ -8,7 +8,6 @@ related:
   - entities/tools/security-audit-skill.md
   - entities/tools/jiangshan-map.md
   - entities/tools/firecrawl-gov-index.md
-  - entities/tools/experiential-labs.md
   - concepts/historical-jurisdiction-atlas.md
   - sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md
 maturity: draft

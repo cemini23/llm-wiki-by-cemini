@@ -13,7 +13,7 @@ maturity: validated
 read_status: deep-read
 created: 2026-06-12
 updated: 2026-06-12
-cross-wiki-source: "@osint-wiki/briefs/2026-06-12_k112-gambling-wc-2026-narrative-from-osint.md"
+cross-wiki-source: "`osint-wiki/briefs/2026-06-12_k112-gambling-wc-2026-narrative-from-osint.md` (archived brief)"
 ---
 
 ## Relations
@@ -34,4 +34,4 @@ REFERENCE fan narrative for content calendar + narrative-risk awareness on PM/Ka
 
 ## Sources
 
-- @osint-wiki/briefs/2026-06-12_k112-gambling-wc-2026-narrative-from-osint.md
+- `osint-wiki/briefs/2026-06-12_k112-gambling-wc-2026-narrative-from-osint.md` (archived brief)

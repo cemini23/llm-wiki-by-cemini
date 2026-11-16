@@ -107,7 +107,7 @@ Things that stop or reverse the wheel:
 
 ### The 90-Day Flywheel Sprint
 
-Based on the launch strategy in @briefs/2026-05-08_onlyfans-launch-strategy.md:
+Based on the launch strategy in `briefs/2026-05-08_onlyfans-launch-strategy.md:` (archived brief)
 
 **Days 1-30: Build the foundation**
 - Create 30+ posts on OnlyFans (content library effect)

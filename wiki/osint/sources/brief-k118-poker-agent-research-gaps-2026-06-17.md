@@ -18,7 +18,7 @@ cross-wiki-source: "@gambling-wiki/sources/brief-k118-poker-agent-research-gaps-
 - @gambling-wiki/sources/brief-k118-poker-agent-research-gaps-2026-06-17.md — canonical K118 source page
 - @concepts/devfun-poker-agent-challenge-2026.md — OSINT implementation context
 - @entities/platforms/devfun-arena.md
-- @gambling-wiki/briefs/2026-06-17_k118-gambling-poker-agent-research-gap-fixes.md — operator fix backlog (private gambling wiki)
+- `gambling-wiki/briefs/2026-06-17_k118-gambling-poker-agent-research-gap-fixes.md` (archived brief) — operator fix backlog (private gambling wiki)
 
 ## Raw Concept
 

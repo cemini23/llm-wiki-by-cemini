@@ -11,7 +11,7 @@ maturity: validated
 read_status: deep-read
 created: 2026-06-25
 updated: 2026-06-25
-cross-wiki-source: "@cybersecurity-wiki/briefs/2026-06-25_k125-memclaw-fleet-memory-governance-handoff.md"
+cross-wiki-source: "`cybersecurity-wiki/briefs/2026-06-25_k125-memclaw-fleet-memory-governance-handoff.md` (archived brief)"
 ---
 
 ## Relations
@@ -33,4 +33,4 @@ MemClaw governed fleet memory — cybersec checklist for scope tags, provenance,
 
 ## Sources
 
-- @cybersecurity-wiki/briefs/2026-06-25_k125-memclaw-fleet-memory-governance-handoff.md
+- `cybersecurity-wiki/briefs/2026-06-25_k125-memclaw-fleet-memory-governance-handoff.md` (archived brief)

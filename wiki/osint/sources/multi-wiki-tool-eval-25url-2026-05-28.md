@@ -16,7 +16,7 @@ clusters: [cemini-internal, tool-evaluation]
 ---
 
 ## Relations
-- @ccc-wiki/briefs/2026-05-28_k73-ccc-tool-eval-license-skepticism.md  (cross-wiki brief)
+- `ccc-wiki/briefs/2026-05-28_k73-ccc-tool-eval-license-skepticism.md` (archived brief)  (cross-wiki brief)
 
 - @concepts/multi-wiki-eval-doc-level-vs-phase-0.md — another doc-level eval confirming the two-gate necessity
 - @concepts/cemini-license-posture.md — repeats known false-negative patterns ("NO LICENSE FOUND", blanket BSL reject language)

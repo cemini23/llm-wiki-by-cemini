@@ -37,7 +37,7 @@ updated: 2026-06-01
 ---
 
 ## Relations
-- @gambling-wiki/briefs/2026-05-31_k90-gambling-tool-eval-from-osint.md  (cross-wiki brief)
+- `gambling-wiki/briefs/2026-05-31_k90-gambling-tool-eval-from-osint.md` (archived brief)  (cross-wiki brief)
 
 - @sources/multi-wiki-tool-eval-v5-k88-2026-05-31.md — prior v5 batch; v6 adds **gambling-wiki** as 8th surface
 - @concepts/gambling-wiki-federation.md — first v6 batch with gambling-primary routing

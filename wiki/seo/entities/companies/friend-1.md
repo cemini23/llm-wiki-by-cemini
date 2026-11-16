@@ -77,7 +77,7 @@ New OnlyFans creator focused on image-based content (photography, exclusive visu
 - [ ] Build Reddit karma (4+ weeks) before any promotion posts
 - [ ] Define content niches and posting schedule
 - [ ] Set subscription tiers and pricing
-- [ ] Use @briefs/2026-05-09_creator-launch-decision-hub.md to finalize platform choice and pricing today
+- [ ] Use `briefs/2026-05-09_creator-launch-decision-hub.md` (archived brief) to finalize platform choice and pricing today
 
 **Operational marker**: Fill in real data during first operator session.
 

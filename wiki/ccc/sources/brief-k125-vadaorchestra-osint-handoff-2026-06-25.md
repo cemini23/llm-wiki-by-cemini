@@ -11,7 +11,7 @@ maturity: validated
 read_status: deep-read
 created: 2026-06-25
 updated: 2026-06-25
-cross-wiki-source: "@osint-wiki/briefs/2026-06-25_k125-vadaorchestra-osint-handoff.md"
+cross-wiki-source: "`osint-wiki/briefs/2026-06-25_k125-vadaorchestra-osint-handoff.md` (archived brief)"
 ---
 
 ## Relations
@@ -33,4 +33,4 @@ VADAOrchestra neurosymbolic workflow orchestration (2606.22485). CCC keeps orche
 
 ## Sources
 
-- @osint-wiki/briefs/2026-06-25_k125-vadaorchestra-osint-handoff.md
+- `osint-wiki/briefs/2026-06-25_k125-vadaorchestra-osint-handoff.md` (archived brief)

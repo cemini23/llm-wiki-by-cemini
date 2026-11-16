@@ -13,12 +13,10 @@ related:
   - entities/platforms/hyperliquid.md
   - entities/tools/lighter-xyz.md
   - entities/people/gustafssonkotte.md
-  - "@ccc-wiki/briefs/2026-06-09_k108-ccc-hive-ship-omnifs-from-osint.md"
   - "@ccc-wiki/sources/trading-posts-compilation-8-2026-06-09.md"
   - "@ccc-wiki/concepts/the-hive-loop-routines-pattern.md"
   - "@ccc-wiki/concepts/ship-subagent-writer-reviewer-tester.md"
   - "@ccc-wiki/entities/tools/omnifs.md"
-  - "@gambling-wiki/briefs/2026-06-09_k108-gambling-wc-retail-hygiene-from-osint.md"
   - sources/gemini-wc2026-prediction-markets-inventory-2026-06-09.md
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/tools/world-cup-bot.md
@@ -38,8 +36,8 @@ clusters: [polymarket-quant, agent-harness, perps-microstructure, world-cup-2026
 - @entities/tools/omnifs.md — Post 1 projected filesystem (Phase-0 pending)
 - @entities/platforms/42-space.md — Post 3 Gustafsson WC promo venue
 - @entities/people/gustafssonkotte.md — Post 3 operator book on 42.space
-- @ccc-wiki/briefs/2026-06-09_k108-ccc-hive-ship-omnifs-from-osint.md — Posts 1–2, 4 harness cluster
-- @gambling-wiki/briefs/2026-06-09_k108-gambling-wc-retail-hygiene-from-osint.md — Post 0 retail checklist
+- `ccc-wiki/briefs/2026-06-09_k108-ccc-hive-ship-omnifs-from-osint.md` (archived brief) — Posts 1–2, 4 harness cluster
+- `gambling-wiki/briefs/2026-06-09_k108-gambling-wc-retail-hygiene-from-osint.md` (archived brief) — Post 0 retail checklist
 
 ## Raw Concept
 

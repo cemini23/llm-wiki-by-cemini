@@ -16,7 +16,7 @@ read_status: skimmed
 
 - @concepts/agent-toolkit-routing-research-backlog.md
 - @concepts/llm-routing-deepseek-openrouter-failover.md
-- @ccc-wiki/briefs/2026-08-12_k233-skiller-rollout-scheduling.md (cross-wiki brief)
+- `ccc-wiki/briefs/2026-08-12_k233-skiller-rollout-scheduling.md` (archived brief) (cross-wiki brief)
 
 ## Raw Concept
 

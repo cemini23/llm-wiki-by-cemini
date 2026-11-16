@@ -12,7 +12,7 @@ read_status: skimmed
 ---
 
 ## Relations
-- @image-gen-wiki/briefs/2026-09-11_k259-vidhalloc.md  (cross-wiki brief)
+- `image-gen-wiki/briefs/2026-09-11_k259-vidhalloc.md` (archived brief)  (cross-wiki brief)
 
 - @concepts/k259-ood-stub-wave.md
 
