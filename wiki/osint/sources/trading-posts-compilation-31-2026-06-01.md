@@ -32,7 +32,7 @@ clusters: [trading-posts, agent-harness]
 |-------|-------|
 | Title | Posts.docx K93 — 31 posts (`Next Post:` count) |
 | sha256 | `86b6855cc46f331d…` (219,281 bytes) |
-| Location | `research to be indexed/Posts.docx` |
+| Location | `not archived — raw not found (checked 2026-11-16)` |
 | Read | 2026-06-01 deep-read (cluster) |
 
 ## Narrative

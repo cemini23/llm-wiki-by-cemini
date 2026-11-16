@@ -35,7 +35,7 @@ clusters: [polymarket, bot-architecture]
 - **Title**: UPDATING THE CHEAT CODE FOR POLYMARKET
 - **Author**: @Gustafssonkotte (X)
 - **Type**: operator architecture essay (~2 weeks after direction-chasing)
-- **Location**: `research to be indexed/@Gustafssonkotte.docx` → `cemini-librarian:/opt/cemini-bulk/research/@Gustafssonkotte.docx`
+- **Location**: `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/@Gustafssonkotte.docx`
 - **Retrieved**: 2026-05-24
 - **Read status**: deep-read
 

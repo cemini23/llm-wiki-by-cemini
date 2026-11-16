@@ -50,7 +50,7 @@ clusters: [trading-posts, polymarket, prediction-markets, claude-workflows]
 | Title | `Posts.docx` K72 — 25 posts, `Next Post:` delimiter |
 | sha256 | `76ccaaa891f3ac9c106f7b3174fa964d92ab5719340d8324ee900474bf1ff029` |
 | Size | ~195 KB / ~347k chars |
-| Location | `research to be indexed/Posts.docx` → `cemini-librarian:/opt/cemini-bulk/research/trading-posts-compilation-25-2026-05-27.docx` |
+| Location | `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/trading-posts-compilation-25-2026-05-27.docx` |
 | Read | 2026-05-27, deep-read (catalog + cluster reads) |
 
 **Not** K69 (`43198b3e…`, 20 posts), K67 (`c70d2876…`, 38 posts), or K64 three-post file.

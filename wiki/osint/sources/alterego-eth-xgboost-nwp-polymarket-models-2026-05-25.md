@@ -36,7 +36,7 @@ clusters: [polymarket, weather-trading]
 
 - **Title**: `@AlterEgo_eth.docx` — 2 posts (no `Next Post:` delimiter in export; sequential @AlterEgo_eth headers)
 - **Type**: X long-form posts
-- **Location**: `research to be indexed/@AlterEgo_eth.docx` → `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx` (**supersedes** K61 librarian copy)
+- **Location**: `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx` (**supersedes** K61 librarian copy)
 - **Retrieved**: 2026-05-25
 - **Read status**: deep-read
 

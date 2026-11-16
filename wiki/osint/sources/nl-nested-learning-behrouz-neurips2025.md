@@ -24,7 +24,7 @@ clusters: [ml-research, agent-memory-architecture]
 - **Authors**: Ali Behrouz, Meisam Razaviyayn, Peilin Zhong, Vahab Mirrokni (Google Research)
 - **Venue**: NeurIPS 2025
 - **Format**: PDF, 52 pages
-- **Drop location**: `research to be indexed/NL.pdf` → librarian
+- **Drop location**: `not archived — raw not found (checked 2026-11-16)` → librarian
 - **sha256**: `a0d8e2638994ee92...`
 - **Size**: 6,126,809 bytes
 - **Preingest verdict**: NEW

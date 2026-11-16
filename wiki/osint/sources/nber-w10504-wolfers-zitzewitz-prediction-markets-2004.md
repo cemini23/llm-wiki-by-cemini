@@ -30,7 +30,7 @@ clusters: [prediction-markets, quant-finance]
 | Date | May 2004 |
 | URL | https://www.nber.org/papers/w10504 |
 | Pages | 28 |
-| Location | `research to be indexed/w10504.pdf` → `cemini-librarian:/opt/cemini-bulk/research/w10504.pdf` |
+| Location | `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/w10504.pdf` |
 | Read | 2026-05-27, deep-read (intro + contract taxonomy + efficiency evidence) |
 
 ## Narrative

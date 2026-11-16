@@ -32,7 +32,7 @@ clusters: [llm-agents]
 
 - **Title**: Kimi Agent Swarm — Complete A–Z Guide (@kirillk_web3)
 - **Type**: long-form X / newsletter-style article (docx export)
-- **Location**: `research to be indexed/@kirillk_web3.docx` → `cemini-librarian:/opt/cemini-bulk/research/@kirillk_web3.docx`
+- **Location**: `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/@kirillk_web3.docx`
 - **Retrieved**: 2026-05-24
 - **Author**: @kirillk_web3 (Telegram/X; affiliate link to ishosting for Kimi hosting)
 

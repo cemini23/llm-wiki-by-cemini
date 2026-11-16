@@ -38,7 +38,7 @@ clusters: [trading-posts, claude-workflows, polymarket]
 | Title | `Posts.docx` K73 — 38 posts (`Next Post:` split count) |
 | sha256 | `8ae518ea8481f5553145680d556877303edc0f240603f937256e62d388c2e9a1` |
 | Size | ~817 KB / ~485k chars |
-| Location | `research to be indexed/Posts.docx` |
+| Location | `not archived — raw not found (checked 2026-11-16)` |
 | Read | 2026-05-28 deep-read (cluster-level) |
 
 ## Narrative

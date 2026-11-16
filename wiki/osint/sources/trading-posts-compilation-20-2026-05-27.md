@@ -54,7 +54,7 @@ clusters: [trading-posts, polymarket, prediction-markets, geo-aeo, claude-workfl
 | Title | `Posts.docx` K69 — 20 posts, `Next Post:` delimiter |
 | sha256 | `43198b3e3d666c970b5fcc7998f2615281a55cc7b1025a7ec598e2759f359170` |
 | Size | ~1.71 MB / ~302k chars |
-| Location | `research to be indexed/Posts.docx` → `cemini-librarian:/opt/cemini-bulk/research/trading-posts-compilation-20-2026-05-27.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/trading-posts-compilation-20-2026-05-27.docx` → `cemini-librarian:/opt/cemini-bulk/research/trading-posts-compilation-20-2026-05-27.docx` |
 | Read | 2026-05-27, deep-read (catalog + cluster reads) |
 
 **Not** K67 (`c70d2876…`, 38 posts) or K64 three-post file — same `Posts.docx` filename, distinguish by hash.

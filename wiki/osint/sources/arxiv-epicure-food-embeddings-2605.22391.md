@@ -25,7 +25,7 @@ clusters: [cross-domain-methodology]
 - **Title**: Epicure: Navigating the Emergent Geometry of Food Ingredient Embeddings
 - **Authors**: Jakub Radzikowski, Josef Chen (KAIKAKU.AI)
 - **arXiv**: [2605.22391](https://arxiv.org/abs/2605.22391) (v1, May 2026)
-- **Location**: `research to be indexed/2605.22391v1.pdf` → `cemini-librarian:/opt/cemini-bulk/research/2605.22391v1.pdf`
+- **Location**: `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/2605.22391v1.pdf`
 - **Retrieved**: 2026-05-27
 - **Read status**: deep-read (abstract + methods skim; not Cemini trading domain)
 

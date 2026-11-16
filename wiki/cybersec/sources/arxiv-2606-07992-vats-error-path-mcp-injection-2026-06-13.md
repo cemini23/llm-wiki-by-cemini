@@ -34,7 +34,7 @@ updated: 2026-10-09
 | Title | VATS: Exploiting Implicit Authority in Error-Path Injection via Systematic Mutation |
 | Authors | Harshil Patel, Kunal Pai |
 | arXiv | 2606.07992 |
-| Location | `research to be indexed/arxiv-2606.07992-vats-exploiting-implicit-authority-in-error-path.pdf` |
+| Location | `not archived — raw not found (checked 2026-11-16)` |
 | Retrieved | 2026-06-13 |
 | Read status | **read** (abstract + methodology + results + mitigation recs) |
 | Verdict | **GO** — ingest + red-team methodology applicable to lazy-tool / prod-mcp eval |

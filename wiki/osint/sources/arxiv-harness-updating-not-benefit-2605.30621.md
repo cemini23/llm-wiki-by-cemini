@@ -28,7 +28,7 @@ clusters: [agent-harness, papers]
 | Title | Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents |
 | Authors | Lin, Wu, Wang, et al. (Penn State, UCSC, Amazon, Emory, UIUC, Northeastern) |
 | arXiv | 2605.30621 |
-| Location | `research to be indexed/2605.30621v1.pdf` → librarian bulk |
+| Location | `not archived — raw not found (checked 2026-11-16)` → librarian bulk |
 | Retrieved | 2026-06-01 |
 | Read | read (abstract + findings) |
 

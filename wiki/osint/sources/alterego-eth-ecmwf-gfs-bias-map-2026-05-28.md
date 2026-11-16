@@ -23,7 +23,7 @@ clusters: [polymarket, weather-trading]
 - **Title**: The Complete Map of ECMWF and GFS Biases Across Major Cities on Polymarket Weather Markets
 - **Author**: @AlterEgo_eth (X)
 - **Type**: single long-form X post / docx export
-- **Location**: `research to be indexed/@AlterEgo_eth.docx` (K74)
+- **Location**: `not archived — raw not found (checked 2026-11-16)` (K74)
 - **Retrieved**: 2026-05-28
 - **Read status**: deep-read
 

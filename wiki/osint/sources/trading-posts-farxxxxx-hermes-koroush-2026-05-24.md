@@ -46,7 +46,7 @@ clusters: [polymarket, trading-posts]
 
 - **Title**: `posts.docx` (K64 batch — not the K49 Markov/Morin/bored2boar compilation)
 - **Type**: three X long-form posts separated by `Next Post:`
-- **Location**: `research to be indexed/posts.docx` → `cemini-librarian:/opt/cemini-bulk/research/posts.docx`
+- **Location**: `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/posts.docx`
 - **Retrieved**: 2026-05-24
 - **Read status**: deep-read
 

@@ -30,7 +30,7 @@ clusters: [agent-tooling, research-pipeline]
 | Title | Monokern post — research monster workflow |
 | Author | @monokern (X) |
 | Type | Social long-form / operator guide |
-| Location | `research to be indexed/monokern.docx` → `cemini-librarian:/opt/cemini-bulk/research/monokern.docx` |
+| Location | `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/monokern.docx` |
 | sha256 | `4f3959c64b144c82…` (11,641 bytes; preingest 2026-06-01) |
 | Retrieved | 2026-06-01 |
 | Read | deep-read |

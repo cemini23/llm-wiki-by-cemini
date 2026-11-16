@@ -63,7 +63,7 @@ clusters: [trading-posts, polymarket, discretionary-crypto, quant-validation]
 - **Type**: 38 X long-form posts, `Next Post:` delimiter
 - **Size**: ~1.82 MB / ~494k chars / 7,031 paragraphs
 - **sha256**: `c70d2876b909736c` (preingest 2026-05-26)
-- **Location**: `research to be indexed/Posts.docx` → `cemini-librarian:/opt/cemini-bulk/research/Posts.docx` (canonical after move; **same filename** as K64 — distinguish by hash)
+- **Location**: `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/Posts.docx` (canonical after move; **same filename** as K64 — distinguish by hash)
 - **Retrieved / read**: 2026-05-26, deep-read (catalog + cluster deep-reads)
 
 ## Narrative

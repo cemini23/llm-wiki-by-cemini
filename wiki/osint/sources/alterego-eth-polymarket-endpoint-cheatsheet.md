@@ -39,7 +39,7 @@ clusters: [api-tradecraft, polymarket]
 - **Author**: @AlterEgo_eth (X handle)
 - **Format**: X post — "Every Polymarket API Endpoint Your Bot Will Ever Need (One Cheat Sheet)"
 - **Date**: post dated May 2026; drop date 2026-05-18
-- **Drop location**: `research to be indexed/@AlterEgo_eth.docx` → librarian as `alterego-eth-polymarket-endpoint-cheatsheet.docx`
+- **Drop location**: `not archived — raw not found (checked 2026-11-16)` → librarian as `alterego-eth-polymarket-endpoint-cheatsheet.docx`
 - **sha256**: `a3ef77c3e4a4766e...`
 - **Size**: 564,628 bytes
 - **Preingest verdict**: NEW (distinct sha from the K43 `1)@AlterEgo_eth.docx`)

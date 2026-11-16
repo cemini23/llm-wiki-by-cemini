@@ -37,7 +37,7 @@ updated: 2026-06-03
 | Title | How To Trade FIFA Like A Quant on Polymarket (Complete Strategy) |
 | Author | Roan (@RohOnChain) |
 | Type | X / long-form article (user paste) |
-| Location | `research to be indexed/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md` → librarian after ingest |
+| Location | `not archived — raw not found (checked 2026-11-16)` → librarian after ingest |
 | Retrieved | 2026-06-02 |
 | Read status | deep-read |
 | Companion | Author's prior "Math Needed for Trading on Polymarket" article (3M views claim — unverified) |

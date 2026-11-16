@@ -35,7 +35,7 @@ updated: 2026-06-15
 | Title | MentisOculi: Revealing the Limits of Reasoning with Mental Imagery |
 | Authors | Jana Zeller, Thaddäus Wiedemer, Fanfei Li, Thomas Klein, Prasanna Mayilvahanan, Matthias Bethge, Felix Wichmann, Ryan Cotterell, Wieland Brendel |
 | arXiv | 2602.02465 |
-| Location | `research to be indexed/arxiv-2602.02465-mentisoculi-revealing-the-limits-of-reasoning-wi.pdf` |
+| Location | `not archived — raw not found (checked 2026-11-16)` |
 | Retrieved | 2026-06-13 |
 | Read status | **read** (abstract + benchmark design + main results) |
 

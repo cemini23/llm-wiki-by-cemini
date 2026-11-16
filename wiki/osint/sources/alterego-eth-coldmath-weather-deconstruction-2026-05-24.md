@@ -41,7 +41,7 @@ clusters: [polymarket, weather-trading]
 - **Title**: How ColdMath Dominates Polymarket Weather Markets (Narrow 1°C Bins + Aggressive Scaling + Multi-Model Bias Correction)
 - **Author**: @AlterEgo_eth (X)
 - **Type**: long-form X post / thread export
-- **Location**: K61 drop `research to be indexed/@AlterEgo_eth.docx` (ColdMath post). Librarian filename **reused** — K66 `@AlterEgo_eth.docx` (2 different posts) now at `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx`
+- **Location**: K61 drop `not archived — raw not found (checked 2026-11-16)` (ColdMath post). Librarian filename **reused** — K66 `@AlterEgo_eth.docx` (2 different posts) now at `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx`
 - **Retrieved**: 2026-05-24
 - **Read status**: deep-read
 

@@ -40,7 +40,7 @@ clusters: [polymarket, weather-trading]
 
 - **Title**: @AlterEgo_eth X post — "5 Different Methodologies That Currently Generate Sustainable Edge on Polymarket Weather Markets"
 - **Type**: X long-form post (exported `.docx`)
-- **Location**: `research to be indexed/@AlterEgo_eth.docx` → `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx` (supersedes prior librarian copies from K61/K66)
+- **Location**: `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx` (supersedes prior librarian copies from K61/K66)
 - **Retrieved**: 2026-05-27
 - **Read status**: deep-read
 - **Preingest**: LIKELY (filename collision with K61 location field) — **new content** confirmed by text diff vs K61/K66

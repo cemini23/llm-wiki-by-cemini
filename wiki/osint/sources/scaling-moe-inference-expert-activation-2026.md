@@ -28,7 +28,7 @@ updated: 2026-05-11
 - **arXiv ID**: 2604.23150v1
 - **Submitted**: 25 April 2026
 - **License**: arXiv non-exclusive distribution license 1.0 (paper); code license to be verified
-- **PDF location**: (inbox — `research to be indexed/2604.23150_moe-inference-scaling.pdf`; after ingest, scp to librarian)
+- **PDF location**: (inbox — `not archived — raw not found (checked 2026-11-16)`; after ingest, scp to librarian)
 - **Read status**: read (full paper, 13 pages)
 - **Primary cluster**: infrastructure
 - **All clusters**: infrastructure, moe-architecture

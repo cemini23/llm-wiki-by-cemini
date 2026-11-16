@@ -33,7 +33,7 @@ clusters: [llm-agents, rl-marl]
 | Authors | Seth Karten, Joel Zhang, Tersoo Upaa Jr, Ruirong Feng, Wenzhe Li, Chengshuai Shi, Chi Jin (Princeton); Joel Zhang (ARISE); Kiran Vodrahalli (Google DeepMind) |
 | arXiv | [2605.09998](https://arxiv.org/abs/2605.09998) (v1, 11 May 2026) |
 | Pages | 28 |
-| Location | `research to be indexed/2605.09998v1.pdf` → `cemini-librarian:/opt/cemini-bulk/research/2605.09998v1.pdf` |
+| Location | `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/2605.09998v1.pdf` |
 | Read | 2026-05-27, deep-read (abstract + intro + results framing) |
 
 ## Narrative

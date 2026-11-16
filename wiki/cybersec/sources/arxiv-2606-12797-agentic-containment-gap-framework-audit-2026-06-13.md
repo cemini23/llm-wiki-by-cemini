@@ -36,7 +36,7 @@ wire_target: ".cursor/rules/cemini-cybersec-agent-containment.mdc"
 | Title | The Containment Gap: How Deployed Agentic AI Frameworks Fail Public-Facing Safety Requirements |
 | Authors | Md Jafrin Hossain, Mohammad Arif Hossain, Weiqi Liu, Nirwan Ansari |
 | arXiv | 2606.12797 |
-| Location | `research to be indexed/arxiv-2606.12797-the-containment-gap-how-deployed-agentic-ai-fram.pdf` |
+| Location | `not archived — raw not found (checked 2026-11-16)` |
 | Retrieved | 2026-06-13 |
 | Read status | **read** (methodology + matrix + experiments + interventions) |
 | Verdict | **GO** — P1–P6 audit rubric portable to Cemini agent harness reviews |

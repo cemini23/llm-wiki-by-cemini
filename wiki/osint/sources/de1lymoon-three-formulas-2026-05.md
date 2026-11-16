@@ -33,7 +33,7 @@ clusters: [polymarket, quant-formulas]
 - **Author**: @de1lymoon (X handle; referral URL `predictparity.com?code=moon`)
 - **Format**: docx; ~700 substantive lines including full Python implementations
 - **Date**: May 2026 (drop date 2026-05-13)
-- **Drop location**: `research to be indexed/@de1lymoon.docx` → librarian
+- **Drop location**: `not archived — raw not found (checked 2026-11-16)` → librarian
 - **sha256**: `98649230c3c26ac6...`
 - **Size**: 25,707 bytes
 - **Preingest verdict**: NEW

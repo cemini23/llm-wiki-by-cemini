@@ -46,7 +46,7 @@ clusters: [trading-posts, hermes, onchain-forensics, agent-workflows, macro]
 | Title | `Posts.docx` K78 — 6 posts (`Next Post:` split; trailing empty delimiter) |
 | sha256 | `03a877cc17c51edbdde27d17a4e869aea372223e26cf438ae4e85fa29bcea1cd` |
 | Size | 41,138 bytes / ~64k chars |
-| Location | `research to be indexed/Posts.docx` → `cemini-librarian:/opt/cemini-bulk/research/trading-posts-compilation-6-2026-05-29.docx` |
+| Location | `not archived — raw not found (checked 2026-11-16)` → `cemini-librarian:/opt/cemini-bulk/research/trading-posts-compilation-6-2026-05-29.docx` |
 | Read | 2026-05-29 deep-read |
 
 **Not** K73 (`8ae518ea…`, 38 posts), K72 (`76ccaaa8…`, 25), K69 (`43198b3e…`, 20), or K67 (`c70d2876…`, 38).
