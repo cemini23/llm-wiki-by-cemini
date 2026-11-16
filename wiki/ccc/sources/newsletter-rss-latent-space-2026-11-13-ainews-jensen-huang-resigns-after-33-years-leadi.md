@@ -1,10 +1,20 @@
 ---
 title: "AINews: Jensen Huang resigns — self-hosted managed agents and harness-update gating"
 type: source
+maturity: draft
 related:
   - concepts/eval-integrity-minimum-standards.md
   - concepts/agent-vm-sandboxing.md
   - entities/tools/claude-code.md
+  - entities/tools/coolify.md
+  - entities/tools/doop.md
+  - sources/newsletter-rss-latent-space-2026-07-01-autoresearch-the-feedback-loop-behind-self-impro.md
+  - sources/newsletter-rss-latent-space-2026-07-03-vercels-andrew-qu-on-why-agents-are-a-new-kind-o.md
+  - sources/newsletter-rss-latent-space-2026-10-21-claude-mods-flipping-the-harness-inside-out.md
+  - sources/newsletter-rss-latent-space-2026-10-28-why-agents-love-supabase.md
+  - sources/newsletter-rss-latent-space-2026-10-31-agents-prompt-people-using-agents-for-long-horiz.md
+  - sources/newsletter-rss-latent-space-2026-11-02-legal-agents-legora-2026-11-03.md
+  - sources/newsletter-rss-latent-space-2026-11-10-designing-for-agents-aeo-2026-11-11.md
 updated: 2026-11-14
 ---
 

@@ -4,6 +4,8 @@ type: source
 related:
   - concepts/precision-optomechanics-am.md
   - concepts/industrial-am-monitoring.md
+  - sources/arxiv-2611.02850-self-aligning-printed-structures-optical-fibers-2026-11-03.md
+  - sources/arxiv-2611.13876-spion-branching-geometry-2026-11-11.md
 maturity: draft
 read_status: read
 updated: 2026-11-10

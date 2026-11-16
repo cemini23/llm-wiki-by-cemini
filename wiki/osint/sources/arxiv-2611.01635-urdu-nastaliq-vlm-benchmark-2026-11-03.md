@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-2609.10084-gzsl-handwriting-bias-2026-09-11.md
+  - sources/moe-efficiency-leverage-tian-2026.md
 ---
 
 ## Raw Concept

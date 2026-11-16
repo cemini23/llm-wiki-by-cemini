@@ -11,6 +11,7 @@ related:
   - entities/models/wan-2-2.md
   - concepts/lightweight-video-history-embeddings.md
   - concepts/mid-horizon-kv-memory-video.md
+  - sources/arxiv-2610.42146-hierarchical-world-models-implicit-dynamics-2026-11-03.md
 title: Implicit memory retrieval for video world models
 type: concept
 tags: [concept, world-model, video-generation, memory, camera-control]

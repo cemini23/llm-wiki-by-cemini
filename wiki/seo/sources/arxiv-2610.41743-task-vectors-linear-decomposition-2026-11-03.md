@@ -7,6 +7,8 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-stein-2026-malware-fscil-lora-packets-2608.23536-2026-08-25.md
 ---
 
 ## Raw Concept

@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/substack-rss-klement-2026-08-05-data-centre-reality-check.md
+  - sources/substack-rss-klement-2026-07-10-iran-news-bias.md
 ---
 
 ## Raw Concept

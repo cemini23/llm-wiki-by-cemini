@@ -5,6 +5,7 @@ tags: [substack, source, k270, macro, forecasting]
 keywords: [k270, Thesmar, Verner, surveys, expectations]
 related:
   - concepts/k270-newsletter-macro-wave.md
+  - sources/substack-rss-klement-2026-10-26-nice-earnings-forecasts-you-have-shame-if-someth.md
 maturity: draft
 created: 2026-09-23
 updated: 2026-09-23

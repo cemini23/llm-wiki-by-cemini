@@ -1,6 +1,7 @@
 ---
 title: "Agent-written fuzz harnesses — the model searches, the engine executes"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-wake5-solidity-fuzzing-mcp-2611.09307.md
   - entities/tools/wake5.md

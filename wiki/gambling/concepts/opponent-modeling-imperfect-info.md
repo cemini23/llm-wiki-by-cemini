@@ -83,6 +83,7 @@ related:
   - sources/arxiv-fictitious-play-non-expected-utility-geometric-2611.17286.md
   - sources/brief-k130-rlcard-offline-baseline-adopt-2026-06-26.md
   - sources/research-k122-poker-paper-landscape-2026-06-19.md
+  - concepts/card-games-imperfect-information.md
 maturity: draft
 created: 2026-06-03
 updated: 2026-11-14

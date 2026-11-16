@@ -10,6 +10,7 @@ related:
   - concepts/measurement-integrity-mcp-security-eval.md
   - concepts/recognition-vs-enforcement-instruction-arbitration.md
   - briefs/2026-08-31_ccc-k325-k327-sip-ready.md
+  - sources/arxiv-2611.03586-fedready-bounded-agents-federation-2026-11-03.md
 maturity: draft
 created: 2026-08-31
 updated: 2026-08-31

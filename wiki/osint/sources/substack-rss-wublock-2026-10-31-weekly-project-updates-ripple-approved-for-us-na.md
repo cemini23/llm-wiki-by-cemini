@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md
+  - sources/substack-rss-wublock-2026-11-13-wublockchain-weekly-goldman-citi-launch-joint-us.md
 ---
 
 ## Raw Concept

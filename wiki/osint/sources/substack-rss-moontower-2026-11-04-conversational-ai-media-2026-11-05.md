@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - sources/substack-rss-moontower-2026-11-08-moontower-335.md
+  - sources/substack-rss-moontower-2026-10-04-330.md
 ---
 
 ## Raw Concept

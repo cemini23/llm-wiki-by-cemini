@@ -5,6 +5,8 @@ tags: [source, arxiv, k170]
 keywords: [2607.12500, adversarial, online, handwriting, salience]
 related:
   - concepts/wiki-tooling-evaluation.md
+  - sources/arxiv-context-fractured-decomposition-cfd-2606.09084-2026-06-12.md
+  - sources/arxiv-context-aware-temporal-planning-2607.04689-2026-07-12.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-16

@@ -1,6 +1,7 @@
 ---
 title: "Policy-conditioned compliance measurement: the policy is the argument"
 type: concept
+maturity: validated
 related:
   - sources/arxiv-bmms-policy-conditioned-behavioral-compliance-2611.09147.md
   - concepts/guardrail-construct-validity-agent-eval.md

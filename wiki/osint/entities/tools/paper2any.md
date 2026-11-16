@@ -21,7 +21,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `github.com/OpenDCAI/Paper2Any`
 - **Tier (per source brief)**: **Reference-only**
-- **License**: [NEEDS VERIFICATION 2026-05-11] License unknown in brief.
+- **License**: [NEEDS VERIFICATION 2026-11-16] License unknown in brief.
 
 ## Narrative
 

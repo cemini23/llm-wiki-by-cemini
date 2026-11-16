@@ -1,6 +1,7 @@
 ---
 title: Context compaction for the game-dev agent harness
 type: concept
+maturity: draft
 related:
   - concepts/agent-harness-castle-project.md
   - sources/arxiv-speccompact-context-compaction-2611.06876.md

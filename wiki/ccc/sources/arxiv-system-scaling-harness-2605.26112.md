@@ -9,6 +9,7 @@ related:
   - concepts/harness-updating-vs-benefit-nonmonotonic.md
   - concepts/thin-harness-fat-skills-garrytan.md
   - concepts/federated-daily-research-digest.md
+  - sources/arxiv-2610.41350-operon-s1-decision-controller-2026-11-03.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-01

@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-2610-06847-s2pd.md
+  - sources/arxiv-2610-10457-morca-cache-scheduling.md
 ---
 
 ## Raw Concept

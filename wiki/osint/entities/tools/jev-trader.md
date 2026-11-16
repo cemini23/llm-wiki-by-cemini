@@ -8,6 +8,7 @@ related:
   - concepts/k268-harness-evolution-wave.md
   - sources/jev-trading-research-paper-2026-09-21.md
   - entities/tools/jev-mcp.md
+  - sources/arxiv-2611.10956-risk-sensitive-rl-options-mm-2026-11-11.md
 maturity: draft
 created: 2026-09-21
 updated: 2026-09-21

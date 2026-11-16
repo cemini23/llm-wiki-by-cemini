@@ -55,7 +55,7 @@ Extends **video world models** from single-agent single-view to **multi-agent mu
 
 ### Workspace relevance
 
-Research reference on **multi-perspective world consistency** — forward-looking for persona scenes with multiple synthetic characters or egocentric + third-person cuts. Compare to DecMem memory (@entities/models/decmem.md) and SANA-WM camera world model (@entities/models/sana-wm.md). Build-track: `[NEEDS VERIFICATION 2026-06-05]` for weights/code.
+Research reference on **multi-perspective world consistency** — forward-looking for persona scenes with multiple synthetic characters or egocentric + third-person cuts. Compare to DecMem memory (@entities/models/decmem.md) and SANA-WM camera world model (@entities/models/sana-wm.md). Build-track: `[NEEDS VERIFICATION 2026-11-16]` for weights/code.
 
 ## Snippets
 

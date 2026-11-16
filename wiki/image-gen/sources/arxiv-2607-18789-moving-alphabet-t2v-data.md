@@ -8,6 +8,8 @@ related:
   - concepts/world-models-video-generation.md
   - entities/models/wan-2-2.md
   - sweeps/2026-07-22-daily.md
+  - sources/arxiv-2607-21352-double-screening-pinn.md
+  - sources/arxiv-2607-21549-tfa-online-support.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-22

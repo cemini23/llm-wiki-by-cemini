@@ -13,6 +13,7 @@ related:
   - sources/thinking-with-visual-primitives-deepseek-2026.md
   - sources/sherry-ternary-quantization-tencent-2026.md
   - sources/shiyu-coder-kronos.md
+  - sources/arxiv-2611.01635-urdu-nastaliq-vlm-benchmark-2026-11-03.md
 maturity: validated
 read_status: read
 created: 2026-04-29

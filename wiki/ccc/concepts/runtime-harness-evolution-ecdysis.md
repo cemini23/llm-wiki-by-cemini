@@ -7,6 +7,7 @@ related:
   - sources/arxiv-ecdysis-runtime-harness-training-2609.11677.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-11_ccc-k346-k357-sip-ready.md
+  - sources/arxiv-2610.39884-karma-training-free-knowledge-atomic-harness-evo-2026-11-01.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"

@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/substack-rss-moontower-2026-10-11-farmers-almanac-for-investing.md
+  - sources/substack-rss-moontower-2026-07-12-investing-orbits.md
 ---
 
 ## Raw Concept

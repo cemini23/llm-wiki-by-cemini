@@ -1,6 +1,7 @@
 ---
 title: "Wake 5 — Solidity fuzzing with an in-process EVM and an MCP server"
 type: source
+maturity: draft
 related:
   - concepts/agent-written-fuzz-harness.md
   - entities/tools/wake5.md

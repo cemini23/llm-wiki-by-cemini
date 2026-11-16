@@ -11,6 +11,7 @@ related:
   - concepts/operator-model-selection.md
   - sources/brief-k173-mcp-graceful-degradation-2026-07-16.md
   - sources/arxiv-searchos-v1-open-domain-agent-collaboration-2607.15257.md
+  - entities/tools/deja-vu.md
 maturity: draft
 created: 2026-07-16
 updated: 2026-07-17

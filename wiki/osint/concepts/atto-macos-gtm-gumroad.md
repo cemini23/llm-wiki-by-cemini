@@ -113,7 +113,7 @@ Major-version lifetime; no monthly SaaS for core utility. Pack: notarized Univer
 - Marketing language passes UPL / AI-hallucination constraints (@concepts/italian-citizenship-pathways-document-pipelines.md status vocab)
 - Privacy FAQ matches @concepts/atto-local-first-threat-model.md
 
-Fee/law citations in the DR remain **[NEEDS VERIFICATION 2026-07-22]** before paid ads or hard fee claims on the listing.
+Fee/law citations in the DR remain **[NEEDS VERIFICATION 2026-11-16]** before paid ads or hard fee claims on the listing.
 
 ## K191 commercialization deltas (2026-07-23)
 

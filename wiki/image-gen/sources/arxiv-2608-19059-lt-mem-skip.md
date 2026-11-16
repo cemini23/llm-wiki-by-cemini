@@ -6,6 +6,7 @@ keywords: [LT-Mem, Tri-Memory, multi-session SLAM, MASt3R, LT-VQA, DGIST]
 related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-08-20-daily.md
+  - sources/arxiv-2608-04847-slang-q.md
 maturity: draft
 read_status: read
 created: 2026-08-20

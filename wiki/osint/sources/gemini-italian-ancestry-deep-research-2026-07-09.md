@@ -12,6 +12,7 @@ related:
   - entities/tools/steve-morse-census-tools.md
   - entities/tools/italian-parish-records.md
   - entities/tools/gcerretani-antenati.md
+  - sources/substack-rss-outlier-weekly-2026-10-26-the-town-changed-its-name-the-map-should-not-gue.md
 maturity: draft
 read_status: read
 created: 2026-07-09

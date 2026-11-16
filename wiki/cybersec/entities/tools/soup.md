@@ -5,6 +5,8 @@ tags: [tool, fine-tuning, low-vram, layer-streaming, local-lab, apache-2.0]
 keywords: [soup, soup-cli, layer streaming, qlora, lora, 4gb gpu, mps, apple silicon]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-repository-revenue-2026-11-04.md"
+  - sources/arxiv-2607-15081-datashield-risky-finetune-data.md
+  - concepts/gradient-immunity-malicious-finetune.md
 maturity: draft
 created: 2026-11-04
 updated: 2026-11-04

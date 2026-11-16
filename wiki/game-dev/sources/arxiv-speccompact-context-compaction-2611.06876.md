@@ -1,6 +1,7 @@
 ---
 title: "SpecCompact — slot-parallel speculative context compaction for LLM agents"
 type: source
+maturity: draft
 related:
   - concepts/context-compaction-game-harness.md
   - concepts/agent-harness-castle-project.md

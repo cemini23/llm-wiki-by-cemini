@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-mempilot-preference-aware-memory-orchestration-2610.06830.md
+  - concepts/autosci-memory-centric-research-agents.md
 ---
 
 ## Raw Concept

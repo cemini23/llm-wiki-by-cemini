@@ -6,6 +6,8 @@ keywords: [behavioral reprogramming, cognitive plasticity, alignment bounds, PEF
 related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-08-14-daily.md
+  - sources/arxiv-2608-06056-monte-carlo-bosonic.md
+  - sources/arxiv-2608-06321-ultraneuron.md
 maturity: draft
 read_status: read
 created: 2026-08-14

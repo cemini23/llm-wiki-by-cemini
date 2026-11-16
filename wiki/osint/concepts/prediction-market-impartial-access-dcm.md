@@ -1,6 +1,7 @@
 ---
 title: Prediction-market impartial access — the CFTC DCM geofencing interpretation
 type: concept
+maturity: draft
 related:
   - concepts/k296-feeds-wave.md
   - concepts/prediction-market-regulation-2026.md

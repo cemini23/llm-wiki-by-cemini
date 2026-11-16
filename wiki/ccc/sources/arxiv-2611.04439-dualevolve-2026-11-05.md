@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - sources/arxiv-task-efficient-agent-eval-cached-traces-2611.06803.md
+  - concepts/workflow-orchestration-as-capability.md
 ---
 
 ## Raw Concept

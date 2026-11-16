@@ -5,6 +5,7 @@ tags: [paper, ml-security, backdoor, peripheral]
 keywords: [HARVEY, backdoor defense, data poisoning, anti-backdoor learning, AAAI 2025]
 related:
   - sweeps/2026-07-10-daily.md
+  - sources/arxiv-2607-14976-d2df-one-step-video-object-removal.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-10

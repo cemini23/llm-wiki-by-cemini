@@ -30,9 +30,9 @@ Page prompted by the W4 Tier 2 voice/audio backfill (2026-05-13). Surfaces in @s
 
 ### Key facts (May 2026)
 
-- **License**: code typically MIT (Amphion); **weights CC-BY-NC 4.0** [NEEDS VERIFICATION 2026-05-13] — inherits non-commercial restriction from Emilia dataset license (same blocker pattern as @entities/music-models/musicgen.md / @entities/voice-models/f5-tts.md)
+- **License**: code typically MIT (Amphion); **weights CC-BY-NC 4.0** [NEEDS VERIFICATION 2026-11-16] — inherits non-commercial restriction from Emilia dataset license (same blocker pattern as @entities/music-models/musicgen.md / @entities/voice-models/f5-tts.md)
 - **Repo**: `github.com/open-mmlab/Amphion/tree/main/models/tts/maskgct`
-- **Size**: ~1.1B parameters [NEEDS VERIFICATION 2026-05-13]
+- **Size**: ~1.1B parameters [NEEDS VERIFICATION 2026-11-16]
 - **Architecture**: two-stage — (1) text-to-semantic masked transformer over semantic tokens, (2) semantic-to-acoustic masked transformer over codec tokens
 - **Training data**: Emilia (100k+ hours, multilingual)
 - **Decoding**: non-autoregressive, iterative parallel masked decoding (typically 25-50 steps)

@@ -8,6 +8,7 @@ related:
   - sources/arxiv-argus-mcp-k8s-rca-2608.23084.md
   - entities/tools/argus-agentic-runtime.md
   - briefs/2026-09-03_ccc-k337-k341-sip-ready.md
+  - sources/arxiv-spatial-semantic-robot-navigation-mcp-2609.27340.md
 maturity: draft
 read_status: read
 created: 2026-09-03

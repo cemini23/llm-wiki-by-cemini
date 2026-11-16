@@ -1,6 +1,7 @@
 ---
 title: "Disorder-blind Mpemba acceleration of quantum state preparation (arXiv:2611.08424)"
 type: source
+maturity: draft
 tags: [source, arxiv, quantum, physics, relaxation, peripheral]
 keywords: [Mpemba effect, strong Mpemba, disordered XX chain, resistor chain, slow mode, dephasing, state preparation, peripheral]
 related:

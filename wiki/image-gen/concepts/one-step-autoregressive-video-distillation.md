@@ -61,7 +61,7 @@ Concept from 2026-06-06 ingest — arXiv:2606.03972 AAD-1.
 
 **Inference benefit:** one diffusion step per AR chunk → lower latency for chained persona I2V (@concepts/seam-stitching-strategies.md). Orthogonal to foresight training (Video-Mirai) and GRPO post-training.
 
-Build track blocked on weight release + Wan 2.1 causal wrapper availability `[NEEDS VERIFICATION 2026-06-06]`.
+Build track blocked on weight release + Wan 2.1 causal wrapper availability `[NEEDS VERIFICATION 2026-11-16]`.
 
 ## Snippets
 

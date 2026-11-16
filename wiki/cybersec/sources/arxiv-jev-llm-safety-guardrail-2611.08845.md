@@ -1,12 +1,16 @@
 ---
 title: "Jev as an LLM safety guardrail: input filtering, selective output review, over-refusal (arXiv 2611.08845)"
 type: source
+maturity: validated
 related:
   - concepts/external-filter-safety-utility-tradeoff.md
   - concepts/calibrated-decision-models-pentest-harness-jev.md
   - concepts/guardrail-construct-validity-agent-eval.md
   - concepts/safety-budget-control-channel-calibration.md
   - sources/arxiv-safety-as-a-budget-2611.16628.md
+  - sources/arxiv-2610.39802-revisiting-over-refusal-in-safety-aligned-large-2026-11-01.md
+  - sources/arxiv-2611.13578-poem-block-sparse-attention-2026-11-11.md
+  - sources/arxiv-2611.14171-bars-budget-aware-sampling-2026-11-11.md
 updated: 2026-11-14
 ---
 

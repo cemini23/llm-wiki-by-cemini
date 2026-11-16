@@ -5,6 +5,7 @@ tags: [source, arxiv, agent-security, backdoor, model-supply-chain, eval, k329]
 keywords: [2609.11799, SpecGuard, inference-time backdoor, trigger detection, third-party models]
 related:
   - concepts/specguard-inference-time-backdoor-detection.md
+  - sources/arxiv-2609-26725-figma-ai-product-design-ood.md
 maturity: draft
 read_status: read
 created: 2026-09-11

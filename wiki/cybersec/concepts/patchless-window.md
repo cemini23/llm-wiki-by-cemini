@@ -1,6 +1,7 @@
 ---
 title: "The patchless window: public fix before public CVE"
 type: concept
+maturity: draft
 related:
   - sources/newsletter-rss-tldrsec-2026-11-12-tldr-sec-354---artex-agentic-hacking-in-the-wild.md
   - concepts/software-maintenance-institutional-insecurity.md
@@ -27,7 +28,7 @@ Open-source fixes land in public commits. A CVE usually follows later. Between t
 
 The sample is 18,594 CVEs. Exploit publication does not wait for the CVE. Public exploits appeared within hours of the fix. The fastest cases were 4–16 hours. The fastest tenth of all public exploits arrived within 1.8 days.
 
-`[TENTATIVE]` — single-source reporting. `[NEEDS VERIFICATION 2026-11-14]` against the primary study.
+`[TENTATIVE]` — single-source reporting. `[NEEDS VERIFICATION 2026-11-16]` against the primary study.
 
 ### Why the window exists
 

@@ -10,6 +10,9 @@ created: 2026-09-11
 updated: 2026-09-11
 phase_0_verdict: "OOD 2026-09-11 — Post-quantum silicon validation — KAT coverage gaps for ML-DSA class defects; hardware/crypto design primary, not agent-security."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2610-07870-post-quantum-ble-pairing-nfc-oob-implant.md
+  - concepts/post-quantum-oob-pairing-medical-implants.md
 ---
 
 ## Relations

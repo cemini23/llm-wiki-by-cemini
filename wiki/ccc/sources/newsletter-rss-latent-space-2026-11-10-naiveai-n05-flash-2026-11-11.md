@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/newsletter-rss-latent-space-2026-11-06-ainews-inkling-2-small-17a-594b-trained-in-68-ho.md
+  - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
 ---
 
 ## Raw Concept

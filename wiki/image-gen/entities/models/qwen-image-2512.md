@@ -90,7 +90,7 @@ Practically, this puts Qwen-Image-2512 in a different role than the FLUX / Z-Ima
 - **Text rendering and typography** — the canonical use case. Posters, comics, signage, multi-panel layouts where readable text-in-image is required.
 - **Complex prompt adherence** — multi-subject scenes with explicit spatial relationships work in ways FLUX.1 Dev struggles with.
 - **Layout reasoning native** — comic / poster / multi-panel composition without manual region-conditioning.
-- **Eastern Vanguard licensing posture** — Apache-2.0-class license assumption (`[NEEDS VERIFICATION 2026-05-06]` for exact terms) makes monetized workflows easier than FLUX.1 Dev.
+- **Eastern Vanguard licensing posture** — Apache-2.0-class license assumption (`[NEEDS VERIFICATION 2026-11-16]` for exact terms) makes monetized workflows easier than FLUX.1 Dev.
 
 ### Why creators avoid it
 
@@ -149,8 +149,8 @@ Standard FLUX-class LoRA recipes (AdamW8bit, 5e-5, rank 16-32) apply but Qwen-Im
 
 ### Workspace TODO
 
-- **`[NEEDS VERIFICATION 2026-05-06]`**: confirm Qwen-Image-2512 Hugging Face release; canonical model hash; current version revision. Sub-sweep B follow-on.
-- **`[NEEDS VERIFICATION 2026-05-06]`**: confirm Qwen-Image license terms — Apache 2.0 inferred from Qwen's LLM precedent but not stated explicitly in the survey. Sub-sweep B follow-on.
+- **`[NEEDS VERIFICATION 2026-11-16]`**: confirm Qwen-Image-2512 Hugging Face release; canonical model hash; current version revision. Sub-sweep B follow-on.
+- **`[NEEDS VERIFICATION 2026-11-16]`**: confirm Qwen-Image license terms — Apache 2.0 inferred from Qwen's LLM precedent but not stated explicitly in the survey. Sub-sweep B follow-on.
 - **`[OPEN QUESTION 2026-05-06]`**: persona-consistency adapter availability (PuLID II / InfiniteYou / Redux Qwen-Image port status). Sub-sweep C target.
 - ~~ai-toolkit / Musubi Tuner / Kohya FLUX-train support for Qwen-Image LoRA training~~ — **resolved [CONFIRMED 2026-05-06]**: **Musubi Tuner is the production-ready path**, with Qwen-Image-2512 trainable identically to Qwen-Image base. SECourses Gradio wrapper + ComfyUI Realtime LoRA Trainer provide higher-level access. See "LoRA training" section above.
 - Compare Qwen-Image-2512 GGUF Q4 vs FLUX.1 Dev FP8 head-to-head on a fixed text-rendering and complex-composition prompt set.

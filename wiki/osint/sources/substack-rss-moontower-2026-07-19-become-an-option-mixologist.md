@@ -6,6 +6,7 @@ keywords: [option-mixologist, vol, skew, kurtosis, straddle, risk-reversal, stra
 related:
   - sources/substack-rss-moontower-2026-07-19-moontower-321.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-moontower-2026-10-25-staring-at-an-option-quote.md
 maturity: draft
 read_status: read
 created: 2026-07-20

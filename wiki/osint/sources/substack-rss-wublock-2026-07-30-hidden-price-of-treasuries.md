@@ -10,6 +10,8 @@ related:
   - sources/macro-charts-paid-forward-2026-07-30-korea-semis.md
   - sources/macro-charts-paid-forward-2026-07-31-situational-awareness-kospi.md
   - sources/substack-rss-wublock-2026-07-31-weekly-sec-clarity-etp.md
+  - sources/substack-rss-klement-2026-11-11-treasuries-haven-2026-11-11.md
+  - sources/substack-rss-wublock-2026-11-11-plume-rwa-2026-11-11.md
 maturity: draft
 created: 2026-07-30
 updated: 2026-07-31

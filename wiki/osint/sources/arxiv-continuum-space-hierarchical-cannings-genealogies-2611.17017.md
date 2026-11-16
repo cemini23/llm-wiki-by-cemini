@@ -1,6 +1,7 @@
 ---
 title: "Continuum space hierarchical Cannings process II: genealogies and ancestral web (arXiv 2611.17017)"
 type: source
+maturity: draft
 related:
   - concepts/osint-inbox-wave-2026-11-14.md
 updated: 2026-11-14

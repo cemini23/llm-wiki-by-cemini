@@ -5,6 +5,8 @@ tags: [stub, cross-wiki]
 keywords: []
 related:
   - @osint-wiki/sources/substack-rss-addy-osmani-2026-07-03-agentic-autonomy-levels.md
+  - sources/substack-rss-addy-osmani-2026-08-21-software-factory.md
+  - concepts/progressive-autonomy-incident-resolution.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25

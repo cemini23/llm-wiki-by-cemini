@@ -1,6 +1,7 @@
 ---
 title: Fokker-Planck stationary distributions and relaxation modes (math adjacent to diffusion sampling)
 type: concept
+maturity: draft
 tags: [concept, stochastic-processes, physics, heavy-tails, peripheral]
 keywords: [Fokker-Planck, drift-diffusion, stationary distribution, Pearson type IV, Mpemba effect, relaxation mode, resistor chain, score field, peripheral]
 related:

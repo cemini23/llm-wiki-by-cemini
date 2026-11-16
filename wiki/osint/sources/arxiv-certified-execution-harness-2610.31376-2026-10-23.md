@@ -4,6 +4,7 @@ type: source
 related:
   - concepts/k294-osint-wave.md
   - concepts/options-agent-order-boundary.md
+  - sources/arxiv-2610.35762-the-evolution-and-chineseness-of-urban-screens-i-2026-10-27.md
 maturity: draft
 read_status: skimmed
 updated: 2026-10-23

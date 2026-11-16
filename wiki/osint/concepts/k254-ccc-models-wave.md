@@ -1,6 +1,7 @@
 ---
 title: K254 Ccc Models Wave (Sep 2026)
 type: concept
+maturity: stub
 tags: [ccc, models, k254]
 keywords: [Claude-Fable, cache-pricing, Latent-Space]
 related:

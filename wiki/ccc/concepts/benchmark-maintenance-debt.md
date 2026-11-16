@@ -1,6 +1,7 @@
 ---
 title: "Benchmark maintenance debt — the score drifts away from the capability"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-benchmarks-as-software-terminal-bench-2611.08417.md
   - sources/arxiv-task-efficient-agent-eval-cached-traces-2611.06803.md

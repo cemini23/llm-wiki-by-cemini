@@ -1,6 +1,7 @@
 ---
 title: "Inside the trap: a renewal law for prefix-cache collapse in LLM agent serving (arXiv 2611.08902)"
 type: source
+maturity: draft
 related:
   - concepts/prefix-cache-collapse-agent-serving.md
 updated: 2026-11-10

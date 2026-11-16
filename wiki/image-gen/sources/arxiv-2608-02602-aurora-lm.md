@@ -5,6 +5,8 @@ tags: [paper, peripheral, llm,language]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-04-daily.md
+  - sources/arxiv-2608-07462-sembridge.md
+  - entities/lipsync/latentsync.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-04

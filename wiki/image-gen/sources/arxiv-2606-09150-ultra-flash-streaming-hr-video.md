@@ -58,4 +58,4 @@ Not a persona identity tool — a **throughput + resolution** layer for interact
 
 ## Dead Ends
 
-Base model coupling unspecified — which Wan/Self-Forcing checkpoint is the default demo? Open weights `[NEEDS VERIFICATION 2026-06-11]`. AIGC degradation tuned for diffusion artifacts — may underperform on real-camera LR input.
+Base model coupling unspecified — which Wan/Self-Forcing checkpoint is the default demo? Open weights `[NEEDS VERIFICATION 2026-11-16]`. AIGC degradation tuned for diffusion artifacts — may underperform on real-camera LR input.

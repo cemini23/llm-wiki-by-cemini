@@ -5,6 +5,8 @@ tags: [paper, theory, statistical-mechanics, peripheral]
 keywords: [Markov particles, path space, Girsanov, Föllmer, Schrödinger bridge]
 related:
   - sweeps/2026-07-16-daily.md
+  - sources/arxiv-2607-28578-markov-micro-macro.md
+  - sources/arxiv-2607-15277-partition-prompt-aggregate-llm-self-consistency.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-16

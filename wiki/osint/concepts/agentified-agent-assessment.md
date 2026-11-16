@@ -1,6 +1,7 @@
 ---
 title: Agentified Agent Assessment (AAA) — judge agents via A2A + MCP
 type: concept
+maturity: draft
 tags: [concept, agent-evaluation, benchmark, a2a, mcp, agentbeats, k112]
 keywords: [aaa, agentified-assessment, agentbeats, a2a-protocol, test-production-mismatch]
 related:

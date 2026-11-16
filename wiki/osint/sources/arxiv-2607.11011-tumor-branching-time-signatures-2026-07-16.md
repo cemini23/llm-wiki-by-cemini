@@ -5,6 +5,8 @@ tags: [source, arxiv, k170]
 keywords: [2607.11011, tumor, branching, time, signatures]
 related:
   - concepts/wiki-tooling-evaluation.md
+  - concepts/markov-regime-switching-models.md
+  - sources/3-29-15.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-16

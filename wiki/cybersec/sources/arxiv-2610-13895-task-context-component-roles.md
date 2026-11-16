@@ -9,6 +9,8 @@ related:
   - concepts/deep-noir-steering-discovery-chronometry.md
   - concepts/countersteer-activation-steering-ipi-defense.md
   - concepts/probe-internal-recognition-sandbagging-audit.md
+  - sources/arxiv-2610.32182-depth-dependent-safety-geometry-in-vision-langua-2026-10-27.md
+  - sources/arxiv-2610.37430-when-visual-evidence-is-insufficient-how-instruc-2026-11-01.md
 maturity: draft
 read_status: read
 created: 2026-10-12

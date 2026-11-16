@@ -23,7 +23,7 @@ updated: 2026-05-10
 Mercury is an autonomous AI agent running as a background daemon (systemd / LaunchAgent / Windows Task Scheduler). Behavior defined via user-owned Markdown skill files (Agent Skills spec). Persistent "Second Brain" via local SQLite + FTS5. Routes LLM traffic through DeepSeek / OpenAI.
 
 - **Repo**: `github.com/cosmicstack-labs/mercury-agent`
-- **License**: MIT [NEEDS VERIFICATION 2026-05-10]
+- **License**: MIT [NEEDS VERIFICATION 2026-11-16]
 - **Stack**: Node.js
 - **Memory**: SQLite with FTS5 (full-text search), `~/.mercury/memory/`
 - **Channels**: CLI + Telegram

@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - concepts/implicit-memory-retrieval-video-world-models.md
+  - sources/arxiv-2606-23105-car-implicit-memory-video-world.md
 ---
 
 ## Raw Concept

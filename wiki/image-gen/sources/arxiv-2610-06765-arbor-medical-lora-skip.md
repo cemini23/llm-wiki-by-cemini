@@ -6,6 +6,7 @@ keywords: [ARBOR, conditional rank allocation, LoRA atoms, taxonomy routing, med
 related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-10-06-daily.md
+  - sources/arxiv-2611.03574-bisect-bilevel-spectral-lora-2026-11-03.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-07

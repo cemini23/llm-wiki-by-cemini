@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/substack-rss-wublock-2026-08-26-three-exchanges-imploded.md
+  - sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md
 ---
 
 ## Raw Concept

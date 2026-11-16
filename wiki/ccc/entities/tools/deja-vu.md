@@ -5,6 +5,8 @@ tags: [tool, memory, agents, session-recall, local, ccc]
 keywords: [deja-vu, deja, session transcripts, jsonl, sqlite, compaction, rejected decisions, exclude]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10-11-2026-11-05.md"
+  - concepts/local-first-mcp-multi-agent-workbench.md
+  - concepts/mcp-multi-agent-graceful-degradation-stack.md
 maturity: draft
 created: 2026-11-05
 updated: 2026-11-10

@@ -6,6 +6,7 @@ keywords: [k257, Klement, ASEAN, tariffs, FDI]
 related:
   - concepts/k257-newsletter-macro-wave.md
   - concepts/guruwatcher-macro-watches.md
+  - sources/substack-rss-klement-2026-11-03-its-not-you-its-your-ai.md
 maturity: draft
 created: 2026-09-08
 updated: 2026-09-08

@@ -11,6 +11,7 @@ related:
   - entities/models/wan-2-2.md
   - sources/video-generation-survey-2026.md
   - sweeps/2026-07-16-daily.md
+  - sources/arxiv-2607-29533-osagen-anomaly.md
 maturity: draft
 read_status: read
 created: 2026-07-16

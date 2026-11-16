@@ -157,7 +157,7 @@ Does **NOT** apply to the 5M:
 - What it can print: [@concepts/filaments-baseline.md]
 - Why this page is short on Bambu-specific tooling: [@concepts/bambu-ecosystem-closed-loop.md]
 
-[CONFIRMED] 5M ships with Klipper firmware; 5M is open-frame and disqualified for ABS without an enclosure; build volume is 220³ mm; marketed top speed is 600 mm/s. [TENTATIVE 2026-05-20] Specific pricing, current Flashforge accessory lineup (AMS-equivalent if any), and AI-feature parity with Bambu — verify against the live Flashforge product page before quoting. [NEEDS VERIFICATION 2026-05-27] Whether the 5M Pro's camera ships a Flashforge-side AI failure-detection classifier comparable to Bambu's "AI failure detection" or is camera-only.
+[CONFIRMED] 5M ships with Klipper firmware; 5M is open-frame and disqualified for ABS without an enclosure; build volume is 220³ mm; marketed top speed is 600 mm/s. [TENTATIVE 2026-05-20] Specific pricing, current Flashforge accessory lineup (AMS-equivalent if any), and AI-feature parity with Bambu — verify against the live Flashforge product page before quoting. [NEEDS VERIFICATION 2026-11-16] Whether the 5M Pro's camera ships a Flashforge-side AI failure-detection classifier comparable to Bambu's "AI failure detection" or is camera-only.
 
 ## Snippets
 

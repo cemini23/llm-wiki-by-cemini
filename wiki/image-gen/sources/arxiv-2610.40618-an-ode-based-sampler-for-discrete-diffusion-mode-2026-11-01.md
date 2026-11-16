@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-finite-sample-conditional-diffusion-2610.13851-2026-10-14.md
+  - sources/arxiv-2610-08791-world-models-physics-exam.md
 ---
 
 ## Raw Concept

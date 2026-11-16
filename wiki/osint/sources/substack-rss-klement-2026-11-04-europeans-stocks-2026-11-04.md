@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-04
 updated: 2026-11-04
+related:
+  - sources/substack-rss-klement-2026-07-14-eu-stock-investors.md
+  - sources/substack-rss-klement-2026-10-13-ai-productivity-lower-debt.md
 ---
 
 ## Raw Concept

@@ -7,6 +7,7 @@ related:
   - concepts/query-aware-role-fusion.md
   - concepts/context-engineering.md
   - briefs/2026-08-28_ccc-k315-k324-sip-ready.md
+  - sources/arxiv-asymspec-speculative-decoding-2608.26004.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-28

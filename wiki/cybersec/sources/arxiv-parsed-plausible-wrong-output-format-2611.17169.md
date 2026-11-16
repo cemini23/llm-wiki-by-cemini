@@ -1,11 +1,13 @@
 ---
 title: "Parsed, Plausible, Wrong: output format controls silent errors in small-model parsing (arXiv 2611.17169)"
 type: source
+maturity: validated
 related:
   - concepts/silent-error-rate-structured-output.md
   - concepts/agent-safety-executable-evaluation.md
   - concepts/guardrail-construct-validity-agent-eval.md
   - sources/arxiv-nfr-to-hyperparameter-quantum-2611.16902.md
+  - sources/arxiv-2611.04349-sparse-internal-control-2026-11-05.md
 updated: 2026-11-14
 ---
 

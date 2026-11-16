@@ -5,6 +5,7 @@ tags: [arxiv, source, k259, atto]
 keywords: [k259, GZSL, HTR, bias, Transkribus]
 related:
   - concepts/k259-atto-htr-wave.md
+  - sources/arxiv-2611.01635-urdu-nastaliq-vlm-benchmark-2026-11-03.md
 maturity: draft
 created: 2026-09-11
 updated: 2026-09-11

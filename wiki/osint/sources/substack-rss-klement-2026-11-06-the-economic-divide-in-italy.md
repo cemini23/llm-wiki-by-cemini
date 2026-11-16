@@ -1,6 +1,7 @@
 ---
 title: "Klement on Investing — the economic divide in Italy"
 type: source
+maturity: draft
 related:
   - concepts/k296-feeds-wave.md
   - concepts/italy-regional-prosperity-divergence.md

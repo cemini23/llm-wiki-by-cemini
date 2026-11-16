@@ -7,6 +7,7 @@ related:
   - concepts/wayfinder-fog-of-war-planning.md
   - concepts/agent-toolkit-routing-research-backlog.md
   - entities/skills/wayfinder.md
+  - sources/newsletter-rss-latent-space-2026-07-02-skill-engineering-and-the-case-against-one-shot.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-21

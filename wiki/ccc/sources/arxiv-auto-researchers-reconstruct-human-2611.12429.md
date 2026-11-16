@@ -1,11 +1,13 @@
 ---
 title: "Can frontier auto researchers reconstruct human research decisions?"
 type: source
+maturity: draft
 related:
   - concepts/auto-researcher-human-similarity.md
   - concepts/ordinal-peer-prediction.md
   - concepts/baseline-and-metric-calibration.md
   - concepts/claim-drift-automated-research.md
+  - sources/arxiv-2611.14211-verifiable-agentic-traffic-class-2026-11-11.md
 updated: 2026-11-10
 ---
 

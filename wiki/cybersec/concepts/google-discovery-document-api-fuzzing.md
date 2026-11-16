@@ -21,7 +21,7 @@ updated: 2026-06-12
 
 ## Raw Concept
 
-K112 Arvin Shivram case study: scale API fuzzing using Google **discovery documents** (Swagger-like REST specs) + mass API key harvest + LLM-generated parameter mutations. Author claims 1,500 APIs / 3,600 keys / $500k bounties `[NEEDS VERIFICATION 2026-06-12]`.
+K112 Arvin Shivram case study: scale API fuzzing using Google **discovery documents** (Swagger-like REST specs) + mass API key harvest + LLM-generated parameter mutations. Author claims 1,500 APIs / 3,600 keys / $500k bounties `[NEEDS VERIFICATION 2026-11-16]`.
 
 ## Narrative
 

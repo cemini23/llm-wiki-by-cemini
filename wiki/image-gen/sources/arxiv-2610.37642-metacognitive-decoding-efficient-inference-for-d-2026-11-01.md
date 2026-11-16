@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/sana-wm-minute-scale-world-model.md
+  - concepts/multimodal-diffusion-mamba-efficient-t2v.md
 ---
 
 ## Raw Concept

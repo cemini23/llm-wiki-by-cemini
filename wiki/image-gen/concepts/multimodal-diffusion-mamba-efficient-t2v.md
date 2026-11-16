@@ -13,6 +13,7 @@ related:
   - concepts/budget-aware-diffusion-caching.md
   - sources/video-generation-survey-2026.md
   - sweeps/2026-07-14-daily.md
+  - sources/arxiv-2610.37642-metacognitive-decoding-efficient-inference-for-d-2026-11-01.md
 maturity: draft
 created: 2026-07-14
 updated: 2026-07-14

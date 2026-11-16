@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-2610-02188-dmad.md
+  - concepts/adversarial-distribution-matching-distillation.md
 ---
 
 ## Raw Concept

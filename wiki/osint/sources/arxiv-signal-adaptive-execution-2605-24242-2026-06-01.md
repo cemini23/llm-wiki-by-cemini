@@ -1,6 +1,7 @@
 ---
 title: "Explicit signal-adaptive sequential optimal execution quotes (2605.24242)"
 type: source
+maturity: draft
 tags: [source, arxiv, quant-finance, market-microstructure, execution, k92]
 keywords: [optimal execution, limit order book, quoting, CARA, inventory risk, signal-adaptive]
 related:

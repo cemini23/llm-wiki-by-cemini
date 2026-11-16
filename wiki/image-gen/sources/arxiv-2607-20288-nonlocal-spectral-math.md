@@ -5,6 +5,8 @@ tags: [paper, math, peripheral]
 keywords: [spectral-theory, nonlocal, variational]
 related:
   - sweeps/2026-07-23-daily.md
+  - sources/arxiv-2607-27110-freqforcing.md
+  - sources/arxiv-2607-21549-tfa-online-support.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-23

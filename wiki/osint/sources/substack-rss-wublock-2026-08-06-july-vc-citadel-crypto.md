@@ -7,6 +7,7 @@ related:
   - sources/substack-rss-event-horizon-2026-08-06-15min-prediction-markets.md
   - concepts/prediction-market-short-horizon-velocity.md
   - sources/substack-rss-capital-flows-2026-08-06-global-economy-teaser.md
+  - sources/substack-rss-wublock-2026-10-29-coinbase-derivatives-head-on-deribit-integration.md
 maturity: draft
 created: 2026-08-06
 updated: 2026-08-06

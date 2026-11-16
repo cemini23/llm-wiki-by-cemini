@@ -40,7 +40,7 @@ updated: 2026-10-25
 | **Location** | `cemini-librarian:/opt/cemini-bulk/research/GitHub Repo Evaluation for Cemini.docx` |
 | **Retrieved** | 2026-06-01 |
 | **URLs** | 90 |
-| **Read status** | read (aggregate + tier table; license `[NEEDS VERIFICATION 2026-06-01]` per URL) |
+| **Read status** | read (aggregate + tier table; license `[NEEDS VERIFICATION 2026-11-16]` per URL) |
 
 Fix sha256 in frontmatter - I need real hash b900613478ba0b23 from preingest - full hash from earlier: b900613478ba0b23... let me use full from preingest output - only showed partial. I'll run sha256 quick or use what we have.
 

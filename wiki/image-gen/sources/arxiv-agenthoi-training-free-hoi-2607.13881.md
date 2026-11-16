@@ -5,6 +5,9 @@ tags: [paper, mllm, hoi, grounding, peripheral]
 keywords: [2607.13881, AgentHOI, GroundingDINO, oceanflowlab]
 related:
   - sweeps/2026-07-16-daily.md
+  - sources/arxiv-2607-29610-agentic-engineer-education.md
+  - sources/arxiv-2606-17257-reins-video-safety-representation-steering.md
+  - entities/models/sparsepr.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-16

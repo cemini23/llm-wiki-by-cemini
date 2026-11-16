@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - concepts/input-stable-sparse-attention-video.md
+  - concepts/causal-clip-attention-long-video.md
 ---
 
 ## Raw Concept

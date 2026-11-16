@@ -8,6 +8,7 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-capital-flows-2026-07-16-market-view-positions-changed.md
   - sources/substack-rss-capital-flows-2026-07-18-weekend-depth-of-field.md
+  - sources/substack-rss-apricitas-2026-10-25-how-canada-is-decoupling-from-the-us.md
 maturity: draft
 read_status: read
 created: 2026-07-18

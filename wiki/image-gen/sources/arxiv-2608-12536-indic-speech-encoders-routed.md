@@ -10,6 +10,7 @@ related:
   - entities/voice-models/xtts-v2.md
   - sources/arxiv-2608-05507-affectdf-routed.md
   - sweeps/2026-08-15-daily.md
+  - sources/arxiv-2608-13450-av-threat-analysis-routed.md
 maturity: draft
 read_status: read
 created: 2026-08-15

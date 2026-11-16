@@ -7,6 +7,7 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - sources/arxiv-2607.20645-frontier-financial-judgement.md
   - concepts/frontier-financial-judgement.md
+  - sources/substack-rss-capital-flows-2026-10-31-equity-selling-pressure.md
 maturity: draft
 read_status: unread-stub
 created: 2026-07-24

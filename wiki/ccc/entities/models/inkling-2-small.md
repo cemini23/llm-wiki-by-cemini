@@ -1,6 +1,7 @@
 ---
 title: "Inkling 2 Small — Thinking Machines 594B/17B open-weight MoE"
 type: entity
+maturity: draft
 related:
   - concepts/frontier-model-release-cadence.md
   - sources/newsletter-rss-latent-space-2026-11-06-ainews-inkling-2-small-17a-594b-trained-in-68-ho.md

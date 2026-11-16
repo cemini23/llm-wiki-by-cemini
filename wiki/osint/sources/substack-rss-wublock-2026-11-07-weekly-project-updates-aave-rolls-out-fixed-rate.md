@@ -1,12 +1,14 @@
 ---
 title: "WuBlockchain Weekly Project Updates — Aave fixed-rate lending, Base Denim upgrade"
 type: source
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - entities/tickers/aave.md
   - entities/tickers/eth.md
   - entities/tickers/sol.md
   - concepts/crypto-custody-single-point-of-failure.md
+  - sources/substack-rss-klement-2026-10-28-gold-reserves-and-exchange-rate-management.md
 updated: 2026-11-10
 ---
 

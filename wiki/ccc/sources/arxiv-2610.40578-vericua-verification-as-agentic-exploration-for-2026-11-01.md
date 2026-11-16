@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-opengcua-2610.22200-2026-10-16.md
+  - concepts/agentic-online-rl-self-evolving-systems.md
 ---
 
 ## Raw Concept

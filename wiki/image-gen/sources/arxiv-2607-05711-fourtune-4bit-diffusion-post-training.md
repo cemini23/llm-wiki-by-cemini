@@ -14,6 +14,9 @@ related:
   - entities/hardware/gpu-guide.md
   - entities/uis/comfyui.md
   - sweeps/2026-07-10-daily.md
+  - sources/arxiv-2607-13563-nexus-native-mesh-diffusion.md
+  - sources/arxiv-2607-21352-double-screening-pinn.md
+  - sources/arxiv-2607-28325-rotational-diffusion-macro.md
 maturity: draft
 read_status: read
 created: 2026-07-10

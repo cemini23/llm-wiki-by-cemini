@@ -35,4 +35,4 @@ Jack Schwager authored the **Market Wizards** interview series — canonical pri
 ### Cemini relevance
 
 - Literature anchor for **trader process / risk psychology** briefs — not a signal source.
-- *Next Generation* release 2026-06-09 — candidate for formal source ingest when published [NEEDS VERIFICATION 2026-06-09].
+- *Next Generation* release 2026-06-09 — candidate for formal source ingest when published [NEEDS VERIFICATION 2026-11-16].

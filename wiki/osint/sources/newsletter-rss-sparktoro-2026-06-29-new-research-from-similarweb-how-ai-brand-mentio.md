@@ -5,6 +5,7 @@ tags: [source, newsletter-rss, inbox-auto, sparktoro]
 keywords: [rss, newsletter, sparktoro]
 related:
   - sources/newsletter-rss-sparktoro-2026-07-08-sparktoro-api-live.md
+  - @seo-wiki/sources/newsletter-rss-sparktoro-2026-06-29-new-research-from-similarweb-how-ai-brand-mentio.md
 maturity: draft
 created: 2026-07-05
 updated: 2026-07-08

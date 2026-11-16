@@ -7,6 +7,7 @@ related:
   - concepts/adversarial-images-hijack-web-agents.md
   - concepts/model-is-not-a-security-boundary-kubernetes-agents.md
   - concepts/prompt-injection-detector-calibration.md
+  - sources/arxiv-2610.32967-mid-vlm-detecting-and-grounding-global-semantic-2026-10-27.md
 maturity: draft
 read_status: read
 created: 2026-10-09

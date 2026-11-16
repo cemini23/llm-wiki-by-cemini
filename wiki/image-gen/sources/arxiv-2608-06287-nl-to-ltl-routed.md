@@ -5,6 +5,8 @@ tags: [paper, routed, llm, formal-methods, cross-wiki]
 keywords: [LTL, requirements, few-shot, pass@k, self-consistency]
 related:
   - sweeps/2026-08-10-daily.md
+  - @cybersecurity-wiki/sources/arxiv-2608-06287-nl-to-ltl-requirements.md
+  - @cybersecurity-wiki/concepts/nl-to-ltl-requirements-llm.md
 maturity: draft
 read_status: read
 created: 2026-08-10

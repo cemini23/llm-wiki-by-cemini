@@ -38,6 +38,6 @@ The teaser also claims the inflation swap market still prices a deceleration the
 
 Only the spread is checkable without the paid material. It is a simple monitor: nominal GDP growth minus the policy rate, updated each quarter.
 
-[NEEDS VERIFICATION 2026-11-14] The 6% and 4% figures are teaser text, not checked against a primary release.
+[NEEDS VERIFICATION 2026-11-16] The 6% and 4% figures are teaser text, not checked against a primary release.
 
 [Source: @sources/substack-rss-capital-flows-2026-11-13-inflation-cycle-playbook-livestream-reply.md]

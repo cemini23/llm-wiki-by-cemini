@@ -5,6 +5,7 @@ tags: [source, arxiv, ood, nlp, classification]
 keywords: [2608.11044, TEAMMix, hierarchical text classification, weak supervision, pseudo-labeling, GMM resampling]
 related:
   - concepts/ai-for-cybersecurity.md
+  - sources/arxiv-2609-01564-ood-confusion-aware-rag.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-12

@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/substack-rss-wublock-2026-08-24-weekly-outlook-nvidia-pce.md
+  - sources/substack-rss-wublock-2026-10-05-weekly-outlook-fed-ecb-minutes.md
 ---
 
 ## Raw Concept

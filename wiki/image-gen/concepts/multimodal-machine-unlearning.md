@@ -14,6 +14,7 @@ related:
   - entities/adapters/gaussian-core-lora.md
   - sources/arxiv-2609-01433-gaussian-core-lora.md
   - sweeps/2026-09-02-daily.md
+  - sources/arxiv-2611.14383-energy-based-model-tutorial-2026-11-11.md
 maturity: draft
 created: 2026-07-13
 updated: 2026-07-13

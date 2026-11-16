@@ -5,6 +5,7 @@ tags: [docx, cemini-internal, llm-agents, rl-marl, portfolio-strategy, predictio
 related:
   - concepts/portfolio-strategy.md
   - concepts/rl-marl-research.md
+  - sources/arxiv-2611.01355-financial-derivatives-lecture-notes-2026-11-03.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-23

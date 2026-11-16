@@ -5,6 +5,8 @@ tags: [source, arxiv, agents, action-selection, agent-web]
 keywords: [Turn-BoN, best-of-N, generator-selector, LLM agent, terminal tasks, policy improvement]
 related:
   - concepts/agent-ready-website-local-bm.md
+  - sources/arxiv-2611.04640-tunebench-power-system-2026-11-05.md
+  - sources/arxiv-2611.05251-auto-research-provenance-2026-11-05.md
 maturity: draft
 read_status: read
 created: 2026-11-10

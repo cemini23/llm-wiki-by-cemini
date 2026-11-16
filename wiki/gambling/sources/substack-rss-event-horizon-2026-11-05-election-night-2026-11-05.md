@@ -5,6 +5,8 @@ tags: [source, newsletter, prediction-markets, kalshi, media, election-night]
 related:
   - sources/substack-rss-event-horizon-2026-11-04-midterms-postmortem-2026-11-04.md
   - sources/substack-rss-event-horizon-2026-11-11-unfair-surprise-2026-11-11.md
+  - sources/substack-rss-event-horizon-2026-10-27-some-people-dont-understand-election-markets-jus.md
+  - sources/substack-rss-event-horizon-2026-10-28-what-we-learned-about-robinhood-and-prediction-m.md
 maturity: draft
 read_status: skimmed
 created: 2026-11-05

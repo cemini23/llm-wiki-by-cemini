@@ -6,6 +6,8 @@ keywords: [2610.06830, k429]
 related:
   - concepts/preference-aware-memory-orchestration.md
   - briefs/2026-10-06_ccc-k426-k430-sip-ready.md
+  - sources/arxiv-2610.35864-vibevideobench-evaluating-multimodal-agents-on-c-2026-10-27.md
+  - sources/arxiv-2610.37482-from-interaction-to-capability-task-advancement-2026-11-01.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-06

@@ -7,6 +7,7 @@ related:
   - sources/arxiv-2608-16795-ood-historical-backtesting-astronomy.md
   - "@image-gen-wiki/sources/arxiv-2608-14391-ra-bench-crisis-video-routed.md"
   - sources/arxiv-2608-17067-ood-disco-t2i-defense.md
+  - sources/arxiv-2609-01548-ood-sdare-bench.md
 maturity: draft
 read_status: read
 created: 2026-08-18

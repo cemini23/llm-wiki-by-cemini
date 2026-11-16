@@ -1,6 +1,7 @@
 ---
 title: "Klement on Investing — DEI is dead"
 type: source
+maturity: draft
 related:
   - concepts/k296-feeds-wave.md
   - concepts/corporate-political-risk-disclosure.md

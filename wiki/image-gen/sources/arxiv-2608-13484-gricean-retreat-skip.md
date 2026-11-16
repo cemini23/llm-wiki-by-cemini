@@ -5,6 +5,8 @@ tags: [paper, peripheral, llm, nlp]
 keywords: [Grice, knowledge-boundary, hallucination]
 related:
   - sweeps/2026-08-15-daily.md
+  - sources/arxiv-2608-27431-lotka-volterra-skip.md
+  - sources/arxiv-2608-20795-lotka-volterra-skip.md
 maturity: draft
 read_status: read
 created: 2026-08-15

@@ -1,6 +1,7 @@
 ---
 title: "Contextual integrity simulation: need is not entitlement"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-contextual-integrity-generative-2611.08284.md
 updated: 2026-11-10

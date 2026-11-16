@@ -7,6 +7,9 @@ maturity: draft
 read_status: unread-stub
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/newsletter-rss-sterling-sky-2026-09-29-gbp-linked-url-local-pack-test.md
+  - sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md
 ---
 
 ## Raw Concept

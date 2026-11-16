@@ -1,6 +1,7 @@
 ---
 title: Italy's regional prosperity divergence — trade openness and its cost
 type: concept
+maturity: draft
 related:
   - sources/substack-rss-klement-2026-11-06-the-economic-divide-in-italy.md
 updated: 2026-11-10

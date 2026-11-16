@@ -1,9 +1,17 @@
 ---
 title: "Pragmatic Engineer — Scaling Slack and GitHub with Maude Lemaire"
 type: source
+maturity: draft
 related:
   - concepts/foundational-work-verification.md
   - concepts/ai-native-engineering-curriculum.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-06-30-impressions-from-visiting-openai-anthropic-curso.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-01-how-kent-beck-shapes-the-software-engineering-in.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-28-inside-anthropic.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-10-27-ai-sre-what-is-it-how-could-it-change-on-call-an.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-10-29-software-engineering-at-google-cs-education-with.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-10-30-the-pulse-anthropic-kills-the-coding-interview.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-03-tenfold-prs-2026-11-03.md
 updated: 2026-11-10
 ---
 

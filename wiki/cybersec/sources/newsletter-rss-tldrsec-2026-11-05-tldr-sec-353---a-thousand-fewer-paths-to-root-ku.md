@@ -1,10 +1,12 @@
 ---
 title: "tl;dr sec #353 — A thousand fewer paths to root, Kubernetes security logging, post-AI security floor"
 type: source
+maturity: validated
 related:
   - concepts/cloud-llm-service-quarantine-coverage-gap.md
   - concepts/llm-vulnerability-discovery.md
   - concepts/siem.md
+  - sources/newsletter-rss-tldrsec-2026-10-29-tldr-sec-352---unprompted-slides-aws-ai-post-com.md
 updated: 2026-11-10
 ---
 

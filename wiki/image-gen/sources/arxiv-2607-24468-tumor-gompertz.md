@@ -5,6 +5,7 @@ tags: [paper, math, medical, peripheral]
 keywords: [Gompertz, optimal-control, tumor, peripheral]
 related:
   - sweeps/2026-07-28-daily.md
+  - concepts/federated-daily-research-digest.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-28

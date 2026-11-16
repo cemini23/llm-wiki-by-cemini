@@ -6,6 +6,7 @@ keywords: [single-stock-vol, implied-correlation, credit-issuance, sofr, oracle]
 related:
   - concepts/macro-charts-regime-signals.md
   - sources/substack-rss-capital-flows-2026-07-07-the-ai-compute-playbook.md
+  - sources/substack-rss-capital-flows-2026-10-29-the-feds-looming-policy-error.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-08

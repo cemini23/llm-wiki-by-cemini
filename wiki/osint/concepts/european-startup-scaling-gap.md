@@ -1,6 +1,7 @@
 ---
 title: European start-up scaling gap — the tail, not the average
 type: concept
+maturity: draft
 related:
   - sources/substack-rss-klement-2026-11-10-the-start-up-challenge-in-europe.md
   - sources/substack-rss-klement-2026-11-12-the-start-up-challenge-in-europe-part-deux.md

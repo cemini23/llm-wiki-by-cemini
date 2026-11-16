@@ -5,6 +5,7 @@ tags: [paper, peripheral, compression,codec]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-05-daily.md
+  - sources/arxiv-2608-02406-kl-entropy-diffusion.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-05

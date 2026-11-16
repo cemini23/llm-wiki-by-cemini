@@ -1,9 +1,12 @@
 ---
 title: "Latent Space — How Stanford teaches AI-native engineering (Mihail Eric, CS146S)"
 type: source
+maturity: draft
 related:
   - concepts/ai-native-engineering-curriculum.md
   - concepts/foundational-work-verification.md
+  - sources/newsletter-rss-latent-space-2026-07-02-skill-engineering-and-the-case-against-one-shot.md
+  - sources/newsletter-rss-latent-space-2026-10-21-ai-for-the-fortune-2000-how-tenex-builds-an-ai-n.md
 updated: 2026-11-10
 ---
 

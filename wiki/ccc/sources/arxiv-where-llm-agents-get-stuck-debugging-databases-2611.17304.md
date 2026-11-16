@@ -1,11 +1,15 @@
 ---
 title: "Where LLM agents get stuck debugging databases — access, more than reasoning"
 type: source
+maturity: draft
 related:
   - concepts/production-state-access-bottleneck.md
   - concepts/failed-trajectory-harness-repair.md
   - concepts/agent-trace-tampering-audit-gap.md
   - concepts/agent-completion-verification-gates.md
+  - sources/arxiv-2611.03517-ask-dont-equip-question-driven-agents-2026-11-03.md
+  - sources/arxiv-2611.03586-fedready-bounded-agents-federation-2026-11-03.md
+  - sources/arxiv-2611.14068-cage4-benchmark-audit-2026-11-11.md
 updated: 2026-11-14
 ---
 

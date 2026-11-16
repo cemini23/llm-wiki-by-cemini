@@ -40,7 +40,7 @@ Page prompted by the W4 Tier 2 voice/audio backfill (2026-05-13). Named in @conc
 
 ### Key facts (May 2026)
 
-- **License**: Apache 2.0 [NEEDS VERIFICATION 2026-05-13] — verify against current repo
+- **License**: Apache 2.0 [NEEDS VERIFICATION 2026-11-16] — verify against current repo
 - **Repo**: `github.com/OpenTalker/SadTalker`
 - **Paper**: SadTalker (CVPR 2023, arXiv:2211.12194)
 - **Input**: single portrait image + audio clip

@@ -3,6 +3,7 @@ title: "DSINC beyond Heston — American options on non-affine stochastic volati
 type: source
 related:
   - concepts/k294-osint-wave.md
+  - sources/arxiv-2610.36921-a-deep-learning-driven-operator-splitting-scheme-2026-11-01.md
 maturity: draft
 read_status: skimmed
 updated: 2026-10-23

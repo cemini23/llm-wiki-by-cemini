@@ -1,12 +1,17 @@
 ---
 title: "WuBlockchain Asia TOP10 — PBOC probes Solana ads, Korea delays crypto tax to 2029"
 type: source
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - concepts/crypto-custody-single-point-of-failure.md
   - entities/tickers/sol.md
   - entities/tickers/eth.md
   - entities/tickers/coin.md
+  - sources/substack-rss-wublock-2026-10-25-asias-weekly-top10-crypto-news-south-korea-regul.md
+  - sources/substack-rss-wublock-2026-10-28-a16z-drops-crypto-from-its-name-is-there-still-h.md
+  - sources/substack-rss-wublock-2026-11-01-asias-weekly-top10-crypto-news-hong-kong-opens-t.md
+  - sources/substack-rss-wublock-2026-11-03-vc-monthly-kalshi-1b-2026-11-03.md
 updated: 2026-11-10
 ---
 

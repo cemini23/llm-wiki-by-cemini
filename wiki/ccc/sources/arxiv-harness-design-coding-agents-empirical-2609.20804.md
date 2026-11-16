@@ -6,6 +6,7 @@ keywords: [2609.20804, k370]
 related:
   - concepts/coding-agent-harness-component-design.md
   - briefs/2026-09-18_ccc-k369-k372-sip-ready.md
+  - sources/arxiv-2610.32578-lessons-outlive-their-failures-a-case-study-of-r-2026-10-27.md
 maturity: draft
 read_status: read
 created: 2026-09-18

@@ -1,9 +1,11 @@
 ---
 title: "Latent Space — One Million AI Engineer special (Stanford CS146S note)"
 type: source
+maturity: draft
 related:
   - concepts/ai-native-engineering-curriculum.md
   - concepts/perspectivegap-orchestration-prompting.md
+  - sources/newsletter-rss-latent-space-2026-11-11-ai-engineer-code-summit-2026-11-11.md
 updated: 2026-11-10
 ---
 

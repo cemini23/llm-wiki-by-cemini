@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-dsinc-beyond-heston-2610.28847-2026-10-23.md
+  - sources/arxiv-2610.01187-american-slsv-2026-10-02.md
 ---
 
 ## Raw Concept

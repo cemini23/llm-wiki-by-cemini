@@ -529,6 +529,16 @@ related:
   - sweeps/2026-10-10-daily.md
   - sweeps/2026-10-11-daily.md
   - sweeps/2026-10-12-daily.md
+  - sources/arxiv-2607-21091-metasurfaces-silicon-photonics.md
+  - sources/arxiv-2607-21558-beyond-sycophancy-llm-moral.md
+  - sources/arxiv-2607-24468-tumor-gompertz.md
+  - sources/arxiv-2607-25385-colloidal-reciprocal.md
+  - sources/arxiv-2607-26903-pegasus-embodied.md
+  - sources/arxiv-2607-29043-scdiffusion-sbcfg.md
+  - sources/arxiv-2608-03938-bimanual-jetson.md
+  - sources/arxiv-2608-04426-psr-future-state.md
+  - sources/arxiv-2608-04528-galaxy-tides.md
+  - sources/arxiv-2610.37623-diffusive-dispersive-traveling-waves-and-kinetic-2026-11-01.md
 
 ---
 

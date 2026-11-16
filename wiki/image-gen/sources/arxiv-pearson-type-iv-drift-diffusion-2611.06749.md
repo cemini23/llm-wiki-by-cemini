@@ -1,6 +1,7 @@
 ---
 title: "Pearson type IV as a drift-diffusion stationary distribution (arXiv:2611.06749)"
 type: source
+maturity: draft
 tags: [source, arxiv, stochastic-processes, heavy-tails, physics, peripheral]
 keywords: [Pearson type IV, Fokker-Planck, drift-diffusion, linear-quadratic process, heavy tails, skewness, kurtosis, moment recurrence, peripheral]
 related:

@@ -1,12 +1,15 @@
 ---
 title: "DiVR: learning when diffusion language models should regenerate (arXiv:2611.17320)"
 type: source
+maturity: validated
 tags: [paper, diffusion-language-model, mdlm, decoding, verifier, inference-time]
 keywords: [DiVR, LLaDA-8B, Dream, remasking, block re-decoding, outcome-supervised verifier, LoRA adapter, Sudoku diagnosis, Countdown]
 related:
   - concepts/outcome-supervised-block-regeneration.md
   - concepts/mdlm-padding-termination-decoupling.md
   - concepts/decomposed-graded-verifier.md
+  - sources/arxiv-2611.03574-bisect-bilevel-spectral-lora-2026-11-03.md
+  - sources/arxiv-2611.14383-energy-based-model-tutorial-2026-11-11.md
 updated: 2026-11-14
 ---
 

@@ -30,6 +30,7 @@ related:
   - concepts/theory-of-mind-personalized-agent-explanations.md
   - entities/tools/tars-vscode.md
   - sources/arxiv-tars-theory-of-mind-ide-2607.15948.md
+  - sources/arxiv-2610.39244-cash-a-capability-aware-subsidy-harness-for-adve-2026-11-01.md
 maturity: draft
 created: 2026-07-07
 updated: 2026-07-20

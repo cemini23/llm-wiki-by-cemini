@@ -1,6 +1,7 @@
 ---
 title: Genealogical reinforcement — local family structure as a growth predictor
 type: concept
+maturity: draft
 related:
   - sources/arxiv-genealogical-reinforcement-2611.08548.md
   - concepts/computational-genealogy-archival-automation.md

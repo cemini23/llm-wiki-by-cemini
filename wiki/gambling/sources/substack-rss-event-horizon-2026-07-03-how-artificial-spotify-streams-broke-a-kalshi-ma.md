@@ -10,6 +10,9 @@ related:
   - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
   - @osint-wiki/sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
   - sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
+  - sources/substack-rss-event-horizon-2026-10-28-news-utah-files-criminal-charges-against-kalshi.md
+  - sources/substack-rss-event-horizon-2026-10-29-i-got-an-email-from-kalshi-asking-if-i-wanted-to.md
+  - sources/substack-rss-event-horizon-2026-10-30-a-prediction-market-gets-into-digital-rips-becau.md
 maturity: validated
 created: 2026-07-05
 updated: 2026-10-25

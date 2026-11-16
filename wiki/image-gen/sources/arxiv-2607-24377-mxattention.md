@@ -9,6 +9,7 @@ related:
   - entities/models/hunyuanvideo-1-5.md
   - entities/hardware/gpu-guide.md
   - sweeps/2026-07-28-daily.md
+  - sources/arxiv-2607-13425-attention-head-reweighting-llm.md
 maturity: draft
 read_status: read
 created: 2026-07-28

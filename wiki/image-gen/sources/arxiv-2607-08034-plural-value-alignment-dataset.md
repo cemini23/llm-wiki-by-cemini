@@ -9,6 +9,8 @@ related:
   - concepts/domain-sensitive-llm-over-alignment.md
   - entities/persona-ops/sillytavern.md
   - sweeps/2026-07-13-daily.md
+  - sources/arxiv-2607-08561-contravariance-theory-strong-alignment.md
+  - sources/arxiv-2607-20410-lkvalues.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-13

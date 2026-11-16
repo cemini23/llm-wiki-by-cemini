@@ -10,6 +10,8 @@ updated: 2026-07-31
 cross-wiki-source: @3d-printing-wiki/sources/2026-asgar-firewall3d-firmware-hardware.md
 wire_status: wont_wire
 wire_target: "Phase-0 NO-GO"
+related:
+  - @3d-printing-wiki/sources/2026-asgar-firewall3d-firmware-hardware.md
 ---
 
 # Firewall3D: Hardware Firewall for Defending 3D Printers Against Firmware Attacks

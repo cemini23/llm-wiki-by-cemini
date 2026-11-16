@@ -5,6 +5,7 @@ tags: [tool, claude-code, memory, hook, retrieval, local]
 keywords: [misakanet, bm25, rrf, posttooluse hook, known root causes, local mcp, failure memory]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md"
+  - entities/skills/scout-tool-search.md
 maturity: draft
 created: 2026-11-02
 updated: 2026-11-02

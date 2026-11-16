@@ -1,6 +1,7 @@
 ---
 title: "Event Horizon — House subcommittee jabs at prediction markets during college-gambling hearing"
 type: source
+maturity: validated
 related:
   - entities/platforms/kalshi.md
   - concepts/prediction-market-regulation-2026.md

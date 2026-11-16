@@ -34,7 +34,7 @@ read_status: deep-read
 | Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/Canadian Apostille And Citizenship Research.docx` |
 | Laptop extract | `.local/research/atto-latam-audience-systems/CANADA.md` |
 
-**Not legal advice.** Many provincial fee cells still `[NEEDS VERIFICATION 2026-07-29]`.
+**Not legal advice.** Many provincial fee cells still `[NEEDS VERIFICATION 2026-11-16]`.
 
 ## Narrative
 

@@ -1,6 +1,7 @@
 ---
 title: "VABAR — a Variational Automation benchmark for agentic robotics"
 type: source
+maturity: draft
 related:
   - concepts/agentic-robotics-harness.md
   - concepts/benchmark-maintenance-debt.md

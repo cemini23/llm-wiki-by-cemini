@@ -32,7 +32,7 @@ The "find citations" + "fix NAP inconsistencies" workflow is the strongest fit f
 
 Phase-0 audit caveats: BrightLocal **does not** offer review gating tools (their public stance is anti-gating, which is good). Some of their automated-citation-submission features have historically been criticized; manual / supervised submission is preferred over auto-submit.
 
-`[NEEDS VERIFICATION 2026-05-07]` for current pricing tiers.
+`[NEEDS VERIFICATION 2026-11-16]` for current pricing tiers.
 
 ## Snippets
 

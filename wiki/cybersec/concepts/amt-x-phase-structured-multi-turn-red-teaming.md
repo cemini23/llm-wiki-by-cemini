@@ -22,6 +22,7 @@ related:
   - concepts/physical-vs-content-danger-embodied-agents.md
   - sources/arxiv-2607-14256-agentic-hard-example-synthesis.md
   - sources/arxiv-2607-15218-prism-physical-vs-content-danger.md
+  - sources/arxiv-2610.40627-shallowdefend-harnessing-shallow-safety-alignmen-2026-11-01.md
 maturity: draft
 created: 2026-07-16
 updated: 2026-10-09

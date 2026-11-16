@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-mechanical-engineering-skills-2611.05758.md
+  - sources/arxiv-2610.36598-openjaws-an-open-hardware-umi-framework-with-ste-2026-11-01.md
 ---
 
 ## Raw Concept

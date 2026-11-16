@@ -1,6 +1,7 @@
 ---
 title: "DISCO — diffusion-free score matching for exact conditional sampling (arXiv:2611.09758)"
 type: source
+maturity: draft
 tags: [source, arxiv, score-matching, diffusion, conditional-sampling, mcmc, theory]
 keywords: [DISCO, diffusion-free score matching, single score field, exact conditional sampling, tempered SMC, Metropolis correction, energy-based model, Fisher divergence]
 related:

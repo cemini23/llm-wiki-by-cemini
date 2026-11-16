@@ -5,6 +5,8 @@ tags: [source, arxiv, operations-research, transit, k129]
 keywords: [2606.24386, line planning, public transit, scale, optimization]
 related:
   - concepts/active-project-research-routing.md
+  - sources/arxiv-agents-last-exam-2606.05405-2026-06-06.md
+  - sources/arxiv-particle-methods-partial-observation-2606.09055-2026-06-15.md
 maturity: draft
 read_status: read
 created: 2026-06-25

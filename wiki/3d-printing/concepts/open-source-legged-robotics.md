@@ -19,6 +19,7 @@ related:
   - sources/2025-miyama-soft-hand-skin-skeleton.md
   - concepts/printed-robot-arm-platforms.md
   - sources/arxiv-anthropomorphic-arm-charmie-2611.08013.md
+  - sources/arxiv-2610.36598-openjaws-an-open-hardware-umi-framework-with-ste-2026-11-01.md
 maturity: draft
 created: 2026-06-01
 updated: 2026-11-10

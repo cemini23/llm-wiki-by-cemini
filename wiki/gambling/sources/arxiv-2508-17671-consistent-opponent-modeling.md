@@ -14,6 +14,7 @@ related:
   - sources/arxiv-2606.29169-ganzfried-ped-nash-imperfect-info-2026-06-30.md
   - sources/arxiv-2607.01498-policy-representation-ssl-poker-2026-07-07.md
   - sources/research-k122-poker-paper-landscape-2026-06-19.md
+  - concepts/card-games-imperfect-information.md
 maturity: draft
 read_status: read
 created: 2026-06-03

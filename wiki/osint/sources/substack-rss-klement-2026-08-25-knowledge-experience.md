@@ -5,6 +5,7 @@ tags: [newsletter, k246, inbox-rss]
 keywords: [substack, rss, k246]
 related:
   - concepts/k246-newsletter-macro-wave.md
+  - sources/substack-rss-klement-2026-07-16-odd-number-signals.md
 maturity: draft
 created: 2026-08-25
 updated: 2026-08-25

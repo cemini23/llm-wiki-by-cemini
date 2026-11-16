@@ -21,7 +21,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `github.com/notoriouslab/vault-search`
 - **Tier (per source brief)**: **Reference-only**
-- **License**: [NEEDS VERIFICATION 2026-05-11] License not located in source brief — severe IP-readiness blocker for any code lift.
+- **License**: [NEEDS VERIFICATION 2026-11-16] License not located in source brief — severe IP-readiness blocker for any code lift.
 
 ## Narrative
 

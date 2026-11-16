@@ -5,6 +5,8 @@ tags: [paper, peripheral, medical, t2i]
 keywords: [retinal, foundation-model, medical-imaging]
 related:
   - sweeps/2026-08-15-daily.md
+  - sources/arxiv-2608-25862-fair-face-sbp-skip.md
+  - sources/arxiv-2608-17926-perfact-mri-skip.md
 maturity: draft
 read_status: read
 created: 2026-08-15

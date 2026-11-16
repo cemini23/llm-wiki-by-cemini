@@ -9,6 +9,7 @@ related:
   - entities/sfx-models/audioldm.md
   - entities/sfx-models/tango-2.md
   - entities/voice-models/bark.md
+  - sources/arxiv-2611.05279-mobius-motion-language-2026-11-05.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-05-13
@@ -43,7 +44,7 @@ The differentiator is the **single-model integration**: prior approaches require
 - **Venue**: SIGGRAPH 2026 (presented / pending — confirm date) [OPEN QUESTION 2026-05-13]
 - **Code / weights status**: **research-future** — paper-stage as of writing; code/weights release timing unknown
 - **Architecture**: unified transformer or DiT over discrete audio tokens [VERIFY 2026-05-13]
-- **License** [NEEDS VERIFICATION 2026-05-13] — undetermined; depends on authors' release policy
+- **License** [NEEDS VERIFICATION 2026-11-16] — undetermined; depends on authors' release policy
 - **Scope claim**: sound + music + speech unified
 - **Distinctive feature**: in-model editing (audio inpainting / source separation / timbre transfer) without pipeline-stitching multiple models
 

@@ -11,6 +11,7 @@ related:
   - entities/tools/geo-optimizer-skill.md
   - sources/arxiv-bajemon-2026-scoring-without-engine-2609.07559-2026-09-17.md
   - sources/arxiv-martinez-2026-geo-visibility-prompt-corpora-2609.06811-2026-09-17.md
+  - sources/arxiv-2611.02643-searchinject-retrieval-exposure-control-2026-11-03.md
 maturity: validated
 read_status: skimmed
 created: 2026-09-23

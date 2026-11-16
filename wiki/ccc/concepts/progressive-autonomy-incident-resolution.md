@@ -10,6 +10,7 @@ related:
   - concepts/nine-stage-agent-team-production.md
   - concepts/agent-harness-operational-definition.md
   - "@cybersecurity-wiki/concepts/agentic-aiops-autonomous-incident-resolution.md"
+  - sources/substack-rss-addy-osmani-2026-07-03-agentic-autonomy-levels.md
 maturity: draft
 created: 2026-06-10
 updated: 2026-06-10

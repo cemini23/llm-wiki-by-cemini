@@ -11,6 +11,7 @@ related:
   - entities/models/mirage.md
   - sweeps/2026-06-24-daily.md
   - concepts/long-video-rag-retrieval.md
+  - sources/arxiv-2610.42146-hierarchical-world-models-implicit-dynamics-2026-11-03.md
 title: "CaR — compression and retrieval for video world models (arXiv:2606.23105)"
 type: source
 tags: [paper, world-model, video-generation, memory, camera-control, orange-3dv]

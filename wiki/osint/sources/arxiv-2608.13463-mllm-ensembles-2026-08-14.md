@@ -7,6 +7,7 @@ related:
   - concepts/atto-genealogy-agent-kit.md
   - concepts/document-processing-pipeline-scale-patterns.md
   - entities/tools/voxcpm.md
+  - sources/arxiv-2610.35240-reading-beyond-ocr-noise-robust-cross-lingual-ra-2026-10-27.md
 maturity: draft
 created: 2026-08-14
 updated: 2026-08-14

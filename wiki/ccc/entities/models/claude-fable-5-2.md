@@ -1,6 +1,7 @@
 ---
 title: "Claude Fable 5.2 — effort levels, cost per task, and lane fit"
 type: entity
+maturity: validated
 related:
   - concepts/frontier-model-release-cadence.md
   - concepts/token-economics-and-prompt-caching.md

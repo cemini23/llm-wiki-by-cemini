@@ -32,7 +32,7 @@ Content style: rigorous, well-sourced, applies institutional-quant validation di
 
 The author's framing of Goodhart's Law applied to validation sets ("a measure that becomes a target is no longer a good measure — your validation set is the measure") is the most-quotable line in K56 and the framing the @concepts/monte-carlo-permutation-test-mcpt.md page builds around.
 
-`[NEEDS VERIFICATION 2026-05-21]` Real identity / affiliation. Anonymous-handle quants on X are common; the math literacy and book-reference accuracy suggest professional background.
+`[NEEDS VERIFICATION 2026-11-16]` Real identity / affiliation. Anonymous-handle quants on X are common; the math literacy and book-reference accuracy suggest professional background.
 
 ## Dead Ends
 

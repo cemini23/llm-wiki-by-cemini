@@ -5,6 +5,8 @@ tags: [stub, cross-wiki]
 keywords: []
 related:
   - @cybersecurity-wiki/sources/arxiv-2608-17067-ood-disco-t2i-defense.md
+  - sources/arxiv-2608-10933-safeca-routed.md
+  - sources/arxiv-2608-20770-motionphys-routed.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25

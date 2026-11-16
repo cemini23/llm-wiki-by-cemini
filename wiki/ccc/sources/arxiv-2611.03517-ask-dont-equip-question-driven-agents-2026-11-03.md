@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-where-llm-agents-get-stuck-debugging-databases-2611.17304.md
+  - entities/tools/openspec.md
 ---
 
 ## Raw Concept

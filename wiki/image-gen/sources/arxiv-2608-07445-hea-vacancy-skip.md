@@ -5,6 +5,8 @@ tags: [paper, peripheral, materials-science]
 keywords: [HEA, vacancy, permutation-invariant]
 related:
   - sweeps/2026-08-10-daily.md
+  - sources/arxiv-2608-27431-lotka-volterra-skip.md
+  - sources/arxiv-2608-20795-lotka-volterra-skip.md
 maturity: draft
 read_status: read
 created: 2026-08-10

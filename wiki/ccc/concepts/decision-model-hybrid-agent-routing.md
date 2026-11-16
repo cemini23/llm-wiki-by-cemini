@@ -1,12 +1,15 @@
 ---
 title: "Decision-model hybrid routing — small classifiers inside the harness"
 type: concept
+maturity: draft
 related:
   - sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md
   - sources/newsletter-rss-latent-space-2026-11-12-the-jev-revolution-what-engineers-are-already-bu.md
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
   - concepts/token-economics-and-prompt-caching.md
   - concepts/reasoning-effort-calibration.md
+  - sources/arxiv-2610.37375-agent-conditioned-routing-diverse-reasoning-path-2026-11-01.md
+  - sources/arxiv-2611.05275-route-anything-2026-11-05.md
 updated: 2026-11-14
 ---
 

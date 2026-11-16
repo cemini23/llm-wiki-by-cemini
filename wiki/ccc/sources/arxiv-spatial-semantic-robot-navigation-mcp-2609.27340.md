@@ -5,6 +5,8 @@ tags: [source, arxiv, k385]
 keywords: [2609.27340, k385]
 related:
   - briefs/2026-09-24_ccc-k385-k389-sip-ready.md
+  - sources/arxiv-esti-state-semantic-injection-2608.16806.md
+  - sources/arxiv-llms-telecom-rca-structured-reasoning-2609.02805.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-24

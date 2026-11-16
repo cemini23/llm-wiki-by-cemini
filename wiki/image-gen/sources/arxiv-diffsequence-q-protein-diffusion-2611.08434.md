@@ -1,6 +1,7 @@
 ---
 title: "DiffSequence-Q — multinomial diffusion with a quantum auxiliary head for protein design (arXiv:2611.08434)"
 type: source
+maturity: draft
 tags: [source, arxiv, discrete-diffusion, conditioning, quantum, protein, peripheral]
 keywords: [DiffSequence-Q, multinomial diffusion, discrete diffusion, per-residue conditioning, continuous property target, QNN, QKAN, solubility, CATH, peripheral]
 related:

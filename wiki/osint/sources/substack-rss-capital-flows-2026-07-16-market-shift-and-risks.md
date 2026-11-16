@@ -7,6 +7,7 @@ related:
   - concepts/capital-flows-sofr-conviction-framework.md
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-capital-flows-2026-07-16-market-view-positions-changed.md
+  - sources/substack-rss-capital-flows-2026-10-23-equity-and-bond-market-risks-video-breakdown.md
 maturity: draft
 read_status: read
 created: 2026-07-17

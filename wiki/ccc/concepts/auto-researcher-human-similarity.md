@@ -1,6 +1,7 @@
 ---
 title: "Auto-researcher–human similarity — score the decisions, not only the paper"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-auto-researchers-reconstruct-human-2611.12429.md
   - sources/arxiv-information-elicitation-ordinal-agreement-2611.08366.md

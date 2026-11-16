@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/substack-rss-klement-2026-09-22-chip-ban-2026-09-22.md
+  - sources/substack-rss-klement-2026-10-13-ai-productivity-lower-debt.md
 ---
 
 ## Raw Concept

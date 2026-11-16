@@ -38,7 +38,7 @@ Fills gap between static prompt-injection lists and **stateful tool-using agents
 - **Trajectory-aware** scoring — unsafe tool steps matter, not final chat politeness.
 - Risk taxonomy: resources, user tasks, environment, intrinsic agent behavior.
 
-**Cemini:** CONDITIONAL-GO to run against **conductor + lazy-tool** harness before expanding MCP tool surface — laptop eval only; repo `seclaw-eval/seclaw-eval` needs Phase-0 license + CI cost check [NEEDS VERIFICATION 2026-06-04].
+**Cemini:** CONDITIONAL-GO to run against **conductor + lazy-tool** harness before expanding MCP tool surface — laptop eval only; repo `seclaw-eval/seclaw-eval` needs Phase-0 license + CI cost check [NEEDS VERIFICATION 2026-11-16].
 
 ## Snippets
 

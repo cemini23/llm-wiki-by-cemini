@@ -10,6 +10,9 @@ related:
   - concepts/harness-security-axis-comparison.md
   - concepts/test-time-world-model-validate-before-act.md
   - briefs/2026-10-12_ccc-k445-k448-sip-ready.md
+  - sources/arxiv-2610.32851-reimagining-enterprise-rag-for-multi-agent-syste-2026-10-27.md
+  - sources/arxiv-2610.35773-a-unified-arena-for-llm-agents-across-diverse-eu-2026-10-27.md
+  - sources/arxiv-2610.37461-concordat-typed-sessions-for-llm-agents-2026-11-01.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-12

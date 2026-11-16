@@ -5,6 +5,7 @@ tags: [newsletter, k254]
 keywords: [substack]
 related:
   - concepts/k254-newsletter-macro-wave.md
+  - sources/substack-rss-klement-2026-10-29-the-one-eyed-among-the-blind.md
 maturity: draft
 created: 2026-09-02
 updated: 2026-09-02

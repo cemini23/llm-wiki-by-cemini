@@ -11,6 +11,9 @@ updated: 2026-10-12
 phase_0_verdict: "REFERENCE 2026-10-12 — no attack payloads in wiki."
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (OOD)"
+related:
+  - sources/arxiv-2610-12313-verdict-without-the-rule-compliance-invariance.md
+  - sources/arxiv-2610-10533-engramedit-conditional-memory-knowledge-updates.md
 ---
 
 ## Relations

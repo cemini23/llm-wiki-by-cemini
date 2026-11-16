@@ -1,6 +1,7 @@
 ---
 title: "Signals, evidence, and context: user scrutiny in real-world LLM conversations (arXiv 2611.08232)"
 type: source
+maturity: validated
 related:
   - concepts/verification-environment-user-scrutiny.md
   - concepts/citation-is-not-consultation.md

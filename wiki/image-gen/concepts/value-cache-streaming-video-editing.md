@@ -1,6 +1,7 @@
 ---
 title: Value-cache streaming video editing (inversion-free, one source pass)
 type: concept
+maturity: draft
 tags: [concept, video-editing, streaming, autoregressive, training-free, identity-preservation]
 keywords: [AR-Edit, V injection, Q/K stability, inversion, DMD distillation, Reward Forcing, CausVid, Self Forcing, commit-then-anchor, streaming latency]
 related:

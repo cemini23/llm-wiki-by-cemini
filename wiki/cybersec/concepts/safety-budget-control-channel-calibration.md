@@ -1,6 +1,7 @@
 ---
 title: "Safety-budget control-channel calibration"
 type: concept
+maturity: validated
 related:
   - sources/arxiv-safety-as-a-budget-2611.16628.md
   - concepts/guardrail-construct-validity-agent-eval.md

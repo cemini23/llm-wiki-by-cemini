@@ -133,7 +133,7 @@ Natural-language prose, similar to FLUX.1 Dev. Z-Image's S3-DiT single-stream ar
 - ~~Z-Image Turbo Hugging Face release page; canonical model hash; current version~~ — **resolved [CONFIRMED 2026-05-06]**: canonical at `Tongyi-MAI/Z-Image-Turbo`. GGUF quants at `unsloth/Z-Image-Turbo-GGUF`; 8-bit at `mzbac/Z-Image-Turbo-8bit`; AIO bundle at `SeeSee21/Z-Image-Turbo-AIO` (combines photoreal + anime variants in FP8/FP16/BF16). Multiple community mirrors (qs2026, srcphag, exolabs, mrfakename) all carry identical weights.
 - ~~Z-Image license terms~~ — **resolved [CONFIRMED 2026-05-06]**: Apache 2.0 (per HF model card and SeeSee21 AIO bundle metadata). Commercial use unrestricted.
 - **`[OPEN QUESTION 2026-05-06]`**: persona-consistency adapter availability (PuLID II / InfiniteYou / Redux Z-Image port status). Sub-sweep C target.
-- **`[NEEDS VERIFICATION 2026-05-06]`**: Zeta Chroma release status — survey says "active development." Lodestone Rock pixel-space derivative.
+- **`[NEEDS VERIFICATION 2026-11-16]`**: Zeta Chroma release status — survey says "active development." Lodestone Rock pixel-space derivative.
 - Compare Z-Image Turbo vs FLUX.2 Klein 9B head-to-head on a fixed photoreal-prompt set; document quality and speed tradeoffs.
 - Compare Z-Image Turbo vs FLUX.1 Dev for NSFW anatomy out-of-the-box (Z-Image should win cleanly per the tier classification but verify).
 

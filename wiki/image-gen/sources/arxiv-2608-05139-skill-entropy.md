@@ -5,6 +5,8 @@ tags: [paper, peripheral, llm,rl,benchmark]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-06-daily.md
+  - sources/arxiv-2608-23383-joyai-echo-15.md
+  - entities/models/joyai-echo.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-06

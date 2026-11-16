@@ -44,9 +44,9 @@ A massive Claude-plugin ecosystem built to convert Claude into a full-stack digi
 
 ### Recommended next actions
 
-1. Phase-0 audit: verify MIT license [NEEDS VERIFICATION 2026-05-21], check repo maturity
+1. Phase-0 audit: verify MIT license [NEEDS VERIFICATION 2026-11-16], check repo maturity
 2. Inventory the 67 MCP servers — marketing-domain specific vs generic
 3. Extract QA/claim-verification scripts as building blocks for GEO/AEO content-pipeline veto gate
 4. Reference but do NOT deploy the full 5-layer memory stack (Pinecone + Graphiti = heavy infra)
 
-[NEEDS VERIFICATION 2026-05-21] license, repo URL, stars, commit cadence.
+[NEEDS VERIFICATION 2026-11-16] license, repo URL, stars, commit cadence.

@@ -1,6 +1,7 @@
 ---
 title: Corporate political risk — disclosure falls when government revenue is at stake
 type: concept
+maturity: draft
 related:
   - sources/substack-rss-klement-2026-11-09-dei-is-dead.md
 updated: 2026-11-10

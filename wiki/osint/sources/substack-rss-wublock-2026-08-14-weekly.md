@@ -9,6 +9,7 @@ related:
   - concepts/prediction-market-regulation-2026.md
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-wublock-2026-08-13-july-2026-exchange-website-traffic-report-total.md
+  - sources/substack-rss-wublock-2026-11-04-strive-vs-strategy-2026-11-05.md
 maturity: draft
 created: 2026-08-14
 updated: 2026-08-14

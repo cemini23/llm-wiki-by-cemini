@@ -8,6 +8,8 @@ related:
   - entities/platforms/kalshi.md
   - concepts/prediction-markets-crossover.md
   - @osint-wiki/sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md
+  - sources/substack-rss-event-horizon-2026-10-28-news-utah-files-criminal-charges-against-kalshi.md
+  - sources/substack-rss-event-horizon-2026-10-29-i-got-an-email-from-kalshi-asking-if-i-wanted-to.md
 maturity: validated
 created: 2026-07-05
 updated: 2026-07-05

@@ -11,6 +11,7 @@ related:
   - entities/voice-models/voicechat-tts.md
   - entities/voice-models/x2streaming-tts.md
   - sweeps/2026-08-20-daily.md
+  - sources/arxiv-2607-20327-pyrodash-slm-llm.md
 maturity: draft
 read_status: read
 created: 2026-08-20

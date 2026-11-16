@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - concepts/multimodal-machine-unlearning.md
+  - sources/arxiv-2611.17320-divr-diffusion-verifier-regeneration.md
 ---
 
 ## Raw Concept

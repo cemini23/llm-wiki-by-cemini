@@ -8,6 +8,7 @@ related:
   - concepts/stochastic-calculus-foundations.md
   - concepts/quant-finance.md
   - sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md
+  - sources/arxiv-line-planning-transit-scale-2606.24386-2026-06-25.md
 maturity: draft
 read_status: read
 created: 2026-06-15

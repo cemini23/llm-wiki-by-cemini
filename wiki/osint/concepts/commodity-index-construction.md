@@ -1,6 +1,7 @@
 ---
 title: Commodity index construction — an index is an oil bet unless it is not
 type: concept
+maturity: draft
 related:
   - sources/substack-rss-moontower-2026-11-08-moontower-335.md
   - concepts/dispersion-trading.md

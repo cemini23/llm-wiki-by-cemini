@@ -5,6 +5,7 @@ tags: [tool, agents, harness, methodology, ccc, specification]
 keywords: [design log, null hypothesis, implementation results, frozen spec, cursor rules, claude.md]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-b-2026-11-01.md"
+  - sources/arxiv-2610.42141-roboarchitect-harness-design-automation-2026-11-03.md
 maturity: draft
 created: 2026-11-01
 updated: 2026-11-01

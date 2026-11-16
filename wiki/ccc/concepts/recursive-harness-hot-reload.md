@@ -1,11 +1,13 @@
 ---
 title: "Recursive harness self-improvement with kernel-managed hot reload"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-boxbox-recursive-harness-2611.09218.md
   - concepts/meta-harness-continual-improvement.md
   - concepts/harness-as-eval-artifact.md
   - concepts/context-engineering.md
+  - sources/arxiv-2610.32813-harnessmm-recursive-self-improvement-for-harness-2026-10-27.md
 updated: 2026-11-10
 ---
 

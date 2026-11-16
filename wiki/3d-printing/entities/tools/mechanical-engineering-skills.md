@@ -24,7 +24,7 @@ Created on the 2026-11-10 ingest of @sources/arxiv-mechanical-engineering-skills
 | Install | `npx skills add BaratiLab/mechanical-engineering-skills` |
 | Size | 33 skills (19 package lab papers, 14 core engineering tasks) |
 | Hosts | Claude Code, Claude.ai, and other Agent Skills hosts |
-| Licence | [NEEDS VERIFICATION 2026-11-10] The paper does not state a licence for the library |
+| Licence | [NEEDS VERIFICATION 2026-11-16] The paper does not state a licence for the library |
 | Maturity | Research release, November 2026 |
 
 ### Skill anatomy

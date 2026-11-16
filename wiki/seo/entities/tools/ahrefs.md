@@ -30,7 +30,7 @@ Stub entity page for Ahrefs — a major commercial SEO suite, generally regarded
 
 Ahrefs's edge vs Semrush: backlink index depth and keyword-data quality on long-tail queries. Ahrefs Site Explorer shows what's pointing to a domain (and to specific pages) with depth that's hard to match. For a local brick-and-mortar in a competitive market, this matters mostly for **citation-source discovery** — which directories, blogs, news mentions, niche guides do top-ranking local competitors have, that the operator does not.
 
-Same caveat as Semrush: pricing (`[NEEDS VERIFICATION 2026-05-07]`) is steep relative to single-shop needs. Best deployed as a one-month-deep-dive rather than ongoing subscription.
+Same caveat as Semrush: pricing (`[NEEDS VERIFICATION 2026-11-16]`) is steep relative to single-shop needs. Best deployed as a one-month-deep-dive rather than ongoing subscription.
 
 Ahrefs Webmaster Tools (free for verified domain owners) provides site-audit + backlink data on the operator's own domain at no cost — a useful starting point before committing to a paid plan.
 

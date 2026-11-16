@@ -31,7 +31,7 @@ phase_0_verdict: REFERENCE 2026-06-20 — LLM-as-env-engineer pattern; repo lice
 |-------|-------|
 | **arXiv** | [2606.17682](https://arxiv.org/abs/2606.17682) |
 | **Repo** | [LARK-AI-Lab/Trainee-to-Trainer](https://github.com/LARK-AI-Lab/Trainee-to-Trainer) |
-| **License** | **NOASSERTION** [NEEDS VERIFICATION 2026-06-20] — `gh api` 2026-06-20 |
+| **License** | **NOASSERTION** [NEEDS VERIFICATION 2026-11-16] — `gh api` 2026-06-20 |
 | **Domain** | MAPF-FrozenLake multi-agent gridworld — **not NLHE** |
 | **Verdict** | **REFERENCE** — offline env-engineering pattern only |
 

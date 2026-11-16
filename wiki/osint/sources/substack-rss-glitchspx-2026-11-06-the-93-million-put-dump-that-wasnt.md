@@ -1,11 +1,13 @@
 ---
 title: "GlitchSPX — the $93 million put dump that was not a dump"
 type: source
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - concepts/options-flow-package-reading.md
   - concepts/tape-reading-order-flow-day-trading.md
   - concepts/xsp-vol-regime-gates.md
+  - sources/substack-rss-glitchspx-2026-11-03-two-zones-four-paths-2026-11-03.md
 updated: 2026-11-10
 ---
 

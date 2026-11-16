@@ -17,6 +17,7 @@ related:
   - entities/models/freqforcing.md
   - concepts/video-representation-regularization.md
   - sources/arxiv-2607-27036-video-repr-regularization.md
+  - sources/arxiv-2611.03602-reviso-video-captioning-attention-2026-11-03.md
 title: Causal clip attention for long video generation
 type: concept
 tags: [concept, video-generation, long-horizon, autoregressive, attention, kv-cache]

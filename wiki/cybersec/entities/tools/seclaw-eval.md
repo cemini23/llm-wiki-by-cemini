@@ -23,7 +23,7 @@ related:
 maturity: draft
 created: 2026-06-04
 updated: 2026-10-09
-phase_0_verdict: "Reference 2026-06-04 — benchmark only; repo has no LICENSE file on GitHub API [NEEDS VERIFICATION 2026-06-04]; run laptop Docker eval after license audit before any code import."
+phase_0_verdict: "Reference 2026-06-04 — benchmark only; repo has no LICENSE file on GitHub API [NEEDS VERIFICATION 2026-11-16]; run laptop Docker eval after license audit before any code import."
 wire_status: wont_wire
 wire_target: "REFERENCE eval — CCC owns harness meta"
 ---
@@ -58,7 +58,7 @@ Routed from K98 brief (`briefs/2026-06-04_k98-seclaw-agent-eval-from-osint.md`, 
 - Complement @entities/tools/agentredguard.md (SaaS integration channel) and static jailbreak fuzzers
 
 **Phase-0 blockers**:
-- **No LICENSE** exposed via GitHub API at 2026-06-04 — defer code import until LICENSE file lands or maintainer confirms terms `[NEEDS VERIFICATION 2026-06-04]`
+- **No LICENSE** exposed via GitHub API at 2026-06-04 — defer code import until LICENSE file lands or maintainer confirms terms `[NEEDS VERIFICATION 2026-11-16]`
 - Docker + LLM API cost for full benchmark sweeps — laptop subset only initially
 
 **Not** a production runtime dependency — evaluation harness only.

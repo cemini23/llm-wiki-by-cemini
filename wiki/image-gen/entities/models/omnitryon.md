@@ -34,7 +34,7 @@ Entity stub from 2026-06-10 ingest — OmniTryOn mask-free multi-object video tr
 
 **Persona relevance:** wardrobe swap on existing motion video without mask/pose aux graph.
 
-**Status:** `[NEEDS VERIFICATION 2026-06-10]` — VRAM, base DiT backbone (Wan/LTX/other), license, NSFW.
+**Status:** `[NEEDS VERIFICATION 2026-11-16]` — VRAM, base DiT backbone (Wan/LTX/other), license, NSFW.
 
 → @concepts/video-try-on-anything.md
 

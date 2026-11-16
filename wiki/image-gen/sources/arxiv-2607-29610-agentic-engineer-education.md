@@ -5,6 +5,8 @@ tags: [paper, peripheral, education,agents]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-04-daily.md
+  - sources/arxiv-2607-19038-filmworld-novel-to-film.md
+  - sources/arxiv-agenthoi-training-free-hoi-2607.13881.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-04

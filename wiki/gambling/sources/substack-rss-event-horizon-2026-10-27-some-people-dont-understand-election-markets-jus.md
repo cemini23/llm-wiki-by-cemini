@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/substack-rss-event-horizon-2026-11-05-election-night-2026-11-05.md
+  - sources/substack-rss-event-horizon-2026-11-02-episode-39-election-markets-with-sam-henry-lazar.md
 ---
 
 ## Raw Concept

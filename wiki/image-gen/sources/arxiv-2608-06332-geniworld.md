@@ -6,6 +6,7 @@ keywords: [2608.06332]
 related:
   - sweeps/2026-08-07-daily.md
   - concepts/world-models-video-generation.md
+  - sources/arxiv-2608-04657-mobilewam.md
 maturity: draft
 read_status: read
 created: 2026-08-07

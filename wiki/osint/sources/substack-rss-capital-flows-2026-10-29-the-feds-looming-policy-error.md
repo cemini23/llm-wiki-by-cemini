@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/substack-rss-capital-flows-2026-09-17-policy-error-2026-09-18.md
+  - sources/substack-rss-capital-flows-2026-07-08-liquidity-event-horizon.md
 ---
 
 ## Raw Concept

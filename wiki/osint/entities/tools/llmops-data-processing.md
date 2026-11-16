@@ -21,7 +21,7 @@ updated: 2026-05-10
 Educational reference architecture for LLMOps pipelines (data processing, security, scaling). The `data-processing` module focuses on ETL for generative AI: text cleaning, Hamilton dataflow patterns, LLM-specific preprocessing, feature stores.
 
 - **Repo**: `github.com/andysingal/LLMops`
-- **License**: MIT [NEEDS VERIFICATION 2026-05-10]
+- **License**: MIT [NEEDS VERIFICATION 2026-11-16]
 - **Stack**: Python (Jupyter notebook-driven)
 - **Heavy deps**: ZenML, Trulens, Ray-LLM (NOT to be adopted)
 - **Position**: educational quarry mapped to a deep-learning course

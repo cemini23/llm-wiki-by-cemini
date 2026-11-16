@@ -32,6 +32,7 @@ related:
   - concepts/verifiable-search-agent-environment.md
   - sources/arxiv-flowguard-mcp-security-evidence-2607.14754.md
   - concepts/mcp-security-signals-vs-runtime-evidence.md
+  - sources/arxiv-2610.37609-envsched-environment-aware-scheduling-for-rollou-2026-11-01.md
 maturity: draft
 created: 2026-06-04
 updated: 2026-07-18

@@ -17,6 +17,7 @@ related:
   - concepts/phase1-adopt-wire.md
   - sources/brief-k237-meta-harness-vero-misevolution-2026-08-14.md
   - concepts/agent-as-intermediary-engineer.md
+  - sources/arxiv-2610.42141-roboarchitect-harness-design-automation-2026-11-03.md
 maturity: draft
 wire_status: wont_wire
 created: 2026-08-14

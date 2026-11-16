@@ -31,7 +31,7 @@ read_status: deep-read
 
 Designs a feedforward Time Delay Filter (TDF) input shaper that adapts to a system's natural frequency (ωn) and damping ratio (ζ) without prior knowledge — targeting 3D-printer toolheads and gantry cranes whose payload mass / dynamic stiffness drift mid-print.
 
-[TENTATIVE] The abstract advertises Recursive Least Squares (RLS) for parameter estimation, but Algorithm 1 (§III) actually estimates parameters from observed response features — max overshoot Mp, 2% settling time Ts, peak time TMp. For the undamped case the paper derives a closed-form solution via Weierstrass substitution; for the damped case it solves numerically. The "RLS" framing in the abstract does not match the recursive-update method described in the body [NEEDS VERIFICATION 2026-05-06].
+[TENTATIVE] The abstract advertises Recursive Least Squares (RLS) for parameter estimation, but Algorithm 1 (§III) actually estimates parameters from observed response features — max overshoot Mp, 2% settling time Ts, peak time TMp. For the undamped case the paper derives a closed-form solution via Weierstrass substitution; for the damped case it solves numerically. The "RLS" framing in the abstract does not match the recursive-update method described in the body [NEEDS VERIFICATION 2026-11-16].
 
 Tested in simulation across ζ ∈ [0, 1], ωn ∈ [π, 3000π] rad/s under a step input (K = 0.01) with 0.1% measurement noise. **Simulation only — no hardware test.** Future work flagged: replace the hand-derived closed-form with a regression model trained on the response-features → parameter mapping.
 

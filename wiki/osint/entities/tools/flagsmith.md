@@ -34,6 +34,6 @@ If license clears (MIT/Apache-2.0/BSD): Flagsmith would be a stronger fit than G
 ### Open questions
 
 - Explicit SPDX identifier must be manually retrieved from GitHub `[OPEN QUESTION 2026-05-10]`
-- Transitive Python dependencies within Django API must be checked for AGPL/GPL contamination `[NEEDS VERIFICATION 2026-05-10]`
+- Transitive Python dependencies within Django API must be checked for AGPL/GPL contamination `[NEEDS VERIFICATION 2026-11-16]`
 
 [Source: Project Link Evaluation Brief 5_10.docx, URL 11]

@@ -7,6 +7,7 @@ related:
   - concepts/verification-generation-gap.md
   - concepts/compliance-verdict-rule-invariance.md
   - concepts/armor-plusplus-agentic-deepfake-detector-attacks.md
+  - sources/arxiv-2610.32967-mid-vlm-detecting-and-grounding-global-semantic-2026-10-27.md
 maturity: draft
 read_status: read
 created: 2026-10-09

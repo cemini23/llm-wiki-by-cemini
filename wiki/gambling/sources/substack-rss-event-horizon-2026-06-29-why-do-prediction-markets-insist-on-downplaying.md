@@ -5,6 +5,7 @@ tags: []
 keywords: []
 related:
   - concepts/kalshi-spotify-oracle-manipulation-2026-07.md
+  - @osint-wiki/sources/substack-rss-event-horizon-2026-06-29-why-do-prediction-markets-insist-on-downplaying.md
 maturity: draft
 created: 2026-07-05
 updated: 2026-10-25

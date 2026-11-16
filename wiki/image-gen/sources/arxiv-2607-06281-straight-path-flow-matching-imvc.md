@@ -5,6 +5,8 @@ tags: [paper, flow-matching, clustering, peripheral]
 keywords: [incomplete multi-view clustering, IMVC, flow matching, ECCV 2026]
 related:
   - sweeps/2026-07-10-daily.md
+  - sources/arxiv-2607-12496-zipl-dialog-latent-flow-matching.md
+  - sources/arxiv-2607-28760-wait-frequency-aware-flow.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-10

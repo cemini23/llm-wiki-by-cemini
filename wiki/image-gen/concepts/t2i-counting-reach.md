@@ -1,6 +1,7 @@
 ---
 title: T2I counting reach (how far a number word in a prompt still works)
 type: concept
+maturity: draft
 tags: [concept, t2i, prompt-engineering, evaluation, counting]
 keywords: [counting, reach, number word, same-noise test, layout preservation, fine-scale noise, exact-match metric, SD3.5, FLUX.1-dev, FLUX.2 klein, Qwen-Image, SDXL]
 related:

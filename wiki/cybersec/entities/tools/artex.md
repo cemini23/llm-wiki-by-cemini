@@ -1,6 +1,7 @@
 ---
 title: "ARTEX — AI-native penetration-testing framework"
 type: entity
+maturity: draft
 related:
   - sources/newsletter-rss-tldrsec-2026-11-12-tldr-sec-354---artex-agentic-hacking-in-the-wild.md
   - concepts/agentic-offensive-security-kill-chain.md
@@ -52,7 +53,7 @@ These signatures come from the Datadog write-up and are useful as hunting hypoth
 | Identity pattern | Burst of API calls from one key across services |
 | Exposure | Internet-facing ARTEX consoles, often hosted in Singapore or Hong Kong |
 
-`[NEEDS VERIFICATION 2026-11-14]` — confirm each signature against the vendor write-ups before adding it to a production rule.
+`[NEEDS VERIFICATION 2026-11-16]` — confirm each signature against the vendor write-ups before adding it to a production rule.
 
 ### Defensive controls
 
@@ -69,4 +70,4 @@ ARTEX is evidence that agentic attack tooling has left the lab. The local whiteh
 ### Open questions
 
 - `[OPEN QUESTION 2026-11-14]` Which reported behaviours are framework defaults and which are operator choices? Detection priority depends on the answer.
-- `[NEEDS VERIFICATION 2026-11-14]` Is the project still maintained, and under which licence?
+- `[NEEDS VERIFICATION 2026-11-16]` Is the project still maintained, and under which licence?

@@ -1,6 +1,7 @@
 ---
 title: Agent-Toolkit Routing Research Backlog
 type: concept
+maturity: validated
 hub: true
 tags: [concept, routing, llm, infra, backlog, k233]
 keywords: [routing, failover, kv-capacity, workload-aware, provider-proxy, backlog]

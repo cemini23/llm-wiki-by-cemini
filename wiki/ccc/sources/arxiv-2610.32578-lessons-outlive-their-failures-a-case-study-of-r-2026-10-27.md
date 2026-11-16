@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-harness-design-coding-agents-empirical-2609.20804.md
+  - concepts/coding-agent-harness-component-design.md
 ---
 
 ## Raw Concept

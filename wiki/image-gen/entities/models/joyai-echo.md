@@ -12,6 +12,7 @@ related:
   - sources/arxiv-2608-31106-dreamx-creator.md
   - sources/arxiv-2608-23383-joyai-echo-15.md
   - sweeps/2026-08-25-daily.md
+  - sources/arxiv-2608-05139-skill-entropy.md
 maturity: draft
 created: 2026-08-25
 updated: 2026-08-25

@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/arxiv-monolithic-optomechanical-chassis-2611.06898.md
+  - sources/arxiv-2611.02850-self-aligning-printed-structures-optical-fibers-2026-11-03.md
 ---
 
 ## Raw Concept

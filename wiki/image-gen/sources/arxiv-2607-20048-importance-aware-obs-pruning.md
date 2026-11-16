@@ -9,6 +9,8 @@ related:
   - concepts/dit-template-token-semantic-registers.md
   - entities/models/pixart-sigma.md
   - sweeps/2026-07-23-daily.md
+  - sources/arxiv-2607-18106-av-failure-importance-sampling.md
+  - sources/arxiv-2607-29431-modelequivbench.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-23

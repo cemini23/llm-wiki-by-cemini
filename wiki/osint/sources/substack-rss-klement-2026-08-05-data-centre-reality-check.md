@@ -7,6 +7,9 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - concepts/guruwatcher-newsletter-claim-ledger.md
   - concepts/active-project-research-routing.md
+  - sources/substack-rss-klement-2026-10-26-nice-earnings-forecasts-you-have-shame-if-someth.md
+  - sources/substack-rss-klement-2026-11-02-women-are-their-own-enemies.md
+  - sources/substack-rss-klement-2026-11-03-ai-iran-trump-2026-11-03.md
 maturity: draft
 created: 2026-08-05
 updated: 2026-08-05

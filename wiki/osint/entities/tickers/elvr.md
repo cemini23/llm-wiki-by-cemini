@@ -35,7 +35,7 @@ What prompted this page: K41 ingest — ELVR is referenced across 4 K41 sources 
 |-------|------|--------|------|
 | WW #175 | Apr 22 2026 | Entry $20 | Initial call, TP $72 |
 | WW #176 | Apr 29 2026 | Last $88; TP1 $80 hit (trim 25%); TP2 $100 | Documented +340% in 1 week |
-| WW #178 | May 13 2026 | **Capital raise event**: A$275M placement + A$150M convert; TP US$120 | Convert pricing details [NEEDS VERIFICATION 2026-05-13] |
+| WW #178 | May 13 2026 | **Capital raise event**: A$275M placement + A$150M convert; TP US$120 | Convert pricing details [NEEDS VERIFICATION 2026-11-16] |
 
 ### Capital raise (WW #178 May 13 2026)
 

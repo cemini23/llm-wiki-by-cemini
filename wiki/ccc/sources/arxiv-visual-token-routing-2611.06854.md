@@ -1,6 +1,7 @@
 ---
 title: "Visual Token Routing — keep only the screenshot tokens the next action needs"
 type: source
+maturity: draft
 related:
   - concepts/visual-token-routing.md
   - concepts/context-engineering.md

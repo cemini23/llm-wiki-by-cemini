@@ -8,6 +8,9 @@ maturity: draft
 created: 2026-10-21
 updated: 2026-10-25
 read_status: skimmed
+related:
+  - sources/newsletter-rss-latent-space-2026-11-08-how-stanford-teaches-ai-native-engineering-mihai.md
+  - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
 ---
 
 ## Raw Concept

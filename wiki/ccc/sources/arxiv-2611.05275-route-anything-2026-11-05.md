@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - concepts/deepseek-coding-cost-routing.md
+  - concepts/decision-model-hybrid-agent-routing.md
 ---
 
 ## Raw Concept

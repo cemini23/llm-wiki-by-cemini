@@ -53,7 +53,7 @@ updated: 2026-06-24
 | LongLive-RAG | Latent retrieval against window drift |
 | **Memento** | Explicit subject reconstruction loss + disentangled queries |
 
-**Release:** No public GitHub/HF at ingest `[NEEDS VERIFICATION 2026-06-17]`.
+**Release:** No public GitHub/HF at ingest `[NEEDS VERIFICATION 2026-11-16]`.
 
 ### Workspace relevance
 

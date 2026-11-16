@@ -1,8 +1,10 @@
 ---
 title: "Scale-rich network metamaterials grow by local rules on a recursive cell division (arXiv 2611.16513)"
 type: source
+maturity: draft
 related:
   - concepts/osint-inbox-wave-2026-11-14.md
+  - sources/arxiv-2611.05750-jazz-influence-lineages-2026-11-05.md
 updated: 2026-11-14
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Capital Flows — Market status: bottom, or the beginning of the end?"
 type: source
+maturity: draft
 related:
   - concepts/k296-feeds-wave.md
   - concepts/capital-flows-sofr-conviction-framework.md

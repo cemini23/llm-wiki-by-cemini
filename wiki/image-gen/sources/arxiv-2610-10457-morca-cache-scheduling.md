@@ -8,6 +8,7 @@ related:
   - sweeps/2026-10-08-daily.md
   - concepts/budget-aware-diffusion-caching.md
   - entities/models/wan-2-2.md
+  - sources/arxiv-2610.40640-sonoworld4d-from-one-video-to-a-4d-audio-visual-2026-11-01.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-09

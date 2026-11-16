@@ -7,6 +7,10 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/arxiv-2610.41738-metacognitive-reliability-supervision-2026-11-03.md
+  - sources/arxiv-2611.17012-dma-google-search-anonymization-2026-11-14.md
+  - sources/arxiv-2611.16524-drone-victim-search-llm-optimizer-2026-11-14.md
 ---
 
 ## Raw Concept

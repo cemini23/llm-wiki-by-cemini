@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-opengcua-2610.22200-2026-10-16.md
+  - concepts/code-as-agent-harness.md
 ---
 
 ## Raw Concept

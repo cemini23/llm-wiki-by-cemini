@@ -28,7 +28,7 @@ K247 Integrate REFERENCE. GuruWatcher alert-only — 120 tools across 30 intel d
 
 - **URL:** https://github.com/marc-shade/world-intel-mcp
 - **Claim:** enterprise-grade MCP — 120 tools, 30 intelligence domains, SQLite cache, Qdrant vector store
-- **License:** `[NEEDS VERIFICATION 2026-08-26]` — `gh api` before clone
+- **License:** `[NEEDS VERIFICATION 2026-11-16]` — `gh api` before clone
 - **Fit:** GuruWatcher macro/SEC/market parameter alerts on Discord — **alert-only**, no auto-arm, no LIVE without operator HITL
 - **Pairs:** headlong (laude-institute) inner-monologue Extract from same eval batch
 - **Guardrails:** lazy-tool catalog first; skill-vetting + preflight before prod MCP exposure; membership checks ≠ claim validation (K259)

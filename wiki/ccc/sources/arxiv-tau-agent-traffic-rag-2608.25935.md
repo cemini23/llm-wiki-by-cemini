@@ -5,6 +5,8 @@ tags: [source, arxiv, rag, video, traffic, ood, k317]
 keywords: [2608.25935, TAU-Agent, traffic anomaly, retrieval-augmented, VLM, video captioning, tracking]
 related:
   - briefs/2026-08-28_ccc-k315-k324-sip-ready.md
+  - sources/arxiv-castclaw-hitl-forecasting-agent-2608.30976.md
+  - concepts/agent-data-injection-attacks.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-28

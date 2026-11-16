@@ -1,6 +1,7 @@
 ---
 title: "Generation-verification gap — a produced artifact is not an accepted artifact"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-controlharbor-control-design-coding-agents-2611.16867.md
   - sources/arxiv-analoglayoutworld-agentic-analog-layout-2611.16991.md

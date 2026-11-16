@@ -5,6 +5,7 @@ tags: [source, macro, rates, crypto, fed, ecb]
 keywords: [wublock, fed-minutes, ecb-minutes, ism-services, eia-inventories, michigan-sentiment, brent, inflation-expectations]
 related:
   - concepts/k282-feeds-wave.md
+  - sources/substack-rss-wublock-2026-10-26-wublockchain-weekly-outlook-microsoft-and-google.md
 maturity: draft
 created: 2026-10-05
 updated: 2026-10-05

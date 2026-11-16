@@ -53,7 +53,7 @@ Evaluated **12 open-weight configs** (CogVideoX, HunyuanVideo, LTX-2, MAGI-1, Op
 
 **ControlBench** stress suite: real static captures + transformed controls (zoom, warp, repaint, deformation) to separate video failures from backend estimator failures.
 
-Code/manifests promised at release — not public at ingest `[NEEDS VERIFICATION 2026-06-24]`.
+Code/manifests promised at release — not public at ingest `[NEEDS VERIFICATION 2026-11-16]`.
 
 ### Workspace relevance
 

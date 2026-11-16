@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - concepts/skillhone-continual-skill-decision-history.md
+  - concepts/bayesian-posterior-guided-skill-evolution.md
 ---
 
 ## Raw Concept

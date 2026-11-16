@@ -8,6 +8,7 @@ related:
   - concepts/wireless-pentest.md
   - concepts/wifi-rf-fingerprinting-open-set.md
   - concepts/network-security.md
+  - sources/arxiv-2610.40893-qistas-portable-fairness-protocol-2026-11-03.md
 maturity: draft
 read_status: read
 created: 2026-10-03

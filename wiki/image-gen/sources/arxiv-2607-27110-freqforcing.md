@@ -12,6 +12,8 @@ related:
   - sweeps/2026-07-31-daily.md
   - sources/arxiv-2607-27036-video-repr-regularization.md
   - sources/arxiv-2608-02504-token-radius-attention.md
+  - sources/arxiv-2607-15277-partition-prompt-aggregate-llm-self-consistency.md
+  - sources/arxiv-2607-20288-nonlocal-spectral-math.md
 maturity: draft
 read_status: read
 created: 2026-07-31

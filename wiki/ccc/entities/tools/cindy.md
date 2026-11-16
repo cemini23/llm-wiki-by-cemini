@@ -5,6 +5,8 @@ tags: [tool, ccc, agent-harness, context-tier]
 keywords: [cindy, orca-workflow, skillhub, desktop agent]
 related:
   - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - concepts/multi-agent-evidence-artifact-layers.md
+  - entities/tools/claude-code-game-studios.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25

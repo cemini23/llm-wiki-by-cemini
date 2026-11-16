@@ -5,6 +5,7 @@ tags: [paper, peripheral, nlp,llm,linguistics]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-06-daily.md
+  - sources/arxiv-2608-19059-lt-mem-skip.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-06

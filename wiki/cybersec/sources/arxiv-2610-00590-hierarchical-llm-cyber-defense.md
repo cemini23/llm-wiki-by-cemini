@@ -8,6 +8,7 @@ related:
   - concepts/cyber-range-autonomous-incident-response-agents.md
   - concepts/sentinel-rl-soc-topological-reasoning.md
   - concepts/trident-agentic-drl-defense-redteam.md
+  - sources/arxiv-2610.37245-aligning-large-language-models-for-safety-in-afr-2026-11-01.md
 maturity: draft
 read_status: read
 created: 2026-10-02

@@ -9,6 +9,7 @@ related:
   - concepts/wifi-rf-fingerprinting-open-set.md
   - concepts/rf-fingerprint-probe-point-benchmark.md
   - concepts/rf-fingerprint-temperature-drift.md
+  - sources/arxiv-2610-06844-contextual-reader-diffusion-transformers-ood.md
 maturity: draft
 read_status: read
 created: 2026-10-12

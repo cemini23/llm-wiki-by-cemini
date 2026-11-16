@@ -62,7 +62,7 @@ A pentest agent's target response serves two roles: it guides the next action **
 
 ## Dead Ends
 
-- ATOBench GitHub is a 29-byte README placeholder (no SPDX, 0 stars) as of 2026-08-14 — **do not** attempt a clone or local repro until real artifacts ship. [NEEDS VERIFICATION 2026-09-14]
+- ATOBench GitHub is a 29-byte README placeholder (no SPDX, 0 stars) as of 2026-08-14 — **do not** attempt a clone or local repro until real artifacts ship. [NEEDS VERIFICATION 2026-11-16]
 
 ## Snippets
 

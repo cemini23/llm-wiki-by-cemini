@@ -10,6 +10,9 @@ created: 2026-09-11
 updated: 2026-09-11
 phase_0_verdict: "OOD 2026-09-11 — Game-dev RL — LLM-generated JS game environments; route @game-dev-wiki if adopted."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2609-33628-climbing-hill-curriculum-prompt-injection-redteam.md
+  - sources/arxiv-2609-35699-distillation-defenses-break-after-reinforcement-learning.md
 ---
 
 ## Relations

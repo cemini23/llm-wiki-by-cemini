@@ -9,6 +9,8 @@ related:
   - concepts/persona-audio-stack.md
   - entities/persona-ops/fish-speech.md
   - sweeps/2026-07-29-daily.md
+  - sources/arxiv-2607-24378-bayesian-feature.md
+  - sources/arxiv-2607-29431-modelequivbench.md
 maturity: draft
 read_status: read
 created: 2026-07-29

@@ -108,7 +108,7 @@ After saturating the retail-algo demographic, pmxt pivoted to **data democratiza
 - Goal: destroy the data-vendor paywall for prediction-market history; lock pmxt in as the foundational standard
 
 For Cemini, this is **enormously consequential**. We currently don't have a comprehensive Polymarket orderbook history dataset; this is the canonical free source. Adoption considerations:
-- License of the dataset itself: `[NEEDS VERIFICATION 2026-06-07]` — the library is MIT but the dataset distribution may be different. Verify before any commercial use.
+- License of the dataset itself: `[NEEDS VERIFICATION 2026-11-16]` — the library is MIT but the dataset distribution may be different. Verify before any commercial use.
 - Distribution channel: per K56, the release is on a mirror at `sourceforge.net/projects/pmxt.mirror/` plus the main GitHub. Storage scale (1TB+ growing) makes direct download impractical — likely staged via S3 or torrents.
 - Operational fit: a continuously-growing dataset of this scale belongs on **cemini-librarian** (`/opt/cemini-bulk/market-dataset/polymarket-orderbook/`) once we decide to ingest. Not laptop, not cemini-prod. Subsetting + selective sync recommended over full mirror.
 - **Action item**: a Phase-0 audit of the dataset's license, format, and update cadence would be valuable. Not blocking any current Cemini workstream.

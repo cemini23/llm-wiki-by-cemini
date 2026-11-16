@@ -51,7 +51,7 @@ K263: **GO REFERENCE** FILE for CeminiDFS. Local `.local/adopts/data-formulator`
 
 - **v0.7-alpha designation**: API signatures, routing, storage schemas may break across versions. Export charts as static assets — don't rely on Data Formulator as permanent archive.
 - **Sandbox enforcement**: without `--sandbox docker`, security model relies on Python audit hooks → weaker than containerized isolation.
-- **Polars Arrow-IPC compatibility [NEEDS VERIFICATION 2026-09-17]**: confirm whether DuckDB layer ingests Apache Arrow IPC streams directly (bypassing CSV encode/decode overhead). If yes, high-performance Polars→viz pipeline becomes feasible.
+- **Polars Arrow-IPC compatibility [NEEDS VERIFICATION 2026-11-16]**: confirm whether DuckDB layer ingests Apache Arrow IPC streams directly (bypassing CSV encode/decode overhead). If yes, high-performance Polars→viz pipeline becomes feasible.
 - **License verification**: confirm MIT before extensive use.
 
 [Source: Evaluating Code for Trading Stacks.docx, URL 17]

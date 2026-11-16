@@ -1,6 +1,7 @@
 ---
 title: "Causal evaluation of interventions inside an agent trajectory"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-knowing-when-to-intervene-2611.09792.md
   - concepts/streaming-trajectory-monitor-pre-execution-gate.md

@@ -41,6 +41,6 @@ The HTML-effectiveness pattern proposes that for complex quantitative mechanism 
 
 ### Open questions
 
-- Explicit open-source license governing the HTML, CSS, and inline SVG template structures on the portfolio site `[NEEDS VERIFICATION 2026-05-10]`
+- Explicit open-source license governing the HTML, CSS, and inline SVG template structures on the portfolio site `[NEEDS VERIFICATION 2026-11-16]`
 
 [Source: Project Link Evaluation Brief.docx, URL 3]

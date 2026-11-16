@@ -1,12 +1,14 @@
 ---
 title: VIX term structure with fractional memory — the RISVIX model
 type: concept
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - sources/arxiv-risvix-vix-term-structure-2611.07120.md
   - concepts/vix-first-joint-spx-vix-calibration.md
   - concepts/xsp-vol-regime-gates.md
   - concepts/market-memory-hurst-regime.md
+  - sources/arxiv-2610.36392-the-term-structure-of-implied-fee-rates-in-liqui-2026-11-01.md
 updated: 2026-11-10
 ---
 

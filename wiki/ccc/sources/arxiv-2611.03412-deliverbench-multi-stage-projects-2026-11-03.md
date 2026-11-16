@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-controlharbor-control-design-coding-agents-2611.16867.md
+  - sources/arxiv-x-agentred-cross-service-red-teaming-2610.13886.md
 ---
 
 ## Raw Concept

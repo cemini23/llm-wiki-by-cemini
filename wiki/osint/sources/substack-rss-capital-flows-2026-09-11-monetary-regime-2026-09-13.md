@@ -28,7 +28,7 @@ read_status: read
 
 ## Narrative
 
-Sovereign-debt / debasement is not free. Bond total-return drawdown; long-end real rates new highs vs range-bound inflation swaps; Bessent narrative vs spending + NGDP; U7 SOFR hikes priced to Sep 2027. **No named price levels → GuruWatcher no auto-arm.** Cite SSRN https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4153468 `[NEEDS VERIFICATION 2026-09-13]` (Cloudflare 403; no source page). Wiki-only. No LIVE Discord.
+Sovereign-debt / debasement is not free. Bond total-return drawdown; long-end real rates new highs vs range-bound inflation swaps; Bessent narrative vs spending + NGDP; U7 SOFR hikes priced to Sep 2027. **No named price levels → GuruWatcher no auto-arm.** Cite SSRN https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4153468 `[NEEDS VERIFICATION 2026-11-16]` (Cloudflare 403; no source page). Wiki-only. No LIVE Discord.
 
 ## Snippets
 

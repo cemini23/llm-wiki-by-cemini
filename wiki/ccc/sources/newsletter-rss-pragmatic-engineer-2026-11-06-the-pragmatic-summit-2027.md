@@ -1,8 +1,10 @@
 ---
 title: "Pragmatic Engineer — The Pragmatic Summit 2027 (teaser)"
 type: source
+maturity: draft
 related:
   - concepts/ai-native-engineering-curriculum.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-10-correctness-supply-chain-2026-11-11.md
 updated: 2026-11-10
 ---
 

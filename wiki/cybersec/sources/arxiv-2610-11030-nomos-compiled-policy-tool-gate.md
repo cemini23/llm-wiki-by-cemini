@@ -9,6 +9,8 @@ related:
   - concepts/mcp-execution-control-invariants.md
   - concepts/agent-runtime-guardrails.md
   - concepts/mcp-security-posture.md
+  - sources/arxiv-2610-08781-ideaanchor-research-ideation-ood.md
+  - sources/arxiv-2610.34965-the-target-agent-is-its-own-best-critic-but-a-po-2026-10-27.md
 maturity: draft
 read_status: read
 created: 2026-10-12

@@ -25,7 +25,7 @@ Phase-0 audit 2026-06-05 — `Anil-matcha/Open-Generative-AI`. K45 v3 **Steal-fr
 
 ## Narrative
 
-Cross-platform desktop app (200+ models, Image/Cinema Studio, sd.cpp + Wan2GP C++ engines). **18.1k★**, pushed 2026-06-03. README claims MIT; GitHub API returned `license: null` — **verify LICENSE file before fork** `[NEEDS VERIFICATION 2026-06-05]`.
+Cross-platform desktop app (200+ models, Image/Cinema Studio, sd.cpp + Wan2GP C++ engines). **18.1k★**, pushed 2026-06-03. README claims MIT; GitHub API returned `license: null` — **verify LICENSE file before fork** `[NEEDS VERIFICATION 2026-11-16]`.
 
 ### Phase-0 audit
 

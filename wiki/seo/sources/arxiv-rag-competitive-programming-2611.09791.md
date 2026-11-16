@@ -6,6 +6,7 @@ keywords: [RAG, competitive programming, random retrieval baseline, Min-K member
 related:
   - concepts/retrieval-vs-citation-visibility-geo.md
   - concepts/geo-visibility-measurement.md
+  - sources/arxiv-2611.02643-searchinject-retrieval-exposure-control-2026-11-03.md
 maturity: draft
 read_status: read
 created: 2026-11-10

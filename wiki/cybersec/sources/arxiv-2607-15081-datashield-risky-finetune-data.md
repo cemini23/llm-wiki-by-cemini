@@ -13,6 +13,7 @@ related:
   - concepts/crescendo-multi-turn-jailbreak.md
   - concepts/rubric-capability-tree-diagnosis.md
   - sources/arxiv-2607-16122-craft-rubric-capability-diagnosis.md
+  - entities/tools/soup.md
 maturity: draft
 read_status: read
 created: 2026-07-17

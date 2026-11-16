@@ -6,6 +6,7 @@ keywords: [DSTAR, DiT, quantization, sparse-attention-reuse, ASIC]
 related:
   - concepts/budget-aware-diffusion-caching.md
   - sweeps/2026-07-20-daily.md
+  - sources/arxiv-2607-27145-spatial-reasoning-mllm.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-20

@@ -7,6 +7,8 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - concepts/active-project-research-routing.md
 ---
 
 ## Raw Concept

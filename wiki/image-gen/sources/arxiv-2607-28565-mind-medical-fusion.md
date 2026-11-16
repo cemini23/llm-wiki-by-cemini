@@ -5,6 +5,9 @@ tags: [paper, peripheral, medical,fusion]
 keywords: [peripheral]
 related:
   - sweeps/2026-07-31-daily.md
+  - sources/arxiv-2607-14984-synthetic-medical-images-bias.md
+  - sources/arxiv-2607-26004-pdd.md
+  - sources/arxiv-2607-28509-refcaptioner.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-31

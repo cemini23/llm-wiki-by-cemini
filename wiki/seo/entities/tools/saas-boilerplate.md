@@ -29,7 +29,7 @@ Promoted from `briefs/2026-05-21_k55-2-ridark-eth-seo-relevant-repos.md` (K55-2 
 
 `ixartz/SaaS-Boilerplate` — commercial-grade Next.js (or stack per README) starter for launching subscription SaaS quickly. Relevant if the operator or a friend builds **Easy Review–class** tooling, lead-gen dashboards, or white-label review/SMS products described in @concepts/high-ticket-smb-lead-generation.md.
 
-**Phase-0 status:** not run. [NEEDS VERIFICATION 2026-05-22] — license terms, last commit, maintainer activity, and whether "commercial-grade" implies paid license vs OSS.
+**Phase-0 status:** not run. [OPEN QUESTION 2026-05-22] — license terms, last commit, maintainer activity, and whether "commercial-grade" implies paid license vs OSS.
 
 **Adoption posture:** CONDITIONAL-GO pending Phase-0 audit per @CLAUDE.md (README + LICENSE + recent commits).
 

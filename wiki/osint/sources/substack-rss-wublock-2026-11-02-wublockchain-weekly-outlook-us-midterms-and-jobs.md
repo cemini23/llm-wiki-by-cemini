@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-02
 updated: 2026-11-02
+related:
+  - sources/substack-rss-wublock-2026-09-21-weekly-outlook-2026-09-21.md
+  - sources/substack-rss-wublock-2026-09-07-weekly-outlook-2026-09-07.md
 ---
 
 ## Raw Concept

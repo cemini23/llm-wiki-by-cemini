@@ -34,4 +34,4 @@ ingest pass.
 
 The OSINT side keeps only a discovery/provenance stub (`@osint-wiki/entities/tools/open-seo.md`); substantive coverage belongs here — capability breakdown, Phase-0 audit, license verification, and integration notes against the SEO-wiki tool stack.
 
-`[NEEDS VERIFICATION 2026-05-15]` repo URL, license, and exact capability set — defer to the SEO-wiki Phase-0 ingest.
+`[NEEDS VERIFICATION 2026-11-16]` repo URL, license, and exact capability set — defer to the SEO-wiki Phase-0 ingest.

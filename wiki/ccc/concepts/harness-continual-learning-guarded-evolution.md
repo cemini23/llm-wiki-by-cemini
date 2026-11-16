@@ -20,6 +20,7 @@ related:
   - entities/tools/prime-agent.md
   - concepts/meta-harness-continual-improvement.md
   - sources/arxiv-harness-of-harness-multiday-swe-2609.01481.md
+  - sources/arxiv-2611.05139-meta2-harness-evolution-2026-11-05.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"

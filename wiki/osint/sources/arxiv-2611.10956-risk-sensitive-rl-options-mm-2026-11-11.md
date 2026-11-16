@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/3-19-trading-options-data-research.md
+  - entities/tools/jev-trader.md
 ---
 
 ## Raw Concept

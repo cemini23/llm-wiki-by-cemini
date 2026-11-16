@@ -9,6 +9,7 @@ related:
   - concepts/enterprise-mcp-auth-gateway.md
   - sources/brief-k290-k294-harness-wave-2026-08-20.md
   - briefs/2026-08-20_ccc-handoff-k290-k294-ingest.md
+  - sources/arxiv-2610.32851-reimagining-enterprise-rag-for-multi-agent-syste-2026-10-27.md
 maturity: draft
 created: 2026-08-20
 updated: 2026-08-20

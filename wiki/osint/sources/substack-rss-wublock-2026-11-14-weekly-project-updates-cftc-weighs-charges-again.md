@@ -1,11 +1,14 @@
 ---
 title: "Wu Blockchain — weekly project updates: CFTC weighs charges against Kalshi, NYSE on Avalanche"
 type: source
+maturity: validated
 related:
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
   - concepts/prediction-market-regulation-2026.md
   - concepts/osint-inbox-wave-2026-11-14.md
+  - sources/substack-rss-wublock-2026-10-24-weekly-project-updates-dogecoin-labs-launches-fo.md
+  - sources/substack-rss-wublock-2026-10-31-weekly-project-updates-ripple-approved-for-us-na.md
 updated: 2026-11-14
 ---
 
@@ -52,7 +55,7 @@ A fine is survivable. A rule that forces a 90-day review on every new contract i
 
 The NU8 proposal targets late January 2027. It would launch the Tachyon privacy pool, raise the maximum block size from 2 MB to 8 MB for about **200** private transactions per second, and add SPHINCS-based post-quantum signature opcodes with ML-KEM encryption. It also sets a cutoff on new deposits to the legacy Sapling pool.
 
-This follows the NU7 activation reported in the 12 November item. Two upgrades in one quarter is a fast schedule for a privacy chain. [NEEDS VERIFICATION 2026-11-14] Neither activation is confirmed against the node release.
+This follows the NU7 activation reported in the 12 November item. Two upgrades in one quarter is a fast schedule for a privacy chain. [NEEDS VERIFICATION 2026-11-16] Neither activation is confirmed against the node release.
 
 ### Why it is filed here
 

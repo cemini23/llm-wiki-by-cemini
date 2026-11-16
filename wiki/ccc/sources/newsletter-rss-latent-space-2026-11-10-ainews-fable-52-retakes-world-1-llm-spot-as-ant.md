@@ -1,10 +1,14 @@
 ---
 title: "Latent Space AINews — Fable 5.2 retakes the top LLM spot"
 type: source
+maturity: validated
 related:
   - entities/models/claude-fable-5-2.md
   - concepts/frontier-model-release-cadence.md
   - concepts/token-economics-and-prompt-caching.md
+  - sources/newsletter-rss-latent-space-2026-07-01-ainews-sonnet-5-today-and-fable-5-tomorrow.md
+  - sources/newsletter-rss-latent-space-2026-07-07-ainews-the-field-guide-to-fable.md
+  - sources/newsletter-rss-latent-space-2026-10-24-ainews-kimi-31-pro-104ba-28t-fable-51-class-open.md
 updated: 2026-11-10
 ---
 

@@ -106,7 +106,7 @@ The open agent-readiness specification (agentready.org v1.0) separates three lay
 
 ### Evidence note
 
-The K142 Elnaffar POC (89.3% vs 49.3%) and the K283 field experiment agree in direction and differ hugely in scale. K283 is the better instrument: it is matched, multi-harness, and measures the bottom line (recommendation, accuracy, cost). Both are silent on **local-service and near-me queries** `[NEEDS VERIFICATION 2026-09-30]` — the cohort is SaaS/commerce English-first. The mechanism is generic; the magnitudes should not be quoted for a barbershop without a local probe.
+The K142 Elnaffar POC (89.3% vs 49.3%) and the K283 field experiment agree in direction and differ hugely in scale. K283 is the better instrument: it is matched, multi-harness, and measures the bottom line (recommendation, accuracy, cost). Both are silent on **local-service and near-me queries** `[NEEDS VERIFICATION 2026-11-16]` — the cohort is SaaS/commerce English-first. The mechanism is generic; the magnitudes should not be quoted for a barbershop without a local probe.
 
 SparkToro (2026-08-14) argues the same from the traffic side: fewer clicks do not retire the website. It stays the **only permanent home** for content that search and AI tools can cite (@sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md). `[TENTATIVE]`
 

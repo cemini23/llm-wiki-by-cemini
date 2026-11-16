@@ -61,4 +61,4 @@ Potential upgrade path for **persona video foley mux** (@concepts/persona-audio-
 
 ## Dead Ends
 
-Kling-team lineage — weights license unknown; repo has 0 stars at audit `[NEEDS VERIFICATION 2026-06-16]`. Not a voice-clone replacement for Fish-Speech DM notes.
+Kling-team lineage — weights license unknown; repo has 0 stars at audit `[NEEDS VERIFICATION 2026-11-16]`. Not a voice-clone replacement for Fish-Speech DM notes.

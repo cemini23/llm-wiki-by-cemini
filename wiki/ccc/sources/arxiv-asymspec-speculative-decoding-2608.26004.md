@@ -5,6 +5,8 @@ tags: [source, arxiv, serving, speculative-decoding, huawei, watch, k319]
 keywords: [2608.26004, AsymSpec, speculative decoding, context compression, drafter, verifier, serving]
 related:
   - briefs/2026-08-28_ccc-k315-k324-sip-ready.md
+  - sources/arxiv-more-mixture-of-roles-2608.27338.md
+  - sources/arxiv-2611.05345-subconscious-speculative-reasoning-2026-11-05.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-28

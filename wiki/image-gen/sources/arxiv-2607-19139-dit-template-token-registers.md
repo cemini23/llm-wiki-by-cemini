@@ -12,6 +12,7 @@ related:
   - sweeps/2026-07-22-daily.md
   - concepts/dit-template-token-semantic-registers.md
   - entities/inference/chitu-diffusion.md
+  - sources/arxiv-2607-20327-pyrodash-slm-llm.md
 maturity: draft
 read_status: read
 created: 2026-07-22

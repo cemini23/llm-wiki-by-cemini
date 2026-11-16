@@ -1,9 +1,14 @@
 ---
 title: "Wu Blockchain — global crypto mining news in October: Binance Pool shutdown, hashprice squeeze"
 type: source
+maturity: draft
 related:
   - concepts/bitcoin-mining-economics-2026.md
   - concepts/osint-inbox-wave-2026-11-14.md
+  - sources/substack-rss-wublock-2026-07-15-usdc-binance-mica.md
+  - sources/substack-rss-wublock-2026-10-27-coreweave-how-did-a-former-ethereum-mining-compa.md
+  - sources/substack-rss-wublock-2026-10-31-binance-hit-by-63-billion-theft-3-billion-frozen.md
+  - sources/substack-rss-wublock-2026-11-05-october-blockchain-tech-2026-11-05.md
 updated: 2026-11-14
 ---
 

@@ -19,7 +19,7 @@ updated: 2026-05-10
 Cross-platform lightweight "AI Development Environment" (ADE) and terminal emulator. Bundles integrated PTY (portable-pty) + AI interface (Vercel AI SDK). Local-only, no telemetry, no mandatory accounts. Credentials in OS keychain.
 
 - **Repo**: `github.com/crynta/terax-ai`
-- **License**: Apache-2.0 [NEEDS VERIFICATION 2026-05-10]
+- **License**: Apache-2.0 [NEEDS VERIFICATION 2026-11-16]
 - **Stack**: Tauri 2 (Rust), React 19, Tailwind, xterm.js, CodeMirror 6
 - **Bundle**: ~7 MB; disk 10 MB
 

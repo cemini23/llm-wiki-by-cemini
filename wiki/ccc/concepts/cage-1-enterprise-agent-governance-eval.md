@@ -33,6 +33,7 @@ related:
   - concepts/schema-bound-mcp-tool-surface.md
   - concepts/mcp-app-hitl-approval-gap.md
   - concepts/standing-policy-instruction-following-benchmark.md
+  - sources/arxiv-2611.14493-agent-evaluation-frameworks-2026-11-11.md
 maturity: draft
 created: 2026-07-10
 updated: 2026-07-30

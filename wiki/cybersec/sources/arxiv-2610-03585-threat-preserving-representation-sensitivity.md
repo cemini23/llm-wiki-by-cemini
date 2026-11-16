@@ -8,6 +8,7 @@ related:
   - concepts/guardrail-construct-validity-agent-eval.md
   - concepts/benchmark-shortcut-attack-pyramid-audit.md
   - concepts/faithful-agent-asr-measurement.md
+  - sources/arxiv-2610.34965-the-target-agent-is-its-own-best-critic-but-a-po-2026-10-27.md
 maturity: draft
 read_status: read
 created: 2026-10-06

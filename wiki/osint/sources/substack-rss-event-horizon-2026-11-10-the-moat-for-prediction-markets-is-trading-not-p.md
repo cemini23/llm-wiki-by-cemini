@@ -1,6 +1,7 @@
 ---
 title: "Event Horizon — the moat for prediction markets is trading, not pricing"
 type: source
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - concepts/prediction-market-trade-out-moat.md

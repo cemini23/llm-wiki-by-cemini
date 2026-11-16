@@ -6,6 +6,8 @@ keywords: [Triplet2Track, long-horizon manipulation, object-centric]
 related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-08-25-daily.md
+  - sources/arxiv-2608-04657-mobilewam.md
+  - sources/arxiv-2608-06210-vidp.md
 maturity: draft
 read_status: read
 created: 2026-08-25

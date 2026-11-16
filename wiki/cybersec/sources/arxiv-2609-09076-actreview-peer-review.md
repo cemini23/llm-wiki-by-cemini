@@ -10,6 +10,9 @@ created: 2026-09-11
 updated: 2026-09-11
 phase_0_verdict: "OOD 2026-09-11 — Academic tooling — actionable peer review generation; not security-primary."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2610-06848-transcope-hardware-membership-inference.md
+  - sources/arxiv-2609-31552-fragtoken-inference-cost-amplification.md
 ---
 
 ## Relations

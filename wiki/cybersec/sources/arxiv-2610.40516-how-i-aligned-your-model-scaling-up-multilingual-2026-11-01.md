@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/openreview-openclaw-real-world-safety-analysis.md
+  - sources/arxiv-2608-09158-ill-inaudible-low-frequency-lalms.md
 ---
 
 ## Raw Concept

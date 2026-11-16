@@ -1,6 +1,7 @@
 ---
 title: "A low similarity score is not evidence of independent work"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-low-similarity-independence-rewrites-2611.07887.md
   - concepts/tool-eval-license-skepticism-patterns.md

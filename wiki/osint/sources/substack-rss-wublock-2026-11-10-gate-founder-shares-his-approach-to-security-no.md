@@ -1,6 +1,7 @@
 ---
 title: "WuBlockchain — Gate founder on custody: no single party can move funds alone"
 type: source
+maturity: draft
 related:
   - concepts/k296-feeds-wave.md
   - concepts/crypto-custody-single-point-of-failure.md

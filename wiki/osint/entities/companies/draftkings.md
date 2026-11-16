@@ -1,6 +1,7 @@
 ---
 title: DraftKings — sportsbook and prediction-market operator
 type: entity
+maturity: validated
 related:
   - sources/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md
   - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md

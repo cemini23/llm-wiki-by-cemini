@@ -7,6 +7,7 @@ related:
   - concepts/meta-harness-optimization-hitl-eval-contract.md
   - concepts/anytime-valid-agent-eval-stopping.md
   - briefs/2026-09-01_ccc-k328-k332-sip-ready.md
+  - sources/arxiv-tau-agent-traffic-rag-2608.25935.md
 maturity: draft
 read_status: skimmed
 created: 2026-09-01

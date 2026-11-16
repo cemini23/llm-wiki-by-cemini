@@ -5,6 +5,8 @@ tags: [paper, medical, llm, peripheral]
 keywords: [clinical-QA, time-series, multimodal-LLM, peripheral]
 related:
   - sweeps/2026-07-29-daily.md
+  - sources/arxiv-2607-18171-flashrt-agent-harness.md
+  - sources/arxiv-2607-26037-wonder.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-29

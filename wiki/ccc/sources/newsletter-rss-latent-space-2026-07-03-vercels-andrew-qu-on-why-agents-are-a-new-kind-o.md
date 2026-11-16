@@ -5,6 +5,8 @@ tags: [stub, cross-wiki]
 keywords: []
 related:
   - @osint-wiki/sources/newsletter-rss-latent-space-2026-07-03-vercels-andrew-qu-on-why-agents-are-a-new-kind-o.md
+  - sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md
+  - sources/newsletter-rss-latent-space-2026-11-13-ai-ambition-artcraft-cloned-photoshop-and-now-wa.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25

@@ -64,6 +64,8 @@ related:
   - sources/arxiv-2608-16465-jailbreakskill.md
   - concepts/evolving-attack-skill-libraries.md
   - entities/tools/jailbreakskill.md
+  - sources/arxiv-2610.37415-the-envelope-layer-an-underestimated-surface-of-2026-11-01.md
+  - sources/arxiv-2611.13960-attack-surface-to-defense-architecture-2026-11-11.md
 maturity: draft
 created: 2026-06-03
 updated: 2026-10-09

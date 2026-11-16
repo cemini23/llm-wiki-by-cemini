@@ -1,6 +1,7 @@
 ---
 title: "BALLAD: bandit-based LLM routing for automated heuristic discovery (arXiv 2611.17241)"
 type: source
+maturity: draft
 related:
   - concepts/bandit-llm-routing-heuristic-search.md
   - concepts/llm-routing-deepseek-openrouter-failover.md

@@ -1,6 +1,7 @@
 ---
 title: "An external safety filter has two error rates, not one"
 type: concept
+maturity: validated
 related:
   - sources/arxiv-jev-llm-safety-guardrail-2611.08845.md
   - concepts/calibrated-decision-models-pentest-harness-jev.md

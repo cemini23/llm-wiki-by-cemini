@@ -1,6 +1,7 @@
 ---
 title: "Non-functional requirements to hyperparameter translation for quantum software via LLMs (arXiv 2611.16902)"
 type: source
+maturity: validated
 related:
   - concepts/provider-refusal-measurement-contamination.md
   - concepts/guardrail-construct-validity-agent-eval.md

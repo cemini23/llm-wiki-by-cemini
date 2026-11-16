@@ -7,6 +7,7 @@ related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-09-16-daily.md
   - concepts/persona-audio-stack.md
+  - sources/arxiv-2608-01865-dysarthric-asr-probing.md
 maturity: draft
 read_status: read
 created: 2026-09-16

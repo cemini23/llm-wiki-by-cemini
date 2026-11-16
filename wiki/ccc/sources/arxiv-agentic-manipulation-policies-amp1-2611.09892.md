@@ -1,6 +1,7 @@
 ---
 title: "On agentic manipulation policies — AMP1 beats specialist robot policies"
 type: source
+maturity: draft
 related:
   - concepts/agentic-robotics-harness.md
   - concepts/model-harness-six-responsibilities.md

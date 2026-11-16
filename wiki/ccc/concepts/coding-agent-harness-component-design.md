@@ -7,6 +7,7 @@ related:
   - sources/arxiv-harness-design-coding-agents-empirical-2609.20804.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-18_ccc-k369-k372-sip-ready.md
+  - sources/arxiv-2610.32578-lessons-outlive-their-failures-a-case-study-of-r-2026-10-27.md
 maturity: draft
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc"

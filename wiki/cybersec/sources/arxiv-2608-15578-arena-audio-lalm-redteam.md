@@ -13,6 +13,8 @@ related:
   - concepts/llm-pentest-automation.md
   - concepts/ai-redteam-evidential-ceiling.md
   - concepts/faithful-agent-asr-measurement.md
+  - sources/arxiv-2609-04172-on-policy-distillation-one-shot.md
+  - sources/arxiv-2609-17398-medical-plain-language-adaptation.md
 maturity: draft
 read_status: read
 created: 2026-08-18

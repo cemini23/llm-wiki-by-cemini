@@ -1,6 +1,7 @@
 ---
 title: "Provider-outage control verification"
 type: concept
+maturity: validated
 related:
   - sources/substack-rss-secpro-2026-11-13-the-microsoft-outrage-bumper-issue.md
   - concepts/soc-operations.md

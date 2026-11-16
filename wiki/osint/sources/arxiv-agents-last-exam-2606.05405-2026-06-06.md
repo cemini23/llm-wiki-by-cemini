@@ -10,6 +10,7 @@ related:
   - concepts/conductor-orchestrator.md
   - concepts/high-signal-paper-patterns.md
   - sources/arxiv-aarri-research-intern-bench-2606-07462-2026-06-09.md
+  - sources/arxiv-line-planning-transit-scale-2606.24386-2026-06-25.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-06

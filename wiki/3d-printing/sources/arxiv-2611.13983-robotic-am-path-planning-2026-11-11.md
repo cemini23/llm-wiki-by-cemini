@@ -7,6 +7,10 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/arxiv-2611.13800-additive-ceramic-optical-platforms-2026-11-11.md
+  - sources/arxiv-track-height-control-am-2611.07704.md
+  - sources/2025-ivkic-cost-benefit-maas.md
 ---
 
 ## Raw Concept

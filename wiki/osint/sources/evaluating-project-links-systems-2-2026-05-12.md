@@ -171,6 +171,6 @@ Plus 1 concept stub in `@cybersecurity-wiki/concepts/`:
 ## NEEDS VERIFICATION
 
 - `[OPEN QUESTION 2026-05-12]` AiSOC actual line count (~600 quoted; verify against repo)
-- `[NEEDS VERIFICATION 2026-05-12]` OpenAnt "verified vulnerability discovery" claim — Apache-2.0 confirmed via Gemini eval but vuln-discovery-tool claims need independent reproduction before any adoption commit.
+- `[NEEDS VERIFICATION 2026-11-16]` OpenAnt "verified vulnerability discovery" claim — Apache-2.0 confirmed via Gemini eval but vuln-discovery-tool claims need independent reproduction before any adoption commit.
 - `[OPEN QUESTION 2026-05-12]` Sim "exceeds 2-3GB RAM" — Gemini flagged this as estimate, not measurement. Verify before any Cemini-prod-stack consideration.
-- `[NEEDS VERIFICATION 2026-05-12]` JetBrains Air pricing tier — proprietary preview state, BYOK; pricing tiers and ACP protocol stability change frequently in preview.
+- `[NEEDS VERIFICATION 2026-11-16]` JetBrains Air pricing tier — proprietary preview state, BYOK; pricing tiers and ACP protocol stability change frequently in preview.

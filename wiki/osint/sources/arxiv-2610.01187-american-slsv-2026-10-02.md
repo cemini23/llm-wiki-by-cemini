@@ -5,6 +5,7 @@ tags: [source, k278, quant, options, volatility]
 keywords: [k278, rbsde, american-option, xgboost, FILE]
 related:
   - concepts/k278-vol-quant-wave.md
+  - sources/arxiv-2610.36921-a-deep-learning-driven-operator-splitting-scheme-2026-11-01.md
 maturity: draft
 created: 2026-10-02
 updated: 2026-10-02

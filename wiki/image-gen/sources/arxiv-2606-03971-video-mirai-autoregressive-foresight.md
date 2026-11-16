@@ -11,6 +11,7 @@ related:
   - sources/video-generation-survey-2026.md
   - concepts/persona-consistency-methods.md
   - entities/models/wan-2-2.md
+  - sources/arxiv-2610.37626-know-then-draw-a-new-learning-paradigm-for-visua-2026-11-01.md
 maturity: draft
 read_status: read
 created: 2026-06-04

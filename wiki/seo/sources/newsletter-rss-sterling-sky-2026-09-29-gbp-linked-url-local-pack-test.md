@@ -10,6 +10,8 @@ related:
   - concepts/generative-engine-optimization.md
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-10-01-daily.md
+  - sources/newsletter-rss-sterling-sky-2026-10-22-google-maps-spam-is-out-of-control-heres-how-to.md
+  - sources/newsletter-rss-sterling-sky-2026-10-26-local-seo-updates-2026-is-your-traffic-at-risk.md
 maturity: validated
 read_status: read
 created: 2026-10-01

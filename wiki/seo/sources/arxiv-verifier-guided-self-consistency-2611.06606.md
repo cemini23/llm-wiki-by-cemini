@@ -5,6 +5,7 @@ tags: [source, arxiv, test-time-compute, sampling, verification]
 keywords: [VGSC, self-consistency, verifier, rejection sampling, beam search, trajectory distribution, test-time scaling]
 related:
   - concepts/retrieval-vs-citation-visibility-geo.md
+  - sources/arxiv-2611.02758-cadre-ecommerce-relevance-adjudication-2026-11-03.md
 maturity: draft
 read_status: read
 created: 2026-11-10

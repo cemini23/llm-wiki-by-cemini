@@ -1,6 +1,7 @@
 ---
 title: "Random least common multiples with memory — a phase transition at a = 1/2"
 type: source
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - concepts/long-memory-phase-transition-correlated-bernoulli.md

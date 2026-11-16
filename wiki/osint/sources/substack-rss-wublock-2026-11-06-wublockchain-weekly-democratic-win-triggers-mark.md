@@ -1,6 +1,7 @@
 ---
 title: "WuBlockchain Weekly — Democratic win triggers a selloff, Binance $6.34bn breach"
 type: source
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - concepts/crypto-custody-single-point-of-failure.md
@@ -10,6 +11,10 @@ related:
   - entities/tickers/eth.md
   - entities/tickers/sol.md
   - entities/tickers/coin.md
+  - sources/substack-rss-wublock-2026-10-30-wublockchain-weekly-binance-hacked-ice-invests-i.md
+  - sources/substack-rss-wublock-2026-10-31-binance-hit-by-63-billion-theft-3-billion-frozen.md
+  - sources/substack-rss-wublock-2026-11-03-vc-monthly-kalshi-1b-2026-11-03.md
+  - sources/substack-rss-wublock-2026-11-11-plume-rwa-2026-11-11.md
 updated: 2026-11-10
 ---
 

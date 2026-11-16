@@ -6,6 +6,7 @@ keywords: [sbbi, ibbotson, equity-risk-premium, elm-wealth, cape, real-returns, 
 related:
   - concepts/k289-feeds-wave.md
   - sources/substack-rss-moontower-2026-10-11-moontower-331.md
+  - sources/substack-rss-moontower-2026-10-25-introducing-slate.md
 maturity: draft
 created: 2026-10-12
 updated: 2026-10-12

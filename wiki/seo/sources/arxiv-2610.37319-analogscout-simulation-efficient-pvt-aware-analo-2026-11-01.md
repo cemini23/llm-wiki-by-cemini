@@ -7,6 +7,8 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-2610.37443-etamem-decoupling-and-aligning-heterogeneous-mem-2026-11-01.md
 ---
 
 ## Raw Concept

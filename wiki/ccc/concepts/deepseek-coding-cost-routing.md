@@ -11,6 +11,7 @@ related:
   - entities/tools/ai-token-monitor.md
   - concepts/karpathy-token-efficiency-patterns.md
   - sources/trading-posts-compilation-12-2026-06-01.md
+  - sources/arxiv-2611.05275-route-anything-2026-11-05.md
 maturity: draft
 created: 2026-06-01
 updated: 2026-06-04

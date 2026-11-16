@@ -16,6 +16,7 @@ related:
   - concepts/test-time-world-model-validate-before-act.md
   - entities/tools/twin-arc-agi-3.md
   - sources/arxiv-twin-test-time-digital-twin-2608.14490.md
+  - sources/arxiv-2611.14419-llm-world-models-neuro-symbolic-2026-11-11.md
 maturity: draft
 created: 2026-07-31
 updated: 2026-08-17

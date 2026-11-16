@@ -301,6 +301,12 @@ related:
   - concepts/intersage-trust-native-ioa-protocol.md
   - sources/arxiv-2608-13069-ood-behavioral-reprogramming.md
   - entities/tools/artex.md
+  - entities/tools/experiential-labs.md
+  - entities/tools/zero-breach-toolkit.md
+  - sources/arxiv-2609-22024-pv-care-ood.md
+  - sources/arxiv-2610.40966-incomplete-relevance-judgments-2026-11-03.md
+  - sources/arxiv-2611.03374-goal-harm-conflict-2026-11-03.md
+  - sources/arxiv-2611.05272-geometry-of-ignorance-2026-11-05.md
 maturity: draft
 created: 2026-05-12
 updated: 2026-11-14

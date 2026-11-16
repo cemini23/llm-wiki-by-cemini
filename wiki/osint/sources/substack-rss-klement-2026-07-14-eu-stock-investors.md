@@ -5,6 +5,7 @@ tags: [source, klement, macro, k163]
 keywords: [EU household equity participation, Christelis 2026, crypto ownership]
 related:
   - sources/substack-rss-klement-2026-07-13-when-regulation-is-good-for-business.md
+  - sources/substack-rss-klement-2026-11-04-europeans-stocks-2026-11-04.md
 maturity: draft
 read_status: skim
 created: 2026-07-14

@@ -18,6 +18,7 @@ related:
   - sources/arxiv-2606-18249-uniar-shared-context-visual-tokenizer.md
   - concepts/shared-context-single-tokenizer-umm.md
   - entities/models/uniar.md
+  - sources/arxiv-2610.42149-larc-latent-reasoning-continuous-2026-11-03.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-06-21

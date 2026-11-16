@@ -8,6 +8,9 @@ maturity: draft
 created: 2026-10-21
 updated: 2026-10-25
 read_status: skimmed
+related:
+  - sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md
+  - sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md
 ---
 
 ## Raw Concept

@@ -163,7 +163,7 @@ A clean entry in these aggregators propagates through the ecosystem with much le
 
 For most independent 2-location barbershops, **manual + BrightLocal wins on cost and gives equivalent results** if the operator does the audit-first workflow above. Yext's pitch lands harder for franchises with 20+ locations.
 
-`[NEEDS VERIFICATION 2026-05-07]` on current Yext pricing — they renegotiate frequently.
+`[NEEDS VERIFICATION 2026-11-16]` on current Yext pricing — they renegotiate frequently.
 
 ### Spam directory red flags (the Phase-0 audit lens)
 

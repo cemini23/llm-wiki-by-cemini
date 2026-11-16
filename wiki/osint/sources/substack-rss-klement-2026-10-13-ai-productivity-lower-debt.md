@@ -8,6 +8,10 @@ related:
   - concepts/ai-productivity-fiscal-debt.md
   - concepts/macro-weather-regime.md
   - concepts/guruwatcher-macro-watches.md
+  - sources/substack-rss-klement-2026-10-27-the-decline-of-german-manufacturing.md
+  - sources/substack-rss-klement-2026-10-30-demographics-is-not-destiny-election-edition.md
+  - sources/substack-rss-klement-2026-11-04-europeans-stocks-2026-11-04.md
+  - sources/substack-rss-klement-2026-11-11-treasuries-haven-2026-11-11.md
 maturity: draft
 created: 2026-10-13
 updated: 2026-10-13

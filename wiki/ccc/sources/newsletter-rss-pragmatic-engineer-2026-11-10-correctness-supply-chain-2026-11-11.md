@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-12-the-pulse-what-can-we-learn-from-the-railway-hac.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-06-the-pragmatic-summit-2027.md
 ---
 
 ## Raw Concept

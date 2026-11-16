@@ -1,6 +1,7 @@
 ---
 title: "Trajectory audit diagnostic tiers — six questions an auditor must answer"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-rea-bench-responsible-agent-auditing-2611.16493.md
   - concepts/trajectory-driven-safety-harness-evolution.md

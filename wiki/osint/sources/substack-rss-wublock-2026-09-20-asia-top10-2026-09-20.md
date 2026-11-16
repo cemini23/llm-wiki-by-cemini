@@ -6,6 +6,7 @@ keywords: [k267, WuBlock, Asia, BoJ, FSA, MOEX, RWA]
 related:
   - concepts/k267-newsletter-macro-wave.md
   - concepts/guruwatcher-macro-watches.md
+  - sources/substack-rss-wublock-2026-11-01-asias-weekly-top10-crypto-news-hong-kong-opens-t.md
 maturity: draft
 created: 2026-09-20
 updated: 2026-09-20

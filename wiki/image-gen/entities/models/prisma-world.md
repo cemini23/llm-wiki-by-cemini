@@ -35,7 +35,7 @@ Entity stub from 2026-06-11 ingest — Prisma-World (arXiv:2606.09507). Project:
 | SANA-WM | Multi-agent vs single 6-DoF observer |
 | Solaris / MultiWorld | Open-domain UE5 vs single Minecraft/It-Takes-Two game |
 
-**Status:** Research demo; weights/dataset release `[NEEDS VERIFICATION 2026-06-11]`. Not build-track for persona I2V until open weights + real-human domain eval.
+**Status:** Research demo; weights/dataset release `[NEEDS VERIFICATION 2026-11-16]`. Not build-track for persona I2V until open weights + real-human domain eval.
 
 ## Snippets
 

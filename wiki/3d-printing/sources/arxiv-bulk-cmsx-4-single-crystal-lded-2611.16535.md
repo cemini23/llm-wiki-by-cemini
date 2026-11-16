@@ -1,6 +1,7 @@
 ---
 title: Bulk CMSX-4 Single-Crystal Builds via Laser-Directed Energy Deposition
 type: source
+maturity: draft
 tags: [paper, DED, metal, superalloy, single-crystal, industrial, background, weak-fit]
 keywords: [CMSX-4, L-DED, epitaxial growth, stray grain, EBSD, IR thermography, solutionizing, thermoelectric]
 related:

@@ -5,6 +5,7 @@ tags: [source, arxiv, robotics, perception, k160]
 keywords: [RCT-AD, BEV, quality-gated memory, nuScenes, temporal planning]
 related:
   - concepts/tool-evaluation-framework.md
+  - sources/arxiv-2607.12500-adversarial-online-handwriting-salience-2026-07-16.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-12

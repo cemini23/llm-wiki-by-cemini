@@ -6,6 +6,7 @@ related:
   - entities/tools/rebot-devarm.md
   - entities/materials/pla.md
   - concepts/open-source-legged-robotics.md
+  - sources/arxiv-2610.36598-openjaws-an-open-hardware-umi-framework-with-ste-2026-11-01.md
 maturity: draft
 updated: 2026-11-10
 ---

@@ -1,6 +1,7 @@
 ---
 title: "When routine operations break architectural pattern relationships in agent harnesses"
 type: source
+maturity: draft
 related:
   - concepts/runtime-pattern-relationship-decay.md
   - concepts/hooks-for-automation.md

@@ -61,7 +61,7 @@ Underlying engine: **sport-specific prediction models** + **simulations** + **li
 | **List price signal** | ETR NFL add-on ~$49.95/mo; All-Access cited ~$59.99–$69.95 elsewhere [TENTATIVE] | Included in All-Access — no PickLabs-only SKU documented |
 | **CSV export** | **Yes** — Player Model projections → `.CSV` [CONFIRMED — separate Labs article] | **Not mentioned** — UI workflow only |
 
-Launch article links `fantasylabs.com/pricing/` and CTA **"Become an All-Access Member Today"** — PickLabs is an All-Access upsell, not a separate props SKU. Operators already on **ETR-discounted NFL-only** Labs path should verify whether PickLabs is included before assuming coverage [NEEDS VERIFICATION 2026-07-05].
+Launch article links `fantasylabs.com/pricing/` and CTA **"Become an All-Access Member Today"** — PickLabs is an All-Access upsell, not a separate props SKU. Operators already on **ETR-discounted NFL-only** Labs path should verify whether PickLabs is included before assuming coverage [NEEDS VERIFICATION 2026-11-16].
 
 ### Platforms covered
 

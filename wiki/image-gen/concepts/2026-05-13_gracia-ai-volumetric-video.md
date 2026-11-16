@@ -92,4 +92,4 @@ Three forward-looking hooks make it worth tracking:
 - **Self-hosting gracia's stack** — not on offer. Closed SaaS; no weights, no local install path, no community fork. Locally-runnable workspace charter rules this out as a build-track adoption.
 - **Treating gracia as a clip-generator competitor** — wrong taxonomy. Gracia is a multi-view-capture reconstruction pipeline (real scene in → 4DGS asset out), not a T2V / I2V model (prompt in → clip out). It does not compete with Wan 2.2 / HunyuanVideo / LTX-2 / Seedance and shouldn't be benchmarked against them.
 
-[CONFIRMED 2026-05-17] license posture: closed SaaS, not locally runnable. (Resolves the prior `[NEEDS VERIFICATION 2026-05-15]` tag.)
+[CONFIRMED 2026-05-17] license posture: closed SaaS, not locally runnable. (Resolves the prior `[NEEDS VERIFICATION 2026-11-16]` tag.)

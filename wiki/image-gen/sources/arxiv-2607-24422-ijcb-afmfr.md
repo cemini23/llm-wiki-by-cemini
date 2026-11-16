@@ -5,6 +5,8 @@ tags: [paper, biometrics, face-recognition, peripheral]
 keywords: [IJCB, AFMFR, CLIP, synthetic-faces, IDPERTURB]
 related:
   - sweeps/2026-07-28-daily.md
+  - sources/arxiv-2607-18227-flowmimic-mask-free-editing.md
+  - sources/arxiv-2607-26742-face-to-speech.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-28

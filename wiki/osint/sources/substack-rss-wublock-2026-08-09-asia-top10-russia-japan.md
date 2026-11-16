@@ -7,6 +7,7 @@ related:
   - sources/eval-github-revenue-opportunity-2026-08-09.md
   - concepts/xsp-lane-trading-framework.md
   - concepts/active-project-research-routing.md
+  - sources/substack-rss-wublock-2026-10-29-coinbase-derivatives-head-on-deribit-integration.md
 maturity: draft
 created: 2026-08-09
 updated: 2026-08-09

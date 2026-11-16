@@ -6,6 +6,7 @@ keywords: [2610.01364, k417]
 related:
   - concepts/state-injection-over-history-reconstruction.md
   - briefs/2026-10-02_ccc-k416-k420-sip-ready.md
+  - sources/arxiv-2610.35832-profiling-a-frontier-agent-with-ebench-from-dire-2026-10-27.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-02

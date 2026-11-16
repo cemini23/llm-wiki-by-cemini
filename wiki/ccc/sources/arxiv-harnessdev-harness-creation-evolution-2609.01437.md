@@ -10,6 +10,7 @@ related:
   - concepts/vague-goal-self-evolution.md
   - concepts/bounded-self-refinement-vs-rsi-taxonomy.md
   - briefs/2026-09-02_ccc-k333-k336-sip-ready.md
+  - sources/arxiv-2611.05139-meta2-harness-evolution-2026-11-05.md
 maturity: draft
 read_status: read
 created: 2026-09-02

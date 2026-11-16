@@ -6,6 +6,7 @@ keywords: [fair face generation, SBP, guidance]
 related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-08-28-daily.md
+  - sources/arxiv-2608-13455-retinal-image-gen-skip.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-28

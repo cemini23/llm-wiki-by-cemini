@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - sources/arxiv-scale-rich-network-metamaterials-local-rules-2611.16513.md
+  - sources/arxiv-nlp-algorithm-cooccurrence-influence-2606.24099-2026-06-26.md
 ---
 
 ## Raw Concept

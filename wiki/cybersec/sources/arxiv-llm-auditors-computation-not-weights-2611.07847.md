@@ -1,6 +1,7 @@
 ---
 title: "Computation, not weight access: LLMs as auditors of clinical prediction networks (arXiv 2611.07847)"
 type: source
+maturity: draft
 related:
   - concepts/llm-audit-computation-not-weight-access.md
 updated: 2026-11-10

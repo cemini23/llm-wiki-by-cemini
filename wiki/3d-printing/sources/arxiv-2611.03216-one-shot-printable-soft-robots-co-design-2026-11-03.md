@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/2026-abboodi-airtight-spa-fdm.md
+  - sources/2026-chen-hybrid-rigid-soft-gripper.md
 ---
 
 ## Raw Concept

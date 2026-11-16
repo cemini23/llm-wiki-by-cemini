@@ -47,7 +47,7 @@ Built on **public Wan 2.1** backbone (contrasts with closed APT2). Claims SOTA *
 
 ### Workspace relevance
 
-Enables **real-time / low-latency** persona I2V streaming on Wan lineage — one denoise step per chunk lowers cost for chained clips (@concepts/seam-stitching-strategies.md). Complements training-only fixes (Video-Mirai foresight, TAGRPO GRPO) as an **inference-speed** axis. Weights release not confirmed `[NEEDS VERIFICATION 2026-06-06]`.
+Enables **real-time / low-latency** persona I2V streaming on Wan lineage — one denoise step per chunk lowers cost for chained clips (@concepts/seam-stitching-strategies.md). Complements training-only fixes (Video-Mirai foresight, TAGRPO GRPO) as an **inference-speed** axis. Weights release not confirmed `[NEEDS VERIFICATION 2026-11-16]`.
 
 ## Snippets
 

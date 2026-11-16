@@ -53,7 +53,7 @@ Contrasts with closed **Veo 3** joint A/V and prior open models that unify tasks
 
 ### Workspace relevance
 
-Potential upgrade path for @concepts/persona-audio-stack.md **Layer 4 + dialogue path** — today operators mux Fish-Speech + Stable Audio Open + FFmpeg manually; Foley-Omni targets single-pass mixed tracks like @entities/models/ltx-2.md but audio-first. Watch for open weights and VRAM requirements `[NEEDS VERIFICATION 2026-06-03]`.
+Potential upgrade path for @concepts/persona-audio-stack.md **Layer 4 + dialogue path** — today operators mux Fish-Speech + Stable Audio Open + FFmpeg manually; Foley-Omni targets single-pass mixed tracks like @entities/models/ltx-2.md but audio-first. Watch for open weights and VRAM requirements `[NEEDS VERIFICATION 2026-11-16]`.
 
 ## Snippets
 

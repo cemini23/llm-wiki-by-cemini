@@ -100,4 +100,4 @@ Build-track hooks (the only reason this is in the wiki):
 - **Reproducing the headline numbers** is gated by the closed Apple Internal10K dataset and 16× H100 × 10 days of compute. Public-dataset (Ava-256) numbers are useful for relative comparison but not for matching the paper's identity-generalization claims.
 - **No public code release noted** in the body of the paper at this skim depth — supplementary not yet read; flag if reproduction or open weights surface in a future update.
 
-[NEEDS VERIFICATION 2026-05-07] — code/weight release status, alternative open-source feed-forward 3DGS-head baselines (e.g. Pippo, Avat3r reimplementation availability) for build-track-relevant downstream experimentation.
+[NEEDS VERIFICATION 2026-11-16] — code/weight release status, alternative open-source feed-forward 3DGS-head baselines (e.g. Pippo, Avat3r reimplementation availability) for build-track-relevant downstream experimentation.

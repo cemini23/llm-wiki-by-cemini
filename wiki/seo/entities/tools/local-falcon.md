@@ -71,7 +71,7 @@ Add-ons:
 
 **Free trial**: 100 credits on signup (≈4 weekly 5×5 scans of one keyword, or one 9×9 scan of one keyword + a Falcon AI report).
 
-**Subscription tier sweet spot**: the entry-level Basic plan (~$49.99/month at retail, [NEEDS VERIFICATION 2026-05-08] for current pricing) is widely cited as the right starting point for a single-location or two-location operator. `[Source: faithamaole.com/local-falcon-review-2026/ (retrieved 2026-05-08)]`
+**Subscription tier sweet spot**: the entry-level Basic plan (~$49.99/month at retail, [NEEDS VERIFICATION 2026-11-16] for current pricing) is widely cited as the right starting point for a single-location or two-location operator. `[Source: faithamaole.com/local-falcon-review-2026/ (retrieved 2026-05-08)]`
 
 **Credit-expiry trap**: in monthly subscription plans, unused credits **expire at the end of the billing cycle** ("breakage"). Operators who scan irregularly should consider the annual plan (better credit-to-dollar ratio + longer expiry window) or the as-needed pay-as-you-go credits (which don't expire). `[Source: bestlocalranktracker.com/best-local-falcon-alternatives/ (retrieved 2026-05-08)]`
 

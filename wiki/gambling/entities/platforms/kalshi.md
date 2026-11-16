@@ -136,7 +136,7 @@ Hub source: `@sources/youtube-wsj-kalshi-polymarket-valuations-2026-06-01.md`.
 
 ### Fees vs sportsbooks (R2, 2026-06-01) [TENTATIVE]
 
-Tech-Insider comparison: flagship Kalshi sports contracts **~0.5–1.5%** implied vig vs **~4.5%** standard -110/-110 book hold. Example: Chiefs ML priced **1.1¢** better effective on Kalshi vs DraftKings in May 2026 test. High-volume bettors: fee gap compounds ($50k/yr ≈ $2.25k vig at books vs $500–1k fees on Kalshi per article math). **Tax:** Kalshi gains may qualify for **Section 1256** 60/40 treatment vs ordinary gambling income on books [NEEDS VERIFICATION 2026-06-01].
+Tech-Insider comparison: flagship Kalshi sports contracts **~0.5–1.5%** implied vig vs **~4.5%** standard -110/-110 book hold. Example: Chiefs ML priced **1.1¢** better effective on Kalshi vs DraftKings in May 2026 test. High-volume bettors: fee gap compounds ($50k/yr ≈ $2.25k vig at books vs $500–1k fees on Kalshi per article math). **Tax:** Kalshi gains may qualify for **Section 1256** 60/40 treatment vs ordinary gambling income on books [OPEN QUESTION 2026-06-01].
 
 ### US volume share & NBA Finals stress test (R2, 2026-06-02) [TENTATIVE]
 

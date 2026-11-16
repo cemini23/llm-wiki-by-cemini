@@ -7,6 +7,7 @@ related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-07-26-daily.md
   - concepts/multi-angle-dataset-prep.md
+  - sources/arxiv-2607-14984-synthetic-medical-images-bias.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-26

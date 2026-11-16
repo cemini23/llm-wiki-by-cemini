@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - concepts/face-to-speech-synthesis.md
+  - sources/arxiv-ar-edit-streaming-video-editing-2611.09795.md
 ---
 
 ## Raw Concept

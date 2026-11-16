@@ -9,6 +9,7 @@ related:
   - concepts/ble-mac-randomization-reidentification-lab.md
   - concepts/ble-backscatter-polarization-shift-identification-lab.md
   - concepts/mobile-app-attestation.md
+  - sources/arxiv-2609-04058-post-quantum-crypto-accelerator.md
 maturity: draft
 read_status: read
 created: 2026-10-07

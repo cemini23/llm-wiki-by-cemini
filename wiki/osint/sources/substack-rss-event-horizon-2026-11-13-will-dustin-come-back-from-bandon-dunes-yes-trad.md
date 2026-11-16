@@ -1,6 +1,7 @@
 ---
 title: "Event Horizon — Kalshi at a $65bn valuation, and Louisiana sues the sector"
 type: source
+maturity: validated
 related:
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md

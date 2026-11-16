@@ -9,6 +9,7 @@ related:
   - concepts/domain-solvers-as-agent-callable-mcp-skills.md
   - concepts/structured-state-semantic-actions.md
   - briefs/2026-09-01_ccc-k328-k332-sip-ready.md
+  - sources/arxiv-2610.32725-ontology-guided-knowledge-graph-construction-fro-2026-10-27.md
 maturity: draft
 read_status: read
 created: 2026-09-01

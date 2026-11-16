@@ -1,6 +1,7 @@
 ---
 title: "AI-native engineering curriculum — what to teach when the agent writes the code"
 type: concept
+maturity: draft
 related:
   - sources/newsletter-rss-latent-space-2026-11-08-how-stanford-teaches-ai-native-engineering-mihai.md
   - sources/newsletter-rss-latent-space-2026-11-08-one-million-ai-engineer-special-how-stanford-tea.md

@@ -8,6 +8,7 @@ related:
   - concepts/citation-is-not-consultation.md
   - concepts/compliance-boundary-adjacent-pair-search.md
   - concepts/guardrail-construct-validity-agent-eval.md
+  - sources/arxiv-2610-13307-sustainable-cloud-fog-edge-smart-buildings.md
 maturity: draft
 read_status: read
 created: 2026-10-09

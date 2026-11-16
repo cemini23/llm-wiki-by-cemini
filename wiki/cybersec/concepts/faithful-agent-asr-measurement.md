@@ -26,6 +26,7 @@ related:
   - concepts/cross-dimensional-agentic-ai-security-taxonomy.md
   - concepts/rrsi-regularized-harness-self-improvement.md
   - concepts/provider-refusal-measurement-contamination.md
+  - sources/arxiv-2611.03555-mcp-tool-poisoning-cross-framework-2026-11-03.md
 
   - concepts/safety-harness-evolution.md
   - concepts/ai-for-cybersecurity.md

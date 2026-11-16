@@ -10,6 +10,7 @@ related:
   - entities/models/wan-2-2.md
   - sweeps/2026-08-13-daily.md
   - concepts/federated-daily-research-digest.md
+  - sources/arxiv-2608-17067-disco-t2i-defense-routed.md
 maturity: draft
 read_status: read
 created: 2026-08-13

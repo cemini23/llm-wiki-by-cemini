@@ -1,6 +1,7 @@
 ---
 title: "SecPro #248 — building an AI-ready SOC, part 1 (foundations)"
 type: source
+maturity: draft
 tags: [cyber, soc, telemetry, identity, rag]
 keywords: [AI-ready-SOC, asset-ID-map, agent-as-identity, RAG-runbooks, gather-not-decide]
 related:

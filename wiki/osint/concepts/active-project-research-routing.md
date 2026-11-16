@@ -97,6 +97,7 @@ related:
   - sources/eval-project-evaluation-revenue-2026-08-11.md
   - sources/eval-url-revenue-opportunity-2026-08-11.md
   - sources/eval-url-revenue-opportunity-2026-08-15.md
+  - sources/arxiv-2610.36956-mining-the-nineteenth-century-for-the-thirteenth-2026-11-01.md
 maturity: core
 created: 2026-06-17
 updated: 2026-10-05

@@ -1,12 +1,14 @@
 ---
 title: "AR-Edit — training-free autoregressive video editing without inversion (arXiv:2611.09795)"
 type: source
+maturity: validated
 tags: [source, arxiv, video-editing, streaming, autoregressive, training-free, neurips]
 keywords: [AR-Edit, inversion-free, value injection, self-attention asymmetry, DMD distillation, Reward Forcing, CausVid, Self Forcing, Wan 2.1, streaming editing]
 related:
   - concepts/value-cache-streaming-video-editing.md
   - concepts/layered-diffusion-content-preserving-video-editing.md
   - concepts/agentic-video-editing-orchestration.md
+  - sources/arxiv-2611.03597-structured-visual-landscape-2026-11-03.md
 read_status: read
 created: 2026-11-10
 updated: 2026-11-10
@@ -48,7 +50,7 @@ The claim that follows: inversion is redundant in this regime. With only three o
 
 **Why it matters here.** Real-time stream editing is the missing piece for live persona video: an operator can change the setting or an object in a face-cam stream without re-rendering or losing identity. The method adds no parameters and stays inside the AR model's native latency and memory budget.
 
-**Caveats.** Reported results are on Reward Forcing (Wan 2.1 teacher) and a few other AR backbones. The method depends on DMD distillation, so it does not transfer to a bidirectional offline model or to a non-distilled AR model without re-checking the Q/K/V asymmetry. No code release was verified [NEEDS VERIFICATION 2026-11-10].
+**Caveats.** Reported results are on Reward Forcing (Wan 2.1 teacher) and a few other AR backbones. The method depends on DMD distillation, so it does not transfer to a bidirectional offline model or to a non-distilled AR model without re-checking the Q/K/V asymmetry. No code release was verified [NEEDS VERIFICATION 2026-11-16].
 
 ## Snippets
 

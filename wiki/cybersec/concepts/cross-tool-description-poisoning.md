@@ -21,6 +21,7 @@ related:
   - sources/arxiv-2607-07461-spellsmith-mcp-taint-style-vulnerabilities.md
   - concepts/mcp-taint-style-vulnerabilities.md
   - entities/tools/spellsmith.md
+  - sources/arxiv-2611.03555-mcp-tool-poisoning-cross-framework-2026-11-03.md
 maturity: draft
 created: 2026-06-24
 updated: 2026-07-31

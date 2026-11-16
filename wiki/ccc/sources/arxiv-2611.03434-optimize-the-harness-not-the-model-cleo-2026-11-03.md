@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - concepts/code-as-agent-harness.md
+  - concepts/self-harness-model-specific-improvement-loop.md
 ---
 
 ## Raw Concept

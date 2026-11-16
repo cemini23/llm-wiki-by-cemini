@@ -1,6 +1,7 @@
 ---
 title: "K2V: generative keyframing for physically plausible video (arXiv:2611.17324)"
 type: source
+maturity: validated
 tags: [paper, video-generation, physics, keyframes, training-free, vlm, agentic]
 keywords: [K2V, keyframes to video, Wan2.2, Gemini 3.8 Flash, Physics-IQ Verified, PhyGenBench, first-frame conditioning, keyframe interpolation, NEWTON]
 related:

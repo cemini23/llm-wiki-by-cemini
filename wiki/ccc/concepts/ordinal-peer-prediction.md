@@ -1,6 +1,7 @@
 ---
 title: "Ordinal peer prediction — pay for pairwise agreement, not absolute score"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-information-elicitation-ordinal-agreement-2611.08366.md
   - concepts/auto-researcher-human-similarity.md

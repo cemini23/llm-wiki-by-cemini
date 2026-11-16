@@ -62,7 +62,7 @@ updated: 2026-06-26
 
 ### Workspace relevance
 
-Fills gap vs **single-turn** @entities/adapters/flux-kontext.md in persona img2img loops (@concepts/two-pass-generation-workflow.md). Build-track blocked by **40GB+ VRAM** and Wan finetune cost — watch weights release `[NEEDS VERIFICATION 2026-06-15]`.
+Fills gap vs **single-turn** @entities/adapters/flux-kontext.md in persona img2img loops (@concepts/two-pass-generation-workflow.md). Build-track blocked by **40GB+ VRAM** and Wan finetune cost — watch weights release `[NEEDS VERIFICATION 2026-11-16]`.
 
 ## Snippets
 

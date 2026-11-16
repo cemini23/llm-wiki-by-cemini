@@ -48,7 +48,7 @@ Entity stub from 2026-06-12 ingest — HYDRA-X (arXiv:2606.13289), Tencent Hunyu
 | Seedance 2.0 | Both unified A/V — Seedance is video-industrial; HYDRA-X is research UMM |
 | Wan 2.2 | Specialist video DiT vs generalist UMM — different deployment tier |
 
-**Phase-0:** Closed weights expected (Tencent). Watch for Hunyuan open releases. NSFW posture unknown — assume aligned `[NEEDS VERIFICATION 2026-06-12]`.
+**Phase-0:** Closed weights expected (Tencent). Watch for Hunyuan open releases. NSFW posture unknown — assume aligned `[NEEDS VERIFICATION 2026-11-16]`.
 
 ## Snippets
 

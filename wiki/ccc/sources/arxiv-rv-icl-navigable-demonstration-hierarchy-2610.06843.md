@@ -6,6 +6,7 @@ keywords: [2610.06843, k430]
 related:
   - concepts/navigable-demonstration-hierarchy.md
   - briefs/2026-10-06_ccc-k426-k430-sip-ready.md
+  - sources/arxiv-2610.41172-context-as-infrastructure-2026-11-03.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-06

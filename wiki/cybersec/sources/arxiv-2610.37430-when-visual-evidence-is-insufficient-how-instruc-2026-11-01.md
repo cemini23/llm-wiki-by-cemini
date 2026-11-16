@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-2610-13895-task-context-component-roles.md
+  - sources/arxiv-2608-12292-tutor-withhold-refusal-contract.md
 ---
 
 ## Raw Concept

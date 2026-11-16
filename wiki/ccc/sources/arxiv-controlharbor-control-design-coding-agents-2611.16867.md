@@ -1,10 +1,12 @@
 ---
 title: "ControlHarbor — 44 control-design tasks for coding agents, graded like control engineers"
 type: source
+maturity: draft
 related:
   - concepts/generation-verification-gap-agent-artifacts.md
   - entities/tools/harbor.md
   - concepts/harness-as-eval-artifact.md
+  - sources/arxiv-2611.03412-deliverbench-multi-stage-projects-2026-11-03.md
 updated: 2026-11-14
 ---
 

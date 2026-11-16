@@ -28,6 +28,7 @@ related:
   - concepts/dual-representation-agent-memory.md
   - sources/brief-k118-spec-driven-pegasus-workflow-prod-2026-06-18.md
   - concepts/nl2pipeline-platform-grounded-mutations.md
+  - sources/arxiv-2611.03517-ask-dont-equip-question-driven-agents-2026-11-03.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-07-21

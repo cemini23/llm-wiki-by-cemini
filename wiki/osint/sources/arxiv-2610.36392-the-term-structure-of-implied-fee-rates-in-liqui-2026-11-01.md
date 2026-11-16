@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - concepts/vix-term-structure-fractional-memory.md
+  - sources/arxiv-risvix-vix-term-structure-2611.07120.md
 ---
 
 ## Raw Concept

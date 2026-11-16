@@ -41,6 +41,7 @@ related:
   - sources/arxiv-2606-31227-ai-infra-guard-technical-report.md
   - concepts/layer-paradigm-agent-red-teaming.md
   - entities/tools/ai-infra-guard.md
+  - sources/arxiv-2611.13960-attack-surface-to-defense-architecture-2026-11-11.md
 maturity: draft
 created: 2026-05-21
 updated: 2026-10-09

@@ -1,6 +1,7 @@
 ---
 title: "An LLM audit needs computation, not weight access"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-llm-auditors-computation-not-weights-2611.07847.md
 updated: 2026-11-10

@@ -5,6 +5,8 @@ tags: [paper, peripheral, mllm,spatial]
 keywords: [peripheral]
 related:
   - sweeps/2026-07-31-daily.md
+  - sources/arxiv-2607-15846-dstar-dit-accelerator.md
+  - sources/arxiv-2607-15278-hierarchical-denoising-visual-reasoning.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-31

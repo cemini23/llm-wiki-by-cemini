@@ -1,6 +1,7 @@
 ---
 title: "MAEM — interpreting any residual-stream direction by scaling activation inversion (arXiv:2611.08465)"
 type: source
+maturity: draft
 tags: [source, arxiv, interpretability, activation-steering, lora, safety]
 keywords: [MAEM, maximally activating example metamodel, activation inversion, residual stream, SAE features, steering vectors, LoRA backdoor, NLA, Qwen3.6-27B]
 related:

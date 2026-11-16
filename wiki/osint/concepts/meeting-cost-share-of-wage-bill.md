@@ -1,6 +1,7 @@
 ---
 title: Meeting cost as a share of the wage bill
 type: concept
+maturity: draft
 related:
   - sources/substack-rss-klement-2026-11-13-meetings-are-a-waste-of-money.md
   - concepts/osint-inbox-wave-2026-11-14.md

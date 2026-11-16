@@ -12,6 +12,7 @@ related:
   - sources/pta-metric-anchoring-ssrn-4549819.md
   - concepts/high-signal-paper-patterns.md
   - sources/lob-regime-detection-hiremath-2026.md
+  - sources/arxiv-2610.33438-compiling-and-forecasting-implied-volatility-sur-2026-10-27.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-29

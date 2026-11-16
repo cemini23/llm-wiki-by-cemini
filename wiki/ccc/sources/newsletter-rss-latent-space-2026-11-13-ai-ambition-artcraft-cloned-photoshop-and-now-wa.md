@@ -1,8 +1,12 @@
 ---
 title: "AI Ambition — ArtCraft clones Photoshop with agents, and sets an authorship boundary"
 type: source
+maturity: draft
 related:
   - concepts/generation-verification-gap-agent-artifacts.md
+  - sources/newsletter-rss-latent-space-2026-07-03-vercels-andrew-qu-on-why-agents-are-a-new-kind-o.md
+  - sources/newsletter-rss-latent-space-2026-10-28-why-agents-love-supabase.md
+  - sources/newsletter-rss-latent-space-2026-11-10-designing-for-agents-aeo-2026-11-11.md
 updated: 2026-11-14
 ---
 

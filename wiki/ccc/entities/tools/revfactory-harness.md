@@ -16,6 +16,7 @@ related:
   - entities/tools/flowforge-skill.md
   - concepts/retrospective-harness-optimization-rho.md
   - entities/tools/retro-harness.md
+  - entities/tools/desloppify.md
 maturity: draft
 created: 2026-06-01
 updated: 2026-06-07

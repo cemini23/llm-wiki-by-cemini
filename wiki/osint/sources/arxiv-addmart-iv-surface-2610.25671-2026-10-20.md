@@ -4,6 +4,7 @@ type: source
 related:
   - concepts/k293-osint-wave.md
   - concepts/fomc-iv-surface-dynamics.md
+  - sources/arxiv-2610.33438-compiling-and-forecasting-implied-volatility-sur-2026-10-27.md
 maturity: draft
 read_status: skimmed
 updated: 2026-10-20

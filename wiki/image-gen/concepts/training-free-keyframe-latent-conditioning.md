@@ -1,6 +1,7 @@
 ---
 title: Training-free keyframe conditioning at interior latent blocks
 type: concept
+maturity: draft
 tags: [concept, video-generation, keyframes, conditioning, training-free, wan]
 keywords: [first-frame conditioning channel, mid-grey padding, conditioning mask, temporal block, latent block end, Wan2.2 VAE, keyframe interpolation]
 related:

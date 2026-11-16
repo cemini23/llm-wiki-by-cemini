@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-2610-02023-sphere-routed.md
+  - sources/arxiv-2610-06687-chronoworld.md
 ---
 
 ## Raw Concept

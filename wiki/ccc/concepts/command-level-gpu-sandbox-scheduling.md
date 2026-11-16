@@ -1,6 +1,7 @@
 ---
 title: "Command-level sandbox scheduling — schedule commands, not sessions"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-metal-sandbox-gpu-coding-agents-apple-silicon-2611.17294.md
   - entities/tools/metal-sandbox.md

@@ -5,6 +5,7 @@ tags: [source, equity, positioning, goldman-sachs, macro, k109]
 keywords: [cta-flow, prime-brokerage, buybacks, spx-pivots, gross-leverage]
 related:
   - meta/equity-signal-backtest-cadence.md
+  - sources/gs-positioning-2026-10-12-week-41.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-09

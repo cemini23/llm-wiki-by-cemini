@@ -1,6 +1,7 @@
 ---
 title: AnalogLayoutWorld — open benchmark for agentic analog layout
 type: entity
+maturity: draft
 related:
   - sources/arxiv-analoglayoutworld-agentic-analog-layout-2611.16991.md
   - concepts/generation-verification-gap-agent-artifacts.md
@@ -22,7 +23,7 @@ What prompted this page: the 2026-11-14 ingest of AnalogLayoutWorld (2611.16991)
 | Output | GDS layout |
 | Checks | DRC, LVS, PEX, post-layout simulation, layout-quality metrics |
 | Process kits named | SKY130, SG13G2 |
-| Open source | benchmark repository announced as "open-sourced soon" at preprint time [NEEDS VERIFICATION 2026-11-14] |
+| Open source | benchmark repository announced as "open-sourced soon" at preprint time [NEEDS VERIFICATION 2026-11-16] |
 
 The scoring model is worth reusing. A task score combines five parts: submission, physical verification gate, compactness against a target area ratio, engineering quality (device matching, critical-net routing, power delivery), and the verified fraction of an electrical test manifest. Partial credit needs verified progress, and full acceptance needs every check plus complete evidence.
 

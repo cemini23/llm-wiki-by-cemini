@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - concepts/agent-execution-provenance.md
+  - sources/arxiv-2606-04990-agent-traces-evidence-provenance.md
 ---
 
 ## Raw Concept

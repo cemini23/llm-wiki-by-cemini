@@ -1,10 +1,13 @@
 ---
 title: "Latent Space — What frontier labs buy (Handshake AI data deep dive)"
 type: source
+maturity: draft
 related:
   - concepts/expert-data-rl-environments.md
   - concepts/baseline-and-metric-calibration.md
   - concepts/harness-fingerprinting-telemetry.md
+  - sources/newsletter-rss-latent-space-2026-10-29-can-frontier-models-see-past-a-decoy-elorian-tes.md
+  - sources/newsletter-rss-latent-space-2026-11-02-legal-agents-legora-2026-11-03.md
 updated: 2026-11-10
 ---
 

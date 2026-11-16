@@ -12,6 +12,7 @@ related:
   - concepts/context-matched-video-distillation.md
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-08-18-daily.md
+  - sources/arxiv-2608-03387-roboreact.md
 maturity: draft
 read_status: read
 created: 2026-08-18

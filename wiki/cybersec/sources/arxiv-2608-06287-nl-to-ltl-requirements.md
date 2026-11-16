@@ -6,6 +6,7 @@ keywords: [2608.06287, LTL, requirements engineering, formal specification, pass
 related:
   - concepts/nl-to-ltl-requirements-llm.md
   - concepts/ai-for-cybersecurity.md
+  - @image-gen-wiki/sources/arxiv-2608-06287-nl-to-ltl-routed.md
 maturity: draft
 read_status: read
 created: 2026-08-07

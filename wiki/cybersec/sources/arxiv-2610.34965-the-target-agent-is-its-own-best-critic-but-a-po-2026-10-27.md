@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-2610-11030-nomos-compiled-policy-tool-gate.md
+  - sources/arxiv-2610-03585-threat-preserving-representation-sensitivity.md
 ---
 
 ## Raw Concept

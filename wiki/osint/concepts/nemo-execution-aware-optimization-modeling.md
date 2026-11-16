@@ -26,7 +26,7 @@ Synthesis of arXiv:2601.21372 for offline decision modeling, not live trading ex
 
 **NEMO pattern:** Treat **autonomous coding agents** like APIs — sandbox execute, validate, asymmetric cross-check (optimizer vs simulator), memory + MBR/self-consistency.
 
-**Cemini use cases (REFERENCE):** portfolio rebalance what-if, hedge notionals, constraint feasibility checks in brief prep — route through conductor with human gate; **no** auto-deploy to prod solvers without license audit [NEEDS VERIFICATION 2026-06-04].
+**Cemini use cases (REFERENCE):** portfolio rebalance what-if, hedge notionals, constraint feasibility checks in brief prep — route through conductor with human gate; **no** auto-deploy to prod solvers without license audit [NEEDS VERIFICATION 2026-11-16].
 
 ## Snippets
 

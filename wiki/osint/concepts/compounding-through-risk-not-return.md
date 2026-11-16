@@ -1,6 +1,7 @@
 ---
 title: Compounding through risk, not return — tail-first portfolio doctrine
 type: concept
+maturity: validated
 related:
   - sources/substack-rss-moontower-2026-11-11-compounding-through-risk-not-return.md
   - concepts/options-derivatives.md

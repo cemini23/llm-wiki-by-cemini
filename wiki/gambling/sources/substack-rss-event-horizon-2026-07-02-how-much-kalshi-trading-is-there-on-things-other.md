@@ -8,6 +8,8 @@ maturity: draft
 created: 2026-07-05
 updated: 2026-07-05
 cross-wiki-source: @osint-wiki/sources/substack-rss-event-horizon-2026-07-02-how-much-kalshi-trading-is-there-on-things-other.md
+related:
+  - @osint-wiki/sources/substack-rss-event-horizon-2026-07-02-how-much-kalshi-trading-is-there-on-things-other.md
 ---
 
 # Event Horizon — How Much Kalshi Trading Is There On Things Other Than Sports And Crypto?

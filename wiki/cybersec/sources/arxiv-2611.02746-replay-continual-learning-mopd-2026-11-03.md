@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-bmms-policy-conditioned-behavioral-compliance-2611.09147.md
+  - sources/arxiv-2609-35699-distillation-defenses-break-after-reinforcement-learning.md
 ---
 
 ## Raw Concept

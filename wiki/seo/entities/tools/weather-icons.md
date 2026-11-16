@@ -37,7 +37,7 @@ Routed from `briefs/2026-05-24_k63-weather-icons-ui-from-osint.md` (K63 URL 27).
 
 **Pairing:** @entities/tools/itshover.md covers **motion** micro-interactions on CTAs and nav; weather-icons covers **static meteorological glyphs** where animation is unnecessary.
 
-[NEEDS VERIFICATION 2026-05-24] — confirm LICENSE + last commit before any production embed.
+[NEEDS VERIFICATION 2026-11-16] — confirm LICENSE + last commit before any production embed.
 
 ## Snippets
 

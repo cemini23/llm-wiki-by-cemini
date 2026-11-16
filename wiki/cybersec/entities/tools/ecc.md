@@ -62,7 +62,7 @@ ECC is a **harness-native workflow layer**: shared `SKILL.md`, rules, hooks, MCP
 
 ### vs existing stack
 
-- **SkillSpector** — local, Apache-2.0, semantic agentic-risk + OSV; ECC AgentShield overlaps on config audit — run both on high-risk skill imports [NEEDS VERIFICATION 2026-06-20]
+- **SkillSpector** — local, Apache-2.0, semantic agentic-risk + OSV; ECC AgentShield overlaps on config audit — run both on high-risk skill imports [NEEDS VERIFICATION 2026-11-16]
 - **DefenseClaw** — enterprise policy + MCP scanner sidecar; ECC is operator/harness distribution, not SIEM-grade governance
 - **Skillgate** — SaaS, closed source; ECC AgentShield is local/npm
 

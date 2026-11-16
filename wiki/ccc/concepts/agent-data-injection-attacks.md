@@ -16,6 +16,7 @@ related:
   - concepts/shared-workspace-injection-task-completion-not-safety.md
   - sources/arxiv-apex-harm-shared-workspace-agent-safety-2610.13623.md
   - sources/arxiv-x-agentred-cross-service-red-teaming-2610.13886.md
+  - sources/arxiv-tau-agent-traffic-rag-2608.25935.md
 maturity: draft
 created: 2026-07-09
 updated: 2026-10-12

@@ -10,6 +10,7 @@ related:
   - entities/persona-ops/fish-speech.md
   - entities/voice-models/cosyvoice2.md
   - sweeps/2026-08-10-daily.md
+  - sources/arxiv-2608-02602-aurora-lm.md
 maturity: draft
 read_status: read
 created: 2026-08-10

@@ -11,6 +11,9 @@ updated: 2026-10-07
 phase_0_verdict: "REFERENCE 2026-10-07 — no attack payloads in wiki."
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (OOD)"
+related:
+  - sources/arxiv-2610-11030-nomos-compiled-policy-tool-gate.md
+  - sources/arxiv-2610-05346-mosaic-attacks-sequential-fragment-defense.md
 ---
 
 ## Relations

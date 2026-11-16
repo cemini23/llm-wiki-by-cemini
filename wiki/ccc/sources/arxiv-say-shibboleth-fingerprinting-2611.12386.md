@@ -1,10 +1,12 @@
 ---
 title: "Say Shibboleth — fingerprinting the LLM and harness behind an agentic attack"
 type: source
+maturity: draft
 related:
   - concepts/harness-fingerprinting-telemetry.md
   - concepts/harness-fingerprint-trajectory-routing.md
   - concepts/measurement-integrity-mcp-security-eval.md
+  - sources/arxiv-2611.14211-verifiable-agentic-traffic-class-2026-11-11.md
 updated: 2026-11-10
 ---
 

@@ -5,6 +5,7 @@ tags: [desk-note, positioning, cta, prime-brokerage, buybacks]
 keywords: [GS positioning, CTA, prime brokerage, net leverage, buybacks, Info Tech, S&P index options]
 related:
   - concepts/k291-osint-wave.md
+  - sources/goldman-sachs-eq-positioning-key-levels-2026-06-08.md
 maturity: draft
 read_status: read
 created: 2026-10-14

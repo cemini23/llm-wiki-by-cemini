@@ -5,6 +5,7 @@ tags: [tool, forensics, spyware, ioc, offline, defensive, operator-opsec]
 keywords: [zero breach toolkit, spyware ioc, pegasus, predator, graphite, candiru, mobile forensics, coverage gaps]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-a-2026-11-01.md"
+  - concepts/ai-for-cybersecurity.md
 maturity: draft
 created: 2026-11-01
 updated: 2026-11-01

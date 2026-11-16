@@ -71,7 +71,7 @@ De-censoring path (per @concepts/de-censoring-techniques.md):
 
 [TENTATIVE]:
 
-- Parameter count not stated explicitly in the survey for v3 (v2.5 was ~2.5B; v3 is rumored larger). `[NEEDS VERIFICATION 2026-05-06]`.
+- Parameter count not stated explicitly in the survey for v3 (v2.5 was ~2.5B; v3 is rumored larger). `[NEEDS VERIFICATION 2026-11-16]`.
 - 16-channel VAE has higher decode-stage VRAM than 4-channel; budget extra ~1-2 GB for the VAE pass alone.
 - 12-16 GB VRAM tier likely workable in FP8; 24 GB recommended for full-quality work.
 
@@ -85,9 +85,9 @@ De-censoring path (per @concepts/de-censoring-techniques.md):
 
 ### Workspace TODO
 
-- **`[NEEDS VERIFICATION 2026-05-06]`**: confirm Playground v3 parameter count, license terms, current revision.
+- **`[NEEDS VERIFICATION 2026-11-16]`**: confirm Playground v3 parameter count, license terms, current revision.
 - **`[OPEN QUESTION 2026-05-06]`**: identify canonical de-censoring fine-tunes / merges for Playground v3 (the survey notes these exist but doesn't name them).
-- **`[NEEDS VERIFICATION 2026-05-06]`**: confirm whether Playground v3 weights are publicly downloadable or API-only (Playground AI has historically had a hosted-API focus).
+- **`[NEEDS VERIFICATION 2026-11-16]`**: confirm whether Playground v3 weights are publicly downloadable or API-only (Playground AI has historically had a hosted-API focus).
 - Compare Playground v3 16-channel VAE detail vs FLUX.1 Dev / Z-Image on the same fine-detail prompt set (small faces, typography). Validate the VAE win claim.
 - Document the exact deep-fusion LLM encoder pattern from the arXiv paper — useful general knowledge for the @concepts/llm-as-image-conditioning.md taxonomy.
 

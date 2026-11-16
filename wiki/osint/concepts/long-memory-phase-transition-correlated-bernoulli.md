@@ -1,6 +1,7 @@
 ---
 title: Long memory and the a = 1/2 phase transition — correlated Bernoulli selection
 type: concept
+maturity: draft
 related:
   - sources/arxiv-random-lcm-memory-2611.11301.md
   - concepts/market-memory-hurst-regime.md

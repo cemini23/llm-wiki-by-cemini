@@ -12,6 +12,7 @@ related:
   - concepts/albedo-guided-instance-video-editing.md
   - concepts/task-isolated-unified-video-editing.md
   - sweeps/2026-07-17-daily.md
+  - sources/arxiv-2607-05748-harvey-backdoor-removal.md
 maturity: draft
 read_status: read
 created: 2026-07-17

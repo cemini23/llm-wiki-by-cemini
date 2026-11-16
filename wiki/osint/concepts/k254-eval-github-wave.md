@@ -1,6 +1,7 @@
 ---
 title: K254 Eval Github Wave (Sep 2026)
 type: concept
+maturity: stub
 tags: [eval, phase-0, k254]
 keywords: [url-revenue, repository-eval, multi-wiki]
 related:

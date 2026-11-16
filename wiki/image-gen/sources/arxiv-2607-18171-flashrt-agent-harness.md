@@ -7,6 +7,7 @@ related:
   - entities/inference/chitu-diffusion.md
   - concepts/ditango-parallel-diffusion-attention.md
   - sweeps/2026-07-21-daily.md
+  - sources/arxiv-2607-25947-clinical-timeseries-llm.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-21

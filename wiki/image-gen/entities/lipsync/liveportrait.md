@@ -49,7 +49,7 @@ Used widely in mid-2024–2025 for "still-photo-to-talking" social content and a
 
 ### Key facts (May 2026)
 
-- **License**: MIT [NEEDS VERIFICATION 2026-05-13] — verify against `KwaiVGI/LivePortrait` repo
+- **License**: MIT [NEEDS VERIFICATION 2026-11-16] — verify against `KwaiVGI/LivePortrait` repo
 - **Repo**: `github.com/KwaiVGI/LivePortrait`
 - **Paper**: LivePortrait (Guo et al., ECCV 2024, arXiv:2407.03168)
 - **Input**: single portrait image + driving (video OR audio→derived motion)

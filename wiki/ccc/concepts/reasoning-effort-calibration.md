@@ -1,6 +1,7 @@
 ---
 title: "Reasoning effort calibration — a higher tier beats a higher effort setting"
 type: concept
+maturity: draft
 related:
   - sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md

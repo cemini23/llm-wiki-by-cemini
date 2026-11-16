@@ -40,7 +40,7 @@ read_status: deep-read
 
 **[RETRACTED]** Prior “DNU 366/2025 Migraciones naturalization path in force” claim — courts **nullified** that path; competence remains **Juzgados Federales**. Do not encode Migraciones *carta* live UX.
 
-Apostille is **not** one national rule: **7 Italian seats × province** overlay (BA/Córdoba/Mendoza/MdP often accept local digital GEDO/CiDi under QR rules; **Rosario** requires digital apostille for some provinces; **La Plata** leans on **1987 IT–AR** for post-1 Jul 1990 acts; Bahía Blanca still `[NEEDS VERIFICATION 2026-07-29]`). CNE F003/F052 fee pinned **5,000 ARS** (CSJN Acordada 17/2025). Buenos Aires Prenot@Mi: new *iure sanguinis* suspended post **28 Mar 2025**; pre-**27 Mar 2025 23:59 Rome** bookings under old rules (per BA).
+Apostille is **not** one national rule: **7 Italian seats × province** overlay (BA/Córdoba/Mendoza/MdP often accept local digital GEDO/CiDi under QR rules; **Rosario** requires digital apostille for some provinces; **La Plata** leans on **1987 IT–AR** for post-1 Jul 1990 acts; Bahía Blanca still `[NEEDS VERIFICATION 2026-11-16]`). CNE F003/F052 fee pinned **5,000 ARS** (CSJN Acordada 17/2025). Buenos Aires Prenot@Mi: new *iure sanguinis* suspended post **28 Mar 2025**; pre-**27 Mar 2025 23:59 Rome** bookings under old rules (per BA).
 
 Still true: no national partida API; provincial Registro Civil; CABA two-PDF (acta + GEDO); national TAD apostille ≠ GCBA TAD partidas.
 

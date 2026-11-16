@@ -5,6 +5,9 @@ tags: [paper, llm, self-consistency, peripheral, skip]
 keywords: [PPA, statistical self-consistency, persona prompting, macro fallacy, ICL]
 related:
   - sweeps/2026-07-18-daily.md
+  - sources/arxiv-2607-13391-nonequilibrium-markov-particles.md
+  - sources/arxiv-2607-27110-freqforcing.md
+  - sources/arxiv-2607-20368-self-gradient-forcing.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-18

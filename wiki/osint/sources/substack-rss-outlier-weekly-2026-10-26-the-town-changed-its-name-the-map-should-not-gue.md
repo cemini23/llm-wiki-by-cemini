@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/gemini-italian-place-name-resolution-2026-07-21.md
+  - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
 ---
 
 ## Raw Concept

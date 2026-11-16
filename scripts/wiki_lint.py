@@ -48,6 +48,9 @@ parser.add_argument("--domain", default=None,
                     help="Restrict the run to one domain directory under wiki/ (e.g. osint). "
                          "A filter, not a root change: WIKI stays at <repo>/wiki so alias "
                          "loading and the pre-commit staged slice keep working.")
+parser.add_argument("--strict", action="store_true",
+                    help="Also exit 1 on informational findings: orphan pages, stale "
+                         "[NEEDS VERIFICATION] tags, and pages missing maturity.")
 args = parser.parse_args()
 TODAY = date.today()
 
@@ -768,3 +771,12 @@ if args.fail_on_graph and (gaps or dangling or mention_pairs or xw_pairs):
             file=sys.stderr,
         )
         sys.exit(1)
+
+# -- fail-closed exit (2026-11-16) ---------------------------------------
+# Hard errors now always fail the run, not only under --fail-on-graph.
+# Informational findings stay non-blocking unless --strict is passed, so a
+# normal lint reports the debt without refusing to run.
+if total_hard:
+    sys.exit(1)
+if args.strict and (orphans or stale_verifications or no_maturity):
+    sys.exit(1)

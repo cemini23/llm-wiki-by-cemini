@@ -1,6 +1,7 @@
 ---
 title: "GitHub NFL / DFS repo evaluation — Cemini active-project batch (K125)"
 type: source
+maturity: draft
 tags: [docx, tool-evaluation, nfl, ceminidfs, license-audit, k125]
 keywords: [tool-evaluation, nflverse, nfl-fantasy-football, NFL-Data, danmorse314, polymarket-sports-trading-bot]
 related:

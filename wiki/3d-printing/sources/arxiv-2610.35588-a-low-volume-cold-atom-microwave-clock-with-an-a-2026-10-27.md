@@ -7,6 +7,8 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-2611.13800-additive-ceramic-optical-platforms-2026-11-11.md
 ---
 
 ## Raw Concept

@@ -1,6 +1,7 @@
 ---
 title: Outcome-supervised block regeneration — score the partial state, re-denoise the whole block
 type: concept
+maturity: validated
 tags: [concept, diffusion, decoding, verifier, inference-time, mdlm]
 keywords: [DiVR, outcome supervision, block re-decoding, remasking, verifier head, LoRA adapter, best-of-k, early decision error]
 related:

@@ -5,6 +5,8 @@ tags: [newsletter, source, k269, macro]
 keywords: [k269, chip-ban, semiconductors, Klement]
 related:
   - concepts/k269-newsletter-macro-wave.md
+  - sources/substack-rss-klement-2026-10-27-the-decline-of-german-manufacturing.md
+  - sources/substack-rss-klement-2026-11-05-china-decoupling-2026-11-05.md
 maturity: draft
 created: 2026-09-22
 updated: 2026-09-22

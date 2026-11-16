@@ -4,6 +4,8 @@ type: source
 tags: [source, newsletter, aeo, agent-discoverability, developer-tools]
 related:
   - "@osint-wiki/entities/tools/agentdiscoverability-track.md"
+  - sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md
+  - sources/newsletter-rss-latent-space-2026-11-13-ai-ambition-artcraft-cloned-photoshop-and-now-wa.md
 maturity: draft
 read_status: skimmed
 created: 2026-11-11

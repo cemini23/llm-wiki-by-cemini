@@ -5,6 +5,7 @@ tags: [paper, peripheral, rl,thesis]
 keywords: [peripheral]
 related:
   - sweeps/2026-07-31-daily.md
+  - sources/arxiv-2607-28243-egogenesis.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-31

@@ -1,6 +1,7 @@
 ---
 title: "ReA-Bench — six diagnostic tiers for auditing responsible agent behaviour"
 type: source
+maturity: draft
 related:
   - concepts/trajectory-audit-diagnostic-tiers.md
   - concepts/trajectory-driven-safety-harness-evolution.md

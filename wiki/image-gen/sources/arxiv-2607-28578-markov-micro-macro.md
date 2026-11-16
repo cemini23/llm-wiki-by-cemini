@@ -5,6 +5,9 @@ tags: [paper, peripheral, math,markov]
 keywords: [peripheral]
 related:
   - sweeps/2026-07-31-daily.md
+  - sources/arxiv-2607-13391-nonequilibrium-markov-particles.md
+  - sources/arxiv-2607-15694-voice-clone-attribution-geometry-floor.md
+  - sources/arxiv-2607-28325-rotational-diffusion-macro.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-31

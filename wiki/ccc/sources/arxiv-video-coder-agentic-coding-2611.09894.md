@@ -1,6 +1,7 @@
 ---
 title: "Video-Coder — training a coding agent whose code builds the video scene"
 type: source
+maturity: draft
 related:
   - concepts/agentic-robotics-harness.md
   - concepts/harness-learning-test-time-adaptation.md

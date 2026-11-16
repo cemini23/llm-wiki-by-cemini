@@ -5,6 +5,7 @@ tags: [tool, cybersec, gateway, llm-routing, guruwatcher]
 keywords: [experiential labs, exp CLI, glm-5.3-flash-uncensored, deepseek-v4.1-flash, zero retention]
 related:
   - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - concepts/ai-for-cybersecurity.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25

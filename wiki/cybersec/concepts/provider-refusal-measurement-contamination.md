@@ -1,6 +1,7 @@
 ---
 title: "Provider refusal as a measurement contaminant"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-nfr-to-hyperparameter-quantum-2611.16902.md
   - concepts/guardrail-construct-validity-agent-eval.md

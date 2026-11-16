@@ -1,6 +1,7 @@
 ---
 title: K254 SEO GBP wave (Sep 2026)
 type: concept
+maturity: stub
 tags: [seo, gbp, k254]
 keywords: [google-reviews, edited-indicator, Sterling-Sky]
 related:

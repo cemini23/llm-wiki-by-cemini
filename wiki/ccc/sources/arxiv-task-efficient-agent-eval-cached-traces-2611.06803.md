@@ -1,11 +1,14 @@
 ---
 title: "Task-efficient agent evaluation using cached traces (trubric)"
 type: source
+maturity: draft
 related:
   - concepts/task-efficient-eval-cached-traces.md
   - concepts/benchmark-maintenance-debt.md
   - concepts/baseline-and-metric-calibration.md
   - concepts/headless-claude-code-controlled-eval-lane.md
+  - sources/arxiv-2611.04439-dualevolve-2026-11-05.md
+  - sources/arxiv-2611.14493-agent-evaluation-frameworks-2026-11-11.md
 updated: 2026-11-10
 ---
 

@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/substack-rss-wublock-2026-11-12-global-crypto-mining-news-in-october-binance-poo.md
+  - sources/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md
 ---
 
 ## Raw Concept

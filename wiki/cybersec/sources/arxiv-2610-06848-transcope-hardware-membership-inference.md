@@ -8,6 +8,8 @@ related:
   - concepts/asleval-privacy-exposure-displacement.md
   - concepts/hardware-id-masking-opsec.md
   - concepts/tpm-attest-linux-integrity-attestation.md
+  - sources/arxiv-2609-09076-actreview-peer-review.md
+  - sources/arxiv-2610.32079-label-budgeted-attribute-inference-from-protecte-2026-10-27.md
 maturity: draft
 read_status: read
 created: 2026-10-06

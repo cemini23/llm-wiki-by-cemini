@@ -5,6 +5,7 @@ tags: [tool, svg, javascript, game-time, atto, geometry]
 keywords: [svg.js, pathmorphing, topoly, svg.select, svg.resize, polygon sampling, map overlay]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md"
+  - concepts/phase1-adopt-wire.md
 maturity: draft
 created: 2026-11-03
 updated: 2026-11-03

@@ -8,6 +8,7 @@ related:
   - concepts/agent-least-privilege-tool-selection.md
   - concepts/mcp-security-posture.md
   - concepts/counterfactual-simulatability-llm-explanations.md
+  - sources/arxiv-2608-31118-ontolearn-llm-size-ood.md
 maturity: draft
 read_status: read
 created: 2026-08-20

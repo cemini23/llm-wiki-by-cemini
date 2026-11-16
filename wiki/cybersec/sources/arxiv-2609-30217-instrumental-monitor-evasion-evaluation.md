@@ -7,6 +7,7 @@ related:
   - concepts/instrumental-monitor-evasion-evaluation.md
   - concepts/auto-mode-blocking-classifier-redteam.md
   - concepts/step-level-agent-guardrails.md
+  - sources/arxiv-2609-10036-belief-state-engine-planning.md
 maturity: validated
 read_status: deep-read
 created: 2026-09-25

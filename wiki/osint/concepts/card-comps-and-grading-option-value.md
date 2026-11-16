@@ -1,6 +1,7 @@
 ---
 title: Card comps and grading option value — a worked evidence-discipline example
 type: concept
+maturity: draft
 related:
   - sources/substack-rss-outlier-weekly-2026-11-11-fifty-years-of-cards-ten-days-of-ledger.md
   - concepts/osint-inbox-wave-2026-11-14.md

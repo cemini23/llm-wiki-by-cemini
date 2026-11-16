@@ -5,6 +5,8 @@ tags: [source, ood]
 keywords: [2609.31506, ood]
 related:
   - concepts/culturally-responsive-llm-benchmark-audit.md
+  - sources/arxiv-2609-10036-belief-state-engine-planning.md
+  - sources/arxiv-2609-18842-infinite-parameter-llms-live-data.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-28

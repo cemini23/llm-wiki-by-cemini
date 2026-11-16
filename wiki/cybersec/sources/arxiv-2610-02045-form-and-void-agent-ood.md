@@ -11,6 +11,9 @@ updated: 2026-10-03
 phase_0_verdict: "REFERENCE 2026-10-03 — no attack payloads in wiki."
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (OOD)"
+related:
+  - sources/arxiv-2606-02302-seclaw-spec-driven-agent-security.md
+  - concepts/agent-decoy-defense-autonomous-pentest.md
 ---
 
 ## Relations

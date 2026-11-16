@@ -106,4 +106,4 @@ Contributor-level adversary; standard PR interface only (branch, commits, title/
 
 - **Routine-review prompt only for prod merge gates** — paper shows 36–53% RR on weaker models; security-explicit prompts may help but are not evaluated here.
 - **RedAI4Code/SEVRA GitHub org repo** — 404 at Phase-0; use `rufimelo99/malicious-pr-bench` + HF dataset instead.
-- **Importing benchmark code without LICENSE** — GitHub API reports `license: null` [NEEDS VERIFICATION 2026-06-16].
+- **Importing benchmark code without LICENSE** — GitHub API reports `license: null` [NEEDS VERIFICATION 2026-11-16].

@@ -5,6 +5,7 @@ tags: [source, k256]
 keywords: [k256]
 related:
   - concepts/k256-newsletter-macro-wave.md
+  - sources/substack-rss-wublock-2026-11-02-wublockchain-weekly-outlook-us-midterms-and-jobs.md
 maturity: draft
 created: 2026-09-07
 updated: 2026-09-07

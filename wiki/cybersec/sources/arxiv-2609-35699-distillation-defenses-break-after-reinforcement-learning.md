@@ -5,6 +5,8 @@ tags: [source, arxiv, agent-security]
 keywords: [2609.35699, k381]
 related:
   - concepts/distillation-defense-reinforcement-learning-threat-model.md
+  - sources/arxiv-2609-09059-playtrain-js-game-rl.md
+  - sources/arxiv-2611.02746-replay-continual-learning-mopd-2026-11-03.md
 maturity: draft
 read_status: read
 created: 2026-09-29

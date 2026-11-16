@@ -1,6 +1,7 @@
 ---
 title: Harbor — task format and rollout runner for coding-agent benchmarks
 type: entity
+maturity: draft
 related:
   - sources/arxiv-controlharbor-control-design-coding-agents-2611.16867.md
   - sources/arxiv-metal-sandbox-gpu-coding-agents-apple-silicon-2611.17294.md
@@ -35,8 +36,8 @@ Two consequences follow for Cemini.
 
 Open facts to confirm before any adoption:
 
-- License and repository for Harbor itself. [NEEDS VERIFICATION 2026-11-14]
-- Whether the Metal Sandbox fork differs from upstream Harbor. The paper links `github.com/WangHaoZhe/harbor`. [NEEDS VERIFICATION 2026-11-14]
+- License and repository for Harbor itself. [NEEDS VERIFICATION 2026-11-16]
+- Whether the Metal Sandbox fork differs from upstream Harbor. The paper links `github.com/WangHaoZhe/harbor`. [NEEDS VERIFICATION 2026-11-16]
 
 This page records the pattern. It is not a Phase-0 audit.
 

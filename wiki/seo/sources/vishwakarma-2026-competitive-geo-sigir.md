@@ -16,6 +16,7 @@ related:
   - sources/arxiv-baig-2026-hotel-llm-reputation-audit-2606.16344-2026-06-16.md
   - concepts/llm-reputation-signals-geo.md
   - sources/arxiv-martinez-2026-critical-survey-geo-2607.14035-2026-07-16.md
+  - sources/arxiv-2610.40164-who-owns-digital-news-and-who-gets-cited-measuri-2026-11-01.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-01

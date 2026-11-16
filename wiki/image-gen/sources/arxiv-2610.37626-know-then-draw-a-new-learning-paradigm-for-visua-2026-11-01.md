@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-2606-03971-video-mirai-autoregressive-foresight.md
+  - sources/arxiv-2610-10429-sgf-plus.md
 ---
 
 ## Raw Concept

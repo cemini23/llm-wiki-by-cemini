@@ -46,7 +46,7 @@ updated: 2026-06-19
 
 **Applications:** Forward/backward extension, inbetween, looping long shots, scene transitions, visual story from keyframes.
 
-**Release:** Project page only — no public repo at ingest `[NEEDS VERIFICATION 2026-06-19]`.
+**Release:** Project page only — no public repo at ingest `[NEEDS VERIFICATION 2026-11-16]`.
 
 ### Workspace relevance
 

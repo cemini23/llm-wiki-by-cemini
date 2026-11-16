@@ -28,4 +28,4 @@ An expansive set of ready-to-use Agent Skills for high-level scientific research
 
 **OSINT cross-route**: Geospatial science skills documented for OSINT wiki's threat-actor geolocation workflows.
 
-**Open question** [NEEDS VERIFICATION 2026-05-16]: Fundamental accuracy of time-series models under extreme financial market volatility needs rigorous evaluation before production use.
+**Open question** [NEEDS VERIFICATION 2026-11-16]: Fundamental accuracy of time-series models under extreme financial market volatility needs rigorous evaluation before production use.

@@ -11,6 +11,8 @@ related:
   - concepts/harnessx-composable-evolution-foundry.md
   - concepts/seagym-self-evolving-harness-evaluation.md
   - sources/brief-k139-agentic-online-rl-self-evolving-2026-07-07.md
+  - sources/arxiv-2610.35845-work-agents-systems-capabilities-and-optimizatio-2026-10-27.md
+  - sources/arxiv-2610.41216-tinyastral-self-evolving-harnesses-2026-11-03.md
 maturity: draft
 read_status: read
 created: 2026-07-07

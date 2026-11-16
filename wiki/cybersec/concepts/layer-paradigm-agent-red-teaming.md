@@ -24,6 +24,7 @@ related:
   - concepts/amt-x-phase-structured-multi-turn-red-teaming.md
   - sources/arxiv-2607-11151-amt-x-phase-structured-multi-turn-red-teaming.md
   - sources/arxiv-2607-13987-agent-skill-security-skillsec-eval.md
+  - sources/arxiv-2610.37415-the-envelope-layer-an-underestimated-surface-of-2026-11-01.md
 maturity: draft
 created: 2026-07-01
 updated: 2026-10-12

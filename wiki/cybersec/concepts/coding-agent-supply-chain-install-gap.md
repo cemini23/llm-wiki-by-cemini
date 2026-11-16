@@ -25,6 +25,7 @@ related:
   - concepts/vulnerability-concept-graph-production-agent-red-teaming.md
   - "@ccc-wiki/concepts/coding-agent-install-gap-and-preinstall-gate.md"
   - concepts/cashews-llm-malicious-package-detection.md
+  - sources/arxiv-2610.35043-steering-for-safety-hijacking-for-profit-trojan-2026-10-27.md
 maturity: draft
 created: 2026-07-17
 updated: 2026-10-09

@@ -7,6 +7,8 @@ related:
   - concepts/computer-use-agent-harness.md
   - concepts/k292-ccc-wave.md
   - "@osint-wiki/concepts/agentic-context-management.md"
+  - sources/arxiv-2610.32483-when-agents-fail-model-or-harness-who-s-to-blame-2026-10-27.md
+  - sources/arxiv-2610.40578-vericua-verification-as-agentic-exploration-for-2026-11-01.md
 maturity: draft
 read_status: read
 created: 2026-10-16

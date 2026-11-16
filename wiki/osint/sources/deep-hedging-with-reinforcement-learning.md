@@ -7,6 +7,7 @@ related:
   - concepts/rl-marl-research.md
   - concepts/options-derivatives.md
   - sources/arxiv-deep-hedging-delta-corrections-2605.21696.md
+  - sources/arxiv-2611.00958-crypto-option-repair-risk-2026-11-03.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-27

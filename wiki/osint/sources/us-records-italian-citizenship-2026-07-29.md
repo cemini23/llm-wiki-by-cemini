@@ -43,7 +43,7 @@ read_status: deep-read
 | Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/US Records For Italian Citizenship.docx` |
 | Laptop extract | `.local/research/atto-latam-audience-systems/USA.md` |
 
-**Not legal advice.** Many fee/turnaround cells remain `[NEEDS VERIFICATION 2026-07-29]`.
+**Not legal advice.** Many fee/turnaround cells remain `[NEEDS VERIFICATION 2026-11-16]`.
 
 ## Narrative
 

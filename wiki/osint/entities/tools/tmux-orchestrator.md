@@ -21,7 +21,7 @@ updated: 2026-05-10
 Script-driven framework using tmux to facilitate 24/7 autonomous AI agent execution in persistent background sessions. Three-tier hierarchy: Orchestrator → Project Managers → Engineers. Self-scheduling check-ins + automated 30-minute Git commits.
 
 - **Repo**: `github.com/Jedward23/Tmux-Orchestrator`
-- **License**: MIT [NEEDS VERIFICATION 2026-05-10]
+- **License**: MIT [NEEDS VERIFICATION 2026-11-16]
 - **Stack**: Bash scripts + Python utility (`tmux_utils.py`)
 - **Maturity**: ~10 commits, no formal release — proof-of-concept
 - **Bus factor**: 1

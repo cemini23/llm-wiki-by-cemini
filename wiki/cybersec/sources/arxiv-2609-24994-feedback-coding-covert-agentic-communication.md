@@ -6,6 +6,7 @@ keywords: [2609.24994, k359]
 related:
   - concepts/inference-time-covert-agentic-communication.md
   - concepts/inadvertent-context-leakage.md
+  - sources/arxiv-2609-26725-figma-ai-product-design-ood.md
 maturity: draft
 read_status: read
 created: 2026-09-23

@@ -5,6 +5,8 @@ tags: [source, arxiv, k391]
 keywords: [2609.28926, k391]
 related:
   - briefs/2026-09-25_ccc-k390-k394-sip-ready.md
+  - sources/arxiv-bilevel-coordinated-reflection-2609.02750.md
+  - sources/arxiv-cua-universe-hybrid-gui-cli-2609.05374.md
 maturity: draft
 read_status: deep-read
 created: 2026-09-25

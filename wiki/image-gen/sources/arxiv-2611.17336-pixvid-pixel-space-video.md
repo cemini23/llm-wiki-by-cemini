@@ -1,6 +1,7 @@
 ---
 title: "PixVid: lifting latent video diffusion into pixel space (arXiv:2611.17336)"
 type: source
+maturity: validated
 tags: [paper, video-generation, pixel-space, vae-free, high-resolution, latency, editing]
 keywords: [PixVid, Wan2.1-14B, Wan2.2, detailer head, x-prediction, noise shift, Euler sampler, VACE, SolarWM, Self Forcing, VBench]
 related:
@@ -10,6 +11,9 @@ related:
   - concepts/streaming-video-generation-serving.md
   - concepts/bidirectional-autoregressive-video-generation.md
   - entities/models/wan-2-2.md
+  - sources/arxiv-2610.40647-read-allocate-route-role-coupled-tokenization-fo-2026-11-01.md
+  - sources/arxiv-2611.05377-dreamx-latent-action-2026-11-05.md
+  - sources/arxiv-2611.14387-b3-overlapping-block-diffusion-2026-11-11.md
 updated: 2026-11-14
 ---
 

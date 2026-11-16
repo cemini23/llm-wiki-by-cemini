@@ -1,6 +1,7 @@
 ---
 title: Best Ball Mania VII (2026)
 type: entity
+maturity: validated
 tags: [entity, tournament, best-ball, underdog, bbm7, nfl]
 keywords: [best-ball-mania-vii, bbm7, underdog-fantasy, playoff-bracket, half-ppr, snake-draft]
 related:

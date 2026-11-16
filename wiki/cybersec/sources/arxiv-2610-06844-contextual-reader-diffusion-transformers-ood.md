@@ -11,6 +11,9 @@ updated: 2026-10-06
 phase_0_verdict: "REFERENCE 2026-10-06 — no attack payloads in wiki."
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (OOD)"
+related:
+  - sources/arxiv-2610-07323-atlas-al-adversarial-region-active-learning.md
+  - sources/arxiv-2610-05979-holistic-rffi-vector-quantization.md
 ---
 
 ## Relations

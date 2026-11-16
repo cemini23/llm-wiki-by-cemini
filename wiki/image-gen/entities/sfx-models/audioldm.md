@@ -32,7 +32,7 @@ Page prompted by the W4 Tier 2 voice/audio backfill (2026-05-13). Named in @conc
 
 ### Key facts (May 2026)
 
-- **License**: weights typically **CC-BY-NC 4.0** (non-commercial research) [NEEDS VERIFICATION 2026-05-13] — same license-blocker pattern as @entities/music-models/musicgen.md; AudioLDM 2 license may differ — verify
+- **License**: weights typically **CC-BY-NC 4.0** (non-commercial research) [NEEDS VERIFICATION 2026-11-16] — same license-blocker pattern as @entities/music-models/musicgen.md; AudioLDM 2 license may differ — verify
 - **Repo**: `github.com/haoheliu/AudioLDM` (v1), `github.com/haoheliu/AudioLDM2` (v2)
 - **Paper**: AudioLDM (arXiv:2301.12503, ICML 2023); AudioLDM 2 (arXiv:2308.05734)
 - **Architecture**: T5/CLAP text encoder → latent diffusion → HiFi-GAN decoder → 16 kHz audio

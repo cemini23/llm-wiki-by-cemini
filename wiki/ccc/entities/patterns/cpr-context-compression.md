@@ -20,6 +20,7 @@ related:
   - sources/brief-k124-harness-policy-hands-on-2026-06-24.md
   - concepts/hidden-user-state-recovery-audit.md
   - concepts/hierarchical-bounded-agent-memory.md
+  - entities/tools/claude-hud.md
 maturity: draft
 created: 2026-05-17
 updated: 2026-07-13

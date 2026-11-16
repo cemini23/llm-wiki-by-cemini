@@ -1,6 +1,7 @@
 ---
 title: "Klement on Investing — the start-up challenge in Europe"
 type: source
+maturity: draft
 related:
   - concepts/k296-feeds-wave.md
   - concepts/european-startup-scaling-gap.md

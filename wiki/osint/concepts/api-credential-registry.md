@@ -59,7 +59,7 @@ Both `.env` files are gitignored and untracked — verified 2026-05-18. They mus
 
 ### Free-tier limits — point-in-time
 
-Every limit and signup URL below is `[NEEDS VERIFICATION 2026-05-18]` as a class: providers change free-tier quotas and console URLs without notice. Verify against the provider's current pricing page before depending on a limit for capacity planning. The structure is stable; the numbers drift.
+Every limit and signup URL below is `[NEEDS VERIFICATION 2026-11-16]` as a class: providers change free-tier quotas and console URLs without notice. Verify against the provider's current pricing page before depending on a limit for capacity planning. The structure is stable; the numbers drift.
 
 ---
 

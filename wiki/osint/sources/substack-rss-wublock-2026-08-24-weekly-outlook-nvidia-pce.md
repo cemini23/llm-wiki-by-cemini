@@ -5,6 +5,7 @@ tags: [newsletter, k246, inbox-rss]
 keywords: [substack, rss, k246]
 related:
   - concepts/k246-newsletter-macro-wave.md
+  - sources/substack-rss-wublock-2026-10-26-wublockchain-weekly-outlook-microsoft-and-google.md
 maturity: draft
 created: 2026-08-25
 updated: 2026-08-25

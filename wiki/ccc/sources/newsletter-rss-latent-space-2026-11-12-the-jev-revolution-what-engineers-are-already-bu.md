@@ -1,9 +1,13 @@
 ---
 title: "The Jev Revolution — system one models inside application code"
 type: source
+maturity: draft
 related:
   - concepts/decision-model-hybrid-agent-routing.md
   - concepts/token-economics-and-prompt-caching.md
+  - sources/newsletter-rss-latent-space-2026-07-01-forward-deployed-engineers-and-the-future-of-sof.md
+  - sources/newsletter-rss-latent-space-2026-07-01-how-cursor-deploys-ai-inside-the-enterprise.md
+  - sources/newsletter-rss-latent-space-2026-11-11-ai-engineer-code-summit-2026-11-11.md
 updated: 2026-11-14
 ---
 

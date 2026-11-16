@@ -45,7 +45,7 @@ updated: 2026-06-11
 
 **Architecture:** 1-D waveform patchify → DiT blocks; character-level text via ConvNeXt; prompt audio via conv frontend + raw patch concat. Training: Stage 1 logit-normal t + L_fm + λ₁ L_REPA; Stage 2 uniform t + L_VAPA.
 
-**Availability:** Open-source weights promised ("released soon") `[NEEDS VERIFICATION 2026-06-11]`. Tongyi/Alibaba lineage — watch license vs CosyVoice2 Apache posture.
+**Availability:** Open-source weights promised ("released soon") `[NEEDS VERIFICATION 2026-11-16]`. Tongyi/Alibaba lineage — watch license vs CosyVoice2 Apache posture.
 
 ### Persona-ops relevance
 

@@ -7,6 +7,10 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-2611.17320-divr-diffusion-verifier-regeneration.md
+  - sources/arxiv-2610-06765-arbor-medical-lora-skip.md
+  - sources/arxiv-2611.14397-malora-margin-lora-2026-11-11.md
 ---
 
 ## Raw Concept

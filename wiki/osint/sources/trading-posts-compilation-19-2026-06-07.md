@@ -70,7 +70,7 @@ K103 full inbox ingest. **~35% Polymarket operator narrative** (@zeuuss_01, @Bim
 
 - Post 1 PM/Kalshi arb monitor aligns with existing cross-venue work — **monitor-only**, not auto-exec without EMS review [TENTATIVE].
 - Post 2 fee + break-even math (52–53% after costs) corroborates K98 retail-discipline cluster [CONFIRMED narrative, single-source numbers].
-- Pyth Pro pricing ($500/mo post-trial) and MCP token requirements are **time-volatile** [NEEDS VERIFICATION 2026-06-07].
+- Pyth Pro pricing ($500/mo post-trial) and MCP token requirements are **time-volatile** [TENTATIVE] (tagged 2026-06-07).
 
 ## Snippets
 

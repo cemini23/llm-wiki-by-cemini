@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - sources/arxiv-2611.17336-pixvid-pixel-space-video.md
+  - sources/arxiv-yocausal-world-model-benchmark-2605-30346.md
 ---
 
 ## Raw Concept

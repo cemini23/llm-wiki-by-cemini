@@ -47,7 +47,7 @@ updated: 2026-06-19
 
 **Architecture:** Parameter-free extensions to video DiT — (i) interval-sampled temporal RoPE, (ii) 2D entity-temporal cross-attention RoPE. Multi-reference image tokens in self-attention.
 
-**Release:** Project page only at ingest — no public weights/repo `[NEEDS VERIFICATION 2026-06-19]`.
+**Release:** Project page only at ingest — no public weights/repo `[NEEDS VERIFICATION 2026-11-16]`.
 
 ### Workspace relevance
 

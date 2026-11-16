@@ -6,6 +6,7 @@ keywords: [convolutional neural network, spectrogram, nozzle clog, filament brea
 related:
   - concepts/fault-detection.md
   - concepts/fdm-printing.md
+  - sources/arxiv-2611.02622-isotropic-metamaterials-hashin-shtrikman-pinn-2026-11-03.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-05-06

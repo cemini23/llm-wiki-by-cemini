@@ -14,6 +14,7 @@ related:
   - entities/tools/e-geo.md
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-07-18-daily.md
+  - sources/arxiv-2611.02758-cadre-ecommerce-relevance-adjudication-2026-11-03.md
 maturity: validated
 read_status: read
 created: 2026-07-18

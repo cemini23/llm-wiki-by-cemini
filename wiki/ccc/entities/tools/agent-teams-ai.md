@@ -5,6 +5,8 @@ tags: [tool, ccc]
 keywords: [agent-teams-ai, orchestration, desktop]
 related:
   - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - entities/tools/ruflo.md
+  - entities/fusion.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25
@@ -28,7 +30,7 @@ URL row of @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md.
 
 An open-source desktop application that coordinates teams of AI coding agents. The workflow already dispatches parallel sub-agents natively: 17 in claude-seo, hunter and verifier phases in security-audit-skill, and a planner-executor split in local-abliterated-lab. An external orchestrator adds a surface without closing a gap.
 
-`[NEEDS VERIFICATION 2026-10-25]` Exact stars, open issues, UI framework, and SPDX licence are all unverified in the source report.
+`[NEEDS VERIFICATION 2026-11-16]` Exact stars, open issues, UI framework, and SPDX licence are all unverified in the source report.
 
 ## Dead Ends
 

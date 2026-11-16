@@ -7,6 +7,9 @@ related:
   - concepts/k264-newsletter-macro-wave.md
   - concepts/k264-xsp-atm-wave.md
   - concepts/guruwatcher-macro-watches.md
+  - sources/substack-rss-klement-2026-10-26-building-daccs-the-right-way.md
+  - sources/substack-rss-klement-2026-10-30-demographics-is-not-destiny-election-edition.md
+  - sources/substack-rss-klement-2026-11-03-its-not-you-its-your-ai.md
 maturity: draft
 created: 2026-09-18
 updated: 2026-09-18

@@ -21,7 +21,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `opencode.ai`
 - **Tier (per source brief)**: **Defer**
-- **License**: [NEEDS VERIFICATION 2026-05-11] **License ambiguity — verify before any workflow migration.**
+- **License**: [NEEDS VERIFICATION 2026-11-16] **License ambiguity — verify before any workflow migration.**
 
 ## Narrative
 

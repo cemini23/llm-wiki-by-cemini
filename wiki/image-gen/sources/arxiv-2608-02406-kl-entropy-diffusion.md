@@ -6,6 +6,7 @@ keywords: [entropy-production, KL, score-based, probability-flow, O-h2]
 related:
   - concepts/world-models-video-generation.md
   - sweeps/2026-08-04-daily.md
+  - sources/arxiv-2608-03517-gvccturbo.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-04

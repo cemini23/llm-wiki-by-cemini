@@ -5,6 +5,7 @@ tags: [source, arxiv, search-data, regulation, dma, privacy, keyword-research]
 related:
   - concepts/search-query-data-supply.md
   - concepts/corpus-overflow-out-of-scope.md
+  - sources/arxiv-2611.14149-search-to-decision-survey-2026-11-11.md
 maturity: draft
 read_status: read
 created: 2026-11-14

@@ -12,6 +12,7 @@ related:
   - concepts/post-training-adaptation-taxonomy.md
   - sources/arxiv-2608-06246-post-training-adaptation-taxonomy.md
   - concepts/specguard-inference-time-backdoor-detection.md
+  - entities/tools/soup.md
 maturity: draft
 created: 2026-08-06
 updated: 2026-10-09

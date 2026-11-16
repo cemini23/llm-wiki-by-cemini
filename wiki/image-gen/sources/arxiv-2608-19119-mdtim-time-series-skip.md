@@ -6,6 +6,7 @@ keywords: [MDTIM, masked diffusion, time-series imputation, stochastic discretiz
 related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-08-20-daily.md
+  - sources/arxiv-2608-07249-stoicheia-skip.md
 maturity: draft
 read_status: read
 created: 2026-08-20

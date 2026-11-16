@@ -1,6 +1,7 @@
 ---
 title: Generative latent prior as a steering corrector (put an edited activation back on-manifold)
 type: concept
+maturity: draft
 tags: [concept, interpretability, activation-steering, flow-matching, technique]
 keywords: [GLP, generative latent prior, on-manifold, off-manifold, flow matching, activation manifold, DiffMean, SAE clamping, re-noising correction]
 related:

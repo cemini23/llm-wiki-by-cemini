@@ -7,6 +7,8 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-04
 updated: 2026-11-04
+related:
+  - sources/arxiv-convergence-rates-truncated-discretised-signature-expansions-2611.16087.md
 ---
 
 ## Raw Concept

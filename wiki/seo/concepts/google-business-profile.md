@@ -36,6 +36,7 @@ related:
   - sources/newsletter-rss-sterling-sky-2026-09-28-review-posting-blocks.md
   - sources/newsletter-rss-sterling-sky-2026-09-29-gbp-linked-url-local-pack-test.md
   - sources/newsletter-rss-sterling-sky-2026-09-29-gbp-optimization-checklist.md
+  - sources/newsletter-rss-sterling-sky-2026-10-28-who-updates-google-information-why-google-keeps.md
 
 maturity: draft
 created: 2026-05-07

@@ -8,6 +8,7 @@ related:
   - sweeps/2026-10-05-daily.md
   - sweeps/2026-10-03-daily.md
   - sweeps/2026-10-04-daily.md
+  - sources/arxiv-2610.32978-scenebloom-agentic-indoor-environment-generation-2026-10-27.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-06

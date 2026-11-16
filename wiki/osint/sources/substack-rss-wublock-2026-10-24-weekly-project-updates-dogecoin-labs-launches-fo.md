@@ -8,6 +8,9 @@ maturity: draft
 created: 2026-10-24
 updated: 2026-10-25
 read_status: skimmed
+related:
+  - sources/substack-rss-wublock-2026-08-01-weekly-project-updates-pumpfun-cuts.md
+  - sources/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md
 ---
 
 ## Raw Concept

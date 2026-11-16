@@ -1,6 +1,7 @@
 ---
 title: "GitHub Repository Evaluation Plan.docx — multi-wiki runtime batch (2026-06-29)"
 type: source
+maturity: draft
 tags: [tool-evaluation, multi-wiki, k134, license-compliance]
 keywords: [deepsec, agent-reach, codebase-memory-mcp, mattpocock-skills, cybersec-skills, gemini-dr-v9]
 related:

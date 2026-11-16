@@ -9,6 +9,7 @@ related:
   - concepts/crescendo-multi-turn-jailbreak.md
   - concepts/amt-x-phase-structured-multi-turn-red-teaming.md
   - concepts/linguistic-illegibility-llm-security.md
+  - sources/arxiv-2610-08781-ideaanchor-research-ideation-ood.md
 maturity: draft
 read_status: read
 created: 2026-10-06

@@ -11,6 +11,7 @@ related:
   - entities/tools/openspec.md
   - concepts/cross-wiki-routing.md
   - "@osint-wiki/concepts/autosci-research-lifecycle-memory.md"
+  - sources/arxiv-2610.37482-from-interaction-to-capability-task-advancement-2026-11-01.md
 maturity: draft
 created: 2026-06-01
 updated: 2026-06-02

@@ -9,6 +9,9 @@ read_status: read
 created: 2026-06-26
 updated: 2026-06-26
 clusters: [meta-research]
+related:
+  - sources/arxiv-2611.05750-jazz-influence-lineages-2026-11-05.md
+  - sources/arxiv-hrl-influence-map-starcraft-2606.30092-2026-06-30.md
 ---
 
 ## Relations

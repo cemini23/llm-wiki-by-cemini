@@ -258,6 +258,9 @@ related:
   - sources/arxiv-cheng-2026-hierarchy-gbp-factor-graph-2610.06978-2026-10-07.md
   - sources/arxiv-shinde-2026-pdp-priority-scheduling-2610.04587-2026-10-07.md
   - sources/newsletter-rss-sterling-sky-2026-09-29-gbp-optimization-checklist.md
+  - sources/arxiv-2610.37343-hide-hierarchical-isolation-via-documentation-an-2026-11-01.md
+  - sources/arxiv-2610.40292-dolphinrouting-cluster-level-binary-routing-for-2026-11-01.md
+  - sources/arxiv-2611.04787-resi-math-recoverable-frontier-2026-11-05.md
 maturity: draft
 created: 2026-06-01
 updated: 2026-10-01

@@ -19,6 +19,7 @@ related:
   - concepts/selective-experience-memory-harness.md
   - sources/arxiv-finacumen-experience-memory-harness-2606.17642.md
   - concepts/bounded-self-refinement-vs-rsi-taxonomy.md
+  - sources/arxiv-2611.14505-continual-arc-skill-acquisition-2026-11-11.md
 maturity: draft
 created: 2026-06-12
 updated: 2026-07-14

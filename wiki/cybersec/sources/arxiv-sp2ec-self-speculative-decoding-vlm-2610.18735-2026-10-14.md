@@ -5,6 +5,7 @@ tags: [arxiv, inference, efficiency, vlm]
 keywords: [speculative decoding, self-speculative, bandit, wall-time regret, VLM inference]
 related:
   - concepts/k291-cybersec-wave.md
+  - sources/arxiv-2610.32182-depth-dependent-safety-geometry-in-vision-langua-2026-10-27.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-14

@@ -19,6 +19,7 @@ related:
   - concepts/hybrid-gui-mcp-tool-adoption-gap.md
   - sources/arxiv-screenshots-or-tools-gui-mcp-2608.03327.md
   - entities/tools/hybrid-gui-mcp-osworld.md
+  - sources/arxiv-2610.42141-roboarchitect-harness-design-automation-2026-11-03.md
 maturity: draft
 created: 2026-07-07
 updated: 2026-08-05

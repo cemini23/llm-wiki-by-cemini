@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-certified-execution-harness-2610.31376-2026-10-23.md
+  - sources/arxiv-2610.10498-embodiedrsi-2026-10-08.md
 ---
 
 ## Raw Concept

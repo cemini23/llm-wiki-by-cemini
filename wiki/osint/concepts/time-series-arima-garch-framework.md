@@ -20,6 +20,7 @@ related:
   - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
   - sources/trading-posts-compilation-6-2026-06-08.md
   - sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md
+  - sources/arxiv-2611.10928-polynomial-preserving-volatility-2026-11-11.md
 maturity: validated
 created: 2026-05-20
 updated: 2026-06-15

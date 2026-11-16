@@ -8,6 +8,8 @@ maturity: draft
 created: 2026-07-05
 updated: 2026-07-05
 read_status: skimmed
+related:
+  - @gambling-wiki/sources/substack-rss-event-horizon-2026-07-02-how-much-kalshi-trading-is-there-on-things-other.md
 ---
 
 ## Relations

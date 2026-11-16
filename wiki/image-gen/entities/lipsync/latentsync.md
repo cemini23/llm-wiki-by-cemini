@@ -54,6 +54,7 @@ related:
   - sources/arxiv-2609-35728-flowact-r2.md
   - sources/arxiv-2609-38019-rgor-beyond-lip-sync.md
   - sources/arxiv-2610-08417-lipda-lipsync-forensics-routed.md
+  - sources/arxiv-2608-02602-aurora-lm.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-09-29
@@ -87,7 +88,7 @@ Page prompted by the W4 voice/audio-gen backfill (scope expansion 2026-05-13). N
 
 ### Key facts (May 2026)
 
-- **License**: Apache 2.0 (verified on ComfyUI wrapper; main repo license to confirm) [NEEDS VERIFICATION 2026-05-13]
+- **License**: Apache 2.0 (verified on ComfyUI wrapper; main repo license to confirm) [NEEDS VERIFICATION 2026-11-16]
 - **Latest release**: LatentSync 1.6 — trained at **512×512** to fix blurriness reported in 1.5
 - **Weights**: `ByteDance/LatentSync-1.6` on HuggingFace (~5 GB `latentsync_unet.pt` + ~1.6 GB `stable_syncnet.pt`)
 - **Architecture**: SD-VAE encodes face frames → Whisper-tiny encodes audio → cross-attention conditions a U-Net diffusion model → SyncNet supervision in pixel space (key innovation)

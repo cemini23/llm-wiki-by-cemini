@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/substack-rss-klement-2026-09-18-homework-2026-09-18.md
+  - sources/substack-rss-klement-2026-09-08-southeast-asia-2026-09-08.md
 ---
 
 ## Raw Concept

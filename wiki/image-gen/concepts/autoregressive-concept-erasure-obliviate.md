@@ -47,7 +47,7 @@ AR models (Liquid, Janus-Pro, **HunyuanImage 3.0**) use **long visual token chai
 
 ### Persona ops implication
 
-Unified AR hosts may ship **pre-erased** for NSFW — same structural barrier as Strict-tier Western models, but erasure tooling now exists for AR fine-tunes. Community de-censor path `[NEEDS VERIFICATION 2026-07-02]` for HunyuanImage-class weights.
+Unified AR hosts may ship **pre-erased** for NSFW — same structural barrier as Strict-tier Western models, but erasure tooling now exists for AR fine-tunes. Community de-censor path `[NEEDS VERIFICATION 2026-11-16]` for HunyuanImage-class weights.
 
 ## Snippets
 

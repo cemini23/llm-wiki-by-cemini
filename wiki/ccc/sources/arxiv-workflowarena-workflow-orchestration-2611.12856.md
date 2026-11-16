@@ -1,6 +1,7 @@
 ---
 title: "WorkflowArena — workflow orchestration as a measured capability"
 type: source
+maturity: draft
 related:
   - concepts/workflow-orchestration-as-capability.md
   - concepts/subagent-orchestration.md

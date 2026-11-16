@@ -5,6 +5,8 @@ tags: [paper, math, numerical-methods, peripheral]
 keywords: [NIPG, DG, shallow-water, penalty-scaling, math.NA]
 related:
   - sweeps/2026-07-20-daily.md
+  - sources/arxiv-2607-04553-lights-camera-carbon-video-energy-scaling.md
+  - sources/arxiv-2607-21591-progressive-seed-pruning.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-20

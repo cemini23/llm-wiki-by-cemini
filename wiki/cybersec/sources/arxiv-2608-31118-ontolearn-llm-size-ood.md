@@ -10,6 +10,8 @@ created: 2026-09-01
 updated: 2026-09-01
 phase_0_verdict: "OOD 2026-09-01 — scientific ontology learning; not cyber-primary. Brief-over-stub; sciknoworg/OntoLearner MIT REFERENCE only if needed elsewhere."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2608-18351-excess-authority-least-privilege.md
 ---
 
 ## Relations

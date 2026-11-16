@@ -5,6 +5,8 @@ tags: [paper, medical, synthetic-data, peripheral, skip]
 keywords: [synthetic medical images, bias mitigation, disease classification]
 related:
   - sweeps/2026-07-17-daily.md
+  - sources/arxiv-2607-21582-instruction-factor-bias.md
+  - sources/arxiv-2607-28565-mind-medical-fusion.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-17

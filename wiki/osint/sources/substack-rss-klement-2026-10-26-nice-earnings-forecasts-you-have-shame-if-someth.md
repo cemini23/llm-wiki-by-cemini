@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/substack-rss-klement-2026-08-05-data-centre-reality-check.md
+  - sources/substack-rss-klement-2026-09-23-who-forecasts.md
 ---
 
 ## Raw Concept

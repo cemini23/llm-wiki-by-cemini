@@ -58,7 +58,7 @@ def routing_decision(taxonomy_class: str, query: str):
     ...
 ```
 
-### Open questions [NEEDS VERIFICATION 2026-10-25] — re-dated; still open, not yet checked
+### Open questions [NEEDS VERIFICATION 2026-11-16] — re-dated; still open, not yet checked
 
 - Compatibility with DeepSeek's API (guidance-ai works natively with OpenAI / Anthropic / local models; verify DeepSeek base_url pattern integrates cleanly)
 - License verification (Microsoft repos vary: MIT vs proprietary; check)

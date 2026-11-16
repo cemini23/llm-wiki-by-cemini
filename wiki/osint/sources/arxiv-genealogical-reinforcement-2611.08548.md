@@ -1,6 +1,7 @@
 ---
 title: "Genealogical reinforcement in branching processes"
 type: source
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - concepts/genealogical-reinforcement-branching.md

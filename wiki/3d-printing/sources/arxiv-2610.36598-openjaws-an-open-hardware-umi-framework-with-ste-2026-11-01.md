@@ -7,6 +7,10 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - concepts/printed-robot-arm-platforms.md
+  - concepts/open-source-legged-robotics.md
+  - sources/arxiv-2610.38948-open-source-framework-for-the-visualization-quan-2026-11-01.md
 ---
 
 ## Raw Concept

@@ -5,6 +5,8 @@ tags: [tool, code-health, agents, licence-restricted, cleanup]
 keywords: [desloppify, code health, dead code, duplication, triage queue, blind scoring, licence]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md"
+  - concepts/code-as-agent-harness.md
+  - entities/tools/revfactory-harness.md
 maturity: draft
 created: 2026-11-03
 updated: 2026-11-03

@@ -1,6 +1,7 @@
 ---
 title: "Post-Rejection Follow-up Sampling — counterfactual DEX filter measurement (arXiv 2606.08228)"
 type: source
+maturity: draft
 tags: [source, arxiv, algorithmic-trading, dex, counterfactual, filter-calibration, k119]
 keywords: [2606.08228, prfs, counterfactual, rejection-sampling, dex, zenodo]
 related:

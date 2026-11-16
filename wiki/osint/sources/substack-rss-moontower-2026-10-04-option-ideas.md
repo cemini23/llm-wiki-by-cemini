@@ -5,6 +5,7 @@ tags: [source, k281, options, pointer]
 keywords: [k281, moontower, intc, pointer]
 related:
   - sources/substack-rss-moontower-2026-10-04-330.md
+  - sources/substack-rss-moontower-2026-10-25-staring-at-an-option-quote.md
 maturity: draft
 created: 2026-10-04
 updated: 2026-10-04

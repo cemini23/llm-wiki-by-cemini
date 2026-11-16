@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
+  - sources/substack-rss-event-horizon-2026-11-05-election-night-2026-11-05.md
 ---
 
 ## Raw Concept

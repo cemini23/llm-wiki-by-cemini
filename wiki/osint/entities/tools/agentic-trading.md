@@ -27,7 +27,7 @@ K32 DR verdict: **REFERENCE-ONLY**. Cannot deploy on Cemini's 7GB-RAM Hetzner ce
 ## Narrative
 
 - **URL**: `https://github.com/Open-Finance-Lab/AgenticTrading` ✓ DR-cited
-- **License**: [NEEDS VERIFICATION 2026-05-06] — DR explicitly noted upstream LICENSE file inaccessible; suggested a related repo (`kweinmeister/agentic-trading`) carries Apache-2.0 but unable to confirm canonical Open-Finance-Lab repo
+- **License**: [NEEDS VERIFICATION 2026-11-16] — DR explicitly noted upstream LICENSE file inaccessible; suggested a related repo (`kweinmeister/agentic-trading`) carries Apache-2.0 but unable to confirm canonical Open-Finance-Lab repo
 - **Stack**: Python; Neo4j (graph database for execution traces); FastAPI (concurrent agent calls); LangGraph or similar (DAG planner)
 - **Paper**: "Orchestration Framework for Financial Agents: From Algorithmic Trading to Agentic Trading" (NeurIPS 2025) — `https://www.researchgate.net/publication/398269858_Orchestration_Framework_for_Financial_Agents_From_Algorithmic_Trading_to_Agentic_Trading`
 - **Docs**: `https://finagent-orchestration.readthedocs.io`

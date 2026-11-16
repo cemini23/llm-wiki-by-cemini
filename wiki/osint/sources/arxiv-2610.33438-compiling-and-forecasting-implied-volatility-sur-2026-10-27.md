@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-addmart-iv-surface-2610.25671-2026-10-20.md
+  - sources/black-scholes-iv-explicit-schadner-2026.md
 ---
 
 ## Raw Concept

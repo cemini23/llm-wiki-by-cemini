@@ -1,6 +1,7 @@
 ---
 title: "Institutional insecurity: an available fix is not a fixed service"
 type: concept
+maturity: validated
 related:
   - sources/substack-rss-secpro-2026-11-06-five-issues-the-php-crisis-has-brought-into-view.md
   - concepts/npm-supply-chain-defense.md

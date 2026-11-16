@@ -5,6 +5,8 @@ tags: [paper, routed, llm, autonomous-vehicles, threat-model, cross-wiki]
 keywords: [CWE, autonomous-vehicles, LLM-threat-analysis]
 related:
   - sweeps/2026-08-15-daily.md
+  - sources/arxiv-2608-20770-motionphys-routed.md
+  - sources/arxiv-2608-12536-indic-speech-encoders-routed.md
 maturity: draft
 read_status: read
 created: 2026-08-15

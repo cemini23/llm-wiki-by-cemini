@@ -5,6 +5,7 @@ tags: [source, k256]
 keywords: [k256]
 related:
   - concepts/k256-newsletter-macro-wave.md
+  - sources/substack-rss-wublock-2026-10-25-asias-weekly-top10-crypto-news-south-korea-regul.md
 maturity: draft
 created: 2026-09-07
 updated: 2026-09-07

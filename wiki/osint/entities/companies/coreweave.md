@@ -1,6 +1,7 @@
 ---
 title: CoreWeave — AI infrastructure credit proxy
 type: entity
+maturity: draft
 related:
   - sources/substack-rss-wublock-2026-11-09-wublockchain-weekly-outlook-us-cpi-and-ppi-test.md
   - sources/substack-rss-capital-flows-2026-11-05-market-status-market-bottom-or-beginning-of-the.md

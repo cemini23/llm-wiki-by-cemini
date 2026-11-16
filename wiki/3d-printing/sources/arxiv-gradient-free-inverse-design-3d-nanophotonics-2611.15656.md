@@ -1,6 +1,7 @@
 ---
 title: Gradient-Free Inverse Design of 3D Nanophotonic Devices Using the Level-Set Method
 type: source
+maturity: draft
 tags: [paper, inverse-design, photonics, 2PP, background, weak-fit]
 keywords: [level-set method, Gaussian RBF, differential evolution, Nevergrad, Meep, FDTD, connected-component, Y-splitter, 2PP]
 related:

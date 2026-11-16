@@ -6,6 +6,7 @@ keywords: [HDR hierarchical denoising, visual reasoning, multi-step]
 related:
   - concepts/world-models-video-generation.md
   - sweeps/2026-07-17-daily.md
+  - sources/arxiv-2607-27145-spatial-reasoning-mllm.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-17

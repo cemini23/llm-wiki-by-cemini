@@ -67,4 +67,4 @@ Not a generative-media model paper — no ComfyUI / TTS application.
 
 ## Dead Ends
 
-No open pipeline code verified 2026-06-12. Findings are cloud-LLM specific — local uncensored models (Ollama + abliterated weights) may exhibit different drift profiles `[NEEDS VERIFICATION 2026-06-12]`.
+No open pipeline code verified 2026-06-12. Findings are cloud-LLM specific — local uncensored models (Ollama + abliterated weights) may exhibit different drift profiles `[NEEDS VERIFICATION 2026-11-16]`.

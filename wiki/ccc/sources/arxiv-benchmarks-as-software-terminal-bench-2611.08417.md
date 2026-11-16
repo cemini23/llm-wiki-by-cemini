@@ -1,11 +1,13 @@
 ---
 title: "Benchmarks as software — Terminal-Bench 2.1 and benchmark maintenance debt"
 type: source
+maturity: draft
 related:
   - concepts/benchmark-maintenance-debt.md
   - concepts/task-efficient-eval-cached-traces.md
   - concepts/harness-as-eval-artifact.md
   - concepts/terminal-state-eval-discovery-reliability-gap.md
+  - sources/arxiv-2611.14068-cage4-benchmark-audit-2026-11-11.md
 updated: 2026-11-10
 ---
 

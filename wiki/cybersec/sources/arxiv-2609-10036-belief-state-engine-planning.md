@@ -10,6 +10,9 @@ created: 2026-09-11
 updated: 2026-09-11
 phase_0_verdict: "OOD 2026-09-11 — Agent planning under partial observability — POMDP-style belief state; partial overlap with agent-security eval framing."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2609-30217-instrumental-monitor-evasion-evaluation.md
+  - sources/arxiv-2609-31506-haitian-creole-cultural-awareness-ood.md
 ---
 
 ## Relations

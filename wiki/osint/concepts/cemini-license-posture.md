@@ -335,7 +335,7 @@ This policy is *operational*, not aspirational — license findings have trigger
 
 When the IP is eventually transferred or licensed (see @concepts/ip-sale-readiness.md):
 
-- **Buyer due-diligence scope**: full SBOM with license-per-component, including transitive dependencies. Tooling: `cyclonedx-bom`, `pip-licenses`, `npm-license-checker`. [NEEDS VERIFICATION 2026-10-25] — re-dated; SBOM tooling is still not wired into Cemini CI.
+- **Buyer due-diligence scope**: full SBOM with license-per-component, including transitive dependencies. Tooling: `cyclonedx-bom`, `pip-licenses`, `npm-license-checker`. [NEEDS VERIFICATION 2026-11-16] — re-dated; SBOM tooling is still not wired into Cemini CI.
 - **Highest-risk findings**: any AGPL-3.0 dependency in prod (network-clause obligation transfers to buyer); any LLM-agent-generated code derived from GPL-3.0 sources (derivative-work claim risk).
 - **Cleanest deliverable**: explicit Cemini LICENSE file + clean SBOM + recorded license-evaluation history (the K-series record is itself an asset here).
 

@@ -10,6 +10,9 @@ created: 2026-09-20
 updated: 2026-09-20
 phase_0_verdict: "OOD 2026-09-20 — image generation/editing — route to image-gen wiki if deep-read needed."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2609-31552-fragtoken-inference-cost-amplification.md
+  - sources/arxiv-2609-26682-genai-access-control-policy-enforcement.md
 ---
 
 ## Relations

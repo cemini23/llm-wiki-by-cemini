@@ -71,7 +71,7 @@ Post-hoc **L2 projection** of \(K\) sample marginals onto the **coherent margina
 
 | Repo | Verdict | Notes |
 |------|---------|-------|
-| `anonymous.4open.science/r/jcd-forecasting-2810` | **CONDITIONAL-GO** | Anonymous ICML artifact; license unknown until public release `[NEEDS VERIFICATION 2026-06-17]` |
+| `anonymous.4open.science/r/jcd-forecasting-2810` | **CONDITIONAL-GO** | Anonymous ICML artifact; license unknown until public release `[NEEDS VERIFICATION 2026-11-16]` |
 | Prod gambling bot | **NO-GO** until license + egress mirror | See brief `briefs/2026-06-17_k117-gambling-jcd-coherence-osint-from-gambling.md` |
 
 ## Snippets

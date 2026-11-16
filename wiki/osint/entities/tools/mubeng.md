@@ -29,7 +29,7 @@ harness_verb: KEEP
 
 ## Narrative
 
-Go **proxy checker/rotator** — potential GW egress resilience. Eval flagged **supply-chain/malware risk** `[NEEDS VERIFICATION 2026-08-06]` — static audit + pinned release before any prod-adjacent use. Watch, not Integrate.
+Go **proxy checker/rotator** — potential GW egress resilience. Eval flagged **supply-chain/malware risk** `[NEEDS VERIFICATION 2026-11-16]` — static audit + pinned release before any prod-adjacent use. Watch, not Integrate.
 
 ## Snippets
 

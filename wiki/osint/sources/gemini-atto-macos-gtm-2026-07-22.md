@@ -55,7 +55,7 @@ GTM pack for shipping Atto as a **local-first macOS utility on Gumroad** (not Ma
 
 **Risk (E):** UPL — never “you qualify”; AI — suggest-only phrasing; Gatekeeper notarization as chargeback prevention; 14-day refund.
 
-**Citation quality:** mix of citizenship-firm blogs, indie Mac utility comps, Tauri/Apple notarization docs. Fee amounts and 2025 Budget Law claims need primary-source lock before marketing copy ships. [NEEDS VERIFICATION 2026-07-22]
+**Citation quality:** mix of citizenship-firm blogs, indie Mac utility comps, Tauri/Apple notarization docs. Fee amounts and 2025 Budget Law claims need primary-source lock before marketing copy ships. [NEEDS VERIFICATION 2026-11-16]
 
 **Wiki scope:** GTM/pricing/listing. No Barone PII. No legal advice.
 

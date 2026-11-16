@@ -9,6 +9,7 @@ related:
   - concepts/mcp-context-optimization.md
   - concepts/mcp-contract-grounded-synthesis-and-validation-gate.md
   - briefs/2026-10-09_ccc-k441-k444-sip-ready.md
+  - sources/arxiv-2610.32648-statemirror-pre-execution-detection-of-hallucina-2026-10-27.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-09

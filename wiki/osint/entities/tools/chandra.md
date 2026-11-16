@@ -32,7 +32,7 @@ Promoted from the 2026-05-17 "Multi-Wiki Tool Evaluation & IP-Sale Risk Assessme
 
 **Deployment caveat**: chandra is a 4B VLM and runs via **vLLM** — it wants a GPU. The cemini-librarian is a small CPU-only Hetzner box, so chandra is **not** a drop-in librarian adoption; it would need a GPU host or batch/offline runs. Treat it as a candidate ingest-pipeline enhancement, not an immediate install.
 
-- `[NEEDS VERIFICATION 2026-05-17]` Phase-0 clone audit: confirm the Apache-2.0 LICENSE file + the OpenRAIL-M weight-license terms; benchmark a realistic deployment path (GPU host vs offline batch) given the no-GPU librarian.
+- `[NEEDS VERIFICATION 2026-11-16]` Phase-0 clone audit: confirm the Apache-2.0 LICENSE file + the OpenRAIL-M weight-license terms; benchmark a realistic deployment path (GPU host vs offline batch) given the no-GPU librarian.
 
 ## Snippets
 

@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-gromm-risk-neutral-option-market-2610.16732-2026-10-14.md
+  - sources/arxiv-2610.07554-bspline-galerkin-cgmy-2026-10-07.md
 ---
 
 ## Raw Concept

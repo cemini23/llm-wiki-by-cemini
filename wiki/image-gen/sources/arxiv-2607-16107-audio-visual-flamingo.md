@@ -9,6 +9,7 @@ related:
   - concepts/multi-shot-audio-video-evaluation.md
   - entities/voice-models/nemotron-audex.md
   - sweeps/2026-07-20-daily.md
+  - sources/arxiv-2607-26817-floorplan-floc.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-20

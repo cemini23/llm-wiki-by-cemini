@@ -42,7 +42,7 @@ Entity stub from K100 deep-read (2026-06-05) — SJTU / ZJU / NTU MetaWorld (arX
 
 ### Workspace relevance
 
-Research-layer extension of world-model axis (@concepts/world-models-video-generation.md): **multi-agent / multi-perspective** consistency — relevant if persona ops move from single-camera clips to synchronized multi-view synthetic scenes. Closed weights / code status `[NEEDS VERIFICATION 2026-06-05]`. Compare memory architecture to **DecMem** (@entities/models/decmem.md) and camera control to **SANA-WM** (@entities/models/sana-wm.md).
+Research-layer extension of world-model axis (@concepts/world-models-video-generation.md): **multi-agent / multi-perspective** consistency — relevant if persona ops move from single-camera clips to synchronized multi-view synthetic scenes. Closed weights / code status `[NEEDS VERIFICATION 2026-11-16]`. Compare memory architecture to **DecMem** (@entities/models/decmem.md) and camera control to **SANA-WM** (@entities/models/sana-wm.md).
 
 ## Snippets
 

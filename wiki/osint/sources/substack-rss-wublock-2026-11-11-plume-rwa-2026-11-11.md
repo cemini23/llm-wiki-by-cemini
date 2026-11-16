@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md
+  - sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md
 ---
 
 ## Raw Concept

@@ -10,6 +10,7 @@ related:
   - concepts/conductor-orchestrator.md
   - sources/trading-posts-compilation-9-2026-06-12.md
   - concepts/llm-agent-systems.md
+  - sources/arxiv-2607.12500-adversarial-online-handwriting-salience-2026-07-16.md
 maturity: validated
 read_status: skimmed
 created: 2026-06-12

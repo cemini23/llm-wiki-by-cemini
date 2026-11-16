@@ -1,6 +1,7 @@
 ---
 title: "Production-state access bottleneck — instrumentation can bind before the model does"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-where-llm-agents-get-stuck-debugging-databases-2611.17304.md
   - concepts/failed-trajectory-harness-repair.md

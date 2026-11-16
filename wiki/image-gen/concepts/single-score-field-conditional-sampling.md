@@ -1,6 +1,7 @@
 ---
 title: Single score field for exact conditional sampling (DISCO)
 type: concept
+maturity: draft
 tags: [concept, score-matching, diffusion, conditional-sampling, theory]
 keywords: [DISCO, single score field, exact conditional, tempered SMC, Metropolis-Hastings, energy-based model, guidance bias, diffusion-free]
 related:

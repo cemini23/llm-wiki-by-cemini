@@ -10,6 +10,8 @@ related:
   - concepts/persona-failure-modes.md
   - sources/arxiv-2606-15117-eav-dfd-deepfake-detection-routed.md
   - sweeps/2026-08-24-daily.md
+  - sources/arxiv-2608-13450-av-threat-analysis-routed.md
+  - sources/arxiv-2608-17067-disco-t2i-defense-routed.md
 maturity: draft
 read_status: read
 created: 2026-08-25

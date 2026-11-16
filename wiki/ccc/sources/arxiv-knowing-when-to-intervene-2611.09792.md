@@ -1,6 +1,7 @@
 ---
 title: "Knowing when to intervene — causal evaluation of agent interventions"
 type: source
+maturity: draft
 related:
   - concepts/causal-intervention-evaluation.md
   - concepts/streaming-trajectory-monitor-pre-execution-gate.md

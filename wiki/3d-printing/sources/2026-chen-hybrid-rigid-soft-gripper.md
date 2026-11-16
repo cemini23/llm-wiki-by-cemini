@@ -11,6 +11,7 @@ related:
   - sources/2026-arxiv-lane-noise-triage-jul17.md
   - sources/2026-arxiv-lane-noise-triage-jul18.md
   - sources/2026-abboodi-airtight-spa-fdm.md
+  - sources/arxiv-2611.03216-one-shot-printable-soft-robots-co-design-2026-11-03.md
 maturity: draft
 created: 2026-07-17
 updated: 2026-08-15

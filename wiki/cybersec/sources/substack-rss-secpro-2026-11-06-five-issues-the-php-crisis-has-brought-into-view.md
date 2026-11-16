@@ -1,11 +1,15 @@
 ---
 title: "Packt SecPro — Five issues the PHP crisis has brought into view"
 type: source
+maturity: validated
 related:
   - concepts/software-maintenance-institutional-insecurity.md
   - concepts/npm-supply-chain-defense.md
   - concepts/responsible-disclosure.md
   - concepts/patchless-window.md
+  - sources/substack-rss-secpro-2026-10-23-257-from-sso-bypass-to-stolen-credentials.md
+  - sources/substack-rss-secpro-2026-10-24-secpro-ciso-update-episode-2.md
+  - sources/substack-rss-secpro-2026-10-26-php2shell-another-emergency-another-scramble-to.md
 updated: 2026-11-14
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Multinomial diffusion with two condition granularities
 type: concept
+maturity: draft
 tags: [concept, discrete-diffusion, conditioning, technique, peripheral]
 keywords: [multinomial diffusion, categorical diffusion, per-token condition, global property target, discrete data, protein design, solubility, joint training]
 related:

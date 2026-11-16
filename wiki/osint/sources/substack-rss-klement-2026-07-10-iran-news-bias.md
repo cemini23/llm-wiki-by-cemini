@@ -5,6 +5,7 @@ tags: [source, newsletter-rss, macro, media, klement, k155]
 keywords: [institutional similarity, news bias, Iran, Saudi Arabia, Liu 2026]
 related:
   - concepts/prediction-markets-efficiency-wolfers-zitzewitz.md
+  - sources/substack-rss-klement-2026-11-03-ai-iran-trump-2026-11-03.md
 maturity: draft
 read_status: read
 created: 2026-07-10

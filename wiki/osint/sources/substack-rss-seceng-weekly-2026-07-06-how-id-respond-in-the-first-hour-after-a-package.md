@@ -8,6 +8,8 @@ maturity: draft
 created: 2026-07-05
 updated: 2026-07-05
 read_status: skimmed
+related:
+  - @cybersecurity-wiki/sources/substack-rss-seceng-weekly-2026-07-06-how-id-respond-in-the-first-hour-after-a-package.md
 ---
 
 ## Relations

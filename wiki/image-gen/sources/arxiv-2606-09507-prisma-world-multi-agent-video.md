@@ -67,4 +67,4 @@ Persona relevance: research path toward **multi-camera synthetic scenes** (same 
 
 ## Dead Ends
 
-UE5-synthetic training — open-domain human persona transfer unverified. Weights/code `[NEEDS VERIFICATION 2026-06-11]`. Gaming-scene bias (compare Solaris/MultiWorld Minecraft limits).
+UE5-synthetic training — open-domain human persona transfer unverified. Weights/code `[NEEDS VERIFICATION 2026-11-16]`. Gaming-scene bias (compare Solaris/MultiWorld Minecraft limits).

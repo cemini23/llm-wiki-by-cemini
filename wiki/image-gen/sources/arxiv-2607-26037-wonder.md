@@ -11,6 +11,7 @@ related:
   - entities/models/garfield.md
   - sweeps/2026-07-29-daily.md
   - entities/models/moworld.md
+  - sources/arxiv-2607-25947-clinical-timeseries-llm.md
 maturity: draft
 read_status: read
 created: 2026-07-29

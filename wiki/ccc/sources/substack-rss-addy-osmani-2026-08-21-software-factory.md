@@ -7,6 +7,7 @@ related:
   - concepts/skill-set-selection-under-budget.md
   - concepts/agent-toolkit-routing-research-backlog.md
   - briefs/2026-09-02_ccc-k333-k336-sip-ready.md
+  - sources/substack-rss-addy-osmani-2026-07-03-agentic-autonomy-levels.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-21

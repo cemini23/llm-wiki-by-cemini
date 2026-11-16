@@ -34,7 +34,7 @@ Page prompted by the W4 Tier 2 voice/audio backfill (2026-05-13). Named in @conc
 
 ### Key facts (May 2026)
 
-- **License**: weights typically **CC-BY-NC-SA 4.0** [NEEDS VERIFICATION 2026-05-13] — non-commercial; SA (Share-Alike) layer added vs plain CC-BY-NC
+- **License**: weights typically **CC-BY-NC-SA 4.0** [NEEDS VERIFICATION 2026-11-16] — non-commercial; SA (Share-Alike) layer added vs plain CC-BY-NC
 - **Repo**: `github.com/declare-lab/tango`
 - **Paper**: Tango (arXiv:2304.13731); Tango 2 (arXiv:2404.09956)
 - **Architecture**:

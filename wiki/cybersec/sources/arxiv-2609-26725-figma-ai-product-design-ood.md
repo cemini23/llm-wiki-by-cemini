@@ -11,6 +11,9 @@ updated: 2026-09-23
 phase_0_verdict: "REFERENCE 2026-09-23 — no attack payloads in wiki."
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (OOD)"
+related:
+  - sources/arxiv-2609-24994-feedback-coding-covert-agentic-communication.md
+  - sources/arxiv-2609-11799-specguard-backdoor-detection.md
 ---
 
 

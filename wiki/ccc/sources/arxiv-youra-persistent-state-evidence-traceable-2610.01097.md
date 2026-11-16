@@ -6,6 +6,7 @@ keywords: [2610.01097, k416]
 related:
   - concepts/persistent-state-evidence-traceable-research.md
   - briefs/2026-10-02_ccc-k416-k420-sip-ready.md
+  - sources/arxiv-2610.40488-rtaste-do-research-agents-have-taste-evaluating-2026-11-01.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-02

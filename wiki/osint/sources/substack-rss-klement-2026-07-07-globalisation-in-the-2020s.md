@@ -5,6 +5,7 @@ tags: [source, newsletter-rss, inbox-auto, klement]
 keywords: [rss, newsletter, klement]
 related:
   - sources/substack-rss-klement-2026-07-08-eu-p7-trade-blessing.md
+  - @gambling-wiki/sources/substack-rss-klement-2026-07-07-globalisation-in-the-2020s.md
 maturity: draft
 created: 2026-07-05
 updated: 2026-07-08

@@ -1,12 +1,15 @@
 ---
 title: "BMMS: policy-conditioned measurement of behavioral compliance in language models (arXiv 2611.09147)"
 type: source
+maturity: validated
 related:
   - concepts/policy-conditioned-compliance-measurement.md
   - concepts/guardrail-construct-validity-agent-eval.md
   - concepts/measurement-integrity-mcp-security-eval.md
   - concepts/compliance-verdict-rule-invariance.md
   - sources/arxiv-safety-as-a-budget-2611.16628.md
+  - sources/arxiv-2609-04172-on-policy-distillation-one-shot.md
+  - sources/arxiv-2611.02746-replay-continual-learning-mopd-2026-11-03.md
 updated: 2026-11-14
 ---
 

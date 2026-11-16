@@ -1,6 +1,7 @@
 ---
 title: "Wake 5 — Python Solidity testing, fuzzing, and static analysis with an MCP server"
 type: entity
+maturity: draft
 related:
   - concepts/agent-written-fuzz-harness.md
   - sources/arxiv-wake5-solidity-fuzzing-mcp-2611.09307.md

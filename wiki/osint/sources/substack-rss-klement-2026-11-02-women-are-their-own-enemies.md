@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-02
 updated: 2026-11-02
+related:
+  - sources/substack-rss-klement-2026-08-05-data-centre-reality-check.md
+  - sources/substack-rss-klement-2026-11-13-meetings-are-a-waste-of-money.md
 ---
 
 ## Raw Concept

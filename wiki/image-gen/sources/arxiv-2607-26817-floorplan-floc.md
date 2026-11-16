@@ -5,6 +5,8 @@ tags: [paper, peripheral, robotics,indoor-loc]
 keywords: [peripheral]
 related:
   - sweeps/2026-07-31-daily.md
+  - sources/arxiv-2607-18227-flowmimic-mask-free-editing.md
+  - sources/arxiv-2607-16107-audio-visual-flamingo.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-31

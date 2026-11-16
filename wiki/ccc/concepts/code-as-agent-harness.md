@@ -100,6 +100,10 @@ related:
   - concepts/role-specialization-model-multi-tool-coordination.md
   - entities/patterns/role-specialization-model.md
   - sources/arxiv-role-specialization-model-rsm-2608.12311.md
+  - entities/tools/desloppify.md
+  - sources/arxiv-2610.32483-when-agents-fail-model-or-harness-who-s-to-blame-2026-10-27.md
+  - sources/arxiv-2610.39244-cash-a-capability-aware-subsidy-harness-for-adve-2026-11-01.md
+  - sources/arxiv-2611.03434-optimize-the-harness-not-the-model-cleo-2026-11-03.md
 maturity: draft
 created: 2026-05-21
 updated: 2026-08-13

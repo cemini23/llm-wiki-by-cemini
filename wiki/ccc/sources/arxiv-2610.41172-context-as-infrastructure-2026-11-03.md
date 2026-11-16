@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-rv-icl-navigable-demonstration-hierarchy-2610.06843.md
+  - concepts/agentic-online-rl-self-evolving-systems.md
 ---
 
 ## Raw Concept

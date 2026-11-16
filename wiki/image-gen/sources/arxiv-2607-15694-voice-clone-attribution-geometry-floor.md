@@ -10,6 +10,7 @@ related:
   - entities/persona-ops/fish-speech.md
   - sources/arxiv-2607-14753-lalms-spoofing-aware-asv.md
   - sweeps/2026-07-20-daily.md
+  - sources/arxiv-2607-28578-markov-micro-macro.md
 maturity: draft
 read_status: read
 created: 2026-07-20

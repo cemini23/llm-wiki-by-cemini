@@ -10,6 +10,7 @@ related:
   - entities/models/wan-2-2.md
   - entities/models/homie.md
   - sweeps/2026-07-22-daily.md
+  - sources/arxiv-2607-29610-agentic-engineer-education.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-22

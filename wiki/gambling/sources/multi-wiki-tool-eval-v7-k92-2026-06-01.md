@@ -80,7 +80,7 @@ WagerBrain-like quoting on **cemini-prod** stays @osint-wiki. This wiki holds **
 
 ### License posture
 
-Many URLs reported **NO LICENSE FOUND** in Gemini eval — verify with `gh api` before any install `[NEEDS VERIFICATION 2026-06-01]`.
+Many URLs reported **NO LICENSE FOUND** in Gemini eval — verify with `gh api` before any install `[NEEDS VERIFICATION 2026-11-16]`.
 
 ## Snippets
 

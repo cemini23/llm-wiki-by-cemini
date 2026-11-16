@@ -1,9 +1,15 @@
 ---
 title: "Latent Space AINews — Anthropic IPO and the open-weight week"
 type: source
+maturity: draft
 related:
   - concepts/frontier-model-release-cadence.md
   - entities/models/inkling-2-small.md
+  - sources/newsletter-rss-latent-space-2026-10-21-ainews-deepseek-deepinfer-open-source-sota-infer.md
+  - sources/newsletter-rss-latent-space-2026-10-24-ainews-kimi-31-pro-104ba-28t-fable-51-class-open.md
+  - sources/newsletter-rss-latent-space-2026-10-27-ainews-anthropic-files-for-2t-ipo-in-2-weeks-140.md
+  - sources/newsletter-rss-latent-space-2026-10-27-how-anthropic-ships-claude.md
+  - sources/newsletter-rss-latent-space-2026-10-28-ainews-anthropic-ends-coding-interviews-hunger-b.md
 updated: 2026-11-10
 ---
 

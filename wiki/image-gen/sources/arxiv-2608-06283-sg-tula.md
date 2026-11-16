@@ -5,6 +5,7 @@ tags: [paper, peripheral, sampling, optimization]
 keywords: [2608.06283]
 related:
   - sweeps/2026-08-07-daily.md
+  - sources/arxiv-2608-12254-globular-cluster-skip.md
 maturity: draft
 read_status: read
 created: 2026-08-07

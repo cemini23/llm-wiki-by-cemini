@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/substack-rss-wublock-2026-08-09-asia-top10-russia-japan.md
+  - sources/substack-rss-wublock-2026-08-06-july-vc-citadel-crypto.md
 ---
 
 ## Raw Concept

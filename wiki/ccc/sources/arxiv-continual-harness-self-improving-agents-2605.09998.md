@@ -9,6 +9,7 @@ related:
   - concepts/cross-wiki-tool-eval-inventory.md
   - concepts/harness-updating-vs-benefit-nonmonotonic.md
   - sources/arxiv-harness-updating-not-benefit-2605.30621.md
+  - sources/arxiv-2610.37651-gepa-curator-curated-learning-for-self-improving-2026-11-01.md
 maturity: draft
 created: 2026-05-27
 updated: 2026-06-01

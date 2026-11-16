@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/arxiv-jev-llm-safety-guardrail-2611.08845.md
+  - concepts/evidence-aware-long-context-grounding.md
 ---
 
 ## Raw Concept

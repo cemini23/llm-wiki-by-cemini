@@ -8,6 +8,7 @@ related:
   - entities/skills/route.md
   - briefs/2026-08-28_ccc-k315-k324-sip-ready.md
   - briefs/2026-08-31_ccc-pretooluse-scout-bm25-sip-ready.md
+  - entities/tools/misakanet.md
 maturity: draft
 created: 2026-08-28
 updated: 2026-08-31

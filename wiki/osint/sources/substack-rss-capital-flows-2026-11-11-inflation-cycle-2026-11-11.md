@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/substack-rss-capital-flows-2026-11-13-inflation-cycle-playbook-livestream-reply.md
+  - sources/substack-rss-capital-flows-2026-08-19-equity-positioning.md
 ---
 
 ## Raw Concept

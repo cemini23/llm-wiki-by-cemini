@@ -1,6 +1,7 @@
 ---
 title: "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents"
 type: source
+maturity: validated
 related:
   - concepts/npc-prompt-robustness.md
   - concepts/agentic-npc-design-guardrails.md

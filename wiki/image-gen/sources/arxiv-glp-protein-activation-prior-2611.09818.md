@@ -1,6 +1,7 @@
 ---
 title: "GLP — generative latent priors for interpreting and steering protein LMs (arXiv:2611.09818)"
 type: source
+maturity: draft
 tags: [source, arxiv, interpretability, activation-steering, diffusion-prior]
 keywords: [GLP, generative latent prior, flow matching, ESM-2, activation manifold, off-manifold, DiffMean steering, SAE clamping, InterPLM]
 related:

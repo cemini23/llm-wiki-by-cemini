@@ -70,4 +70,4 @@ Persona relevance: research path for **explorable synthetic environments** with 
 
 ## Dead Ends
 
-Adapts pretrained camera-controllable DiT [2, 11] — base checkpoint unspecified in skim. Open weights `[NEEDS VERIFICATION 2026-06-12]`. Dynamic-object filtering adds pipeline complexity vs clip generators.
+Adapts pretrained camera-controllable DiT [2, 11] — base checkpoint unspecified in skim. Open weights `[NEEDS VERIFICATION 2026-11-16]`. Dynamic-object filtering adds pipeline complexity vs clip generators.

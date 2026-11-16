@@ -5,6 +5,8 @@ tags: [paper, 3d, mesh, diffusion, peripheral]
 keywords: [Nexus, octree diffusion, spacetime topology, VAST, triangle mesh]
 related:
   - sweeps/2026-07-16-daily.md
+  - sources/arxiv-2607-05711-fourtune-4bit-diffusion-post-training.md
+  - sources/arxiv-2607-20368-self-gradient-forcing.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-16

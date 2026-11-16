@@ -1,6 +1,7 @@
 ---
 title: "A low similarity score does not show independence after agent rewriting"
 type: source
+maturity: draft
 related:
   - concepts/similarity-score-not-independence.md
   - concepts/tool-eval-license-skepticism-patterns.md

@@ -5,6 +5,7 @@ tags: [source, k255]
 keywords: [k255]
 related:
   - concepts/k255-newsletter-macro-wave.md
+  - sources/substack-rss-wublock-2026-11-04-strive-vs-strategy-2026-11-05.md
 maturity: draft
 created: 2026-09-04
 updated: 2026-09-04

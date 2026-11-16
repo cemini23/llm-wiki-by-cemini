@@ -1,6 +1,7 @@
 ---
 title: "AbliteratedOutTheBox — inference-time refusal removal for llama.cpp"
 type: entity
+maturity: draft
 related:
   - sources/newsletter-rss-tldrsec-2026-11-12-tldr-sec-354---artex-agentic-hacking-in-the-wild.md
   - concepts/local-abliterated-llm-pentest-stack.md

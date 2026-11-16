@@ -5,6 +5,9 @@ tags: [paper, peripheral, chemistry,biophysics]
 keywords: [peripheral]
 related:
   - sweeps/2026-07-31-daily.md
+  - sources/arxiv-2607-05711-fourtune-4bit-diffusion-post-training.md
+  - sources/arxiv-2607-21594-worldweaver.md
+  - sources/arxiv-2607-28578-markov-micro-macro.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-31

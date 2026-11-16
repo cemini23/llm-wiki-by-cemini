@@ -6,6 +6,7 @@ keywords: [2610.03631, k424]
 related:
   - concepts/graded-reward-ladder-no-model-gates.md
   - briefs/2026-10-05_ccc-k421-k425-sip-ready.md
+  - sources/arxiv-2610.41717-instrument-centered-ai-agents-2026-11-03.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-05

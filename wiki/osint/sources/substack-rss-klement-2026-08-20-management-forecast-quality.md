@@ -6,6 +6,7 @@ keywords: [Bloom, management-quality, forecast-error, UK, GuruWatcher]
 related:
   - concepts/guruwatcher-macro-watches.md
   - concepts/structural-abstention-trusted-kernel.md
+  - sources/substack-rss-klement-2026-10-28-gold-reserves-and-exchange-rate-management.md
 maturity: draft
 created: 2026-08-20
 updated: 2026-08-20

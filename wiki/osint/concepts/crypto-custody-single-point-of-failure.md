@@ -1,6 +1,7 @@
 ---
 title: Crypto custody — the single point of failure and the threshold fix
 type: concept
+maturity: validated
 related:
   - entities/companies/circle.md
   - sources/substack-rss-wublock-2026-11-10-gate-founder-shares-his-approach-to-security-no.md
@@ -64,8 +65,8 @@ It fixes **one-sided movement**. It does not remove counterparty risk, because t
 
 Three claims are testable and none is tested in the post:
 
-- `[NEEDS VERIFICATION 2026-11-10]` — is the third-party shard holder a legally independent entity?
-- `[NEEDS VERIFICATION 2026-11-10]` — do the open-source recovery tools exist and run offline?
+- `[NEEDS VERIFICATION 2026-11-16]` — is the third-party shard holder a legally independent entity?
+- `[NEEDS VERIFICATION 2026-11-16]` — do the open-source recovery tools exist and run offline?
 - `[OPEN QUESTION 2026-11-10]` — is the 48-hour delay enforced server-side or only in the client?
 
 ### The operational conflict

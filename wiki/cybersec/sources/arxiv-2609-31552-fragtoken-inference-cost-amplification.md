@@ -6,6 +6,8 @@ keywords: [2609.31552, k376]
 related:
   - concepts/reliable-inference-procurement-routing.md
   - concepts/fragtoken-inference-cost-amplification-lab.md
+  - sources/arxiv-2609-09076-actreview-peer-review.md
+  - sources/arxiv-2609-20816-paint-anything-ood.md
 maturity: validated
 read_status: deep-read
 created: 2026-09-28

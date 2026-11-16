@@ -9,6 +9,7 @@ related:
   - concepts/video-identity-inheritance.md
   - entities/models/wan-2-2.md
   - sweeps/2026-07-23-daily.md
+  - sources/arxiv-2607-24378-bayesian-feature.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-23

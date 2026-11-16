@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - sources/arxiv-safety-as-a-budget-2611.16628.md
+  - sources/arxiv-parsed-plausible-wrong-output-format-2611.17169.md
 ---
 
 ## Raw Concept

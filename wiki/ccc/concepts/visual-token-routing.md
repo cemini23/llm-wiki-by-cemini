@@ -1,6 +1,7 @@
 ---
 title: "Visual token routing — spend context on the pixels that change the next action"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-visual-token-routing-2611.06854.md
   - concepts/context-engineering.md

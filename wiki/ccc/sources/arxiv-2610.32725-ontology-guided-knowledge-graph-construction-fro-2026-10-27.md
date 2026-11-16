@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-epistemic-humility-knowledge-conflict-2610.12360.md
+  - sources/arxiv-domain-grounded-tool-orchestration-2608.30696.md
 ---
 
 ## Raw Concept

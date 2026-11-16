@@ -17,6 +17,7 @@ related:
   - sources/video-generation-survey-2026.md
   - sweeps/2026-06-20-daily.md
   - concepts/federated-daily-research-digest.md
+  - sources/arxiv-agenthoi-training-free-hoi-2607.13881.md
 maturity: draft
 read_status: read
 created: 2026-06-20

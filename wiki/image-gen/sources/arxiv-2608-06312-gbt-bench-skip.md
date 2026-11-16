@@ -5,6 +5,8 @@ tags: [paper, peripheral, llm, document-review]
 keywords: [GB/T-Bench, GB/T-Reviewer, multi-agent, standards]
 related:
   - sweeps/2026-08-10-daily.md
+  - sources/arxiv-2608-20338-conceptguard-skip.md
+  - sources/arxiv-2608-20204-contractscrub-skip.md
 maturity: draft
 read_status: read
 created: 2026-08-10

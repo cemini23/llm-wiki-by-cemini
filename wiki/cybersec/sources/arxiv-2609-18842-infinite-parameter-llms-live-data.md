@@ -10,6 +10,9 @@ created: 2026-09-17
 updated: 2026-09-17
 phase_0_verdict: "OOD 2026-09-17 — ML architecture (infinite-parameter / live-data weight generation) — not cyber-primary; route to OSINT/ML wiki if deep-read needed."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2609-31506-haitian-creole-cultural-awareness-ood.md
+  - sources/arxiv-2609-28395-translation-finetune-forgetting-mt-instruction.md
 ---
 
 ## Relations

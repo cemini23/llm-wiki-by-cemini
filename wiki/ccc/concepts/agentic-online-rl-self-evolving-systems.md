@@ -22,6 +22,11 @@ related:
   - concepts/harness-native-agent-rl-training.md
   - sources/arxiv-openforgerl-harness-native-training-2607.21557.md
   - concepts/reconstructive-agent-memory-vs-verbatim-replay.md
+  - sources/arxiv-2610.35845-work-agents-systems-capabilities-and-optimizatio-2026-10-27.md
+  - sources/arxiv-2610.39685-practical-assessment-of-agentic-systems-in-acous-2026-11-01.md
+  - sources/arxiv-2610.40578-vericua-verification-as-agentic-exploration-for-2026-11-01.md
+  - sources/arxiv-2610.41172-context-as-infrastructure-2026-11-03.md
+  - sources/arxiv-2610.41216-tinyastral-self-evolving-harnesses-2026-11-03.md
 maturity: draft
 created: 2026-07-07
 updated: 2026-07-31

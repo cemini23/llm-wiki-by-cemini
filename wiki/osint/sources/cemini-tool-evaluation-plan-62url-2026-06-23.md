@@ -1,6 +1,7 @@
 ---
 title: "Cemini Tool Evaluation Plan.docx — 62 URL HF/GitHub eval (2026-06-23)"
 type: source
+maturity: draft
 tags: [tool-evaluation, license-compliance, nfl-dfs, polymarket, cemini-internal, k127]
 keywords: [cemini-tool-eval-plan, sportsdataverse-py, nflverse, HF datasets, DFS, polymarket-sports-bot]
 related:

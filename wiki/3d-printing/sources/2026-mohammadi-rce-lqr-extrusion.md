@@ -1,6 +1,7 @@
 ---
 title: Robust LQR Control of Cementitious Material Extrusion (RCE/DIW)
 type: source
+maturity: stub
 tags: [paper, extrusion, control, DIW, background]
 keywords: [cementitious, sliding mode, LQR, direct ink writing, strand flow]
 related:

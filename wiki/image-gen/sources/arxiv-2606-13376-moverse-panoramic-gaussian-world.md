@@ -49,7 +49,7 @@ updated: 2026-06-16
 
 **Claims [TENTATIVE]:** **8 FPS real-time roaming on single RTX 4090**; explicit scaffold prevents long-trajectory drift vs implicit video WMs.
 
-**Release posture:** GitHub repo live; weights/code under corporate review (~1 month per README) `[NEEDS VERIFICATION 2026-06-16]`.
+**Release posture:** GitHub repo live; weights/code under corporate review (~1 month per README) `[NEEDS VERIFICATION 2026-11-16]`.
 
 ### Workspace relevance
 

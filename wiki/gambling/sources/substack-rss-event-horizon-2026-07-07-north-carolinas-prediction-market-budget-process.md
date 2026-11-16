@@ -11,6 +11,7 @@ related:
   - sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
   - sources/daily-digest-batch-k149-2026-07-07.md
   - @osint-wiki/sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md
+  - sources/substack-rss-event-horizon-2026-10-30-a-prediction-market-gets-into-digital-rips-becau.md
 maturity: validated
 read_status: skimmed
 created: 2026-07-07

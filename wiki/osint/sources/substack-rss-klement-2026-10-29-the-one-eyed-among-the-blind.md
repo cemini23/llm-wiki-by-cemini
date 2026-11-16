@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/substack-rss-klement-2026-09-02-we-are-all-in-hock-to-the-bond-market.md
+  - sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md
 ---
 
 ## Raw Concept

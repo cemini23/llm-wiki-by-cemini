@@ -13,6 +13,7 @@ related:
   - concepts/reconstruction-based-t2v-benchmarking.md
   - entities/benchmarks/geot2v-bench.md
   - sources/arxiv-2606-24829-geot2v-bench-3d-consistency.md
+  - sources/arxiv-2611.05377-dreamx-latent-action-2026-11-05.md
 title: "YoCausal — causality benchmark for video diffusion / world models (arXiv:2605.30346)"
 type: source
 tags: [paper, world-model, causality, benchmark, video-diffusion, wan]

@@ -65,7 +65,7 @@ The asymmetry — competent verifier, unreliable generator — is what UniReason
 
 ### Workspace relevance
 
-- BAGEL itself is not in `notes/models-catalog.md` as of 2026-05-06; the catalog focuses on locally-runnable image-gen models, and BAGEL's positioning is more "unified research model" than "local-rig daily driver". [NEEDS VERIFICATION 2026-05-06] whether BAGEL has open weights and runs in standard local stacks.
+- BAGEL itself is not in `notes/models-catalog.md` as of 2026-05-06; the catalog focuses on locally-runnable image-gen models, and BAGEL's positioning is more "unified research model" than "local-rig daily driver". [NEEDS VERIFICATION 2026-11-16] whether BAGEL has open weights and runs in standard local stacks.
 - For persona / character ops, the conceptual takeaway from BAGEL's failure modes is more important than running BAGEL locally: any unified-model architecture will exhibit the same gap unless mitigated (regional prompting, layout conditioning, post-hoc inpainting, or Draft-Evaluate-Diffuse-style additions).
 
 ### Open questions

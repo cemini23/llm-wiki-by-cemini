@@ -1,6 +1,7 @@
 ---
 title: K254 Gambling Pm Wave (Sep 2026)
 type: concept
+maturity: stub
 tags: [gambling, prediction-markets, k254]
 keywords: [Robinhood, Kalshi, Event-Horizon]
 related:

@@ -3,6 +3,7 @@ title: "Budget-aware agent rewards — stay inside the stated budget"
 type: source
 related:
   - concepts/k294-ccc-wave.md
+  - sources/arxiv-2610.37609-envsched-environment-aware-scheduling-for-rollou-2026-11-01.md
 maturity: draft
 read_status: skimmed
 updated: 2026-10-23

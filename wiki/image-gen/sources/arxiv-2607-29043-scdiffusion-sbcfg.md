@@ -5,6 +5,7 @@ tags: [paper, peripheral, biology,scrna]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-04-daily.md
+  - concepts/federated-daily-research-digest.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-04

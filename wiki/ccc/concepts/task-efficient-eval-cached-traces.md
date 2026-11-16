@@ -1,6 +1,7 @@
 ---
 title: "Task-efficient agent evaluation from cached traces"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-task-efficient-agent-eval-cached-traces-2611.06803.md
   - concepts/benchmark-maintenance-debt.md

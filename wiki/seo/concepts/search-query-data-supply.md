@@ -8,6 +8,8 @@ related:
   - entities/tools/google-search-console.md
   - entities/tools/semrush.md
   - concepts/local-seo-foundations.md
+  - sources/arxiv-2610.40164-who-owns-digital-news-and-who-gets-cited-measuri-2026-11-01.md
+  - sources/arxiv-2610.41893-automated-keyword-generation-dvs-2026-11-03.md
 maturity: draft
 created: 2026-11-14
 updated: 2026-11-14
@@ -44,7 +46,7 @@ The practitioner consequence is direct. The long tail is the part of the query d
 ### What is not known
 
 - Whether Article 6(11) gives **SEO tooling** access is unresolved. The remedy names third-party providers of online search engines, not analytics vendors. `[OPEN QUESTION 2026-11-14]`
-- Whether the final joint DMA/GDPR guidelines were adopted after the paper's cut-off. The paper states that no final version had been adopted at writing. `[NEEDS VERIFICATION 2026-11-14]`
+- Whether the final joint DMA/GDPR guidelines were adopted after the paper's cut-off. The paper states that no final version had been adopted at writing. `[NEEDS VERIFICATION 2026-11-16]`
 - Whether any commercial tool now reflects data from this route. `[OPEN QUESTION 2026-11-14]`
 
 ### Practical rule

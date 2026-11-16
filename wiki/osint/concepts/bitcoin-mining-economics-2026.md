@@ -1,6 +1,7 @@
 ---
 title: Bitcoin mining economics 2026 — a subsidy-only business with one squeeze point
 type: concept
+maturity: validated
 related:
   - sources/substack-rss-wublock-2026-11-12-global-crypto-mining-news-in-october-binance-poo.md
   - sources/substack-rss-wublock-2026-11-13-wublockchain-weekly-goldman-citi-launch-joint-us.md

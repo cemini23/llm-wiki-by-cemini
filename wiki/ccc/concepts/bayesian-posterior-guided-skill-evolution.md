@@ -16,6 +16,7 @@ related:
   - concepts/skillhone-continual-skill-decision-history.md
   - sources/arxiv-skillhone-continual-skill-evolution-2606.08671.md
   - sources/brief-k109-bayesian-agent-harness-cluster-prod-2026-06-10.md
+  - sources/arxiv-2611.14505-continual-arc-skill-acquisition-2026-11-11.md
 maturity: draft
 created: 2026-06-10
 updated: 2026-07-03

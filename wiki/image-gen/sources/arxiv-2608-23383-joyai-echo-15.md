@@ -11,6 +11,7 @@ related:
   - entities/models/ltx-2.md
   - entities/models/wan-2-2.md
   - sweeps/2026-08-25-daily.md
+  - sources/arxiv-2608-05139-skill-entropy.md
 maturity: draft
 read_status: read
 created: 2026-08-25

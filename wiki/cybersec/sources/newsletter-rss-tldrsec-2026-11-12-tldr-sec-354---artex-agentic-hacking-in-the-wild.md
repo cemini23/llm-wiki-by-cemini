@@ -1,6 +1,7 @@
 ---
 title: "tl;dr sec #354 — ARTEX and agentic hacking in the wild, the patchless window, backporting"
 type: source
+maturity: validated
 related:
   - concepts/agentic-offensive-security-kill-chain.md
   - concepts/patchless-window.md
@@ -10,6 +11,7 @@ related:
   - entities/tools/mcptrace.md
   - entities/tools/abliterated-out-of-the-box.md
   - concepts/software-maintenance-institutional-insecurity.md
+  - sources/newsletter-rss-tldrsec-2026-10-29-tldr-sec-352---unprompted-slides-aws-ai-post-com.md
 updated: 2026-11-14
 ---
 
@@ -84,7 +86,7 @@ This finding matters for the local abliterated lab. The measured trade is not "s
 ### Cloud items
 
 - Upwind (Dan Gansel) reports a cross-tenant data poisoning and exfiltration path in AWS Athena. The official `aws-sdk-pandas` library creates a predictable default S3 bucket for query results and treats attacker-owned buckets as legitimate `[TENTATIVE]`. AWS patched the Athena service earlier; the SDK never received the fix.
-- Upwind also reports a cross-tenant RCE in the SageMaker Python SDK from predictable S3 bucket naming. The attack produced zero errors and no CloudTrail events in victim accounts and affected 200+ official example notebooks `[TENTATIVE]`. `[NEEDS VERIFICATION 2026-11-14]` against the current SDK release notes.
+- Upwind also reports a cross-tenant RCE in the SageMaker Python SDK from predictable S3 bucket naming. The attack produced zero errors and no CloudTrail events in victim accounts and affected 200+ official example notebooks `[TENTATIVE]`. `[NEEDS VERIFICATION 2026-11-16]` against the current SDK release notes.
 - Alex Smolen lists three IAM patterns that coding agents generate wrongly: explicit `Deny` statements, permission boundaries used outside delegated authority, and unnecessary `sts:GetCallerIdentity` allows.
 
 Both cloud findings belong to one class: a predictable resource name creates a shadow resource that the victim's own tooling trusts. The control is to pin the bucket owner or use an explicit bucket name with `ExpectedBucketOwner`.
@@ -97,7 +99,7 @@ Both cloud findings belong to one class: a predictable resource name creates a s
 
 ### Other items
 
-Prusa 3D printers had 14 vulnerabilities forming a full RCE chain (Yannick Dixken) `[TENTATIVE]`. An OpenSSH build on musl Linux accepted any password longer than 256 characters `[TENTATIVE]`. Both are `[NEEDS VERIFICATION 2026-11-14]` against upstream advisories.
+Prusa 3D printers had 14 vulnerabilities forming a full RCE chain (Yannick Dixken) `[TENTATIVE]`. An OpenSSH build on musl Linux accepted any password longer than 256 characters `[TENTATIVE]`. Both are `[NEEDS VERIFICATION 2026-11-16]` against upstream advisories.
 
 ## Snippets
 

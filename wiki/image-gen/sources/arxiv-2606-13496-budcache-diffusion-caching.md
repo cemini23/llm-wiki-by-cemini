@@ -73,4 +73,4 @@ Both are build-track **inference acceleration** axes for FLUX persona T2I and Wa
 
 ## Dead Ends
 
-No ComfyUI node at release `[NEEDS VERIFICATION 2026-06-15]`. Per-model offline search required — not universal zero-config. FLUX weights remain BFL non-commercial.
+No ComfyUI node at release `[NEEDS VERIFICATION 2026-11-16]`. Per-model offline search required — not universal zero-config. FLUX weights remain BFL non-commercial.

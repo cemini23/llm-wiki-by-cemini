@@ -1,9 +1,11 @@
 ---
 title: "Latent Space AINews — Inkling 2 Small: 17A-594B trained in 68 hours"
 type: source
+maturity: draft
 related:
   - entities/models/inkling-2-small.md
   - concepts/frontier-model-release-cadence.md
+  - sources/newsletter-rss-latent-space-2026-11-10-naiveai-n05-flash-2026-11-11.md
 updated: 2026-11-10
 ---
 

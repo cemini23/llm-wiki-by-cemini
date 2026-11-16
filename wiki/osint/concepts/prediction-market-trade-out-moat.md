@@ -1,6 +1,7 @@
 ---
 title: Prediction-market moat — trade-out quality beats price
 type: concept
+maturity: draft
 related:
   - entities/companies/draftkings.md
   - sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md

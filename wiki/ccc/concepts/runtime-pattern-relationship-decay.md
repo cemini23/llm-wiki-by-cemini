@@ -1,6 +1,7 @@
 ---
 title: "Runtime pattern relationships decay under routine operations"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-routine-operations-break-patterns-2611.09088.md
   - concepts/hooks-for-automation.md

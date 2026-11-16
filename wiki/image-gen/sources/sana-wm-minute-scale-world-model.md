@@ -15,6 +15,7 @@ related:
   - sources/arxiv-2605-31336-decmem-world-generation.md
   - entities/models/metaworld.md
   - sources/arxiv-metaworld-video-world-model-2606.02753-2026-06-05.md
+  - sources/arxiv-2610.37642-metacognitive-decoding-efficient-inference-for-d-2026-11-01.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-16

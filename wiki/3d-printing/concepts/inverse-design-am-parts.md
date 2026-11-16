@@ -1,6 +1,7 @@
 ---
 title: Inverse Design and Topology Optimization for Additive Manufacturing
 type: concept
+maturity: draft
 tags: [inverse-design, topology-optimization, background, non-FFF]
 keywords: [adjoint, level-set method, differential evolution, gradient-free, connected-component, fabrication constraints, metamaterials]
 related:

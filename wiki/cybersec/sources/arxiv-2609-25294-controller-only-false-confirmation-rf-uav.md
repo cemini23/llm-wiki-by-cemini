@@ -6,6 +6,7 @@ keywords: [2609.25294, k364]
 related:
   - concepts/passive-rf-uav-controller-only-false-confirmation.md
   - concepts/through-wall-detection-sdr-pca.md
+  - sources/arxiv-2609-01548-ood-sdare-bench.md
 maturity: validated
 read_status: deep-read
 created: 2026-09-24

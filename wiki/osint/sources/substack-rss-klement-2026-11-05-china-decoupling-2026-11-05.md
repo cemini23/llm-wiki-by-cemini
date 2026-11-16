@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - sources/substack-rss-klement-2026-07-27-fast-money-warping-market-logic.md
+  - sources/substack-rss-klement-2026-09-22-chip-ban-2026-09-22.md
 ---
 
 ## Raw Concept

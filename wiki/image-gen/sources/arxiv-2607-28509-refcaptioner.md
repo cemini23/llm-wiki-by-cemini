@@ -9,6 +9,7 @@ related:
   - entities/benchmarks/filmops.md
   - entities/models/wan-2-2.md
   - sweeps/2026-07-31-daily.md
+  - sources/arxiv-2607-28565-mind-medical-fusion.md
 maturity: draft
 read_status: read
 created: 2026-07-31

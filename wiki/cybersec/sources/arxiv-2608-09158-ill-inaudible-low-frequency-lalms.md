@@ -12,6 +12,7 @@ related:
   - concepts/llm-pentest-automation.md
   - sources/arxiv-2608-15578-arena-audio-lalm-redteam.md
   - concepts/audio-grounded-lalm-redteaming.md
+  - sources/arxiv-2610.40516-how-i-aligned-your-model-scaling-up-multilingual-2026-11-01.md
 maturity: draft
 read_status: read
 created: 2026-08-11

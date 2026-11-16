@@ -1,10 +1,12 @@
 ---
 title: "Convergence rates for truncated and discretised signature expansions (arXiv 2611.16087)"
 type: source
+maturity: validated
 related:
   - concepts/signature-expansion-truncation-rates.md
   - concepts/options-derivatives.md
   - concepts/osint-inbox-wave-2026-11-14.md
+  - sources/arxiv-2611.04157-nonparametric-garch-neural-estimator-2026-11-04.md
 updated: 2026-11-14
 ---
 

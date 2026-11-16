@@ -7,6 +7,10 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/vishwakarma-2026-competitive-geo-sigir.md
+  - concepts/search-query-data-supply.md
+  - sources/arxiv-2610.40278-neighborhood-elites-quality-diversity-search-for-2026-11-01.md
 ---
 
 ## Raw Concept

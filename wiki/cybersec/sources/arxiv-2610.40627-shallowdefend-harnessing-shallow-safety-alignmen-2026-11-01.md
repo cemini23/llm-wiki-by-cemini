@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - concepts/crescendo-multi-turn-jailbreak.md
+  - concepts/amt-x-phase-structured-multi-turn-red-teaming.md
 ---
 
 ## Raw Concept

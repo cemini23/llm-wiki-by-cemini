@@ -10,6 +10,7 @@ related:
   - concepts/cascaded-streaming-high-resolution-video.md
   - entities/models/wan-2-2.md
   - sweeps/2026-08-14-daily.md
+  - sources/arxiv-2608-03387-roboreact.md
 maturity: draft
 read_status: read
 created: 2026-08-14

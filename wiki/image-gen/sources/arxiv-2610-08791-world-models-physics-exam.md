@@ -9,6 +9,7 @@ related:
   - concepts/video-generation-physical-executability.md
   - concepts/world-models-video-generation.md
   - entities/models/wan-2-2.md
+  - sources/arxiv-2610.40618-an-ode-based-sampler-for-discrete-diffusion-mode-2026-11-01.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-08

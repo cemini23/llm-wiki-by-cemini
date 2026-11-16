@@ -1,6 +1,7 @@
 ---
 title: "Event Horizon — Episode 40: the Misery Index with Adjacent Markets' Lucas Kohorst"
 type: source
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - concepts/prediction-market-regulation-2026.md

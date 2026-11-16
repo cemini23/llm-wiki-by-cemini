@@ -9,6 +9,7 @@ related:
   - entities/voice-models/dia.md
   - entities/persona-ops/fish-speech.md
   - sweeps/2026-07-16-daily.md
+  - sources/arxiv-2607-06281-straight-path-flow-matching-imvc.md
 maturity: draft
 read_status: read
 created: 2026-07-16

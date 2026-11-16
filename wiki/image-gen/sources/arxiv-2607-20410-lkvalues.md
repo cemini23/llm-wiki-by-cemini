@@ -5,6 +5,9 @@ tags: [paper, llm, alignment, peripheral]
 keywords: [LKValues, Sinhala, cultural-alignment]
 related:
   - sweeps/2026-07-23-daily.md
+  - sources/arxiv-2607-08561-contravariance-theory-strong-alignment.md
+  - sources/arxiv-2607-08034-plural-value-alignment-dataset.md
+  - sources/arxiv-2610-12410-alignment-generalization-skip.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-23

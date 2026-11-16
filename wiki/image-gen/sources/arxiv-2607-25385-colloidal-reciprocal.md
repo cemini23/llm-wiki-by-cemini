@@ -5,6 +5,7 @@ tags: [paper, physics, colloids, peripheral]
 keywords: [reciprocal-theorem, electrokinetics, microswimmers, peripheral]
 related:
   - sweeps/2026-07-29-daily.md
+  - concepts/federated-daily-research-digest.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-29

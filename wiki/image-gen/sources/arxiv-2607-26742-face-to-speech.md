@@ -9,6 +9,7 @@ related:
   - entities/persona-ops/fish-speech.md
   - entities/voice-models/kokoro.md
   - sweeps/2026-07-31-daily.md
+  - sources/arxiv-2607-24422-ijcb-afmfr.md
 maturity: draft
 read_status: read
 created: 2026-07-31

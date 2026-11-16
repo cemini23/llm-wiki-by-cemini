@@ -5,6 +5,7 @@ tags: [paper, peripheral, astrophysics]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-06-daily.md
+  - concepts/federated-daily-research-digest.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-06

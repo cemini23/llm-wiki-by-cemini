@@ -7,6 +7,7 @@ related:
   - concepts/hybrid-gui-cli-agent-environment.md
   - briefs/2026-09-11_ccc-k346-k357-sip-ready.md
   - concepts/hybrid-cua-recreation-environments.md
+  - sources/arxiv-xrr-curves-x-ray-calc-agent-2609.28926.md
 maturity: draft
 read_status: read
 created: 2026-09-11

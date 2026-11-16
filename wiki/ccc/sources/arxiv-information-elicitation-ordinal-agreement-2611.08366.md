@@ -1,6 +1,7 @@
 ---
 title: "Information elicitation by ordinal agreement (Kendall tau peer prediction)"
 type: source
+maturity: draft
 related:
   - concepts/ordinal-peer-prediction.md
   - concepts/auto-researcher-human-similarity.md

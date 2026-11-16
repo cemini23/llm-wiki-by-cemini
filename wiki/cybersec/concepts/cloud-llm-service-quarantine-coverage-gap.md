@@ -1,6 +1,7 @@
 ---
 title: "A cloud LLM quarantine is a deny-list, and deny-lists lag new surfaces"
 type: concept
+maturity: draft
 related:
   - sources/newsletter-rss-tldrsec-2026-11-05-tldr-sec-353---a-thousand-fewer-paths-to-root-ku.md
 updated: 2026-11-10
@@ -46,7 +47,7 @@ A second rule: **assume default logging does not cover the new service.** Check 
 
 The specific finding is a vendor-research report relayed by a newsletter. No independent test is recorded here.
 
-Confidence: `[TENTATIVE]` — one researcher's report. The policy behaviour should be re-tested against the current AWS policy version before it is written into a control document. `[NEEDS VERIFICATION 2026-11-10]`
+Confidence: `[TENTATIVE]` — one researcher's report. The policy behaviour should be re-tested against the current AWS policy version before it is written into a control document. `[NEEDS VERIFICATION 2026-11-16]`
 
 ## Snippets
 

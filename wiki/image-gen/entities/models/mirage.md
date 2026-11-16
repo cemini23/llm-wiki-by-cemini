@@ -44,7 +44,7 @@ Entity stub from 2026-06-12 ingest — Mirage (arXiv:2606.09828). Project: https
 | DecMem | Open research vs Kling closed industrial memory |
 | RGB point-cloud WM | 10.57× faster, 55× less memory (paper claims) |
 
-**Status:** Research demo; weights/code `[NEEDS VERIFICATION 2026-06-12]`. Not build-track for persona I2V.
+**Status:** Research demo; weights/code `[OPEN QUESTION 2026-06-12]`. Not build-track for persona I2V.
 
 ## Snippets
 

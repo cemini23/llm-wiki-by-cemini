@@ -1,6 +1,7 @@
 ---
 title: "Moontower — compounding through risk, not return (Maymin brothers on Flirting with Models)"
 type: source
+maturity: draft
 related:
   - concepts/compounding-through-risk-not-return.md
   - concepts/osint-inbox-wave-2026-11-14.md

@@ -1,6 +1,7 @@
 ---
 title: OSINT inbox wave 2026-11-14 — 14 sources, four with a live lane
 type: concept
+maturity: draft
 related:
   - sources/arxiv-convergence-rates-truncated-discretised-signature-expansions-2611.16087.md
   - sources/arxiv-scale-rich-network-metamaterials-local-rules-2611.16513.md

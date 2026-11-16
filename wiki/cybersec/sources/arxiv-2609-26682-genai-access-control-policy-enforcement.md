@@ -6,6 +6,7 @@ keywords: [2609.26682, k362]
 related:
   - concepts/genai-access-control-policy-enforcement.md
   - concepts/recognition-enforcement-gap-instruction-arbitration.md
+  - sources/arxiv-2609-20816-paint-anything-ood.md
 maturity: draft
 read_status: read
 created: 2026-09-23

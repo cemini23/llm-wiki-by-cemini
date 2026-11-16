@@ -19,6 +19,7 @@ related:
   - entities/benchmarks/mentisoculi.md
   - sources/arxiv-2602-02465-mentisoculi-visual-reasoning-limits-2026-06-13.md
   - sources/unireasoner.md
+  - sources/arxiv-2611.05279-mobius-motion-language-2026-11-05.md
 maturity: validated
 created: 2026-05-06
 updated: 2026-06-15
@@ -101,7 +102,7 @@ The 1.80-point overall lift on DPG-Bench and ~9-point lift on GenEval come from 
 - **The understanding-generation gap framing applies to any unified local model** (BAGEL is the headline example; the framing transfers to anything Qwen-VL-derived). Useful when troubleshooting why a unified-model run fails compositionally even though VLM critiques of the same image are correct.
 - **No public weights mentioned in the paper** as of submission. Apple-affiliated; release behavior unknown. Until weights are public, UniReasoner is a *concept* and *target* for local workflows, not a tool.
 
-~~[NEEDS VERIFICATION 2026-05-06] Whether code or weights ship publicly; whether the discrete-vision-token interface ends up compatible with any open BAGEL-derivative.~~ — **resolved [CONFIRMED 2026-05-07]**: no public UniReasoner repo / weights have surfaced as of 2026-05 (confirmed via Brave Search; no GitHub project matching the JHU + Apple author combination from the paper). The closest published Apple work is **AToken** ([machinelearning.apple.com/research/atoken](https://machinelearning.apple.com/research/atoken)) — a unified vision tokenizer, code/weights also unreleased. The closest *released* discrete-vision-token + reasoning stack is **Selftok / DDT-LLaMA** (CVPR 2025 Best Paper Honorable Mention) — tokenizer weights released May 2025; full training code pending. Until UniReasoner code drops, treat it as a *target architecture* for compositional faithfulness rather than an installable tool.
+~~[NEEDS VERIFICATION 2026-11-16] Whether code or weights ship publicly; whether the discrete-vision-token interface ends up compatible with any open BAGEL-derivative.~~ — **resolved [CONFIRMED 2026-05-07]**: no public UniReasoner repo / weights have surfaced as of 2026-05 (confirmed via Brave Search; no GitHub project matching the JHU + Apple author combination from the paper). The closest published Apple work is **AToken** ([machinelearning.apple.com/research/atoken](https://machinelearning.apple.com/research/atoken)) — a unified vision tokenizer, code/weights also unreleased. The closest *released* discrete-vision-token + reasoning stack is **Selftok / DDT-LLaMA** (CVPR 2025 Best Paper Honorable Mention) — tokenizer weights released May 2025; full training code pending. Until UniReasoner code drops, treat it as a *target architecture* for compositional faithfulness rather than an installable tool.
 
 ### Tools and models referenced
 

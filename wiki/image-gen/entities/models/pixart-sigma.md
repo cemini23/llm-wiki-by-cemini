@@ -46,7 +46,7 @@ PixArt-Σ predates the FLUX / Z-Image consumer DiT wave and is one of the archit
 [CONFIRMED, source @sources/uncensored-image-generation-survey.md §1]:
 
 - **Direct 4K generation** — native high-resolution output without iterative upscaling. Important for print / billboard / detail-rich workflows. FLUX, Z-Image, and most 2024-2026 DiTs target 1024×1024 or 1536×1536 native; 4K requires upscaling chains.
-- **Small footprint** — significantly smaller than FLUX.1 Dev (12B), Qwen-Image (20B+), or even Z-Image (6B). Estimated parameter count `[NEEDS VERIFICATION 2026-05-06]` — likely ~0.6-1B based on PixArt-α lineage.
+- **Small footprint** — significantly smaller than FLUX.1 Dev (12B), Qwen-Image (20B+), or even Z-Image (6B). Estimated parameter count `[NEEDS VERIFICATION 2026-11-16]` — likely ~0.6-1B based on PixArt-α lineage.
 - **Easy to fine-tune** — the canonical academic DiT for fine-tuning experiments. LoRA training, full-parameter fine-tunes, and architectural ablations are all accessible at consumer-hardware cost.
 - **T5 encoder = natural language prompts** — same encoder family as FLUX.1 Dev; rewards prose over tag soup.
 
@@ -87,7 +87,7 @@ De-censoring path:
 
 ### Workspace TODO
 
-- **`[NEEDS VERIFICATION 2026-05-06]`**: confirm PixArt-Σ parameter count, current version revision, Hugging Face hash.
+- **`[NEEDS VERIFICATION 2026-11-16]`**: confirm PixArt-Σ parameter count, current version revision, Hugging Face hash.
 - **`[OPEN QUESTION 2026-05-06]`**: identify canonical NSFW LoRAs for PixArt-Σ on CivitAI.
 - **`[OPEN QUESTION 2026-05-06]`**: confirm Apple Silicon (MPS) support — academic DiTs sometimes have cleaner cross-platform paths than commercial alternatives.
 - Compare PixArt-Σ direct 4K vs FLUX.1 Dev + 4K upscaling chain on a fixed prompt set; validate when the direct-4K capability is genuinely worth the quality tradeoff.

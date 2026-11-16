@@ -25,7 +25,7 @@ Ingest stub from arXiv:2609.35728.
 
 ## Narrative
 
-**FlowAct-R2** extends talking avatars with **streaming multimodal references** and **proactive agent planning** — stacks against LatentSync/ComplexSync for lip fidelity plus n8n/SillyTavern orchestration. `[NEEDS VERIFICATION 2026-09-29]` on public weights and latency.
+**FlowAct-R2** extends talking avatars with **streaming multimodal references** and **proactive agent planning** — stacks against LatentSync/ComplexSync for lip fidelity plus n8n/SillyTavern orchestration. `[NEEDS VERIFICATION 2026-11-16]` on public weights and latency.
 
 ## Snippets
 

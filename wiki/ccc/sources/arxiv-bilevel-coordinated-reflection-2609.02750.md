@@ -9,6 +9,7 @@ related:
   - concepts/experiential-working-memory-coupling.md
   - concepts/role-specialization-model-multi-tool-coordination.md
   - briefs/2026-09-03_ccc-k337-k341-sip-ready.md
+  - sources/arxiv-xrr-curves-x-ray-calc-agent-2609.28926.md
 maturity: draft
 read_status: read
 created: 2026-09-03

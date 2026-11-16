@@ -7,6 +7,9 @@ maturity: draft
 read_status: unread-stub
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/substack-rss-capital-flows-2026-07-24-sp500-selling.md
+  - sources/substack-rss-capital-flows-2026-08-19-equity-positioning.md
 ---
 
 ## Raw Concept

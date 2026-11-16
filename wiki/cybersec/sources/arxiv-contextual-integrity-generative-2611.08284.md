@@ -1,6 +1,7 @@
 ---
 title: "A generative model of contextual integrity: appropriate vs. inappropriate information sharing (arXiv 2611.08284)"
 type: source
+maturity: draft
 related:
   - concepts/contextual-integrity-disclosure-simulation.md
 updated: 2026-11-10

@@ -7,6 +7,8 @@ related:
   - concepts/k263-newsletter-macro-wave.md
   - concepts/k263-xsp-donny-wave.md
   - concepts/guruwatcher-macro-watches.md
+  - sources/substack-rss-klement-2026-07-16-odd-number-signals.md
+  - sources/substack-rss-klement-2026-10-26-building-daccs-the-right-way.md
 maturity: draft
 created: 2026-09-17
 updated: 2026-09-17

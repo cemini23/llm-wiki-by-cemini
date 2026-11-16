@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - concepts/time-series-arima-garch-framework.md
+  - sources/3-29-15.md
 ---
 
 ## Raw Concept

@@ -10,6 +10,8 @@ related:
   - entities/models/tamf-vton.md
   - entities/models/wan-2-2.md
   - sweeps/2026-07-21-daily.md
+  - sources/arxiv-2607-24422-ijcb-afmfr.md
+  - sources/arxiv-2607-26817-floorplan-floc.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-21

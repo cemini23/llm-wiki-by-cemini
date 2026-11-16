@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/substack-rss-moontower-2026-07-19-become-an-option-mixologist.md
+  - sources/substack-rss-moontower-2026-10-04-option-ideas.md
 ---
 
 ## Raw Concept

@@ -8,6 +8,9 @@ maturity: draft
 created: 2026-10-24
 updated: 2026-10-25
 read_status: skimmed
+related:
+  - sources/newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant.md
+  - sources/newsletter-rss-latent-space-2026-11-07-ainews-anthropic-ipo-whither-now.md
 ---
 
 ## Raw Concept

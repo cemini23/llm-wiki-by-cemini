@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/arxiv-where-llm-agents-get-stuck-debugging-databases-2611.17304.md
+  - sources/arxiv-benchmarks-as-software-terminal-bench-2611.08417.md
 ---
 
 ## Raw Concept

@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - entities/tools/strix.md
+  - concepts/trajectory-context-control.md
 ---
 
 ## Raw Concept

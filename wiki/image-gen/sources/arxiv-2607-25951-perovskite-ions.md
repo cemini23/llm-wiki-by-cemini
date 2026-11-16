@@ -5,6 +5,7 @@ tags: [paper, materials, solar, peripheral]
 keywords: [perovskite, mobile-ions, photovoltaics, peripheral]
 related:
   - sweeps/2026-07-29-daily.md
+  - sources/arxiv-2607-06173-mobilewan-mobile-video-diffusion.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-29

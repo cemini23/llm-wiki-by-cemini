@@ -5,6 +5,7 @@ tags: [tool, abliteration, model-modification, local-lab, defensive-research, li
 keywords: [heretic, abliteration, refusal direction, weight modification, training-free, slop suppression]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md"
+  - sources/arxiv-2608-14392-tripwire-safety-neuron-clamp.md
 maturity: draft
 created: 2026-11-02
 updated: 2026-11-02

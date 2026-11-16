@@ -5,6 +5,8 @@ tags: [paper, peripheral, medical, ultrasound]
 keywords: [2608.06321]
 related:
   - sweeps/2026-08-07-daily.md
+  - sources/arxiv-2608-06056-monte-carlo-bosonic.md
+  - sources/arxiv-2608-13069-behavioral-reprogramming-routed.md
 maturity: draft
 read_status: read
 created: 2026-08-07

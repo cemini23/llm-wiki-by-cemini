@@ -31,7 +31,7 @@ Entity stub from 2026-06-10 ingest — TIDE unified video edit/gen model on LTX-
 
 **TIDE** — 14B DiT finetune on LTX-2.3 with per-token task embeddings + dual-path (Gemma-3 + VAE) conditioning. One checkpoint for instruction edit, reference edit, multi-reference generation.
 
-**Status:** research / adoption candidate. Project page: https://LittleWork123.github.io/tide `[NEEDS VERIFICATION 2026-06-10]` on weights, license, NSFW posture, ComfyUI nodes.
+**Status:** research / adoption candidate. Project page: https://LittleWork123.github.io/tide `[NEEDS VERIFICATION 2026-11-16]` on weights, license, NSFW posture, ComfyUI nodes.
 
 → @concepts/task-isolated-unified-video-editing.md for mechanism detail.
 

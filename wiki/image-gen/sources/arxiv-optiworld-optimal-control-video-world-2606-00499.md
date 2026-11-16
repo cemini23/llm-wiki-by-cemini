@@ -55,4 +55,4 @@ Complements **Proprio** (post-hoc physics scoring/refinement) and **YoCausal** (
 
 ## Dead Ends
 
-None — local stack fit depends on released code and which 3D-aware video backbones are supported `[NEEDS VERIFICATION 2026-06-02]`.
+None — local stack fit depends on released code and which 3D-aware video backbones are supported `[NEEDS VERIFICATION 2026-11-16]`.

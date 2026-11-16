@@ -5,6 +5,8 @@ tags: [paper, statistics, eeg, peripheral]
 keywords: [Bayesian, MCMC, EEG, feature-selection, peripheral]
 related:
   - sweeps/2026-07-28-daily.md
+  - sources/arxiv-2607-25351-voice-style-inverse-opt.md
+  - sources/arxiv-2607-20174-streamhoi.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-28

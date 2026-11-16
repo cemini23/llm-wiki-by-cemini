@@ -1,6 +1,7 @@
 ---
 title: K253 auditable MAS clinical stub (Sep 2026)
 type: concept
+maturity: stub
 tags: [agents, clinical, k253, audit]
 keywords: [DIASENTINEL, auditable, guideline-grounded]
 related:

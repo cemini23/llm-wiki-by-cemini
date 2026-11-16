@@ -61,7 +61,7 @@ def detect_insider_activity(
 - **3.0 sigma drop**: chosen by the source operator; no published backtest cited
 - **12-period window**: rule-of-thumb size, balances sensitivity (small window → noisy) vs latency (large window → late detection)
 
-Both are **[NEEDS VERIFICATION 2026-05-13]** — heuristics, not validated parameters.
+Both are **[OPEN QUESTION 2026-05-13]** — heuristics, not validated parameters.
 
 ### The critical caveat — news cross-reference
 

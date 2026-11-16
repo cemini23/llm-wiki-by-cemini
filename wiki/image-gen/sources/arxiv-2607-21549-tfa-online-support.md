@@ -5,6 +5,8 @@ tags: [paper, hci, safety, peripheral]
 keywords: [TFA, technology-facilitated-abuse, help-seeking, HCI]
 related:
   - sweeps/2026-07-25-daily.md
+  - sources/arxiv-2607-20288-nonlocal-spectral-math.md
+  - sources/arxiv-2607-18789-moving-alphabet-t2v-data.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-25

@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - concepts/agentic-robotics-harness.md
+  - sources/arxiv-state-injection-multi-agent-manufacturing-2610.01364.md
 ---
 
 ## Raw Concept

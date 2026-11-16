@@ -5,6 +5,7 @@ tags: [source, newsletter-rss, inbox-auto, tldrsec]
 keywords: [rss, newsletter, tldrsec]
 related:
   - sources/newsletter-rss-tldrsec-2026-07-09-tldr-sec-336.md
+  - @cybersecurity-wiki/sources/newsletter-rss-tldrsec-2026-07-02-tldr-sec-335---prompt-injection-as-role-confusio.md
 maturity: draft
 created: 2026-07-05
 updated: 2026-10-25

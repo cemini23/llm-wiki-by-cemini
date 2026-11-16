@@ -5,6 +5,8 @@ tags: [source, rss, k170]
 keywords: [k170]
 related:
   - concepts/wiki-tooling-evaluation.md
+  - sources/substack-rss-klement-2026-09-17-malacca-2026-09-17.md
+  - sources/substack-rss-klement-2026-08-25-knowledge-experience.md
 maturity: draft
 read_status: read
 created: 2026-07-16

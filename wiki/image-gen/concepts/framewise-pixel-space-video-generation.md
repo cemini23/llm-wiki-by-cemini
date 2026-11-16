@@ -1,6 +1,7 @@
 ---
 title: Frame-wise pixel-space video generation — lift the latent model, drop the VAE
 type: concept
+maturity: validated
 tags: [concept, video-generation, pixel-space, vae-free, high-resolution, latency, editing]
 keywords: [PixVid, detailer head, x-prediction, noise shift, Euler sampler, patch embedding init, per-frame tokens, control-to-screen latency]
 related:
@@ -10,6 +11,7 @@ related:
   - concepts/streaming-video-generation-serving.md
   - concepts/bidirectional-autoregressive-video-generation.md
   - entities/models/wan-2-2.md
+  - sources/arxiv-2610.40647-read-allocate-route-role-coupled-tokenization-fo-2026-11-01.md
 updated: 2026-11-14
 ---
 

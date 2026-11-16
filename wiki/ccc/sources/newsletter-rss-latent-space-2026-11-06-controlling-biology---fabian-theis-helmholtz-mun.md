@@ -1,6 +1,7 @@
 ---
 title: "Latent Space — Controlling Biology with Fabian Theis"
 type: source
+maturity: draft
 related:
   - concepts/baseline-and-metric-calibration.md
   - concepts/auto-researcher-human-similarity.md

@@ -8,6 +8,7 @@ related:
   - entities/models/flux.md
   - entities/models/wan-2-2.md
   - sweeps/2026-08-04-daily.md
+  - sources/arxiv-2607-06281-straight-path-flow-matching-imvc.md
 maturity: draft
 read_status: read
 created: 2026-08-04

@@ -1,6 +1,7 @@
 ---
 title: "Metal Sandbox — isolated execution and command scheduling for GPU coding agents on Apple Silicon"
 type: source
+maturity: draft
 related:
   - concepts/command-level-gpu-sandbox-scheduling.md
   - entities/tools/metal-sandbox.md

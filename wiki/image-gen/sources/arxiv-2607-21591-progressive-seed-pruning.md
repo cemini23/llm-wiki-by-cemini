@@ -8,6 +8,7 @@ related:
   - concepts/budget-aware-diffusion-caching.md
   - concepts/ditango-parallel-diffusion-attention.md
   - sweeps/2026-07-24-daily.md
+  - sources/arxiv-2607-15643-penalty-scaling-nipg-shallow-water.md
 maturity: draft
 read_status: read
 created: 2026-07-24

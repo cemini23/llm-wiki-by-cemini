@@ -9,6 +9,7 @@ related:
   - concepts/one-step-autoregressive-video-distillation.md
   - concepts/input-stable-sparse-attention-video.md
   - sweeps/2026-07-09-daily.md
+  - sources/arxiv-2607-25951-perovskite-ions.md
 maturity: draft
 read_status: read
 created: 2026-07-09

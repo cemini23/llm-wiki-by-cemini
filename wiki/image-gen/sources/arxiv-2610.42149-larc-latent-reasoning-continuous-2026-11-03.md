@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - concepts/understanding-generation-gap.md
+  - concepts/holistic-visual-tokenizer-umm.md
 ---
 
 ## Raw Concept

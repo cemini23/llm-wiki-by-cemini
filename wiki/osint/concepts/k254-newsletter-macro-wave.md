@@ -1,6 +1,7 @@
 ---
 title: K254 Newsletter Macro Wave (Sep 2026)
 type: concept
+maturity: stub
 tags: [macro, newsletter, k254, guruwatcher]
 keywords: [Klement, Wu, bond-market, bitcoin]
 related:

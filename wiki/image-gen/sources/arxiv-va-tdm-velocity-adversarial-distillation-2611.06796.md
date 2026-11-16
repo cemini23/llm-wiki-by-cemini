@@ -1,6 +1,7 @@
 ---
 title: "VA-TDM — velocity adversarial distillation for few-step diffusion and video (arXiv:2611.06796)"
 type: source
+maturity: validated
 tags: [source, arxiv, distillation, few-step, t2i, t2v, flux, minimax]
 keywords: [VA-TDM, VAD, velocity adversarial distillation, trajectory distribution matching, TDM, few-step, 4-NFE, MiniMax-H3, FLUX.2 Klein, SD3.5, GenEval]
 related:
@@ -8,6 +9,7 @@ related:
   - concepts/adversarial-distribution-matching-distillation.md
   - concepts/score-gradient-matching-video-distillation.md
   - entities/models/flux-2-klein.md
+  - sources/arxiv-2611.14387-b3-overlapping-block-diffusion-2026-11-11.md
 read_status: read
 created: 2026-11-10
 updated: 2026-11-10
@@ -65,4 +67,4 @@ VA-TDM then runs both forms along the student trajectory, with a shared auxiliar
 
 ## Dead Ends
 
-- **Checking the weights.** No Hugging Face or GitHub release was verified. Code is cited as `Luo-Yihong/VA-TDM` [NEEDS VERIFICATION 2026-11-10].
+- **Checking the weights.** No Hugging Face or GitHub release was verified. Code is cited as `Luo-Yihong/VA-TDM` [NEEDS VERIFICATION 2026-11-16].

@@ -1,6 +1,7 @@
 ---
 title: "Frontier model release cadence — read the eval, not the launch post"
 type: concept
+maturity: draft
 related:
   - sources/newsletter-rss-latent-space-2026-11-06-ainews-inkling-2-small-17a-594b-trained-in-68-ho.md
   - sources/newsletter-rss-latent-space-2026-11-07-ainews-anthropic-ipo-whither-now.md

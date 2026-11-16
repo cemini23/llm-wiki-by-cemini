@@ -5,6 +5,7 @@ tags: [arxiv, diffusion, theory, sample-complexity]
 keywords: [finite-sample guarantee, discretisation, KL divergence, total variation, score evaluation]
 related:
   - concepts/k291-image-gen-wave.md
+  - sources/arxiv-2610.40618-an-ode-based-sampler-for-discrete-diffusion-mode-2026-11-01.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-14

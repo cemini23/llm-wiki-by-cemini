@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - concepts/agent-skill-injection.md
+  - entities/tools/defenseclaw.md
 ---
 
 ## Raw Concept

@@ -1,9 +1,11 @@
 ---
 title: "Outlier Weekly — fifty years of cards, ten days of ledger"
 type: source
+maturity: draft
 related:
   - concepts/card-comps-and-grading-option-value.md
   - concepts/osint-inbox-wave-2026-11-14.md
+  - sources/substack-rss-outlier-weekly-2026-11-02-twenty-years-of-cost-one-year-of-revenue.md
 updated: 2026-11-14
 ---
 

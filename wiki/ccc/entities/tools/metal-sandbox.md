@@ -1,6 +1,7 @@
 ---
 title: Metal Sandbox — isolated execution and command scheduling for Mac GPU agents
 type: entity
+maturity: draft
 related:
   - sources/arxiv-metal-sandbox-gpu-coding-agents-apple-silicon-2611.17294.md
   - concepts/command-level-gpu-sandbox-scheduling.md
@@ -19,7 +20,7 @@ What prompted this page: the 2026-11-14 ingest of Metal Sandbox (2611.17294). Th
 |-------|-------|
 | Repository | `github.com/WangHaoZhe/metal-sandbox` |
 | Harbor fork | `github.com/WangHaoZhe/harbor` |
-| License | unknown [NEEDS VERIFICATION 2026-11-14] |
+| License | unknown [NEEDS VERIFICATION 2026-11-16] |
 | Hardware tested | four Mac mini M4 nodes, 32 GiB each |
 | Status in this wiki | awareness; no Phase-0 audit |
 

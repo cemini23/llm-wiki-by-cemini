@@ -1,11 +1,14 @@
 ---
 title: "Rough instantaneous squared VIX (RISVIX) — term structure and VIX option pricing"
 type: source
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - concepts/vix-term-structure-fractional-memory.md
   - concepts/vix-first-joint-spx-vix-calibration.md
   - concepts/xsp-vol-regime-gates.md
+  - sources/arxiv-2610.36392-the-term-structure-of-implied-fee-rates-in-liqui-2026-11-01.md
+  - sources/arxiv-2611.00958-crypto-option-repair-risk-2026-11-03.md
 updated: 2026-11-10
 ---
 

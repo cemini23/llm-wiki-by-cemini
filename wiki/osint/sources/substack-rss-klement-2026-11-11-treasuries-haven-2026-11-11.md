@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md
+  - sources/substack-rss-klement-2026-10-13-ai-productivity-lower-debt.md
 ---
 
 ## Raw Concept

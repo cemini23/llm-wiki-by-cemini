@@ -23,6 +23,7 @@ related:
   - entities/tools/hexstrike-ai.md
   - entities/tools/cai-framework.md
   - entities/tools/pentestgpt.md
+  - sources/arxiv-2611.04086-affordance-delegated-scope-2026-11-05.md
 maturity: draft
 created: 2026-08-02
 updated: 2026-10-09

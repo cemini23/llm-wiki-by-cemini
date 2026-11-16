@@ -8,6 +8,8 @@ related:
   - sources/substack-rss-capital-flows-2026-08-18-next-stage-macro.md
   - sources/newsletter-rss-latent-space-2026-08-19-memory-prices.md
   - sources/substack-rss-klement-2026-08-26-higher-deficits-inflation.md
+  - sources/substack-rss-capital-flows-2026-10-31-equity-selling-pressure.md
+  - sources/substack-rss-capital-flows-2026-11-11-inflation-cycle-2026-11-11.md
 maturity: draft
 created: 2026-08-19
 updated: 2026-10-25

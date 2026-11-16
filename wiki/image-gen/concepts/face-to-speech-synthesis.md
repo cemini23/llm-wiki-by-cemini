@@ -9,6 +9,7 @@ related:
   - entities/persona-ops/fish-speech.md
   - sweeps/2026-07-31-daily.md
   - entities/voice-models/kokoro.md
+  - sources/arxiv-2611.03597-structured-visual-landscape-2026-11-03.md
 maturity: draft
 created: 2026-07-31
 updated: 2026-07-31

@@ -9,6 +9,10 @@ related:
   - concepts/overclaiming-propensity-agent-measurement.md
   - concepts/trajectory-error-lifecycle-attribution.md
   - briefs/2026-10-09_ccc-k441-k444-sip-ready.md
+  - sources/arxiv-2610.32725-ontology-guided-knowledge-graph-construction-fro-2026-10-27.md
+  - sources/arxiv-2610.35864-vibevideobench-evaluating-multimodal-agents-on-c-2026-10-27.md
+  - sources/arxiv-2610.40488-rtaste-do-research-agents-have-taste-evaluating-2026-11-01.md
+  - sources/arxiv-2610.41717-instrument-centered-ai-agents-2026-11-03.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-09

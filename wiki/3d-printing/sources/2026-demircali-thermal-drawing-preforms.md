@@ -6,6 +6,7 @@ keywords: [thermal drawing, preform, Imperial College, Hamlyn, multi-material fi
 related:
   - concepts/fdm-research-tools.md
   - concepts/fdm-printing.md
+  - sources/arxiv-2611.02850-self-aligning-printed-structures-optical-fibers-2026-11-03.md
 maturity: draft
 created: 2026-06-01
 updated: 2026-06-01

@@ -5,6 +5,7 @@ tags: [paper, photonics, peripheral]
 keywords: [metasurfaces, silicon-photonics]
 related:
   - sweeps/2026-07-24-daily.md
+  - concepts/federated-daily-research-digest.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-24

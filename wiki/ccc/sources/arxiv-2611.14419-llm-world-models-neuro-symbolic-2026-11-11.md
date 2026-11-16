@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - concepts/active-abstraction-programmatic-world-models.md
+  - sources/arxiv-tycho-active-abstraction-world-models-2607.28287.md
 ---
 
 ## Raw Concept

@@ -1,6 +1,7 @@
 ---
 title: "SecPro #249 — building an AI-ready SOC, part II (architecture)"
 type: source
+maturity: draft
 tags: [cyber, soc, rag, agents, k249]
 keywords: [AI-ready-SOC, six-layer, RAG, gather-not-decide, SAIF, ATLAS]
 related:

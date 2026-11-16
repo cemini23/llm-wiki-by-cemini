@@ -10,7 +10,7 @@ maturity: draft
 created: 2026-08-28
 updated: 2026-08-28
 harness_verb: FILE
-wire_note: license unknown in docx — [NEEDS VERIFICATION 2026-08-28]
+wire_note: license unknown in docx — [NEEDS VERIFICATION 2026-11-16]
 ---
 
 ## Relations
@@ -25,7 +25,7 @@ K248 eval Watch. License unknown in evaluation docx.
 ## Narrative
 
 - **URL:** https://github.com/segfault42/heliosgen
-- **License:** unknown in docx — **[NEEDS VERIFICATION 2026-08-28]** via `gh api` before any clone
+- **License:** unknown in docx — **[NEEDS VERIFICATION 2026-11-16]** via `gh api` before any clone
 - **Pattern:** generative tooling; Watch only until SPDX confirmed.
 - **Guardrails:** no clone under unknown license; no Integrate GO.
 - **Verdict:** Watch / draft.

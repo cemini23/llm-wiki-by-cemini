@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/substack-rss-klement-2026-10-13-ai-productivity-lower-debt.md
+  - sources/substack-rss-klement-2026-09-18-homework-2026-09-18.md
 ---
 
 ## Raw Concept

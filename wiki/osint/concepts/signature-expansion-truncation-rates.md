@@ -1,6 +1,7 @@
 ---
 title: Signature expansion truncation and discretisation rates — what the error bounds buy you
 type: concept
+maturity: draft
 related:
   - sources/arxiv-convergence-rates-truncated-discretised-signature-expansions-2611.16087.md
   - concepts/options-derivatives.md

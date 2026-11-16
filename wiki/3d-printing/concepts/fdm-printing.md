@@ -95,6 +95,8 @@ related:
   - sources/2026-zhong-pneutac-mpm-gaussian-tactile.md
   - concepts/precision-optomechanics-am.md
   - concepts/agent-skill-libraries-mechanical-engineering.md
+  - sources/arxiv-2610.34903-inverse-origami-inspired-by-insect-morphogenesis-2026-10-27.md
+  - sources/arxiv-2610.39046-a-3d-measurement-workflow-for-assessing-replicat-2026-11-01.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-11-10

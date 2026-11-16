@@ -34,7 +34,7 @@ Entity from 2026-06-15 ingest — AnchorEdit (arXiv:2606.11751). Code: https://g
 | VRAM | ≥40 GB stated in README |
 | Phase-0 | **CONDITIONAL-GO** — see `briefs/2026-06-15_phase-0-budcache-anchoredit.md` |
 
-**Status:** Training code released 2026-06-11; pretrained AnchorEdit checkpoints `[NEEDS VERIFICATION 2026-06-15]`. Not laptop build-track.
+**Status:** Training code released 2026-06-11; pretrained AnchorEdit checkpoints `[NEEDS VERIFICATION 2026-11-16]`. Not laptop build-track.
 
 ## Snippets
 

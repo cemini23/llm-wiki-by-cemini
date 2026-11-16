@@ -6,6 +6,7 @@ keywords: [embodiedrsi, hypothesis-graph, value-of-information, code-skill-co-ev
 related:
   - concepts/k285-arxiv-wave.md
   - concepts/agent-harness-verification-bottleneck.md
+  - sources/arxiv-2610.35762-the-evolution-and-chineseness-of-urban-screens-i-2026-10-27.md
 maturity: draft
 created: 2026-10-08
 updated: 2026-10-08

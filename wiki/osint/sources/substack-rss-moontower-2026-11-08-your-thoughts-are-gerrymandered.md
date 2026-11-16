@@ -1,6 +1,7 @@
 ---
 title: "Moontower Meta — your thoughts are gerrymandered"
 type: source
+maturity: draft
 related:
   - concepts/k296-feeds-wave.md
   - concepts/tracking-error-dispersion-active-management.md

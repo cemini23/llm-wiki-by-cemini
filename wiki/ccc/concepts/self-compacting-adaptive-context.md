@@ -16,6 +16,7 @@ related:
   - concepts/backbone-internal-tool-output-pruning.md
   - concepts/agentic-context-management-lifecycle.md
   - sources/arxiv-agentic-context-management-2607.21503.md
+  - entities/tools/coolify.md
 maturity: draft
 created: 2026-06-24
 updated: 2026-07-24

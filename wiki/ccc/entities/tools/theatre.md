@@ -5,6 +5,7 @@ tags: [tool, animation, javascript, licence-split, game-time]
 keywords: [theatre js, keyframe, studio, core, apache-2.0, agpl, timeline, dom animation]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md"
+  - concepts/phase1-adopt-wire.md
 maturity: draft
 created: 2026-11-03
 updated: 2026-11-03

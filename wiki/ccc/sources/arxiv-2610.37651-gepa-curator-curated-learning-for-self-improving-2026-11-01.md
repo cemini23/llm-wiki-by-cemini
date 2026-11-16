@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-skill-misevolution-2608.12851.md
+  - sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
 ---
 
 ## Raw Concept

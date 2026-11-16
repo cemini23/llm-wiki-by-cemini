@@ -9,6 +9,7 @@ related:
   - concepts/concept2scenario-refusal-suppression.md
   - concepts/mcp-security-posture.md
   - concepts/agent-skill-injection.md
+  - sources/arxiv-2610.37430-when-visual-evidence-is-insufficient-how-instruc-2026-11-01.md
 maturity: draft
 read_status: read
 created: 2026-08-13

@@ -1,6 +1,7 @@
 ---
 title: "Prefix-cache collapse: a burst can trap an agent-serving pool"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-prefix-cache-collapse-renewal-law-2611.08902.md
 updated: 2026-11-10

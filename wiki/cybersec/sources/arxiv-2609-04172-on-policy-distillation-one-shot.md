@@ -10,6 +10,9 @@ created: 2026-09-11
 updated: 2026-09-11
 phase_0_verdict: "OOD 2026-09-11 — ML training methodology — one-shot OPD recovers most full-data gains; route to OSINT/ML wiki if deep-read needed."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2608-15578-arena-audio-lalm-redteam.md
+  - sources/arxiv-bmms-policy-conditioned-behavioral-compliance-2611.09147.md
 ---
 
 ## Relations

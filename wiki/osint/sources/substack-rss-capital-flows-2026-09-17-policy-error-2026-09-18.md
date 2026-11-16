@@ -7,6 +7,7 @@ related:
   - concepts/k264-newsletter-macro-wave.md
   - concepts/k264-xsp-atm-wave.md
   - concepts/guruwatcher-macro-watches.md
+  - sources/substack-rss-capital-flows-2026-10-29-the-feds-looming-policy-error.md
 maturity: draft
 created: 2026-09-18
 updated: 2026-09-18

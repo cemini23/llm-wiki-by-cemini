@@ -8,6 +8,7 @@ related:
   - concepts/persona-consistency-methods.md
   - entities/uis/comfyui.md
   - sweeps/2026-07-21-daily.md
+  - sources/arxiv-2607-26678-quantum-brownian.md
 maturity: draft
 read_status: read
 created: 2026-07-21

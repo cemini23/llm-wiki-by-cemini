@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/arxiv-2611.17336-pixvid-pixel-space-video.md
+  - sources/arxiv-va-tdm-velocity-adversarial-distillation-2611.06796.md
 ---
 
 ## Raw Concept

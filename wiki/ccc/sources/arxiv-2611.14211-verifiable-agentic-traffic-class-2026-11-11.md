@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/arxiv-auto-researchers-reconstruct-human-2611.12429.md
+  - sources/arxiv-say-shibboleth-fingerprinting-2611.12386.md
 ---
 
 ## Raw Concept

@@ -39,7 +39,7 @@ Crypto researchers, DeFi analysts, content creators, developers building market 
 
 **REFERENCE / laptop tooling** — useful for OSINT crypto-entity research sessions. Prod trading stack uses Cemini EMS + audited connectors; do not wire DexScreener MCP into prod execution path without Phase-0 + security review.
 
-License of specific MCP repo: **[NEEDS VERIFICATION 2026-06-08]** — verify via `gh api` before any install (ingest gate).
+License of specific MCP repo: **[NEEDS VERIFICATION 2026-11-16]** — verify via `gh api` before any install (ingest gate).
 
 ## Snippets
 

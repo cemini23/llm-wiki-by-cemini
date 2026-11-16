@@ -5,6 +5,7 @@ tags: [paper, peripheral, robotics,embedded]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-05-daily.md
+  - concepts/federated-daily-research-digest.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-05

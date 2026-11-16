@@ -21,7 +21,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `github.com/Liquid4All/cookbook`
 - **Tier (per source brief)**: **Reference-only**
-- **License**: [NEEDS VERIFICATION 2026-05-11] **License not located — hard blocker for code lift into IP-sale-ready env.**
+- **License**: [NEEDS VERIFICATION 2026-11-16] **License not located — hard blocker for code lift into IP-sale-ready env.**
 
 ## Narrative
 

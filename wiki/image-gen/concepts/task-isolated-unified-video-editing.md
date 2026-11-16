@@ -66,4 +66,4 @@ Built on **LTX-2.3** 14B DiT + frozen Gemma-3-12B-IT.
 
 ## Dead Ends
 
-1280×704 training res — persona 9:16 vertical may need crop workflow. License/weights `[NEEDS VERIFICATION 2026-06-10]`.
+1280×704 training res — persona 9:16 vertical may need crop workflow. License/weights `[NEEDS VERIFICATION 2026-11-16]`.

@@ -21,6 +21,7 @@ related:
   - sources/brief-k116-orchrm-harnessx-llm-as-code-prod-2026-06-16.md
   - concepts/active-abstraction-programmatic-world-models.md
   - sources/arxiv-tycho-active-abstraction-world-models-2607.28287.md
+  - sources/arxiv-2610.40239-engineering-process-plants-as-code-in-the-age-of-2026-11-01.md
 maturity: draft
 created: 2026-06-16
 updated: 2026-07-31

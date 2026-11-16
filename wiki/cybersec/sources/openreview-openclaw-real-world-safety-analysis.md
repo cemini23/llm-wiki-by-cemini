@@ -16,6 +16,7 @@ related:
   - sources/arxiv-2606-21071-clawaudit-local-agent-runtime-audit.md
   - concepts/local-agent-runtime-audit.md
   - entities/tools/clawaudit.md
+  - sources/arxiv-2610.40516-how-i-aligned-your-model-scaling-up-multilingual-2026-11-01.md
 maturity: draft
 read_status: unread-stub
 created: 2026-06-20

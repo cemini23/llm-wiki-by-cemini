@@ -51,7 +51,7 @@ Notably strong on **Position 0.75** — beats SD3 (0.34), FLUX.1-Dev (0.22), DAL
 
 ### Workspace relevance
 
-- Janus-Pro is not yet in `notes/models-catalog.md`. [NEEDS VERIFICATION 2026-05-06] whether weights are open, whether it runs in standard local UIs (ComfyUI / Forge), what the VRAM tier is, and what its NSFW alignment profile looks like.
+- Janus-Pro is not yet in `notes/models-catalog.md`. [NEEDS VERIFICATION 2026-11-16] whether weights are open, whether it runs in standard local UIs (ComfyUI / Forge), what the VRAM tier is, and what its NSFW alignment profile looks like.
 - For persona / character ops: the strong Position score is interesting — spatial relationship faithfulness is exactly what gets violated in multi-character scenes. If Janus-Pro is locally runnable and reasonably uncensored, it deserves direct testing against Pony V7 / Z-Image Turbo / FLUX-class models on multi-subject prompts.
 
 ### Where it sits relative to peers

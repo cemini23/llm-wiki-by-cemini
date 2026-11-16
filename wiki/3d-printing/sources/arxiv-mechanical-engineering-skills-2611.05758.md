@@ -6,6 +6,7 @@ related:
   - concepts/agent-skill-libraries-mechanical-engineering.md
   - concepts/self-improving-cad-generation-agents.md
   - concepts/extrusion-control.md
+  - sources/arxiv-2610.38948-open-source-framework-for-the-visualization-quan-2026-11-01.md
 maturity: draft
 read_status: read
 updated: 2026-11-10

@@ -1,6 +1,7 @@
 ---
 title: Bandit LLM routing for heuristic search — BALLAD and the multi-model cost question
 type: concept
+maturity: draft
 related:
   - sources/arxiv-ballad-bandit-llm-routing-heuristic-discovery-2611.17241.md
   - concepts/llm-routing-deepseek-openrouter-failover.md

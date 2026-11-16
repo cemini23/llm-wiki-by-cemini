@@ -8,6 +8,7 @@ related:
   - concepts/tripwire-safety-neuron-clamp.md
   - concepts/concept2scenario-refusal-suppression.md
   - concepts/llm-pentest-automation.md
+  - entities/tools/heretic.md
 maturity: draft
 read_status: read
 created: 2026-08-18

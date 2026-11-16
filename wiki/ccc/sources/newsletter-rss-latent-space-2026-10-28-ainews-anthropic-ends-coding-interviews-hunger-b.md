@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
+  - sources/newsletter-rss-latent-space-2026-11-07-ainews-anthropic-ipo-whither-now.md
 ---
 
 ## Raw Concept

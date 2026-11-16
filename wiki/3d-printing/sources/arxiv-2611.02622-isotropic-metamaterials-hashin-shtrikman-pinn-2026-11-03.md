@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/2025-looey-physics-informed-extrusion-dynamical.md
+  - sources/2023-waheed-acoustic-cnn-fault-detection.md
 ---
 
 ## Raw Concept

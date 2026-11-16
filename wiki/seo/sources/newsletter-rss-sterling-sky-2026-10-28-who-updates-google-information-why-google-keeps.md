@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - concepts/google-business-profile.md
+  - entities/platforms/google-business-profile.md
 ---
 
 ## Raw Concept

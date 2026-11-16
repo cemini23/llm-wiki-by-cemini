@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-2608.13463-mllm-ensembles-2026-08-14.md
+  - sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md
 ---
 
 ## Raw Concept

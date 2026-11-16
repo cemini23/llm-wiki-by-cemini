@@ -48,7 +48,7 @@ A tradeable **government single-buyer asset re-rating** needs all four:
 |------|--------|-----------------|------------------|-------------------|-------|
 | **A — direct analog** | Modular / gov housing | **Target Hospitality (TH)** | ICE / HHS / DHS | Family-residential + workforce housing contracts; land + modular assets | Closest operational cousin to CXW/GEO (Dilley/Pecos lineage) `[TENTATIVE]` |
 | **A** | Private detention (2nd leg) | **GEO Group (GEO)** | ICE / USMS / BOP | Turnkey facility sale ~$300k/bed; electronic monitoring (BI Inc / ISAP) | Already the pending second leg — @entities/companies/geo-group.md |
-| **B — strong cross-sector** | Rare earths / critical minerals | **MP Materials (MP)**, **USA Rare Earth (USAR)**, **Perpetua (PPTA)**, **Lithium Americas (LAC)** | DoD / DOE | Price floor + offtake + **equity stake**; DPA Title III; DOE loan | Govt-as-backstop revalues single-asset miners `[NEEDS VERIFICATION 2026-07-07]` |
+| **B — strong cross-sector** | Rare earths / critical minerals | **MP Materials (MP)**, **USA Rare Earth (USAR)**, **Perpetua (PPTA)**, **Lithium Americas (LAC)** | DoD / DOE | Price floor + offtake + **equity stake**; DPA Title III; DOE loan | Govt-as-backstop revalues single-asset miners `[NEEDS VERIFICATION 2026-11-16]` |
 | **B** | Nuclear fuel / uranium | **Centrus (LEU)**, **Cameco (CCJ)** | DOE | HALEU/LEU enrichment offtake; strategic reserve buys | Single-buyer enrichment contracts `[OPEN QUESTION 2026-07-07]` |
 | **B** | Defense / border-surveillance data | **Palantir (PLTR)**, **Leidos (LDOS)**, **V2X (VVX)** | DHS/CBP/DoD | ImmigrationOS / surveillance / logistics awards | Software multiple, not hard-asset — @entities/tickers/pltr.md |
 | **C — watch / counter-case** | Government-tenant REITs | **Easterly Gov Properties (DEA)**, **Postal Realty (PSTL)** | GSA / USPS | Gov buys leased buildings → asset re-rate | **Counter-risk:** DOGE lease terminations cut the other way `[TENTATIVE]` |
@@ -92,7 +92,7 @@ Three independent failure modes — a case study in why deed monitors are weak a
 ### Open questions to resolve via Exa
 
 - Does **Target Hospitality** own (vs lease) the land under its ICE/HHS sites? (determines whether a turnkey-sale re-rate is even possible) `[OPEN QUESTION 2026-07-07]`
-- Real, dated instances of **DoD/DOE equity stakes or price floors** revaluing MP/USAR/PPTA/LEU in 2025–2026, and the announcement-day reaction (sell-the-news or sustained?) `[NEEDS VERIFICATION 2026-07-07]`
+- Real, dated instances of **DoD/DOE equity stakes or price floors** revaluing MP/USAR/PPTA/LEU in 2025–2026, and the announcement-day reaction (sell-the-news or sustained?) `[NEEDS VERIFICATION 2026-11-16]`
 - Whether **DEA/PSTL** gov-tenant REITs have any precedent of the government *buying* leased buildings (vs terminating leases). `[OPEN QUESTION 2026-07-07]`
 
 ## Dead Ends

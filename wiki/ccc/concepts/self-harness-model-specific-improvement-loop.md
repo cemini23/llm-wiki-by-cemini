@@ -22,6 +22,7 @@ related:
   - sources/arxiv-next-gen-agentic-rl-self-evolving-2607.01120.md
   - concepts/modular-instruction-memory-learnable-selection.md
   - concepts/bounded-self-refinement-vs-rsi-taxonomy.md
+  - sources/arxiv-2611.03434-optimize-the-harness-not-the-model-cleo-2026-11-03.md
 maturity: draft
 created: 2026-06-11
 updated: 2026-07-14

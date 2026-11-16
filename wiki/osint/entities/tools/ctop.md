@@ -23,7 +23,7 @@ laptop_install: VERIFIED (2026-05-10)
 CTOP is a TUI process monitor specifically for AI coding agent sessions (Claude Code, Codex CLI). Tracks CPU, RAM, uptime, and real-time token utilization across input/output/cache-creation/cache-read against the 200k context window.
 
 - **Repo**: `github.com/aakashadesara/ctop`
-- **License**: MIT [NEEDS VERIFICATION 2026-05-10]
+- **License**: MIT [NEEDS VERIFICATION 2026-11-16]
 - **Stack**: Pure Node.js, zero external dependencies
 - **Install**: `npm i -g ctop-claude` or Homebrew
 - **Footprint**: ~40-70 MB resident (V8 baseline overhead)

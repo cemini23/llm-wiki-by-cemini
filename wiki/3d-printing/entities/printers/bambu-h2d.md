@@ -48,7 +48,7 @@ Bambu Lab's **large-format, dual-nozzle, enclosed** printer — the top of its c
 | Camera | **BirdsEye** top-view camera (laser edition / upgrade kit); AI nozzle camera with macro lens | Bambu store |
 | Filaments | PLA, PETG, TPU, PVA, BVOH, ABS, ASA, PC, PA, PET, PPS, PPA + carbon/glass-fibre variants | Single-source: Source Graphics |
 | AMS | Two new AMS systems with **integrated filament drying** | Single-source: 3D Printing Industry |
-| Price | **~$1,549** (Bambu US store, Sept 2026); one reseller lists a $1,749 typical price | Conflicting — [NEEDS VERIFICATION 2026-09-30] |
+| Price | **~$1,549** (Bambu US store, Sept 2026); one reseller lists a $1,749 typical price | Conflicting — [NEEDS VERIFICATION 2026-11-16] |
 | Released | Apr 2025 | Single-source: BambuHub |
 
 ### Why the dual nozzle matters

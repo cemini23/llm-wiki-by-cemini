@@ -21,6 +21,7 @@ related:
   - "@osint-wiki/concepts/seclaw-agent-security-evaluation.md"
   - sources/arxiv-2606-13757-sevra-bench-social-engineering-review-agents.md
   - sources/openreview-openclaw-real-world-safety-analysis.md
+  - sources/arxiv-2610-02045-form-and-void-agent-ood.md
 maturity: draft
 read_status: read
 created: 2026-06-04

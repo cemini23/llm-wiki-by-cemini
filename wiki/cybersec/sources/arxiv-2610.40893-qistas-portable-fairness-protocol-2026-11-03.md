@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-2610-10455-phrbench-post-hallucination-reasoning.md
+  - sources/arxiv-2610-01580-pld-eap-teap-wifi-authentication.md
 ---
 
 ## Raw Concept

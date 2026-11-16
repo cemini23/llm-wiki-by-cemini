@@ -7,6 +7,7 @@ related:
   - concepts/options-derivatives.md
   - concepts/quant-finance.md
   - concepts/rl-marl-research.md
+  - sources/arxiv-2611.10956-risk-sensitive-rl-options-mm-2026-11-11.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-23

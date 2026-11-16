@@ -7,6 +7,8 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/arxiv-2611.03574-bisect-bilevel-spectral-lora-2026-11-03.md
 ---
 
 ## Raw Concept

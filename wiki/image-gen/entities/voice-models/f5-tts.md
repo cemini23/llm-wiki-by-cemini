@@ -38,10 +38,10 @@ Page prompted by the W4 Tier 2 voice/audio backfill (2026-05-13). Named in @conc
 
 ### Key facts (May 2026)
 
-- **License**: code typically MIT; **weights CC-BY-NC 4.0** [NEEDS VERIFICATION 2026-05-13] — inherits non-commercial restriction from Emilia dataset license; same license-split pattern as @entities/music-models/musicgen.md (research-only for build-track persona ops if confirmed)
+- **License**: code typically MIT; **weights CC-BY-NC 4.0** [NEEDS VERIFICATION 2026-11-16] — inherits non-commercial restriction from Emilia dataset license; same license-split pattern as @entities/music-models/musicgen.md (research-only for build-track persona ops if confirmed)
 - **Repo**: `github.com/SWivid/F5-TTS`
 - **Architecture**: DiT-style transformer + Conditional Flow Matching (non-autoregressive)
-- **Size**: ~336M parameters [NEEDS VERIFICATION 2026-05-13]
+- **Size**: ~336M parameters [NEEDS VERIFICATION 2026-11-16]
 - **Languages**: English primary; Chinese supported; broader multilingual limited [Source: @concepts/persona-audio-stack.md]
 - **Training data**: Emilia (100k+ hours, multilingual)
 - **Strength**: high English quality, fast parallel inference (no token-by-token autoregression)

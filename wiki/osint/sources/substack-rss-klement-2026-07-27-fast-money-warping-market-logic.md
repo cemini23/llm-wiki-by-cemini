@@ -6,6 +6,7 @@ keywords: [fast money, Reuters ROI, semiconductors]
 related:
   - concepts/macro-charts-regime-signals.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-klement-2026-11-05-china-decoupling-2026-11-05.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-27

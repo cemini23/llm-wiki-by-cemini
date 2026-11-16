@@ -5,6 +5,7 @@ tags: [tool, claude-code, codex, cost, context, microsoft]
 keywords: [tokeneconomizer, micro-skills, tool pruning, loop guard, swe-bench, harness]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md"
+  - concepts/phase1-adopt-wire.md
 maturity: draft
 created: 2026-11-02
 updated: 2026-11-02

@@ -9,6 +9,7 @@ related:
   - entities/models/sana-wm.md
   - entities/models/self-gradient-forcing.md
   - sweeps/2026-07-24-daily.md
+  - sources/arxiv-2607-28325-rotational-diffusion-macro.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-24

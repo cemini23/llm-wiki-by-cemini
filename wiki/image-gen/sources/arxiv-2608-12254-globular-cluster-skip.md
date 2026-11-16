@@ -6,6 +6,7 @@ keywords: [globular cluster, stellar stream, Andromeda, astronomy, astro-ph]
 related:
   - sweeps/2026-08-13-daily.md
   - concepts/federated-daily-research-digest.md
+  - sources/arxiv-2608-06283-sg-tula.md
 maturity: draft
 read_status: read
 created: 2026-08-13

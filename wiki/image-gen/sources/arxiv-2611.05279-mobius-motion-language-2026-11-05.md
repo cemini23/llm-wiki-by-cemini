@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - entities/sfx-models/audio-omni.md
+  - sources/unireasoner.md
 ---
 
 ## Raw Concept

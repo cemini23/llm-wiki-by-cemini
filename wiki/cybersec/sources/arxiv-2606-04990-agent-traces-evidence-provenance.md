@@ -23,6 +23,7 @@ related:
   - sources/arxiv-2606-09084-context-fractured-decomposition-attacks.md
   - sources/arxiv-2606-10749-toward-secure-llm-agents-survey.md
   - concepts/context-fractured-decomposition-attacks.md
+  - sources/substack-rss-secpro-2026-10-30-php2shell-packet-to-process.md
 maturity: draft
 read_status: read
 created: 2026-06-07

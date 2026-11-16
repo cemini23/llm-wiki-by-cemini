@@ -46,7 +46,7 @@ wire_status: extract_only
 
 The PII stack is a family of weights — `pii_superclinical_large`, and a "Privacy Filter" line with three variants (OpenAI Privacy Filter, a Nemotron-PII fine-tune, and an OpenMed Multilingual build), each in PyTorch, MLX, and MLX 8-bit. **Each of those carries its own terms.** The GPL-clearance argument holds for the code and must be re-checked per checkpoint before anything ships inside an Atto kit.
 
-**Language coverage — the open question for Atto.** There are **42 PII language codes, of which 35 are model-backed**. The list returned by the fetch named en, es, fr, de, pt, nl, ar, hi, ja, tr, zh, ta, bn, ru, sw — **Italian was not among them**. The workspace's actual PII classes are Italian civil-registry, citizenship, and genealogy records. Confirm that Italian is model-backed, and test it on real record text, before planning on it. `[NEEDS VERIFICATION 2026-11-02]`
+**Language coverage — the open question for Atto.** There are **42 PII language codes, of which 35 are model-backed**. The list returned by the fetch named en, es, fr, de, pt, nl, ar, hi, ja, tr, zh, ta, bn, ru, sw — **Italian was not among them**. The workspace's actual PII classes are Italian civil-registry, citizenship, and genealogy records. Confirm that Italian is model-backed, and test it on real record text, before planning on it. `[NEEDS VERIFICATION 2026-11-16]`
 
 **Performance.** MLX is claimed at **24–33× faster than CPU PyTorch** for the Privacy Filter. Repository is on **`master`**, not `main` — the `main` raw path 404s.
 

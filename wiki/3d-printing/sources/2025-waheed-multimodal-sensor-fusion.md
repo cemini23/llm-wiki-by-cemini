@@ -33,7 +33,7 @@ Extends the 2023 acoustic-CNN paper to multimodal sensor fusion. Two experimenta
 - **Acoustic Baseline** — stereo USB microphones; Google Teachable Machine for classifier; Raspberry Pi PCB for inference.
 - **Hybrid Fusion** — acoustic + vibration (ADXL335 accelerometer mounted on the gantry) + thermal (FLIR One Pro thermal camera).
 
-[TENTATIVE — important caveat] The accelerometer channel **did not yield significant results** in their test setup because the static-extrusion bench involved very little gantry motion (the failure modes tested are stationary blockages, not speed-transition errors). The paper's "fused outperforms single-modality" claim is therefore largely **expected** rather than **measured** — the authors project 90-95% fused accuracy from per-modality performance, but do not report end-to-end fused-classifier metrics on a held-out test set [NEEDS VERIFICATION 2026-05-06].
+[TENTATIVE — important caveat] The accelerometer channel **did not yield significant results** in their test setup because the static-extrusion bench involved very little gantry motion (the failure modes tested are stationary blockages, not speed-transition errors). The paper's "fused outperforms single-modality" claim is therefore largely **expected** rather than **measured** — the authors project 90-95% fused accuracy from per-modality performance, but do not report end-to-end fused-classifier metrics on a held-out test set [NEEDS VERIFICATION 2026-11-16].
 
 Acoustic-alone reaches results comparable to the 2023 paper. Thermal-camera distinguishes hot-end normal-vs-anomalous well in static testing.
 

@@ -9,6 +9,7 @@ related:
   - concepts/wireless-pentest.md
   - concepts/network-security.md
   - concepts/ai-for-cybersecurity.md
+  - sources/arxiv-2610.32079-label-budgeted-attribute-inference-from-protecte-2026-10-27.md
 maturity: draft
 read_status: read
 created: 2026-08-05

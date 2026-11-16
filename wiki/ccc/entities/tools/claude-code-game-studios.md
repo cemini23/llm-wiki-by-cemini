@@ -13,6 +13,7 @@ related:
   - concepts/cross-wiki-tool-eval-inventory.md
   - concepts/claude-code-software-factory.md
   - entities/tools/three-man-team.md
+  - entities/tools/cindy.md
 maturity: draft
 created: 2026-05-24
 updated: 2026-06-13

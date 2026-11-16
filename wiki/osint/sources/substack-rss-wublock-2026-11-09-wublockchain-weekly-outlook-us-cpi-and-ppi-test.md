@@ -1,6 +1,7 @@
 ---
 title: "WuBlockchain Weekly Outlook — US CPI and PPI, CoreWeave Q3"
 type: source
+maturity: draft
 related:
   - concepts/k296-feeds-wave.md
   - entities/companies/coreweave.md

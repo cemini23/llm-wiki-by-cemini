@@ -10,6 +10,9 @@ created: 2026-09-11
 updated: 2026-09-11
 phase_0_verdict: "OOD 2026-09-11 — Science benchmark integrity — verbatim retrieval vs prediction; eval hygiene steal, not cyber-primary."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2609-33628-climbing-hill-curriculum-prompt-injection-redteam.md
+  - sources/arxiv-2609-21996-lie-detector-probe-internal-recognition.md
 ---
 
 ## Relations

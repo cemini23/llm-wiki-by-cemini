@@ -24,7 +24,7 @@ updated: 2026-05-10
 Massive Claude-plugin ecosystem (115 commands, 67 MCP servers, 5-layer memory architecture) ostensibly for digital marketing. The v3.0 QA/evaluation layer is the actual asset: hallucination detection, claim verification, output validation, A+→F grading; `disable-model-invocation: true` enforces human-in-the-loop write gates.
 
 - **Repo**: `github.com/indranilbanerjee/digital-marketing-pro`
-- **License**: MIT [NEEDS VERIFICATION 2026-05-10]
+- **License**: MIT [NEEDS VERIFICATION 2026-11-16]
 - **Architecture**: 5-layer memory (session, RAG/vector, temporal KG, universal, file-based)
 - **External deps**: Salesforce, HubSpot, Pinecone, Qdrant, Graphiti
 

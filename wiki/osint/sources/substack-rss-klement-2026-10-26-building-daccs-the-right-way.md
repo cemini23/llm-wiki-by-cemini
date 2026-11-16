@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/substack-rss-klement-2026-09-18-homework-2026-09-18.md
+  - sources/substack-rss-klement-2026-09-17-malacca-2026-09-17.md
 ---
 
 ## Raw Concept

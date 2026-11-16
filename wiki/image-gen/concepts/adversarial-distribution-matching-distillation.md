@@ -12,6 +12,7 @@ related:
   - entities/models/wan-2-2.md
   - entities/models/longlive-plug.md
   - sweeps/2026-10-02-daily.md
+  - sources/arxiv-2610.42135-better-critic-distribution-matching-distillation-2026-11-03.md
 maturity: draft
 created: 2026-10-02
 updated: 2026-10-02

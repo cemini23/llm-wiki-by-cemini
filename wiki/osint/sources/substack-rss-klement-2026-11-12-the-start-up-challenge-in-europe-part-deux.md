@@ -1,6 +1,7 @@
 ---
 title: "Klement on Investing — the start-up challenge in Europe, part deux: cost of capital"
 type: source
+maturity: draft
 related:
   - concepts/european-startup-scaling-gap.md
   - concepts/osint-inbox-wave-2026-11-14.md
@@ -48,7 +49,7 @@ It extends @concepts/european-startup-scaling-gap.md from the supply side to the
 
 No Cemini lane trades European small caps. The note is macro context and a possible screen definition, not a position.
 
-[NEEDS VERIFICATION 2026-11-14] The Becker, Benmelech and Monteiro (2026) cost-of-capital figures are visible only as newsletter charts.
+[TENTATIVE] (tagged 2026-11-14) The Becker, Benmelech and Monteiro (2026) cost-of-capital figures are visible only as newsletter charts.
 
 ## Snippets
 

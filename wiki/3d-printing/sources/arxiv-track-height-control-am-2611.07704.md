@@ -5,6 +5,8 @@ related:
   - concepts/extrusion-control.md
   - concepts/industrial-am-monitoring.md
   - sources/arxiv-bulk-cmsx-4-single-crystal-lded-2611.16535.md
+  - sources/arxiv-2611.13800-additive-ceramic-optical-platforms-2026-11-11.md
+  - sources/arxiv-2611.13983-robotic-am-path-planning-2026-11-11.md
 maturity: draft
 read_status: read
 updated: 2026-11-14

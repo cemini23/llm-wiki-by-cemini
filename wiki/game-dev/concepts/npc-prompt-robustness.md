@@ -1,6 +1,7 @@
 ---
 title: NPC prompt robustness — selective robustness as an acceptance test
 type: concept
+maturity: validated
 related:
   - concepts/agentic-npc-design-guardrails.md
   - concepts/llm-npc-runtime-ai-shelf.md

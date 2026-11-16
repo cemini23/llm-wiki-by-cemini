@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-deep-hedging-delta-corrections-2605.21696.md
+  - sources/substack-rss-glitchspx-2026-11-06-the-93-million-put-dump-that-wasnt.md
 ---
 
 ## Raw Concept

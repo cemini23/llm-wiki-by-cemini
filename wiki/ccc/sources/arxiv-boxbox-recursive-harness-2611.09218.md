@@ -1,10 +1,12 @@
 ---
 title: "BOXBOX — recursive harness self-improvement with hot reload"
 type: source
+maturity: draft
 related:
   - concepts/recursive-harness-hot-reload.md
   - concepts/meta-harness-continual-improvement.md
   - concepts/benchmark-maintenance-debt.md
+  - sources/arxiv-2610.32813-harnessmm-recursive-self-improvement-for-harness-2026-10-27.md
 updated: 2026-11-10
 ---
 

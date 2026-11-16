@@ -1,6 +1,7 @@
 ---
 title: "AnalogLayoutWorld — 91.1% of attempts produce GDS, 21.3% pass acceptance"
 type: source
+maturity: draft
 related:
   - concepts/generation-verification-gap-agent-artifacts.md
   - entities/tools/analoglayoutworld.md

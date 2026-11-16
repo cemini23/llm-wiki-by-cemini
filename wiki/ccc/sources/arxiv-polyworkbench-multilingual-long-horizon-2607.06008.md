@@ -10,6 +10,7 @@ related:
   - concepts/recoverable-tool-reliability-hazards.md
   - sources/brief-k152-polyworkbench-multilingual-agent-eval-2026-07-10.md
   - concepts/gatekeeper-layered-agent-evaluation.md
+  - sources/arxiv-2611.05345-subconscious-speculative-reasoning-2026-11-05.md
 maturity: draft
 read_status: read
 created: 2026-07-10

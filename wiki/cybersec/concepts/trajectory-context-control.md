@@ -23,6 +23,8 @@ related:
   - concepts/internet-of-agentic-ai-ioai.md
   - concepts/blast-radius-reversible-context-eviction.md
   - sources/arxiv-2608-07440-blast-radius.md
+  - sources/arxiv-2610.40959-p-contextbench-personal-context-2026-11-03.md
+  - sources/arxiv-2611.04086-affordance-delegated-scope-2026-11-05.md
 maturity: draft
 created: 2026-06-15
 updated: 2026-10-09

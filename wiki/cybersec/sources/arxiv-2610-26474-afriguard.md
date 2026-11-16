@@ -3,6 +3,7 @@ title: "AfriGuard — safety and refusal across ten African languages"
 type: source
 related:
   - concepts/k293-cybersec-wave.md
+  - sources/arxiv-2610.39802-revisiting-over-refusal-in-safety-aligned-large-2026-11-01.md
 maturity: draft
 read_status: skimmed
 updated: 2026-10-20

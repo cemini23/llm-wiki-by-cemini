@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - entities/tools/nvidia-skillspector.md
+  - concepts/coding-agent-supply-chain-install-gap.md
 ---
 
 ## Raw Concept

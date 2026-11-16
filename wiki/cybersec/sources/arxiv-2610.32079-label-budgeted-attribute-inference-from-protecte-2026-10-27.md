@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-2608-02341-wifi-broadcast-rate-edge-moe.md
+  - sources/arxiv-2610-06848-transcope-hardware-membership-inference.md
 ---
 
 ## Raw Concept

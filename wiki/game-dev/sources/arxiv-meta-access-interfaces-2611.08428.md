@@ -1,6 +1,7 @@
 ---
 title: "The Power of Meta Access in the Software of the Future — demonstrated on LLM chat UIs"
 type: source
+maturity: draft
 related:
   - concepts/agent-harness-castle-project.md
   - concepts/agentic-npc-design-guardrails.md

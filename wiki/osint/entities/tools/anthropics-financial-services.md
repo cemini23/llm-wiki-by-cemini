@@ -42,6 +42,6 @@ This repository provides production-grade blueprints for financial reasoning age
 
 ### Open questions
 
-- Explicit dependency list in `requirements.txt` to confirm absence of transitive AGPL/SSPL libraries `[NEEDS VERIFICATION 2026-06-25]`
+- Explicit dependency list in `requirements.txt` to confirm absence of transitive AGPL/SSPL libraries `[NEEDS VERIFICATION 2026-11-16]`
 
 [Source: Project Link Evaluation Brief.docx, URL 4]

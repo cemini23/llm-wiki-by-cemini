@@ -7,6 +7,10 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - sources/arxiv-polyworkbench-multilingual-long-horizon-2607.06008.md
+  - sources/arxiv-agentrewind-recoverable-execution-2608.14380.md
+  - sources/arxiv-asymspec-speculative-decoding-2608.26004.md
 ---
 
 ## Raw Concept

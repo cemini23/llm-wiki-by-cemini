@@ -22,6 +22,7 @@ related:
   - sources/arxiv-aohp-os-level-agent-harness-2606.23449.md
   - sources/arxiv-xcientist-research-harness-claim-drift-2606.18874.md
   - concepts/model-harness-six-responsibilities.md
+  - sources/arxiv-2610.41350-operon-s1-decision-controller-2026-11-03.md
 maturity: draft
 created: 2026-06-01
 updated: 2026-06-24

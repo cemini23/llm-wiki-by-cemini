@@ -17,6 +17,7 @@ related:
   - concepts/google-business-profile.md
   - entities/tools/easy-review.md
   - entities/tools/saas-boilerplate.md
+  - sources/arxiv-2610.41893-automated-keyword-generation-dvs-2026-11-03.md
 maturity: draft
 created: 2026-05-22
 updated: 2026-06-04

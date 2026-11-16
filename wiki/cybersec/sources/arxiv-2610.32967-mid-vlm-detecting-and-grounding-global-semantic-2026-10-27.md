@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-2610-11112-false-claims-credible-images.md
+  - sources/arxiv-2610-09240-adversarial-images-hijack-web-agents.md
 ---
 
 ## Raw Concept

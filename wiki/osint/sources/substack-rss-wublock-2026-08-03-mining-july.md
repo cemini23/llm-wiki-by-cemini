@@ -7,6 +7,7 @@ related:
   - sources/substack-rss-wublock-2026-08-04-july-blockchain-tech.md
   - concepts/active-project-research-routing.md
   - concepts/guruwatcher-newsletter-claim-ledger.md
+  - sources/substack-rss-wublock-2026-10-27-coreweave-how-did-a-former-ethereum-mining-compa.md
 maturity: draft
 created: 2026-08-03
 updated: 2026-08-04

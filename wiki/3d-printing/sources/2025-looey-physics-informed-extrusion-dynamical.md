@@ -8,6 +8,7 @@ related:
   - concepts/fdm-printing.md
   - sources/2026-mohammadi-rce-lqr-extrusion.md
   - sources/2025-lin-camera-extrusion-optimization.md
+  - sources/arxiv-2611.02622-isotropic-metamaterials-hashin-shtrikman-pinn-2026-11-03.md
 maturity: draft
 created: 2026-06-02
 updated: 2026-06-05

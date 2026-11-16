@@ -14,6 +14,7 @@ related:
   - entities/tools/rac-split-inference.md
   - concepts/inspectable-tool-region-attribution.md
   - sources/brief-k158-amalthai-tabsom-from-seo-2026-08-14.md
+  - entities/tools/deja-vu.md
 maturity: draft
 created: 2026-08-03
 updated: 2026-08-15

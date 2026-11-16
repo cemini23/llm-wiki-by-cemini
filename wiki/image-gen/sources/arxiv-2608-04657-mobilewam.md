@@ -5,6 +5,8 @@ tags: [paper, peripheral, robotics,world-model]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-06-daily.md
+  - sources/arxiv-2608-22800-triplet2track-skip.md
+  - sources/arxiv-2608-06332-geniworld.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-06

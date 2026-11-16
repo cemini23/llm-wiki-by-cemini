@@ -7,6 +7,9 @@ maturity: draft
 read_status: read
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - sources/substack-rss-wublock-2026-09-04-strategy-bitcoin-buys-2026-09-04.md
+  - sources/substack-rss-wublock-2026-08-14-weekly.md
 ---
 
 ## Raw Concept

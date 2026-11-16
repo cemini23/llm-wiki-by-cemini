@@ -5,6 +5,8 @@ tags: [paper, peripheral, llm,optimization]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-04-daily.md
+  - sources/arxiv-2607-25351-voice-style-inverse-opt.md
+  - sources/arxiv-2607-20048-importance-aware-obs-pruning.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-04

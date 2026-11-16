@@ -9,6 +9,8 @@ related:
   - concepts/fragtoken-inference-cost-amplification-lab.md
   - concepts/prompt-injection-detector-calibration.md
   - concepts/crescendo-multi-turn-jailbreak.md
+  - sources/arxiv-2609-17398-medical-plain-language-adaptation.md
+  - sources/arxiv-2610.37245-aligning-large-language-models-for-safety-in-afr-2026-11-01.md
 maturity: draft
 read_status: read
 created: 2026-10-07

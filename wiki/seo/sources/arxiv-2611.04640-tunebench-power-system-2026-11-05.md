@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - sources/arxiv-halucheck-hallucination-benchmark-2611.08231.md
+  - sources/arxiv-turn-level-best-of-n-agents-2611.06868.md
 ---
 
 ## Raw Concept

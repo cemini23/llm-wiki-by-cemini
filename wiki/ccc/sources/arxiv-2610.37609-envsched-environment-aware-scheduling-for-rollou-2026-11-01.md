@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-budget-aware-agent-rewards-2610.28409-2026-10-23.md
+  - concepts/seclaw-agent-security-evaluation.md
 ---
 
 ## Raw Concept

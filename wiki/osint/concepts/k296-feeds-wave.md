@@ -1,6 +1,7 @@
 ---
 title: K296 feeds and papers wave — midterms aftermath, PM regulation, VIX memory
 type: concept
+maturity: draft
 related:
   - sources/arxiv-risvix-vix-term-structure-2611.07120.md
   - sources/arxiv-genealogical-reinforcement-2611.08548.md

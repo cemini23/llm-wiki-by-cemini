@@ -7,6 +7,8 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - concepts/federated-daily-research-digest.md
 ---
 
 ## Raw Concept

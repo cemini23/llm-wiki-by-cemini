@@ -5,6 +5,7 @@ tags: [paper, peripheral, asr,medical,speech]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-04-daily.md
+  - sources/arxiv-2609-17509-lace-codec.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-04

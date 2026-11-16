@@ -1,11 +1,13 @@
 ---
 title: "Workflow orchestration is a measurable capability, separate from solo task skill"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-workflowarena-workflow-orchestration-2611.12856.md
   - concepts/subagent-orchestration.md
   - concepts/perspectivegap-orchestration-prompting.md
   - concepts/benchmark-maintenance-debt.md
+  - sources/arxiv-2611.04439-dualevolve-2026-11-05.md
 updated: 2026-11-10
 ---
 

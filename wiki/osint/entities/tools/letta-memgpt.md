@@ -59,7 +59,7 @@ NOT a current adoption candidate. Re-evaluation triggers:
 
 Until then, Letta stays in the reference shelf alongside the K30 NO-GOs (SwarmVault, PageIndex, Claude-OSINT).
 
-### Open questions [NEEDS VERIFICATION 2026-10-25] — re-dated; still open, not yet checked
+### Open questions [NEEDS VERIFICATION 2026-11-16] — re-dated; still open, not yet checked
 
 - Exact GitHub URL + license + maturity
 - Whether the MemGPT → Letta transition retained the Apache-2.0 license or moved to a more restrictive license (a common pattern when academic projects spin out)

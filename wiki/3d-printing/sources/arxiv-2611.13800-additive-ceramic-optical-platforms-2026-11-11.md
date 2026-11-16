@@ -7,6 +7,10 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/arxiv-2610.35588-a-low-volume-cold-atom-microwave-clock-with-an-a-2026-10-27.md
+  - sources/arxiv-track-height-control-am-2611.07704.md
+  - sources/arxiv-2611.13983-robotic-am-path-planning-2026-11-11.md
 ---
 
 ## Raw Concept

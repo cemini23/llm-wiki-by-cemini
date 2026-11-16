@@ -1,6 +1,7 @@
 ---
 title: "Event Horizon — CFTC to prediction markets: stop blocking states, or explain why you cannot"
 type: source
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - concepts/prediction-market-regulation-2026.md

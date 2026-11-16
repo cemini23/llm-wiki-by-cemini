@@ -10,6 +10,7 @@ related:
   - concepts/autoregressive-video-foresight-training.md
   - concepts/serial-to-parallel-diffusion-schedule.md
   - entities/models/wan-2-2.md
+  - sources/arxiv-2610.37626-know-then-draw-a-new-learning-paradigm-for-visua-2026-11-01.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-09

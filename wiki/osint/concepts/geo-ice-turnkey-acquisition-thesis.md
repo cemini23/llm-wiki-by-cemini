@@ -61,7 +61,7 @@ Synthesis of April 2026 operator investigative briefs on a hypothesized GEO/ICE 
 
 ### Disclosure timing model
 
-Briefs model **SEC 4-business-day** 8-K obligation from signature date — used to align options expiry with expected press release **`[NEEDS VERIFICATION 2026-06-13]`**. As of ingest date (2026-06-13), the April 2026 window is **historical**; use page for tradecraft reference (OSINT + event-study framing), not active positioning.
+Briefs model **SEC 4-business-day** 8-K obligation from signature date — used to align options expiry with expected press release **`[NEEDS VERIFICATION 2026-11-16]`**. As of ingest date (2026-06-13), the April 2026 window is **historical**; use page for tradecraft reference (OSINT + event-study framing), not active positioning.
 
 ### Verification pass (Exa/press, 2026-06-13)
 

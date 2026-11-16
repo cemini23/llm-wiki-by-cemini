@@ -26,7 +26,7 @@ clusters: [llm-agents]
 | **Authors** | Yang Zhou, Ziheng Wang, Yuqin Lu, Haofeng Liu, Jun Liang, Shengfeng He, Jing Li |
 | **arXiv** | 2606.13376 v2 (17 Jun 2026) |
 | **sha256** | `fe4aeafb99817ab308ae69c91cda3843ea6f2ddfbde1ada8541ef3c0b136f645` |
-| **Repo** | `Orange-3DV-Team/MoVerse` — **no LICENSE** on GitHub; code/models gated pending corporate review [NEEDS VERIFICATION 2026-06-18] |
+| **Repo** | `Orange-3DV-Team/MoVerse` — **no LICENSE** on GitHub; code/models gated pending corporate review [NEEDS VERIFICATION 2026-11-16] |
 | **Project** | https://orange-3dv-team.github.io/MoVerse/ |
 | **Location** | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2606.13376-2606-13376v1-moverse-real-time-video-world-model.pdf` |
 | **Retrieved** | 2026-06-18 (daily digest inbox) |

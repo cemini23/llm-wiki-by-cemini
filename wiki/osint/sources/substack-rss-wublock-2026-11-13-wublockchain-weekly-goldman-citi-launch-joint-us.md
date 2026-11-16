@@ -1,11 +1,13 @@
 ---
 title: "WuBlockchain Weekly — Project Faro stablecoin, Coinbase trust bank charter, USDT supply drain"
 type: source
+maturity: validated
 related:
   - entities/companies/circle.md
   - entities/companies/tether.md
   - concepts/bitcoin-mining-economics-2026.md
   - concepts/osint-inbox-wave-2026-11-14.md
+  - sources/substack-rss-wublock-2026-10-31-weekly-project-updates-ripple-approved-for-us-na.md
 updated: 2026-11-14
 ---
 

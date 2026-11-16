@@ -5,6 +5,7 @@ tags: [paper, llm, alignment, peripheral]
 keywords: [sycophancy, moral-reasoning, LLM-alignment]
 related:
   - sweeps/2026-07-25-daily.md
+  - concepts/federated-daily-research-digest.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-25

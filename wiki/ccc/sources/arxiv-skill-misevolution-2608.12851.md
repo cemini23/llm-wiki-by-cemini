@@ -10,6 +10,7 @@ related:
   - entities/skills/route.md
   - sources/brief-k237-meta-harness-vero-misevolution-2026-08-14.md
   - concepts/bounded-self-refinement-vs-rsi-taxonomy.md
+  - sources/arxiv-2610.37651-gepa-curator-curated-learning-for-self-improving-2026-11-01.md
 maturity: draft
 created: 2026-08-15
 updated: 2026-08-15

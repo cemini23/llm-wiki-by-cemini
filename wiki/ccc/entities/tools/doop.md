@@ -5,6 +5,8 @@ tags: [tool, design, mcp, agpl, licence-trap, atto, game-time]
 keywords: [doop, design canvas, mcp tools, agpl-3.0, pglite, self-hosted, screenshot loop]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-repository-revenue-2026-11-04.md"
+  - sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md
+  - entities/tools/coolify.md
 maturity: draft
 created: 2026-11-04
 updated: 2026-11-04

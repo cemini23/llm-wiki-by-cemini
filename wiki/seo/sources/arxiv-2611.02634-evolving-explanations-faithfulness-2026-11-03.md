@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-aliaga-2026-dasyr-llm-kinetic-symbolic-regression-2608.05120-2026-08-06.md
+  - sources/arxiv-2611.14106-proofcoder-2026-11-11.md
 ---
 
 ## Raw Concept

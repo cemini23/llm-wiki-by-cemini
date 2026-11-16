@@ -323,6 +323,11 @@ related:
   - sources/eval-multi-wiki-revenue-opportunity-2026-09-20.md
   - sources/eval-repository-revenue-opportunity-2026-09-20.md
   - concepts/k267-eval-github-wave.md
+  - sources/arxiv-2610.35159-transient-supercriticality-in-hawkes-processes-d-2026-10-27.md
+  - sources/arxiv-2611.05539-editveto-post-ocr-2026-11-05.md
+  - sources/arxiv-2611.12814-curbside-chatbots-2026-11-11.md
+  - sources/arxiv-theme-park-visitor-movement-waders-2606.24434-2026-06-26.md
+  - sources/fanduel-nfl-slate-export-2026-10-25.md
 maturity: validated
 hub: true
 created: 2026-04-28

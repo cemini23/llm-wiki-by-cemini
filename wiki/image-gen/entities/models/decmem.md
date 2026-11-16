@@ -38,7 +38,7 @@ Entity stub from K95 ingest of arXiv:2605.31336 — Kling Team (Kuaishou) world-
 
 Built on pretrained video backbones with action conditioning; targets **revisit consistency** failures in prior world models. Industrial counterpart to open **SANA-WM** on the minute-scale axis.
 
-**Build-track status:** closed/industrial at ingest — no confirmed open weights `[NEEDS VERIFICATION 2026-06-03]`. Project page: https://jeffreyyzh.github.io/DecMem-Page
+**Build-track status:** closed/industrial at ingest — no confirmed open weights `[NEEDS VERIFICATION 2026-11-16]`. Project page: https://jeffreyyzh.github.io/DecMem-Page
 
 ## Snippets
 

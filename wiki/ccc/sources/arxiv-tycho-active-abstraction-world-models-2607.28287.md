@@ -10,6 +10,7 @@ related:
   - concepts/cost-aware-tool-acquisition-stopping.md
   - entities/tools/tycho-arc-agi.md
   - sources/brief-k230-k233-memharness-tycho-agentradio-askchem-2026-07-31.md
+  - sources/arxiv-2611.14419-llm-world-models-neuro-symbolic-2026-11-11.md
 maturity: draft
 created: 2026-07-31
 updated: 2026-07-31

@@ -1,6 +1,7 @@
 ---
 title: "The verification environment: signifier is not inspectable evidence"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-user-scrutiny-llm-conversations-2611.08232.md
   - concepts/citation-is-not-consultation.md

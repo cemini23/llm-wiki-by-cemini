@@ -7,6 +7,7 @@ related:
   - concepts/capital-flows-sofr-conviction-framework.md
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-capital-flows-2026-07-22-hf-positioning-fragile.md
+  - sources/substack-rss-capital-flows-2026-10-26-midterms-and-the-coming-ai-regulatory-crisis.md
 maturity: draft
 read_status: read
 created: 2026-07-21

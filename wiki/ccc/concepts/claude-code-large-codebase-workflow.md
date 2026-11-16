@@ -14,6 +14,7 @@ related:
   - sources/trading-posts-compilation-20-2026-05-27.md
   - concepts/agent-backpressure-loop.md
   - sources/trading-posts-compilation-19-2026-06-07.md
+  - entities/tools/claude-hud.md
 maturity: draft
 created: 2026-05-27
 updated: 2026-06-07

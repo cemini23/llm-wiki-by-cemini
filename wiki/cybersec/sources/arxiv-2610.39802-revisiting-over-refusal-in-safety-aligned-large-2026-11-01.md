@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-jev-llm-safety-guardrail-2611.08845.md
+  - sources/arxiv-2610-26474-afriguard.md
 ---
 
 ## Raw Concept

@@ -1,6 +1,7 @@
 ---
 title: Options flow package reading — why the bid/ask label lies
 type: concept
+maturity: validated
 related:
   - concepts/k296-feeds-wave.md
   - sources/substack-rss-glitchspx-2026-11-06-the-93-million-put-dump-that-wasnt.md

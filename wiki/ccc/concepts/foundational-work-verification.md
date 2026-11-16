@@ -1,6 +1,7 @@
 ---
 title: "Verify foundational work, trust non-foundational work"
 type: concept
+maturity: draft
 related:
   - sources/newsletter-rss-pragmatic-engineer-2026-11-05-scaling-slack-and-github-with-maude-lemaire.md
   - sources/newsletter-rss-latent-space-2026-11-08-how-stanford-teaches-ai-native-engineering-mihai.md

@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-sp2ec-self-speculative-decoding-vlm-2610.18735-2026-10-14.md
+  - sources/arxiv-2610-13895-task-context-component-roles.md
 ---
 
 ## Raw Concept

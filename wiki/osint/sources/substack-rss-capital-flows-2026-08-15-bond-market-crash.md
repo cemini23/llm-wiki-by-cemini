@@ -9,6 +9,8 @@ related:
   - entities/models/timesfm.md
   - concepts/inflation-risk-regime-2026.md
   - sources/substack-rss-capital-flows-2026-08-18-next-stage-macro.md
+  - sources/substack-rss-capital-flows-2026-10-23-equity-and-bond-market-risks-video-breakdown.md
+  - sources/substack-rss-klement-2026-10-29-the-one-eyed-among-the-blind.md
 maturity: draft
 created: 2026-08-15
 updated: 2026-08-15

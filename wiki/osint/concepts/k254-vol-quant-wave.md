@@ -1,6 +1,7 @@
 ---
 title: K254 Vol Quant Wave (Sep 2026)
 type: concept
+maturity: stub
 tags: [quant, vol, k254]
 keywords: [variance-risk-premium, nuclear, energy-equities]
 related:

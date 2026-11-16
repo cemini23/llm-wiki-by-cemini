@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - concepts/recursive-harness-hot-reload.md
+  - sources/arxiv-boxbox-recursive-harness-2611.09218.md
 ---
 
 ## Raw Concept

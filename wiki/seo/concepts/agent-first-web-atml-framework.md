@@ -11,6 +11,7 @@ related:
   - concepts/agent-ready-website-local-bm.md
   - sources/arxiv-elnaffar-2026-agent-ready-websites-2607.12056-2026-07-18.md
   - "@osint-wiki/entities/tools/agentdiscoverability-track.md"
+  - sources/arxiv-2611.05251-auto-research-provenance-2026-11-05.md
 maturity: draft
 created: 2026-06-19
 updated: 2026-07-18

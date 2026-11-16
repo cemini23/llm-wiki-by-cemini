@@ -7,6 +7,10 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-monolithic-optomechanical-chassis-2611.06898.md
+  - sources/2026-demircali-thermal-drawing-preforms.md
+  - sources/arxiv-2611.13876-spion-branching-geometry-2026-11-11.md
 ---
 
 ## Raw Concept

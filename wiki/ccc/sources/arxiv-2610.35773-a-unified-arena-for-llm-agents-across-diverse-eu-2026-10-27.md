@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-x-agentred-cross-service-red-teaming-2610.13886.md
+  - sources/arxiv-bt-agent-behavior-trees-onboard-2610.13862.md
 ---
 
 ## Raw Concept

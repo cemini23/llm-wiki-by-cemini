@@ -6,6 +6,7 @@ keywords: [Pivot-SD, masked diffusion language model, self-distillation, pivot t
 related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-10-05-daily.md
+  - sources/arxiv-2608-07249-stoicheia-skip.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-06

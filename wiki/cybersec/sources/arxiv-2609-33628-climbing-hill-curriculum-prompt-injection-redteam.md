@@ -6,6 +6,8 @@ keywords: [2609.33628, k379]
 related:
   - concepts/curriculum-prompt-injection-redteam-frontier-models.md
   - concepts/black-box-agentic-redteam-taxonomy.md
+  - sources/arxiv-2609-05381-molecular-deja-vu-digit-retrieval.md
+  - sources/arxiv-2609-09059-playtrain-js-game-rl.md
 maturity: draft
 read_status: read
 created: 2026-09-29

@@ -5,6 +5,8 @@ tags: [paper, peripheral, industrial,anomaly]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-04-daily.md
+  - sources/arxiv-2607-14088-videorae-vfm-representation-autoencoder.md
+  - sources/arxiv-2607-04553-lights-camera-carbon-video-energy-scaling.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-04

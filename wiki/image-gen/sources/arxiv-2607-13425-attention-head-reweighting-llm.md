@@ -5,6 +5,8 @@ tags: [paper, llm, peft, security, peripheral]
 keywords: [attention head reweighting, data-efficient adaptation, COLM 2026, Microsoft, LLM safety classifiers]
 related:
   - sweeps/2026-07-16-daily.md
+  - sources/arxiv-2607-24377-mxattention.md
+  - sources/arxiv-2607-15650-ditango-chitudiffusion.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-16

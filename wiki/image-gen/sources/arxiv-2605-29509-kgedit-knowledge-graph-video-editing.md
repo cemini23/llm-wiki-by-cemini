@@ -51,4 +51,4 @@ Persona track: reduces prompt-iteration churn for multi-attribute video edits (i
 
 ## Dead Ends
 
-None — code release and base-model compatibility not verified locally `[NEEDS VERIFICATION 2026-06-04]`.
+None — code release and base-model compatibility not verified locally `[OPEN QUESTION 2026-06-04]`.

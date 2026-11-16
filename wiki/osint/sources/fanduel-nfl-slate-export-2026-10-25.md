@@ -8,6 +8,8 @@ maturity: draft
 created: 2026-10-25
 updated: 2026-10-25
 read_status: skimmed
+related:
+  - concepts/wiki-tooling-evaluation.md
 ---
 
 ## Raw Concept

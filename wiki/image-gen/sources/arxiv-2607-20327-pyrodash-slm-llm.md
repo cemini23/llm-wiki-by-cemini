@@ -5,6 +5,8 @@ tags: [paper, llm, inference, peripheral]
 keywords: [PyroDash, SLM, GRPO, collaborative-inference]
 related:
   - sweeps/2026-07-23-daily.md
+  - sources/arxiv-2607-19139-dit-template-token-registers.md
+  - sources/arxiv-2608-18661-x2streaming-tts.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-23

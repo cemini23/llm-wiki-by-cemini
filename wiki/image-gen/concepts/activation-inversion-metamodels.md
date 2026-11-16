@@ -1,6 +1,7 @@
 ---
 title: Activation inversion metamodels (read a direction by generating text that fires it)
 type: concept
+maturity: draft
 tags: [concept, interpretability, activation-steering, lora, safety]
 keywords: [MAEM, activation inversion, metamodel, residual stream, SAE feature, steering vector, LoRA backdoor, NLA, verifiable interpretability]
 related:

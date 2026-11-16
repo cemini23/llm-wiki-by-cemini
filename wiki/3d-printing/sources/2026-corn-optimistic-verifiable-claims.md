@@ -10,6 +10,7 @@ related:
   - concepts/fdm-printing.md
   - sources/2025-ivkic-cost-benefit-maas.md
   - sources/2026-asgar-firewall3d-firmware-hardware.md
+  - @cybersecurity-wiki/sources/2026-corn-optimistic-verifiable-claims.md
 maturity: draft
 created: 2026-07-29
 updated: 2026-07-29

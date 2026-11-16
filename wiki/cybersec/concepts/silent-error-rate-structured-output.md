@@ -1,6 +1,7 @@
 ---
 title: "Silent error rate: the metric for parsed output that reaches the customer"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-parsed-plausible-wrong-output-format-2611.17169.md
   - concepts/agent-safety-executable-evaluation.md

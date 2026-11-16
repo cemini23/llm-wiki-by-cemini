@@ -6,6 +6,7 @@ keywords: [PerFact, brain MRI, radiology report generation, Imperial College]
 related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-08-20-daily.md
+  - sources/arxiv-2608-13455-retinal-image-gen-skip.md
 maturity: draft
 read_status: read
 created: 2026-08-20

@@ -9,6 +9,7 @@ related:
   - concepts/camera-controlled-video-generation.md
   - concepts/multi-view-3d-consistent-world-models.md
   - entities/models/wan-2-2.md
+  - sources/arxiv-2610.32978-scenebloom-agentic-indoor-environment-generation-2026-10-27.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-07

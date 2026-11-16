@@ -1,6 +1,7 @@
 ---
 title: "Agentic robotics harness — generalist model, direct control, benchmark criteria"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-vabar-variational-automation-benchmark-2611.06881.md
   - sources/arxiv-agentic-manipulation-policies-amp1-2611.09892.md
@@ -8,6 +9,7 @@ related:
   - concepts/model-harness-six-responsibilities.md
   - concepts/benchmark-maintenance-debt.md
   - concepts/harness-learning-test-time-adaptation.md
+  - sources/arxiv-2610.35832-profiling-a-frontier-agent-with-ebench-from-dire-2026-10-27.md
 updated: 2026-11-10
 ---
 

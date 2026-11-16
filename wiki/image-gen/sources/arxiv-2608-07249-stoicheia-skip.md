@@ -5,6 +5,8 @@ tags: [paper, peripheral, nlp, historical]
 keywords: [Stoicheia, Ancient-Greek, masked-diffusion]
 related:
   - sweeps/2026-08-10-daily.md
+  - sources/arxiv-2608-19119-mdtim-time-series-skip.md
+  - sources/arxiv-2610-03665-pivot-sd-skip.md
 maturity: draft
 read_status: read
 created: 2026-08-10

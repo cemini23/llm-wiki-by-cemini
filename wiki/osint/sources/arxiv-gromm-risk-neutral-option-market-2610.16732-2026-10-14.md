@@ -6,6 +6,7 @@ keywords: [option market model, local volatility, arbitrage-free, SANOS, S&P ind
 related:
   - concepts/k291-osint-wave.md
   - concepts/fomc-iv-surface-dynamics.md
+  - sources/arxiv-2610.40425-marginal-composite-likelihood-estimation-of-berg-2026-11-01.md
 maturity: draft
 read_status: read
 created: 2026-10-14

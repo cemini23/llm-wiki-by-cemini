@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - concepts/system-scaling-harness-agentic-ai.md
+  - sources/arxiv-system-scaling-harness-2605.26112.md
 ---
 
 ## Raw Concept

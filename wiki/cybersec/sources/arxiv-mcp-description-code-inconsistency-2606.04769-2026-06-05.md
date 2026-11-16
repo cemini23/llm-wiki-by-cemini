@@ -86,5 +86,5 @@ Two-stage pipeline:
 
 ## Dead Ends
 
-- **DCIChecker as prod gate without license audit** — framework described in paper; no Phase-0 on shipped artifact in this workspace [NEEDS VERIFICATION 2026-05-31].
+- **DCIChecker as prod gate without license audit** — framework described in paper; no Phase-0 on shipped artifact in this workspace [NEEDS VERIFICATION 2026-11-16].
 - **Replacing human GO on write MCPs** — automated DCI detection is advisory; high-risk tools still need operator sign-off.

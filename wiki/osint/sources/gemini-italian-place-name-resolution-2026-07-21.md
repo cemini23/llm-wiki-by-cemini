@@ -12,6 +12,7 @@ related:
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/gemini-italian-american-genealogy-sources-2026-07-21.md
   - sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md
+  - sources/substack-rss-outlier-weekly-2026-10-26-the-town-changed-its-name-the-map-should-not-gue.md
 maturity: draft
 read_status: read
 created: 2026-07-21

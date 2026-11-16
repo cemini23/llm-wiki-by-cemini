@@ -66,7 +66,7 @@ This puts Kolors in an awkward position: Eastern lineage, but doesn't get the "E
 
 [TENTATIVE]:
 
-- Parameter count and exact architecture details `[NEEDS VERIFICATION 2026-05-06]` — survey says "large-scale" without specifics. Hugging Face model card check needed.
+- Parameter count and exact architecture details `[NEEDS VERIFICATION 2026-11-16]` — survey says "large-scale" without specifics. Hugging Face model card check needed.
 - Latent diffusion likely puts VRAM in SDXL-class territory (8-12 GB FP16); aggressive quantization should fit 8 GB.
 
 ### Role in 2026 production stack

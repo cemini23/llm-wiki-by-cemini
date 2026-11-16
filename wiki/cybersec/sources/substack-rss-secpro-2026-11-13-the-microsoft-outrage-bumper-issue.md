@@ -1,11 +1,15 @@
 ---
 title: "Packt SecPro — The Microsoft Out(r)age Bumper Issue (2026-11-13)"
 type: source
+maturity: validated
 related:
   - concepts/provider-outage-control-verification.md
   - concepts/soc-operations.md
   - concepts/incident-response.md
   - concepts/software-maintenance-institutional-insecurity.md
+  - sources/substack-rss-secpro-2026-10-23-257-from-sso-bypass-to-stolen-credentials.md
+  - sources/substack-rss-secpro-2026-10-24-secpro-ciso-update-episode-2.md
+  - sources/substack-rss-secpro-2026-10-26-php2shell-another-emergency-another-scramble-to.md
 updated: 2026-11-14
 ---
 
@@ -43,7 +47,7 @@ The issue covers the Microsoft 365 outage of 12–13 November 2026 and turns it 
 | Fri 09:57 | Several workloads improve; capacity below normal |
 | Fri 10:56 | Email timeout window extended to 48 hours; recovery continues |
 
-Microsoft reported no evidence of malicious activity. The initiating fault remains a candidate: a recent network configuration change that coincided with the start, which engineers reverted. `[NEEDS VERIFICATION 2026-11-14]` against the Microsoft post-incident report.
+Microsoft reported no evidence of malicious activity. The initiating fault remains a candidate: a recent network configuration change that coincided with the start, which engineers reverted. `[NEEDS VERIFICATION 2026-11-16]` against the Microsoft post-incident report.
 
 ### Scale is not a user count
 

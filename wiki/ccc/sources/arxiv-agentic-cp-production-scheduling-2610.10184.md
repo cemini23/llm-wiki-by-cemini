@@ -6,6 +6,7 @@ keywords: [2610.10184, k437]
 related:
   - concepts/formulation-versus-implementation-gap.md
   - briefs/2026-10-08_ccc-k436-k440-sip-ready.md
+  - sources/arxiv-2610.39685-practical-assessment-of-agentic-systems-in-acous-2026-11-01.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-08

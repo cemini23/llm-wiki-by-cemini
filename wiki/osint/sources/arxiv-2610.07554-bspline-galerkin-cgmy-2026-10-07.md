@@ -6,6 +6,7 @@ keywords: [cgmy, tempered-stable, b-spline, galerkin, fractional-pde, american-o
 related:
   - concepts/k284-arxiv-wave.md
   - concepts/xsp-vol-regime-gates.md
+  - sources/arxiv-2610.40425-marginal-composite-likelihood-estimation-of-berg-2026-11-01.md
 maturity: draft
 created: 2026-10-07
 updated: 2026-10-07

@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-2611.17336-pixvid-pixel-space-video.md
+  - concepts/framewise-pixel-space-video-generation.md
 ---
 
 ## Raw Concept

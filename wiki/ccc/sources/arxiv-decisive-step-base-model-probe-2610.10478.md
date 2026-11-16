@@ -6,6 +6,7 @@ keywords: [2610.10478, k438]
 related:
   - concepts/decisive-step-base-model-probe.md
   - briefs/2026-10-08_ccc-k436-k440-sip-ready.md
+  - sources/arxiv-2610.37375-agent-conditioned-routing-diverse-reasoning-path-2026-11-01.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-08

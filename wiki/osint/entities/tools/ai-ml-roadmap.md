@@ -21,7 +21,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `github.com/aadi1011/AI-ML-Roadmap-from-scratch`
 - **Tier (per source brief)**: **Reference-only**
-- **License**: [NEEDS VERIFICATION 2026-05-11] License check pending — roadmap text is reference-only, no code lift.
+- **License**: [NEEDS VERIFICATION 2026-11-16] License check pending — roadmap text is reference-only, no code lift.
 
 ## Narrative
 

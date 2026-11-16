@@ -64,7 +64,7 @@ OSINT K100 handoff — cybersec owns vuln-discovery methodology; OSINT may keep 
 
 Contrast: Saturn/Pinpoint/Formulog stop at feasible/infeasible — NeuroLog uses **SAT witness as artifact** for crash synthesis.
 
-**Steal-from:** report chains with auditable derivation trees + citation tags for engagement / CTF write-ups; not a prod scanner until license + reproducibility Phase-0 on released code [NEEDS VERIFICATION 2026-05-31].
+**Steal-from:** report chains with auditable derivation trees + citation tags for engagement / CTF write-ups; not a prod scanner until license + reproducibility Phase-0 on released code [NEEDS VERIFICATION 2026-11-16].
 
 ## Snippets
 

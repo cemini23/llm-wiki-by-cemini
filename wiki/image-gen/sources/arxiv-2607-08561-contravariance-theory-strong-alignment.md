@@ -5,6 +5,8 @@ tags: [paper, neuroai, representation-alignment, theory, peripheral]
 keywords: [contravariance, weak-strong equivalence, privileged axes, NeuroAI, Yamins, Nayebi, zippering, DNN-brain]
 related:
   - sweeps/2026-07-15-daily.md
+  - sources/arxiv-2607-08034-plural-value-alignment-dataset.md
+  - sources/arxiv-2607-20410-lkvalues.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-15

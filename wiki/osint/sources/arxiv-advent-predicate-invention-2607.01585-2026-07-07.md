@@ -5,6 +5,8 @@ tags: [source, arxiv, ilp, llm, logic, k148]
 keywords: [2607.01585, ADVENT, predicate-invention, inductive-logic-programming]
 related:
   - concepts/wiki-tooling-evaluation.md
+  - sources/agentic-harness-engineering.md
+  - sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md
 maturity: draft
 read_status: unread-stub
 created: 2026-07-07

@@ -14,6 +14,7 @@ related:
   - sources/2026-jang-monorigami-sla-origami-pneumatic.md
   - sources/2026-hebbalmanjunath-prc-pneumatic-soft-arm.md
   - sources/2026-jiang-unified-kirigami-design.md
+  - sources/arxiv-2611.03216-one-shot-printable-soft-robots-co-design-2026-11-03.md
 maturity: draft
 created: 2026-08-15
 updated: 2026-09-11

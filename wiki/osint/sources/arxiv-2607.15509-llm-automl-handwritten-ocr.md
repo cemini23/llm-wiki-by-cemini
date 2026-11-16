@@ -7,6 +7,8 @@ related:
   - concepts/computational-genealogy-archival-automation.md
   - entities/tools/transkribus.md
   - sources/gemini-italian-civil-register-extraction-2026-07-21.md
+  - sources/arxiv-2610.35240-reading-beyond-ocr-noise-robust-cross-lingual-ra-2026-10-27.md
+  - sources/arxiv-advent-predicate-invention-2607.01585-2026-07-07.md
 maturity: draft
 read_status: read
 created: 2026-07-20

@@ -1,6 +1,7 @@
 ---
 title: "Same Layout, Different Count — what number words do past ten in T2I models (arXiv:2611.06840)"
 type: source
+maturity: validated
 tags: [source, arxiv, t2i, counting, prompt-engineering, evaluation, flux, qwen, sd3]
 keywords: [number words, counting, reach, same-noise test, SD3.5-Medium, FLUX.1-dev, FLUX.2 klein, Qwen-Image, SDXL, layout preservation, fine-scale noise]
 related:

@@ -8,6 +8,7 @@ related:
   - concepts/chain-of-thought-decorative-reasoning-audit.md
   - concepts/llm-explanation-necessary-sufficient-audit.md
   - concepts/measurement-integrity-mcp-security-eval.md
+  - sources/arxiv-2610.40893-qistas-portable-fairness-protocol-2026-11-03.md
 maturity: draft
 read_status: read
 created: 2026-10-09

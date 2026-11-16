@@ -6,6 +6,7 @@ keywords: [WebSea, JuCoin, CoinUP, exchange-risk, withdrawal-freeze]
 related:
   - concepts/k247-newsletter-macro-wave.md
   - sources/substack-rss-wublock-2026-08-21-weekly-hl-us.md
+  - sources/substack-rss-kyla-2026-10-29-lael-brainard-on-why-groceries-cost-so-much.md
 maturity: draft
 created: 2026-08-26
 updated: 2026-08-26

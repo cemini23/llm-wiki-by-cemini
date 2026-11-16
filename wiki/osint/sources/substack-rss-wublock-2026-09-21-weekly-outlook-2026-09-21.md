@@ -5,6 +5,8 @@ tags: [source, k268]
 keywords: [k268]
 related:
   - concepts/k268-newsletter-macro-wave.md
+  - sources/substack-rss-wublock-2026-10-30-wublockchain-weekly-binance-hacked-ice-invests-i.md
+  - sources/substack-rss-wublock-2026-11-02-wublockchain-weekly-outlook-us-midterms-and-jobs.md
 maturity: draft
 created: 2026-09-21
 updated: 2026-09-21

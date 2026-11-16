@@ -1,12 +1,16 @@
 ---
 title: "Moontower #335 — commodity index construction, dispersion, and a Levine index"
 type: source
+maturity: validated
 related:
   - sources/substack-rss-moontower-2026-11-08-your-thoughts-are-gerrymandered.md
   - concepts/k296-feeds-wave.md
   - concepts/commodity-index-construction.md
   - concepts/tracking-error-dispersion-active-management.md
   - concepts/dispersion-trading.md
+  - sources/substack-rss-moontower-2026-10-25-i-bonds-vs-tips.md
+  - sources/substack-rss-moontower-2026-10-28-using-geometry-to-see-why-volatility-scales-with.md
+  - sources/substack-rss-moontower-2026-11-04-conversational-ai-media-2026-11-05.md
 updated: 2026-11-10
 ---
 

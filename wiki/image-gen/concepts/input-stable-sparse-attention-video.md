@@ -26,6 +26,7 @@ related:
   - sources/arxiv-2608-18484-sparsepr.md
   - sources/arxiv-2610-08772-basa-sparse-attention.md
   - concepts/sparse-attention-without-custom-kernels.md
+  - sources/arxiv-2611.03602-reviso-video-captioning-attention-2026-11-03.md
 maturity: draft
 created: 2026-07-01
 updated: 2026-08-20

@@ -50,7 +50,7 @@ Claims minute-level controllable long video with high fidelity; SOTA vs prior me
 
 ### Workspace relevance
 
-Industrial world-model signal from **Kling Team** (same org as Kwai Kolors lineage). Research reference for persona **explorable environments** and long-form identity-stable rolls — not open weights as of ingest date `[NEEDS VERIFICATION 2026-06-03]`. Complements open **SANA-WM** (@entities/models/sana-wm.md) on the memory-architecture axis.
+Industrial world-model signal from **Kling Team** (same org as Kwai Kolors lineage). Research reference for persona **explorable environments** and long-form identity-stable rolls — not open weights as of ingest date `[NEEDS VERIFICATION 2026-11-16]`. Complements open **SANA-WM** (@entities/models/sana-wm.md) on the memory-architecture axis.
 
 ## Snippets
 

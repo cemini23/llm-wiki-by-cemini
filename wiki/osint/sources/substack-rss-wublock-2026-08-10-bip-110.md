@@ -6,6 +6,7 @@ keywords: [BIP-110, UASF, Ordinals, OP_RETURN, Luke Dashjr, Saylor, replay prote
 related:
   - concepts/xsp-lane-trading-framework.md
   - concepts/crypto-asset-taxonomy.md
+  - sources/substack-rss-wublock-2026-07-15-usdc-binance-mica.md
 maturity: draft
 created: 2026-08-10
 updated: 2026-08-10

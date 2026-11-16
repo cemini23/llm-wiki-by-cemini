@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - concepts/retrospective-harness-optimization-rho.md
+  - concepts/runtime-harness-evolution-ecdysis.md
 ---
 
 ## Raw Concept

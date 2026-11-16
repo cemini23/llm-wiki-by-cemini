@@ -30,7 +30,7 @@ Originally marked **UNAVAILABLE** in K32 Gemini DR eval (HTTP error at retrieval
 ## Narrative
 
 - **URL**: `https://github.com/juanceresa/sift-kg` ✓ verified via Exa 2026-05-06
-- **License**: [NEEDS VERIFICATION 2026-05-06] — not stated in scraped README excerpts; must check `LICENSE` file before any adoption decision
+- **License**: [NEEDS VERIFICATION 2026-11-16] — not stated in scraped README excerpts; must check `LICENSE` file before any adoption decision
 - **Stars**: 453 (substantial; bus factor concern less acute than typical 1-maintainer K-series finds)
 - **Stack**: Python CLI; NetworkX for graph data structure; Kreuzberg for text extraction (local, supports PDF/DOCX/HTML + 75 formats + optional OCR via Tesseract/EasyOCR/PaddleOCR/Google Cloud Vision)
 - **LLM integration**: schema discovery + entity/relation extraction + entity-resolution proposals — provider not specified in scraped excerpts (likely OpenAI-compatible based on conventions)

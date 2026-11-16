@@ -5,6 +5,8 @@ tags: [stub, cross-wiki]
 keywords: []
 related:
   - @osint-wiki/sources/newsletter-rss-latent-space-2026-07-01-the-coolest-diffusion-research-isnt-in-llms-evan.md
+  - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
+  - sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25

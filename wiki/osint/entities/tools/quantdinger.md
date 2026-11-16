@@ -40,7 +40,7 @@ License clears cleanly: Apache-2.0 is permissive and IP-sale-safe (no copyleft, 
 1. **Parallel-implementation risk** — Cemini already has its own analyst-node prediction layer, backtesting, and LangGraph orchestration. QuantDinger may be a *competing* implementation of what Cemini already runs, not a complement. The Phase-0 audit must compare against existing coverage (per the CLAUDE.md Phase-0 pattern) before any integration.
 2. **Data-layer integration overhead** — the eval's own NEEDS VERIFICATION asks for the data-throughput tolerances between QuantDinger's Dockerized engine and the `/opt/cemini` PostgreSQL + Redis Streams pipelines. Unknown until measured.
 
-`[NEEDS VERIFICATION 2026-05-19]` — Phase-0 audit (clone, verify Apache-2.0 LICENSE file, audit for the most-likely failure mode — does it duplicate Cemini's existing engine?) not yet run. Server-side decision; flagged in the K54 cemini-prod brief.
+`[OPEN QUESTION 2026-05-19]` — Phase-0 audit (clone, verify Apache-2.0 LICENSE file, audit for the most-likely failure mode — does it duplicate Cemini's existing engine?) not yet run. Server-side decision; flagged in the K54 cemini-prod brief.
 
 ### Phase-0 audit (2026-05-28)
 

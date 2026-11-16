@@ -64,7 +64,7 @@ Kuhn Poker · Leduc Poker · Texas Hold'Em Limit · **Texas Hold'Em No-Limit** �
 
 **The stated motivation is the bottleneck this wiki actually has.** Quoting the paper: high-speed simulators that leverage hardware accelerators are a bottleneck for scaling large-scale RL in these domains. The paper positions BluffJAX against existing **GPU and CPU-based libraries** — the CPU side of which is `@entities/tools/rlcard.md`.
 
-**Assessment:** the most directly usable artifact of the three. It is a simulator, not a solver, so it does not hand over a strategy — but it supplies the self-play volume that a research lane needs. **Verify the licence on GitHub before any use**; the abstract calls it "open-source" but the licence is not stated in the paper. [NEEDS VERIFICATION 2026-10-07]
+**Assessment:** the most directly usable artifact of the three. It is a simulator, not a solver, so it does not hand over a strategy — but it supplies the self-play volume that a research lane needs. **Verify the licence on GitHub before any use**; the abstract calls it "open-source" but the licence is not stated in the paper. [NEEDS VERIFICATION 2026-11-16]
 
 ### 3 — Fictitious play can converge arbitrarily slowly (2610.08768)
 
@@ -89,5 +89,5 @@ Kuhn Poker · Leduc Poker · Texas Hold'Em Limit · **Texas Hold'Em No-Limit** �
 
 - **No bot wire from this batch.** `wont_wire` — none of the three changes `decide()` behaviour on its own. BluffJAX is a **candidate** simulator once its licence is verified.
 - **Do not over-read the slow-convergence result.** The construction is purpose-built to be slow. It bounds the method, not the operator's games.
-- **BluffJAX licence unverified.** The paper says "open-source"; no SPDX identifier appears. Check the repo before any code or weights move. [NEEDS VERIFICATION 2026-10-07]
+- **BluffJAX licence unverified.** The paper says "open-source"; no SPDX identifier appears. Check the repo before any code or weights move. [NEEDS VERIFICATION 2026-11-16]
 - **Two of three are pure theory.** No implementation is offered for 2610.06292 or 2610.08768.

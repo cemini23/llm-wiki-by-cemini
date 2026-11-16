@@ -7,6 +7,7 @@ related:
   - concepts/k283-feeds-wave.md
   - concepts/crypto-derivatives-volume-2026.md
   - concepts/agent-setup-instruction-supply-chain.md
+  - sources/substack-rss-wublock-2026-11-05-october-blockchain-tech-2026-11-05.md
 maturity: draft
 created: 2026-10-06
 updated: 2026-10-06

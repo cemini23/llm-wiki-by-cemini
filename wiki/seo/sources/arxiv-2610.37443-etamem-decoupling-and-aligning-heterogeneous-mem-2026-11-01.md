@@ -7,6 +7,8 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-2610.37319-analogscout-simulation-efficient-pvt-aware-analo-2026-11-01.md
 ---
 
 ## Raw Concept

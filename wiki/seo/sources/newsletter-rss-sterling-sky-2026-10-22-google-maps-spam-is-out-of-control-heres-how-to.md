@@ -8,6 +8,9 @@ maturity: draft
 created: 2026-10-22
 updated: 2026-10-25
 read_status: skimmed
+related:
+  - sources/newsletter-rss-sterling-sky-2026-09-29-gbp-linked-url-local-pack-test.md
+  - sources/newsletter-rss-sterling-sky-2026-09-28-review-posting-blocks.md
 ---
 
 ## Raw Concept

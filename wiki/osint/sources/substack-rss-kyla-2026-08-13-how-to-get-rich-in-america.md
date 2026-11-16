@@ -6,6 +6,7 @@ keywords: [labor-vs-capital, asset-holder-economy, passive-income, ai-wealth-eff
 related:
   - concepts/labor-vs-capital-wealth-culture.md
   - concepts/prediction-market-regulation-2026.md
+  - sources/substack-rss-kyla-2026-10-29-lael-brainard-on-why-groceries-cost-so-much.md
 maturity: draft
 created: 2026-08-13
 updated: 2026-08-13

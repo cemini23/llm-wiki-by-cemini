@@ -10,6 +10,9 @@ created: 2026-09-16
 updated: 2026-09-16
 phase_0_verdict: "OOD 2026-09-16 — Healthcare plain-language adaptation — not cyber-primary; route to clinical/education brief if deep-read needed."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2608-15578-arena-audio-lalm-redteam.md
+  - sources/arxiv-2610-08678-secure-speculative-decoding.md
 ---
 
 ## Relations

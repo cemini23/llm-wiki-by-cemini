@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - concepts/code-as-agent-harness.md
+  - concepts/client-as-first-order-harness-factor.md
 ---
 
 ## Raw Concept

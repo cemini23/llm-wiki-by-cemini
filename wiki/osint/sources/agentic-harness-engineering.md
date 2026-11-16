@@ -34,6 +34,7 @@ related:
   - sources/piebald-claude-code-system-prompts.md
   - sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md
   - entities/tools/rocketsmith.md
+  - sources/arxiv-advent-predicate-invention-2607.01585-2026-07-07.md
 maturity: validated
 read_status: read
 created: 2026-04-29

@@ -34,4 +34,4 @@ K261 cluster hub.
 
 ## Narrative
 
-Klement debt: Reuters 14 Sep 2026; no named levels → no GW auto-arm. Klement disasters: IMF Nguyen et al (2026) cite only — `[NEEDS VERIFICATION 2026-09-15]`; no invented source page. WuBlock 14–20 Sep: Fed ~85% 25bp as of 12 Sep cutoff; BoE hold 3.75%; BOJ +25bp to 1.25% expected. Outlier Tanbreez: CRML 92.5%; license to 2050; 44.87Mt @ 0.38% TREO not 4.7Bt host; not a buy rec. Wiki-only. **No xsp/pm scp.** No LIVE Discord.
+Klement debt: Reuters 14 Sep 2026; no named levels → no GW auto-arm. Klement disasters: IMF Nguyen et al (2026) cite only — `[TENTATIVE] (tagged 2026-09-15)`; no invented source page. WuBlock 14–20 Sep: Fed ~85% 25bp as of 12 Sep cutoff; BoE hold 3.75%; BOJ +25bp to 1.25% expected. Outlier Tanbreez: CRML 92.5%; license to 2050; 44.87Mt @ 0.38% TREO not 4.7Bt host; not a buy rec. Wiki-only. **No xsp/pm scp.** No LIVE Discord.

@@ -42,6 +42,7 @@ related:
   - sources/arxiv-2608-02520-medpress-patient-pressure-sycophancy.md
   - concepts/piminer-agentic-prompt-injection-redteam.md
   - sources/arxiv-2608-05108-piminer-prompt-injection-redteam.md
+  - sources/arxiv-2610.40627-shallowdefend-harnessing-shallow-safety-alignmen-2026-11-01.md
 maturity: validated
 created: 2026-05-13
 updated: 2026-10-09

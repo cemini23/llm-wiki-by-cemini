@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/arxiv-2610.40278-neighborhood-elites-quality-diversity-search-for-2026-11-01.md
+  - sources/arxiv-2611.14149-search-to-decision-survey-2026-11-11.md
 ---
 
 ## Raw Concept

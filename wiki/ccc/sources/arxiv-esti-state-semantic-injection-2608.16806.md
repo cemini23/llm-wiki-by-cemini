@@ -10,6 +10,7 @@ related:
   - sources/brief-k285-k289-harness-wave-2026-08-18.md
   - briefs/2026-08-18_ccc-handoff-k285-k289-ingest.md
   - "@cybersecurity-wiki/concepts/esti-state-semantic-injection-stub.md"
+  - sources/arxiv-spatial-semantic-robot-navigation-mcp-2609.27340.md
 maturity: draft
 created: 2026-08-18
 updated: 2026-08-18

@@ -1,6 +1,7 @@
 ---
 title: "Safety as a Budget: calibrating the control channel of constrained GRPO (arXiv 2611.16628)"
 type: source
+maturity: validated
 related:
   - concepts/safety-budget-control-channel-calibration.md
   - concepts/guardrail-construct-validity-agent-eval.md
@@ -8,6 +9,8 @@ related:
   - concepts/agent-runtime-guardrails.md
   - sources/arxiv-jev-llm-safety-guardrail-2611.08845.md
   - sources/arxiv-bmms-policy-conditioned-behavioral-compliance-2611.09147.md
+  - sources/arxiv-2611.04349-sparse-internal-control-2026-11-05.md
+  - sources/arxiv-2611.14171-bars-budget-aware-sampling-2026-11-11.md
 updated: 2026-11-14
 ---
 

@@ -49,7 +49,7 @@ Ingest 2026-06-01 from OmniCustom paper — new task tier above silent video cus
 | Lipsync | LatentSync post-pass | End-to-end AV sync (claimed) |
 | BGS | Stable Audio Open + FFmpeg mux | Native in joint gen |
 
-**Status:** research/adoption candidate — verify weights license + ComfyUI path `[NEEDS VERIFICATION 2026-06-01]`. → @entities/models/omnicustom.md
+**Status:** research/adoption candidate — verify weights license + ComfyUI path `[NEEDS VERIFICATION 2026-11-16]`. → @entities/models/omnicustom.md
 
 **Successor tier:** @concepts/joint-audio-visual-instruction-editing.md (JAVEdit) adds natural-language **editing** on top of reference-driven **customization** — same joint AV goal, different control surface.
 

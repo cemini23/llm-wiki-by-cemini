@@ -10,6 +10,7 @@ related:
   - sources/swarmer-ratel-revenue-check-2026-10-08.md
   - concepts/rearmament-defense-growth-thesis.md
   - concepts/k289-feeds-wave.md
+  - sources/substack-rss-outlier-weekly-2026-11-02-twenty-years-of-cost-one-year-of-revenue.md
 maturity: draft
 created: 2026-10-12
 updated: 2026-10-12

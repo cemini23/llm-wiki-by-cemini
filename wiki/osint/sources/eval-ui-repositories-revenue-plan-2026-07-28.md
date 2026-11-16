@@ -47,7 +47,7 @@ clusters: [k202-ingest]
 | **Integrate** | saadeghi/daisyui | MIT `[CONFIRMED]` | **npm pack only** — full git ~12GB; Phase-0 `.local/adopts/daisyui-npm` |
 | **Integrate** | tailwindlabs/heroicons | MIT `[CONFIRMED]` | Phase-0 shallow (~12M) → Atto/TipDrop icons |
 | **Extract** | twbs/icons | MIT `[CONFIRMED]` | Raw SVG assets for Atto brand UI |
-| **Watch** | animate.css, IanLunn/Hover | NOASSERTION `[NEEDS VERIFICATION 2026-07-28]` | TipDrop CTA motion — verify LICENSE before ship |
+| **Watch** | animate.css, IanLunn/Hover | NOASSERTION `[NEEDS VERIFICATION 2026-11-16]` | TipDrop CTA motion — verify LICENSE before ship |
 | **Watch** | responsively-org/responsively-app | AGPL-3.0 `[CONFIRMED]` | Local QA tool only — no product embed |
 | **Watch** | argyleink/open-props | MIT `[CONFIRMED]` | Design tokens — CCC/Atto optional |
 | **Context** | bootstrap, normalize, ionicons, h5bp, foundation | MIT / various | Reference |

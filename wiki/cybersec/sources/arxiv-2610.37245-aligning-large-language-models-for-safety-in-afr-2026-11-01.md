@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-2610-08678-secure-speculative-decoding.md
+  - sources/arxiv-2610-00590-hierarchical-llm-cyber-defense.md
 ---
 
 ## Raw Concept

@@ -5,6 +5,8 @@ tags: [tool, ccc]
 keywords: [claude-hud, statusline, rate limits, cve]
 related:
   - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - entities/patterns/cpr-context-compression.md
+  - concepts/claude-code-large-codebase-workflow.md
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25

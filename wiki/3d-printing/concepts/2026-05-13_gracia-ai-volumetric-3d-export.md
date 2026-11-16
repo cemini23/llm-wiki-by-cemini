@@ -30,4 +30,4 @@ gracia.ai uses Gaussian Splatting to produce volumetric video. Surfaced in the 2
 
 The 3D-printing angle is **volumetric-mesh export**: Gaussian-splat scenes can in principle be converted to printable meshes, though gracia.ai itself targets video playback rather than mesh export. This stub records the discovery trail; substantive coverage belongs here only if the mesh-export path is pursued.
 
-`[NEEDS VERIFICATION 2026-05-15]` whether gracia.ai exposes any mesh/`.stl`/`.obj` export path, and its license.
+`[NEEDS VERIFICATION 2026-11-16]` whether gracia.ai exposes any mesh/`.stl`/`.obj` export path, and its license.

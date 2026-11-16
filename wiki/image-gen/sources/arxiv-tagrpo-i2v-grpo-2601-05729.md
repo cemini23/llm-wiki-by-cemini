@@ -55,4 +55,4 @@ First open I2V-specific GRPO recipe targeting the **same bases** in the persona 
 
 ## Dead Ends
 
-None yet — weights/release timeline `[NEEDS VERIFICATION 2026-06-01]`.
+None yet — weights/release timeline `[NEEDS VERIFICATION 2026-11-16]`.

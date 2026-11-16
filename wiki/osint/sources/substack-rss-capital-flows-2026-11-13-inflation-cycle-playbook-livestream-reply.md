@@ -1,9 +1,11 @@
 ---
 title: "Capital Flows — Inflation Cycle Playbook (livestream reply)"
 type: source
+maturity: draft
 related:
   - concepts/inflation-risk-regime-2026.md
   - concepts/osint-inbox-wave-2026-11-14.md
+  - sources/substack-rss-capital-flows-2026-11-11-inflation-cycle-2026-11-11.md
 updated: 2026-11-14
 ---
 
@@ -43,7 +45,7 @@ The rest is unfalsifiable from the teaser. The claim that inflation swaps mispri
 
 The item is a teaser, and the wiki treats it as a pointer, not evidence. The useful output is the spread monitor. See @concepts/inflation-risk-regime-2026.md.
 
-[NEEDS VERIFICATION 2026-11-14] The teaser's 6% nominal demand and 4% policy rate are unverified against a primary data release.
+[NEEDS VERIFICATION 2026-11-16] The teaser's 6% nominal demand and 4% policy rate are unverified against a primary data release.
 
 ## Snippets
 

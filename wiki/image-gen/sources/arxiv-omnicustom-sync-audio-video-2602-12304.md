@@ -53,7 +53,7 @@ Task ladder vs prior work:
 
 ### Workspace relevance
 
-Highest-signal paper in this batch for **persona talking-head + voice** unified path — may subsume separate Fish-Speech + LatentSync + Wan I2V chains if weights ship and license permits commercial use `[NEEDS VERIFICATION 2026-06-01]`. Project: https://omnicustom-project.github.io/page/
+Highest-signal paper in this batch for **persona talking-head + voice** unified path — may subsume separate Fish-Speech + LatentSync + Wan I2V chains if weights ship and license permits commercial use `[NEEDS VERIFICATION 2026-11-16]`. Project: https://omnicustom-project.github.io/page/
 
 ## Snippets
 

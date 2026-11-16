@@ -11,6 +11,8 @@ updated: 2026-09-21
 phase_0_verdict: "OOD 2026-09-21 — elder-care / EEG proactive LLM assistant; not cyber-primary."
 wire_status: wont_wire
 wire_target: "none — OOD stub"
+related:
+  - concepts/ai-for-cybersecurity.md
 ---
 
 ## Relations

@@ -71,7 +71,7 @@ K98 full ingest from daily digest inbox (2026-06-04). **~40% Polymarket operator
 ### Prod notes
 
 - Posts 2–3, 13 reinforce **latency + queue position** as first-class Cemini PM requirements — stage prod brief for read-only telemetry validation, not new execution paths without shadow data.
-- Post 6 **MiroFish** multi-agent simulation — REFERENCE only until Phase-0 on repo license + prod boundary [NEEDS VERIFICATION 2026-06-04].
+- Post 6 **MiroFish** multi-agent simulation — REFERENCE only until Phase-0 on repo license + prod boundary [TENTATIVE] (tagged 2026-06-04).
 - PnL figures ($46k/mo, $16k, 67–76%) are **single-source marketing** [TENTATIVE].
 
 ## Snippets

@@ -19,6 +19,7 @@ related:
   - entities/tools/blast-radius-necrophoresis.md
   - sources/arxiv-2608-12311-rsm-role-specialization.md
   - concepts/role-specialization-multi-tool-coordination.md
+  - sources/arxiv-2610.40959-p-contextbench-personal-context-2026-11-03.md
 maturity: draft
 created: 2026-07-21
 updated: 2026-08-13

@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-10-27
 updated: 2026-10-27
+related:
+  - sources/arxiv-epistemic-humility-knowledge-conflict-2610.12360.md
+  - sources/arxiv-mempilot-preference-aware-memory-orchestration-2610.06830.md
 ---
 
 ## Raw Concept

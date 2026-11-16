@@ -37,8 +37,8 @@ Page prompted by the W4 Tier 3 voice/audio backfill (2026-05-13). Named in @conc
 
 ### Key facts (May 2026)
 
-- **License**: **Apache 2.0** [NEEDS VERIFICATION 2026-05-13] — verify against repo
-- **Size**: ~1.6B parameters [NEEDS VERIFICATION 2026-05-13]
+- **License**: **Apache 2.0** [NEEDS VERIFICATION 2026-11-16] — verify against repo
+- **Size**: ~1.6B parameters [NEEDS VERIFICATION 2026-11-16]
 - **Repo**: `github.com/nari-labs/dia` [OPEN QUESTION 2026-05-13]
 - **Hugging Face**: `nari-labs/Dia-1.6B` (or similar) [OPEN QUESTION 2026-05-13]
 - **Architecture**: GPT-style decoder over discrete audio tokens, multi-speaker conditioning [VERIFY]

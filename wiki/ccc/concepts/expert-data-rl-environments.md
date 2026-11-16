@@ -1,6 +1,7 @@
 ---
 title: "Expert data and RL environments — what frontier labs actually buy"
 type: concept
+maturity: draft
 related:
   - sources/newsletter-rss-latent-space-2026-11-09-what-frontier-labs-buy-a-data-deep-dive-with-han.md
   - concepts/baseline-and-metric-calibration.md

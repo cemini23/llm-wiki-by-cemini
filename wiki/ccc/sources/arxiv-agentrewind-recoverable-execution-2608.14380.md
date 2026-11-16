@@ -11,6 +11,7 @@ related:
   - concepts/telemetry-deterministic-agent-failure-repair.md
   - sources/brief-k282-k284-harness-wave-2026-08-17.md
   - briefs/2026-08-17_ccc-handoff-k282-k284-ingest.md
+  - sources/arxiv-2611.05345-subconscious-speculative-reasoning-2026-11-05.md
 maturity: draft
 created: 2026-08-17
 updated: 2026-08-17

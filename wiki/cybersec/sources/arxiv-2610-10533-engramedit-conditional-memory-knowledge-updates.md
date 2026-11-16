@@ -7,6 +7,7 @@ related:
   - concepts/conditional-memory-knowledge-editing.md
   - concepts/local-suppression-vs-repair.md
   - concepts/agent-execution-provenance.md
+  - sources/arxiv-2610-13307-sustainable-cloud-fog-edge-smart-buildings.md
 maturity: draft
 read_status: read
 created: 2026-10-09

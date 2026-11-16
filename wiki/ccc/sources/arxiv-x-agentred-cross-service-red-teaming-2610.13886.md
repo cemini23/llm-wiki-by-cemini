@@ -10,6 +10,9 @@ related:
   - concepts/mcp-tool-taxonomy-navigation.md
   - concepts/agent-approval-laundering-transitive-effects.md
   - briefs/2026-10-12_ccc-k445-k448-sip-ready.md
+  - sources/arxiv-2610.35773-a-unified-arena-for-llm-agents-across-diverse-eu-2026-10-27.md
+  - sources/arxiv-2610.37461-concordat-typed-sessions-for-llm-agents-2026-11-01.md
+  - sources/arxiv-2611.03412-deliverbench-multi-stage-projects-2026-11-03.md
 maturity: draft
 read_status: deep-read
 created: 2026-10-12

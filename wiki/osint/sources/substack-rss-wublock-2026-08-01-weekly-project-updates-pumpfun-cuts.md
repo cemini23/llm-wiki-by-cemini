@@ -6,6 +6,7 @@ keywords: [PumpFun, Uniswap, Aave, Hyperliquid, Ethena, x402, Storj, Metronome, 
 related:
   - concepts/active-project-research-routing.md
   - entities/platforms/hyperliquid.md
+  - sources/substack-rss-wublock-2026-10-24-weekly-project-updates-dogecoin-labs-launches-fo.md
 maturity: draft
 created: 2026-08-01
 updated: 2026-08-01

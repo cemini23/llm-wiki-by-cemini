@@ -1,6 +1,7 @@
 ---
 title: "Eval integrity — the minimum a benchmark must disclose"
 type: concept
+maturity: draft
 related:
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
   - sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md

@@ -7,6 +7,8 @@ related:
   - concepts/federated-daily-research-digest.md
   - sources/arxiv-2608-20795-lotka-volterra-skip.md
   - sweeps/2026-08-28-daily.md
+  - sources/arxiv-2608-07445-hea-vacancy-skip.md
+  - sources/arxiv-2608-13484-gricean-retreat-skip.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-28

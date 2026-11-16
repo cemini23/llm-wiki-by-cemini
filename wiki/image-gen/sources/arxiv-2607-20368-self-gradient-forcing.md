@@ -11,6 +11,8 @@ related:
   - entities/models/wan-2-2.md
   - entities/models/tango-ar-video.md
   - sweeps/2026-07-23-daily.md
+  - sources/arxiv-2607-13563-nexus-native-mesh-diffusion.md
+  - sources/arxiv-2607-15277-partition-prompt-aggregate-llm-self-consistency.md
 maturity: draft
 read_status: read
 created: 2026-07-23

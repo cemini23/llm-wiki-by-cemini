@@ -30,7 +30,7 @@ Entity stub from 2026-06-06 ingest — AlbedoEdit unified video editor.
 
 **Hardware:** ~2× Wan 14B memory (concatenated source + dual albedo + target latents). Trained 832×480 × 33 frames on 8× H200.
 
-**Release:** models + dataset promised `[NEEDS VERIFICATION 2026-06-06]`. Project: vcai.mpi-inf.mpg.de/projects/AlbedoEdit/
+**Release:** models + dataset promised `[NEEDS VERIFICATION 2026-11-16]`. Project: vcai.mpi-inf.mpg.de/projects/AlbedoEdit/
 
 ## Snippets
 

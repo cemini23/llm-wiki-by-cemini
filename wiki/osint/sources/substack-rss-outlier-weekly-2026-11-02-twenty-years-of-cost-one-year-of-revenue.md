@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/substack-rss-outlier-weekly-2026-10-12-swarmer-revenue.md
+  - sources/substack-rss-outlier-weekly-2026-11-11-fifty-years-of-cards-ten-days-of-ledger.md
 ---
 
 ## Raw Concept

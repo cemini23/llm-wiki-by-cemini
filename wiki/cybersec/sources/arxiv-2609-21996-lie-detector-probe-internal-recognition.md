@@ -6,6 +6,7 @@ keywords: [2609.21996, PIR, Probe of Internal Recognition, sandbagging, conceale
 related:
   - concepts/probe-internal-recognition-sandbagging-audit.md
   - concepts/counterfactual-simulatability-llm-explanations.md
+  - sources/arxiv-2609-05381-molecular-deja-vu-digit-retrieval.md
 maturity: draft
 read_status: read
 created: 2026-09-21

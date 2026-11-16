@@ -10,6 +10,8 @@ related:
   - entities/models/hunyuanvideo-1-5.md
   - entities/models/ltx-2.md
   - sweeps/2026-07-09-daily.md
+  - sources/arxiv-2607-15643-penalty-scaling-nipg-shallow-water.md
+  - sources/arxiv-2607-29533-osagen-anomaly.md
 maturity: draft
 read_status: read
 created: 2026-07-09

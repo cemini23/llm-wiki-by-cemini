@@ -13,6 +13,7 @@ related:
   - sources/2025-surynek-sequential-printing-cegar.md
   - sources/2026-hatton-parallelobox-aabb-decomposition.md
   - sources/2026-corn-optimistic-verifiable-claims.md
+  - sources/arxiv-2611.13983-robotic-am-path-planning-2026-11-11.md
 maturity: draft
 created: 2026-05-06
 updated: 2026-07-29

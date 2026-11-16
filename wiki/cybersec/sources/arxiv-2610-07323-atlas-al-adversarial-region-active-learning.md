@@ -9,6 +9,7 @@ related:
   - concepts/adversarial-region-estimation-vs-single-example.md
   - concepts/benchmark-shortcut-attack-pyramid-audit.md
   - concepts/guardrail-construct-validity-agent-eval.md
+  - sources/arxiv-2610-06844-contextual-reader-diffusion-transformers-ood.md
 maturity: draft
 read_status: read
 created: 2026-10-07

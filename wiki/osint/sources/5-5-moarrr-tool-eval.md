@@ -114,7 +114,7 @@ Local Ollama compatible — synergizes with the existing Karpathy LLM Wiki workf
 
 ### License-posture observations
 
-No new license patterns surfaced. License field was sparse in the docx eval excerpts — entity stubs note `[NEEDS VERIFICATION 2026-05-05]` for license verification on each Adopt before any production deployment.
+No new license patterns surfaced. License field was sparse in the docx eval excerpts — entity stubs note `[OPEN QUESTION 2026-05-05]` for license verification on each Adopt before any production deployment.
 
 ## Snippets
 

@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - sources/substack-rss-wublock-2026-10-06-september-blockchain-tech.md
+  - sources/substack-rss-wublock-2026-11-12-global-crypto-mining-news-in-october-binance-poo.md
 ---
 
 ## Raw Concept

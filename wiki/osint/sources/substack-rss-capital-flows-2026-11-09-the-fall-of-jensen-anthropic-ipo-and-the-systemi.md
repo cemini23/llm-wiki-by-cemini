@@ -1,11 +1,13 @@
 ---
 title: "Capital Flows — The fall of Jensen, the Anthropic IPO, and systemic risks for macro liquidity"
 type: source
+maturity: draft
 related:
   - concepts/k296-feeds-wave.md
   - concepts/capital-flows-sofr-conviction-framework.md
   - entities/companies/coreweave.md
   - sources/substack-rss-capital-flows-2026-11-05-market-status-market-bottom-or-beginning-of-the.md
+  - sources/substack-rss-capital-flows-2026-10-26-midterms-and-the-coming-ai-regulatory-crisis.md
 updated: 2026-11-10
 ---
 

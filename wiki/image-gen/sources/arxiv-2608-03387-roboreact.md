@@ -5,6 +5,8 @@ tags: [paper, peripheral, robotics,humanoid]
 keywords: [peripheral]
 related:
   - sweeps/2026-08-05-daily.md
+  - sources/arxiv-2608-16585-squad-attention-distillation.md
+  - sources/arxiv-2608-13391-context-matched-distillation.md
 maturity: draft
 read_status: skimmed
 created: 2026-08-05

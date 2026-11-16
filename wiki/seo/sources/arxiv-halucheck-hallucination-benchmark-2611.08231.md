@@ -7,6 +7,7 @@ related:
   - concepts/ai-factual-error-types-business-facts.md
   - concepts/citation-verification-aeo.md
   - concepts/canonical-business-facts-geo.md
+  - sources/arxiv-2611.04640-tunebench-power-system-2026-11-05.md
 maturity: draft
 read_status: read
 created: 2026-11-10

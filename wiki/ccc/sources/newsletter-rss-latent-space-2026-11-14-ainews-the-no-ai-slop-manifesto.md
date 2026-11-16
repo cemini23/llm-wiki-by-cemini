@@ -1,6 +1,7 @@
 ---
 title: "AINews: The No AI Slop manifesto — coding-agent index, effort economics, eval integrity"
 type: source
+maturity: draft
 related:
   - concepts/eval-integrity-minimum-standards.md
   - concepts/reasoning-effort-calibration.md
@@ -8,6 +9,37 @@ related:
   - entities/tools/claude-code.md
   - entities/tools/openai-codex-cli.md
   - entities/models/claude-fable-5-2.md
+  - sources/newsletter-rss-latent-space-2026-06-30-ahmad-osman-on-why-local-ai-is-catching-up.md
+  - sources/newsletter-rss-latent-space-2026-06-30-ainews-not-much-happened-today.md
+  - sources/newsletter-rss-latent-space-2026-07-01-aiewf-daily-dispatch-loops-software-factories-fo.md
+  - sources/newsletter-rss-latent-space-2026-07-01-ainews-sonnet-5-today-and-fable-5-tomorrow.md
+  - sources/newsletter-rss-latent-space-2026-07-01-autoresearch-the-feedback-loop-behind-self-impro.md
+  - sources/newsletter-rss-latent-space-2026-07-01-forward-deployed-engineers-and-the-future-of-sof.md
+  - sources/newsletter-rss-latent-space-2026-07-01-how-cursor-deploys-ai-inside-the-enterprise.md
+  - sources/newsletter-rss-latent-space-2026-07-01-the-coolest-diffusion-research-isnt-in-llms-evan.md
+  - sources/newsletter-rss-latent-space-2026-07-01-warp-ceo-zach-lloyd-on-why-software-factories-ar.md
+  - sources/newsletter-rss-latent-space-2026-07-02-aiewf-daily-dispatch-autoresearch-and-the-tensio.md
+  - sources/newsletter-rss-latent-space-2026-07-02-ainews-not-much-happened-today.md
+  - sources/newsletter-rss-latent-space-2026-07-02-the-website-of-the-future-may-assemble-itself-fo.md
+  - sources/newsletter-rss-latent-space-2026-07-03-aiewf-daily-dispatch-the-great-loops-debate-and.md
+  - sources/newsletter-rss-latent-space-2026-07-07-ainews-the-field-guide-to-fable.md
+  - sources/newsletter-rss-latent-space-2026-07-28-codex-chatgpt-work.md
+  - sources/newsletter-rss-latent-space-2026-10-21-ai-for-the-fortune-2000-how-tenex-builds-an-ai-n.md
+  - sources/newsletter-rss-latent-space-2026-10-21-ainews-deepseek-deepinfer-open-source-sota-infer.md
+  - sources/newsletter-rss-latent-space-2026-10-22-ainews-openais-patch-the-planet-program-is-1-of.md
+  - sources/newsletter-rss-latent-space-2026-10-22-you-are-the-team-anekha-sokhal-moshi.md
+  - sources/newsletter-rss-latent-space-2026-10-23-ai-is-getting-good-at-math-heres-why.md
+  - sources/newsletter-rss-latent-space-2026-10-26-supabases-plan-for-a-billion-ai-built-apps.md
+  - sources/newsletter-rss-latent-space-2026-10-27-ainews-anthropic-files-for-2t-ipo-in-2-weeks-140.md
+  - sources/newsletter-rss-latent-space-2026-10-27-coding-from-the-himalayas-with-an-offline-ai-age.md
+  - sources/newsletter-rss-latent-space-2026-10-27-how-anthropic-ships-claude.md
+  - sources/newsletter-rss-latent-space-2026-10-28-ainews-anthropic-ends-coding-interviews-hunger-b.md
+  - sources/newsletter-rss-latent-space-2026-10-29-ainews-gemini-4-carbon-tops-leaderboards-launche.md
+  - sources/newsletter-rss-latent-space-2026-10-30-ainews-building-aie-code-the-top-coding-agent-co.md
+  - sources/newsletter-rss-latent-space-2026-10-31-ainews-google-admits-ai-mode-hurts-search-revenu.md
+  - sources/newsletter-rss-latent-space-2026-11-05-swapping-season-2026-11-05.md
+  - sources/newsletter-rss-latent-space-2026-11-10-naiveai-n05-flash-2026-11-11.md
+  - sources/newsletter-rss-latent-space-2026-11-11-mercor-3b-2026-11-11.md
 updated: 2026-11-14
 ---
 

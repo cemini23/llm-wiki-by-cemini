@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - sources/arxiv-mlexpert-2610.22344-2026-10-16.md
+  - concepts/llm-as-code-agentic-programming.md
 ---
 
 ## Raw Concept

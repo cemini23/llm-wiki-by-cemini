@@ -8,6 +8,9 @@ maturity: draft
 created: 2026-10-23
 updated: 2026-10-25
 read_status: skimmed
+related:
+  - sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md
+  - sources/substack-rss-capital-flows-2026-07-16-market-shift-and-risks.md
 ---
 
 ## Raw Concept

@@ -1,6 +1,7 @@
 ---
 title: "MCPTrace — Volatility 3 plugin for MCP and JSON-RPC artefacts"
 type: entity
+maturity: draft
 related:
   - sources/newsletter-rss-tldrsec-2026-11-12-tldr-sec-354---artex-agentic-hacking-in-the-wild.md
   - concepts/mcp-security-posture.md

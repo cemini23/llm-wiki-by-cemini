@@ -9,6 +9,7 @@ related:
   - concepts/ai-for-cybersecurity.md
   - concepts/kamr-knowledge-aligned-multihop-retrieval.md
   - sources/arxiv-2607-27136-kamr-multihop-retrieval.md
+  - sources/arxiv-2611.13578-poem-block-sparse-attention-2026-11-11.md
 maturity: draft
 created: 2026-07-22
 updated: 2026-07-30

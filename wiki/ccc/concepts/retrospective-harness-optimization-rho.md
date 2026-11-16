@@ -34,6 +34,7 @@ related:
   - concepts/meta-harness-optimization-hitl-eval-contract.md
   - entities/tools/autodesign.md
   - sources/arxiv-autodesign-meta-harness-2608.13560.md
+  - sources/arxiv-2610.39884-karma-training-free-knowledge-atomic-harness-evo-2026-11-01.md
 maturity: draft
 created: 2026-06-07
 updated: 2026-07-30

@@ -10,6 +10,9 @@ created: 2026-09-02
 updated: 2026-09-02
 phase_0_verdict: "OOD 2026-09-02 — general NLP/RAG classification; not cyber-primary."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2609-26555-rouxii-deception-aware-ai-pentesters.md
+  - sources/arxiv-2608-11044-ood-teammix-htc.md
 ---
 
 ## Relations

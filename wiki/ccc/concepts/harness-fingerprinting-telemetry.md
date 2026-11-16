@@ -1,6 +1,7 @@
 ---
 title: "Harness fingerprinting — a harness leaks identity through timing, redaction, and scheduling"
 type: concept
+maturity: draft
 related:
   - sources/arxiv-say-shibboleth-fingerprinting-2611.12386.md
   - concepts/harness-fingerprint-trajectory-routing.md

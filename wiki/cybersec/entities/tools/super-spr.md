@@ -40,4 +40,4 @@ Routed from K55 OSINT-wiki tool eval (2026-05-20). Zero-trust networking impleme
 - **DNAT rewriting**
 - **VLAN segregation in Go**
 
-BSD-3-Clause clears for full commercial derivation. The K55 eval classified it as Steal-from, but the license permits direct adoption. Key extractables for cybersec-wiki: programmatic policy routing patterns, VLAN segregation in Go, and MAC randomization timeout logic (with [NEEDS VERIFICATION 2026-05-21] on the reassignment logic in Docker containers).
+BSD-3-Clause clears for full commercial derivation. The K55 eval classified it as Steal-from, but the license permits direct adoption. Key extractables for cybersec-wiki: programmatic policy routing patterns, VLAN segregation in Go, and MAC randomization timeout logic (with [NEEDS VERIFICATION 2026-11-16] on the reassignment logic in Docker containers).

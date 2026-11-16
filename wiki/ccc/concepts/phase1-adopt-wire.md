@@ -129,6 +129,11 @@ related:
   - concepts/vague-goal-self-evolution.md
   - entities/tools/autoscirub.md
   - briefs/2026-09-01_ccc-k328-k332-sip-ready.md
+  - entities/tools/earendil-djs.md
+  - entities/tools/svgjs.md
+  - entities/tools/theatre.md
+  - entities/tools/tokeneconomizer.md
+  - sources/arxiv-2610.35835-i-hitl-inalienable-human-in-the-loop-2026-10-27.md
 maturity: draft
 created: 2026-07-31
 updated: 2026-09-01

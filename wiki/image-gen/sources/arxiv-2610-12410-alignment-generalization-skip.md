@@ -6,6 +6,7 @@ keywords: [alignment generalization, value representations, DPO, SFT, persona ve
 related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-10-12-daily.md
+  - sources/arxiv-2607-20410-lkvalues.md
 maturity: draft
 read_status: skimmed
 created: 2026-10-12

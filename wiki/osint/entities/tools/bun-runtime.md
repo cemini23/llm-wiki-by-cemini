@@ -19,7 +19,7 @@ updated: 2026-07-10
 | Field | Value |
 |-------|-------|
 | **Repo** | [oven-sh/bun](https://github.com/oven-sh/bun) |
-| **License** | Eval claims MIT; GitHub API `NOASSERTION` SPDX [NEEDS VERIFICATION 2026-07-10] |
+| **License** | Eval claims MIT; GitHub API `NOASSERTION` SPDX [NEEDS VERIFICATION 2026-11-16] |
 | **Verdict** | **Watch** — performance upside blocked by runtime stability (segfaults, GC panics, non-AVX2) |
 | **Routing** | wiki-only; **no** TipDrop prod until issue volume drops |
 

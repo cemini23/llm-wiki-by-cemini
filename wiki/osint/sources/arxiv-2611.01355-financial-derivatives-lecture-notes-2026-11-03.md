@@ -7,6 +7,8 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-03
 updated: 2026-11-03
+related:
+  - sources/3-26-git-re.md
 ---
 
 ## Raw Concept

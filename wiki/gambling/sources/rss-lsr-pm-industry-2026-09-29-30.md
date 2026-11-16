@@ -125,7 +125,7 @@ He also stated: "These are not swaps. They're not miraculously finding the other
 ## Dead Ends
 
 - **Reeg's insider-trading remark is an observation, not a finding.** The CFTC has not charged anything here. Do not treat it as established market-integrity evidence. [TENTATIVE]
-- **Flutter's share price prints conflict** across outlets ($78.78 vs $89.56 on nearby dates). Cite the direction, not a level. [NEEDS VERIFICATION 2026-10-02]
+- **Flutter's share price prints conflict** across outlets ($78.78 vs $89.56 on nearby dates). Cite the direction, not a level. [TENTATIVE] (tagged 2026-10-02)
 - **Flutter's analyst targets and EBITDA cuts are secondary reporting.** Verify against Flutter's own filings before citing.
 - **No operator action.** Awareness only. No pm scp, no geofence change.
 - The Kalshi termination is **filed, not effective** until 2026-10-13 at the earliest.

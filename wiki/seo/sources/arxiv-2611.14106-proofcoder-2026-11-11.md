@@ -7,6 +7,8 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-11
 updated: 2026-11-11
+related:
+  - sources/arxiv-2611.02634-evolving-explanations-faithfulness-2026-11-03.md
 ---
 
 ## Raw Concept

@@ -57,7 +57,7 @@ Pre-ingest flagged **DUPLICATE** on CCGS URL only — remainder is **NEW** analy
 | OpenSHC | Reject (no license) | **GPL-3.0** — reference-only for engine archaeology; no code merge into castle-sim |
 | Path-Creator | Reject (no license) | **MIT** — upgrade to **Steal-from** for Unity spline math when Unity Phase-0 runs |
 | AI-Aimbot | Reject (no license) | **GPL-3.0** — still **Reject** on game-dev; route @cybersecurity-wiki offensive shelf |
-| SerpentAI | Steal-from MIT | Confirmed MIT; last push 2022-11 — **dormant** [NEEDS VERIFICATION 2026-09-13] |
+| SerpentAI | Steal-from MIT | Confirmed MIT; last push 2022-11 — **dormant** [NEEDS VERIFICATION 2026-11-16] |
 | UCP2 | Steal-from MIT | Confirmed MIT; ~435★, active issue queue |
 
 ### License hygiene finding [TENTATIVE]

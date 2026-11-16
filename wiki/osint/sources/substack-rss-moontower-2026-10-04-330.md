@@ -8,6 +8,9 @@ related:
   - sources/substack-rss-moontower-2026-10-04-option-ideas.md
   - concepts/k281-vol-quant-wave.md
   - concepts/k281-harness-wave.md
+  - sources/substack-rss-moontower-2026-10-25-i-bonds-vs-tips.md
+  - sources/substack-rss-moontower-2026-10-28-using-geometry-to-see-why-volatility-scales-with.md
+  - sources/substack-rss-moontower-2026-11-04-conversational-ai-media-2026-11-05.md
 maturity: draft
 created: 2026-10-04
 updated: 2026-10-04

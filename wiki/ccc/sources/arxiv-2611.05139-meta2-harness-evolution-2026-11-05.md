@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-05
 updated: 2026-11-05
+related:
+  - concepts/harness-continual-learning-guarded-evolution.md
+  - sources/arxiv-harnessdev-harness-creation-evolution-2609.01437.md
 ---
 
 ## Raw Concept

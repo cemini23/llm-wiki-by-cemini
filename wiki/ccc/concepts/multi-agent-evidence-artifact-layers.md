@@ -25,6 +25,7 @@ related:
   - sources/arxiv-traceable-scholarship-aih-infra-2607.20916.md
   - concepts/claim-centered-retrieval-with-provenance.md
   - sources/arxiv-askchem-claim-centered-literature-2607.28618.md
+  - entities/tools/cindy.md
 maturity: draft
 created: 2026-06-24
 updated: 2026-07-31

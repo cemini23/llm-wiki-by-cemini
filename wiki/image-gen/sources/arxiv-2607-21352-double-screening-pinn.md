@@ -5,6 +5,8 @@ tags: [paper, math, pinn, peripheral]
 keywords: [VIPINN, NTK, convection-diffusion]
 related:
   - sweeps/2026-07-24-daily.md
+  - sources/arxiv-2607-05711-fourtune-4bit-diffusion-post-training.md
+  - sources/arxiv-2607-18789-moving-alphabet-t2v-data.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-24

@@ -5,6 +5,7 @@ tags: [paper, autonomous-vehicles, peripheral]
 keywords: [AST, DiFS, PCA, autonomous-trucking]
 related:
   - sweeps/2026-07-21-daily.md
+  - sources/arxiv-2607-20048-importance-aware-obs-pruning.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-21

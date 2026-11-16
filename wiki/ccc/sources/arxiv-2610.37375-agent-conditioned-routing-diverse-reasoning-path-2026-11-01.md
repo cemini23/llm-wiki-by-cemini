@@ -7,6 +7,9 @@ maturity: draft
 read_status: skimmed
 created: 2026-11-01
 updated: 2026-11-01
+related:
+  - concepts/decision-model-hybrid-agent-routing.md
+  - sources/arxiv-decisive-step-base-model-probe-2610.10478.md
 ---
 
 ## Raw Concept

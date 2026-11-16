@@ -21,6 +21,7 @@ related:
   - sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md
   - concepts/time-inconsistent-stochastic-control.md
   - sources/arxiv-dpg-time-inconsistent-equilibrium-2606.11798-2026-06-16.md
+  - sources/arxiv-2607.11011-tumor-branching-time-signatures-2026-07-16.md
 maturity: draft
 created: 2026-05-16
 updated: 2026-06-16

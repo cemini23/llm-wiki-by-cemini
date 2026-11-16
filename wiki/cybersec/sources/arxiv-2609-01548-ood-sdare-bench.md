@@ -10,6 +10,9 @@ created: 2026-09-02
 updated: 2026-09-02
 phase_0_verdict: "OOD 2026-09-02 — mental-health stigma / social dialogue safety; not cyber-primary. stephaniesyfong/SDARE-Bench MIT WATCH only if routed elsewhere."
 wire_status: wont_wire
+related:
+  - sources/arxiv-2609-25294-controller-only-false-confirmation-rf-uav.md
+  - sources/arxiv-2608-14391-ood-ra-bench-crisis-video.md
 ---
 
 ## Relations

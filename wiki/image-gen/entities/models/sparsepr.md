@@ -15,6 +15,7 @@ related:
   - entities/models/wan-2-2.md
   - sources/arxiv-2608-18484-sparsepr.md
   - sweeps/2026-08-20-daily.md
+  - sources/arxiv-agenthoi-training-free-hoi-2607.13881.md
 maturity: draft
 created: 2026-08-20
 updated: 2026-08-25
