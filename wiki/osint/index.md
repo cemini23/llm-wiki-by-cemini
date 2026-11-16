@@ -34,6 +34,17 @@ Four arXiv PDFs and ten newsletters. Two papers have no project lane and say so.
 | [bitcoin-mining-economics](concepts/bitcoin-mining-economics-2026.md) | Subsidy-only revenue, two miner cohorts, capex vs power split | draft |
 | [wublock-weekly-faro](sources/substack-rss-wublock-2026-11-13-wublockchain-weekly-goldman-citi-launch-joint-us.md) | USDT −$6.6bn in 60 days; Project Faro $270m; Coinbase charter | draft |
 | [wublock-project-updates](sources/substack-rss-wublock-2026-11-14-weekly-project-updates-cftc-weighs-charges-again.md) | CFTC weighs self-certification charges against Kalshi | draft |
+| [Domain Adaptation Based Pipeline for Character Classification and Handwritten Text Recognition (2611.17952)](sources/arxiv-domain-adaptation-htr-2611.17952.md) | (added by wiki_finalize_batch) | draft |
+| [DRA-HTR: Disentangling Representation and Adaptation for Handwritten Text Recognition (2611.18143)](sources/arxiv-dra-htr-2611.18143.md) | (added by wiki_finalize_batch) | draft |
+| [Local Stochastic Volatility Iterations (2611.18214)](sources/arxiv-local-stochastic-volatility-2611.18214.md) | (added by wiki_finalize_batch) | draft |
+| [Event Horizon — Episode 41: Weather Markets With Interactive Brokers' Head of Climate Analytics Patrick Brown](sources/substack-rss-event-horizon-2026-11-16-episode-41-weather-markets-with-interactive-brok.md) | (added by wiki_finalize_batch) | draft |
+| [Glitch SPX — Talon Weekly — November 16 - November 20: Talon Weekly Sector Watchlist](sources/substack-rss-glitchspx-2026-11-15-november-16---november-20-talon-weekly-sector-wa.md) | (added by wiki_finalize_batch) | draft |
+| [Klement on Investing — About those net zero targets](sources/substack-rss-klement-2026-11-16-about-those-net-zero-targets.md) | (added by wiki_finalize_batch) | draft |
+| [Moontower Meta — back-of-the-envelope hedging cost](sources/substack-rss-moontower-2026-11-15-back-of-the-envelope-hedging-cost.md) | (added by wiki_finalize_batch) | draft |
+| [Moontower Meta — Moontower #336](sources/substack-rss-moontower-2026-11-15-moontower-336.md) | (added by wiki_finalize_batch) | draft |
+| [Moontower Meta — no such thing as a stock market bubble?](sources/substack-rss-moontower-2026-11-15-no-such-thing-as-a-stock-market-bubble.md) | (added by wiki_finalize_batch) | draft |
+| [Wu Blockchain — Asia's weekly TOP10 crypto news (2026-11-15)](sources/substack-rss-wublock-2026-11-15-asias-weekly-top10-crypto-news-shanghai-encourag.md) | (added by wiki_finalize_batch) | draft |
+| [Wu Blockchain — WuBlockchain Weekly Outlook (2026-11-16)](sources/substack-rss-wublock-2026-11-16-wublockchain-weekly-outlook-nvidia-earnings-anth.md) | (added by wiki_finalize_batch) | draft |
 
 ### Ingest 2026-10-27 (macro + quant wave)
 Inbox sweep 2026-10-27: 15 OSINT pages. Tail-vol sampling rules for vol-surface forecasting, Sornette on transient supercritical Hawkes episodes, and the CoreWeave credit stress that moved the whole AI complex.
@@ -4793,6 +4804,16 @@ Codebase hubs maintained for agent navigation (`/obsidian-architect`).
 |------|------|
 | sources/substack-rss-glitchspx-2026-08-30-talon-weekly.md | source |
 | sources/substack-rss-wublock-2026-08-30-asia-top10.md | source |
+| [Asia tokenisation and exchange policy, November 2026](concepts/asia-tokenisation-and-exchange-policy-2026-11.md) | (added by wiki_finalize_batch) | draft |
+| [Back-of-the-envelope cost of a rolling index hedge](concepts/back-of-envelope-hedging-cost.md) | (added by wiki_finalize_batch) | draft |
+| [Domain adaptation for historical handwritten text recognition](concepts/htr-domain-adaptation.md) | (added by wiki_finalize_batch) | draft |
+| [Net-zero target adoption and measured emissions outcomes](concepts/net-zero-target-emissions-outcomes.md) | (added by wiki_finalize_batch) | draft |
+| [The option surface carries the shape of risk that a stock price cannot](concepts/option-surface-vs-stock-price.md) | (added by wiki_finalize_batch) | draft |
+| [Prediction-market state litigation and the federal preemption fight (Nov 2026)](concepts/prediction-market-state-litigation-2026-11.md) | (added by wiki_finalize_batch) | draft |
+| [Socratic tutor as an agent skill](concepts/socratic-tutor-agent-skill.md) | (added by wiki_finalize_batch) | draft |
+| [Reading a scanner watchlist: OTE, GEX, VEX, and invalidation](concepts/talon-scanner-level-semantics.md) | (added by wiki_finalize_batch) | draft |
+| [CME settlement mechanics for Polymarket commodity & index markets](concepts/cme-settlement-mechanics-for-prediction-markets.md) | (added by wiki_finalize_batch) | draft |
+| [Calibrating local stochastic volatility by fixed-point iteration](concepts/local-stochastic-volatility-calibration.md) | (added by wiki_finalize_batch) | draft |
 
 ### K250 wave (2026-08-29)
 

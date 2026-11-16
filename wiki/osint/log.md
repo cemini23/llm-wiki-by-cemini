@@ -1,3 +1,25 @@
+## [2026-11-16] ingest | K297 — 3 arXiv papers (HTR domain adaptation x2, local stochastic volatility) and 8 newsletter captures
+
+- @concepts/asia-tokenisation-and-exchange-policy-2026-11.md
+- @concepts/back-of-envelope-hedging-cost.md
+- @concepts/htr-domain-adaptation.md
+- @concepts/net-zero-target-emissions-outcomes.md
+- @concepts/option-surface-vs-stock-price.md
+- @concepts/prediction-market-state-litigation-2026-11.md
+- @concepts/socratic-tutor-agent-skill.md
+- @concepts/talon-scanner-level-semantics.md
+- @sources/arxiv-domain-adaptation-htr-2611.17952.md
+- @sources/arxiv-dra-htr-2611.18143.md
+- @sources/arxiv-local-stochastic-volatility-2611.18214.md
+- @sources/substack-rss-event-horizon-2026-11-16-episode-41-weather-markets-with-interactive-brok.md
+- @sources/substack-rss-glitchspx-2026-11-15-november-16---november-20-talon-weekly-sector-wa.md
+- @sources/substack-rss-klement-2026-11-16-about-those-net-zero-targets.md
+- @sources/substack-rss-moontower-2026-11-15-back-of-the-envelope-hedging-cost.md
+- @sources/substack-rss-moontower-2026-11-15-moontower-336.md
+- @sources/substack-rss-moontower-2026-11-15-no-such-thing-as-a-stock-market-bubble.md
+- @sources/substack-rss-wublock-2026-11-15-asias-weekly-top10-crypto-news-shanghai-encourag.md
+- @sources/substack-rss-wublock-2026-11-16-wublockchain-weekly-outlook-nvidia-earnings-anth.md
+
 ## [2026-10-23] ingest | K294 — Quant-Arena, tool marks, feeds
 
 - **62 inbox files. 34 PDFs and 28 newsletters. 8 duplicate ids:** `2610.11669`, `2610.09244`, `2610.15932`, `2610.17391`, `2610.23419`, `2610.24289`, `2610.25671`, `2610.20896`. No page is written for these. Quant-Arena ran nine frontier models. GPT-6 Astra scores highest. No model beats equal-weight A-shares on the sealed year 2024. **No trade.**

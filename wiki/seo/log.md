@@ -1,3 +1,12 @@
+## [2026-11-16] ingest | K297 — 3 arXiv papers (local LLM paper search, spatial priors, LLM battery control)
+
+- @concepts/llm-as-closed-loop-controller.md
+- @concepts/llm-spatial-priors-limits.md
+- @concepts/local-llm-literature-search.md
+- @sources/arxiv-llm-agent-battery-fast-charging-2611.18140.md
+- @sources/arxiv-llm-spatial-priors-navigation-2611.18123.md
+- @sources/arxiv-local-llm-paper-search-2611.17929.md
+
 ## [2026-10-20] ingest | K293 — inbox routed out
 
 - **No SEO page.** The new PDFs in this inbox are safety papers. Tool admission (`2610.23071`), jailbreak ASR scoring (`2610.26595`), and AfriGuard (`2610.26474`) are in cybersec. Legal-role overrefusal (`2610.26211`) is in ccc. The other copies match papers already filed.

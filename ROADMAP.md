@@ -65,5 +65,5 @@ Last updated: 2026-11-16.
 
 - **GuruWatcher** — Alert-only, 15-minute timer on egress-fi. GW-06 (HTML cleaning turns `VIX < 20` into `VIX 20`) is data corruption and is still unfixed. A silent 2-hour outage on 2026-11-05 means "enabled" is not "ran".
 - **Basgiath** — Waiting on `/seo geo` and `/seo agentic` passes. No code lane active.
-- **OSINT Wiki** — Eight domains in one public repo since 2026-10-14. Inbox empty; 15 older source pages still cite files that sit on no egress domain.
+- **OSINT Wiki** — Eight domains in one public repo since 2026-10-14. Inbox empty after the K297 ingest of 23 sources. Lint reads 0 across every gated and informational bucket as of 2026-11-16.
 - **cemini-egress-fi** — Back since 2026-11-14, 16G stored, Tailscale-only. Archive writes queue locally when the link is down (CLAUDE.md Step 9).

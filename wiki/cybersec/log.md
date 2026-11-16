@@ -1,3 +1,11 @@
+## [2026-11-16] ingest | K297 — 3 arXiv papers (GPU hidden-state forensics, silent order errors, trading-agent compliance)
+
+- @concepts/gpu-hidden-state-forensics.md
+- @concepts/trading-agent-compliance-controls.md
+- @sources/arxiv-gpu-hidden-state-forensics-2611.18272.md
+- @sources/arxiv-silent-order-errors-browser-llm-2611.18284.md
+- @sources/arxiv-tradegauntlet-2611.18493.md
+
 ## [2026-10-23] ingest | K294 — translation bypass and abliteration
 
 - **Hub** — @concepts/k294-cybersec-wave.md. Safety papers routed from the ccc, seo, and osint inboxes.

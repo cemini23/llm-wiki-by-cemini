@@ -460,6 +460,12 @@ If you're new to this wiki:
 | Page | Type | Note |
 |------|------|------|
 | sources/newsletter-rss-sterling-sky-2026-10-22-google-maps-spam-is-out-of-control-heres-how-to.md | source | RSS stub — GBP spam fighting |
+| [Language models as closed-loop controllers](concepts/llm-as-closed-loop-controller.md) | (added by wiki_finalize_batch) | draft |
+| [Where LLM spatial priors fail](concepts/llm-spatial-priors-limits.md) | (added by wiki_finalize_batch) | draft |
+| [Local LLM literature search: what the hardware actually buys](concepts/local-llm-literature-search.md) | (added by wiki_finalize_batch) | draft |
+| [LLM-Empowered Intelligent Agent for Adaptive Fast-Charging Control of Lithium-Ion Batteries (2611.18140)](sources/arxiv-llm-agent-battery-fast-charging-2611.18140.md) | (added by wiki_finalize_batch) | draft |
+| [Evaluating Language Models as Spatial Priors for Object-Goal Navigation (2611.18123)](sources/arxiv-llm-spatial-priors-navigation-2611.18123.md) | (added by wiki_finalize_batch) | draft |
+| [Evaluating Large Language Models for Scientific Paper Search (2611.17929)](sources/arxiv-local-llm-paper-search-2611.17929.md) | (added by wiki_finalize_batch) | draft |
 
 ## Ingest 2026-11-01 — inbox drain
 

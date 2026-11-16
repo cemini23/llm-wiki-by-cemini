@@ -12,12 +12,12 @@ related:
   - concepts/prediction-market-statistical-arbitrage.md
   - concepts/settlement-manipulation-prediction-markets.md
   - sources/substack-rss-event-horizon-2026-10-06-religion-prediction-markets.md
+  - concepts/prediction-market-state-litigation-2026-11.md
+  - sources/substack-rss-event-horizon-2026-11-16-episode-41-weather-markets-with-interactive-brok.md
 maturity: validated
 created: 2026-05-21
 updated: 2026-10-25
 ---
-
-## Relations
 
 - @sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md — Post 3 source
 - @entities/people/crpt-atlas.md — content author

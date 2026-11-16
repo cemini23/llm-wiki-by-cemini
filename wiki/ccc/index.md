@@ -1378,6 +1378,15 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | `concepts/agents-k1-agent-native-knowledge-orchestration.md` | `@osint-wiki/concepts/librarian-server-architecture.md` | KG-at-scale serving implications (K114) |
 | `concepts/interaction-native-knowledge-harness.md` | `@osint-wiki/concepts/interaction-native-knowledge-harness.md` | Financial InKH deployment canon |
 
+## Concepts
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [The agent harness as a learned program, not fixed scaffolding](concepts/learnable-agent-harness.md) | (added by wiki_finalize_batch) | draft |
+| [Privacy-aware code review by coding agents](concepts/privacy-aware-code-review.md) | (added by wiki_finalize_batch) | draft |
+| [Robot-use agents trained in simulation](concepts/sim-to-real-robot-use-agents.md) | (added by wiki_finalize_batch) | draft |
+| [Weight-space programming and its current limits](concepts/weight-space-programming.md) | (added by wiki_finalize_batch) | draft |
+
 ## Sources
 
 - [Deterministic PRM guidance in discrete diffusion](sources/arxiv-2609-35472-prm-discrete-diffusion-routed.md) — cross-wiki stub routed from ingest — `cross-wiki`
@@ -1443,6 +1452,10 @@ Two harness papers, plus the model and safety items from the shared feeds batch.
 | sources/newsletter-rss-latent-space-2026-10-22-you-are-the-team-anekha-sokhal-moshi.md | source | RSS stub |
 | sources/newsletter-rss-latent-space-2026-10-23-ai-is-getting-good-at-math-heres-why.md | source | RSS stub |
 | sources/newsletter-rss-latent-space-2026-10-24-ainews-kimi-31-pro-104ba-28t-fable-51-class-open.md | source | RSS stub |
+| [ModHarness-RL: Recasting Harnesses as Learnable and Evolving Programs (2611.18533)](sources/arxiv-modharness-rl-2611.18533.md) | (added by wiki_finalize_batch) | draft |
+| [PrivacyPR: A Dataset of Real-World Privacy Fixes for Benchmarking Privacy-Aware Code Review (2611.18293)](sources/arxiv-privacypr-privacy-fixes-dataset-2611.18293.md) | (added by wiki_finalize_batch) | draft |
+| [Training Reasoning Models in Simulation to Natively Use Real Robots (2611.18562)](sources/arxiv-simulation-reasoning-real-robots-2611.18562.md) | (added by wiki_finalize_batch) | draft |
+| [WeightBench: Evaluating Language Models as Weight-Space Programmers (2611.18553)](sources/arxiv-weightbench-2611.18553.md) | (added by wiki_finalize_batch) | draft |
 
 ## Ingest 2026-10-27 — agents + harness wave
 

@@ -1,3 +1,14 @@
+## [2026-11-16] ingest | K297 — 4 arXiv papers (privacy fix dataset, learnable harness, weight-space benchmark, sim-to-real robot agents)
+
+- @concepts/learnable-agent-harness.md
+- @concepts/privacy-aware-code-review.md
+- @concepts/sim-to-real-robot-use-agents.md
+- @concepts/weight-space-programming.md
+- @sources/arxiv-modharness-rl-2611.18533.md
+- @sources/arxiv-privacypr-privacy-fixes-dataset-2611.18293.md
+- @sources/arxiv-simulation-reasoning-real-robots-2611.18562.md
+- @sources/arxiv-weightbench-2611.18553.md
+
 ## [2026-11-10] phase-1 | game-time adopts the two Integrates plus deja-vu
 
 - **worktrunk** — `runtime_wired`. Release binary `wt` v0.81.0. Project config in Game time. Not a package dependency.

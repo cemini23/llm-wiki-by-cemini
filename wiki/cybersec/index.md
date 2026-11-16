@@ -38,6 +38,8 @@
 | @concepts/agent-execution-provenance.md | draft | Evidence tracing + execution provenance — CFD artifact gap (2606.09084) |
 | @concepts/agent-vm-sandboxing.md | validated | LLM-driven agent-VM sandboxing; pairs with Docker allowlist proxy (K102) |
 | @concepts/docker-agent-sandbox-allowlist-proxy.md | draft | Docker/gVisor agent sandbox + vp-internal egress allowlist (K102) |
+| [Live GPU hidden-state acquisition for model forensics](concepts/gpu-hidden-state-forensics.md) | (added by wiki_finalize_batch) | draft |
+| [Compliance controls for autonomous trading agents](concepts/trading-agent-compliance-controls.md) | (added by wiki_finalize_batch) | draft |
 
 ### Offensive technique categories
 
@@ -1091,6 +1093,9 @@ Red-team and evaluation findings, plus one specialist-model result.
 | entities/tools/experiential-labs.md | entity | Extract — gateway Apache-2.0; retention split by model |
 | sources/substack-rss-secpro-2026-10-23-257-from-sso-bypass-to-stolen-credentials.md | source | RSS stub |
 | sources/substack-rss-secpro-2026-10-24-secpro-ciso-update-episode-2.md | source | RSS stub |
+| [From Bytes to Behavior: Request-Level Attribution from Live GPU Hidden States (2611.18272)](sources/arxiv-gpu-hidden-state-forensics-2611.18272.md) | (added by wiki_finalize_batch) | draft |
+| [Clean Tickets, Wrong Orders: Catching Silent Errors with a Language Model in Your Browser Tab (2611.18284)](sources/arxiv-silent-order-errors-browser-llm-2611.18284.md) | (added by wiki_finalize_batch) | draft |
+| [TradeGauntlet: Evaluating Compliance Controls for Autonomous Trading Agents (2611.18493)](sources/arxiv-tradegauntlet-2611.18493.md) | (added by wiki_finalize_batch) | draft |
 
 ## K295 index backfill (2026-10-25)
 
