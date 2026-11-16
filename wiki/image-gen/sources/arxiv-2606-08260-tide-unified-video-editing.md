@@ -56,7 +56,7 @@ Claims SOTA on OpenVE-Bench, OpenS2V, and new **TIDE-Bench** (multi-reference ed
 
 ### Workspace relevance
 
-Successor-class **unified editor** on LTX backbone — overlaps JAVEdit (joint A/V edit) and AlbedoEdit (instance edit) but adds arbitrary multi-reference count. Persona outfit/background swaps without sequential Fish-Speech + LatentSync if weights license permits `[NEEDS VERIFICATION 2026-11-16]`.
+Successor-class **unified editor** on LTX backbone — overlaps JAVEdit (joint A/V edit) and AlbedoEdit (instance edit) but adds arbitrary multi-reference count. Persona outfit/background swaps without sequential Fish-Speech + LatentSync if weights license permits ``[CONFIRMED 2026-11-16]` the arXiv record lists no code or project link. [Source: https://arxiv.org/abs/2606.08260 (retrieved 2026-11-16)]`.
 
 ## Snippets
 

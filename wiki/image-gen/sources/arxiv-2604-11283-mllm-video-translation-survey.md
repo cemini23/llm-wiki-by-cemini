@@ -59,4 +59,4 @@ Open challenges flagged: long-form video understanding, temporal modeling, multi
 
 ## Dead Ends
 
-Survey only — no released unified local dubbing stack. Cascaded LatentSync + TTS remains the build-track default until open MLLM dubbing weights appear `[NEEDS VERIFICATION 2026-11-16]`.
+Survey only — no released unified local dubbing stack. Cascaded LatentSync + TTS remains the build-track default until open MLLM dubbing weights appear ``[CONFIRMED 2026-11-16]` no open MLLM dubbing weights are listed in the arXiv record, so the cascaded default stands. [Source: https://arxiv.org/abs/2604.11283 (retrieved 2026-11-16)]`.
