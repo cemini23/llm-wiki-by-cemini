@@ -70,6 +70,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [pickem-backtesting-framework](concepts/pickem-backtesting-framework.md) | draft | W-BACKTEST — walk-forward grader |
 | [pickem-operator-workflow](concepts/pickem-operator-workflow.md) | draft | W-WORKFLOW — pre-slate batch rank |
 | [pickem-pipeline-integration-spec](concepts/pickem-pipeline-integration-spec.md) | draft | W-INTEG — prop-fair CLI + edges.csv |
+| [NFL matchup projection feeds — what a public player record proves](concepts/nfl-matchup-projection-feeds.md) | (added by wiki_finalize_batch) | draft |
 
 ## Sources — Best ball (BBM7)
 

@@ -14,6 +14,7 @@ related:
   - concepts/muse-autoskill-skill-lifecycle.md
   - entities/tools/nvidia-skills.md
   - entities/tools/mattpocock-skills.md
+  - concepts/repeated-correction-mining.md
 maturity: draft
 created: 2026-05-28
 updated: 2026-06-22

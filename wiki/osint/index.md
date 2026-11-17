@@ -47,6 +47,7 @@ Four arXiv PDFs and ten newsletters. Two papers have no project lane and say so.
 | [Wu Blockchain — WuBlockchain Weekly Outlook (2026-11-16)](sources/substack-rss-wublock-2026-11-16-wublockchain-weekly-outlook-nvidia-earnings-anth.md) | (added by wiki_finalize_batch) | draft |
 | [Deep Research link evaluation — agentic harnesses, MCP browser automation, Jev workflows (2026-11-16)](sources/2026-11-16-deep-research-link-eval-agentic-harnesses.md) | (added by wiki_finalize_batch) | draft |
 | [Deep Research link evaluation — game engine, media verification, container ops (2026-11-16)](sources/2026-11-16-deep-research-link-eval-game-media.md) | (added by wiki_finalize_batch) | draft |
+| [Deep Research link evaluation — design and motion skills, agent memory and cost control, verification (2026-11-17)](sources/2026-11-17-deep-research-link-eval-design-motion-harness.md) | (added by wiki_finalize_batch) | draft |
 
 ### Ingest 2026-10-27 (macro + quant wave)
 Inbox sweep 2026-10-27: 15 OSINT pages. Tail-vol sampling rules for vol-surface forecasting, Sornette on transient supercritical Hawkes episodes, and the CoreWeave credit stress that moved the whole AI complex.

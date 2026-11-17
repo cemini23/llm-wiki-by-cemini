@@ -27,6 +27,7 @@ related:
   - sources/arxiv-autonomous-hyperscale-incident-resolution-2606.09122.md
   - concepts/self-harness-model-specific-improvement-loop.md
   - sources/arxiv-self-harness-improve-themselves-2606.09498.md
+  - concepts/agent-verification-patterns.md
   - concepts/channel-fracture-cross-agent-memory-delivery.md
   - sources/arxiv-channel-fracture-cross-agent-memory-2606.04896.md
   - concepts/perspectivegap-orchestration-prompting.md

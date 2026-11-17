@@ -14,9 +14,9 @@ related:
   - @cybersecurity-wiki/entities/tools/claude-bughunter.md
   - @cybersecurity-wiki/entities/tools/wrapvm.md
   - @image-gen-wiki/entities/tools/claude-video.md
+  - sources/2026-11-17-deep-research-link-eval-design-motion-harness.md
 updated: 2026-11-16
 ---
-
 
 ## Raw Concept
 

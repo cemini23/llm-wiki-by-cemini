@@ -16,7 +16,13 @@ related:
   - @cybersecurity-wiki/entities/tools/claude-bughunter.md
   - @cybersecurity-wiki/entities/tools/wrapvm.md
   - @image-gen-wiki/entities/tools/claude-video.md
-updated: 2026-11-16
+  - sources/2026-11-17-deep-research-link-eval-design-motion-harness.md
+  - @ccc-wiki/concepts/agent-presentation-generation.md
+  - @ccc-wiki/concepts/agent-verification-patterns.md
+  - @ccc-wiki/concepts/design-skill-cluster-2026-11.md
+  - @ccc-wiki/concepts/repeated-correction-mining.md
+  - @ccc-wiki/entities/bot-browser.md
+updated: 2026-11-17
 ---
 
 ## Raw Concept
@@ -25,7 +31,8 @@ The question this page answers: **when an evaluation report grades a URL Integra
 Extract, what else must be true before the item enters a project upgrade queue?**
 
 Raised by the two 2026-11-16 Deep Research batches, which together graded 16 winners
-out of 40 URLs.
+out of 40 URLs. Extended by the 2026-11-17 batch, where the freeze produced zero
+winners and a dead-link verdict proved to be wrong.
 
 ## Narrative
 
@@ -78,6 +85,19 @@ Two checks from 2026-11-16 show why:
 - collectibles holds `consignment_manifest.py`, `grade_calc.py`, and
   `grading_dry_run.py`, so the spreadsheet *math* exists and only the *review surface*
   is missing for `univer`.
+
+### Gate 0 — the report's own verdict must be true
+
+Before applying any gate, confirm the URL resolves. A report can grade a live resource
+UNAVAILABLE.
+
+On 2026-11-17 four URLs were graded UNAVAILABLE as "404" or "inaccessible". All four
+returned HTTP 200 on direct check, and three were ordinary MIT repositories.
+[CONFIRMED — curl 2026-11-17]
+
+A fetch failure is a fact about the fetch. It is not a fact about the resource. Retry
+before accepting the verdict, and record which failure it was — a 404, a timeout, and
+a rate limit have different meanings.
 
 A gap that cannot be checked is not a gap. When a project repository is absent from the
 machine — as `local-abliterated-lab` is — the item cannot be queued, whatever its tier.

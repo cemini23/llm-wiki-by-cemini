@@ -1,3 +1,16 @@
+## [2026-11-17] ingest | Ingest Deep Research link evaluation batch C winners routed to ccc (0 Integrate/Extract, reference only)
+
+- @concepts/agent-completion-verification-gates.md
+- @concepts/agent-memory-stack-comparison.md
+- @concepts/agent-presentation-generation.md
+- @concepts/agent-token-discipline-openclaw-hermes.md
+- @concepts/agent-verification-patterns.md
+- @concepts/claude-code-skills-md-institutional-memory.md
+- @concepts/context-engineering.md
+- @concepts/design-skill-cluster-2026-11.md
+- @concepts/repeated-correction-mining.md
+- @entities/bot-browser.md
+
 ## [2026-11-16] ingest | Ingest Deep Research link evaluation winners routed to ccc (2026-11-16)
 
 - @entities/stitch-skills.md
@@ -3074,3 +3087,8 @@ Routing note: the PDFs sat in `research to be indexed/game-dev/` but were filed 
 
 Cross-wiki stub routed from `@osint-wiki/sources/2026-11-16-deep-research-link-eval-agentic-harnesses.md`.
 - Created wiki/entities/stitch-skills.md (stub)
+
+## [2026-11-17] cross-wiki route | bot-browser — real Chrome with a human login handoff (MIT)
+
+Cross-wiki stub routed from `@osint-wiki/sources/2026-11-17-deep-research-link-eval-design-motion-harness.md`.
+- Created wiki/entities/bot-browser.md (stub)

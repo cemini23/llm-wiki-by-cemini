@@ -1386,6 +1386,10 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [Privacy-aware code review by coding agents](concepts/privacy-aware-code-review.md) | (added by wiki_finalize_batch) | draft |
 | [Robot-use agents trained in simulation](concepts/sim-to-real-robot-use-agents.md) | (added by wiki_finalize_batch) | draft |
 | [Weight-space programming and its current limits](concepts/weight-space-programming.md) | (added by wiki_finalize_batch) | draft |
+| [Agent presentation generation — native PPTX versus single-file HTML](concepts/agent-presentation-generation.md) | (added by wiki_finalize_batch) | draft |
+| [Agent verification patterns — property, differential, and mechanical audit ledgers](concepts/agent-verification-patterns.md) | (added by wiki_finalize_batch) | draft |
+| [Design and motion skill cluster — what six 2026-11 agent skills actually encode](concepts/design-skill-cluster-2026-11.md) | (added by wiki_finalize_batch) | draft |
+| [Repeated-correction mining — turning what you keep retyping into a rule](concepts/repeated-correction-mining.md) | (added by wiki_finalize_batch) | draft |
 
 ## Sources
 
@@ -1597,3 +1601,4 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 | [product-engineering — 45 release-gate skills from shipped products (MIT)](entities/tools/product-engineering-skills.md) | (added by wiki_finalize_batch) | draft |
 
 - [stitch-skills — design-to-code agent skills for Stitch MCP (Apache-2.0)](entities/stitch-skills.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [bot-browser — real Chrome with a human login handoff (MIT)](entities/bot-browser.md) — cross-wiki stub routed from ingest — `cross-wiki`

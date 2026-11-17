@@ -28,6 +28,7 @@ related:
   - concepts/skillrae-retrieval-augmented-execution.md
   - concepts/llm-engineering-stack-curriculum.md
   - concepts/rag-binary-quantization.md
+  - concepts/design-skill-cluster-2026-11.md
   - concepts/claude-code-large-codebase-workflow.md
   - concepts/agent-token-discipline-openclaw-hermes.md
   - entities/tools/claude-subconscious.md

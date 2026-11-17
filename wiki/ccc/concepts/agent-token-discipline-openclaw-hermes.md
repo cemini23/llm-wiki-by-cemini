@@ -22,6 +22,7 @@ related:
   - concepts/remote-hermes-access-pattern.md
   - concepts/worldmemarena-multimodal-agent-memory-eval.md
   - sources/trading-posts-compilation-17-2026-06-03.md
+  - concepts/repeated-correction-mining.md
 maturity: draft
 created: 2026-05-27
 updated: 2026-06-03

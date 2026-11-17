@@ -24,6 +24,7 @@ related:
   - sources/nfl-betting-dfs-intelligence-week1-2026-09-11.md
   - sources/nfl-week4-practice-reports-2026-10-01.md
   - sources/nfl-week4-research-plan-2026-10-01.md
+  - concepts/nfl-matchup-projection-feeds.md
 maturity: draft
 created: 2026-06-20
 updated: 2026-10-25

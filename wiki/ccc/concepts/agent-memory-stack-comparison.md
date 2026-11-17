@@ -38,6 +38,7 @@ related:
   - entities/tools/memprobe.md
   - concepts/metamemory-scaffold-proficiency-training.md
   - sources/arxiv-automem-metamemory-cognitive-skill-2607.01224.md
+  - concepts/repeated-correction-mining.md
 maturity: draft
 created: 2026-05-27
 updated: 2026-07-02
@@ -76,6 +77,23 @@ K72 Post 1 — marketing comparison of **mem0**, **OpenClaw**, and **Hermes** pe
 **Rule:** one **SessionStart** memory owner — see `@entities/tools/claude-obsidian.md` rejection case study.
 
 | Verdict | **REFERENCE** for product selection; **Hermes operator path live** — see `@osint-wiki/concepts/hermes-laptop-operator-playbook.md` |
+
+### agent-beacon — trace capture layer (2026-11-17)
+
+`Asymptote-Labs/agent-beacon` (MIT, 3.6k stars) is a cross-harness session logger. It
+captures normalized JSONL/OTLP traces across 20+ agent runtimes, renders sandboxed HTML
+inspection views for token bills and security review, and forwards to SIEM (Splunk,
+Sentinel, CrowdStrike, Wazuh).
+
+It fills the layer above the store: not what the agent remembers, but **what it did**.
+None of the products in the table above record a portable trace; each keeps its own
+session log.
+
+Graded Context on 2026-11-17 and capped by the Workstation Harness Freeze. The SIEM
+forwarding is the part worth noting — it makes agent activity subject to the same audit
+path as any other host, which is a requirement the federation has no other answer for.
+See @ccc-wiki/concepts/repeated-correction-mining.md for the transcription-mining
+approach to the same underlying data.
 
 ## Snippets
 
