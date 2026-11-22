@@ -1,3 +1,9 @@
+## [2026-11-22] ingest | Ingest Deep Research link evaluation batch D routed to cybersec (2026-11-22)
+
+- @concepts/api-security-audit-rubric.md
+- @concepts/open-weight-abliterated-models-2026-11.md
+- @entities/tools/artex.md
+
 ## [2026-11-16] ingest | Ingest Deep Research link evaluation winners routed to cybersec (2026-11-16)
 
 - @entities/tools/claude-bughunter.md
@@ -2661,3 +2667,8 @@ Routed from `@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-202
 - **Bounded capability.** DARPA AIxCC found 54 vulnerabilities and patched 43. 1Password found partial or harmful patches on six complex vulnerabilities.
 - Updated `concepts/soc-operations.md`, `concepts/incident-response.md`, `concepts/agentic-containment-principles.md`, `concepts/patchless-window.md`, `concepts/guardrail-construct-validity-agent-eval.md`, `concepts/silent-error-rate-structured-output.md`.
 - Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — oversight design for SOC and IR agents; no distribution.
+
+## [2026-11-22] cross-wiki route | API security audit rubric — inventory auth before hunting BOLA/BFLA
+
+Cross-wiki stub routed from `@osint-wiki/sources/2026-11-22-deep-research-link-eval-abliterated-harness.md`.
+- Created wiki/concepts/api-security-audit-rubric.md (stub)

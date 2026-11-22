@@ -1,3 +1,9 @@
+## [2026-11-22] ingest | Ingest Deep Research link evaluation batch D (4 Integrate, 13 Context, 6 Pass, 1 Watch)
+
+- @concepts/agent-link-evaluation-gates-v1013.md
+- @sources/2026-11-17-deep-research-link-eval-design-motion-harness.md
+- @sources/2026-11-22-deep-research-link-eval-abliterated-harness.md
+
 ## [2026-11-17] ingest | Ingest Deep Research link evaluation batch C (20 URLs, 0 winners, 4 UNAVAILABLE verdicts corrected)
 
 - @sources/2026-11-17-deep-research-link-eval-design-motion-harness.md

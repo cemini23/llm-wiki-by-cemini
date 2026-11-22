@@ -1,3 +1,8 @@
+## [2026-11-22] ingest | Ingest Deep Research link evaluation batch D routed to ccc (2026-11-22)
+
+- @concepts/agent-harness-tooling-2026-11.md
+- @concepts/repeated-correction-mining.md
+
 ## [2026-11-17] ingest | Ingest Deep Research link evaluation batch C winners routed to ccc (0 Integrate/Extract, reference only)
 
 - @concepts/agent-completion-verification-gates.md

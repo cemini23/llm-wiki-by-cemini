@@ -1443,6 +1443,7 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [Agent verification patterns — property, differential, and mechanical audit ledgers](concepts/agent-verification-patterns.md) | (added by wiki_finalize_batch) | draft |
 | [Design and motion skill cluster — what six 2026-11 agent skills actually encode](concepts/design-skill-cluster-2026-11.md) | (added by wiki_finalize_batch) | draft |
 | [Repeated-correction mining — turning what you keep retyping into a rule](concepts/repeated-correction-mining.md) | (added by wiki_finalize_batch) | draft |
+| [Agent harness tooling, November 2026 — four Context-grade items and what they encode](concepts/agent-harness-tooling-2026-11.md) | (added by wiki_finalize_batch) | draft |
 
 ## Sources
 

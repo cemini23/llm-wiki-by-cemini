@@ -10,6 +10,8 @@ related:
   - concepts/ai-for-cybersecurity.md
   - concepts/owned-target-whitehat-lab.md
   - entities/tools/offsec-harness-index.md
+  - "@osint-wiki/sources/2026-11-22-deep-research-link-eval-abliterated-harness.md"
+  - concepts/open-weight-abliterated-models-2026-11.md
 updated: 2026-11-22
 ---
 
@@ -67,6 +69,13 @@ These signatures come from the Datadog write-up and are useful as hunting hypoth
 ### Why it matters for this workspace
 
 ARTEX is evidence that agentic attack tooling has left the lab. The local whitehat lab can use the same architecture class to test detections, inside an authorised and isolated environment only. See @concepts/agentic-offensive-security-kill-chain.md and @concepts/owned-target-whitehat-lab.md.
+
+### Re-evaluated 2026-11-22
+
+The 2026-11-22 Deep Research batch re-graded ARTEX as **Context**, with no shipped-stack
+gap and no project routing. That matches this page: the value is defensive knowledge and
+detection hypotheses, not an integration. See
+@osint-wiki/sources/2026-11-22-deep-research-link-eval-abliterated-harness.md.
 
 ### Open questions
 

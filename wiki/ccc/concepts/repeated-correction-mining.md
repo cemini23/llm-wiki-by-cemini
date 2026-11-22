@@ -7,7 +7,8 @@ related:
   - concepts/agent-token-discipline-openclaw-hermes.md
   - concepts/claude-code-skills-md-institutional-memory.md
   - concepts/agent-memory-stack-comparison.md
-updated: 2026-11-17
+  - concepts/agent-harness-tooling-2026-11.md
+updated: 2026-11-22
 ---
 
 ## Raw Concept

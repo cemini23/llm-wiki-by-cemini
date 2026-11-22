@@ -40,6 +40,7 @@
 | @concepts/docker-agent-sandbox-allowlist-proxy.md | draft | Docker/gVisor agent sandbox + vp-internal egress allowlist (K102) |
 | [Live GPU hidden-state acquisition for model forensics](concepts/gpu-hidden-state-forensics.md) | (added by wiki_finalize_batch) | draft |
 | [Compliance controls for autonomous trading agents](concepts/trading-agent-compliance-controls.md) | (added by wiki_finalize_batch) | draft |
+| [Abliterated open-weight builds, November 2026 — what actually fits on a laptop](concepts/open-weight-abliterated-models-2026-11.md) | (added by wiki_finalize_batch) | draft |
 
 ### Offensive technique categories
 
@@ -712,6 +713,7 @@
 
 ---
 - [chekusu/mails — AI email parsing, dual-use phishing-domain enumeration](concepts/2026-05-13_chekusu-mails-dual-use.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [API security audit rubric — inventory auth before hunting BOLA/BFLA](concepts/api-security-audit-rubric.md) — cross-wiki stub routed from ingest — `cross-wiki`
 
 ## Entities
 

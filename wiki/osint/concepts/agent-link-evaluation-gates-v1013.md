@@ -22,9 +22,15 @@ related:
   - @ccc-wiki/concepts/design-skill-cluster-2026-11.md
   - @ccc-wiki/concepts/repeated-correction-mining.md
   - @ccc-wiki/entities/bot-browser.md
-updated: 2026-11-17
+  - sources/2026-11-22-deep-research-link-eval-abliterated-harness.md
+  - @cybersecurity-wiki/concepts/open-weight-abliterated-models-2026-11.md
+  - @game-dev-wiki/entities/tools/fast-anything.md
+  - @game-dev-wiki/entities/tools/landmines-lint.md
+  - @image-gen-wiki/entities/models/inkling-2-mini.md
+  - @ccc-wiki/concepts/agent-harness-tooling-2026-11.md
+  - @cybersecurity-wiki/concepts/api-security-audit-rubric.md
+updated: 2026-11-22
 ---
-
 ## Raw Concept
 
 The question this page answers: **when an evaluation report grades a URL Integrate or

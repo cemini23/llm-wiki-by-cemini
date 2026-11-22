@@ -1,3 +1,8 @@
+## [2026-11-22] ingest | Ingest Deep Research link evaluation batch D routed to game-dev (2026-11-22)
+
+- @entities/tools/fast-anything.md
+- @entities/tools/landmines-lint.md
+
 ## [2026-11-16] ingest | Ingest Deep Research link evaluation winners routed to game-dev (2026-11-16)
 
 - @entities/modern-web-guidance.md

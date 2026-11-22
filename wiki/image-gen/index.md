@@ -1000,6 +1000,7 @@ Practical, printable guides for getting started — tracked in git (unlike `brie
 | [Pixel-space video diffusion without a latent bottleneck](concepts/pixel-space-video-diffusion.md) | (added by wiki_finalize_batch) | draft |
 | [JVT: Just Video Transformer Makes Pixel-Space Video Diffusion Simple (2611.18549)](sources/arxiv-jvt-pixel-space-video-diffusion-2611.18549.md) | (added by wiki_finalize_batch) | draft |
 | [Restoring Diversity in Distilled Image and Video Generators by Probing Activations (2611.18550)](sources/arxiv-rediverse-diversity-collapse-2611.18550.md) | (added by wiki_finalize_batch) | draft |
+| [Inkling 2 Mini — local multimodal VLM at ~20 GB (Apache-2.0)](entities/models/inkling-2-mini.md) | (added by wiki_finalize_batch) | draft |
 
 - [ASR-roundtrip TTS evaluation limits (CDRD false negatives)](concepts/asr-roundtrip-tts-eval-limits.md) — ASR-roundtrip masks context-dependent reading errors; human-audited span-isolation protocol for persona-TTS QA — `tts, eval, asr-roundtrip, voice, methodology`
 - [Iterative Self-Learning for expressive TTS labels](concepts/iterative-self-learning-expressive-tts.md) — Invert-Classify + ISL loop bootstraps prominence/emotion tags; Fish-Speech stays Layer-1 — `tts, expressive, semi-supervised, voice`

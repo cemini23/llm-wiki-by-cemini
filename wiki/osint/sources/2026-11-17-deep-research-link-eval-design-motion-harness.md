@@ -10,6 +10,7 @@ related:
   - "@ccc-wiki/concepts/agent-presentation-generation.md"
   - "@gambling-wiki/concepts/nfl-matchup-projection-feeds.md"
   - "@ccc-wiki/entities/bot-browser.md"
+  - sources/2026-11-22-deep-research-link-eval-abliterated-harness.md
 updated: 2026-11-17
 ---
 
