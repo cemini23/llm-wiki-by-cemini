@@ -22,8 +22,14 @@ Each candidate file gets a verdict:
   - LIKELY    — fuzzy title match, a bare title match, or filename in a Location field.
                 Consecutive issues of a numbered newsletter do NOT match:
                 'Moontower #329' and 'Moontower #330' are separate documents
+  - REVIEW    — the only match is a repo/paper-shaped URL and the candidate's
+                inferred source type differs from every matched page's inferred
+                type (e.g. a paper citing a repo vs. the page documenting that repo)
   - DUPLICATE — exact arXiv ID / DOI / URL match, or a title match corroborated
                 by a filename in a Location field
+
+Verdicts are ranked NEW < LIKELY < REVIEW < DUPLICATE so a weaker signal can
+never overwrite a stronger one.
 
 Exit codes:
   0 — ran cleanly (any number of duplicates is fine; this is informational)
@@ -203,6 +209,35 @@ def sha256_file(path: Path, chunk: int = 1 << 20) -> str:
     return h.hexdigest()
 
 
+# --- source-type inference ---------------------------------------------------
+
+REPO_URL_RE = re.compile(r"(?:github\.com|gitlab\.com)/[^/\s]+/[^/\s]+", re.IGNORECASE)
+
+
+def infer_source_type(own_metadata: str, arxiv_ids=None, dois=None) -> str:
+    """Return 'paper' | 'repo_doc' | 'unknown' from a page's own identity fields.
+
+    Only the page's own metadata (frontmatter + Raw Concept for wiki pages, the
+    extracted blob for inbox candidates) is inspected. Cross-references in the
+    body must not change a page's type, so callers pass a scoped string.
+    """
+    if arxiv_ids or dois:
+        return "paper"
+    if ARXIV_RE.search(own_metadata) or DOI_RE.search(own_metadata):
+        return "paper"
+    if REPO_URL_RE.search(own_metadata):
+        return "repo_doc"
+    return "unknown"
+
+
+# Verdicts are ordered so a weaker match cannot clobber a stronger one.
+RANK = {"NEW": 0, "LIKELY": 1, "REVIEW": 2, "DUPLICATE": 3}
+
+
+def _raise_verdict(current: str, new: str) -> str:
+    return new if RANK[new] > RANK[current] else current
+
+
 # --- index existing wiki sources ----------------------------------------------
 
 
@@ -234,6 +269,7 @@ def build_wiki_index():
         "location_basename": defaultdict(list),
         "title_norm": defaultdict(list),
         "all_titles": [],                 # list of (norm_title, token_set, path, raw_title)
+        "page_type": {},                  # rel path -> "paper" | "repo_doc" | "unknown"
     }
     for md in iter_source_pages():
         text = md.read_text(errors="replace")
@@ -245,6 +281,7 @@ def build_wiki_index():
         location = extract_field(text, "Location")
         # Own-metadata section: frontmatter + Raw Concept only (NOT cross-refs in body)
         own = _extract_own_metadata_section(text)
+        idx["page_type"][rel] = infer_source_type(own)
         for m in ARXIV_RE.finditer(own):
             idx["arxiv"][m.group(1)].append(rel)
         for m in DOI_RE.finditer(own):
@@ -355,6 +392,7 @@ def candidate_extract(path: Path):
         "doi": dois,
         "urls": urls,
         "metadata": metadata,
+        "source_type": infer_source_type(blob, arxiv_ids, dois),
     }
 
 
@@ -364,7 +402,7 @@ def candidate_extract(path: Path):
 def diagnose(cand: dict, basename: str, idx) -> tuple[str, list[str]]:
     """Return (verdict, list_of_human-readable_match_lines).
 
-    verdict ∈ {"DUPLICATE", "LIKELY", "NEW"}
+    verdict ∈ {"DUPLICATE", "REVIEW", "LIKELY", "NEW"}
     """
     notes = []
     verdict = "NEW"
@@ -385,14 +423,27 @@ def diagnose(cand: dict, basename: str, idx) -> tuple[str, list[str]]:
             # Treat as DUPLICATE only if it looks repo-shaped or arxiv/abs-shaped.
             soft = re.search(r"github\.com/.+/.+|gist\.github\.com/.+|arxiv\.org/(abs|pdf)/.+|ssrn\.com/.+abstract_id=", u)
             severity = "DUPLICATE" if soft else "LIKELY"
-            if verdict == "NEW" or (verdict == "LIKELY" and severity == "DUPLICATE"):
-                verdict = severity
-            for p in sorted(set(idx["url"][u])):
+            pages = sorted(set(idx["url"][u]))
+            if soft:
+                cand_type = cand.get("source_type", "unknown")
+                page_types = {idx["page_type"].get(p, "unknown") for p in pages}
+                # A paper that cites a repo is not the page documenting that repo.
+                # When the candidate and every matched page are confidently typed
+                # and the types disagree, ask for a human decision instead of
+                # declaring a duplicate.
+                if (
+                    cand_type != "unknown"
+                    and page_types
+                    and "unknown" not in page_types
+                    and cand_type not in page_types
+                ):
+                    severity = "REVIEW"
+            verdict = _raise_verdict(verdict, severity)
+            for p in pages:
                 notes.append(f"  URL {severity} match {u} → {p}")
     bn_lower = basename.lower()
     if bn_lower in idx["location_basename"]:
-        if verdict == "NEW":
-            verdict = "LIKELY"
+        verdict = _raise_verdict(verdict, "LIKELY")
         for p in sorted(set(idx["location_basename"][bn_lower])):
             notes.append(f"  Filename in another page's Location field → {p}")
     title_norm = normalize_title(cand["title"])
@@ -401,8 +452,7 @@ def diagnose(cand: dict, basename: str, idx) -> tuple[str, list[str]]:
         # a daily newsletter that reuses one headline) collide on title alone.
         # Soften a bare title hit to LIKELY; a title plus any strong signal
         # (arXiv ID, DOI, URL, or a filename in a Location field) stays DUPLICATE.
-        if verdict == "NEW":
-            verdict = "LIKELY"
+        verdict = _raise_verdict(verdict, "LIKELY")
         for p in sorted(set(idx["title_norm"][title_norm])):
             notes.append(f"  Title EXACT match (title alone is not an identity) → {p}")
 
@@ -421,8 +471,7 @@ def diagnose(cand: dict, basename: str, idx) -> tuple[str, list[str]]:
                     scored.append((j, raw, p))
             scored.sort(reverse=True)
             for j, raw, p in scored[:5]:
-                if verdict == "NEW":
-                    verdict = "LIKELY"
+                verdict = _raise_verdict(verdict, "LIKELY")
                 notes.append(f"  Title Jaccard {j:.2f} → {p}  ('{raw[:80]}')")
     return verdict, notes
 
@@ -456,6 +505,7 @@ def main():
     print()
 
     n_dup = 0
+    n_review = 0
     n_likely = 0
     n_new = 0
     for f in inbox_files:
@@ -478,12 +528,14 @@ def main():
         if repo_or_paper_urls:
             print(f"   URLs (paper/repo-like): {', '.join(repo_or_paper_urls[:5])}")
         verdict, notes = diagnose(cand, f.name, idx)
-        marker = {"DUPLICATE": "⛔", "LIKELY": "⚠️", "NEW": "✅"}[verdict]
+        marker = {"DUPLICATE": "⛔", "REVIEW": "❓", "LIKELY": "⚠️", "NEW": "✅"}[verdict]
         print(f"   verdict: {marker} {verdict}")
         for n in notes:
             print(n)
         if verdict == "DUPLICATE":
             n_dup += 1
+        elif verdict == "REVIEW":
+            n_review += 1
         elif verdict == "LIKELY":
             n_likely += 1
         else:
@@ -492,11 +544,13 @@ def main():
 
     print("---")
     print(
-        f"Summary: {n_new} NEW, {n_likely} LIKELY duplicates, {n_dup} DUPLICATES across "
-        f"{len(inbox_files)} inbox files"
+        f"Summary: {n_new} NEW, {n_likely} LIKELY, {n_review} REVIEW, {n_dup} DUPLICATES "
+        f"across {len(inbox_files)} inbox files"
     )
     if n_dup:
         print("⛔ DUPLICATE verdicts: do NOT ingest without first deciding (re-download? supersede existing? fold into existing?).")
+    if n_review:
+        print("❓ REVIEW verdicts: URL-only match across different source types — confirm the candidate is a different artifact than the matched page.")
     if n_likely:
         print("⚠️  LIKELY verdicts: human review recommended (could be a different version / different paper with similar title).")
 

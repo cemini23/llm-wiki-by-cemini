@@ -6,7 +6,7 @@ Clean-room re-implementation of the MedSkillAudit veto-gate framework
 domain to financial-research / Cemini brief validation.
 
 Two phases:
-  STATIC (100% of static score, fully implemented v0.4 — 12 checks):
+  STATIC (100% of static score, fully implemented v0.4 — 13 checks):
     1. Required sections present  ── must have ## Target, ## Summary, ## Sources
     2. Cross-link resolution      ── @path/to/page.md must point to a real wiki page
     3. Citation tag well-formedness ── [Source: ...] / [Sources: ...] tags parse
@@ -46,6 +46,12 @@ Usage:
   python3 scripts/skill_audit.py --strict briefs/some.md   # warnings ⇒ veto
   python3 scripts/skill_audit.py --llm-mode briefs/some.md           # +dynamic (advisory)
   python3 scripts/skill_audit.py --llm-mode --strict-dynamic ...     # +dynamic (veto on reject)
+  python3 scripts/skill_audit.py --profile upgrade-queue briefs/<project>-upgrade-queue.md
+
+Profiles:
+  brief         (default) all static checks; briefs that leave the workspace
+  upgrade-queue structural checks only (required_sections + crosslinks); the
+                rolling `briefs/<project>-upgrade-queue.md` work lists
 
 Exit codes:
   0  PASS   (no veto gates, score ≥ pass threshold)
@@ -1119,6 +1125,7 @@ def assemble_report(
     strict: bool,
     dynamic: DynamicAudit | None = None,
     strict_dynamic: bool = False,
+    profile: str = "brief",
 ) -> AuditReport:
     checks = [
         check_required_sections(text, sections),
@@ -1135,8 +1142,18 @@ def assemble_report(
         check_abstract_synthesis(text, target),
         check_harness_dimensions(text, target),
     ]
+    if profile == "upgrade-queue":
+        # Upgrade queues are rolling work lists, not ship-ready briefs. Only the two
+        # structural checks apply: the queue must carry Target + Summary, and every
+        # cross-link must resolve. The brief-scoring checks do not fit this artifact.
+        keep = {"required_sections", "crosslinks"}
+        checks = [c for c in checks if c.name in keep]
+        total_weight = sum(c.score_weight for c in checks) or 1.0
+        static_score = round(sum(c.score_earned for c in checks) / total_weight * 100, 1)
+    else:
+        static_score = round(sum(c.score_earned for c in checks) * 100, 1)
+    # Veto detection runs over the checks that apply to the active profile.
     veto_gates = [c.veto_reason for c in checks if c.severity == "veto" and c.veto_reason]
-    static_score = round(sum(c.score_earned for c in checks) * 100, 1)
 
     if veto_gates:
         verdict = "REJECT"
@@ -1185,7 +1202,7 @@ def render_text(report: AuditReport) -> str:
     dyn_note = "" if report.dynamic is None else "  +dynamic (LLM-as-judge active)"
     lines.append(
         f"STATIC SCORE: {report.static_score}/100   "
-        f"(12 static checks{dyn_note})"
+        f"({len(report.checks)} static checks{dyn_note})"
     )
     lines.append("")
     if report.veto_gates:
@@ -1231,6 +1248,10 @@ def render_text(report: AuditReport) -> str:
 def delegate_to_vet(path: Path, args) -> AuditReport | None:
     """Run static checks via the public `vet` CLI when available."""
     if getattr(args, "no_vet", False) or not shutil.which("vet"):
+        return None
+    # The external `vet` CLI knows only the 'brief' profile. Any other profile
+    # runs the inline checks so the profile actually restricts the check set.
+    if getattr(args, "profile", "brief") != "brief":
         return None
 
     cmd = [
@@ -1471,6 +1492,13 @@ def main():
         action="store_true",
         help="Force inline static checks; do not delegate to `vet` CLI.",
     )
+    p.add_argument(
+        "--profile",
+        choices=("brief", "upgrade-queue"),
+        default="brief",
+        help="Audit profile: 'brief' (all 13 static checks) or 'upgrade-queue' "
+        "(structural checks only: required_sections + crosslinks). Default: brief.",
+    )
     args = p.parse_args()
 
     if args.curate:
@@ -1522,6 +1550,7 @@ def main():
             strict=args.strict,
             dynamic=None,
             strict_dynamic=args.strict_dynamic,
+            profile=args.profile,
         )
     else:
         report = merge_dynamic_report(

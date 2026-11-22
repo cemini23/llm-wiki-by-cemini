@@ -137,7 +137,7 @@ gain. The whole `briefs/` tree is gitignored, so briefs are local-only by design
   `@briefs/x.md` both try `briefs/<domain>/x.md` first, then a flat `briefs/x.md`, then a unique
   match in a peer domain — briefs are cross-filed in practice, so the cited domain is often not the
   holding domain.
-- A brief that cites another domain must use the alias form: `[Source: @cybersec-wiki/concepts/...]`.
+- A brief that cites another domain must use the alias form: `[Source: @cybersecurity-wiki/concepts/...]`.
   A bare `wiki/...` path resolves against the domain that owns the brief, not the one you meant.
 - The 2026-10-03 audit found **152 dead references across 327 briefs** — every one pointed at a
   page that already existed, so none needed recreating, only qualifying. The lesson holds under the

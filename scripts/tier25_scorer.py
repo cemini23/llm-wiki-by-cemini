@@ -45,6 +45,15 @@ from typing import Any
 
 import yaml  # type: ignore
 
+# The license blocklist lives in scripts/license_gate.py, so one list serves the
+# scorer, the Phase-0 scanner, and the pre-commit gate. This file is run from the
+# repo root, so make `scripts/` importable before the import.
+_SCRIPTS_DIR = Path(__file__).resolve().parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from license_gate import classify as classify_license  # noqa: E402
+
 
 def load_config(config_path: str) -> dict:
     with open(config_path) as f:
@@ -126,9 +135,7 @@ def check_negative(candidate: dict, signals: list[dict]) -> list[dict]:
     license_str = (candidate.get("license") or "").upper()
     for sig in signals:
         sid = sig["id"]
-        if sid == "license_poison" and any(
-            p in license_str for p in ("GPL-3", "AGPL-3", "SSPL", "ELV2")
-        ):
+        if sid == "license_poison" and classify_license(candidate.get("license")) == "blocked":
             hits.append({"signal": sid, "action": sig["action"], "detail": license_str})
         elif sid == "unauthorized_derivative" and "NOASSERTION" in license_str:
             hits.append({"signal": sid, "action": sig["action"], "detail": license_str})

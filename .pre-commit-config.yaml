@@ -18,3 +18,9 @@ repos:
         language: script
         pass_filenames: false
         files: ^wiki/.*\.md$
+      - id: upgrade-queues
+        name: audit project upgrade queues
+        entry: scripts/precommit_upgrade_queues.py
+        language: system
+        pass_filenames: false
+        always_run: true

@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# cemini-managed-hook
+#
+# Tracked copy of the pre-commit gate. Install with:
+#   bash scripts/install_git_hooks.sh
+#
+# Two gates:
+#   1. Audit every briefs/*-upgrade-queue.md from disk. `briefs/` is gitignored,
+#      so the queues never appear as staged paths — the gate must read them
+#      directly. WARN is allowed; REJECT blocks the commit.
+#   2. Lint the wiki graph when a wiki page is staged.
+#
+# Bypass intentionally with: git commit --no-verify
+
+set -euo pipefail
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+python3 scripts/precommit_upgrade_queues.py
+staged_wiki=$(git diff --cached --name-only --diff-filter=ACMR | grep -c '^wiki/.*\.md$' || true)
+if [ "${staged_wiki:-0}" -gt 0 ]; then
+  python3 scripts/wiki_lint.py --fail-on-graph
+fi
