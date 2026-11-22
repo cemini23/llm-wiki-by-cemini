@@ -4,6 +4,10 @@ type: entity
 tags: [tool, anthropic, cli, ide, harness, agentic-coding]
 keywords: [claude code, claude-code, anthropic cli, claude-cli, agent harness, opus, sonnet, haiku, fast mode, slow mode, session management, slash commands, hooks, mcp]
 related:
+  - sources/arxiv-agentic-harness-engineering-beta-2611.24924.md
+  - sources/arxiv-turing-agent-formal-verification-mathematics-2611.21299.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-16-software-engineering-after-code-becomes-cheap-wi.md
+  - entities/tools/turing-agent.md
   - concepts/context-engineering.md
   - concepts/token-economics-and-prompt-caching.md
   - concepts/subagent-orchestration.md

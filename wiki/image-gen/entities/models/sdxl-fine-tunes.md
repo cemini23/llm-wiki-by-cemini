@@ -5,7 +5,7 @@ tags: [model, sdxl, sdxl-fine-tune, umbrella, lustify, juggernaut, cyberrealisti
 keywords: [SDXL fine-tune, Lustify, Juggernaut XL, Cyberrealistic, Epicrealism, BigAsp-v2.5, flow-matching SDXL, photorealism, NSFW SDXL, 8GB VRAM, 2.6B parameters, hardware economics]
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-11-22
 related:
   - concepts/local-likeness-lora-lessons.md
   - sources/uncensored-image-generation-survey.md
@@ -23,6 +23,8 @@ related:
   - entities/marketplaces/civitai.md
   - entities/uis/automatic1111.md
   - sources/arxiv-2609-18007-gender-stereotyping-t2i.md
+  - concepts/posterior-matching-distillation.md
+  - sources/arxiv-2611-26629-posterior-matching-distillation.md
 ---
 
 ## Relations

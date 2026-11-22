@@ -4,13 +4,15 @@ type: concept
 tags: [crypto, spot-volume, venue-concentration, market-structure]
 keywords: [spot-volume, wublock, binance, okx, coinbase, venue-share, wash-trading, concentration]
 related:
-  - sources/substack-rss-wublock-2026-10-13-september-spot-volume.md
+  - sources/substack-rss-wublock-2026-11-17-october-2026-exchange-spot-volume-report-total-6.md
+  - sources/substack-rss-wublock-2026-11-18-october-2026-exchange-derivatives-volume-report.md
   - concepts/crypto-derivatives-volume-2026.md
   - concepts/crypto-venue-website-traffic.md
+  - sources/substack-rss-wublock-2026-10-13-september-spot-volume.md
   - concepts/xsp-lane-trading-framework.md
 maturity: draft
 created: 2026-10-13
-updated: 2026-10-13
+updated: 2026-11-22
 ---
 
 ## Relations
@@ -40,6 +42,23 @@ Wu Blockchain publishes a **monthly spot-volume table** for a **fixed 14-exchang
 | Binance | $307.8B (**44.2%**) |
 | OKX | $65.8B (9.5%) |
 | Coinbase | $61.3B (8.8%) |
+
+### October 2026 reading
+
+| Metric | Value |
+|--------|-------|
+| Total spot volume | **$623.6B** |
+| September 2026 (as cited) | $687.7B |
+| MoM change | **-9.3%** |
+| Venues up / down | **5 / 9** |
+| Top-3 concentration | **62.9%** |
+| Binance | $279.2B (**44.8%**) |
+| OKX | $61.9B (9.9%) |
+| Bybit | $50.9B (8.2%) |
+
+[Source: @sources/substack-rss-wublock-2026-11-17-october-2026-exchange-spot-volume-report-total-6.md]
+
+[NEEDS VERIFICATION 2026-11-22] The October report cites September as $687.7B, while the 13 October reading above records $696.7B. One figure is revised or mis-stated; check the dashboard before quoting a September base.
 
 ### How to use it
 

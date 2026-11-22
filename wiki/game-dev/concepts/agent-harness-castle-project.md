@@ -83,9 +83,12 @@ related:
   - concepts/context-compaction-game-harness.md
   - sources/arxiv-speccompact-context-compaction-2611.06876.md
   - sources/arxiv-meta-access-interfaces-2611.08428.md
+  - concepts/runtime-nl-criteria-verification.md
+  - sources/arxiv-runtime-nl-criteria-verification-2611.23074.md
+  - sources/arxiv-agent-trust-infrastructure-2611.23202.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-11-10
+updated: 2026-11-22
 wire_status: policy_wired
 wire_target: briefs/W2-harness-kickoff.md
 ---
@@ -284,6 +287,14 @@ SpecCompact shows that a six-slot summary (Goal, Constraints, Progress, Key Deci
 **Rule H17 — keep the authority and capability control plane outside the agent's writable scope** [TENTATIVE — arXiv 2611.08428]
 
 A meta-access ladder runs from tutoring (level 1) to metadata (2), content (3), confirmed mutation (4), and orchestration (5). For a general-purpose harness the paper adds a second axis, the **target** of a change: behavioural, state, capability (tools, servers, network), and authority (permissions, approval policy, sandbox, hooks). The hard rule is that a harness must not let the assistant approve its own authority changes at any level. If the harness also has file-edit or shell tools, it can change its own config without touching a typed capability, so the classification must follow the capability used, not the file path. For castle-sim this names the risk in the Godot MCP write path: scene writes and project-setting writes are level-4 mutations, and any change to tool registries or permissions is 4S or 5S. That stays with the operator and stays outside the agent's write scope. This is the policy shape behind the W2 MCP table's "read-only MCP first; no writes until operator OK". Detail: @sources/arxiv-meta-access-interfaces-2611.08428.md
+
+### Phase-1 wire (2026-11-22) — rule verification, not identity federation
+
+**Rule H18 — name the rule that failed, and do not let the verifier be the gate** [TENTATIVE — arXiv 2611.23074]
+
+A 4B verifier can score 1,000 plain-text rules against one 4K-token trace in 1.81 s on an H100, and return YES, NO, or N/A per rule. That is a better failure report than a single pass/fail from a judge. It is not a gate: on real calls the model approved about 20% of the true violations, with high confidence. For castle-sim the pattern applies to the verify lane only, as a batch step that names a broken rule. The merge decision stays with the CI smoke and the operator. Detail: @concepts/runtime-nl-criteria-verification.md · @sources/arxiv-runtime-nl-criteria-verification-2611.23074.md
+
+**Not adopted — federated agent identity.** ATI (arXiv 2611.23202) gives each agent a certificate, a per-organization CA, and attestation of model, tools, and prompt. Castle-sim has one trust domain, one operator, and no cross-organization handoff. There is no job here for a certificate authority. Recorded for completeness: @sources/arxiv-agent-trust-infrastructure-2611.23202.md
 
 ## Snippets
 

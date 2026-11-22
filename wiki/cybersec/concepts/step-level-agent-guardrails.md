@@ -15,9 +15,10 @@ related:
   - concepts/non-decaying-loop-safety-state.md
   - concepts/recognition-enforcement-gap-instruction-arbitration.md
   - sources/arxiv-2609-30217-instrumental-monitor-evasion-evaluation.md
+  - concepts/skill-control-flow-integrity.md
 maturity: draft
 created: 2026-08-26
-updated: 2026-10-09
+updated: 2026-11-22
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc + mcp-tool-control.mdc (K307)"
 ---

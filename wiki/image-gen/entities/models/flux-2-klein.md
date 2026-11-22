@@ -47,9 +47,13 @@ related:
   - sources/arxiv-2607-15650-ditango-chitudiffusion.md
   - sources/arxiv-2607-19139-dit-template-token-registers.md
   - runbooks/runpod-unified-gen-stack.md
+  - concepts/posterior-matching-distillation.md
+  - sources/arxiv-2611-26629-posterior-matching-distillation.md
+  - concepts/rl-post-training-as-activation-steering.md
+  - sources/arxiv-2611-26627-rl-post-training-activation-steering.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-08-17
+updated: 2026-11-22
 ---
 
 ## Relations

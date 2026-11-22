@@ -1,6 +1,8 @@
 ---
 type: concept
 related:
+  - concepts/geo-paid-placement-networks.md
+  - sources/arxiv-geohunter-mapping-geo-network-wild-2611.26564.md
   - concepts/local-seo-foundations.md
   - concepts/reviews-reputation-management.md
   - concepts/on-page-seo-local.md

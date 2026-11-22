@@ -41,9 +41,12 @@ related:
   - sweeps/2026-07-10-daily.md
   - sources/arxiv-2607-18130-mhc-peft-llm.md
   - sources/arxiv-2607-19326-malora-mara-llm-peft.md
+  - concepts/rl-post-training-as-activation-steering.md
+  - sources/arxiv-2611-26627-rl-post-training-activation-steering.md
+  - sources/arxiv-2611-21393-train-after-you-measure-skip.md
 maturity: validated
 created: 2026-05-06
-updated: 2026-07-22
+updated: 2026-11-22
 ---
 
 ## Relations

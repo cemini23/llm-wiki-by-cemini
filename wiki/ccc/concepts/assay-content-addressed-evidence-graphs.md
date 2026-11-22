@@ -4,6 +4,7 @@ type: concept
 tags: [concept, k406]
 keywords: [2609.36170, k406]
 related:
+  - concepts/result-provenance-authority-gate.md
   - sources/arxiv-assay-content-addressed-evidence-graphs-2609.36170.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-30_ccc-k406-k410-sip-ready.md

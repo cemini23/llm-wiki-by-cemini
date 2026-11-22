@@ -187,6 +187,10 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [`harbor`](entities/tools/harbor.md) | draft | Task format + rollout runner for coding-agent benchmarks |
 | [`metal-sandbox`](entities/tools/metal-sandbox.md) | draft | Per-instance isolation + command scheduling on Macs — 2611.17294 |
 | [`analoglayoutworld`](entities/tools/analoglayoutworld.md) | draft | 40-task analog layout benchmark — 2611.16991 |
+| [`vibe-trading`](entities/tools/vibe-trading.md) | draft | HKUDS agent-native trading workspace — provenance + authority gate (2611.24845) |
+| [`turing-agent`](entities/tools/turing-agent.md) | draft | Lean formal-verification harness for research mathematics — REFERENCE (2611.21299) |
+| [`harvo`](entities/tools/harvo.md) | draft | GEPA harness-adapter evolution, frozen policy — WATCH (2611.25380) |
+| [`coderabbit`](entities/tools/coderabbit.md) | draft | AI code-review vendor — 5,000 agent PRs/month outlier case |
 
 ## entities/models/
 
@@ -339,6 +343,23 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [`train-llm-agents-2026-curriculum`](concepts/train-llm-agents-2026-curriculum.md) | draft | Train agents curriculum pointer (K72 Post 20) |
 | [`agentic-programming-full-stack-thesis`](concepts/agentic-programming-full-stack-thesis.md) | draft | Agentic programming = full-stack (K72 Post 23) |
 | [`continual-harness-online-self-improvement`](concepts/continual-harness-online-self-improvement.md) | draft | Reset-free harness refinement — arXiv 2605.09998 (K72) |
+| [`harness-completion-gate-progress-effect`](concepts/harness-completion-gate-progress-effect.md) | draft | Harness effect is a progress effect — score the artifact (2611.21407) |
+| [`requirement-centered-harness-evolution`](concepts/requirement-centered-harness-evolution.md) | draft | Merge on verified requirements, score after — AHE-Beta (2611.24924) |
+| [`harness-adapter-frozen-policy-specialization`](concepts/harness-adapter-frozen-policy-specialization.md) | draft | Harness adapter as a LoRA-like delta, policy frozen (2611.25380) |
+| [`timeout-cascade-cost-aware-routing`](concepts/timeout-cascade-cost-aware-routing.md) | draft | Small model first, escalate on failure — 33% GPU-hour cut (2611.24324) |
+| [`structured-memory-folding`](concepts/structured-memory-folding.md) | draft | Fold record count and context length together — MemFolder (2611.26427) |
+| [`evidence-management-tool-use`](concepts/evidence-management-tool-use.md) | draft | Acquisition is not enough — present and accept evidence (2611.25840) |
+| [`self-verification-failure-taxonomy`](concepts/self-verification-failure-taxonomy.md) | draft | Why agents pass their own tests and still fail (2611.21176) |
+| [`specification-anchored-benchmark-anchors`](concepts/specification-anchored-benchmark-anchors.md) | draft | Field criterion + floor/ceiling anchors for open tasks (2611.24321) |
+| [`halo-effect-platform-evaluation`](concepts/halo-effect-platform-evaluation.md) | draft | Nine dimensions, α=0.98 — one impression (2611.24039) |
+| [`formal-verification-faithfulness-gap`](concepts/formal-verification-faithfulness-gap.md) | draft | Faithfulness, validity, completeness — what a checker misses (2611.21299) |
+| [`premise-scope-dependency-invalidation`](concepts/premise-scope-dependency-invalidation.md) | draft | A revised fact invalidates its dependents (2611.23010) |
+| [`calibration-interval-scientific-judgment`](concepts/calibration-interval-scientific-judgment.md) | draft | Score the 95% interval, not only the answer (2611.21541) |
+| [`skill-guided-teacher-rollout`](concepts/skill-guided-teacher-rollout.md) | draft | A skill shapes teacher data better than a weight update (2611.26510) |
+| [`result-provenance-authority-gate`](concepts/result-provenance-authority-gate.md) | draft | Results carry source, scope, run; action needs a grant (2611.24845) |
+| [`application-level-optimization-eval`](concepts/application-level-optimization-eval.md) | draft | A correct patch is not a speedup — config dominates (2611.20882) |
+| [`embedding-gap-ideation-null-result`](concepts/embedding-gap-ideation-null-result.md) | draft | Distance is not novelty — pre-registered null (2611.21408) |
+| [`mind-act-composition-diagnosis`](concepts/mind-act-composition-diagnosis.md) | draft | Score Mind, Act and their composition separately (2611.26444) |
 | [`agent-harness-operational-definition`](concepts/agent-harness-operational-definition.md) | draft | T1–T4 membership test for agent harness — 2606.10106 (K109) |
 | [`openagenet-trusted-agent-discovery`](concepts/openagenet-trusted-agent-discovery.md) | draft | OAN pre-connection trust layer — REFERENCE (2606.03161) |
 | [`queen-bee-beespec-enterprise-orchestration`](concepts/queen-bee-beespec-enterprise-orchestration.md) | draft | BeeSpec IR for governed enterprise MCP — 2606.06545 |
@@ -751,6 +772,38 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 
 | Page | Maturity | Summary |
 |------|----------|---------|
+| [`arxiv-harness-leverage-across-model-size-2611.21407`](sources/arxiv-harness-leverage-across-model-size-2611.21407.md) | draft | Five local harnesses × five models — harness effect is a progress effect (2611.21407) |
+| [`arxiv-agentic-harness-engineering-beta-2611.24924`](sources/arxiv-agentic-harness-engineering-beta-2611.24924.md) | draft | AHE-Beta requirement-centered harness evolution — 21.9% to 33.3% pass@1 (2611.24924) |
+| [`arxiv-beyond-weight-updates-evolving-agent-harnesses-2611.25380`](sources/arxiv-beyond-weight-updates-evolving-agent-harnesses-2611.25380.md) | draft | Harvo/GEPA harness adapters with a frozen policy (2611.25380) |
+| [`arxiv-timeout-cascades-coding-agent-inference-cost-2611.24324`](sources/arxiv-timeout-cascades-coding-agent-inference-cost-2611.24324.md) | draft | Timeout cascade — small model first, 33% GPU-hour cut (2611.24324) |
+| [`arxiv-memfolder-structure-guided-memory-folding-2611.26427`](sources/arxiv-memfolder-structure-guided-memory-folding-2611.26427.md) | draft | MemFolder two-axis memory folding, 99% retention at half records (2611.26427) |
+| [`arxiv-tune-medical-evidence-management-2611.25840`](sources/arxiv-tune-medical-evidence-management-2611.25840.md) | draft | TUNE — evidence management after tool use, +9.1 points (2611.25840) |
+| [`arxiv-scientific-coding-finite-element-analysis-2611.21176`](sources/arxiv-scientific-coding-finite-element-analysis-2611.21176.md) | draft | FEM-Bench agentic coding — six self-verification failure classes (2611.21176) |
+| [`arxiv-stembench-postdoc-level-science-2611.24321`](sources/arxiv-stembench-postdoc-level-science-2611.24321.md) | draft | STEMBench — field figure of merit with floor/ceiling anchors (2611.24321) |
+| [`arxiv-capability-framework-agentic-ai-enterprises-2611.24039`](sources/arxiv-capability-framework-agentic-ai-enterprises-2611.24039.md) | draft | Enterprise platform bakeoff — α=0.98 halo effect (2611.24039) |
+| [`arxiv-turing-agent-formal-verification-mathematics-2611.21299`](sources/arxiv-turing-agent-formal-verification-mathematics-2611.21299.md) | draft | Turing Agent — Lean formalisation of research mathematics (2611.21299) |
+| [`arxiv-physscope-agentic-multimodal-physics-2611.23010`](sources/arxiv-physscope-agentic-multimodal-physics-2611.23010.md) | draft | PhysScope premise scope + dependent invalidation (2611.23010) |
+| [`arxiv-sciresearch-eval-scientific-judgment-2611.21541`](sources/arxiv-sciresearch-eval-scientific-judgment-2611.21541.md) | draft | SciResearch-Eval — calibrated 95% intervals under a flawed simulator (2611.21541) |
+| [`arxiv-vibe-trading-agent-native-trading-2611.24845`](sources/arxiv-vibe-trading-agent-native-trading-2611.24845.md) | draft | Vibe-Trading — provenance, reproducibility, authority gate (2611.24845) |
+| [`arxiv-accelerate-bench-application-level-optimization-2611.20882`](sources/arxiv-accelerate-bench-application-level-optimization-2611.20882.md) | draft | Accelerate Bench — app-level optimisation, config dominates patch (2611.20882) |
+| [`arxiv-automaster-autonomous-post-training-2611.26510`](sources/arxiv-automaster-autonomous-post-training-2611.26510.md) | draft | AutoMaster Skill-FT — skills shape teacher rollouts (2611.26510) |
+| [`arxiv-embedding-map-distances-llm-ideation-2611.21408`](sources/arxiv-embedding-map-distances-llm-ideation-2611.21408.md) | draft | Embedding-gap ideation — pre-registered null result (2611.21408) |
+| [`arxiv-mind2act-world-embodied-diagnostic-benchmark-2611.26444`](sources/arxiv-mind2act-world-embodied-diagnostic-benchmark-2611.26444.md) | draft | Mind2Act-World — Mind/Act/composition diagnosis for robots (2611.26444) |
+| [`arxiv-personal-imitation-game-identity-2611.24888`](sources/arxiv-personal-imitation-game-identity-2611.24888.md) | draft | Personal Imitation Game — persona cloning, underpowered null (2611.24888) |
+| [`newsletter-rss-pragmatic-engineer-2026-11-16-software-engineering-after-code-becomes-cheap-wi`](sources/newsletter-rss-pragmatic-engineer-2026-11-16-software-engineering-after-code-becomes-cheap-wi.md) | draft | Satya Nadella — software factories, decouple harness/memory/model |
+| [`newsletter-rss-pragmatic-engineer-2026-11-17-inference-engineering-for-software-engineers`](sources/newsletter-rss-pragmatic-engineer-2026-11-17-inference-engineering-for-software-engineers.md) | draft | Inference engineering — provider onboarding stages (teaser) |
+| [`newsletter-rss-pragmatic-engineer-2026-11-18-software-factories-and-code-reviews-with-harjot`](sources/newsletter-rss-pragmatic-engineer-2026-11-18-software-factories-and-code-reviews-with-harjot.md) | draft | CodeRabbit — 5,000 agent PRs/month at $250K AI spend |
+| [`newsletter-rss-pragmatic-engineer-2026-11-19-the-pulse-is-amazons-writing-culture-collapsing`](sources/newsletter-rss-pragmatic-engineer-2026-11-19-the-pulse-is-amazons-writing-culture-collapsing.md) | draft | Teaser only — Anthropic IPO + GTA VI; no article body |
+| [`newsletter-rss-latent-space-2026-11-16-bfl-web-archive`](sources/newsletter-rss-latent-space-2026-11-16-bfl-web-archive.md) | draft | BFL FLUX 3 — video + audio training, temporal consistency |
+| [`newsletter-rss-latent-space-2026-11-16-building-visual-intelligence-andreas-blattmann-d`](sources/newsletter-rss-latent-space-2026-11-16-building-visual-intelligence-andreas-blattmann-d.md) | draft | Duplicate capture of the BFL episode |
+| [`newsletter-rss-latent-space-2026-11-17-ainews-perplexity-hits-a-1b-revenue-run-rate-up`](sources/newsletter-rss-latent-space-2026-11-17-ainews-perplexity-hits-a-1b-revenue-run-rate-up.md) | draft | Perplexity $1B run rate; Qwen4-Max cost per task falls |
+| [`newsletter-rss-latent-space-2026-11-17-cloudflare-joins-the-jevolution-and-labels-itsel`](sources/newsletter-rss-latent-space-2026-11-17-cloudflare-joins-the-jevolution-and-labels-itsel.md) | draft | Cloudflare System One models — Clef decision model, Clairic extract |
+| [`newsletter-rss-latent-space-2026-11-18-ainews-gpt-62-astra-the-2-frontier-model-is-bett`](sources/newsletter-rss-latent-space-2026-11-18-ainews-gpt-62-astra-the-2-frontier-model-is-bett.md) | draft | GPT-6.2 Astra/Sol — price table, High self-improvement rating |
+| [`newsletter-rss-latent-space-2026-11-19-ainews-gemini-4-neon-gdms-opussol-contender`](sources/newsletter-rss-latent-space-2026-11-19-ainews-gemini-4-neon-gdms-opussol-contender.md) | draft | Gemini 4 Neon — effort levels change the score |
+| [`newsletter-rss-latent-space-2026-11-19-scaling-linears-gtm-to-100m-arr-cristina-cordova`](sources/newsletter-rss-latent-space-2026-11-19-scaling-linears-gtm-to-100m-arr-cristina-cordova.md) | draft | Linear COO — agents create over half of Linear's work |
+| [`newsletter-rss-latent-space-2026-11-20-ainews-anthropic-successfully-completes-largest`](sources/newsletter-rss-latent-space-2026-11-20-ainews-anthropic-successfully-completes-largest.md) | draft | Anthropic IPO at $1.5T; Class F control shares |
+| [`newsletter-rss-latent-space-2026-11-20-the-war-against-slop-and-an-emerging-weapon-to-f`](sources/newsletter-rss-latent-space-2026-11-20-the-war-against-slop-and-an-emerging-weapon-to-f.md) | draft | Formal verification as the anti-slop weapon (SMT, cvc5) |
+| [`newsletter-rss-latent-space-2026-11-21-ainews-riemann-hypothesis-provedtwice-independen`](sources/newsletter-rss-latent-space-2026-11-21-ainews-riemann-hypothesis-provedtwice-independen.md) | draft | Riemann Hypothesis — Lean proof vs human proof; faithfulness |
 | [`arxiv-skillrae-2605.10114`](sources/arxiv-skillrae-2605.10114.md) | draft | SkillRAE paper provenance (K59) |
 | [`arxiv-graphflow-2605.14968`](sources/arxiv-graphflow-2605.14968.md) | draft | GraphFlow paper provenance (K59) |
 | [`k67-explorax-100-repos-reference`](sources/k67-explorax-100-repos-reference.md) | draft | @exploraX_ OSS list — audit queue stub (K67) |

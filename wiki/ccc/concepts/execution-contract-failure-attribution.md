@@ -4,6 +4,7 @@ type: concept
 tags: [concept, k413]
 keywords: [2609.40306, k413]
 related:
+  - concepts/mind-act-composition-diagnosis.md
   - sources/arxiv-dynaharness-execution-contract-attribution-2609.40306.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-10-01_ccc-k411-k415-sip-ready.md

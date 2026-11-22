@@ -5,6 +5,9 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - sources/arxiv-text-line-segmentation-generalization-2611.24726.md
+  - sources/arxiv-dataset-distillation-htr-2611.21054.md
+  - concepts/htr-segmentation-generalization.md
   - entities/tools/qwen-mm-plugins.md
   - entities/tools/diagram-design.md
   - entities/tools/tookie-osint.md

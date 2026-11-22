@@ -4,6 +4,10 @@ type: concept
 tags: [concept, macro, inflation, k233]
 keywords: [inflation-risk, core-cpi, ai-capex, m2-velocity, factor-rotation]
 related:
+  - sources/substack-rss-capital-flows-2026-11-17-are-equities-a-buy-or-falling-knife-here.md
+  - sources/substack-rss-capital-flows-2026-11-20-anthropic-ai-flows-and-the-coming-hiking-cycle.md
+  - sources/substack-rss-capital-flows-2026-11-21-the-ai-repricing-and-what-bonds-are-not-confirmi.md
+  - sources/substack-rss-klement-2026-11-18-the-changing-stock-market-reaction-to-inflation.md
   - sources/newsletter-capital-flows-inflation-risk-2026-08-12.md
   - sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md
   - concepts/guruwatcher-macro-watches.md
@@ -11,7 +15,7 @@ related:
   - sources/substack-rss-capital-flows-2026-11-13-inflation-cycle-playbook-livestream-reply.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-11-14
+updated: 2026-11-22
 ---
 
 ## Relations
@@ -41,3 +45,13 @@ Only the spread is checkable without the paid material. It is a simple monitor: 
 [NEEDS VERIFICATION 2026-11-16] The 6% and 4% figures are teaser text, not checked against a primary release.
 
 [Source: @sources/substack-rss-capital-flows-2026-11-13-inflation-cycle-playbook-livestream-reply.md]
+
+### The sign of the equity reaction depends on the shock (2026-11-22)
+
+A Bank of Italy study, summarised by Klement, finds that the equity reaction to an inflation surprise flipped after 2020. Before 2020, a positive surprise was negative for share prices, and worse for firms with more long-dated debt. Since 2020 it is positive, and better for heavily levered firms. The proposed reason is the shock type: demand-driven surprises can be cooled by a rate hike, supply-driven surprises cannot. A persistent supply shock devalues nominal debt in real terms. If the shock becomes large enough, profits suffer and the sign flips back, as in 2023. [Source: @sources/substack-rss-klement-2026-11-18-the-changing-stock-market-reaction-to-inflation.md] [TENTATIVE]
+
+### The hiking-cycle path (2026-11-20 to 2026-11-21)
+
+Capital Flows argues that a hiking cycle is coming, because the Fed must raise rates or let long-end rates blow out and weaken the currency. The observable part is a cross-asset ordering after the Anthropic IPO: ES broke below 7400, VIX rose, FX volatility stayed low, and bond volatility rose only a little. If equities enter a hiking cycle in that position, the author expects a larger decline once rate volatility does rise. [Source: @sources/substack-rss-capital-flows-2026-11-20-anthropic-ai-flows-and-the-coming-hiking-cycle.md] [Source: @sources/substack-rss-capital-flows-2026-11-21-the-ai-repricing-and-what-bonds-are-not-confirmi.md]
+
+The monitorable part is the divergence, not the forecast: equity volatility elevated while rate and FX volatility are not. A widening gap is a candidate alert. The hiking-cycle claim itself is `[TENTATIVE]`.

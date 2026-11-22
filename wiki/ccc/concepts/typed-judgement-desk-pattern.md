@@ -4,6 +4,7 @@ type: concept
 tags: [concept, k286, k288, decision-models]
 keywords: [jev, typed-judgement, decision-model, pplx-decider, unsloth]
 related:
+  - concepts/premise-scope-dependency-invalidation.md
   - concepts/nomos-compiled-tool-call-gate.md
   - concepts/overclaiming-propensity-agent-measurement.md
   - concepts/phase1-adopt-wire.md

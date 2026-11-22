@@ -23,9 +23,11 @@ related:
   - sources/arxiv-2608-12290-agentic-i2v.md
   - sources/arxiv-2608-13463-mllm-routed-ensembles-routed.md
   - sources/arxiv-2610-02197-hiphy.md
+  - concepts/rl-post-training-as-activation-steering.md
+  - sources/arxiv-2611-26627-rl-post-training-activation-steering.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-08-05
+updated: 2026-11-22
 ---
 
 ## Relations

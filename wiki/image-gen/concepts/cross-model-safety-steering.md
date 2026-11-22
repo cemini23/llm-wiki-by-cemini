@@ -24,9 +24,11 @@ related:
   - sources/arxiv-2607-07907-multimodal-unlearning-survey.md
   - sweeps/2026-07-13-daily.md
   - sources/arxiv-2608-10933-safeca-routed.md
+  - concepts/rl-post-training-as-activation-steering.md
+  - sources/arxiv-2611-26627-rl-post-training-activation-steering.md
 maturity: draft
 created: 2026-06-06
-updated: 2026-07-02
+updated: 2026-11-22
 ---
 ## Relations
 

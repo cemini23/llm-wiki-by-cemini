@@ -5,7 +5,7 @@ tags: [concept, video-generation, streaming, super-resolution, autoregressive, h
 keywords: [Ultra Flash, cascaded SR, latent upsampler, T2V-to-TV2V, self-forcing DPO, AIGC degradation, real-time 1K 2K, causal sparse attention]
 maturity: draft
 created: 2026-06-11
-updated: 2026-09-19
+updated: 2026-11-22
 related:
   - sources/arxiv-2606-09150-ultra-flash-streaming-hr-video.md
   - concepts/one-step-autoregressive-video-distillation.md
@@ -30,6 +30,8 @@ related:
   - sweeps/2026-09-19-daily.md
   - sources/arxiv-2611.17336-pixvid-pixel-space-video.md
   - concepts/framewise-pixel-space-video-generation.md
+  - sources/arxiv-2611-23226-fastframes-interactive-latency-video.md
+  - concepts/interactive-latency-autoregressive-video.md
 ---
 
 

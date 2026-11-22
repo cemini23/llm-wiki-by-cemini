@@ -4,6 +4,7 @@ type: concept
 tags: [concept, memory, context, multi-agent, long-horizon, harness, k154]
 keywords: [2607.07666, ensemble qsp, scratchpad, mid-term state, eviction, bounded context, three-layer]
 related:
+  - concepts/structured-memory-folding.md
   - sources/arxiv-ensemble-qsp-hierarchical-memory-2607.07666.md
   - concepts/channel-fracture-cross-agent-memory-delivery.md
   - concepts/dual-representation-agent-memory.md

@@ -192,9 +192,14 @@ related:
   - concepts/asleval-privacy-exposure-displacement.md
   - concepts/safety-budget-control-channel-calibration.md
   - sources/arxiv-safety-as-a-budget-2611.16628.md
+  - concepts/intent-contract-planner-tool-separation.md
+  - concepts/skill-control-flow-integrity.md
+  - concepts/configuration-layer-attack-embodied-ai.md
+  - sources/arxiv-intent-contracts-tools-away-2611.24025.md
+  - sources/arxiv-skillcfi-control-flow-integrity-2611.24185.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-11-14
+updated: 2026-11-22
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-mcp-tool-control.mdc"
 ---

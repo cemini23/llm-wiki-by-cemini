@@ -4,6 +4,7 @@ type: concept
 tags: [concept, hermes, openclaw, personality, k90]
 keywords: [voxyz, personality-file, hermes, openclaw, generic-assistant]
 related:
+  - sources/arxiv-personal-imitation-game-identity-2611.24888.md
   - concepts/agent-token-discipline-openclaw-hermes.md
   - entities/tools/hermes-agent.md
   - entities/tools/build-your-own-openclaw.md

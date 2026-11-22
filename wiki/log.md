@@ -3,13 +3,24 @@ title: Federation wiki — operations log
 type: concept
 related:
   - index.md
-updated: 2026-11-14
+updated: 2026-11-22
 ---
 
 # Operations log
 
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
+
+## [2026-11-22] ingest | 95 sources across seven domains — the largest wave yet
+
+- **Scope.** The inbox held 95 files accumulated over eight days. All are ingested: ccc 32, osint 30, cybersec 13, seo 10, image-gen 7, game-dev 2, 3d-printing 1.
+- **The digest fix held.** `preingest_check.py` found **1 duplicate in 95 files**, against 24 in 64 in the previous wave. The repaired index now reads all eight `wiki/<domain>/sources/` folders, which the 2026-10-14 merge had broken.
+- **That one duplicate was a false positive.** `2611.24845` (Vibe-Trading) matched on its GitHub repo URL against the existing `osint/sources/vibe-trading-hkuds.md`, which documents the repository, not the paper. The paper was ingested in ccc and cross-linked both ways. Deleting it on the tool's verdict would have lost it.
+- **Best findings by project.** `/route`: timeout cascades cut GPU-hours 33% with no accuracy loss, and 85 of 127 empty runs still exited zero — do not score a harness on exit code. image-gen: FastFrames exposes the VAE decode (147 ms) and KV write (~83 ms) costs; black-box semantic watermarks reach AUROC 1.000 from sampling access alone. XSP: conditional-Gamma LETF options give an exact drag identity and a full smile in about 1 second instead of 200. PM/Kalshi: on-request RFQ market creation makes new-series announcements a discovery input. GuruWatcher: the equity reaction to a positive inflation surprise reversed sign after 2020 because shocks became supply-driven.
+- **Guardrail finding with teeth.** Models recognise misconduct at 91% but refuse at 34%; reframing the question lifts refusal from 52% to 88%. And none of 53 public skill definitions compiled as written under a compiled-contract check.
+- **Honest misfits recorded.** Six of ten seo papers, both game-dev papers, and the mobile-manipulator report have no practical link to their domain. Each page says so and routes `wiki-only; no distribution`.
+- **A cross-link the agents could not close.** Vibe-Trading's ccc page links to the osint repo page; the reverse edge was added by hand here because `wiki/osint/` was owned by another agent during the run.
+- **gate:** `wiki_lint.py` clean — 0 hard errors, 0 bidirectional gaps, 0 dangling links. Ten backlink gaps and one cross-wiki edge from the concurrent writes were repaired before the commit. `ingest_session_gate.py` WARN acknowledged: gambling has no 2026-11-22 ingest because it received no sources this wave. Its dirty files are a `dfs-model-orchestration` backlink and sweeps 11-17 to 11-22 left by earlier sessions, committed here for a clean tree.
 
 ## [2026-11-14] ingest | inbox cleared again — 40 sources, and egress restored
 

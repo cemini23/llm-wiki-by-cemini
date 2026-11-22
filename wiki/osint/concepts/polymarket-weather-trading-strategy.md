@@ -4,6 +4,7 @@ type: concept
 tags: [concept, polymarket, weather-trading, prediction-markets, gamma-api, open-meteo, ensemble-forecasting, k41]
 keywords: [polymarket-weather-bot, gamma-api-integration, weather-market-bins, open-meteo-bias-correction, station-coordinate-discovery, 3-model-ensemble, icon-gfs-ecmwf, 18-30-hr-entry-window]
 related:
+  - concepts/prediction-market-on-request-markets.md
   - sources/x-docx-polymarket-claude-md-2026-04-23.md
   - sources/x2-docx-polymarket-theparuchh-2026.md
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md

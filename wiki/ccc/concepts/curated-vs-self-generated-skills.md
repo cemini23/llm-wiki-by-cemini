@@ -4,6 +4,10 @@ type: concept
 tags: [concept, k282, cross-wiki]
 keywords: [2610.03564, k282]
 related:
+  - sources/arxiv-automaster-autonomous-post-training-2611.26510.md
+  - sources/arxiv-beyond-weight-updates-evolving-agent-harnesses-2611.25380.md
+  - concepts/skill-guided-teacher-rollout.md
+  - concepts/harness-adapter-frozen-policy-specialization.md
   - sources/arxiv-finskillsbench-curated-vs-self-generated-2610.03564.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-10-05_k282-ccc-agent-eval-route.md

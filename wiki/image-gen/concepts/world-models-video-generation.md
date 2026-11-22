@@ -3,10 +3,9 @@ title: World Models for Video Generation
 type: concept
 tags: [concept, world-model, video-generation, interactive, action-controllable, world-simulator]
 keywords: [world model, world simulator, interactive video generation, action-controllable, camera-controllable, minute-scale, autoregressive rollout, explorable environment, LingBot-World, HY-WorldPlay, scene identity preservation, dual-branch camera control, hybrid linear attention]
-  - sources/arxiv-2609-31349-dymd.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-11-14
+updated: 2026-11-22
 related:
   - concepts/activation-steering-video-generation.md
   - concepts/camera-controlled-video-generation.md
@@ -216,6 +215,8 @@ related:
   - sources/arxiv-2610-08791-world-models-physics-exam.md
   - sources/arxiv-2610-12412-worldcast.md
   - sources/arxiv-2610-12459-worldguide.md
+  - concepts/latent-action-learning-video-dit.md
+  - sources/arxiv-2611-26617-one-prior-two-dynamics-latent-action.md
 
 ---
 

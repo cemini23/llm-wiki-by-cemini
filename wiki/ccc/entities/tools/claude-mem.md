@@ -4,6 +4,8 @@ type: entity
 tags: [tool, memory, claude-code, plugin, observation, sqlite, chromadb]
 keywords: [claude-mem, observation memory, sessionstart hook, semantic recall, bun, sqlite, chromadb, lazy injection]
 related:
+  - sources/arxiv-memfolder-structure-guided-memory-folding-2611.26427.md
+  - concepts/structured-memory-folding.md
   - entities/tools/claude-code.md
   - concepts/context-engineering.md
   - concepts/hooks-for-automation.md

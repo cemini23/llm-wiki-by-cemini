@@ -2043,3 +2043,90 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - **New concept page** `concepts/search-query-data-supply.md` — three supply routes, the exclusion rule behind each, and three open questions. The link to keyword research is tagged `[TENTATIVE]`.
 - Backlinks: `concepts/search-query-data-supply.md`, `entities/tools/google-search-console.md`, `entities/tools/semrush.md`, `concepts/local-seo-foundations.md`, `concepts/corpus-overflow-out-of-scope.md`. Index rows added.
 - Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | GEOHunter: Mapping a Generative Engine Optimization Network in the Wild
+
+- `sources/arxiv-geohunter-mapping-geo-network-wild-2611.26564.md` — **new**. Measures one paid GEO network on three Chinese UGC platforms (Bilibili, Baijiahao, 360kuai). A vendor publishes promotional articles through accounts it controls.
+- **Scale.** 1,985 analyzed accounts and 466,357 inferred placements. The crawl accepted 3,755 network accounts; counts are lower bounds. Single-source claims from this paper.
+- **Exposure.** 4.5% to 20% of retrievable cited pages come from the network across nine engines. Clients are named in 52% of answers, against 68% for category leaders.
+- **Defense.** Content-level checks fail against coordinated placement. Account-level and platform-level signals are necessary.
+- **New concept page** `concepts/geo-paid-placement-networks.md` — the supply side of GEO and the defense implications.
+- Backlinks: `concepts/generative-engine-optimization.md`, `concepts/competitive-geo-citation-factors.md`, `concepts/ai-citation-sourcing-geo.md`, `concepts/evidence-ecosystem-geo.md`, `concepts/geo-visibility-measurement.md`, `concepts/citation-building.md`. Index rows added.
+- Routing: wiki; brief candidate (GEO supply-side threat model and defense).
+
+## [2026-11-22] ingest | Security of Deep Research Agents: Attack Surface, Defenses, Benchmarks, and Agenda Seeding
+
+- `sources/arxiv-security-deep-research-agents-attack-surface-2611.20045.md` — **new**. Surveys 34 primary studies across retrieval, planning, evidence integration, and report generation. Only 26.5% address planning, and none test end-to-end poisoning on commercial products.
+- **Agenda seeding.** The attacker adds a fictitious evaluation metric and writes no instructions. Across 3,520 sandboxed runs, it makes the target the top pick in 16% to 28% of reports. GEO and prompt injection are near-ineffective in this setting.
+- **Prior evidence.** The paper cites WARP: about 13 rewritten words on one UGC page get retrieved in 57% to 76% of runs and cited in 38% to 51% of reports.
+- **Partial SEO relevance.** The paper names GEO in its threat model. It shows that content placement changes agent reports, and that defensive work must cover the whole pipeline.
+- Backlinks: `concepts/generative-engine-optimization.md`, `concepts/geo-paid-placement-networks.md`, `concepts/evidence-ecosystem-geo.md`, `concepts/ai-citation-sourcing-geo.md`. Index row added.
+- Routing: wiki-only; no distribution (security-primary, partial GEO).
+
+## [2026-11-22] ingest | SparkToro: We Analyzed 118,00 ChatGPT Prompts from 12,000+ Users
+
+- `sources/newsletter-rss-sparktoro-2026-11-17-we-analyzed-11800-chatgpt-prompts-from-12000-use.md` — **new**. The RSS body truncates; numbers come from the full page, fetched 2026-11-22.
+- **Dataset.** 118,163 prompts from 41,961 conversations, 1 January to 29 October 2026, from 12,321 panel users. 9,675 panelists were weighted to the US Census.
+- **Marketing-relevant numbers.** 12.1% of responses mention a brand; only 6.9% of prompts are brand purchase research, against 15%+ on Google. Fishkin estimates Google gets purchase-journey queries at 16 times the ChatGPT rate.
+- **Caveats.** API use is excluded (estimated 50% to 75% of usage). The panel skews younger, female, lower-income, and mobile.
+- **New concept page** `concepts/ai-assistant-usage-buyer-journey-share.md` — the share, its limits, and the local-strategy inference. `[TENTATIVE]`.
+- Backlinks: `concepts/conversational-capture-geo.md`, `concepts/geo-visibility-measurement.md`, `concepts/generative-engine-optimization.md`, `concepts/competitive-geo-citation-factors.md`. Index rows added.
+- Routing: wiki; brief candidate (AI visibility prioritisation numbers).
+
+## [2026-11-22] ingest | Sterling Sky: Optimization of Title Tags for CTR
+
+- `sources/newsletter-rss-sterling-sky-2026-11-15-optimization-of-title-tags-for-ctr.md` — **new**. The RSS body truncates; test results come from the full page, fetched 2026-11-22.
+- **Three tests.** Title rewrites lifted clicks by 65%, 63%, and 400% on pages that already ranked but got few clicks. Single-site results from one agency.
+- **Failure modes.** Removing the main keyword lost clicks. A title/H1 mismatch hurt until the H1 aligned with the title start. Sometimes the title is not the cause, and a change should revert.
+- **Method.** Find candidates in Search Console by good position and low CTR. Keep the top keyword, match intent, lead with benefit, align the H1, always test.
+- **New concept page** `concepts/title-tag-ctr-optimization.md` — the method and its limits.
+- Backlinks: `concepts/content-strategy-local.md`, `concepts/local-seo-foundations.md`, `concepts/on-page-seo-local.md`, `concepts/google-business-profile.md`. Index rows added.
+- Routing: wiki; brief candidate (local-SEO quick win).
+
+## [2026-11-22] ingest | Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models
+
+- `sources/arxiv-fine-tuned-classifiers-typed-decision-models-2611.20191.md` — **new**. Swaps the predictors of 24 ACL-venue papers for a Typed Decision Model across 46 test sets.
+- **Results.** Zero-shot replaced the paper's predictor on 12 of 46 sets. With 500 labels and prompt optimization, the method closed a median 72% of the gap. LoRA fine-tuning closed 97%.
+- **No SEO link.** NLP classification. Record-only.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | JointQ: Joint Scale-and-Integer Quantization for Large Language Models
+
+- `sources/arxiv-jointq-joint-scale-integer-quantization-2611.20384.md` — **new**. Refines GPTQ by solving integer assignment and group scales together; drop-in format.
+- **Results.** Better six-task average accuracy than GPTQ in 14 of 16 comparisons and better perplexity in 12 of 16. Largest gains in low-bit settings.
+- **No SEO link.** Model compression. Record-only.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | ForecastGym: A Live, Controlled, and Replayable Benchmark for Forecasting Agents
+
+- `sources/arxiv-forecastgym-live-replayable-benchmark-forecasting-agents-2611.23045.md` — **new**. Records search-API evidence every two days and replays it offline for prediction-market questions. 150 questions, 614 evidence states, 131k results.
+- **Findings.** Reruns after settlement reveal outcomes for up to 92% of questions. All tested LLMs trail the market. Switching the search API changes Brier score by up to 0.043, more than the spread across models.
+- **No SEO link.** Forecasting evaluation. Record-only.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | MoE–LoRA Methods for Multilingual Adaptation
+
+- `sources/arxiv-moe-lora-multilingual-adaptation-2611.23158.md` — **new**. Compares eight LoRA methods over 200+ languages and 9,000+ settings.
+- **Findings.** Reduced-scale search does not predict large-scale ranking. LoRA improves translation fit, consistently degrades reading comprehension, and helps low-resource languages most. The authors call LoRA a targeted tool.
+- **No SEO link.** Multilingual model adaptation. Record-only.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Meta-RTL: Evolving Agent Harnesses for RTL Optimization
+
+- `sources/arxiv-meta-rtl-evolving-agent-harnesses-2611.25891.md` — **new**. Evolves an agent harness for register-transfer-level chip design optimization from EDA feedback.
+- **Results.** Cuts aggregate timing violations by 7.8%/11.0% on 20 designs. Transfers to 10 unseen designs with 20.5%/14.0% cuts and 12.6% less synthesized area.
+- **No SEO link.** "RTL" means hardware design here, not right-to-left text. Record-only.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | ForeSeek: Foresight-Driven Reasoning for Long-Form Video Understanding
+
+- `sources/arxiv-foreseek-foresight-driven-long-video-2611.26024.md` — **new**. A video agent forms expectations over unseen time regions and checks them, instead of reacting to local saliency.
+- **Results.** Matches or beats the strongest search-based agent on five benchmarks while looking at 2.5 to 4.4 times fewer frames.
+- **No SEO link.** Long-form video reasoning. Record-only.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.

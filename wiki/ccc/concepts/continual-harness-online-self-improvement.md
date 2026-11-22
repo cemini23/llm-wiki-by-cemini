@@ -4,6 +4,10 @@ type: concept
 tags: [concept, agent-harness, self-improvement, cross-wiki-route, k72]
 keywords: [continual-harness, reset-free, harness-refiner, arxiv-2605.09998]
 related:
+  - sources/arxiv-agentic-harness-engineering-beta-2611.24924.md
+  - sources/arxiv-beyond-weight-updates-evolving-agent-harnesses-2611.25380.md
+  - concepts/requirement-centered-harness-evolution.md
+  - concepts/harness-adapter-frozen-policy-specialization.md
   - sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
   - concepts/code-as-agent-harness.md
   - concepts/self-healing-agent-sessions.md

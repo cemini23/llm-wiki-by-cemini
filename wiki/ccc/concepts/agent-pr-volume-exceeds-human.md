@@ -4,6 +4,9 @@ type: concept
 tags: [concept, ecosystem, code-review, k284, audit]
 keywords: [agent PRs, code review, LGTM, review capacity, deterministic gates, audit change set]
 related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-18-software-factories-and-code-reviews-with-harjot.md
+  - sources/newsletter-rss-latent-space-2026-11-19-scaling-linears-gtm-to-100m-arr-cristina-cordova.md
+  - entities/tools/coderabbit.md
   - concepts/agent-completion-verification-gates.md
   - concepts/repo-level-verified-code-proof-eval.md
 maturity: draft

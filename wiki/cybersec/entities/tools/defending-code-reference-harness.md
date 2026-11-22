@@ -17,9 +17,10 @@ related:
   - concepts/cognitive-heuristics-llm-vuln-detection.md
   - sources/arxiv-2607-02389-steerability-constraints-coding-agent-oversight.md
   - concepts/substrate-constraints-coding-agent-oversight.md
+  - entities/tools/cyber-chaos-monkey.md
 maturity: draft
 created: 2026-06-06
-updated: 2026-10-09
+updated: 2026-11-22
 phase_0_verdict: "CONDITIONAL-GO 2026-06-06 — laptop Docker/gVisor only; Apache-2.0 LICENSE file; not for cemini-prod trading path."
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-containment.mdc"

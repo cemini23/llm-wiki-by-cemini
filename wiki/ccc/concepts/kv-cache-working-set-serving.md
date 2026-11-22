@@ -4,6 +4,7 @@ type: concept
 tags: [concept, k387]
 keywords: [2609.27746, k387]
 related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-17-inference-engineering-for-software-engineers.md
   - sources/arxiv-kv-cache-working-set-capacity-2609.27746.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-24_ccc-k385-k389-sip-ready.md

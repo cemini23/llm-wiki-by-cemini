@@ -1199,3 +1199,48 @@ Six sources. The theme is that response-level safeguards do not protect the laye
 | [parsed-plausible-wrong](sources/arxiv-parsed-plausible-wrong-output-format-2611.17169.md) | draft | Plain-word output format cuts silent errors 2.3x. Shorter is not better; refusal costs 2.1–10.1% of real orders. |
 | [tl;dr sec #354](sources/newsletter-rss-tldrsec-2026-11-12-tldr-sec-354---artex-agentic-hacking-in-the-wild.md) | draft | ARTEX in the wild, the patchless window, backport debt, abliterated models in AppSec, AWS bucket squatting. |
 | [Packt SecPro 2026-11-13](sources/substack-rss-secpro-2026-11-13-the-microsoft-outrage-bumper-issue.md) | draft | Microsoft 365 outage timeline, security-control impact, and a continuity checklist for the SOC. |
+
+## Ingest wave (2026-11-22) — refusal geometry, skill control flow, embodied config attacks
+
+### Concepts
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [refusal-and-abstention-direction-geometry](concepts/refusal-and-abstention-direction-geometry.md) | draft | **The refusal vector is not a unitary switch.** It carries register (how the model refuses) and joins a shared abstention component across ambiguity, knowledge and value causes. |
+| [recognition-refusal-gap](concepts/recognition-refusal-gap.md) | draft | Models identify misconduct at 91% and refuse at 34%. Score recognition and refusal as two outcomes, and report framing. |
+| [machine-unlearning-privileged-context](concepts/machine-unlearning-privileged-context.md) | draft | Teach the refusal on-policy; do not only suppress the memory. Verify with reworded probes and check retain utility. |
+| [head-attribution-non-identifiability](concepts/head-attribution-non-identifiability.md) | draft | A -0.950 correlation died under intervention. Require an intervention with a matched null; a degraded model that stops refusing is not improved. |
+| [deferred-semantic-commitment](concepts/deferred-semantic-commitment.md) | draft | A claim as a question plus a check mark gets generated 43.3% of the time against 16.3%. Screen the completed message. |
+| [refusal-induction-as-defense](concepts/refusal-induction-as-defense.md) | draft | Reverse jailbreaking for exam documents under AI glasses. Framework and protocol; no efficacy numbers yet. |
+| [configuration-layer-attack-embodied-ai](concepts/configuration-layer-attack-embodied-ai.md) | draft | **The chat channel refused all 11 injections; two unauthenticated POSTs rewrote the system prompt.** Bind and authenticate management interfaces. |
+| [skill-control-flow-integrity](concepts/skill-control-flow-integrity.md) | draft | Compile SKILL.md into an enforceable contract. Allowlists admit unlawful-order violations. None of 53 public skills compiled as written. |
+| [intent-contract-planner-tool-separation](concepts/intent-contract-planner-tool-separation.md) | draft | Planner holds no tools, trusted model writes every call. Contracts did not reduce unauthorized actions; use for audit evidence. |
+| [inference-dispatch-capacity-tracking](concepts/inference-dispatch-capacity-tracking.md) | draft | Dispatch by capacity refusal, not a fixed rate. 43% fewer H100s; refusal share is an availability signal. |
+| [defensive-ai-trust-calibration](concepts/defensive-ai-trust-calibration.md) | draft | 93% approval of prompts; analysts followed an agent's hidden preference 86% of the time. Trust a bounded role, not authority. |
+| [supply-chain-credential-hygiene](concepts/supply-chain-credential-hygiene.md) | draft | Platform breach defence: full-stack network allowlists, secret reduction, forensic-ready logging. |
+| [aws-abac-authorization-traps](concepts/aws-abac-authorization-traps.md) | draft | Alterable guards, evaluation semantics, action-key mismatch. Do not trust a tag the principal can write. |
+
+### Entities
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [cyber-chaos-monkey](entities/tools/cyber-chaos-monkey.md) | draft | Shopify's continuous adversarial testing system. A separately aligned judge agent can kill the executor. |
+| [offsec-harness-index](entities/tools/offsec-harness-index.md) | draft | Tracks offensive agent harnesses verified on GitHub and known to have run in real operations. |
+
+### Sources
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [refusal register causally steerable (2611.20405)](sources/arxiv-refusal-register-causally-steerable-2611.20405.md) | draft | Gemma-2-9B-IT: B1 carries category and refusal vocabulary; B2 carries mostly category. Random controls clean. |
+| [abstention direction (2611.20441)](sources/arxiv-abstention-direction-llm-2611.20441.md) | draft | Three abstention causes share a directional component. Steering one moves the others. |
+| [LEAF-OPD unlearning (2611.20674)](sources/arxiv-leaf-opd-unlearning-privileged-context-2611.20674.md) | draft | Privileged-context teacher plus on-policy distillation. SS metric exposes supervision collapse. Best TOFU forget quality. |
+| [network-exposed config attacks (2611.22761)](sources/arxiv-network-exposed-config-attacks-social-robots-2611.22761.md) | draft | Reachy Mini Lite: unauthenticated Gradio config rewrites the system prompt. CWE-306, CWE-1327, CVSS 6.5. |
+| [bias head non-identifiability (2611.23218)](sources/arxiv-bias-head-non-identifiability-2611.23218.md) | draft | Prompt identity explains 64% of variance; the construct is unidentifiable. Positive control destroys refusal. |
+| [intent contracts (2611.24025)](sources/arxiv-intent-contracts-tools-away-2611.24025.md) | draft | Contract, blind review, intent-visible review. Wrong-target rate 40–49%; contracts do not cut unauthorized actions. |
+| [SkillCFI (2611.24185)](sources/arxiv-skillcfi-control-flow-integrity-2611.24185.md) | draft | Compile SKILL.md to a contract; deterministic enforcer blocks 240 violations at about 2% overhead. |
+| [Cap-and-Track (2611.24891)](sources/arxiv-cap-and-track-inference-dispatch-2611.24891.md) | draft | Meta traffic shaper. 300M requests a day; 43% fewer H100s on one classifier. |
+| [scientific misconduct recognition (2611.25492)](sources/arxiv-scientific-misconduct-recognition-refusal-2611.25492.md) | draft | SciIntBench: 91% recognition, 34% refusal. Question framing raises refusal 52% to 88%. |
+| [Deferred Semantic Commitment (2611.25929)](sources/arxiv-deferred-semantic-commitment-2611.25929.md) | draft | Question plus affirmation bypasses gpt-image-2; reaffirmation only partly reverses the refusal change. |
+| [SEOYUN exam documents (2611.26033)](sources/arxiv-seoyun-refusal-inducing-exam-documents-2611.26033.md) | draft | Refusal-inducing exam pages against AI glasses. Threat model and protocol; no measurements yet. |
+| [tl;dr sec #355 (2026-11-19)](sources/newsletter-rss-tldrsec-2026-11-19-tldr-sec-355---cyber-chaos-monkey-offsec-harness.md) | draft | Cyber Chaos Monkey, five pre-authorized frameworks, Project Zero phased disclosure, Black October, Java4Shell. |
+| [Packt SecPro 2026-11-20](sources/substack-rss-secpro-2026-11-20-the-chase-outage-and-the-trust-were-placing-in-a.md) | draft | Chase outage caveat, defensive-agent trust, approval fatigue, 1Password patch study, NCSC advice. |

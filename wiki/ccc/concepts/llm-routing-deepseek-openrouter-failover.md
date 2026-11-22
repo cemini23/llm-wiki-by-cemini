@@ -4,6 +4,8 @@ type: concept
 tags: [concept, llm, deepseek, openrouter, routing, failover, cemini, cross-project]
 keywords: [llm-routing, deepseek, openrouter, failover, DEEPSEEK_API_KEY, OPENROUTER_API_KEY, llm_analyst, brain]
 related:
+  - sources/arxiv-timeout-cascades-coding-agent-inference-cost-2611.24324.md
+  - concepts/timeout-cascade-cost-aware-routing.md
   - concepts/deepseek-coding-cost-routing.md
   - concepts/mcp-context-optimization.md
   - concepts/three-cache-architecture.md

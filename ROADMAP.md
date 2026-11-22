@@ -13,13 +13,13 @@ History before 2026-11-16 is in `docs/archive/ROADMAP_ARCHIVE_2026-11-16.md`.
 - **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
 - **Priority stack:** #1 Atto · Collectibles · Game-Time (co-equal). #2 CeminiDFS · CeminiParlays. #3 GuruWatcher · Basgiath.
 
-Last updated: 2026-11-16.
+Last updated: 2026-11-22.
 
 ## 2. Priority #1
 
 ### Atto
 
-**Current:** The ISTAT gazetteer is the open design question for Atlas; the `?year=&place=` contract is agreed. No statute is treated as fact until the five-field citation check runs.
+**Current:** The ISTAT gazetteer is the open design question for Atlas; the `?year=&place=` contract is agreed. No statute is treated as fact until the five-field citation check runs. For the HTR lane, 2611.24726 reports text-line segmentation at CER 2.48–7.07% and is the current best reference.
 
 **Next:**
 1. Scope the gazetteer source for suppressed comuni and pre-unification provinces.
@@ -55,15 +55,16 @@ Last updated: 2026-11-16.
 
 ### CeminiParlays
 
-**Current:** Exit quality is the moat, not quote price; 75% of volume is parlays. Judge McMahon held Novig's event contracts are sports betting and the CEA does not preempt state law. The CFTC state-access order collides with that. Geofence coverage is a correctness requirement.
+**Current:** Exit quality is the moat, not quote price; 75% of volume is parlays. Judge McMahon held Novig's event contracts are sports betting and the CEA does not preempt state law. The CFTC state-access order collides with that. Geofence coverage is a correctness requirement. Kalshi now creates on-request RFQ markets, so new-series announcements are a discovery input.
 
 **Next:**
 1. Treat geofence coverage as a correctness gate, not a nicety.
 2. Size against the venue the bot actually quotes on.
+3. Watch new-series announcements as a market-discovery feed.
 
 ## 4. Priority #3 and infrastructure
 
-- **GuruWatcher** — Alert-only, 15-minute timer on egress-fi. GW-06 (HTML cleaning turns `VIX < 20` into `VIX 20`) is data corruption and is still unfixed. A silent 2-hour outage on 2026-11-05 means "enabled" is not "ran".
+- **GuruWatcher** — Alert-only, 15-minute timer on egress-fi. GW-06 (HTML cleaning turns `VIX < 20` into `VIX 20`) is data corruption and is still unfixed. A silent 2-hour outage on 2026-11-05 means "enabled" is not "ran". CPI-surprise direction is regime-dependent: the equity reaction to a positive surprise flipped sign after 2020 because shocks became supply-driven. Equity vol also rose while FX vol stayed flat.
 - **Basgiath** — Waiting on `/seo geo` and `/seo agentic` passes. No code lane active.
-- **OSINT Wiki** — Eight domains in one public repo since 2026-10-14. Inbox empty after the K297 ingest of 23 sources. Lint reads 0 across every gated and informational bucket as of 2026-11-16.
+- **OSINT Wiki** — Eight domains in one public repo since 2026-10-14. Inbox empty after the 2026-11-22 ingest of 95 sources. Lint reads 0 hard errors as of 2026-11-22. The digest duplicate check now finds real duplicates: 1 in 95, against 24 in 64 before the fix.
 - **cemini-egress-fi** — Back since 2026-11-14, 16G stored, Tailscale-only. Archive writes queue locally when the link is down (CLAUDE.md Step 9).

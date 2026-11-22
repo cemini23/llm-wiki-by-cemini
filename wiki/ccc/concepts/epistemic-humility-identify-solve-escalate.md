@@ -4,6 +4,7 @@ type: concept
 tags: [concept, k442]
 keywords: [2610.12360, k442]
 related:
+  - concepts/calibration-interval-scientific-judgment.md
   - sources/arxiv-epistemic-humility-knowledge-conflict-2610.12360.md
   - concepts/clarify-before-act-evidence-aligned-close.md
   - concepts/overclaiming-propensity-agent-measurement.md

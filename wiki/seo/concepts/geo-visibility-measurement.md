@@ -4,6 +4,9 @@ type: concept
 tags: [geo-aeo, measurement, statistics, playbook]
 keywords: [citation share, citation prevalence, bootstrap CI, AI visibility measurement, repeated sampling, SearchGPT, Perplexity, Gemini]
 related:
+  - concepts/ai-assistant-usage-buyer-journey-share.md
+  - sources/arxiv-geohunter-mapping-geo-network-wild-2611.26564.md
+  - sources/newsletter-rss-sparktoro-2026-11-17-we-analyzed-11800-chatgpt-prompts-from-12000-use.md
   - concepts/retrieval-vs-citation-visibility-geo.md
   - sources/chen-2026-what-drives-ai-citations.md
   - sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md

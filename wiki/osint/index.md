@@ -5038,3 +5038,56 @@ New concepts and entities:
 | [plume-rwa](sources/substack-rss-wublock-2026-11-11-plume-rwa-2026-11-11.md) | RWA distribution, not tokenisation, is the constraint. 12–15% yields are credit, custody, duration, illiquidity. | draft |
 | [inflation-cycle](sources/substack-rss-capital-flows-2026-11-11-inflation-cycle-2026-11-11.md) | Paywalled teaser. Usable only for the 60/40 nominal-versus-purchasing-power framing. | draft |
 | [arxiv-v10-11-late-skip-no-lane](sources/arxiv-v10-11-late-skip-no-lane-2026-11-11.md) | Skip: `2611.13763`, bacterial recombination detection. | draft |
+
+## November 2026 Ingest Batch (2026-11-22)
+
+New sources:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv-pirannn-random-feature-pricing-2611.19792](sources/arxiv-pirannn-random-feature-pricing-2611.19792.md) | Training-free random-feature solver. Matches a PINN in seconds; a Black-Scholes subtraction fixes jump-parameter recovery from 50% error to 3%. | draft |
+| [arxiv-dataset-distillation-htr-2611.21054](sources/arxiv-dataset-distillation-htr-2611.21054.md) | Negative result: distilled sets never beat real starting lines for HTR across 4 datasets. | draft |
+| [arxiv-conditional-gamma-letf-options-2611.22604](sources/arxiv-conditional-gamma-letf-options-2611.22604.md) | Leveraged-ETF options priced by conditioning on the index return. Smile in 1 second instead of 200. | draft |
+| [arxiv-text-line-segmentation-generalization-2611.24726](sources/arxiv-text-line-segmentation-generalization-2611.24726.md) | Line segmentation transfers with few labels; CER 2.48%–7.07%; mAP is the wrong metric. | draft |
+| [arxiv-joint-spx-vix-vxx-2611.25047](sources/arxiv-joint-spx-vix-vxx-2611.25047.md) | Joint SPX/VIX/VXX model from truncated signatures; proxy error below bid-ask. | draft |
+| [arxiv-quantum-local-vol-calibration-2611.25344](sources/arxiv-quantum-local-vol-calibration-2611.25344.md) | Quantum-classical Dupire calibration on a simulator; gate counts as cost baseline. | draft |
+| [arxiv-x-hedging-tree-ensembles-2611.25870](sources/arxiv-x-hedging-tree-ensembles-2611.25870.md) | LightGBM replaces the neural network in Deep Hedging; wins on short samples. | draft |
+| [capital-flows 2026-11-17](sources/substack-rss-capital-flows-2026-11-17-are-equities-a-buy-or-falling-knife-here.md) | Paywalled teaser. Neutral on equities; ES broken down. | draft |
+| [capital-flows 2026-11-20](sources/substack-rss-capital-flows-2026-11-20-anthropic-ai-flows-and-the-coming-hiking-cycle.md) | Anthropic IPO as clearing event; ES below 7400; VIX up, FX vol flat, bond vol mildly up. | draft |
+| [capital-flows 2026-11-21](sources/substack-rss-capital-flows-2026-11-21-the-ai-repricing-and-what-bonds-are-not-confirmi.md) | Video teaser. AI repricing not confirmed by bonds. | draft |
+| [klement 2026-11-17](sources/substack-rss-klement-2026-11-17-do-venture-capitalists-beat-a-random-benchmark.md) | VC funds do not beat a random benchmark; high entry multiples underperform. | draft |
+| [klement 2026-11-18 inflation](sources/substack-rss-klement-2026-11-18-the-changing-stock-market-reaction-to-inflation.md) | The equity reaction to inflation surprises flipped sign after 2020. | draft |
+| [klement 2026-11-18 bubbles](sources/substack-rss-klement-2026-11-18-what-the-last-two-bubbles-tell-us-about-the-ai-b.md) | Analyst bullishness at 2000, 2008 and now. | draft |
+| [klement 2026-11-19](sources/substack-rss-klement-2026-11-19-what-happens-when-a-country-increases-taxes-on-t.md) | Dutch 30% ruling reform: top earners exit, fiscal effect cost-neutral. | draft |
+| [klement 2026-11-20](sources/substack-rss-klement-2026-11-20-taylor-swift-kills-people.md) | Satire around a real study: album releases and traffic fatalities. | draft |
+| [kyla 2026-11-19](sources/substack-rss-kyla-2026-11-19-what-happens-when-we-try-to-know-everything.md) | Personal essay on trust and outages. Few market fragments; Nvidia −30% from October high. | draft |
+| [lily-ray 2026-11-19](sources/substack-rss-lily-ray-2026-11-19-why-building-trust-through-real-people-stands-th.md) | Off-domain: SEO and AI search. Routed to SEO wiki. | draft |
+| [moontower hillstone](sources/substack-rss-moontower-2026-11-22-hillstone.md) | Edge decay: SIG flywheel, and why you should size an edge while it lasts. | draft |
+| [moontower making-sense-of-returns](sources/substack-rss-moontower-2026-11-22-making-sense-of-returns.md) | `E[r] = payout*E/P + (1-payout)*ROE`; SPX range 5.5%–19%; P-CAPE. | draft |
+| [moontower 337](sources/substack-rss-moontower-2026-11-22-moontower-337.md) | Omnibus: ANT at ~$2tn, returns math, t-stat significance rules. | draft |
+| [event-horizon 2026-11-17](sources/substack-rss-event-horizon-2026-11-17-is-kalshi-worth-as-much-as-robinhood.md) | Kalshi reported $65bn raise; buys a broker; venue-share ladder. | draft |
+| [event-horizon 2026-11-18](sources/substack-rss-event-horizon-2026-11-18-i-want-my-money-back-after-watching-the-senate-h.md) | CFTC nominee hearing; Fourth Circuit vs Kalshi; integrity committee report. | draft |
+| [event-horizon 2026-11-19](sources/substack-rss-event-horizon-2026-11-19-kalshi-eyes-on-demand-prediction-markets-for-con.md) | Kalshi on-request RFQ markets for concerts and weather; 43 state AGs comment. | draft |
+| [event-horizon 2026-11-20](sources/substack-rss-event-horizon-2026-11-20-kalshi-utah-and-the-consequences-of-playing-chic.md) | Utah criminal arraignment; Senate passes death-contract ban; Binance.US application. | draft |
+| [wublock October spot volume](sources/substack-rss-wublock-2026-11-17-october-2026-exchange-spot-volume-report-total-6.md) | $623.6bn, −9.3% MoM; Binance 44.8%. | draft |
+| [wublock October derivatives](sources/substack-rss-wublock-2026-11-18-october-2026-exchange-derivatives-volume-report.md) | $3.75tn, +3.7%; Deribit +507% after Coinbase merger; ratio 6.01x. | draft |
+| [wublock October traffic](sources/substack-rss-wublock-2026-11-19-october-2026-exchange-website-traffic-report-mom.md) | OKX overtakes Binance in visits; volume and traffic decouple. | draft |
+| [wublock weekly 2026-11-20](sources/substack-rss-wublock-2026-11-20-wublockchain-weekly-anthropic-pursues-record-set.md) | Anthropic IPO; SFC alerts on Hyperliquid; Bitcoin volatility below chips. | draft |
+| [wublock weekly 2026-11-21](sources/substack-rss-wublock-2026-11-21-weekly-project-updates-ethereum-glamsterdam-upgr.md) | Glamsterdam delayed; Lighter and Kava exploits from key and index flaws. | draft |
+| [wublock Asia top 10 2026-11-22](sources/substack-rss-wublock-2026-11-22-asias-weekly-top10-crypto-news-russia-to-let-fun.md) | Russia crypto funds; tampered Ledger devices; Daiwa AI-agent trade test. | draft |
+
+New concepts:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [random-feature-option-pricing](concepts/random-feature-option-pricing.md) | Least-squares random features for pricing and calibration; the pricing-error-versus-sensitivity check. | draft |
+| [leveraged-etf-options-pricing](concepts/leveraged-etf-options-pricing.md) | `RL = beta*RS - gamma*IT`; conditional-Gamma surface; drag is state-dependent. | draft |
+| [htr-segmentation-generalization](concepts/htr-segmentation-generalization.md) | Segmentation transfers with few labels; distillation does not yet work for HTR. | draft |
+| [quantum-local-vol-calibration](concepts/quantum-local-vol-calibration.md) | Cost baseline for quantum Dupire calibration; no production case yet. | draft |
+| [explainable-tree-ensemble-hedging](concepts/explainable-tree-ensemble-hedging.md) | Boosted trees as a Deep Hedging substitute; best when data are short. | draft |
+| [venture-capital-random-benchmark](concepts/venture-capital-random-benchmark.md) | Random-selection null for VC skill; high entry multiples underperform. | draft |
+| [high-earner-tax-migration-elasticity](concepts/high-earner-tax-migration-elasticity.md) | Top-tail exit can cancel the revenue from a high-earner tax rise. | draft |
+| [market-structure-efficiency-and-edge-decay](concepts/market-structure-efficiency-and-edge-decay.md) | Edges compress; size them while they last. | draft |
+| [stock-return-decomposition-and-p-cape](concepts/stock-return-decomposition-and-p-cape.md) | Payout, retention and ROE set index returns; P-CAPE adjusts CAPE for retention. | draft |
+| [prediction-market-on-request-markets](concepts/prediction-market-on-request-markets.md) | RFQ-created markets change discovery, pricing and manipulation risk. | draft |
+| [prediction-market-venue-competition-2026](concepts/prediction-market-venue-competition-2026.md) | Venue-share ladder; superapp expansion; parlay share is the liquidity. | draft |

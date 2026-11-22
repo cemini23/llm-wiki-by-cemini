@@ -48,9 +48,11 @@ related:
   - concepts/cyber-range-autonomous-incident-response-agents.md
   - concepts/provider-outage-control-verification.md
   - sources/substack-rss-secpro-2026-11-13-the-microsoft-outrage-bumper-issue.md
+  - sources/substack-rss-secpro-2026-11-20-the-chase-outage-and-the-trust-were-placing-in-a.md
+  - concepts/defensive-ai-trust-calibration.md
 maturity: validated
 created: 2026-05-12
-updated: 2026-11-14
+updated: 2026-11-22
 ---
 
 ## Relations
@@ -188,3 +190,14 @@ Playbook deltas:
 4. **Close on demonstration, not on provider status.** Recovery is complete when priority controls and workflows are tested and every evidence gap has an owner.
 
 See @concepts/provider-outage-control-verification.md.
+
+### Defensive agent inside the IR loop (November 2026)
+
+An agent can draft the investigation, select the logs, explain missing data and write the closure note. That is useful and it is also a way to shape the decision before approval. Anthropic reported about 93% approval of permission prompts and described approval fatigue. A study of 50 analysts found they followed an agent's secretly assigned preference 86% of the time `[TENTATIVE]`.
+
+IR rules:
+
+1. Keep an independent evidence path. The agent must not be the only source of what the responder sees.
+2. Record the agent's recommendation separately from the human decision.
+3. Close an incident on demonstrated control, not on the agent's assurance that it is contained. See @concepts/defensive-ai-trust-calibration.md.
+4. Re-test the containment action with a direct check after the agent reports success.

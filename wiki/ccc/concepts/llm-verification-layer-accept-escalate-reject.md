@@ -4,6 +4,7 @@ type: concept
 tags: [concept, verification, harness, hitl, k264]
 keywords: [2608.09857, accept-escalate-reject, LLM-as-judge, chief-judge]
 related:
+  - concepts/self-verification-failure-taxonomy.md
   - sources/arxiv-agentic-harnesses-verification-layers-2608.09857.md
   - entities/tools/verification-layers-robot.md
   - concepts/bounded-self-refinement-vs-rsi-taxonomy.md

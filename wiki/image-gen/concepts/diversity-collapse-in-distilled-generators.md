@@ -4,7 +4,9 @@ type: concept
 maturity: draft
 related:
   - sources/arxiv-rediverse-diversity-collapse-2611.18550.md
-updated: 2026-11-16
+  - concepts/posterior-matching-distillation.md
+  - sources/arxiv-2611-26629-posterior-matching-distillation.md
+updated: 2026-11-22
 ---
 
 ## Raw Concept

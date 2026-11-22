@@ -9,9 +9,11 @@ related:
   - concepts/sentinel-rl-soc-topological-reasoning.md
   - concepts/llm-pentest-automation.md
   - concepts/cyber-range-autonomous-incident-response-agents.md
+  - concepts/inference-dispatch-capacity-tracking.md
+  - sources/arxiv-cap-and-track-inference-dispatch-2611.24891.md
 maturity: draft
 created: 2026-09-11
-updated: 2026-09-16
+updated: 2026-11-22
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K330)"
 ---

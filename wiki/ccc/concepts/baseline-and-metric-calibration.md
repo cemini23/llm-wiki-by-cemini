@@ -3,6 +3,7 @@ title: "Check the baseline and the metric before you believe the ranking"
 type: concept
 maturity: draft
 related:
+  - concepts/specification-anchored-benchmark-anchors.md
   - sources/arxiv-task-efficient-agent-eval-cached-traces-2611.06803.md
   - sources/arxiv-auto-researchers-reconstruct-human-2611.12429.md
   - sources/newsletter-rss-latent-space-2026-11-06-controlling-biology---fabian-theis-helmholtz-mun.md

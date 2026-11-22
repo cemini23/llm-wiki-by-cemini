@@ -4,6 +4,8 @@ type: concept
 tags: [concept, skill-evolution, harness, subagent, k111]
 keywords: [2606.08671, skillhone, decision-history, redacted-evaluation]
 related:
+  - sources/arxiv-automaster-autonomous-post-training-2611.26510.md
+  - concepts/skill-guided-teacher-rollout.md
   - sources/arxiv-skillhone-continual-skill-evolution-2606.08671.md
   - concepts/muse-autoskill-skill-lifecycle.md
   - concepts/bayesian-posterior-guided-skill-evolution.md

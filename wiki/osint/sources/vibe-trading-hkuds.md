@@ -16,6 +16,7 @@ related:
   - entities/infrastructure/yfinance.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
   - concepts/mcp-tool-marketplace.md
+  - @ccc-wiki/sources/arxiv-vibe-trading-agent-native-trading-2611.24845.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-28

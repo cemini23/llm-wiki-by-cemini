@@ -3,6 +3,10 @@ title: "Generation-verification gap — a produced artifact is not an accepted a
 type: concept
 maturity: draft
 related:
+  - sources/arxiv-scientific-coding-finite-element-analysis-2611.21176.md
+  - sources/arxiv-embedding-map-distances-llm-ideation-2611.21408.md
+  - concepts/self-verification-failure-taxonomy.md
+  - concepts/embedding-gap-ideation-null-result.md
   - sources/arxiv-controlharbor-control-design-coding-agents-2611.16867.md
   - sources/arxiv-analoglayoutworld-agentic-analog-layout-2611.16991.md
   - sources/newsletter-rss-latent-space-2026-11-13-ai-ambition-artcraft-cloned-photoshop-and-now-wa.md

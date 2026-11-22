@@ -4,6 +4,8 @@ type: concept
 tags: [concept, equities, valuation, fair-value, brain, fmp, cemini-prod, k75]
 keywords: [equity_valuation, fair_value_usd, value_gap_pct, fmp_dcf, fmp_consensus, llm_analyst, brain_playbook_v2, undervalued, overvalued, weighted-synthesis]
 related:
+  - concepts/stock-return-decomposition-and-p-cape.md
+  - sources/substack-rss-moontower-2026-11-22-making-sense-of-returns.md
   - concepts/pnl-attribution-versioning.md
   - concepts/production-trading-blind-spots.md
   - entities/tools/financetoolkit.md

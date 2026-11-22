@@ -4,6 +4,8 @@ type: concept
 tags: [concept, enterprise, governance, evaluation, prebind, harness, k151]
 keywords: [cage-1, prebind assurance, standing, twelve dimensions, 2607.03510, enterprise agent, fail closed]
 related:
+  - sources/arxiv-capability-framework-agentic-ai-enterprises-2611.24039.md
+  - concepts/halo-effect-platform-evaluation.md
   - sources/arxiv-cage-1-enterprise-agentic-governance-2607.03510.md
   - concepts/agent-completion-verification-gates.md
   - concepts/gatekeeper-layered-agent-evaluation.md

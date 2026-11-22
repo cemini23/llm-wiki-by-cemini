@@ -3092,3 +3092,214 @@ Cross-wiki stub routed from `@osint-wiki/sources/2026-11-16-deep-research-link-e
 
 Cross-wiki stub routed from `@osint-wiki/sources/2026-11-17-deep-research-link-eval-design-motion-harness.md`.
 - Created wiki/entities/bot-browser.md (stub)
+
+## [2026-11-22] ingest | Harness Leverage Across Model Size (2611.21407)
+
+- `sources/arxiv-harness-leverage-across-model-size-2611.21407.md` — **new**. Five harnesses × five local models; Mingbird leads at every size; harness effect is a progress effect.
+- `concepts/harness-completion-gate-progress-effect.md` — **new**. 127 of 357 cells leave no artifact; 85 exit normally.
+- `concepts/harness-as-eval-artifact.md`, `concepts/harness-evolution-vs-test-time-scaling-baseline.md`, `concepts/benchmark-maintenance-debt.md` — **updated** backlinks.
+- Routing: `/route` — score the artifact, not the exit code. No brief staged.
+
+## [2026-11-22] ingest | Agentic Harness Engineering Beta (2611.24924)
+
+- `sources/arxiv-agentic-harness-engineering-beta-2611.24924.md` — **new**. Requirement-centered loop; pass@1 21.9% → 33.3%; transfer to GLM-5.3 and DeepSeek-V4.1-Flash.
+- `concepts/requirement-centered-harness-evolution.md` — **new**. Merge on verified requirement, score afterwards.
+- `concepts/continual-harness-online-self-improvement.md`, `concepts/failed-trajectory-harness-repair.md`, `concepts/harness-evolution-vs-test-time-scaling-baseline.md`, `concepts/measurement-gated-agent-harness-optimization.md`, `entities/tools/claude-code.md` — **updated** backlinks.
+- Routing: `/route` + skill edits — cite the requirement a change fixes. No brief staged.
+
+## [2026-11-22] ingest | Beyond Weight Updates — evolving agent harnesses (2611.25380)
+
+- `sources/arxiv-beyond-weight-updates-evolving-agent-harnesses-2611.25380.md` — **new**. GEPA harness adapters with a frozen policy; SFT truncation 8.8% → 13.2%.
+- `concepts/harness-adapter-frozen-policy-specialization.md` — **new**.
+- `entities/tools/harvo.md` — **new**. WATCH; licence unchecked.
+- `concepts/curated-vs-self-generated-skills.md`, `concepts/continual-harness-online-self-improvement.md`, `concepts/harness-evolution-vs-test-time-scaling-baseline.md` — **updated** backlinks.
+- Routing: `/route` lane tuning before any fine-tune. No brief staged.
+
+## [2026-11-22] ingest | Reducing Inference Cost of Coding Agents with Timeout Cascades (2611.24324)
+
+- `sources/arxiv-timeout-cascades-coding-agent-inference-cost-2611.24324.md` — **new**. 33% GPU-hour cut; cascade nearly matches an oracle router.
+- `concepts/timeout-cascade-cost-aware-routing.md` — **new**.
+- `concepts/llm-routing-deepseek-openrouter-failover.md`, `concepts/decision-model-hybrid-agent-routing.md`, `concepts/token-economics-and-prompt-caching.md`, `concepts/agent-toolkit-routing-research-backlog.md`, `entities/skills/route.md` — **updated** backlinks.
+- Routing: `/route` — add failure-triggered escalation to the cheap lane. No brief staged.
+
+## [2026-11-22] ingest | MemFolder (2611.26427)
+
+- `sources/arxiv-memfolder-structure-guided-memory-folding-2611.26427.md` — **new**. Two-axis folding; 99.0% retention with 50% fewer records on Mem0.
+- `concepts/structured-memory-folding.md` — **new**.
+- `concepts/storage-budgeted-agent-memory-compression.md`, `concepts/agent-memory-stack-comparison.md`, `concepts/hierarchical-bounded-agent-memory.md`, `entities/tools/claude-mem.md` — **updated** backlinks.
+- Routing: claude-mem / `hot.md` — measure record count and retrieved tokens together. No brief staged.
+
+## [2026-11-22] ingest | TUNE — medical VLM evidence management (2611.25840)
+
+- `sources/arxiv-tune-medical-evidence-management-2611.25840.md` — **new**. Same mask, different rendering, different answer; +9.1 points over direct tool use.
+- `concepts/evidence-management-tool-use.md` — **new**. Fetch, present, accept are three decisions.
+- `concepts/harness-attribution-multimodal-eval.md`, `concepts/lossless-visual-memory-harness.md`, `concepts/claim-centered-retrieval-with-provenance.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Scientific Coding with LLMs — FEA (2611.21176)
+
+- `sources/arxiv-scientific-coding-finite-element-analysis-2611.21176.md` — **new**. Six self-verification failure classes across 249 failed trajectories; separate coder/tester reaches 88.8% Pass3.
+- `concepts/self-verification-failure-taxonomy.md` — **new**.
+- `concepts/agent-verification-patterns.md`, `concepts/generation-verification-gap-agent-artifacts.md`, `concepts/benchmark-maintenance-debt.md`, `concepts/llm-verification-layer-accept-escalate-reject.md`, `concepts/agent-completion-verification-gates.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | STEMBench (2611.24321)
+
+- `sources/arxiv-stembench-postdoc-level-science-2611.24321.md` — **new**. Field figure of merit plus floor/ceiling anchors; task wins do not imply domain leadership.
+- `concepts/specification-anchored-benchmark-anchors.md` — **new**.
+- `concepts/benchmark-maintenance-debt.md`, `concepts/eval-integrity-minimum-standards.md`, `concepts/harness-as-eval-artifact.md`, `concepts/baseline-and-metric-calibration.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Capability Framework for Agentic AI Platforms (2611.24039)
+
+- `sources/arxiv-capability-framework-agentic-ai-enterprises-2611.24039.md` — **new**. Ten-platform bank bakeoff; Cronbach α = 0.98 across nine dimensions.
+- `concepts/halo-effect-platform-evaluation.md` — **new**. Gate-then-score protocol.
+- `concepts/eval-integrity-minimum-standards.md`, `concepts/enterprise-mcp-adoption-practice.md`, `concepts/cage-1-enterprise-agent-governance-eval.md`, `concepts/low-cost-cross-vendor-behavior-assays.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Turing Agent (2611.21299)
+
+- `sources/arxiv-turing-agent-formal-verification-mathematics-2611.21299.md` — **new**. Faithfulness/validity/completeness; 57–62% faithful formalisation on TCS.
+- `concepts/formal-verification-faithfulness-gap.md` — **new**.
+- `entities/tools/turing-agent.md` — **new**. REFERENCE; licence unchecked.
+- `entities/tools/claude-code.md`, `entities/tools/openai-codex-cli.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | PhysScope (2611.23010)
+
+- `sources/arxiv-physscope-agentic-multimodal-physics-2611.23010.md` — **new**. Premise scope plus dependent invalidation; +9.34 points over Canvas-CoT.
+- `concepts/premise-scope-dependency-invalidation.md` — **new**.
+- `concepts/lossless-visual-memory-harness.md`, `concepts/harness-attribution-multimodal-eval.md`, `concepts/typed-judgement-desk-pattern.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | SciResearch-Eval (2611.21541)
+
+- `sources/arxiv-sciresearch-eval-scientific-judgment-2611.21541.md` — **new**. 95% intervals; coverage 20%–62% for most models against 94% Astra and 99% Fable 5.2.
+- `concepts/calibration-interval-scientific-judgment.md` — **new**.
+- `concepts/eval-integrity-minimum-standards.md`, `concepts/epistemic-humility-identify-solve-escalate.md`, `concepts/benchmark-maintenance-debt.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Vibe-Trading (2611.24845)
+
+- `sources/arxiv-vibe-trading-agent-native-trading-2611.24845.md` — **new**. Provenance, versioned research records, explicit authority gate.
+- `concepts/result-provenance-authority-gate.md` — **new**.
+- `entities/tools/vibe-trading.md` — **new**. Cross-links `@osint-wiki/sources/vibe-trading-hkuds.md`; the OSINT page cannot be edited here. [OPEN QUESTION 2026-11-22] reciprocal edge owed.
+- `concepts/assay-content-addressed-evidence-graphs.md`, `concepts/authorization-to-effect-closure.md`, `concepts/agent-approval-laundering-transitive-effects.md` — **updated** backlinks.
+- Routing: wiki-only in CCC; trading use stays in OSINT/CeminiSuite. No brief staged.
+
+## [2026-11-22] ingest | Accelerate Bench (2611.20882)
+
+- `sources/arxiv-accelerate-bench-application-level-optimization-2611.20882.md` — **new**. Same code runs 0.29×–2.12× on build and runtime settings alone.
+- `concepts/application-level-optimization-eval.md` — **new**.
+- `concepts/benchmark-maintenance-debt.md`, `concepts/eval-integrity-minimum-standards.md`, `concepts/harness-as-eval-artifact.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | AutoMaster / Skill-FT (2611.26510)
+
+- `sources/arxiv-automaster-autonomous-post-training-2611.26510.md` — **new**. Skills shape teacher rollouts; +1.42 to +8.99 points over vanilla SFT.
+- `concepts/skill-guided-teacher-rollout.md` — **new**.
+- `concepts/skillhone-continual-skill-decision-history.md`, `concepts/curated-vs-self-generated-skills.md`, `concepts/agent-skills-taxonomy.md`, `concepts/agent-skills-progressive-disclosure.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Embedding-Map Distances Guide LLM Ideation? (2611.21408)
+
+- `sources/arxiv-embedding-map-distances-llm-ideation-2611.21408.md` — **new**. Weak fit. Four tests, all null; pre-registered.
+- `concepts/embedding-gap-ideation-null-result.md` — **new**.
+- `concepts/generation-verification-gap-agent-artifacts.md` — **updated** backlink.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Mind2Act-World (2611.26444)
+
+- `sources/arxiv-mind2act-world-embodied-diagnostic-benchmark-2611.26444.md` — **new**. Mind 52.7% + Act 39.0% yields Mind2Act 12.0%; first-failure trace per run.
+- `concepts/mind-act-composition-diagnosis.md` — **new**.
+- `concepts/agentic-robotics-harness.md`, `concepts/harness-attribution-multimodal-eval.md`, `concepts/execution-contract-failure-attribution.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | The Personal Imitation Game (2611.24888)
+
+- `sources/arxiv-personal-imitation-game-identity-2611.24888.md` — **new**. Weak fit. Persona cloning study is underpowered; the null is the result.
+- `concepts/agent-personality-file-hermes-openclaw.md`, `concepts/trajectory-level-privacy-audit.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Pragmatic Engineer — Software engineering after code becomes cheap
+
+- `sources/newsletter-rss-pragmatic-engineer-2026-11-16-software-engineering-after-code-becomes-cheap-wi.md` — **new**. Satya Nadella: decouple harness, memory and model; treat models as insider risks; hybrid local/cloud routing.
+- `concepts/claude-code-software-factory.md`, `concepts/agent-completion-verification-gates.md`, `concepts/harness-layer-competition-cursor-claude-perplexity.md`, `entities/tools/claude-code.md` — **updated** backlinks.
+- Routing: `/route` lane failover — decoupling argument supports lane substitution. No brief staged.
+
+## [2026-11-22] ingest | Pragmatic Engineer — Inference engineering for software engineers
+
+- `sources/newsletter-rss-pragmatic-engineer-2026-11-17-inference-engineering-for-software-engineers.md` — **new**. Teaser only. Provider onboarding stages; cache hit rate and tail latency are the metrics.
+- `concepts/token-economics-and-prompt-caching.md`, `concepts/kv-cache-working-set-serving.md` — **updated** backlinks.
+- Do not cite numbers from the teaser. [OPEN QUESTION 2026-11-22]
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Pragmatic Engineer — Software factories and code reviews with Harjot Gill
+
+- `sources/newsletter-rss-pragmatic-engineer-2026-11-18-software-factories-and-code-reviews-with-harjot.md` — **new**. CodeRabbit: 5,000 agent PRs/month, about $150 per PR.
+- `entities/tools/coderabbit.md` — **new**.
+- `concepts/claude-code-software-factory.md`, `concepts/agent-pr-volume-exceeds-human.md`, `concepts/agent-completion-verification-gates.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Pragmatic Engineer — The Pulse (teaser)
+
+- `sources/newsletter-rss-pragmatic-engineer-2026-11-19-the-pulse-is-amazons-writing-culture-collapsing.md` — **new**. Teaser only, about 1,200 bytes. No article body.
+- `concepts/frontier-model-release-cadence.md`, `concepts/llm-assisted-writing-detection-hygiene.md` — **updated** backlinks.
+- Do not cite the Amazon writing-culture claim. [OPEN QUESTION 2026-11-22]
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Latent Space — Building Visual Intelligence (BFL)
+
+- `sources/newsletter-rss-latent-space-2026-11-16-bfl-web-archive.md` — **new**. FLUX 3 trains on video, image and audio; per-frame upscaling shimmers.
+- `sources/newsletter-rss-latent-space-2026-11-16-building-visual-intelligence-andreas-blattmann-d.md` — **new**. Duplicate capture of the same episode from another URL.
+- `concepts/frontier-model-release-cadence.md`, `concepts/harness-attribution-multimodal-eval.md` — **updated** backlinks.
+- Routing: wiki-only; image/video use belongs to `@image-gen-wiki`. No brief staged.
+
+## [2026-11-22] ingest | Latent Space AINews — Perplexity at $1B
+
+- `sources/newsletter-rss-latent-space-2026-11-17-ainews-perplexity-hits-a-1b-revenue-run-rate-up.md` — **new**. Perplexity $1B run rate; Qwen4-Max cost per task $10.02 → $3.27.
+- `concepts/frontier-model-release-cadence.md`, `concepts/token-economics-and-prompt-caching.md`, `concepts/harness-layer-competition-cursor-claude-perplexity.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Latent Space — Cloudflare joins the Jevolution
+
+- `sources/newsletter-rss-latent-space-2026-11-17-cloudflare-joins-the-jevolution-and-labels-itsel.md` — **new**. Clef decision model, Clairic extract model; post-training focus.
+- `concepts/frontier-model-release-cadence.md`, `concepts/decision-model-hybrid-agent-routing.md`, `concepts/token-economics-and-prompt-caching.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Latent Space AINews — GPT-6.2 Astra and Sol
+
+- `sources/newsletter-rss-latent-space-2026-11-18-ainews-gpt-62-astra-the-2-frontier-model-is-bett.md` — **new**. Price table; Astra 62 vs Fable 5.2 at 65; High self-improvement rating.
+- `concepts/frontier-model-release-cadence.md`, `concepts/token-economics-and-prompt-caching.md`, `entities/models/claude-fable-5-2.md` — **updated** backlinks.
+- Routing: `/route` — lane cost table. No brief staged.
+
+## [2026-11-22] ingest | Latent Space AINews — Gemini 4 Neon
+
+- `sources/newsletter-rss-latent-space-2026-11-19-ainews-gemini-4-neon-gdms-opussol-contender.md` — **new**. High effort matched Carbon at $3.74/task; xhigh scored lower on GDP.pdf.
+- `concepts/frontier-model-release-cadence.md`, `concepts/reasoning-effort-calibration.md`, `concepts/token-economics-and-prompt-caching.md` — **updated** backlinks.
+- Routing: `/route` — re-baseline effort settings per model. No brief staged.
+
+## [2026-11-22] ingest | Latent Space — Scaling Linear's GTM to $100M ARR
+
+- `sources/newsletter-rss-latent-space-2026-11-19-scaling-linears-gtm-to-100m-arr-cristina-cordova.md` — **new**. Agents create over half of Linear's work; MCP server and Codex/Cursor/Copilot integrations.
+- `concepts/claude-code-software-factory.md`, `concepts/agent-pr-volume-exceeds-human.md`, `concepts/harness-layer-competition-cursor-claude-perplexity.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Latent Space AINews — Anthropic completes largest IPO
+
+- `sources/newsletter-rss-latent-space-2026-11-20-ainews-anthropic-successfully-completes-largest.md` — **new**. $83 offer, $97.17 close, $1.5T valuation; Class F control shares.
+- `concepts/frontier-model-release-cadence.md`, `concepts/eval-integrity-minimum-standards.md`, `entities/models/claude-fable-5-2.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Latent Space — The war against slop, formal verification
+
+- `sources/newsletter-rss-latent-space-2026-11-20-the-war-against-slop-and-an-emerging-weapon-to-f.md` — **new**. Market survey: Harmonic, Theorem, Axiom Math, &Truth; SMT and cvc5.
+- `concepts/formal-verification-faithfulness-gap.md`, `concepts/agent-completion-verification-gates.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-22] ingest | Latent Space AINews — Riemann Hypothesis proved twice
+
+- `sources/newsletter-rss-latent-space-2026-11-21-ainews-riemann-hypothesis-provedtwice-independen.md` — **new**. Claude-driven Lean proof vs 940-page human proof; Navier-Stokes faithfulness precedent.
+- `concepts/formal-verification-faithfulness-gap.md`, `concepts/eval-integrity-minimum-standards.md` — **updated** backlinks.
+- Both claims need independent review. [NEEDS VERIFICATION 2026-11-22]
+- Routing: wiki-only; no distribution.

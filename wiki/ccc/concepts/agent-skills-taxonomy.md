@@ -4,6 +4,8 @@ type: concept
 tags: [concept, agent-skills, harness, arxiv, k94]
 keywords: [2605.07358, skill-taxonomy, openclaw, procedural-gap, skill-vetting]
 related:
+  - sources/arxiv-automaster-autonomous-post-training-2611.26510.md
+  - concepts/skill-guided-teacher-rollout.md
   - sources/arxiv-agent-skills-survey-2605-07358-2026-06-02.md
   - concepts/thin-harness-fat-skills-garrytan.md
   - concepts/skill-vetting.md

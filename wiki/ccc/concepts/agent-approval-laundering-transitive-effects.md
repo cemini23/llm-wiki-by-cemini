@@ -4,6 +4,7 @@ type: concept
 tags: [concept, k395, cybersec]
 keywords: [2609.28586, k395]
 related:
+  - concepts/result-provenance-authority-gate.md
   - sources/arxiv-agent-approval-laundering-2609.28586.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-25_ccc-k395-agent-approval-laundering-sip-ready.md

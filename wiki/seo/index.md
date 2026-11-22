@@ -502,3 +502,21 @@ If you're new to this wiki:
 | sources/arxiv-2611.16524-drone-victim-search-llm-optimizer-2026-11-14.md | source | No SEO link. Drone scheduling for search and rescue; record-only. |
 | sources/arxiv-2611.17012-dma-google-search-anonymization-2026-11-14.md | source | No GEO link. EC anonymisation measures for Google Search data; 17.91% of queries stay unique. |
 | concepts/search-query-data-supply.md | concept | Three keyword-data supply routes; long tail versus anonymisation tension. `[TENTATIVE]` |
+
+## Ingest 2026-11-22 — SEO batch (8 arXiv + 2 newsletters)
+
+| Page | Type | Note |
+|------|------|------|
+| [sources/arxiv-geohunter-mapping-geo-network-wild-2611.26564.md](sources/arxiv-geohunter-mapping-geo-network-wild-2611.26564.md) | source | On-topic GEO. One paid network: 1,985 accounts, 466,357 placements; 4.5–20% of cited pages; clients named in 52% of answers. |
+| [concepts/geo-paid-placement-networks.md](concepts/geo-paid-placement-networks.md) | concept | Supply side of GEO: coordinated UGC accounts shape answers; account-level defense is needed. `[TENTATIVE]` |
+| [sources/arxiv-security-deep-research-agents-attack-surface-2611.20045.md](sources/arxiv-security-deep-research-agents-attack-surface-2611.20045.md) | source | Partial GEO link. Deep-research agent threat model; agenda seeding wins top pick in 16–28% of reports; GEO and prompt injection are near-ineffective. |
+| [sources/newsletter-rss-sparktoro-2026-11-17-we-analyzed-11800-chatgpt-prompts-from-12000-use.md](sources/newsletter-rss-sparktoro-2026-11-17-we-analyzed-11800-chatgpt-prompts-from-12000-use.md) | source | On-topic. 118,163 prompts; 6.9% are brand purchase research vs 15%+ on Google; 12.1% mention a brand. `[TENTATIVE]` |
+| [concepts/ai-assistant-usage-buyer-journey-share.md](concepts/ai-assistant-usage-buyer-journey-share.md) | concept | ChatGPT buyer-journey share is small; prioritize Google AI surfaces. `[TENTATIVE]` |
+| [sources/newsletter-rss-sterling-sky-2026-11-15-optimization-of-title-tags-for-ctr.md](sources/newsletter-rss-sterling-sky-2026-11-15-optimization-of-title-tags-for-ctr.md) | source | On-topic local SEO. Title-tag rewrites lifted clicks +65%, +63%, +400%; keyword removal and title/H1 mismatch are failure modes. |
+| [concepts/title-tag-ctr-optimization.md](concepts/title-tag-ctr-optimization.md) | concept | Fix pages that rank but do not click: keep the keyword, match intent, align H1, always test. |
+| [sources/arxiv-fine-tuned-classifiers-typed-decision-models-2611.20191.md](sources/arxiv-fine-tuned-classifiers-typed-decision-models-2611.20191.md) | source | No SEO link. Typed decision models vs fine-tuned classifiers; record-only. |
+| [sources/arxiv-jointq-joint-scale-integer-quantization-2611.20384.md](sources/arxiv-jointq-joint-scale-integer-quantization-2611.20384.md) | source | No SEO link. LLM quantization; record-only. |
+| [sources/arxiv-forecastgym-live-replayable-benchmark-forecasting-agents-2611.23045.md](sources/arxiv-forecastgym-live-replayable-benchmark-forecasting-agents-2611.23045.md) | source | No SEO link. Forecasting-agent benchmark; record-only. |
+| [sources/arxiv-moe-lora-multilingual-adaptation-2611.23158.md](sources/arxiv-moe-lora-multilingual-adaptation-2611.23158.md) | source | No SEO link. MoE-LoRA multilingual adaptation; record-only. |
+| [sources/arxiv-meta-rtl-evolving-agent-harnesses-2611.25891.md](sources/arxiv-meta-rtl-evolving-agent-harnesses-2611.25891.md) | source | No SEO link. RTL hardware-design agent harness; record-only. |
+| [sources/arxiv-foreseek-foresight-driven-long-video-2611.26024.md](sources/arxiv-foreseek-foresight-driven-long-video-2611.26024.md) | source | No SEO link. Long-form video reasoning; record-only. |

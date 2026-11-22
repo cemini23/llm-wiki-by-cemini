@@ -4,6 +4,8 @@ type: concept
 tags: [concept, mcp, enterprise, adoption, k110]
 keywords: [2606.09182, ecosystem-fragmentation, fault-diagnosis, low-code-mcp]
 related:
+  - sources/arxiv-capability-framework-agentic-ai-enterprises-2611.24039.md
+  - concepts/halo-effect-platform-evaluation.md
   - sources/arxiv-enterprise-mcp-adoption-2606.09182.md
   - concepts/mcp-server-catalog-curation.md
   - concepts/mcp-server-runtime-fault-taxonomy.md

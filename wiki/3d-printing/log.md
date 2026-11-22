@@ -931,3 +931,14 @@ Re-delivered and already filed: `2611.02850`, `2611.03216`.
 - Method: L-DED of 10 mm × 100 mm CMSX-4 rods on a single-crystal substrate; a 10 Hz infrared camera drives laser power down from 1200 W to 1000 W; a process simulation sizes an external cooling setup.
 - Results: continuous single-crystal growth to nearly twice the height of power control alone; EBSD confirmation; near-constant primary dendrite arm spacing; 47% shorter solutionizing time; precipitate structure close to the cast material.
 - Routing: wiki-only; no distribution. Powder-fed metal AM with a 1000 °C substrate is outside a Bambu print farm. The control pattern is the transferable part.
+
+## [2026-11-22] ingest | Technical Report of Mobile Manipulator Robot for Industrial Environments
+
+- Created `sources/arxiv-mobile-manipulator-robot-2611.22852.md`. Twenty-five pages. Team Auriga, Shahid Beheshti University. Built for the RoboCup @Work league.
+- Updated `concepts/printed-robot-arm-platforms.md` — backlink and a third datapoint: the printed part is only the end effector.
+- Hardware: aluminium-profile chassis at about 17 kg, four Mecanum wheels, 5-DOF arm with 65 cm reach and about 450 g payload, 3D-printed gripper. Custom ESP32 boards and a Jetson Orin NX.
+- Software: ROS Noetic, Hector SLAM, A*, YOLOv11s-Seg on about 65K synthetic plus 6K real images.
+- Results: grasp and place success from 40% for a bearing to 95% for a small aluminium profile, 20 trials per object. No confidence interval.
+- Gap recorded: the paper states no filament, printer, layer height, infill, print time, or part count. It yields no FDM process data.
+- **Judgement:** weak fit. 3D printing is a small part of an integration report.
+- Routing: wiki-only; no distribution. The usable part is a structural datapoint on where a printed part sits in a load path.

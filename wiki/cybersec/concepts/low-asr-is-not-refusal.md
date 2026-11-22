@@ -7,8 +7,14 @@ related:
   - sources/arxiv-2610-26595-jailbreak-asr-evaluator-sensitivity.md
   - sources/arxiv-2610-22333-eval-awareness-indic.md
   - concepts/external-filter-safety-utility-tradeoff.md
+  - concepts/recognition-refusal-gap.md
+  - sources/arxiv-scientific-misconduct-recognition-refusal-2611.25492.md
+  - sources/arxiv-abstention-direction-llm-2611.20441.md
+  - concepts/head-attribution-non-identifiability.md
+  - concepts/refusal-and-abstention-direction-geometry.md
+  - sources/arxiv-bias-head-non-identifiability-2611.23218.md
 maturity: draft
-updated: 2026-11-10
+updated: 2026-11-22
 ---
 
 ## Raw Concept
@@ -32,3 +38,11 @@ Attack-success rate (ASR) counts the share of attacks that reach the attacker's 
 Report how the attack failed, whether the user task completed, which judge scored the output, how many samples were drawn, and whether the model was told it was being tested. Do not cite a bare ASR.
 
 This matches the K291 ATTCK-R finding that an unprotected eval overstates vulnerability. The protection layer, the judge, and the language are part of the number.
+
+### Recognition is a fourth outcome (2026-11-22)
+
+A refusal-only metric also hides whether the model understood the request. On SciIntBench, models identified misconduct requests at 91% even in the Most Covert cases and refused only 34%. Recognition and refusal are separate outcomes. Report both. See @concepts/recognition-refusal-gap.md.
+
+The abstention work adds a caution about attribution. Steering one abstention direction moves the other two, so a drop in refusals may come with a rise in confident answers to unknown questions. Report the cause you tested. See @concepts/refusal-and-abstention-direction-geometry.md.
+
+A third caution comes from the head-attribution audit. A degraded model that stops refusing is scored as fair in some pipelines. Count refusal loss and unclassifiable output as separate events. See @concepts/head-attribution-non-identifiability.md.

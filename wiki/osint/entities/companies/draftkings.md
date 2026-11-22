@@ -3,6 +3,9 @@ title: DraftKings — sportsbook and prediction-market operator
 type: entity
 maturity: validated
 related:
+  - sources/substack-rss-event-horizon-2026-11-17-is-kalshi-worth-as-much-as-robinhood.md
+  - sources/substack-rss-event-horizon-2026-11-20-kalshi-utah-and-the-consequences-of-playing-chic.md
+  - concepts/prediction-market-venue-competition-2026.md
   - sources/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md
   - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md
   - concepts/prediction-market-trade-out-moat.md

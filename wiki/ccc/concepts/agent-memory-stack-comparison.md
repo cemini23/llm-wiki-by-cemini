@@ -4,6 +4,8 @@ type: concept
 tags: [concept, memory, openclaw, hermes, mem0, k72]
 keywords: [mem0ai, openclaw, hermes-agent, claude-mem, memory-comparison]
 related:
+  - sources/arxiv-memfolder-structure-guided-memory-folding-2611.26427.md
+  - concepts/structured-memory-folding.md
   - entities/tools/claude-mem.md
   - entities/tools/hermes-agent.md
   - entities/tools/claude-subconscious.md

@@ -1,6 +1,8 @@
 ---
 type: concept
 related:
+  - concepts/title-tag-ctr-optimization.md
+  - sources/newsletter-rss-sterling-sky-2026-11-15-optimization-of-title-tags-for-ctr.md
   - concepts/local-seo-foundations.md
   - concepts/website-essentials-local-business.md
   - concepts/schema-markup-local.md

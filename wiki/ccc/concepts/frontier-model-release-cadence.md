@@ -3,6 +3,14 @@ title: "Frontier model release cadence — read the eval, not the launch post"
 type: concept
 maturity: draft
 related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-19-the-pulse-is-amazons-writing-culture-collapsing.md
+  - sources/newsletter-rss-latent-space-2026-11-16-bfl-web-archive.md
+  - sources/newsletter-rss-latent-space-2026-11-16-building-visual-intelligence-andreas-blattmann-d.md
+  - sources/newsletter-rss-latent-space-2026-11-17-ainews-perplexity-hits-a-1b-revenue-run-rate-up.md
+  - sources/newsletter-rss-latent-space-2026-11-17-cloudflare-joins-the-jevolution-and-labels-itsel.md
+  - sources/newsletter-rss-latent-space-2026-11-18-ainews-gpt-62-astra-the-2-frontier-model-is-bett.md
+  - sources/newsletter-rss-latent-space-2026-11-19-ainews-gemini-4-neon-gdms-opussol-contender.md
+  - sources/newsletter-rss-latent-space-2026-11-20-ainews-anthropic-successfully-completes-largest.md
   - sources/newsletter-rss-latent-space-2026-11-06-ainews-inkling-2-small-17a-594b-trained-in-68-ho.md
   - sources/newsletter-rss-latent-space-2026-11-07-ainews-anthropic-ipo-whither-now.md
   - sources/newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant.md

@@ -4,6 +4,7 @@ type: concept
 tags: [concept, scholarship, llm-detection, k270]
 keywords: [2608.10715, PMC, Traceable-Scholarship]
 related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-19-the-pulse-is-amazons-writing-culture-collapsing.md
   - sources/arxiv-llm-assisted-writing-biomedical-pmc-2608.10715.md
   - entities/tools/llm-usage-in-pmc.md
   - concepts/mcp-claim-validation-and-parameter-grounding.md

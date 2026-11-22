@@ -64,9 +64,11 @@ related:
   - sources/arxiv-2609-30884-cachereforge.md
   - concepts/sparse-attention-without-custom-kernels.md
   - sources/arxiv-2610-10457-morca-cache-scheduling.md
+  - sources/arxiv-2611-23226-fastframes-interactive-latency-video.md
+  - concepts/interactive-latency-autoregressive-video.md
 maturity: draft
 created: 2026-06-07
-updated: 2026-08-25
+updated: 2026-11-22
 ---
 
 ## Relations

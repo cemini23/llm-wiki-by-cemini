@@ -3,6 +3,8 @@ title: "Claude Fable 5.2 — effort levels, cost per task, and lane fit"
 type: entity
 maturity: validated
 related:
+  - sources/newsletter-rss-latent-space-2026-11-18-ainews-gpt-62-astra-the-2-frontier-model-is-bett.md
+  - sources/newsletter-rss-latent-space-2026-11-20-ainews-anthropic-successfully-completes-largest.md
   - concepts/frontier-model-release-cadence.md
   - concepts/token-economics-and-prompt-caching.md
   - sources/newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant.md

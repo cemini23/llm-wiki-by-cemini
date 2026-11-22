@@ -4,6 +4,13 @@ type: concept
 tags: [concept, claude-code, verification, harness, k72]
 keywords: [ericosiu, completion-proof, verification-gate, agent-babysitting, done-criteria]
 related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-16-software-engineering-after-code-becomes-cheap-wi.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-18-software-factories-and-code-reviews-with-harjot.md
+  - sources/newsletter-rss-latent-space-2026-11-20-the-war-against-slop-and-an-emerging-weapon-to-f.md
+  - sources/arxiv-scientific-coding-finite-element-analysis-2611.21176.md
+  - concepts/harness-completion-gate-progress-effect.md
+  - concepts/self-verification-failure-taxonomy.md
+  - concepts/formal-verification-faithfulness-gap.md
   - concepts/claude-premortem-skill.md
   - entities/patterns/full-prompt-goal-template.md
   - entities/tools/openspec.md

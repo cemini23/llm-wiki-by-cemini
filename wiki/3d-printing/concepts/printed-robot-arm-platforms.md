@@ -7,8 +7,9 @@ related:
   - entities/materials/pla.md
   - concepts/open-source-legged-robotics.md
   - sources/arxiv-2610.36598-openjaws-an-open-hardware-umi-framework-with-ste-2026-11-01.md
+  - sources/arxiv-mobile-manipulator-robot-2611.22852.md
 maturity: draft
-updated: 2026-11-10
+updated: 2026-11-22
 ---
 
 ## Raw Concept
@@ -50,6 +51,12 @@ The most useful content in the CHARMIE paper is the four changes the authors mad
 4. A platform bracket was needed, so two new plates were designed and printed.
 
 The lesson for a print farm is the cost of the second print. An open printed robot is a design-plus-iteration job, not a one-pass build. Budget two or three print cycles per part that touches a bought component.
+
+### A third point: the printed part is only the end effector
+
+The Auriga @Work robot adds a third shape of the same trade. Its chassis is aluminium profile and its arm uses worm-gear DC joints. Only the gripper and some brackets are printed. The arm reaches 65 cm and lifts about 450 g, so the printed part sits at the low-load end of the chain. [Source: arxiv-mobile-manipulator-robot-2611.22852.md p.4]
+
+The paper gives no filament, printer, or process setting. Treat it as a structural datapoint only.
 
 ### Limits
 

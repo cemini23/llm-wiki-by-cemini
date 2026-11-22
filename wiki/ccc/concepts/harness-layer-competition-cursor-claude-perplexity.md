@@ -4,6 +4,9 @@ type: concept
 tags: [concept, harness, cursor, claude-code, k92]
 keywords: [rohit4verse, harness, cursor, perplexity, competition]
 related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-16-software-engineering-after-code-becomes-cheap-wi.md
+  - sources/newsletter-rss-latent-space-2026-11-17-ainews-perplexity-hits-a-1b-revenue-run-rate-up.md
+  - sources/newsletter-rss-latent-space-2026-11-19-scaling-linears-gtm-to-100m-arr-cristina-cordova.md
   - concepts/cursor-ide-workspace.md
   - concepts/claude-desktop-vs-claude-code.md
   - concepts/code-as-agent-harness.md

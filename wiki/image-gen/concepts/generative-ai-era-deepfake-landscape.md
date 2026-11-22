@@ -20,6 +20,8 @@ related:
   - sources/arxiv-2607-14753-lalms-spoofing-aware-asv.md
   - sources/arxiv-2607-15694-voice-clone-attribution-geometry-floor.md
   - sources/arxiv-2608-05507-affectdf-routed.md
+  - concepts/black-box-semantic-watermarking.md
+  - sources/arxiv-2611-23208-black-box-semantic-watermark.md
   - sources/arxiv-2608-06732-ps-fnvd-routed.md
   - sources/arxiv-2608-10405-speech-dos-routed.md
   - sources/arxiv-2608-10870-nulledit-routed.md

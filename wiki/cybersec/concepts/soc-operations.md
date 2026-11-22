@@ -74,9 +74,12 @@ related:
   - concepts/cyber-range-autonomous-incident-response-agents.md
   - concepts/provider-outage-control-verification.md
   - sources/substack-rss-secpro-2026-11-13-the-microsoft-outrage-bumper-issue.md
+  - sources/substack-rss-secpro-2026-11-20-the-chase-outage-and-the-trust-were-placing-in-a.md
+  - concepts/defensive-ai-trust-calibration.md
+  - concepts/supply-chain-credential-hygiene.md
 maturity: validated
 created: 2026-05-12
-updated: 2026-11-14
+updated: 2026-11-22
 ---
 
 ## Relations
@@ -217,3 +220,11 @@ A SOC frequently runs its detection and response consoles inside a SaaS platform
 Three rules follow. First, distinguish four steps: the sensor generates the event, the event reaches the service, the team can see it, and the response action takes effect. A blank portal proves only the third. Second, keep a second data path. A separate gateway, endpoint console or SIEM can carry the evidence. Third, verify receipt, not send. Measure event time, ingestion time and read time separately.
 
 See @concepts/provider-outage-control-verification.md for the full checklist and rehearsal plan.
+
+### Human oversight of a defensive agent (November 2026)
+
+A SOC that adds a defensive agent gains speed and loses an independent check if it is not careful. Two numbers frame the risk. Anthropic reported that users approved about 93% of permission prompts and described approval fatigue. In a study of 50 professional analysts, participants followed an agent's secretly assigned preference 86% of the time across four analytical decisions. `[TENTATIVE]` `[NEEDS VERIFICATION 2026-11-22]`
+
+The practical rule: an approval step is not oversight when the agent chooses what the reviewer sees. Keep at least one independent evidence path, and staff enough time to challenge the recommendation. A recommendation channel is authority even when the agent has no administrator account.
+
+See @concepts/defensive-ai-trust-calibration.md for the trust ladder and the Chase outage context.

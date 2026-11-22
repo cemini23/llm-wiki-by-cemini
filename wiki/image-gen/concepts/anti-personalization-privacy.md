@@ -13,9 +13,11 @@ related:
   - sources/arxiv-2606-21710-privacyalign-llm-agents.md
   - concepts/contextual-privacy-alignment-llm-agents.md
   - sources/arxiv-2608-10870-nulledit-routed.md
+  - concepts/black-box-semantic-watermarking.md
+  - sources/arxiv-2611-23208-black-box-semantic-watermark.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-23
+updated: 2026-11-22
 ---
 ## Relations
 

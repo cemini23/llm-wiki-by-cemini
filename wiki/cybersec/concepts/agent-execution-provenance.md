@@ -48,9 +48,10 @@ related:
   - sources/arxiv-2609-30266-llm-agents-trace-tampering.md
   - entities/tools/mcptrace.md
   - sources/substack-rss-secpro-2026-10-30-php2shell-packet-to-process.md
+  - concepts/intent-contract-planner-tool-separation.md
 maturity: draft
 created: 2026-06-07
-updated: 2026-11-14
+updated: 2026-11-22
 ---
 
 ## Relations

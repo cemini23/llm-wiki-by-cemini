@@ -12,9 +12,11 @@ related:
   - entities/models/playground-v3.md
   - entities/marketplaces/civitai.md
   - entities/uis/comfyui.md
+  - concepts/rl-post-training-as-activation-steering.md
+  - sources/arxiv-2611-26627-rl-post-training-activation-steering.md
 maturity: validated
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-11-22
 ---
 
 ## Relations

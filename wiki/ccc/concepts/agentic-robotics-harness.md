@@ -3,6 +3,8 @@ title: "Agentic robotics harness — generalist model, direct control, benchmark
 type: concept
 maturity: draft
 related:
+  - sources/arxiv-mind2act-world-embodied-diagnostic-benchmark-2611.26444.md
+  - concepts/mind-act-composition-diagnosis.md
   - sources/arxiv-vabar-variational-automation-benchmark-2611.06881.md
   - sources/arxiv-agentic-manipulation-policies-amp1-2611.09892.md
   - sources/arxiv-video-coder-agentic-coding-2611.09894.md

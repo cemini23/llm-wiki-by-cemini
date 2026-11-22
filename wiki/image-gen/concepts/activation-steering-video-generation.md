@@ -25,9 +25,11 @@ related:
   - sources/arxiv-2608-06231-emoworld.md
   - entities/models/emoworld.md
   - concepts/emotional-activation-steering-tts.md
+  - concepts/rl-post-training-as-activation-steering.md
+  - sources/arxiv-2611-26627-rl-post-training-activation-steering.md
 maturity: draft
 created: 2026-06-05
-updated: 2026-08-07
+updated: 2026-11-22
 ---
 
 ## Relations

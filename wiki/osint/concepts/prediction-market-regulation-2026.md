@@ -4,6 +4,12 @@ type: concept
 tags: [concept, prediction-markets, regulation, kalshi, cftc, k233, k236]
 keywords: [cftc, kalshi, new-york-ag, event-contracts, state-gaming-laws, wildfire-betting, emergency-authority, novig, responsible-trading, incentive-programs, nyc-council, baltimore]
 related:
+  - sources/substack-rss-event-horizon-2026-11-17-is-kalshi-worth-as-much-as-robinhood.md
+  - sources/substack-rss-event-horizon-2026-11-18-i-want-my-money-back-after-watching-the-senate-h.md
+  - sources/substack-rss-event-horizon-2026-11-19-kalshi-eyes-on-demand-prediction-markets-for-con.md
+  - sources/substack-rss-event-horizon-2026-11-20-kalshi-utah-and-the-consequences-of-playing-chic.md
+  - sources/substack-rss-wublock-2026-11-21-weekly-project-updates-ethereum-glamsterdam-upgr.md
+  - concepts/prediction-market-venue-competition-2026.md
   - sources/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md
   - sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md
   - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md

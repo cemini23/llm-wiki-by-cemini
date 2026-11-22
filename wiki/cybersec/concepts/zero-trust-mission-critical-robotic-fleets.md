@@ -7,9 +7,12 @@ related:
   - sources/arxiv-2609-05741-zero-trust-robotic-fleets.md
   - concepts/responsible-disclosure.md
   - concepts/llm-falsifier-cyber-physical-systems.md
+  - concepts/configuration-layer-attack-embodied-ai.md
+  - sources/arxiv-network-exposed-config-attacks-social-robots-2611.22761.md
+  - concepts/physical-vs-content-danger-embodied-agents.md
 maturity: draft
 created: 2026-09-11
-updated: 2026-09-20
+updated: 2026-11-22
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-lab-redteam.mdc (K339)"
 ---

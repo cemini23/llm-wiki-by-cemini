@@ -4,6 +4,9 @@ type: concept
 tags: [geo-aeo, agentic-search, internal-linking, playbook, k138]
 keywords: [EcoGEO, TRACE, evidence ecosystem, agent browsing trajectory, internal links, support pages]
 related:
+  - concepts/geo-paid-placement-networks.md
+  - sources/arxiv-geohunter-mapping-geo-network-wild-2611.26564.md
+  - sources/arxiv-security-deep-research-agents-attack-surface-2611.20045.md
   - sources/arxiv-ye-2026-ecogeo-trajectory-aware-evidence-ecosystems-2605.12887-2026-07-04.md
   - concepts/generative-engine-optimization.md
   - concepts/adaptive-rag-internal-linking-geo.md

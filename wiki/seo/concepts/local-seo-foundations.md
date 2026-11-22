@@ -4,6 +4,8 @@ type: concept
 tags: [seo, local-seo, foundations, hub, geo-search]
 keywords: [NAP, local pack, map pack, citations, local search, google business profile]
 related:
+  - concepts/title-tag-ctr-optimization.md
+  - sources/newsletter-rss-sterling-sky-2026-11-15-optimization-of-title-tags-for-ctr.md
   - concepts/google-business-profile.md
   - concepts/reviews-reputation-management.md
   - concepts/near-me-search.md

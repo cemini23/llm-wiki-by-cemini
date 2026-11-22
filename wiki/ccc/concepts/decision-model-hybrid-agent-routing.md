@@ -3,6 +3,8 @@ title: "Decision-model hybrid routing — small classifiers inside the harness"
 type: concept
 maturity: draft
 related:
+  - sources/newsletter-rss-latent-space-2026-11-17-cloudflare-joins-the-jevolution-and-labels-itsel.md
+  - concepts/timeout-cascade-cost-aware-routing.md
   - sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md
   - sources/newsletter-rss-latent-space-2026-11-12-the-jev-revolution-what-engineers-are-already-bu.md
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md

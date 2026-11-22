@@ -17,9 +17,11 @@ related:
   - concepts/hybrid-policy-self-distillation-video.md
   - sources/arxiv-2608-13205-hpsd.md
   - sources/arxiv-2608-13391-context-matched-distillation.md
+  - concepts/posterior-matching-distillation.md
+  - sources/arxiv-2611-26629-posterior-matching-distillation.md
 maturity: draft
 created: 2026-06-27
-updated: 2026-08-14
+updated: 2026-11-22
 ---
 
 ## Relations

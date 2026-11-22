@@ -4,6 +4,7 @@ type: entity
 tags: [tool, multi-agent, financial-orchestration, neurips-2025, reference-only, license-tbv, hardware-mismatch]
 keywords: [agentic-trading, dag-planner, mcp-acp-a2a-anp, four-layer-protocol, neo4j-agent-memory, finagent-orchestration, conductor-design-input]
 related:
+  - sources/substack-rss-wublock-2026-11-22-asias-weekly-top10-crypto-news-russia-to-let-fun.md
   - sources/5-6-links-eval-batch.md
   - concepts/conductor-orchestrator.md
   - concepts/cemini-license-posture.md

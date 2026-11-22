@@ -4,6 +4,12 @@ type: concept
 tags: [concept, corpus-hygiene, out-of-scope, research-index, librarian-bookkeeping]
 keywords: [corpus inventory, out of scope, research overflow, misfiled source]
 related:
+  - sources/arxiv-fine-tuned-classifiers-typed-decision-models-2611.20191.md
+  - sources/arxiv-jointq-joint-scale-integer-quantization-2611.20384.md
+  - sources/arxiv-forecastgym-live-replayable-benchmark-forecasting-agents-2611.23045.md
+  - sources/arxiv-moe-lora-multilingual-adaptation-2611.23158.md
+  - sources/arxiv-meta-rtl-evolving-agent-harnesses-2611.25891.md
+  - sources/arxiv-foreseek-foresight-driven-long-video-2611.26024.md
   - sources/slcg-paper-off-topic.md
   - sources/arxiv-chen-2026-token-factory-recommendation-2606.19635-2026-06-24.md
   - sources/arxiv-han-2026-aspect-sentiment-peer-review-evolution-2606.24188-2026-06-25.md

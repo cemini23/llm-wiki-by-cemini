@@ -3,6 +3,7 @@ title: Circle — USDC issuer
 type: entity
 maturity: draft
 related:
+  - sources/substack-rss-wublock-2026-11-20-wublockchain-weekly-anthropic-pursues-record-set.md
   - entities/companies/tether.md
   - sources/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md
   - concepts/crypto-custody-single-point-of-failure.md

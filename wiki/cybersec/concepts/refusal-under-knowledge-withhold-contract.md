@@ -12,9 +12,11 @@ related:
   - concepts/safety-harness-evolution.md
   - concepts/recognition-enforcement-gap-instruction-arbitration.md
   - concepts/chain-of-self-questioning-selective-abstention.md
+  - concepts/refusal-and-abstention-direction-geometry.md
+  - concepts/recognition-refusal-gap.md
 maturity: draft
 created: 2026-08-13
-updated: 2026-09-16
+updated: 2026-11-22
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K276)"
 ---

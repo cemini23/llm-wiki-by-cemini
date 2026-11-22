@@ -76,9 +76,11 @@ related:
   - sources/arxiv-2608-03151-airkey-wifi-acoustic-pin-inference.md
   - concepts/horffi-high-openness-rffi.md
   - sources/arxiv-2608-04881-horffi-high-openness-rffi.md
+  - concepts/configuration-layer-attack-embodied-ai.md
+  - sources/arxiv-network-exposed-config-attacks-social-robots-2611.22761.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-10-12
+updated: 2026-11-22
 ---
 
 ## Relations

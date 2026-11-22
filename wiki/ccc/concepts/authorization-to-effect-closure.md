@@ -4,6 +4,7 @@ type: concept
 tags: [concept, security, authorization, mcp, effects, commit-semantics, k302]
 keywords: [aid-guard, authorization-to-effect, delivery fence, reservation lineage, duplicate effect, 2608.21159]
 related:
+  - concepts/result-provenance-authority-gate.md
   - sources/arxiv-aid-guard-stateful-authorization-2608.21159.md
   - entities/tools/aid-guard.md
   - entities/skills/aid-guard-commit.md

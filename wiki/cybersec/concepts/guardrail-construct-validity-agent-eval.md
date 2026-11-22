@@ -32,9 +32,15 @@ related:
   - concepts/provider-refusal-measurement-contamination.md
   - concepts/safety-budget-control-channel-calibration.md
   - concepts/silent-error-rate-structured-output.md
+  - concepts/head-attribution-non-identifiability.md
+  - sources/arxiv-bias-head-non-identifiability-2611.23218.md
+  - sources/arxiv-deferred-semantic-commitment-2611.25929.md
+  - concepts/recognition-refusal-gap.md
+  - concepts/defensive-ai-trust-calibration.md
+  - concepts/deferred-semantic-commitment.md
 maturity: draft
 created: 2026-09-02
-updated: 2026-11-14
+updated: 2026-11-22
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K321)"
 ---
@@ -80,6 +86,12 @@ The three sources below add two failure modes to the contract.
 **2. Provider refusal is a missing data point.** When a provider filter blocks a test item, the benchmark records a failure that measures policy, not capability. Exclude the item, report the excluded count, and never compare providers on a set that one provider refuses. See @concepts/provider-refusal-measurement-contamination.md.
 
 **3. Exact match hides silent errors.** Rank parsers and tool calls on the four-way split, and treat the silent-error rate as the deployment objective. See @concepts/silent-error-rate-structured-output.md.
+
+**4. An ablation effect is not a mechanism (2026-11-22).** A head-attribution audit found a correlation of -0.950 with a label-blind length map that an intervention then rejected. Prompt identity, not length, explained 64% of the variance, and the target construct was unidentifiable at phi = 0.95. Two hazards: a single random baseline sat inside a null band from 0.641 to 1.000, and ablation-degraded output was scored as fair. Require an intervention with a matched null, and score degraded generation and refusal loss as separate outcomes. See @concepts/head-attribution-non-identifiability.md.
+
+**5. A guardrail that scores elements misses the completed message (2026-11-22).** On gpt-image-2, a direct harmful statement was refused, but the same claim as a question plus a check mark was generated 43.3% of the time against 16.3%. Assess the reconstructed message, not each element. See @concepts/deferred-semantic-commitment.md.
+
+**6. Score recognition and refusal separately (2026-11-22).** On SciIntBench, models identified misconduct requests at 91% and refused only 34%. A refusal-only metric cannot see the gap. See @concepts/recognition-refusal-gap.md.
 
 ## Snippets
 

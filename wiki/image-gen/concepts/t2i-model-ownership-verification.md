@@ -8,9 +8,11 @@ related:
   - concepts/anti-personalization-privacy.md
   - sources/uncensored-image-generation-survey.md
   - entities/models/flux-1-dev.md
+  - concepts/black-box-semantic-watermarking.md
+  - sources/arxiv-2611-23208-black-box-semantic-watermark.md
 maturity: draft
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-11-22
 ---
 
 ## Relations

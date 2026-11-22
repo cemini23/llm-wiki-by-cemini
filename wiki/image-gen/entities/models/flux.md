@@ -39,9 +39,11 @@ related:
   - sources/arxiv-2608-03708-multicompose.md
   - entities/models/multicompose.md
   - sources/arxiv-2608-04820-resem-face.md
+  - concepts/black-box-semantic-watermarking.md
+  - sources/arxiv-2611-23208-black-box-semantic-watermark.md
 maturity: validated
 created: 2026-05-06
-updated: 2026-08-06
+updated: 2026-11-22
 ---
 
 ## Relations

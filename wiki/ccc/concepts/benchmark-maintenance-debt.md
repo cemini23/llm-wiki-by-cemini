@@ -3,6 +3,15 @@ title: "Benchmark maintenance debt — the score drifts away from the capability
 type: concept
 maturity: draft
 related:
+  - sources/arxiv-harness-leverage-across-model-size-2611.21407.md
+  - sources/arxiv-scientific-coding-finite-element-analysis-2611.21176.md
+  - sources/arxiv-stembench-postdoc-level-science-2611.24321.md
+  - sources/arxiv-accelerate-bench-application-level-optimization-2611.20882.md
+  - sources/arxiv-sciresearch-eval-scientific-judgment-2611.21541.md
+  - concepts/harness-completion-gate-progress-effect.md
+  - concepts/specification-anchored-benchmark-anchors.md
+  - concepts/calibration-interval-scientific-judgment.md
+  - concepts/application-level-optimization-eval.md
   - sources/arxiv-benchmarks-as-software-terminal-bench-2611.08417.md
   - sources/arxiv-task-efficient-agent-eval-cached-traces-2611.06803.md
   - sources/arxiv-workflowarena-workflow-orchestration-2611.12856.md

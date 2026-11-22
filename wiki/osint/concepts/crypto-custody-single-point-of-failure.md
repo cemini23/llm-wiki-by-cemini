@@ -3,6 +3,8 @@ title: Crypto custody — the single point of failure and the threshold fix
 type: concept
 maturity: validated
 related:
+  - sources/substack-rss-wublock-2026-11-21-weekly-project-updates-ethereum-glamsterdam-upgr.md
+  - sources/substack-rss-wublock-2026-11-22-asias-weekly-top10-crypto-news-russia-to-let-fun.md
   - entities/companies/circle.md
   - sources/substack-rss-wublock-2026-11-10-gate-founder-shares-his-approach-to-security-no.md
   - sources/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md

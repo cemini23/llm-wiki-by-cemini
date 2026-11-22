@@ -26,9 +26,10 @@ related:
   - entities/tools/pentestgpt.md
   - entities/tools/cai-framework.md
   - entities/tools/hexstrike-ai.md
+  - entities/tools/offsec-harness-index.md
 maturity: draft
 created: 2026-08-02
-updated: 2026-10-09
+updated: 2026-11-22
 phase_0_verdict: "CONDITIONAL-GO 2026-08-02 — AGPL-3.0 verified; shallow clone ~219MB; no host npm -g; VM/Docker only; scope_check is advisory not hard-gate"
 wire_status: deferred
 wire_target: "Ask before host CLI/MCP wire; lab VM + written scope required; AGPL network clause for any SaaS/embed"

@@ -4,6 +4,7 @@ type: concept
 tags: [concept, k392]
 keywords: [2609.30012, k392]
 related:
+  - concepts/halo-effect-platform-evaluation.md
   - sources/arxiv-low-cost-cross-vendor-behavior-assays-2609.30012.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-25_ccc-k390-k394-sip-ready.md

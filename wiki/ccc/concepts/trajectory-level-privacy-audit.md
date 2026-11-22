@@ -4,6 +4,7 @@ type: concept
 tags: [concept, k427]
 keywords: [2610.06454, k427]
 related:
+  - sources/arxiv-personal-imitation-game-identity-2611.24888.md
   - sources/arxiv-agentprivarena-trajectory-privacy-audit-2610.06454.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-10-06_ccc-k426-k430-sip-ready.md

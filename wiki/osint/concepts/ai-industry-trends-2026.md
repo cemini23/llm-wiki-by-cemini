@@ -4,6 +4,13 @@ type: concept
 tags: [concept, ai-industry, trends, k233]
 keywords: [binding-models, bioai, local-agent-workforce, nemotron-lightning, muse-glimmer]
 related:
+  - sources/substack-rss-capital-flows-2026-11-20-anthropic-ai-flows-and-the-coming-hiking-cycle.md
+  - sources/substack-rss-capital-flows-2026-11-21-the-ai-repricing-and-what-bonds-are-not-confirmi.md
+  - sources/substack-rss-klement-2026-11-17-do-venture-capitalists-beat-a-random-benchmark.md
+  - sources/substack-rss-klement-2026-11-18-what-the-last-two-bubbles-tell-us-about-the-ai-b.md
+  - sources/substack-rss-wublock-2026-11-20-wublockchain-weekly-anthropic-pursues-record-set.md
+  - sources/substack-rss-lily-ray-2026-11-19-why-building-trust-through-real-people-stands-th.md
+  - concepts/venture-capital-random-benchmark.md
   - sources/newsletter-latent-space-bioai-phase-shift-2026-08-11.md
   - sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md
   - sources/newsletter-rss-latent-space-2026-08-14-gemini-37-flash.md

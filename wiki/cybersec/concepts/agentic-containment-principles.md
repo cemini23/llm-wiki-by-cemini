@@ -36,9 +36,12 @@ related:
   - concepts/agent-decoy-defense-autonomous-pentest.md
   - sources/arxiv-2608-13030-intersage.md
   - concepts/intersage-trust-native-ioa-protocol.md
+  - concepts/defensive-ai-trust-calibration.md
+  - entities/tools/cyber-chaos-monkey.md
+  - sources/substack-rss-secpro-2026-11-20-the-chase-outage-and-the-trust-were-placing-in-a.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-10-09
+updated: 2026-11-22
 ---
 
 ## Relations

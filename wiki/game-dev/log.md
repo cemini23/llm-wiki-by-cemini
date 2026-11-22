@@ -982,3 +982,24 @@ A duplicate concept page (`game-time-project.md`) was created and then removed o
 
 Cross-wiki stub routed from `@osint-wiki/sources/2026-11-16-deep-research-link-eval-agentic-harnesses.md`.
 - Created wiki/entities/modern-web-guidance.md (stub)
+
+## [2026-11-22] ingest | VFM — Runtime Verification of Multiple Natural Language Criteria for Agent Governance
+
+- Created `sources/arxiv-runtime-nl-criteria-verification-2611.23074.md`. Twenty-seven pages. NeurIPS 2026. Toronto / Vector.
+- Created `concepts/runtime-nl-criteria-verification.md` — one shared prefix, N rule branches, YES/NO/N/A per rule. Localize the failure; do not gate on it.
+- Updated `concepts/agent-harness-castle-project.md` — rule **H18** plus the corpus and limit figures.
+- Updated `concepts/npc-prompt-robustness.md` — backlink; a rule check and a robustness sweep are different verify-lane tests.
+- Method: tree-attention verifier over a cached prefix; CriteriaBank of 394K tuples and 321K criterion strings.
+- Results: 88.8% held-out accuracy on a synthetic governance bench against 83.9% for GPT-5.4; 86.5% on 50 real insurance calls; 1,000 rules against a 4K prefix in 1.81 s on one H100, under 11 GB VRAM.
+- Caution recorded: the best fine-tuned model approves about 20% of the true violations on real calls. The authors state that this class suits monitoring and escalation, not enforcement.
+- **Judgement:** no game content. The link is the harness verify lane, and it is a pattern transfer, not a tool adoption. A 4B model also needs a GPU the laptop does not have.
+- Routing: wiki-only; no distribution. It serves the castle-sim verify lane as a failure-localization pattern.
+
+## [2026-11-22] ingest | ATI — Federated Identity, Trust, Attestation, and Accountability for Cross-Organization Agents
+
+- Created `sources/arxiv-agent-trust-infrastructure-2611.23202.md`. Thirteen pages. Cal Poly Pomona. Apache-2.0.
+- Updated `concepts/agent-harness-castle-project.md` — explicit not-adopted note, so the paper does not look like a design input.
+- Five planes: Identity, Trust, Attestation, Policy, Accountability. One CA per organization. Agent ID is the SHA-256 hash of an Ed25519 public key. IETF WIMSE tokens and Entity Attestation Tokens.
+- Results: attack containment rises from 43% to 84% over 14 scripted scenarios; benign task success 91% to 92%; about 174 µs overhead per request. All numbers come from a one-process simulation scored by judge models.
+- **Judgement:** no practical link to game dev. The paper solves cross-organization trust. Castle-sim has one operator, one trust domain, and no partner CA.
+- Routing: wiki-only; no distribution. Filed for completeness from the inbox batch.

@@ -4,6 +4,7 @@ type: concept
 tags: [concept, harness, optimization, measurement, coding-agent, k200]
 keywords: [2607.18171, FlashRT, chain-of-program, IR, bench gate]
 related:
+  - concepts/requirement-centered-harness-evolution.md
   - sources/arxiv-flashrt-agent-harness-realtime-2607.18171.md
   - concepts/code-as-agent-harness.md
   - concepts/bounded-self-refinement-vs-rsi-taxonomy.md

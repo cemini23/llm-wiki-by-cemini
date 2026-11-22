@@ -4,6 +4,8 @@ type: concept
 tags: [concept, macro, culture, retail, inequality, k236]
 keywords: [labor-share, capital-gains, passive-income, ai-wealth-effect, boomer-wealth, prospect-theory, kludgeocracy]
 related:
+  - sources/substack-rss-kyla-2026-11-19-what-happens-when-we-try-to-know-everything.md
+  - concepts/high-earner-tax-migration-elasticity.md
   - sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md
   - sources/substack-rss-klement-2026-08-17-national-living-wage.md
   - concepts/prediction-market-regulation-2026.md

@@ -63,6 +63,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [travian-civ-browser-strategy-design](concepts/travian-civ-browser-strategy-design.md) | draft | Single-player Travian × Civ Rev feasibility — market gap, payback-time economy, honest AI, verified stack |
 | [context-compaction-game-harness](concepts/context-compaction-game-harness.md) | draft | Six-slot compaction, parallel slots, keep raw record (2611.06876) |
 | [npc-prompt-robustness](concepts/npc-prompt-robustness.md) | draft | Selective robustness: format sweep + world sweep NPC test (2611.06914) |
+| [runtime-nl-criteria-verification](concepts/runtime-nl-criteria-verification.md) | draft | One prefix, N rule branches, ternary verdicts; localize the broken rule, do not gate on it (2611.23074) |
 
 ## Entities — Engines
 
@@ -340,6 +341,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [arxiv-speccompact-context-compaction-2611.06876](sources/arxiv-speccompact-context-compaction-2611.06876.md) | read |
 | [arxiv-context-enrichment-selective-robustness-2611.06914](sources/arxiv-context-enrichment-selective-robustness-2611.06914.md) | read |
 | [arxiv-meta-access-interfaces-2611.08428](sources/arxiv-meta-access-interfaces-2611.08428.md) | read |
+| [arxiv-runtime-nl-criteria-verification-2611.23074](sources/arxiv-runtime-nl-criteria-verification-2611.23074.md) | read |
+| [arxiv-agent-trust-infrastructure-2611.23202](sources/arxiv-agent-trust-infrastructure-2611.23202.md) | read |
 
 ## K291 ingest (2026-10-14)
 

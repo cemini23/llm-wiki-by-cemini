@@ -11,9 +11,10 @@ related:
   - concepts/sentinel-rl-soc-topological-reasoning.md
   - concepts/soc-operations.md
   - concepts/incident-response.md
+  - entities/tools/cyber-chaos-monkey.md
 maturity: draft
 created: 2026-09-16
-updated: 2026-10-02
+updated: 2026-11-22
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K340)"
 ---

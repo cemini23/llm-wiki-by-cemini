@@ -4,6 +4,8 @@ type: concept
 tags: [concept, geo-aeo, measurement, multi-turn, playbook, k284]
 keywords: [conversational capture, trajectory gain, feedback term, compounding ratio, capture coefficient, misranking, multi-turn GEO]
 related:
+  - concepts/ai-assistant-usage-buyer-journey-share.md
+  - sources/newsletter-rss-sparktoro-2026-11-17-we-analyzed-11800-chatgpt-prompts-from-12000-use.md
   - sources/arxiv-yu-2026-conversational-capture-geo-2609.40069-2026-10-01.md
   - concepts/geo-visibility-measurement.md
   - concepts/generative-engine-optimization.md

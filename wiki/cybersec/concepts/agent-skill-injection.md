@@ -66,9 +66,11 @@ related:
   - entities/tools/jailbreakskill.md
   - sources/arxiv-2610.37415-the-envelope-layer-an-underestimated-surface-of-2026-11-01.md
   - sources/arxiv-2611.13960-attack-surface-to-defense-architecture-2026-11-11.md
+  - concepts/skill-control-flow-integrity.md
+  - sources/arxiv-skillcfi-control-flow-integrity-2611.24185.md
 maturity: draft
 created: 2026-06-03
-updated: 2026-10-09
+updated: 2026-11-22
 wire_status: wont_wire
 wire_target: "REFERENCE / steal-from — paper or methodology only"
 ---
@@ -143,3 +145,11 @@ Layer with @entities/tools/nvidia-skillspector.md + @entities/tools/defenseclaw.
 ### SkillSec lifecycle (2607.13987 — 2026-07-16)
 
 SkillSec-Eval extends skill security past execution into **admission → retrieval → selection → execution → evolution**. See @concepts/skillsec-lifecycle-agent-skill-security.md. Install-time MalSkillBench scans are necessary but not sufficient. [Source: arXiv 2607.13987]
+
+### Control-flow integrity as a runtime gate (SkillCFI — 2026-11-22)
+
+Most skill injection defenses screen the skill text before it runs. SkillCFI compiles the SKILL.md procedure into an executable contract and admits a tool request only on trusted evidence. The reason it matters: many policy violations use only lawful operations. Overwriting a file before validation needs the same tools the skill requires, so a permission allowlist admits it. A prompt-injected model can also evade a monitor by claiming a check passed.
+
+Baseline: agents that execute SKILL.md directly meet only 26.2 to 54.0% of prescribed requirements on compliance-critical skills, and claim completion 28.7 to 37.9 points more often than evaluators confirm. SkillCFI blocked all 240 permitted-but-wrong-order violations in 770 sessions, at about 2% task overhead.
+
+Adoption caveat: none of 53 public skills compiled as written. Treat a skill as a program to compile, not a prompt to trust. See @concepts/skill-control-flow-integrity.md. [Source: arXiv 2611.24185]

@@ -4,6 +4,7 @@ type: concept
 tags: [concept, agent-skills, skill-md, mcp, progressive-disclosure]
 keywords: [2602.12430, level-1-metadata, level-2-instructions, level-3-resources, skills-vs-mcp]
 related:
+  - concepts/skill-guided-teacher-rollout.md
   - sources/arxiv-agent-skills-architecture-security-2602.12430.md
   - concepts/agent-skills-taxonomy.md
   - concepts/thin-harness-fat-skills-garrytan.md

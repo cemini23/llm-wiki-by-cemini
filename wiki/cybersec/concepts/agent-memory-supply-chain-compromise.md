@@ -7,9 +7,10 @@ related:
   - concepts/coding-agent-supply-chain-install-gap.md
   - sources/wublock-2026-10-06-memtensor-agent-memory-supply-chain.md
   - concepts/agent-skill-injection.md
+  - concepts/supply-chain-credential-hygiene.md
 maturity: draft
 created: 2026-10-07
-updated: 2026-10-09
+updated: 2026-11-22
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K283-b)"
 ---

@@ -247,3 +247,7 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 
 - [gradient-free-inverse-design-3d-nanophotonics](sources/arxiv-gradient-free-inverse-design-3d-nanophotonics-2611.15656.md) — Level-set inverse design of a micron-scale Y-splitter; 384 variables, 42.5% coupling efficiency, 75 hours on 8 CPU processes; connectivity enforced as a hard rule. Weak fit: 2PP photonics, no FDM. — `paper, inverse-design, photonics, 2PP, weak-fit, ingest-2026-11-14`
 - [bulk-cmsx-4-single-crystal-lded](sources/arxiv-bulk-cmsx-4-single-crystal-lded-2611.16535.md) — CMSX-4 nickel superalloy single crystal by L-DED; IR camera drives laser power; external cooling doubles build height; 47% shorter solutionizing. Weak fit: metal AM, no FDM. — `paper, DED, metal, superalloy, single-crystal, weak-fit, ingest-2026-11-14`
+
+## Ingest 2026-11-22
+
+- [mobile-manipulator-robot](sources/arxiv-mobile-manipulator-robot-2611.22852.md) — Auriga @Work industrial mobile manipulator; aluminium chassis, 5-DOF arm, 3D-printed gripper; no filament, printer, or process setting stated. Weak fit: printing is a minor part of the build. Grasp success runs 40% to 95% over 20 trials per object. — `paper, robotics, mobile-manipulator, gripper, weak-fit, ingest-2026-11-22`

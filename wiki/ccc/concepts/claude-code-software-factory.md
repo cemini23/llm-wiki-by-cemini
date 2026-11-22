@@ -4,6 +4,10 @@ type: concept
 tags: [concept, claude-code, orchestration, multi-repo, k67]
 keywords: [software-factory, sairahul1, multi-surface, shared-skills, subagent]
 related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-16-software-engineering-after-code-becomes-cheap-wi.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-18-software-factories-and-code-reviews-with-harjot.md
+  - sources/newsletter-rss-latent-space-2026-11-19-scaling-linears-gtm-to-100m-arr-cristina-cordova.md
+  - entities/tools/coderabbit.md
   - concepts/subagent-orchestration.md
   - concepts/code-as-agent-harness.md
   - entities/tools/openspec.md

@@ -22,9 +22,12 @@ related:
   - sources/arxiv-2607-03510-cage-1-enterprise-agent-governance.md
   - concepts/cage-1-enterprise-agent-governance-eval.md
   - concepts/task-conditioned-excess-authority.md
+  - concepts/intent-contract-planner-tool-separation.md
+  - sources/arxiv-intent-contracts-tools-away-2611.24025.md
+  - concepts/aws-abac-authorization-traps.md
 maturity: draft
 created: 2026-06-24
-updated: 2026-10-12
+updated: 2026-11-22
 wire_status: wont_wire
 wire_target: "REFERENCE — IGAC artifact pending"
 ---
@@ -72,6 +75,14 @@ Sits **above** attested admission (2605.24248) and **before** planner:
 See `briefs/2026-06-24_igac-intent-governed-tool-auth-handoff.md`.
 
 `[TENTATIVE]` — OpenPort pilot; Claude Code / lazy-tool mapping not lab-tested.
+
+### Intent contracts do not reduce unauthorized actions (2026-11-22)
+
+Intent Contracts (2611.24025) takes the idea further: the planner holds no tools, and a trusted model writes every call from a validated goal plus a verbatim user quotation. The code properties are real: every executed call is written by the trusted model, and a logged contract precedes it.
+
+The measured security result is negative. Contracts did not reduce unauthorized actions and were indistinguishable from blind review. Every state-changing condition hit a wrong target in 40 to 49% of runs, because the planner chose the wrong object for an ambiguous reference and no trusted model could see the environment. Contracts did complete more tasks than a whole-command reviewer (27/30 against 16/30).
+
+Rule: use intent contracts for audit evidence, not as a proven authorization control. See @concepts/intent-contract-planner-tool-separation.md.
 
 ## Snippets
 

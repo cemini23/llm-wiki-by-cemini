@@ -16,9 +16,10 @@ related:
   - entities/hardware/gpu-guide.md
   - entities/training-tools/kohya-sd-scripts.md
   - runbooks/runpod-unified-gen-stack.md
+  - sources/arxiv-2611-21393-train-after-you-measure-skip.md
 maturity: draft
 created: 2026-10-24
-updated: 2026-10-24
+updated: 2026-11-22
 ---
 
 ## Raw Concept

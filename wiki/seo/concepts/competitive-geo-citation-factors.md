@@ -4,6 +4,10 @@ type: concept
 tags: [geo-aeo, citation, content-quality, answer-engines]
 keywords: [competitive GEO, gatekeeper factors, price transparency, recency, list position, SIGIR 2026]
 related:
+  - concepts/geo-paid-placement-networks.md
+  - concepts/ai-assistant-usage-buyer-journey-share.md
+  - sources/arxiv-geohunter-mapping-geo-network-wild-2611.26564.md
+  - sources/newsletter-rss-sparktoro-2026-11-17-we-analyzed-11800-chatgpt-prompts-from-12000-use.md
   - concepts/retrieval-vs-citation-visibility-geo.md
   - sources/chen-2026-what-drives-ai-citations.md
   - sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md

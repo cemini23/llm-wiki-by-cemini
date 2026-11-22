@@ -4,6 +4,7 @@ type: concept
 tags: [concept, claims, provenance, mcp, retrieval, k233]
 keywords: [AskChem, DOI, quote, claim store, MCP]
 related:
+  - concepts/evidence-management-tool-use.md
   - sources/arxiv-askchem-claim-centered-literature-2607.28618.md
   - entities/tools/askchem.md
   - concepts/traceable-scholarship-citation-first-generation.md

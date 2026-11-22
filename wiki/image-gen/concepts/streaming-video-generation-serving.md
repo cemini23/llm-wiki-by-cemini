@@ -17,9 +17,11 @@ related:
   - concepts/topology-aware-dit-parallel-inference.md
   - sources/arxiv-2611.17336-pixvid-pixel-space-video.md
   - concepts/framewise-pixel-space-video-generation.md
+  - sources/arxiv-2611-23226-fastframes-interactive-latency-video.md
+  - concepts/interactive-latency-autoregressive-video.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-11-14
+updated: 2026-11-22
 ---
 
 ## Relations

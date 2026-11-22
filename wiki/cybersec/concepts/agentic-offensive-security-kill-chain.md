@@ -27,9 +27,12 @@ related:
   - entities/tools/artex.md
 
   - sources/arxiv-ethics-autonomous-offensive-ai-2607.20255.md
+  - sources/newsletter-rss-tldrsec-2026-11-19-tldr-sec-355---cyber-chaos-monkey-offsec-harness.md
+  - entities/tools/cyber-chaos-monkey.md
+  - entities/tools/offsec-harness-index.md
 maturity: draft
 created: 2026-06-25
-updated: 2026-11-14
+updated: 2026-11-22
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-containment.mdc"
 ---
@@ -109,6 +112,21 @@ Two properties change the defence. First, speed: a 15-minute intrusion removes t
 Mandiant recommends five layers: restrict control-plane access to trusted networks, migrate to short-lived workload credentials, scan continuously, harden applications against feature abuse, and detect identity velocity and API bursts. The first two remove the entry condition, because the observed access used long-term static keys.
 
 See @entities/tools/artex.md for the detection signatures.
+
+### Five frameworks, one default (2026-11-19)
+
+Elastic analyzed five agentic offensive frameworks: ARTEX, CyberStrikeAI, Cairn, PentAGI, and HexStrike. Attacks run in 2-25 second bursts. Two findings matter for defence. `[TENTATIVE]` `[NEEDS VERIFICATION 2026-11-22]` against the Elastic post.
+
+- None enforce authorization in code by default.
+- Three explicitly tell their model it is pre-authorized.
+
+The telemetry is ordinary: processes, web requests, API calls, sign-ins. The difference is tempo, so containment must be pre-selected. Which detections trigger automated containment is decided before the incident, not during it. Behaviour-based detections outlast rules keyed on source IP or User-Agent, because the frameworks switch infrastructure when blocked.
+
+A suggested hunt counts distinct tool clients (curl, Python, AWS CLI, browser) per source IP in one-minute windows. ES|QL example in the source. Combine any IP block with credential revocation, measure tempo per identity, scope assumed roles tightly, and remove secrets from reachable locations.
+
+**Lab contrast.** Cyber Chaos Monkey runs the same idea defensively, with a judge agent that can kill the executor. See @entities/tools/cyber-chaos-monkey.md.
+
+[Source: newsletter-rss-tldrsec-2026-11-19-tldr-sec-355---cyber-chaos-monkey-offsec-harness.md]
 
 ## Snippets
 

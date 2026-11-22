@@ -4,6 +4,8 @@ type: concept
 tags: [concept, harness, reliability, k100, harnessfix]
 keywords: [2606.06324, harnessfix, htir, etclovg, trajectory-repair]
 related:
+  - sources/arxiv-agentic-harness-engineering-beta-2611.24924.md
+  - concepts/requirement-centered-harness-evolution.md
   - sources/arxiv-failed-trajectory-harness-repair-2606.06324-2026-06-05.md
   - concepts/etclovg-harness-layers.md
   - concepts/code-as-agent-harness.md

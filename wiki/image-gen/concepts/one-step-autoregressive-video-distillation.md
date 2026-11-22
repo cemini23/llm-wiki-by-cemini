@@ -34,9 +34,13 @@ related:
   - concepts/adversarial-distribution-matching-distillation.md
   - concepts/serial-to-parallel-diffusion-schedule.md
   - concepts/decoupled-gradient-flows-autoregressive-video.md
+  - sources/arxiv-2611-23226-fastframes-interactive-latency-video.md
+  - concepts/interactive-latency-autoregressive-video.md
+  - sources/arxiv-2611-26629-posterior-matching-distillation.md
+  - concepts/posterior-matching-distillation.md
 maturity: draft
 created: 2026-06-06
-updated: 2026-07-29
+updated: 2026-11-22
 ---
 
 ## Relations

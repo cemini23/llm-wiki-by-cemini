@@ -4,6 +4,10 @@ type: concept
 tags: [concept, k419]
 keywords: [2610.02200, k419]
 related:
+  - sources/arxiv-tune-medical-evidence-management-2611.25840.md
+  - sources/arxiv-physscope-agentic-multimodal-physics-2611.23010.md
+  - concepts/evidence-management-tool-use.md
+  - concepts/premise-scope-dependency-invalidation.md
   - sources/arxiv-vista-lossless-visual-memory-harness-2610.02200.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-10-02_ccc-k416-k420-sip-ready.md

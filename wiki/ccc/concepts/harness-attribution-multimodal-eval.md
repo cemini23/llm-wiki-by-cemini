@@ -4,6 +4,13 @@ type: concept
 tags: [concept, k363]
 keywords: [2609.18844, k363]
 related:
+  - sources/arxiv-tune-medical-evidence-management-2611.25840.md
+  - sources/arxiv-physscope-agentic-multimodal-physics-2611.23010.md
+  - sources/arxiv-mind2act-world-embodied-diagnostic-benchmark-2611.26444.md
+  - sources/newsletter-rss-latent-space-2026-11-16-bfl-web-archive.md
+  - concepts/evidence-management-tool-use.md
+  - concepts/premise-scope-dependency-invalidation.md
+  - concepts/mind-act-composition-diagnosis.md
   - sources/arxiv-refigbench-scientific-figure-harness-2609.18844.md
   - concepts/phase1-adopt-wire.md
   - briefs/2026-09-17_ccc-k363-k367-sip-ready.md

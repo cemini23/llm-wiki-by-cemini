@@ -4,6 +4,12 @@ type: concept
 tags: [concept, evaluation-methodology, harness-evolution, test-time-scaling, overfitting, generalization, k169]
 keywords: [2607.12227, parallel sampling, sequential refinement, harness scaling, terminal-bench, pass@1, pass@5, held-out generalization]
 related:
+  - sources/arxiv-harness-leverage-across-model-size-2611.21407.md
+  - sources/arxiv-agentic-harness-engineering-beta-2611.24924.md
+  - sources/arxiv-beyond-weight-updates-evolving-agent-harnesses-2611.25380.md
+  - concepts/requirement-centered-harness-evolution.md
+  - concepts/harness-adapter-frozen-policy-specialization.md
+  - concepts/harness-completion-gate-progress-effect.md
   - concepts/agent-optimizer-compounding-and-regression-control.md
   - sources/arxiv-rethinking-harness-evolution-evaluation-2607.12227.md
   - concepts/failure-mode-harness-adaptation-mapping.md

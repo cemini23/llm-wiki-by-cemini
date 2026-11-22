@@ -11168,3 +11168,213 @@ Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first
 - Also: the CFTC is probing whether Polymarket breached the US-access terms of its 2022 settlement. NYSE will settle tokenized stocks on Avalanche. Zcash proposed NU8 for late January 2027 at about 200 private TPS.
 - `entities/platforms/kalshi.md`, `entities/platforms/polymarket.md`, `concepts/prediction-market-regulation-2026.md` — **updated**.
 - Routing: PM/Kalshi retail bot. Self-certification is the load-bearing listing mechanism; track the rule, not the fine.
+
+## [2026-11-22] ingest | PIRanNN — random-feature option pricing and calibration
+
+- `sources/arxiv-pirannn-random-feature-pricing-2611.19792.md` — **new**. One-layer random-feature network with a probit activation. Fit is a single regularised least-squares problem, no iterative training. One factorisation gives prices, Greeks and parameter derivatives.
+- Calibration lesson: without a Black-Scholes subtraction, jump parameters miss by up to **50%**; with it, they land within **3%**. Fitting the quotes does not prove the parameters.
+- Accuracy matches Crank-Nicolson at equal runtime; a Black-Scholes-subtracted finite-difference scheme is about two orders of magnitude more accurate.
+- `concepts/random-feature-option-pricing.md` — **new**. `concepts/options-derivatives.md`, `concepts/local-stochastic-volatility-calibration.md` — **updated**.
+- Routing: wiki-only. Pricing-method reference; no live lane.
+
+## [2026-11-22] ingest | Dataset distillation for handwritten text recognition
+
+- `sources/arxiv-dataset-distillation-htr-2611.21054.md` — **new**. Negative result. Gradient matching, distribution matching and trajectory matching were adapted to a CRNN/CTC recogniser over four datasets and budgets of 1% to 10%.
+- No distilled set beat its real starting lines. Random lines beat medoids; more optimisation degraded recognition.
+- `concepts/htr-segmentation-generalization.md` — **new**. `concepts/gpuology-genealogy-agent-kit.md` — **updated**.
+- Routing: Atto. Practical rule is to keep a small curated real sample, not a synthetic one.
+
+## [2026-11-22] ingest | Conditional-Gamma pricing of leveraged ETF options
+
+- `sources/arxiv-conditional-gamma-letf-options-2611.22604.md` — **new**. JPMorgan paper. Exact identity: `RL = beta*RS - gamma*IT`. Condition on the terminal index return so only the drag is random.
+- A full LETF smile prices in **0.85–1.42 s** against **197–224 s** for the joint-law PDE benchmark. Against TQQQ quotes the smile sits inside the bid-ask at most strikes.
+- `concepts/leveraged-etf-options-pricing.md` — **new**. `concepts/options-derivatives.md`, `concepts/vix-first-joint-spx-vix-calibration.md` — **updated**.
+- Routing: XSP killer bot. Pricing sanity check for products with path-dependent drag.
+
+## [2026-11-22] ingest | Text-line segmentation generalization for HTR
+
+- `sources/arxiv-text-line-segmentation-generalization-2611.24726.md` — **new**. Hi-SAM, YOLO and RT-DETR on nine datasets, plus few-shot fine-tuning. Downstream CER is **2.48% to 7.07%** per page.
+- Two practical rules: judge segmentation by downstream CER, not mAP; report training and inference resources so a model can be chosen against real hardware.
+- `concepts/htr-segmentation-generalization.md` — **updated**. `concepts/gpuology-genealogy-agent-kit.md` — **updated**.
+- Routing: Atto. Segmentation quality caps transcription quality on civil and parish records.
+
+## [2026-11-22] ingest | Joint framework for SPX, VIX and VXX
+
+- `sources/arxiv-joint-spx-vix-vxx-2611.25047.md` — **new**. Truncated signatures of a time-extended polynomial diffusion. The model is specified at the VIX level; SPX variance is recovered from the 30-day average identity.
+- Adding VXX brings the futures roll into the calibration. Proxy-error bounds sit below quoted bid-ask spreads.
+- `concepts/vix-first-joint-spx-vix-calibration.md` — **updated** with the VXX extension.
+- Routing: XSP killer bot. Model reference for the vol-complex lane.
+
+## [2026-11-22] ingest | Quantum calibration of local-volatility surfaces
+
+- `sources/arxiv-quantum-local-vol-calibration-2611.25344.md` — **new**. Hybrid quantum-classical Dupire calibration on a logical gate simulator, not hardware. Measurement counts supply the objective for a classical optimiser.
+- Contribution is a cost baseline: gate counts, sampling budgets, and a three-way error decomposition of model, pricing and measurement error. No production advantage is shown.
+- `concepts/quantum-local-vol-calibration.md` — **new**. `concepts/local-stochastic-volatility-calibration.md` — **updated**.
+- Routing: wiki-only. Method-tracking, not deployable.
+
+## [2026-11-22] ingest | X Hedging — tree ensembles for option hedging
+
+- `sources/arxiv-x-hedging-tree-ensembles-2611.25870.md` — **new**. Keeps the Deep Hedging structure and replaces the network with LightGBM, trained sequentially with random training orders.
+- Reported: comparable hedging performance, better explainability, lower compute, and substantially better robustness when training data are limited. Simulation study, not live.
+- `concepts/explainable-tree-ensemble-hedging.md` — **new**. `concepts/options-derivatives.md` — **updated**.
+- Routing: wiki-only. Fallback method when a neural hedger has too little data.
+
+## [2026-11-22] ingest | Capital Flows — are equities a buy or falling knife
+
+- `sources/substack-rss-capital-flows-2026-11-17-are-equities-a-buy-or-falling-knife-here.md` — **new**. Paywalled teaser. Neutral on equities; ES has broken down; downside range was larger than upside for the week.
+- `concepts/inflation-risk-regime-2026.md` — **updated**.
+- Routing: GuruWatcher. Regime watch only; no levels in the free text.
+
+## [2026-11-22] ingest | Capital Flows — Anthropic, AI flows, and the coming hiking cycle
+
+- `sources/substack-rss-capital-flows-2026-11-20-anthropic-ai-flows-and-the-coming-hiking-cycle.md` — **new**. Anthropic IPO read as a clearing event; ES below **7400**.
+- Cross-asset ordering: VIX up, FX volatility barely up, bond volatility mildly up, ZT bid small. A hiking cycle is the author's thesis; the divergence is the measurable part.
+- `concepts/inflation-risk-regime-2026.md`, `concepts/ai-industry-trends-2026.md` — **updated**.
+- Routing: GuruWatcher. Equity-vol versus rate-vol divergence is an alert candidate.
+
+## [2026-11-22] ingest | Capital Flows — the AI repricing and what bonds are not confirming
+
+- `sources/substack-rss-capital-flows-2026-11-21-the-ai-repricing-and-what-bonds-are-not-confirmi.md` — **new**. Video teaser. Same divergence framing as the prior day; no data in the free text.
+- `concepts/inflation-risk-regime-2026.md`, `concepts/ai-industry-trends-2026.md` — **updated**.
+- Routing: GuruWatcher. Context only.
+
+## [2026-11-22] ingest | Klement — do venture capitalists beat a random benchmark
+
+- `sources/substack-rss-klement-2026-11-17-do-venture-capitalists-beat-a-random-benchmark.md` — **new**. Knicker, Bouchaud and Benzaquen compare thousands of US VC deals with random selection. No statistical difference in money multiple at exit.
+- Deals entered at high multiples underperform a matched random investment. Same overpayment pattern as listed markets.
+- `concepts/venture-capital-random-benchmark.md` — **new**. `concepts/ai-industry-trends-2026.md` — **updated**.
+- Routing: wiki-only. Prior on AI capital allocation; random benchmark is a reusable test design.
+
+## [2026-11-22] ingest | Klement — the changing stock market reaction to inflation
+
+- `sources/substack-rss-klement-2026-11-18-the-changing-stock-market-reaction-to-inflation.md` — **new**. Bank of Italy study: before 2020 a positive inflation surprise hurt equities, worse for levered firms; since 2020 the sign flipped.
+- Mechanism is the shock type. Demand shocks can be cooled by hikes; supply shocks cannot, and they devalue nominal debt.
+- `concepts/inflation-risk-regime-2026.md` — **updated** with the sign-flip section.
+- Routing: GuruWatcher. CPI-surprise direction depends on the shock origin.
+
+## [2026-11-22] ingest | Klement — what the last two bubbles tell us about the AI boom
+
+- `sources/substack-rss-klement-2026-11-18-what-the-last-two-bubbles-tell-us-about-the-ai-b.md` — **new**. Pointer to a Reuters column. Analyst recommendations were lopsided at the 2000 and 2008 peaks, and are again for AI stocks.
+- `concepts/ai-industry-trends-2026.md`, `concepts/venture-capital-random-benchmark.md` — **updated**.
+- Routing: wiki-only. Slow-moving bubble-sentiment input, not a timing tool.
+
+## [2026-11-22] ingest | Klement — what happens when a country increases taxes on the rich
+
+- `sources/substack-rss-klement-2026-11-19-what-happens-when-a-country-increases-taxes-on-t.md` — **new**. Netherlands 2012 reform of the 30% ruling. Top 5% and top 1% earners were about **10%** less likely to stay; lower users stayed.
+- Fiscal effect: €516.9m lost from leavers against €497.3m gained from stayers, about €1.6m average annual net loss. Authors call it cost-neutral against €67bn of receipts.
+- `concepts/high-earner-tax-migration-elasticity.md` — **new**. `concepts/labor-vs-capital-wealth-culture.md` — **updated**.
+- Routing: wiki-only. Fiscal-policy prior; no distribution.
+
+## [2026-11-22] ingest | Klement — Taylor Swift kills people
+
+- `sources/substack-rss-klement-2026-11-20-taylor-swift-kills-people.md` — **new**. Satire built on Patel et al. (2026): on top-10 album release days streaming rose about **43%** and traffic fatalities about **20** above the local baseline.
+- No trading relevance. Recorded for the natural-experiment design: a sharp dated event, a large exposed population, a local baseline.
+- Routing: wiki-only. No distribution.
+
+## [2026-11-22] ingest | Kyla — what happens when we try to know everything
+
+- `sources/substack-rss-kyla-2026-11-19-what-happens-when-we-try-to-know-everything.md` — **new**. Personal essay on trust, expertise and a week of outages. New feed for the inbox.
+- Market fragments: WSJ/NORC confidence data (18–34: 9% "great deal", 48% "hardly any"), and Nvidia down about **30%** from its October high around the Jensen Huang resignation report.
+- `concepts/labor-vs-capital-wealth-culture.md` — **updated**.
+- Routing: wiki-only. The operational-trust point is the usable part.
+
+## [2026-11-22] ingest | Lily Ray — trust through real people in SEO and AI search
+
+- `sources/substack-rss-lily-ray-2026-11-19-why-building-trust-through-real-people-stands-th.md` — **new**. New feed. Off-domain for OSINT: search optimisation and AI-search visibility, no financial content.
+- Thesis: search loopholes expire; real, identifiable experts are the durable investment. Traces Google's guidance to the 2003 Webmaster Guidelines.
+- `concepts/ai-industry-trends-2026.md` — **updated** with the only OSINT-adjacent link.
+- Routing: SEO wiki. No OSINT distribution.
+
+## [2026-11-22] ingest | Moontower — Hillstone
+
+- `sources/substack-rss-moontower-2026-11-22-hillstone.md` — **new**. Essay on taking enough risk. SIG tightened markets, accepted thinner per-trade edge for more absolute dollars, and used the cash to widen coverage. The flywheel then compounds.
+- Rule: an edge that others have not caught up to decays, so size it while it exists. Applies to tooling and workflow edges, not only market edges.
+- `concepts/market-structure-efficiency-and-edge-decay.md` — **new**. `concepts/options-derivatives.md` — **updated**.
+- Routing: wiki-only. Operator-strategy prior.
+
+## [2026-11-22] ingest | Moontower — making sense of returns
+
+- `sources/substack-rss-moontower-2026-11-22-making-sense-of-returns.md` — **new**. `E[r] = payout*(E/P) + (1-payout)*ROE`. For the S&P 500 at about 22% ROE and 80% retention the top of the range is about **18.7%**; all-buyback retention gives about **5.46%**.
+- Elm Wealth P-CAPE adjusts CAPE for retained earnings. Reported: 35% of variance in 10-year forward real returns against 24% for CAPE; 2.92% real expected US equity return as of 2026-09-30.
+- `concepts/stock-return-decomposition-and-p-cape.md` — **new**. `concepts/equity-fair-value-evaluation.md` — **updated**.
+- Routing: wiki-only. Valuation-method reference.
+
+## [2026-11-22] ingest | Moontower #337
+
+- `sources/substack-rss-moontower-2026-11-22-moontower-337.md` — **new**. Omnibus republishing Hillstone and making-sense-of-returns, plus two new sections.
+- ANT closed about **17%** above IPO, near a **$2tn** valuation including unvested shares. Significance section: t of about 1.58 on 0.05%/day over 1,000 days is not significant; at N=50 the winner must nearly double the loser.
+- `concepts/market-structure-efficiency-and-edge-decay.md`, `concepts/stock-return-decomposition-and-p-cape.md` — **updated**.
+- Routing: wiki-only. Short-sample backtest caution.
+
+## [2026-11-22] ingest | Event Horizon — Is Kalshi worth as much as Robinhood
+
+- `sources/substack-rss-event-horizon-2026-11-17-is-kalshi-worth-as-much-as-robinhood.md` — **new**. Kalshi reported to be raising at **$65bn**; it bought FB Securities and plans equity trading.
+- Venue ladder (7-day): Kalshi **$27.5bn**, Polymarket US $3.7bn, DKeX $1.4bn, Underdog $950.3m, CDNA $870.8m, Novig $850.5m, Rothera $415.8m, ProphetX $60.4m. Sunday Kalshi mix: **70.8%** parlays.
+- `entities/platforms/kalshi.md`, `entities/companies/draftkings.md`, `concepts/prediction-market-venue-competition-2026.md`, `concepts/prediction-market-regulation-2026.md` — **updated**.
+- Routing: PM/Kalshi retail bot. Liquidity is in parlays, not niche events.
+
+## [2026-11-22] ingest | Event Horizon — Senate hearing on CFTC nominees
+
+- `sources/substack-rss-event-horizon-2026-11-18-i-want-my-money-back-after-watching-the-senate-h.md` — **new**. Anonick and Rowland declined to call a sports event contract a bet. Fourth Circuit affirmed Maryland 2-1 with three different opinions.
+- Kalshi paused several Trump mention markets at CFTC request. Integrity committee reviewed 500m trades, 288m recent trades worth $48bn, and found 98% of volume in lower-MNPI-risk markets; more than 50 referrals in Q2–Q3.
+- `entities/platforms/kalshi.md`, `concepts/prediction-market-regulation-2026.md`, `concepts/prediction-market-state-litigation-2026-11.md` — **updated**.
+- Routing: PM/Kalshi retail bot. Venue availability is a legal input.
+
+## [2026-11-22] ingest | Event Horizon — Kalshi eyes on-demand markets
+
+- `sources/substack-rss-event-horizon-2026-11-19-kalshi-eyes-on-demand-prediction-markets-for-con.md` — **new**. Kalshi posted documentation for on-request markets: a user requests a market and makers quote it. Weather at a location and time, concert postponement; a flight page was live and then removed.
+- Also: Coinbase plans in-house event contracts in 1H2027; Kalshi adds 36 single-stock perps; Polymarket US adds oil and gas; 43 state AGs plus DC oppose the swap-definition rule.
+- `concepts/prediction-market-on-request-markets.md` — **new**. `entities/platforms/kalshi.md`, `entities/platforms/polymarket.md`, `concepts/prediction-market-venue-competition-2026.md` — **updated**.
+- Routing: PM/Kalshi retail bot. Discovery should watch new-series announcements, not only the public list.
+
+## [2026-11-22] ingest | Event Horizon — Kalshi, Utah, and playing chicken with states
+
+- `sources/substack-rss-event-horizon-2026-11-20-kalshi-utah-and-the-consequences-of-playing-chic.md` — **new**. Kalshi co-founders face 13 felony counts in Utah and must appear in person on 4 December. New York is the bigger commercial risk.
+- Senate passed a bill barring contracts on terrorism, assassination, war, military operations or a death. Binance.US DCM/DCO applications deemed materially complete. Kalshi stock-index volume $78.6m in October, +96% from August. Polymarket reaches Talos for non-US institutions.
+- `entities/platforms/kalshi.md`, `concepts/prediction-market-state-litigation-2026-11.md`, `concepts/prediction-market-venue-competition-2026.md` — **updated**.
+- Routing: PM/Kalshi retail bot. Criminal and injunction risk can remove markets.
+
+## [2026-11-22] ingest | Wu Blockchain — October spot volume
+
+- `sources/substack-rss-wublock-2026-11-17-october-2026-exchange-spot-volume-report-total-6.md` — **new**. Total **$623.6bn**, **−9.3%** MoM across 14 exchanges (5 up, 9 down). Binance $279.2bn (44.8%), OKX 9.9%, Bybit 8.2%; top-3 62.9%.
+- Publisher caveat: possible wash trading and bot activity; figures are preprocessed.
+- `concepts/crypto-exchange-spot-volume.md` — **updated**. The October report cites September as $687.7bn against the earlier $696.7bn; flagged `[NEEDS VERIFICATION 2026-11-22]`.
+- Routing: wiki-only. Relative concentration measure, not clean activity.
+
+## [2026-11-22] ingest | Wu Blockchain — October derivatives volume
+
+- `sources/substack-rss-wublock-2026-11-18-october-2026-exchange-derivatives-volume-report.md` — **new**. Total **$3.75tn**, **+3.7%** MoM. Binance $1.79tn (47.8%), OKX 17.4%, Bybit 10.2%; top-3 75.4%.
+- Deribit about **$192.1bn**, up **507%**, after the Coinbase International merger. USDC perps and futures rose from about $7.5bn to $149.8bn. Futures/spot ratio **6.01x** from 5.26x.
+- `concepts/crypto-derivatives-volume-2026.md` — **updated**.
+- Routing: wiki-only. Treat the Deribit jump as a reporting and product effect.
+
+## [2026-11-22] ingest | Wu Blockchain — October exchange traffic
+
+- `sources/substack-rss-wublock-2026-11-19-october-2026-exchange-website-traffic-report-mom.md` — **new**. About **139m** visits, **−0.65%** MoM across 9 exchanges. OKX 35.69m (25.7%) overtook Binance 34.57m (24.9%); Coinbase 22.14m.
+- HTX −22.5%, Upbit −16.0%, Bybit −6.0%. OKX top origin USA, Binance Korea, Coinbase USA.
+- `concepts/crypto-venue-website-traffic.md` — **updated**. Traffic and volume have decoupled; OKX leads visits while Binance leads spot volume.
+- Routing: wiki-only. Retail-attention proxy.
+
+## [2026-11-22] ingest | WuBlockchain Weekly — Anthropic IPO, Hyperliquid alert, CoinGecko stake
+
+- `sources/substack-rss-wublock-2026-11-20-wublockchain-weekly-anthropic-pursues-record-set.md` — **new**. Anthropic opened at **$111.50**, about **34.3%** above the $83 IPO price. IOSCO quantum report: 2030–2035 horizon; post-quantum signatures 35–40 times larger.
+- Hong Kong SFC added Hyperliquid to its suspicious-platform alert list. Solana Foundation holds majority equity in CoinGecko. Strategy spent $2.7bn on STRC buybacks and only $33.4m on 485 BTC in one week.
+- DWF study: Bitcoin–Nasdaq correlation about 0.40 since 2020; BTC annualised volatility **44%** against semiconductors **52%**; gold correlation about 0.49.
+- `concepts/ai-industry-trends-2026.md`, `entities/platforms/hyperliquid.md`, `entities/companies/circle.md`, `entities/companies/tether.md` — **updated**.
+- Routing: GuruWatcher. BTC-volatility-versus-chips and USDT supply are alert candidates.
+
+## [2026-11-22] ingest | Wu Blockchain — Glamsterdam delayed, Lighter and Kava exploits
+
+- `sources/substack-rss-wublock-2026-11-21-weekly-project-updates-ethereum-glamsterdam-upgr.md` — **new**. Glamsterdam may slip to April or May 2027 over contract compatibility.
+- CFTC Chair Selig: on-chain venues such as Hyperliquid must register or partner to serve US retail; the CFTC will defend federal authority over prediction markets against state suits.
+- Lighter: about **$10.39m** drained from two market-maker accounts, about $15.48m total, from leaked API keys rather than a contract flaw. Kava Lend: BUSD supply suppressed and the interest index amplified about **243,000x**; 55.2m KAVA borrowed, about $3.76m.
+- `concepts/crypto-custody-single-point-of-failure.md`, `entities/platforms/hyperliquid.md`, `concepts/prediction-market-regulation-2026.md` — **updated**.
+- Routing: wiki-only. The weak point was signing and key custody, not the protocol.
+
+## [2026-11-22] ingest | Wu Blockchain — Asia weekly top 10
+
+- `sources/substack-rss-wublock-2026-11-22-asias-weekly-top10-crypto-news-russia-to-let-fun.md` — **new**. Bank of Russia plans to let qualified-investor funds hold crypto directly in 2027. MAS: on-chain tokens alone are not bank deposits. Korea's Digital Asset Basic Act draft is due this month; 15%–20% shareholder cap expected.
+- Two users reported tampered Ledger devices bought in Dubai, with hidden boards and antennas. The secure chip stays genuine, so device verification passes. Tagged `[TENTATIVE]`.
+- Daiwa completed an AI-agent test that swaps test stablecoins against security tokens from natural-language instructions; Maybank settled tokenised government bonds with on-chain delivery versus payment.
+- `concepts/crypto-custody-single-point-of-failure.md`, `entities/tools/agentic-trading.md` — **updated**.
+- Routing: wiki-only. Buy hardware wallets only through verified channels.

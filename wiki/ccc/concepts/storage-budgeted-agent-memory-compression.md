@@ -4,6 +4,8 @@ type: concept
 tags: [concept, agent-memory, compression, memrefine, k117]
 keywords: [2606.13177, memrefine, delete-merge-preserve, llm-judge]
 related:
+  - sources/arxiv-memfolder-structure-guided-memory-folding-2611.26427.md
+  - concepts/structured-memory-folding.md
   - sources/arxiv-memrefine-storage-budgeted-memory-2606.13177.md
   - concepts/multi-factor-agentic-memory-value-model.md
   - concepts/tool-response-context-pruning-summarization.md

@@ -4,6 +4,8 @@ type: entity
 tags: [entity, tool, codex, cli, openai, orchestration, k207]
 keywords: [codex exec, @openai/codex, ChatGPT login, gpt-5.6-terra, darwin-arm64]
 related:
+  - sources/arxiv-turing-agent-formal-verification-mathematics-2611.21299.md
+  - entities/tools/turing-agent.md
   - concepts/subagent-orchestration.md
   - concepts/operator-model-selection.md
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md

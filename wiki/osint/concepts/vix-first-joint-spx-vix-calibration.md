@@ -4,6 +4,8 @@ type: concept
 tags: [concept, volatility, vix, xsp, k222]
 keywords: [VDV, joint calibration, VIX futures, SPX options]
 related:
+  - sources/arxiv-joint-spx-vix-vxx-2611.25047.md
+  - concepts/leveraged-etf-options-pricing.md
   - sources/arxiv-2608.02778-nnlci-options-pricing.md
   - sources/arxiv-2608.01479-vix-derived-volatility-model.md
   - sources/arxiv-2608.01217-lsv-calibration-neural-operator.md

@@ -14,10 +14,11 @@ related:
   - concepts/agent-skill-injection.md
   - concepts/agentic-offensive-security-kill-chain.md
   - concepts/owned-target-whitehat-lab.md
+  - concepts/inference-dispatch-capacity-tracking.md
 
 maturity: draft
 created: 2026-06-06
-updated: 2026-10-09
+updated: 2026-11-22
 ---
 
 ## Relations

@@ -2540,3 +2540,124 @@ Routed from `@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-202
 - **Abuse risk.** Opportunistic phishing and payment-change fraud, on the CrowdStrike 2024 precedent. Defence is procedural: verify through a known number and keep MFA codes private.
 - Updated `concepts/soc-operations.md`, `concepts/incident-response.md`, and `concepts/software-maintenance-institutional-insecurity.md`.
 - Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — continuity and evidence-reconciliation procedure; no distribution.
+
+## [2026-11-22] ingest | Refusal Register is Causally Steerable (2611.20405)
+
+- `sources/arxiv-refusal-register-causally-steerable-2611.20405.md` — **new**. Khindkar and Povarova, 16 November 2026.
+- `concepts/refusal-and-abstention-direction-geometry.md` — **new**. The page covers this paper and 2611.20441 together.
+- **Register result.** Injecting the harmful-vs-neutral direction into self-reference prompts moves content-safety vocabulary from 2.55 to 10.37 per 100 tokens at alpha 2.0. Random control 1.13–2.16. The model still refuses, in content-style wording.
+- **Asymmetry.** B1 encodes category detection plus refusal vocabulary. B2 encodes mostly category detection. The effect is smaller in every test and reproduces weakly in Gemma-2-2B-IT.
+- Updated `concepts/local-abliterated-llm-pentest-stack.md` with the register/ablation caveat.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — steering-vector interpretation for lab work; no distribution.
+
+## [2026-11-22] ingest | Abstention Direction in Large Language Models (2611.20441)
+
+- `sources/arxiv-abstention-direction-llm-2611.20441.md` — **new**. Itai, Hirako and Yamagiwa, SB Intuitions, 16 November 2026.
+- `concepts/refusal-and-abstention-direction-geometry.md` — **updated** with the three-cause result.
+- **Result.** Abstention directions exist for query ambiguity, knowledge limits, and value misalignment. Steering one moves the other two, so they share a directional component.
+- **Lab rule.** Report the cause tested. A test that suppresses knowledge abstention can also lower value refusal and raise confident wrong answers.
+- Updated `concepts/low-asr-is-not-refusal.md` and `concepts/recognition-refusal-gap.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — refusal measurement hygiene; no distribution.
+
+## [2026-11-22] ingest | LEAF-OPD — learning to forget from privileged contexts (2611.20674)
+
+- `sources/arxiv-leaf-opd-unlearning-privileged-context-2611.20674.md` — **new**. HKUST Guangzhou and CUHK Shenzhen, 16 November 2026.
+- `concepts/machine-unlearning-privileged-context.md` — **new**. Teach the refusal behaviour on-policy; do not only push the distribution away.
+- **Mechanism.** A frozen teacher sees privileged context on forget data. The student never does. On-policy token-level distillation trains it. The Supervision Signal detects collapse at the first few tokens.
+- **Results.** Best Forget Quality, Model Utility, and Forget ROUGE-L on TOFU. 34% better Forget Quality on RWKU than the second-best method.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — unlearning verification rule; no distribution.
+
+## [2026-11-22] ingest | Network-exposed configuration attacks on LLM-controlled social robots (2611.22761)
+
+- `sources/arxiv-network-exposed-config-attacks-social-robots-2611.22761.md` — **new**. University of Derby, 18 November 2026.
+- `concepts/configuration-layer-attack-embodied-ai.md` — **new**. A third danger class beside content and physical danger: the interface under the model.
+- **Contrast.** Eleven direct prompt injections were resisted at the LLM layer. Two unauthenticated POSTs to Gradio on `0.0.0.0:7860` rewrote the system prompt and changed physical behaviour.
+- **Mapping.** CWE-306, CWE-1327, CVSS 6.5. One endpoint also answers cross-origin without preflight (CWE-352).
+- Updated `concepts/physical-vs-content-danger-embodied-agents.md`, `concepts/zero-trust-mission-critical-robotic-fleets.md`, `concepts/network-security.md`, `concepts/agent-runtime-guardrails.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — deployment control for embodied agents; no distribution.
+
+## [2026-11-22] ingest | What Does a Bias Head Measure? (2611.23218)
+
+- `sources/arxiv-bias-head-non-identifiability-2611.23218.md` — **new**. S.M Seefat Alam, BUET, 17 November 2026.
+- `concepts/head-attribution-non-identifiability.md` — **new**. Correlation with a plausible confound died under intervention.
+- **Numbers.** Fairness map correlates with a label-blind length map at -0.950 and -0.768. With prompt fixed, length explains 1% and prompt identity 64%. The construct is unidentifiable at phi = 0.95.
+- **Positive control.** Ablating the complement destroys refusal (p = 2.7e-5), so the null is not a power failure.
+- Updated `concepts/guardrail-construct-validity-agent-eval.md` and `concepts/low-asr-is-not-refusal.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — interpretability audit rule; no distribution.
+
+## [2026-11-22] ingest | Intent Contracts — taking tools away from agents (2611.24025)
+
+- `sources/arxiv-intent-contracts-tools-away-2611.24025.md` — **new**. Independent researchers and three universities, 18 November 2026.
+- `concepts/intent-contract-planner-tool-separation.md` — **new**. Code properties are real; the measured security gain is not.
+- **Negative result.** Contracts did not reduce unauthorized actions and matched blind review. Wrong-target rate 40–49%, from ambiguous object choice the trusted model cannot see.
+- **Positive result.** Contracts completed the task in 27/30 runs against 16/30 for whole-command review.
+- Updated `concepts/intent-governed-tool-authorization.md`, `concepts/agent-least-privilege-tool-selection.md`, `concepts/agent-runtime-guardrails.md`, `concepts/agent-execution-provenance.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — do not wire as a control claim; no distribution.
+
+## [2026-11-22] ingest | SkillCFI — control-flow integrity for agent skills (2611.24185)
+
+- `sources/arxiv-skillcfi-control-flow-integrity-2611.24185.md` — **new**. NUS and Beihang, 18 November 2026.
+- `concepts/skill-control-flow-integrity.md` — **new**. Compile SKILL.md into instructions plus an executable contract; enforce with a deterministic runtime gate.
+- **Why allowlists fail.** Many violations use only lawful operations in the wrong order. Agents meet 26.2–54.0% of prescribed requirements when they run SKILL.md directly.
+- **Results.** All 240 permitted-but-wrong-order violations blocked before dispatch in 770 sessions. Recovery rises from 21% to 65% when the refusal lists the next legal step. About 2% overhead.
+- **Adoption.** None of 53 public skills compiled as written.
+- Updated `concepts/agent-skill-injection.md`, `concepts/skill-cascading-attacks-skill-based-agents.md`, `concepts/agent-least-privilege-tool-selection.md`, `concepts/agent-runtime-guardrails.md`, `concepts/step-level-agent-guardrails.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — skill runtime gate for the lab harness; no distribution.
+
+## [2026-11-22] ingest | Cap-and-Track — LLM inference dispatch across shifting capacity (2611.24891)
+
+- `sources/arxiv-cap-and-track-inference-dispatch-2611.24891.md` — **new**. Meta, 18 November 2026.
+- `concepts/inference-dispatch-capacity-tracking.md` — **new**. Dispatch by capacity refusal, not a fixed rate.
+- **Design.** CAP is a fail-fast admission check that returns 429. TRACK learns the ceiling from refusals alone. Durable priority queues hold excess work.
+- **Production.** 43% fewer H100s on one classifier against the fixed-rate precursor. Within 1% of tuned goodput in replay, at about a quarter of the refusal share. 300M requests a day.
+- Updated `concepts/bluestar-tiered-agentic-cyber-defense.md` and `concepts/docker-agent-sandbox-allowlist-proxy.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — availability signal and queue-bound rule; no distribution.
+
+## [2026-11-22] ingest | Why Do LLMs Help with Scientific Misconduct Requests? (2611.25492)
+
+- `sources/arxiv-scientific-misconduct-recognition-refusal-2611.25492.md` — **new**. University of Colorado Boulder, 19 November 2026.
+- `concepts/recognition-refusal-gap.md` — **new**. Recognition and refusal are separate outcomes.
+- **Numbers.** Models identify misconduct at 91% even in Most Covert cases, and refuse at 34%. Question framing raises refusal from 52% to 88%. Two system-prompt fixes raise it from 58% to 87% and 86%.
+- Updated `concepts/low-asr-is-not-refusal.md`, `concepts/refusal-and-abstention-direction-geometry.md`, `concepts/guardrail-construct-validity-agent-eval.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — safety-metric design; no distribution.
+
+## [2026-11-22] ingest | Question, Then Affirm — Deferred Semantic Commitment (2611.25929)
+
+- `sources/arxiv-deferred-semantic-commitment-2611.25929.md` — **new**. University of Hawai'i and an independent researcher, 19 November 2026.
+- `concepts/deferred-semantic-commitment.md` — **new**. Withhold commitment in one element, restore it in another, and the guardrail passes the completed message.
+- **Numbers.** gpt-image-2 generates 43.3% of question-affirmation requests against 16.3% of direct statements. Endorsement 41.3% against 15.3%.
+- **Mechanism.** Reaffirmation restores meaning and only partly reverses the refusal change. Restoring the remainder recovers refusal.
+- Updated `concepts/guardrail-construct-validity-agent-eval.md`, `concepts/crescendo-multi-turn-jailbreak.md`, `concepts/recognition-refusal-gap.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — screen the reconstructed message; no distribution.
+
+## [2026-11-22] ingest | SEOYUN — refusal-inducing exam documents for AI-glasses pipelines (2611.26033)
+
+- `sources/arxiv-seoyun-refusal-inducing-exam-documents-2611.26033.md` — **new**. Dohyeon Raphael Kwon, PEACE-UNIVERSE, 19 November 2026.
+- `concepts/refusal-induction-as-defense.md` — **new**. Reverse jailbreaking: raise abstention rather than seek compliance.
+- **Scope.** Threat model, analytical limits, and a three-layer evaluation protocol. No model measurements, no physical validation, no human-subject results.
+- **Ethical rule.** Success is measured against an identical clean item, with a separate check on human accuracy and comfort. Do not use the method as a reason to suspect a candidate.
+- Updated `concepts/recognition-refusal-gap.md` and `concepts/refusal-and-abstention-direction-geometry.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — framework reference, lab-gated; no distribution.
+
+## [2026-11-22] ingest | tl;dr sec #355 — Cyber Chaos Monkey and agentic hacking in the wild
+
+- `sources/newsletter-rss-tldrsec-2026-11-19-tldr-sec-355---cyber-chaos-monkey-offsec-harness.md` — **new**. Clint Gibler, 19 November 2026.
+- `entities/tools/cyber-chaos-monkey.md` — **new**. Shopify's continuous adversarial testing system with a judge agent that can kill the executor.
+- `entities/tools/offsec-harness-index.md` — **new**. Tracking resource for offensive harnesses verified on GitHub and seen in real operations.
+- `concepts/supply-chain-credential-hygiene.md` — **new**. Network allowlists, secret reduction, forensic logging, from the Black October breaches.
+- `concepts/aws-abac-authorization-traps.md` — **new**. Alterable guards, evaluation semantics, action-key mismatch.
+- **Five frameworks.** ARTEX, CyberStrikeAI, Cairn, PentAGI and HexStrike. None enforce authorization in code by default; three tell the model it is pre-authorized. Attacks run in 2–25 second bursts `[TENTATIVE]`.
+- **Disclosure.** Project Zero moves from "90 + 30" to a phased "Full X": 90, then 60 by February 2027, then 30 by January 2028 `[TENTATIVE]`.
+- **Java4Shell.** Sixty-four `A` characters plus one `=` triggers heap corruption in OpenJDK's Base64 decoder; pre-auth RCE in Keycloak, Jira, Confluence, Artifactory, Jenkins `[TENTATIVE]` `[NEEDS VERIFICATION 2026-11-22]`.
+- Updated `concepts/agentic-offensive-security-kill-chain.md`, `concepts/patchless-window.md`, `concepts/responsible-disclosure.md`, `entities/tools/artex.md`, `entities/tools/cyberstrike.md`, `entities/tools/hexstrike-ai.md`, `entities/tools/pentest-ai-agents.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — detection tempo, credential hygiene, disclosure timing; no distribution.
+
+## [2026-11-22] ingest | Packt SecPro — The Chase outage and the trust we place in AI
+
+- `sources/substack-rss-secpro-2026-11-20-the-chase-outage-and-the-trust-were-placing-in-a.md` — **new**. Packt SecPro, 20 November 2026.
+- `concepts/defensive-ai-trust-calibration.md` — **new**. Trust a bounded role, not authority over what is true.
+- **Causation caveat.** Chase attributed the 16 November delays to a software bug and reported no cyberattack. The AI-patching link rests on unnamed sources `[TENTATIVE]` `[NEEDS VERIFICATION 2026-11-22]`.
+- **Oversight numbers.** About 93% of permission prompts approved, with approval fatigue. Fifty analysts followed an agent's secretly assigned preference 86% of the time.
+- **Bounded capability.** DARPA AIxCC found 54 vulnerabilities and patched 43. 1Password found partial or harmful patches on six complex vulnerabilities.
+- Updated `concepts/soc-operations.md`, `concepts/incident-response.md`, `concepts/agentic-containment-principles.md`, `concepts/patchless-window.md`, `concepts/guardrail-construct-validity-agent-eval.md`, `concepts/silent-error-rate-structured-output.md`.
+- Routing: local abliterated / whitehat lab and defensive SOC/IR tradecraft — oversight design for SOC and IR agents; no distribution.

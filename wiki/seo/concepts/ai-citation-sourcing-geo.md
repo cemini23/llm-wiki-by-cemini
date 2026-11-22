@@ -4,6 +4,9 @@ type: concept
 tags: [geo-aeo, citation, earned-media, playbook, k130]
 keywords: [citation sourcing, owned vs third-party, Wikipedia, earned media, source audit]
 related:
+  - concepts/geo-paid-placement-networks.md
+  - sources/arxiv-geohunter-mapping-geo-network-wild-2611.26564.md
+  - sources/arxiv-security-deep-research-agents-attack-surface-2611.20045.md
   - concepts/retrieval-vs-citation-visibility-geo.md
   - sources/chen-2026-what-drives-ai-citations.md
   - sources/jiang-2026-chatgpt-citations-retrieval-to-citation.md

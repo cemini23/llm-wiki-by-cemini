@@ -3,6 +3,7 @@ title: "Reasoning effort calibration — a higher tier beats a higher effort set
 type: concept
 maturity: draft
 related:
+  - sources/newsletter-rss-latent-space-2026-11-19-ainews-gemini-4-neon-gdms-opussol-contender.md
   - sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
   - entities/models/claude-fable-5-2.md

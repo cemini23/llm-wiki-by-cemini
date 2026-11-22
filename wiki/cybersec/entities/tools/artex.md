@@ -9,7 +9,8 @@ related:
   - concepts/llm-pentest-automation.md
   - concepts/ai-for-cybersecurity.md
   - concepts/owned-target-whitehat-lab.md
-updated: 2026-11-14
+  - entities/tools/offsec-harness-index.md
+updated: 2026-11-22
 ---
 
 ## Raw Concept

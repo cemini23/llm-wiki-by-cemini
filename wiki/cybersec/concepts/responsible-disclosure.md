@@ -47,9 +47,10 @@ related:
   - concepts/software-maintenance-institutional-insecurity.md
   - sources/substack-rss-secpro-2026-11-06-five-issues-the-php-crisis-has-brought-into-view.md
   - concepts/patchless-window.md
+  - sources/newsletter-rss-tldrsec-2026-11-19-tldr-sec-355---cyber-chaos-monkey-offsec-harness.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-11-14
+updated: 2026-11-22
 ---
 
 ## Relations

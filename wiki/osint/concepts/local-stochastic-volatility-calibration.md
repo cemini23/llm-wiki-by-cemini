@@ -3,6 +3,9 @@ title: Calibrating local stochastic volatility by fixed-point iteration
 type: concept
 maturity: draft
 related:
+  - sources/arxiv-quantum-local-vol-calibration-2611.25344.md
+  - concepts/quantum-local-vol-calibration.md
+  - concepts/random-feature-option-pricing.md
   - sources/arxiv-local-stochastic-volatility-2611.18214.md
 updated: 2026-11-16
 ---

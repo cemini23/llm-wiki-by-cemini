@@ -10,9 +10,11 @@ related:
   - concepts/evoskill-injection-self-evolving-agents.md
   - concepts/skill-misevolution.md
   - concepts/agent-skill-injection.md
+  - concepts/skill-control-flow-integrity.md
+  - sources/arxiv-skillcfi-control-flow-integrity-2611.24185.md
 maturity: validated
 created: 2026-09-28
-updated: 2026-09-29
+updated: 2026-11-22
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-lab-redteam.mdc (K374)"
 ---

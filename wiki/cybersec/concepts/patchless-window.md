@@ -8,7 +8,10 @@ related:
   - concepts/responsible-disclosure.md
   - concepts/llm-vulnerability-discovery.md
   - sources/substack-rss-secpro-2026-11-06-five-issues-the-php-crisis-has-brought-into-view.md
-updated: 2026-11-14
+  - sources/newsletter-rss-tldrsec-2026-11-19-tldr-sec-355---cyber-chaos-monkey-offsec-harness.md
+  - sources/substack-rss-secpro-2026-11-20-the-chase-outage-and-the-trust-were-placing-in-a.md
+  - concepts/supply-chain-credential-hygiene.md
+updated: 2026-11-22
 ---
 
 ## Raw Concept
@@ -61,6 +64,20 @@ Upstream stable branches carry large known-unfixed sets. Reported figures `[TENT
 | Stable kernel 5.10.y | more than 2,000 |
 
 An AI-assisted backport effort produced 142 fixes for 90 CVEs in stable kernel trees, which shows the work is automatable. The debt remains a standing exposure surface for any long-term-support user.
+
+### Disclosure policy moves to timed full disclosure (2026-11-19)
+
+Google Project Zero is overhauling its disclosure policy in response to AI-accelerated threats. The old "90 + 30" model becomes a phased "Full X": 90 days now, 60 days by February 2027, and 30 days by January 2028. Grace periods, variant policies, severity exceptions, and fix verification are removed. `[TENTATIVE]` `[NEEDS VERIFICATION 2026-11-22]` against the Project Zero policy post.
+
+The stated reasons map directly to this page:
+
+- LLMs make near-instant patch reverse engineering, so "soak time" no longer protects users.
+- Discovery rates rose to several bugs weekly in targets that previously yielded a few per year.
+- Multiple parties now find the same bug independently.
+
+The consequence for defenders is a shorter patchless-adjacent window after the fix. A vendor who needed 90 days to ship a patch now has 30 by 2028. The control set above, especially commit tracking and backport coordination, stops being optional.
+
+[Source: newsletter-rss-tldrsec-2026-11-19-tldr-sec-355---cyber-chaos-monkey-offsec-harness.md]
 
 ### Detection and monitoring ideas
 

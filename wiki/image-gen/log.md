@@ -4204,3 +4204,65 @@ Skipped: `2611.05258`.
 - **Numbers.** Five-benchmark average 35.3 → 43.4 at 1.9–3.5× greedy cost. Two search baselines reach 39.1% and 37.3% at 3.8–7.4×.
 - Files created: `sources/arxiv-2611.17320-divr-diffusion-verifier-regeneration.md`, `concepts/outcome-supervised-block-regeneration.md`. Updated `concepts/mdlm-padding-termination-decoupling.md`, `concepts/decomposed-graded-verifier.md`.
 - Routing: wiki-only; no distribution. Peripheral — one decoding rule, no image artefact.
+
+## [2026-11-22] ingest | FastFrames: video generation at interactive latency (arXiv:2611.23226)
+
+- **On-topic.** Autoregressive video diffusion, inference latency, open-weight Wan 2.1 backbone. Apple.
+- **Diagnosis.** Diffusion sampling is only about 30% of a 271.8 ms frame. VAE decode costs 147 ms; the KV-cache write costs about 83 ms.
+- **Fix.** A ConvNeXt pixel decoder replaces the VAE (1 ms vs 147 ms, refit per checkpoint). A small KV-refinement network replaces one full DiT pass. CUDA graphs and context parallelism cut the rest.
+- **Numbers.** 1.3B at 36 ms per frame (27.8 RPS) on one B200, VBench 84.23; 14B at 45 ms on 8× B200, VBench 84.44. Transfer to LingBot 1.3B reaches 52 ms; RealWonder reaches 51 ms.
+- Files created: `sources/arxiv-2611-23226-fastframes-interactive-latency-video.md`, `concepts/interactive-latency-autoregressive-video.md`. Updated `concepts/streaming-video-generation-serving.md`, `concepts/one-step-autoregressive-video-distillation.md`, `concepts/budget-aware-diffusion-caching.md`, `concepts/cascaded-streaming-high-resolution-video.md`, `entities/models/wan-2-2.md`.
+- Routing: wiki-only; no distribution. Brief candidate (real-time persona video).
+
+## [2026-11-22] ingest | Distortion-free semantic watermarks for black-box models (arXiv:2611.23208)
+
+- **On-topic.** Image watermarking and provenance for closed and open models. Tel Aviv University.
+- **Mechanism.** Sample N candidates, hash each semantic embedding to an M-bit code, score codes with a secret key, return a uniform member of the best code. Distortion-free for any generator and encoder (Theorem 3).
+- **Numbers.** AUROC 0.920 (1 image, N=32), 1.000 (10 images), 0.978 (5 images on OpenAI GPT Image, N=8). FID 4.75–5.22 against a 4.64 clean reference; diversity within 1.3%. Single-image TPR capped at N × FPR.
+- **Use.** Persona provenance: prove your own batch, or test a competitor account through sampling access only. Cost is N× generation.
+- Files created: `sources/arxiv-2611-23208-black-box-semantic-watermark.md`, `concepts/black-box-semantic-watermarking.md`. Updated `concepts/t2i-model-ownership-verification.md`, `concepts/anti-personalization-privacy.md`, `concepts/generative-ai-era-deepfake-landscape.md`, `sources/arxiv-2605-29809-cert-las-t2i-mov.md`, `entities/models/flux.md`.
+- Routing: wiki-only; no distribution. Brief candidate (persona provenance and attribution).
+
+## [2026-11-22] ingest | RL post-training in diffusion transformers is activation steering (arXiv:2611.26627)
+
+- **On-topic.** LoRA, full fine-tuning, reward optimization on SD3.5-M, FLUX.1-dev, Wan2.1, Wan2.2. Virginia Tech, fal, Georgia Tech, IBM.
+- **Claim.** Fixed steering vectors, fitted to an RL-tuned model's velocity with no reward, recover 90.0–96.3% of the gain on six image models and 89.8–111.9% on two video models. On SD3.5-M they hold 0.29M parameters against 18.8M for the rank-32 LoRA (65× smaller).
+- **RL on the vectors alone.** Flow-GRPO on frozen SD3.5-M with only the vectors trainable reaches 104.6% (OCR) and 103.6% (PickScore) of the RL-tuned gain.
+- **Limits.** The gain favours the conditional pass, early steps, and the text stream. Supervised identity learning (DreamBooth) is not a constant shift; the vectors recover only 68–95%.
+- Files created: `sources/arxiv-2611-26627-rl-post-training-activation-steering.md`, `concepts/rl-post-training-as-activation-steering.md`. Updated `concepts/grpo-i2v-post-training.md`, `concepts/lora-taxonomy.md`, `concepts/activation-steering-video-generation.md`, `concepts/cross-model-safety-steering.md`, `entities/models/sd3-deprecated.md`, `entities/models/flux-1-dev.md`, `entities/models/flux-2-klein.md`, `entities/models/wan-2-2.md`.
+- Routing: wiki-only; no distribution. Brief candidate (cheap substitute for RL-tuned checkpoints).
+
+## [2026-11-22] ingest | Posterior Matching Distillation (arXiv:2611.26629)
+
+- **On-topic.** Few-step distillation for image and video, diversity preservation. Virginia Tech and NVIDIA.
+- **Mechanism.** Match exponentially tilted posterior means. Under Gaussian corruption, tilting equals shifting the noisy input (Tilt=Shift), so each target is one frozen-teacher call. Matching over a neighbourhood identifies the full posterior.
+- **Numbers.** Four-step FID 19.14 on SDXL (DMD2 19.20) and 24.12 on FLUX.2 klein 4B (base 24.58). PartiPrompts Vendi 4.4621 on SDXL against DMD2's 2.5178. One student serves 2, 4, or more steps.
+- **Limit.** A training recipe, not a conversion of a shipped checkpoint. No code release stated.
+- Files created: `sources/arxiv-2611-26629-posterior-matching-distillation.md`, `concepts/posterior-matching-distillation.md`. Updated `concepts/diversity-collapse-in-distilled-generators.md`, `concepts/adversarial-distribution-matching-distillation.md`, `concepts/score-gradient-matching-video-distillation.md`, `concepts/one-step-autoregressive-video-distillation.md`, `entities/models/flux-2-klein.md`, `entities/models/sdxl-fine-tunes.md`.
+- Routing: wiki-only; no distribution. Brief candidate (diversity loss in four-step persona checkpoints).
+
+## [2026-11-22] ingest | One Prior, Two Dynamics: latent action learning from a video DiT (arXiv:2611.26617)
+
+- **Adjacent.** Video diffusion repurposed for robot and camera control. NUS Show Lab, Tencent, Stanford. Wan2.2-TI2V-5B backbone.
+- **Idea.** Initialise both the inverse dynamics model and the forward dynamics model from one pretrained video DiT. High-noise training forces the forward model to use the latent action.
+- **Numbers.** GR-1 EEF R² 0.277 against DreamDojo's 0.149. Zero-shot camera transfer beats AdaWorld and Olaf-World on camera error. Cross-embodiment cycle reconstruction beats DreamDojo.
+- **Lesson.** One video checkpoint can infer and render motion. Probing quality does not always predict downstream control quality.
+- Files created: `sources/arxiv-2611-26617-one-prior-two-dynamics-latent-action.md`, `concepts/latent-action-learning-video-dit.md`. Updated `concepts/world-models-video-generation.md`, `concepts/camera-controlled-video-generation.md`, `entities/models/wan-2-2.md`.
+- Routing: wiki-only; no distribution. No brief; adjacent source.
+
+## [2026-11-22] ingest | TEMPO: regime-aware PDE operator learning (arXiv:2611.21344)
+
+- **Peripheral. SKIP.** Reduced-order modelling for parametric PDEs. No image, video, diffusion, or LoRA content.
+- **Method.** EM discovers latent regimes; a dedicated POD or NeuralPOD basis is fitted to each; a gating network routes at inference.
+- **Numbers.** With 64 total POD modes, 18.61% test error on Burgers' against 19.61% for global POD.
+- Files created: `sources/arxiv-2611-21344-tempo-pde-operator-learning-skip.md`. No concept page; no entity update.
+- Routing: wiki-only. No distribution; no brief.
+
+## [2026-11-22] ingest | Train After You Measure: pre-registered LoRA learning curve (arXiv:2611.21393)
+
+- **Peripheral. SKIP for content.** Text classification of one user's email with LoRA. Nothing relates to image generation.
+- **Design.** Pre-registered hypotheses and thresholds; fixed 135-email test set; nested label budgets 50–587; Tev1-0.8B and Tev1-4B adapters on a free T4.
+- **Numbers.** Four of five hypotheses refuted. Type accuracy 0.733 baseline against +0.7 and +3.3 points at all labels. The baseline leads on all three action switches at every budget (0.931 against 0.904 and 0.899) and is far faster.
+- **Transferable.** Pre-register the metric, hold out a prompt set, and report per-class results. Rare classes carry the gain.
+- Files created: `sources/arxiv-2611-21393-train-after-you-measure-skip.md`. Updated `concepts/local-likeness-lora-lessons.md`, `concepts/lora-taxonomy.md`.
+- Routing: wiki-only. No distribution; no brief.

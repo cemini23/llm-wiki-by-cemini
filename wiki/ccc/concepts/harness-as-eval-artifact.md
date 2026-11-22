@@ -4,6 +4,11 @@ type: concept
 tags: [concept, harness-evolution, evaluation, creation, evolution, integration-verify, policy, k334]
 keywords: [2609.01437, HarnessDev, harness creation, harness evolution, eval artifact, held-out transfer, state never fires, integration verify]
 related:
+  - sources/arxiv-harness-leverage-across-model-size-2611.21407.md
+  - sources/arxiv-stembench-postdoc-level-science-2611.24321.md
+  - concepts/harness-completion-gate-progress-effect.md
+  - concepts/specification-anchored-benchmark-anchors.md
+  - concepts/application-level-optimization-eval.md
   - sources/arxiv-harnessdev-harness-creation-evolution-2609.01437.md
   - concepts/meta-harness-optimization-hitl-eval-contract.md
   - concepts/stratified-harness-evolution.md

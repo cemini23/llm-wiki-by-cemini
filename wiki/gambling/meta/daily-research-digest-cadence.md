@@ -100,11 +100,11 @@ related:
   - sources/daily-digest-batch-k173-2026-09-20.md
   - sources/nfl-week2-saturday-deltas-2026-09-19.md
   - sources/brief-k173-w02-sat-lock-2026-09-20.md
+  - concepts/dfs-model-orchestration.md
 maturity: validated
 created: 2026-06-01
 updated: 2026-09-20
 ---
-
 ## Relations
 
 - @osint-wiki/concepts/federated-daily-research-digest.md — federation install kit (K93)

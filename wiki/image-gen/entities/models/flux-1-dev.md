@@ -63,9 +63,11 @@ related:
   - entities/models/appearance-pointers.md
   - concepts/dit-template-token-semantic-registers.md
   - sources/arxiv-2610-13941-sfg-semantic-feedback-guidance.md
+  - concepts/rl-post-training-as-activation-steering.md
+  - sources/arxiv-2611-26627-rl-post-training-activation-steering.md
 maturity: validated
 created: 2026-05-06
-updated: 2026-07-22
+updated: 2026-11-22
 ---
 
 ## Relations

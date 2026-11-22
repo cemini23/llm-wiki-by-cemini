@@ -287,13 +287,19 @@ related:
   - sources/arxiv-2611.17336-pixvid-pixel-space-video.md
   - concepts/framewise-pixel-space-video-generation.md
   - concepts/vlm-guided-physical-video-generation.md
+  - concepts/interactive-latency-autoregressive-video.md
+  - sources/arxiv-2611-23226-fastframes-interactive-latency-video.md
+  - concepts/rl-post-training-as-activation-steering.md
+  - sources/arxiv-2611-26627-rl-post-training-activation-steering.md
+  - concepts/latent-action-learning-video-dit.md
+  - sources/arxiv-2611-26617-one-prior-two-dynamics-latent-action.md
 title: Wan 2.2 (Alibaba)
 type: entity
 tags: [model, video, dit, moe, wan, alibaba, eastern-vanguard, completely-uncensored-after-lora]
 keywords: [wan2.2, wan-2-2, alibaba, mixture-of-experts, dual-expert, snr-routing, 27b, 14b, 5b, ti2v, apache-2.0, abliterated-text-encoder, mq-lab, blink, theyurilover]
 maturity: draft
 created: 2026-05-07
-updated: 2026-11-14
+updated: 2026-11-22
 ---
 ## Relations
 

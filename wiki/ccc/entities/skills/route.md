@@ -4,6 +4,8 @@ type: entity
 tags: [skill, route, federation]
 keywords: [route-task, always-approve, SIP, verify-gate, SHE, failover]
 related:
+  - sources/arxiv-timeout-cascades-coding-agent-inference-cost-2611.24324.md
+  - concepts/timeout-cascade-cost-aware-routing.md
   - entities/tools/agent-toolkit.md
   - concepts/llm-routing-deepseek-openrouter-failover.md
   - entities/skills/phase1-wire.md

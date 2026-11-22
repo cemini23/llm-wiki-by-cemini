@@ -13,9 +13,11 @@ related:
   - entities/models/longlive-plug.md
   - sweeps/2026-10-02-daily.md
   - sources/arxiv-2610.42135-better-critic-distribution-matching-distillation-2026-11-03.md
+  - concepts/posterior-matching-distillation.md
+  - sources/arxiv-2611-26629-posterior-matching-distillation.md
 maturity: draft
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-11-22
 ---
 
 ## Relations

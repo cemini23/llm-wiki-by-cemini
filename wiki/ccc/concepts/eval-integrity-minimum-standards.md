@@ -3,6 +3,16 @@ title: "Eval integrity — the minimum a benchmark must disclose"
 type: concept
 maturity: draft
 related:
+  - sources/arxiv-stembench-postdoc-level-science-2611.24321.md
+  - sources/arxiv-capability-framework-agentic-ai-enterprises-2611.24039.md
+  - sources/arxiv-accelerate-bench-application-level-optimization-2611.20882.md
+  - sources/arxiv-sciresearch-eval-scientific-judgment-2611.21541.md
+  - sources/newsletter-rss-latent-space-2026-11-20-ainews-anthropic-successfully-completes-largest.md
+  - sources/newsletter-rss-latent-space-2026-11-21-ainews-riemann-hypothesis-provedtwice-independen.md
+  - concepts/specification-anchored-benchmark-anchors.md
+  - concepts/halo-effect-platform-evaluation.md
+  - concepts/calibration-interval-scientific-judgment.md
+  - concepts/application-level-optimization-eval.md
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
   - sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md
   - concepts/benchmark-maintenance-debt.md

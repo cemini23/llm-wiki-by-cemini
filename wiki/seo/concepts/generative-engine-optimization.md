@@ -1,6 +1,11 @@
 ---
 type: concept
 related:
+  - concepts/geo-paid-placement-networks.md
+  - concepts/ai-assistant-usage-buyer-journey-share.md
+  - sources/arxiv-geohunter-mapping-geo-network-wild-2611.26564.md
+  - sources/arxiv-security-deep-research-agents-attack-surface-2611.20045.md
+  - sources/newsletter-rss-sparktoro-2026-11-17-we-analyzed-11800-chatgpt-prompts-from-12000-use.md
   - concepts/local-seo-foundations.md
   - concepts/schema-markup-local.md
   - concepts/content-strategy-local.md

@@ -2,6 +2,8 @@
 title: "Agent verification patterns — property, differential, and mechanical audit ledgers"
 type: concept
 related:
+  - sources/arxiv-scientific-coding-finite-element-analysis-2611.21176.md
+  - concepts/self-verification-failure-taxonomy.md
   - "@osint-wiki/sources/2026-11-17-deep-research-link-eval-design-motion-harness.md"
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
   - concepts/agent-completion-verification-gates.md

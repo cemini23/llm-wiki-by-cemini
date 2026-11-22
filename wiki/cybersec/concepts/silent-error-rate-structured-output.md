@@ -9,7 +9,8 @@ related:
   - concepts/measurement-integrity-mcp-security-eval.md
   - sources/arxiv-nfr-to-hyperparameter-quantum-2611.16902.md
   - concepts/provider-refusal-measurement-contamination.md
-updated: 2026-11-14
+  - concepts/defensive-ai-trust-calibration.md
+updated: 2026-11-22
 ---
 
 ## Raw Concept

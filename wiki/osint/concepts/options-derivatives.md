@@ -4,6 +4,13 @@ type: concept
 tags: [concept, options-derivatives, derivatives, research-index]
 keywords: [options, derivatives, implied-volatility, delta-hedging, rough-volatility, variance-swap, cemini-corpus]
 related:
+  - sources/arxiv-pirannn-random-feature-pricing-2611.19792.md
+  - sources/arxiv-conditional-gamma-letf-options-2611.22604.md
+  - sources/arxiv-x-hedging-tree-ensembles-2611.25870.md
+  - concepts/random-feature-option-pricing.md
+  - concepts/leveraged-etf-options-pricing.md
+  - concepts/explainable-tree-ensemble-hedging.md
+  - concepts/market-structure-efficiency-and-edge-decay.md
   - concepts/derivative-informed-operator-learning.md
   - sources/arxiv-derivative-informed-operator-learning-2606-05900-2026-06-07.md
   - sources/3-19-on-chain-alpha-research.md

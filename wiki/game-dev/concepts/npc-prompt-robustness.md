@@ -6,7 +6,8 @@ related:
   - concepts/agentic-npc-design-guardrails.md
   - concepts/llm-npc-runtime-ai-shelf.md
   - sources/arxiv-context-enrichment-selective-robustness-2611.06914.md
-updated: 2026-11-10
+  - concepts/runtime-nl-criteria-verification.md
+updated: 2026-11-22
 ---
 
 ## Raw Concept
