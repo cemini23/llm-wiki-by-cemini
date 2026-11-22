@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | The AI Repricing and What Bonds Are Not Confirming |
 | Author | Capital Flows Research |
 | Type | newsletter, RSS teaser (video, paywalled) |
-| Location | `research to be indexed/osint/substack-rss-capital-flows-2026-11-21-the-ai-repricing-and-what-bonds-are-not-confirmi.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-capital-flows-2026-11-21-the-ai-repricing-and-what-bonds-are-not-confirmi.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-21 |
 | Read status | read |

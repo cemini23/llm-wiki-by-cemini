@@ -14,7 +14,7 @@ updated: 2026-11-22
 | Title | Do Embedding-Map Distances Guide LLM Ideation? Four Tests Against What Came Next |
 | Author | Javier Aguilar Martín (AGILabs) |
 | Type | arXiv paper (cs.LG), 2611.21408 |
-| Location | `research to be indexed/ccc/arxiv-2611.21408-do-embedding-map-distances-guide-llm-ideation-fo.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.21408-do-embedding-map-distances-guide-llm-ideation-fo.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 48 |
 | Read status | read |

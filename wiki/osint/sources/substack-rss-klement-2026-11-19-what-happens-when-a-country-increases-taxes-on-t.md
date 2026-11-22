@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | What happens when a country increases taxes on the rich? |
 | Author | Joachim Klement (Klement on Investing) |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/osint/substack-rss-klement-2026-11-19-what-happens-when-a-country-increases-taxes-on-t.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-19-what-happens-when-a-country-increases-taxes-on-t.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-19 |
 | Read status | read |

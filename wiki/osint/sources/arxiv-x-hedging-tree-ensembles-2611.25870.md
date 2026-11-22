@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | X Hedging: towards an eXplainable artificial intelligence option Hedging framework |
 | Author | Bjørn André Aaslund, Johannes Berge, Ayoub Haida, Ying Ni, Rita Pimentel |
 | Type | arXiv preprint, cs.LG |
-| Location | `research to be indexed/osint/arxiv-2611.25870-x-hedging-towards-an-explainable-artificial-inte.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.25870-x-hedging-towards-an-explainable-artificial-inte.pdf` |
 | Retrieved | 2026-11-22 |
 | arXiv | 2611.25870v1, 19 Nov 2026 |
 | Pages | 32 |

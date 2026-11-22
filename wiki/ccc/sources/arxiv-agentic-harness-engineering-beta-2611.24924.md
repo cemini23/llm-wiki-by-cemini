@@ -17,7 +17,7 @@ updated: 2026-11-22
 | Title | Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses |
 | Author | Jiahang Lin, Jiahao Chen, Yiding Wang et al. (Fudan, PKU, RUC) |
 | Type | arXiv paper (cs.SE), 2611.24924 |
-| Location | `research to be indexed/ccc/arxiv-2611.24924-agentic-harness-engineering-beta-requirement-cen.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.24924-agentic-harness-engineering-beta-requirement-cen.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 47 |
 | Read status | read |

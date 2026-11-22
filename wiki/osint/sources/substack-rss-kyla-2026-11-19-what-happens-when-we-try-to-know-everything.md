@@ -14,7 +14,7 @@ updated: 2026-11-22
 | Title | What Happens When We Try to Know Everything? |
 | Author | Kyla Scanlon (Kyla's Newsletter) |
 | Type | newsletter, RSS, essay |
-| Location | `research to be indexed/osint/substack-rss-kyla-2026-11-19-what-happens-when-we-try-to-know-everything.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-kyla-2026-11-19-what-happens-when-we-try-to-know-everything.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-19 |
 | Read status | read |

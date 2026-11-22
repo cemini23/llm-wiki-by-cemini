@@ -20,7 +20,7 @@ updated: 2026-11-22
 | Authors | Hidir Yesiltepe (Virginia Tech), Julius Berner (NVIDIA), Arash Vahdat (NVIDIA), Pinar Yanardag (Virginia Tech) |
 | Type | arXiv preprint, cs.CV |
 | arXiv | 2611.26629v1, 19 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.26629-posterior-matching-distillation.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.26629-posterior-matching-distillation.pdf` |
 | URL | https://arxiv.org/abs/2611.26629 |
 | Project page | https://pmd-distillation.github.io |
 | Retrieved | 2026-11-22 |

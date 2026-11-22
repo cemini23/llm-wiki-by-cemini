@@ -20,7 +20,7 @@ updated: 2026-11-22
 | Published | 2026-11-15 |
 | URL | https://www.sterlingsky.ca/optimize-title-tag-for-better-click-through-rate-local-seo/ |
 | File | `newsletter-rss-sterling-sky-2026-11-15-optimization-of-title-tags-for-ctr.md` |
-| Location | `research to be indexed/newsletter-rss-sterling-sky-2026-11-15-optimization-of-title-tags-for-ctr.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/newsletter-rss-sterling-sky-2026-11-15-optimization-of-title-tags-for-ctr.md` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 

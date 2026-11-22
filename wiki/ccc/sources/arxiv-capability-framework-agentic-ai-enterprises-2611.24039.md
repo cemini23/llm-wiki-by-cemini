@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | A Capability Framework for Evaluating Agentic AI Platforms in Regulated Enterprises |
 | Author | Abbas Raza Ali (Citigroup), Muhammad Ajmal Siddiqui (EY), Moona Zahid (NVIDIA) |
 | Type | arXiv / MLSys 2027 proceedings, 2611.24039 |
-| Location | `research to be indexed/ccc/arxiv-2611.24039-a-capability-framework-for-evaluating-agentic-ai.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.24039-a-capability-framework-for-evaluating-agentic-ai.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 14 |
 | Read status | read |

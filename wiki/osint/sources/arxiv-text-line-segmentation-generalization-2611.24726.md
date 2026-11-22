@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Generalization of Text Line Segmentation for HTR in Historical Documents |
 | Author | Gayan H. Pathirage, Stephan M. Unter, Simon Corbillé, Elisa H. Barney Smith |
 | Type | arXiv preprint, computer vision |
-| Location | `research to be indexed/osint/arxiv-2611.24726-generalization-of-text-line-segmentation-for-htr.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.24726-generalization-of-text-line-segmentation-for-htr.pdf` |
 | Retrieved | 2026-11-22 |
 | arXiv | 2611.24726v1, 18 Nov 2026 |
 | Pages | 12 |

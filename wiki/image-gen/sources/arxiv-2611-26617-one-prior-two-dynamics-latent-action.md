@@ -17,7 +17,7 @@ updated: 2026-11-22
 | Authors | Yuxin Jiang (NUS Show Lab, A*STAR), Wenqiang Sun (Tencent), Jiaqi Li (Tencent), Yuchao Gu (NUS), Lvmin Zhang (Stanford), Ivor Tsang (A*STAR), Mike Zheng Shou (NUS) |
 | Type | arXiv preprint, cs.CV |
 | arXiv | 2611.26617v1, 19 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.26617-one-prior-two-dynamics-repurposing-video-diffusi.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.26617-one-prior-two-dynamics-repurposing-video-diffusi.pdf` |
 | URL | https://arxiv.org/abs/2611.26617 |
 | Project page | https://showlab.github.io/o2laf |
 | Retrieved | 2026-11-22 |

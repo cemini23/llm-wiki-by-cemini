@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | PIRanNN: Random-Feature Pricing and Calibration under Jump-Diffusion and Stochastic-Volatility Models |
 | Author | Saurabh Bansal, Srikanth K. Iyer, Shashi Jain |
 | Type | arXiv preprint, q-fin.CP |
-| Location | `research to be indexed/osint/arxiv-2611.19792-pirannn-random-feature-pricing-and-calibration-u.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.19792-pirannn-random-feature-pricing-and-calibration-u.pdf` |
 | Retrieved | 2026-11-22 |
 | arXiv | 2611.19792v1, 15 Nov 2026 |
 | Pages | 29 |

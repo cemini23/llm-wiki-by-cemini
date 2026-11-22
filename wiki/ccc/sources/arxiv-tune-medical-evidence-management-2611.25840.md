@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Harnessing Medical Visual-Language Models with Agentic Evidence Management |
 | Author | Huang Qiming, Hanze Dong, Jipeng Zhang et al. (NUS, Microsoft) |
 | Type | arXiv paper (cs.CV), 2611.25840 |
-| Location | `research to be indexed/ccc/arxiv-2611.25840-harnessing-medical-visual-language-models-with-a.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.25840-harnessing-medical-visual-language-models-with-a.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 22 |
 | Read status | read |

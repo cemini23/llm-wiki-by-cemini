@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Dataset Distillation for Handwritten Text Recognition: An Empirical Study |
 | Author | Félix Fuentes-Hurtado, Eric Ayllón, Juan C. Alfaro |
 | Type | arXiv preprint, computer vision |
-| Location | `research to be indexed/osint/arxiv-2611.21054-dataset-distillation-for-handwritten-text-recogn.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.21054-dataset-distillation-for-handwritten-text-recogn.pdf` |
 | Retrieved | 2026-11-22 |
 | arXiv | 2611.21054v1 |
 | Pages | 10 |

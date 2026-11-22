@@ -32,7 +32,7 @@ clusters: [cemini-internal, tool-evaluation]
 | sha256 | `c8b606bebaad2529b896be095a7fc0f849e86cde9849843f9fa66b3642f75ad7` |
 | URL labels | 25 (`URL 1` ... `URL 25`) |
 | URLs extracted | 92 |
-| Location | `research to be indexed/Tool Evaluation for Cemini Wiki.docx` |
+| Location | _(not on egress — checked 2026-11-22; the original docx is in no cold-store domain)_ |
 
 ## Narrative
 

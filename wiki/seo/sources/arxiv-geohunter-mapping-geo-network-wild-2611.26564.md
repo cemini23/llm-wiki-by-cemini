@@ -21,7 +21,7 @@ updated: 2026-11-22
 | arXiv | 2611.26564 |
 | Pages | 21 |
 | File | `arxiv-2611.26564-geohunter-mapping-a-generative-engine-optimizati.pdf` |
-| Location | `research to be indexed/seo/arxiv-2611.26564-geohunter-mapping-a-generative-engine-optimizati.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.26564-geohunter-mapping-a-generative-engine-optimizati.pdf` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 

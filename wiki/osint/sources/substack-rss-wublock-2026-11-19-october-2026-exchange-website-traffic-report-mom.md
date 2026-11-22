@@ -14,7 +14,7 @@ updated: 2026-11-22
 | Title | October 2026 Exchange Website Traffic Report: MoM down 0.65%, OKX overtakes Binance for first place |
 | Author | Wu Blockchain |
 | Type | newsletter, RSS, data report |
-| Location | `research to be indexed/osint/substack-rss-wublock-2026-11-19-october-2026-exchange-website-traffic-report-mom.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-19-october-2026-exchange-website-traffic-report-mom.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-19 |
 | Read status | read |

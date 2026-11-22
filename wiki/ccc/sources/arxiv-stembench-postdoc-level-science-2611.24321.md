@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | Benchmarking LLM Abilities on Postdoc-Level Natural Science Problems |
 | Author | Alina Avanesyan, Alexey Boldyrev et al. (HSE University and partners) |
 | Type | arXiv paper (cs.AI), 2611.24321 |
-| Location | `research to be indexed/ccc/arxiv-2611.24321-benchmarking-llm-abilities-on-postdoc-level-natu.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.24321-benchmarking-llm-abilities-on-postdoc-level-natu.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 22 |
 | Read status | read |

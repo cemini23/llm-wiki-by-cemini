@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Asia's weekly TOP10 crypto news: Russia to Let Funds Hold Crypto, South Korea Digital Asset Bill Due This Month |
 | Author | Wu Blockchain |
 | Type | newsletter, RSS, weekly digest |
-| Location | `research to be indexed/osint/substack-rss-wublock-2026-11-22-asias-weekly-top10-crypto-news-russia-to-let-fun.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-22-asias-weekly-top10-crypto-news-russia-to-let-fun.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-22 |
 | Read status | read |

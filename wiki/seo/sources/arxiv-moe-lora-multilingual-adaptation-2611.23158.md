@@ -15,7 +15,7 @@ updated: 2026-11-22
 | arXiv | 2611.23158 |
 | Pages | 21 |
 | File | `arxiv-2611.23158-moe-lora-methods-for-multilingual-adaptation-a-s.pdf` |
-| Location | `research to be indexed/seo/arxiv-2611.23158-moe-lora-methods-for-multilingual-adaptation-a-s.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.23158-moe-lora-methods-for-multilingual-adaptation-a-s.pdf` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 

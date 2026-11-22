@@ -22,7 +22,7 @@ updated: 2026-11-22
 | Authors | Tuna Han Salih Meral (Virginia Tech), Kaan Oktay (fal), Alec Helbling (Georgia Tech, IBM Research), Atakan Kara (fal), Duen Horng Chau (Georgia Tech), Pinar Yanardag (Virginia Tech) |
 | Type | arXiv preprint, cs.CV |
 | arXiv | 2611.26627v1, 19 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.26627-rl-post-training-in-diffusion-transformers-is-ac.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.26627-rl-post-training-in-diffusion-transformers-is-ac.pdf` |
 | URL | https://arxiv.org/abs/2611.26627 |
 | Project page | https://rl-is-steering.github.io |
 | Retrieved | 2026-11-22 |

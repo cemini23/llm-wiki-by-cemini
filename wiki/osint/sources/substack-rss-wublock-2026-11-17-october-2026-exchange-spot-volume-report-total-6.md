@@ -14,7 +14,7 @@ updated: 2026-11-22
 | Title | October 2026 Exchange Spot Volume Report: total $623.6 billion, MoM decreased 9.3% |
 | Author | Wu Blockchain |
 | Type | newsletter, RSS, data report |
-| Location | `research to be indexed/osint/substack-rss-wublock-2026-11-17-october-2026-exchange-spot-volume-report-total-6.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-17-october-2026-exchange-spot-volume-report-total-6.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-17 |
 | Read status | read |

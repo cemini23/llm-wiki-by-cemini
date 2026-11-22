@@ -15,7 +15,7 @@ updated: 2026-11-22
 | arXiv | 2611.20191 |
 | Pages | 11 (approx.) |
 | File | `arxiv-2611.20191-do-we-still-need-fine-tuned-classifiers-swapping.pdf` |
-| Location | `research to be indexed/seo/arxiv-2611.20191-do-we-still-need-fine-tuned-classifiers-swapping.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.20191-do-we-still-need-fine-tuned-classifiers-swapping.pdf` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 

@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Beyond Strike Remapping: Conditional-Gamma Pricing of Leveraged ETF Options under Local Volatility |
 | Author | Guolin Chen, Jiang Zhou, Richard Ma, Xia Sheng, Anson Tse, Terry Wei (JPMorganChase) |
 | Type | arXiv preprint, q-fin.CP |
-| Location | `research to be indexed/osint/arxiv-2611.22604-beyond-strike-remapping-conditional-gamma-pricin.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.22604-beyond-strike-remapping-conditional-gamma-pricin.pdf` |
 | Retrieved | 2026-11-22 |
 | arXiv | 2611.22604v1, 17 Nov 2026 |
 | Pages | 37 |

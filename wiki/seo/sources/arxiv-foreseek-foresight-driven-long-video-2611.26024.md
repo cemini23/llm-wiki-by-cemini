@@ -15,7 +15,7 @@ updated: 2026-11-22
 | arXiv | 2611.26024 |
 | Pages | 11 |
 | File | `arxiv-2611.26024-foreseek-foresight-driven-reasoning-for-long-for.pdf` |
-| Location | `research to be indexed/seo/arxiv-2611.26024-foreseek-foresight-driven-reasoning-for-long-for.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.26024-foreseek-foresight-driven-reasoning-for-long-for.pdf` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 

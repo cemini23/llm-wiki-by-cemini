@@ -15,7 +15,7 @@ updated: 2026-11-22
 | arXiv | 2611.23045 |
 | Pages | 12 |
 | File | `arxiv-2611.23045-forecastgym-a-live-controlled-and-replayable-ben.pdf` |
-| Location | `research to be indexed/seo/arxiv-2611.23045-forecastgym-a-live-controlled-and-replayable-ben.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.23045-forecastgym-a-live-controlled-and-replayable-ben.pdf` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 

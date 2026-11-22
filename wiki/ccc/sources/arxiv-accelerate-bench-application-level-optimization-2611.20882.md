@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Accelerate Bench: Evaluating Agents for Application-Level Program Optimization |
 | Author | Bowen Liu, Yuhan Li, Nuo Chen et al. (Tencent Hy Team, HKUST, Tsinghua, PKU) |
 | Type | arXiv paper (cs.SE), 2611.20882 |
-| Location | `research to be indexed/ccc/arxiv-2611.20882-accelerate-bench-evaluating-agents-for-applicati.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.20882-accelerate-bench-evaluating-agents-for-applicati.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 49 |
 | Read status | read |

@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | Harness Leverage Across Model Size: A Ladder of Five Local Agent Harnesses from 0.75B to 4.7B |
 | Author | Hao Wang (USTB), Ting Huang (Honor Device Co.) |
 | Type | arXiv paper (cs.AI), 2611.21407 |
-| Location | `research to be indexed/ccc/arxiv-2611.21407-harness-leverage-across-model-size-a-ladder-of-f.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.21407-harness-leverage-across-model-size-a-ladder-of-f.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 56 |
 | Read status | read |

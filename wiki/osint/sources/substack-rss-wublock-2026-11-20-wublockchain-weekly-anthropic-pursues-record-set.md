@@ -17,7 +17,7 @@ updated: 2026-11-22
 | Title | WuBlockchain Weekly: Anthropic Pursues Record-Setting IPO, HK Adds Hyperliquid to Warning List, Solana Foundation Takes CoinGecko Stake |
 | Author | Wu Blockchain |
 | Type | newsletter, RSS, weekly digest |
-| Location | `research to be indexed/osint/substack-rss-wublock-2026-11-20-wublockchain-weekly-anthropic-pursues-record-set.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-20-wublockchain-weekly-anthropic-pursues-record-set.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-20 |
 | Read status | read |

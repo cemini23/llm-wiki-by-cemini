@@ -19,7 +19,7 @@ updated: 2026-11-22
 | Authors | Gene Chou (Apple, Cornell), Guandao Yang, Fujun Luan, Lars Mescheder, Wei Dong, Stephan R. Richter, Vladlen Koltun (Apple) |
 | Type | arXiv preprint, cs.CV |
 | arXiv | 2611.23226v1, 17 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.23226-fastframes-video-generation-at-interactive-laten.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.23226-fastframes-video-generation-at-interactive-laten.pdf` |
 | URL | https://arxiv.org/abs/2611.23226 |
 | Project page | https://apple-aiml-research.github.io/ml-fastframes/ |
 | Retrieved | 2026-11-22 |

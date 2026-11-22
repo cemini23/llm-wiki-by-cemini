@@ -13,7 +13,7 @@ updated: 2026-11-22
 | Authors | Rodion Akinzhala, Alexander Terentyev, Alexey Golubev, Yury Maximov |
 | Type | arXiv preprint, cs.LG |
 | arXiv | 2611.21344v1, 16 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.21344-tempo-regime-aware-operator-learning-with-locall.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.21344-tempo-regime-aware-operator-learning-with-locall.pdf` |
 | URL | https://arxiv.org/abs/2611.21344 |
 | Retrieved | 2026-11-22 |
 | Pages | 31 |

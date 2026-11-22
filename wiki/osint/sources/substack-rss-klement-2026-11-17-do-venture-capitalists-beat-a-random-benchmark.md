@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Do venture capitalists beat a random benchmark? |
 | Author | Joachim Klement (Klement on Investing) |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/osint/substack-rss-klement-2026-11-17-do-venture-capitalists-beat-a-random-benchmark.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-17-do-venture-capitalists-beat-a-random-benchmark.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-17 |
 | Read status | read |

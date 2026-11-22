@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | [AINews] Gemini 4 Neon: GDM's Opus/Sol Contender |
 | Author | Latent Space (AINews desk) |
 | Type | Newsletter (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-19-ainews-gemini-4-neon-gdms-opussol-contender.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-19-ainews-gemini-4-neon-gdms-opussol-contender.md` |
 | Retrieved | 2026-11-22 (published 2026-11-19) |
 | Pages | n/a |
 | Read status | read |

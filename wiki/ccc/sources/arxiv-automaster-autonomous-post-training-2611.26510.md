@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher |
 | Author | Guoxin Chen, Shuang Sun, Fanzhe Meng et al. (Renmin University of China) |
 | Type | arXiv paper (cs.CL), 2611.26510 |
-| Location | `research to be indexed/ccc/arxiv-2611.26510-automaster-autonomous-post-training-by-making-th.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.26510-automaster-autonomous-post-training-by-making-th.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 21 |
 | Read status | read |

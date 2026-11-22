@@ -18,7 +18,7 @@ updated: 2026-11-22
 | arXiv | 2611.20045 |
 | Pages | 31 |
 | File | `arxiv-2611.20045-security-of-deep-research-agents-attack-surface.pdf` |
-| Location | `research to be indexed/seo/arxiv-2611.20045-security-of-deep-research-agents-attack-surface.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.20045-security-of-deep-research-agents-attack-surface.pdf` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 

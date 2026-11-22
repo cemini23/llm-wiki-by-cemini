@@ -17,7 +17,7 @@ updated: 2026-11-22
 | Title | Turing Agent: Agentic Formal Verification for Mathematical Research |
 | Author | Yang Chen, Qianyi Wang et al. (Shanghai AI Lab, UESTC, HKU, SUFE) |
 | Type | arXiv paper (cs.AI), 2611.21299 |
-| Location | `research to be indexed/ccc/arxiv-2611.21299-turing-agent-agentic-formal-verification-for-mat.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.21299-turing-agent-agentic-formal-verification-for-mat.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 31 |
 | Read status | read |

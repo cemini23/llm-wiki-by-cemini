@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | [AINews] Anthropic successfully completes largest IPO in history, valued at $1.5T |
 | Author | Latent Space (AINews desk) |
 | Type | Newsletter (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-20-ainews-anthropic-successfully-completes-largest.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-20-ainews-anthropic-successfully-completes-largest.md` |
 | Retrieved | 2026-11-22 (published 2026-11-20) |
 | Pages | n/a |
 | Read status | read |

@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | October 2026 Exchange Derivatives Volume Report: total $3.75 trillion, MoM up 3.7%, futures/spot 6.01x |
 | Author | Wu Blockchain |
 | Type | newsletter, RSS, data report |
-| Location | `research to be indexed/osint/substack-rss-wublock-2026-11-18-october-2026-exchange-derivatives-volume-report.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-18-october-2026-exchange-derivatives-volume-report.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-18 |
 | Read status | read |

@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | A joint framework for SPX, VIX and VXX |
 | Author | Martino Grasselli, Andrea Stanghellini, Sara Svaluto-Ferro |
 | Type | arXiv preprint, q-fin.MF |
-| Location | `research to be indexed/osint/arxiv-2611.25047-a-joint-framework-for-spx-vix-and-vxx.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.25047-a-joint-framework-for-spx-vix-and-vxx.pdf` |
 | Retrieved | 2026-11-22 |
 | arXiv | 2611.25047v1, 18 Nov 2026 |
 | Pages | 38 |

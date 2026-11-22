@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | [AINews] Riemann Hypothesis proved...twice independently |
 | Author | Latent Space (AINews desk) |
 | Type | Newsletter (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-21-ainews-riemann-hypothesis-provedtwice-independen.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-21-ainews-riemann-hypothesis-provedtwice-independen.md` |
 | Retrieved | 2026-11-22 (published 2026-11-21) |
 | Pages | n/a |
 | Read status | read |

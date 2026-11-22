@@ -17,7 +17,7 @@ updated: 2026-11-22
 | Title | Is Kalshi Worth As Much As Robinhood? |
 | Author | Event Horizon (nexteventhorizon.substack.com) |
 | Type | newsletter, RSS, with briefing and volume table |
-| Location | `research to be indexed/osint/substack-rss-event-horizon-2026-11-17-is-kalshi-worth-as-much-as-robinhood.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-17-is-kalshi-worth-as-much-as-robinhood.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-17 |
 | Read status | read |

@@ -20,7 +20,7 @@ updated: 2026-11-22
 | Authors | Viet K. Nguyen, Mohammad I. Husain |
 | Affiliation | California State Polytechnic University, Pomona |
 | Type | arXiv:2611.23202v1 [cs.AI], 17 November 2026, 13 pages |
-| Location | `research to be indexed/game-dev/arxiv-2611.23202-agent-trust-infrastructure-ati-a-federated-ident.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2611.23202-agent-trust-infrastructure-ati-a-federated-ident.pdf` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 | Licence | Apache-2.0 |

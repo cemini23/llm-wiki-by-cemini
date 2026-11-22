@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | Software factories and code reviews with Harjot Gill |
 | Author | Gergely Orosz (The Pragmatic Engineer), with Harjot Gill |
 | Type | Newsletter podcast recap (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-pragmatic-engineer-2026-11-18-software-factories-and-code-reviews-with-harjot.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-pragmatic-engineer-2026-11-18-software-factories-and-code-reviews-with-harjot.md` |
 | Retrieved | 2026-11-22 (published 2026-11-18) |
 | Pages | n/a |
 | Read status | read |

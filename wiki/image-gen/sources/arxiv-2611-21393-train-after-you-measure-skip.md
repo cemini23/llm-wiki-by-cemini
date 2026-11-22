@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Authors | Federico Lucca (independent researcher, Trento, Italy) |
 | Type | arXiv preprint, cs.CL |
 | arXiv | 2611.21393v1, 16 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.21393-train-after-you-measure-a-pre-registered-learnin.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.21393-train-after-you-measure-a-pre-registered-learnin.pdf` |
 | URL | https://arxiv.org/abs/2611.21393 |
 | Retrieved | 2026-11-22 |
 | Pages | 9 |

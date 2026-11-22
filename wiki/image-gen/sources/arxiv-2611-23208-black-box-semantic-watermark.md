@@ -19,7 +19,7 @@ updated: 2026-11-22
 | Authors | Aviv Yossef, Or Patashnik, Or Zamir (Tel Aviv University) |
 | Type | arXiv preprint, cs.LG |
 | arXiv | 2611.23208v1, 17 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.23208-distortion-free-semantic-watermarks-for-black-bo.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.23208-distortion-free-semantic-watermarks-for-black-bo.pdf` |
 | URL | https://arxiv.org/abs/2611.23208 |
 | Code | https://github.com/avivyossef/distortion-free-semantic-watermark |
 | Retrieved | 2026-11-22 |

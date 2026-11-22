@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Quantum Calibration of Local-Volatility Surfaces from Sparse Option Quotes |
 | Author | Kentaro Hoshisashi (UCL) |
 | Type | arXiv preprint, quantum computing / computational finance |
-| Location | `research to be indexed/osint/arxiv-2611.25344-quantum-calibration-of-local-volatility-surfaces.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.25344-quantum-calibration-of-local-volatility-surfaces.pdf` |
 | Retrieved | 2026-11-22 |
 | arXiv | 2611.25344v1 |
 | Pages | 7 |

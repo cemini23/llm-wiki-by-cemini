@@ -17,7 +17,7 @@ updated: 2026-11-22
 | Title | Scientific Coding with Large Language Models: Evidence from Finite Element Analysis |
 | Author | Erfan Hamdi, Joel Shor, Emma Lejeune (Boston University; Allen Institute) |
 | Type | arXiv paper (cs.SE), 2611.21176 |
-| Location | `research to be indexed/ccc/arxiv-2611.21176-scientific-coding-with-large-language-models-evi.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.21176-scientific-coding-with-large-language-models-evi.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 28 |
 | Read status | read |

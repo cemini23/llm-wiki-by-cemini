@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | Hillstone |
 | Author | Kris Abdelmessih (Moontower Meta) |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/osint/substack-rss-moontower-2026-11-22-hillstone.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-moontower-2026-11-22-hillstone.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-22 |
 | Read status | read |

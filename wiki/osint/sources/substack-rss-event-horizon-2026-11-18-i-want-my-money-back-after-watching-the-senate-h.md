@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | I Want My Money Back After Watching The Senate Hearing On CFTC Nominees |
 | Author | Event Horizon (nexteventhorizon.substack.com) |
 | Type | newsletter, RSS, with briefing and volume table |
-| Location | `research to be indexed/osint/substack-rss-event-horizon-2026-11-18-i-want-my-money-back-after-watching-the-senate-h.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-18-i-want-my-money-back-after-watching-the-senate-h.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-18 |
 | Read status | read |

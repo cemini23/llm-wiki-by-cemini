@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Cloudflare Joins the Jevolution and Labels Itself a Neolab |
 | Author | Latent Space (swyx, Alessio Fanelli) |
 | Type | Newsletter (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-17-cloudflare-joins-the-jevolution-and-labels-itsel.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-17-cloudflare-joins-the-jevolution-and-labels-itsel.md` |
 | Retrieved | 2026-11-22 (published 2026-11-17) |
 | Pages | n/a |
 | Read status | read |

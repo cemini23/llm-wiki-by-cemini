@@ -14,7 +14,7 @@ updated: 2026-11-22
 | Title | The Pulse: Is Amazon's writing culture collapsing because of AI? |
 | Author | Gergely Orosz (The Pragmatic Engineer) |
 | Type | Newsletter (RSS teaser, free tier) |
-| Location | `research to be indexed/newsletter-rss-pragmatic-engineer-2026-11-19-the-pulse-is-amazons-writing-culture-collapsing.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-pragmatic-engineer-2026-11-19-the-pulse-is-amazons-writing-culture-collapsing.md` |
 | Retrieved | 2026-11-22 (published 2026-11-19) |
 | Pages | n/a |
 | Read status | read |

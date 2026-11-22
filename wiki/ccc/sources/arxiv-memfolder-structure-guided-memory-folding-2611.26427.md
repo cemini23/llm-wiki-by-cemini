@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | MemFolder: Structure-Guided Memory Folding for Efficient Agent Memory Management |
 | Author | Xuyang Liu, Chenwen Lu et al. (Sichuan, Fudan, SYSU, ZJU, SJTU) |
 | Type | arXiv paper (cs.CL), 2611.26427 |
-| Location | `research to be indexed/ccc/arxiv-2611.26427-memfolder-structure-guided-memory-folding-for-ef.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.26427-memfolder-structure-guided-memory-folding-for-ef.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 24 |
 | Read status | read |

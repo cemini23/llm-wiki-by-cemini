@@ -15,7 +15,7 @@ updated: 2026-11-22
 | arXiv | 2611.25891 |
 | Pages | 7 |
 | File | `arxiv-2611.25891-meta-rtl-evolving-agent-harnesses-for-rtl-optimi.pdf` |
-| Location | `research to be indexed/seo/arxiv-2611.25891-meta-rtl-evolving-agent-harnesses-for-rtl-optimi.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/arxiv-2611.25891-meta-rtl-evolving-agent-harnesses-for-rtl-optimi.pdf` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 

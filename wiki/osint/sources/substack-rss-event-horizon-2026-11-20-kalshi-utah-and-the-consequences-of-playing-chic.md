@@ -19,7 +19,7 @@ updated: 2026-11-22
 | Title | Kalshi, Utah, And The Consequences Of Playing Chicken With States |
 | Author | Event Horizon (nexteventhorizon.substack.com) |
 | Type | newsletter, RSS teaser, with briefing and volume table |
-| Location | `research to be indexed/osint/substack-rss-event-horizon-2026-11-20-kalshi-utah-and-the-consequences-of-playing-chic.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-20-kalshi-utah-and-the-consequences-of-playing-chic.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-20 |
 | Read status | read |

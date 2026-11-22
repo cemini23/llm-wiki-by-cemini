@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents |
 | Author | Brian T. Weston, Alondra Torres Contreras, Aldair E. Gongora (LLNL) |
 | Type | arXiv paper (cs.AI), 2611.21541 |
-| Location | `research to be indexed/ccc/arxiv-2611.21541-sciresearch-eval-evaluating-scientific-judgment.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.21541-sciresearch-eval-evaluating-scientific-judgment.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 28 |
 | Read status | read |

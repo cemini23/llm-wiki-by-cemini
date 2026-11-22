@@ -20,7 +20,7 @@ updated: 2026-11-22
 | Published | 2026-11-17 |
 | URL | https://sparktoro.com/blog/we-analyzed-11800-chatgpt-prompts-from-12000-users-to-answer-how-do-americans-use-ai-tools-in-2026/ |
 | File | `newsletter-rss-sparktoro-2026-11-17-we-analyzed-11800-chatgpt-prompts-from-12000-use.md` |
-| Location | `research to be indexed/newsletter-rss-sparktoro-2026-11-17-we-analyzed-11800-chatgpt-prompts-from-12000-use.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/seo/newsletter-rss-sparktoro-2026-11-17-we-analyzed-11800-chatgpt-prompts-from-12000-use.md` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 

@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Scaling Linear's GTM to $100M ARR — Cristina Cordova, COO |
 | Author | Latent Space (swyx, Alessio Fanelli) |
 | Type | Newsletter podcast transcript (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-19-scaling-linears-gtm-to-100m-arr-cristina-cordova.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-19-scaling-linears-gtm-to-100m-arr-cristina-cordova.md` |
 | Retrieved | 2026-11-22 (published 2026-11-19) |
 | Pages | n/a |
 | Read status | read |

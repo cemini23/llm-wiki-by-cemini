@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Inference engineering for software engineers |
 | Author | Gergely Orosz (The Pragmatic Engineer) |
 | Type | Newsletter (RSS teaser, free tier) |
-| Location | `research to be indexed/newsletter-rss-pragmatic-engineer-2026-11-17-inference-engineering-for-software-engineers.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-pragmatic-engineer-2026-11-17-inference-engineering-for-software-engineers.md` |
 | Retrieved | 2026-11-22 (published 2026-11-17) |
 | Pages | n/a |
 | Read status | read |

@@ -19,7 +19,7 @@ updated: 2026-11-22
 | Authors | Aria Dadnavi, Matin Jamshidi, Kian Khatibi, Shahriar Karimi Makhsous, Saina Najafi Shabestari, Seyed Sobhan Hosseini Hajibekandeh, Zahra Mahaam, Reyhane Mohasseli, Ghazal Ghoreishi, Amirhossein Gholizadeh Behbahani, Mohammad Hossein Moaiyeri |
 | Affiliation | Team Auriga, Faculty of Electrical Engineering, Shahid Beheshti University, Tehran, Iran |
 | Type | arXiv:2611.22852v1 [cs.RO], 17 November 2026, 25 pages |
-| Location | `research to be indexed/3d-printing/arxiv-2611.22852-technical-report-of-mobile-manipulator-robot-for.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.22852-technical-report-of-mobile-manipulator-robot-for.pdf` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 

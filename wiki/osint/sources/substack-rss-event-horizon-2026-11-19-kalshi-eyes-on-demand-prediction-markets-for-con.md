@@ -18,7 +18,7 @@ updated: 2026-11-22
 | Title | Kalshi Eyes On-Demand Prediction Markets For Concerts, Weather, And Maybe Flights |
 | Author | Event Horizon (nexteventhorizon.substack.com) |
 | Type | newsletter, RSS, with briefing and volume table |
-| Location | `research to be indexed/osint/substack-rss-event-horizon-2026-11-19-kalshi-eyes-on-demand-prediction-markets-for-con.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-19-kalshi-eyes-on-demand-prediction-markets-for-con.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-19 |
 | Read status | read |

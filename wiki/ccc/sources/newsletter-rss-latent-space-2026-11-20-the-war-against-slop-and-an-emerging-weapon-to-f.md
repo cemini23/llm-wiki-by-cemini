@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | The War Against Slop and an Emerging Weapon to Fight it: Formal Verification |
 | Author | Latent Space (swyx, Alessio Fanelli) |
 | Type | Newsletter article (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-20-the-war-against-slop-and-an-emerging-weapon-to-f.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-20-the-war-against-slop-and-an-emerging-weapon-to-f.md` |
 | Retrieved | 2026-11-22 (published 2026-11-20) |
 | Pages | n/a |
 | Read status | read |

@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | Weekly Project Updates: Ethereum Glamsterdam Upgrade Delayed, Solana 2027 Roadmap, First Tokenized Stock On-Chain Dividend |
 | Author | Wu Blockchain |
 | Type | newsletter, RSS, weekly digest |
-| Location | `research to be indexed/osint/substack-rss-wublock-2026-11-21-weekly-project-updates-ethereum-glamsterdam-upgr.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-21-weekly-project-updates-ethereum-glamsterdam-upgr.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-21 |
 | Read status | read |

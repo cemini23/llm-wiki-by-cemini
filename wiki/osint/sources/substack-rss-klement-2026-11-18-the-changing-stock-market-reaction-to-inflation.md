@@ -14,7 +14,7 @@ updated: 2026-11-22
 | Title | The changing stock market reaction to inflation surprises |
 | Author | Joachim Klement (Klement on Investing) |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/osint/substack-rss-klement-2026-11-18-the-changing-stock-market-reaction-to-inflation.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-18-the-changing-stock-market-reaction-to-inflation.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-18 |
 | Read status | read |

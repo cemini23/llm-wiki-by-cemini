@@ -14,7 +14,7 @@ updated: 2026-11-22
 | Title | Are Equities a buy or falling knife here? |
 | Author | Capital Flows Research |
 | Type | newsletter, RSS teaser (paywalled) |
-| Location | `research to be indexed/osint/substack-rss-capital-flows-2026-11-17-are-equities-a-buy-or-falling-knife-here.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-capital-flows-2026-11-17-are-equities-a-buy-or-falling-knife-here.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-17 |
 | Read status | read |

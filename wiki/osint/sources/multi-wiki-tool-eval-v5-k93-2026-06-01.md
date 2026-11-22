@@ -40,7 +40,7 @@ clusters: [tool-evaluation]
 |-------|-------|
 | Title | Cemini Multi-Wiki Link Evaluation Report (v5) |
 | URLs | 34 |
-| Location | `research to be indexed/Tool Evaluation and Wiki Fit.docx` |
+| Location | _(not on egress — checked 2026-11-22; the original docx is in no cold-store domain)_ |
 | sha256 | `c6eec4cb060d75f7…` (3,024,438 bytes) |
 | License spot-check | `.local/reports/license-spot-check-2026-06-01-1738.txt` |
 | Read | 2026-06-01 deep-read (tiers + gh api overrides) |

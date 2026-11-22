@@ -14,7 +14,7 @@ updated: 2026-11-22
 | Title | Why Building Trust Through Real People Stands the Test of Time in SEO & AI Search |
 | Author | Lily Ray (Lily Ray on SEO) |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/osint/substack-rss-lily-ray-2026-11-19-why-building-trust-through-real-people-stands-th.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-lily-ray-2026-11-19-why-building-trust-through-real-people-stands-th.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-19 |
 | Read status | read |

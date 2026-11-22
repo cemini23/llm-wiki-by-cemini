@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Building Visual Intelligence — Andreas Blattmann & Dustin Podell, Black Forest Labs |
 | Author | Latent Space (swyx, Alessio Fanelli) |
 | Type | Newsletter podcast recap (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-16-bfl-web-archive.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-16-bfl-web-archive.md` |
 | Retrieved | 2026-11-22 (published 2026-11-16) |
 | Pages | n/a |
 | Read status | read |

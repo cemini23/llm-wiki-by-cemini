@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Mind2Act-World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation |
 | Author | Yuzhi Huang, Jie Wu, Fanding Huang et al. (THU, Cambridge, Oxford, Stanford, CMU and others) |
 | Type | arXiv benchmark paper, 2611.26444 |
-| Location | `research to be indexed/ccc/arxiv-2611.26444-mind2act-world-a-diagnostic-benchmark-for-embodi.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.26444-mind2act-world-a-diagnostic-benchmark-for-embodi.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 58 |
 | Read status | read |

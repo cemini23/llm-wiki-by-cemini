@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | What the last two bubbles tell us about the AI boom |
 | Author | Joachim Klement (Klement on Investing) |
 | Type | newsletter, RSS; links a Reuters op-ed (paywalled) |
-| Location | `research to be indexed/osint/substack-rss-klement-2026-11-18-what-the-last-two-bubbles-tell-us-about-the-ai-b.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-18-what-the-last-two-bubbles-tell-us-about-the-ai-b.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-18 |
 | Read status | read |

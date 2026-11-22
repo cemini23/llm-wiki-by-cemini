@@ -14,7 +14,7 @@ updated: 2026-11-22
 | Title | Vibe-Trading: Towards Agent-Native Trading |
 | Author | Haozhe Wu, Zhonghang Li, Chao Huang (University of Hong Kong) |
 | Type | arXiv technical report (cs.AI), 2611.24845 |
-| Location | `research to be indexed/ccc/arxiv-2611.24845-vibe-trading-towards-agent-native-trading.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.24845-vibe-trading-towards-agent-native-trading.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 16 |
 | Read status | read |

@@ -14,7 +14,7 @@ updated: 2026-11-22
 | Title | Who are you? The Personal Imitation Game |
 | Author | Muhammad Rizky Wellyanto, Hajara-Yasmin Isa et al. (UIUC) |
 | Type | arXiv paper (HCI), 2611.24888 |
-| Location | `research to be indexed/ccc/arxiv-2611.24888-who-are-you-the-personal-imitation-game.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.24888-who-are-you-the-personal-imitation-game.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 19 |
 | Read status | read |

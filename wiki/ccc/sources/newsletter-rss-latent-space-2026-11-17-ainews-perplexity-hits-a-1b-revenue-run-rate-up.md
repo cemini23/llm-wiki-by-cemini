@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | [AINews] Perplexity hits a $1B revenue run rate, up 4x in 2026 |
 | Author | Latent Space (AINews desk) |
 | Type | Newsletter (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-17-ainews-perplexity-hits-a-1b-revenue-run-rate-up.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-17-ainews-perplexity-hits-a-1b-revenue-run-rate-up.md` |
 | Retrieved | 2026-11-22 (published 2026-11-17) |
 | Pages | n/a |
 | Read status | read |

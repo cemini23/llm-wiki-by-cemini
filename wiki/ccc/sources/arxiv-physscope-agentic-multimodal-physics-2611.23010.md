@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | PhysScope: Agentic Multimodal Physics Reasoning with Grounded Visual Memory |
 | Author | Haoyang Liu, Kecheng Liang, Xinyu Li, Weixing Chen, Yang Liu (SYSU) |
 | Type | arXiv paper (cs.CV), 2611.23010 |
-| Location | `research to be indexed/ccc/arxiv-2611.23010-physscope-agentic-multimodal-physics-reasoning-w.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.23010-physscope-agentic-multimodal-physics-reasoning-w.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 31 |
 | Read status | read |

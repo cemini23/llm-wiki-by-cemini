@@ -17,7 +17,7 @@ updated: 2026-11-22
 | Title | Beyond Weight Updates: Evolving Agent Harnesses for Domain Specialization |
 | Author | BoHao Chen (independent) |
 | Type | arXiv paper (cs.AI), 2611.25380 |
-| Location | `research to be indexed/ccc/arxiv-2611.25380-beyond-weight-updates-evolving-agent-harnesses-f.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.25380-beyond-weight-updates-evolving-agent-harnesses-f.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 13 |
 | Read status | read |

@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Anthropic, AI Flows, and The Coming Hiking Cycle |
 | Author | Capital Flows Research |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/osint/substack-rss-capital-flows-2026-11-20-anthropic-ai-flows-and-the-coming-hiking-cycle.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-capital-flows-2026-11-20-anthropic-ai-flows-and-the-coming-hiking-cycle.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-20 |
 | Read status | read |

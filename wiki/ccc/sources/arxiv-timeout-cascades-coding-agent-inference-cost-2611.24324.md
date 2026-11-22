@@ -16,7 +16,7 @@ updated: 2026-11-22
 | Title | Reducing Inference Cost of Coding Agents with Timeout Cascades |
 | Author | Boxi Zhou, German Sviridov, Dmitrii Ustiugov, Haris Javaid (AMD, NTU) |
 | Type | arXiv paper (cs.AI), 2611.24324 |
-| Location | `research to be indexed/ccc/arxiv-2611.24324-reducing-inference-cost-of-coding-agents-with-ti.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.24324-reducing-inference-cost-of-coding-agents-with-ti.pdf` |
 | Retrieved | 2026-11-22 |
 | Pages | 10 |
 | Read status | read |

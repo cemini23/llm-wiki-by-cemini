@@ -21,7 +21,7 @@ updated: 2026-11-22
 | Authors | Silviu Pitis, Parand A. Alamdari, Jessica Tang, Toryn Q. Klassen, Sheila A. McIlraith |
 | Affiliation | University of Toronto, Vector Institute |
 | Type | arXiv:2611.23074v1 [cs.CL], 17 November 2026, 27 pages; NeurIPS 2026 |
-| Location | `research to be indexed/game-dev/arxiv-2611.23074-runtime-verification-of-multiple-natural-languag.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2611.23074-runtime-verification-of-multiple-natural-languag.pdf` |
 | Retrieved | 2026-11-22 |
 | Read status | read |
 | Code | https://github.com/spitis/vfm |

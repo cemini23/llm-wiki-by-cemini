@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | Taylor Swift kills people |
 | Author | Joachim Klement (Klement on Investing) |
 | Type | newsletter, RSS, satire |
-| Location | `research to be indexed/osint/substack-rss-klement-2026-11-20-taylor-swift-kills-people.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-20-taylor-swift-kills-people.md` |
 | Retrieved | 2026-11-22 |
 | Published | 2026-11-20 |
 | Read status | read |

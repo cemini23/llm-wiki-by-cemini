@@ -15,7 +15,7 @@ updated: 2026-11-22
 | Title | [AINews] GPT-6.2 Astra, the #2 frontier model, is better and 20%-600% cheaper, but has mixed reviews |
 | Author | Latent Space (AINews desk) |
 | Type | Newsletter (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-18-ainews-gpt-62-astra-the-2-frontier-model-is-bett.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-18-ainews-gpt-62-astra-the-2-frontier-model-is-bett.md` |
 | Retrieved | 2026-11-22 (published 2026-11-18) |
 | Pages | n/a |
 | Read status | read |
