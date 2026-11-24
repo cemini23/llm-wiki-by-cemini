@@ -48,6 +48,17 @@ same frame, or the comparison means nothing.
 Extract. The interface shape and the operation set are the value; the skill wrapper
 itself is blocked by the Workstation Harness Freeze.
 
+### Merged into the deferred clip blueprint, 2026-11-24
+
+This operation set now sits inside one deferred item with
+@entities/tools/autoclip.md. The standalone `tools/clip-pipeline/` wrapper serves two
+consumers from the same FFmpeg layer: marketing clips, and the before/after frame
+comparison used for render acceptance.
+
+**Status: DEFERRED / ON-DEMAND**, triggered by the first recorded devlog or Basgiath
+showcase. The frame-comparison half needs no scoring or subtitles, so it can ship
+first when the trigger arrives.
+
 ## Snippets
 
 > Local video editor for coding agents: 42 FFmpeg tools with a machine-readable
