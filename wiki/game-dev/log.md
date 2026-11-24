@@ -1,3 +1,7 @@
+## [2026-11-24] ingest | Ingest Deep Research link evaluation batch E routed to game-dev (2026-11-24)
+
+- @entities/tools/autoclip.md
+
 ## [2026-11-22] ingest | Ingest Deep Research link evaluation batch D routed to game-dev (2026-11-22)
 
 - @entities/tools/fast-anything.md

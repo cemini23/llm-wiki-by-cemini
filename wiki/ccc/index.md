@@ -1444,6 +1444,7 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [Design and motion skill cluster — what six 2026-11 agent skills actually encode](concepts/design-skill-cluster-2026-11.md) | (added by wiki_finalize_batch) | draft |
 | [Repeated-correction mining — turning what you keep retyping into a rule](concepts/repeated-correction-mining.md) | (added by wiki_finalize_batch) | draft |
 | [Agent harness tooling, November 2026 — four Context-grade items and what they encode](concepts/agent-harness-tooling-2026-11.md) | (added by wiki_finalize_batch) | draft |
+| [Agent runtime tooling, November 2026 — SRE, tenant isolation, and prompt-enforced boundaries](concepts/agent-runtime-tooling-2026-11.md) | (added by wiki_finalize_batch) | draft |
 
 ## Sources
 
@@ -1656,3 +1657,4 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 
 - [stitch-skills — design-to-code agent skills for Stitch MCP (Apache-2.0)](entities/stitch-skills.md) — cross-wiki stub routed from ingest — `cross-wiki`
 - [bot-browser — real Chrome with a human login handoff (MIT)](entities/bot-browser.md) — cross-wiki stub routed from ingest — `cross-wiki`
+- [whatsflare — WhatsApp gateway on Cloudflare Workers (MIT)](entities/whatsflare.md) — cross-wiki stub routed from ingest — `cross-wiki`

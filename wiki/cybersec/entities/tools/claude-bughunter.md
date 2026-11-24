@@ -4,7 +4,8 @@ type: entity
 related:
   - "@osint-wiki/sources/2026-11-16-deep-research-link-eval-agentic-harnesses.md"
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
-updated: 2026-11-16
+  - "@osint-wiki/sources/2026-11-24-deep-research-link-eval-runtime-tooling.md"
+updated: 2026-11-24
 ---
 
 ## Raw Concept
@@ -60,6 +61,21 @@ therefore cannot be queued. [CONFIRMED — `Projects/` listing 2026-11-16]
 ### Status
 
 Extract, reference only. Queued nowhere until the operator lab repository exists.
+
+### Re-graded 2026-11-24 — Context
+
+The 2026-11-24 batch re-evaluated this URL and graded it **Context**. The item is still
+blocked: the operator lab repository does not exist on this machine, so no gap can be
+checked. [CONFIRMED — `Projects/` listing 2026-11-24]
+
+The report names four specific artifacts worth indexing as reference, and they are more
+concrete than the earlier batch: a **7-question validation gate**, **VRT severity
+mapping**, a **scope-enforced workflow structure**, and a **disclosed-report
+taxonomy**. The last two are the durable ones — scope enforcement is what separates
+authorised testing from its opposite, and a report taxonomy is what makes a finding
+submittable.
+
+See @osint-wiki/sources/2026-11-24-deep-research-link-eval-runtime-tooling.md.
 
 ## Snippets
 

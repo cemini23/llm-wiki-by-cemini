@@ -378,5 +378,6 @@ Catalog of all wiki pages. Updated on each ingest.
 | [ffmpeg-skill — 42 local FFmpeg operations for a coding agent (MIT)](entities/tools/ffmpeg-skill.md) | (added by wiki_finalize_batch) | draft |
 | [fast-anything — profile, port, and prove parity for hot functions (MIT)](entities/tools/fast-anything.md) | (added by wiki_finalize_batch) | draft |
 | [landmines — Oxlint rules that stop a test lying (MIT)](entities/tools/landmines-lint.md) | (added by wiki_finalize_batch) | draft |
+| [autoclip — long video to vertical clips, locally (MIT)](entities/tools/autoclip.md) | (added by wiki_finalize_batch) | draft |
 
 - [modern-web-guidance — modern web platform skill for agents (Apache-2.0)](entities/modern-web-guidance.md) — cross-wiki stub routed from ingest — `cross-wiki`

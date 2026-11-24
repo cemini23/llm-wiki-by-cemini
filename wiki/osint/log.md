@@ -1,3 +1,7 @@
+## [2026-11-24] ingest | Ingest Deep Research link evaluation batch E (1 Extract, 9 Context, 7 Pass, 2 Watch, 1 false UNAVAILABLE)
+
+- @sources/2026-11-24-deep-research-link-eval-runtime-tooling.md
+
 ## [2026-11-22] ingest | Ingest Deep Research link evaluation batch D (4 Integrate, 13 Context, 6 Pass, 1 Watch)
 
 - @concepts/agent-link-evaluation-gates-v1013.md

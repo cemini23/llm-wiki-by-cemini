@@ -5,9 +5,9 @@ related:
   - "@osint-wiki/sources/2026-11-22-deep-research-link-eval-abliterated-harness.md"
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
   - "@cybersecurity-wiki/concepts/open-weight-abliterated-models-2026-11.md"
+  - concepts/local-inference-runtimes.md
 updated: 2026-11-22
 ---
-
 ## Raw Concept
 
 Surfaced by

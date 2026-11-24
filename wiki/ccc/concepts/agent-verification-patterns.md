@@ -9,9 +9,9 @@ related:
   - concepts/agent-completion-verification-gates.md
   - @game-dev-wiki/entities/tools/fast-anything.md
   - @game-dev-wiki/entities/tools/landmines-lint.md
+  - concepts/agent-runtime-tooling-2026-11.md
 updated: 2026-11-22
 ---
-
 ## Raw Concept
 
 Two sources from the 2026-11-17 batch describe how to check an agent's work without

@@ -49,6 +49,7 @@ Four arXiv PDFs and ten newsletters. Two papers have no project lane and say so.
 | [Deep Research link evaluation — game engine, media verification, container ops (2026-11-16)](sources/2026-11-16-deep-research-link-eval-game-media.md) | (added by wiki_finalize_batch) | draft |
 | [Deep Research link evaluation — design and motion skills, agent memory and cost control, verification (2026-11-17)](sources/2026-11-17-deep-research-link-eval-design-motion-harness.md) | (added by wiki_finalize_batch) | draft |
 | [Deep Research link evaluation — abliterated open-weight models, coding harnesses, offensive AI (2026-11-22)](sources/2026-11-22-deep-research-link-eval-abliterated-harness.md) | (added by wiki_finalize_batch) | draft |
+| [Deep Research link evaluation — AI SRE and security agents, local inference, video repurposing (2026-11-24)](sources/2026-11-24-deep-research-link-eval-runtime-tooling.md) | (added by wiki_finalize_batch) | draft |
 
 ### Ingest 2026-10-27 (macro + quant wave)
 Inbox sweep 2026-10-27: 15 OSINT pages. Tail-vol sampling rules for vol-surface forecasting, Sornette on transient supercritical Hawkes episodes, and the CoreWeave credit stress that moved the whole AI complex.

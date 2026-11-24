@@ -1,3 +1,8 @@
+## [2026-11-24] ingest | Ingest Deep Research link evaluation batch E routed to cybersec (2026-11-24)
+
+- @concepts/secret-masking-regression-tests.md
+- @entities/tools/claude-bughunter.md
+
 ## [2026-11-22] ingest | Ingest Deep Research link evaluation batch D routed to cybersec (2026-11-22)
 
 - @concepts/api-security-audit-rubric.md

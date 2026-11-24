@@ -11,9 +11,9 @@ related:
   - "@game-dev-wiki/entities/tools/landmines-lint.md"
   - "@image-gen-wiki/entities/models/inkling-2-mini.md"
   - "@cybersecurity-wiki/concepts/api-security-audit-rubric.md"
+  - sources/2026-11-24-deep-research-link-eval-runtime-tooling.md
 updated: 2026-11-22
 ---
-
 ## Raw Concept
 
 - **Title:** Cemini Multi-Wiki Link Evaluation (batch D)

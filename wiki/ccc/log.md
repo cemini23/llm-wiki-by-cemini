@@ -1,3 +1,8 @@
+## [2026-11-24] ingest | Ingest Deep Research link evaluation batch E routed to ccc (2026-11-24)
+
+- @concepts/agent-runtime-tooling-2026-11.md
+- @entities/whatsflare.md
+
 ## [2026-11-22] ingest | Ingest Deep Research link evaluation batch D routed to ccc (2026-11-22)
 
 - @concepts/agent-harness-tooling-2026-11.md
@@ -3308,3 +3313,8 @@ Cross-wiki stub routed from `@osint-wiki/sources/2026-11-17-deep-research-link-e
 - `concepts/formal-verification-faithfulness-gap.md`, `concepts/eval-integrity-minimum-standards.md` — **updated** backlinks.
 - Both claims need independent review. [NEEDS VERIFICATION 2026-11-22]
 - Routing: wiki-only; no distribution.
+
+## [2026-11-24] cross-wiki route | whatsflare — WhatsApp gateway on Cloudflare Workers (MIT)
+
+Cross-wiki stub routed from `@osint-wiki/sources/2026-11-24-deep-research-link-eval-runtime-tooling.md`.
+- Created wiki/entities/whatsflare.md (stub)

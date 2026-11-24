@@ -29,8 +29,15 @@ related:
   - @image-gen-wiki/entities/models/inkling-2-mini.md
   - @ccc-wiki/concepts/agent-harness-tooling-2026-11.md
   - @cybersecurity-wiki/concepts/api-security-audit-rubric.md
-updated: 2026-11-22
+  - sources/2026-11-24-deep-research-link-eval-runtime-tooling.md
+  - @ccc-wiki/concepts/agent-runtime-tooling-2026-11.md
+  - @ccc-wiki/entities/whatsflare.md
+  - @game-dev-wiki/entities/tools/autoclip.md
+  - @cybersecurity-wiki/concepts/secret-masking-regression-tests.md
+  - @image-gen-wiki/concepts/local-inference-runtimes.md
+updated: 2026-11-24
 ---
+
 ## Raw Concept
 
 The question this page answers: **when an evaluation report grades a URL Integrate or
@@ -38,7 +45,8 @@ Extract, what else must be true before the item enters a project upgrade queue?*
 
 Raised by the two 2026-11-16 Deep Research batches, which together graded 16 winners
 out of 40 URLs. Extended by the 2026-11-17 batch, where the freeze produced zero
-winners and a dead-link verdict proved to be wrong.
+winners and a dead-link verdict proved to be wrong, and by the 2026-11-24 batch, where
+the same false-UNAVAILABLE error repeated.
 
 ## Narrative
 

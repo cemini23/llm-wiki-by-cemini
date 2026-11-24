@@ -4,11 +4,11 @@ type: concept
 related:
   - "@osint-wiki/sources/2026-11-22-deep-research-link-eval-abliterated-harness.md"
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
+  - concepts/secret-masking-regression-tests.md
 maturity: draft
 created: 2026-11-22
 updated: 2026-11-22
 ---
-
 ## Raw Concept
 
 Routed from
