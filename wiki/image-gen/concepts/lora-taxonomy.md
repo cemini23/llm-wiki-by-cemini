@@ -5,6 +5,7 @@ tags: [lora, lycoris, parameter-efficient-finetuning, training, character-isolat
 keywords: [LoRA, LoCon, LoHA, LoKr, DoRA, LyCORIS, low-rank adaptation, factor=4, magnitude direction decomposition, kronecker product, hadamard product]
 related:
   - concepts/local-likeness-lora-lessons.md
+  - sources/arxiv-2611-21344-tempo-pde-operator-learning-skip.md
   - sources/synthetic-character-consistency-survey.md
   - concepts/persona-consistency-methods.md
   - entities/training-tools/kohya-sd-scripts.md
@@ -160,6 +161,24 @@ For multi-angle datasets (Section 4 of @sources/synthetic-character-consistency-
 | Musubi Tuner | yes | no | no | partial | no |
 
 Kohya sd-scripts is the most LyCORIS-complete trainer; OneTrainer matches it with a GUI. ai-toolkit prioritises FLUX/Wan first-class with rank/DoRA support but thinner on the older variants.
+
+### One basis or many — the regime argument
+
+TEMPO (arXiv:2611.21344) is a scientific-ML paper with no image-gen content, and it is
+skipped. One result in it still bears on adapter strategy, held at `[TENTATIVE]`.
+
+The paper shows that a single global low-rank basis must compromise when the data
+spans **qualitatively different regimes**, and that a small number of local bases —
+one per regime, with a gate that routes each input — reconstructs better than one
+global basis of the same total rank. It proves that per-regime rank-K bases never
+increase reconstruction error against a single global rank-K basis.
+
+That is the same trade this page describes from the other side. A rank-32 LoRA
+covering every look of a persona must compromise; several narrow adapters selected at
+inference do not. The paper supplies the argument for the "several narrow adapters"
+branch, not a recipe. There is no diffusion experiment in it.
+
+See @sources/arxiv-2611-21344-tempo-pde-operator-learning-skip.md.
 
 ## Snippets
 

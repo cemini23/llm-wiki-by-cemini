@@ -1,8 +1,9 @@
 ---
 title: "TEMPO: regime-aware PDE operator learning (arXiv:2611.21344)"
 type: source
-related: []
-updated: 2026-11-22
+related:
+  - concepts/lora-taxonomy.md
+updated: 2026-11-24
 ---
 
 ## Raw Concept
@@ -42,6 +43,10 @@ Six PDE benchmarks: Burgers' flow, Sod shock tubes, Coanda flow, Darcy flow, Nav
 The method is a mixture-of-experts reduced-order model for physics simulation. It has no diffusion transformer, no generative image model, and no adapter training. The regime-discovery idea is a clustering method and is not unique to this domain.
 
 One transferable idea, held at TENTATIVE: a mixture of local bases beats one global basis when the data has qualitatively different regimes. This is the same intuition as mixture-of-experts layers. It does not change any image-gen workflow.
+
+That idea is now filed where it is usable, as the regime argument on
+@concepts/lora-taxonomy.md: several narrow adapters selected at inference versus one
+rank-32 adapter covering every look.
 
 ## Dead Ends
 
