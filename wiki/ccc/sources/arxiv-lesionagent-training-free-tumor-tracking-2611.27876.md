@@ -5,6 +5,8 @@ related:
   - concepts/agent-harness-operational-definition.md
   - concepts/agent-completion-verification-gates.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

@@ -7,6 +7,7 @@ related:
   - "@cybersecurity-wiki/concepts/open-weight-abliterated-models-2026-11.md"
   - concepts/local-inference-runtimes.md
 updated: 2026-11-22
+maturity: draft
 ---
 ## Raw Concept
 

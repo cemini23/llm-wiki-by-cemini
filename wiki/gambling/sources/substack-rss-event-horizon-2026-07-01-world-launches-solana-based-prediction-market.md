@@ -10,6 +10,7 @@ updated: 2026-07-05
 cross-wiki-source: @osint-wiki/sources/substack-rss-event-horizon-2026-07-01-world-launches-solana-based-prediction-market.md
 related:
   - @osint-wiki/sources/substack-rss-event-horizon-2026-07-01-world-launches-solana-based-prediction-market.md
+read_status: read
 ---
 
 # Event Horizon — World Launches Solana-Based Prediction Market

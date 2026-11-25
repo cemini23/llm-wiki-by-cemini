@@ -7,6 +7,8 @@ related:
   - concepts/token-economics-and-prompt-caching.md
   - entities/skills/route.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

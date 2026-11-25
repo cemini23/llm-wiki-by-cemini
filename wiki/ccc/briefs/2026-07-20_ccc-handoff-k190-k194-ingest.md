@@ -5,6 +5,7 @@ tags: [brief, handoff, k190, k191, k192, k193, k194]
 related:
   - sources/brief-k190-k194-mcp-gateway-toolverse-tars-2026-07-20.md
 created: 2026-07-20
+maturity: draft
 ---
 
 ## Target

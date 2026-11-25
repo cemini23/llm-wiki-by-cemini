@@ -9,6 +9,8 @@ related:
   - concepts/local-pack-rankings.md
   - concepts/citation-building.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

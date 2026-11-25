@@ -6,6 +6,8 @@ related:
   - concepts/token-economics-and-prompt-caching.md
   - concepts/harness-layer-competition-cursor-claude-perplexity.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

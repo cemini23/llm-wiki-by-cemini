@@ -6,6 +6,7 @@ related:
   - concepts/crypto-custody-single-point-of-failure.md
   - entities/tools/agentic-trading.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

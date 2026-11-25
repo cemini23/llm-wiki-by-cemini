@@ -11,6 +11,7 @@ related:
   - sources/newsletter-rss-sparktoro-2026-11-24-new-feature-share-of-influence-lets-you-calculat.md
   - entities/tools/sparktoro.md
 updated: 2026-11-25
+maturity: draft
 ---
 
 ## Raw Concept

@@ -16,6 +16,7 @@ related:
   - sources/newsletter-rss-latent-space-2026-11-02-legal-agents-legora-2026-11-03.md
   - sources/newsletter-rss-latent-space-2026-11-10-designing-for-agents-aeo-2026-11-11.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

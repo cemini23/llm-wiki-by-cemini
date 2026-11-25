@@ -11,6 +11,7 @@ related:
   - sources/substack-rss-secpro-2026-10-24-secpro-ciso-update-episode-2.md
   - sources/substack-rss-secpro-2026-10-26-php2shell-another-emergency-another-scramble-to.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

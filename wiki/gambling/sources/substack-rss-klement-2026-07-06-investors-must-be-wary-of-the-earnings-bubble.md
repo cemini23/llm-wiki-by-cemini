@@ -10,6 +10,7 @@ updated: 2026-07-06
 cross-wiki-source: @osint-wiki/sources/substack-rss-klement-2026-07-06-investors-must-be-wary-of-the-earnings-bubble.md
 related:
   - @osint-wiki/sources/substack-rss-klement-2026-07-06-investors-must-be-wary-of-the-earnings-bubble.md
+read_status: skimmed
 ---
 
 # Klement on Investing — Investors must be wary of the earnings bubble

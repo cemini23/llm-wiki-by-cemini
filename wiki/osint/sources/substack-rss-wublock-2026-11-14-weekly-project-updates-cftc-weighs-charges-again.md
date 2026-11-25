@@ -10,6 +10,7 @@ related:
   - sources/substack-rss-wublock-2026-10-24-weekly-project-updates-dogecoin-labs-launches-fo.md
   - sources/substack-rss-wublock-2026-10-31-weekly-project-updates-ripple-approved-for-us-na.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

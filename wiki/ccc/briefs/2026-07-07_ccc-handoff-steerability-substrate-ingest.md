@@ -9,6 +9,7 @@ related:
   - sources/arxiv-steerability-via-constraints-coding-agent-oversight-2607.02389.md
   - sources/brief-k138-substrate-constraints-agent-oversight-2026-07-07.md
 updated: 2026-07-07
+maturity: draft
 ---
 
 ## Target

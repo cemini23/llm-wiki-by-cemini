@@ -7,6 +7,7 @@ related:
   - concepts/trajectory-driven-safety-harness-evolution.md
   - concepts/agent-trace-tampering-audit-gap.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

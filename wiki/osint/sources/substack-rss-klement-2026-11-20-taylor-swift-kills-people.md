@@ -6,6 +6,7 @@ related:
   - sources/substack-rss-klement-2026-11-18-what-the-last-two-bubbles-tell-us-about-the-ai-b.md
   - sources/substack-rss-klement-2026-11-19-what-happens-when-a-country-increases-taxes-on-t.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

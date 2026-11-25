@@ -11,6 +11,7 @@ related:
   - sources/arxiv-2611.03586-fedready-bounded-agents-federation-2026-11-03.md
   - sources/arxiv-2611.14068-cage4-benchmark-audit-2026-11-11.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

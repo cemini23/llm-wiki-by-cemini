@@ -7,6 +7,7 @@ related:
   - concepts/citation-is-not-consultation.md
   - concepts/verification-generation-gap.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

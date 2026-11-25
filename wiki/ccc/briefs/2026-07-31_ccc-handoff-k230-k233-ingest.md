@@ -5,6 +5,7 @@ tags: [brief, handoff, k230, k231, k232, k233]
 related:
   - sources/brief-k230-k233-memharness-tycho-agentradio-askchem-2026-07-31.md
 created: 2026-07-31
+maturity: draft
 ---
 
 ## Summary

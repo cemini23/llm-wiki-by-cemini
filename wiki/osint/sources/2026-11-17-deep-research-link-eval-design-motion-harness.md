@@ -12,6 +12,8 @@ related:
   - "@ccc-wiki/entities/bot-browser.md"
   - sources/2026-11-22-deep-research-link-eval-abliterated-harness.md
 updated: 2026-11-17
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

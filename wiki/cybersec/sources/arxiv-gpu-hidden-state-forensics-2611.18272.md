@@ -5,6 +5,7 @@ maturity: draft
 related:
   - concepts/gpu-hidden-state-forensics.md
 updated: 2026-11-16
+read_status: read
 ---
 
 ## Raw Concept

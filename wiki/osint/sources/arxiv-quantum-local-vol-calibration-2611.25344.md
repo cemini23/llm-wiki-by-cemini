@@ -6,6 +6,7 @@ related:
   - concepts/quantum-local-vol-calibration.md
   - concepts/local-stochastic-volatility-calibration.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

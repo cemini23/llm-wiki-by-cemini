@@ -10,6 +10,7 @@ updated: 2026-07-05
 cross-wiki-source: @osint-wiki/sources/substack-rss-outlier-weekly-2026-07-03-the-11b-warehouse-failure-behind-the-cxwgeo-trad.md
 related:
   - @osint-wiki/sources/substack-rss-outlier-weekly-2026-07-03-the-11b-warehouse-failure-behind-the-cxwgeo-trad.md
+read_status: read
 ---
 
 # Outlier Weekly — The $1.1B Warehouse Failure Behind the CXW/GEO Trade

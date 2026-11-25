@@ -5,6 +5,7 @@ tags: [brief, handoff, k221, k222, k223, k224, k225, k226, k227, k228, k229]
 related:
   - sources/brief-k221-k229-mcp-harness-security-ingest-2026-07-30.md
 created: 2026-07-30
+maturity: draft
 ---
 
 ## Summary

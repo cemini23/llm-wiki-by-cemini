@@ -6,6 +6,7 @@ related:
   - concepts/htr-segmentation-generalization.md
   - concepts/gpuology-genealogy-agent-kit.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

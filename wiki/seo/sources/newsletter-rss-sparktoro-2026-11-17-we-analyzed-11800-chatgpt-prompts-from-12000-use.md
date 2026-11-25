@@ -8,6 +8,8 @@ related:
   - concepts/generative-engine-optimization.md
   - concepts/competitive-geo-citation-factors.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

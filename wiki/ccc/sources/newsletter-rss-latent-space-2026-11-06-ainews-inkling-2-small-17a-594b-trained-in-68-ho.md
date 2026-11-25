@@ -7,6 +7,7 @@ related:
   - concepts/frontier-model-release-cadence.md
   - sources/newsletter-rss-latent-space-2026-11-10-naiveai-n05-flash-2026-11-11.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

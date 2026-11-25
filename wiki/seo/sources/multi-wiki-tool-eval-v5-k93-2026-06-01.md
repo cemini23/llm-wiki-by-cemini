@@ -13,6 +13,7 @@ created: 2026-06-01
 updated: 2026-06-06
 cross-wiki-source: "@osint-wiki/sources/multi-wiki-tool-eval-v5-k93-2026-06-01.md"
 read-status: skimmed
+read_status: skimmed
 ---
 
 ## Relations

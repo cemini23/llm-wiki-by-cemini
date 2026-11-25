@@ -7,6 +7,7 @@ related:
   - concepts/low-asr-is-not-refusal.md
   - concepts/refusal-and-abstention-direction-geometry.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

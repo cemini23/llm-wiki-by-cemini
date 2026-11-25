@@ -9,6 +9,7 @@ related:
   - concepts/xsp-vol-regime-gates.md
   - sources/substack-rss-glitchspx-2026-11-03-two-zones-four-paths-2026-11-03.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

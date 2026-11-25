@@ -7,6 +7,8 @@ related:
   - entities/skills/route.md
   - sources/arxiv-2610.32483-when-agents-fail-model-or-harness-who-s-to-blame-2026-10-27.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

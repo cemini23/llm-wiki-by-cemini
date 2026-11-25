@@ -11,6 +11,7 @@ related:
   - concepts/kalshi-retail-lp.md
   - concepts/parlay-market-making.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

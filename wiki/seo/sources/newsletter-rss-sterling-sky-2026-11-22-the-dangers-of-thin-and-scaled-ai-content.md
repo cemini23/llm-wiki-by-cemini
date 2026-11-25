@@ -8,6 +8,8 @@ related:
   - concepts/on-page-seo-local.md
   - concepts/local-seo-foundations.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

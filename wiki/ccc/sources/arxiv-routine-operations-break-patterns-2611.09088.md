@@ -8,6 +8,7 @@ related:
   - concepts/truncate-only-long-horizon-compaction.md
   - concepts/harness-security-axis-comparison.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

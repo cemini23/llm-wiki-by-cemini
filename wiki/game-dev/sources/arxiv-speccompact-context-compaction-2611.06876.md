@@ -6,6 +6,7 @@ related:
   - concepts/context-compaction-game-harness.md
   - concepts/agent-harness-castle-project.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

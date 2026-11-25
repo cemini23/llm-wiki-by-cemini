@@ -8,6 +8,7 @@ related:
   - entities/companies/circle.md
   - entities/companies/tether.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

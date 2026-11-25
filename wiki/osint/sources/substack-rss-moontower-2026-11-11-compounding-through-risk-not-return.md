@@ -6,6 +6,7 @@ related:
   - concepts/compounding-through-risk-not-return.md
   - concepts/osint-inbox-wave-2026-11-14.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

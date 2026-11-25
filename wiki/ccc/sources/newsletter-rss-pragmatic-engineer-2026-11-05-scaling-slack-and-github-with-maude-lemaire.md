@@ -13,6 +13,7 @@ related:
   - sources/newsletter-rss-pragmatic-engineer-2026-10-30-the-pulse-anthropic-kills-the-coding-interview.md
   - sources/newsletter-rss-pragmatic-engineer-2026-11-03-tenfold-prs-2026-11-03.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

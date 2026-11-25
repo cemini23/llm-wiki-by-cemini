@@ -6,6 +6,7 @@ related:
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
   - concepts/context-engineering.md
 updated: 2026-11-17
+maturity: draft
 ---
 
 ## Raw Concept

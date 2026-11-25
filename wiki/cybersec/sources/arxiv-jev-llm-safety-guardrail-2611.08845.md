@@ -12,6 +12,7 @@ related:
   - sources/arxiv-2611.13578-poem-block-sparse-attention-2026-11-11.md
   - sources/arxiv-2611.14171-bars-budget-aware-sampling-2026-11-11.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

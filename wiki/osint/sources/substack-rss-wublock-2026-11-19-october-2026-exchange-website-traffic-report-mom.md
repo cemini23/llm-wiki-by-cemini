@@ -5,6 +5,7 @@ maturity: draft
 related:
   - concepts/crypto-venue-website-traffic.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

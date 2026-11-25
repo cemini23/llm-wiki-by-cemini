@@ -7,6 +7,7 @@ related:
   - concepts/recognition-refusal-gap.md
   - concepts/guardrail-construct-validity-agent-eval.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

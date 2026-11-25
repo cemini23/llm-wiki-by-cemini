@@ -13,6 +13,7 @@ related:
   - concepts/software-maintenance-institutional-insecurity.md
   - sources/newsletter-rss-tldrsec-2026-10-29-tldr-sec-352---unprompted-slides-aws-ai-post-com.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

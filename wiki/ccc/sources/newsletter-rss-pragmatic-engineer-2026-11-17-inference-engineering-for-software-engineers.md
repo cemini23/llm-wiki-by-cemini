@@ -6,6 +6,8 @@ related:
   - concepts/timeout-cascade-cost-aware-routing.md
   - concepts/kv-cache-working-set-serving.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

@@ -15,6 +15,7 @@ related:
 updated: 2026-06-24
 updated: 2026-06-01
 clusters: [quant-finance, market-microstructure]
+read_status: skimmed
 ---
 
 ## Relations

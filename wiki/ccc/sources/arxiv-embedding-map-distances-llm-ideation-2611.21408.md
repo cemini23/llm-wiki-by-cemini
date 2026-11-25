@@ -5,6 +5,8 @@ related:
   - concepts/embedding-gap-ideation-null-result.md
   - concepts/generation-verification-gap-agent-artifacts.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

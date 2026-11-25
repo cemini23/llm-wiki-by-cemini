@@ -7,6 +7,8 @@ related:
   - concepts/enterprise-mcp-adoption-practice.md
   - concepts/cage-1-enterprise-agent-governance-eval.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

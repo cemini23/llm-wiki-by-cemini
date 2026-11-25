@@ -19,6 +19,7 @@ related:
   - entities/tools/agent-trajectory-sentinel.md
   - concepts/phase1-adopt-wire.md
 created: 2026-08-04
+maturity: draft
 ---
 
 ## Summary

@@ -7,6 +7,7 @@ related:
   - concepts/ai-assistant-usage-buyer-journey-share.md
   - concepts/search-query-data-supply.md
 updated: 2026-11-25
+maturity: draft
 ---
 
 ## Raw Concept

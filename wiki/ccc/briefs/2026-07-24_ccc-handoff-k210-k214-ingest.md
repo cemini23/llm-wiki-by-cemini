@@ -5,6 +5,7 @@ tags: [brief, handoff, k210, k211, k212, k213, k214]
 related:
   - sources/brief-k210-k214-traceable-euclid-acm-openforge-2026-07-24.md
 created: 2026-07-24
+maturity: draft
 ---
 
 ## Summary

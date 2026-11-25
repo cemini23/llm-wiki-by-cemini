@@ -8,6 +8,7 @@ related:
   - concepts/zero-trust-mission-critical-robotic-fleets.md
   - concepts/network-security.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

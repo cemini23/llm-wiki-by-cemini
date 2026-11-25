@@ -7,6 +7,7 @@ related:
   - concepts/agentic-robotics-harness.md
   - concepts/execution-contract-failure-attribution.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

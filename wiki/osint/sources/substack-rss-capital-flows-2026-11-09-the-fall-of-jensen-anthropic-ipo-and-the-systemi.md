@@ -9,6 +9,7 @@ related:
   - sources/substack-rss-capital-flows-2026-11-05-market-status-market-bottom-or-beginning-of-the.md
   - sources/substack-rss-capital-flows-2026-10-26-midterms-and-the-coming-ai-regulatory-crisis.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

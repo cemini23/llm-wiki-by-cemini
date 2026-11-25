@@ -6,6 +6,7 @@ related:
   - concepts/dfs-model-orchestration.md
   - concepts/dfs-injury-and-news-workflow.md
 updated: 2026-11-17
+maturity: draft
 ---
 
 ## Raw Concept

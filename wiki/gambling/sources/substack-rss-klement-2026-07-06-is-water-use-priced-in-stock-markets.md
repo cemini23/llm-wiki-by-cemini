@@ -10,6 +10,7 @@ updated: 2026-07-06
 cross-wiki-source: @osint-wiki/sources/substack-rss-klement-2026-07-06-is-water-use-priced-in-stock-markets.md
 related:
   - @osint-wiki/sources/substack-rss-klement-2026-07-06-is-water-use-priced-in-stock-markets.md
+read_status: read
 ---
 
 # Klement on Investing — Is water use priced in stock markets?

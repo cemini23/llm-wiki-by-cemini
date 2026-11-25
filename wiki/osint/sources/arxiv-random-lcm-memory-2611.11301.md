@@ -7,6 +7,7 @@ related:
   - concepts/long-memory-phase-transition-correlated-bernoulli.md
   - concepts/market-memory-hurst-regime.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

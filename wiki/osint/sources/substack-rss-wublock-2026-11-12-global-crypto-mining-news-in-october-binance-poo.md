@@ -10,6 +10,7 @@ related:
   - sources/substack-rss-wublock-2026-10-31-binance-hit-by-63-billion-theft-3-billion-frozen.md
   - sources/substack-rss-wublock-2026-11-05-october-blockchain-tech-2026-11-05.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

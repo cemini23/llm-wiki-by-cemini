@@ -9,6 +9,7 @@ related:
   - entities/tools/residencyrl.md
   - concepts/phase1-adopt-wire.md
 created: 2026-08-10
+maturity: draft
 ---
 
 ## Summary

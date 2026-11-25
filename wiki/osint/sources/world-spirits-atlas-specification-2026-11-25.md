@@ -6,6 +6,8 @@ related:
   - sources/world-spirits-atlas-architecture-2026-11-25.md
   - sources/world-spirits-atlas-growth-strategy-2026-11-25.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

@@ -6,6 +6,7 @@ related:
   - concepts/machine-unlearning-privileged-context.md
   - concepts/recognition-refusal-gap.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

@@ -6,6 +6,8 @@ related:
   - sources/operator-dfs-slate-2026-11-15.md
   - sources/operator-fanduel-salaries-2026-11-15.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

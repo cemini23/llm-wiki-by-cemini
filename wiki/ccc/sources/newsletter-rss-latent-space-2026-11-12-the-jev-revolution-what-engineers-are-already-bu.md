@@ -9,6 +9,7 @@ related:
   - sources/newsletter-rss-latent-space-2026-07-01-how-cursor-deploys-ai-inside-the-enterprise.md
   - sources/newsletter-rss-latent-space-2026-11-11-ai-engineer-code-summit-2026-11-11.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

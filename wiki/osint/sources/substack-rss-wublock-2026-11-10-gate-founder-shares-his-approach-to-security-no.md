@@ -6,6 +6,7 @@ related:
   - concepts/k296-feeds-wave.md
   - concepts/crypto-custody-single-point-of-failure.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

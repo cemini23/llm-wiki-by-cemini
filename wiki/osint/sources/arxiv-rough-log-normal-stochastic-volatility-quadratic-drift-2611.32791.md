@@ -5,6 +5,8 @@ related:
   - concepts/rough-log-normal-volatility.md
   - concepts/local-stochastic-volatility-calibration.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

@@ -5,6 +5,7 @@ related:
   - "@osint-wiki/sources/2026-11-16-deep-research-link-eval-game-media.md"
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
 updated: 2026-11-16
+maturity: draft
 ---
 
 ## Raw Concept

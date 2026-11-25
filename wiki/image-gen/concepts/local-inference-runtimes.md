@@ -6,6 +6,7 @@ related:
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
   - "@image-gen-wiki/entities/models/inkling-2-mini.md"
 updated: 2026-11-24
+maturity: draft
 ---
 
 ## Raw Concept

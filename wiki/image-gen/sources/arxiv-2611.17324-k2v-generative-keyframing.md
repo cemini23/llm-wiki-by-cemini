@@ -12,6 +12,7 @@ related:
   - entities/models/wan-2-2.md
   - concepts/physics-aware-orthogonal-view-video.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

@@ -7,6 +7,7 @@ related:
   - concepts/model-harness-six-responsibilities.md
   - concepts/subagent-orchestration.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

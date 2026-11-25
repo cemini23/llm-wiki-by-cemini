@@ -15,6 +15,7 @@ related:
   - sources/arxiv-2611.05377-dreamx-latent-action-2026-11-05.md
   - sources/arxiv-2611.14387-b3-overlapping-block-diffusion-2026-11-11.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

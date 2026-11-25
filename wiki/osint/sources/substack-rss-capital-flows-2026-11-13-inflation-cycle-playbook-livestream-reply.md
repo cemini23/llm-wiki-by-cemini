@@ -7,6 +7,7 @@ related:
   - concepts/osint-inbox-wave-2026-11-14.md
   - sources/substack-rss-capital-flows-2026-11-11-inflation-cycle-2026-11-11.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

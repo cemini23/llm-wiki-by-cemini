@@ -9,6 +9,7 @@ related:
   - concepts/terminal-state-eval-discovery-reliability-gap.md
   - sources/arxiv-2611.14068-cage4-benchmark-audit-2026-11-11.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

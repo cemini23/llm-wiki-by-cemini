@@ -10,6 +10,7 @@ updated: 2026-07-07
 cross-wiki-source: @osint-wiki/sources/substack-rss-seceng-weekly-2026-07-06-how-id-respond-in-the-first-hour-after-a-package.md
 related:
   - @osint-wiki/sources/substack-rss-seceng-weekly-2026-07-06-how-id-respond-in-the-first-hour-after-a-package.md
+read_status: read
 ---
 
 # The Engineering Club — Security Edition — How I’d Respond in the First Hour After a Package I Use Got Hacked

@@ -9,6 +9,7 @@ related:
   - concepts/agent-harness-operational-definition.md
   - concepts/model-harness-six-responsibilities.md
 updated: 2026-11-25
+maturity: draft
 ---
 
 ## Raw Concept

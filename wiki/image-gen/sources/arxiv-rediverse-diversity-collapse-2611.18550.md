@@ -6,6 +6,7 @@ related:
   - concepts/diversity-collapse-in-distilled-generators.md
   - sources/arxiv-jvt-pixel-space-video-diffusion-2611.18549.md
 updated: 2026-11-16
+read_status: read
 ---
 
 ## Raw Concept

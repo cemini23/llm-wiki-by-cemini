@@ -4,6 +4,8 @@ type: source
 related:
   - concepts/media-crisis-framing.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

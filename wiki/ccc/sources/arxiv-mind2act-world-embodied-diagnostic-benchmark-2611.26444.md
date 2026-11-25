@@ -6,6 +6,8 @@ related:
   - concepts/harness-attribution-multimodal-eval.md
   - concepts/agentic-robotics-harness.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

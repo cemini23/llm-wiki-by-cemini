@@ -11,6 +11,7 @@ related:
   - sources/arxiv-2611.03574-bisect-bilevel-spectral-lora-2026-11-03.md
   - sources/arxiv-2611.14383-energy-based-model-tutorial-2026-11-11.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

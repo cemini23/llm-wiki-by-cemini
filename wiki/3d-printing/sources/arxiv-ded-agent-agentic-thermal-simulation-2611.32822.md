@@ -5,6 +5,8 @@ related:
   - concepts/industrial-am-monitoring.md
   - concepts/self-improving-cad-generation-agents.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

@@ -6,6 +6,7 @@ related:
   - concepts/refusal-induction-as-defense.md
   - concepts/recognition-refusal-gap.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

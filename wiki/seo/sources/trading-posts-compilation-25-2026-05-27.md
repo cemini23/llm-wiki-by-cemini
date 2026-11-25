@@ -14,6 +14,7 @@ created: 2026-05-27
 updated: 2026-05-27
 cross-wiki-source: "@osint-wiki/sources/trading-posts-compilation-25-2026-05-27.md"
 read-status: skimmed
+read_status: skimmed
 ---
 
 ## Relations

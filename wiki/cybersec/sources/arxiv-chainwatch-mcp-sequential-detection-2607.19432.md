@@ -9,6 +9,7 @@ related:
 maturity: draft
 created: 2026-07-23
 updated: 2026-07-23
+read_status: unread-stub
 ---
 
 ## Raw Concept

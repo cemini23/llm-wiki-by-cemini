@@ -8,6 +8,7 @@ related:
   - concepts/cage-1-enterprise-agent-governance-eval.md
   - concepts/low-cost-cross-vendor-behavior-assays.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

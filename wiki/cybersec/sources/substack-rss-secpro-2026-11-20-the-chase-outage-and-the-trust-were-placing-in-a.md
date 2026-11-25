@@ -9,6 +9,7 @@ related:
   - concepts/agentic-containment-principles.md
   - concepts/patchless-window.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

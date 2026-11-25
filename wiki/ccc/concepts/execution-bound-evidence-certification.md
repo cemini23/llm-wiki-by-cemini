@@ -7,6 +7,7 @@ related:
   - concepts/evidence-grounded-debate-stopping.md
   - concepts/self-verification-failure-taxonomy.md
 updated: 2026-11-25
+maturity: draft
 ---
 
 ## Raw Concept

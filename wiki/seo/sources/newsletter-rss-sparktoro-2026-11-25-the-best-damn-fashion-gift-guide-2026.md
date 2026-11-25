@@ -5,6 +5,8 @@ related:
   - entities/tools/sparktoro.md
   - concepts/corpus-overflow-out-of-scope.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

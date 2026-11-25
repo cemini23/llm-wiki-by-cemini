@@ -6,6 +6,7 @@ related:
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
   - concepts/agent-verification-patterns.md
 updated: 2026-11-24
+maturity: draft
 ---
 
 ## Raw Concept

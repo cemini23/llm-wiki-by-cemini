@@ -6,6 +6,7 @@ related:
   - concepts/inference-dispatch-capacity-tracking.md
   - concepts/bluestar-tiered-agentic-cyber-defense.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

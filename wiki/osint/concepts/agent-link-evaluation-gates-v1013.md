@@ -36,6 +36,7 @@ related:
   - @cybersecurity-wiki/concepts/secret-masking-regression-tests.md
   - @image-gen-wiki/concepts/local-inference-runtimes.md
 updated: 2026-11-24
+maturity: draft
 ---
 
 ## Raw Concept

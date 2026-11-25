@@ -7,6 +7,7 @@ related:
   - entities/tools/wake5.md
   - concepts/mcp-developer-error-messages-agent-recovery.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

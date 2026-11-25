@@ -7,6 +7,7 @@ related:
   - concepts/agent-ready-website-local-bm.md
   - concepts/retrieval-vs-citation-visibility-geo.md
 updated: 2026-11-25
+maturity: draft
 ---
 
 ## Raw Concept

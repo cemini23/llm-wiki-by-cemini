@@ -8,6 +8,7 @@ related:
   - concepts/hierarchical-bounded-agent-memory.md
   - entities/tools/claude-mem.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

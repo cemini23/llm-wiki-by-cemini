@@ -6,6 +6,7 @@ related:
   - concepts/similarity-score-not-independence.md
   - concepts/tool-eval-license-skepticism-patterns.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

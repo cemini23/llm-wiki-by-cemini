@@ -5,6 +5,8 @@ related:
   - concepts/lora-taxonomy.md
   - concepts/local-likeness-lora-lessons.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

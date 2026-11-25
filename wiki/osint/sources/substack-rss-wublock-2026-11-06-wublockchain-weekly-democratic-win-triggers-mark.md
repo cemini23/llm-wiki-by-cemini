@@ -16,6 +16,7 @@ related:
   - sources/substack-rss-wublock-2026-11-03-vc-monthly-kalshi-1b-2026-11-03.md
   - sources/substack-rss-wublock-2026-11-11-plume-rwa-2026-11-11.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

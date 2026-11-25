@@ -20,6 +20,7 @@ related:
   - entities/tools/toktier.md
   - concepts/phase1-adopt-wire.md
 created: 2026-08-03
+maturity: draft
 ---
 
 ## Summary

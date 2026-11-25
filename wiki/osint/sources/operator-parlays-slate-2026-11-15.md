@@ -6,6 +6,8 @@ related:
   - sources/operator-parlays-slate-2026-11-22.md
   - sources/operator-parlays-recap-week9-2026-11-08.md
 updated: 2026-11-25
+read_status: skimmed
+maturity: draft
 ---
 
 ## Raw Concept

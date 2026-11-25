@@ -23,6 +23,7 @@ related:
   - concepts/phase1-adopt-wire.md
 created: 2026-08-14
 updated: 2026-08-14
+maturity: draft
 ---
 
 ## Summary

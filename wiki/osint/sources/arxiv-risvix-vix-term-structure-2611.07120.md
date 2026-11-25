@@ -10,6 +10,7 @@ related:
   - sources/arxiv-2610.36392-the-term-structure-of-implied-fee-rates-in-liqui-2026-11-01.md
   - sources/arxiv-2611.00958-crypto-option-repair-risk-2026-11-03.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

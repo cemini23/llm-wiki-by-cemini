@@ -6,6 +6,7 @@ related:
   - concepts/prediction-market-state-litigation-2026-11.md
   - concepts/cme-settlement-mechanics-for-prediction-markets.md
 updated: 2026-11-16
+read_status: read
 ---
 
 ## Raw Concept

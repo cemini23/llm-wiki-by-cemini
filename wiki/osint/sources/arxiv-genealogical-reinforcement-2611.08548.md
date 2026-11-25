@@ -7,6 +7,7 @@ related:
   - concepts/genealogical-reinforcement-branching.md
   - concepts/computational-genealogy-archival-automation.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

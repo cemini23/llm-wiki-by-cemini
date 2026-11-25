@@ -21,6 +21,7 @@ related:
   - entities/tools/programmatic-tool-calling-ptc.md
   - concepts/phase1-adopt-wire.md
 created: 2026-08-07
+maturity: draft
 ---
 
 ## Summary

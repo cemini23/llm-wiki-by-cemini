@@ -8,6 +8,7 @@ related:
   - concepts/siem.md
   - sources/newsletter-rss-tldrsec-2026-10-29-tldr-sec-352---unprompted-slides-aws-ai-post-com.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

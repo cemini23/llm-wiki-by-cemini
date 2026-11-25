@@ -6,6 +6,7 @@ related:
   - concepts/leveraged-etf-options-pricing.md
   - concepts/options-derivatives.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

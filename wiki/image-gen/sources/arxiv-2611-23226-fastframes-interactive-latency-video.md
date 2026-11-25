@@ -9,6 +9,8 @@ related:
   - entities/models/wan-2-2.md
   - concepts/cascaded-streaming-high-resolution-video.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

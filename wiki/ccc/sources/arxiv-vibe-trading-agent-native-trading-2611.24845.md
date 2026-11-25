@@ -5,6 +5,8 @@ related:
   - concepts/result-provenance-authority-gate.md
   - entities/tools/vibe-trading.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

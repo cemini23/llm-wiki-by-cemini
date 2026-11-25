@@ -11,6 +11,7 @@ related:
   - sources/arxiv-2609-04172-on-policy-distillation-one-shot.md
   - sources/arxiv-2611.02746-replay-continual-learning-mopd-2026-11-03.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

@@ -6,6 +6,8 @@ related:
   - concepts/decision-model-hybrid-agent-routing.md
   - concepts/token-economics-and-prompt-caching.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

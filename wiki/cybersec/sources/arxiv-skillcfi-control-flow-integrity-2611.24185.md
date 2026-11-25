@@ -9,6 +9,7 @@ related:
   - concepts/agent-runtime-guardrails.md
   - concepts/agent-least-privilege-tool-selection.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

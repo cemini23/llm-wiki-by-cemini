@@ -12,6 +12,7 @@ related:
   - entities/models/flux-2-klein.md
   - entities/models/wan-2-2.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

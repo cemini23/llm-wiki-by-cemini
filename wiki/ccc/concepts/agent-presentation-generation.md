@@ -5,6 +5,7 @@ related:
   - "@osint-wiki/sources/2026-11-17-deep-research-link-eval-design-motion-harness.md"
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
 updated: 2026-11-17
+maturity: draft
 ---
 
 ## Raw Concept

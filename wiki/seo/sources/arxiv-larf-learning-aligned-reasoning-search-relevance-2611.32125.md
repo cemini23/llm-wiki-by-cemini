@@ -6,6 +6,8 @@ related:
   - concepts/generative-engine-optimization.md
   - concepts/scaled-thin-ai-content-risk.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

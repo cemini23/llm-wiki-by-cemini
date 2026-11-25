@@ -10,6 +10,7 @@ related:
   - sources/newsletter-rss-latent-space-2026-07-07-ainews-the-field-guide-to-fable.md
   - sources/newsletter-rss-latent-space-2026-10-24-ainews-kimi-31-pro-104ba-28t-fable-51-class-open.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

@@ -6,6 +6,7 @@ related:
   - concepts/pixel-space-video-diffusion.md
   - sources/arxiv-rediverse-diversity-collapse-2611.18550.md
 updated: 2026-11-16
+read_status: read
 ---
 ## Raw Concept
 

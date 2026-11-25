@@ -6,6 +6,7 @@ created: 2026-06-24
 related:
   - meta/ccc-cross-wiki-handoff-briefs.md
 updated: 2026-06-29
+maturity: draft
 ---
 
 ## Target

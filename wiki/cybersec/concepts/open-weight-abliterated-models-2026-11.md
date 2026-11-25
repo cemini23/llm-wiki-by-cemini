@@ -7,6 +7,7 @@ related:
   - entities/tools/artex.md
   - @image-gen-wiki/entities/models/inkling-2-mini.md
 updated: 2026-11-22
+maturity: draft
 ---
 ## Raw Concept
 

@@ -11,6 +11,7 @@ related:
   - entities/tools/hardware-keystore-mcp-signing.md
   - concepts/phase1-adopt-wire.md
 created: 2026-08-07
+maturity: draft
 ---
 
 ## Summary

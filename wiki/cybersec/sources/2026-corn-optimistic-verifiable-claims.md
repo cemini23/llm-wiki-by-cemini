@@ -12,6 +12,7 @@ wire_status: wont_wire
 wire_target: "REFERENCE / steal-from — paper or methodology only"
 related:
   - @3d-printing-wiki/sources/2026-corn-optimistic-verifiable-claims.md
+read_status: read
 ---
 
 # Optimistic Verifiable Claims — confidential G-code bidding (arXiv:2607.25517)

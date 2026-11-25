@@ -7,6 +7,7 @@ related:
   - concepts/venture-capital-random-benchmark.md
   - sources/substack-rss-klement-2026-11-20-taylor-swift-kills-people.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

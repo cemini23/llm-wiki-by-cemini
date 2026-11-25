@@ -6,6 +6,7 @@ related:
   - concepts/agent-completion-verification-gates.md
   - concepts/agent-vm-sandboxing.md
 updated: 2026-11-25
+maturity: draft
 ---
 
 ## Raw Concept

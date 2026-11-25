@@ -5,6 +5,7 @@ tags: [brief, handoff, k202, k203, k204, k205]
 related:
   - sources/brief-k202-k205-agents-langgraph-biosec-2026-07-22.md
 created: 2026-07-22
+maturity: draft
 ---
 
 ## Target

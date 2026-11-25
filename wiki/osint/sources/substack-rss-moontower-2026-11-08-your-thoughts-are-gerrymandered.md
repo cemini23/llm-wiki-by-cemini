@@ -7,6 +7,7 @@ related:
   - concepts/tracking-error-dispersion-active-management.md
   - sources/substack-rss-moontower-2026-11-08-moontower-335.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

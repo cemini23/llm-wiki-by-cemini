@@ -7,6 +7,8 @@ related:
   - concepts/agent-completion-verification-gates.md
   - sources/newsletter-rss-latent-space-2026-11-21-ainews-riemann-hypothesis-provedtwice-independen.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

@@ -9,6 +9,7 @@ related:
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

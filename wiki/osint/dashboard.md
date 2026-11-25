@@ -4,6 +4,7 @@ type: meta
 tags: [dashboard, dataview, navigation]
 created: 2026-04-26
 updated: 2026-06-01
+maturity: draft
 ---
 
 # Wiki Dashboard

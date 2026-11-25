@@ -5,6 +5,7 @@ maturity: draft
 related:
   - concepts/talon-scanner-level-semantics.md
 updated: 2026-11-16
+read_status: read
 ---
 
 ## Raw Concept

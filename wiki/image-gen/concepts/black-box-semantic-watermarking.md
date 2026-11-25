@@ -9,6 +9,7 @@ related:
   - sources/arxiv-2605-29809-cert-las-t2i-mov.md
   - entities/models/flux.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

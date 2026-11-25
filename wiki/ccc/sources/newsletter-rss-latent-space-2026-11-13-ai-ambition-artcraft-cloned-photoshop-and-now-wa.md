@@ -8,6 +8,7 @@ related:
   - sources/newsletter-rss-latent-space-2026-10-28-why-agents-love-supabase.md
   - sources/newsletter-rss-latent-space-2026-11-10-designing-for-agents-aeo-2026-11-11.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

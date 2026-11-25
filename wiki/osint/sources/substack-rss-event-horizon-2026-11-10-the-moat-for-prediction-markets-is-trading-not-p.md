@@ -13,6 +13,7 @@ related:
   - concepts/parlay-market-making.md
   - concepts/polymarket-market-making-architectures.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

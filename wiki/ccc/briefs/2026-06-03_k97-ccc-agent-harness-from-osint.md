@@ -9,6 +9,7 @@ related:
   - "@osint-wiki/sources/trading-posts-compilation-17-2026-06-03.md"
   - meta/ccc-cross-wiki-handoff-briefs.md
   - "@ccc-wiki/sources/trading-posts-compilation-17-2026-06-03.md"
+maturity: draft
 ---
 
 ## Target

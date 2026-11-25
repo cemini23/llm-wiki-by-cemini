@@ -8,6 +8,7 @@ related:
   - concepts/client-as-first-order-harness-factor.md
   - sources/brief-k140-hexstrike-client-orchestration-2026-07-07.md
 updated: 2026-07-07
+maturity: draft
 ---
 
 ## Target

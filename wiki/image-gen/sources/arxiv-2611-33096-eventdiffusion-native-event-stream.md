@@ -7,6 +7,8 @@ related:
   - concepts/event-stream-diffusion-simulation.md
   - sources/arxiv-eventspeech-neuromorphic-tts-2605-26672.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

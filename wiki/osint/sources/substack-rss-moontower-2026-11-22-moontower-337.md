@@ -8,6 +8,7 @@ related:
   - sources/substack-rss-moontower-2026-11-22-hillstone.md
   - sources/substack-rss-moontower-2026-11-22-making-sense-of-returns.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

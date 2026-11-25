@@ -11,6 +11,7 @@ maturity: validated
 created: 2026-06-18
 updated: 2026-06-18
 cross-wiki-source: "@gambling-wiki/sources/brief-k118-poker-agent-research-gaps-2026-06-17.md"
+read_status: unread-stub
 ---
 
 ## Relations

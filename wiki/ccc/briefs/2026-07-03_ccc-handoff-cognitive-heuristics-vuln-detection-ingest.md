@@ -7,6 +7,7 @@ related:
   - meta/ccc-cross-wiki-handoff-briefs.md
   - concepts/cognitive-heuristics-llm-vuln-detection.md
 updated: 2026-07-03
+maturity: draft
 ---
 
 ## Target

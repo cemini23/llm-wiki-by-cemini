@@ -4,6 +4,8 @@ type: source
 related:
   - concepts/lora-taxonomy.md
 updated: 2026-11-24
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

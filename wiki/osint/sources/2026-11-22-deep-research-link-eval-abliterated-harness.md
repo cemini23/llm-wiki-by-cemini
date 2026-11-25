@@ -13,6 +13,8 @@ related:
   - "@cybersecurity-wiki/concepts/api-security-audit-rubric.md"
   - sources/2026-11-24-deep-research-link-eval-runtime-tooling.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 ## Raw Concept
 

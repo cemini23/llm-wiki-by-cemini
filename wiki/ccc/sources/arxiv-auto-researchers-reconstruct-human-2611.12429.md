@@ -9,6 +9,7 @@ related:
   - concepts/claim-drift-automated-research.md
   - sources/arxiv-2611.14211-verifiable-agentic-traffic-class-2026-11-11.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

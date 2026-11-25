@@ -10,6 +10,7 @@ updated: 2026-07-05
 cross-wiki-source: @osint-wiki/sources/substack-rss-secpro-2026-07-03-identity-became-the-new-perimeter.md
 related:
   - @osint-wiki/sources/substack-rss-secpro-2026-07-03-identity-became-the-new-perimeter.md
+read_status: read
 ---
 
 # Packt SecPro — Identity Became the New Perimeter

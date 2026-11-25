@@ -7,6 +7,7 @@ related:
   - concepts/osint-inbox-wave-2026-11-14.md
   - sources/substack-rss-klement-2026-11-02-women-are-their-own-enemies.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

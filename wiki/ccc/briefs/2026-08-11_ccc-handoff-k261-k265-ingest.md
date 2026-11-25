@@ -21,6 +21,7 @@ related:
   - sources/arxiv-vectrayx-vision-1b-cyber-vlm-2608.08477.md
 created: 2026-08-11
 updated: 2026-08-11
+maturity: draft
 ---
 
 ## Summary

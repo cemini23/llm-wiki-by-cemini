@@ -9,6 +9,7 @@ related:
   - sources/arxiv-nfr-to-hyperparameter-quantum-2611.16902.md
   - sources/arxiv-2611.04349-sparse-internal-control-2026-11-05.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

@@ -5,6 +5,8 @@ related:
   - concepts/continual-harness-online-self-improvement.md
   - concepts/agentic-robotics-harness.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

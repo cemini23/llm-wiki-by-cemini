@@ -7,6 +7,8 @@ related:
   - sources/operator-fanduel-salaries-2026-11-22.md
   - concepts/operator-nfl-slate-packet-workflow.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

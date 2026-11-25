@@ -10,6 +10,7 @@ related:
   - entities/models/flux-2-klein.md
   - entities/models/sdxl-fine-tunes.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

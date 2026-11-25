@@ -6,6 +6,7 @@ related:
   - concepts/htr-domain-adaptation.md
   - sources/arxiv-dra-htr-2611.18143.md
 updated: 2026-11-16
+read_status: read
 ---
 ## Raw Concept
 

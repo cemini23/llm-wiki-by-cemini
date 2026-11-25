@@ -6,6 +6,8 @@ related:
   - concepts/reasoning-effort-calibration.md
   - concepts/token-economics-and-prompt-caching.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

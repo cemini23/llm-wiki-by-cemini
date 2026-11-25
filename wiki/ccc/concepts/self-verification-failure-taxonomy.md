@@ -9,6 +9,7 @@ related:
   - concepts/llm-verification-layer-accept-escalate-reject.md
   - concepts/execution-bound-evidence-certification.md
 updated: 2026-11-25
+maturity: draft
 ---
 
 ## Raw Concept

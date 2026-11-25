@@ -5,6 +5,7 @@ tags: [brief, handoff, k197, k198, k199, k200, k201]
 related:
   - sources/brief-k197-k201-harness-solver-pruner-2026-07-21.md
 created: 2026-07-21
+maturity: draft
 ---
 
 ## Target

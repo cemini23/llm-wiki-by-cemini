@@ -7,6 +7,7 @@ related:
   - concepts/guardrail-construct-validity-agent-eval.md
   - concepts/low-asr-is-not-refusal.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

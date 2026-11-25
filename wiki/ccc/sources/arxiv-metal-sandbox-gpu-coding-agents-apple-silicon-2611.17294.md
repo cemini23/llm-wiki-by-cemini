@@ -8,6 +8,7 @@ related:
   - entities/tools/harbor.md
   - concepts/agent-vm-sandboxing.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

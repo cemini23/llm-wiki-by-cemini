@@ -7,6 +7,7 @@ related:
   - concepts/context-engineering.md
   - concepts/computer-use-agent-harness.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

@@ -12,6 +12,7 @@ related:
   - sources/arxiv-2611.04349-sparse-internal-control-2026-11-05.md
   - sources/arxiv-2611.14171-bars-budget-aware-sampling-2026-11-11.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

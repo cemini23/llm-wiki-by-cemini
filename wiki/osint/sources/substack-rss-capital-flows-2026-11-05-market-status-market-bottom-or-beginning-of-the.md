@@ -8,6 +8,7 @@ related:
   - entities/companies/coreweave.md
   - sources/substack-rss-capital-flows-2026-11-09-the-fall-of-jensen-anthropic-ipo-and-the-systemi.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

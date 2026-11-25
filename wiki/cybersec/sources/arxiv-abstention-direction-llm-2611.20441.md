@@ -7,6 +7,7 @@ related:
   - concepts/recognition-refusal-gap.md
   - concepts/low-asr-is-not-refusal.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

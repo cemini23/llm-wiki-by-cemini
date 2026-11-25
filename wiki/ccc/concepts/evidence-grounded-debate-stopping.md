@@ -8,6 +8,7 @@ related:
   - concepts/execution-bound-evidence-certification.md
   - entities/patterns/glasswing-deliberate-disagreement.md
 updated: 2026-11-25
+maturity: draft
 ---
 
 ## Raw Concept

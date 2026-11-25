@@ -8,6 +8,8 @@ related:
   - concepts/decision-model-hybrid-agent-routing.md
   - concepts/subagent-orchestration.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

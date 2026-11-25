@@ -7,6 +7,7 @@ related:
   - concepts/camera-controlled-video-generation.md
   - entities/models/wan-2-2.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

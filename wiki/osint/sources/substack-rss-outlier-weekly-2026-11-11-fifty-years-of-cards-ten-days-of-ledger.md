@@ -7,6 +7,7 @@ related:
   - concepts/osint-inbox-wave-2026-11-14.md
   - sources/substack-rss-outlier-weekly-2026-11-02-twenty-years-of-cost-one-year-of-revenue.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

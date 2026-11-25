@@ -7,6 +7,8 @@ related:
   - concepts/agent-memory-stack-comparison.md
   - entities/tools/claude-mem.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

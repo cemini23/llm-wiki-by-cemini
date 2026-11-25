@@ -9,6 +9,7 @@ related:
 maturity: draft
 created: 2026-07-22
 updated: 2026-07-22
+read_status: unread-stub
 ---
 
 ## Relations

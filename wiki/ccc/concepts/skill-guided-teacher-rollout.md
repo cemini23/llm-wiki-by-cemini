@@ -8,6 +8,7 @@ related:
   - concepts/agent-skills-taxonomy.md
   - concepts/agent-skills-progressive-disclosure.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

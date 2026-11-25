@@ -11,6 +11,8 @@ related:
   - concepts/seam-stitching-strategies.md
   - entities/models/ltx-2.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

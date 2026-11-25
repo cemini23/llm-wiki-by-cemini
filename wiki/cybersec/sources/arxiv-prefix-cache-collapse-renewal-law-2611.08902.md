@@ -5,6 +5,7 @@ maturity: draft
 related:
   - concepts/prefix-cache-collapse-agent-serving.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

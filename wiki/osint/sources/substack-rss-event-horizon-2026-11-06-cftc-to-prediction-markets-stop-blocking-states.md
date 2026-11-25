@@ -10,6 +10,7 @@ related:
   - entities/companies/draftkings.md
   - concepts/kalshi-retail-lp.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

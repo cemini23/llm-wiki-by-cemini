@@ -8,6 +8,7 @@ related:
   - concepts/authorization-to-effect-closure.md
   - concepts/agent-approval-laundering-transitive-effects.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

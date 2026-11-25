@@ -19,6 +19,7 @@ related:
   - sources/arxiv-llm-assisted-writing-biomedical-pmc-2608.10715.md
 created: 2026-08-12
 updated: 2026-08-12
+maturity: draft
 ---
 
 ## Summary

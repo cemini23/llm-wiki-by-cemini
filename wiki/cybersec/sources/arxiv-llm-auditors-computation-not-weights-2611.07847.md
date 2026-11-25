@@ -5,6 +5,7 @@ maturity: draft
 related:
   - concepts/llm-audit-computation-not-weight-access.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

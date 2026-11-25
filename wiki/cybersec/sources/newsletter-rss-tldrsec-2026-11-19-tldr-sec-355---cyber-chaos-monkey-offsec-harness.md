@@ -11,6 +11,7 @@ related:
   - concepts/supply-chain-credential-hygiene.md
   - concepts/aws-abac-authorization-traps.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

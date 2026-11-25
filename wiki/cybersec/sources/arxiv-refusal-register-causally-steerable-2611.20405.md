@@ -6,6 +6,7 @@ related:
   - concepts/refusal-and-abstention-direction-geometry.md
   - concepts/local-abliterated-llm-pentest-stack.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

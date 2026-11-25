@@ -5,6 +5,8 @@ related:
   - concepts/agentic-robotics-harness.md
   - concepts/agent-harness-operational-definition.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

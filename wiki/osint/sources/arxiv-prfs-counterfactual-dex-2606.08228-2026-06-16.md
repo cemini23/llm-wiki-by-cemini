@@ -13,6 +13,7 @@ related:
   - sources/arxiv-cl-amm-dynamic-fees-lvr-2606.23070-2026-06-24.md
 updated: 2026-06-24
 clusters: [quant-finance, crypto, prediction-markets]
+read_status: skimmed
 ---
 
 ## Relations

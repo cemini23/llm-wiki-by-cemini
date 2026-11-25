@@ -7,6 +7,8 @@ related:
   - concepts/curated-vs-self-generated-skills.md
   - concepts/agent-skills-taxonomy.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

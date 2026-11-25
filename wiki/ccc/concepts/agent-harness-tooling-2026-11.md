@@ -6,6 +6,7 @@ related:
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
   - concepts/repeated-correction-mining.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

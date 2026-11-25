@@ -8,6 +8,7 @@ related:
   - concepts/osint-inbox-wave-2026-11-14.md
   - sources/arxiv-2611.04157-nonparametric-garch-neural-estimator-2026-11-04.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

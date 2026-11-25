@@ -7,6 +7,7 @@ related:
 maturity: draft
 created: 2026-11-14
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

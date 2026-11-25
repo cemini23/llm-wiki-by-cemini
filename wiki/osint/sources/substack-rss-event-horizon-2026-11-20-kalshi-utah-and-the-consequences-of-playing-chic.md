@@ -10,6 +10,7 @@ related:
   - concepts/prediction-market-venue-competition-2026.md
   - concepts/prediction-market-regulation-2026.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

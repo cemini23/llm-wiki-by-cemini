@@ -6,6 +6,7 @@ related:
   - concepts/agent-harness-castle-project.md
   - concepts/agentic-npc-design-guardrails.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

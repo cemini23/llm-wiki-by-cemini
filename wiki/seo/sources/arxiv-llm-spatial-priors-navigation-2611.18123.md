@@ -5,6 +5,7 @@ maturity: draft
 related:
   - concepts/llm-spatial-priors-limits.md
 updated: 2026-11-16
+read_status: read
 ---
 
 ## Raw Concept

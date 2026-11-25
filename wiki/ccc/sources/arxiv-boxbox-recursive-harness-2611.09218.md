@@ -8,6 +8,7 @@ related:
   - concepts/benchmark-maintenance-debt.md
   - sources/arxiv-2610.32813-harnessmm-recursive-self-improvement-for-harness-2026-10-27.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

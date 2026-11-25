@@ -7,6 +7,7 @@ related:
   - meta/ccc-cross-wiki-handoff-briefs.md
   - "@cybersecurity-wiki/concepts/mcp-execution-control-invariants.md"
 updated: 2026-07-04
+maturity: draft
 ---
 
 ## Target

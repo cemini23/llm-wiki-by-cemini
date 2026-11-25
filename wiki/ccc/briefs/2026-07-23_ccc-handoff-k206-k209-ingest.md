@@ -5,6 +5,7 @@ tags: [brief, handoff, k206, k207, k208, k209]
 related:
   - sources/brief-k206-k209-mcp-slm-rag-ethics-2026-07-23.md
 created: 2026-07-23
+maturity: draft
 ---
 
 ## Summary

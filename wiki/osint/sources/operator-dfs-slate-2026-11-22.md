@@ -7,6 +7,8 @@ related:
   - sources/operator-parlays-slate-2026-11-22.md
   - sources/operator-dfs-slate-2026-11-15.md
 updated: 2026-11-25
+read_status: skimmed
+maturity: draft
 ---
 
 ## Raw Concept

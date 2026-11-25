@@ -5,6 +5,7 @@ maturity: draft
 related:
   - concepts/asia-tokenisation-and-exchange-policy-2026-11.md
 updated: 2026-11-16
+read_status: read
 ---
 
 ## Raw Concept

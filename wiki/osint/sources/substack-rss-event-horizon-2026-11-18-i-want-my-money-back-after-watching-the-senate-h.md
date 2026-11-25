@@ -7,6 +7,7 @@ related:
   - concepts/prediction-market-regulation-2026.md
   - concepts/prediction-market-state-litigation-2026-11.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

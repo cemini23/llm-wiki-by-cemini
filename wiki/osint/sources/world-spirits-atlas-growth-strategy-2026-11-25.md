@@ -6,6 +6,8 @@ related:
   - sources/world-spirits-atlas-architecture-2026-11-25.md
   - sources/world-spirits-atlas-specification-2026-11-25.md
 updated: 2026-11-25
+read_status: skimmed
+maturity: draft
 ---
 
 ## Raw Concept

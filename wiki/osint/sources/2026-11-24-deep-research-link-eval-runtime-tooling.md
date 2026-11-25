@@ -11,6 +11,8 @@ related:
   - "@cybersecurity-wiki/concepts/secret-masking-regression-tests.md"
   - @cybersecurity-wiki/entities/tools/claude-bughunter.md
 updated: 2026-11-24
+read_status: read
+maturity: draft
 ---
 ## Raw Concept
 

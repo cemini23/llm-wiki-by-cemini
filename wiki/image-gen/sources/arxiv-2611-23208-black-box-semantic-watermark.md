@@ -9,6 +9,8 @@ related:
   - entities/models/flux.md
   - concepts/generative-ai-era-deepfake-landscape.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

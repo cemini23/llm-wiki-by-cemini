@@ -6,6 +6,7 @@ related:
   - concepts/baseline-and-metric-calibration.md
   - concepts/auto-researcher-human-similarity.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

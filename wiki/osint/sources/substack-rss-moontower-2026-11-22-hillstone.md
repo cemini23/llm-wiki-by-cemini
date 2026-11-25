@@ -7,6 +7,7 @@ related:
   - sources/substack-rss-moontower-2026-11-22-making-sense-of-returns.md
   - sources/substack-rss-moontower-2026-11-22-moontower-337.md
 updated: 2026-11-22
+read_status: read
 ---
 
 ## Raw Concept

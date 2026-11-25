@@ -9,6 +9,7 @@ related:
   - concepts/dcm-state-preemption.md
   - concepts/osint-inbox-wave-2026-11-14.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

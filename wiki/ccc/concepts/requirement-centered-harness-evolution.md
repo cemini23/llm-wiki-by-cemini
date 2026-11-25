@@ -8,6 +8,7 @@ related:
   - concepts/failed-trajectory-harness-repair.md
   - concepts/measurement-gated-agent-harness-optimization.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

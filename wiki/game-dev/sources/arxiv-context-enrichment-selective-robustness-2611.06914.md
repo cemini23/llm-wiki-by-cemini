@@ -7,6 +7,7 @@ related:
   - concepts/agentic-npc-design-guardrails.md
   - concepts/llm-npc-runtime-ai-shelf.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

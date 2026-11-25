@@ -7,6 +7,7 @@ related:
   - meta/ccc-cross-wiki-handoff-briefs.md
   - concepts/agent-data-injection-attacks.md
 updated: 2026-07-09
+maturity: draft
 ---
 
 ## Target

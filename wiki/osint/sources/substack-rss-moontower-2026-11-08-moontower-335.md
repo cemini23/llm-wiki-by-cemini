@@ -12,6 +12,7 @@ related:
   - sources/substack-rss-moontower-2026-10-28-using-geometry-to-see-why-volatility-scales-with.md
   - sources/substack-rss-moontower-2026-11-04-conversational-ai-media-2026-11-05.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

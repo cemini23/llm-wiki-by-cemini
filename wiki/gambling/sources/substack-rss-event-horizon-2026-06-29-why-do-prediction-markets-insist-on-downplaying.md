@@ -10,6 +10,7 @@ maturity: draft
 created: 2026-07-05
 updated: 2026-10-25
 cross-wiki-source: @osint-wiki/sources/substack-rss-event-horizon-2026-06-29-why-do-prediction-markets-insist-on-downplaying.md
+read_status: read
 ---
 
 # Event Horizon — Why Do Prediction Markets Insist On Downplaying Sports Volume?

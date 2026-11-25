@@ -7,6 +7,7 @@ related:
   - concepts/option-surface-vs-stock-price.md
   - concepts/socratic-tutor-agent-skill.md
 updated: 2026-11-16
+read_status: read
 ---
 
 ## Raw Concept

@@ -9,6 +9,7 @@ related:
   - sources/newsletter-rss-latent-space-2026-10-29-can-frontier-models-see-past-a-decoy-elorian-tes.md
   - sources/newsletter-rss-latent-space-2026-11-02-legal-agents-legora-2026-11-03.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

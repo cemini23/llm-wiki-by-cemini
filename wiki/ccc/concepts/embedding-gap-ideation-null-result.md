@@ -5,6 +5,7 @@ related:
   - sources/arxiv-embedding-map-distances-llm-ideation-2611.21408.md
   - concepts/generation-verification-gap-agent-artifacts.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

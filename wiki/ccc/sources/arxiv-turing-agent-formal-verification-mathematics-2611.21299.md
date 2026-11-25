@@ -8,6 +8,8 @@ related:
   - entities/tools/openai-codex-cli.md
   - sources/newsletter-rss-latent-space-2026-11-20-the-war-against-slop-and-an-emerging-weapon-to-f.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

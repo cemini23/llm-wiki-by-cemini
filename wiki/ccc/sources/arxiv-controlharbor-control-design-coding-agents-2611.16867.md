@@ -8,6 +8,7 @@ related:
   - concepts/harness-as-eval-artifact.md
   - sources/arxiv-2611.03412-deliverbench-multi-stage-projects-2026-11-03.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

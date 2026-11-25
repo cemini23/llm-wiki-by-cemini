@@ -11,6 +11,7 @@ related:
   - sources/newsletter-rss-latent-space-2026-10-27-how-anthropic-ships-claude.md
   - sources/newsletter-rss-latent-space-2026-10-28-ainews-anthropic-ends-coding-interviews-hunger-b.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

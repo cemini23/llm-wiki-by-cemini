@@ -5,6 +5,8 @@ related:
   - sources/newsletter-rss-latent-space-2026-11-16-bfl-web-archive.md
   - concepts/frontier-model-release-cadence.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

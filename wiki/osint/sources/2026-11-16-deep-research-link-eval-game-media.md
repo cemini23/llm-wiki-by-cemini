@@ -7,6 +7,8 @@ related:
   - "@game-dev-wiki/entities/tools/ffmpeg-skill.md"
   - "@game-dev-wiki/entities/tools/estella.md"
 updated: 2026-11-16
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

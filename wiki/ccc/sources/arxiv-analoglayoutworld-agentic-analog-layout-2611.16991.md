@@ -7,6 +7,7 @@ related:
   - entities/tools/analoglayoutworld.md
   - concepts/harness-as-eval-artifact.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

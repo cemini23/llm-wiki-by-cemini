@@ -7,6 +7,8 @@ related:
   - concepts/harness-evolution-vs-test-time-scaling-baseline.md
   - concepts/benchmark-maintenance-debt.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

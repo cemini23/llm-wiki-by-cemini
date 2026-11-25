@@ -8,6 +8,7 @@ related:
   - concepts/timeout-cascade-cost-aware-routing.md
   - concepts/decision-model-hybrid-agent-routing.md
 updated: 2026-11-25
+maturity: draft
 ---
 
 ## Raw Concept

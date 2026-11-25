@@ -7,6 +7,7 @@ related:
   - concepts/prediction-market-regulation-2026.md
   - concepts/osint-inbox-wave-2026-11-14.md
 updated: 2026-11-14
+read_status: read
 ---
 
 ## Raw Concept

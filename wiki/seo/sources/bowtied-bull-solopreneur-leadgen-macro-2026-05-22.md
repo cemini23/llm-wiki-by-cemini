@@ -11,6 +11,7 @@ maturity: draft
 created: 2026-05-22
 updated: 2026-05-22
 cross-wiki-source: "@osint-wiki/sources/bowtied-bull-solopreneur-leadgen-macro-2026-05-22.md"
+read_status: skimmed
 ---
 
 ## Relations

@@ -8,6 +8,8 @@ related:
   - concepts/failed-trajectory-harness-repair.md
   - entities/tools/claude-code.md
 updated: 2026-11-22
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

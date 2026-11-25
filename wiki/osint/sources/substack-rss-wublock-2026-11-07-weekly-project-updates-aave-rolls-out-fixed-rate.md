@@ -10,6 +10,7 @@ related:
   - concepts/crypto-custody-single-point-of-failure.md
   - sources/substack-rss-klement-2026-10-28-gold-reserves-and-exchange-rate-management.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

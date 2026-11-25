@@ -16,6 +16,7 @@ source_url: https://shaggydev.com/2025/05/19/udd-navigation/
 maturity: validated
 created: 2026-06-13
 updated: 2026-10-25
+read_status: read
 ---
 
 ## Relations

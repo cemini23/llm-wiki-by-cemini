@@ -7,6 +7,7 @@ related:
   - entities/companies/coreweave.md
   - concepts/capital-flows-sofr-conviction-framework.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

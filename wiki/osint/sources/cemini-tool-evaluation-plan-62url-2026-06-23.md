@@ -16,6 +16,7 @@ related:
   - sources/tool-eval-metaplan-81url-2026-06-24.md
   - sources/eval-url-cemini-research-2026-06-25.md
 updated: 2026-10-25
+read_status: read
 ---
 
 ## Relations

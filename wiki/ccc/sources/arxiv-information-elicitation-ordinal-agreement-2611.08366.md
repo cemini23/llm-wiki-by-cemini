@@ -7,6 +7,7 @@ related:
   - concepts/auto-researcher-human-similarity.md
   - concepts/gatekeeper-layered-agent-evaluation.md
 updated: 2026-11-10
+read_status: read
 ---
 
 ## Raw Concept

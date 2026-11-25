@@ -18,6 +18,8 @@ related:
   - "@ccc-wiki/entities/stitch-skills.md"
   - "@game-dev-wiki/entities/modern-web-guidance.md"
 updated: 2026-11-24
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

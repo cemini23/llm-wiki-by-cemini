@@ -7,6 +7,7 @@ related:
   - concepts/eval-integrity-minimum-standards.md
   - concepts/harness-as-eval-artifact.md
 updated: 2026-11-22
+maturity: draft
 ---
 
 ## Raw Concept

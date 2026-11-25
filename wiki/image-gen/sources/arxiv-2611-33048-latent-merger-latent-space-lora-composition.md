@@ -9,6 +9,8 @@ related:
   - concepts/preference-delta-lora-aggregation.md
   - concepts/reference-plus-lora-stacking.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept

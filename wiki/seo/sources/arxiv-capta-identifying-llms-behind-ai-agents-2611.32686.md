@@ -6,6 +6,8 @@ related:
   - concepts/generative-engine-optimization.md
   - concepts/agent-ready-website-local-bm.md
 updated: 2026-11-25
+read_status: read
+maturity: draft
 ---
 
 ## Raw Concept
