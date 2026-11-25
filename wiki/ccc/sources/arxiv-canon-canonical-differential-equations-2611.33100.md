@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Author | Dong-Shan Jian, Yuanche Liu, Yan-Qing Ma, Bo-Xuan Shi, Yu Wu, Zihao Wu, Yang Zhang (Peking University, USTC, LAPTh) |
 | Type | arXiv preprint (high-energy physics, USTC-ICTS/PCFT-26-81) |
 | ID | 2611.33100 |
-| Location | research to be indexed/ccc/arxiv-2611.33100-canon-agent-assisted-construction-of-canonical-d.pdf |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.33100-canon-agent-assisted-construction-of-canonical-d.pdfarxiv-2611.33100-canon-agent-assisted-construction-of-canonical-d.pdf
 | Retrieved | 2026-11-25 |
 | File | `arxiv-2611.33100-canon-agent-assisted-construction-of-canonical-d.pdf` |
 | Pages | 12 |

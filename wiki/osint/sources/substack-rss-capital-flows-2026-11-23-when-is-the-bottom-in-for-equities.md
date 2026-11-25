@@ -14,7 +14,7 @@ updated: 2026-11-25
 | Title | When Is The Bottom In For Equities? |
 | Author | Capital Flows Research |
 | Type | newsletter, RSS teaser (paywalled report) |
-| Location | `research to be indexed/substack-rss-capital-flows-2026-11-23-when-is-the-bottom-in-for-equities.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-capital-flows-2026-11-23-when-is-the-bottom-in-for-equities.md` |
 | Retrieved | 2026-11-25 |
 | Published | 2026-11-23 |
 | Read status | read |

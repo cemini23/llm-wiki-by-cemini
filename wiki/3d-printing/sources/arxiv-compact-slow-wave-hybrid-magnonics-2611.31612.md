@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Affiliation | Northeastern University — Electrical and Computer Engineering; Physics |
 | Type | arXiv preprint, physics.app-ph |
 | arXiv | 2611.31612v1 (23 Nov 2026) |
-| Location | `research to be indexed/3d-printing/arxiv-2611.31612-compact-slow-wave-hybrid-magnonics-on-ultrahigh.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.31612-compact-slow-wave-hybrid-magnonics-on-ultrahigh.pdf` |
 | Retrieved | 2026-11-25 |
 | Pages | 7 |
 | Read status | read |

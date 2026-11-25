@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | Cartridge #1 (World Spirits): Master Atlas Engine Technical and Pedagogical Specification |
 | Author | Operator document, no named author |
 | Type | Operator document, .docx, technical specification |
-| Location | `research to be indexed/osint/World Spirits Atlas Specification.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/World Spirits Atlas Specification.docx` |
 | Retrieved | 2026-11-25 |
 | Pages | 272 paragraphs, 9 tables |
 | Read status | read (schema section in full; family lists and checklist) |

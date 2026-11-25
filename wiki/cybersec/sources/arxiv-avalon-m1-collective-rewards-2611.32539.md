@@ -20,7 +20,7 @@ updated: 2026-11-25
 | Type | arXiv preprint, cs.CL |
 | ArXiv | 2611.32539v1 (24 November 2026) |
 | URL | https://arxiv.org/abs/2611.32539 |
-| Location | `research to be indexed/cybersec/arxiv-2611.32539-avalon-m1-reinforcement-learning-from-collective.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.32539-avalon-m1-reinforcement-learning-from-collective.pdf` |
 | Pages | 82 |
 | Retrieved | 2026-11-25 |
 | Read status | read |

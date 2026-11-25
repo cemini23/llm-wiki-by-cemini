@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | Episode 42: The CFTC Now And Then With Tölt Strategies' Dorothy DeWitt |
 | Author | Event Horizon (Next Event Horizon) |
 | Type | newsletter, RSS (podcast plus news roundup) |
-| Location | `research to be indexed/substack-rss-event-horizon-2026-11-23-episode-42-the-cftc-now-and-then-with-tölt-strat.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-23-episode-42-the-cftc-now-and-then-with-tölt-strat.md` |
 | Retrieved | 2026-11-25 |
 | Published | 2026-11-23 |
 | Read status | read |

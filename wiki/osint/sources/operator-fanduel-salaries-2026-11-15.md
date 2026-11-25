@@ -16,7 +16,7 @@ updated: 2026-11-25
 | Title | FanDuel player list, contest 136490, NFL Week 10 |
 | Author | FanDuel export, operator working file |
 | Type | CSV, salary and injury export |
-| Location | `research to be indexed/osint/nov14.csv` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/nov14.csv` |
 | Retrieved | 2026-11-25 |
 | Slate date | 2026-11-15 |
 | Read status | read |

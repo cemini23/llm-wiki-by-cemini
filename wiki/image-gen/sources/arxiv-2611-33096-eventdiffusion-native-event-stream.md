@@ -17,7 +17,7 @@ updated: 2026-11-25
 | Authors | Karthik Sundar Senthilkumar, Christopher Thirgood, Simon Hadfield (University of Surrey) |
 | Type | arXiv preprint, cs.CV |
 | arXiv | 2611.33096v1, 24 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.33096-eventdiffusion-learning-native-event-stream-dist.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.33096-eventdiffusion-learning-native-event-stream-dist.pdf` |
 | URL | https://arxiv.org/abs/2611.33096 |
 | Retrieved | 2026-11-25 |
 | Pages | 32 |

@@ -18,7 +18,7 @@ updated: 2026-11-25
 | Author | Lingwei Gu, Jimmy Lin (University of Waterloo, David R. Cheriton School) |
 | Type | arXiv preprint (cs.AI) |
 | ID | 2611.33098v1, 24 Nov 2026 |
-| Location | research to be indexed/ccc/arxiv-2611.33098-delegent-a-multi-agent-harness-that-reduces-cost.pdf |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.33098-delegent-a-multi-agent-harness-that-reduces-cost.pdfarxiv-2611.33098-delegent-a-multi-agent-harness-that-reduces-cost.pdf
 | Retrieved | 2026-11-25 |
 | File | `arxiv-2611.33098-delegent-a-multi-agent-harness-that-reduces-cost.pdf` |
 | Pages | 11 |

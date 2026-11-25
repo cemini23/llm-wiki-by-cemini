@@ -14,7 +14,7 @@ updated: 2026-11-25
 | Title | Rough log-normal stochastic volatility with quadratic drift: second-moment stability and the martingale property under positive correlation |
 | Author | Artur Sepp (LGT Bank, Zurich), Parviz Rakhmonov (Marex, London) |
 | Type | arXiv preprint, mathematical finance (q-fin.MF) |
-| Location | `research to be indexed/osint/arxiv-2611.32791-rough-log-normal-stochastic-volatility-with-quad.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.32791-rough-log-normal-stochastic-volatility-with-quad.pdf` |
 | Retrieved | 2026-11-25 |
 | arXiv | 2611.32791v1, 24 Nov 2026 |
 | Pages | 34 |

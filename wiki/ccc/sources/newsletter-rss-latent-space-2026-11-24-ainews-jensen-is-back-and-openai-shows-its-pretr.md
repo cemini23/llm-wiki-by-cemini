@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | [AINews] Jensen Is Back! and OpenAI Shows Its Pretraining Curve, joined by Microsoft |
 | Author | Latent Space (AINews) |
 | Type | Newsletter (RSS, free tier) |
-| Location | research to be indexed/newsletter-rss-latent-space-2026-11-24-ainews-jensen-is-back-and-openai-shows-its-pretr.md |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-24-ainews-jensen-is-back-and-openai-shows-its-pretr.mdnewsletter-rss-latent-space-2026-11-24-ainews-jensen-is-back-and-openai-shows-its-pretr.md
 | Retrieved | 2026-11-24 |
 | File | `newsletter-rss-latent-space-2026-11-24-ainews-jensen-is-back-and-openai-shows-its-pretr.md` |
 | URL | https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/ |

@@ -14,7 +14,7 @@ updated: 2026-11-25
 | Title | A Word Of Caution For Sentiment and NVDA Flows |
 | Author | Capital Flows Research |
 | Type | newsletter, RSS teaser (paywalled) |
-| Location | `research to be indexed/substack-rss-capital-flows-2026-11-24-a-word-of-caution-for-sentiment-and-nvda-flows.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-capital-flows-2026-11-24-a-word-of-caution-for-sentiment-and-nvda-flows.md` |
 | Retrieved | 2026-11-25 |
 | Published | 2026-11-24 |
 | Read status | read |

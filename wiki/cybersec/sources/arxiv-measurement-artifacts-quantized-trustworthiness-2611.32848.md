@@ -21,7 +21,7 @@ updated: 2026-11-25
 | Type | arXiv preprint, cs.AI |
 | ArXiv | 2611.32848v1 (24 November 2026) |
 | URL | https://arxiv.org/abs/2611.32848 |
-| Location | `research to be indexed/cybersec/arxiv-2611.32848-measurement-artifacts-in-trustworthiness-evaluat.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.32848-measurement-artifacts-in-trustworthiness-evaluat.pdf` |
 | Pages | 20 |
 | Retrieved | 2026-11-25 |
 | Read status | read |

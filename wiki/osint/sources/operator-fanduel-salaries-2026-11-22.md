@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | FanDuel player list, contest 136799, NFL Week 11 |
 | Author | FanDuel export, operator working file |
 | Type | CSV, salary and injury export |
-| Location | `research to be indexed/osint/11.21fanduel` (CSV text, no extension) |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/11.21fanduel` (CSV text, no extension) |
 | Retrieved | 2026-11-25 |
 | Slate date | 2026-11-22 |
 | Read status | read |

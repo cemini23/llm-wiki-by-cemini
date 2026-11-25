@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | Can Prediction Markets Thread The Needle On State Taxation And Regulation? |
 | Author | Event Horizon (Next Event Horizon) |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-event-horizon-2026-11-24-can-prediction-markets-thread-the-needle-on-stat.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-24-can-prediction-markets-thread-the-needle-on-stat.md` |
 | Retrieved | 2026-11-25 |
 | Published | 2026-11-24 |
 | Read status | read |

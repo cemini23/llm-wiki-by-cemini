@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Author | Maximilian Rokuss et al. (DKFZ Heidelberg, Heidelberg University, Microsoft Research, Stanford) |
 | Type | arXiv preprint |
 | ID | 2611.27876 |
-| Location | research to be indexed/ccc/arxiv-2611.27876-lesionagent-training-free-agentic-tumor-tracking.pdf |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.27876-lesionagent-training-free-agentic-tumor-tracking.pdfarxiv-2611.27876-lesionagent-training-free-agentic-tumor-tracking.pdf
 | Retrieved | 2026-11-25 |
 | File | `arxiv-2611.27876-lesionagent-training-free-agentic-tumor-tracking.pdf` |
 | Pages | 23 |

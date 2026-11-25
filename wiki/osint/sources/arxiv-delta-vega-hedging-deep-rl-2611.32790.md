@@ -16,7 +16,7 @@ updated: 2026-11-25
 | Title | Delta-Vega Hedging with Deep Reinforcement Learning: From Simulation to Reality |
 | Author | Michele Colombi, Marco Di Francesco, Pietro Rossi (SNS Pisa, Bologna, Leithà/Unipol, Prometeia) |
 | Type | arXiv preprint, q-fin.CP / reinforcement learning |
-| Location | `research to be indexed/osint/arxiv-2611.32790-delta-vega-hedging-with-deep-reinforcement-learn.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.32790-delta-vega-hedging-with-deep-reinforcement-learn.pdf` |
 | Retrieved | 2026-11-25 |
 | arXiv | 2611.32790v1, 24 Nov 2026 |
 | Pages | 34 |

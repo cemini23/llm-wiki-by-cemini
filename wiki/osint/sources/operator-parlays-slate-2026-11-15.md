@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | CeminiParlays Sunday slate packet 2026-11-15 |
 | Author | Operator working file (CeminiParlays desk) |
 | Type | Operator document, .docx, packet bundle |
-| Location | `research to be indexed/osint/laysslate.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/laysslate.docx` |
 | Retrieved | 2026-11-25 |
 | Slate date | 2026-11-15 |
 | Read status | skimmed (opening sections and tables) |

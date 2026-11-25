@@ -16,7 +16,7 @@ updated: 2026-11-25
 | Affiliation | Department of Mechanical Engineering, University of Maryland, College Park |
 | Type | arXiv preprint, cs.CE |
 | arXiv | 2611.32822v1 (24 Nov 2026) |
-| Location | `research to be indexed/3d-printing/arxiv-2611.32822-ded-agent-an-agentic-ai-method-for-autonomous-th.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/3d-printing/arxiv-2611.32822-ded-agent-an-agentic-ai-method-for-autonomous-th.pdf` |
 | Retrieved | 2026-11-25 |
 | Pages | 11 |
 | Read status | read |

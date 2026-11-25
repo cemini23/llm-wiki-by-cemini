@@ -16,7 +16,7 @@ updated: 2026-11-25
 | Title | FanDuel Sunday Million packet: NFL 2026 Week 11, Sunday Nov 22 |
 | Author | Operator working file (CeminiDFS desk) |
 | Type | Operator document, .docx, read-only slate packet |
-| Location | `research to be indexed/osint/11.21dfs.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/11.21dfs.docx` |
 | Retrieved | 2026-11-25 |
 | Slate date | 2026-11-22 |
 | Read status | skimmed (opening sections, tables and checklist) |

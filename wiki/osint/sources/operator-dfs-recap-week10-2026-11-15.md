@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | FanDuel NFL Week 10 recap: Sunday 2026-11-15, contest 136490, 150 lineups |
 | Author | Operator working file (CeminiDFS desk) |
 | Type | Operator document, .docx, portfolio recap |
-| Location | `research to be indexed/osint/week10recap.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/week10recap.docx` |
 | Retrieved | 2026-11-25 |
 | Slate date | 2026-11-15 |
 | Read status | read |

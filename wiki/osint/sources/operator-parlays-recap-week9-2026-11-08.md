@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | Parlays recap, Week 9 Sunday 2026-11-08 (paper / unstaked) |
 | Author | Operator working file (CeminiParlays desk) |
 | Type | Operator document, .docx, graded ticket recap |
-| Location | `research to be indexed/osint/week10recapparlays.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/week10recapparlays.docx` |
 | Retrieved | 2026-11-25 |
 | Slate date | 2026-11-08 |
 | Read status | read |

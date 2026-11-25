@@ -14,7 +14,7 @@ updated: 2026-11-25
 | Title | Making Sports Event Contracts 21+ Feels Like A No-Brainer? |
 | Author | Event Horizon (Next Event Horizon) |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-event-horizon-2026-11-25-making-sports-event-contracts-21-feels-like-a-no.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-11-25-making-sports-event-contracts-21-feels-like-a-no.md` |
 | Retrieved | 2026-11-25 |
 | Published | 2026-11-25 |
 | Read status | read |

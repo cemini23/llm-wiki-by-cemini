@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | The Pragmatic Engineer Essay Challenge: Category Winners (Part 1) |
 | Author | Gergely Orosz (The Pragmatic Engineer) |
 | Type | Newsletter (RSS, free tier) |
-| Location | research to be indexed/newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.md |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.mdnewsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.md
 | Retrieved | 2026-11-24 |
 | File | `newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.md` |
 | URL | https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge |

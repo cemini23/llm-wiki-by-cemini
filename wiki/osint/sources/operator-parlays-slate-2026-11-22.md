@@ -16,7 +16,7 @@ updated: 2026-11-25
 | Title | CeminiParlays Sunday slate packet 2026-11-22 |
 | Author | Operator working file (CeminiParlays desk) |
 | Type | Operator document, .docx, packet bundle |
-| Location | `research to be indexed/osint/11.21parlays.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/11.21parlays.docx` |
 | Retrieved | 2026-11-25 |
 | Slate date | 2026-11-22 |
 | Read status | skimmed (packet, scheme, T-90 checklist) |

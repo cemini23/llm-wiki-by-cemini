@@ -22,7 +22,7 @@ updated: 2026-11-25
 | Type | arXiv preprint, cs.SI |
 | ArXiv | 2611.32957v1 (24 November 2026) |
 | URL | https://arxiv.org/abs/2611.32957 |
-| Location | `research to be indexed/cybersec/arxiv-2611.32957-i-do-intend-to-deliver-will-llms-run-a-marketpla.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/cybersec/arxiv-2611.32957-i-do-intend-to-deliver-will-llms-run-a-marketpla.pdf` |
 | Pages | 25 |
 | Retrieved | 2026-11-25 |
 | Read status | read |

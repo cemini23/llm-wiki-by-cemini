@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | October 2026 TradFi Perpetual Futures Volume Report: MoM up 21.9%, leveraged ETFs nearly doubled, with SOXL up 127%, Bitget volume up 68.5% |
 | Author | Wu Blockchain Data Center |
 | Type | newsletter, RSS, monthly volume report |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-24-october-2026-tradfi-perpetual-futures-volume-rep.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-24-october-2026-tradfi-perpetual-futures-volume-rep.md` |
 | Retrieved | 2026-11-25 |
 | Published | 2026-11-24 |
 | Read status | read |

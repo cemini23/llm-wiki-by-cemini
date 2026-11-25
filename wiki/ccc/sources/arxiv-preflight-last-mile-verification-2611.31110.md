@@ -16,7 +16,7 @@ updated: 2026-11-25
 | Author | Yaman Jandali, Nojan Sheybani, Farinaz Koushanfar, Tara Javidi (UC San Diego) |
 | Type | arXiv preprint (cs.AI), accepted at the AI for Science workshop, NeurIPS 2026 |
 | ID | 2611.31110v1, 23 Nov 2026 |
-| Location | research to be indexed/ccc/arxiv-2611.31110-preflight-agentic-last-mile-verification-for-ai.pdf |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.31110-preflight-agentic-last-mile-verification-for-ai.pdfarxiv-2611.31110-preflight-agentic-last-mile-verification-for-ai.pdf
 | Retrieved | 2026-11-25 |
 | File | `arxiv-2611.31110-preflight-last-mile-verification-for-ai.pdf` |
 | Pages | unknown (read p.1 only) |

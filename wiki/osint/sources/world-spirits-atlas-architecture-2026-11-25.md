@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | Open-Source World Spirits Atlas: Verified Permissive Geospatial Inventory, Regulatory Extraction Architecture, and Sub-15MB Static Build Pipeline |
 | Author | Operator document, no named author |
 | Type | Operator document, .docx, technical architecture |
-| Location | `research to be indexed/osint/Open World Spirits Atlas Architecture.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/Open World Spirits Atlas Architecture.docx` |
 | Retrieved | 2026-11-25 |
 | Pages | 245 paragraphs, 5 tables |
 | Read status | skimmed (sections 1–3, pipeline and byte budget) |

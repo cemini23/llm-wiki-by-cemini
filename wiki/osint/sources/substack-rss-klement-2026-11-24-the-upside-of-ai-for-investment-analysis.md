@@ -14,7 +14,7 @@ updated: 2026-11-25
 | Title | The upside of AI for investment analysis |
 | Author | Joachim Klement (Klement on Investing) |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-klement-2026-11-24-the-upside-of-ai-for-investment-analysis.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-24-the-upside-of-ai-for-investment-analysis.md` |
 | Retrieved | 2026-11-25 |
 | Published | 2026-11-24 |
 | Read status | read |

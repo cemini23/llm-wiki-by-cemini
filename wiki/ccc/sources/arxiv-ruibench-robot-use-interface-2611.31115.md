@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Author | Yanzhe Chen, Zhijun Cao, Zechen Bai, Wenzheng Zeng et al. (Show Lab, NUS) |
 | Type | arXiv preprint (cs.RO) |
 | ID | 2611.31115v1, 23 Nov 2026 |
-| Location | research to be indexed/ccc/arxiv-2611.31115-ruibench-what-makes-a-good-robot-use-interface.pdf |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.31115-ruibench-what-makes-a-good-robot-use-interface.pdfarxiv-2611.31115-ruibench-what-makes-a-good-robot-use-interface.pdf
 | Retrieved | 2026-11-25 |
 | File | `arxiv-2611.31115-ruibench-what-makes-a-good-robot-use-interface.pdf` |
 | Pages | unknown (read p.1 only) |

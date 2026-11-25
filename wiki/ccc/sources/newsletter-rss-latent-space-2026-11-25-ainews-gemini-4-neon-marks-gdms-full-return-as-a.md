@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | [AINews] Gemini 4 Neon marks GDM's full return as a Frontier Lab |
 | Author | Latent Space (AINews) |
 | Type | Newsletter (RSS, free tier) |
-| Location | research to be indexed/newsletter-rss-latent-space-2026-11-25-ainews-gemini-4-neon-marks-gdms-full-return-as-a.md |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-25-ainews-gemini-4-neon-marks-gdms-full-return-as-a.mdnewsletter-rss-latent-space-2026-11-25-ainews-gemini-4-neon-marks-gdms-full-return-as-a.md
 | Retrieved | 2026-11-25 |
 | File | `newsletter-rss-latent-space-2026-11-25-ainews-gemini-4-neon-marks-gdms-full-return-as-a.md` |
 | URL | https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/ |

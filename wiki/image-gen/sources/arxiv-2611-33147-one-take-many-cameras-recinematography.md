@@ -21,7 +21,7 @@ updated: 2026-11-25
 | Authors | Anthony Chen (Stanford, LTX), Naomi Ken Korem, Matan Ben-Yosef, Tavi Halperin, Urska Jelercic, Ofir Bibi (LTX), Daniel Cohen-Or, Or Patashnik (Tel Aviv University), Maneesh Agrawala (Stanford) |
 | Type | arXiv preprint, cs.CV (film and graphics framing) |
 | arXiv | 2611.33147v1, 24 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.33147-one-take-many-cameras-audio-grounded-shot-synthe.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.33147-one-take-many-cameras-audio-grounded-shot-synthe.pdf` |
 | URL | https://arxiv.org/abs/2611.33147 |
 | Project page | https://recinematography.github.io/ |
 | Retrieved | 2026-11-25 |

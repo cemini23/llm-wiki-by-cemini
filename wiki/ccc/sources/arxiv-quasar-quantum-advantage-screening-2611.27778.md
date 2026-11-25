@@ -14,7 +14,7 @@ updated: 2026-11-25
 | Author | Mark L. Carroll, Jordan A. Caraballo-Vega, Brian P. Powell, John L. Schnase (NASA Goddard, Adnet System) |
 | Type | arXiv preprint |
 | ID | 2611.27778 |
-| Location | research to be indexed/ccc/arxiv-2611.27778-quasar-toward-an-llm-assisted-framework-for-scre.pdf |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.27778-quasar-toward-an-llm-assisted-framework-for-scre.pdfarxiv-2611.27778-quasar-toward-an-llm-assisted-framework-for-scre.pdf
 | Retrieved | 2026-11-25 |
 | File | `arxiv-2611.27778-quasar-toward-an-llm-assisted-framework-for-scre.pdf` |
 | Pages | unknown (read p.1 only) |

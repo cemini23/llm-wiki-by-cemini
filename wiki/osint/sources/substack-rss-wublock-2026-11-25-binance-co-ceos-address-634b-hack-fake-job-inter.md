@@ -14,7 +14,7 @@ updated: 2026-11-25
 | Title | Binance Co-CEOs Address $6.34B Hack: Fake Job Interviews, Wallet Exploit, and Recovery Efforts |
 | Author | Wu Blockchain (transcript of a public Binance Space) |
 | Type | newsletter, RSS, interview transcript |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-25-binance-co-ceos-address-634b-hack-fake-job-inter.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-25-binance-co-ceos-address-634b-hack-fake-job-inter.md` |
 | Retrieved | 2026-11-25 |
 | Published | 2026-11-25 |
 | Read status | read |

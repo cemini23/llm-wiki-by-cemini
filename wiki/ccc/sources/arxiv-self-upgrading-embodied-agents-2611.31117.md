@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Author | Jiajun Fan, Neil He, Qinglong Zheng et al. (UIUC, CMU, Brown, Stanford, Northeastern, Harvard, UW, Rutgers, Princeton, UMich, Columbia, NYU, UC Berkeley, Yale) |
 | Type | arXiv preprint (cs.AI) |
 | ID | 2611.31117v1, 24 Nov 2026. Dated 21 Nov 2026 |
-| Location | research to be indexed/ccc/arxiv-2611.31117-self-upgrading-embodied-agents.pdf |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.31117-self-upgrading-embodied-agents.pdfarxiv-2611.31117-self-upgrading-embodied-agents.pdf
 | Retrieved | 2026-11-25 |
 | File | `arxiv-2611.31117-self-upgrading-embodied-agents.pdf` |
 | Pages | unknown (read p.1 only) |

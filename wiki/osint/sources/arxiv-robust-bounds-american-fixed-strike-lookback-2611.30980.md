@@ -14,7 +14,7 @@ updated: 2026-11-25
 | Title | Robust bounds for American fixed-strike lookback puts |
 | Author | YongQing Xu (Shenzhen Technology University) |
 | Type | arXiv preprint, mathematical finance (q-fin.MF) |
-| Location | `research to be indexed/osint/arxiv-2611.30980-robust-bounds-for-american-fixed-strike-lookback.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.30980-robust-bounds-for-american-fixed-strike-lookback.pdf` |
 | Retrieved | 2026-11-25 |
 | arXiv | 2611.30980v1, 23 Nov 2026 |
 | Pages | 28 |

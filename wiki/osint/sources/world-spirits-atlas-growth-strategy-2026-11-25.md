@@ -15,7 +15,7 @@ updated: 2026-11-25
 | Title | Open-Source Growth, Technical SEO, and Monetization Playbook for the World Spirits Atlas and Shared Atlas Engine |
 | Author | Operator document, no named author |
 | Type | Operator document, .docx, growth and business plan |
-| Location | `research to be indexed/osint/World Spirits Atlas Growth Strategy.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/World Spirits Atlas Growth Strategy.docx` |
 | Retrieved | 2026-11-25 |
 | Pages | 273 paragraphs, 6 tables |
 | Read status | skimmed (naming, SEO architecture, monetization pillars) |

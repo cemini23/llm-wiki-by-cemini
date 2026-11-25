@@ -19,7 +19,7 @@ updated: 2026-11-25
 | Authors | Yanlai Yang, Minki Kang, Divyam Madaan, Sung Ju Hwang, Mengye Ren (NYU, KAIST, DeepAuto.ai) |
 | Type | NeurIPS 2026 preprint, arXiv cs.LG |
 | arXiv | 2611.33048v1, 24 Nov 2026 |
-| Location | `research to be indexed/image-gen/arxiv-2611.33048-latent-merger-latent-space-composition-of-hypern.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/image-gen/arxiv-2611.33048-latent-merger-latent-space-composition-of-hypern.pdf` |
 | URL | https://arxiv.org/abs/2611.33048 |
 | Retrieved | 2026-11-25 |
 | Pages | 19 |

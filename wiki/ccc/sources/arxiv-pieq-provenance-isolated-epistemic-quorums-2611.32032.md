@@ -16,7 +16,7 @@ updated: 2026-11-25
 | Author | Jun He, Deying Yu (OpenKedge LLC) |
 | Type | arXiv preprint (cs.AI) |
 | ID | 2611.32032 |
-| Location | research to be indexed/ccc/arxiv-2611.32032-provenance-isolated-epistemic-quorums-execution.pdf |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.32032-provenance-isolated-epistemic-quorums-execution.pdfarxiv-2611.32032-provenance-isolated-epistemic-quorums-execution.pdf
 | Retrieved | 2026-11-25 |
 | File | `arxiv-2611.32032-provenance-isolated-epistemic-quorums-execution.pdf` |
 | Pages | 22 |

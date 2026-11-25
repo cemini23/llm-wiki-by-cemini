@@ -17,7 +17,7 @@ updated: 2026-11-25
 | Author | Vincent Koc et al. (OpenClaw Foundation, Parsewave, Hugging Face, Paradigm, UC Berkeley, Columbia, Red Hat, NVIDIA) |
 | Type | arXiv preprint (cs.AI) |
 | ID | 2611.32946v1, 24 Nov 2026 |
-| Location | research to be indexed/ccc/arxiv-2611.32946-shellbench-what-matters-more-for-ai-agents-model.pdf |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.32946-shellbench-what-matters-more-for-ai-agents-model.pdfarxiv-2611.32946-shellbench-what-matters-more-for-ai-agents-model.pdf
 | Retrieved | 2026-11-25 |
 | File | `arxiv-2611.32946-shellbench-what-matters-more-for-ai-agents-model.pdf` |
 | Pages | 17 |

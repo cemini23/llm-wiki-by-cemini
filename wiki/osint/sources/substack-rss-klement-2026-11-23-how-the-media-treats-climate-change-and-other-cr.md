@@ -13,7 +13,7 @@ updated: 2026-11-25
 | Title | How the media treats climate change and other 'crises' |
 | Author | Joachim Klement (Klement on Investing) |
 | Type | newsletter, RSS |
-| Location | `research to be indexed/substack-rss-klement-2026-11-23-how-the-media-treats-climate-change-and-other-cr.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-23-how-the-media-treats-climate-change-and-other-cr.md` |
 | Retrieved | 2026-11-25 |
 | Published | 2026-11-23 |
 | Read status | read |

@@ -16,7 +16,7 @@ updated: 2026-11-25
 | Author | Chrisantus Eze (Oklahoma State University) |
 | Type | arXiv preprint (cs.AI) |
 | ID | 2611.27839v1, 20 Nov 2026 |
-| Location | research to be indexed/ccc/arxiv-2611.27839-beyond-self-critique-epistemic-convergence-contr.pdf |
+| Location | cemini-egress-fi:/opt/cemini-bulk/research/ccc/arxiv-2611.27839-beyond-self-critique-epistemic-convergence-contr.pdfarxiv-2611.27839-beyond-self-critique-epistemic-convergence-contr.pdf
 | Retrieved | 2026-11-25 |
 | File | `arxiv-2611.27839-beyond-self-critique-epistemic-convergence-contr.pdf` |
 | Pages | unknown (read p.1 only) |

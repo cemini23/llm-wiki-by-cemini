@@ -14,7 +14,7 @@ updated: 2026-11-25
 | Title | WuBlockchain Weekly Outlook: Dell Earnings Spotlight AI Server Deliveries as U.S. PCE and GDP Shape the Economic Outlook |
 | Author | Wu Blockchain |
 | Type | newsletter, RSS, macro calendar |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-23-wublockchain-weekly-outlook-dell-earnings-spotli.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-23-wublockchain-weekly-outlook-dell-earnings-spotli.md` |
 | Retrieved | 2026-11-25 |
 | Published | 2026-11-23 |
 | Coverage | 2026-11-23 to 2026-11-29 |
