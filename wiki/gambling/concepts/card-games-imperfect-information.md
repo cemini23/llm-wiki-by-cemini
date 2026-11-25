@@ -4,7 +4,7 @@ type: concept
 tags: [stub, cross-wiki]
 keywords: []
 related:
-  - @osint-wiki/concepts/irumai-indian-rummy-rl.md
+  - "@osint-wiki/concepts/irumai-indian-rummy-rl.md"
   - sources/arxiv-2508-17671-consistent-opponent-modeling.md
   - concepts/opponent-modeling-imperfect-info.md
 maturity: draft

@@ -1,5 +1,5 @@
 ---
-title: Reading a scanner watchlist: OTE, GEX, VEX, and invalidation
+title: "Reading a scanner watchlist: OTE, GEX, VEX, and invalidation"
 type: concept
 maturity: draft
 related:

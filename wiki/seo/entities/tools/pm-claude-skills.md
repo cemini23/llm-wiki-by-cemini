@@ -12,7 +12,7 @@ created: 2026-05-21
 updated: 2026-07-31
 cross-wiki-source: "@osint-wiki/sources/tool-evaluation-wiki-fit-2026-05-15.md"
 wire_status: deferred
-wire_target: Next: Phase-0 capability breakdown then wire or wont_wire
+wire_target: "Next: Phase-0 capability breakdown then wire or wont_wire"
 ---
 
 ## Relations

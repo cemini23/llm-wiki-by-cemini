@@ -1,5 +1,5 @@
 ---
-title: Event Horizon — Episode 29: Innovation-Maxxing At The CFTC
+title: "Event Horizon — Episode 29: Innovation-Maxxing At The CFTC"
 type: source
 tags: [newsletter, k246, inbox-rss]
 keywords: [substack, rss, k246]

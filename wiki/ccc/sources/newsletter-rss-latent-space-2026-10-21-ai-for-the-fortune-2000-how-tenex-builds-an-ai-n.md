@@ -1,5 +1,5 @@
 ---
-title: Latent Space — AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman & CJ Hess
+title: "Latent Space — AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman & CJ Hess"
 type: source
 tags: [source, rss, inbox-auto, latent-space]
 keywords: [rss, latent-space]

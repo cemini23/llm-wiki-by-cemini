@@ -1,5 +1,5 @@
 ---
-title: Wu Blockchain — Asia's weekly TOP10 crypto news: KRX to Launch New‑Securities Market in November, Laser Digital Gets Japan's First 4‑Year Crypto License and Top10 News
+title: "Wu Blockchain — Asia's weekly TOP10 crypto news: KRX to Launch New‑Securities Market in November, Laser Digital Gets Japan's First 4‑Year Crypto License and Top10 News"
 type: source
 tags: [newsletter, k246, inbox-rss]
 keywords: [substack, rss, k246]

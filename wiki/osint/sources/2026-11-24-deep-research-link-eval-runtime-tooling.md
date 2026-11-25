@@ -9,7 +9,7 @@ related:
   - "@image-gen-wiki/concepts/local-inference-runtimes.md"
   - "@ccc-wiki/entities/whatsflare.md"
   - "@cybersecurity-wiki/concepts/secret-masking-regression-tests.md"
-  - @cybersecurity-wiki/entities/tools/claude-bughunter.md
+  - "@cybersecurity-wiki/entities/tools/claude-bughunter.md"
 updated: 2026-11-24
 read_status: read
 maturity: draft

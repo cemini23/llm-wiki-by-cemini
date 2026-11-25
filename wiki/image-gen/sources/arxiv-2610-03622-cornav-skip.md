@@ -1,5 +1,5 @@
 ---
-title: ""CORNAV — robot navigation on construction sites (arXiv:2610.03622) — SKIP""
+title: "CORNAV — robot navigation on construction sites (arXiv:2610.03622) — SKIP"
 type: source
 tags: [paper, robotics, navigation, out-of-domain, skip]
 keywords: [CORNAV, robot navigation, construction site, scene graph, CAD blueprint, OSHA, A star planning, Unitree]

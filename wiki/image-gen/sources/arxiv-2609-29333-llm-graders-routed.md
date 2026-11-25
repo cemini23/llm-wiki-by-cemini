@@ -6,7 +6,7 @@ keywords: [LLM grading, evaluation, education]
 related:
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-09-25-daily.md
-  - @ccc-wiki/sources/arxiv-2609-29333-llm-graders-cs-exams-routed.md
+  - "@ccc-wiki/sources/arxiv-2609-29333-llm-graders-cs-exams-routed.md"
   - sources/arxiv-2609-35472-prm-discrete-diffusion-routed.md
 maturity: draft
 read_status: deep-read

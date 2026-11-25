@@ -9,8 +9,8 @@ related:
   - concepts/adaptive-rag-internal-linking-geo.md
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-06-17-daily.md
-  - @osint-wiki/
-  - @osint-wiki/
+  - "@osint-wiki/"
+  - "@osint-wiki/"
   - concepts/generative-engine-optimization.md
 maturity: draft
 created: 2026-06-17

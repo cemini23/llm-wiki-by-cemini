@@ -1,5 +1,5 @@
 ---
-title: SparkToro Blog — New Research from Similarweb: How AI Brand Mentions Influence Direct Visits & Traditional Search Queries
+title: "SparkToro Blog — New Research from Similarweb: How AI Brand Mentions Influence Direct Visits & Traditional Search Queries"
 type: source
 tags: []
 keywords: []
@@ -7,9 +7,9 @@ related: []
 maturity: draft
 created: 2026-07-05
 updated: 2026-07-05
-cross-wiki-source: @osint-wiki/sources/newsletter-rss-sparktoro-2026-06-29-new-research-from-similarweb-how-ai-brand-mentio.md
+cross-wiki-source: "@osint-wiki/sources/newsletter-rss-sparktoro-2026-06-29-new-research-from-similarweb-how-ai-brand-mentio.md"
 related:
-  - @osint-wiki/sources/newsletter-rss-sparktoro-2026-06-29-new-research-from-similarweb-how-ai-brand-mentio.md
+  - "@osint-wiki/sources/newsletter-rss-sparktoro-2026-06-29-new-research-from-similarweb-how-ai-brand-mentio.md"
 read_status: skimmed
 ---
 

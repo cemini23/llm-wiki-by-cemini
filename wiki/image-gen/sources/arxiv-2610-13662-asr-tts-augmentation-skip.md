@@ -1,5 +1,5 @@
 ---
-title: ""ASR improvement via TTS and voice-conversion augmentation (arXiv:2610.13662) — SKIP""
+title: "ASR improvement via TTS and voice-conversion augmentation (arXiv:2610.13662) — SKIP"
 type: source
 tags: [paper, asr, data-augmentation, out-of-domain, skip]
 keywords: [ASR augmentation, voice conversion, kNN-VC, Seed-VC, vec2wav2, Azure TTS, Conformer, Zipformer, icefall, WER, NISQA, Turkish]

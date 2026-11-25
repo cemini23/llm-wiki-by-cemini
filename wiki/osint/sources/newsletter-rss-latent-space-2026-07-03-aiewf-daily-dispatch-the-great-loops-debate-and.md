@@ -1,5 +1,5 @@
 ---
-title: Latent Space — AIEWF Daily Dispatch: The great loops debate and the state of AI engineering
+title: "Latent Space — AIEWF Daily Dispatch: The great loops debate and the state of AI engineering"
 type: source
 tags: [source, newsletter-rss, inbox-auto, latent-space]
 keywords: [rss, newsletter, latent-space]

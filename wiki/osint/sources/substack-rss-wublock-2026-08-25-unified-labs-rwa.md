@@ -1,5 +1,5 @@
 ---
-title: Wu Blockchain — Unified Labs: What Is RWA Really About? The Institutional Game Behind Bringing Traditional Finance Onchain
+title: "Wu Blockchain — Unified Labs: What Is RWA Really About? The Institutional Game Behind Bringing Traditional Finance Onchain"
 type: source
 tags: [newsletter, k246, inbox-rss]
 keywords: [substack, rss, k246]

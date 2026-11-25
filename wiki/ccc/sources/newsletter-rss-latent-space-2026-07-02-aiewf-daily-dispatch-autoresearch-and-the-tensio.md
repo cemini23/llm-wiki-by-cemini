@@ -4,7 +4,7 @@ type: source
 tags: [stub, cross-wiki]
 keywords: []
 related:
-  - @osint-wiki/sources/newsletter-rss-latent-space-2026-07-02-aiewf-daily-dispatch-autoresearch-and-the-tensio.md
+  - "@osint-wiki/sources/newsletter-rss-latent-space-2026-07-02-aiewf-daily-dispatch-autoresearch-and-the-tensio.md"
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
   - sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md
 maturity: draft

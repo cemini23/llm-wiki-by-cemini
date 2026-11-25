@@ -9,7 +9,7 @@ related:
   - sources/eval-url-cemini-research-2026-06-25.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/mcp-tool-calling-eval-scaffold.md
-  - @cybersecurity-wiki/entities/tools/reverse-skill.md
+  - "@cybersecurity-wiki/entities/tools/reverse-skill.md"
 maturity: draft
 created: 2026-06-25
 updated: 2026-08-05

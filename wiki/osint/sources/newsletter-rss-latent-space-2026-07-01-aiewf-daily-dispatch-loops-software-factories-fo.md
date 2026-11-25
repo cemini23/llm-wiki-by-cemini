@@ -1,5 +1,5 @@
 ---
-title: Latent Space — AIEWF Daily Dispatch: Loops, Software Factories & Forward Deployed Engineers
+title: "Latent Space — AIEWF Daily Dispatch: Loops, Software Factories & Forward Deployed Engineers"
 type: source
 tags: [source, newsletter-rss, inbox-auto, latent-space]
 keywords: [rss, newsletter, latent-space]

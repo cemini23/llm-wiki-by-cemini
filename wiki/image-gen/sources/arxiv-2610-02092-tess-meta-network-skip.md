@@ -1,5 +1,5 @@
 ---
-title: ""TESS — meta-network data selection for LLMs (arXiv:2610.02092) — SKIP""
+title: "TESS — meta-network data selection for LLMs (arXiv:2610.02092) — SKIP"
 type: source
 tags: [paper, llm-training, data-selection, out-of-domain, skip]
 keywords: [TESS, meta-network, data selection, pointwise value matching, ScaleBiO, LLM instruction tuning, Alpaca, Dolly]

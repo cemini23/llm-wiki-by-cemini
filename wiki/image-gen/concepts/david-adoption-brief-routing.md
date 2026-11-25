@@ -6,8 +6,8 @@ keywords: [david, tipdrop-workspace-kit, adoption-brief, retired, 2026-08-05]
 related:
   - concepts/persona-audio-stack.md
   - concepts/persona-ops-stack.md
-  - @osint-wiki/concepts/active-project-research-routing.md
-  - @cybersecurity-wiki/concepts/local-abliterated-llm-pentest-stack.md
+  - "@osint-wiki/concepts/active-project-research-routing.md"
+  - "@cybersecurity-wiki/concepts/local-abliterated-llm-pentest-stack.md"
   - concepts/stage-aware-lora-distribution-calibrated-selection.md
   - entities/voice-models/speech-swift.md
   - sweeps/2026-07-13-daily.md

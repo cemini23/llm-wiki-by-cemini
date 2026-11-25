@@ -1,5 +1,5 @@
 ---
-title: Latent Space — [AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback
+title: "Latent Space — [AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback"
 type: source
 tags: [source, rss, inbox-auto, latent-space]
 keywords: [rss, latent-space]

@@ -4,7 +4,7 @@ type: entity
 tags: [tool, game-dev, tts, asr, voice-cloning, agpl]
 keywords: [VoiceStudio, local TTS, Whisper, Parakeet, dubbing, Basgiath]
 related:
-  - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md"
   - entities/tools/dessa.md
   - entities/tools/pausevfx.md
 maturity: draft

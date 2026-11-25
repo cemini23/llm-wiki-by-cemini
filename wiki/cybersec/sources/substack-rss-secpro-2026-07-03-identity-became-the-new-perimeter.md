@@ -7,9 +7,9 @@ related: []
 maturity: draft
 created: 2026-07-05
 updated: 2026-07-05
-cross-wiki-source: @osint-wiki/sources/substack-rss-secpro-2026-07-03-identity-became-the-new-perimeter.md
+cross-wiki-source: "@osint-wiki/sources/substack-rss-secpro-2026-07-03-identity-became-the-new-perimeter.md"
 related:
-  - @osint-wiki/sources/substack-rss-secpro-2026-07-03-identity-became-the-new-perimeter.md
+  - "@osint-wiki/sources/substack-rss-secpro-2026-07-03-identity-became-the-new-perimeter.md"
 read_status: read
 ---
 

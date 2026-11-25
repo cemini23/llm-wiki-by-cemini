@@ -4,7 +4,7 @@ type: source
 tags: [stub, cross-wiki]
 keywords: []
 related:
-  - @osint-wiki/sources/substack-rss-secpro-2026-07-10-from-defending-systems-to-governing-autonomous-e.md
+  - "@osint-wiki/sources/substack-rss-secpro-2026-07-10-from-defending-systems-to-governing-autonomous-e.md"
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25

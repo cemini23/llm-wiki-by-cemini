@@ -4,7 +4,7 @@ type: source
 tags: [stub, cross-wiki]
 keywords: []
 related:
-  - @osint-wiki/sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md
+  - "@osint-wiki/sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md"
 maturity: draft
 created: 2026-10-25
 updated: 2026-10-25

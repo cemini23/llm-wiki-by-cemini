@@ -4,12 +4,12 @@ type: source
 tags: [source, klement, cross-wiki, equity, out-of-scope-primary]
 keywords: [globalisation, equity-markets, macro]
 related:
-  - @osint-wiki/sources/substack-rss-klement-2026-07-07-globalisation-in-the-2020s.md
+  - "@osint-wiki/sources/substack-rss-klement-2026-07-07-globalisation-in-the-2020s.md"
 maturity: draft
 read_status: skimmed
 created: 2026-07-07
 updated: 2026-07-07
-cross-wiki-source: @osint-wiki/sources/substack-rss-klement-2026-07-07-globalisation-in-the-2020s.md
+cross-wiki-source: "@osint-wiki/sources/substack-rss-klement-2026-07-07-globalisation-in-the-2020s.md"
 ---
 
 # Klement on Investing — Globalisation in the 2020s

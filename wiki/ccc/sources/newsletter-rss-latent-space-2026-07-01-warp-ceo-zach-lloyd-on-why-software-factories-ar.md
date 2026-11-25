@@ -4,7 +4,7 @@ type: source
 tags: [stub, cross-wiki]
 keywords: []
 related:
-  - @osint-wiki/sources/newsletter-rss-latent-space-2026-07-01-warp-ceo-zach-lloyd-on-why-software-factories-ar.md
+  - "@osint-wiki/sources/newsletter-rss-latent-space-2026-07-01-warp-ceo-zach-lloyd-on-why-software-factories-ar.md"
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
   - sources/newsletter-rss-latent-space-2026-11-12-ainews-d-day-decision-models-day.md
 maturity: draft

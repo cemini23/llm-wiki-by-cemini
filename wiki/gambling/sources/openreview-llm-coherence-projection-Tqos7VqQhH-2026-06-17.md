@@ -13,7 +13,7 @@ related:
   - entities/platforms/polymarket.md
   - sources/openreview-prophets-profit-pm-LYSTj2Cnuu-2026-06-17.md
   - sweeps/2026-06-17-daily.md
-  - @osint-wiki/concepts/market-informedness-market-making.md
+  - "@osint-wiki/concepts/market-informedness-market-making.md"
   - concepts/prediction-markets-crossover.md
   - sources/arxiv-2607.02467-human-capital-pm-hybrid-forecasting-2026-07-06.md
 maturity: validated

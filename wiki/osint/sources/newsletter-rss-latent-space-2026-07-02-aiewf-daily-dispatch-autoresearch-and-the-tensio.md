@@ -1,5 +1,5 @@
 ---
-title: Latent Space — AIEWF Daily Dispatch: Autoresearch and the tension between AI and human agency
+title: "Latent Space — AIEWF Daily Dispatch: Autoresearch and the tension between AI and human agency"
 type: source
 tags: [source, newsletter-rss, inbox-auto, latent-space]
 keywords: [rss, newsletter, latent-space]

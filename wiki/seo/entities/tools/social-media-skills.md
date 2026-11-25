@@ -12,7 +12,7 @@ created: 2026-05-26
 updated: 2026-07-31
 cross-wiki-source: "@osint-wiki/sources/multi-wiki-tool-eval-22url-2026-05-26.md"
 wire_status: deferred
-wire_target: Next: Phase-0 audit then policy wire or wont_wire
+wire_target: "Next: Phase-0 audit then policy wire or wont_wire"
 ---
 
 ## Relations

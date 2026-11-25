@@ -10,8 +10,8 @@ related:
   - concepts/federated-daily-research-digest.md
   - concepts/generative-engine-optimization.md
   - sweeps/2026-06-17-daily.md
-  - @osint-wiki/
-  - @osint-wiki/
+  - "@osint-wiki/"
+  - "@osint-wiki/"
 maturity: validated
 read_status: read
 created: 2026-06-17

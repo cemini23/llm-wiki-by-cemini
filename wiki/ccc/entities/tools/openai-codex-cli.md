@@ -2,7 +2,7 @@
 title: OpenAI Codex CLI — implementer lane
 type: entity
 tags: [entity, tool, codex, cli, openai, orchestration, k207]
-keywords: [codex exec, @openai/codex, ChatGPT login, gpt-5.6-terra, darwin-arm64]
+keywords: [codex exec, "@openai/codex", ChatGPT login, gpt-5.6-terra, darwin-arm64]
 related:
   - sources/arxiv-turing-agent-formal-verification-mathematics-2611.21299.md
   - entities/tools/turing-agent.md

@@ -13,7 +13,7 @@ related:
   - sources/2026-arxiv-lane-noise-triage-jul15.md
   - sources/2026-arxiv-lane-noise-triage-jul18.md
   - sources/2026-corn-optimistic-verifiable-claims.md
-  - @cybersecurity-wiki/sources/2026-asgar-firewall3d-firmware-hardware.md
+  - "@cybersecurity-wiki/sources/2026-asgar-firewall3d-firmware-hardware.md"
 maturity: draft
 created: 2026-07-15
 updated: 2026-07-29

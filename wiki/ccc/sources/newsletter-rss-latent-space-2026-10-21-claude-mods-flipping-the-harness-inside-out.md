@@ -1,5 +1,5 @@
 ---
-title: Latent Space — Claude Mods: Flipping the Harness Inside Out
+title: "Latent Space — Claude Mods: Flipping the Harness Inside Out"
 type: source
 tags: [source, rss, inbox-auto, latent-space]
 keywords: [rss, latent-space]

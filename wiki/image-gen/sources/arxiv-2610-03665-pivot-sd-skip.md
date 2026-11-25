@@ -1,5 +1,5 @@
 ---
-title: ""Pivot-SD — self-distillation for masked diffusion LMs (arXiv:2610.03665) — SKIP""
+title: "Pivot-SD — self-distillation for masked diffusion LMs (arXiv:2610.03665) — SKIP"
 type: source
 tags: [paper, diffusion-language-model, self-distillation, out-of-domain, skip]
 keywords: [Pivot-SD, masked diffusion language model, self-distillation, pivot tokens, LLaDA, Dream, entropy drop, MIT]

@@ -7,9 +7,9 @@ related: []
 maturity: draft
 created: 2026-07-07
 updated: 2026-07-07
-cross-wiki-source: @osint-wiki/sources/substack-rss-seceng-weekly-2026-07-06-how-id-respond-in-the-first-hour-after-a-package.md
+cross-wiki-source: "@osint-wiki/sources/substack-rss-seceng-weekly-2026-07-06-how-id-respond-in-the-first-hour-after-a-package.md"
 related:
-  - @osint-wiki/sources/substack-rss-seceng-weekly-2026-07-06-how-id-respond-in-the-first-hour-after-a-package.md
+  - "@osint-wiki/sources/substack-rss-seceng-weekly-2026-07-06-how-id-respond-in-the-first-hour-after-a-package.md"
 read_status: read
 ---
 

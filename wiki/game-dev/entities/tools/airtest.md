@@ -13,7 +13,7 @@ related:
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-13
-cross-wiki-primary: @ccc-wiki
+cross-wiki-primary: "@ccc-wiki"
 ---
 
 ## Relations

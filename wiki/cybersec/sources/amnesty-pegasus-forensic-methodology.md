@@ -1,5 +1,5 @@
 ---
-title: Amnesty International — Forensic Methodology: How to Catch NSO Group's Pegasus
+title: "Amnesty International — Forensic Methodology: How to Catch NSO Group's Pegasus"
 type: source
 tags: [source, amnesty, pegasus, nso, spyware, forensics, public-report]
 keywords: [Pegasus, NSO, zero-click, iMessage, DataUsage.sqlite, Mobile Verification Toolkit, Pegasus Project, forensic methodology]

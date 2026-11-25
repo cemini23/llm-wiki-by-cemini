@@ -1,5 +1,5 @@
 ---
-title: ""Robot failure dynamics from human interaction video (arXiv:2610.13522) — SKIP""
+title: "Robot failure dynamics from human interaction video (arXiv:2610.13522) — SKIP"
 type: source
 tags: [paper, robotics, world-model, out-of-domain, skip]
 keywords: [HF-WM, failure dynamics, counterfactual actions, Flow-GRPO, Cosmos 3, stabilized pointflow, skeleton action space, policy evaluation, RH20T, DROID]

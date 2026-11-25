@@ -5,7 +5,7 @@ tags: [tool, agents, skills, image-gen, vendor-lock, game-time]
 keywords: [scenario skills, baseline plus delta, grid maker, quality gate, creative units, mcp]
 related:
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md"
-  - @osint-wiki/sources/eval-multi-wiki-repository-revenue-2026-11-04.md
+  - "@osint-wiki/sources/eval-multi-wiki-repository-revenue-2026-11-04.md"
 maturity: draft
 created: 2026-11-03
 updated: 2026-11-03

@@ -1,5 +1,5 @@
 ---
-title: Event Horizon — Episode 23: Silliness In Prediction Markets About Spotify
+title: "Event Horizon — Episode 23: Silliness In Prediction Markets About Spotify"
 type: source
 tags: [source, event-horizon, kalshi, spotify, culture-markets, cross-wiki, k149]
 keywords: [ingame-podcast, spotify-streams, kalshi-culture, oracle-manipulation]
@@ -8,7 +8,7 @@ related:
   - sources/substack-rss-event-horizon-2026-07-03-how-artificial-spotify-streams-broke-a-kalshi-ma.md
   - entities/platforms/kalshi.md
   - sources/daily-digest-batch-k149-2026-07-07.md
-  - @osint-wiki/sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
+  - "@osint-wiki/sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md"
   - sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md
   - sources/substack-rss-event-horizon-2026-10-26-episode-38-breaking-down-the-news-at-nextpredict.md
   - sources/substack-rss-event-horizon-2026-10-28-what-we-learned-about-robinhood-and-prediction-m.md
@@ -16,7 +16,7 @@ maturity: validated
 read_status: skimmed
 created: 2026-07-06
 updated: 2026-10-25
-cross-wiki-source: @osint-wiki/sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
+cross-wiki-source: "@osint-wiki/sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md"
 ---
 
 # Event Horizon — Episode 23: Silliness In Prediction Markets About Spotify

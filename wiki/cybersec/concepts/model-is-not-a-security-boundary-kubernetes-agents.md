@@ -11,7 +11,7 @@ related:
   - concepts/adversarial-images-hijack-web-agents.md
   - concepts/coding-agent-supply-chain-install-gap.md
   - concepts/agentic-containment-principles.md
-  - @ccc-wiki/concepts/model-is-not-a-security-boundary.md
+  - "@ccc-wiki/concepts/model-is-not-a-security-boundary.md"
   - sources/arxiv-2610-02861-kubernetes-agent-containment.md
   - concepts/cyber-capable-agent-evaluation-containment.md
 maturity: draft

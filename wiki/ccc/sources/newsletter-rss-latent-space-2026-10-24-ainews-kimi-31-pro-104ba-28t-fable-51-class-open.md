@@ -1,5 +1,5 @@
 ---
-title: Latent Space — [AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed
+title: "Latent Space — [AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed"
 type: source
 tags: [source, rss, inbox-auto, latent-space]
 keywords: [rss, latent-space]

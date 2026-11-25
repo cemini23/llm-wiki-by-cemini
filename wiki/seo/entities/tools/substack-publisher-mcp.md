@@ -15,7 +15,7 @@ updated: 2026-10-25
 phase0_decision: GO
 wire_status: deferred
 wire_target: stash ~/.cursor/mcp.substack.disabled.json · clone ~/.local/mcp/substack-publisher-mcp @ 237adde
-wire_block: Official remote MCP OAuth is Bestseller-only. Cursor `disabled: true` still spawned mcp-remote and opened the browser. Both servers were removed from ~/.cursor/mcp.json on 2026-09-01. Do not add them back; do not call mcp_auth.
+wire_block: "Official remote MCP OAuth is Bestseller-only. Cursor `disabled: true` still spawned mcp-remote and opened the browser. Both servers were removed from ~/.cursor/mcp.json on 2026-09-01. Do not add them back; do not call mcp_auth."
 ---
 
 ## Relations

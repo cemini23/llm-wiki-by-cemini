@@ -1,5 +1,5 @@
 ---
-title: ""Predicting nanofabrication variance with a conditional diffusion model (arXiv:2610.13420) — SKIP""
+title: "Predicting nanofabrication variance with a conditional diffusion model (arXiv:2610.13420) — SKIP"
 type: source
 tags: [paper, materials, process-modelling, out-of-domain, skip]
 keywords: [nanofabrication, focused ion beam, conditional DDPM, SPADE conditioning, SEM images, linewidth variance, defect probability, materials process]

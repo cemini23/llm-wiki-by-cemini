@@ -1,5 +1,5 @@
 ---
-title: Inbox arXiv reject batch — 2026-07-07 (arXiv-API fallback mis-route: AV + graphics + quant)
+title: "Inbox arXiv reject batch — 2026-07-07 (arXiv-API fallback mis-route: AV + graphics + quant)"
 type: source
 tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, mis-route, autonomous-driving, backtesting]

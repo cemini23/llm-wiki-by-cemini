@@ -5,7 +5,7 @@ tags: [source, newsletter-rss, inbox-auto, outlier-weekly]
 keywords: [rss, newsletter, outlier-weekly]
 related:
   - sources/substack-rss-outlier-weekly-2026-07-08-cxw-geo-th-postmortem.md
-  - @gambling-wiki/sources/substack-rss-outlier-weekly-2026-07-03-the-11b-warehouse-failure-behind-the-cxwgeo-trad.md
+  - "@gambling-wiki/sources/substack-rss-outlier-weekly-2026-07-03-the-11b-warehouse-failure-behind-the-cxwgeo-trad.md"
 maturity: draft
 created: 2026-07-05
 updated: 2026-10-25

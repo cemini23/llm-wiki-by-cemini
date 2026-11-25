@@ -2,7 +2,7 @@
 title: DeepSeek Harness (dsh) — official DeepSeek agent harness
 type: entity
 tags: [tool, coding-agent, harness, deepseek, mit, phase0]
-keywords: [dsh, deepseek-harness, @deepseek-ai/dsh, cordis, headless, developer-preview, claude-ds, DSH_PERMISSION_MODE]
+keywords: [dsh, deepseek-harness, "@deepseek-ai/dsh", cordis, headless, developer-preview, claude-ds, DSH_PERMISSION_MODE]
 related:
   - entities/tools/claude-code.md
   - entities/tools/agent-toolkit.md

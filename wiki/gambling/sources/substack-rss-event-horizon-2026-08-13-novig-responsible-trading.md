@@ -12,7 +12,7 @@ maturity: draft
 read_status: read
 created: 2026-08-14
 updated: 2026-08-14
-cross-wiki-source: @osint-wiki/sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md
+cross-wiki-source: "@osint-wiki/sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md"
 ---
 
 ## Relations

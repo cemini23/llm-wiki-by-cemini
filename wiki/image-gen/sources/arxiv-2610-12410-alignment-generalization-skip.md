@@ -1,5 +1,5 @@
 ---
-title: ""Predicting alignment generalization with value representations (arXiv:2610.12410) — SKIP""
+title: "Predicting alignment generalization with value representations (arXiv:2610.12410) — SKIP"
 type: source
 tags: [paper, llm-alignment, rlhf, out-of-domain, skip]
 keywords: [alignment generalization, value representations, DPO, SFT, persona vectors, gradient directions, Anthropic constitution, ConflictScope, Olmo-3, Qwen-3]

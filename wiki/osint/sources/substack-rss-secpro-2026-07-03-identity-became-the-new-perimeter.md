@@ -9,7 +9,7 @@ created: 2026-07-05
 updated: 2026-07-05
 read_status: skimmed
 related:
-  - @cybersecurity-wiki/sources/substack-rss-secpro-2026-07-03-identity-became-the-new-perimeter.md
+  - "@cybersecurity-wiki/sources/substack-rss-secpro-2026-07-03-identity-became-the-new-perimeter.md"
 ---
 
 ## Relations

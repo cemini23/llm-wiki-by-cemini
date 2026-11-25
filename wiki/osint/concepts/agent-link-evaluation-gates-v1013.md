@@ -6,35 +6,35 @@ related:
   - sources/2026-11-16-deep-research-link-eval-game-media.md
   - entities/tools/chrome-devtools-mcp.md
   - entities/tools/neo4jev.md
-  - @ccc-wiki/entities/tools/ag-ui.md
-  - @ccc-wiki/entities/tools/jev-recipes.md
-  - @ccc-wiki/entities/tools/plannotator.md
-  - @ccc-wiki/entities/tools/product-engineering-skills.md
-  - @ccc-wiki/entities/tools/univer.md
-  - @game-dev-wiki/entities/tools/estella.md
-  - @game-dev-wiki/entities/tools/ffmpeg-skill.md
-  - @cybersecurity-wiki/entities/tools/claude-bughunter.md
-  - @cybersecurity-wiki/entities/tools/wrapvm.md
-  - @image-gen-wiki/entities/tools/claude-video.md
+  - "@ccc-wiki/entities/tools/ag-ui.md"
+  - "@ccc-wiki/entities/tools/jev-recipes.md"
+  - "@ccc-wiki/entities/tools/plannotator.md"
+  - "@ccc-wiki/entities/tools/product-engineering-skills.md"
+  - "@ccc-wiki/entities/tools/univer.md"
+  - "@game-dev-wiki/entities/tools/estella.md"
+  - "@game-dev-wiki/entities/tools/ffmpeg-skill.md"
+  - "@cybersecurity-wiki/entities/tools/claude-bughunter.md"
+  - "@cybersecurity-wiki/entities/tools/wrapvm.md"
+  - "@image-gen-wiki/entities/tools/claude-video.md"
   - sources/2026-11-17-deep-research-link-eval-design-motion-harness.md
-  - @ccc-wiki/concepts/agent-presentation-generation.md
-  - @ccc-wiki/concepts/agent-verification-patterns.md
-  - @ccc-wiki/concepts/design-skill-cluster-2026-11.md
-  - @ccc-wiki/concepts/repeated-correction-mining.md
-  - @ccc-wiki/entities/bot-browser.md
+  - "@ccc-wiki/concepts/agent-presentation-generation.md"
+  - "@ccc-wiki/concepts/agent-verification-patterns.md"
+  - "@ccc-wiki/concepts/design-skill-cluster-2026-11.md"
+  - "@ccc-wiki/concepts/repeated-correction-mining.md"
+  - "@ccc-wiki/entities/bot-browser.md"
   - sources/2026-11-22-deep-research-link-eval-abliterated-harness.md
-  - @cybersecurity-wiki/concepts/open-weight-abliterated-models-2026-11.md
-  - @game-dev-wiki/entities/tools/fast-anything.md
-  - @game-dev-wiki/entities/tools/landmines-lint.md
-  - @image-gen-wiki/entities/models/inkling-2-mini.md
-  - @ccc-wiki/concepts/agent-harness-tooling-2026-11.md
-  - @cybersecurity-wiki/concepts/api-security-audit-rubric.md
+  - "@cybersecurity-wiki/concepts/open-weight-abliterated-models-2026-11.md"
+  - "@game-dev-wiki/entities/tools/fast-anything.md"
+  - "@game-dev-wiki/entities/tools/landmines-lint.md"
+  - "@image-gen-wiki/entities/models/inkling-2-mini.md"
+  - "@ccc-wiki/concepts/agent-harness-tooling-2026-11.md"
+  - "@cybersecurity-wiki/concepts/api-security-audit-rubric.md"
   - sources/2026-11-24-deep-research-link-eval-runtime-tooling.md
-  - @ccc-wiki/concepts/agent-runtime-tooling-2026-11.md
-  - @ccc-wiki/entities/whatsflare.md
-  - @game-dev-wiki/entities/tools/autoclip.md
-  - @cybersecurity-wiki/concepts/secret-masking-regression-tests.md
-  - @image-gen-wiki/concepts/local-inference-runtimes.md
+  - "@ccc-wiki/concepts/agent-runtime-tooling-2026-11.md"
+  - "@ccc-wiki/entities/whatsflare.md"
+  - "@game-dev-wiki/entities/tools/autoclip.md"
+  - "@cybersecurity-wiki/concepts/secret-masking-regression-tests.md"
+  - "@image-gen-wiki/concepts/local-inference-runtimes.md"
 updated: 2026-11-24
 maturity: draft
 ---

@@ -14,7 +14,7 @@ related:
 maturity: validated
 created: 2026-05-13
 updated: 2026-09-18
-laptop_install: VERIFIED 2026-09-18 — Cursor plugin finance-data-providers / tradingview (37 tools). Smoke: SPY quote + BTC pulse. Not wired to Grok /route.
+laptop_install: "VERIFIED 2026-09-18 — Cursor plugin finance-data-providers / tradingview (37 tools). Smoke: SPY quote + BTC pulse. Not wired to Grok /route."
 ---
 
 ## Relations

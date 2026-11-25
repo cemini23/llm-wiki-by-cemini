@@ -4,7 +4,7 @@ type: source
 tags: [stub, cross-wiki]
 keywords: []
 related:
-  - @osint-wiki/sources/newsletter-rss-latent-space-2026-07-01-how-cursor-deploys-ai-inside-the-enterprise.md
+  - "@osint-wiki/sources/newsletter-rss-latent-space-2026-07-01-how-cursor-deploys-ai-inside-the-enterprise.md"
   - sources/newsletter-rss-latent-space-2026-11-12-the-jev-revolution-what-engineers-are-already-bu.md
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
 maturity: draft

@@ -7,14 +7,14 @@ related:
   - concepts/kalshi-michigan-sports-injunction-2026-06.md
   - entities/platforms/kalshi.md
   - concepts/prediction-markets-crossover.md
-  - @osint-wiki/sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md
+  - "@osint-wiki/sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md"
   - sources/substack-rss-event-horizon-2026-10-28-news-utah-files-criminal-charges-against-kalshi.md
   - sources/substack-rss-event-horizon-2026-10-29-i-got-an-email-from-kalshi-asking-if-i-wanted-to.md
 maturity: validated
 created: 2026-07-05
 updated: 2026-07-05
 read_status: read
-cross-wiki-source: @osint-wiki/sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md
+cross-wiki-source: "@osint-wiki/sources/substack-rss-event-horizon-2026-06-29-michigan-court-orders-kalshi-to-stop-sports-even.md"
 ---
 
 # Event Horizon — Michigan Court Orders Kalshi to Stop Sports Event Contracts

@@ -4,7 +4,7 @@ type: entity
 tags: [tool, ccc]
 keywords: [deepinfer, deepseek, inference, sm100]
 related:
-  - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md"
   - sources/newsletter-rss-latent-space-2026-10-21-ainews-deepseek-deepinfer-open-source-sota-infer.md
 maturity: draft
 created: 2026-10-25

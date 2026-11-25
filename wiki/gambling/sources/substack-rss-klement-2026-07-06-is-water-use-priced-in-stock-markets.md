@@ -7,9 +7,9 @@ related: []
 maturity: draft
 created: 2026-07-06
 updated: 2026-07-06
-cross-wiki-source: @osint-wiki/sources/substack-rss-klement-2026-07-06-is-water-use-priced-in-stock-markets.md
+cross-wiki-source: "@osint-wiki/sources/substack-rss-klement-2026-07-06-is-water-use-priced-in-stock-markets.md"
 related:
-  - @osint-wiki/sources/substack-rss-klement-2026-07-06-is-water-use-priced-in-stock-markets.md
+  - "@osint-wiki/sources/substack-rss-klement-2026-07-06-is-water-use-priced-in-stock-markets.md"
 read_status: read
 ---
 

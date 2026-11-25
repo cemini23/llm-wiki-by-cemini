@@ -17,8 +17,7 @@ related:
 maturity: validated
 created: 2026-06-18
 updated: 2026-06-18
-- @concepts/best-ball-strategy.md — strategy synthesis from winner patterns
-- @entities/platforms/underdog-fantasy.md — platform context
+---
 
 ## Raw Concept
 

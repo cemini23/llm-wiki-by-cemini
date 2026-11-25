@@ -4,7 +4,7 @@ type: source
 tags: [stub, cross-wiki]
 keywords: []
 related:
-  - @osint-wiki/sources/newsletter-rss-latent-space-2026-07-01-autoresearch-the-feedback-loop-behind-self-impro.md
+  - "@osint-wiki/sources/newsletter-rss-latent-space-2026-07-01-autoresearch-the-feedback-loop-behind-self-impro.md"
   - sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
 maturity: draft

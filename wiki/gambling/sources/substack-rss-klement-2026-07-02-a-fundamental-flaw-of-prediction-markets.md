@@ -7,13 +7,13 @@ related:
   - concepts/pm-whale-conviction-bias-2026-07.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
-  - @osint-wiki/sources/substack-rss-klement-2026-07-02-a-fundamental-flaw-of-prediction-markets.md
+  - "@osint-wiki/sources/substack-rss-klement-2026-07-02-a-fundamental-flaw-of-prediction-markets.md"
   - concepts/prediction-markets-crossover.md
 maturity: draft
 created: 2026-07-05
 updated: 2026-10-25
 read_status: skimmed
-cross-wiki-source: @osint-wiki/sources/substack-rss-klement-2026-07-02-a-fundamental-flaw-of-prediction-markets.md
+cross-wiki-source: "@osint-wiki/sources/substack-rss-klement-2026-07-02-a-fundamental-flaw-of-prediction-markets.md"
 ---
 
 # Klement on Investing — A fundamental flaw of prediction markets

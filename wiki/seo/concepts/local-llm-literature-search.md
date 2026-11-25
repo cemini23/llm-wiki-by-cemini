@@ -1,5 +1,5 @@
 ---
-title: Local LLM literature search: what the hardware actually buys
+title: "Local LLM literature search: what the hardware actually buys"
 type: concept
 maturity: draft
 related:

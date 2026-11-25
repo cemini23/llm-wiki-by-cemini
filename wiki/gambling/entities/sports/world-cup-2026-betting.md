@@ -30,8 +30,8 @@ related:
   - sources/arxiv-2607.17765-wc2026-agents-llm-forecasting-2026-07-21.md
   - entities/tools/wc2026-agents.md
   - sources/brief-k160-wc2026-agents-market-baseline-steals-2026-07-21.md
-  - @seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md
-  - @seo-wiki/concepts/x-account-voice-and-format.md
+  - "@seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md"
+  - "@seo-wiki/concepts/x-account-voice-and-format.md"
 maturity: validated
 created: 2026-05-31
 updated: 2026-07-21

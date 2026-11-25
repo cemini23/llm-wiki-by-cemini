@@ -13,7 +13,7 @@ related:
   - entities/tools/claude-code.md
   - sources/multi-wiki-tool-eval-v5-k88-2026-05-31.md
   - sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md
-  - @osint-wiki/concepts/game-dev-wiki-federation.md
+  - "@osint-wiki/concepts/game-dev-wiki-federation.md"
   - concepts/multi-agent-evidence-artifact-layers.md
   - "@osint-wiki/concepts/computational-genealogy-archival-automation.md"
   - "@osint-wiki/concepts/italian-regional-genealogy-archive-playbook.md"

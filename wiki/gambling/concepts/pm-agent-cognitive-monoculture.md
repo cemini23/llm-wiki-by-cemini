@@ -20,7 +20,7 @@ related:
   - sources/arxiv-2606-13038-nous-prediction-market-cognitive-injection-2026-06-13.md
   - sources/arxiv-2607.07760-adversarial-social-epistemology-llm-2026-07-12.md
   - sources/brief-k153-mppo-style-pm-evidence-steals-2026-07-12.md
-  - @osint-wiki/concepts/market-informedness-market-making.md
+  - "@osint-wiki/concepts/market-informedness-market-making.md"
   - sources/arxiv-2607.07820-deepsearch-world-self-distillation-2026-07-13.md
   - sources/brief-k154-metagame-memory-search-steals-2026-07-13.md
   - sources/openreview-prophets-profit-pm-LYSTj2Cnuu-2026-06-17.md

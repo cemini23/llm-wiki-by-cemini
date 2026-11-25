@@ -1,5 +1,5 @@
 ---
-title: Wu Blockchain — Asia's weekly TOP10 crypto news: South Korea Regulates Stablecoins as Payment Means, China to Build National Blockchain Network, HSBC Launches Stablecoin and Top10 News
+title: "Wu Blockchain — Asia's weekly TOP10 crypto news: South Korea Regulates Stablecoins as Payment Means, China to Build National Blockchain Network, HSBC Launches Stablecoin and Top10 News"
 type: source
 tags: [source, rss, inbox-auto, wublock]
 keywords: [rss, wublock]

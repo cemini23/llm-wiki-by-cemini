@@ -4,7 +4,7 @@ type: entity
 tags: [tool, ccc, git, worktree, unverified]
 keywords: [worktrunk, git worktree, parallel agents, max-sixty]
 related:
-  - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md"
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.10-batch-c-2026-11-02.md"
   - entities/tools/thinkrail.md
   - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.11-2026-11-03.md"

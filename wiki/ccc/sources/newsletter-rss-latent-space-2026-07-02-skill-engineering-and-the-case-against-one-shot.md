@@ -4,7 +4,7 @@ type: source
 tags: [stub, cross-wiki]
 keywords: []
 related:
-  - @osint-wiki/sources/newsletter-rss-latent-space-2026-07-02-skill-engineering-and-the-case-against-one-shot.md
+  - "@osint-wiki/sources/newsletter-rss-latent-space-2026-07-02-skill-engineering-and-the-case-against-one-shot.md"
   - sources/newsletter-rss-latent-space-2026-08-20-wayfinder.md
   - sources/newsletter-rss-latent-space-2026-11-08-how-stanford-teaches-ai-native-engineering-mihai.md
 maturity: draft

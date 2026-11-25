@@ -19,7 +19,7 @@ related:
 maturity: validated
 created: 2026-05-10
 updated: 2026-10-25
-laptop_install: VERIFIED 2026-09-18 — worker 13.24.20. OpenRouter observer: `mistralai/mistral-nemo` primary, `inclusionai/ling-3.0-flash` fallback. Do not use `:free` slugs (429).
+laptop_install: "VERIFIED 2026-09-18 — worker 13.24.20. OpenRouter observer: `mistralai/mistral-nemo` primary, `inclusionai/ling-3.0-flash` fallback. Do not use `:free` slugs (429)."
 ---
 
 ## Relations

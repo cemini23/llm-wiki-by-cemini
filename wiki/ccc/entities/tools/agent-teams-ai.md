@@ -4,7 +4,7 @@ type: entity
 tags: [tool, ccc]
 keywords: [agent-teams-ai, orchestration, desktop]
 related:
-  - @osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md
+  - "@osint-wiki/sources/eval-multi-wiki-link-revenue-v10.9-2026-10-25.md"
   - entities/tools/ruflo.md
   - entities/fusion.md
 maturity: draft

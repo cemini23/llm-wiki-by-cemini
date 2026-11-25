@@ -7,7 +7,7 @@ related:
   - sources/arxiv-2610-10276-patchbench-local-suppression-vs-repair.md
   - concepts/local-suppression-vs-repair.md
   - concepts/adversarial-region-estimation-vs-single-example.md
-  - @ccc-wiki/concepts/threat-preserving-representation-sensitivity.md
+  - "@ccc-wiki/concepts/threat-preserving-representation-sensitivity.md"
   - sources/arxiv-2610-07323-atlas-al-adversarial-region-active-learning.md
   - sources/arxiv-2610-04693-penumbra-regulatory-obligation-adversarial-search.md
   - concepts/compliance-boundary-adjacent-pair-search.md

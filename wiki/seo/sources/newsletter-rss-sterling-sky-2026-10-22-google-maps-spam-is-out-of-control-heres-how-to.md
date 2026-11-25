@@ -1,5 +1,5 @@
 ---
-title: Sterling Sky — Google Maps Spam Is Out of Control: Here’s How to Fight Back
+title: "Sterling Sky — Google Maps Spam Is Out of Control: Here’s How to Fight Back"
 type: source
 tags: [source, rss, inbox-auto, sterling-sky]
 keywords: [rss, sterling-sky]

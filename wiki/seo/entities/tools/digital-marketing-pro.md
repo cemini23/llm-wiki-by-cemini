@@ -11,7 +11,7 @@ created: 2026-05-21
 updated: 2026-07-31
 cross-wiki-source: "@osint-wiki/entities/tools/digital-marketing-pro.md"
 wire_status: deferred
-wire_target: Next: Phase-0 (MIT verify) then wire or wont_wire
+wire_target: "Next: Phase-0 (MIT verify) then wire or wont_wire"
 ---
 
 ## Relations

@@ -4,7 +4,7 @@ type: source
 tags: [source, arxiv, k283]
 keywords: [2609.36923, k283]
 related:
-  - @seo-wiki/sources/arxiv-kang-2026-precogui-proactive-gui-agents-2609.36923-2026-09-30.md
+  - "@seo-wiki/sources/arxiv-kang-2026-precogui-proactive-gui-agents-2609.36923-2026-09-30.md"
   - concepts/simulate-before-commit-experience-pool.md
   - briefs/2026-10-01_ccc-k411-k415-sip-ready.md
 maturity: draft

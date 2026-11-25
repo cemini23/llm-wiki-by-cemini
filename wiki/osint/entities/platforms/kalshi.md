@@ -90,7 +90,7 @@ related:
   - concepts/gambling-wiki-federation.md
   - sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md
   - concepts/kalshi-implied-macro-belief-distributions.md
-  - @gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md
+  - "@gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md"
   - sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md
   - concepts/hybrid-intelligence-human-capital-forecasting.md
   - sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md

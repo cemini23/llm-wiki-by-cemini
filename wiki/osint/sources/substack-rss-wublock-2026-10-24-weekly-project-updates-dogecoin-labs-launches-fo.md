@@ -1,5 +1,5 @@
 ---
-title: Wu Blockchain — Weekly Project Updates: Dogecoin Labs Launches for Payments, OpenSea App Goes Public, Starknet Votes for Independent L1 Transition, etc
+title: "Wu Blockchain — Weekly Project Updates: Dogecoin Labs Launches for Payments, OpenSea App Goes Public, Starknet Votes for Independent L1 Transition, etc"
 type: source
 tags: [source, rss, inbox-auto, wublock]
 keywords: [rss, wublock]

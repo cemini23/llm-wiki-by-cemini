@@ -4,12 +4,12 @@ type: source
 tags: [source, klement, cross-wiki, equity, out-of-scope-primary]
 keywords: [momentum-crash, reuters, equity-markets]
 related:
-  - @osint-wiki/sources/substack-rss-klement-2026-07-07-momentum-crash-warnings-flash-red-heres-how-you.md
+  - "@osint-wiki/sources/substack-rss-klement-2026-07-07-momentum-crash-warnings-flash-red-heres-how-you.md"
 maturity: draft
 read_status: skimmed
 created: 2026-07-07
 updated: 2026-07-07
-cross-wiki-source: @osint-wiki/sources/substack-rss-klement-2026-07-07-momentum-crash-warnings-flash-red-heres-how-you.md
+cross-wiki-source: "@osint-wiki/sources/substack-rss-klement-2026-07-07-momentum-crash-warnings-flash-red-heres-how-you.md"
 ---
 
 # Klement on Investing — Momentum crash warnings flash red. Here’s how you might survive

@@ -1,5 +1,5 @@
 ---
-title: ""Control-ready uncertainty for trajectory diffusion (arXiv:2610.12431) — SKIP""
+title: "Control-ready uncertainty for trajectory diffusion (arXiv:2610.12431) — SKIP"
 type: source
 tags: [paper, robotics, uncertainty-quantification, out-of-domain, skip]
 keywords: [SCOPE, score curvature, precision matrix, Gaussian tubes, trajectory diffusion, Trajectron, MPPI, Franka Panda, robot motion forecasting]

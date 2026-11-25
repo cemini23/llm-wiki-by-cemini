@@ -1,5 +1,5 @@
 ---
-title: Wu Blockchain — Compliance Chronicles: The Evolution of Crypto Compliance—A Decade from ICOs and Exchange Licensing to the Age of Legislation
+title: "Wu Blockchain — Compliance Chronicles: The Evolution of Crypto Compliance—A Decade from ICOs and Exchange Licensing to the Age of Legislation"
 type: source
 tags: [newsletter, k246, inbox-rss]
 keywords: [substack, rss, k246]

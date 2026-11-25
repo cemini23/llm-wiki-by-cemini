@@ -1,5 +1,5 @@
 ---
-title: Latent Space — Autoresearch: The feedback loop behind self-improving agents
+title: "Latent Space — Autoresearch: The feedback loop behind self-improving agents"
 type: source
 tags: [source, newsletter-rss, inbox-auto, latent-space]
 keywords: [rss, newsletter, latent-space]

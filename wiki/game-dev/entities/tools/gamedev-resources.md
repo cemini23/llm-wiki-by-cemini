@@ -11,7 +11,7 @@ related:
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-16
-cross-wiki-stub: @image-gen-wiki
+cross-wiki-stub: "@image-gen-wiki"
 ---
 
 ## Relations

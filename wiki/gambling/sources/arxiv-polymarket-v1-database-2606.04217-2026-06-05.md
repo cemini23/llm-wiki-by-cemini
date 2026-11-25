@@ -9,8 +9,8 @@ related:
   - concepts/pm-copy-trading-retail-risks.md
   - concepts/prediction-markets-crossover.md
   - entities/platforms/polymarket.md
-  - @osint-wiki/sources/arxiv-polymarket-v1-database-2606.04217-2026-06-05.md
-  - @osint-wiki/concepts/polymarket-microstructure-findings.md
+  - "@osint-wiki/sources/arxiv-polymarket-v1-database-2606.04217-2026-06-05.md"
+  - "@osint-wiki/concepts/polymarket-microstructure-findings.md"
   - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
 maturity: validated
 read_status: deep-read

@@ -9,7 +9,7 @@ created: 2026-07-05
 updated: 2026-07-05
 read_status: skimmed
 related:
-  - @gambling-wiki/sources/substack-rss-event-horizon-2026-07-01-world-launches-solana-based-prediction-market.md
+  - "@gambling-wiki/sources/substack-rss-event-horizon-2026-07-01-world-launches-solana-based-prediction-market.md"
 ---
 
 ## Relations

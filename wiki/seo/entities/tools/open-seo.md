@@ -11,7 +11,7 @@ created: 2026-05-15
 updated: 2026-07-31
 cross-wiki-source: "@osint-wiki/entities/tools/open-seo.md"
 wire_status: deferred
-wire_target: Next: Phase-0 ingest (repo/license TBD)
+wire_target: "Next: Phase-0 ingest (repo/license TBD)"
 ---
 
 # open-seo — SEO automation skill set

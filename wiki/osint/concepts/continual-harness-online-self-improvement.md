@@ -23,7 +23,7 @@ related:
   - concepts/rlvf-verifier-feedback-training.md
   - sources/arxiv-red-queen-godel-machine-2606.26294-2026-06-29.md
 cross-wiki:
-  - @ccc-wiki/concepts/continual-harness-online-self-improvement.md
+  - "@ccc-wiki/concepts/continual-harness-online-self-improvement.md"
 maturity: validated
 created: 2026-05-27
 updated: 2026-10-25

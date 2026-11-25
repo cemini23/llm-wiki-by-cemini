@@ -5,7 +5,7 @@ related:
   - "@osint-wiki/sources/2026-11-22-deep-research-link-eval-abliterated-harness.md"
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
   - entities/tools/artex.md
-  - @image-gen-wiki/entities/models/inkling-2-mini.md
+  - "@image-gen-wiki/entities/models/inkling-2-mini.md"
 updated: 2026-11-22
 maturity: draft
 ---

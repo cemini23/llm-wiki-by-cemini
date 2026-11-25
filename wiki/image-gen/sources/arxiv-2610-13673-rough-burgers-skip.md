@@ -1,5 +1,5 @@
 ---
-title: ""Statistical inference for rough Burgers-type SPDEs (arXiv:2610.13673) — SKIP""
+title: "Statistical inference for rough Burgers-type SPDEs (arXiv:2610.13673) — SKIP"
 type: source
 tags: [paper, mathematics, spde, out-of-domain, skip]
 keywords: [rough Burgers, stochastic PDE, rough paths, quadratic variation, quartic variation, pathwise estimator, diffusivity, math.PR, no datasets]

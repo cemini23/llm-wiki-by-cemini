@@ -8,7 +8,7 @@ related:
 maturity: draft
 created: 2026-10-03
 updated: 2026-10-03
-status: DRAFT COMPLETE 2026-10-10 (X Article, paste-ready at `briefs/2026-10-10_basgiath-x-article.md`). Title: I Built the Basgiath War College in Minecraft. Share link in the piece = the GitHub repo (Modrinth upload failed). Outlier Weekly companion still open (unique piece, no reprint).
+status: "DRAFT COMPLETE 2026-10-10 (X Article, paste-ready at `briefs/2026-10-10_basgiath-x-article.md`). Title: I Built the Basgiath War College in Minecraft. Share link in the piece = the GitHub repo (Modrinth upload failed). Outlier Weekly companion still open (unique piece, no reprint)."
 project_repo: /Users/claudiobarone/Projects/dragon-rider-map
 ---
 

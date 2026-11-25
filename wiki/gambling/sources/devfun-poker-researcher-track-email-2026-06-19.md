@@ -16,7 +16,7 @@ related:
   - entities/bots/poker-bot-tooling.md
   - sources/web-pro-villain-profiles-dwan-cates-2026-06-19.md
   - sources/devfun-sandbox-researcher-guide-2026-06-26.md
-  - @osint-wiki/sources/devfun-poker-researcher-track-email-2026-06-19.md
+  - "@osint-wiki/sources/devfun-poker-researcher-track-email-2026-06-19.md"
   - concepts/heads-up-arena-strategy.md
   - concepts/poker-axis-eval-literacy.md
   - sources/brief-k123-researcher-jun21-checklist-2026-06-20.md

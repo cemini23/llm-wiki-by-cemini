@@ -9,7 +9,7 @@ created: 2026-07-05
 updated: 2026-07-05
 read_status: skimmed
 related:
-  - @gambling-wiki/sources/substack-rss-klement-2026-07-07-momentum-crash-warnings-flash-red-heres-how-you.md
+  - "@gambling-wiki/sources/substack-rss-klement-2026-07-07-momentum-crash-warnings-flash-red-heres-how-you.md"
 ---
 
 ## Relations

@@ -1,5 +1,5 @@
 ---
-title: ""Traj-MC — low-rank compression for diffusion LMs (arXiv:2610.03326) — SKIP""
+title: "Traj-MC — low-rank compression for diffusion LMs (arXiv:2610.03326) — SKIP"
 type: source
 tags: [paper, diffusion-language-model, compression, out-of-domain, skip]
 keywords: [Traj-MC, diffusion language model, dLLM, low-rank approximation, SVD-LLM, LLaDA, Dream, trajectory-aware]

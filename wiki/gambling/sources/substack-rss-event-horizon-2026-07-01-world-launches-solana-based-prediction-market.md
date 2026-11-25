@@ -7,9 +7,9 @@ related: []
 maturity: draft
 created: 2026-07-05
 updated: 2026-07-05
-cross-wiki-source: @osint-wiki/sources/substack-rss-event-horizon-2026-07-01-world-launches-solana-based-prediction-market.md
+cross-wiki-source: "@osint-wiki/sources/substack-rss-event-horizon-2026-07-01-world-launches-solana-based-prediction-market.md"
 related:
-  - @osint-wiki/sources/substack-rss-event-horizon-2026-07-01-world-launches-solana-based-prediction-market.md
+  - "@osint-wiki/sources/substack-rss-event-horizon-2026-07-01-world-launches-solana-based-prediction-market.md"
 read_status: read
 ---
 

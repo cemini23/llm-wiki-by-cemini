@@ -7,7 +7,7 @@ related:
   - sources/arxiv-2608-06287-nl-to-ltl-requirements.md
   - sources/arxiv-2608-28481-ood-nl2agbench.md
   - concepts/ai-for-cybersecurity.md
-  - @image-gen-wiki/sources/arxiv-2608-06287-nl-to-ltl-routed.md
+  - "@image-gen-wiki/sources/arxiv-2608-06287-nl-to-ltl-routed.md"
 maturity: draft
 created: 2026-08-07
 updated: 2026-08-31

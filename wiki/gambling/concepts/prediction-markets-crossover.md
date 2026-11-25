@@ -57,8 +57,8 @@ related:
   - sources/brief-k240-kalshi-nv-geofence-2026-08-17.md
   - sources/brief-k242-eh-pm-ban-onshore-2026-08-19.md
   - sources/brief-k243-eh-pm-republican-comms-2026-08-20.md
-  - @seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md
-  - @seo-wiki/concepts/generative-engine-optimization.md
+  - "@seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md"
+  - "@seo-wiki/concepts/generative-engine-optimization.md"
   - sources/arxiv-2602.19520-pm-domain-calibration-2026-08-31.md
   - sources/daily-digest-rss-nfl-week0-2026-08-31.md
   - sources/daily-digest-rss-week1-pm-nfl-2026-09-11.md

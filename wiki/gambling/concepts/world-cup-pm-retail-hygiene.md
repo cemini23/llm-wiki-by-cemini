@@ -21,10 +21,10 @@ related:
   - sources/brief-k108-gambling-wc-retail-hygiene-2026-06-09.md
   - concepts/world-cup-2026-fan-narrative-preview.md
   - sources/brief-k112-gambling-wc-2026-narrative-2026-06-12.md
-  - @osint-wiki/concepts/polymarket-retail-trading-discipline.md
-  - @seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md
-  - @seo-wiki/concepts/x-account-voice-and-format.md
-  - @seo-wiki/concepts/world-cup-bot-search-discovery.md
+  - "@osint-wiki/concepts/polymarket-retail-trading-discipline.md"
+  - "@seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md"
+  - "@seo-wiki/concepts/x-account-voice-and-format.md"
+  - "@seo-wiki/concepts/world-cup-bot-search-discovery.md"
   - sources/arxiv-2606.31675-settlement-manipulation-prediction-markets-2026-07-01.md
   - sources/brief-k135-pm-settlement-macro-beliefs-steals-2026-07-01.md
   - sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md

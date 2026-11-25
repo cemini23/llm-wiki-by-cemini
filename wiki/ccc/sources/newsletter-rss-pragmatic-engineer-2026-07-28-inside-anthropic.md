@@ -4,7 +4,7 @@ type: source
 tags: [stub, cross-wiki]
 keywords: []
 related:
-  - @osint-wiki/sources/newsletter-rss-pragmatic-engineer-2026-07-28-inside-anthropic.md
+  - "@osint-wiki/sources/newsletter-rss-pragmatic-engineer-2026-07-28-inside-anthropic.md"
   - sources/newsletter-rss-pragmatic-engineer-2026-11-12-the-pulse-what-can-we-learn-from-the-railway-hac.md
   - sources/newsletter-rss-pragmatic-engineer-2026-11-05-scaling-slack-and-github-with-maude-lemaire.md
 maturity: draft
