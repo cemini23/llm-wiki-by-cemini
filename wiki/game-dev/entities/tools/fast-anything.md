@@ -79,7 +79,25 @@ numerically identical — which is the failure this tool closes.
 
 ### Status
 
-Integrate. Queued for game-time, CeminiDFS, and CeminiParlays.
+**SHIPPED — game-time `298c8a1` (2026-11-24), on top of `ee02e58`.** All three balancing
+loops have a native batch call. Parity holds on **8,127 real cases at zero difference**
+(`maxAbsDiff=0`).
+
+**The speedups are not uniform, and two of three lost.** Recorded so the losing defaults
+are never re-attempted:
+
+| Loop | TypeScript | Rust | Speedup | Backend |
+|------|-----------|------|---------|---------|
+| Economy | 178.16 ms | 92.80 ms | **1.92x** | native (default) |
+| Raid | 0.213 ms | 4.277 ms | **0.050x** | TypeScript, flag-gated |
+| AI | 116.70 ms | 143.01 ms | **0.816x** | TypeScript, flag-gated |
+
+`BALANCE_NATIVE_BY_LOOP` promotes a loop to native only at **speedup >= 1.10**, and the
+compare bench fails when the recorded default and the measured decision disagree. A
+function too small to amortise the boundary crossing gets slower, not faster.
+
+`resolveCombat` was ported earlier in `ee02e58`; CeminiDFS shipped its own port in
+`36b1e6f`; CeminiParlays measured 0.63–0.85x and stayed on Python (`83bcc97`).
 
 ## Snippets
 

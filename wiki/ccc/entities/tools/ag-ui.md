@@ -55,8 +55,19 @@ option open. The freeze blocks installing the SDK as a server regardless.
 
 ### Status
 
-Extract, design reference. Take the event schema and the interrupt semantics. Do not
-add the SDK while the Workstation Harness Freeze holds.
+**SHIPPED in Atto — `b31dae4` (2026-11-24).** The event contract is implemented in both
+languages:
+
+- `apps/desktop/src-tauri/src/ipc/agui.rs` and `apps/desktop/src/ipc/agui.ts`
+- a v1 envelope with **14 closed event types**, `deny_unknown_fields`, and a **64 KiB
+  cap**
+- a `domain: "agent"` truth boundary, so event payloads cannot claim to be truth
+- local Tauri transport `atto-agui` plus `to_sse`
+- shared round-trip and rejection fixtures at `fixtures/agui/events.json`
+- `docs/AGUI_EVENTS.md`
+
+We took the schema, not the SDK. That is exactly what the freeze allowed, and the
+result is a typed interrupt contract with no new dependency.
 
 ## Snippets
 

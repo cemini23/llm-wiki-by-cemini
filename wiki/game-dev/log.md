@@ -1012,3 +1012,9 @@ Cross-wiki stub routed from `@osint-wiki/sources/2026-11-16-deep-research-link-e
 - Results: attack containment rises from 43% to 84% over 14 scripted scenarios; benign task success 91% to 92%; about 174 µs overhead per request. All numbers come from a one-process simulation scored by judge models.
 - **Judgement:** no practical link to game dev. The paper solves cross-organization trust. Castle-sim has one operator, one trust domain, and no partner CA.
 - Routing: wiki-only; no distribution. Filed for completeness from the inbox batch.
+
+## [2026-11-25] reconcile | Queue closures for Game time
+
+- `entities/tools/fast-anything.md` — **updated**. All three balancing loops ported in `298c8a1`: 8,127 parity cases at zero difference. Economy 1.92x (native default); raid 0.050x and AI 0.816x stay TypeScript behind `BALANCE_NATIVE`.
+- `entities/modern-web-guidance.md` — **updated**. Browser baseline checklist shipped as Section 5 of `AGENTS.md` in `c08bd1a`.
+- `entities/stitch-skills.md` (ccc) — **updated**. UI design loop shipped in the same commit.

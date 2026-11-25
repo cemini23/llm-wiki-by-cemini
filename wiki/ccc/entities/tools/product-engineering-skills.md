@@ -53,7 +53,19 @@ intended-versus-implemented is the strongest — and write them into the project
 
 ### Status
 
-Extract, design reference. Read for procedure, not for installation.
+**SHIPPED in Atto — `b31dae4` (2026-11-24).** The intended-versus-implemented procedure
+is a repo-local check, not an installed skill:
+
+- `scripts/check-intended-vs-implemented.py`
+- `docs/INTENDED_VS_IMPLEMENTED.md` — the procedure
+- `docs/intended-vs-implemented-exceptions.txt` — 10 documented exceptions
+- `reports/2026-11-24-intended-vs-implemented-pass.md` — first pass found 14 drift
+  findings, 5 paths fixed, 0 broken refs or links
+
+The frontend state checklist from the same pack also shipped as
+`apps/desktop/STATE_CHECKLIST.md`, gated in `AGENTS.md` and enforced through the pull
+request template. See @ccc-wiki/entities/tools/ag-ui.md for the third item in that
+commit.
 
 ## Snippets
 

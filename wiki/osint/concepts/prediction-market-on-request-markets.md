@@ -30,6 +30,13 @@ Built from Event Horizon (2026-11-19), which reports Kalshi documentation for on
 **Operator reading for a retail PM bot.**
 
 - A discovery layer should watch for new-series announcements, not only the public market list.
+
+**Shipped in CeminiParlays — `5b9aca1` (2026-11-24).** `src/ceminiparlays/discovery.py`
+diffs venue snapshots against a persisted state file and prints only net-new series,
+newly opened props, and RFQ listings. Team tokens fold through the roster alias table,
+so JAC and JAX, WSH and WAS, land on one code. Covered by `tests/test_discovery.py`.
+
+[Source: CeminiParlays git 5b9aca1, verified 2026-11-25]
 - A maker-side strategy should price RFQ markets from a model with an explicit prior, because there is no flow to copy.
 - A taker-side strategy should avoid opening size in a market whose first quotes are wide and un-informed.
 

@@ -3318,3 +3318,9 @@ Cross-wiki stub routed from `@osint-wiki/sources/2026-11-17-deep-research-link-e
 
 Cross-wiki stub routed from `@osint-wiki/sources/2026-11-24-deep-research-link-eval-runtime-tooling.md`.
 - Created wiki/entities/whatsflare.md (stub)
+
+## [2026-11-25] reconcile | Queue closures for atto
+
+- `entities/tools/ag-ui.md` — **updated**. Atto shipped the v1 event contract in `b31dae4`: 14 closed event types, `deny_unknown_fields`, 64 KiB cap, `domain: "agent"` truth boundary, Tauri `atto-agui` plus `to_sse`, shared fixtures, `docs/AGUI_EVENTS.md`.
+- `entities/tools/product-engineering-skills.md` — **updated**. Intended-versus-implemented check and frontend state checklist both shipped in the same commit.
+- `entities/stitch-skills.md` — **updated**. Game time shipped `docs/UI_DESIGN_LOOP.md` in `c08bd1a`, refined in `c5910b1`.

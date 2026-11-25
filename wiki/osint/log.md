@@ -11388,3 +11388,10 @@ Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first
 - Daiwa completed an AI-agent test that swaps test stablecoins against security tokens from natural-language instructions; Maybank settled tokenised government bonds with on-chain delivery versus payment.
 - `concepts/crypto-custody-single-point-of-failure.md`, `entities/tools/agentic-trading.md` — **updated**.
 - Routing: wiki-only. Buy hardware wallets only through verified channels.
+
+## [2026-11-25] reconcile | Queue closures for atto, Game time, and CeminiParlays
+
+- Verified six commits in git before recording them: atto `b31dae4`; Game time `298c8a1`, `c08bd1a`, `c5910b1`; CeminiParlays `5b9aca1`.
+- `concepts/prediction-market-on-request-markets.md` — **updated**. CeminiParlays `discovery.py` diffs venue snapshots against a persisted state file and prints only net-new series, newly opened props, and RFQ listings.
+- `concepts/prediction-market-venue-competition-2026.md` — **updated**. `venue_mix.py` runs quarter-Kelly per venue, weights by addressable sports share, and caps venue, correlated group, and slate.
+- No new sources. Queue statuses live in `briefs/`, which is gitignored.

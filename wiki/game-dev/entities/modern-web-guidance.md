@@ -32,6 +32,15 @@ Against our stack the gap is partly open — the project has no modern-platform 
 in `AGENTS.md`. Installation is blocked by the Workstation Harness Freeze, so the
 extract is the baseline-feature checklist, written into the project's own agent notes.
 
+### Shipped 2026-11-24 — `c08bd1a`
+
+The checklist landed as **Section 5 of `AGENTS.md`** in game-time, alongside the UI
+design loop in `docs/UI_DESIGN_LOOP.md`. Both are repo-local: no global skills, plugins,
+MCP servers, or design services.
+
+That is the shape the freeze allows — the rules live in the project's own agent notes
+rather than in an installed skill.
+
 ## Snippets
 
 > Keep your coding agent up to date with the latest web best practices.

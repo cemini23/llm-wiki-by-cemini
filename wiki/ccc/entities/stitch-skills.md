@@ -32,6 +32,14 @@ description-first design step fits the clean-room slice workflow. Read for the l
 shape — describe, generate, critique — not for installation; the Workstation Harness
 Freeze blocks new skills.
 
+### Shipped 2026-11-24 — `c08bd1a`, refined in `c5910b1`
+
+game-time now carries `docs/UI_DESIGN_LOOP.md`. The loop names the four modules it
+reads — view-model, layout, label, and format — and adds an explicit review checklist
+plus a no-external-tool rule.
+
+It is a document, not a skill. The loop shape was taken; nothing was installed.
+
 ## Snippets
 
 > A library of Agent Skills designed to work with the Stitch MCP server.

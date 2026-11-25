@@ -48,3 +48,11 @@ Source: substack-rss-event-horizon-2026-11-17, -18, -19, -20. The ladder is stab
 **The counterweight.** Venue legality moves week to week. Kalshi faces criminal charges in Utah and action in New York; three appellate circuits have rejected its preemption claims and one has accepted them. A venue-share table is a snapshot of a market whose legal perimeter can change.
 
 **Reading for the retail bot.** Diversify venue support but weight liquidity by the parlay/sports share. Track legal events as availability risk, not as market news.
+
+**Shipped in CeminiParlays — `5b9aca1` (2026-11-24).** `src/ceminiparlays/venue_mix.py`
+runs quarter-Kelly per venue on the fee-adjusted price, weights each venue by its
+addressable sports share, then caps each venue, each correlated group, and the whole
+slate. It asserts every bound held before returning, and the result cannot exceed the
+Kelly sum. Covered by `tests/test_venue_mix.py`.
+
+[Source: CeminiParlays git 5b9aca1, verified 2026-11-25]
