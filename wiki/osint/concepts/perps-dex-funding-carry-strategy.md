@@ -16,6 +16,8 @@ related:
   - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
   - concepts/pnl-attribution-versioning.md
   - concepts/production-trading-blind-spots.md
+  - sources/substack-rss-wublock-2026-11-24-october-2026-tradfi-perpetual-futures-volume-rep.md
+  - concepts/crypto-derivatives-volume-2026.md
   - concepts/hyperliquid-agent-trading.md
   - concepts/perp-dex-price-discovery-lead-lag.md
   - sources/substack-rss-wublock-2026-07-20-ice-okx-closing-bell.md

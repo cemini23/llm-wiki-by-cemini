@@ -28,9 +28,11 @@ related:
   - sources/arxiv-bmms-policy-conditioned-behavioral-compliance-2611.09147.md
   - concepts/provider-refusal-measurement-contamination.md
   - concepts/silent-error-rate-structured-output.md
+  - sources/arxiv-measurement-artifacts-quantized-trustworthiness-2611.32848.md
+  - concepts/quantization-instrument-artifacts.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-11-14
+updated: 2026-11-25
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-phase1-policy-wires.mdc (CCC K277 dual-ID note)"
 ---

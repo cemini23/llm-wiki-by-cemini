@@ -13,8 +13,12 @@ related:
   - concepts/head-attribution-non-identifiability.md
   - concepts/refusal-and-abstention-direction-geometry.md
   - sources/arxiv-bias-head-non-identifiability-2611.23218.md
+  - sources/arxiv-llm-marketplace-advance-fee-scam-2611.32957.md
+  - concepts/llm-fraud-labor-substitution.md
+  - sources/arxiv-measurement-artifacts-quantized-trustworthiness-2611.32848.md
+  - concepts/quantization-instrument-artifacts.md
 maturity: draft
-updated: 2026-11-22
+updated: 2026-11-25
 ---
 
 ## Raw Concept

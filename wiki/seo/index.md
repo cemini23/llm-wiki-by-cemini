@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
 type: index
-updated: 2026-11-14
+updated: 2026-11-25
 ---
 
 # Wiki Index
@@ -189,6 +189,9 @@ If you're new to this wiki:
 - [arxiv-camp-3d-imc-weight-mapping-2611.07707](sources/arxiv-camp-3d-imc-weight-mapping-2611.07707.md) — OOD: 3D-IMC weight mapping for LLM accelerators (2026-11-10 ingest)
 - [arxiv-zero-shot-weight-space-programming-2611.09271](sources/arxiv-zero-shot-weight-space-programming-2611.09271.md) — OOD: hand-built neural networks across a game ladder (2026-11-10 ingest)
 - [arxiv-formally-verified-quantum-programs-2611.09822](sources/arxiv-formally-verified-quantum-programs-2611.09822.md) — OOD: Lean-verified quantum programs from agent teams (2026-11-10 ingest)
+- [arxiv-larf-learning-aligned-reasoning-search-relevance-2611.32125](sources/arxiv-larf-learning-aligned-reasoning-search-relevance-2611.32125.md) — thin GEO link: AI-native search ranks in ordinal relevance grades; +5.78 pp accuracy, -82.9% latency (2026-11-25 ingest)
+- [arxiv-capta-identifying-llms-behind-ai-agents-2611.32686](sources/arxiv-capta-identifying-llms-behind-ai-agents-2611.32686.md) — indirect GEO: server can fingerprint the model behind an agent; cloaking risk to citation audits (2026-11-25 ingest)
+- [arxiv-fol-proof-verifying-llm-text-to-logic-2611.33078](sources/arxiv-fol-proof-verifying-llm-text-to-logic-2611.33078.md) — OOD: SMT-checked text-to-logic translation; no SEO link (2026-11-25 ingest)
 
 ### Platform / practitioner news
 
@@ -199,6 +202,10 @@ If you're new to this wiki:
 - [newsletter-rss-sterling-sky-2026-10-26-local-seo-updates-2026-is-your-traffic-at-risk](sources/newsletter-rss-sterling-sky-2026-10-26-local-seo-updates-2026-is-your-traffic-at-risk.md) — 2026 local SEO update review; ⚠ empty feed shell, no body delivered (2026-10-27 ingest)
 - [newsletter-rss-sparktoro-2026-08-14-zero-click](sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md) — SparkToro: website still the permanent home in zero-click (K237)
 - [newsletter-rss-sparktoro-2026-11-10-new-research-traffic-to-the-open-web-has-fallen](sources/newsletter-rss-sparktoro-2026-11-10-new-research-traffic-to-the-open-web-has-fallen.md) — SparkToro + Similarweb: open-web traffic down 24% over five years; ⚠ feed body truncated (2026-11-10 ingest)
+- [newsletter-rss-sterling-sky-2026-11-22-google-business-profile-verification-9-easy-step](sources/newsletter-rss-sterling-sky-2026-11-22-google-business-profile-verification-9-easy-step.md) — on-topic GBP: video rules, 9 shots for location/operations/affiliation, 10 failure causes (2026-11-25 ingest)
+- [newsletter-rss-sterling-sky-2026-11-22-the-dangers-of-thin-and-scaled-ai-content](sources/newsletter-rss-sterling-sky-2026-11-22-the-dangers-of-thin-and-scaled-ai-content.md) — on-topic: sitewide risk from scaled thin AI pages; topical-fit test (2026-11-25 ingest)
+- [newsletter-rss-sparktoro-2026-11-24-new-feature-share-of-influence-lets-you-calculat](sources/newsletter-rss-sparktoro-2026-11-24-new-feature-share-of-influence-lets-you-calculat.md) — Share of Influence: channel weights by journey stage; unit undefined, all modelled (2026-11-25 ingest)
+- [newsletter-rss-sparktoro-2026-11-25-the-best-damn-fashion-gift-guide-2026](sources/newsletter-rss-sparktoro-2026-11-25-the-best-damn-fashion-gift-guide-2026.md) — no SEO content: editorial fashion gift list; record-only (2026-11-25 ingest)
 
 - [searchengineland-2026-google-llm-patent-entity-characterization-480625](sources/searchengineland-2026-google-llm-patent-entity-characterization-480625.md) — Google LLM patent entity characterization; webpages as evidence (2026-06-27 digest)
 - [techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06](sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md) — Google “Good SEO is good GEO”; llms.txt skip; GSC AI reports (2026-06-27 digest)
@@ -288,6 +295,10 @@ If you're new to this wiki:
 - [reviews-reputation-management](concepts/reviews-reputation-management.md) — review acquisition + monitoring + response; hard policy boundaries
 - [social-media-for-barbershops](concepts/social-media-for-barbershops.md) — IG/TikTok/FB/YouTube Shorts platform priority + content categories + cadence
 - [website-essentials-local-business](concepts/website-essentials-local-business.md) — must-have pages, mobile UX, Core Web Vitals, schema attachment, CTA hierarchy
+- [gbp-video-verification](concepts/gbp-video-verification.md) — video rules + the nine shots for location / operations / affiliation; failure causes (2026-11-25)
+- [scaled-thin-ai-content-risk](concepts/scaled-thin-ai-content-risk.md) — sitewide loss risk from scaled thin pages; topical-fit test before publishing (2026-11-25)
+- [share-of-influence-channel-measurement](concepts/share-of-influence-channel-measurement.md) — SparkToro channel weighting by journey stage; four reading rules and stated limits (2026-11-25)
+- [ai-agent-traffic-identification](concepts/ai-agent-traffic-identification.md) — CAPTA model fingerprinting behind agents; measurement use vs cloaking risk (2026-11-25)
 
 ### Tier-2 deep-dives
 
@@ -421,6 +432,7 @@ If you're new to this wiki:
 - [oransim](entities/tools/oransim.md) — local-first causal simulator for marketing-campaign ROI (SCM + Hawkes + do-calculus; Apache-2.0, Adopt) — `cross-wiki`
 - [semrush](entities/tools/semrush.md) — keyword research + competitor SEO + position tracking
 - [seomachine](entities/tools/seomachine.md) — Claude Code skill: long-form content + AI-watermark scrubbing + DataForSEO integration (CONDITIONAL-GO 2026-05-07)
+- [sparktoro](entities/tools/sparktoro.md) — audience research + Share of Influence channel weighting; modelled estimates only
 - [substack-publisher-mcp](entities/tools/substack-publisher-mcp.md) — official Substack Publisher API MCP (read-only); GO code; stdio **deferred** (no key file); remote MCP **NO-GO** for Outlier (not Bestseller, 2026-08-31)
 - [yoast-seo](entities/tools/yoast-seo.md) — WordPress plugin: on-page SEO, schema markup, readability, sitemaps (GO 2026-05-07)
 - [open-seo — SEO automation skill set](entities/tools/open-seo.md) — cross-wiki stub routed from ingest — `cross-wiki`
@@ -520,3 +532,20 @@ If you're new to this wiki:
 | [sources/arxiv-moe-lora-multilingual-adaptation-2611.23158.md](sources/arxiv-moe-lora-multilingual-adaptation-2611.23158.md) | source | No SEO link. MoE-LoRA multilingual adaptation; record-only. |
 | [sources/arxiv-meta-rtl-evolving-agent-harnesses-2611.25891.md](sources/arxiv-meta-rtl-evolving-agent-harnesses-2611.25891.md) | source | No SEO link. RTL hardware-design agent harness; record-only. |
 | [sources/arxiv-foreseek-foresight-driven-long-video-2611.26024.md](sources/arxiv-foreseek-foresight-driven-long-video-2611.26024.md) | source | No SEO link. Long-form video reasoning; record-only. |
+
+## Ingest 2026-11-25 — SEO batch (3 arXiv + 4 newsletters)
+
+| Page | Type | Note |
+|------|------|------|
+| [sources/newsletter-rss-sterling-sky-2026-11-22-google-business-profile-verification-9-easy-step.md](sources/newsletter-rss-sterling-sky-2026-11-22-google-business-profile-verification-9-easy-step.md) | source | On-topic. Video rules, nine shots grouped by location / operations / affiliation, ten failure causes. RSS body was empty; full page fetched. |
+| [concepts/gbp-video-verification.md](concepts/gbp-video-verification.md) | concept | Pass first-try video verification; fix the NAP and name defects it exposes. `[TENTATIVE]` |
+| [sources/newsletter-rss-sterling-sky-2026-11-22-the-dangers-of-thin-and-scaled-ai-content.md](sources/newsletter-rss-sterling-sky-2026-11-22-the-dangers-of-thin-and-scaled-ai-content.md) | source | On-topic. Sitewide risk from scaled thin AI pages; law-firm case pattern; no counts. RSS body truncated; full page fetched. |
+| [concepts/scaled-thin-ai-content-risk.md](concepts/scaled-thin-ai-content-risk.md) | concept | Topical-fit test before publishing; judge updates by position, not tool traffic. `[TENTATIVE]` |
+| [sources/newsletter-rss-sparktoro-2026-11-24-new-feature-share-of-influence-lets-you-calculat.md](sources/newsletter-rss-sparktoro-2026-11-24-new-feature-share-of-influence-lets-you-calculat.md) | source | New metric. Channel weights by journey stage; unit undefined; all modelled. RSS body truncated; full page fetched. |
+| [concepts/share-of-influence-channel-measurement.md](concepts/share-of-influence-channel-measurement.md) | concept | Four reading rules; never call the weights percentages. `[TENTATIVE]` |
+| [sources/newsletter-rss-sparktoro-2026-11-25-the-best-damn-fashion-gift-guide-2026.md](sources/newsletter-rss-sparktoro-2026-11-25-the-best-damn-fashion-gift-guide-2026.md) | source | No SEO content. Editorial fashion gift list; record-only. RSS body truncated; full page fetched. |
+| [entities/tools/sparktoro.md](entities/tools/sparktoro.md) | entity | Audience research tool stub; clickstream panel; modelled estimates. `[TENTATIVE]` |
+| [sources/arxiv-larf-learning-aligned-reasoning-search-relevance-2611.32125.md](sources/arxiv-larf-learning-aligned-reasoning-search-relevance-2611.32125.md) | source | Thin GEO link. AI-native search ranks in ordinal relevance grades; not actionable for a business. |
+| [sources/arxiv-capta-identifying-llms-behind-ai-agents-2611.32686.md](sources/arxiv-capta-identifying-llms-behind-ai-agents-2611.32686.md) | source | Indirect GEO link. Server-side model fingerprinting behind agents; names the AI-cloaking risk. |
+| [concepts/ai-agent-traffic-identification.md](concepts/ai-agent-traffic-identification.md) | concept | Measurement use is acceptable; cloaking corrupts citation evidence. `[OPEN QUESTION 2026-11-25]` |
+| [sources/arxiv-fol-proof-verifying-llm-text-to-logic-2611.33078.md](sources/arxiv-fol-proof-verifying-llm-text-to-logic-2611.33078.md) | source | No SEO link. SMT-checked text-to-logic translation; record-only. |

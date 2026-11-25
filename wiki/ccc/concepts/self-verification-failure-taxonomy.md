@@ -7,7 +7,8 @@ related:
   - concepts/generation-verification-gap-agent-artifacts.md
   - concepts/agent-completion-verification-gates.md
   - concepts/llm-verification-layer-accept-escalate-reject.md
-updated: 2026-11-22
+  - concepts/execution-bound-evidence-certification.md
+updated: 2026-11-25
 ---
 
 ## Raw Concept

@@ -36,9 +36,11 @@ related:
   - sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md
 
   - concepts/process-verified-agentic-search-geo.md
+  - concepts/gbp-video-verification.md
+  - sources/newsletter-rss-sterling-sky-2026-11-22-google-business-profile-verification-9-easy-step.md
 maturity: validated
 created: 2026-05-07
-updated: 2026-10-01
+updated: 2026-11-25
 
 ---
 

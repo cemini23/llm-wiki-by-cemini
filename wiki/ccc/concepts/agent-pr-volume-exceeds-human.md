@@ -9,9 +9,10 @@ related:
   - entities/tools/coderabbit.md
   - concepts/agent-completion-verification-gates.md
   - concepts/repo-level-verified-code-proof-eval.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.md
 maturity: draft
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-11-25
 ---
 
 ## Relations

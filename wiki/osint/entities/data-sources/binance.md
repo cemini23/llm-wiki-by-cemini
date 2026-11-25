@@ -10,9 +10,11 @@ related:
   - sources/trading-posts-compilation-18-2026-06-04.md
   - concepts/perp-dex-price-discovery-lead-lag.md
   - entities/tools/lighter-xyz.md
+  - sources/substack-rss-wublock-2026-11-25-binance-co-ceos-address-634b-hack-fake-job-inter.md
+  - concepts/crypto-custody-single-point-of-failure.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-09
+updated: 2026-11-25
 ---
 
 ## Relations

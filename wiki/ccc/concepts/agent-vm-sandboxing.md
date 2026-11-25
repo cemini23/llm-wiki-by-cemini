@@ -24,9 +24,11 @@ related:
   - concepts/command-level-gpu-sandbox-scheduling.md
   - entities/tools/metal-sandbox.md
   - sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md
+  - concepts/program-scoped-dependency-verification.md
+  - sources/arxiv-preflight-last-mile-verification-2611.31110.md
 maturity: draft
 created: 2026-05-17
-updated: 2026-11-14
+updated: 2026-11-25
 cross-wiki-source: "@cybersecurity-wiki/concepts/agent-vm-sandboxing.md"
 ---
 

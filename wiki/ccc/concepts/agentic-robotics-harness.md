@@ -12,7 +12,9 @@ related:
   - concepts/benchmark-maintenance-debt.md
   - concepts/harness-learning-test-time-adaptation.md
   - sources/arxiv-2610.35832-profiling-a-frontier-agent-with-ebench-from-dire-2026-10-27.md
-updated: 2026-11-10
+  - sources/arxiv-ruibench-robot-use-interface-2611.31115.md
+  - sources/arxiv-self-upgrading-embodied-agents-2611.31117.md
+updated: 2026-11-25
 ---
 
 ## Raw Concept

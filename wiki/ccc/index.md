@@ -767,6 +767,12 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [`decision-model-hybrid-agent-routing`](concepts/decision-model-hybrid-agent-routing.md) | draft | Small classifiers inside the harness |
 | [`reasoning-effort-calibration`](concepts/reasoning-effort-calibration.md) | draft | A higher tier beats a higher effort setting |
 | [`eval-integrity-minimum-standards`](concepts/eval-integrity-minimum-standards.md) | draft | Four checks before a benchmark score counts |
+| [`control-flow-tax-agent-routing`](concepts/control-flow-tax-agent-routing.md) | draft | Deciding the next step is a first-order cost — 2611.32365 |
+| [`model-vs-harness-performance-variance`](concepts/model-vs-harness-performance-variance.md) | draft | Model wins on everyday tasks, harness on tool-heavy work — 2611.32946 |
+| [`frontier-led-slm-delegation`](concepts/frontier-led-slm-delegation.md) | draft | Keep the frontier model in charge, delegate legwork to a local SLM — 2611.33098 |
+| [`execution-bound-evidence-certification`](concepts/execution-bound-evidence-certification.md) | draft | Agreement is not evidence; certify against disjoint failure domains — 2611.32032 |
+| [`evidence-grounded-debate-stopping`](concepts/evidence-grounded-debate-stopping.md) | draft | Stop the debate when belief stops moving, not after N rounds — 2611.27839 |
+| [`program-scoped-dependency-verification`](concepts/program-scoped-dependency-verification.md) | draft | Check dependency behavior where the app calls it — 2611.31110 |
 
 ## sources/
 
@@ -848,8 +854,6 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [`arxiv-agent-skills-survey-2605-07358-2026-06-02`](sources/arxiv-agent-skills-survey-2605-07358-2026-06-02.md) | draft | Agent skills taxonomy survey — K94 OSINT |
 | [`arxiv-tool-forge-governed-agentic-2605-28000-2026-06-02`](sources/arxiv-tool-forge-governed-agentic-2605-28000-2026-06-02.md) | draft | Tool Forge — K94 OSINT |
 | [`arxiv-decoupled-intelligence-multi-agent-2605.27685`](sources/arxiv-decoupled-intelligence-multi-agent-2605.27685.md) | draft | Decoupled Intelligence — 2605.27685 |
-| [`arxiv-agent-skills-survey-2605.07358-2026-06-02`](sources/arxiv-agent-skills-survey-2605.07358-2026-06-02.md) | draft | Agent skills taxonomy survey — K94 OSINT mirror |
-| [`arxiv-tool-forge-governed-agentic-2605.28000-2026-06-02`](sources/arxiv-tool-forge-governed-agentic-2605.28000-2026-06-02.md) | draft | Tool Forge governed toolchain — K94 OSINT mirror |
 | [`arxiv-runtime-harness-adaptation-2605.22166`](sources/arxiv-runtime-harness-adaptation-2605.22166.md) | draft | LIFE-HARNESS runtime interface adaptation — K95 |
 | [`arxiv-adaptive-auto-harness-2606.01770`](sources/arxiv-adaptive-auto-harness-2606.01770.md) | draft | Adaptive Auto-Harness open-ended streams — K95 |
 | [`arxiv-agentxgcore-mobile-core-2606.00417`](sources/arxiv-agentxgcore-mobile-core-2606.00417.md) | draft | AgentxGCore 6G core — REFERENCE only (K95) |
@@ -1302,6 +1306,20 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [`newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi`](sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md) | draft | Self-hosted managed agents + TRUST gating — 2026-11-13 |
 | [`newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto`](sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md) | draft | Coding-agent index, effort economics, eval integrity — 2026-11-14 |
 | [`newsletter-rss-pragmatic-engineer-2026-11-12-the-pulse-what-can-we-learn-from-the-railway-hac`](sources/newsletter-rss-pragmatic-engineer-2026-11-12-the-pulse-what-can-we-learn-from-the-railway-hac.md) | draft | Railway hack teaser, abliterated models — 2026-11-12 |
+| [`arxiv-control-flow-tax-decision-routing-2611.32365`](sources/arxiv-control-flow-tax-decision-routing-2611.32365.md) | draft | Control is 42.5% of cost; specialized chooser cuts 49.6% — 2611.32365 |
+| [`arxiv-shellbench-model-vs-harness-2611.32946`](sources/arxiv-shellbench-model-vs-harness-2611.32946.md) | draft | Model beats harness on everyday tasks; 53,100 rollouts — 2611.32946 |
+| [`arxiv-delegent-multi-agent-harness-cost-2611.33098`](sources/arxiv-delegent-multi-agent-harness-cost-2611.33098.md) | draft | Claude Code relay sends subagent calls to a local SLM — 2611.33098 |
+| [`arxiv-beyond-self-critique-epistemic-convergence-2611.27839`](sources/arxiv-beyond-self-critique-epistemic-convergence-2611.27839.md) | draft | Belief-Delta stopping rule cuts calls 2.4x — 2611.27839 |
+| [`arxiv-pieq-provenance-isolated-epistemic-quorums-2611.32032`](sources/arxiv-pieq-provenance-isolated-epistemic-quorums-2611.32032.md) | draft | LLM agreement is not evidence; certify against fault domains — 2611.32032 |
+| [`arxiv-preflight-last-mile-verification-2611.31110`](sources/arxiv-preflight-last-mile-verification-2611.31110.md) | draft | Program-scoped dependency verification; import-only misses — 2611.31110 |
+| [`arxiv-ruibench-robot-use-interface-2611.31115`](sources/arxiv-ruibench-robot-use-interface-2611.31115.md) | draft | Off-domain robotics; interface moves success 45% to 81% — 2611.31115 |
+| [`arxiv-self-upgrading-embodied-agents-2611.31117`](sources/arxiv-self-upgrading-embodied-agents-2611.31117.md) | draft | Off-domain robotics; weight edits between tasks — 2611.31117 |
+| [`arxiv-lesionagent-training-free-tumor-tracking-2611.27876`](sources/arxiv-lesionagent-training-free-tumor-tracking-2611.27876.md) | draft | Off-domain medical; harness lifts one-shot F1 6% to 73% — 2611.27876 |
+| [`arxiv-quasar-quantum-advantage-screening-2611.27778`](sources/arxiv-quasar-quantum-advantage-screening-2611.27778.md) | draft | Off-domain quantum; two-agent screen and verify — 2611.27778 |
+| [`arxiv-canon-canonical-differential-equations-2611.33100`](sources/arxiv-canon-canonical-differential-equations-2611.33100.md) | draft | Off-domain physics; agent proposes, code verifies — 2611.33100 |
+| [`newsletter-rss-latent-space-2026-11-24-ainews-jensen-is-back-and-openai-shows-its-pretr`](sources/newsletter-rss-latent-space-2026-11-24-ainews-jensen-is-back-and-openai-shows-its-pretr.md) | draft | Claude Ship `/ship`; harness adapters; pretraining curve — 2026-11-24 |
+| [`newsletter-rss-latent-space-2026-11-25-ainews-gemini-4-neon-marks-gdms-full-return-as-a`](sources/newsletter-rss-latent-space-2026-11-25-ainews-gemini-4-neon-marks-gdms-full-return-as-a.md) | draft | MCP Tasks GA; harness cost spread; Neon adoption — 2026-11-25 |
+| [`newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category`](sources/newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.md) | draft | Code review collapse; 60 skills from a hackathon — 2026-11-24 |
 
 ## meta/
 

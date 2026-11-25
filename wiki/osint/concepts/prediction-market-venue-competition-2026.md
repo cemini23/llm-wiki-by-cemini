@@ -6,6 +6,8 @@ related:
   - sources/substack-rss-event-horizon-2026-11-17-is-kalshi-worth-as-much-as-robinhood.md
   - sources/substack-rss-event-horizon-2026-11-19-kalshi-eyes-on-demand-prediction-markets-for-con.md
   - sources/substack-rss-event-horizon-2026-11-20-kalshi-utah-and-the-consequences-of-playing-chic.md
+  - sources/substack-rss-event-horizon-2026-11-23-episode-42-the-cftc-now-and-then-with-tölt-strat.md
+  - sources/substack-rss-wublock-2026-11-24-october-2026-tradfi-perpetual-futures-volume-rep.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
   - entities/companies/draftkings.md

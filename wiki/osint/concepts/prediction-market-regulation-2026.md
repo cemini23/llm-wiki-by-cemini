@@ -9,6 +9,9 @@ related:
   - sources/substack-rss-event-horizon-2026-11-19-kalshi-eyes-on-demand-prediction-markets-for-con.md
   - sources/substack-rss-event-horizon-2026-11-20-kalshi-utah-and-the-consequences-of-playing-chic.md
   - sources/substack-rss-wublock-2026-11-21-weekly-project-updates-ethereum-glamsterdam-upgr.md
+  - sources/substack-rss-event-horizon-2026-11-23-episode-42-the-cftc-now-and-then-with-tölt-strat.md
+  - sources/substack-rss-event-horizon-2026-11-24-can-prediction-markets-thread-the-needle-on-stat.md
+  - sources/substack-rss-event-horizon-2026-11-25-making-sports-event-contracts-21-feels-like-a-no.md
   - concepts/prediction-market-venue-competition-2026.md
   - sources/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md
   - sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md

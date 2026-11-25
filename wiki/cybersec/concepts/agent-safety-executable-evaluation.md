@@ -19,9 +19,11 @@ related:
   - sources/arxiv-nfr-to-hyperparameter-quantum-2611.16902.md
   - sources/arxiv-parsed-plausible-wrong-output-format-2611.17169.md
   - concepts/provider-refusal-measurement-contamination.md
+  - sources/arxiv-llm-marketplace-advance-fee-scam-2611.32957.md
+  - concepts/llm-fraud-labor-substitution.md
 maturity: draft
 created: 2026-08-21
-updated: 2026-11-14
+updated: 2026-11-25
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K298 executable eval)"
 ---

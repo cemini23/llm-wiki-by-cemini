@@ -5093,3 +5093,57 @@ New concepts:
 | [stock-return-decomposition-and-p-cape](concepts/stock-return-decomposition-and-p-cape.md) | Payout, retention and ROE set index returns; P-CAPE adjusts CAPE for retention. | draft |
 | [prediction-market-on-request-markets](concepts/prediction-market-on-request-markets.md) | RFQ-created markets change discovery, pricing and manipulation risk. | draft |
 | [prediction-market-venue-competition-2026](concepts/prediction-market-venue-competition-2026.md) | Venue-share ladder; superapp expansion; parlay share is the liquidity. | draft |
+
+## November 2026 ingest batch B (2026-11-25)
+
+New sources — quantitative papers:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv robust American lookback bounds](sources/arxiv-robust-bounds-american-fixed-strike-lookback-2611.30980.md) | Model-free American fixed-strike lookback put; exercise region is the right tail; monotone martingale coupling. | draft |
+| [arxiv Delta-Vega hedging deep RL](sources/arxiv-delta-vega-hedging-deep-rl-2611.32790.md) | PPO agent on two instruments; S&P 500 2019–2022; two-instrument hedging halves P&L dispersion. | draft |
+| [arxiv rough log-normal SV](sources/arxiv-rough-log-normal-stochastic-volatility-quadratic-drift-2611.32791.md) | Rough Volterra volatility with quadratic drift; martingale when κ2 ≥ β; Bitcoin and Ether calibration. | draft |
+
+New sources — operator working files:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [operator DFS slate 2026-11-22](sources/operator-dfs-slate-2026-11-22.md) | Week 11 read-only injury/reserve/weather packet plus T-90 checklist; no lineups. | draft |
+| [operator DFS slate 2026-11-15](sources/operator-dfs-slate-2026-11-15.md) | Week 10 packet; salary CSV drove slate inclusion; Munich international game off contest slate. | draft |
+| [FanDuel salaries 2026-11-22](sources/operator-fanduel-salaries-2026-11-22.md) | Contest 136799, 500 rows, 20 clubs; salary and injury export. | draft |
+| [FanDuel salaries 2026-11-15](sources/operator-fanduel-salaries-2026-11-15.md) | Contest 136490, 500 rows; salary input for the Week 10 recap. | draft |
+| [CeminiParlays slate 2026-11-22](sources/operator-parlays-slate-2026-11-22.md) | Week 11 packet: dual-source starts 19/20 confirmed, CONFLICT labelling, hard excludes. | draft |
+| [CeminiParlays slate 2026-11-15](sources/operator-parlays-slate-2026-11-15.md) | Week 10 packet; weather-provider disagreement handling; neutral-site stadium gap. | draft |
+| [FanDuel Week 10 recap](sources/operator-dfs-recap-week10-2026-11-15.md) | 150 lineups scored, median 113.61, max 194.26; cash line unknown; scoring hash pinned. | draft |
+| [Parlays Week 9 recap](sources/operator-parlays-recap-week9-2026-11-08.md) | Six paper tickets; 4 of 8 unique legs hit; zero stake; Brier 0.30 on model probability. | draft |
+| [World Spirits Atlas architecture](sources/world-spirits-atlas-architecture-2026-11-25.md) | Zero-copyleft geodata, licence gate in code, sub-15MB static build. | draft |
+| [World Spirits Atlas specification](sources/world-spirits-atlas-specification-2026-11-25.md) | Six typed primitives plus spirits extension; 65 expressions, 35 cocktails; validation rules. | draft |
+| [World Spirits Atlas growth strategy](sources/world-spirits-atlas-growth-strategy-2026-11-25.md) | Two-brand split, programmatic SEO gates, four monetization pillars. | draft |
+
+New sources — newsletters:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [capital-flows 2026-11-23](sources/substack-rss-capital-flows-2026-11-23-when-is-the-bottom-in-for-equities.md) | Vol-spike playbook framing: credit and liquidity first, levels second, execution third. | draft |
+| [capital-flows 2026-11-24](sources/substack-rss-capital-flows-2026-11-24-a-word-of-caution-for-sentiment-and-nvda-flows.md) | NVDA sentiment at a record; attention is not edge. | draft |
+| [event-horizon 2026-11-23](sources/substack-rss-event-horizon-2026-11-23-episode-42-the-cftc-now-and-then-with-tölt-strat.md) | CFTC loses NY preemption bid; $36bn at stake; mention volume down 90%. | draft |
+| [event-horizon 2026-11-24](sources/substack-rss-event-horizon-2026-11-24-can-prediction-markets-thread-the-needle-on-stat.md) | Industry pivots to states; NY 10% surcharge bill; Utah pause; perps overtake event volume. | draft |
+| [event-horizon 2026-11-25](sources/substack-rss-event-horizon-2026-11-25-making-sports-event-contracts-21-feels-like-a-no.md) | NYCC: 51,000 accounts aged 18–20, $8.9m losses; case for a 21+ rule. | draft |
+| [klement 2026-11-23](sources/substack-rss-klement-2026-11-23-how-the-media-treats-climate-change-and-other-cr.md) | UK papers disagree on what counts as a crisis; framing bias in keyword counts. | draft |
+| [klement 2026-11-24](sources/substack-rss-klement-2026-11-24-the-upside-of-ai-for-investment-analysis.md) | FactSet AI lift: +26% sources, +24% topics, +21% tools, faster reports. | draft |
+| [klement 2026-11-25](sources/substack-rss-klement-2026-11-25-the-downside-of-ai-for-investment-analysis.md) | More capable LLMs give more correlated and stickier recommendations. | draft |
+| [wublock outlook 2026-11-23](sources/substack-rss-wublock-2026-11-23-wublockchain-weekly-outlook-dell-earnings-spotli.md) | Dell $60.9bn AI server orders vs $16.4bn revenue; PCE, GDP, Beige Book calendar. | draft |
+| [wublock TradFi perps 2026-11-24](sources/substack-rss-wublock-2026-11-24-october-2026-tradfi-perpetual-futures-volume-rep.md) | $758.1bn stock/commodity/index perps, +21.9%; SOXL $84.9bn; pre-IPO book $48.6bn. | draft |
+| [wublock Binance hack 2026-11-25](sources/substack-rss-wublock-2026-11-25-binance-co-ceos-address-634b-hack-fake-job-inter.md) | $6.34bn signing-service breach via fake interview; MPC revocation gap. | draft |
+
+New concepts:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [robust-american-lookback-bounds](concepts/robust-american-lookback-bounds.md) | Right-tail exercise region for the American lookback put; MOT decomposition. | draft |
+| [deep-rl-delta-vega-hedging](concepts/deep-rl-delta-vega-hedging.md) | Observable-state RL policy; two instruments halve dispersion; regime-dependent gain. | draft |
+| [rough-log-normal-volatility](concepts/rough-log-normal-volatility.md) | Fractional Volterra volatility with quadratic drift; moment threshold; martingale condition. | draft |
+| [atlas-engine](concepts/atlas-engine.md) | NEW PROJECT: multi-vertical atlas engine, cartridge #1 spirits; typed primitives, licence gates. | draft |
+| [operator-nfl-slate-packet-workflow](concepts/operator-nfl-slate-packet-workflow.md) | Stable packet rules: two schedule sources, CONFLICT labelling, QB tiers, T-90 checklist. | draft |
+| [ai-in-investment-research](concepts/ai-in-investment-research.md) | More AI output and faster reports, but more correlated and stickier views. | draft |
+| [media-crisis-framing](concepts/media-crisis-framing.md) | Keyword risk counts inherit outlet politics; normalise by outlet lean. | draft |

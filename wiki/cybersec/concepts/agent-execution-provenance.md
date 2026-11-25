@@ -49,9 +49,11 @@ related:
   - entities/tools/mcptrace.md
   - sources/substack-rss-secpro-2026-10-30-php2shell-packet-to-process.md
   - concepts/intent-contract-planner-tool-separation.md
+  - sources/arxiv-avalon-m1-collective-rewards-2611.32539.md
+  - concepts/collective-reward-reporting-erosion.md
 maturity: draft
 created: 2026-06-07
-updated: 2026-11-22
+updated: 2026-11-25
 ---
 
 ## Relations

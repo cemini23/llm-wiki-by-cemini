@@ -170,9 +170,11 @@ related:
   - sources/arxiv-formally-verified-quantum-programs-2611.09822.md
   - sources/arxiv-2611.16524-drone-victim-search-llm-optimizer-2026-11-14.md
   - sources/arxiv-2611.17012-dma-google-search-anonymization-2026-11-14.md
+  - sources/arxiv-fol-proof-verifying-llm-text-to-logic-2611.33078.md
+  - sources/newsletter-rss-sparktoro-2026-11-25-the-best-damn-fashion-gift-guide-2026.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-11-14
+updated: 2026-11-25
 ---
 
 ## Relations

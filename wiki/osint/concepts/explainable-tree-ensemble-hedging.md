@@ -5,7 +5,8 @@ maturity: draft
 related:
   - sources/arxiv-x-hedging-tree-ensembles-2611.25870.md
   - concepts/options-derivatives.md
-updated: 2026-11-22
+  - concepts/deep-rl-delta-vega-hedging.md
+updated: 2026-11-25
 ---
 
 ## Raw Concept

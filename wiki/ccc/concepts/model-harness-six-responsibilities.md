@@ -20,9 +20,10 @@ related:
   - concepts/agentic-configuration-management-acm.md
   - concepts/agentic-robotics-harness.md
   - sources/arxiv-agentic-manipulation-policies-amp1-2611.09892.md
+  - concepts/model-vs-harness-performance-variance.md
 maturity: draft
 created: 2026-06-24
-updated: 2026-11-10
+updated: 2026-11-25
 ---
 
 ## Relations

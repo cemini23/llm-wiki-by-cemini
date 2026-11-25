@@ -39,9 +39,11 @@ related:
   - concepts/defensive-ai-trust-calibration.md
   - entities/tools/cyber-chaos-monkey.md
   - sources/substack-rss-secpro-2026-11-20-the-chase-outage-and-the-trust-were-placing-in-a.md
+  - sources/arxiv-avalon-m1-collective-rewards-2611.32539.md
+  - concepts/collective-reward-reporting-erosion.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-11-22
+updated: 2026-11-25
 ---
 
 ## Relations

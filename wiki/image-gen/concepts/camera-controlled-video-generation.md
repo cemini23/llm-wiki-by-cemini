@@ -51,13 +51,15 @@ related:
   - sources/arxiv-2610-12442-lego-exo-to-ego.md
   - concepts/latent-action-learning-video-dit.md
   - sources/arxiv-2611-26617-one-prior-two-dynamics-latent-action.md
+  - concepts/audio-grounded-dialogue-recinematography.md
+  - sources/arxiv-2611-33147-one-take-many-cameras-recinematography.md
 title: Camera-Controlled Video Generation
 type: concept
 tags: [concept, video-generation, camera-control, 6-dof, conditioning]
 keywords: [camera control, 6-DoF camera trajectory, Plucker coordinates, Plucker mixing, UCPE, dual-branch camera control, metric-scale camera pose, camera conditioning, temporal VAE stride, revisit trajectory]
 maturity: draft
 created: 2026-05-16
-updated: 2026-11-22
+updated: 2026-11-25
 ---
 
 ## Relations

@@ -6,6 +6,7 @@ keywords: [wsvi, iv-surfaces, k246]
 related:
   - sources/arxiv-2608.22478-arbitrage-aware-iv-surfaces.md
   - sources/arxiv-2608.22620-wsvi-implied-vol-shape.md
+  - concepts/deep-rl-delta-vega-hedging.md
 maturity: draft
 created: 2026-08-25
 updated: 2026-08-25

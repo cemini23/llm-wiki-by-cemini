@@ -38,9 +38,13 @@ related:
   - concepts/recognition-refusal-gap.md
   - concepts/defensive-ai-trust-calibration.md
   - concepts/deferred-semantic-commitment.md
+  - sources/arxiv-llm-marketplace-advance-fee-scam-2611.32957.md
+  - sources/arxiv-measurement-artifacts-quantized-trustworthiness-2611.32848.md
+  - concepts/llm-fraud-labor-substitution.md
+  - concepts/quantization-instrument-artifacts.md
 maturity: draft
 created: 2026-09-02
-updated: 2026-11-22
+updated: 2026-11-25
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-agent-audit.mdc (K321)"
 ---

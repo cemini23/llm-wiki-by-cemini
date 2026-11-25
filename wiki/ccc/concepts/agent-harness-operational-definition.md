@@ -20,9 +20,13 @@ related:
   - sources/arxiv-better-harnesses-smaller-models-2607.08938.md
   - concepts/code-enforces-decisions-multi-fidelity-eval.md
   - sources/arxiv-bt-agent-behavior-trees-onboard-2610.13862.md
+  - concepts/model-vs-harness-performance-variance.md
+  - sources/arxiv-shellbench-model-vs-harness-2611.32946.md
+  - sources/arxiv-lesionagent-training-free-tumor-tracking-2611.27876.md
+  - sources/arxiv-ruibench-robot-use-interface-2611.31115.md
 maturity: draft
 created: 2026-06-10
-updated: 2026-10-12
+updated: 2026-11-25
 ---
 
 ## Relations

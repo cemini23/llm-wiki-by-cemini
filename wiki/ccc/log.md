@@ -3324,3 +3324,93 @@ Cross-wiki stub routed from `@osint-wiki/sources/2026-11-24-deep-research-link-e
 - `entities/tools/ag-ui.md` — **updated**. Atto shipped the v1 event contract in `b31dae4`: 14 closed event types, `deny_unknown_fields`, 64 KiB cap, `domain: "agent"` truth boundary, Tauri `atto-agui` plus `to_sse`, shared fixtures, `docs/AGUI_EVENTS.md`.
 - `entities/tools/product-engineering-skills.md` — **updated**. Intended-versus-implemented check and frontend state checklist both shipped in the same commit.
 - `entities/stitch-skills.md` — **updated**. Game time shipped `docs/UI_DESIGN_LOOP.md` in `c08bd1a`, refined in `c5910b1`.
+
+## [2026-11-25] ingest | The Control-Flow Tax (2611.32365)
+
+- `sources/arxiv-control-flow-tax-decision-routing-2611.32365.md` — **new**. Control-flow routing is 42.5% of baseline cost and 66.5% of input tokens. A specialized chooser cuts cost 49.6% on task one, 40.5% to 42.9% on three further tasks. A gate-only swap saves 1.8%.
+- `concepts/control-flow-tax-agent-routing.md` — **new**. Three design rules: specialize the chooser, do not split the substitution, judge a router on trajectory length.
+- `concepts/decision-model-hybrid-agent-routing.md`, `concepts/timeout-cascade-cost-aware-routing.md`, `entities/skills/route.md`, `concepts/token-economics-and-prompt-caching.md` — **updated** backlinks.
+- Routing: `/route` — lane cost model. Judge cheap routers on trajectory length, not token price. No brief staged.
+
+## [2026-11-25] ingest | ShellBench (2611.32946)
+
+- `sources/arxiv-shellbench-model-vs-harness-2611.32946.md` — **new**. 100 everyday tasks, 12 models, 5 harnesses, 53,100 rollouts. Harness means span 42.87 to 45.23. Model scores span 18.8 to 62.5.
+- `concepts/model-vs-harness-performance-variance.md` — **new**. Model dominates everyday tasks; harness dominates tool-heavy work; per-pair effects survive flat means.
+- `concepts/agent-harness-operational-definition.md`, `entities/skills/route.md`, `sources/arxiv-2610.32483-when-agents-fail-model-or-harness-who-s-to-blame-2026-10-27.md`, `concepts/model-harness-six-responsibilities.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | Delegent (2611.33098)
+
+- `sources/arxiv-delegent-multi-agent-harness-cost-2611.33098.md` — **new**. Built on stock Claude Code with a relay that routes subagent calls to a local SLM. Coding cost 67% lower, search 59% lower, no loss in task success.
+- `concepts/frontier-led-slm-delegation.md` — **new**. The frontier model keeps the task and delegates legwork; not a cascade and not a router.
+- `entities/tools/claude-code.md`, `concepts/subagent-orchestration.md`, `concepts/timeout-cascade-cost-aware-routing.md`, `concepts/decision-model-hybrid-agent-routing.md` — **updated** backlinks.
+- Routing: `/route` — measured version of the frontier-led lane. No brief staged.
+
+## [2026-11-25] ingest | Beyond Self-Critique (2611.27839)
+
+- `sources/arxiv-beyond-self-critique-epistemic-convergence-2611.27839.md` — **new**. Asymmetric roles plus a Belief-Delta stopping rule. Over-iteration 0.0% against 62.5% for Fixed-3. LLM calls fall 2.4x. Evidence anchoring did not cut hallucination (21.7% vs 25.9%, p = 0.61); it made support checkable.
+- `concepts/evidence-grounded-debate-stopping.md` — **new**. Separate "the debate stabilised" from "the conclusion is true".
+- `concepts/agent-completion-verification-gates.md`, `entities/patterns/glasswing-deliberate-disagreement.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | Provenance-Isolated Epistemic Quorums (2611.32032)
+
+- `sources/arxiv-pieq-provenance-isolated-epistemic-quorums-2611.32032.md` — **new**. LLM agreement is not evidence. Four-part gate: provenance isolation, assumption tracking, plausible-world safety gating, execution-bound certificates.
+- `concepts/execution-bound-evidence-certification.md` — **new**. Two agents reading the same log are one witness with two voices.
+- `concepts/agent-completion-verification-gates.md`, `concepts/evidence-grounded-debate-stopping.md`, `concepts/self-verification-failure-taxonomy.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | Preflight (2611.31110)
+
+- `sources/arxiv-preflight-last-mile-verification-2611.31110.md` — **new**. Program-scoped dependency verification. Function-level harnesses expose both incidents; import-only probing exposes neither. 100 benign packages, zero false positives.
+- `concepts/program-scoped-dependency-verification.md` — **new**. A pre-install gate built on `import pkg` tests a fraction of the attack surface.
+- `concepts/agent-completion-verification-gates.md`, `concepts/agent-vm-sandboxing.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | RUIBench (2611.31115)
+
+- `sources/arxiv-ruibench-robot-use-interface-2611.31115.md` — **new**. Off-domain robotics. Changing only the robot-use interface moves a frontier agent from 45% to 81%. Reports a task-level verification gap.
+- `concepts/agentic-robotics-harness.md`, `concepts/agent-harness-operational-definition.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | Self-Upgrading Embodied Agents (2611.31117)
+
+- `sources/arxiv-self-upgrading-embodied-agents-2611.31117.md` — **new**. Off-domain robotics. A 27B agent rewrites one tensor of its own weights between tasks, with no training loop, and tests each edit against its unchanged self.
+- `concepts/agentic-robotics-harness.md`, `concepts/continual-harness-online-self-improvement.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | LesionAgent (2611.27876)
+
+- `sources/arxiv-lesionagent-training-free-tumor-tracking-2611.27876.md` — **new**. Off-domain medical imaging. Same LLM: 6% one-shot against 73% inside the harness for Qwen3.8-27B; 21% against 78% for Opus 5.5.
+- `concepts/agent-harness-operational-definition.md`, `concepts/agent-completion-verification-gates.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | QuASAR (2611.27778)
+
+- `sources/arxiv-quasar-quantum-advantage-screening-2611.27778.md` — **new**. Off-domain quantum computing. Two agents: one screens and cites, one verifies the citations. Nine of ten candidates reached a benchmarked prototype; none showed quantum advantage.
+- `concepts/agent-completion-verification-gates.md` — **updated** backlink.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | CANON (2611.33100)
+
+- `sources/arxiv-canon-canonical-differential-equations-2611.33100.md` — **new**. Off-domain high-energy physics. The agent proposes a canonical basis; independent programs verify and ask for a retry on failure. A state tool supports multi-subagent long search.
+- `concepts/agent-completion-verification-gates.md`, `concepts/subagent-orchestration.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | Latent Space AINews 2026-11-24
+
+- `sources/newsletter-rss-latent-space-2026-11-24-ainews-jensen-is-back-and-openai-shows-its-pretr.md` — **new**. Claude Ship `/ship` opens, reviews, and fixes a PR. CoEvoBench: most model-harness gains came from harness edits. Pi harness adaptation lifted Terminal-Bench 2.1 from 39% to 55%.
+- `entities/tools/claude-code.md`, `concepts/frontier-model-release-cadence.md`, `concepts/model-vs-harness-performance-variance.md` — **updated** backlinks.
+- Routing: `/route` — harness-edit lane. No brief staged.
+
+## [2026-11-25] ingest | Latent Space AINews 2026-11-25
+
+- `sources/newsletter-rss-latent-space-2026-11-25-ainews-gemini-4-neon-marks-gdms-full-return-as-a.md` — **new**. MCP turns two: Tasks GA, Skills over MCP shipping, 10,000+ connectors. Artificial Analysis: one model spans about 13 points across harnesses. Four-agent swarms only slightly faster at 3x tokens.
+- `entities/tools/claude-code.md`, `concepts/frontier-model-release-cadence.md`, `concepts/model-vs-harness-performance-variance.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution. MCP Tasks is `[NEEDS VERIFICATION 2026-11-25]` against the installed harness.
+
+## [2026-11-25] ingest | Pragmatic Engineer 2026-11-24 essay winners
+
+- `sources/newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.md` — **new**. HoneyBook review collapse from two reviewers to zero. Devolutions: 60 useful skills from a hackathon, $2M annual AI spend. Steering replaces rowing.
+- `concepts/claude-code-software-factory.md`, `concepts/agent-completion-verification-gates.md`, `concepts/agent-pr-volume-exceeds-human.md` — **updated** backlinks.
+- Routing: wiki-only; no distribution.

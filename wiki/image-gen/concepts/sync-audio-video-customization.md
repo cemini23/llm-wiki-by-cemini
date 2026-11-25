@@ -21,9 +21,11 @@ related:
   - sources/arxiv-2606-08260-tide-unified-video-editing.md
   - concepts/task-isolated-unified-video-editing.md
   - entities/models/tide.md
+  - concepts/audio-grounded-dialogue-recinematography.md
+  - sources/arxiv-2611-33147-one-take-many-cameras-recinematography.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-10
+updated: 2026-11-25
 ---
 
 ## Relations

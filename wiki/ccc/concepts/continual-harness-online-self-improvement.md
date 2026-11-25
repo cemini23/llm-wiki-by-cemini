@@ -24,6 +24,7 @@ related:
   - sources/arxiv-skilladaptor-2606.01311.md
   - concepts/retrospective-harness-optimization-rho.md
   - sources/arxiv-retrospective-harness-optimization-2606.05922.md
+  - sources/arxiv-self-upgrading-embodied-agents-2611.31117.md
   - concepts/rl-agent-labs-system-prompt-learning.md
   - concepts/time-series-native-agent-harness.md
   - sources/arxiv-timeclaw-contextualized-time-series-2606.05404.md
@@ -56,7 +57,7 @@ related:
   - sources/arxiv-macaron-v1-continual-learning-2608.09819.md
 maturity: draft
 created: 2026-05-27
-updated: 2026-08-11
+updated: 2026-11-25
 cross-wiki-source: "@osint-wiki/concepts/continual-harness-online-self-improvement.md"
 ---
 

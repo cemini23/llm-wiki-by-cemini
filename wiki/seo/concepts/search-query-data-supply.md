@@ -10,9 +10,11 @@ related:
   - concepts/local-seo-foundations.md
   - sources/arxiv-2610.40164-who-owns-digital-news-and-who-gets-cited-measuri-2026-11-01.md
   - sources/arxiv-2610.41893-automated-keyword-generation-dvs-2026-11-03.md
+  - concepts/share-of-influence-channel-measurement.md
+  - sources/newsletter-rss-sparktoro-2026-11-24-new-feature-share-of-influence-lets-you-calculat.md
 maturity: draft
 created: 2026-11-14
-updated: 2026-11-14
+updated: 2026-11-25
 ---
 
 ## Raw Concept

@@ -13,9 +13,11 @@ related:
   - concepts/time-inconsistent-stochastic-control.md
   - sources/arxiv-particle-methods-partial-observation-2606.09055-2026-06-15.md
   - sources/arxiv-dpg-time-inconsistent-equilibrium-2606.11798-2026-06-16.md
+  - concepts/robust-american-lookback-bounds.md
+  - concepts/rough-log-normal-volatility.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-06-16
+updated: 2026-11-25
 clusters: [quant-finance, foundations, education]
 ---
 

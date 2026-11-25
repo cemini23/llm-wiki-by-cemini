@@ -33,9 +33,13 @@ related:
   - sources/searchengineland-2026-google-llm-patent-entity-characterization-480625.md
   - sources/newsletter-rss-sterling-sky-2026-09-29-gbp-optimization-checklist.md
   - concepts/search-query-data-supply.md
+  - concepts/gbp-video-verification.md
+  - sources/newsletter-rss-sterling-sky-2026-11-22-google-business-profile-verification-9-easy-step.md
+  - concepts/scaled-thin-ai-content-risk.md
+  - sources/newsletter-rss-sterling-sky-2026-11-22-the-dangers-of-thin-and-scaled-ai-content.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-11-14
+updated: 2026-11-25
 ---
 
 ## Relations

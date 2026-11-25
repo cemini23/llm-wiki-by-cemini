@@ -35,13 +35,15 @@ related:
   - sources/arxiv-2607-27110-freqforcing.md
   - sources/arxiv-2608-07463-mirrorworld.md
   - sources/video-generation-survey-2026.md
+  - concepts/audio-grounded-dialogue-recinematography.md
+  - sources/arxiv-2611-33147-one-take-many-cameras-recinematography.md
 title: Seam stitching strategies (extending video clip length)
 type: concept
 tags: [video-workflow, seam-stitching, latent-chaining, overlap-deduplication, gvs, generative-view-stitching, cyclic-loop, lipsync, length-extension]
 keywords: [seam-stitching, latent-chaining, overlap-deduplication, wanv2v-video-stitcher, kishor900, generative-view-stitching, gvs, omni-guidance, cyclic-latent-conditioning, latentsync, musetalk, unisync, trepa]
 maturity: draft
 created: 2026-05-07
-updated: 2026-08-10
+updated: 2026-11-25
 ---
 
 

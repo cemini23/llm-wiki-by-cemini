@@ -6,10 +6,12 @@ keywords: [EventSpeech, event camera, neuromorphic, EVT-SPK, DAVIS346, expressiv
 related:
   - concepts/persona-audio-stack.md
   - entities/lipsync/latentsync.md
+  - concepts/event-stream-diffusion-simulation.md
+  - sources/arxiv-2611-33096-eventdiffusion-native-event-stream.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-11-25
 ---
 
 ## Relations

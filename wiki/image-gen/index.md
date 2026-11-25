@@ -1307,3 +1307,17 @@ Concepts:
 - [RL post-training as activation steering](concepts/rl-post-training-as-activation-steering.md) — Most of RL's reward gain is a constant per-block shift. Split reward tuning (vector) from subject learning (LoRA). — `concept, rl, post-training, activation-steering, lora`
 - [Posterior matching distillation](concepts/posterior-matching-distillation.md) — Match exponentially tilted conditional means to keep diversity in a few-step student. Tilt=Shift gives one teacher call per target. Any-step sampling. — `concept, distillation, few-step, diversity`
 - [Latent action learning with one video DiT prior](concepts/latent-action-learning-video-dit.md) — One pretrained video model as both inverse and forward dynamics; high-noise training forces use of the action. — `concept, video-generation, latent-action, world-model`
+
+## Ingest 2026-11-25 — three arXiv papers (LoRA composition, event simulation, re-cinematography)
+
+Sources:
+
+- [Latent Merger latent-space LoRA composition](sources/arxiv-2611-33048-latent-merger-latent-space-lora-composition.md) — Hypernetwork LoRAs share directions; merging their hypernetwork latents beats TIES, DARE, and SVD compress at a fixed rank. LLM paper, peripheral here. — `paper, lora, merging, hypernetwork, llm, peripheral, ingest-2026-11-25`
+- [EventDiffusion native event streams](sources/arxiv-2611-33096-eventdiffusion-native-event-stream.md) — Three-stage diffusion over event counts, pixel allocation, and timestamps. CEFS 0.684 on DSEC against 0.576 for the best simulator. Event-sensor simulation, peripheral. — `paper, event-camera, neuromorphic, simulation, peripheral, reference-only, ingest-2026-11-25`
+- [One Take, Many Cameras re-cinematography](sources/arxiv-2611-33147-one-take-many-cameras-recinematography.md) — Audio anchors lip motion across views; an LTX-2.3 LoRA plus a training-free speaker gate turns one wide take into cuttable shots. −59% perceptual error and −97% speech leakage against Wan 3.0. — `paper, video-generation, audio-visual, multi-shot, cinematic, lora, ltx, lipsync, ingest-2026-11-25`
+
+Concepts:
+
+- [Latent-space composition of hypernetwork LoRAs](concepts/latent-space-lora-composition.md) — Generated adapters cluster in a few directions, so rank concatenation loses. Merge at the generator latent, not in weight space. — `concept, lora, merging, adapter-geometry, reference`
+- [Generative event-stream simulation](concepts/event-stream-diffusion-simulation.md) — Sample counts, allocate them to pixels, then sample timestamps. CEFS over EQS. Research horizon for high-frame-rate capture. — `concept, event-camera, neuromorphic, simulation, dataset, reference`
+- [Audio-grounded dialogue re-cinematography](concepts/audio-grounded-dialogue-recinematography.md) — Speech is view-invariant. Condition a video diffusion model on source tokens, a target frame, and clean audio; gate per speaker. — `concept, video-generation, audio-visual, multi-shot, cinematic, lipsync, lora`

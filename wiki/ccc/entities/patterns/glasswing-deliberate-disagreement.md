@@ -20,9 +20,11 @@ related:
   - concepts/hybrid-slm-ensemble-orchestration.md
   - entities/skills/free-audit.md
   - sources/arxiv-slm-ensemble-malware-orchestration-2607.20216.md
+  - concepts/evidence-grounded-debate-stopping.md
+  - sources/arxiv-beyond-self-critique-epistemic-convergence-2611.27839.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-09-30
+updated: 2026-11-25
 cross-wiki-source: "@osint-wiki/sources/analyzing-github-projects-agentic-infra-2026-05-21.md"
 ---
 

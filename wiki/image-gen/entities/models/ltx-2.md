@@ -56,13 +56,15 @@ related:
   - entities/models/wonder.md
   - sources/arxiv-2607-29545-moroute.md
   - sources/arxiv-2608-13556-v-rae.md
+  - concepts/audio-grounded-dialogue-recinematography.md
+  - sources/arxiv-2611-33147-one-take-many-cameras-recinematography.md
 title: LTX-2 (Lightricks)
 type: entity
 tags: [model, video, asymmetric-av, audio-visual, ltx, lightricks, joint-foundation]
 keywords: [ltx-2, ltx-video, lightricks, asymmetric-av, audio-visual, 19b, 14b-visual, 5b-audio, bidirectional-cross-attention, 4k, 50fps, foley, modality-specific-vae, ltx-2-community-license]
 maturity: draft
 created: 2026-05-07
-updated: 2026-08-25
+updated: 2026-11-25
 ---
 
 ## Relations
@@ -135,6 +137,10 @@ LTX-2.3 is **not** in Musubi Tuner's architecture coverage list (per training-to
 ### MSAVBench (multi-shot A/V eval)
 
 **LTX-2.3 TI2AV** (Wan2.7-Image storyboard priors + per-shot A/V) is the **strongest open-weight MSAV path** in @sources/arxiv-2605-20183-msavbench-multi-shot-audio-video.md — ~75 overall on 1–4 shot prompts, competitive with closed Wan2.7-T2V/Kling. Still weak on layout-text alignment and camera adherence vs Seedance-2.0 `[TENTATIVE]`. Confirms joint A/V advantage over silent Wan + post-hoc dubbing.
+
+### Dialogue re-cinematography LoRA (2026-11-25)
+
+A Stanford and LTX study adapts LTX-2.3 for new-camera shot synthesis from one wide dialogue take. It adds a LoRA on the video stream, trained with flow matching on paired synchronized views. In-context conditioning carries the source video tokens, a target first frame, and clean audio tokens at timestep 0; only the video stream is generated. A training-free speaker gate suppresses audio-to-video updates on silent faces. Against Wan 3.0 the method cuts perceptual error by 59% and speech leakage by 97% `[TENTATIVE]` — single paper. This is the first documented LTX-2.3 LoRA training path in this wiki, which narrows the earlier fine-tuning open question. See @concepts/audio-grounded-dialogue-recinematography.md.
 
 ## Dead Ends
 

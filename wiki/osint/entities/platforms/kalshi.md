@@ -10,6 +10,9 @@ related:
   - sources/substack-rss-event-horizon-2026-11-20-kalshi-utah-and-the-consequences-of-playing-chic.md
   - concepts/prediction-market-on-request-markets.md
   - concepts/prediction-market-venue-competition-2026.md
+  - sources/substack-rss-event-horizon-2026-11-23-episode-42-the-cftc-now-and-then-with-tölt-strat.md
+  - sources/substack-rss-event-horizon-2026-11-24-can-prediction-markets-thread-the-needle-on-stat.md
+  - sources/substack-rss-event-horizon-2026-11-25-making-sports-event-contracts-21-feels-like-a-no.md
   - sources/substack-rss-event-horizon-2026-11-06-cftc-to-prediction-markets-stop-blocking-states.md
   - sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md
   - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md

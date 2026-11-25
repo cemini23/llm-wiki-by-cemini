@@ -28,6 +28,16 @@ related:
   - concepts/agent-harness-operational-definition.md
   - concepts/progressive-autonomy-incident-resolution.md
   - sources/arxiv-where-llm-agents-get-stuck-debugging-databases-2611.17304.md
+  - concepts/execution-bound-evidence-certification.md
+  - concepts/evidence-grounded-debate-stopping.md
+  - concepts/program-scoped-dependency-verification.md
+  - sources/arxiv-preflight-last-mile-verification-2611.31110.md
+  - sources/arxiv-quasar-quantum-advantage-screening-2611.27778.md
+  - sources/arxiv-canon-canonical-differential-equations-2611.33100.md
+  - sources/arxiv-beyond-self-critique-epistemic-convergence-2611.27839.md
+  - sources/arxiv-pieq-provenance-isolated-epistemic-quorums-2611.32032.md
+  - sources/arxiv-lesionagent-training-free-tumor-tracking-2611.27876.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.md
   - concepts/generation-verification-gap-agent-artifacts.md
   - concepts/production-state-access-bottleneck.md
   - sources/arxiv-agent-harness-operational-definition-2606.10106.md
@@ -103,7 +113,7 @@ related:
   - sources/arxiv-knowing-when-to-intervene-2611.09792.md
 maturity: draft
 created: 2026-05-27
-updated: 2026-11-10
+updated: 2026-11-25
 cross-wiki-source: "@osint-wiki/sources/trading-posts-compilation-25-2026-05-27.md"
 ---
 

@@ -45,9 +45,11 @@ related:
   - concepts/rl-post-training-as-activation-steering.md
   - sources/arxiv-2611-26627-rl-post-training-activation-steering.md
   - sources/arxiv-2611-21393-train-after-you-measure-skip.md
+  - concepts/latent-space-lora-composition.md
+  - sources/arxiv-2611-33048-latent-merger-latent-space-lora-composition.md
 maturity: validated
 created: 2026-05-06
-updated: 2026-11-22
+updated: 2026-11-25
 ---
 
 ## Relations

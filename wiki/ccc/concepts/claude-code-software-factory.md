@@ -22,9 +22,10 @@ related:
   - concepts/nine-stage-agent-team-production.md
   - sources/trading-posts-compilation-16-2026-05-31.md
   - concepts/agentic-pm-review-artifacts.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.md
 maturity: draft
 created: 2026-05-26
-updated: 2026-06-01
+updated: 2026-11-25
 cross-wiki-source: "@osint-wiki/sources/trading-posts-compilation-38-2026-05-26.md"
 ---
 

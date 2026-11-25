@@ -38,9 +38,11 @@ related:
   - sources/arxiv-2608-16717-personashot.md
   - sources/arxiv-2608-18607-va-judger.md
   - sources/arxiv-2610-00825-align-then-reason.md
+  - concepts/audio-grounded-dialogue-recinematography.md
+  - sources/arxiv-2611-33147-one-take-many-cameras-recinematography.md
 maturity: draft
 created: 2026-06-08
-updated: 2026-08-20
+updated: 2026-11-25
 ---
 ## Relations
 

@@ -13,6 +13,8 @@ related:
   - concepts/guruwatcher-macro-watches.md
   - sources/substack-rss-klement-2026-08-18-inflation-in-better.md
   - sources/substack-rss-capital-flows-2026-11-13-inflation-cycle-playbook-livestream-reply.md
+  - sources/substack-rss-capital-flows-2026-11-23-when-is-the-bottom-in-for-equities.md
+  - sources/substack-rss-wublock-2026-11-23-wublockchain-weekly-outlook-dell-earnings-spotli.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-11-22

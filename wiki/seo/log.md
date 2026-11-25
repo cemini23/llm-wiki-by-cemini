@@ -2130,3 +2130,62 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - **No SEO link.** Long-form video reasoning. Record-only.
 - Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
 - Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | Sterling Sky: GBP video verification, 9 steps
+
+- `sources/newsletter-rss-sterling-sky-2026-11-22-google-business-profile-verification-9-easy-step.md` — **new**. On-topic local SEO. Video rules, nine shots grouped by location / operations / affiliation, after-upload checks, ten failure causes.
+- **Capture note.** The RSS body was empty. The full page was fetched on 2026-11-25. Numbers come from that page.
+- **One correction.** The article says video is "the only method", then lists five other methods. The page flags this.
+- **New concept page** `concepts/gbp-video-verification.md` — the check, the shots, and the fix path.
+- Backlinks: `entities/platforms/google-business-profile.md`, `concepts/google-business-profile.md`, `concepts/local-seo-foundations.md`, `concepts/local-pack-rankings.md`, `concepts/citation-building.md`. Index rows added.
+- Routing: wiki; brief candidate (onboarding checklist for a new listing).
+
+## [2026-11-25] ingest | Sterling Sky: the dangers of thin and scaled AI content
+
+- `sources/newsletter-rss-sterling-sky-2026-11-22-the-dangers-of-thin-and-scaled-ai-content.md` — **new**. On-topic. Sitewide loss risk from scaled thin AI pages. Two law-firm case patterns. No counts: the charts are images.
+- **The test it gives.** Topical fit: would this audience expect this content from this site?
+- **Method point.** Judge an update by organic position trends, not tool-estimated traffic.
+- **New concept page** `concepts/scaled-thin-ai-content-risk.md` — the stop rule for a content plan.
+- Backlinks: `concepts/content-strategy-local.md`, `concepts/on-page-seo-local.md`, `concepts/generative-engine-optimization.md`, `concepts/local-seo-foundations.md`. Index rows added.
+- Routing: wiki; brief candidate (content stop rule).
+
+## [2026-11-25] ingest | SparkToro: Share of Influence
+
+- `sources/newsletter-rss-sparktoro-2026-11-24-new-feature-share-of-influence-lets-you-calculat.md` — **new**. New metric. Ranks channels by contribution to a buyer journey, across Awareness / Interest / Consideration / Conversion.
+- **What is defined.** Weight is comparative against average web users in the same country. Journey length in touchpoints: candy bars 2–3, wine fridge 4–7, enterprise B2B 15–20.
+- **What is not defined.** No unit, no percent definition, no panel size, no formula. All values are modelled.
+- **New concept page** `concepts/share-of-influence-channel-measurement.md` — four reading rules. Never call the weights percentages.
+- **New entity page** `entities/tools/sparktoro.md`.
+- Backlinks: `concepts/ai-assistant-usage-buyer-journey-share.md`, `concepts/search-query-data-supply.md`. Index rows added.
+- Routing: wiki; no distribution. Not a GEO or local-pack metric.
+
+## [2026-11-25] ingest | SparkToro: The Best Damn Fashion Gift Guide 2026
+
+- `sources/newsletter-rss-sparktoro-2026-11-25-the-best-damn-fashion-gift-guide-2026.md` — **new**. **No SEO content.** An editorial fashion gift list with six contributors.
+- **What is there.** Page furniture only: product CTA, book promo, "curation cannot be bought" note, JSON-LD. No method.
+- Backlinks: `entities/tools/sparktoro.md`, `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | LARF: learning-aligned reasoning for search relevance
+
+- `sources/arxiv-larf-learning-aligned-reasoning-search-relevance-2611.32125.md` — **new**. Tencent Yuanbao search-relevance model. Three stages: cold-start SFT, discriminative GRPO with a margin loss, distillation into a dual-head student.
+- **Results.** +5.78 pp six-class accuracy, +5.05 NDCG, −82.9% latency (LARF-8B). ~300K train, 16K test.
+- **Relevance: thin.** One real link: AI-native search ranks in ordinal relevance grades and trains to separate near-ties. Not actionable for a business.
+- Backlinks: `concepts/retrieval-vs-citation-visibility-geo.md`, `concepts/generative-engine-optimization.md`, `concepts/scaled-thin-ai-content-risk.md`. Index row added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | CAPTA: identifying the LLM behind an AI agent
+
+- `sources/arxiv-capta-identifying-llms-behind-ai-agents-2611.32686.md` — **new**. Tsinghua security paper. Replaces CAPTCHA with multiple-choice probes that separate models by option preference.
+- **Results.** 99.0% mean accuracy with 10 probes across 25 LLMs; 99.7% across 28 agent–model combinations with 30 answers.
+- **Relevance: indirect.** A server can label AI-agent traffic by backend model. The paper also names AI-targeted cloaking, which corrupts citation audits.
+- **New concept page** `concepts/ai-agent-traffic-identification.md` — measurement use allowed; cloaking not. `[OPEN QUESTION 2026-11-25]` on any site-side test.
+- Backlinks: `concepts/generative-engine-optimization.md`, `concepts/agent-ready-website-local-bm.md`, `concepts/retrieval-vs-citation-visibility-geo.md`. Index rows added.
+- Routing: wiki-only; no distribution.
+
+## [2026-11-25] ingest | FOL-Proof: verifying LLM text-to-logic translations
+
+- `sources/arxiv-fol-proof-verifying-llm-text-to-logic-2611.33078.md` — **new**. Uses a linguistic parse plus an SMT solver to check LLM formulas for logical equivalence. Abstains rather than falsely rejects.
+- **No SEO link.** Formal methods. Record-only.
+- Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
+- Routing: wiki-only; no distribution.

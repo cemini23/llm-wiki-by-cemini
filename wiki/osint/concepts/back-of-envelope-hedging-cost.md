@@ -5,7 +5,9 @@ maturity: draft
 related:
   - sources/substack-rss-moontower-2026-11-15-back-of-the-envelope-hedging-cost.md
   - sources/substack-rss-moontower-2026-11-15-moontower-336.md
-updated: 2026-11-16
+  - concepts/deep-rl-delta-vega-hedging.md
+  - sources/arxiv-delta-vega-hedging-deep-rl-2611.32790.md
+updated: 2026-11-25
 ---
 ## Raw Concept
 

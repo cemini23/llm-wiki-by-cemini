@@ -31,9 +31,11 @@ related:
   - concepts/e-geo-universal-rewrite-playbook.md
   - sources/arxiv-bagga-2026-e-geo-ecommerce-testbed-2511.20867-2026-07-18.md
   - sources/google-search-central-2026-ai-optimization-guide.md
+  - concepts/scaled-thin-ai-content-risk.md
+  - sources/newsletter-rss-sterling-sky-2026-11-22-the-dangers-of-thin-and-scaled-ai-content.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-10-01
+updated: 2026-11-25
 ---
 
 ## Relations

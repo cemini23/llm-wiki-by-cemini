@@ -11395,3 +11395,176 @@ Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first
 - `concepts/prediction-market-on-request-markets.md` — **updated**. CeminiParlays `discovery.py` diffs venue snapshots against a persisted state file and prints only net-new series, newly opened props, and RFQ listings.
 - `concepts/prediction-market-venue-competition-2026.md` — **updated**. `venue_mix.py` runs quarter-Kelly per venue, weights by addressable sports share, and caps venue, correlated group, and slate.
 - No new sources. Queue statuses live in `briefs/`, which is gitignored.
+
+## [2026-11-25] ingest | Robust bounds for American fixed-strike lookback puts (arXiv 2611.30980)
+
+- `sources/arxiv-robust-bounds-american-fixed-strike-lookback-2611.30980.md` — **new**. The min-based fixed-strike lookback put is the only genuinely American case. Exercise region is the **right tail** `{x >= x*}`, opposite the standard American put.
+- Continuation payoff splits into locked intrinsic plus a minimum-drop put; optimal coupling is the monotone martingale coupling. Threshold rises with volatility, falls with `r`, diverges as `r` to 0.
+- Extends to `n` marginals; mass-diffusion correction is local, so `n > 3` reduces to iterating the `n = 3` case.
+- `concepts/robust-american-lookback-bounds.md` — **new**. `concepts/options-derivatives.md`, `concepts/stochastic-calculus-foundations.md` — **updated**.
+- Routing: wiki-only. Pricing-discipline reference for XSP options work; no signal.
+
+## [2026-11-25] ingest | Delta-Vega hedging with deep reinforcement learning (arXiv 2611.32790)
+
+- `sources/arxiv-delta-vega-hedging-deep-rl-2611.32790.md` — **new**. PPO agent trades the underlying and a longer-dated option. State restricted to observable quantities, which is the sim-to-real condition.
+- S&P 500 2019–2022, 1,193 episodes: objective −0.07 against −0.20 for Delta-Vega and −1.03 for Delta-only. P&L standard deviation 0.484, 0.560 and 1.174.
+- Two-instrument hedging roughly halves dispersion; advantage concentrated in 2020. Authors state the sample is too short for significant mean differences.
+- `concepts/deep-rl-delta-vega-hedging.md` — **new**. `concepts/options-derivatives.md`, `concepts/back-of-envelope-hedging-cost.md`, `concepts/explainable-tree-ensemble-hedging.md`, `concepts/k246-vol-options-wave.md`, `concepts/local-stochastic-volatility-calibration.md` — **updated**.
+- Routing: wiki-only. Candidate XSP hedging research; not a shipped strategy.
+
+## [2026-11-25] ingest | Rough log-normal stochastic volatility with quadratic drift (arXiv 2611.32791)
+
+- `sources/arxiv-rough-log-normal-stochastic-volatility-quadratic-drift-2611.32791.md` — **new**. Fractional Volterra volatility with quadratic drift. Quadratic damping lets positive spot-volatility correlation coexist with a true martingale when `κ2 >= β`.
+- Second-moment threshold `γ = ϑ²∫G²`; above it the second moment grows exponentially.
+- Calibration on Bitcoin and Ether at `H = 0.30` and `0.50`: 9.4% lower RMS error for Bitcoin, 13.3% higher for Ether; both at `κ2 − β = 0.01`.
+- `concepts/rough-log-normal-volatility.md` — **new**. `concepts/local-stochastic-volatility-calibration.md`, `concepts/stochastic-calculus-foundations.md` — **updated**.
+- Routing: wiki-only. Reference for crypto option models.
+
+## [2026-11-25] ingest | Operator DFS slate packet, NFL Week 11 (2026-11-22)
+
+- `sources/operator-dfs-slate-2026-11-22.md` — **new**. Read-only injury, reserve and weather packet plus T-90 checklist. Ten Sunday daytime games; no lineups, projections or salaries.
+- 227 injury rows; 261 unique hard excludes; 27 DFS-relevant Out/Doubtful/Questionable rows. Starting QBs: 0 CONFIRMED, 20 CLAIMED from one source.
+- Flags a week-label conflict: the task said Week 12, both schedule sources say Week 11.
+- `concepts/operator-nfl-slate-packet-workflow.md` — **new**. Routing: CeminiDFS. The packet template and hard-exclude rule set are the reusable parts.
+
+## [2026-11-25] ingest | Operator DFS slate packet, NFL Week 10 (2026-11-15)
+
+- `sources/operator-dfs-slate-2026-11-15.md` — **new**. Same template as Week 11. A FanDuel salary CSV was present, so the contest slate is ten of eleven Sunday games; the Munich international game is off-slate.
+- Byes CHI, DEN, PHI, TB confirmed by three counts. Zero kick disagreements.
+- Routing: CeminiDFS. Worked example of the salary-CSV-driven variant.
+
+## [2026-11-25] ingest | FanDuel salaries and player pool, Week 11 (contest 136799)
+
+- `sources/operator-fanduel-salaries-2026-11-22.md` — **new**. 500 rows, 20 clubs, 10 games. WR 187, TE 114, RB 112, QB 68, D 20. 82 rows carry an injury indicator.
+- Routing: CeminiDFS. Raw salary input; snapshot only.
+
+## [2026-11-25] ingest | FanDuel salaries and player pool, Week 10 (contest 136490)
+
+- `sources/operator-fanduel-salaries-2026-11-15.md` — **new**. 500 rows, same schema. 91 injury rows.
+- Row count differs slightly from the recap's own copy of the list, so this is a nearby snapshot, not the recap's source of truth. Tagged `[TENTATIVE]`.
+- Routing: CeminiDFS. Parser fixture and salary-backtest input.
+
+## [2026-11-25] ingest | CeminiParlays Sunday slate packet, Week 11 (2026-11-22)
+
+- `sources/operator-parlays-slate-2026-11-22.md` — **new**. Eleven-file bundle: packet, scheme, scratches, environment, odds, inactives, leg alerts, Q4 RB checkdown, QB starters, quarter script.
+- Starting QBs 19 of 20 CONFIRMED. 65 hard-exclude rows. Status conflicts labelled CONFLICT with both readings. No slip placed.
+- Routing: CeminiParlays. The validation gates are the reusable part; the leans expire.
+
+## [2026-11-25] ingest | CeminiParlays Sunday slate packet, Week 10 (2026-11-15)
+
+- `sources/operator-parlays-slate-2026-11-15.md` — **new**. Eleven games including the Munich 9:30 AM window. Records two NWS product disagreements and shows both readings.
+- Neutral site Munich is absent from `stadiums.py`, a documented gap.
+- Routing: CeminiParlays. Weather-disagreement handling is the lesson.
+
+## [2026-11-25] ingest | FanDuel Week 10 recap — 150 lineups, contest 136490
+
+- `sources/operator-dfs-recap-week10-2026-11-15.md` — **new**. All 150 lineups scored. Min 52.40, median 113.61, max 194.26. Scoring-code hash pinned and unchanged from prior weeks.
+- Cash line unknown, so no contest rank or payout is stated. Four players had no box line and are labelled `NO_BOX_LINE`.
+- Routing: CeminiDFS. Calibration anchor for the recap scorer; the only outcome data in this batch.
+
+## [2026-11-25] ingest | Parlays recap, Week 9 paper tickets (graded 2026-11-10)
+
+- `sources/operator-parlays-recap-week9-2026-11-08.md` — **new**. Filename says week 10; content is the Week 9 slate of 2026-11-08.
+- Six paper tickets, zero stake. Eight unique legs, four hit. Brier 0.30 on the joint model probability. Book price and settled screenshot are `NO_EVIDENCE`.
+- Routing: CeminiParlays. Grading-reference example; not a track record.
+
+## [2026-11-25] ingest | World Spirits Atlas — geospatial architecture and build pipeline
+
+- `sources/world-spirits-atlas-architecture-2026-11-25.md` — **new**. Zero-copyleft boundary data, licence gate in code, law pulled from government APIs, cartridge-generic build.
+- Estimated payload 6.7–11.6 MB against a 15 MB ceiling. Explicitly an estimate, not a measured build.
+- `concepts/atlas-engine.md` — **new**. Routing: wiki-only; **roadmap candidate**. New project, no code repo at ingest.
+
+## [2026-11-25] ingest | Atlas Engine cartridge #1 — World Spirits specification
+
+- `sources/world-spirits-atlas-specification-2026-11-25.md` — **new**. Six typed primitives plus a spirits extension; 65 launch expressions, 35 cocktails, 35 milestones, 15 validator tests.
+- Validation encoded as rules: dual ABV thresholds, contested-GI versioning, mandatory pedagogical sibling.
+- Routing: wiki-only. The typed schema is the transferable asset.
+
+## [2026-11-25] ingest | World Spirits Atlas — growth, SEO and monetization playbook
+
+- `sources/world-spirits-atlas-growth-strategy-2026-11-25.md` — **new**. Asymmetric two-brand split; build-time indexation gates; four monetization pillars; no display ads.
+- Internal inconsistency flagged: free map download labelled CC BY-SA here, CC BY 4.0 in the architecture document. `[NEEDS VERIFICATION 2026-11-25]`
+- Routing: wiki-only. Programmatic-atlas playbook.
+
+## [2026-11-25] ingest | Capital Flows — when is the bottom in for equities
+
+- `sources/substack-rss-capital-flows-2026-11-23-when-is-the-bottom-in-for-equities.md` — **new**. Teaser for a three-part vol-spike playbook. No levels or numbers in the free text.
+- Stated framework: credit and liquidity cycles drive about 80% of returns; catalysts are excuses inside a fragile regime. Single-author causal claim, tagged `[TENTATIVE]`.
+- `concepts/inflation-risk-regime-2026.md`, `concepts/capital-flows-sofr-conviction-framework.md` — **updated**.
+- Routing: GuruWatcher. Register the credit-and-liquidity ordering as a watch frame, not a trade.
+
+## [2026-11-25] ingest | Capital Flows — a word of caution for sentiment and NVDA flows
+
+- `sources/substack-rss-capital-flows-2026-11-24-a-word-of-caution-for-sentiment-and-nvda-flows.md` — **new**. NVDA social sentiment at a record; call and put open interest at historic extremes. Argument: attention is not edge.
+- No series or numbers in the free text. Do not treat the record claim as verified.
+- `entities/tickers/nvda.md`, `concepts/ai-industry-trends-2026.md` — **updated**.
+- Routing: GuruWatcher. Crowding watch on NVDA.
+
+## [2026-11-25] ingest | Event Horizon Episode 42 — the CFTC now and then
+
+- `sources/substack-rss-event-horizon-2026-11-23-episode-42-the-cftc-now-and-then-with-tölt-strat.md` — **new**. CFTC loses its NY preemption argument; New York seeks $36bn. Kalshi loses in the Fourth Circuit.
+- Mention-market volume down about 90% from the February peak after the CFTC pause. Kalshi institutional volume $26.3bn in October, up from $622.7m in April.
+- 44 state AGs oppose the two CFTC rulemakings. MGM and BetMGM leave the NCPG over Kalshi's membership.
+- `concepts/prediction-market-regulation-2026.md`, `entities/platforms/kalshi.md`, `concepts/prediction-market-venue-competition-2026.md` — **updated**.
+- Routing: PM/Kalshi retail bot. Jurisdiction risk is now the binding constraint.
+
+## [2026-11-25] ingest | Event Horizon — can prediction markets thread the needle on state taxation
+
+- `sources/substack-rss-event-horizon-2026-11-24-can-prediction-markets-thread-the-needle-on-stat.md` — **new**. Industry pivots from preemption to engaging states. NY bill with a 10% surcharge on net fee revenue; Polymarket offers to engage.
+- Why state-by-state is hard: sportsbooks pay 51% tax and $25m licences, so cheap prediction-market access is a revenue threat. North Carolina is the low-tax template.
+- Kalshi pauses Utah, more than 177,000 users affected. CFTC final rule under OMB review. New Mexico tribal injunction.
+- Sunday volume $5.24bn, parlays 73.5% of it.
+- `concepts/prediction-market-regulation-2026.md`, `entities/platforms/kalshi.md`, `entities/platforms/polymarket.md` — **updated**.
+- Routing: PM/Kalshi retail bot. Track state tax rates as a venue-cost input.
+
+## [2026-11-25] ingest | Event Horizon — making sports event contracts 21+
+
+- `sources/substack-rss-event-horizon-2026-11-25-making-sports-event-contracts-21-feels-like-a-no.md` — **new**. NYCC findings: about 484,000 NYC Kalshi accounts, 51,000 aged 18–20, $8.9m of the $52.5m individual losses.
+- Recommends a 21-and-over rule for sports event contracts; Novig already applies one; Kalshi counsel will consider it. Hearing 14 December.
+- Utah moves to dismiss its 14 criminal charges after Kalshi geofences. Florida and Michigan actions continue. Kalshi perps topped event volume on 20 November, $3.4bn against about $3bn.
+- `concepts/prediction-market-regulation-2026.md`, `entities/platforms/kalshi.md` — **updated**.
+- Routing: PM/Kalshi retail bot. Access and marketing are now the pressure point.
+
+## [2026-11-25] ingest | Klement — how the media treats climate change and other crises
+
+- `sources/substack-rss-klement-2026-11-23-how-the-media-treats-climate-change-and-other-cr.md` — **new**. Ten UK newspapers, 2015–2024. Left-leaning papers frame climate as the crisis; right-leaning papers frame energy and cost-of-living.
+- Practical rule for news feeds: a keyword count of "crisis" or "damage" measures editorial choice. Split the corpus by outlet lean, or use outlet-relative scores.
+- `concepts/media-crisis-framing.md` — **new**.
+- Routing: wiki-only. Input hygiene for any news-sentiment feature.
+
+## [2026-11-25] ingest | Klement — the upside of AI for investment analysis
+
+- `sources/substack-rss-klement-2026-11-24-the-upside-of-ai-for-investment-analysis.md` — **new**. FactSet AI as a natural experiment: +26% third-party sources, +24% topics, +21% analyses and tools per report; faster reports.
+- Hallucinations are not tested. The measured gain is output quantity and speed.
+- `concepts/ai-in-investment-research.md` — **new**. `concepts/ai-industry-trends-2026.md` — **updated**.
+- Routing: wiki-only. Pairs with the next day's post.
+
+## [2026-11-25] ingest | Klement — the downside of AI for investment analysis
+
+- `sources/substack-rss-klement-2026-11-25-the-downside-of-ai-for-investment-analysis.md` — **new**. Lo et al. simulate 7 LLMs over 64 stock scenarios. More capable models agree more and change their view less when inputs change.
+- Portfolio volatility falls with stock count but sits on a floor set by model stickiness. Different vendors converge because they read the same data.
+- `concepts/ai-in-investment-research.md`, `concepts/ai-industry-trends-2026.md` — **updated**.
+- Routing: wiki-only. Direct caution for any multi-model research ensemble.
+
+## [2026-11-25] ingest | Wu Blockchain weekly outlook — Dell earnings, PCE and GDP
+
+- `sources/substack-rss-wublock-2026-11-23-wublockchain-weekly-outlook-dell-earnings-spotli.md` — **new**. Dell booked $60.9bn of AI server orders, recognised $16.4bn, ended with a $95bn backlog.
+- September PCE 3.6% headline and 3.1% core; Q3 GDP 3.4% annualised. Calendar markers, not new analysis.
+- `concepts/ai-industry-trends-2026.md`, `concepts/inflation-risk-regime-2026.md` — **updated**.
+- Routing: GuruWatcher. Dell delivery progress is an AI-capex watch item.
+
+## [2026-11-25] ingest | Wu Blockchain — October 2026 TradFi perpetual futures volume report
+
+- `sources/substack-rss-wublock-2026-11-24-october-2026-tradfi-perpetual-futures-volume-rep.md` — **new**. Stock, commodity and index perps totalled $758.1bn in October, +21.9% MoM. Stocks $541.8bn, up 33.2%; leveraged ETFs $179.8bn, up 81.9%; SOXL $84.9bn.
+- Binance 58.9% of volume; Hyperliquid 9.3%; Bitget +68.5%; MEXC −23.2%. Pre-IPO names $48.6bn, led by SpaceX $42.3bn.
+- Funding dispersion across venues for the same name: NVDA spans +1.77% on Crypto.com to +0.04% on Hyperliquid.
+- `concepts/crypto-derivatives-volume-2026.md`, `concepts/perps-dex-funding-carry-strategy.md`, `concepts/prediction-market-venue-competition-2026.md` — **updated**.
+- Routing: GuruWatcher. New data series; cross-venue funding gap is an alert candidate.
+
+## [2026-11-25] ingest | Wu Blockchain — Binance co-CEOs address the $6.34B hack
+
+- `sources/substack-rss-wublock-2026-11-25-binance-co-ceos-address-634b-hack-fake-job-inter.md` — **new**. About $6.34bn taken from an internal wallet-signing service on 30 October; about $2.85bn frozen or intercepted. All figures are Binance statements, not independently verified.
+- Entry vector: fake recruitment process and a malicious coding assignment on a work laptop. Malware evaded endpoint tools.
+- Lesson: an on-chain authorisation survives a withdrawal freeze, and an MPC wallet has no single key to revoke it under time pressure.
+- `concepts/crypto-custody-single-point-of-failure.md`, `entities/data-sources/binance.md` — **updated**.
+- Routing: wiki-only. Custody and incident-response reference.

@@ -19,9 +19,11 @@ related:
   - concepts/conversational-capture-geo.md
   - sources/newsletter-rss-latent-space-2026-09-07-aeo-tracker-2026-09-08.md
   - sources/arxiv-turn-level-best-of-n-agents-2611.06868.md
+  - concepts/ai-agent-traffic-identification.md
+  - sources/arxiv-capta-identifying-llms-behind-ai-agents-2611.32686.md
 maturity: validated
 created: 2026-07-18
-updated: 2026-11-10
+updated: 2026-11-25
 ---
 
 ## Relations

@@ -15,9 +15,10 @@ related:
   - sources/arxiv-mechanical-engineering-skills-2611.05758.md
   - concepts/agent-skill-libraries-mechanical-engineering.md
   - entities/tools/mechanical-engineering-skills.md
+  - sources/arxiv-ded-agent-agentic-thermal-simulation-2611.32822.md
 maturity: draft
 created: 2026-06-03
-updated: 2026-11-10
+updated: 2026-11-25
 ---
 
 ## Relations
@@ -61,6 +62,12 @@ Deep-read of @sources/arxiv-2605-17448-self-improving-cad-agents.md (2026-06-05)
 ### K293 — FunCAD (2026-10-20)
 
 @sources/arxiv-funcad-2610.26861-2026-10-20.md tests the mechanism in simulation before the picture counts. FunCAD-Bench has 46 families. The skim did not take a headline success rate. Same REFERENCE stance. No clone.
+
+### Adjacent — an agent that writes the simulation, not the model (2026-11-25)
+
+@sources/arxiv-ded-agent-agentic-thermal-simulation-2611.32822.md runs the loop one level down. The agent does not author a CAD part. It authors the finite element model that judges the process, then calibrates that model against measured data. Tools are Gmsh, FEniCSx and an HOPGD surrogate. A supervisor plus intent, simulation and calibration agents share one JSON specification.
+
+The difference from this page's loop is the check. Here the retry trigger is a typed pass/fail rubric on FEA output. In DED-Agent the retry trigger is solver convergence, non-physical temperatures and an energy balance, then a trust-region fit to thermocouple data. Both are REFERENCE material. Neither has a local repo.
 
 ## Snippets
 

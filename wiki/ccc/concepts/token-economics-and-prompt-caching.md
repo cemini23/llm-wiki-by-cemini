@@ -59,9 +59,10 @@ related:
   - concepts/frontier-model-release-cadence.md
   - sources/newsletter-rss-latent-space-2026-11-10-ainews-fable-52-retakes-world-1-llm-spot-as-ant.md
   - entities/models/claude-fable-5-2.md
+  - concepts/control-flow-tax-agent-routing.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-11-10
+updated: 2026-11-25
 ---
 
 ## Relations

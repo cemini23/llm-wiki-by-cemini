@@ -46,9 +46,11 @@ related:
   - sources/arxiv-2608-14403-craft-attention-personalization.md
   - sweeps/2026-07-23-daily.md
   - sweeps/2026-07-24-daily.md
+  - concepts/latent-space-lora-composition.md
+  - sources/arxiv-2611-33048-latent-merger-latent-space-lora-composition.md
 maturity: validated
 created: 2026-05-06
-updated: 2026-08-17
+updated: 2026-11-25
 ---
 
 ## Relations

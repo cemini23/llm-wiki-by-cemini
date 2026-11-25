@@ -10,7 +10,9 @@ related:
   - sources/substack-rss-wublock-2026-11-06-wublockchain-weekly-democratic-win-triggers-mark.md
   - sources/substack-rss-wublock-2026-11-07-weekly-project-updates-aave-rolls-out-fixed-rate.md
   - sources/substack-rss-wublock-2026-11-08-asias-weekly-top10-crypto-news-pboc-to-probe-sol.md
-updated: 2026-11-10
+  - sources/substack-rss-wublock-2026-11-25-binance-co-ceos-address-634b-hack-fake-job-inter.md
+  - entities/data-sources/binance.md
+updated: 2026-11-25
 ---
 
 ## Raw Concept

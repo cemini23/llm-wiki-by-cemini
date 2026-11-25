@@ -9,7 +9,8 @@ related:
   - concepts/agentic-containment-principles.md
   - concepts/guardrail-construct-validity-agent-eval.md
   - concepts/silent-error-rate-structured-output.md
-updated: 2026-11-22
+  - concepts/collective-reward-reporting-erosion.md
+updated: 2026-11-25
 ---
 
 ## Raw Concept

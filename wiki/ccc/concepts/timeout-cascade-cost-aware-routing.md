@@ -9,7 +9,11 @@ related:
   - concepts/agent-toolkit-routing-research-backlog.md
   - sources/newsletter-rss-pragmatic-engineer-2026-11-17-inference-engineering-for-software-engineers.md
   - entities/skills/route.md
-updated: 2026-11-22
+  - concepts/control-flow-tax-agent-routing.md
+  - concepts/frontier-led-slm-delegation.md
+  - sources/arxiv-delegent-multi-agent-harness-cost-2611.33098.md
+  - sources/arxiv-control-flow-tax-decision-routing-2611.32365.md
+updated: 2026-11-25
 ---
 
 ## Raw Concept

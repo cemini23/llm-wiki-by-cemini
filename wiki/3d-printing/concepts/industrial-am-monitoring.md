@@ -23,9 +23,10 @@ related:
   - sources/arxiv-monolithic-optomechanical-chassis-2611.06898.md
   - concepts/precision-optomechanics-am.md
   - sources/arxiv-bulk-cmsx-4-single-crystal-lded-2611.16535.md
+  - sources/arxiv-ded-agent-agentic-thermal-simulation-2611.32822.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-11-14
+updated: 2026-11-25
 ---
 
 ## Relations
@@ -65,6 +66,14 @@ Contrast with consumer FDM (@concepts/fault-detection.md): Bambu's stack is gros
 The result is single-crystal growth to nearly twice the height that power control alone reaches, and a 47% shorter solutionizing heat treatment. [TENTATIVE — one alloy, one machine, rod geometry]
 
 The counterpart paper, @sources/arxiv-track-height-control-am-2611.07704.md, controls a geometry (track height) on the same class of machine. Read the two together: same process family, two different controlled variables.
+
+### DED — the model itself built by agents
+
+@sources/arxiv-ded-agent-agentic-thermal-simulation-2611.32822.md automates the step before any control loop: it writes the FE thermal model and calibrates it. A supervisor agent runs three specialists. One turns a plain-language build request into a JSON specification. One builds and checks a FEniCSx thermal model with a Goldak heat source and element activation along the toolpath. One fits the heat-source parameters to thermocouple data through a HOPGD surrogate in a trust-region loop.
+
+On five published L-DED builds, error fell to 0.89–2.48% in three rounds for four builds. The fifth, a multi-track band on a tube, stopped at 8.26%, and the authors blame model form rather than the heat source.
+
+The transferable point for a farm is not the metal process. It is the failure mode: an under-specified request raised error from 9.13% to 13.12%. The agent flags every assumed parameter. A model built from guessed inputs looks as confident as one built from measured inputs.
 
 ## Snippets
 

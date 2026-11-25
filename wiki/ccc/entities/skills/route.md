@@ -21,9 +21,12 @@ related:
   - entities/skills/scout-tool-search.md
   - sources/arxiv-progrouter-progress-orchestration-2608.25992.md
   - entities/models/claude-fable-5-2.md
+  - concepts/control-flow-tax-agent-routing.md
+  - sources/arxiv-control-flow-tax-decision-routing-2611.32365.md
+  - sources/arxiv-shellbench-model-vs-harness-2611.32946.md
 maturity: validated
 created: 2026-07-01
-updated: 2026-11-10
+updated: 2026-11-25
 ---
 
 ## Relations

@@ -4274,3 +4274,33 @@ Skipped: `2611.05258`.
 - **Transferable.** Pre-register the metric, hold out a prompt set, and report per-class results. Rare classes carry the gain.
 - Files created: `sources/arxiv-2611-21393-train-after-you-measure-skip.md`. Updated `concepts/local-likeness-lora-lessons.md`, `concepts/lora-taxonomy.md`.
 - Routing: wiki-only. No distribution; no brief.
+
+## [2026-11-25] ingest | Latent Merger: latent-space composition of hypernetwork LoRAs (arXiv:2611.33048)
+
+- **Peripheral. Reference only.** Document-to-LoRA injection for a frozen LLM. No image, video, or diffusion content. NYU, KAIST, DeepAuto.ai; NeurIPS 2026.
+- **Finding.** Hypernetwork-generated adapters share directions: within-method cosine rises to +0.89 and the top spectral component holds 89%, against 0.001–0.025 and 0.2–2.6% for fine-tuned adapters.
+- **Method.** Merge the hypernetwork latents with a small Transformer, then decode one fixed-rank adapter through the frozen head. Base model and generator stay frozen.
+- **Numbers.** D2L on Gemma-2-2B, SQuAD F1: 50.7 at N=2 and 21.0 at N=10, against 48.5 and 15.5 for SVD compress and 43.7 and 16.4 for TIES. Unscaled concatenation collapses to 0.6 at N=10.
+- **Transfer.** Adapter geometry decides the merge rule. More rank from concatenation did not beat a merged fixed-rank adapter.
+- Files created: `sources/arxiv-2611-33048-latent-merger-latent-space-lora-composition.md`, `concepts/latent-space-lora-composition.md`. Updated `concepts/lora-taxonomy.md`, `concepts/preference-delta-lora-aggregation.md`, `concepts/reference-plus-lora-stacking.md`.
+- Routing: wiki-only. No distribution. Low brief priority: no open T2I hypernetwork path.
+
+## [2026-11-25] ingest | EventDiffusion: native event-stream distribution from videos (arXiv:2611.33096)
+
+- **Peripheral. Reference only.** Event-camera stream generation, not pixel generation. No T2I, T2V, LoRA, or persona content. University of Surrey.
+- **Method.** Three-stage diffusion: event counts (EAD), pixel allocation with cardinality preserved (ESA), and continuous timestamps (ETD). Native timing survives generation.
+- **Metric.** CEFS scores count, polarity, space-time allocation, and timing. EQS rates an empty stream at 0.94 or higher; CEFS separates empty from real.
+- **Numbers.** CEFS 0.684 on DSEC against 0.576 for DVS-Voltmeter, 0.592 on BS-ERGB against 0.472 for ESIM. Under every-fifth-frame input the mean is 0.425 against 0.289 for ESIM.
+- **Forecast.** Generates future events from one RGB frame, with no future frames.
+- Files created: `sources/arxiv-2611-33096-eventdiffusion-native-event-stream.md`, `concepts/event-stream-diffusion-simulation.md`. Updated `sources/arxiv-eventspeech-neuromorphic-tts-2605-26672.md`.
+- Routing: wiki-only. No distribution. No brief: needs event-camera hardware that the stack does not have.
+
+## [2026-11-25] ingest | One Take, Many Cameras: audio-grounded dialogue re-cinematography (arXiv:2611.33147)
+
+- **On-topic.** Audio-visual video diffusion, LoRA post-training on LTX-2.3, multi-shot cinematics, lipsync accuracy. Stanford, LTX, Tel Aviv University.
+- **Idea.** Speech is view-invariant, so the audio fixes lip motion in any new view. Condition the model on source-video tokens, a target first frame, and clean audio tokens at timestep 0; generate video only.
+- **Speaker gating.** A training-free gate detects the speaker in the source, maps the label through cross-attention, and suppresses audio-to-video updates on silent faces. Leakage falls from 17.5% to 0.6%.
+- **Numbers.** Paired-view benchmark: LPIPS 0.097 against 0.235 for Wan 3.0, landmark distance 0.062 against 0.142, zero source-copy clips against 6.8%. In-the-wild speaker mAP 90.3 against 78.1; user study 74.7% overall preference. Removing audio drops Sync-C from 5.01 to 3.70.
+- **Limit.** Target frames come from GPT-Image 2 in the reported setup, and no code release is stated.
+- Files created: `sources/arxiv-2611-33147-one-take-many-cameras-recinematography.md`, `concepts/audio-grounded-dialogue-recinematography.md`. Updated `concepts/multi-shot-audio-video-evaluation.md`, `concepts/camera-controlled-video-generation.md`, `concepts/sync-audio-video-customization.md`, `concepts/seam-stitching-strategies.md`, `entities/models/ltx-2.md`.
+- Routing: wiki-only; no distribution. Brief candidate: one-take dialogue coverage for persona video and film post-production.

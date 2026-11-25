@@ -27,9 +27,11 @@ related:
   - sources/arxiv-2608-02520-medpress-patient-pressure-sycophancy.md
   - concepts/airkey-wifi-acoustic-pin-sidechannel.md
   - sources/arxiv-2608-03151-airkey-wifi-acoustic-pin-inference.md
+  - sources/arxiv-llm-marketplace-advance-fee-scam-2611.32957.md
+  - concepts/llm-fraud-labor-substitution.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-08-05
+updated: 2026-11-25
 ---
 
 ## Relations

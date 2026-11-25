@@ -10,6 +10,10 @@ related:
   - concepts/random-feature-option-pricing.md
   - concepts/leveraged-etf-options-pricing.md
   - concepts/explainable-tree-ensemble-hedging.md
+  - concepts/deep-rl-delta-vega-hedging.md
+  - sources/arxiv-delta-vega-hedging-deep-rl-2611.32790.md
+  - concepts/robust-american-lookback-bounds.md
+  - sources/arxiv-robust-bounds-american-fixed-strike-lookback-2611.30980.md
   - concepts/market-structure-efficiency-and-edge-decay.md
   - concepts/derivative-informed-operator-learning.md
   - sources/arxiv-derivative-informed-operator-learning-2606-05900-2026-06-07.md

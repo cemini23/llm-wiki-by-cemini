@@ -8,9 +8,11 @@ related:
   - concepts/de-censoring-techniques.md
   - concepts/lora-taxonomy.md
   - concepts/reference-plus-lora-stacking.md
+  - concepts/latent-space-lora-composition.md
+  - sources/arxiv-2611-33048-latent-merger-latent-space-lora-composition.md
 maturity: draft
 created: 2026-06-05
-updated: 2026-06-05
+updated: 2026-11-25
 ---
 
 ## Relations

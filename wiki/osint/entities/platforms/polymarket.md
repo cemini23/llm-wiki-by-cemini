@@ -7,6 +7,7 @@ related:
   - sources/substack-rss-event-horizon-2026-11-19-kalshi-eyes-on-demand-prediction-markets-for-con.md
   - sources/substack-rss-event-horizon-2026-11-20-kalshi-utah-and-the-consequences-of-playing-chic.md
   - concepts/prediction-market-venue-competition-2026.md
+  - sources/substack-rss-event-horizon-2026-11-24-can-prediction-markets-thread-the-needle-on-stat.md
   - sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md
   - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md
   - concepts/prediction-market-trade-out-moat.md

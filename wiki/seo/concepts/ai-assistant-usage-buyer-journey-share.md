@@ -7,7 +7,10 @@ related:
   - concepts/geo-visibility-measurement.md
   - concepts/generative-engine-optimization.md
   - concepts/competitive-geo-citation-factors.md
-updated: 2026-11-22
+  - concepts/share-of-influence-channel-measurement.md
+  - sources/newsletter-rss-sparktoro-2026-11-24-new-feature-share-of-influence-lets-you-calculat.md
+  - entities/tools/sparktoro.md
+updated: 2026-11-25
 ---
 
 ## Raw Concept

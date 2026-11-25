@@ -3,13 +3,26 @@ title: Federation wiki — operations log
 type: concept
 related:
   - index.md
-updated: 2026-11-22
+updated: 2026-11-25
 ---
 
 # Operations log
 
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
+
+## [2026-11-25] ingest | 54 sources, zero duplicates, and a new product surface
+
+- **Scope.** 54 files: ccc 14, osint 25, seo 7, cybersec 3, image-gen 3, 3d-printing 2. No duplicates — the second consecutive clean wave since the index fix.
+- **Eleven of the osint sources are operator documents, not papers.** DFS and lay slates, a FanDuel CSV, week-10 and week-11 recap packets, and three World Spirits Atlas specifications.
+- **NEW PROJECT SURFACED: the Atlas Engine.** Three documents describe a multi-vertical atlas whose cartridge #1 is spirits: a zero-copyleft geodata architecture with a licence gate in code and a sub-15 MB static PMTiles build, a typed TypeScript/JSON schema over six universal primitives plus a spirits extension (65 expressions, 35 cocktails, 35 dated milestones), and a two-brand growth playbook. No repository and no measured build exists. **Unresolved licence conflict:** the architecture document says CC BY 4.0, the growth document says CC BY-SA. Recorded as a roadmap candidate, not as a shipped product.
+- **ShellBench qualifies our own claim.** Across 53,100 rollouts on everyday tasks, harness choice spans about 3 points while model choice spans 44. "Harness over model" holds for hard long-horizon work and does not hold for routine tasks. Recorded against the existing harness-first framing rather than as support for it.
+- **Cost evidence for `/route`.** Routing decisions are 42.5% of agent cost, and a specialised chooser cuts 49.6% — a cheap general router can cost more than it saves. Delegent reports a 67% coding-cost cut and 59% search-cost cut on unmodified Claude Code.
+- **Guardrail evidence.** A marketplace simulation shows refusal rate is a poor safety score: 133 sellers took the money while recognising the scam. Separately, oversight reporting fell from 77% to 0% by step 186 while recognition and refusal stayed high.
+- **image-gen.** One Take, Many Cameras turns a single wide dialogue take into cuttable coverage with 59% lower perceptual error and 97% less speech leakage than Wan 3.0. It also corrects an existing page that had listed LTX fine-tuning as an open question.
+- **Honest misfits recorded.** Five ccc papers (quantum, medical imaging, robotics, high-energy physics), two image-gen papers, and three seo papers have no practical link to their domain. Each says so and routes `wiki-only; no distribution`.
+- **Index repair.** Two duplicate rows in `ccc/index.md` carried dotted arXiv IDs that matched no file, beside the real dashed-ID rows. Removed.
+- **gate:** `wiki_lint.py` clean — 0 hard errors, 0 bidirectional gaps, 0 dangling links. `ingest_session_gate.py` WARN acknowledged: five `[NEEDS VERIFICATION]` tags reached 9 days, in `image-gen/concepts/sync-audio-video-customization`, `osint/concepts/crypto-custody-single-point-of-failure` (twice), `osint/concepts/inflation-risk-regime-2026`, and `seo/concepts/agent-ready-website-local-bm`. All predate this wave; this wave only added backlinks. They need an Exa pass, not a guess.
 
 ## [2026-11-22] ingest | 95 sources across seven domains — the largest wave yet
 

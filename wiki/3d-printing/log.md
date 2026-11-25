@@ -942,3 +942,24 @@ Re-delivered and already filed: `2611.02850`, `2611.03216`.
 - Gap recorded: the paper states no filament, printer, layer height, infill, print time, or part count. It yields no FDM process data.
 - **Judgement:** weak fit. 3D printing is a small part of an integration report.
 - Routing: wiki-only; no distribution. The usable part is a structural datapoint on where a printed part sits in a load path.
+
+## [2026-11-25] ingest | Compact Slow-Wave Hybrid Magnonics on Ultrahigh-Permittivity Substrates
+
+- Created `sources/arxiv-compact-slow-wave-hybrid-magnonics-2611.31612.md`. Seven pages. Jiang, Yun, Yan, Pishehvar, Davaji and Zhang, Northeastern University.
+- Updated `concepts/printed-photonics-background.md` — backlink and a new section on printing electronics onto a foreign substrate.
+- Method: drop-on-demand piezoelectric inkjet with two heads, silver-nanoparticle conductive ink and polymer dielectric ink. Minimum feature 100 µm. The dielectric corner frames print first at 10 µm per layer, then the job pauses, the 0.5 mm ceramic goes into the pocket, and the silver pattern prints at 1 µm per layer to 18 µm.
+- The enabling detail: a manufacturer control extension exposes the layer sequence and allows a programmed pause. The printer keeps its coordinate frame, so the pattern stays registered to the part loaded mid-job.
+- Results: six devices, finger length 600 to 3000 µm, cutoff 2 to 11 GHz. Finger length shrinks about four times against a Rogers TMM10i board. Coupling rises from 0.65 GHz to 1.1 GHz, g/fp ≈ 22%.
+- **Judgement:** weak fit. The additive process is a means to a microwave device. No FDM printer, filament, slicer or heat setting appears.
+- Routing: wiki-only; no distribution. The one transferable idea is the printed registration pocket plus pause, and it is untested on desktop hardware.
+
+## [2026-11-25] ingest | DED-Agent: An Agentic AI Method for Autonomous Thermal Simulation Model Development and Calibration in L-DED
+
+- Created `sources/arxiv-ded-agent-agentic-thermal-simulation-2611.32822.md`. Eleven pages. Song, Dai and Cheng, University of Maryland.
+- Updated `concepts/industrial-am-monitoring.md` — backlink and a section on the simulation model being built by agents.
+- Updated `concepts/self-improving-cad-generation-agents.md` — backlink and a contrast section: this loop writes the model, not the part.
+- Architecture: a supervisor plus an intent agent (validated JSON specification), a simulation agent (Gmsh mesh, FEniCSx solve, automatic checks) and a calibration agent (HOPGD surrogate, trust-region search).
+- Results: five published L-DED benchmark builds. Four reach 0.89–2.48% error after three calibration rounds. The tube-band case stops at 8.26% from model-form error.
+- Notable failure mode: the same build with an under-specified prompt rose from 9.13% to 13.12% error. The agent flags every assumed parameter.
+- **Judgement:** weak fit for printing hardware, moderate fit as an agent-harness pattern. Powder-fed laser metal AM is outside a Bambu farm.
+- Routing: wiki-only; no distribution. The transferable part is the verify-and-retry shape, not the process.

@@ -197,9 +197,11 @@ related:
   - concepts/configuration-layer-attack-embodied-ai.md
   - sources/arxiv-intent-contracts-tools-away-2611.24025.md
   - sources/arxiv-skillcfi-control-flow-integrity-2611.24185.md
+  - sources/arxiv-avalon-m1-collective-rewards-2611.32539.md
+  - concepts/collective-reward-reporting-erosion.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-11-22
+updated: 2026-11-25
 wire_status: policy_wired
 wire_target: ".cursor/rules/cemini-cybersec-mcp-tool-control.mdc"
 ---

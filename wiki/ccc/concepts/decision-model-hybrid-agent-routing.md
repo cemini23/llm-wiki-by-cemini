@@ -12,7 +12,11 @@ related:
   - concepts/reasoning-effort-calibration.md
   - sources/arxiv-2610.37375-agent-conditioned-routing-diverse-reasoning-path-2026-11-01.md
   - sources/arxiv-2611.05275-route-anything-2026-11-05.md
-updated: 2026-11-14
+  - sources/arxiv-control-flow-tax-decision-routing-2611.32365.md
+  - concepts/control-flow-tax-agent-routing.md
+  - sources/arxiv-delegent-multi-agent-harness-cost-2611.33098.md
+  - concepts/frontier-led-slm-delegation.md
+updated: 2026-11-25
 ---
 
 ## Raw Concept

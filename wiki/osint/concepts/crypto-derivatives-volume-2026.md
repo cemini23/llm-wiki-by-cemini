@@ -6,6 +6,8 @@ keywords: [derivatives-volume, perps, futures-spot-ratio, hyperliquid, binance, 
 related:
   - sources/substack-rss-wublock-2026-11-18-october-2026-exchange-derivatives-volume-report.md
   - concepts/crypto-exchange-spot-volume.md
+  - sources/substack-rss-wublock-2026-11-24-october-2026-tradfi-perpetual-futures-volume-rep.md
+  - concepts/perps-dex-funding-carry-strategy.md
   - sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md
   - sources/newsletter-wublock-derivatives-volume-july-2026-2026-08-12.md
   - sources/substack-rss-wublock-2026-08-13-july-2026-exchange-website-traffic-report-total.md

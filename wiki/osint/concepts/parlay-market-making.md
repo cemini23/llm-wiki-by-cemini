@@ -12,6 +12,9 @@ related:
   - sources/substack-rss-event-horizon-2026-11-10-the-moat-for-prediction-markets-is-trading-not-p.md
   - sources/substack-rss-event-horizon-2026-11-09-episode-40-the-misery-index-with-adjacent-market.md
   - entities/companies/draftkings.md
+  - concepts/operator-nfl-slate-packet-workflow.md
+  - sources/operator-parlays-slate-2026-11-22.md
+  - sources/operator-parlays-recap-week9-2026-11-08.md
 maturity: validated
 created: 2026-05-01
 updated: 2026-11-10

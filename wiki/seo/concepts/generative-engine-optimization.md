@@ -153,9 +153,14 @@ related:
   - sweeps/2026-10-01-daily.md
   - concepts/passage-evidence-screening-geo.md
   - concepts/ai-factual-error-types-business-facts.md
+  - sources/arxiv-larf-learning-aligned-reasoning-search-relevance-2611.32125.md
+  - concepts/ai-agent-traffic-identification.md
+  - sources/arxiv-capta-identifying-llms-behind-ai-agents-2611.32686.md
+  - concepts/scaled-thin-ai-content-risk.md
+  - sources/newsletter-rss-sterling-sky-2026-11-22-the-dangers-of-thin-and-scaled-ai-content.md
 maturity: validated
 created: 2026-05-07
-updated: 2026-11-10
+updated: 2026-11-25
 ---
 
 ## Relations

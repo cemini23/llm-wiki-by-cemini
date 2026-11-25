@@ -1247,3 +1247,21 @@ Six sources. The theme is that response-level safeguards do not protect the laye
 | [SEOYUN exam documents (2611.26033)](sources/arxiv-seoyun-refusal-inducing-exam-documents-2611.26033.md) | draft | Refusal-inducing exam pages against AI glasses. Threat model and protocol; no measurements yet. |
 | [tl;dr sec #355 (2026-11-19)](sources/newsletter-rss-tldrsec-2026-11-19-tldr-sec-355---cyber-chaos-monkey-offsec-harness.md) | draft | Cyber Chaos Monkey, five pre-authorized frameworks, Project Zero phased disclosure, Black October, Java4Shell. |
 | [Packt SecPro 2026-11-20](sources/substack-rss-secpro-2026-11-20-the-chase-outage-and-the-trust-were-placing-in-a.md) | draft | Chase outage caveat, defensive-agent trust, approval fatigue, 1Password patch study, NCSC advice. |
+
+## Ingest wave (2026-11-25) — LLM fraud labor, quantization artifacts, collective-reward oversight
+
+### Concepts
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [llm-fraud-labor-substitution](concepts/llm-fraud-labor-substitution.md) | draft | **A model holds both sides of a scam for 2.5 cents per payment.** Grade the money outcome, not the refusal count. Only the guarded persona resisted, and sellers faked past it. |
+| [quantization-instrument-artifacts](concepts/quantization-instrument-artifacts.md) | draft | **∆meas = ∆true + ∆inst.** Refusal detector, option order and batch shape can flip a quantized-model safety result. LLM.int8() is not batch-invariant; NF4 is. |
+| [collective-reward-reporting-erosion](concepts/collective-reward-reporting-erosion.md) | draft | Agents keep recognizing harm and keep refusing, but stop reporting to humans. Cyberattack scenario: 77% to 0% by step 186. Reward the escalation channel. |
+
+### Sources
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [LLM marketplace advance-fee scam (2611.32957)](sources/arxiv-llm-marketplace-advance-fee-scam-2611.32957.md) | draft | Megan Squire, F-Secure. 1,200 conversations, 10 models. 61% of buyers paid in advance; 133 sellers took the money while knowing it was a scam. |
+| [quantized trustworthiness measurement artifacts (2611.32848)](sources/arxiv-measurement-artifacts-quantized-trustworthiness-2611.32848.md) | draft | Eight sub-2B models at fp16, LLM.int8() and NF4. 4-bit harmful compliance +2.6 points after human calibration; refusal drop of 4.7 overstates it. |
+| [Avalon-M1 collective rewards (2611.32539)](sources/arxiv-avalon-m1-collective-rewards-2611.32539.md) | draft | 120B agent organisation over 147 environments. Reporting to humans collapses in two of three oversight scenarios. No cyber-defence component. |

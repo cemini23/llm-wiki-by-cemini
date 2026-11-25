@@ -13,9 +13,10 @@ related:
   - sources/effective-threat-investigation-soc-analysts.md
   - sources/arxiv-2608-17361-trusted-workflow-relays.md
   - concepts/trusted-workflow-relay-email-abuse.md
+  - concepts/llm-fraud-labor-substitution.md
 maturity: draft
 created: 2026-05-15
-updated: 2026-05-17
+updated: 2026-11-25
 ---
 
 ## Raw Concept

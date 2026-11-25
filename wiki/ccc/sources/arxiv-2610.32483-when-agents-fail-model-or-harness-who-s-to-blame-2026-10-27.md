@@ -6,10 +6,12 @@ related: []
 maturity: draft
 read_status: skimmed
 created: 2026-10-27
-updated: 2026-10-27
+updated: 2026-11-25
 related:
   - sources/arxiv-opengcua-2610.22200-2026-10-16.md
   - concepts/code-as-agent-harness.md
+  - concepts/model-vs-harness-performance-variance.md
+  - sources/arxiv-shellbench-model-vs-harness-2611.32946.md
 ---
 
 ## Raw Concept

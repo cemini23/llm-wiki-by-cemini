@@ -9,11 +9,12 @@ related:
   - sources/american-call-options-pricing-with-modular-neural-networks.md
   - entities/people/michael-burry.md
   - sources/youtube-macro-podcasts-batch-2026-05-29.md
+  - sources/substack-rss-capital-flows-2026-11-24-a-word-of-caution-for-sentiment-and-nvda-flows.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-23
 created: 2026-04-23
-updated: 2026-05-29
+updated: 2026-11-25
 ---
 
 ## Relations

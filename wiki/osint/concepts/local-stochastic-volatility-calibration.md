@@ -7,7 +7,11 @@ related:
   - concepts/quantum-local-vol-calibration.md
   - concepts/random-feature-option-pricing.md
   - sources/arxiv-local-stochastic-volatility-2611.18214.md
-updated: 2026-11-16
+  - concepts/rough-log-normal-volatility.md
+  - sources/arxiv-rough-log-normal-stochastic-volatility-quadratic-drift-2611.32791.md
+  - concepts/deep-rl-delta-vega-hedging.md
+  - sources/arxiv-delta-vega-hedging-deep-rl-2611.32790.md
+updated: 2026-11-25
 ---
 
 ## Raw Concept

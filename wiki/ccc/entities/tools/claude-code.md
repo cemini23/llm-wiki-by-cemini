@@ -66,10 +66,14 @@ related:
   - entities/tools/wake5.md
   - sources/newsletter-rss-latent-space-2026-11-14-ainews-the-no-ai-slop-manifesto.md
   - sources/newsletter-rss-latent-space-2026-11-13-ainews-jensen-huang-resigns-after-33-years-leadi.md
+  - concepts/frontier-led-slm-delegation.md
+  - sources/arxiv-delegent-multi-agent-harness-cost-2611.33098.md
+  - sources/newsletter-rss-latent-space-2026-11-24-ainews-jensen-is-back-and-openai-shows-its-pretr.md
+  - sources/newsletter-rss-latent-space-2026-11-25-ainews-gemini-4-neon-marks-gdms-full-return-as-a.md
 maturity: core
 hub: true
 created: 2026-05-13
-updated: 2026-11-14
+updated: 2026-11-25
 ---
 
 ## Relations

@@ -39,10 +39,12 @@ related:
   - sources/newsletter-rss-sterling-sky-2026-09-29-gbp-linked-url-local-pack-test.md
   - sources/newsletter-rss-sterling-sky-2026-09-29-gbp-optimization-checklist.md
   - sources/newsletter-rss-sterling-sky-2026-10-28-who-updates-google-information-why-google-keeps.md
+  - concepts/gbp-video-verification.md
+  - sources/newsletter-rss-sterling-sky-2026-11-22-google-business-profile-verification-9-easy-step.md
 
 maturity: draft
 created: 2026-05-07
-updated: 2026-10-01
+updated: 2026-11-25
 
 ---
 

@@ -58,6 +58,9 @@ related:
   - concepts/harness-de-bloat-4x4-pattern.md
   - concepts/claude-code-subagent-templates.md
   - concepts/karpathy-agent-infrastructure-basics.md
+  - concepts/frontier-led-slm-delegation.md
+  - sources/arxiv-delegent-multi-agent-harness-cost-2611.33098.md
+  - sources/arxiv-canon-canonical-differential-equations-2611.33100.md
   - entities/tools/ruflo.md
   - concepts/nine-stage-agent-team-production.md
   - concepts/harness-updating-vs-benefit-nonmonotonic.md
@@ -143,7 +146,7 @@ related:
   - sources/arxiv-agentic-manipulation-policies-amp1-2611.09892.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-11-10
+updated: 2026-11-25
 ---
 
 ## Relations

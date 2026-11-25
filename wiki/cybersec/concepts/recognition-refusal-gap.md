@@ -15,7 +15,9 @@ related:
   - concepts/refusal-induction-as-defense.md
   - concepts/machine-unlearning-privileged-context.md
   - concepts/deferred-semantic-commitment.md
-updated: 2026-11-22
+  - sources/arxiv-llm-marketplace-advance-fee-scam-2611.32957.md
+  - concepts/llm-fraud-labor-substitution.md
+updated: 2026-11-25
 ---
 
 ## Raw Concept

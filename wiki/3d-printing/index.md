@@ -251,3 +251,8 @@ Sources are ingested research material (PDFs, articles, GitHub READMEs, YouTube 
 ## Ingest 2026-11-22
 
 - [mobile-manipulator-robot](sources/arxiv-mobile-manipulator-robot-2611.22852.md) — Auriga @Work industrial mobile manipulator; aluminium chassis, 5-DOF arm, 3D-printed gripper; no filament, printer, or process setting stated. Weak fit: printing is a minor part of the build. Grasp success runs 40% to 95% over 20 trials per object. — `paper, robotics, mobile-manipulator, gripper, weak-fit, ingest-2026-11-22`
+
+## Ingest 2026-11-25 — two-paper inbox drain
+
+- [compact-slow-wave-hybrid-magnonics](sources/arxiv-compact-slow-wave-hybrid-magnonics-2611.31612.md) — Inkjet AME prints 18 µm silver SSPP waveguides on a ceramic substrate; the pause-and-insert dielectric pocket keeps the print registered to the external part. Weak fit: industrial inkjet electronics, no FDM. — `paper, AME, inkjet, printed-electronics, magnonics, weak-fit, ingest-2026-11-25`
+- [ded-agent-agentic-thermal-simulation](sources/arxiv-ded-agent-agentic-thermal-simulation-2611.32822.md) — Supervisor plus intent, simulation and calibration agents write and calibrate an L-DED FEniCSx thermal model; 0.89–2.48% error in three rounds; under-specified input raised error from 9.13% to 13.12%. Weak fit: metal AM, agent-harness pattern transfers. — `paper, agents, DED, metal, simulation, calibration, weak-fit, ingest-2026-11-25`
