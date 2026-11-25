@@ -46,8 +46,19 @@ It is a clean example of a domain-agnostic product with typed primitives and lic
 ### Open questions
 
 - [OPEN QUESTION 2026-11-25] No repository, build or measurement exists. The byte budget is an allowance, not a measured build.
-- [NEEDS VERIFICATION 2026-11-25] License conflict: the architecture document says curated data is CC BY 4.0, while the growth document labels the free map download CC BY-SA. Resolve before any public release.
-- [OPEN QUESTION 2026-11-25] Whether the operator wants this on `ROADMAP.md`. That file is outside this ingest's scope.
+- [OPEN QUESTION 2026-11-25] Whether the operator wants this on `ROADMAP.md`.
+
+### Licence conflict — resolved for curated data, open for tiles
+
+**Decision 2026-11-25: CC BY 4.0 governs the curated data.** That covers the expressions, cocktails, and dated milestones. It is the architecture document's term, and it matches the project's own zero-copyleft constraint. The growth document's CC BY-SA label is the outlier and should be corrected upstream.
+
+**The tiles are a separate question and cannot be settled the same way.** The architecture lists Overture Maps divisions and selected geoBoundaries layers as inputs, and both **inherit ODbL from OpenStreetMap**. ODbL is share-alike. If the published tile set contains Overture- or OSM-derived geometry, a share-alike obligation attaches to the derived database, and CC BY-SA is then closer to correct than CC BY 4.0 for that download.
+
+So the growth document may not be simply wrong. It may be describing the tiles rather than the data.
+
+**Before any public release, one check decides it:** list which source dataset each published tile layer derives from, and confirm whether any is ODbL. If none is, publish CC BY 4.0 throughout. If any is, label that layer share-alike and keep the curated data at CC BY 4.0 — the two can differ, because they are different works.
+
+This is `[OPEN QUESTION 2026-11-25]`, not a verified fact: no build exists, so there is nothing to inspect yet.
 
 ### Routing
 

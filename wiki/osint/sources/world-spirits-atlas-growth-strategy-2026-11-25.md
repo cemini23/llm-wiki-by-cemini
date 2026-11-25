@@ -54,7 +54,11 @@ A 48-hour developer velocity blitz on days 1 and 2, then a 12-day staggered roll
 
 ### Honest limits
 
-The document is a plan. All revenue figures are modelled. Several claims are third-party estimates. One internal inconsistency: the free map download is labelled CC BY-SA in the growth document, while the architecture document specifies CC BY 4.0 for curated data. Resolve before shipping. [NEEDS VERIFICATION 2026-11-25]
+The document is a plan. All revenue figures are modelled. Several claims are third-party estimates.
+
+One internal inconsistency: the free map download is labelled CC BY-SA here, while the architecture document specifies CC BY 4.0 for curated data. **Resolved for curated data (2026-11-25): CC BY 4.0 governs**, because it matches the architecture term and the project's zero-copyleft constraint. This document's label should be corrected upstream.
+
+The tiles are not covered by that decision. The architecture lists Overture Maps and geoBoundaries inputs, which inherit ODbL — a share-alike licence — from OpenStreetMap. If the published tiles contain that geometry, a share-alike obligation attaches to the derived database and this document's CC BY-SA label may be correct for the tiles specifically. See @concepts/atlas-engine.md. `[OPEN QUESTION 2026-11-25]` — no build exists to inspect.
 
 ### Reuse value
 

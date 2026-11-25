@@ -40,6 +40,8 @@ The document opens by rejecting five mainstream GIS defaults because they silent
 
 The replacements are public-domain, CC0, CC BY 4.0, Open Government Licence v3.0, Licence Ouverte, OGDL-Taiwan and INEGI free-use national datasets. A licensing gate in the build aborts on any deny-list match. That is the single most reusable idea in the document: licence checking is code, not review.
 
+**Licence decision (2026-11-25):** CC BY 4.0 governs the curated data. That is this document's term and it matches the zero-copyleft constraint. The caveat sits with the tiles: this document also lists Overture Maps and selected geoBoundaries layers, both of which **inherit ODbL — a share-alike licence — from OpenStreetMap**. A derived tile database containing that geometry carries the obligation, so the map download cannot be labelled CC BY 4.0 on the strength of this document alone. Check tile provenance before release. `[OPEN QUESTION 2026-11-25]`
+
 ### Consuming structured law instead of scraping prose
 
 Almost no jurisdiction outside France publishes vector polygons for spirit geographical indications. So the architecture pairs deterministic administrative dissolves, driven by versioned municipal and ward lookup tables, with parsers against machine-readable government APIs: EUR-Lex CELLAR SPARQL, the EU eAmbrosia API, the US eCFR Versioner XML API, and UK legislation.gov.uk XML. The Scotland example shows why this needs care: the five statutory whisky regions are defined partly by 2006 council wards, so the build must match those ward boundaries, not current ones.
