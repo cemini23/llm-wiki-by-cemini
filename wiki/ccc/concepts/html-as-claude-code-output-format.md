@@ -11,9 +11,10 @@ related:
   - "@osint-wiki/entities/people/thariq-trq212.md"
   - concepts/claude-artifacts-app-building.md
   - concepts/agentic-pm-review-artifacts.md
+  - sources/newsletter-rss-latent-space-2026-11-25-the-revolution-vs-the-renaissance-thariq-shihipa.md
 maturity: validated
 created: 2026-05-21
-updated: 2026-06-01
+updated: 2026-11-26
 ---
 
 ## Relations

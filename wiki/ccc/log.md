@@ -3414,3 +3414,36 @@ Cross-wiki stub routed from `@osint-wiki/sources/2026-11-24-deep-research-link-e
 - `sources/newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.md` — **new**. HoneyBook review collapse from two reviewers to zero. Devolutions: 60 useful skills from a hackathon, $2M annual AI spend. Steering replaces rowing.
 - `concepts/claude-code-software-factory.md`, `concepts/agent-completion-verification-gates.md`, `concepts/agent-pr-volume-exceeds-human.md` — **updated** backlinks.
 - Routing: wiki-only; no distribution.
+
+## [2026-11-26] ingest | Linear — Why issue tracking is dead (Cristina Cordova)
+
+- `sources/newsletter-rss-latent-space-2026-11-19-why-linear-says-issue-tracking-is-dead-cristina.md` — **new**. Same episode as the 2026-11-22 GTM page, with the product and pricing detail. Agents create more than half of Linear's issues, up from 3%. Outcome pricing is undefined, so seats stay. Coding sessions pass through the API price plus a markup.
+- `sources/newsletter-rss-latent-space-2026-11-19-scaling-linears-gtm-to-100m-arr-cristina-cordova.md` — **updated** backlink plus a pointer to the fuller record.
+- `concepts/agent-usage-vs-app-usage.md` — **new**. Two-line commodity test: agent usage up and app usage flat means the product is becoming a data source for someone else's agent.
+- `concepts/agent-pr-volume-exceeds-human.md` — **updated** backlink plus the vendor-reported share.
+- Routing: `/route` lane. The "two-line test" is a check for local tools. No brief staged.
+
+## [2026-11-26] ingest | Latent Space AINews 2026-11-25 (math proofs)
+
+- `sources/newsletter-rss-latent-space-2026-11-25-ainews-math-proofs-are-landing-faster-than-we-ca.md` — **new**. OpenCode ~50% against DSH Creator ~63% on FrontierHarness — a 13-point harness gap on a coding task class, from a non-vendor source. Eugene Yan finds buggy graders in 12 public evals. FrontierPhysics: 54% numeric pass against 28% review pass. ComputeWise: agents waste 48% of GPU time.
+- `concepts/model-vs-harness-performance-variance.md` — **updated** with the second coding datum. This qualifies the ShellBench result: 3 points of harness span on everyday tasks, 13 points here on coding.
+- `concepts/benchmark-maintenance-debt.md` — **updated** with the grader-validity section.
+- `concepts/frontier-model-release-cadence.md` — **updated** backlink.
+- Routing: `/route` lane — OpenCode autonomy quality is a second signal against the rejected mid-lane swap. No brief staged.
+
+## [2026-11-26] ingest | Latent Space — The Revolution vs The Renaissance (Thariq Shihipar)
+
+- `sources/newsletter-rss-latent-space-2026-11-25-the-revolution-vs-the-renaissance-thariq-shihipa.md` — **new**. **The RSS body is an intro plus show notes, with no transcript.** The page records the thesis, the two demos and the chapter list, and nothing else.
+- `concepts/html-as-claude-code-output-format.md` — **updated** backlink.
+- Person entity is cross-wiki: `@osint-wiki/entities/people/thariq-trq212.md`. No local duplicate created.
+- Routing: wiki-only; no distribution. Nothing to brief until a transcript exists.
+
+## [2026-11-26] ingest | Pragmatic Engineer — How Anthropic builds software in 2026 (Katelyn Lesse)
+
+- `sources/newsletter-rss-pragmatic-engineer-2026-11-25-how-anthropic-builds-software-in-2026-with-katel.md` — **new**. Body present, 12 learnings. Python to Rust in about five months, verified by shadow traffic, about 20% of code read closely. A Claude classifier decides human review count on every PR. A Claude agent is paged before a human on API on-call. Planning time unchanged; two-pizza teams held.
+- `concepts/coordination-cost-invariant.md` — **new**. Implementation cost fell; coordination cost did not. Explains why agentic projects still cost alignment and review.
+- `concepts/agent-completion-verification-gates.md` — **updated** with the shadow-traffic migration case.
+- `concepts/agent-pr-volume-exceeds-human.md` — **updated** with the review-routing mechanism.
+- `concepts/progressive-autonomy-incident-resolution.md` — **updated** with the on-call promotion case.
+- `concepts/claude-code-software-factory.md` — **updated** with Anthropic's own factory and the unchanged team shape.
+- Routing: Codex/Grok implementer lanes — the review classifier and on-call agent are harness designs the lanes could copy. Market-cap figure is `[NEEDS VERIFICATION 2026-11-26]`. No brief staged.

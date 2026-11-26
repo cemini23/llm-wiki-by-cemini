@@ -18,10 +18,14 @@ related:
   - sources/newsletter-rss-sterling-sky-2026-10-28-who-updates-google-information-why-google-keeps.md
   - concepts/gbp-video-verification.md
   - sources/newsletter-rss-sterling-sky-2026-11-22-google-business-profile-verification-9-easy-step.md
+  - sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md
+  - sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md
+  - concepts/gbp-business-hours.md
+  - concepts/google-review-reporting.md
 
 maturity: draft
 created: 2026-05-07
-updated: 2026-11-25
+updated: 2026-11-26
 
 ---
 
@@ -41,6 +45,10 @@ updated: 2026-11-25
 - @sources/salon-today-2026-review-gating-ftc-compliance-dodson-2026-06-24.md — review enforcement ladder (K135)
 - @sources/google-business-profile-help-2026-tips-get-more-reviews-3474122.md — first-party acquisition + replies (K136)
 - @sources/seroundtable-2026-gbp-review-loss-restrictions-2026-07-03.md — missing reviews + additive review restrictions (K137)
+- @sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md — hours field path + ranking effect of main hours
+- @sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md — review report flow + banned practices
+- @concepts/gbp-business-hours.md — hours layers
+- @concepts/google-review-reporting.md — review reporting
 
 
 ## Raw Concept
@@ -91,6 +99,19 @@ The listing structure (key fields that matter for optimization):
 | Booking link | Yes (or via partner) | Connects to scheduling system |
 | Menu / services list | Yes | Shows directly in the Knowledge Panel for relevant categories |
 
+### Hours layers
+
+The GBP hours field is not one field. It holds four layers, and each has a different job [Source: @sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md] `[TENTATIVE]`:
+
+| Layer | Job | Ranking effect |
+|-------|-----|----------------|
+| Main hours | Sets the open or closed label | The only layer that changes rankings |
+| Category hours | Access, delivery, takeout, happy hours, set by primary category | Not tested |
+| Extra hours | e.g. online service hours, under **More hours** | Did not change rankings in the Sterling Sky test |
+| Special hours | Holiday and one-off days | Not a ranking claim; keeps the label correct |
+
+The listing also has three opening modes: open with main hours (default), open with no main hours (no hours shown, listing stays live), and 24 hours. They are separate and do not convert. Details at @concepts/gbp-business-hours.md.
+
 ### Verification mechanisms
 
 - **Postcard** (mailed verification code, several days)
@@ -110,6 +131,7 @@ The page-level boundaries are at @concepts/reviews-reputation-management.md (rev
 - **No multiple listings for same location** — duplicate listings get merged or suppressed
 - **No review gating, no fake reviews, no fake services** — see @concepts/reviews-reputation-management.md; enforcement ladder (shadow-filter → pause → public banner → suspension) in @sources/salon-today-2026-review-gating-ftc-compliance-dodson-2026-06-24.md `[TENTATIVE]`
 - **Review systems can pause/hide reviews** — July 2026 reports show suspicious-review detection can temporarily remove or pause reviews; repeated incentivized-review violations can stack longer restrictions. See @sources/seroundtable-2026-gbp-review-loss-restrictions-2026-07-03.md.
+- **Reporting a banned review** — a user reports one review in Maps: three-dot menu, report, pick the reason, submit. The "Business Redressal Complaint Form" does not cover reviews; it covers name, phone, or URL fraud only. Full flow at @concepts/google-review-reporting.md `[TENTATIVE]`.
 - **Hours must reflect reality** — closed-when-listed-open is a quality flag
 
 Suspension risk: violations can result in soft suspension (listing hidden from search) or hard suspension (listing removed entirely). Reinstatement is a documented appeal process but takes 1-4 weeks if granted at all.

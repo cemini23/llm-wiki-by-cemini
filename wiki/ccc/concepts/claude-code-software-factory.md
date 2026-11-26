@@ -23,9 +23,12 @@ related:
   - sources/trading-posts-compilation-16-2026-05-31.md
   - concepts/agentic-pm-review-artifacts.md
   - sources/newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-25-how-anthropic-builds-software-in-2026-with-katel.md
+  - sources/newsletter-rss-latent-space-2026-11-25-the-revolution-vs-the-renaissance-thariq-shihipa.md
+  - concepts/coordination-cost-invariant.md
 maturity: draft
 created: 2026-05-26
-updated: 2026-11-25
+updated: 2026-11-26
 cross-wiki-source: "@osint-wiki/sources/trading-posts-compilation-38-2026-05-26.md"
 ---
 
@@ -58,6 +61,23 @@ K67 — **software factory** metaphor: one Claude Code workspace driving multipl
 ### vs Cemini prod
 
 CeminiSuite uses LangGraph/conductor for **trading** — factory pattern applies to **CeminiSuite + wiki repos** on laptop, not market execution paths.
+
+### Anthropic's own factory, described (2026-11-25)
+
+Katelyn Lesse gives a first-hand account of the factory at Anthropic
+(`@sources/newsletter-rss-pragmatic-engineer-2026-11-25-how-anthropic-builds-software-in-2026-with-katel.md`).
+Four components are visible:
+
+- A code review classifier decides whether a change needs a human, how many reviews it needs, and which
+  team reviews it.
+- An on-call agent classifies alerts before a human is paged.
+- Onboarding is "talk to Claude", against the codebase and internal systems.
+- Product managers ship features to production, and the team is still organised as two-pizza teams of
+  5–8 people.
+
+The last point is the constraint this page should carry. The factory did **not** dissolve the team.
+It added machine review and machine on-call on top of an unchanged team shape. Planning time did not
+fall either: see `@concepts/coordination-cost-invariant.md`.
 
 ### Verdict
 

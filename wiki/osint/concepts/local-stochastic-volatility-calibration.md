@@ -11,7 +11,9 @@ related:
   - sources/arxiv-rough-log-normal-stochastic-volatility-quadratic-drift-2611.32791.md
   - concepts/deep-rl-delta-vega-hedging.md
   - sources/arxiv-delta-vega-hedging-deep-rl-2611.32790.md
-updated: 2026-11-25
+  - concepts/variance-option-short-maturity-asymptotics.md
+  - sources/arxiv-large-deviations-integrated-exponentials-volterra-2611.34567.md
+updated: 2026-11-26
 ---
 
 ## Raw Concept

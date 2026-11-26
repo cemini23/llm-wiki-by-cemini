@@ -35,10 +35,12 @@ related:
   - concepts/google-review-edited-indicator.md
   - sources/newsletter-rss-sterling-sky-2026-09-28-review-posting-blocks.md
   - sources/searchengineland-2026-google-llm-patent-entity-characterization-480625.md
+  - sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md
+  - concepts/google-review-reporting.md
 
 maturity: draft
 created: 2026-05-07
-updated: 2026-10-01
+updated: 2026-11-26
 
 ---
 
@@ -70,6 +72,8 @@ updated: 2026-10-01
 - @sources/salon-today-2026-review-gating-ftc-compliance-dodson-2026-06-24.md — FTC + enforcement ladder; vendor audit (K135)
 - @sources/google-business-profile-help-2026-tips-get-more-reviews-3474122.md — first-party acquisition + reply rules (K136)
 - @sources/seroundtable-2026-gbp-review-loss-restrictions-2026-07-03.md — missing reviews + additive restrictions (K137)
+- @sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md — banned practices + report flow
+- @concepts/google-review-reporting.md — how to report a fake review
 
 ## Raw Concept
 
@@ -106,6 +110,18 @@ The trigger appears to be **how** reviews arrive, not volume alone: reviews left
 - ❌ **Filtering, gating, or hiding negatives** — even within the operator's own systems before public publication. Google's enforcement specifically targets the *practice* of selective solicitation, not just the technical mechanism.
 
 The wiki's `concepts/reviews-reputation-management.md` page is the primary reference for these boundaries.
+
+### Reporting a fake review (K-new, 2026-11-26) `[TENTATIVE]`
+
+@sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md lists six banned practices: bought or sold reviews, incentivized or biased reviews, fake customer experiences, many accounts or coordination, competitor attacks, and review gating. A shop may ask **all** customers for honest reviews. It may not shape what they say or reward the good ones.
+
+**Report one review in Maps:** find the listing, find the review, open the three-dot menu, select report, pick the reason, submit. Log the evidence first: screenshots, dates, review URLs, offer messages, and burst patterns.
+
+**Channel rule.** Use the Maps flow or the "Google Reviews Management Tool" for one review. Use the "Google Business Profile Help Community" for escalation on systematic manipulation. The **"Business Redressal Complaint Form" does not cover reviews**; it covers a fraudulent name, phone number, or URL only.
+
+**Outcomes.** Google may remove the review, block new reviews ("review jail"), drop the rating, or add a "Suspected Fake Reviews" label. The article gives no timelines and says reports often must be repeated. Full detail at @concepts/google-review-reporting.md.
+
+**Operator rule.** Report clear policy breaks on your own listing, such as a competitor attack. Respond in public to honest bad reviews; do not report them.
 
 ### LLM selection vs classical local SEO `[TENTATIVE]`
 

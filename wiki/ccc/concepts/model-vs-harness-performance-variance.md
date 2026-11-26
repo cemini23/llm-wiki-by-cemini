@@ -6,9 +6,10 @@ related:
   - sources/arxiv-2610.32483-when-agents-fail-model-or-harness-who-s-to-blame-2026-10-27.md
   - sources/newsletter-rss-latent-space-2026-11-24-ainews-jensen-is-back-and-openai-shows-its-pretr.md
   - sources/newsletter-rss-latent-space-2026-11-25-ainews-gemini-4-neon-marks-gdms-full-return-as-a.md
+  - sources/newsletter-rss-latent-space-2026-11-25-ainews-math-proofs-are-landing-faster-than-we-ca.md
   - concepts/agent-harness-operational-definition.md
   - concepts/model-harness-six-responsibilities.md
-updated: 2026-11-25
+updated: 2026-11-26
 maturity: draft
 ---
 
@@ -25,6 +26,12 @@ The workspace has carried a strong "harness over model" claim, taken mostly from
 **Coding and tool-heavy tasks: harness can dominate.** Artificial Analysis reports a within-model spread of about 13 points across harnesses on one coding benchmark. GLM scores best in Claude Code and worst in Codex. The "When Agents Fail" framework (2610.32483) ranks harnesses by cross-model fit with gaps of more than 20 points, from OpenCode at 87.5 to Deep Agents at 64.2.
 
 **Per-pair effects are real even when means are flat.** In ShellBench, DeepSeek V4.1 Flash loses about 10 points between Claude Code and Codex. Claude Fable 5.2 loses 5 points between Hermes and OpenClaw. A flat harness mean hides these pairs.
+
+**A second coding datum, 2026-11-25.** A community benchmark ran 7 local Qwen 3.8 builds fully
+autonomously on one RTX 5090. The author reports OpenCode at about 50% on FrontierHarness against
+DSH Creator at about 63%, and calls those numbers a floor rather than a best case. That is a 13-point
+harness gap on a coding task class, from a source that is not the harness vendor. It matches the
+workspace's own verdict on OpenCode: rejected for a `/route` mid-lane swap.
 
 **Harness co-evolution pays.** CoEvoBench reports that model-harness pairs improve mostly through harness edits, not training. Qwen3.8-27B adapted to the Pi harness gained 16 points on Terminal-Bench 2.1 at half the tokens.
 

@@ -5,7 +5,8 @@ maturity: draft
 related:
   - sources/substack-rss-wublock-2026-11-15-asias-weekly-top10-crypto-news-shanghai-encourag.md
   - sources/substack-rss-wublock-2026-11-16-wublockchain-weekly-outlook-nvidia-earnings-anth.md
-updated: 2026-11-16
+  - sources/substack-rss-wublock-2026-11-26-cz-qa-bnbs-rocky-debut-startup-lessons-and-web3s.md
+updated: 2026-11-26
 ---
 
 ## Raw Concept
@@ -29,6 +30,14 @@ Thailand tests a consumer use case. A tourism payment app converts stablecoins t
 The pattern: tokenisation of sovereign and institutional instruments is progressing inside licensed venues, while retail crypto access moves at a different and slower speed.
 
 [TENTATIVE] Compressed from newsletter summaries. Vendor participation in the Kazakh bond issue is unconfirmed even in the source.
+
+### Operator voice — CZ in Hong Kong, August 2026
+
+A separate transcript adds the operator view rather than the regulator view. Changpeng Zhao, speaking in Hong Kong, ranks three jurisdictions for Web3: Hong Kong first, then the UAE, then the US, and says the US policy environment has become more supportive. He is explicit that Hong Kong's advantage is finance, not AI, because power and data-centre costs are uncompetitive. [Source: substack-rss-wublock-2026-11-26-cz-qa-bnbs-rocky-debut-startup-lessons-and-web3s.md]
+
+He also argues that a DEX can separate an international platform from a US one and block restricted jurisdictions instead of requiring KYC from every user. That is the position of a former defendant, not a rule. `[TENTATIVE]`
+
+The useful part is the flow direction: tokenised real-world assets, including stablecoins, are the category operators now expect to grow fastest, and the stated driver is account access rather than yield. The dollar stablecoin market is put at roughly $200bn to $300bn, undated.
 
 ## Snippets
 

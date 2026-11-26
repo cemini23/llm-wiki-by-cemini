@@ -2189,3 +2189,25 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - **No SEO link.** Formal methods. Record-only.
 - Backlink: `concepts/corpus-overflow-out-of-scope.md`. Index row added.
 - Routing: wiki-only; no distribution.
+
+## [2026-11-26] ingest | Sterling Sky: how to change business hours on Google
+
+- `sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md` — **new**. On-topic GBP. RSS body truncated; full page fetched 2026-11-26.
+- **Edit path.** Edit Profile → Info → Business hours → pencil icon → dropdowns → Save. Breaks use the plus sign.
+- **Four hour layers.** Main, category, extra, and special. Only main hours set the open/closed label, and only main hours change rankings `[TENTATIVE]`.
+- **Three opening modes.** Open with main hours, open with no main hours (not 24/7), 24 hours.
+- **Risk.** Google can show "hours may be incorrect"; an approved user edit can leave wrong hours live.
+- **New concept page** `concepts/gbp-business-hours.md`.
+- Backlinks: `concepts/google-business-profile.md`, `entities/platforms/google-business-profile.md`, `concepts/local-pack-rankings.md`. Index rows added.
+- Routing: wiki; brief candidate (hours hygiene checklist).
+
+## [2026-11-26] ingest | Sterling Sky: how to report a business for fake Google reviews
+
+- `sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md` — **new**. On-topic. RSS body truncated; full page fetched 2026-11-26.
+- **Six banned practices.** Bought/sold, incentivized, fake experiences, many accounts, competitor attacks, review gating.
+- **Report flow.** Maps → three-dot menu → report → pick reason → submit. Log evidence first.
+- **Channel rule.** The "Business Redressal Complaint Form" does not cover reviews. Use the Maps flow or the "Google Reviews Management Tool".
+- **Outcomes.** Removal, review jail, rating drop, "Suspected Fake Reviews" label. No timelines given. One tracked case shows removals in waves.
+- **New concept page** `concepts/google-review-reporting.md`.
+- Backlinks: `concepts/reviews-reputation-management.md`, `entities/platforms/google-business-profile.md`, `concepts/google-business-profile.md`. Index rows added.
+- Routing: wiki; brief candidate (fake-review report checklist).

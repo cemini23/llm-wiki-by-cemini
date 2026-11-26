@@ -30,9 +30,10 @@ related:
   - sources/substack-rss-klement-2026-11-25-the-downside-of-ai-for-investment-analysis.md
   - sources/substack-rss-capital-flows-2026-11-24-a-word-of-caution-for-sentiment-and-nvda-flows.md
   - sources/substack-rss-wublock-2026-11-23-wublockchain-weekly-outlook-dell-earnings-spotli.md
+  - sources/substack-rss-klement-2026-11-26-klement-on-master-investor-podcast.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 ## Relations

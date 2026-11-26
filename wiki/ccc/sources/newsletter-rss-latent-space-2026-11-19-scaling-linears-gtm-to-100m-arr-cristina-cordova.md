@@ -5,7 +5,9 @@ related:
   - concepts/agent-pr-volume-exceeds-human.md
   - concepts/harness-layer-competition-cursor-claude-perplexity.md
   - concepts/claude-code-software-factory.md
-updated: 2026-11-22
+  - sources/newsletter-rss-latent-space-2026-11-19-why-linear-says-issue-tracking-is-dead-cristina.md
+  - concepts/agent-usage-vs-app-usage.md
+updated: 2026-11-26
 read_status: read
 maturity: draft
 ---
@@ -35,6 +37,11 @@ The rest is sales strategy: no SDRs, no enterprise chase in the first weeks, and
 The one number worth keeping is "more than half of work created by agents". It is a self-reported figure from a vendor that sells agent tooling. [TENTATIVE] It is also consistent with the agent PR-volume pattern in `@concepts/agent-pr-volume-exceeds-human.md`.
 
 Fit for CCC is low; this is business strategy. Filed for the agent-adoption data point.
+
+A later ingest of the same episode holds the product, pricing and headcount detail:
+`@sources/newsletter-rss-latent-space-2026-11-19-why-linear-says-issue-tracking-is-dead-cristina.md`.
+Use that page for the MCP and agent-orchestration claims. The commodity argument is filed at
+`@concepts/agent-usage-vs-app-usage.md`.
 
 ## Snippets
 

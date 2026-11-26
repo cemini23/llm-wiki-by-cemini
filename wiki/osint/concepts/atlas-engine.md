@@ -1,12 +1,19 @@
 ---
-title: Atlas Engine - multi-vertical geospatial atlas, cartridge #1 spirits
+title: Atlas Engine — three-cartridge geospatial atlas (spirits, spice, coffee and tea)
 type: concept
 maturity: draft
 related:
   - sources/world-spirits-atlas-architecture-2026-11-25.md
   - sources/world-spirits-atlas-specification-2026-11-25.md
   - sources/world-spirits-atlas-growth-strategy-2026-11-25.md
-updated: 2026-11-25
+  - sources/atlas-spirits-expansion-2026-11-26.md
+  - sources/atlas-spice-specification-2026-11-26.md
+  - sources/atlas-spice-geospatial-inventory-2026-11-26.md
+  - sources/atlas-spice-growth-strategy-2026-11-26.md
+  - sources/atlas-coffee-specification-2026-11-26.md
+  - sources/atlas-coffee-geospatial-inventory-2026-11-26.md
+  - sources/atlas-coffee-seo-blueprint-2026-11-26.md
+updated: 2026-11-26
 ---
 
 ## Raw Concept
@@ -34,6 +41,67 @@ A multi-vertical atlas engine: one rendering and data engine, plus per-domain "c
 ### Content scope at launch
 
 65 flagship regional expressions across six families: whisk(e)y, agave, cane and rum, botanicals and amari, grape and orchard brandies, and Asian and grain spirits. 35 multi-region cocktails under a "Map Your Glass" feature. 35 timeline milestones. Fifteen validator unit tests. [Source: World Spirits Atlas Specification.docx]
+
+### Cartridge architecture (three cartridges, one engine)
+
+The product family is now defined as three cartridges, all served by one engine:
+
+| Cartridge | Route | Domain | State |
+|---|---|---|---|
+| #1 World Spirits | `/spirits/` | flavororigins.com | Built and live (v1 verified 2026-11-25) |
+| #2 World Spice and Chili | `/spices/` | flavororigins.com | Specified, not built |
+| #3 Coffee and Tea | `/coffee-tea/` | flavororigins.com | Specified, not built |
+
+The engine brand is `terroirkit.dev`. The consumer brand is `flavororigins.com`. The stack is Astro SSG plus MapLibre GL JS plus PMTiles, with a runtime payload cap of 15 MiB per cartridge. [Sources: coffee specs.docx, World Spice Atlas Specification.docx, Coffee & Tea SEO Blueprint.docx]
+
+**Shared primitives.** All three cartridges keep the same six universal interfaces: `OriginRegion`, `BaseMaterial`, `ProcessMethod`, `Expression`, `TimelineEvent`, `Composition`. A cartridge adds one typed extension payload and does not change core fields. Cartridge #2 adds `SpiceExtension`. Cartridge #3 adds `CoffeeTeaExtension`, which is a discriminated union over the `coffea` and `camellia_sinensis` genera. [Sources: World Spice Atlas Specification.docx, coffee specs.docx]
+
+**Shared gate.** Each cartridge runs the same pipeline: `compiler/fetch.py` → `license_gate.py` → `dissolve.py` → `tippecanoe` → `pmtiles`. The gate aborts the build on any ODbL, share-alike, non-commercial or GADM input. [Source: Global Spice GI Geospatial Inventory.docx]
+
+**Shared rule — provenance over completeness.** Cartridge #2 and #3 both separate corpus-verified records from placeholders. Cartridge #2 uses `PENDING_SOURCING` and a `data_readiness` enum. Cartridge #3 uses a ten-value `ProvenanceStatus` enum, including `PENDING_SENSORY_PANEL` and `PENDING_COMPOSITION_AUDIT`. Unverified records stay out of the index. [Sources: World Spice Atlas Specification.docx, coffee specs.docx]
+
+### Cartridge #2 — World Spice and Chili, scale
+
+The specification fixes the catalogue counts. Only the geospatial inventory states the region total, and it gives a range. [Sources: World Spice Atlas Specification.docx, Global Spice GI Geospatial Inventory.docx]
+
+| Item | Count | Source |
+|---|---|---|
+| Regional expressions | 65 | Specification |
+| Regional blends, pastes and seasonings ("Map Your Blend") | 35 | Specification |
+| Diffusion milestones | 35 | Specification |
+| Automated validation rules | 15 | Specification |
+| Flagship spice and chili regions (polygon assembly) | 55–62 | Geospatial inventory |
+
+The geospatial inventory gives a regional split: Europe 12–13, Asia 22–23, Americas 12–14, Middle East and Africa 9–12. The counts are ranges because some regions are still contested at polygon level. [Source: Global Spice GI Geospatial Inventory.docx]
+
+Readiness is not uniform. Of the 65 expressions, 30 have botanical, analytical, processing or GI records in the current evidence base. The other 35 are expansion slots marked `PENDING_SOURCING`. Of the 35 blends, ingredient links and regulatory flags are mapped, but percentage ratios and coordinates are placeholders. Of the 35 milestones, 18 modern events carry verified dates. Of the 15 validator rules, 7 are fully grounded, 4 partly grounded and 4 are structural invariants. [Source: World Spice Atlas Specification.docx]
+
+Two 2025–2026 analytical standards drive the chemistry layer. ISO 3632-1:2025 adds an Extra Class tier above Category I for saffron. ASTA Method 21.3 (2026) revises capsaicinoid response factors and shifts calculated Scoville heat by a factor of 0.9431 against 2004 values. [Source: World Spice Atlas Specification.docx]
+
+### Cartridge #3 — Coffee and Tea, scale
+
+| Item | Count | Source |
+|---|---|---|
+| Regional expressions | 60 | Specification |
+| Cup and blend compositions | 30 | Specification |
+| Historical diffusion arcs | 30 | Specification |
+| Automated factual accuracy guardrails | 15 | Specification |
+| Origin entries | 63 | Geospatial inventory |
+| Producing countries and territories | 24 | Geospatial inventory |
+| Coffee origins | 36 | Geospatial inventory |
+| Tea origins | 27 | Geospatial inventory |
+
+The two documents agree on the origin totals: 63 entries over 24 countries, split 36 coffee and 27 tea. The inventory counts 19 coffee-producing countries in its coffee section. [Source: coffee inventory.docx]
+
+Cartridge #3 splits one crop-level question from Cartridge #1 and #2. Coffee and tea origins are mostly not statutory GI polygons. Colombia, Brazil, India and Sri Lanka publish resolutions, municipality rosters or agro-climatic definitions, not redistributable shapefiles. The build therefore assembles ADM1–ADM3 polygons from FAO GAUL 2024/2025, World Bank Official Boundaries, Natural Earth 1:10m, audited HDX COD-AB, Brazil IBGE, Mexico INEGI and Taiwan NLSC. Non-administrative terroirs (Sri Lanka's seven agro-climatic tea zones, Darjeeling at 600–2,000 m, Nilgiri at 1,000–2,500 m) are masked with MapSPAM crop allocation and elevation data. [Source: coffee inventory.docx]
+
+### Cartridge #1 — spirits expansion (drafted, not deployed)
+
+An expansion catalogue raises the spirits cartridge from 65 to 185 expressions and from 35 to 120 cocktails: 120 net-new expressions and 85 net-new cocktails. It is a data package in Markdown tables, not a deployed build. The baseline spine could not be inspected, so every new entry targets a sub-regional micro-terroir or a single-still marque, and avoids generic category anchors. [Source: World Spirits Atlas Expansion.docx]
+
+New expression counts by family: whisk(e)y +24, agave and desert +18, cane and rum +20, botanicals and liqueurs +28, grape and orchard brandies +16, Asian and grain spirits +14. New cocktail counts: whiskey 20, cane and tiki 18, agave 7, gin 14, brandy and pisco 11, aperitivo and low-ABV 15. [Source: World Spirits Atlas Expansion.docx]
+
+**Count reconciliation.** The expansion document says "120 net-new Regional Expressions and 85 Map Your Glass Cocktails" in its title, then states the totals as 185 and 120. Both are consistent: 65 + 120 = 185 and 35 + 85 = 120. There is no internal conflict. The difference is against the 2026-11-25 verified build, which reported 65 expressions and 35 cocktails. The expansion is unbuilt, so the live site stays at 65 and 35 until it ships. Do not cite 185 and 120 as current.
 
 ### Brand and monetization
 
@@ -63,6 +131,8 @@ It is a clean example of a domain-agnostic product with typed primitives and lic
 
 **Decision 2026-11-25: CC BY 4.0 governs the curated data.** That covers the expressions, cocktails, and dated milestones. It is the architecture document's term, and it matches the project's own zero-copyleft constraint. The growth document's CC BY-SA label is the outlier and should be corrected upstream.
 
+**Corroborated 2026-11-26.** The Cartridge #3 geospatial inventory states the whole build as "MIT code, CC BY 4.0 curated data". That is an independent second document. So two documents now agree on CC BY 4.0 for the curated data, against one earlier CC BY-SA label. The finding is strengthened, and it now covers a cartridge, not just the spirits data. Note the scope limit: the inventory states the build licence in its opening summary. It does not audit the licence of every upstream layer. [Source: coffee inventory.docx]
+
 **The tiles are a separate question and cannot be settled the same way.** The architecture lists Overture Maps divisions and selected geoBoundaries layers as inputs, and both **inherit ODbL from OpenStreetMap**. ODbL is share-alike. If the published tile set contains Overture- or OSM-derived geometry, a share-alike obligation attaches to the derived database, and CC BY-SA is then closer to correct than CC BY 4.0 for that download.
 
 So the growth document may not be simply wrong. It may be describing the tiles rather than the data.
@@ -77,4 +147,6 @@ This is `[OPEN QUESTION 2026-11-25]`, not a verified fact: no build exists, so t
 
 ### Routing
 
-Roadmap candidate. Not routed to Atto, GuruWatcher, Basgiath, CeminiDFS or CeminiParlays. No trading or betting link.
+Roadmap candidate, filed as "Atlas Engine (candidate)" in `ROADMAP.md`. Not routed to Atto, GuruWatcher, Basgiath, CeminiDFS or CeminiParlays. No trading or betting link.
+
+The scope grew on 2026-11-26 from one cartridge to three, plus a 120-expression spirits expansion. The engine and its licence gate are still the transferable part. The spice, coffee and spirits content is still outside the trading and genealogy lanes.

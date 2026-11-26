@@ -20,7 +20,8 @@ related:
   - concepts/benchmark-maintenance-debt.md
   - sources/newsletter-rss-latent-space-2026-11-24-ainews-jensen-is-back-and-openai-shows-its-pretr.md
   - sources/newsletter-rss-latent-space-2026-11-25-ainews-gemini-4-neon-marks-gdms-full-return-as-a.md
-updated: 2026-11-25
+  - sources/newsletter-rss-latent-space-2026-11-25-ainews-math-proofs-are-landing-faster-than-we-ca.md
+updated: 2026-11-26
 ---
 
 ## Raw Concept

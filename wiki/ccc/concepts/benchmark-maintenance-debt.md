@@ -26,7 +26,8 @@ related:
   - sources/arxiv-boxbox-recursive-harness-2611.09218.md
   - concepts/task-efficient-eval-cached-traces.md
   - concepts/eval-integrity-minimum-standards.md
-updated: 2026-11-14
+  - sources/newsletter-rss-latent-space-2026-11-25-ainews-math-proofs-are-landing-faster-than-we-ca.md
+updated: 2026-11-26
 ---
 
 ## Raw Concept
@@ -60,6 +61,17 @@ Read that carefully. The **ordering** was robust; the **numbers** were not. A cl
 Fixed wall-clock and token limits changed conclusions. Extending a time limit closed a 20 point harness gap on one model and cut a 30 point gap to 5 points. More than half of failed trials were timeouts, and up to about 68% for some harnesses.
 
 So a harness gap measured under one budget is not a harness property. The budget belongs next to the score, in the same tuple.
+
+### Grader validity, reported 2026-11-25
+
+A newsletter digest reports three cases of the same class. Eugene Yan audited 12 public evals and
+found buggy graders and misconfigured harnesses. On FrontierPhysics, Gemini 4 Neon passes numeric
+checks 54% of the time and review only 28% of the time — a 26-point grader validity gap. On
+AA-Robotics-Sim, seven of nine models broke a dish they were told was fragile, so the task measures
+instruction following and not only task completion.
+
+The FrontierPhysics number is the reusable one. A checker that returns pass is not a result that is
+correct. Treat a numeric pass and a review pass as two different measurements.
 
 ### Countermeasures
 

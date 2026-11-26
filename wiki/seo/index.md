@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
 type: index
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 # Wiki Index
@@ -206,6 +206,8 @@ If you're new to this wiki:
 - [newsletter-rss-sterling-sky-2026-11-22-the-dangers-of-thin-and-scaled-ai-content](sources/newsletter-rss-sterling-sky-2026-11-22-the-dangers-of-thin-and-scaled-ai-content.md) — on-topic: sitewide risk from scaled thin AI pages; topical-fit test (2026-11-25 ingest)
 - [newsletter-rss-sparktoro-2026-11-24-new-feature-share-of-influence-lets-you-calculat](sources/newsletter-rss-sparktoro-2026-11-24-new-feature-share-of-influence-lets-you-calculat.md) — Share of Influence: channel weights by journey stage; unit undefined, all modelled (2026-11-25 ingest)
 - [newsletter-rss-sparktoro-2026-11-25-the-best-damn-fashion-gift-guide-2026](sources/newsletter-rss-sparktoro-2026-11-25-the-best-damn-fashion-gift-guide-2026.md) — no SEO content: editorial fashion gift list; record-only (2026-11-25 ingest)
+- [newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by](sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md) — on-topic GBP: hours edit path, four hour layers, only main hours affect ranking (2026-11-26 ingest)
+- [newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews](sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md) — on-topic: six banned review practices, per-review report flow, channel rules (2026-11-26 ingest)
 
 - [searchengineland-2026-google-llm-patent-entity-characterization-480625](sources/searchengineland-2026-google-llm-patent-entity-characterization-480625.md) — Google LLM patent entity characterization; webpages as evidence (2026-06-27 digest)
 - [techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06](sources/techwyse-2026-google-good-seo-is-good-geo-kraham-2026-06.md) — Google “Good SEO is good GEO”; llms.txt skip; GSC AI reports (2026-06-27 digest)
@@ -299,6 +301,8 @@ If you're new to this wiki:
 - [scaled-thin-ai-content-risk](concepts/scaled-thin-ai-content-risk.md) — sitewide loss risk from scaled thin pages; topical-fit test before publishing (2026-11-25)
 - [share-of-influence-channel-measurement](concepts/share-of-influence-channel-measurement.md) — SparkToro channel weighting by journey stage; four reading rules and stated limits (2026-11-25)
 - [ai-agent-traffic-identification](concepts/ai-agent-traffic-identification.md) — CAPTA model fingerprinting behind agents; measurement use vs cloaking risk (2026-11-25)
+- [gbp-business-hours](concepts/gbp-business-hours.md) — the edit path, the four hour layers, and why only main hours affect ranking (2026-11-26)
+- [google-review-reporting](concepts/google-review-reporting.md) — six banned review practices, the per-review report flow, and what can follow (2026-11-26)
 
 ### Tier-2 deep-dives
 
@@ -549,3 +553,12 @@ If you're new to this wiki:
 | [sources/arxiv-capta-identifying-llms-behind-ai-agents-2611.32686.md](sources/arxiv-capta-identifying-llms-behind-ai-agents-2611.32686.md) | source | Indirect GEO link. Server-side model fingerprinting behind agents; names the AI-cloaking risk. |
 | [concepts/ai-agent-traffic-identification.md](concepts/ai-agent-traffic-identification.md) | concept | Measurement use is acceptable; cloaking corrupts citation evidence. `[OPEN QUESTION 2026-11-25]` |
 | [sources/arxiv-fol-proof-verifying-llm-text-to-logic-2611.33078.md](sources/arxiv-fol-proof-verifying-llm-text-to-logic-2611.33078.md) | source | No SEO link. SMT-checked text-to-logic translation; record-only. |
+
+## Ingest 2026-11-26 — SEO batch (2 Sterling Sky newsletters)
+
+| Page | Type | Note |
+|------|------|------|
+| [sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md](sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md) | source | On-topic GBP. Hours edit path, four hour layers, only main hours affect ranking. RSS body truncated; full page fetched. |
+| [concepts/gbp-business-hours.md](concepts/gbp-business-hours.md) | concept | Hours layers; fix main hours first; watch for "hours may be incorrect" user edits. `[TENTATIVE]` |
+| [sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md](sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md) | source | On-topic. Six banned practices, per-review report flow, channel rules, one tracked case. RSS body truncated; full page fetched. |
+| [concepts/google-review-reporting.md](concepts/google-review-reporting.md) | concept | Report a review in Maps; the Redressal form is the wrong channel; removals come in waves. `[TENTATIVE]` |

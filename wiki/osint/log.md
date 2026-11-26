@@ -11576,3 +11576,112 @@ Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first
 - Launch article for 2026-12-01 reviewed. Corrected draft filed at `briefs/2026-12-01_outlier-weekly-zero-copyleft-cartography.md`. Fixes: Speyside vs SWR 2009, gate list (MPL in, "Proprietary" out), Chile CC BY-IGO 3.0, MB/MiB, table rebuild.
 - Blockers logged: repo stays private until launch (flip public 2026-12-01); `terroirkit.dev` does not resolve; `Atlas101` tree has uncommitted changes.
 - Routing: wiki-only. No trading link.
+
+## [2026-11-26] ingest | Atlas Engine cartridge #2 — World Spice and Chili technical specification
+
+- `sources/atlas-spice-specification-2026-11-26.md` — **new**. Scope fixed at 65 expressions, 35 blends, 35 diffusion milestones and 15 validation rules.
+- Readiness is uneven: 30 of 65 expressions carry records; the rest are `PENDING_SOURCING`. Of 15 rules, 7 are grounded and 4 are structural.
+- Two analytical standards drive the chemistry layer: ISO 3632-1:2025 for saffron (new Extra Class tier) and ASTA 21.3 (2026) for capsaicinoids, which rescales Scoville by 0.9431.
+- `concepts/atlas-engine.md` — **updated**.
+- Routing: Atlas Engine (candidate) in `ROADMAP.md`. Not Atto, GuruWatcher, Basgiath, CeminiDFS or CeminiParlays.
+
+## [2026-11-26] ingest | World Spice and Chili Atlas — geospatial and regulatory inventory
+
+- `sources/atlas-spice-geospatial-inventory-2026-11-26.md` — **new**. 55–62 flagship regions, split Europe 12–13, Asia 22–23, Americas 12–14, Middle East and Africa 9–12.
+- Two-tier plan: verified national vectors (France, Spain) plus conditional national portals (Italy, Mexico, Japan), backed by FAO GAUL 2025 and World Bank Admin-2 and Natural Earth.
+- Deny list: Eurostat GISCO, Overture Divisions, geoBoundaries, DataMeet India, GADM. The load-bearing rule is that catalog badges lie, so the gate reads upstream metadata.
+- `concepts/atlas-engine.md` — **updated**.
+- Routing: Atlas Engine (candidate). No trading link.
+
+## [2026-11-26] ingest | FlavorOrigins — World Spice and Chili Atlas growth strategy
+
+- `sources/atlas-spice-growth-strategy-2026-11-26.md` — **new**. Records the 2026 search collapse: People Inc. Core Sessions down 26% YoY; agency audits report 60–80% drops on thin programmatic sites.
+- Three information-gain layers: vector GIS provenance, quantitative phytochemistry with a coumarin TDI calculator, and pod-wall morphology.
+- Build-time Zod depth gates across seven page archetypes; 90-day rollout in three cohorts; 14-day community launch; no programmatic display ads.
+- Flags a domain conflict: the plan says `flavororigins.com` looked unregistered on 21 November, but v1 was live there on 25 November.
+- `concepts/atlas-engine.md` — **updated**.
+- Routing: Atlas Engine (candidate). No trading link.
+
+## [2026-11-26] ingest | Atlas Engine cartridge #3 — Coffee and Tea specification
+
+- `sources/atlas-coffee-specification-2026-11-26.md` — **new**. 60 expressions (35 coffee, 25 tea), 30 compositions, 30 diffusion arcs, 15 factual accuracy guardrails.
+- `CoffeeTeaExtension` is a discriminated union over `coffea` and `camellia_sinensis`, so fields never coerce across genera.
+- Two live taxonomy disputes are preserved rather than flattened: the 2006 versus 2025 Liberica split, and `cambodiensis` versus POWO synonymy.
+- Provenance replaces defaults: a ten-value `ProvenanceStatus` enum, null sensory vectors, and five compositions declared cross-cartridge stubs.
+- `concepts/atlas-engine.md` — **updated**.
+- Routing: Atlas Engine (candidate). No trading link.
+
+## [2026-11-26] ingest | World Coffee and Tea Atlas — permissive geospatial and origin inventory
+
+- `sources/atlas-coffee-geospatial-inventory-2026-11-26.md` — **new**. 63 origin entries (36 coffee, 27 tea) across 24 countries.
+- States the build licence directly: **MIT code, CC BY 4.0 curated data**. This is an independent second document for the CC BY 4.0 decision, against the earlier CC BY-SA label. The tile/ODbL caveat still stands.
+- Core finding: no verified global or national registry publishes open-licensed polygons for coffee or tea denominations, so origins are synthesised from administrative units and masked by crop and elevation.
+- `concepts/atlas-engine.md` — **updated** (licence corroboration recorded, scope limit noted).
+- Routing: Atlas Engine (candidate). No trading link.
+
+## [2026-11-26] ingest | FlavorOrigins cartridge #3 — Coffee and Tea SEO blueprint
+
+- `sources/atlas-coffee-seo-blueprint-2026-11-26.md` — **new**. 40 search clusters ranked by intent, not volume.
+- Three crawlable tools: dual-rendered elevation maps, cultivar-to-chemistry matrices, and `ts-fsrs` study decks keyed to the Evolved Q Grader syllabus.
+- Policy timeline: HowTo retired 2023, FAQPage rich results discontinued 7 May 2026, Scaled Content Abuse update 28 August 2026. JSON-LD must match visible text.
+- `concepts/atlas-engine.md` — **updated**.
+- Routing: Atlas Engine (candidate). No trading link.
+
+## [2026-11-26] ingest | World Spirits Atlas expansion — 120 expressions and 85 cocktails
+
+- `sources/atlas-spirits-expansion-2026-11-26.md` — **new**. Expressions 65 to 185; cocktails 35 to 120. Additions by family: whisk(e)y 24, agave 18, cane 20, botanicals 28, brandy 16, Asian 14.
+- Entries are deliberately narrow because the live 65-expression spine could not be inspected. Duplicate risk is therefore unmeasured.
+- Legal corrections worth keeping: Scotland has five protected designations (Islands is not statutory); mezcal smoke is a process variable, not a category; Peru and Chile pisco are different spirits.
+- `concepts/atlas-engine.md` — **updated**.
+- Routing: Atlas Engine (candidate). No trading link.
+
+## [2026-11-26] ingest | Large deviations for integrated exponentials of Gaussian Volterra processes
+
+- `sources/arxiv-large-deviations-integrated-exponentials-volterra-2611.34567.md` — **new**. Jacquier, Oumgari, Pirjol and Zhu, arXiv:2611.34567.
+- Large deviation principle, CLT and moderate deviation principle for the normalised integral of an exponential of a Gaussian Volterra process, with a regularly varying kernel.
+- Application: short-maturity out-of-the-money and at-the-money variance option prices, plus implied-volatility expansions validated in rough Bergomi.
+- Headline: at-the-money variance options decay at rate `T^H`, against `√T` for European options. Kernel constants differ and cannot be swapped.
+- `concepts/variance-option-short-maturity-asymptotics.md` — **new**. `concepts/rough-log-normal-volatility.md` and `concepts/local-stochastic-volatility-calibration.md` — **updated**.
+- Routing: wiki-only. No trading lane prices variance options.
+
+## [2026-11-26] ingest | FanDuel Thanksgiving packet — NFL Week 12
+
+- `sources/operator-dfs-slate-thanksgiving-2026-11-26.md` — **new**. Three Thursday games, read-only injury, reserve and weather packet with a T-90 checklist.
+- A wrong task parameter was logged, not obeyed: the early kick is 1:00 PM ET, not 12:30 PM, so T-90 is 11:30 AM.
+- The NFL.com Week 12 injury hub redirected to Week 11 and was not used. The six club pages were read on the explicit `/week/REG-12` path.
+- 23 skill players on Reserve/Injured; six starting quarterbacks CLAIMED; Buffalo rain at 100% the only weather item.
+- `concepts/operator-nfl-slate-packet-workflow.md` — **updated** with two new rules: record a wrong instruction, and never write to a shared cache.
+- Routing: CeminiDFS.
+
+## [2026-11-26] ingest | FanDuel Thanksgiving player list — Week 12
+
+- `sources/operator-fanduel-thanksgiving-players-2026-11-26.md` — **new**. 153 rows, 51 per game across exactly the three Thursday games; salary range 3,400 to 11,600.
+- 28 injury rows: three Out, two Questionable, the rest IR. Jalen Hurts on IR matches the depth-chart finding.
+- This is the salary CSV the packet reported missing. File timestamp 2026-11-25 17:40, one day after the packet was compiled, so both statements were true in order.
+- `concepts/operator-nfl-slate-packet-workflow.md` — **updated**. `entities/platforms/fanduel.md` — **new**.
+- Routing: CeminiDFS.
+
+## [2026-11-26] ingest | Klement — Klement on Master Investor podcast
+
+- `sources/substack-rss-klement-2026-11-26-klement-on-master-investor-podcast.md` — **new**. A 202-word pointer post. Klement appeared on the Master Investor podcast to explain a bearish equity and AI view.
+- Self-reported: he published "This Is It: Why I'm Selling" and sold every equity in his own savings; the market stayed about 4% below the call.
+- No data: no position size, no index named, no measurement. `[TENTATIVE]` throughout.
+- `concepts/ai-industry-trends-2026.md` — **updated** (backlink).
+- Routing: wiki-only. Would only matter if the AI-bubble narrative becomes a tracked watch item.
+
+## [2026-11-26] ingest | Klement — Should you have more China in your portfolio?
+
+- `sources/substack-rss-klement-2026-11-26-should-you-have-more-china-in-your-portfolio.md` — **new**. Reviews a Research Affiliates note on the A-share index weight.
+- A-shares are about 0.4% of MSCI AC World and 4% of MSCI EM, included at 20% of free float. Lifting the factor would bring an estimated $79bn and $240bn.
+- Five arguments tested. Only one survives: correlation of about 0.4 with developed markets, stable in crises. Size, growth, risk premium, retail share and front-running all fail.
+- The ROE exhibit: a US zero-profit spike that disappears after 2002, and a much larger Chinese anomaly read as systematic earnings management. `[TENTATIVE]`.
+- `concepts/china-equity-allocation-evidence.md` — **new**.
+- Routing: wiki-only. Checklist for any country-weight research note.
+
+## [2026-11-26] ingest | Wu Blockchain — CZ Q&A on BNB, startup lessons and Web3
+
+- `sources/substack-rss-wublock-2026-11-26-cz-qa-bnbs-rocky-debut-startup-lessons-and-web3s.md` — **new**. Transcript of a Hong Kong reader event on 27 August 2026.
+- Market content in three places: a DEX could separate international from US platforms and block jurisdictions instead of requiring universal KYC; tokenised securities are growing faster than he expected; Hong Kong leads for Web3 but not for AI.
+- Names the UAE and the US as the other two jurisdictions best positioned. Binance user base above 300 million, self-reported.
+- `concepts/asia-tokenisation-and-exchange-policy-2026-11.md` — **updated** with an operator-voice section. `concepts/tokenized-us-equities-onchain-basis-trade.md` — **updated** (backlink).
+- Routing: wiki-only. RWA flow direction and the Hong Kong/UAE/US posture are GuruWatcher candidates if a crypto-policy watch is opened.

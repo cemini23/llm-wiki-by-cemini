@@ -5147,3 +5147,55 @@ New concepts:
 | [operator-nfl-slate-packet-workflow](concepts/operator-nfl-slate-packet-workflow.md) | Stable packet rules: two schedule sources, CONFLICT labelling, QB tiers, T-90 checklist. | draft |
 | [ai-in-investment-research](concepts/ai-in-investment-research.md) | More AI output and faster reports, but more correlated and stickier views. | draft |
 | [media-crisis-framing](concepts/media-crisis-framing.md) | Keyword risk counts inherit outlet politics; normalise by outlet lean. | draft |
+
+## Ingest 2026-11-26 (Atlas three-cartridge wave, quant paper, DFS holiday slate, 3 newsletters)
+
+Thirteen sources: seven Atlas product documents, one arXiv paper, two operator DFS files, and three newsletters. The Atlas material expands the engine from one cartridge to three.
+
+New sources — Atlas product family:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [spice specification](sources/atlas-spice-specification-2026-11-26.md) | Cartridge #2: 65 expressions, 35 blends, 35 milestones, 15 rules; SpiceExtension payload; ISO 3632-1:2025 and ASTA 21.3. | draft |
+| [spice geospatial inventory](sources/atlas-spice-geospatial-inventory-2026-11-26.md) | 55–62 regions; verified national vectors plus GAUL/World Bank fallback; five-family deny list. | draft |
+| [spice growth strategy](sources/atlas-spice-growth-strategy-2026-11-26.md) | 2026 search collapse, three information-gain layers, Zod depth gates, 90-day rollout, ad-free monetization. | draft |
+| [coffee specification](sources/atlas-coffee-specification-2026-11-26.md) | Cartridge #3: 60 expressions, 30 compositions, 30 arcs, 15 guardrails; coffee/tea discriminated union. | draft |
+| [coffee geospatial inventory](sources/atlas-coffee-geospatial-inventory-2026-11-26.md) | 63 origins over 24 countries; states "MIT code, CC BY 4.0 curated data"; no open GI polygon registry exists. | draft |
+| [coffee SEO blueprint](sources/atlas-coffee-seo-blueprint-2026-11-26.md) | 40 clusters, three crawlable tools, retired rich-result timeline, one intent one URL. | draft |
+| [spirits expansion](sources/atlas-spirits-expansion-2026-11-26.md) | 65 to 185 expressions, 35 to 120 cocktails; legal corrections on Scotch, mezcal, rum and pisco. | draft |
+
+New sources — quant paper:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [variance option large deviations](sources/arxiv-large-deviations-integrated-exponentials-volterra-2611.34567.md) | LDP, CLT and MDP for integrated exponentials of Gaussian Volterra processes; ATM variance options decay like T^H. | draft |
+
+New sources — operator DFS:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [DFS Thanksgiving slate](sources/operator-dfs-slate-thanksgiving-2026-11-26.md) | Week 12 three-game packet; a wrong 12:30 kick logged, Week 12 injury hub dead, shared QB cache write deferred. | draft |
+| [FanDuel Thanksgiving players](sources/operator-fanduel-thanksgiving-players-2026-11-26.md) | 153 rows, 51 per game, salaries 3,400–11,600; the CSV the packet reported missing. | draft |
+
+New sources — newsletters:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [klement podcast 2026-11-26](sources/substack-rss-klement-2026-11-26-klement-on-master-investor-podcast.md) | Pointer only: sell call, personal exit, about 4% drawdown; no data. | draft |
+| [klement China 2026-11-26](sources/substack-rss-klement-2026-11-26-should-you-have-more-china-in-your-portfolio.md) | Five allocation arguments tested; only low crisis correlation survives; ROE distribution shows earnings management. | draft |
+| [wublock CZ Q&A 2026-11-26](sources/substack-rss-wublock-2026-11-26-cz-qa-bnbs-rocky-debut-startup-lessons-and-web3s.md) | CZ on DEX KYC separation, RWA surprise, Hong Kong versus UAE and US. | draft |
+
+New concepts:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [variance-option-short-maturity-asymptotics](concepts/variance-option-short-maturity-asymptotics.md) | T^H versus sqrt(T); kernel constants differ and cannot be swapped. | draft |
+| [china-equity-allocation-evidence](concepts/china-equity-allocation-evidence.md) | Size and growth are not allocation arguments; rank correlation, return per volatility, comparable accounting. | draft |
+
+New entities:
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [fanduel](entities/platforms/fanduel.md) | Contest export shape, 51-rows-per-game slate check, injury token is a third read not a status feed. | draft |
+
+Updated concepts: [atlas-engine](concepts/atlas-engine.md) (three cartridges, per-cartridge scale, licence corroboration), [operator-nfl-slate-packet-workflow](concepts/operator-nfl-slate-packet-workflow.md) (two new transferable rules), [asia-tokenisation-and-exchange-policy-2026-11](concepts/asia-tokenisation-and-exchange-policy-2026-11.md) (operator voice), [ai-industry-trends-2026](concepts/ai-industry-trends-2026.md), [rough-log-normal-volatility](concepts/rough-log-normal-volatility.md), [local-stochastic-volatility-calibration](concepts/local-stochastic-volatility-calibration.md), [tokenized-us-equities-onchain-basis-trade](concepts/tokenized-us-equities-onchain-basis-trade.md).

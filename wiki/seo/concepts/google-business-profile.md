@@ -41,10 +41,14 @@ related:
   - sources/newsletter-rss-sterling-sky-2026-10-28-who-updates-google-information-why-google-keeps.md
   - concepts/gbp-video-verification.md
   - sources/newsletter-rss-sterling-sky-2026-11-22-google-business-profile-verification-9-easy-step.md
+  - sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md
+  - sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md
+  - concepts/gbp-business-hours.md
+  - concepts/google-review-reporting.md
 
 maturity: draft
 created: 2026-05-07
-updated: 2026-11-25
+updated: 2026-11-26
 
 ---
 
@@ -78,6 +82,10 @@ updated: 2026-11-25
 - @sources/arxiv-crespin-2026-karla-knowledge-base-augmented-retrieval-2606.26807-2026-06-28.md — updatable KB analog
 - @sources/housingwire-2026-answer-engine-optimization-zero-click-gbp-2026-06-29.md — GBP as tier-one AI data feed (K134)
 - @sources/seroundtable-2026-gbp-review-loss-restrictions-2026-07-03.md — review disappearance / additive restrictions incident (K137)
+- @sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md — hours edit path; only main hours affect ranking
+- @concepts/gbp-business-hours.md — the hours layers and the edit ritual
+- @sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md — banned review practices + report flow
+- @concepts/google-review-reporting.md — how to report a fake review and what can follow
 
 ## Raw Concept
 
@@ -144,6 +152,10 @@ Each shop must have its own GBP listing with its own NAP, its own photos, and it
 - One listing for two physical locations
 - No regular photo additions → listing looks abandoned to browsers
 - Ignoring negative reviews → hurts both ranking signal and conversion (see @concepts/reviews-reputation-management.md)
+
+**Hours editing (K-new, 2026-11-26).** The hours field has several layers: main hours, category hours, extra hours, and special hours. Only the **main hours** set the open or closed label, and only the main hours change rankings in Sterling Sky's test. Extra hours such as online service hours did not move rankings. Fix the main hours first; the extra layers do not repair a stale main hours field. Full path and the "hours may be incorrect" user-edit risk are at @concepts/gbp-business-hours.md [Source: @sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md] `[TENTATIVE]`.
+
+**Review reporting (K-new, 2026-11-26).** A shop can report a review that breaks Google's policy, such as a competitor attack or a review from a person who never visited. The report flow is per review in Maps: three-dot menu, report, pick the reason, submit. The "Business Redressal Complaint Form" does **not** cover reviews. A report is a signal, not a decision, and removals can come in waves. Full policy list and channels are at @concepts/google-review-reporting.md [Source: @sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md] `[TENTATIVE]`.
 
 ## Snippets
 

@@ -11,8 +11,11 @@ related:
   - sources/operator-parlays-recap-week9-2026-11-08.md
   - sources/operator-fanduel-salaries-2026-11-22.md
   - sources/operator-fanduel-salaries-2026-11-15.md
+  - sources/operator-dfs-slate-thanksgiving-2026-11-26.md
+  - sources/operator-fanduel-thanksgiving-players-2026-11-26.md
+  - entities/platforms/fanduel.md
   - concepts/parlay-market-making.md
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 ## Raw Concept
@@ -70,10 +73,25 @@ The recaps keep two things apart: cash P&L and model-fair units. Paper tickets c
 3. Starting-QB tiers with a hard exclude on backups.
 4. Weather from two reads, with a static roof-exposure table.
 5. Recap separates cash from model-fair and labels missing data.
+6. A wrong instruction is recorded, not obeyed. See the Week 12 Thanksgiving case below.
+7. A shared cache is not a private scratch file. Propose the write, leave it to the owner.
 
 These rules are what the CeminiDFS and CeminiParlays pipelines should encode. The individual leans expire with each slate.
 
+### Week 12 Thanksgiving — three new cases (2026-11-26)
+
+The holiday packet adds evidence for three situations the earlier weeks did not test. [Sources: dfsslatethanksgiving.docx, thanksgivingplayerscsv.csv]
+
+**A wrong task parameter.** The task named a 12:30 PM ET early window. Both schedule sources showed 1:00 PM ET, and no 12:30 game existed. The packet used 1:00 PM, re-derived T-90 as 11:30 AM, and logged the difference. **Rule 6 comes from this.** A pipeline that silently accepts the instruction would have produced a 60-minute-early checklist.
+
+**A dead hub.** The NFL.com Week 12 injury hub returned HTTP 302 to Week 11. The packet used zero hub data and read the six club pages on the explicit `/week/REG-12` path. The default club URLs still served Week 11 with stale Out rows. The lesson: verify the week selector value on the page, not the URL you typed.
+
+**A late-arriving input.** The packet reported the FanDuel salary CSV missing and marked contest inclusion UNVERIFIED. The CSV then arrived the next day, with 51 rows per game across exactly the three Thursday games. Both statements were true, in order. **Fix:** the packet should record the filename and timestamp it searched for, so a later arrival reads as a closure, not an error.
+
+**A blocked shared write.** The packet built a second-source file for the six starting quarterbacks and did not write it, because the cache is shared between two desks. All six stayed CLAIMED. This closes the earlier gap in principle but not in practice: the owner still has to write the file.
+
 ### Gaps
 
-- [OPEN QUESTION 2026-11-25] The DFS packet and the parlay packet compute starting-QB confirmation separately. One shared cache would remove the CLAIMED-versus-CONFIRMED gap.
+- [OPEN QUESTION 2026-11-25] The DFS packet and the parlay packet compute starting-QB confirmation separately. One shared cache would remove the CLAIMED-versus-CONFIRMED gap. The Week 12 packet proposed the file and left the write to the owner, so the gap is still open.
 - [OPEN QUESTION 2026-11-25] The recap has no contest rank or cash line, so it cannot score lineup quality, only within-portfolio rank.
+- [OPEN QUESTION 2026-11-26] The elevation check fails with HTTP 404 before game day, so practice-squad players are excluded on no evidence. Whether a game-day re-run recovers them is untested.

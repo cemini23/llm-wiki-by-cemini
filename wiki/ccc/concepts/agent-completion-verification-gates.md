@@ -111,9 +111,11 @@ related:
   - concepts/causal-intervention-evaluation.md
   - concepts/foundational-work-verification.md
   - sources/arxiv-knowing-when-to-intervene-2611.09792.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-25-how-anthropic-builds-software-in-2026-with-katel.md
+  - concepts/coordination-cost-invariant.md
 maturity: draft
 created: 2026-05-27
-updated: 2026-11-25
+updated: 2026-11-26
 cross-wiki-source: "@osint-wiki/sources/trading-posts-compilation-25-2026-05-27.md"
 ---
 
@@ -195,6 +197,18 @@ call** (19 ms vs 3.2–3.9 s for the next decision), and the Actor **cannot modi
 second lesson is a gate-quality warning: a **fast text proxy does not prove deployable behavior**
 (only 57.3% of text successes transfer to simulation) — a gate validated only on the cheap channel
 can pass behavior the real channel fails.
+
+### Anthropic API migration — shadow traffic as the gate (2026-11-25)
+
+`@sources/newsletter-rss-pragmatic-engineer-2026-11-25-how-anthropic-builds-software-in-2026-with-katel.md`
+gives a production case. A small team rewrote the Claude Messages API from Python to Rust in about
+five months, with no Rust experts on the team and no strict code review. The old Python service
+became the test harness: the Rust service shadowed it until responses matched. Engineers read
+closely about 20% of the generated code.
+
+The pattern is the same one this page already states, at migration scale. **Make the thing
+verifiable, then stop reading it line by line.** The gate was a differential comparison against a
+running oracle, not a human review.
 
 ## Snippets
 

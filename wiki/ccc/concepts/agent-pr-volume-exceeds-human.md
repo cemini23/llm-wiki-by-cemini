@@ -10,9 +10,13 @@ related:
   - concepts/agent-completion-verification-gates.md
   - concepts/repo-level-verified-code-proof-eval.md
   - sources/newsletter-rss-pragmatic-engineer-2026-11-24-the-pragmatic-engineer-essay-challenge-category.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-11-25-how-anthropic-builds-software-in-2026-with-katel.md
+  - sources/newsletter-rss-latent-space-2026-11-19-why-linear-says-issue-tracking-is-dead-cristina.md
+  - concepts/agent-usage-vs-app-usage.md
+  - concepts/coordination-cost-invariant.md
 maturity: draft
 created: 2026-10-07
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 ## Relations
@@ -55,6 +59,22 @@ budget, and K428's certified verifier bank. **Deterministic, checkable signals a
 with a released methodology. The direction is consistent with other sources CCC holds; the specific
 numbers (9×, 50%+) are single-source and unreproduced here. Treat as a trend signal, not a measured
 rate.
+
+**The routing answer, observed (2026-11-25).** Anthropic runs a Claude classifier on every pull
+request. It answers three questions: does this need a human at all, how many human reviews does it
+need, and which team reviews it. Mechanical, low-risk changes such as an SDK version bump can merge
+with no human. Flaky-test fixes are reviewed by another Claude, then merged and deployed. See
+`@sources/newsletter-rss-pragmatic-engineer-2026-11-25-how-anthropic-builds-software-in-2026-with-katel.md`.
+This is the mechanism this page predicted: **route and score risk, do not review harder.**
+
+**The upstream share, vendor-reported.** Cristina Cordova says more than half of the issues created in
+Linear now come from agents, up from 3% a year earlier
+(`@sources/newsletter-rss-latent-space-2026-11-19-why-linear-says-issue-tracking-is-dead-cristina.md`).
+That is a different artefact type from a PR, so it is a parallel trend line, not a second measurement
+of the same number. `[TENTATIVE]` — self-reported by a vendor that sells agent tooling.
+
+**Review capacity is not the only fixed cost.** Planning and coordination also did not shrink. See
+`@concepts/coordination-cost-invariant.md`.
 
 ## Snippets
 

@@ -27,9 +27,11 @@ related:
   - concepts/website-essentials-local-business.md
   - concepts/gbp-video-verification.md
   - sources/newsletter-rss-sterling-sky-2026-11-22-google-business-profile-verification-9-easy-step.md
+  - sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md
+  - concepts/gbp-business-hours.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 ## Relations
@@ -42,6 +44,8 @@ updated: 2026-11-25
 - @entities/tools/claude-seo-agrici.md
 - @concepts/first-90-days-playbook.md
 - @entities/companies/shop-2.md
+- @sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md — main hours set the open/closed label that feeds the pack
+- @concepts/gbp-business-hours.md — hours layers and ranking effect
 
 
 ## Raw Concept
@@ -70,6 +74,8 @@ The third-party studies (Whitespark Local Search Ranking Factors, Moz Local Sear
 For a multi-shop operator, ranking is per-listing: each shop's local-pack position is independent. Two shops in the same neighborhood can both rank in the pack (Google does occasionally surface two listings of the same brand if they're physically distinct verified locations).
 
 **Rank tracking should be grid-based**, not single-point. See @concepts/near-me-search.md and @entities/tools/local-falcon.md.
+
+**Hours are a GBP signal, but only one layer counts.** Sterling Sky tested "Online service hours" on service-area and storefront listings and saw no rank change. Only the **main hours** change rankings, because they set the open or closed label. Extra hours do not repair a stale main hours field. See @concepts/gbp-business-hours.md [Source: @sources/newsletter-rss-sterling-sky-2026-11-24-how-to-change-business-hours-on-google-a-step-by.md] `[TENTATIVE]`.
 
 **What ranking changes look like**: typically gradual (weeks-to-months for big shifts) unless triggered by a specific event (a Google algorithm update, a GBP suspension/reinstatement, a competitor's loss of a verified listing, a sudden review-velocity spike). Don't expect day-after results from a single optimization tweak.
 

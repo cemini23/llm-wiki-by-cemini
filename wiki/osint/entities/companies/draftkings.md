@@ -13,7 +13,8 @@ related:
   - concepts/parlay-market-making.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
-updated: 2026-11-10
+  - entities/platforms/fanduel.md
+updated: 2026-11-26
 ---
 
 ## Raw Concept

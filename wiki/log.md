@@ -3,13 +3,28 @@ title: Federation wiki — operations log
 type: concept
 related:
   - index.md
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 # Operations log
 
 Append-only, newest first. This is the merged log; each domain keeps its own full history at
 `wiki/<domain>/log.md`.
+
+## [2026-11-26] ingest | 19 sources — the Atlas becomes a three-cartridge family
+
+- **Scope.** 19 files: osint 13, ccc 4, seo 2. No duplicates, third consecutive clean wave.
+- **The Atlas is now a product family.** One engine on `terroirkit.dev` (Astro SSG, MapLibre, PMTiles, 15 MiB cap per cartridge) with three cartridges on `flavororigins.com`. Shared: six primitives, one licence-gate pipeline, readiness flags over guessed data.
+  - **#1 Spirits `/spirits/` — built and live.** 65 expressions, 35 cocktails, 35 milestones, 60 regions. An unbuilt expansion takes it to 185 expressions and 120 cocktails.
+  - **#2 Spice and Chili `/spices/` — specified, not built.** 65 expressions, 35 blends, 35 milestones, 15 validation rules, 55–62 regions. Only 30 of 65 expressions carry records.
+  - **#3 Coffee and Tea `/coffee-tea/` — specified, not built.** 60 expressions, 30 compositions, 30 arcs, 15 guardrails, 63 origins across 24 countries.
+- **Licence corroborated.** The coffee inventory states "MIT code, CC BY 4.0 curated data" — a second independent document for CC BY 4.0, against the growth document's CC BY-SA. The map-tile/ODbL caveat stands: the inventory states the build licence and does not audit every upstream layer.
+- **New conflict logged, not resolved.** Both SEO plans say `flavororigins.com` looked unregistered on 21 November, while the v1 build is verified live there on 25 November. `[OPEN QUESTION 2026-11-26]`
+- **ShellBench sharpened.** A coding-task datum from a non-vendor source gives a 13-point harness gap on coding, against 3 points on everyday tasks and roughly 44 of model span. The harness matters more on coding than on routine work.
+- **Anthropic engineering practice.** Four mechanisms worth copying: shadow traffic as the verification gate, a classifier scoring PR risk to set review count, an agent paged before a human on API on-call, and impact-based promotion. Planning time and two-pizza teams did not change.
+- **SEO.** Of four GBP hour layers, only main hours affect rankings — a tested result, not a guess.
+- **Known duplicate capture.** The Linear episode arrived twice under different URLs; both pages cross-link and a merge may be worth doing.
+- **gate:** `wiki_lint.py` clean — 0 hard errors, 0 bidirectional gaps, 0 dangling links.
 
 ## [2026-11-25] ingest | 54 sources, zero duplicates, and a new product surface
 

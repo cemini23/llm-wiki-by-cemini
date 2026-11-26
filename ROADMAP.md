@@ -13,7 +13,7 @@ History before 2026-11-16 is in `docs/archive/ROADMAP_ARCHIVE_2026-11-16.md`.
 - **Boundary:** no install, no clone, no scrape, no trade, no xsp/pm scp, no route swap, never auto-arm.
 - **Priority stack:** #1 Atto · Collectibles · Game-Time (co-equal). #2 CeminiDFS · CeminiParlays. #3 GuruWatcher · Basgiath.
 
-Last updated: 2026-11-25.
+Last updated: 2026-11-26.
 
 ## 2. Priority #1
 
@@ -69,6 +69,10 @@ Last updated: 2026-11-25.
 
 - **GuruWatcher** — Alert-only, 15-minute timer on egress-fi. GW-06 (HTML cleaning turns `VIX < 20` into `VIX 20`) is data corruption and is still unfixed. A silent 2-hour outage on 2026-11-05 means "enabled" is not "ran". CPI-surprise direction is regime-dependent: the equity reaction to a positive surprise flipped sign after 2020 because shocks became supply-driven. Equity vol also rose while FX vol stayed flat. The Wu Blockchain October TradFi perps report is the first data series on stock and commodity perpetuals on crypto venues, with cross-venue funding gaps up to 2.9 points.
 - **Basgiath** — Waiting on `/seo geo` and `/seo agentic` passes. No code lane active.
-- **OSINT Wiki** — Eight domains in one public repo since 2026-10-14. Inbox empty after the 2026-11-25 ingest of 54 sources. Lint reads 0 hard errors as of 2026-11-25. Two consecutive waves have run with zero or one duplicate since the index fix.
-- **Atlas Engine (candidate)** — Three operator documents describe a new multi-vertical product whose first cartridge is spirits. No repository and no build. **Licence resolved 2026-11-25: CC BY 4.0 governs the curated data**, which matches the architecture term and the zero-copyleft constraint. The growth document's CC BY-SA label should be corrected upstream. **Open:** the map tiles may carry an ODbL share-alike obligation through Overture and geoBoundaries geometry, so the download cannot be labelled from the architecture document alone — check tile provenance before release. Needs a priority decision before any work starts.
+- **OSINT Wiki** — Eight domains in one public repo since 2026-10-14. Inbox empty after the 2026-11-26 ingest of 19 sources. Lint reads 0 hard errors as of 2026-11-26. Three consecutive waves have run with zero duplicates since the index fix.
+- **Atlas Engine (candidate)** — `terroirkit.dev`: one engine (Astro SSG + MapLibre + PMTiles, 15 MiB cap per cartridge) with three cartridges on `flavororigins.com`. **Cartridge #1 Spirits `/spirits/` is built and live** — 65 expressions, 35 cocktails, 35 milestones, 60 regions; an unbuilt expansion takes it to 185 expressions and 120 cocktails. **#2 Spice and Chili `/spices/` is specified only** — 65 expressions (30 with records), 35 blends, 35 milestones, 15 validation rules. **#3 Coffee and Tea `/coffee-tea/` is specified only** — 60 expressions, 63 origins over 24 countries.
+  - **Licence: CC BY 4.0 for curated data, confirmed twice.** The coffee inventory states "MIT code, CC BY 4.0 curated data", independently corroborating the 2026-11-25 decision against the growth document's CC BY-SA label.
+  - **Open:** map tiles may carry an ODbL share-alike obligation through Overture and geoBoundaries geometry. The inventory states the build licence; it does not audit upstream layers. Check tile provenance before release.
+  - **Open:** both SEO plans say `flavororigins.com` looked unregistered on 21 November, yet v1 is verified live there on 25 November. `[OPEN QUESTION 2026-11-26]`
+  - Needs a priority decision before cartridge #2 work starts.
 - **cemini-egress-fi** — Back since 2026-11-14, 16G stored, Tailscale-only. Archive writes queue locally when the link is down (CLAUDE.md Step 9).

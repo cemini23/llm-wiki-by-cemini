@@ -7,9 +7,10 @@ related:
   - sources/trading-posts-compilation-38-2026-05-26.md
   - concepts/tokenized-fixed-income-price-discovery.md
   - sources/arxiv-tokenized-fixed-income-admissibility-2606.13822-2026-06-16.md
+  - sources/substack-rss-wublock-2026-11-26-cz-qa-bnbs-rocky-debut-startup-lessons-and-web3s.md
 maturity: draft
 created: 2026-05-26
-updated: 2026-08-20
+updated: 2026-11-26
 ---
 
 ## Relations

@@ -1676,3 +1676,14 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 - [stitch-skills — design-to-code agent skills for Stitch MCP (Apache-2.0)](entities/stitch-skills.md) — cross-wiki stub routed from ingest — `cross-wiki`
 - [bot-browser — real Chrome with a human login handoff (MIT)](entities/bot-browser.md) — cross-wiki stub routed from ingest — `cross-wiki`
 - [whatsflare — WhatsApp gateway on Cloudflare Workers (MIT)](entities/whatsflare.md) — cross-wiki stub routed from ingest — `cross-wiki`
+
+## Newsletter Ingest (2026-11-26)
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [why-linear-says-issue-tracking-is-dead](sources/newsletter-rss-latent-space-2026-11-19-why-linear-says-issue-tracking-is-dead-cristina.md) | draft | Fuller record of the Linear episode. Agents create more than half of Linear's issues; seats stay because outcome pricing is undefined; 40% rule from Stripe. |
+| [ainews-math-proofs](sources/newsletter-rss-latent-space-2026-11-25-ainews-math-proofs-are-landing-faster-than-we-ca.md) | draft | OpenCode ~50% vs DSH Creator ~63% on FrontierHarness — a 13-point harness gap on coding. Eugene Yan finds buggy graders in 12 public evals. |
+| [thariq-revolution-vs-renaissance](sources/newsletter-rss-latent-space-2026-11-25-the-revolution-vs-the-renaissance-thariq-shihipa.md) | draft | **Body is intro plus show notes, no transcript.** Records the thesis and the Anthropic-to-OpenAI move only. |
+| [how-anthropic-builds-software-2026](sources/newsletter-rss-pragmatic-engineer-2026-11-25-how-anthropic-builds-software-in-2026-with-katel.md) | draft | 12 learnings. Rust rewrite in five months verified by shadow traffic; Claude reviews every PR; Claude paged before a human; planning time unchanged. |
+| [agent-usage-vs-app-usage](concepts/agent-usage-vs-app-usage.md) | draft | Two-line test for SaaS: if agent usage rises and app usage does not, the product becomes a commodity. |
+| [coordination-cost-invariant](concepts/coordination-cost-invariant.md) | draft | Implementation got cheap; coordination did not. Two-pizza teams and planning time held. |
