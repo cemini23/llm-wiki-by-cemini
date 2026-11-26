@@ -172,9 +172,10 @@ related:
   - sources/arxiv-2611.17012-dma-google-search-anonymization-2026-11-14.md
   - sources/arxiv-fol-proof-verifying-llm-text-to-logic-2611.33078.md
   - sources/newsletter-rss-sparktoro-2026-11-25-the-best-damn-fashion-gift-guide-2026.md
+  - sources/arxiv-patternminer-automated-math-discovery-2611.33966.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 ## Relations
@@ -452,6 +453,7 @@ The daily digest's `local-seo-paper` query contained a bare `all:GBP` clause. Th
 | @sources/arxiv-kang-2026-precogui-proactive-gui-agents-2609.36923-2026-09-30.md | PrecogUI proactive GUI agents (arXiv 2609.36923) | GUI agent architecture; CCC brief routed (pre-cognitive simulation); no code published (K283) |
 | @sources/arxiv-shinde-2026-pdp-priority-scheduling-2610.04587-2026-10-07.md | PDP switch priority scheduling (arXiv 2610.04587) | networking hardware; overflow only; no steal; digest query false positive (K285) |
 | @sources/arxiv-cheng-2026-hierarchy-gbp-factor-graph-2610.06978-2026-10-07.md | Hierarchy-GBP factor graph inference (arXiv 2610.06978) | robotics/SLAM; **GBP acronym collision** — Gaussian Belief Propagation vs Google Business Profile; overflow only (K285) |
+| @sources/arxiv-patternminer-automated-math-discovery-2611.33966.md | PatternMiner — LLM-guided training and interpretation of small models for mathematical discovery (arXiv 2611.33966) | Mathematical discovery; no link to search, citation, or generative-engine visibility. The small-model-plus-interpretability pattern is interesting to `/route`, not to SEO. Misfiled into `seo/` by the digest (2026-11-26) |
 
 ## Snippets
 

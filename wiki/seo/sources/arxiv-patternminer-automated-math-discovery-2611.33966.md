@@ -1,7 +1,8 @@
 ---
 title: "PatternMiner — LLM-guided training of small models for mathematical discovery (arXiv:2611.33966)"
 type: source
-related: []
+related:
+  - concepts/corpus-overflow-out-of-scope.md
 updated: 2026-11-26
 read_status: skimmed
 maturity: draft
@@ -25,7 +26,7 @@ The paper sits between two styles of AI-driven mathematical discovery. One uses 
 
 **Relevance to this wiki: none.** This is mathematical discovery. It has no link to search, citation, local ranking, or generative-engine visibility.
 
-Left as an orphan on purpose. It has no honest place in the SEO graph, and inventing one would make the graph less trustworthy than leaving a page with no inbound edges.
+Filed under the corpus-overflow hub rather than given a manufactured SEO edge. The hub records that the file was triaged and rejected, so the next sweep does not spend effort on it again. See @concepts/corpus-overflow-out-of-scope.md.
 
 `[TENTATIVE]` — abstract only.
 
