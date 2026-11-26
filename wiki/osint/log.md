@@ -11568,3 +11568,11 @@ Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first
 - Lesson: an on-chain authorisation survives a withdrawal freeze, and an MPC wallet has no single key to revoke it under time pressure.
 - `concepts/crypto-custody-single-point-of-failure.md`, `entities/data-sources/binance.md` — **updated**.
 - Routing: wiki-only. Custody and incident-response reference.
+
+## [2026-11-25] update | Atlas Engine - verified build state and launch-article review
+
+- `concepts/atlas-engine.md` - **updated**. Status moved from "new project, no build" to "built, v1 live". Added verified numbers: 60 regions, 65 expressions, 35 cocktails, 15 guardrails, 103/103 pilot URLs HTTP 200, 222 pages (118 noindex), 455 packages, 20 gate patterns.
+- Licence question closed for v1: attribution lists 14 upstream licences, none ODbL; all 60 features carry `license_id`. A wording risk remains in `DATA_LICENSE` over compiled `dist/` geometry.
+- Launch article for 2026-12-01 reviewed. Corrected draft filed at `briefs/2026-12-01_outlier-weekly-zero-copyleft-cartography.md`. Fixes: Speyside vs SWR 2009, gate list (MPL in, "Proprietary" out), Chile CC BY-IGO 3.0, MB/MiB, table rebuild.
+- Blockers logged: repo stays private until launch (flip public 2026-12-01); `terroirkit.dev` does not resolve; `Atlas101` tree has uncommitted changes.
+- Routing: wiki-only. No trading link.
