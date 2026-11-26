@@ -17,7 +17,7 @@ maturity: draft
 | Title | Permissive Geospatial and Origin Source Inventory for World Coffee and Tea Atlas |
 | Author | Operator document, no named author |
 | Type | Operator document, .docx, source inventory |
-| Location | `research to be indexed/osint/coffee inventory.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/coffee inventory.docx` |
 | Retrieved | 2026-11-26 |
 | Pages | 239 blocks, 8 tables |
 | Read status | read (summary, licence gate, tier tables and country rules) |

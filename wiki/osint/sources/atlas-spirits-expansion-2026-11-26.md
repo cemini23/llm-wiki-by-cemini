@@ -15,7 +15,7 @@ maturity: draft
 | Title | World Spirits Atlas Expansion Catalog: 120 Net-New Regional Expressions and 85 Map Your Glass Cocktails |
 | Author | Operator document, no named author |
 | Type | Operator document, .docx, content catalogue |
-| Location | `research to be indexed/osint/World Spirits Atlas Expansion.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/World Spirits Atlas Expansion.docx` |
 | Retrieved | 2026-11-26 |
 | Pages | 467 blocks, 12 tables |
 | Read status | skimmed (method, family counts and legal baselines; individual rows sampled) |

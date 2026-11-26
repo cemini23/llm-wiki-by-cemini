@@ -17,7 +17,7 @@ maturity: draft
 | Title | Why Linear says Issue Tracking is Dead — Cristina Cordova, COO |
 | Author | Latent Space (swyx, Alessio Fanelli), with Cristina Cordova |
 | Type | Newsletter podcast recap (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-19-why-linear-says-issue-tracking-is-dead-cristina.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-19-why-linear-says-issue-tracking-is-dead-cristina.md` |
 | Retrieved | 2026-11-26 (published 2026-11-19) |
 | File | `newsletter-rss-latent-space-2026-11-19-why-linear-says-issue-tracking-is-dead-cristina.md` |
 | Pages | n/a |

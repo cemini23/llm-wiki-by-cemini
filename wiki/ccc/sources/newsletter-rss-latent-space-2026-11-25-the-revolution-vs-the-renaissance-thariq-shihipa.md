@@ -17,7 +17,7 @@ maturity: draft
 | Title | The Revolution vs The Renaissance — Thariq Shihipar, OpenAI |
 | Author | Latent Space (swyx, Alessio Fanelli), with Thariq Shihipar |
 | Type | Newsletter podcast recap (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-25-the-revolution-vs-the-renaissance-thariq-shihipa.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-25-the-revolution-vs-the-renaissance-thariq-shihipa.md` |
 | Retrieved | 2026-11-26 (published 2026-11-25) |
 | File | `newsletter-rss-latent-space-2026-11-25-the-revolution-vs-the-renaissance-thariq-shihipa.md` |
 | Pages | n/a |

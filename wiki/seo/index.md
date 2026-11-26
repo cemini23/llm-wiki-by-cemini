@@ -562,3 +562,13 @@ If you're new to this wiki:
 | [concepts/gbp-business-hours.md](concepts/gbp-business-hours.md) | concept | Hours layers; fix main hours first; watch for "hours may be incorrect" user edits. `[TENTATIVE]` |
 | [sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md](sources/newsletter-rss-sterling-sky-2026-11-24-how-to-report-a-business-for-fake-google-reviews.md) | source | On-topic. Six banned practices, per-review report flow, channel rules, one tracked case. RSS body truncated; full page fetched. |
 | [concepts/google-review-reporting.md](concepts/google-review-reporting.md) | concept | Report a review in Maps; the Redressal form is the wrong channel; removals come in waves. `[TENTATIVE]` |
+
+## Ingest 2026-11-26 — three late arXiv arrivals
+
+These landed in the `seo/` inbox after the main wave. None is SEO work, and each page says so.
+
+| Page | Type | Note |
+|------|------|------|
+| [sources/arxiv-onequery-multilingual-ecommerce-query-2611.33653.md](sources/arxiv-onequery-multilingual-ecommerce-query-2611.33653.md) | source | Poor fit. Marketplace query parsing at Alibaba. Shared subject with GEO, not a shared method. `[TENTATIVE]` |
+| [sources/arxiv-patternminer-automated-math-discovery-2611.33966.md](sources/arxiv-patternminer-automated-math-discovery-2611.33966.md) | source | No SEO link. Mathematical discovery. Deliberate orphan. `[TENTATIVE]` |
+| [sources/arxiv-zerohero-small-language-agents-2611.34635.md](sources/arxiv-zerohero-small-language-agents-2611.34635.md) | source | Not SEO, but real for `/route`: sub-50M-parameter agents distilled from a large expert. `[TENTATIVE]` |

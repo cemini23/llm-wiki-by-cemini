@@ -18,7 +18,7 @@ maturity: draft
 | Title | Organic Search and Launch Blueprint for FlavorOrigins Cartridge #3: Coffee and Tea |
 | Author | Operator document, no named author |
 | Type | Operator document, .docx, SEO and launch plan |
-| Location | `research to be indexed/osint/Coffee & Tea SEO Blueprint.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/Coffee & Tea SEO Blueprint.docx` |
 | Retrieved | 2026-11-26 |
 | Pages | 254 blocks, 6 tables |
 | Read status | skimmed (positioning, tools, taxonomy and cluster sections) |

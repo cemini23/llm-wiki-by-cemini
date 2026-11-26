@@ -17,7 +17,7 @@ maturity: draft
 | Title | thanksgivingplayerscsv.csv — FanDuel player list |
 | Author | FanDuel contest export, no named author |
 | Type | Operator working file, .csv |
-| Location | `research to be indexed/osint/thanksgivingplayerscsv.csv` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/thanksgivingplayerscsv.csv` |
 | Retrieved | 2026-11-26 (file timestamp 2026-11-25 17:40) |
 | Pages | 153 data rows, 17 columns |
 | Read status | read (structure, counts and injury column) |

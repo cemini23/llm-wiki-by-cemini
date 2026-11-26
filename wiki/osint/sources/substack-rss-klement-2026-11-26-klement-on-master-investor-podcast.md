@@ -15,7 +15,7 @@ maturity: draft
 | Title | Klement on Master Investor podcast |
 | Author | Joachim Klement, Klement on Investing (Substack) |
 | Type | Newsletter post, RSS ingest, free tier |
-| Location | `research to be indexed/substack-rss-klement-2026-11-26-klement-on-master-investor-podcast.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-26-klement-on-master-investor-podcast.md` |
 | URL | https://klementoninvesting.substack.com/p/klement-on-master-investor-podcast |
 | Retrieved | 2026-11-26, published 2026-11-26T10:02Z |
 | Pages | 202 words |

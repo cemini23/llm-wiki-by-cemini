@@ -18,7 +18,7 @@ maturity: draft
 | Title | [AINews] Math Proofs Are Landing Faster Than We Can Read Them |
 | Author | Latent Space AINews (swyx et al.) |
 | Type | Daily digest (RSS, free tier) |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-11-25-ainews-math-proofs-are-landing-faster-than-we-ca.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-latent-space-2026-11-25-ainews-math-proofs-are-landing-faster-than-we-ca.md` |
 | Retrieved | 2026-11-26 (published 2026-11-25) |
 | File | `newsletter-rss-latent-space-2026-11-25-ainews-math-proofs-are-landing-faster-than-we-ca.md` |
 | Pages | n/a |

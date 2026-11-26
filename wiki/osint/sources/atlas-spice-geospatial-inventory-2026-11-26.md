@@ -17,7 +17,7 @@ maturity: draft
 | Title | World Spice and Chili Atlas Geospatial and Regulatory Inventory |
 | Author | Operator document, no named author |
 | Type | Operator document, .docx, source inventory |
-| Location | `research to be indexed/osint/Global Spice GI Geospatial Inventory.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/Global Spice GI Geospatial Inventory.docx` |
 | Retrieved | 2026-11-26 |
 | Pages | 171 blocks, 7 tables |
 | Read status | read |

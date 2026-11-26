@@ -2211,3 +2211,11 @@ Cross-wiki stub routed from `@osint-wiki/sources/newsletter-rss-sparktoro-2026-0
 - **New concept page** `concepts/google-review-reporting.md`.
 - Backlinks: `concepts/reviews-reputation-management.md`, `entities/platforms/google-business-profile.md`, `concepts/google-business-profile.md`. Index rows added.
 - Routing: wiki; brief candidate (fake-review report checklist).
+
+## [2026-11-26] ingest | Three late arXiv arrivals — none is SEO work
+
+- `sources/arxiv-onequery-multilingual-ecommerce-query-2611.33653.md` — **new**. Marketplace query understanding at Alibaba. Weak fit: product catalogue, not a citation graph. Marked on the page.
+- `sources/arxiv-patternminer-automated-math-discovery-2611.33966.md` — **new**. Mathematical discovery. No SEO link. Deliberate orphan.
+- `sources/arxiv-zerohero-small-language-agents-2611.34635.md` — **new**. Sub-50M-parameter agents distilled from a large expert, then PPO post-trained. Not SEO; relevant to `/route` and the agent-toolkit lanes.
+- Backlinks: `concepts/search-query-data-supply.md`, `concepts/process-verified-agentic-search-geo.md`. Index section added.
+- Routing: wiki-only for OneQuery and PatternMiner. ZeroHero → agent-toolkit as a cost argument for narrow lanes.

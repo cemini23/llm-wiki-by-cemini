@@ -17,7 +17,7 @@ maturity: draft
 | Title | Large deviations for integrated exponentials of Gaussian Volterra processes — application to variance options |
 | Author | Antoine Jacquier, Mugad Oumgari, Dan Pirjol, Lingjiong Zhu |
 | Type | arXiv preprint, math.PR, arXiv:2611.34567v1 |
-| Location | `research to be indexed/osint/arxiv-2611.34567-large-deviations-for-integrated-exponentials-of.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2611.34567-large-deviations-for-integrated-exponentials-of.pdf` |
 | Retrieved | 2026-11-26 |
 | Pages | 1–44 plus appendices, submitted 25 November 2026 |
 | Read status | read (abstract, introduction, main results, numerical section) |

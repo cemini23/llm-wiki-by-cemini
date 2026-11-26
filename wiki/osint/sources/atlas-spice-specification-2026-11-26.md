@@ -17,7 +17,7 @@ maturity: draft
 | Title | Cartridge 2 World Spice and Chili Atlas Technical Specification |
 | Author | Operator document, no named author |
 | Type | Operator document, .docx, technical specification |
-| Location | `research to be indexed/osint/World Spice Atlas Specification.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/World Spice Atlas Specification.docx` |
 | Retrieved | 2026-11-26 |
 | Pages | 269 blocks, 6 tables |
 | Read status | read (schema, counts, readiness and validator sections) |

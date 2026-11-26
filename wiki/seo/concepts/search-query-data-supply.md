@@ -12,6 +12,7 @@ related:
   - sources/arxiv-2610.41893-automated-keyword-generation-dvs-2026-11-03.md
   - concepts/share-of-influence-channel-measurement.md
   - sources/newsletter-rss-sparktoro-2026-11-24-new-feature-share-of-influence-lets-you-calculat.md
+  - sources/arxiv-onequery-multilingual-ecommerce-query-2611.33653.md
 maturity: draft
 created: 2026-11-14
 updated: 2026-11-25

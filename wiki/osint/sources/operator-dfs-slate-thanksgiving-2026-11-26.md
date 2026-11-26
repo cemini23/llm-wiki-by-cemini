@@ -17,7 +17,7 @@ maturity: draft
 | Title | FanDuel Thanksgiving packet: NFL 2026 Week 12, Thursday Nov 26, 2026 (all three Thursday windows) |
 | Author | Cemini23 |
 | Type | Operator document, .docx, read-only slate packet |
-| Location | `research to be indexed/osint/dfsslatethanksgiving.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/dfsslatethanksgiving.docx` |
 | Retrieved | 2026-11-26 |
 | Pages | 153 blocks, 10 tables |
 | Read status | read |

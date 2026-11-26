@@ -16,7 +16,7 @@ maturity: draft
 | Title | CZ Q&A: BNB's Rocky Debut, Startup Lessons and Web3's Next Eight Years |
 | Author | Wu Blockchain (edited), transcript of a Binance Life reader event with Changpeng Zhao |
 | Type | Newsletter transcript, RSS ingest, free tier |
-| Location | `research to be indexed/substack-rss-wublock-2026-11-26-cz-qa-bnbs-rocky-debut-startup-lessons-and-web3s.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-11-26-cz-qa-bnbs-rocky-debut-startup-lessons-and-web3s.md` |
 | URL | https://wublock.substack.com/p/cz-q-and-a-bnbs-rocky-debut-startup |
 | Retrieved | 2026-11-26, published 2026-11-26T10:22Z |
 | Pages | About 6,260 words |

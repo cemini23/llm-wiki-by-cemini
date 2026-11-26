@@ -22,6 +22,7 @@ related:
   - concepts/conversational-capture-geo.md
   - sources/arxiv-finder-2026-ax-is-the-new-aeo-2609.34951-2026-09-30.md
   - sources/arxiv-yu-2026-conversational-capture-geo-2609.40069-2026-10-01.md
+  - sources/arxiv-zerohero-small-language-agents-2611.34635.md
 maturity: draft
 created: 2026-07-15
 updated: 2026-10-01

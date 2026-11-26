@@ -15,7 +15,7 @@ maturity: draft
 | Title | Should you have more China in your portfolio? |
 | Author | Joachim Klement, Klement on Investing (Substack) |
 | Type | Newsletter post, RSS ingest, free tier |
-| Location | `research to be indexed/substack-rss-klement-2026-11-26-should-you-have-more-china-in-your-portfolio.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-11-26-should-you-have-more-china-in-your-portfolio.md` |
 | URL | https://klementoninvesting.substack.com/p/should-you-have-more-china-in-your |
 | Retrieved | 2026-11-26, published 2026-11-26T07:00Z |
 | Pages | 965 words |

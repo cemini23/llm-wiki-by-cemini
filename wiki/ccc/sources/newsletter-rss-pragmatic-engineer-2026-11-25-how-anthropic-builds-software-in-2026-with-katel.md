@@ -19,7 +19,7 @@ maturity: draft
 | Title | How Anthropic builds software in 2026 with Katelyn Lesse |
 | Author | Gergely Orosz (The Pragmatic Engineer), with Katelyn Lesse |
 | Type | Newsletter podcast recap (RSS, free tier) — body present |
-| Location | `research to be indexed/newsletter-rss-pragmatic-engineer-2026-11-25-how-anthropic-builds-software-in-2026-with-katel.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/ccc/newsletter-rss-pragmatic-engineer-2026-11-25-how-anthropic-builds-software-in-2026-with-katel.md` |
 | Retrieved | 2026-11-26 (published 2026-11-25) |
 | File | `newsletter-rss-pragmatic-engineer-2026-11-25-how-anthropic-builds-software-in-2026-with-katel.md` |
 | Pages | n/a |

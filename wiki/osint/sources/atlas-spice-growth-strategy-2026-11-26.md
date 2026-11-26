@@ -18,7 +18,7 @@ maturity: draft
 | Title | Growth Strategy, SEO Architecture, and Launch Plan for Flavor Origins: World Spice and Chili Atlas |
 | Author | Operator document, no named author |
 | Type | Operator document, .docx, growth and SEO playbook |
-| Location | `research to be indexed/osint/FlavorOrigins Spices Growth Strategy.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/FlavorOrigins Spices Growth Strategy.docx` |
 | Retrieved | 2026-11-26 |
 | Pages | 236 blocks, 6 tables |
 | Read status | read |

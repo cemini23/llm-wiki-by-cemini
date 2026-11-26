@@ -17,7 +17,7 @@ maturity: draft
 | Title | Atlas Engine Cartridge 3 Coffee and Tea Domain Specification |
 | Author | Operator document, no named author |
 | Type | Operator document, .docx, technical specification |
-| Location | `research to be indexed/osint/coffee specs.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/coffee specs.docx` |
 | Retrieved | 2026-11-26 |
 | Pages | 321 blocks, 7 tables |
 | Read status | skimmed (schema, scope and calibration sections; sample records not read line by line) |
