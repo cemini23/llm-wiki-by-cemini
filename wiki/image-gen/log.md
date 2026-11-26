@@ -1,3 +1,7 @@
+## [2026-11-26] ingest | Ingest Deep Research batch audit F routed to image-gen (2026-11-26)
+
+- @entities/models/minimax-h3-pose-transfer-lora.md
+
 ## [2026-11-24] ingest | Ingest Deep Research link evaluation batch E routed to image-gen (2026-11-24)
 
 - @concepts/local-inference-runtimes.md

@@ -10,13 +10,13 @@ related:
   - sources/arxiv-2609-01560-h3-world.md
   - concepts/federated-daily-research-digest.md
   - sweeps/2026-09-18-daily.md
+  - entities/models/minimax-h3-pose-transfer-lora.md
 maturity: draft
 created: 2026-09-19
 updated: 2026-09-19
 phase0_verdict: WATCH
 wire_status: deferred
 ---
-
 ## Relations
 
 @sources/arxiv-2609-18323-minimax-h3-reason.md @concepts/world-models-video-generation.md @entities/models/h3-world.md @sources/arxiv-2609-01560-h3-world.md @concepts/federated-daily-research-digest.md @sweeps/2026-09-18-daily.md

@@ -10,11 +10,11 @@ related:
   - "@ccc-wiki/entities/whatsflare.md"
   - "@cybersecurity-wiki/concepts/secret-masking-regression-tests.md"
   - "@cybersecurity-wiki/entities/tools/claude-bughunter.md"
+  - sources/2026-11-26-deep-research-batch-audit.md
 updated: 2026-11-24
 read_status: read
 maturity: draft
 ---
-## Raw Concept
 
 - **Title:** Multi-Wiki Link Revenue Evaluation (batch E)
 - **Author:** Deep Research evaluation run, v10.13 anti-bloat and consolidation gates

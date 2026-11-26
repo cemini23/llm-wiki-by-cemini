@@ -35,15 +35,15 @@ related:
   - "@game-dev-wiki/entities/tools/autoclip.md"
   - "@cybersecurity-wiki/concepts/secret-masking-regression-tests.md"
   - "@image-gen-wiki/concepts/local-inference-runtimes.md"
+  - sources/2026-11-26-deep-research-batch-audit.md
+  - @ccc-wiki/concepts/multi-agent-framework-landscape-2026-11.md
+  - @ccc-wiki/concepts/prompt-engineering-evidence-discipline.md
+  - @ccc-wiki/entities/tools/inference-optimisation-skill.md
+  - @image-gen-wiki/entities/models/minimax-h3-pose-transfer-lora.md
+  - @cybersecurity-wiki/concepts/indirect-prompt-injection-boundary.md
 updated: 2026-11-24
 maturity: draft
 ---
-
-## Raw Concept
-
-The question this page answers: **when an evaluation report grades a URL Integrate or
-Extract, what else must be true before the item enters a project upgrade queue?**
-
 Raised by the two 2026-11-16 Deep Research batches, which together graded 16 winners
 out of 40 URLs. Extended by the 2026-11-17 batch, where the freeze produced zero
 winners and a dead-link verdict proved to be wrong, and by the 2026-11-24 batch, where

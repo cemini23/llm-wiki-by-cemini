@@ -10,10 +10,10 @@ related:
   - "@game-dev-wiki/entities/tools/fast-anything.md"
   - "@game-dev-wiki/entities/tools/landmines-lint.md"
   - concepts/agent-runtime-tooling-2026-11.md
+  - concepts/prompt-engineering-evidence-discipline.md
 updated: 2026-11-22
 maturity: draft
 ---
-## Raw Concept
 
 Two sources from the 2026-11-17 batch describe how to check an agent's work without
 reading all of it: a Claude Code team blog post, and a defect-discovery procedure from

@@ -144,11 +144,11 @@ related:
   - sources/arxiv-workflowarena-workflow-orchestration-2611.12856.md
   - sources/arxiv-knowing-when-to-intervene-2611.09792.md
   - sources/arxiv-agentic-manipulation-policies-amp1-2611.09892.md
+  - concepts/multi-agent-framework-landscape-2026-11.md
 maturity: validated
 created: 2026-05-13
 updated: 2026-11-25
 ---
-
 ## Relations
 
 - `@entities/tools/claude-code.md` — the harness providing the `Agent` tool

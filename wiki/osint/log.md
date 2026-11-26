@@ -1,3 +1,7 @@
+## [2026-11-26] ingest | Ingest Deep Research batch audit F (20 items: 12 URLs + 8 prompt screenshots; 3 winners)
+
+- @sources/2026-11-26-deep-research-batch-audit.md
+
 ## [2026-11-24] ingest | Ingest Deep Research link evaluation batch E (1 Extract, 9 Context, 7 Pass, 2 Watch, 1 false UNAVAILABLE)
 
 - @sources/2026-11-24-deep-research-link-eval-runtime-tooling.md

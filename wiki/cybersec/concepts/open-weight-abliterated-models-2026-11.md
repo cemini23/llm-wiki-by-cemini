@@ -6,7 +6,8 @@ related:
   - "@osint-wiki/concepts/agent-link-evaluation-gates-v1013.md"
   - entities/tools/artex.md
   - "@image-gen-wiki/entities/models/inkling-2-mini.md"
-updated: 2026-11-22
+  - "@osint-wiki/sources/2026-11-26-deep-research-batch-audit.md"
+updated: 2026-11-26
 maturity: draft
 ---
 ## Raw Concept
@@ -64,6 +65,21 @@ not the refusal rate.
 
 The lab repository does not exist on this machine, so none of this is actionable today.
 The page records the shortlist for when it does.
+
+### Reaffirmed 2026-11-26 — still the leader, still blocked
+
+The 2026-11-26 batch re-graded the AtomicChat Inkling build **Integrate** for the
+operator lab and confirmed **apache-2.0** on the repository, with 762k downloads and
+885 likes. [CONFIRMED — Hugging Face API 2026-11-26]
+
+The report's framing is the useful part: a **zero-refusal, 20/20 tool-calling
+multimodal model in 16.53 GB** (AD-Q4_K) running fully offline on llama.cpp b12600+. That
+is the fitness question answered — tool calling at 5.4B effective active, on a laptop.
+
+`local-abliterated-lab` is still absent from `~/Projects/`, so the item stays blocked on
+Gate 4 for the third audit running. The weights are ready; the destination is not.
+
+See @osint-wiki/sources/2026-11-26-deep-research-batch-audit.md.
 
 ## Snippets
 

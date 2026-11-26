@@ -1002,6 +1002,7 @@ Practical, printable guides for getting started — tracked in git (unlike `brie
 | [Restoring Diversity in Distilled Image and Video Generators by Probing Activations (2611.18550)](sources/arxiv-rediverse-diversity-collapse-2611.18550.md) | (added by wiki_finalize_batch) | draft |
 | [Inkling 2 Mini — local multimodal VLM at ~20 GB (Apache-2.0)](entities/models/inkling-2-mini.md) | (added by wiki_finalize_batch) | draft |
 | [Local inference runtimes — OpenVINO and minimind as reference, not dependency](concepts/local-inference-runtimes.md) | (added by wiki_finalize_batch) | draft |
+| [MiniMax-H3 pose-transfer LoRA — permissive adapter, territorially restricted base (Context)](entities/models/minimax-h3-pose-transfer-lora.md) | (added by wiki_finalize_batch) | draft |
 
 - [ASR-roundtrip TTS evaluation limits (CDRD false negatives)](concepts/asr-roundtrip-tts-eval-limits.md) — ASR-roundtrip masks context-dependent reading errors; human-audited span-isolation protocol for persona-TTS QA — `tts, eval, asr-roundtrip, voice, methodology`
 - [Iterative Self-Learning for expressive TTS labels](concepts/iterative-self-learning-expressive-tts.md) — Invert-Classify + ISL loop bootstraps prominence/emotion tags; Fish-Speech stays Layer-1 — `tts, expressive, semi-supervised, voice`

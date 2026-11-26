@@ -1,3 +1,9 @@
+## [2026-11-26] ingest | Ingest Deep Research batch audit F routed to ccc (2026-11-26)
+
+- @concepts/multi-agent-framework-landscape-2026-11.md
+- @concepts/prompt-engineering-evidence-discipline.md
+- @entities/tools/inference-optimisation-skill.md
+
 ## [2026-11-24] ingest | Ingest Deep Research link evaluation batch E routed to ccc (2026-11-24)
 
 - @concepts/agent-runtime-tooling-2026-11.md

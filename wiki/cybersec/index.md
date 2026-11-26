@@ -42,6 +42,7 @@
 | [Compliance controls for autonomous trading agents](concepts/trading-agent-compliance-controls.md) | (added by wiki_finalize_batch) | draft |
 | [Abliterated open-weight builds, November 2026 — what actually fits on a laptop](concepts/open-weight-abliterated-models-2026-11.md) | (added by wiki_finalize_batch) | draft |
 | [Secret-masking regression tests — proving a redactor does not leak its own fixtures](concepts/secret-masking-regression-tests.md) | (added by wiki_finalize_batch) | draft |
+| [Indirect prompt-injection boundary — retrieved text is data, never instruction](concepts/indirect-prompt-injection-boundary.md) | (added by wiki_finalize_batch) | draft |
 
 ### Offensive technique categories
 

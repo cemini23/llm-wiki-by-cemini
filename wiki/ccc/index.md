@@ -1463,6 +1463,8 @@ Content-oriented catalog of every page in this wiki. Update on every new page or
 | [Repeated-correction mining — turning what you keep retyping into a rule](concepts/repeated-correction-mining.md) | (added by wiki_finalize_batch) | draft |
 | [Agent harness tooling, November 2026 — four Context-grade items and what they encode](concepts/agent-harness-tooling-2026-11.md) | (added by wiki_finalize_batch) | draft |
 | [Agent runtime tooling, November 2026 — SRE, tenant isolation, and prompt-enforced boundaries](concepts/agent-runtime-tooling-2026-11.md) | (added by wiki_finalize_batch) | draft |
+| [Multi-agent framework landscape, November 2026 — why none of them fit](concepts/multi-agent-framework-landscape-2026-11.md) | (added by wiki_finalize_batch) | draft |
+| [Evidence discipline in agent prompts — what six teardowns actually contain](concepts/prompt-engineering-evidence-discipline.md) | (added by wiki_finalize_batch) | draft |
 
 ## Sources
 
@@ -1672,6 +1674,7 @@ Sixteen pages from the 26–27 October inbox. The through-line: **the harness is
 | [jev-recipes — 248 small typed decisions for JavaScript and TypeScript (MIT)](entities/tools/jev-recipes.md) | (added by wiki_finalize_batch) | draft |
 | [plannotator — human review gate for agent plans and diffs (Apache-2.0)](entities/tools/plannotator.md) | (added by wiki_finalize_batch) | draft |
 | [product-engineering — 45 release-gate skills from shipped products (MIT)](entities/tools/product-engineering-skills.md) | (added by wiki_finalize_batch) | draft |
+| [inference-optimisation-skill — measure a serving stack against its physics ceiling (MIT)](entities/tools/inference-optimisation-skill.md) | (added by wiki_finalize_batch) | draft |
 
 - [stitch-skills — design-to-code agent skills for Stitch MCP (Apache-2.0)](entities/stitch-skills.md) — cross-wiki stub routed from ingest — `cross-wiki`
 - [bot-browser — real Chrome with a human login handoff (MIT)](entities/bot-browser.md) — cross-wiki stub routed from ingest — `cross-wiki`

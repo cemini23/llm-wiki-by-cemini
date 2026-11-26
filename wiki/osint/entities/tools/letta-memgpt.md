@@ -8,12 +8,13 @@ related:
   - sources/alash3al-stash.md
   - concepts/agent-memory-critique.md
   - concepts/wiki-tooling-evaluation.md
+  - "@ccc-wiki/concepts/multi-agent-framework-landscape-2026-11.md"
   - sources/contextual-agentic-memory-critique-2604.27707.md
+  - @ccc-wiki/concepts/multi-agent-framework-landscape-2026-11.md
 maturity: draft
 created: 2026-05-05
 updated: 2026-05-05
 ---
-
 ## Relations
 
 - @sources/5-5-moarrr-tool-eval.md — origin source: K31 Gemini DR eval URL 18, **Steal-from** tier (extract architectural schemas; do NOT mount full Docker infra)
@@ -59,12 +60,21 @@ NOT a current adoption candidate. Re-evaluation triggers:
 
 Until then, Letta stays in the reference shelf alongside the K30 NO-GOs (SwarmVault, PageIndex, Claude-OSINT).
 
-### Open questions [NEEDS VERIFICATION 2026-11-16] — re-dated; still open, not yet checked
+### Resolved 2026-11-26
 
-- Exact GitHub URL + license + maturity
-- Whether the MemGPT → Letta transition retained the Apache-2.0 license or moved to a more restrictive license (a common pattern when academic projects spin out)
-- Stash vs Letta on observability + dashboard tooling — Letta's commercial backing may give it better operator UX, but Cemini doesn't currently need that
-- Architectural-schema extraction effort estimate (1-2 days laptop-side reading?)
+- **Exact GitHub URL + licence + maturity** — `github.com/letta-ai/letta`, **Apache-2.0**,
+  25.6k stars, pushed 2026-10-18, 1 open issue. [CONFIRMED — GitHub API 2026-11-26]
+- **Did the MemGPT → Letta transition keep Apache-2.0?** Yes. The licence did not move
+  to a more restrictive one. [CONFIRMED]
+- **Tier in the 2026-11-26 batch** — Context. The Git-backed MemFS idea is the extract;
+  the service is not adopted. See
+  @ccc-wiki/concepts/multi-agent-framework-landscape-2026-11.md.
+
+### Open questions [OPEN QUESTION 2026-11-26]
+
+- Stash vs Letta on observability and dashboard tooling — Letta's commercial backing may
+  give it better operator UX, but the federation does not need that today.
+- Architectural-schema extraction effort estimate (1–2 days laptop-side reading?).
 
 ### Adoption status
 

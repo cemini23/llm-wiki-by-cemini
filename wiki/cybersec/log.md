@@ -1,3 +1,8 @@
+## [2026-11-26] ingest | Ingest Deep Research batch audit F routed to cybersec (2026-11-26)
+
+- @concepts/indirect-prompt-injection-boundary.md
+- @concepts/open-weight-abliterated-models-2026-11.md
+
 ## [2026-11-24] ingest | Ingest Deep Research link evaluation batch E routed to cybersec (2026-11-24)
 
 - @concepts/secret-masking-regression-tests.md
