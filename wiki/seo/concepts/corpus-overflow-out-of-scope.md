@@ -343,7 +343,7 @@ The daily digest's `local-seo-paper` query contained a bare `all:GBP` clause. Th
 
 **Rule for new queries:** never search on a short acronym alone. Spell out the full term, or pair the acronym with a disambiguating word. Terms to watch in this domain: **GEO** (generative engine optimization vs geographic vs geostationary), **AEO** (answer engine optimization vs the ancient Greek "eagle" journal abbreviation), **AX** (agent experience vs many others), **SERP**, **NAP** (name-address-phone vs network access point). Each has already produced or could produce a misfiled paper.
 
-### Current contents (updated 2026-07-29)
+### Current contents (updated 2026-11-26)
 
 | Stub | Topic | Why out-of-scope |
 |---|---|---|
@@ -454,6 +454,39 @@ The daily digest's `local-seo-paper` query contained a bare `all:GBP` clause. Th
 | @sources/arxiv-shinde-2026-pdp-priority-scheduling-2610.04587-2026-10-07.md | PDP switch priority scheduling (arXiv 2610.04587) | networking hardware; overflow only; no steal; digest query false positive (K285) |
 | @sources/arxiv-cheng-2026-hierarchy-gbp-factor-graph-2610.06978-2026-10-07.md | Hierarchy-GBP factor graph inference (arXiv 2610.06978) | robotics/SLAM; **GBP acronym collision** — Gaussian Belief Propagation vs Google Business Profile; overflow only (K285) |
 | @sources/arxiv-patternminer-automated-math-discovery-2611.33966.md | PatternMiner — LLM-guided training and interpretation of small models for mathematical discovery (arXiv 2611.33966) | Mathematical discovery; no link to search, citation, or generative-engine visibility. The small-model-plus-interpretability pattern is interesting to `/route`, not to SEO. Misfiled into `seo/` by the digest (2026-11-26) |
+
+**Backfilled 2026-11-26.** Thirty entries sat in `related:` with no row here, so the reasons had been lost. Twenty-six are recorded below. The other four are in-scope papers linked for context, noted underneath the table.
+
+| Stub | Topic | Why out-of-scope |
+|---|---|---|
+| @sources/arxiv-fine-tuned-classifiers-typed-decision-models-2611.20191.md | Typed decision models vs fine-tuned classifiers (arXiv 2611.20191) | No SEO link; model-comparison infrastructure. Inventory only (2026-11-22) |
+| @sources/arxiv-jointq-joint-scale-integer-quantization-2611.20384.md | JointQ joint scale and integer quantization for LLMs (arXiv 2611.20384) | No SEO link; quantization. Inventory only |
+| @sources/arxiv-forecastgym-live-replayable-benchmark-forecasting-agents-2611.23045.md | ForecastGym live replayable forecasting-agent benchmark (arXiv 2611.23045) | No SEO link; forecasting agents. Inventory only |
+| @sources/arxiv-moe-lora-multilingual-adaptation-2611.23158.md | MoE-LoRA multilingual adaptation (arXiv 2611.23158) | No SEO link; adapter training. Inventory only |
+| @sources/arxiv-meta-rtl-evolving-agent-harnesses-2611.25891.md | Meta-RTL evolving agent harnesses for RTL optimization (arXiv 2611.25891) | No SEO link. **RTL here is register-transfer-level hardware, not right-to-left text** — an acronym trap worth naming. Inventory only |
+| @sources/arxiv-foreseek-foresight-driven-long-video-2611.26024.md | ForeSeek foresight-driven long-video reasoning (arXiv 2611.26024) | No SEO link; video reasoning. Inventory only |
+| @sources/arxiv-albughdadi-2026-meox-earth-observation-2609.05351-2026-09-11.md | MEOX compact multimodal MoE for Earth observation (arXiv 2609.05351) | Earth observation; matched on "multimodal". Phase-0 OUT-OF-SCOPE |
+| @sources/arxiv-avramov-2026-atlas-verifiable-semantic-search-2609.11841-2026-09-11.md | Atlas verifiable semantic search (arXiv 2609.11841) | **"Atlas" name collision** — a crypto/verification stack, not the Cemini Atlas product. Phase-0 OUT-OF-SCOPE, 0 MB |
+| @sources/arxiv-dughmi-2026-batched-pandoras-box-2609.04059-2026-09-11.md | Batched Pandora's Box (arXiv 2609.04059) | Theory paper; matched on "search". Phase-0 OUT-OF-SCOPE, 0 MB |
+| @sources/arxiv-edwards-2026-crispr-amortized-hit-discovery-2609.11877-2026-09-11.md | Biology-in-the-loop CRISPR hit discovery (arXiv 2609.11877) | Biology; the federation note routes it to Atto as thin. OOD for SEO |
+| @sources/arxiv-fayolle-2026-side-channel-benchmarking-2609.03893-2026-09-11.md | Benchmarking microarchitectural side-channel attacks (arXiv 2609.03893) | Security hardware; no public exploit tooling to clone. Phase-0 OUT-OF-SCOPE |
+| @sources/arxiv-mondal-2026-vanilla-scotogenic-muon-collider-2609.17530-2026-09-16.md | Vanilla scotogenic model at a muon collider (arXiv 2609.17530) | Particle physics. OUT-OF-SCOPE overflow |
+| @sources/arxiv-nguyen-2026-regionfed-retail-query-2609.05403-2026-09-11.md | RegionFed personalized retail query understanding (arXiv 2609.05403) | Retail federated learning; matched on "query understanding". No public code. Phase-0 OUT-OF-SCOPE |
+| @sources/arxiv-paine-2026-frb-magnetars-elliptical-2609.04118-2026-09-11.md | FRB search from magnetars in elliptical galaxies (arXiv 2609.04118) | Astrophysics; matched on "search". OUT-OF-SCOPE overflow |
+| @sources/arxiv-pawar-2026-llm-explanations-behavioural-2609.05385-2026-09-11.md | Evaluating LLM explanations with behavioural evidence (arXiv 2609.05385) | Interpretability. Phase-0 OUT-OF-SCOPE, 0 MB |
+| @sources/arxiv-sengupta-2026-multi-axion-ladder-2609.11907-2026-09-11.md | Multi-axion ladder across cosmic history (arXiv 2609.11907) | Particle cosmology. OUT-OF-SCOPE overflow |
+| @sources/arxiv-silva-2026-twisted-bracelets-transpositions-2609.17493-2026-09-16.md | Twisted bracelets, sorting by transpositions (arXiv 2609.17493) | Pure mathematics. OUT-OF-SCOPE |
+| @sources/arxiv-wasserman-2026-native-language-evaluation-2609.17435-2026-09-16.md | Native-language evaluation and tokenizer sensitivity (arXiv 2609.17435) | BabyLM submission; tokenizer evaluation. Phase-0 OUT-OF-SCOPE, 0 MB |
+| @sources/arxiv-limited-knowledge-exchange-biological-subfields-2611.06596.md | Bibliometric pipeline with an LLM classifier across biological subfields (arXiv 2611.06596) | Bibliometrics; no search-visibility link |
+| @sources/arxiv-camp-3d-imc-weight-mapping-2611.07707.md | CAMP weight mapping for LLMs on 3D in-memory compute arrays (arXiv 2611.07707) | Accelerator hardware |
+| @sources/arxiv-zero-shot-weight-space-programming-2611.09271.md | Zero-shot weight-space programming across a game ladder (arXiv 2611.09271) | Model editing on board-game tasks |
+| @sources/arxiv-formally-verified-quantum-programs-2611.09822.md | Formally verified quantum programs from AI agent teams (arXiv 2611.09822) | Quantum verification; the page makes no SEO claim |
+| @sources/arxiv-2611.16524-drone-victim-search-llm-optimizer-2026-11-14.md | Drone scheduling for victim search (arXiv 2611.16524) | No SEO link; scheduling optimization. Inventory only |
+| @sources/arxiv-2611.17012-dma-google-search-anonymization-2026-11-14.md | EC anonymisation of Google Search data (arXiv 2611.17012) | Measures **privacy**, not citation. Kept because it bears on query-data supply; it is not SEO evidence |
+| @sources/arxiv-fol-proof-verifying-llm-text-to-logic-2611.33078.md | FOL-Proof, verifying LLM text-to-logic translation (arXiv 2611.33078) | Formal logic; no SEO application |
+| @sources/newsletter-rss-sparktoro-2026-11-25-the-best-damn-fashion-gift-guide-2026.md | SparkToro fashion gift guide, 2026-11-25 | Editorial listicle; no SEO, GEO, or audience-research content |
+
+**Four related entries are in-scope, not overflow.** They appear in `related:` for context and deliberately have no row above: @sources/arxiv-finder-2026-ax-is-the-new-aeo-2609.34951-2026-09-30.md (AX as the successor to AEO), @sources/arxiv-lee-2026-filter-bubble-generative-search-2609.38946-2026-10-01.md (generative search and attention diversity), @sources/arxiv-yu-2026-conversational-capture-geo-2609.40069-2026-10-01.md (trajectory-level GEO evaluation), and @sources/newsletter-rss-latent-space-2026-09-07-aeo-tracker-2026-09-08.md (frontier AEO tracker). If a future lint run treats every `related:` edge here as an overflow claim, this paragraph is the correction.
 
 ## Snippets
 
