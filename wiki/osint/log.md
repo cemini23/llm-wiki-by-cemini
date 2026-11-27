@@ -11698,3 +11698,10 @@ Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first
 - Names the UAE and the US as the other two jurisdictions best positioned. Binance user base above 300 million, self-reported.
 - `concepts/asia-tokenisation-and-exchange-policy-2026-11.md` — **updated** with an operator-voice section. `concepts/tokenized-us-equities-onchain-basis-trade.md` — **updated** (backlink).
 - Routing: wiki-only. RWA flow direction and the Hong Kong/UAE/US posture are GuruWatcher candidates if a crypto-policy watch is opened.
+
+## [2026-11-26] update | Atlas Engine - spirits runtime cap removed; article title set
+
+- Spirits runtime byte cap removed on 2026-11-26. `SPICE_RUNTIME_BYTE_CEILING` in `compiler/dissolve.py` remains for the spice cartridge only.
+- Active payload stays 15,013,255 bytes. The spirits PMTiles spans zoom 0-10; the basemap spans zoom 0-6; the root directory is 96 bytes and the archive is clustered.
+- Outlier article retitled "Zero Tile Bills at Global Scale: Zoom-Stratified PMTiles Over HTTP 206 Range Requests". Subtitle is the 106-character GI, myths and GIS-defaults line. Drop 2026-12-01 09:00 ET.
+- Routing: wiki-only.

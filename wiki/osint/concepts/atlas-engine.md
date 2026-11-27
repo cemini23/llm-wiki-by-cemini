@@ -36,7 +36,7 @@ A multi-vertical atlas engine: one rendering and data engine, plus per-domain "c
 
 **Schema.** Six universal typed interfaces, shared by every vertical: `OriginRegion`, `BaseMaterial`, `ProcessMethod`, `Expression`, `TimelineEvent`, `Composition`. A vertical-specific extension carries the rest. Validation is part of the schema: dual ABV thresholds, contested-GI versioning, and a mandatory pedagogical sibling for every expression. [Source: World Spirits Atlas Specification.docx]
 
-**Delivery.** A static build: PMTiles vector tiles plus Brotli-compressed JSON shards, rendered in MapLibre. Measured 2026-11-26: `spirits.pmtiles` is 13.04 MB, the basemap is 1.71 MB, the shards total 235.9 KB, and `attribution.json` is 20.3 KB. The active payload is 15,013,255 bytes, with 715 KB of headroom under the 15 MiB cap. The GeoJSON fallback is 1.48 MB and never loads on a normal visit. A generic repository layout puts domain recipes in `cartridges/<domain>/` so a new vertical needs no code change.
+**Delivery.** A static build: PMTiles vector tiles plus Brotli-compressed JSON shards, rendered in MapLibre. Measured 2026-11-26: `spirits.pmtiles` is 13.04 MB, the basemap is 1.71 MB, the shards total 235.9 KB, and `attribution.json` is 20.3 KB. The active payload is 15,013,255 bytes. The spirits runtime cap was removed on 2026-11-26; only the spice cartridge keeps a 15 MiB ceiling. The GeoJSON fallback is 1.48 MB and never loads on a normal visit. A generic repository layout puts domain recipes in `cartridges/<domain>/` so a new vertical needs no code change.
 
 ### Content scope at launch
 
@@ -52,7 +52,7 @@ The product family is now defined as three cartridges, all served by one engine:
 | #2 World Spice and Chili | `/spices/` | flavororigins.com | Specified, not built |
 | #3 Coffee and Tea | `/coffee-tea/` | flavororigins.com | Specified, not built |
 
-The engine brand is `terroirkit.dev`. The consumer brand is `flavororigins.com`. The stack is Astro SSG plus MapLibre GL JS plus PMTiles, with a runtime payload cap of 15 MiB per cartridge. [Sources: coffee specs.docx, World Spice Atlas Specification.docx, Coffee & Tea SEO Blueprint.docx]
+The engine brand is `terroirkit.dev`. The consumer brand is `flavororigins.com`. The stack is Astro SSG plus MapLibre GL JS plus PMTiles. Cartridge #1 has no fixed runtime payload cap; the spice cartridge keeps a 15 MiB ceiling. [Sources: coffee specs.docx, World Spice Atlas Specification.docx, Coffee & Tea SEO Blueprint.docx]
 
 **Shared primitives.** All three cartridges keep the same six universal interfaces: `OriginRegion`, `BaseMaterial`, `ProcessMethod`, `Expression`, `TimelineEvent`, `Composition`. A cartridge adds one typed extension payload and does not change core fields. Cartridge #2 adds `SpiceExtension`. Cartridge #3 adds `CoffeeTeaExtension`, which is a discriminated union over the `coffea` and `camellia_sinensis` genera. [Sources: World Spice Atlas Specification.docx, coffee specs.docx]
 
@@ -115,6 +115,7 @@ It is a clean example of a domain-agnostic product with typed primitives and lic
 - 15 accuracy guardrails in `packages/data-validator/tests/accuracy.test.ts`; 15 tests present.
 - Legal layer: 643 clause records (581 unique verbatim quotes) in a 32.7 KB Brotli shard, from 162 of 165 specification PDFs.
 - Distilleries: 5,578 TTB rows, 5,572 geocoded (99.89%), in a 107 KB Brotli shard.
+- Runtime cap: removed for spirits on 2026-11-26. Only the spice cartridge keeps a 15 MiB ceiling.
 - 17 attribution licences: 16 upstream plus `atlas-derived-ccby4`. No ODbL layer.
 - The licence gate has 20 deny patterns, including MPL-2.0.
 - Dependency audit: 455 packages passed on 2026-11-25. Astro `^6.4.8`, Tailwind `^3.4.17`.
