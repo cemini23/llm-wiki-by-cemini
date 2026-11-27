@@ -11581,6 +11581,15 @@ Fourth batch labelled v10.11. **1 Integrate** — deja-vu — which is the first
 - Blockers logged: repo stays private until launch (flip public 2026-12-01); `terroirkit.dev` does not resolve; `Atlas101` tree has uncommitted changes.
 - Routing: wiki-only. No trading link.
 
+## [2026-11-26] update | Atlas Engine - expanded build verified and launch article synced
+
+- `concepts/atlas-engine.md` - **updated**. Cartridge #1 now 300 expressions, 112 cocktails, 313 tile features (261 EU statutory, 7 ring fallbacks, 17 feature references), 160/160 pilot URLs HTTP 200, 588 routes, 15,013,255-byte payload.
+- Legal layer: 643 clause records (581 unique quotes) in a 32.7 KB shard, 162 of 165 documents. 17 attribution licences (16 upstream), no ODbL.
+- Distilleries: 5,578 TTB rows, 5,572 geocoded (99.89%), 107 KB shard.
+- Launch article for 2026-12-01 synced to the build. Fixes: GI math, clause count, Italy/Spain counts, Chile CC BY-IGO 3.0, gate list (MPL in, "Proprietary" out), MiB units, age-gate claim, dead `terroirkit.dev` links.
+- Blockers unchanged: repo private until 2026-12-01; `terroirkit.dev` unregistered.
+- Routing: wiki-only. No trading link.
+
 ## [2026-11-26] ingest | Atlas Engine cartridge #2 — World Spice and Chili technical specification
 
 - `sources/atlas-spice-specification-2026-11-26.md` — **new**. Scope fixed at 65 expressions, 35 blends, 35 diffusion milestones and 15 validation rules.

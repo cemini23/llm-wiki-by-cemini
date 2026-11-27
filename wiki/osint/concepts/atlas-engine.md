@@ -1,5 +1,5 @@
 ---
-title: Atlas Engine — three-cartridge geospatial atlas (spirits, spice, coffee and tea)
+title: Atlas Engine - three-cartridge geospatial atlas (spirits, spice, coffee and tea)
 type: concept
 maturity: draft
 related:
@@ -22,7 +22,7 @@ Question this page answers: what is the Atlas Engine, what is in cartridge #1, a
 
 From three operator documents dated 2026-11-25: an architecture document, a technical and pedagogical specification, and a growth and monetization playbook. At ingest time no code repository existed. A working build now exists at `~/Projects/Atlas101`, remote `github.com/cemini23/flavororigins`.
 
-**Status: BUILT - v1 live at flavororigins.com/spirits/ (verified 2026-11-25).** No page in `wiki/osint/` described an Atlas Engine before this ingest. `concepts/historical-jurisdiction-atlas.md` shares the word "atlas" and nothing else, and there is no evidence this is related to Comuni Atlas.
+**Status: BUILT - v1 live at flavororigins.com/spirits/ (expanded build verified 2026-11-26).** No page in `wiki/osint/` described an Atlas Engine before this ingest. `concepts/historical-jurisdiction-atlas.md` shares the word "atlas" and nothing else, and there is no evidence this is related to Comuni Atlas.
 
 ## Narrative
 
@@ -32,15 +32,15 @@ A multi-vertical atlas engine: one rendering and data engine, plus per-domain "c
 
 ### Three layers
 
-**Data.** Zero-copyleft geographic boundaries, sourced from public-domain and permissively licensed national datasets. A licence gate runs in code and aborts the build on any ODbL, share-alike, non-commercial or GADM source. Legal standards of identity are pulled from machine-readable government APIs, not scraped prose. [Source: Open World Spirits Atlas Architecture.docx]
+**Data.** Zero-copyleft geographic boundaries, sourced from public-domain and permissively licensed national datasets. A licence gate runs in code and aborts the build on any ODbL, share-alike, non-commercial, GADM or MPL source. Legal standards of identity are pulled from machine-readable government APIs, not scraped prose. [Source: Open World Spirits Atlas Architecture.docx]
 
 **Schema.** Six universal typed interfaces, shared by every vertical: `OriginRegion`, `BaseMaterial`, `ProcessMethod`, `Expression`, `TimelineEvent`, `Composition`. A vertical-specific extension carries the rest. Validation is part of the schema: dual ABV thresholds, contested-GI versioning, and a mandatory pedagogical sibling for every expression. [Source: World Spirits Atlas Specification.docx]
 
-**Delivery.** A static build: PMTiles vector tiles plus Brotli-compressed JSON shards, rendered in MapLibre. Measured 2026-11-25: the basemap PMTiles is 2.1 MB, the spirits GeoJSON fallback is 56 KB, and the shards are 156 KB. The full static build is 11 MB against a 15 MiB ceiling. A generic repository layout puts domain recipes in `cartridges/<domain>/` so a new vertical needs no code change.
+**Delivery.** A static build: PMTiles vector tiles plus Brotli-compressed JSON shards, rendered in MapLibre. Measured 2026-11-26: `spirits.pmtiles` is 13.04 MB, the basemap is 1.71 MB, the shards total 235.9 KB, and `attribution.json` is 20.3 KB. The active payload is 15,013,255 bytes, with 715 KB of headroom under the 15 MiB cap. The GeoJSON fallback is 1.48 MB and never loads on a normal visit. A generic repository layout puts domain recipes in `cartridges/<domain>/` so a new vertical needs no code change.
 
 ### Content scope at launch
 
-65 flagship regional expressions across six families: whisk(e)y, agave, cane and rum, botanicals and amari, grape and orchard brandies, and Asian and grain spirits. 35 multi-region cocktails under a "Map Your Glass" feature. 35 timeline milestones. Fifteen validator unit tests. [Source: World Spirits Atlas Specification.docx]
+300 regional expressions across six families: whisk(e)y, agave, cane and rum, botanicals and amari, grape and orchard brandies, and Asian and grain spirits. 112 multi-region cocktails under a "Map Your Glass" feature. 35 timeline milestones. Fifteen validator unit tests. [Sources: World Spirits Atlas Specification.docx; verified build 2026-11-26]
 
 ### Cartridge architecture (three cartridges, one engine)
 
@@ -48,7 +48,7 @@ The product family is now defined as three cartridges, all served by one engine:
 
 | Cartridge | Route | Domain | State |
 |---|---|---|---|
-| #1 World Spirits | `/spirits/` | flavororigins.com | Built and live (v1 verified 2026-11-25) |
+| #1 World Spirits | `/spirits/` | flavororigins.com | Built and live (expanded build verified 2026-11-26) |
 | #2 World Spice and Chili | `/spices/` | flavororigins.com | Specified, not built |
 | #3 Coffee and Tea | `/coffee-tea/` | flavororigins.com | Specified, not built |
 
@@ -56,11 +56,11 @@ The engine brand is `terroirkit.dev`. The consumer brand is `flavororigins.com`.
 
 **Shared primitives.** All three cartridges keep the same six universal interfaces: `OriginRegion`, `BaseMaterial`, `ProcessMethod`, `Expression`, `TimelineEvent`, `Composition`. A cartridge adds one typed extension payload and does not change core fields. Cartridge #2 adds `SpiceExtension`. Cartridge #3 adds `CoffeeTeaExtension`, which is a discriminated union over the `coffea` and `camellia_sinensis` genera. [Sources: World Spice Atlas Specification.docx, coffee specs.docx]
 
-**Shared gate.** Each cartridge runs the same pipeline: `compiler/fetch.py` → `license_gate.py` → `dissolve.py` → `tippecanoe` → `pmtiles`. The gate aborts the build on any ODbL, share-alike, non-commercial or GADM input. [Source: Global Spice GI Geospatial Inventory.docx]
+**Shared gate.** Each cartridge runs the same pipeline: `compiler/fetch.py` -> `license_gate.py` -> `dissolve.py` -> `tippecanoe` -> `pmtiles`. The gate aborts the build on any ODbL, share-alike, non-commercial, GADM or MPL input. [Source: Global Spice GI Geospatial Inventory.docx]
 
-**Shared rule — provenance over completeness.** Cartridge #2 and #3 both separate corpus-verified records from placeholders. Cartridge #2 uses `PENDING_SOURCING` and a `data_readiness` enum. Cartridge #3 uses a ten-value `ProvenanceStatus` enum, including `PENDING_SENSORY_PANEL` and `PENDING_COMPOSITION_AUDIT`. Unverified records stay out of the index. [Sources: World Spice Atlas Specification.docx, coffee specs.docx]
+**Shared rule - provenance over completeness.** Cartridge #2 and #3 both separate corpus-verified records from placeholders. Cartridge #2 uses `PENDING_SOURCING` and a `data_readiness` enum. Cartridge #3 uses a ten-value `ProvenanceStatus` enum, including `PENDING_SENSORY_PANEL` and `PENDING_COMPOSITION_AUDIT`. Unverified records stay out of the index. [Sources: World Spice Atlas Specification.docx, coffee specs.docx]
 
-### Cartridge #2 — World Spice and Chili, scale
+### Cartridge #2 - World Spice and Chili, scale
 
 The specification fixes the catalogue counts. Only the geospatial inventory states the region total, and it gives a range. [Sources: World Spice Atlas Specification.docx, Global Spice GI Geospatial Inventory.docx]
 
@@ -70,15 +70,15 @@ The specification fixes the catalogue counts. Only the geospatial inventory stat
 | Regional blends, pastes and seasonings ("Map Your Blend") | 35 | Specification |
 | Diffusion milestones | 35 | Specification |
 | Automated validation rules | 15 | Specification |
-| Flagship spice and chili regions (polygon assembly) | 55–62 | Geospatial inventory |
+| Flagship spice and chili regions (polygon assembly) | 55-62 | Geospatial inventory |
 
-The geospatial inventory gives a regional split: Europe 12–13, Asia 22–23, Americas 12–14, Middle East and Africa 9–12. The counts are ranges because some regions are still contested at polygon level. [Source: Global Spice GI Geospatial Inventory.docx]
+The geospatial inventory gives a regional split: Europe 12-13, Asia 22-23, Americas 12-14, Middle East and Africa 9-12. The counts are ranges because some regions are still contested at polygon level. [Source: Global Spice GI Geospatial Inventory.docx]
 
 Readiness is not uniform. Of the 65 expressions, 30 have botanical, analytical, processing or GI records in the current evidence base. The other 35 are expansion slots marked `PENDING_SOURCING`. Of the 35 blends, ingredient links and regulatory flags are mapped, but percentage ratios and coordinates are placeholders. Of the 35 milestones, 18 modern events carry verified dates. Of the 15 validator rules, 7 are fully grounded, 4 partly grounded and 4 are structural invariants. [Source: World Spice Atlas Specification.docx]
 
-Two 2025–2026 analytical standards drive the chemistry layer. ISO 3632-1:2025 adds an Extra Class tier above Category I for saffron. ASTA Method 21.3 (2026) revises capsaicinoid response factors and shifts calculated Scoville heat by a factor of 0.9431 against 2004 values. [Source: World Spice Atlas Specification.docx]
+Two 2025-2026 analytical standards drive the chemistry layer. ISO 3632-1:2025 adds an Extra Class tier above Category I for saffron. ASTA Method 21.3 (2026) revises capsaicinoid response factors and shifts calculated Scoville heat by a factor of 0.9431 against 2004 values. [Source: World Spice Atlas Specification.docx]
 
-### Cartridge #3 — Coffee and Tea, scale
+### Cartridge #3 - Coffee and Tea, scale
 
 | Item | Count | Source |
 |---|---|---|
@@ -93,15 +93,11 @@ Two 2025–2026 analytical standards drive the chemistry layer. ISO 3632-1:2025 
 
 The two documents agree on the origin totals: 63 entries over 24 countries, split 36 coffee and 27 tea. The inventory counts 19 coffee-producing countries in its coffee section. [Source: coffee inventory.docx]
 
-Cartridge #3 splits one crop-level question from Cartridge #1 and #2. Coffee and tea origins are mostly not statutory GI polygons. Colombia, Brazil, India and Sri Lanka publish resolutions, municipality rosters or agro-climatic definitions, not redistributable shapefiles. The build therefore assembles ADM1–ADM3 polygons from FAO GAUL 2024/2025, World Bank Official Boundaries, Natural Earth 1:10m, audited HDX COD-AB, Brazil IBGE, Mexico INEGI and Taiwan NLSC. Non-administrative terroirs (Sri Lanka's seven agro-climatic tea zones, Darjeeling at 600–2,000 m, Nilgiri at 1,000–2,500 m) are masked with MapSPAM crop allocation and elevation data. [Source: coffee inventory.docx]
+Cartridge #3 splits one crop-level question from Cartridge #1 and #2. Coffee and tea origins are mostly not statutory GI polygons. Colombia, Brazil, India and Sri Lanka publish resolutions, municipality rosters or agro-climatic definitions, not redistributable shapefiles. The build therefore assembles ADM1-ADM3 polygons from FAO GAUL 2024/2025, World Bank Official Boundaries, Natural Earth 1:10m, audited HDX COD-AB, Brazil IBGE, Mexico INEGI and Taiwan NLSC. Non-administrative terroirs (Sri Lanka's seven agro-climatic tea zones, Darjeeling at 600-2,000 m, Nilgiri at 1,000-2,500 m) are masked with MapSPAM crop allocation and elevation data. [Source: coffee inventory.docx]
 
-### Cartridge #1 — spirits expansion (drafted, not deployed)
+### Cartridge #1 - spirits expansion (shipped)
 
-An expansion catalogue raises the spirits cartridge from 65 to 185 expressions and from 35 to 120 cocktails: 120 net-new expressions and 85 net-new cocktails. It is a data package in Markdown tables, not a deployed build. The baseline spine could not be inspected, so every new entry targets a sub-regional micro-terroir or a single-still marque, and avoids generic category anchors. [Source: World Spirits Atlas Expansion.docx]
-
-New expression counts by family: whisk(e)y +24, agave and desert +18, cane and rum +20, botanicals and liqueurs +28, grape and orchard brandies +16, Asian and grain spirits +14. New cocktail counts: whiskey 20, cane and tiki 18, agave 7, gin 14, brandy and pisco 11, aperitivo and low-ABV 15. [Source: World Spirits Atlas Expansion.docx]
-
-**Count reconciliation.** The expansion document says "120 net-new Regional Expressions and 85 Map Your Glass Cocktails" in its title, then states the totals as 185 and 120. Both are consistent: 65 + 120 = 185 and 35 + 85 = 120. There is no internal conflict. The difference is against the 2026-11-25 verified build, which reported 65 expressions and 35 cocktails. The expansion is unbuilt, so the live site stays at 65 and 35 until it ships. Do not cite 185 and 120 as current.
+The 2026-11-25 expansion document proposed 185 expressions and 120 cocktails. The live build on 2026-11-26 exceeds that: 300 expressions and 112 cocktails. The earlier caution not to cite 185 and 120 as current is retired. Cite the verified build numbers instead. [Source: World Spirits Atlas Expansion.docx; verified 2026-11-26]
 
 ### Brand and monetization
 
@@ -111,13 +107,17 @@ Two brands: a consumer umbrella hosting all atlases as subdirectories, and a sep
 
 It is a clean example of a domain-agnostic product with typed primitives and licence gates built into the pipeline. That pattern transfers to any structured-catalogue product. The spirits content itself is outside the current trading and genealogy lanes.
 
-### Verified build state (2026-11-25)
+### Verified build state (2026-11-26)
 
-- 60 regions, 0 fallback. 65 expressions, 35 cocktails, 35 timeline milestones.
-- 103 pilot URLs across 5 segmented sitemaps; all 103 returned HTTP 200 with a canonical tag. The static build has 222 pages; 118 remain `noindex, follow`.
-- 15 accuracy guardrails in `packages/data-validator/tests/accuracy.test.ts`. 20/20 data and accuracy tests pass, 35/35 compiler tests pass, 6/6 browser smoke tests pass.
-- The licence gate has 20 deny patterns, including MPL-2.0. 12 sources approved; 26 pinned files verified.
-- 455 npm packages pass the dependency audit. Astro `^6.4.8`, Tailwind `^3.4.17`.
+- 313 tile features: 285 statutory, 18 cultural regions, 10 generic. 261 statutory features are EU spirit GIs, plus 7 country ring fallbacks and 17 feature references. The EU register total is 265.
+- 300 expressions, 112 cocktails, 35 timeline milestones.
+- 160 pilot URLs across 5 segmented sitemaps; all 160 returned HTTP 200 with a trailing-slash canonical. The static build has 588 routes; 429 remain `noindex`.
+- 15 accuracy guardrails in `packages/data-validator/tests/accuracy.test.ts`; 15 tests present.
+- Legal layer: 643 clause records (581 unique verbatim quotes) in a 32.7 KB Brotli shard, from 162 of 165 specification PDFs.
+- Distilleries: 5,578 TTB rows, 5,572 geocoded (99.89%), in a 107 KB Brotli shard.
+- 17 attribution licences: 16 upstream plus `atlas-derived-ccby4`. No ODbL layer.
+- The licence gate has 20 deny patterns, including MPL-2.0.
+- Dependency audit: 455 packages passed on 2026-11-25. Astro `^6.4.8`, Tailwind `^3.4.17`.
 - Code is MIT. Curated data is CC BY 4.0 (`LICENSE`, `DATA_LICENSE`).
 - Mexico: 181 Tequila, 35 Bacanora and 17 Raicilla municipalities, dissolved from HDX ADM2 with INEGI upstream.
 
@@ -141,7 +141,7 @@ So the growth document may not be simply wrong. It may be describing the tiles r
 
 This is `[OPEN QUESTION 2026-11-25]`, not a verified fact: no build exists, so there is nothing to inspect yet.
 
-**Resolved on inspection 2026-11-25.** `cartridges/spirits/dist/attribution.json` lists 14 upstream licences. No layer is ODbL. The basemap is Natural Earth (Public Domain); the other layers are OGL v3.0, Licence Ouverte 2.0, CC BY 4.0, CC0/Public Domain, CC BY-IGO 3.0 and MLIT. All 60 features carry `license_id`, and the six tile keys include it. The tile share-alike question is closed for v1.
+**Resolved on inspection 2026-11-26.** `cartridges/spirits/dist/attribution.json` lists 17 licences: 16 upstream plus `atlas-derived-ccby4`. No layer is ODbL. The basemap is Natural Earth (Public Domain); the other layers are OGL v3.0, Licence Ouverte 2.0, CC BY 4.0, CC0/Public Domain, CC BY-IGO 3.0 and MLIT. All 313 features carry `license_id`, and the six tile keys include it. The tile share-alike question is closed for v1.
 
 **One wording risk remains.** `DATA_LICENSE` applies a blanket CC BY 4.0 to files under `cartridges/*/data/` and `cartridges/*/dist/`. The compiled `dist/` geometry includes OGL, CC BY-IGO and Licence Ouverte material. A compilation can carry CC BY 4.0 while upstream layers keep their terms, but the licence text should say that explicitly. `[OPEN QUESTION 2026-11-25]`
 
